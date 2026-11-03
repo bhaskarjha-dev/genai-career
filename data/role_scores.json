@@ -1,0 +1,1617 @@
+{
+  "schema": "role-scores/1.0",
+  "as_of": "2026-11-02",
+  "scale": "Each pillar is scored 0-10 on an anchored rubric (see career/02-roles/role-rankings.md section 1). lo/mid/hi = plausible range given evidence quality; Monte Carlo samples a triangular distribution (lo, mid, hi).",
+  "grades": "EGP-1.0 grades of the evidence behind each pillar: A primary record; B authoritative secondary or platform aggregate with disclosed method (JobsPipe, Fast AI Jobs and Levels.fyi pages are B); C practitioner, small-corpus or vendor survey; D judgement or recalled; M model output from graded inputs (treated as C for confidence).",
+  "persona_keys": [
+    "backend",
+    "data_scientist",
+    "frontend",
+    "non_technical",
+    "phd"
+  ],
+  "roles": [
+    {
+      "id": "ai-engineer",
+      "name": "AI Engineer",
+      "family": "Applied AI Engineering",
+      "track": "ic",
+      "status": "E",
+      "demand": {
+        "lo": 9,
+        "mid": 10,
+        "hi": 10,
+        "grade": "B",
+        "basis": "JobsPipe US 1,697 live (corpus 2026-10-19; page unchanged 2026-11-02), India 398, global 3,944; Fast AI Jobs 326 at 183 AI startups; LinkedIn Jobs on the Rise 2026 #1. Family count includes non-GenAI variants (robotics, construction, Power Platform) [T0-01 F1, F2]."
+      },
+      "comp": {
+        "lo": 6,
+        "mid": 6.75,
+        "hi": 7.5,
+        "grade": "B",
+        "basis": "Levels.fyi US TC P50 $154K / P75 $212.5K / P90 $280K (n=335) [T0-02:67]; posted base AI Engineer (Application) $200-275K (n=55); across all S09 AI-engineering postings, Senior $185-253K (n=462) and Staff+ $230-310K (n=322) [T0-03 6.1.2]. The title earns ~0.55x the ML Engineer title; about half of that gap is employer mix, and within Google the MLE title still earns 26-39% more [T0-02:67, 480]."
+      },
+      "durability": {
+        "lo": 4.5,
+        "mid": 6,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; evals, agent reliability and cost engineering keep value [T0-03 Tier 2]."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Ships the revenue-facing AI features; enterprise and services employer mix [T0-01 F2]."
+      },
+      "persona_access": {
+        "backend": 9,
+        "data_scientist": 7.5,
+        "frontend": 8,
+        "non_technical": 2,
+        "phd": 7
+      },
+      "india": {
+        "demand": {
+          "lo": 9,
+          "mid": 10,
+          "hi": 10,
+          "grade": "B",
+          "basis": "JobsPipe India 398 live; India 13.6% of AI Engineer postings; GenAI Engineer/Developer is the dominant GCC alias [T0-01 F10, D8]."
+        },
+        "comp": {
+          "lo": 4.5,
+          "mid": 5.5,
+          "hi": 6.5,
+          "grade": "B",
+          "basis": "Levels.fyi Bengaluru AI Engineer P50 Rs21.4-24.5L, P75 Rs40.4L, P90 Rs62.6L (unstable) [T0-02:146, T0-17:139]; broad market centres Rs10-15L [T0-02:71]."
+        }
+      }
+    },
+    {
+      "id": "ml-engineer",
+      "name": "Machine Learning Engineer",
+      "family": "ML Engineering & Applied Science",
+      "track": "ic",
+      "status": "E",
+      "demand": {
+        "lo": 8,
+        "mid": 9,
+        "hi": 9.5,
+        "grade": "B",
+        "basis": "JobsPipe US 1,084, global 2,157, India 90; Fast AI Jobs 273 at 159 startups [T0-01 F1, D2]; LLM named in 45.0% of MLE postings (JobsPipe JD, 2026-11-02). Includes recsys/ads/AV and mass posters (TikTok 74)."
+      },
+      "comp": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9,
+        "grade": "B",
+        "basis": "Levels.fyi US TC P50 $280K / P75 $385.5K / P90 $497.5K (n=1,063) [T0-02:67]; Meta E5 $458K, E6 $782K; Google L5 $393-445K, L6 $607-646K [T0-02:232-235]; posted base $213-288K (n=201) [T0-03 6.1.2]."
+      },
+      "durability": {
+        "lo": 5.5,
+        "mid": 7,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Decades-stable title with deep-learning depth; offset: 70% of production apps use off-the-shelf models without SFT/RL [T0-03 S31]."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Owns models behind ranking, recsys, fraud and fine-tuned systems."
+      },
+      "persona_access": {
+        "backend": 5.5,
+        "data_scientist": 7,
+        "frontend": 3.5,
+        "non_technical": 1.5,
+        "phd": 7
+      },
+      "india": {
+        "demand": {
+          "lo": 6,
+          "mid": 7,
+          "hi": 7.5,
+          "grade": "B",
+          "basis": "JobsPipe India 90 live; India 7.7% of MLE postings vs US 50.3% (JobsPipe JD 2026-11-02)."
+        },
+        "comp": {
+          "lo": 7,
+          "mid": 8,
+          "hi": 8.5,
+          "grade": "B",
+          "basis": "Levels.fyi Bengaluru MLE TC P50 Rs44.5L, P90 Rs94.6L (n=96) [T0-02:145]; Hyderabad P50 Rs30.3L [T0-02:149]."
+        }
+      }
+    },
+    {
+      "id": "forward-deployed-engineer",
+      "name": "Forward Deployed Engineer",
+      "family": "Forward Deployment & Solutions",
+      "track": "ic",
+      "status": "E",
+      "demand": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "M",
+        "basis": "Fast AI Jobs: 933 FDE-cluster roles at 343 AI startups (2026-10-20); ~48% of the newest 50 rows are engineer-titled, so ~450 engineering roles (an extrapolation) [T0-01 F3]. Growth of ~20% since early Aug was in line with AI Engineer (+18.5%) and ML Engineer (+20.3%). FDE postings up >1,000% Jan-Aug 2026 vs 2025 from a small base [T0-06:175]; 304 base-disclosing FDE postings in S09 [T0-03 6.1.2]. No broad-market count."
+      },
+      "comp": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "B",
+        "basis": "Posted base $180-248K (n=304), the lowest family median in S09 [T0-03:230]; median advertised >$188K vs ~$145K for SWEs [T0-06:175]; Series C-D startup equity risk-adjusted 0.4-0.8x (model) [T0-17 R3]; 38% of the cluster is early-stage [T0-01 F3]."
+      },
+      "durability": {
+        "lo": 5.0,
+        "mid": 6.5,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Customer embedding and integration judgement; risk of drift into non-coding roles (about half the cluster is non-engineering) [T0-01 F3]."
+      },
+      "leverage": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Converts deployments directly into revenue and retention."
+      },
+      "persona_access": {
+        "backend": 7.5,
+        "data_scientist": 4.5,
+        "frontend": 7,
+        "non_technical": 4,
+        "phd": 5
+      },
+      "india": {
+        "demand": {
+          "lo": 2.5,
+          "mid": 4,
+          "hi": 5.5,
+          "grade": "D",
+          "basis": "Forward Deployed AI Engineer appears on Weekday India listings [T0-01 D8]; no India count. FDE postings were mostly non-remote in the Aug snapshot (SF 172, NY 133, Remote 65 of ~779) [T0-01 D2]; one JD lists up to 50% travel."
+        },
+        "comp": {
+          "lo": 4,
+          "mid": 5.5,
+          "hi": 7,
+          "grade": "D",
+          "basis": "No India pay data in corpus."
+        }
+      }
+    },
+    {
+      "id": "applied-ai-engineer",
+      "name": "Applied AI Engineer",
+      "family": "Applied AI Engineering",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4,
+        "mid": 5,
+        "hi": 6.5,
+        "grade": "C",
+        "basis": "16 of the newest 50 Fast AI Jobs AI-Engineer rows (2026-10-19), ~100 of 326 if representative (unverified extrapolation) [T0-01 D2 row 4]; OpenAI, Anthropic, Scale, Databricks titles [T0-01 D7]."
+      },
+      "comp": {
+        "lo": 6,
+        "mid": 7.5,
+        "hi": 9,
+        "grade": "D",
+        "basis": "No role-specific pay in corpus; employer mix spans frontier labs (OpenAI/Anthropic SWE TC medians $875K-$882.5K) [T0-02:73] and enterprise vendors."
+      },
+      "durability": {
+        "lo": 5.0,
+        "mid": 6.5,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Customer-facing technical delivery at labs and vendors."
+      },
+      "leverage": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Customer deployment and go-to-market at labs and vendors (8.5-9 anchor: directly moves revenue)."
+      },
+      "persona_access": {
+        "backend": 8.5,
+        "data_scientist": 6.5,
+        "frontend": 6.5,
+        "non_technical": 2,
+        "phd": 7
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3,
+          "hi": 4.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 4,
+          "mid": 6,
+          "hi": 8,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "agentic-ai-engineer",
+      "name": "Agentic AI Engineer",
+      "family": "Applied AI Engineering",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 3.5,
+        "mid": 4.5,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "Skillenai 90-day window: ~66 Agentic AI Engineer (derived) + 28 Agent Engineer postings [T0-16:389-390]; ~5 of newest 50 AI rows [T0-01 D2 row 5]. Agentic AI as a skill is in 59.3% of AI Engineer postings (a skill tag, not a title)."
+      },
+      "comp": {
+        "lo": 6,
+        "mid": 6.75,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "No title-specific pay; scored as an AI Engineer variant (same pay score)."
+      },
+      "durability": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 8,
+        "grade": "D",
+        "basis": "Judgement. The work (durable runtimes, tool gateways, sandboxing) is a Tier-2 differentiating skill [T0-03 6.4]; title instability is handled under Demand, not Durability. Framework churn (AutoGen dormant) [T0-03 KF9]."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Workflow automation value."
+      },
+      "persona_access": {
+        "backend": 8.5,
+        "data_scientist": 6.5,
+        "frontend": 7,
+        "non_technical": 2,
+        "phd": 6.5
+      },
+      "india": {
+        "demand": {
+          "lo": 3,
+          "mid": 4.5,
+          "hi": 5.5,
+          "grade": "C",
+          "basis": "Agentic AI Engineer and Principal Agentic AI Engineer on Weekday India listings [T0-01 D8]."
+        },
+        "comp": {
+          "lo": 4.5,
+          "mid": 5.5,
+          "hi": 6.5,
+          "grade": "D",
+          "basis": "Treated as AI Engineer."
+        }
+      }
+    },
+    {
+      "id": "ai-product-engineer",
+      "name": "AI Product Engineer (AI Frontend)",
+      "family": "Applied AI Engineering",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 2.5,
+        "mid": 3.5,
+        "hi": 5,
+        "grade": "C",
+        "basis": "AI-frontend demand 'thin and senior-skewed' [T0-06:97, 158]; Productboard, Artisan and one recruiter-listed Staff AI Frontend posting [T0-06:167]."
+      },
+      "comp": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "One Staff AI Frontend posting at $250-315K (C/D) [T0-06:167]; otherwise AI-Engineer-like."
+      },
+      "durability": {
+        "lo": 4.0,
+        "mid": 5.5,
+        "hi": 7.0,
+        "grade": "D",
+        "basis": "Judgement. Agent UX is differentiated; generic UI work is exposed to code generation."
+      },
+      "leverage": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 6,
+        "data_scientist": 4,
+        "frontend": 7,
+        "non_technical": 2,
+        "phd": 4
+      },
+      "india": {
+        "demand": {
+          "lo": 1.5,
+          "mid": 2.5,
+          "hi": 4,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 4,
+          "mid": 5,
+          "hi": 6.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-enablement-engineer",
+      "name": "AI Enablement Engineer",
+      "family": "Applied AI Engineering",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 2.5,
+        "mid": 3.5,
+        "hi": 4.5,
+        "grade": "C",
+        "basis": "~53 postings in 90 days (Skillenai; derived from 30.2% = 16 MCP-mentioning postings) [T0-16:393]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "No pay data in corpus. Default prior: 6.5, the low end of the measured AI-engineering family pay scores (6.5-7), with a wide range."
+      },
+      "durability": {
+        "lo": 3.5,
+        "mid": 5,
+        "hi": 6.5,
+        "grade": "D",
+        "basis": "Judgement. Internal adoption roles may be transitional."
+      },
+      "leverage": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement. Internal productivity."
+      },
+      "persona_access": {
+        "backend": 7.5,
+        "data_scientist": 6,
+        "frontend": 7,
+        "non_technical": 5,
+        "phd": 5
+      },
+      "india": {
+        "demand": {
+          "lo": 1.5,
+          "mid": 2.5,
+          "hi": 4,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 4,
+          "mid": 5,
+          "hi": 6,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-solutions-architect",
+      "name": "AI / GenAI Solutions Architect",
+      "family": "Forward Deployment & Solutions",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 3.5,
+        "mid": 5,
+        "hi": 6.5,
+        "grade": "D",
+        "basis": "Title-level count not measured: 'AI / Agentic / GenAI Architect: not measured; 6+ distinct postings seen; probable, services-concentrated' [T0-01 D2 row 13]. Upper bound only: JobsPipe Solutions Architect US 1,515 live (2026-11-02), of which ≥23.2% (~350) name AI and 17.1% generative AI. These are keyword shares, not AI-architect titles (rule 7)."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "No pay data in corpus. Default prior: 6.5, the low end of the measured AI-engineering family pay scores (6.5-7), with a wide range."
+      },
+      "durability": {
+        "lo": 4.5,
+        "mid": 6,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement. Enterprise integration and vendor ecosystems."
+      },
+      "leverage": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Pre-sales and enterprise architecture (8.5-9 anchor: directly moves revenue)."
+      },
+      "persona_access": {
+        "backend": 6,
+        "data_scientist": 4.5,
+        "frontend": 5,
+        "non_technical": 4.5,
+        "phd": 4
+      },
+      "india": {
+        "demand": {
+          "lo": 3,
+          "mid": 4,
+          "hi": 5.5,
+          "grade": "D",
+          "basis": "JobsPipe Solutions Architect India 64 live (2026-11-02); AI-mention share assumed as US (upper bound ~15); no AI-architect title count."
+        },
+        "comp": {
+          "lo": 4.5,
+          "mid": 6,
+          "hi": 7.5,
+          "grade": "D",
+          "basis": "Recruiter guides: senior AI roles at GCCs/top product firms Rs55-80L+ (C) [T0-02:340]."
+        }
+      }
+    },
+    {
+      "id": "applied-scientist",
+      "name": "Applied Scientist",
+      "family": "ML Engineering & Applied Science",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 3,
+        "mid": 5,
+        "hi": 8,
+        "grade": "D",
+        "basis": "Only count: 14 at 12 AI startups (Fast AI Jobs, 2026-06-09) = band 3 [T0-01 D2 row 12]. Big Tech, the title's main market, is unmeasured in the corpus. The '~700' in T1-01:80 / FAD 5.1 has no primary source. Mid set between the startup band and plausible Big Tech volume; wide range."
+      },
+      "comp": {
+        "lo": 6.5,
+        "mid": 8,
+        "hi": 9,
+        "grade": "D",
+        "basis": "No corpus pay. Big Tech title; ML Engineer at Big Tech as proxy (Meta E5 $458K, Google L5 $393-445K) [T0-02:234]."
+      },
+      "durability": {
+        "lo": 6.0,
+        "mid": 7.5,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement. Research-to-production scientists at large firms."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 3,
+        "data_scientist": 4.5,
+        "frontend": 2,
+        "non_technical": 1,
+        "phd": 8
+      },
+      "india": {
+        "demand": {
+          "lo": 2.5,
+          "mid": 4,
+          "hi": 6,
+          "grade": "D",
+          "basis": "No India evidence in corpus."
+        },
+        "comp": {
+          "lo": 6,
+          "mid": 7.5,
+          "hi": 9,
+          "grade": "D",
+          "basis": "Proxy: Google MLE Bengaluru L4 Rs65.2L, L5 Rs168.3L (small n) [T0-02:254]."
+        }
+      }
+    },
+    {
+      "id": "inference-engineer",
+      "name": "Inference / LLM Serving Engineer",
+      "family": "AI Infrastructure & Platform",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 3,
+        "mid": 4,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "Rise 'inference engineer' 28 (small corpus) = band 4 [T0-01 D2 row 9]; >=8 named JDs at Anthropic, NVIDIA, Together AI, Baseten, Inferact plus RadixArk and Red Hat [T0-03 6.2, T0-05]. The 14.8% inference-optimisation concept share is a skill mention and is not used (rule 7)."
+      },
+      "comp": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "C",
+        "basis": "Typical posted base across 8 named JDs is ~$270K (range $150-485K; Anthropic $320-485K at the top) [T0-03 6.2]; S09 puts inference platforms in the Infra/Platform family ($203-270K); systems/research-engineering titles +13-31% base in two datasets, 'not validated' [T0-02:480]."
+      },
+      "durability": {
+        "lo": 6.0,
+        "mid": 7.5,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement. Serving economics (2.5-24x under-utilisation penalty at 1-10 req/s) [T0-03 KF10]; tripwire: a large closed-model price drop narrows self-hosting [T0-03 4.5]."
+      },
+      "leverage": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Direct GPU-cost and latency leverage."
+      },
+      "persona_access": {
+        "backend": 7,
+        "data_scientist": 2.5,
+        "frontend": 2.5,
+        "non_technical": 1,
+        "phd": 4.5
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3,
+          "hi": 4,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 5.5,
+          "mid": 7,
+          "hi": 8.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "gpu-kernel-engineer",
+      "name": "GPU Kernel / ML Compiler Engineer",
+      "family": "AI Infrastructure & Platform",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 3,
+        "mid": 4,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3]; River AI (GPU kernels) and AMD (Triton kernels) among T0-13's inference/kernel postings [T0-13:112, 737]."
+      },
+      "comp": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "C",
+        "basis": "Inference-titled JDs with kernel requirements: NVIDIA DL SWE $152-356.5K base (midpoints ~$220-270K); Anthropic inference runtime $405-485K [T0-03 6.2]. Three postings, so Grade C."
+      },
+      "durability": {
+        "lo": 5.0,
+        "mid": 6.5,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile) and automated kernel agents abstract kernel writing [T0-03:L542, L101]; no labour data either way [T0-03:L571]."
+      },
+      "leverage": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. GPU efficiency moves a large cost line (8.5-9 anchor)."
+      },
+      "persona_access": {
+        "backend": 4,
+        "data_scientist": 2,
+        "frontend": 1.5,
+        "non_technical": 1,
+        "phd": 4.5
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3,
+          "hi": 4,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 5.5,
+          "mid": 7,
+          "hi": 8.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-infrastructure-engineer",
+      "name": "AI Infrastructure / GPU Platform Engineer",
+      "family": "AI Infrastructure & Platform",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4,
+        "mid": 5.5,
+        "hi": 7,
+        "grade": "C",
+        "basis": "52 base-disclosing 'Infrastructure/Platform Engineer (GPU clusters, inference platforms)' postings in S09 [T0-03:228]; distributed systems in 19.1% of S09 postings [T0-03 6.3]; OpenAI GPU-infrastructure postings [T0-17:182]."
+      },
+      "comp": {
+        "lo": 6,
+        "mid": 7,
+        "hi": 8,
+        "grade": "C",
+        "basis": "Posted base $203-270K (n=52), nearly identical to AI Engineer (Application) $200-275K [T0-03 6.1.2]; ceiling evidence is C: OpenAI GPU-infrastructure base ranges $230-490K [T0-17:182]."
+      },
+      "durability": {
+        "lo": 6.0,
+        "mid": 7.5,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement. Physical fleets, networking and reliability; distributed-systems minimum in top-band JDs [T0-03 J1]."
+      },
+      "leverage": {
+        "lo": 7.5,
+        "mid": 8.5,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Capacity, uptime and cost of the GPU estate (8.5-9 anchor: large cost line)."
+      },
+      "persona_access": {
+        "backend": 7,
+        "data_scientist": 2.5,
+        "frontend": 2.5,
+        "non_technical": 1,
+        "phd": 3.5
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3.5,
+          "hi": 5,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 5,
+          "mid": 6.5,
+          "hi": 8,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ml-platform-engineer",
+      "name": "ML Platform / MLOps Engineer",
+      "family": "AI Infrastructure & Platform",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4.5,
+        "mid": 5.5,
+        "hi": 7,
+        "grade": "D",
+        "basis": "No posting count: 'probable, count missing' [T0-01 D2 row 8]; India GCC AI/MLOps/platform supply gap 18-43% (Quess, C) [T0-01 F10]; 10 base-disclosing MLOps postings in S09 [T0-03:229]."
+      },
+      "comp": {
+        "lo": 5.75,
+        "mid": 6.75,
+        "hi": 7.75,
+        "grade": "C",
+        "basis": "MLOps/ML Platform posted base $186-277K (n=10, small) [T0-03:229], in line with AI Engineer; Bengaluru MLOps P50 Rs23.6L, P90 Rs63.5L (C) [T0-02:147]."
+      },
+      "durability": {
+        "lo": 5.0,
+        "mid": 6.5,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Platform need persists; LLMOps absorbed; fast tool churn (TGI archived, Triton renamed Dynamo Triton) [T0-03 KF6]."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 7,
+        "data_scientist": 5,
+        "frontend": 4,
+        "non_technical": 1.5,
+        "phd": 4
+      },
+      "india": {
+        "demand": {
+          "lo": 5,
+          "mid": 6.5,
+          "hi": 8,
+          "grade": "C",
+          "basis": "MLOps Engineer is a common GCC AI title (Taggd, C); 18-43% supply gap in AI/MLOps/platform clusters [T0-01 D8, F10]."
+        },
+        "comp": {
+          "lo": 4.5,
+          "mid": 5.5,
+          "hi": 6.5,
+          "grade": "C",
+          "basis": "Bengaluru MLOps P50 Rs23.6L, P75 Rs41.1L, P90 Rs63.5L [T0-02:147]."
+        }
+      }
+    },
+    {
+      "id": "ai-evaluation-engineer",
+      "name": "AI Evaluation Engineer",
+      "family": "Evaluation, Safety & Security",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 3,
+        "mid": 4,
+        "hi": 5,
+        "grade": "C",
+        "basis": "Rise 'LLM evaluation' 26 (keyword) [T0-01 D2 row 14]; named postings at Haparz, Backbase (Hyderabad), deeprec, Artificial Analysis, FurtherAI [T0-03 J12, T0-09:421-422, T0-05:326]. As a skill, evals appear in 19.0% of S09 postings (68.2% of companies) and 59.7% of AI-first roles [T0-03 6.3, T0-13:94]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Pay premium for pure eval roles unverified [T0-03:L556, L583]. No pay data in corpus. Default prior: 6.5, the low end of the measured AI-engineering family pay scores (6.5-7), with a wide range."
+      },
+      "durability": {
+        "lo": 5.0,
+        "mid": 6.5,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Adoption gap (52.4% offline / 37.3% online evals among agent teams) [T0-03 KF4] vs risk that evals stay a skill inside AI Engineer."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Release gating and quality."
+      },
+      "persona_access": {
+        "backend": 7,
+        "data_scientist": 8,
+        "frontend": 6.5,
+        "non_technical": 3,
+        "phd": 7.5
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3,
+          "hi": 4.5,
+          "grade": "C",
+          "basis": "Backbase Principal AI Evaluation Engineer, Hyderabad [T0-09:422]."
+        },
+        "comp": {
+          "lo": 4,
+          "mid": 5.5,
+          "hi": 7,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-security-engineer",
+      "name": "AI Security Engineer / AI Red Teamer",
+      "family": "Evaluation, Safety & Security",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 2,
+        "mid": 3,
+        "hi": 4.5,
+        "grade": "C",
+        "basis": "~23 'AI Security Specialist' postings in 90 days (Skillenai; derived from 13.0% = 3 MCP mentions) [T0-16:393], i.e. about band 3 live. The AI share of 2,827 generic US Security Engineer postings is unmeasured and not used (rule 7)."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 8,
+        "grade": "D",
+        "basis": "No pay data in corpus. Default prior: 6.5, the low end of the measured AI-engineering family pay scores (6.5-7), with a wide range."
+      },
+      "durability": {
+        "lo": 6.0,
+        "mid": 7.5,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement. Adversarial and growing surface: CVSS 9.8 serving-engine CVEs, MCP CVEs, Braintrust key breach, OWASP LLM/Agentic Top 10 [T0-03 KF12, T0-16 8, T0-14 6.8]."
+      },
+      "leverage": {
+        "lo": 7.0,
+        "mid": 8,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 5.5,
+        "data_scientist": 3,
+        "frontend": 3.5,
+        "non_technical": 2,
+        "phd": 4
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3,
+          "hi": 4.5,
+          "grade": "D",
+          "basis": "Generic Security Engineer India 239 live (2026-11-02); AI share unknown."
+        },
+        "comp": {
+          "lo": 4.5,
+          "mid": 6,
+          "hi": 7,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "responsible-ai-engineer",
+      "name": "Responsible AI / AI Governance Engineer",
+      "family": "Evaluation, Safety & Security",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 2,
+        "mid": 3,
+        "hi": 4,
+        "grade": "C",
+        "basis": "Thin technical niche: Stryker, Beacon Hill, Cognizant, Infosys, Workday postings; 'expect few openings' [T0-15:110, 123, 303-314]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6,
+        "hi": 7,
+        "grade": "C",
+        "basis": "Stryker AI Governance Engineer $112.8-239.9K; Beacon Hill $75-85/hr (C) [T0-15:303-304]; IAPP tech-sector technical AI governance median $221K (B) [T0-15:398]. Weakest input C."
+      },
+      "durability": {
+        "lo": 4.5,
+        "mid": 6,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement. Regulation-driven (EU AI Act Annex III from 2 Dec 2027) with reversal risk [T0-15:72, 232]."
+      },
+      "leverage": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 5.5,
+        "data_scientist": 6,
+        "frontend": 3.5,
+        "non_technical": 3,
+        "phd": 5.5
+      },
+      "india": {
+        "demand": {
+          "lo": 2.5,
+          "mid": 3.5,
+          "hi": 4.5,
+          "grade": "C",
+          "basis": "Cognizant Responsible AI Engineer (Chennai); Infosys Sr. Responsible AI Analyst (Bengaluru, fresher, closed) [T0-15:306-307]."
+        },
+        "comp": {
+          "lo": 3.5,
+          "mid": 4.5,
+          "hi": 6,
+          "grade": "D",
+          "basis": "T0-15 deliberately did not use unsourced INR ranges [T0-15:469]."
+        }
+      }
+    },
+    {
+      "id": "research-engineer",
+      "name": "Research Engineer / Member of Technical Staff",
+      "family": "Research",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4.5,
+        "mid": 5.5,
+        "hi": 7,
+        "grade": "C",
+        "basis": "Live count unmeasured [T0-01 D2 row 11]. 2025 LCA filings: OpenAI MTS-Research Engineer 84, MTS-SWE 107, MTS-AI Systems 67 positions; Anthropic Research Engineer 63, MTS 223 [T0-02:303-316]. Filings are not live postings."
+      },
+      "comp": {
+        "lo": 8,
+        "mid": 9,
+        "hi": 10,
+        "grade": "B",
+        "basis": "OpenAI SWE/MTS TC median $875K (n=242); Anthropic $882.5K (n=49) [T0-02:73]; OpenAI MTS-RE LCA base median $335K [T0-02:310]; stock is 49-72% of senior lab packages (OpenAI L4-L5 59-60%, Anthropic Senior 49%, Lead/Staff 61-72%) [T0-02:561]; risk-adjust 0.5-0.8x [T0-17 R3]."
+      },
+      "durability": {
+        "lo": 6.0,
+        "mid": 7.5,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement. Frontier skills (distributed training, post-training/RL infra) [T0-03 6.4 Tier 3]."
+      },
+      "leverage": {
+        "lo": 7.0,
+        "mid": 8,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 3,
+        "data_scientist": 3,
+        "frontend": 2,
+        "non_technical": 1,
+        "phd": 7.5
+      },
+      "india": {
+        "demand": {
+          "lo": 1,
+          "mid": 2,
+          "hi": 3,
+          "grade": "D",
+          "basis": "Frontier-lab research hiring is US/UK-concentrated; Research Scientist postings are 3.7% India (JobsPipe JD)."
+        },
+        "comp": {
+          "lo": 6,
+          "mid": 8,
+          "hi": 9.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "research-scientist",
+      "name": "Research Scientist (AI/ML)",
+      "family": "Research",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4,
+        "mid": 5,
+        "hi": 6.5,
+        "grade": "C",
+        "basis": "AI-specific count unmeasured; OpenAI MTS-Research Scientist 68 LCA positions (2025) [T0-02:312]; JobsPipe research-scientist JD (all fields): LLM in 24.4%, RL 17.1%, US 65% (2026-11-02)."
+      },
+      "comp": {
+        "lo": 8.5,
+        "mid": 9.5,
+        "hi": 10,
+        "grade": "B",
+        "basis": "OpenAI Research Scientist TC ~$1.25M (cached, B); Anthropic $0.75-0.83M (C) [T0-02:73]; Pave AI research scientist median new-hire equity $4.09M (P6) / $4.72M (M6) (A) [T0-02:75]."
+      },
+      "durability": {
+        "lo": 6.5,
+        "mid": 8,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Research taste and novel methods."
+      },
+      "leverage": {
+        "lo": 6.5,
+        "mid": 7.5,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Long-horizon capability gains."
+      },
+      "persona_access": {
+        "backend": 1,
+        "data_scientist": 1.5,
+        "frontend": 1,
+        "non_technical": 1,
+        "phd": 4
+      },
+      "india": {
+        "demand": {
+          "lo": 1.5,
+          "mid": 2.5,
+          "hi": 3.5,
+          "grade": "C",
+          "basis": "India 3.7% of Research Scientist postings vs US 65.0% (JobsPipe JD, all fields, 2026-11-02); scope mismatch (not AI-specific), so Grade C."
+        },
+        "comp": {
+          "lo": 6.5,
+          "mid": 8.5,
+          "hi": 9.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-safety-researcher",
+      "name": "Frontier AI Safety / Alignment Researcher",
+      "family": "Research",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 2,
+        "mid": 3,
+        "hi": 4,
+        "grade": "C",
+        "basis": "~600 technical FTEs across 67 organisations (single-author 2025 estimate), growing ~21% a year [T0-15:122, 380]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 7.5,
+        "hi": 10,
+        "grade": "D",
+        "basis": "No pay or volume figures for this market [T0-15:380]; lab-employed researchers sit on RS/RE ladders, many organisations are non-profits."
+      },
+      "durability": {
+        "lo": 6.5,
+        "mid": 8,
+        "hi": 9.5,
+        "grade": "D",
+        "basis": "Judgement. Growing research field."
+      },
+      "leverage": {
+        "lo": 6.0,
+        "mid": 7,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 2,
+        "data_scientist": 2,
+        "frontend": 1.5,
+        "non_technical": 1.5,
+        "phd": 4.5
+      },
+      "india": {
+        "demand": {
+          "lo": 1,
+          "mid": 1,
+          "hi": 2,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 3,
+          "mid": 5,
+          "hi": 8,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-governance-lead",
+      "name": "AI Governance Programme Lead / Manager",
+      "family": "Governance, Risk & Assurance",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4.5,
+        "mid": 5.5,
+        "hi": 6.5,
+        "grade": "C",
+        "basis": "Axial: 1,997 US AI-governance postings Jan-Sep 2026 (~2,700/yr; ~51/week by arithmetic, while Axial quotes ~71) [T0-15:91]; programme-owner class is 6 of 13 sampled JDs; 56% at 10,000+ staff firms; 73% senior+ [T0-15:110, 152, 260]."
+      },
+      "comp": {
+        "lo": 4.5,
+        "mid": 5.5,
+        "hi": 6.5,
+        "grade": "B",
+        "basis": "Axial median $169K; Axial reports top-of-range figures, so typical offers are lower (C) [T0-15:162]; IAPP medians $151.8K (AI governance only), $169.7K (with privacy) (B) [T0-15:130]; manager $244K, director $268K (tops of ranges) [T0-15:417]."
+      },
+      "durability": {
+        "lo": 5.0,
+        "mid": 6.5,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Driven by sector regulators and the EU AI Act; dates moved once; NIST AI RMF voluntary [T0-15:138]."
+      },
+      "leverage": {
+        "lo": 6.0,
+        "mid": 7,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement. Regulatory exposure (e.g., EU AI Act Art. 101 fines for GPAI providers of up to EUR 15m or 3%) [T0-15:233]."
+      },
+      "persona_access": {
+        "backend": 2.5,
+        "data_scientist": 3,
+        "frontend": 2,
+        "non_technical": 6,
+        "phd": 3
+      },
+      "india": {
+        "demand": {
+          "lo": 2.5,
+          "mid": 3.5,
+          "hi": 5,
+          "grade": "C",
+          "basis": "Alstom (Bangalore), Eaton (Pune), EXL JDs; no India count [T0-15:95, 300-302]."
+        },
+        "comp": {
+          "lo": 3.5,
+          "mid": 5,
+          "hi": 6.5,
+          "grade": "D",
+          "basis": "T0-15 did not use unsourced INR ranges [T0-15:469]."
+        }
+      }
+    },
+    {
+      "id": "ai-risk-assurance-specialist",
+      "name": "AI Risk, Audit & Compliance Specialist",
+      "family": "Governance, Risk & Assurance",
+      "track": "ic",
+      "status": "A",
+      "demand": {
+        "lo": 3.5,
+        "mid": 4.5,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "Specialisations inside audit, model-risk and privacy teams [T0-15:153-155]; Deloitte AI Risk & Validation listing seen 16 times; 41 of 50 large banks had dedicated AI-governance staff at end-2024, with 247 responsible-AI staff across all 50 (~4.9 per bank); NYC LL144: 18 of 391 employers posted an audit [T0-15:103, 114, 315]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6,
+        "hi": 7,
+        "grade": "C",
+        "basis": "Deloitte Mgr/Sr Mgr AI Risk & Validation $171.6-338.3K (posted range, C) [T0-15:315]."
+      },
+      "durability": {
+        "lo": 4.5,
+        "mid": 6,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement. Enforcement-dependent; SR 26-2 excludes generative and agentic AI [T0-15:355]."
+      },
+      "leverage": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 2,
+        "data_scientist": 4,
+        "frontend": 1.5,
+        "non_technical": 5,
+        "phd": 3
+      },
+      "india": {
+        "demand": {
+          "lo": 2,
+          "mid": 3,
+          "hi": 4,
+          "grade": "C",
+          "basis": "DPO/privacy demand expected to lead in India; DPDP main obligations 13 May 2027 [T0-15:142]."
+        },
+        "comp": {
+          "lo": 3.5,
+          "mid": 5,
+          "hi": 6.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-product-manager",
+      "name": "AI Product Manager",
+      "family": "Product & Program",
+      "track": "ic",
+      "status": "V",
+      "demand": {
+        "lo": 4.5,
+        "mid": 6,
+        "hi": 8,
+        "grade": "D",
+        "basis": "No AI-PM title count in the corpus. Upper bound only: JobsPipe Product Manager US 6,289 live (2026-11-02); 'artificial-intelligence' named in 15.4% and 'agentic-ai' in 13.6% of PM postings, i.e. ≥~970 (≤~1,820) AI-mentioning PM postings. These are keyword shares, not titles (rule 7). PM = 8.0% of 1,747 MCP postings [T0-16:392]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 8,
+        "grade": "D",
+        "basis": "No AI-PM pay data in corpus. Default prior: 6.5, the low end of the measured AI-engineering family pay scores (6.5-7), with a wide range."
+      },
+      "durability": {
+        "lo": 4.5,
+        "mid": 6,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement. Product judgement for probabilistic systems."
+      },
+      "leverage": {
+        "lo": 7.0,
+        "mid": 8,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement. Decides what gets built and how it is measured."
+      },
+      "persona_access": {
+        "backend": 4,
+        "data_scientist": 4.5,
+        "frontend": 4,
+        "non_technical": 6.5,
+        "phd": 3.5
+      },
+      "india": {
+        "demand": {
+          "lo": 4,
+          "mid": 5.5,
+          "hi": 7,
+          "grade": "D",
+          "basis": "JobsPipe Product Manager India 719 live (2026-11-02); AI-mention share assumed as US (≥15.4%, ~110) as an upper bound; no AI-PM title count."
+        },
+        "comp": {
+          "lo": 5,
+          "mid": 6.5,
+          "hi": 8,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "domain-evaluation-specialist",
+      "name": "Domain Evaluation Specialist / AI Trainer",
+      "family": "Human Data & Evaluation Operations",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 3.5,
+        "mid": 5.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "LinkedIn Jobs on the Rise: data annotators #4 (C) [T0-06:174]; Mercor >30,000 experts on contract (C/D) [T0-06:177]; marketplace demand not measured as postings."
+      },
+      "comp": {
+        "lo": 2,
+        "mid": 3.5,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "Mercor ~$85+/hr, ~$110/hr average (Bloomberg relay); ~$120/hr (SWE) to $400/hr (civil-rights attorneys); >=10 h/week at-will contracts [T0-06:177]."
+      },
+      "durability": {
+        "lo": 2.0,
+        "mid": 3.5,
+        "hi": 5.0,
+        "grade": "D",
+        "basis": "Judgement. 'A bridge, not a destination' [T0-06:273, 650]."
+      },
+      "leverage": {
+        "lo": 4.0,
+        "mid": 5,
+        "hi": 6.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 4,
+        "data_scientist": 5,
+        "frontend": 3,
+        "non_technical": 7,
+        "phd": 7
+      },
+      "india": {
+        "demand": {
+          "lo": 3,
+          "mid": 5,
+          "hi": 7,
+          "grade": "D",
+          "basis": "Remote contract marketplaces; India-specific volume unknown."
+        },
+        "comp": {
+          "lo": 2.5,
+          "mid": 4,
+          "hi": 6,
+          "grade": "D",
+          "basis": "USD contract rates if accessible; unknown."
+        }
+      }
+    },
+    {
+      "id": "physical-ai-engineer",
+      "name": "Physical AI / Robotics AI Engineer",
+      "family": "Embodied & Physical AI",
+      "track": "ic",
+      "status": "W",
+      "demand": {
+        "lo": 3,
+        "mid": 4.5,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "8 of the newest 50 AI-Engineer rows were Figure AI 'Helix AI Engineer' (~50 of 326 if representative = band 5) [T0-01 F2]; minus 0.5 for single-employer concentration (D5 breadth test). JobsPipe US sample includes 'Physical AI Engineer'."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 6.5,
+        "hi": 8,
+        "grade": "D",
+        "basis": "No pay data in corpus. Default prior: 6.5, the low end of the measured AI-engineering family pay scores (6.5-7), with a wide range."
+      },
+      "durability": {
+        "lo": 5.5,
+        "mid": 7,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement. Physical-world systems."
+      },
+      "leverage": {
+        "lo": 6.0,
+        "mid": 7,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "persona_access": {
+        "backend": 3.5,
+        "data_scientist": 3,
+        "frontend": 2,
+        "non_technical": 1,
+        "phd": 5
+      },
+      "india": {
+        "demand": {
+          "lo": 1,
+          "mid": 2,
+          "hi": 3,
+          "grade": "D",
+          "basis": "No India evidence."
+        },
+        "comp": {
+          "lo": 3.5,
+          "mid": 5,
+          "hi": 6.5,
+          "grade": "D",
+          "basis": "No India evidence."
+        }
+      }
+    },
+    {
+      "id": "ai-engineering-manager",
+      "name": "AI Engineering Manager / Director of AI Engineering",
+      "family": "Leadership & Executive",
+      "track": "leadership",
+      "status": "V",
+      "demand": {
+        "lo": 3.5,
+        "mid": 5,
+        "hi": 6.5,
+        "grade": "D",
+        "basis": "'Lead or manager' labels on 5.6% of AI Engineer and 9.2% of MLE postings (JobsPipe JD) mix IC leads with managers; Head/Director/Manager of AI Engineering posts at Teradata, Front, Harrington Starr [T0-01 D3]."
+      },
+      "comp": {
+        "lo": 6,
+        "mid": 7,
+        "hi": 9,
+        "grade": "D",
+        "basis": "One top-of-market data point: Anthropic 'MTS (Manager)' LCA base median $405K [T0-02:303]; T0-02 rejects LCA wages as an anchor [T0-02:106]; no broad EM pay in corpus."
+      },
+      "durability": {
+        "lo": 5.5,
+        "mid": 7,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "leverage": {
+        "lo": 7.0,
+        "mid": 8,
+        "hi": 9.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "access": {
+        "lo": 3,
+        "mid": 4,
+        "hi": 5,
+        "grade": "D",
+        "basis": "Needs a lead/manager track record; AI engineers move into management in under 3 years (C) [T0-17:126]."
+      }
+    },
+    {
+      "id": "vp-head-of-ai",
+      "name": "VP / Head of AI",
+      "family": "Leadership & Executive",
+      "track": "leadership",
+      "status": "V",
+      "demand": {
+        "lo": 2,
+        "mid": 3,
+        "hi": 4,
+        "grade": "D",
+        "basis": "No count in corpus."
+      },
+      "comp": {
+        "lo": 7.5,
+        "mid": 9,
+        "hi": 10,
+        "grade": "D",
+        "basis": "No pay data in corpus (Radford 'Head of AI' family is paywalled) [T0-02:491]. Unanchored judgement: no proxy."
+      },
+      "durability": {
+        "lo": 5.5,
+        "mid": 7,
+        "hi": 8.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "leverage": {
+        "lo": 8.0,
+        "mid": 9,
+        "hi": 10,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "access": {
+        "lo": 1,
+        "mid": 2,
+        "hi": 3,
+        "grade": "D",
+        "basis": "Multi-year leadership track record."
+      }
+    },
+    {
+      "id": "chief-ai-officer",
+      "name": "Chief AI Officer (CAIO)",
+      "family": "Leadership & Executive",
+      "track": "leadership",
+      "status": "V",
+      "demand": {
+        "lo": 1.5,
+        "mid": 2.5,
+        "hi": 3.5,
+        "grade": "C",
+        "basis": "OMB M-25-21 requires a CAIO at US federal agencies (B) [T0-15:357]; '76% of firms report a CAIO' (IBM via secondary, C) [T0-01 F12]."
+      },
+      "comp": {
+        "lo": 5,
+        "mid": 8.5,
+        "hi": 10,
+        "grade": "D",
+        "basis": "No pay data in corpus; corporate and US-federal CAIO pay differ widely, so the range is wide. Unanchored judgement: no proxy."
+      },
+      "durability": {
+        "lo": 4.0,
+        "mid": 5.5,
+        "hi": 7.0,
+        "grade": "D",
+        "basis": "Judgement. May be transitional; fractional CAIO demand 'falling sharply' [T0-18:193-194]."
+      },
+      "leverage": {
+        "lo": 8.0,
+        "mid": 9,
+        "hi": 10,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "access": {
+        "lo": 0.5,
+        "mid": 1.5,
+        "hi": 2.5,
+        "grade": "D",
+        "basis": "Executive track record."
+      }
+    },
+    {
+      "id": "fractional-ai-leader",
+      "name": "Fractional Head of AI / Fractional CAIO",
+      "family": "Independent & Fractional",
+      "track": "leadership",
+      "status": "V",
+      "demand": {
+        "lo": 1.5,
+        "mid": 2.5,
+        "hi": 3.5,
+        "grade": "C",
+        "basis": "Go Fractional: CAIO 6 then 10 posts in 90 days (label 'falling sharply') vs 326 profiles; Fractional CTO 19 then 17 posts (labels 'rising sharply', then 'rising') vs 1,042-1,116 profiles [T0-18:52, 193-196]. T0-18 rates this demand evidence 'conflicting' [T0-18:1261]."
+      },
+      "comp": {
+        "lo": 3,
+        "mid": 4,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "Asks $150-250/hr; offers 0.59-0.91x asks; retainers ~$8-13K/month for 10-13 h/week; modelled US net P50 $105K, P90 $160K for practitioners with traction (model, D) [T0-18:82-89, 116]. Contract/hourly income maps to the 3-4 anchor."
+      },
+      "durability": {
+        "lo": 3,
+        "mid": 4.5,
+        "hi": 6,
+        "grade": "D",
+        "basis": "Judgement. UK GenAI contract median fell from GBP613-625 (2024) to GBP550 (2025-26); T0-18 models that a 30% cut in delivery hours needs a 43% higher hourly rate to hold revenue [T0-18:95, 119, 148]."
+      },
+      "leverage": {
+        "lo": 6.0,
+        "mid": 7,
+        "hi": 8.0,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "access": {
+        "lo": 1,
+        "mid": 2,
+        "hi": 3,
+        "grade": "C",
+        "basis": "Fractional Jobs survey respondents (n=1,733, all functions, incl. past and aspiring fractionals): 87% have 11+ years; 83% Director-level or above [T0-18:1406]."
+      }
+    },
+    {
+      "id": "independent-ai-consultant",
+      "name": "Independent AI Consultant / Contractor",
+      "family": "Independent & Fractional",
+      "track": "leadership",
+      "status": "V",
+      "demand": {
+        "lo": 2.5,
+        "mid": 4,
+        "hi": 5.5,
+        "grade": "D",
+        "basis": "Network-driven: 92% find clients through networks [T0-18:104]; no posting count."
+      },
+      "comp": {
+        "lo": 3,
+        "mid": 4,
+        "hi": 5.5,
+        "grade": "C",
+        "basis": "US asks $150-250/hr; senior AI contractor cards cluster at $130-235/hr, '$300+ is marketing'; UK median GBP550/day; India-based seniors quoted $50-100/hr; modelled net P50 US $105K, India $53K for practitioners with traction (model) [T0-18:82-116]. Contract/hourly income maps to the 3-4 anchor."
+      },
+      "durability": {
+        "lo": 3.5,
+        "mid": 5,
+        "hi": 6.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "leverage": {
+        "lo": 5.5,
+        "mid": 6.5,
+        "hi": 7.5,
+        "grade": "D",
+        "basis": "Judgement."
+      },
+      "access": {
+        "lo": 2,
+        "mid": 3,
+        "hi": 4,
+        "grade": "C",
+        "basis": "5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]."
+      }
+    }
+  ]
+}

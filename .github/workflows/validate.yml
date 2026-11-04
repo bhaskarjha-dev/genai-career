@@ -1,0 +1,21 @@
+# Runs the repository validator on every push and pull request.
+# It checks links, anchors, tables, front matter, every generated output (each generator's --check),
+# cross-file ranks and corpus coverage. Standard-library Python only; no dependencies to install.
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate documents and generated outputs
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 scripts/validate_docs.py

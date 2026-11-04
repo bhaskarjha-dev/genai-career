@@ -1,0 +1,23 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "frontmatter.schema.json",
+ "title": "Front matter of a repository document",
+ "description": "YAML front matter carried by every document under career/ and by the research index pages (FAD §13.3, adapted by D-013, amended by D-014). Validated by scripts/validate_docs.py; read by scripts/build_manifest.py to generate llms.txt and data/manifest.json.",
+ "type": "object",
+ "required": ["id", "title", "content_type", "stage", "status", "last_verified", "summary"],
+ "additionalProperties": false,
+ "properties": {
+  "id": {"type": "string", "pattern": "^[a-z0-9]+([.-][a-z0-9]+)*$"},
+  "title": {"type": "string", "minLength": 3},
+  "content_type": {"enum": ["index", "guide", "reference", "method"]},
+  "stage": {"type": "integer", "minimum": 0, "maximum": 12},
+  "status": {"enum": ["planned", "draft", "published", "stale"]},
+  "last_verified": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "summary": {"type": "string", "minLength": 20, "maxLength": 320},
+  "sources": {"type": "array", "items": {"type": "string", "pattern": "^T[0-9]-\\d\\d$"}},
+  "roles": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}},
+  "geos": {"type": "array", "items": {"type": "string"}},
+  "tags": {"type": "array", "items": {"type": "string"}},
+  "generated_by": {"type": "string"}
+ }
+}

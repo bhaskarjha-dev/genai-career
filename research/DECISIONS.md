@@ -4,6 +4,7 @@
 > **Registry Status:** 12/12 decisions locked and accepted · **Sealed:** 2026-10-25
 > **Human Review:** Completed 2026-10-25 · **Next Scheduled Review:** 2027-01-31
 > **Canonical Tier Boundaries:** See FAD.md §4.1 — all tier figures in this file are sourced from the sealed FAD.
+> **Update (2026-11-04):** D-013 (architecture v2) and D-014 (versioning policy) were appended. Known errors in Phase 0 records are listed in [ERRATA.md](ERRATA.md).
 
 ---
 
@@ -807,5 +808,132 @@ The protocol also establishes 7 TTL classes (14 / 31 / 90 / 180 / 365 / 1095 day
 
 > Fill this section ONLY during scheduled review or when the review_trigger fires.
 <!-- /DECISION: D-012 -->
+
+---
+
+<!-- DECISION: D-013 -->
+---
+id: D-013
+title: "Repository Architecture v2: Layered Content Model on the Lifecycle Spine"
+status: accepted
+door_type: two-way
+date: 2026-11-04
+confidence: medium
+evidence_refs: [T1-01-KF1, T1-01-KF2, T1-01-KF8, T1-01-KF12, T1-02-KF1]
+informed_by_sessions: [T1-01, T1-02, T0-10]
+supersedes: null
+superseded_by: null
+amends: D-001
+review_trigger: "Content exceeds 300 files, or a static-site build is adopted"
+review_date: 2027-05-04
+prediction: "A stage spine for guidance, reference placed in its stage, one machine-readable data layer and generated indexes will let both people and AI agents reach any answer within two clicks of README.md, with one source of truth per fact."
+tags: [architecture, information-design, ai-readability, maintenance]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: false
+schema_version: "0.1.0"
+---
+
+# D-013: Repository Architecture v2
+
+## Context
+
+Phase 0 planned the content tree (FAD §15). Before Phase 1 began, the repository gained reference catalogs, a skills ontology, resume guidance and a job-search strategy as separate root-level files in `career/`, and the 22 sessions remained usable only by reading them whole. The owner asked for a structure that serves both humans and AI agents: accurate, traversable and easy to question.
+
+## Decision
+
+1. **Five content layers plus meta:**
+   - evidence: the sessions, kept immutable;
+   - knowledge: findings and claims distilled from the sessions;
+   - reference: catalogs and datasets;
+   - guidance: stage guides and tracks;
+   - tools: templates and workbooks.
+2. **Placement:**
+   - user-facing content lives on the D-001 lifecycle spine (`career/01-landscape/` … `career/11-tracks/`), and reference material sits in the stage where it is used (T1-01 KF12);
+   - machine-readable sources of truth and schemas live in a root `data/` folder;
+   - generated files declare their generator, and every generator has `--update` and `--check`.
+3. **Navigation:**
+   - every folder has a `README.md` index;
+   - `career/README.md` is the Start Here page;
+   - the root README is the human entry point.
+4. **Metadata:** every `career/` document carries YAML front matter, the FAD §13.3 schema adapted (`data/schemas/frontmatter.schema.json`).
+5. **AI affordances:** `AGENTS.md` (rules for agents), `llms.txt` and `data/manifest.json` (both generated from front matter), and a findings registry (`data/findings.json`, `research/findings.md`) that closes FAD gap A2.
+6. **Corrections:** errors in Phase 0 records go to `research/ERRATA.md`; sealed records get status notes, not rewrites.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Layer-first folders (knowledge/, reference/, guides/):** rejected. A reader would have to know the content type before finding the topic. The lifecycle spine matches how people search.
+- **A catch-all catalogs/ folder:** rejected. It separates reference from its point of use (T1-01 KF12).
+- **`_index.md` files (FAD §15):** replaced by `README.md`, which GitHub renders when you browse a folder.
+
+## Failure Modes & Reversal Triggers
+
+- If stage folders stay mostly empty for more than two quarters, consolidate them.
+- If front matter is not maintained, so that `last_verified` dates go stale, enforce the expiry scan in CI.
+- Review on 2027-05-04, or earlier if a static-site build is adopted.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-013 -->
+
+---
+
+<!-- DECISION: D-014 -->
+---
+id: D-014
+title: "Repository & Document Versioning Policy: Git SemVer Releases, No Per-Page Versions"
+status: accepted
+door_type: two-way
+date: 2026-11-04
+confidence: high
+evidence_refs: [T1-01-KF1, T1-02-KF1]
+informed_by_sessions: [T1-01, T1-02]
+supersedes: null
+superseded_by: null
+amends: D-013
+review_trigger: "Content reaches v1.0.0 milestone"
+review_date: 2027-05-04
+prediction: "Tracking releases via repository-level Git SemVer tags and CHANGELOG.md while tracking document freshness via last_verified and status will eliminate meaningless per-page version drift and manual incrementation."
+tags: [governance, versioning, semver, maintenance]
+authored_by: "Antigravity (LLM assistant), at the owner's request"
+human_reviewed: false
+schema_version: "0.1.0"
+---
+
+# D-014: Repository & Document Versioning Policy
+
+## Context
+
+Phase 1 initially assigned ad-hoc version strings to individual documents (e.g. 2.2, 2.1, 1.2, 1.0.1). This created phantom version inflation and required manual per-page version bumping that conveyed no actionable information beyond what Git history, `last_verified`, and `CHANGELOG.md` already provide. Furthermore, methods were numbered ("CCI v2"), implying previous public versions that do not exist in the clean repository.
+
+## Decision
+
+1. **Repository-Level Releases:**
+   - The repository adheres to Semantic Versioning (SemVer 2.0.0) tracked via Git tags (`v0.1.0`, `v0.2.0`, etc.) and documented in `CHANGELOG.md` (Keep a Changelog 1.1.0).
+   - Initial foundation release is `v0.1.0`.
+2. **Document Front Matter:**
+   - Individual documents under `career/` and research index pages do not carry a `version` field in their YAML front matter.
+   - Freshness and lifecycle are tracked per document by `last_verified` (ISO date) and `status` (`planned`, `draft`, `published`, `stale`).
+3. **Data File Formats:**
+   - Machine-readable files in `data/` declare a format schema identifier (e.g. `schema: "role-scores/1.0"`, `schema: "skills-ontology/1.0"`, `schema: "manifest/1.0"`).
+   - The major number is bumped only when a breaking schema change occurs.
+4. **Methodology Naming:**
+   - Methodologies and analytical tools are named, not version-numbered (e.g. the "Composite Career Index (CCI)").
+5. **Sealed Research & Errata:**
+   - Sealed Phase 0 research records remain unchanged. Errors are documented in `research/ERRATA.md`.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Per-page SemVer numbers (`version: "0.1.0"` on 52 pages):** rejected. Documentation is a cohesive corpus, not 52 standalone libraries. Per-page numbers drift and require arbitrary manual bumping on every typo fix.
+- **Date-based CalVer for repository releases:** rejected. AI agents and scripts rely on machine-readable schemas and stable file paths, making breaking vs backwards-compatible distinction meaningful.
+
+## Failure Modes & Reversal Triggers
+
+- If external consumers require formal per-document specification versioning (e.g. for formal standard compliance), re-evaluate.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-014 -->
 
 ---

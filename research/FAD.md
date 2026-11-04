@@ -18,6 +18,12 @@ author_disclosure: "Compiled by an LLM assistant (Gemini, Google DeepMind). All 
 
 > **Classification:** Phase 0 Capstone Synthesis · **Seal Date:** 2026-10-25 · **Status:** Sealed  
 > **Sessions Ingested:** 22/22 (T0-01 through T0-18, T1-01 through T1-03, T2-01) · **Decisions Locked:** 12/12
+>
+> **Status note (2026-11-04):** this sealed Phase 0 record is kept as written, but parts of it are superseded:
+> - the role taxonomy (§5) by [career/02-roles/role-catalog.md](../career/02-roles/role-catalog.md);
+> - the project structure (§15) and the roadmap (§18) by decision D-013 in [DECISIONS.md](DECISIONS.md) and by [ROADMAP.md](../ROADMAP.md).
+>
+> Known errors in this file are listed in [ERRATA.md](ERRATA.md).
 
 ---
 

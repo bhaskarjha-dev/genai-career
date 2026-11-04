@@ -1,0 +1,3192 @@
+{
+ "schema": "findings/1.0",
+ "description": "Key findings of the research sessions, extracted by scripts/build_findings.py",
+ "sessions": {
+  "T0-01": {
+   "file": "T0-01-genai-role-taxonomy-market-volume.md",
+   "title": "GenAI role taxonomy and live market volume: which titles clear a 50-posting quorum (Oct 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  "T0-02": {
+   "file": "T0-02-global-regional-compensation-benchmarks.md",
+   "title": "Global & Regional Compensation Benchmarks for GenAI Roles — US, Europe, India, GCC, Singapore, Remote (October 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  "T0-03": {
+   "file": "T0-03-skills-compute-infra-eval-stack.md",
+   "title": "Skills, Compute Frameworks & Evaluation Tooling: What Separates Commoditized GenAI App Developers from High-Earning Production Engineers (October 2026)",
+   "date": "2026-10-24",
+   "findings": 14,
+   "stages": [
+    3
+   ]
+  },
+  "T0-04": {
+   "file": "T0-04-ats-filtering-funnel-conversion-math.md",
+   "title": "ATS parsing, AI screening layers and cold-inbound funnel math for GenAI engineering resumes (October 2026)",
+   "date": "2026-10-23",
+   "findings": 12,
+   "stages": [
+    6
+   ]
+  },
+  "T0-05": {
+   "file": "T0-05-unconventional-hiring-tactics-oss-audits.md",
+   "title": "Unconventional hiring tactics for GenAI roles, late 2026: OSS contributions, public micro-audits, targeted outreach",
+   "date": "2026-10-23",
+   "findings": 12,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  "T0-06": {
+   "file": "T0-06-career-transition-timelines-5-backgrounds.md",
+   "title": "Career Transition Timelines, Skill Deltas and Quarterly Roadmaps: Five Starting Backgrounds into GenAI (Oct 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    11
+   ]
+  },
+  "T0-07": {
+   "file": "T0-07-india-remote-tax-statutory-compliance.md",
+   "title": "India-based software/AI engineers paid directly by US/EU/UK clients: optimal legal, statutory and tax structure (position as at 21 October 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  "T0-08": {
+   "file": "T0-08-global-talent-visa-relocation-pathways.md",
+   "title": "Global talent-visa relocation pathways for Indian AI engineers: evidentiary and policy audit (October 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  "T0-09": {
+   "file": "T0-09-onboarding-probation-first-90-days.md",
+   "title": "GenAI engineer first 90 days (2026): the expectations gap, probation rubrics and a 30-60-90 operating playbook",
+   "date": "2026-10-23",
+   "findings": 12,
+   "stages": [
+    10
+   ]
+  },
+  "T0-10": {
+   "file": "T0-10-career-tooling-ecosystem-12-stage-funnel.md",
+   "title": "Career Tooling Ecosystem Audit: Evidence-Graded Map of the 12-Stage Career Funnel (October 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    0
+   ]
+  },
+  "T0-11": {
+   "file": "T0-11-certification-cloud-credential-roi.md",
+   "title": "Commercial AI/ML certifications and cloud-credential ROI for GenAI hiring (October 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    4
+   ]
+  },
+  "T0-12": {
+   "file": "T0-12-high-signal-communities-technical-visibility.md",
+   "title": "High-signal AI-engineering communities and technical visibility: global and India, October 2026",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    7
+   ]
+  },
+  "T0-13": {
+   "file": "T0-13-production-portfolio-proof-of-work-standards.md",
+   "title": "Production GenAI Portfolio Proof-of-Work Standards: High-Signal Artifacts vs. the Tutorial-Clone Anti-Portfolio (Oct 2026)",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    5
+   ]
+  },
+  "T0-14": {
+   "file": "T0-14-ai-system-design-interview-patterns.md",
+   "title": "AI System Design Interview Loops (Oct 2026): 15 Archetypes, a 45-Minute Blueprint, Calculation Formulas, Eval/Safety Rubric, and Senior-vs-Staff Differentiators",
+   "date": "2026-10-21",
+   "findings": 11,
+   "stages": [
+    8
+   ]
+  },
+  "T0-15": {
+   "file": "T0-15-regulatory-ai-governance-career-families.md",
+   "title": "Regulatory AI-governance career families, October 2026: what the EU AI Act, NIST AI RMF, India's DPDP Act and US executive orders actually produced",
+   "date": "2026-10-23",
+   "findings": 12,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  "T0-16": {
+   "file": "T0-16-agentic-protocol-stack-enterprise-demand.md",
+   "title": "Agentic Protocol Stack (MCP / A2A / ACP / AG-UI): Standardization Status and Enterprise Hiring Demand, October 2026",
+   "date": "2026-10-21",
+   "findings": 12,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  "T0-17": {
+   "file": "T0-17-compensation-progression-plateaus-equity.md",
+   "title": "GenAI engineering career economics (Oct 2026): promotion velocity, compensation inflections, equity risk-discounting, and liquidity realities",
+   "date": "2026-10-23",
+   "findings": 12,
+   "stages": [
+    9
+   ]
+  },
+  "T0-18": {
+   "file": "T0-18-freelance-fractional-ai-practice-economics.md",
+   "title": "Independent GenAI Consulting & Fractional Head-of-AI Practice Economics (October 2026)",
+   "date": "2026-10-25",
+   "findings": 12,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  "T1-01": {
+   "file": "T1-01-repository-information-architecture.md",
+   "title": "Repository Information Architecture, Hybrid Navigation & 12-Stage Funnel Blueprint",
+   "date": "2026-10-25",
+   "findings": 12,
+   "stages": [
+    0
+   ]
+  },
+  "T1-02": {
+   "file": "T1-02-evidence-grounding-protocol.md",
+   "title": "Epistemic Governance & Evidence-Grounding Protocol (EGP-1.0) for an AI-Careers Repository",
+   "date": "2026-10-21",
+   "findings": 11,
+   "stages": [
+    0
+   ]
+  },
+  "T1-03": {
+   "file": "T1-03-interview-execution-offer-negotiation.md",
+   "title": "Technical Interview Execution, Behavioral Calibrations & Executive Offer Negotiation for GenAI Engineers (Oct 2026)",
+   "date": "2026-10-25",
+   "findings": 12,
+   "stages": [
+    8
+   ]
+  },
+  "T2-01": {
+   "file": "T2-01-tier-calibrated-execution-playbooks.md",
+   "title": "Tier-Calibrated Execution Playbooks across 6 Tiers and 5 Personas",
+   "date": "2026-10-25",
+   "findings": 10,
+   "stages": [
+    11
+   ]
+  }
+ },
+ "findings": [
+  {
+   "id": "T0-01.F1",
+   "session": "T0-01",
+   "number": 1,
+   "statement": "AI Engineer is established and now outnumbers ML Engineer in both corpora",
+   "grade": "A",
+   "line": 51,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F2",
+   "session": "T0-01",
+   "number": 2,
+   "statement": "\"AI Engineer\" is a heterogeneous bucket",
+   "grade": "A",
+   "line": 53,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F3",
+   "session": "T0-01",
+   "number": 3,
+   "statement": "Forward Deployed Engineer is the largest new family, and it is alias-heavy",
+   "grade": "A",
+   "line": 55,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F4",
+   "session": "T0-01",
+   "number": 4,
+   "statement": "The \"split\" is happening as skills inside AI Engineer postings, not as new titles",
+   "grade": "A/B",
+   "line": 57,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F5",
+   "session": "T0-01",
+   "number": 5,
+   "statement": "Context Engineer is real but tiny, and it is three different jobs under one title",
+   "grade": "B/C",
+   "line": 59,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F6",
+   "session": "T0-01",
+   "number": 6,
+   "statement": "Raw platform counts for speculative titles are false positives",
+   "grade": "B",
+   "line": 61,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F7",
+   "session": "T0-01",
+   "number": 7,
+   "statement": "Agent Architect exists only in single digits; the enterprise cluster is \"(Agentic) AI Architect\"",
+   "grade": "B/C",
+   "line": 63,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F8",
+   "session": "T0-01",
+   "number": 8,
+   "statement": "Prompt Wizard: null. Prompt Engineer: legacy and thin",
+   "grade": "B/C",
+   "line": 65,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F9",
+   "session": "T0-01",
+   "number": 9,
+   "statement": "LLM post-training is not a quorum-level exact title in accessible corpora; this contradicts the brief's \"established\" label",
+   "grade": "C",
+   "line": 67,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F10",
+   "session": "T0-01",
+   "number": 10,
+   "statement": "India has the highest AI-title intensity and a younger AI-role profile, but a smaller absolute AI Engineer count than the US",
+   "grade": "A/B",
+   "line": 69,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F11",
+   "session": "T0-01",
+   "number": 11,
+   "statement": "Title inflation is measurable, and practitioners expect collapse into AI Engineer",
+   "grade": "C",
+   "line": 71,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-01.F12",
+   "session": "T0-01",
+   "number": 12,
+   "statement": "Reporting-line evidence is the weakest part of this study",
+   "grade": "C/D",
+   "line": 73,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-02.F1",
+   "session": "T0-02",
+   "number": 1,
+   "statement": "US distribution",
+   "grade": "A",
+   "line": 67,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F2",
+   "session": "T0-02",
+   "number": 2,
+   "statement": "Geography",
+   "grade": "A/B",
+   "line": 69,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F3",
+   "session": "T0-02",
+   "number": 3,
+   "statement": "The India claim, tested",
+   "grade": "A",
+   "line": 71,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F4",
+   "session": "T0-02",
+   "number": 4,
+   "statement": "Frontier-lab level (Levels.fyi, US)",
+   "grade": "A",
+   "line": 73,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F5",
+   "session": "T0-02",
+   "number": 5,
+   "statement": "Base vs equity decoupled",
+   "grade": "A",
+   "line": 75,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F6",
+   "session": "T0-02",
+   "number": 6,
+   "statement": "H-1B LCA evidence",
+   "grade": "B",
+   "line": 77,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F7",
+   "session": "T0-02",
+   "number": 7,
+   "statement": "Frontier equity is semi-liquid, not Series-A paper",
+   "grade": "B",
+   "line": 79,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F8",
+   "session": "T0-02",
+   "number": 8,
+   "statement": "Equity discount model. [Inputs",
+   "grade": "B",
+   "line": 81,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F9",
+   "session": "T0-02",
+   "number": 9,
+   "statement": "PPP vs nominal FX for Indian engineers. [FX",
+   "grade": "A/B",
+   "line": 83,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F10",
+   "session": "T0-02",
+   "number": 10,
+   "statement": "GCC",
+   "grade": "C",
+   "line": 85,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F11",
+   "session": "T0-02",
+   "number": 11,
+   "statement": "India-based contractor rates",
+   "grade": "C",
+   "line": 87,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-02.F12",
+   "session": "T0-02",
+   "number": 12,
+   "statement": "Infra/systems vs application premium: partially supported, not validated",
+   "grade": "B/C/D",
+   "line": 89,
+   "stages": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "T0-03.F1",
+   "session": "T0-03",
+   "number": 1,
+   "statement": "Compensation Tracks Employer Tier & Seniority, Not App vs Infra",
+   "grade": "B",
+   "line": 94,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F2",
+   "session": "T0-03",
+   "number": 2,
+   "statement": "Thin-Wrapper API Skills Commoditized into Co-Requirements",
+   "grade": "B",
+   "line": 95,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F3",
+   "session": "T0-03",
+   "number": 3,
+   "statement": "Evals are the Broadest Production Signal, but Pay Premium is a Gap",
+   "grade": "B",
+   "line": 96,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F4",
+   "session": "T0-03",
+   "number": 4,
+   "statement": "The Evaluation Adoption Gap is the Primary Hiring Opportunity",
+   "grade": "B/C",
+   "line": 97,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F5",
+   "session": "T0-03",
+   "number": 5,
+   "statement": "LLM-as-a-Judge Requires Statistical Calibration (Cohen's $\\kappa$)",
+   "grade": "A/B",
+   "line": 98,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F6",
+   "session": "T0-03",
+   "number": 6,
+   "statement": "Serving Stack Commercialization & NVIDIA Dynamo Re-Platforming",
+   "grade": "A/B",
+   "line": 99,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F7",
+   "session": "T0-03",
+   "number": 7,
+   "statement": "Inference Engine & Kernel Skills are Specialist Niches",
+   "grade": "A/B",
+   "line": 100,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F8",
+   "session": "T0-03",
+   "number": 8,
+   "statement": "Tooling Shift from Raw CUDA C++ to Tile-Level DSLs",
+   "grade": "A/B",
+   "line": 101,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F9",
+   "session": "T0-03",
+   "number": 9,
+   "statement": "Orchestration: Custom Loops Dominate Production; Frameworks Augment",
+   "grade": "A/B",
+   "line": 102,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F10",
+   "session": "T0-03",
+   "number": 10,
+   "statement": "Fleet Telemetry Exposes Massive Compute & Capacity Waste",
+   "grade": "A/B",
+   "line": 103,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F11",
+   "session": "T0-03",
+   "number": 11,
+   "statement": "Frontier Tier: Serving-Path Numerics, Scale & Disaggregation",
+   "grade": "A",
+   "line": 104,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F12",
+   "session": "T0-03",
+   "number": 12,
+   "statement": "Security & Supply Chain are Mandatory Production Competencies",
+   "grade": "A/B",
+   "line": 105,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F13",
+   "session": "T0-03",
+   "number": 13,
+   "statement": "Rapid Tool Consolidation & Vendor Risk",
+   "grade": "A/B",
+   "line": 106,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-03.F14",
+   "session": "T0-03",
+   "number": 14,
+   "statement": "Compute Budgeting & Serving Economics Tested in Technical Screens",
+   "grade": "A/C",
+   "line": 107,
+   "stages": [
+    3
+   ]
+  },
+  {
+   "id": "T0-04.F1",
+   "session": "T0-04",
+   "number": 1,
+   "statement": "The \">75% auto-rejected\" statistic is unsupported as stated; deterministic rejection exists, but it is employer-configured and keyed to form answers, not resume prose",
+   "grade": "A",
+   "line": 58,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F2",
+   "session": "T0-04",
+   "number": 2,
+   "statement": "Parsing is convert-then-extract; most failures originate in conversion; vendors document the same triggers",
+   "grade": "A",
+   "line": 62,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F3",
+   "session": "T0-04",
+   "number": 3,
+   "statement": "A parse failure is not a rejection, but parse output now feeds ranking layers, so conversion quality can change who is read first",
+   "grade": "A",
+   "line": 66,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F4",
+   "session": "T0-04",
+   "number": 4,
+   "statement": "No vendor-confirmed parser engine was found for Greenhouse, Lever, Ashby or Workday; the recalled Sovren/Textkernel map is unverified; third-party \"ATS checker\" sites contradict one another",
+   "grade": "A",
+   "line": 70,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F5",
+   "session": "T0-04",
+   "number": 5,
+   "statement": "Two-column \"garbling\" is real but extractor-dependent; no single open-source strategy survives all layouts [Local]",
+   "grade": "C",
+   "line": 74,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F6",
+   "session": "T0-04",
+   "number": 6,
+   "statement": "LaTeX PDFs are not inherently unparseable; failures come from the font-encoding pipeline [Local]",
+   "grade": "C",
+   "line": 78,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F7",
+   "session": "T0-04",
+   "number": 7,
+   "statement": "Hidden or white-font text is extracted and measurable; it is unvalidated as a tactic and carries detection risk",
+   "grade": "A/B",
+   "line": 82,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F8",
+   "session": "T0-04",
+   "number": 8,
+   "statement": "AI layers score explicit recruiter-visible criteria plus learned similarity; vendors say they never auto-reject, but several expose sortable rankings, and two high-profile suits allege de-facto exclusion",
+   "grade": "A",
+   "line": 86,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F9",
+   "session": "T0-04",
+   "number": 9,
+   "statement": "Cold-inbound engineering funnel: about 0.2% application-to-hire, roughly 340–380 applications per offer and 460–520 per hire; 3.6–6% reach a first human stage",
+   "grade": "B",
+   "line": 90,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F10",
+   "session": "T0-04",
+   "number": 10,
+   "statement": "Channel deltas are large and cross-validate: sourced about 8x inbound; referral about 11–36x inbound per application, depending on the metric",
+   "grade": "B",
+   "line": 94,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F11",
+   "session": "T0-04",
+   "number": 11,
+   "statement": "GenAI-specific funnel data are not published; proxies show non-inbound channels carry much of the hiring for AI-titled roles, and fraud or spam dilutes cold-inbound averages",
+   "grade": "B",
+   "line": 98,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-04.F12",
+   "session": "T0-04",
+   "number": 12,
+   "statement": "\"ATS score\" checkers are keyword or rule simulations with no demonstrated link to real ATS outputs; extractors and vendor parser demos are the defensible checks",
+   "grade": "C",
+   "line": 102,
+   "stages": [
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F1",
+   "session": "T0-05",
+   "number": 1,
+   "statement": "The \"10× per merged PR\" claim has no measurement behind it, and it is ill-posed",
+   "grade": "C",
+   "line": 46,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F2",
+   "session": "T0-05",
+   "number": 2,
+   "statement": "The measurable lever is who initiates, not which trick you use",
+   "grade": "A/B",
+   "line": 48,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F3",
+   "session": "T0-05",
+   "number": 3,
+   "statement": "A single merged contribution is the modal outcome in every repo I examined, so it is a weak signal by itself",
+   "grade": "A",
+   "line": 50,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F4",
+   "session": "T0-05",
+   "number": 4,
+   "statement": "The bar is explicit and rising, and cheap contributions are now risky",
+   "grade": "A",
+   "line": 52,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F5",
+   "session": "T0-05",
+   "number": 5,
+   "statement": "Hiring pipelines exist but live in employer postings, not repo processes, and no named contributor→hire case could be verified",
+   "grade": "A/B",
+   "line": 54,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F6",
+   "session": "T0-05",
+   "number": 6,
+   "statement": "In vLLM and SGLang, the people who ship are mostly employees of hardware and platform vendors, which shapes who benefits",
+   "grade": "C",
+   "line": 56,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F7",
+   "session": "T0-05",
+   "number": 7,
+   "statement": "Teardown→hire evidence is real but thin and survivorship-biased; the surviving cases share a pattern",
+   "grade": "C",
+   "line": 58,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F8",
+   "session": "T0-05",
+   "number": 8,
+   "statement": "Legal/ToS exposure is the sharpest tail risk of audits, and the safest surface is software you run yourself",
+   "grade": "A",
+   "line": 60,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F9",
+   "session": "T0-05",
+   "number": 9,
+   "statement": "No verified candidate→hiring-manager reply rate exists in what I could access; the verified numbers are adjacent",
+   "grade": "D",
+   "line": 62,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F10",
+   "session": "T0-05",
+   "number": 10,
+   "statement": "At ≤ 30 sends/week the constraints are authentication, address accuracy, platform rules and complaints, and paid tooling is mostly unnecessary",
+   "grade": "B/C",
+   "line": 64,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F11",
+   "session": "T0-05",
+   "number": 11,
+   "statement": "On time-vs-yield, no tactic shows a 10× per-hour advantage; the case for unconventional tactics rests on saturation of the cheap channel, tier access and compounding signal",
+   "grade": "D",
+   "line": 66,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-05.F12",
+   "session": "T0-05",
+   "number": 12,
+   "statement": "Every channel is raising its guard against low-effort volume, which raises the relative value of hard-to-fake, verifiable artifacts",
+   "grade": "B/C",
+   "line": 68,
+   "stages": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "T0-06.F1",
+   "session": "T0-06",
+   "number": 1,
+   "statement": "Demand is real, IC-heavy and mid/senior-weighted; the wage premium is large but correlational",
+   "grade": "B",
+   "line": 92,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F2",
+   "session": "T0-06",
+   "number": 2,
+   "statement": "The junior door is the narrowest part of the market; prior tacit experience is the hedge",
+   "grade": "A/B",
+   "line": 93,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F3",
+   "session": "T0-06",
+   "number": 3,
+   "statement": "The AI-engineer population is mostly experienced software engineers who pivoted; data scientists are a consistent second; \"backend is fastest\" is untestable with public data",
+   "grade": "B/D",
+   "line": 94,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F4",
+   "session": "T0-06",
+   "number": 4,
+   "statement": "Evaluation is the cross-archetype bottleneck and the most consistent interview discriminator",
+   "grade": "",
+   "line": 95,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F5",
+   "session": "T0-06",
+   "number": 5,
+   "statement": "The data-scientist \"can't ship\" trope is half right: real gaps in big-company loops, real advantage in evals",
+   "grade": "C/D",
+   "line": 96,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F6",
+   "session": "T0-06",
+   "number": 6,
+   "statement": "Client-side AI platform facts are solid; demand for AI-frontend specialists is thin and senior-skewed",
+   "grade": "A/C/D",
+   "line": 97,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F7",
+   "session": "T0-06",
+   "number": 7,
+   "statement": "Non-technical niches exist (AI PM, AI ops, domain evaluation, FDE-adjacent) but each has an entry fee in experience, credentials or coding",
+   "grade": "C",
+   "line": 98,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F8",
+   "session": "T0-06",
+   "number": 8,
+   "statement": "PhD supply is up but industry absorption is flat; the barrier is craft translation and market structure more than knowledge",
+   "grade": "B/C/D",
+   "line": 99,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F9",
+   "session": "T0-06",
+   "number": 9,
+   "statement": "No longitudinal timeline data exists; self-reports cluster at 4-9 months part-time for experienced engineers and are all survivor-biased",
+   "grade": "D",
+   "line": 100,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F10",
+   "session": "T0-06",
+   "number": 10,
+   "statement": "Hours, not compute, are the binding constraint: 10-15 h/week is a large share of an employed adult's leisure",
+   "grade": "A",
+   "line": 101,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F11",
+   "session": "T0-06",
+   "number": 11,
+   "statement": "Job-search friction adds roughly 2-4 months with a fat right tail",
+   "grade": "C",
+   "line": 102,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-06.F12",
+   "session": "T0-06",
+   "number": 12,
+   "statement": "Compute and course access are cheap relative to time; most GenAI application work needs no GPU",
+   "grade": "A/B",
+   "line": 103,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F1",
+   "session": "T0-07",
+   "number": 1,
+   "statement": "The statute changed under the brief's feet",
+   "grade": "B",
+   "line": 80,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F2",
+   "session": "T0-07",
+   "number": 2,
+   "statement": "§44ADA eligibility holds; the legal test is \"cash ≤ 5%\", not \"95% digital\". [A for limits; B for IT status]",
+   "grade": "A/B",
+   "line": 83,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F3",
+   "session": "T0-07",
+   "number": 3,
+   "statement": "The ₹75 lakh line is a cliff, not a slope. [M; inputs B]",
+   "grade": "",
+   "line": 86,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F4",
+   "session": "T0-07",
+   "number": 4,
+   "statement": "Up to ₹75L, §44ADA beats every alternative; Pvt Ltd offers no tax edge unless profits stay in the company. [M]",
+   "grade": "D",
+   "line": 89,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F5",
+   "session": "T0-07",
+   "number": 5,
+   "statement": "EOR costs a 22–24% take-home haircut versus 44ADA at ≤₹75L and is near parity at ₹1.2Cr. [A for Remote's price; B for Deel; M]",
+   "grade": "A/B",
+   "line": 92,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F6",
+   "session": "T0-07",
+   "number": 6,
+   "statement": "GST registration is mandatory at all four billing levels; zero-rating rests on an annual LUT and realisation within one year",
+   "grade": "B",
+   "line": 95,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F7",
+   "session": "T0-07",
+   "number": 7,
+   "statement": "The FEMA export regime reset on 1 October 2026: EDF replaces SOFTEX, and realisation is nine months after a late amendment",
+   "grade": "B",
+   "line": 98,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F8",
+   "session": "T0-07",
+   "number": 8,
+   "statement": "Purpose code and proof of receipt. [A for codes; C for platform claims]",
+   "grade": "A/C",
+   "line": 101,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F9",
+   "session": "T0-07",
+   "number": 9,
+   "statement": "US side: no withholding on work performed in India; the W-8BEN is a status document",
+   "grade": "A",
+   "line": 104,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F10",
+   "session": "T0-07",
+   "number": 10,
+   "statement": "Advance tax and return plumbing. [B; A for the ITR-4 limit]",
+   "grade": "B/A",
+   "line": 107,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F11",
+   "session": "T0-07",
+   "number": 11,
+   "statement": "IP ownership is the sleeper risk in the MSA",
+   "grade": "B",
+   "line": 110,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-07.F12",
+   "session": "T0-07",
+   "number": 12,
+   "statement": "Labour Codes raise the cost floor of employment (EOR)",
+   "grade": "B/C",
+   "line": 113,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F1",
+   "session": "T0-08",
+   "number": 1,
+   "statement": "The KNOWN claim is false as a matter of USCIS policy",
+   "grade": "A",
+   "line": 46,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F2",
+   "session": "T0-08",
+   "number": 2,
+   "statement": "What fails is the quality of proof, not the lack of credentials",
+   "grade": "A",
+   "line": 48,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F3",
+   "session": "T0-08",
+   "number": 3,
+   "statement": "O-category approvals are ~91% but drifting down, and USCIS has slowed",
+   "grade": "B",
+   "line": 50,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F4",
+   "session": "T0-08",
+   "number": 4,
+   "statement": "US cost benchmark",
+   "grade": "B",
+   "line": 52,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F5",
+   "session": "T0-08",
+   "number": 5,
+   "statement": "The brief's provider list needs correction",
+   "grade": "B",
+   "line": 54,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F6",
+   "session": "T0-08",
+   "number": 6,
+   "statement": "O-1A is a bridge, not a green card",
+   "grade": "B/C",
+   "line": 56,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F7",
+   "session": "T0-08",
+   "number": 7,
+   "statement": "UK Global Talent is the only no-employer route, but no Exceptional Promise pass rate is published",
+   "grade": "A",
+   "line": 58,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F8",
+   "session": "T0-08",
+   "number": 8,
+   "statement": "Canada GTS is employer-driven and wage-floored; \"two weeks\" is an aim",
+   "grade": "A",
+   "line": 60,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F9",
+   "session": "T0-08",
+   "number": 9,
+   "statement": "Germany is the lowest-ambiguity route",
+   "grade": "A",
+   "line": 62,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F10",
+   "session": "T0-08",
+   "number": 10,
+   "statement": "France costs more and PR needs French",
+   "grade": "A",
+   "line": 64,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F11",
+   "session": "T0-08",
+   "number": 11,
+   "statement": "Singapore: ONE Pass is a high-earner pass; an AI & Tech track arrives on 28 January 2027",
+   "grade": "A",
+   "line": 66,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-08.F12",
+   "session": "T0-08",
+   "number": 12,
+   "statement": "UAE: salary-gated rather than talent-gated, with no personal income tax on salary",
+   "grade": "A",
+   "line": 68,
+   "stages": [
+    1,
+    11
+   ]
+  },
+  {
+   "id": "T0-09.F1",
+   "session": "T0-09",
+   "number": 1,
+   "statement": "The \"up to 35%\" claim has no traceable source; the nearest published numbers measure different things",
+   "grade": "",
+   "line": 60,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F2",
+   "session": "T0-09",
+   "number": 2,
+   "statement": "\"AI Expectations Gap\" is a descriptive label, not an established construct. The mechanism is documented, but the headline failure rates are soft",
+   "grade": "B",
+   "line": 73,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F3",
+   "session": "T0-09",
+   "number": 3,
+   "statement": "At the individual level, early failure looks like role/expectation mismatch plus thin onboarding. AI-specific measurement is missing",
+   "grade": "B",
+   "line": 79,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F4",
+   "session": "T0-09",
+   "number": 4,
+   "statement": "Data problems are among the most-cited blockers, and \"no usable data\" is a common starting state, not an exception",
+   "grade": "B",
+   "line": 86,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F5",
+   "session": "T0-09",
+   "number": 5,
+   "statement": "Compute and budget are gated by process and usage history. The levers are documented; the \"negotiation tactics\" are inference",
+   "grade": "A",
+   "line": 91,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F6",
+   "session": "T0-09",
+   "number": 6,
+   "statement": "Non-determinism is measurable and partly engineering-fixable, and the engineer who quantifies it first controls the narrative",
+   "grade": "A",
+   "line": 97,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F7",
+   "session": "T0-09",
+   "number": 7,
+   "statement": "Governance gates are real and moving in 2026, and two common assumptions are wrong",
+   "grade": "A",
+   "line": 102,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F8",
+   "session": "T0-09",
+   "number": 8,
+   "statement": "Public, named GenAI probation rubrics essentially do not exist. The observable standards are job-posting deliverables, onboarding metrics, AI-fluency criteria and probation mechanics",
+   "grade": "B/C",
+   "line": 109,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F9",
+   "session": "T0-09",
+   "number": 9,
+   "statement": "Startup-vs-GCC differences are plausible but thinly evidenced; the GCC evidence is about aggregates",
+   "grade": "B",
+   "line": 116,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F10",
+   "session": "T0-09",
+   "number": 10,
+   "statement": "Two quick wins have independent support (a small regression eval suite built from real failures, and measured cost cuts). \"~40%\" is plausible, workload-dependent and must be measured on your own traffic",
+   "grade": "A",
+   "line": 122,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F11",
+   "session": "T0-09",
+   "number": 11,
+   "statement": "Engineering-analytics platforms double as evaluation instruments on you, and productivity evidence is contested",
+   "grade": "B/C",
+   "line": 127,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-09.F12",
+   "session": "T0-09",
+   "number": 12,
+   "statement": "Case library: failures share a shape. Early demo success, an inflated promise, no eval, guardrail or owner, then reversal or liability",
+   "grade": "B",
+   "line": 132,
+   "stages": [
+    10
+   ]
+  },
+  {
+   "id": "T0-10.F1",
+   "session": "T0-10",
+   "number": 1,
+   "statement": "Bot and spam defenses exist at all three named ATSs, but they are employer-configured, signal-based and scoped to one employer",
+   "grade": "A",
+   "line": 61,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F2",
+   "session": "T0-10",
+   "number": 2,
+   "statement": "The injected claim (\"auto-apply bots trigger automated IP blacklists and ATS shadow-bans\") is partly right and mostly wrong as stated",
+   "grade": "A/B",
+   "line": 64,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F3",
+   "session": "T0-10",
+   "number": 3,
+   "statement": "Automated-browser submissions were demonstrably rejected by Ashby in at least one reproducible report; the mechanism is inferred, not confirmed",
+   "grade": "B/C",
+   "line": 67,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F4",
+   "session": "T0-10",
+   "number": 4,
+   "statement": "Auto-apply at volume has weak and mostly adverse evidence, and \"Simplify auto-apply\" needs correcting",
+   "grade": "B/C",
+   "line": 70,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F5",
+   "session": "T0-10",
+   "number": 5,
+   "statement": "AI writing help can raise hiring odds in narrow forms; generic AI text erodes the signal",
+   "grade": "A",
+   "line": 73,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F6",
+   "session": "T0-10",
+   "number": 6,
+   "statement": "No independent ATS-parser benchmark of consumer resume builders exists in what I found; vendor \"ATS scores\" are internal heuristics, and \"the ATS rejects you\" is mostly a knockout-question and recruiter-triage story",
+   "grade": "C",
+   "line": 76,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F7",
+   "session": "T0-10",
+   "number": 7,
+   "statement": "The resume and career-builder category carries billing dark-pattern and data-exposure risk",
+   "grade": "B/C",
+   "line": 79,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F8",
+   "session": "T0-10",
+   "number": 8,
+   "statement": "Live AI copilots are high-risk; employer policy is diverging; detection figures are vendor-sourced",
+   "grade": "B/C",
+   "line": 82,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F9",
+   "session": "T0-10",
+   "number": 9,
+   "statement": "For GenAI system design the best-verifiable prep offering is Hello Interview; no prep platform has independent outcome evidence",
+   "grade": "B",
+   "line": 85,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F10",
+   "session": "T0-10",
+   "number": 10,
+   "statement": "Comp data is usable for base and big-tech total comp, but equity values (especially private-company options) are not standardized, and no tool has verified accuracy against realized outcomes",
+   "grade": "B/C",
+   "line": 88,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F11",
+   "session": "T0-10",
+   "number": 11,
+   "statement": "The discovery and execution layers are polluted by scams, ghost jobs and fake-recruiter malware",
+   "grade": "A/B",
+   "line": 91,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-10.F12",
+   "session": "T0-10",
+   "number": 12,
+   "statement": "Platform stability and lock-in risk is real at the skills, portfolio and extension layers",
+   "grade": "A/B",
+   "line": 94,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T0-11.F1",
+   "session": "T0-11",
+   "number": 1,
+   "statement": "The credential line-up was reorganized in H1 2026, and two credentials named in the brief are retired or renamed",
+   "grade": "A",
+   "line": 67,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F2",
+   "session": "T0-11",
+   "number": 2,
+   "statement": "No source documents certification keywords as automatic ATS rejection; the realistic hard filter is an employer-configured knockout question",
+   "grade": "C",
+   "line": 70,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F3",
+   "session": "T0-11",
+   "number": 3,
+   "statement": "Public 2026 recruiter Boolean strings for AI/ML engineers contain no certification acronyms",
+   "grade": "C",
+   "line": 73,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F4",
+   "session": "T0-11",
+   "number": 4,
+   "statement": "No per-certification share above 10% of enterprise GenAI JDs could be verified",
+   "grade": "B/C",
+   "line": 76,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F5",
+   "session": "T0-11",
+   "number": 5,
+   "statement": "Employer-side pay data: certifications earn a premium, but non-certified AI skills earn more, and the gap is narrowing",
+   "grade": "B",
+   "line": 79,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F6",
+   "session": "T0-11",
+   "number": 6,
+   "statement": "The only causal evidence on certificates says they help weak-signal candidates and barely move strong ones",
+   "grade": "B",
+   "line": 82,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F7",
+   "session": "T0-11",
+   "number": 7,
+   "statement": "Partner programmes create institutional demand for certified people, but through small, easily met headcounts",
+   "grade": "A",
+   "line": 85,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F8",
+   "session": "T0-11",
+   "number": 8,
+   "statement": "The services/GCC versus product-company divergence is supported in direction but unmeasured in magnitude, and the mechanism is staffing and programme-level rather than tier headcount",
+   "grade": "B/C",
+   "line": 88,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F9",
+   "session": "T0-11",
+   "number": 9,
+   "statement": "All verified in-scope AI exams are multiple-choice or multiple-response; none is a proctored hands-on lab exam; integrity risk is unquantified",
+   "grade": "A",
+   "line": 91,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F10",
+   "session": "T0-11",
+   "number": 10,
+   "statement": "No evidence separates how hiring managers perceive vendor-agnostic certificates (DeepLearning.AI, Stanford Online) from hyperscaler badges",
+   "grade": "C/D",
+   "line": 94,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F11",
+   "session": "T0-11",
+   "number": 11,
+   "statement": "For early-career candidates the market is tight and neither path has causal proof",
+   "grade": "B",
+   "line": 97,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-11.F12",
+   "session": "T0-11",
+   "number": 12,
+   "statement": "Cash cost is small; the binding constraints are causal value and displaced time",
+   "grade": "M",
+   "line": 100,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T0-12.F1",
+   "session": "T0-12",
+   "number": 1,
+   "statement": "The \"gated Discord\" premise is mostly wrong: the gates sit at programmes and events, and norms are the gate inside open servers",
+   "grade": "A",
+   "line": 67,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F2",
+   "session": "T0-12",
+   "number": 2,
+   "statement": "X is not dead as an AI hiring-chatter venue, and LinkedIn's documented problem is application-volume saturation, not verified \"engagement farming\"",
+   "grade": "B",
+   "line": 73,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F3",
+   "session": "T0-12",
+   "number": 3,
+   "statement": "Community-to-job conversion is documented in a handful of cases and quantified in one; no conversion rate exists for any community in scope",
+   "grade": "A",
+   "line": 79,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F4",
+   "session": "T0-12",
+   "number": 4,
+   "statement": "Referrals are about 15–18% of hires, inbound about half; the often-quoted 70–85% \"hidden job market\" has no evidence base",
+   "grade": "A",
+   "line": 85,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F5",
+   "session": "T0-12",
+   "number": 5,
+   "statement": "There is no empirical signal-to-noise metric; the tiering is my judgment (",
+   "grade": "C",
+   "line": 91,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F6",
+   "session": "T0-12",
+   "number": 6,
+   "statement": "At conferences and meetups, the hiring signal is mostly sponsor marketing, or explicitly disclaimed by organisers",
+   "grade": "B",
+   "line": 97,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F7",
+   "session": "T0-12",
+   "number": 7,
+   "statement": "In India, Bengaluru is the densest hub in the evidence; the best-evidenced high-signal offline venues are screened or approval-gated, and the largest events are vendor- or enterprise-heavy",
+   "grade": "B/C",
+   "line": 103,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F8",
+   "session": "T0-12",
+   "number": 8,
+   "statement": "Geography gates the top global pathways; remote-friendly routes are the accessible ones from India",
+   "grade": "A/B",
+   "line": 109,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F9",
+   "session": "T0-12",
+   "number": 9,
+   "statement": "Etiquette norms converge across communities: confine self-promotion and job-seeking to designated channels, and treat mass-DMed CVs as spam",
+   "grade": "A",
+   "line": 115,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F10",
+   "session": "T0-12",
+   "number": 10,
+   "statement": "AI-generated \"slop\" has turned the drive-by pull request from a hiring tactic into a liability; discussion-first contribution is the documented norm",
+   "grade": "B",
+   "line": 121,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F11",
+   "session": "T0-12",
+   "number": 11,
+   "statement": "Technical writing as an inbound channel is plausible and supported only by anecdote",
+   "grade": "C",
+   "line": 127,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-12.F12",
+   "session": "T0-12",
+   "number": 12,
+   "statement": "Weak-tie research favours moderately weak ties, most strongly in digital industries; it supports repeated low-cost interaction over cold outreach to strangers",
+   "grade": "A",
+   "line": 133,
+   "stages": [
+    7
+   ]
+  },
+  {
+   "id": "T0-13.F1",
+   "session": "T0-13",
+   "number": 1,
+   "statement": "The brief's premise is not established; a narrower claim is",
+   "grade": "C",
+   "line": 87,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F2",
+   "session": "T0-13",
+   "number": 2,
+   "statement": "No project type is \"universally\" flagged; the failure modes are",
+   "grade": "C",
+   "line": 90,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F3",
+   "session": "T0-13",
+   "number": 3,
+   "statement": "Evaluation literacy is the most consistently cited separator",
+   "grade": "B",
+   "line": 93,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F4",
+   "session": "T0-13",
+   "number": 4,
+   "statement": "What counts as evaluation evidence is now specific",
+   "grade": "A",
+   "line": 96,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F5",
+   "session": "T0-13",
+   "number": 5,
+   "statement": "Latency and cost proof must include methodology, not only numbers",
+   "grade": "B",
+   "line": 99,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F6",
+   "session": "T0-13",
+   "number": 6,
+   "statement": "Live endpoints cut verification cost but carry real risk; their weight relative to repos is unmeasured",
+   "grade": "A",
+   "line": 102,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F7",
+   "session": "T0-13",
+   "number": 7,
+   "statement": "Observability tooling is mature; the standard is not",
+   "grade": "B",
+   "line": 105,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F8",
+   "session": "T0-13",
+   "number": 8,
+   "statement": "Authorship verification is the live problem of 2026",
+   "grade": "B/C",
+   "line": 108,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F9",
+   "session": "T0-13",
+   "number": 9,
+   "statement": "Senior and Staff evidence is externally verifiable engineering plus influence",
+   "grade": "B",
+   "line": 111,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F10",
+   "session": "T0-13",
+   "number": 10,
+   "statement": "Systems-scale credibility on modest hardware is feasible if scoped honestly",
+   "grade": "B",
+   "line": 114,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F11",
+   "session": "T0-13",
+   "number": 11,
+   "statement": "The 2026 platform landscape moved; stale tool advice is itself a red flag",
+   "grade": "A/B",
+   "line": 117,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-13.F12",
+   "session": "T0-13",
+   "number": 12,
+   "statement": "Gotcha screens and vendor red-flag lists decay quickly",
+   "grade": "B",
+   "line": 120,
+   "stages": [
+    5
+   ]
+  },
+  {
+   "id": "T0-14.F1",
+   "session": "T0-14",
+   "number": 1,
+   "statement": "At AI labs the reported prompts are AI-framed but infrastructure at the core",
+   "grade": "B",
+   "line": 79,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F2",
+   "session": "T0-14",
+   "number": 2,
+   "statement": "Loops are heterogeneous: AI-native design rounds are role- and team-dependent",
+   "grade": "B/C",
+   "line": 82,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F3",
+   "session": "T0-14",
+   "number": 3,
+   "statement": "Fifteen archetypes recur; five clusters carry most of the weight",
+   "grade": "B/C",
+   "line": 85,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F4",
+   "session": "T0-14",
+   "number": 4,
+   "statement": "The numeric core is small and verifiable. [A/B + CALCULATED][S14-S19]",
+   "grade": "A/B",
+   "line": 88,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F5",
+   "session": "T0-14",
+   "number": 5,
+   "statement": "Evaluation has a canonical architecture and canonical pitfalls",
+   "grade": "A",
+   "line": 91,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F6",
+   "session": "T0-14",
+   "number": 6,
+   "statement": "For safety, the scored behaviour is \"assume injection succeeds and contain it\"",
+   "grade": "A/B",
+   "line": 94,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F7",
+   "session": "T0-14",
+   "number": 7,
+   "statement": "Token-economics levers are real but each has a gotcha",
+   "grade": "A/B/C",
+   "line": 97,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F8",
+   "session": "T0-14",
+   "number": 8,
+   "statement": "A 45-minute round is not universal, and \"estimate first\" is contested",
+   "grade": "B/C",
+   "line": 100,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F9",
+   "session": "T0-14",
+   "number": 9,
+   "statement": "The failure-mode catalog is broader than the prior",
+   "grade": "C",
+   "line": 103,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F10",
+   "session": "T0-14",
+   "number": 10,
+   "statement": "Senior vs Staff differences are well documented for system design in general and thin for AI specifically",
+   "grade": "B/C",
+   "line": 106,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-14.F11",
+   "session": "T0-14",
+   "number": 11,
+   "statement": "New round formats and tooling facts change preparation",
+   "grade": "B/C",
+   "line": 109,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T0-15.F1",
+   "session": "T0-15",
+   "number": 1,
+   "statement": "The brief's EU milestone sequence is only half right (",
+   "grade": "A",
+   "line": 66,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F2",
+   "session": "T0-15",
+   "number": 2,
+   "statement": "What GPAI providers must actually deliver, and what the brief wrongly assumes (",
+   "grade": "A",
+   "line": 76,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F3",
+   "session": "T0-15",
+   "number": 3,
+   "statement": "Conformity assessment is mostly self-assessment, so no notified-body labour market exists before 2028 (",
+   "grade": "A",
+   "line": 85,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F4",
+   "session": "T0-15",
+   "number": 4,
+   "statement": "Posting volumes are in the low thousands per year and a small slice of AI hiring (",
+   "grade": "C",
+   "line": 89,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F5",
+   "session": "T0-15",
+   "number": 5,
+   "statement": "Ownership is fragmented: dedicated at programme-lead level, absorbed at specialist level (",
+   "grade": "B",
+   "line": 99,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F6",
+   "session": "T0-15",
+   "number": 6,
+   "statement": "Technical \"compliance engineer\" roles exist but are thin, and the skill stack is ordinary MLOps rather than watermarking (",
+   "grade": "C",
+   "line": 108,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F7",
+   "session": "T0-15",
+   "number": 7,
+   "statement": "\"Algorithmic auditor\" is a specialisation inside assurance firms, not a high-volume career (",
+   "grade": "A",
+   "line": 112,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F8",
+   "session": "T0-15",
+   "number": 8,
+   "statement": "\"AI Safety Engineer\" names two small markets plus one unrelated use (",
+   "grade": "B",
+   "line": 120,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F9",
+   "session": "T0-15",
+   "number": 9,
+   "statement": "AIGP is a cheap differentiator with no demonstrated hiring gate or pay premium (",
+   "grade": "C",
+   "line": 128,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F10",
+   "session": "T0-15",
+   "number": 10,
+   "statement": "Of the brief's four \"high-paying\" sectors, only healthcare is supported (",
+   "grade": "C",
+   "line": 132,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F11",
+   "session": "T0-15",
+   "number": 11,
+   "statement": "US demand is driven by sector regulators and contracts, not by state statutes or executive orders (",
+   "grade": "B",
+   "line": 136,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-15.F12",
+   "session": "T0-15",
+   "number": 12,
+   "statement": "DPDP's effect on GenAI architecture is anticipatory until 13 May 2027, and India's binding AI rule is the provenance amendment (",
+   "grade": "B",
+   "line": 140,
+   "stages": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "T0-16.F1",
+   "session": "T0-16",
+   "number": 1,
+   "statement": "Governance: MCP is hosted by the Agentic AI Foundation, a Linux Foundation fund",
+   "grade": "A",
+   "line": 73,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F2",
+   "session": "T0-16",
+   "number": 2,
+   "statement": "Specification: the current MCP revision is",
+   "grade": "A",
+   "line": 76,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F3",
+   "session": "T0-16",
+   "number": 3,
+   "statement": "A2A: v1.0 shipped, backed by 150+ organizations, and has moved under AAIF",
+   "grade": "A",
+   "line": 79,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F4",
+   "session": "T0-16",
+   "number": 4,
+   "statement": "ACP has been absorbed; AG-UI reached 1.0 but is single-steward",
+   "grade": "A",
+   "line": 82,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F5",
+   "session": "T0-16",
+   "number": 5,
+   "statement": "Adoption scale is large but almost entirely self-reported; the \"78% in production\" statistic is untraceable",
+   "grade": "B",
+   "line": 85,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F6",
+   "session": "T0-16",
+   "number": 6,
+   "statement": "Production gateways have converged on one architecture (control plane + stateless data plane)",
+   "grade": "A",
+   "line": 88,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F7",
+   "session": "T0-16",
+   "number": 7,
+   "statement": "The spec is moving toward enterprise-grade auth; observed practice lags",
+   "grade": "A",
+   "line": 91,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F8",
+   "session": "T0-16",
+   "number": 8,
+   "statement": "The vulnerability record is real, recurring, and partly disputed at the design level",
+   "grade": "A/B",
+   "line": 94,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F9",
+   "session": "T0-16",
+   "number": 9,
+   "statement": "Hiring: three independent indexes agree on \"small but fast-growing,\" none supports \"mandated everywhere\"",
+   "grade": "C",
+   "line": 97,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F10",
+   "session": "T0-16",
+   "number": 10,
+   "statement": "No \"Agent Gateway Engineer\" title exists in volume; protocol-level skills are unmeasured; framework skills still dominate agent-titled roles",
+   "grade": "C",
+   "line": 100,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F11",
+   "session": "T0-16",
+   "number": 11,
+   "statement": "Protocol-native vs framework-wrapper is a false dichotomy; the real choice is where governance and discovery live",
+   "grade": "B/C",
+   "line": 103,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-16.F12",
+   "session": "T0-16",
+   "number": 12,
+   "statement": "Credible falsifiers exist: context cost, auth friction, gateway bypass, spec churn",
+   "grade": "B/C",
+   "line": 106,
+   "stages": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "T0-17.F1",
+   "session": "T0-17",
+   "number": 1,
+   "statement": "The \"35–50% per hop vs 5–10% internal\" claim is not a general rule. Economy-wide switch premium ≈ 2–3 pp; same-tier lateral in tech ≈ +15–25% TC (triangulated); +35–50% appears when a move crosses a level or tier",
+   "grade": "A/B/C",
+   "line": 98,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F2",
+   "session": "T0-17",
+   "number": 2,
+   "statement": "No public AI-vs-non-AI months-per-level dataset exists (searched). Proxies: avg. Senior at ~8.6 YOE; annual promotion rate 8.6%; AI/ML promotion raises are smaller than average (6.5%)",
+   "grade": "B/C",
+   "line": 99,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F3",
+   "session": "T0-17",
+   "number": 3,
+   "statement": "US ladder steps ×1.2–1.5 per tier; AI premium rises with level (6.2% → 18.7%); frontier-lab headline TC ×2.0–3.1 vs all-company medians (≈ ×1.7–2.4 after equity risk-adjustment); Apex is unobservable",
+   "grade": "A/B/C",
+   "line": 100,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F4",
+   "session": "T0-17",
+   "number": 4,
+   "statement": "India ceiling is quantifiable: Senior median ≈ ₹56L, P90 ≈ ₹1.07Cr, best local employers' senior medians ≈ ₹1.06–1.22Cr; the T3 band (₹1.2Cr+) starts above the local senior ceiling",
+   "grade": "A",
+   "line": 101,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F5",
+   "session": "T0-17",
+   "number": 5,
+   "statement": "Europe: medians far below US; London Senior ≈ £122K (P90 ≈ £221K); plateau evidence is indirect; UK EMI limits widened from 6 Apr 2026",
+   "grade": "",
+   "line": 102,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F6",
+   "session": "T0-17",
+   "number": 6,
+   "statement": "Preference overhang is not the market norm (95.8% of Q2-2026 deals 1×; 96.4% non-participating) but is a cliff in tail outcomes: common ≈ a call option struck at the preference stack",
+   "grade": "A",
+   "line": 103,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F7",
+   "session": "T0-17",
+   "number": 7,
+   "statement": "Secondary pricing is bimodal: median Forge trade −3% to −7% vs last primary; top AI names at/above primary; 2021-vintage cohort at median −61%",
+   "grade": "A/B",
+   "line": 104,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F8",
+   "session": "T0-17",
+   "number": 8,
+   "statement": "Tender offers 2025–26: Carta median cap 20%, ~58% seller participation, ~0% median discount; frontier-lab caps are dollar-denominated ($30M OpenAI 2025; $2M Anthropic 2025) with 1–2-year tenure gates",
+   "grade": "A/B",
+   "line": 105,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F9",
+   "session": "T0-17",
+   "number": 9,
+   "statement": "IPO ≠ liquidity: OpenAI says no IPO in 2026; Anthropic timing reports conflict; SpaceX (incl. xAI) fell below its IPO price within ~5 weeks under a staged, price-triggered lock-up",
+   "grade": "B/C",
+   "line": 106,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F10",
+   "session": "T0-17",
+   "number": 10,
+   "statement": "Mega-round dilution is small (≈ 3–14% per round) vs Carta medians (19.5% seed → 7.5% Series D) because valuations outrun capital raised; dilution is second-order when marks rise and first-order when they fall",
+   "grade": "A/B",
+   "line": 107,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F11",
+   "session": "T0-17",
+   "number": 11,
+   "statement": "Equity risk-discount model (assumption-driven): risk-adjusted value (RAV) ≈ 0.7 for lab-like and Series-C archetypes, ≈ 0.24 for a stale-vintage unicorn; discount rate and bust probability dominate; preference structure is second-order (3–12%)",
+   "grade": "C/D",
+   "line": 108,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-17.F12",
+   "session": "T0-17",
+   "number": 12,
+   "statement": "Hidden-trap register: verified items (83(b) 30-day rule, tenure/cap gates, vesting-cliff changes, acqui-hire carve-outs, QSBS tiers) vs recalled/unverified items; systems-expertise premium has no controlled evidence (G)",
+   "grade": "A/D",
+   "line": 109,
+   "stages": [
+    9
+   ]
+  },
+  {
+   "id": "T0-18.F1",
+   "session": "T0-18",
+   "number": 1,
+   "statement": "Posted rates are asking rates, and the little offer-side data sits below them",
+   "grade": "C",
+   "line": 88,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F2",
+   "session": "T0-18",
+   "number": 2,
+   "statement": "US contractor cards cluster at $130–$235 for senior AI engineers; $300+ is marketing",
+   "grade": "C",
+   "line": 91,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F3",
+   "session": "T0-18",
+   "number": 3,
+   "statement": "Europe is lower and flatter, and the UK premium is not rising",
+   "grade": "B",
+   "line": 94,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F4",
+   "session": "T0-18",
+   "number": 4,
+   "statement": "India-based providers are quoted at roughly a third to a half of US asks; no realised-rate dataset exists",
+   "grade": "C",
+   "line": 97,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F5",
+   "session": "T0-18",
+   "number": 5,
+   "statement": "Retainers are about $8–13K a month for 10–13 hours a week; the brief's example holds only on a 4-week month",
+   "grade": "A",
+   "line": 100,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F6",
+   "session": "T0-18",
+   "number": 6,
+   "statement": "Clients come from networks and referrals; acquisition is the top pain; there is no AI funnel benchmark",
+   "grade": "C",
+   "line": 103,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F7",
+   "session": "T0-18",
+   "number": 7,
+   "statement": "The contract norm is a 12-month, 1× fees cap with a higher cap for data; the 3–6 month prior is contradicted; IP carve-outs are standard",
+   "grade": "A",
+   "line": 106,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F8",
+   "session": "T0-18",
+   "number": 8,
+   "statement": "Output ownership, EU, Colorado and India rules moved in 2026; contracts should allocate roles, not assume them",
+   "grade": "B",
+   "line": 109,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F9",
+   "session": "T0-18",
+   "number": 9,
+   "statement": "Insurance is cheap on paper, but AI-output cover is shrinking",
+   "grade": "C",
+   "line": 112,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F10",
+   "session": "T0-18",
+   "number": 10,
+   "statement": "There is no AI-specific income distribution; the modelled one describes the upper tail",
+   "grade": "D",
+   "line": 115,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F11",
+   "session": "T0-18",
+   "number": 11,
+   "statement": "Failure modes are real but thinly evidenced; return-to-employment is unresolved",
+   "grade": "C",
+   "line": 118,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T0-18.F12",
+   "session": "T0-18",
+   "number": 12,
+   "statement": "Platform fees that vendors publish are low; the costs that matter are markup, non-circumvention terms and rate suppression",
+   "grade": "A",
+   "line": 121,
+   "stages": [
+    9,
+    11
+   ]
+  },
+  {
+   "id": "T1-01.F1",
+   "session": "T1-01",
+   "number": 1,
+   "statement": "The Hybrid Spine Architecture is the only model that survives all three test user journeys without duplication or dead ends",
+   "grade": "B",
+   "line": 58,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F2",
+   "session": "T1-01",
+   "number": 2,
+   "statement": "Three directory levels (root → category → topic) is the hard maximum; two levels suffice for most content",
+   "grade": "B",
+   "line": 62,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F3",
+   "session": "T1-01",
+   "number": 3,
+   "statement": "Cross-cutting indices should be static Markdown files with manual curation, not auto-generated, for the first 12 months",
+   "grade": "C",
+   "line": 66,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F4",
+   "session": "T1-01",
+   "number": 4,
+   "statement": "The Diátaxis framework maps imperfectly onto career lifecycle content; a modified taxonomy works better",
+   "grade": "C",
+   "line": 70,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F5",
+   "session": "T1-01",
+   "number": 5,
+   "statement": "The 12-stage funnel from T0-10 requires consolidation to 10 directories for the repository spine",
+   "grade": "B",
+   "line": 74,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F6",
+   "session": "T1-01",
+   "number": 6,
+   "statement": "The upstream role taxonomy (T0-01) defines 10 verified roles and 9 quarantined speculative titles; the directory should index only verified roles",
+   "grade": "A",
+   "line": 78,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F7",
+   "session": "T1-01",
+   "number": 7,
+   "statement": "The 6-tier compensation grid from T0-02 is the correct cross-cutting axis for compensation, but tier boundaries need geographic variants",
+   "grade": "B",
+   "line": 82,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F8",
+   "session": "T1-01",
+   "number": 8,
+   "statement": "Frontmatter metadata must include 12 fields to support cross-referencing, evidence governance (T1-02), and temporal freshness tracking",
+   "grade": "B",
+   "line": 86,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F9",
+   "session": "T1-01",
+   "number": 9,
+   "statement": "MkDocs Material remains the strongest SSG choice for this repository, but the ecosystem transition must be monitored",
+   "grade": "C",
+   "line": 90,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F10",
+   "session": "T1-01",
+   "number": 10,
+   "statement": "markdownlint-cli2 is the correct linting tool; remark-lint is over-engineered for this repository's needs",
+   "grade": "C",
+   "line": 94,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F11",
+   "session": "T1-01",
+   "number": 11,
+   "statement": "Three user navigation personas validate the hybrid architecture; all reach their target content within 2 clicks from the root README",
+   "grade": "C",
+   "line": 98,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-01.F12",
+   "session": "T1-01",
+   "number": 12,
+   "statement": "Non-linear resources (legal contracts, tax calculators, interview question banks) belong in the stage directory closest to their point of use, not in a separate appendices/ catch-all",
+   "grade": "C",
+   "line": 102,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F2",
+   "session": "T1-02",
+   "number": 2,
+   "statement": "Link rot is fast, and the archive layer has its own failure modes",
+   "grade": "B",
+   "line": 51,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F3",
+   "session": "T1-02",
+   "number": 3,
+   "statement": "Decay is real but heterogeneous: separate a fact's instance from its trend",
+   "grade": "B",
+   "line": 53,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F4",
+   "session": "T1-02",
+   "number": 4,
+   "statement": "Policy status can change every few weeks while policy text sits still",
+   "grade": "B",
+   "line": 55,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F5",
+   "session": "T1-02",
+   "number": 5,
+   "statement": "Grade-A official statistics have gaps, vintages and definitional drift",
+   "grade": "A",
+   "line": 57,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F6",
+   "session": "T1-02",
+   "number": 6,
+   "statement": "Salary sources measure different constructs",
+   "grade": "B",
+   "line": 59,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F7",
+   "session": "T1-02",
+   "number": 7,
+   "statement": "One paper can carry three headline numbers; pin versions",
+   "grade": "A",
+   "line": 61,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F8",
+   "session": "T1-02",
+   "number": 8,
+   "statement": "Productivity \"contradictions\" are mostly differences of scope",
+   "grade": "B",
+   "line": 63,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F9",
+   "session": "T1-02",
+   "number": 9,
+   "statement": "\"95% of AI pilots fail\" is a case study in provenance decay",
+   "grade": "C",
+   "line": 65,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F10",
+   "session": "T1-02",
+   "number": 10,
+   "statement": "\"AI will write 90% of code\" is three different claims",
+   "grade": "B",
+   "line": 67,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F11",
+   "session": "T1-02",
+   "number": 11,
+   "statement": "LLM-fabricated citations are measured, and LLM verifiers are unreliable",
+   "grade": "B",
+   "line": 69,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-02.F12",
+   "session": "T1-02",
+   "number": 12,
+   "statement": "Two caps are grounded in evidence and in law",
+   "grade": "B",
+   "line": 71,
+   "stages": [
+    0
+   ]
+  },
+  {
+   "id": "T1-03.F1",
+   "session": "T1-03",
+   "number": 1,
+   "statement": "The end-to-end funnel is ≈ 0.2% cold-inbound to offer (340–380 applications per offer for engineering); referral yield is 11–36× higher per application. The binding constraint is getting into the interview loop, not passing it",
+   "grade": "B/C",
+   "line": 70,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F2",
+   "session": "T1-03",
+   "number": 2,
+   "statement": "AI system design interviews bifurcate into infrastructure (41/112 Anthropic reports: inference serving, batching, GPU scheduling) and application (RAG, agents, evals). Preparing for the wrong track is the most avoidable failure mode",
+   "grade": "B/C",
+   "line": 71,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F3",
+   "session": "T1-03",
+   "number": 3,
+   "statement": "The 45-minute system design blueprint (5 min requirements → 4 min targeted estimate → 9 min HLD + walk → 16 min two deep dives → 7 min eval/safety/ops → 4 min wrap) is the highest-convergence framework across coaching sources, with firm-specific time variants",
+   "grade": "B/C",
+   "line": 72,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F4",
+   "session": "T1-03",
+   "number": 4,
+   "statement": "Behavioral \"No Hire\" is a near-automatic veto at Anthropic (values round) and Google (G&L). At Meta, it triggers downlevel or rejection. Three archetype failures dominate: arrogance/poor communication, failure of ownership in production incidents, and ethical/safety blind spots",
+   "grade": "B/C",
+   "line": 73,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F5",
+   "session": "T1-03",
+   "number": 5,
+   "statement": "AI-specific behavioral competencies cluster around four dimensions: technical pragmatism under ambiguity, cross-functional communication of probabilistic trade-offs, ownership and incident response, and responsible AI consciousness. A STAR-AI framework (Situation → Task → Action → Result with metric delta + continuous monitoring) is the scoring template",
+   "grade": "B/C",
+   "line": 74,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F6",
+   "session": "T1-03",
+   "number": 6,
+   "statement": "AI-enabled coding rounds (Meta spring 2026, early signal) evaluate how candidates collaborate with an AI assistant — delegating boilerplate, owning logic, catching AI hallucinations — not whether they can generate correct code unaided. Blind reliance (\"vibe coding\") is a strong No Hire signal",
+   "grade": "B/C",
+   "line": 75,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F7",
+   "session": "T1-03",
+   "number": 7,
+   "statement": "Same-tier lateral hops yield ≈ +15–25% TC; level-up hops +35–50%. The \"35–50% per hop\" claim fails as a general rule and describes tier-crossers only. A hop beats staying only when the premium exceeds ~25% or promotion is blocked",
+   "grade": "A/B/C",
+   "line": 76,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F8",
+   "session": "T1-03",
+   "number": 8,
+   "statement": "Private AI equity should be risk-adjusted at 0.5–0.8× for frontier labs, 0.4–0.8× for Series C–D, and 0.15–0.3× for stale-vintage unicorns before comparing to liquid RSUs. Discount rate and bust probability dominate; preference structure is second-order (−3% to −12%)",
+   "grade": "C/D",
+   "line": 77,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F9",
+   "session": "T1-03",
+   "number": 9,
+   "statement": "The Doody/Fearless methodology (never disclose current salary → let them make the first offer → counter 10–20% above initial → single data-backed email) is the most-cited negotiation framework, with Levels.fyi coaching cohort data showing median uplift of +21–24% (self-selected)",
+   "grade": "B/C",
+   "line": 78,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F10",
+   "session": "T1-03",
+   "number": 10,
+   "statement": "Negotiation coaching services (Levels.fyi, Candor, Rora) report that ~80–87% of candidates who negotiate receive positive adjustments, but the lift depends critically on competing offers — without leverage, coaching returns are marginal",
+   "grade": "B/C",
+   "line": 79,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F11",
+   "session": "T1-03",
+   "number": 11,
+   "statement": "An equity due-diligence checklist (fully diluted count, preference stack, last 409A, tender history, exercise window, acceleration terms) converts paper equity from a black box into a computable risk-adjusted value. Most candidates never ask these questions",
+   "grade": "B/C/D",
+   "line": 80,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T1-03.F12",
+   "session": "T1-03",
+   "number": 12,
+   "statement": "Post-interview debrief protocol — capturing exact questions within 30 minutes, running a knowledge-gap audit, and iterating before the next loop — is universally recommended by coaching sources but has no controlled evidence of pass-rate improvement",
+   "grade": "C/D",
+   "line": 81,
+   "stages": [
+    8
+   ]
+  },
+  {
+   "id": "T2-01.F1",
+   "session": "T2-01",
+   "number": 1,
+   "statement": "Only 8–12 of the 30 persona×tier permutations represent high-volume transition corridors; the remainder are either implausible (Non-Tech → Tier 5), already-occupied (PhD at Tier 3), or require a two-stage transition that exceeds 12 months",
+   "grade": "B/C/D",
+   "line": 73,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F2",
+   "session": "T2-01",
+   "number": 2,
+   "statement": "The 12-stage funnel compresses to 5–7 active stages per persona because experienced practitioners bypass Awareness/Exploration, credentialed practitioners skip Certification, and senior pivots compress Skills + Portfolio into a single build phase",
+   "grade": "B/C/D",
+   "line": 74,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F3",
+   "session": "T2-01",
+   "number": 3,
+   "statement": "Evaluation is the universal gate across all 5 personas and all viable tiers — it appears in portfolio (Stage 5), interview execution (Stage 9–10), and onboarding (Stage 12). Each persona brings a different comparative advantage to eval work",
+   "grade": "B",
+   "line": 75,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F4",
+   "session": "T2-01",
+   "number": 4,
+   "statement": "Tax/legal structure is a one-way door that must be decided at Stage 6 (Discovery/Application), not Stage 11 (Negotiation) — the ₹75L §44ADA cliff (T0-07) and O-1A evidence-building timeline (T0-08) both require 12–18 months of preparation that cannot be retrofitted",
+   "grade": "A/B",
+   "line": 76,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F5",
+   "session": "T2-01",
+   "number": 5,
+   "statement": "The interview funnel bifurcates into infrastructure and application tracks (T1-03 KF2), and the correct track depends on persona×tier: Backend→Tier 3+ is infrastructure-heavy; Frontend→Tier 2 is application-heavy; PhD→Tier 4+ straddles both. Preparing for the wrong track is the most avoidable failure mode",
+   "grade": "B/C",
+   "line": 77,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F6",
+   "session": "T2-01",
+   "number": 6,
+   "statement": "First-90-day failure modes are persona-specific and predictable from upstream findings: role ambiguity (43% of all hires; T0-09 F3), data absence (63% of orgs; T0-09 F4), compute gating (85% delayed; T0-09 F5), and non-determinism surprise (up to 15% accuracy variance; T0-09 F6)",
+   "grade": "A/B/C",
+   "line": 78,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F7",
+   "session": "T2-01",
+   "number": 7,
+   "statement": "The freelance/fractional path (T0-18) diverges from the employment funnel at Stage 6 and requires a parallel playbook spine: network-based acquisition replaces job boards, MSA/contract structure replaces offer negotiation, and client retention replaces onboarding",
+   "grade": "B/C",
+   "line": 79,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F8",
+   "session": "T2-01",
+   "number": 8,
+   "statement": "Geographic arbitrage (India→US remote) at Tier 2–3 is the highest-ROI corridor but requires navigating three simultaneous regulatory regimes (Indian tax, US client onboarding, and optionally visa/relocation), each with its own timeline and cliff effects",
+   "grade": "A/B",
+   "line": 80,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F9",
+   "session": "T2-01",
+   "number": 9,
+   "statement": "Portfolio calibration must match the target tier: Tier 0–1 needs one evaluated end-to-end system; Tier 2–3 needs two systems with different failure surfaces plus CI-gated evals; Tier 4–5 needs published research, industry-visible contributions, and evidence meeting O-1A or equivalent standards",
+   "grade": "B/C/D",
+   "line": 81,
+   "stages": [
+    11
+   ]
+  },
+  {
+   "id": "T2-01.F10",
+   "session": "T2-01",
+   "number": 10,
+   "statement": "No longitudinal outcome data exists for any persona×tier corridor (T0-06 KF9). Every timeline in this document is a transparent model, not measured data. The playbooks are planning frameworks calibrated against the few available anchors (an 8-month frontend retrospective, Huntr's 82–108 day search medians, and vendor reference classes)",
+   "grade": "D",
+   "line": 82,
+   "stages": [
+    11
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1274 @@
+{
+ "schema": "manifest/1.0",
+ "generated_by": "scripts/build_manifest.py",
+ "documents": [
+  {
+   "path": "career/README.md",
+   "id": "career.start-here",
+   "title": "Start Here: Navigate a GenAI Career",
+   "content_type": "index",
+   "stage": 0,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Entry point to the career content: find your question, follow the lifecycle stages, or take the path for your starting background. Every page links back to graded evidence.",
+   "sources": [
+    "T0-01",
+    "T0-06",
+    "T2-01",
+    "T1-02"
+   ],
+   "headings": [
+    "1. Find your question",
+    "2. Follow the lifecycle",
+    "3. Paths by starting point",
+    "4. How to read the evidence"
+   ]
+  },
+  {
+   "path": "career/01-landscape/README.md",
+   "id": "stage-01",
+   "title": "Stage 01: Landscape",
+   "content_type": "index",
+   "stage": 1,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 01 (landscape): What does the GenAI job market look like, globally and in India?",
+   "sources": [
+    "T0-01",
+    "T0-02",
+    "T0-08",
+    "T0-15",
+    "T0-17"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/02-roles/README.md",
+   "id": "stage-02",
+   "title": "Stage 02: Roles",
+   "content_type": "index",
+   "stage": 2,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 02 (roles): Which GenAI roles exist, which are the best, and which should I target?",
+   "sources": [
+    "T0-01",
+    "T0-15",
+    "T0-16"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/02-roles/genai-target-roles.md",
+   "id": "roles.genai-targets",
+   "title": "GenAI Target Roles: The Sorted Shortlist",
+   "content_type": "guide",
+   "stage": 2,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "The sorted shortlist of GenAI roles to target: a consensus of eight lenses restricted to GenAI demand, with reasoning per role and persona notes.",
+   "sources": [
+    "T0-01",
+    "T0-02",
+    "T0-17",
+    "T0-06"
+   ],
+   "headings": [
+    "0. The sorted target list",
+    "1. How the order was built",
+    "2. Target cards: Tiers 1–3",
+    "3. Tiers 4–5 at a glance",
+    "4. Not primary GenAI targets, and titles to avoid as a headline",
+    "5. Best targets by background (GenAI persona lenses)",
+    "6. India-first target order (GenAI India lens)",
+    "7. Target clusters: one skill stack, several titles",
+    "8. Leadership and independent tracks: when to target them",
+    "9. Caveats, and what would change the order"
+   ]
+  },
+  {
+   "path": "career/02-roles/role-catalog.md",
+   "id": "roles.catalog",
+   "title": "GenAI Role Master Catalog",
+   "content_type": "reference",
+   "stage": 2,
+   "status": "published",
+   "last_verified": "2026-11-05",
+   "summary": "All 29 canonical GenAI roles and 241 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index.",
+   "sources": [
+    "T0-01",
+    "T0-15",
+    "T0-16",
+    "T0-02",
+    "T0-03",
+    "T0-06",
+    "T0-17"
+   ],
+   "headings": [
+    "Every GenAI, ML-Systems and AI-Governance Role: Classified, De-duplicated and Evidence-Graded",
+    "0. Summary",
+    "1. Classification Rules",
+    "2. Canonical Role Registry",
+    "3. Role Profiles",
+    "4. Complete A–Z Title Index",
+    "5. Quarantine, Watchlist and Unmeasured Register",
+    "6. Not-a-Role Register",
+    "7. Feeder and Adjacent Occupations (market refresh, 2026-11-02)",
+    "8. Cross-Cutting References",
+    "9. Errata and Reconciliation Log",
+    "10. Maintenance"
+   ]
+  },
+  {
+   "path": "career/02-roles/role-rankings.md",
+   "id": "roles.rankings",
+   "title": "Best GenAI Jobs, Ranked",
+   "content_type": "reference",
+   "stage": 2,
+   "status": "published",
+   "last_verified": "2026-11-05",
+   "summary": "Evidence-weighted ranking of the GenAI roles (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role.",
+   "sources": [
+    "T0-01",
+    "T0-02",
+    "T0-17",
+    "T0-03",
+    "T0-06",
+    "T0-15",
+    "T0-16"
+   ],
+   "headings": [
+    "An Evidence-Weighted, Uncertainty-Aware Composite Career Index (CCI) for Every Canonical GenAI Role",
+    "0. The Answer",
+    "1. Method: Composite Career Index (CCI)",
+    "2. Master Leaderboard: IC Roles",
+    "3. Robustness: How Much Do the Weights Matter?",
+    "4. Leadership and Independent Tracks",
+    "5. Lenses: The Best Job for *You*",
+    "6. Top-10 Dossiers",
+    "7. Roles 11–24 at a Glance",
+    "8. Not Ranked",
+    "9. Strategic Takeaways",
+    "10. Change Log",
+    "Appendix A: Scoring Inputs"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/README.md",
+   "id": "stage-03",
+   "title": "Stage 03: Skills and technology",
+   "content_type": "index",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 03 (skills and technology): What exactly does each role need me to know and use, and how much does each skill matter?",
+   "sources": [
+    "T0-03",
+    "T0-16",
+    "T0-06"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/README.md",
+   "id": "skills.inventories.folder",
+   "title": "Role Skill Inventories: One File per Role",
+   "content_type": "index",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Folder index of the generated per-role skill inventories, in GenAI target order, with links to the cross-role index and the vocabulary.",
+   "generated_by": "scripts/build_skills.py",
+   "headings": []
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/agentic-ai-engineer.md",
+   "id": "skills.inventory.agentic-ai-engineer",
+   "title": "Agentic AI Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Agentic AI Engineer needs: 73 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "agentic-ai-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-enablement-engineer.md",
+   "id": "skills.inventory.ai-enablement-engineer",
+   "title": "AI Enablement Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-enablement-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-engineer.md",
+   "id": "skills.inventory.ai-engineer",
+   "title": "AI Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-engineering-manager.md",
+   "id": "skills.inventory.ai-engineering-manager",
+   "title": "AI Engineering Manager / Director: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Engineering Manager / Director needs: 44 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-engineering-manager"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-evaluation-engineer.md",
+   "id": "skills.inventory.ai-evaluation-engineer",
+   "title": "AI Evaluation Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Evaluation Engineer needs: 65 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-evaluation-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-governance-lead.md",
+   "id": "skills.inventory.ai-governance-lead",
+   "title": "AI Governance Programme Lead / Manager: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Governance Programme Lead / Manager needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-governance-lead"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-infrastructure-engineer.md",
+   "id": "skills.inventory.ai-infrastructure-engineer",
+   "title": "AI Infrastructure / GPU Platform Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Infrastructure / GPU Platform Engineer needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-infrastructure-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-product-engineer.md",
+   "id": "skills.inventory.ai-product-engineer",
+   "title": "AI Product Engineer (AI Frontend): Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Product Engineer (AI Frontend) needs: 53 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-product-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-product-manager.md",
+   "id": "skills.inventory.ai-product-manager",
+   "title": "AI Product Manager: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-product-manager"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-risk-assurance-specialist.md",
+   "id": "skills.inventory.ai-risk-assurance-specialist",
+   "title": "AI Risk, Audit & Compliance Specialist: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Risk, Audit & Compliance Specialist needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-risk-assurance-specialist"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-safety-researcher.md",
+   "id": "skills.inventory.ai-safety-researcher",
+   "title": "Frontier AI Safety / Alignment Researcher: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Frontier AI Safety / Alignment Researcher needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-safety-researcher"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-security-engineer.md",
+   "id": "skills.inventory.ai-security-engineer",
+   "title": "AI Security Engineer / AI Red Teamer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-security-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ai-solutions-architect.md",
+   "id": "skills.inventory.ai-solutions-architect",
+   "title": "AI / GenAI Solutions Architect: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a AI / GenAI Solutions Architect needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ai-solutions-architect"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/applied-ai-engineer.md",
+   "id": "skills.inventory.applied-ai-engineer",
+   "title": "Applied AI Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "applied-ai-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/applied-scientist.md",
+   "id": "skills.inventory.applied-scientist",
+   "title": "Applied Scientist (GenAI/LLM teams): Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "applied-scientist"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/domain-evaluation-specialist.md",
+   "id": "skills.inventory.domain-evaluation-specialist",
+   "title": "Domain Evaluation Specialist / AI Trainer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Domain Evaluation Specialist / AI Trainer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "domain-evaluation-specialist"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/forward-deployed-engineer.md",
+   "id": "skills.inventory.forward-deployed-engineer",
+   "title": "Forward Deployed Engineer (AI): Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Forward Deployed Engineer (AI) needs: 57 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "forward-deployed-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/gpu-kernel-engineer.md",
+   "id": "skills.inventory.gpu-kernel-engineer",
+   "title": "GPU Kernel / ML Compiler Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a GPU Kernel / ML Compiler Engineer needs: 45 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "gpu-kernel-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/inference-engineer.md",
+   "id": "skills.inventory.inference-engineer",
+   "title": "Inference / LLM Serving Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Inference / LLM Serving Engineer needs: 71 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "inference-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ml-engineer.md",
+   "id": "skills.inventory.ml-engineer",
+   "title": "Machine Learning Engineer (GenAI/LLM track): Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 84 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ml-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/ml-platform-engineer.md",
+   "id": "skills.inventory.ml-platform-engineer",
+   "title": "ML Platform / MLOps (LLMOps) Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "ml-platform-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/physical-ai-engineer.md",
+   "id": "skills.inventory.physical-ai-engineer",
+   "title": "Physical AI / Robotics AI Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Physical AI / Robotics AI Engineer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "physical-ai-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/research-engineer.md",
+   "id": "skills.inventory.research-engineer",
+   "title": "Research Engineer / Member of Technical Staff: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Research Engineer / Member of Technical Staff needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "research-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/research-scientist.md",
+   "id": "skills.inventory.research-scientist",
+   "title": "Research Scientist (LLM research): Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Research Scientist (LLM research) needs: 54 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "research-scientist"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/responsible-ai-engineer.md",
+   "id": "skills.inventory.responsible-ai-engineer",
+   "title": "Responsible AI / AI Governance Engineer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a Responsible AI / AI Governance Engineer needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "responsible-ai-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/vp-head-of-ai.md",
+   "id": "skills.inventory.vp-head-of-ai",
+   "title": "VP / Head of AI / CAIO: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill a VP / Head of AI / CAIO needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "vp-head-of-ai"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/role-skill-inventories.md",
+   "id": "skills.inventories",
+   "title": "GenAI Role Skill Inventories",
+   "content_type": "index",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier change log and verification.",
+   "sources": [
+    "T0-03",
+    "T0-06",
+    "T0-13",
+    "T0-14",
+    "T0-15",
+    "T0-16",
+    "T1-03"
+   ],
+   "generated_by": "scripts/build_skills.py (generated blocks)",
+   "headings": [
+    "Every Skill for Every Role: Typed, Tiered and Evidence-Tagged, From One Ontology",
+    "0. How to Use It",
+    "1. Role Index",
+    "2. Cross-Role Views: What Recurs (For Universal and Family Resumes)",
+    "3. Tier Changes From the Initial Concise Matrix",
+    "4. Verification",
+    "5. Limits and Next Steps"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/role-skill-maps.md",
+   "id": "skills.role-maps",
+   "title": "GenAI Role Skills Catalog",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Narrative skill map for every role: table-stakes, differentiating and frontier skills, tools with their status, proof of work, interview track and typical gaps; the volatile tool and credential registry.",
+   "sources": [
+    "T0-03",
+    "T0-06",
+    "T0-13",
+    "T0-14",
+    "T0-15",
+    "T0-16",
+    "T1-03"
+   ],
+   "headings": [
+    "The Full Skill Stack for Every Canonical GenAI Role: Tiered, Evidence-Tagged, Interview- and Portfolio-Linked",
+    "0. How to Read This File",
+    "1. The Universal GenAI Skill Spine",
+    "2. What Postings Actually Ask For",
+    "3. Skill Maps by Role",
+    "4. Skill × Role Matrices",
+    "5. Volatile Tool and Credential Registry (status as of October 2026)",
+    "6. Suggested Learning Order by Background"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/skills-ontology-method.md",
+   "id": "skills.method",
+   "title": "Skills Ontology: Requirements, Design, Build and Maintenance",
+   "content_type": "method",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Requirements, design, build, verification and maintenance of the skills ontology that generates the vocabulary, the role inventories and the resume matrix.",
+   "sources": [
+    "T0-03",
+    "T0-04",
+    "T0-06",
+    "T0-11",
+    "T0-13",
+    "T1-02",
+    "T1-03"
+   ],
+   "headings": [
+    "Why the Skills Layer Is Shaped the Way It Is, How It Was Built and Verified, and How to Keep It Accurate",
+    "1. What a Resume Needs From the Skills Layer",
+    "2. Design",
+    "3. Data, Scripts and How to Edit",
+    "4. How the Foundation Ontology Was Built (2026-11-04)",
+    "5. Audit Baseline: Before and After",
+    "6. Maintenance"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/skills-vocabulary.md",
+   "id": "skills.vocabulary",
+   "title": "GenAI Skills Vocabulary",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions.",
+   "sources": [
+    "T0-03",
+    "T0-11",
+    "T0-15",
+    "T0-16"
+   ],
+   "generated_by": "scripts/build_skills.py (generated blocks)",
+   "headings": [
+    "Every Skill in the Ontology: Typed, With Posting Wording, Relations, Status and Corpus Evidence",
+    "0. How to Read This File",
+    "1. Summary",
+    "2. Choose-One Classes",
+    "3. Vocabulary by Type",
+    "4. Credentials",
+    "5. Watch List: Tools With a Notable Status",
+    "6. Limits"
+   ]
+  },
+  {
+   "path": "career/04-certifications/README.md",
+   "id": "stage-04",
+   "title": "Stage 04: Certifications",
+   "content_type": "index",
+   "stage": 4,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 04 (certifications): Is a certificate worth it for my target role and hiring channel?",
+   "sources": [
+    "T0-11",
+    "T0-15"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/05-portfolio/README.md",
+   "id": "stage-05",
+   "title": "Stage 05: Portfolio",
+   "content_type": "index",
+   "stage": 5,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 05 (portfolio): What should I build to prove I can do the job?",
+   "sources": [
+    "T0-13",
+    "T0-05",
+    "T0-12"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/06-job-search/README.md",
+   "id": "stage-06",
+   "title": "Stage 06: Job search and applications",
+   "content_type": "index",
+   "stage": 6,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 06 (job search and applications): How do I find postings, apply well and get past the screens?",
+   "sources": [
+    "T0-04",
+    "T0-05",
+    "T0-10"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/06-job-search/job-search-strategy.md",
+   "id": "job-search.strategy",
+   "title": "GenAI Job-Search Strategy: Hiring Levers, Layered Resumes, Proof of Work and Sequencing",
+   "content_type": "guide",
+   "stage": 6,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "First-principles job-search strategy: what moves P(offer), how the layered resume system works (master, universal, family, role, posting), which roles need their own resume, how many projects prove which roles, and how to sequence targets.",
+   "sources": [
+    "T0-04",
+    "T0-10",
+    "T0-13",
+    "T0-14",
+    "T1-03",
+    "T0-06",
+    "T0-01",
+    "T0-02",
+    "T0-17"
+   ],
+   "roles": [
+    "all"
+   ],
+   "generated_by": "scripts/resume_layers.py (computed blocks only)",
+   "headings": [
+    "Hiring Levers, Layered Resumes, Proof of Work and Sequencing",
+    "0. The Short Answer",
+    "1. First Principles: What Gets Someone Hired",
+    "2. The Layered Resume Model, Evaluated",
+    "3. Where the Rest of the Search Lives"
+   ]
+  },
+  {
+   "path": "career/06-job-search/resume-skills-matrix.md",
+   "id": "job-search.resume-matrix",
+   "title": "GenAI Resume Skills Matrix",
+   "content_type": "reference",
+   "stage": 6,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "The concise skills section for every role (Must / Important / Should / Optional headline skills), shared skills across roles, and a skills-section blueprint per resume variant.",
+   "sources": [
+    "T0-03",
+    "T0-04",
+    "T0-10",
+    "T0-11",
+    "T0-13"
+   ],
+   "generated_by": "scripts/build_resume_matrix.py (generated blocks)",
+   "headings": [
+    "Must / Important / Should / Optional Skills for Every GenAI Role, With Resume-Variant Blueprints",
+    "1. How the tiers are defined",
+    "2. The shared layer is thin",
+    "3. Skills-section blueprints for each resume variant",
+    "4. Role-by-role matrix (sorted by GenAI target order; leadership last)"
+   ]
+  },
+  {
+   "path": "career/06-job-search/resume-strategy.md",
+   "id": "job-search.resume-strategy",
+   "title": "GenAI Resume Strategy",
+   "content_type": "guide",
+   "stage": 6,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "How to run resumes for many target roles: one tagged master inventory, 15 role-family variants and light per-posting tailoring, grounded in screening evidence.",
+   "sources": [
+    "T0-04",
+    "T0-10",
+    "T0-11",
+    "T0-13"
+   ],
+   "headings": [
+    "One Master Inventory, a Few Role-Family Variants, Light Per-Posting Tailoring",
+    "0. The answer",
+    "1. What the evidence says about screening",
+    "2. The design: master → variants → per-posting tailoring",
+    "3. Building the master inventory",
+    "4. Maintenance"
+   ]
+  },
+  {
+   "path": "career/07-networking/README.md",
+   "id": "stage-07",
+   "title": "Stage 07: Networking and visibility",
+   "content_type": "index",
+   "stage": 7,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 07 (networking and visibility): How do I get referred, and what do recruiters find when they search for me?",
+   "sources": [
+    "T0-12",
+    "T0-05",
+    "T0-04"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/08-interviewing/README.md",
+   "id": "stage-08",
+   "title": "Stage 08: Interviewing",
+   "content_type": "index",
+   "stage": 8,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 08 (interviewing): How do I pass the interview loop for my track?",
+   "sources": [
+    "T0-14",
+    "T1-03"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/09-compensation/README.md",
+   "id": "stage-09",
+   "title": "Stage 09: Compensation and negotiation",
+   "content_type": "index",
+   "stage": 9,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 09 (compensation and negotiation): Is this offer good, and how do I negotiate it?",
+   "sources": [
+    "T0-02",
+    "T0-17",
+    "T1-03",
+    "T0-07",
+    "T0-18"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/10-onboarding/README.md",
+   "id": "stage-10",
+   "title": "Stage 10: Onboarding and the first 90 days",
+   "content_type": "index",
+   "stage": 10,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 10 (onboarding and the first 90 days): How do I pass probation and succeed in the first 90 days?",
+   "sources": [
+    "T0-09"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "career/11-tracks/README.md",
+   "id": "stage-11",
+   "title": "Stage 11: Tracks and transitions",
+   "content_type": "index",
+   "stage": 11,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of stage 11 (tracks and transitions): What changes for my background, location or way of working?",
+   "sources": [
+    "T0-06",
+    "T2-01",
+    "T0-07",
+    "T0-08",
+    "T0-18",
+    "T0-15"
+   ],
+   "headings": [
+    "In this folder",
+    "Planned",
+    "Evidence to read now"
+   ]
+  },
+  {
+   "path": "research/ERRATA.md",
+   "id": "research.errata",
+   "title": "Research Errata: Known Errors in the Phase 0 Research Records",
+   "content_type": "reference",
+   "stage": 0,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Errors found in the sealed Phase 0 records (FAD, T1-01, T2-01, DECISIONS) and the correct reading, with evidence. Read before relying on those files.",
+   "sources": [
+    "T0-01",
+    "T1-01",
+    "T2-01"
+   ],
+   "headings": [
+    "Upstream errors found while rebuilding the role catalogs (2026-11-03)",
+    "How to add an erratum"
+   ]
+  },
+  {
+   "path": "research/README.md",
+   "id": "research.index",
+   "title": "Research Layer: Sessions, Findings, Decisions and Errata",
+   "content_type": "index",
+   "stage": 0,
+   "status": "published",
+   "last_verified": "2026-11-04",
+   "summary": "Index of the evidence layer: the 22 Phase 0 research sessions, the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research.",
+   "sources": [
+    "T0-01",
+    "T0-02",
+    "T0-03",
+    "T0-04",
+    "T0-05",
+    "T0-06",
+    "T0-07",
+    "T0-08",
+    "T0-09",
+    "T0-10",
+    "T0-11",
+    "T0-12",
+    "T0-13",
+    "T0-14",
+    "T0-15",
+    "T0-16",
+    "T0-17",
+    "T0-18",
+    "T1-01",
+    "T1-02",
+    "T1-03",
+    "T2-01"
+   ],
+   "headings": [
+    "Key documents",
+    "Phase 0 pipeline (complete)",
+    "Sessions by theme",
+    "Adding research (pipeline 2)"
+   ]
+  },
+  {
+   "path": "research/findings.md",
+   "id": "research.findings",
+   "title": "Research Findings Registry",
+   "content_type": "reference",
+   "stage": 0,
+   "status": "published",
+   "last_verified": "2026-10-25",
+   "summary": "Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.",
+   "sources": [
+    "T0-01",
+    "T0-02",
+    "T0-03",
+    "T0-04",
+    "T0-05",
+    "T0-06",
+    "T0-07",
+    "T0-08",
+    "T0-09",
+    "T0-10",
+    "T0-11",
+    "T0-12",
+    "T0-13",
+    "T0-14",
+    "T0-15",
+    "T0-16",
+    "T0-17",
+    "T0-18",
+    "T1-01",
+    "T1-02",
+    "T1-03",
+    "T2-01"
+   ],
+   "generated_by": "scripts/build_findings.py",
+   "headings": [
+    "By lifecycle stage",
+    "By session"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+# GenAI Career Intelligence System
+
+> Evidence-graded knowledge and guidance for GenAI careers: which roles exist and which are best, what each role needs (every concept, tool and soft skill, tiered and evidence-tagged), how to run a job search, and the 22 research sessions behind it all. Every empirical claim carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output) and a date.
+
+How to use this repository:
+
+- Start at career/README.md (Start Here) or a stage README; each stage README links its guides and its graded research findings.
+- Facts live once: machine-readable sources of truth are in data/, and the generated documents are rebuilt from them by scripts/.
+- Research sessions are dated snapshots (October 2026): check research/ERRATA.md and each claim's date before relying on a figure.
+- Rules for agents that edit or answer from this repository are in AGENTS.md.
+
+## Start here
+
+- [Start Here: Navigate a GenAI Career](career/README.md): Entry point to the career content: find your question, follow the lifecycle stages, or take the path for your starting background. Every page links back to graded evidence.
+- [Research Layer: Sessions, Findings, Decisions and Errata](research/README.md): Index of the evidence layer: the 22 Phase 0 research sessions, the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research.
+- [ROADMAP.md](ROADMAP.md): What is covered, what is planned next, and the open decisions.
+- [AGENTS.md](AGENTS.md): Rules for AI agents: sources of truth, evidence standard, generators and validation.
+
+## Stage 01: Landscape
+
+- [Stage 01: Landscape](career/01-landscape/README.md): Index of stage 01 (landscape): What does the GenAI job market look like, globally and in India?
+
+## Stage 02: Roles
+
+- [Stage 02: Roles](career/02-roles/README.md): Index of stage 02 (roles): Which GenAI roles exist, which are the best, and which should I target?
+- [GenAI Target Roles: The Sorted Shortlist](career/02-roles/genai-target-roles.md): The sorted shortlist of GenAI roles to target: a consensus of eight lenses restricted to GenAI demand, with reasoning per role and persona notes.
+- [GenAI Role Master Catalog](career/02-roles/role-catalog.md): All 29 canonical GenAI roles and 241 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index.
+- [Best GenAI Jobs, Ranked](career/02-roles/role-rankings.md): Evidence-weighted ranking of the GenAI roles (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role.
+
+## Stage 03: Skills and technology
+
+- [Stage 03: Skills and technology](career/03-skills-and-tech/README.md): Index of stage 03 (skills and technology): What exactly does each role need me to know and use, and how much does each skill matter?
+- [GenAI Role Skill Inventories](career/03-skills-and-tech/role-skill-inventories.md): Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier change log and verification.
+- [GenAI Role Skills Catalog](career/03-skills-and-tech/role-skill-maps.md): Narrative skill map for every role: table-stakes, differentiating and frontier skills, tools with their status, proof of work, interview track and typical gaps; the volatile tool and credential registry.
+- [Skills Ontology: Requirements, Design, Build and Maintenance](career/03-skills-and-tech/skills-ontology-method.md): Requirements, design, build, verification and maintenance of the skills ontology that generates the vocabulary, the role inventories and the resume matrix.
+- [GenAI Skills Vocabulary](career/03-skills-and-tech/skills-vocabulary.md): Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions.
+
+## Stage 04: Certifications
+
+- [Stage 04: Certifications](career/04-certifications/README.md): Index of stage 04 (certifications): Is a certificate worth it for my target role and hiring channel?
+
+## Stage 05: Portfolio
+
+- [Stage 05: Portfolio](career/05-portfolio/README.md): Index of stage 05 (portfolio): What should I build to prove I can do the job?
+
+## Stage 06: Job search
+
+- [Stage 06: Job search and applications](career/06-job-search/README.md): Index of stage 06 (job search and applications): How do I find postings, apply well and get past the screens?
+- [GenAI Job-Search Strategy: Hiring Levers, Layered Resumes, Proof of Work and Sequencing](career/06-job-search/job-search-strategy.md): First-principles job-search strategy: what moves P(offer), how the layered resume system works (master, universal, family, role, posting), which roles need their own resume, how many projects prove which roles, and how to sequence targets.
+- [GenAI Resume Skills Matrix](career/06-job-search/resume-skills-matrix.md): The concise skills section for every role (Must / Important / Should / Optional headline skills), shared skills across roles, and a skills-section blueprint per resume variant.
+- [GenAI Resume Strategy](career/06-job-search/resume-strategy.md): How to run resumes for many target roles: one tagged master inventory, 15 role-family variants and light per-posting tailoring, grounded in screening evidence.
+
+## Stage 07: Networking
+
+- [Stage 07: Networking and visibility](career/07-networking/README.md): Index of stage 07 (networking and visibility): How do I get referred, and what do recruiters find when they search for me?
+
+## Stage 08: Interviewing
+
+- [Stage 08: Interviewing](career/08-interviewing/README.md): Index of stage 08 (interviewing): How do I pass the interview loop for my track?
+
+## Stage 09: Compensation
+
+- [Stage 09: Compensation and negotiation](career/09-compensation/README.md): Index of stage 09 (compensation and negotiation): Is this offer good, and how do I negotiate it?
+
+## Stage 10: Onboarding
+
+- [Stage 10: Onboarding and the first 90 days](career/10-onboarding/README.md): Index of stage 10 (onboarding and the first 90 days): How do I pass probation and succeed in the first 90 days?
+
+## Stage 11: Tracks and transitions
+
+- [Stage 11: Tracks and transitions](career/11-tracks/README.md): Index of stage 11 (tracks and transitions): What changes for my background, location or way of working?
+
+## Research
+
+- [Research Findings Registry](research/findings.md): Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
+- [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, T1-01, T2-01, DECISIONS) and the correct reading, with evidence. Read before relying on those files.
+- [research/sessions/](research/sessions/): The 22 Phase 0 research sessions (dated evidence reports with source ledgers).
+- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-013).
+
+## Data
+
+- [data/role_scores.json](data/role_scores.json): Scoring inputs for the role rankings: every pillar score with its [lo, mid, hi] range, evidence grade and sourced basis
+- [data/skills_ontology.json](data/skills_ontology.json): The skills ontology: 523 typed skills, choose-one classes, credentials, resume variants and every role's tiered, evidence-tagged skill links
+- [data/project_archetypes.json](data/project_archetypes.json): Proof-of-work project archetypes and the headline skills each one evidences
+- [data/findings.json](data/findings.json): Key findings of every research session, with grade, exact line and lifecycle stages
+- [data/manifest.json](data/manifest.json): This manifest: every document with its front matter and section headings
+- [data/schemas/](data/schemas/): JSON Schemas for the skills ontology and for document front matter
+
+## Optional
+
+- [Role Skill Inventories: One File per Role](career/03-skills-and-tech/inventories/README.md): Folder index of the generated per-role skill inventories, in GenAI target order, with links to the cross-role index and the vocabulary.
+- [Agentic AI Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/agentic-ai-engineer.md): Every skill a Agentic AI Engineer needs: 73 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Enablement Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-enablement-engineer.md): Every skill a AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-engineer.md): Every skill a AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Engineering Manager / Director: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-engineering-manager.md): Every skill a AI Engineering Manager / Director needs: 44 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Evaluation Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-evaluation-engineer.md): Every skill a AI Evaluation Engineer needs: 65 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Governance Programme Lead / Manager: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-governance-lead.md): Every skill a AI Governance Programme Lead / Manager needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Infrastructure / GPU Platform Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-infrastructure-engineer.md): Every skill a AI Infrastructure / GPU Platform Engineer needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Product Engineer (AI Frontend): Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-product-engineer.md): Every skill a AI Product Engineer (AI Frontend) needs: 53 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Product Manager: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-product-manager.md): Every skill a AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Risk, Audit & Compliance Specialist: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-risk-assurance-specialist.md): Every skill a AI Risk, Audit & Compliance Specialist needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Frontier AI Safety / Alignment Researcher: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-safety-researcher.md): Every skill a Frontier AI Safety / Alignment Researcher needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI Security Engineer / AI Red Teamer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-security-engineer.md): Every skill a AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [AI / GenAI Solutions Architect: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-solutions-architect.md): Every skill a AI / GenAI Solutions Architect needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Applied AI Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/applied-ai-engineer.md): Every skill a Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Applied Scientist (GenAI/LLM teams): Complete Skill Inventory](career/03-skills-and-tech/inventories/applied-scientist.md): Every skill a Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Domain Evaluation Specialist / AI Trainer: Complete Skill Inventory](career/03-skills-and-tech/inventories/domain-evaluation-specialist.md): Every skill a Domain Evaluation Specialist / AI Trainer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Forward Deployed Engineer (AI): Complete Skill Inventory](career/03-skills-and-tech/inventories/forward-deployed-engineer.md): Every skill a Forward Deployed Engineer (AI) needs: 57 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [GPU Kernel / ML Compiler Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/gpu-kernel-engineer.md): Every skill a GPU Kernel / ML Compiler Engineer needs: 45 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Inference / LLM Serving Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/inference-engineer.md): Every skill a Inference / LLM Serving Engineer needs: 71 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Machine Learning Engineer (GenAI/LLM track): Complete Skill Inventory](career/03-skills-and-tech/inventories/ml-engineer.md): Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 84 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [ML Platform / MLOps (LLMOps) Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ml-platform-engineer.md): Every skill a ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Physical AI / Robotics AI Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/physical-ai-engineer.md): Every skill a Physical AI / Robotics AI Engineer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Research Engineer / Member of Technical Staff: Complete Skill Inventory](career/03-skills-and-tech/inventories/research-engineer.md): Every skill a Research Engineer / Member of Technical Staff needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Research Scientist (LLM research): Complete Skill Inventory](career/03-skills-and-tech/inventories/research-scientist.md): Every skill a Research Scientist (LLM research) needs: 54 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [Responsible AI / AI Governance Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/responsible-ai-engineer.md): Every skill a Responsible AI / AI Governance Engineer needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
+- [VP / Head of AI / CAIO: Complete Skill Inventory](career/03-skills-and-tech/inventories/vp-head-of-ai.md): Every skill a VP / Head of AI / CAIO needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.

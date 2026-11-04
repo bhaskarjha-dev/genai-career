@@ -1,0 +1,294 @@
+{
+ "schema": "project-archetypes/1.0",
+ "as_of": "2026-11-04",
+ "description": "Proof-of-work project archetypes. Each lists the headline skills (IDs from skills_ontology.json) that a well-executed project of that kind evidences. Used by scripts/resume_layers.py to compute which projects cover which roles in career/06-job-search/job-search-strategy.md.",
+ "basis": "Judgement (Grade D), drawn from the proof-of-work lines in career/03-skills-and-tech/role-skill-maps.md and the T0-13 portfolio standards (verifiability ladder V0-V3). A project counts only if it reaches at least V1: one command regenerates its results.",
+ "archetypes": {
+  "P1": {
+   "name": "Evaluated RAG system over a real corpus",
+   "skills": [
+    "python",
+    "llm_apis",
+    "rag",
+    "vector_search",
+    "retrieval_quality",
+    "evals",
+    "error_analysis",
+    "observability",
+    "cost_latency",
+    "prompt_context",
+    "testing",
+    "git_ci",
+    "docker"
+   ]
+  },
+  "P2": {
+   "name": "Reliable agent: approvals, sandboxed tools, replay, failure injection",
+   "skills": [
+    "python",
+    "llm_apis",
+    "agents",
+    "agent_reliability",
+    "agent_frameworks",
+    "mcp",
+    "containment",
+    "llm_security",
+    "evals",
+    "observability"
+   ]
+  },
+  "P3": {
+   "name": "Eval harness with a calibrated judge and statistics",
+   "skills": [
+    "python",
+    "evals",
+    "eval_stats",
+    "error_analysis",
+    "experiment_design",
+    "benchmark_design",
+    "testing",
+    "git_ci",
+    "llm_apis"
+   ]
+  },
+  "P4": {
+   "name": "Prompt vs RAG vs fine-tune comparison",
+   "skills": [
+    "python",
+    "pytorch",
+    "ml_fundamentals",
+    "deep_learning",
+    "finetuning",
+    "evals",
+    "eval_stats",
+    "embedding_models",
+    "data_pipelines",
+    "serving_literacy",
+    "experiment_design"
+   ]
+  },
+  "P5": {
+   "name": "Single-GPU serving and quantisation study",
+   "skills": [
+    "python",
+    "serving_engines",
+    "batching_kv",
+    "spec_decoding",
+    "quantization",
+    "profiling",
+    "load_testing",
+    "cost_latency",
+    "gpu_fundamentals",
+    "serving_literacy"
+   ]
+  },
+  "P6": {
+   "name": "Self-hosted LLM platform on Kubernetes",
+   "skills": [
+    "kubernetes",
+    "iac",
+    "docker",
+    "git_ci",
+    "observability",
+    "llm_gateways",
+    "kserve_ray",
+    "serving_engines",
+    "mlops_lifecycle",
+    "iam",
+    "sre",
+    "supply_chain",
+    "linux",
+    "python",
+    "capacity_cost"
+   ]
+  },
+  "P7": {
+   "name": "Small-scale distributed training / post-training study",
+   "skills": [
+    "python",
+    "pytorch",
+    "pytorch_internals",
+    "distributed_training",
+    "post_training",
+    "training_debug",
+    "profiling",
+    "evals",
+    "data_pipelines",
+    "rl"
+   ]
+  },
+  "P8": {
+   "name": "Paper re-implementation with rigorous evals and a write-up",
+   "skills": [
+    "research_methods",
+    "pytorch",
+    "deep_learning",
+    "ml_fundamentals",
+    "evals",
+    "eval_stats",
+    "writing",
+    "python"
+   ]
+  },
+  "P9": {
+   "name": "Custom Triton kernel with benchmarks and correctness tests",
+   "skills": [
+    "cuda_triton",
+    "kernel_core",
+    "gpu_fundamentals",
+    "profiling",
+    "numerics",
+    "memory_perf",
+    "linear_algebra",
+    "quantization"
+   ]
+  },
+  "P10": {
+   "name": "Red-team suite in CI against a working agent",
+   "skills": [
+    "llm_security",
+    "prompt_injection",
+    "agent_abuse",
+    "red_teaming",
+    "containment",
+    "evals",
+    "git_ci",
+    "python",
+    "guardrails"
+   ]
+  },
+  "P11": {
+   "name": "Customer pilot / reference architecture with a cost model",
+   "skills": [
+    "customer_scoping",
+    "ref_architecture",
+    "managed_ai",
+    "cost_latency",
+    "unit_economics",
+    "stakeholder",
+    "domain_depth",
+    "tech_writing",
+    "presales",
+    "iam",
+    "cloud"
+   ]
+  },
+  "P12": {
+   "name": "AI PM case: PRD, eval rubric, pilot metrics",
+   "skills": [
+    "product_mgmt",
+    "ai_literacy",
+    "eval_rubrics",
+    "success_metrics",
+    "unit_economics",
+    "pilots",
+    "hitl_design",
+    "stakeholder"
+   ]
+  },
+  "P13": {
+   "name": "AI governance packet: inventory, risk register, framework mapping",
+   "skills": [
+    "regulation",
+    "sector_rules",
+    "grc",
+    "ai_inventory",
+    "compliance_docs",
+    "provenance",
+    "privacy",
+    "fairness_tools"
+   ]
+  },
+  "P14": {
+   "name": "Full-stack AI app with streaming agent UX and UX metrics",
+   "skills": [
+    "react",
+    "typescript",
+    "apis",
+    "llm_apis",
+    "streaming_ux",
+    "ux_telemetry",
+    "hitl_design",
+    "evals"
+   ]
+  },
+  "P15": {
+   "name": "Internal AI-enablement pilot (MCP servers, adoption metrics)",
+   "skills": [
+    "internal_tooling",
+    "mcp",
+    "iam",
+    "guardrails",
+    "change_mgmt",
+    "llm_gateways",
+    "coding_agents",
+    "llm_apis",
+    "python"
+   ]
+  },
+  "P16": {
+   "name": "Sim-to-real robotics project",
+   "skills": [
+    "robotics_fund",
+    "perception",
+    "simulation",
+    "ros",
+    "robot_learning",
+    "edge_inference",
+    "cpp",
+    "python"
+   ]
+  },
+  "P17": {
+   "name": "Domain gold standard with inter-rater agreement",
+   "skills": [
+    "domain_depth",
+    "eval_rubrics",
+    "writing",
+    "error_analysis",
+    "annotation",
+    "ai_literacy"
+   ]
+  },
+  "P18": {
+   "name": "Safety / interpretability research project",
+   "skills": [
+    "safety_evals",
+    "alignment",
+    "interpretability",
+    "red_teaming",
+    "research_methods",
+    "pytorch",
+    "python",
+    "writing"
+   ]
+  },
+  "P19": {
+   "name": "Model-validation / bias-audit report",
+   "skills": [
+    "audit_method",
+    "model_validation",
+    "fairness_tools",
+    "eval_stats",
+    "regulation",
+    "sector_rules",
+    "writing",
+    "python_basic"
+   ]
+  },
+  "P20": {
+   "name": "Responsible-AI compliance packet with runtime guardrails",
+   "skills": [
+    "guardrails",
+    "evals",
+    "compliance_docs",
+    "fairness_tools",
+    "regulation",
+    "observability",
+    "python",
+    "llm_security",
+    "ml_fundamentals"
+   ]
+  }
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "skills_ontology.schema.json",
+ "title": "GenAI skills ontology",
+ "description": "Typed skills vocabulary, choose-one classes, credentials, resume variants and per-role tiered skill links with evidence. Validated by scripts/build_skills.py, which also enforces the referential and evidence rules that JSON Schema cannot express (IDs resolve, implements/parent targets are concepts or methods, S evidence cites real session lines, archived or dormant tools are tiered X, and every type is covered or marked not applicable).",
+ "type": "object",
+ "required": ["meta", "skills", "classes", "credentials", "resume_variants", "roles"],
+ "additionalProperties": false,
+ "properties": {
+  "meta": {"$ref": "#/$defs/meta"},
+  "skills": {
+   "type": "object",
+   "propertyNames": {"pattern": "^[a-z][a-z0-9_]*$"},
+   "additionalProperties": {"$ref": "#/$defs/skill"}
+  },
+  "classes": {
+   "type": "object",
+   "propertyNames": {"pattern": "^[a-z][a-z0-9_]*$"},
+   "additionalProperties": {"$ref": "#/$defs/class"}
+  },
+  "credentials": {
+   "type": "object",
+   "propertyNames": {"pattern": "^[a-z][a-z0-9_]*$"},
+   "additionalProperties": {"$ref": "#/$defs/credential"}
+  },
+  "resume_variants": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "object",
+    "required": ["name", "headline", "flavours", "proof"],
+    "additionalProperties": false,
+    "properties": {
+     "name": {"type": "string", "minLength": 1},
+     "headline": {"type": "string", "minLength": 1},
+     "flavours": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+     "proof": {"type": "string", "minLength": 1}
+    }
+   }
+  },
+  "roles": {
+   "type": "object",
+   "propertyNames": {"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+   "additionalProperties": {"$ref": "#/$defs/role"}
+  },
+  "changes": {"type": "array", "items": {"$ref": "#/$defs/change"}}
+ },
+ "$defs": {
+  "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "tier": {"enum": ["M", "I", "S", "O", "X"]},
+  "type": {"enum": ["concept", "method", "language", "framework", "library", "model", "platform", "data_store", "infra_tool", "product", "hardware", "protocol", "regulation", "communication", "behavioural", "business", "leadership", "domain", "research_craft"]},
+  "strings": {"type": "array", "items": {"type": "string", "minLength": 1}},
+  "status": {
+   "type": "object",
+   "required": ["state", "as_of"],
+   "additionalProperties": false,
+   "properties": {
+    "state": {"enum": ["active", "beta", "development", "acquired", "renamed", "dormant", "archived", "retired"]},
+    "as_of": {"$ref": "#/$defs/date"},
+    "note": {"type": "string"}
+   }
+  },
+  "meta": {
+   "type": "object",
+   "required": ["schema", "as_of", "description", "sources", "ttl", "tiers", "evidence", "types", "categories", "proficiency", "verifiability", "target_levels"],
+   "additionalProperties": false,
+   "properties": {
+    "schema": {"const": "skills-ontology/1.0"},
+    "as_of": {"$ref": "#/$defs/date"},
+    "description": {"type": "string"},
+    "sources": {"type": "object", "additionalProperties": {"type": "string"}},
+    "ttl": {"type": "object", "additionalProperties": {"type": "string"}},
+    "tiers": {"type": "object", "required": ["M", "I", "S", "O", "X"], "additionalProperties": false, "properties": {"M": {"type": "string"}, "I": {"type": "string"}, "S": {"type": "string"}, "O": {"type": "string"}, "X": {"type": "string"}}},
+    "evidence": {"type": "object", "required": ["JD", "S09", "S", "P"], "additionalProperties": false, "properties": {"JD": {"type": "string"}, "S09": {"type": "string"}, "S": {"type": "string"}, "P": {"type": "string"}}},
+    "types": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "object",
+      "required": ["group", "label", "resume"],
+      "additionalProperties": false,
+      "properties": {"group": {"type": "string"}, "label": {"type": "string"}, "resume": {"type": "string"}}
+     }
+    },
+    "categories": {"$ref": "#/$defs/strings"},
+    "proficiency": {"type": "object", "additionalProperties": {"type": "string"}},
+    "verifiability": {"type": "object", "additionalProperties": {"type": "string"}},
+    "target_levels": {"type": "object", "additionalProperties": {"type": "string"}},
+    "verification": {"type": "object"}
+   }
+  },
+  "skill": {
+   "type": "object",
+   "required": ["name", "type", "category"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "type": {"$ref": "#/$defs/type"},
+    "category": {"type": "string", "minLength": 1},
+    "desc": {"type": "string"},
+    "aliases": {"$ref": "#/$defs/strings"},
+    "implements": {"$ref": "#/$defs/strings"},
+    "parent": {"type": "string", "minLength": 1},
+    "status": {"$ref": "#/$defs/status"},
+    "match": {"type": "string"},
+    "headline": {"type": "boolean"},
+    "group": {"type": "string"}
+   }
+  },
+  "class": {
+   "type": "object",
+   "required": ["name", "members"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "members": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "note": {"type": "string"},
+    "desc": {"type": "string"},
+    "headline": {"type": "boolean"},
+    "group": {"type": "string"}
+   }
+  },
+  "credential": {
+   "type": "object",
+   "required": ["name", "issuer", "level", "src"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "issuer": {"type": "string", "minLength": 1},
+    "level": {"type": "string", "minLength": 1},
+    "status": {"$ref": "#/$defs/status"},
+    "src": {"type": "array", "items": {"type": "string"}}
+   }
+  },
+  "link": {
+   "type": "object",
+   "required": ["id", "tier", "ev"],
+   "additionalProperties": false,
+   "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "tier": {"$ref": "#/$defs/tier"},
+    "ev": {"enum": ["JD", "S09", "S", "P"]},
+    "grade": {"enum": ["A", "B", "C"]},
+    "src": {"$ref": "#/$defs/strings"},
+    "share": {"type": "string", "pattern": "^\\d{1,3}(\\.\\d)?%$"},
+    "note": {"type": "string", "maxLength": 160},
+    "n": {"type": "integer", "minimum": 1}
+   }
+  },
+  "credential_link": {
+   "type": "object",
+   "required": ["id", "tier"],
+   "additionalProperties": false,
+   "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "tier": {"$ref": "#/$defs/tier"},
+    "note": {"type": "string", "maxLength": 200},
+    "src": {"$ref": "#/$defs/strings"}
+   }
+  },
+  "role": {
+   "type": "object",
+   "required": ["name", "target", "variant", "flavour", "basis", "links", "none", "credentials", "avoid", "prereq", "proof", "mirror"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "target": {"type": ["integer", "string"]},
+    "variant": {"type": "string", "minLength": 1},
+    "flavour": {"type": "string", "minLength": 1},
+    "basis": {"type": "string", "minLength": 1},
+    "covers": {"$ref": "#/$defs/strings"},
+    "links": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/link"}},
+    "none": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+    "credentials": {"type": "array", "items": {"$ref": "#/$defs/credential_link"}},
+    "avoid": {"type": "string", "minLength": 1},
+    "prereq": {"type": "string", "minLength": 1},
+    "proof": {"type": "string", "minLength": 1},
+    "mirror": {"type": "string", "minLength": 1}
+   }
+  },
+  "change": {
+   "type": "object",
+   "required": ["role", "id", "from", "to", "reason", "stage"],
+   "additionalProperties": false,
+   "properties": {
+    "role": {"type": "string"},
+    "id": {"type": "string"},
+    "from": {"type": "string"},
+    "to": {"type": "string"},
+    "reason": {"type": "string", "minLength": 1},
+    "src": {"type": "array", "items": {"type": "string"}},
+    "stage": {"enum": ["assignment", "verification"]}
+   }
+  }
+ }
+}

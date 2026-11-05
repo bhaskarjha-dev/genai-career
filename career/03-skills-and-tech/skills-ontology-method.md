@@ -140,16 +140,18 @@ Both are projections of the same links, so they cannot disagree.
 
 ---
 
-## 5. Audit Baseline: Before and After
+## 5. Coverage Checks
 
-| Gap found by the 2026-11-04 audit | Initial matrix (before) | Calibrated ontology (after) |
-|---|---|---|
-| Concrete technologies | 29 of 138 skills, 14 of them bundles | 274 concrete entries, unbundled; 205 are named in the research |
-| Corpus technologies with a typed entry | 78 of 161 (48%) | All of the audit list; the validator enforces it |
-| JobsPipe skill terms with no match | 30 of 114 | All typed |
-| Roles with no non-technical skill | 13 of 26 | 0 |
-| Type, relations, aliases, status | None | On every entry |
-| Skills per role | 7–25 | 41–148 |
+The checks from the 2026-11-04 skills audit, as the ontology meets them:
+
+| Check | Result |
+|---|---|
+| Concrete technologies | 274 concrete entries, unbundled; 205 are named in the research |
+| Corpus technologies with a typed entry | All of the audit list; the validator enforces it |
+| JobsPipe skill terms | All 114 typed |
+| Roles with at least one non-technical skill | All 26 |
+| Type, relations, aliases, status | On every entry |
+| Skills per role | 41–148 |
 
 ---
 

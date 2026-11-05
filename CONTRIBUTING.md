@@ -83,6 +83,26 @@ Every generator supports `--check`.
 
 1. Run the generators you affected.
 2. Run `python3 scripts/validate_docs.py`. It checks links, anchors, tables, front matter, every generated output, cross-file ranks and corpus coverage, and must print `PROBLEMS: 0`. CI runs the same check on every push and pull request.
-3. Add an entry to [CHANGELOG.md](CHANGELOG.md), and bump the `version` and `last_verified` in the front matter of the documents you changed.
+3. Add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md), and update `last_verified` in the front matter of the documents whose facts you changed or re-checked.
 
 **Scripts:** standard library only; run them with `python3 -B` so that no `__pycache__` is left behind.
+
+## 6. Versioning and releases
+
+The repository follows [Semantic Versioning](https://semver.org/) with git tags. Documents carry no version number; each one has `last_verified` and `status` instead (decision D-014).
+
+| Change | Version bump |
+|---|---|
+| Corrections, refreshed evidence, small additions | Patch (0.1.0 → 0.1.1) |
+| A ROADMAP milestone, or a change to paths, document IDs, skill IDs or a data schema | Minor while below 1.0 (0.1.x → 0.2.0) |
+| From 1.0 on, a change to paths, IDs or schemas that breaks readers or scripts | Major |
+
+**1.0.0** comes when every lifecycle stage has its core guide (ROADMAP phase 3), paths, IDs and schemas are declared stable, and the reference documents have had an independent fact-check.
+
+**To release:**
+1. Move the entries under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md) to a new `## [x.y.z] - YYYY-MM-DD` section.
+2. Commit, then tag and push: `git tag -a vx.y.z -m "vx.y.z"` and `git push origin vx.y.z`.
+
+**History is append-only.** Published commits are never rewritten. Corrections go forward: errors in research records to [research/ERRATA.md](research/ERRATA.md), everything else to the changelog.
+
+**Data files** version their own format (`schema: <name>/<major.minor>`). Bump the major number only for a change that breaks readers of the file.

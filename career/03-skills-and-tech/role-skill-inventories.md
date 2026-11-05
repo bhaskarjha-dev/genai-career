@@ -5,7 +5,7 @@ content_type: index
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier change log and verification."
+summary: "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions and verification."
 sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T1-03]
 generated_by: "scripts/build_skills.py (generated blocks)"
 ---
@@ -191,41 +191,41 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 
 ---
 
-## 3. Tier Changes From the Initial Concise Matrix
+## 3. Tier Decisions Backed by Measured Shares
 
-Each change below came with a reason and a source. The concise matrix is regenerated from the same ontology, so it reflects these changes.
+Where a measured share of postings decided a skill's tier, the decision and its reason are listed here. The concise resume matrix is generated from the same ontology, so it uses these tiers.
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (change log) -->
-| Role | Skill | From → to | Why | Stage |
+| Role | Skill | Tier | Why | Stage |
 |---|---|:---:|---|---|
-| AI Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S → I | AWS and Azure are each named in 35.1% of AI Engineer postings (JobsPipe) | assignment |
-| AI Engineer | Git & CI/CD | S → I | CI/CD is named in 34.4% of AI Engineer postings (JobsPipe) | assignment |
-| AI Engineer | ML fundamentals | S → I | "machine learning" is named in 39.8% of AI Engineer postings (JobsPipe) | assignment |
-| AI Engineer | Embeddings & vector search | S → I | vector databases are named in 32.6% of AI Engineer postings (JobsPipe) | assignment |
-| Machine Learning Engineer (GenAI/LLM track) | C++ | S → I | C++ is named in 23.3% of ML Engineer postings (JobsPipe) | assignment |
-| Machine Learning Engineer (GenAI/LLM track) | Data structures & algorithms | S → I | data structures are named in 33.7% of ML Engineer postings (JobsPipe) | assignment |
-| Machine Learning Engineer (GenAI/LLM track) | Experiment design & A/B testing | S → I | A/B testing is named in 23.5% of ML Engineer postings (JobsPipe) | assignment |
-| Machine Learning Engineer (GenAI/LLM track) | TensorFlow / JAX (choose 1: TensorFlow \| JAX) | S → I | TensorFlow is named in 31.8% of ML Engineer postings (JobsPipe) | assignment |
-| Applied Scientist (GenAI/LLM teams) | SQL | S → I | SQL is named in 63.8% of Data Scientist postings (feeder title) | assignment |
-| Applied AI Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S → I | AWS and Azure are each named in 35.1% of AI Engineer postings, the closest measured title | assignment |
-| Applied AI Engineer | Git & CI/CD | S → I | CI/CD is named in 34.4% of AI Engineer postings, the closest measured title | assignment |
-| Applied AI Engineer | Embeddings & vector search | S → I | vector databases are named in 32.6% of AI Engineer postings, the closest measured title | assignment |
-| AI Infrastructure / GPU Platform Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S → I | AWS is named in 52.9% of DevOps Engineer postings (feeder title) | assignment |
-| AI Infrastructure / GPU Platform Engineer | Docker | S → I | Docker is named in 53.4% of DevOps Engineer postings (feeder title) | assignment |
-| AI Infrastructure / GPU Platform Engineer | Git & CI/CD | S → I | CI/CD is named in 81.2% of DevOps Engineer postings (feeder title) | assignment |
-| Research Scientist (LLM research) | Data structures & algorithms | S → I | data structures are named in 26.0% of all-field Research Scientist postings (JobsPipe) | assignment |
-| ML Platform / MLOps (LLMOps) Engineer | Linux | S → I | Linux is named in 45.1% of DevOps Engineer postings (feeder title) | assignment |
-| AI Product Manager | Agents & tool use | O → S | "agentic AI" is named in 13.6% of Product Manager postings (feeder title) | assignment |
-| AI Product Manager | GRC & risk assessment | S → I | "compliance" is named in 26.1% of Product Manager postings (feeder title) | assignment |
-| AI Product Manager | Leadership & mentoring | S → I | leadership is named in 40.1% of Product Manager postings (feeder title) | assignment |
-| AI / GenAI Solutions Architect | Python (production) | S → I | Python is named in 23.6% of Solutions Architect postings (JobsPipe) | assignment |
-| AI Security Engineer / AI Red Teamer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S → I | AWS is named in 38.8% of Security Engineer postings (feeder title) | assignment |
-| AI Security Engineer / AI Red Teamer | GRC & risk assessment | S → I | "compliance" is named in 39.4% of Security Engineer postings (feeder title) | assignment |
-| AI Security Engineer / AI Red Teamer | MCP (Model Context Protocol) | O → S | MCP is named in 13.0% of AI Security Specialist postings (T0-16, small sample) | assignment |
-| AI Product Engineer (AI Frontend) | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S → I | AWS is named in 41.3% of Full-Stack Engineer postings (feeder title) | assignment |
-| AI Product Engineer (AI Frontend) | Git & CI/CD | S → I | CI/CD is named in 37.8% of Full-Stack Engineer postings (feeder title) | assignment |
-| AI Product Engineer (AI Frontend) | Python (production) | S → I | Python is named in 41.8% of Full-Stack Engineer postings (feeder title) | assignment |
-| AI Engineering Manager / Director | GRC & risk assessment | S → I | "compliance" is named in 30.9% of Engineering Manager postings (feeder title) | assignment |
+| AI Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS and Azure are each named in 35.1% of AI Engineer postings (JobsPipe) | assignment |
+| AI Engineer | Git & CI/CD | I | CI/CD is named in 34.4% of AI Engineer postings (JobsPipe) | assignment |
+| AI Engineer | ML fundamentals | I | "machine learning" is named in 39.8% of AI Engineer postings (JobsPipe) | assignment |
+| AI Engineer | Embeddings & vector search | I | vector databases are named in 32.6% of AI Engineer postings (JobsPipe) | assignment |
+| Machine Learning Engineer (GenAI/LLM track) | C++ | I | C++ is named in 23.3% of ML Engineer postings (JobsPipe) | assignment |
+| Machine Learning Engineer (GenAI/LLM track) | Data structures & algorithms | I | data structures are named in 33.7% of ML Engineer postings (JobsPipe) | assignment |
+| Machine Learning Engineer (GenAI/LLM track) | Experiment design & A/B testing | I | A/B testing is named in 23.5% of ML Engineer postings (JobsPipe) | assignment |
+| Machine Learning Engineer (GenAI/LLM track) | TensorFlow / JAX (choose 1: TensorFlow \| JAX) | I | TensorFlow is named in 31.8% of ML Engineer postings (JobsPipe) | assignment |
+| Applied Scientist (GenAI/LLM teams) | SQL | I | SQL is named in 63.8% of Data Scientist postings (feeder title) | assignment |
+| Applied AI Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS and Azure are each named in 35.1% of AI Engineer postings, the closest measured title | assignment |
+| Applied AI Engineer | Git & CI/CD | I | CI/CD is named in 34.4% of AI Engineer postings, the closest measured title | assignment |
+| Applied AI Engineer | Embeddings & vector search | I | vector databases are named in 32.6% of AI Engineer postings, the closest measured title | assignment |
+| AI Infrastructure / GPU Platform Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 52.9% of DevOps Engineer postings (feeder title) | assignment |
+| AI Infrastructure / GPU Platform Engineer | Docker | I | Docker is named in 53.4% of DevOps Engineer postings (feeder title) | assignment |
+| AI Infrastructure / GPU Platform Engineer | Git & CI/CD | I | CI/CD is named in 81.2% of DevOps Engineer postings (feeder title) | assignment |
+| Research Scientist (LLM research) | Data structures & algorithms | I | data structures are named in 26.0% of all-field Research Scientist postings (JobsPipe) | assignment |
+| ML Platform / MLOps (LLMOps) Engineer | Linux | I | Linux is named in 45.1% of DevOps Engineer postings (feeder title) | assignment |
+| AI Product Manager | Agents & tool use | S | "agentic AI" is named in 13.6% of Product Manager postings (feeder title) | assignment |
+| AI Product Manager | GRC & risk assessment | I | "compliance" is named in 26.1% of Product Manager postings (feeder title) | assignment |
+| AI Product Manager | Leadership & mentoring | I | leadership is named in 40.1% of Product Manager postings (feeder title) | assignment |
+| AI / GenAI Solutions Architect | Python (production) | I | Python is named in 23.6% of Solutions Architect postings (JobsPipe) | assignment |
+| AI Security Engineer / AI Red Teamer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 38.8% of Security Engineer postings (feeder title) | assignment |
+| AI Security Engineer / AI Red Teamer | GRC & risk assessment | I | "compliance" is named in 39.4% of Security Engineer postings (feeder title) | assignment |
+| AI Security Engineer / AI Red Teamer | MCP (Model Context Protocol) | S | MCP is named in 13.0% of AI Security Specialist postings (T0-16, small sample) | assignment |
+| AI Product Engineer (AI Frontend) | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 41.3% of Full-Stack Engineer postings (feeder title) | assignment |
+| AI Product Engineer (AI Frontend) | Git & CI/CD | I | CI/CD is named in 37.8% of Full-Stack Engineer postings (feeder title) | assignment |
+| AI Product Engineer (AI Frontend) | Python (production) | I | Python is named in 41.8% of Full-Stack Engineer postings (feeder title) | assignment |
+| AI Engineering Manager / Director | GRC & risk assessment | I | "compliance" is named in 30.9% of Engineering Manager postings (feeder title) | assignment |
 <!-- END GENERATED -->
 
 ---

@@ -13,7 +13,7 @@ generated_by: scripts/build_skills.py
 
 # Role Skill Inventories: One File per Role
 
-Each file lists every skill the role needs, typed and tiered with evidence, plus posting keywords, credentials and a self-assessment. The cross-role views, tier change log and verification are in [role-skill-inventories.md](../role-skill-inventories.md); skill definitions are in the [vocabulary](../skills-vocabulary.md).
+Each file lists every skill the role needs, typed and tiered with evidence, plus posting keywords, credentials and a self-assessment. The cross-role views, tier decisions and verification are in [role-skill-inventories.md](../role-skill-inventories.md); skill definitions are in the [vocabulary](../skills-vocabulary.md).
 
 | Rank | Role | Skills | Inventory |
 |:---:|---|:---:|---|

@@ -904,7 +904,7 @@ schema_version: "0.1.0"
 
 ## Context
 
-Phase 1 initially assigned ad-hoc version strings to individual documents (e.g. 2.2, 2.1, 1.2, 1.0.1). This created phantom version inflation and required manual per-page version bumping that conveyed no actionable information beyond what Git history, `last_verified`, and `CHANGELOG.md` already provide. Furthermore, methods were numbered ("CCI v2"), implying previous public versions that do not exist in the clean repository.
+Phase 1 initially assigned ad-hoc version strings to individual documents (e.g. 2.1, 2.0, 1.2, 1.0.1). This created phantom version inflation and required manual per-page version bumping that conveyed no actionable information beyond what Git history, `last_verified`, and `CHANGELOG.md` already provide. Furthermore, methods were numbered ("CCI v2"), implying previous public versions that do not exist in the clean repository.
 
 ## Decision
 

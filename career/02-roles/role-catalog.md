@@ -29,20 +29,20 @@ This file answers one question: **which GenAI roles exist, what is each one, and
 | ↳ Verified, volume unmeasured (V) | 17 | Real title at named employers, but no quorum-grade count yet |
 | ↳ Emerging / watchlist (W) | 8 | Real postings, small or sub-quorum counts |
 | ↳ Absorbed specialisation (A) | 1 | Work exists inside other professions (audit, model risk, privacy) |
-| **Title strings indexed** (§4) | **241** | Every title seen in the research corpus or the market refresh, each mapped to a canonical role or to a non-role bucket |
+| **Title strings indexed** (§4) | **241** | Every title seen in the research corpus or the market refresh, plus 26 labels with no source in the corpus (marked [P]), each mapped to a canonical role or to a non-role bucket |
 | Quarantined title strings (Q) | 10 | The 8 quarantined title families of T0-01 D4 (Context Engineer counted with its 2 variants) |
-| Unmeasured buzzwords (U) | 7 | Listed somewhere but never searched (5 from FAD §5.3, 2 candidate labels) |
-| Candidate roles, not yet measured | 7 | Plausible roles with no title-level count yet (voice AI, on-device AI, retrieval engineer, DevRel, AI TPM, and two candidate labels) |
+| Unmeasured buzzwords (U) | 7 | Listed somewhere but never searched (5 from FAD §5.3, 2 unsourced labels [P]) |
+| Candidate roles, not yet measured | 7 | Plausible roles with no title-level count yet (voice AI, on-device AI, retrieval engineer, DevRel, AI TPM, and two unsourced labels [P]) |
 | Not a role | 24 | 8 persona strings, 4 certifications, 3 programmes (fellowships/residencies) and 9 other non-roles: a newsletter, an event name, a vendor document, a null search result, a salary-guide category, a persona heading, an out-of-scope "functional safety" title and two unverified titles |
 
-**Market Misconceptions & Empirical Corrections** (full log in §9):
+**What the evidence corrects** (details in §9 and in [research/ERRATA.md](../../research/ERRATA.md)):
 
-1. **Only three title families clear the 50-posting quorum: AI Engineer, Machine Learning Engineer and Forward Deployed Engineer.** That is T0-01's own verdict. Common market surveys and early drafts added Applied Scientist with "~700 US postings". That number has no primary source: T0-01 measured 14 Applied Scientist postings at 12 AI startups and left Big Tech unmeasured. The "~700" first appears in T1-01:80 and was copied into FAD.
-2. **Inflated "120+ roles" lists collapse into 29 canonical roles.** The rest were aliases, seniority levels, transition personas, duplicate entries, three certification names (one retired on 2026-06-30) plus a non-existent "AWS AI Solutions Architect", a newsletter ("Pragmatic Engineer") and two titles fabricated from source names ("Workday / ATS Systems Administrator", "AIDN Developer").
-3. **The quarantine register now matches T0-01 D4.** Five FAD-listed buzzwords were never searched: AI Whisperer, Neural Network Designer, Transformer Specialist, Foundation Model Engineer and Reasoning Engineer. This catalog labels them *unmeasured*, not "zero postings". LLMOps is a skill tag under ML Platform/MLOps, not a quarantined title.
-4. **Pay labels are corrected.** **$312K** is the US all-company Senior median total comp (Levels.fyi 2025) and is not AI-specific. **₹1.06–1.22Cr** is the range of senior medians at the five best-paying Bengaluru employers, which is roughly the P90 ceiling; the Greater Bengaluru Senior SWE median on Levels.fyi (n=4,836, a large-employer-skewed sample) is **₹56.0L**. FAD's US Tier 0 and Tier 1 caps sit *below* the measured Entry ($155K) and Mid ($226K) medians.
-5. **Every pay figure now carries its source.** Speculative per-role ranges for FDE, Evals, Agentic, Solutions Architect, AI PM, CAIO and governance had no empirical source in the corpus. Where no pay evidence exists, this file says so.
-6. **India tax facts are corrected (T0-07).** §44ADA (s.58 under the Income-tax Act 2025) keeps about 83–84% of billing up to ₹75L, not "up to 78%". About 65% is kept at ₹1.2Cr. ₹75L is about $79K, not $90K. In the ₹75L to ~₹92–98L "dead zone" restructuring is not the answer; at ≥₹1Cr, T0-07 lists LLP and Pvt Ltd options whose cash outcomes differ by only ~₹3–10L.
+1. **Only three title families clear the 50-posting quorum: AI Engineer, Machine Learning Engineer and Forward Deployed Engineer.** That is T0-01's own verdict. FAD §5.1 adds Applied Scientist with "~700 US postings", but that number has no primary source: T0-01 measured 14 Applied Scientist postings at 12 AI startups and left Big Tech unmeasured. The "~700" first appears in T1-01:80 and was copied into FAD (ERRATA U1).
+2. **241 title strings resolve to 29 canonical roles.** The others are aliases, seniority levels, transition personas, duplicate strings, certification names (one retired on 2026-06-30), a non-existent "AWS AI Solutions Architect", a newsletter ("Pragmatic Engineer") and two titles fabricated from source names ("Workday / ATS Systems Administrator", "AIDN Developer").
+3. **The quarantine register matches T0-01 D4.** Five FAD-listed buzzwords were never searched: AI Whisperer, Neural Network Designer, Transformer Specialist, Foundation Model Engineer and Reasoning Engineer. This catalog labels them *unmeasured*, not "zero postings". LLMOps is a skill tag under ML Platform/MLOps, not a quarantined title.
+4. **FAD's pay labels are corrected (ERRATA U4–U5).** **$312K** is the US all-company Senior median total comp (Levels.fyi 2025) and is not AI-specific. **₹1.06–1.22Cr** is the range of senior medians at the five best-paying Bengaluru employers, which is roughly the P90 ceiling; the Greater Bengaluru Senior SWE median on Levels.fyi (n=4,836, a large-employer-skewed sample) is **₹56.0L**. FAD's US Tier 0 and Tier 1 caps sit *below* the measured Entry ($155K) and Mid ($226K) medians.
+5. **Every pay figure carries its source.** Per-role pay appears only where the corpus has a source; where it has none (for example FDE, AI PM and AI Solutions Architect), this file says so.
+6. **India contractor tax, in numbers (T0-07).** §44ADA (s.58 under the Income-tax Act 2025) keeps about 83–84% of billing up to ₹75L and about 65% at ₹1.2Cr; ₹75L is about $79K. In the ₹75L to ~₹92–98L "dead zone" restructuring is not the answer; at ≥₹1Cr, T0-07 lists LLP and Pvt Ltd options whose cash outcomes differ by only ~₹3–10L.
 
 **How the three files connect:** this catalog defines the role universe → the [ranked catalog](role-rankings.md) scores every canonical role on a 100-point index with uncertainty bands → the [skills catalog](../03-skills-and-tech/role-skill-maps.md) lists the full skill stack for each role.
 
@@ -330,7 +330,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 <a id="profile-applied-scientist"></a>
 #### `applied-scientist`: Applied Scientist · V · Rank 7
 - **What it is:** research-to-production scientists at large tech firms: modelling, experimentation and shipping models.
-- **Demand:** Fast AI Jobs listed 14 at 12 AI startups (cached 2026-06-09) [B · T0-01 D2]. **Big Tech volume is unmeasured.** The "~700" figure has no primary source and has been removed (§9).
+- **Demand:** Fast AI Jobs listed 14 at 12 AI startups (cached 2026-06-09) [B · T0-01 D2]. **Big Tech volume is unmeasured.** The "~700" figure in FAD §5.1 has no primary source (ERRATA U1).
 - **Pay:** none in corpus. The ranked catalog scores it with Big Tech MLE as a proxy (Meta E5 $458K; Google L5 $393–445K) [B, proxy]. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-applied-scientist)
 - **Entry route:** PhD → Tier 2 Applied Scientist in ~8 months, the primary high-volume PhD corridor in T2-01 [D].
 - **Next action:** count it at the 2026-12-01 recount (employer career sites plus the JobsPipe API).
@@ -521,7 +521,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 - **What it is:** alignment, interpretability, dangerous-capability evals and safety research at frontier labs and safety organisations.
 - **Demand:** ~600 technical plus ~500 non-technical FTEs across 67 and 49 organisations (single-author 2025 estimate) [C · T0-15]. Technical headcount is growing ~21% a year [C].
 - **Pay:** "no pay or volume figures for this market" [T0-15]. Lab-employed researchers sit on Research Scientist / Research Engineer ladders. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher)
-- **Correction:** An unverified claim of "Mechanistic Interpretability ~150 FTEs" is not in any session and has been removed. Interpretability is kept as a specialisation without a headcount.
+- **Headcount:** no source in the corpus gives a headcount for interpretability researchers, so it is kept as a specialisation without one.
 - **Aliases:** AI Safety Engineer (Frontier Alignment), Alignment Researcher. Specialisation: Mechanistic Interpretability.
 
 ### 3.7 Governance, Risk and Assurance
@@ -584,7 +584,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 - **Demand:** 8 of the newest 50 Fast AI Jobs AI-Engineer rows were Figure AI "Helix AI Engineer", all from one employer [B · T0-01 F2]. JobsPipe's US sample includes "Physical AI Engineer". → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer)
 - **Pay:** none in corpus.
 - **Watch:** single-employer concentration fails the D5 breadth test.
-- **Aliases:** Helix AI Engineer. "Autonomous Systems Engineer" is unverified and not found in any session.
+- **Aliases:** Helix AI Engineer. "Autonomous Systems Engineer" is an unsourced label [P]; it is not found in any session.
 
 <a id="profile-domain-evaluation-specialist"></a>
 #### `domain-evaluation-specialist`: Domain Evaluation Specialist / AI Trainer · W · Rank 24
@@ -645,12 +645,12 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 ## 4. Complete A–Z Title Index
 
-All 241 title strings, sorted alphabetically (case-insensitive, punctuation ignored). Entries are generated from one structured list in [scripts/build_index.py](../../scripts/build_index.py) (`--update` rewrites this table, `--check` verifies it), so the sort order and counts are computed, not typed by hand. "Candidate" marks a title from initial surveys that lacks independent posting verification.
+All 241 title strings, sorted alphabetically (case-insensitive, punctuation ignored). Entries are generated from one structured list in [scripts/build_index.py](../../scripts/build_index.py) (`--update` rewrites this table, `--check` verifies it), so the sort order and counts are computed, not typed by hand. Notes marked [P] are labels with no source in the research corpus; they are listed so that they can be mapped to a canonical role or rejected.
 
 <!-- BEGIN GENERATED INDEX -->
 | # | Title (as seen) | Type | Maps to | Evidence / note |
 |:---:|---|---|---|---|
-| 1 | Academic ML/NLP Researcher | Persona | feeder: phd | Variant label for PhD feeder persona · T0-06 |
+| 1 | Academic ML/NLP Researcher | Persona | feeder: phd | Unsourced label [P]; duplicate string for the PhD feeder persona |
 | 2 | Academic / PhD Researcher | Persona | feeder: phd | ~8 months to applied scientist / RE (model) · T0-06 |
 | 3 | Agent Architect (exact) | Quarantined | `ai-solutions-architect` | ~2 exact postings; alias of AI/Solutions Architect · T0-01 F7, D4 |
 | 4 | Agent Engineer | Alias | `agentic-ai-engineer` | 28 postings/90 days (Skillenai) · T0-16 |
@@ -658,20 +658,20 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 6 | Agent Interface Architect | Brief label | `ai-product-engineer` | Pipeline-brief target; no posting count · T2-01 |
 | 7 | Agentic AI Architect | Alias | `ai-solutions-architect` | ≥5 postings (Cognizant, Air India, Zoom) · T0-01 F7 |
 | 8 | Agentic AI Engineer | Canonical | `agentic-ai-engineer` | W · ~66 postings/90 days (Skillenai, derived) · T0-16 |
-| 9 | Agentic Systems / Multi-Agent Engineer | Alias | `agentic-ai-engineer` | Candidate alias; no separate posting count · T0-01 |
+| 9 | Agentic Systems / Multi-Agent Engineer | Alias | `agentic-ai-engineer` | Unsourced label [P]; no separate posting count |
 | 10 | AI Agent Engineer | Alias | `agentic-ai-engineer` | ~5 of newest 50 AI rows · T0-01 D2 |
 | 11 | AI Application Engineer | Alias | `ai-engineer` | ~30 postings/90 days (Skillenai, derived) · T0-16 §9.2 |
 | 12 | AI Architect / Enterprise AI Architect | Alias | `ai-solutions-architect` | Probable, services-concentrated · T0-01 D2 row 13 |
 | 13 | AI Compliance Specialist | Legacy/absorbed | `ai-risk-assurance-specialist` | Distinct career 'mostly no'; sits in privacy/legal/GRC · T0-15 |
 | 14 | AI Consultant / Strategist | Alias | `independent-ai-consultant` | LinkedIn Jobs on the Rise #2; median 8.2 yrs (C) · T0-06 |
 | 15 | AI Context Engineer | Quarantined | — | Adobe title; part of Context Engineer count · T0-01 F5 |
-| 16 | AI Data Governance & Privacy Architect | Not a role | `ai-risk-assurance-specialist` | Speculative title; not found in any session or market data · T0-15 |
+| 16 | AI Data Governance & Privacy Architect | Not a role | `ai-risk-assurance-specialist` | Unsourced label [P]; not found in any session |
 | 17 | AI Deployment Engineer | Alias | `forward-deployed-engineer` | OpenAI posting (Jul 2026) · T0-01 D7 |
 | 18 | AI Developer | Alias | `ai-engineer` | India broad-market title (Glassdoor n=167) · T0-02, T0-11 |
 | 19 | AI Developer Advocate / DevRel (AI) | Candidate (unmeasured) | — | One Ollama DevRel opening on an aggregator · T0-05 |
 | 20 | AI Developer Network (AIDN) Developer | Not a role | — | Fabricated from an event name 'AIDN Developer Day' · T0-12 |
 | 21 | AI Enablement Engineer | Canonical | `ai-enablement-engineer` | W · ~53 postings/90 days (Skillenai, derived) · T0-16 |
-| 22 | AI Enablement & Internal DevEx Lead | Level variant | `ai-enablement-engineer` | Candidate label; only 'AI Enablement Engineer' is evidenced · T0-06 |
+| 22 | AI Enablement & Internal DevEx Lead | Level variant | `ai-enablement-engineer` | Unsourced label [P]; only 'AI Enablement Engineer' is evidenced |
 | 23 | AI Engineer | Canonical | `ai-engineer` | E · US 1,697 / India 398 live (JobsPipe) · T0-01 F1 |
 | 24 | AI Engineer – FDE | Alias | `forward-deployed-engineer` | Databricks, many countries · T0-01 D7 |
 | 25 | AI Engineer, LLMOps & Evaluation | Alias | `ai-evaluation-engineer` | Auxilius AI, Munich · T0-03 J9 |
@@ -682,7 +682,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 30 | AI-Frontend Engineer | Alias | `ai-product-engineer` | Productboard/Artisan-style postings · T0-06 |
 | 31 | AI / GenAI Solutions Architect | Canonical | `ai-solutions-architect` | V · no AI-architect title count; ≥~350 US SA postings mention AI (upper bound, model) · JobsPipe 2026-11-02 |
 | 32 | AI Governance Analyst | Level variant | `ai-governance-lead` | Hays (aviation client), contract · T0-15 |
-| 33 | AI Governance & Compliance Lead | Alias | `ai-governance-lead` | Governance lead variant label · T0-15 |
+| 33 | AI Governance & Compliance Lead | Alias | `ai-governance-lead` | Unsourced label [P] |
 | 34 | AI Governance Engineer | Alias | `responsible-ai-engineer` | Stryker $112.8–239.9K; Beacon Hill $75–85/hr · T0-15 |
 | 35 | AI Governance Officer / Manager / Lead | Alias | `ai-governance-lead` | PwC, ERGO, Alstom JDs · T0-15 |
 | 36 | AI Governance Programme Lead / Manager | Canonical | `ai-governance-lead` | V · 1,997 US AI-governance postings Jan–Sep 2026 (C) · T0-15 |
@@ -697,17 +697,17 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 45 | AI PM | Alias | `ai-product-manager` | Entry fee: 4+ yrs PM + one shipped model feature (D) · T0-06 |
 | 46 | AI Product Engineer | Canonical | `ai-product-engineer` | W · thin, senior-skewed AI-frontend demand · T0-06 KF-6 |
 | 47 | AI Product Manager | Canonical | `ai-product-manager` | V · no AI-PM title count; ≥~970 US PM postings mention AI (upper bound, model) · JobsPipe 2026-11-02 |
-| 48 | AI Product Manager (AIPM) | Alias | `ai-product-manager` | Abbreviated market title form · T0-06 |
+| 48 | AI Product Manager (AIPM) | Alias | `ai-product-manager` | Unsourced label [P] |
 | 49 | AI Product Ops | Brief label | `ai-enablement-engineer` | Pipeline-brief target; no posting count · T2-01 |
 | 50 | AI Red Teamer | Alias | `ai-security-engineer` | Red-teaming appears as a JD skill · T0-15 |
-| 51 | AI Research Scientist (PhD Foundation) | Alias | `research-scientist` | PhD track descriptor · T0-02 |
+| 51 | AI Research Scientist (PhD Foundation) | Alias | `research-scientist` | Unsourced label [P] |
 | 52 | AI Risk, Audit & Compliance Specialist | Canonical | `ai-risk-assurance-specialist` | A · specialisation inside audit/model-risk/privacy · T0-15 |
 | 53 | AI Risk Manager / Model Risk Validator | Specialisation | `ai-risk-assurance-specialist` | Model-risk teams; SR 26-2 excludes GenAI · T0-15 |
 | 54 | AI Safety Engineer (Enterprise Responsible AI) | Alias | `responsible-ai-engineer` | Exact title returned 0 at regulated enterprises · T0-15 |
 | 55 | AI Safety Engineer (Frontier Alignment) | Alias | `ai-safety-researcher` | ~600 technical FTEs · T0-15 F8 |
 | 56 | AI Security Engineer / AI Red Teamer | Canonical | `ai-security-engineer` | W · ~23 'AI Security Specialist' postings/90 days · T0-16 |
 | 57 | AI Security Fellow | Programme | `ai-security-engineer` | Anthropic Fellows programme (US/UK/CA authorisation) · T0-12 |
-| 58 | AI Security & Red Team Engineer | Alias | `ai-security-engineer` | Red-team engineering variant label · T0-15 |
+| 58 | AI Security & Red Team Engineer | Alias | `ai-security-engineer` | Unsourced label [P] |
 | 59 | AI Security Specialist | Alias | `ai-security-engineer` | 13.0% MCP share, n=3 (~23 postings/90 days) · T0-16 |
 | 60 | AI Software Engineer | Alias | `ai-engineer` | Generic variant; no separate count |
 | 61 | AI Whisperer | Unmeasured buzzword | — | 2023 media label (T0-05 W-13); listed in FAD §5.3 without a search |
@@ -719,17 +719,17 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 67 | Applied AI Engineer | Canonical | `applied-ai-engineer` | V · 16 of newest 50 AI rows (Fast AI Jobs) · T0-01 D2 |
 | 68 | Applied Research Scientist | Alias | `applied-scientist` | Radford job family; data paywalled · T0-02 |
 | 69 | Applied Scientist | Canonical | `applied-scientist` | V · 14 at 12 AI startups (Jun 2026); Big Tech unmeasured · T0-01 D2 |
-| 70 | Applied Scientist (GenAI) | Alias | `applied-scientist` | GenAI track label; startup count n=14 · T0-01 |
-| 71 | Autonomous Systems Engineer | Alias | `physical-ai-engineer` | Not found in any research session or market posting data |
+| 70 | Applied Scientist (GenAI) | Alias | `applied-scientist` | Unsourced label [P] |
+| 71 | Autonomous Systems Engineer | Alias | `physical-ai-engineer` | Unsourced label [P]; not found in any session |
 | 72 | AWS AI Architect | Alias | `ai-solutions-architect` | Staffing-agency posting; AWS certs preferred · T0-11 |
-| 73 | AWS AI Solutions Architect | Not a role | `ai-solutions-architect` | Neither an industry title nor a certification in T0-11 |
+| 73 | AWS AI Solutions Architect | Not a role | `ai-solutions-architect` | Unsourced label [P]; neither a job title nor a certification in T0-11 |
 | 74 | AWS and GenAI Engineer | Alias | `ai-engineer` | Staffing-agency posting · T0-11 |
 | 75 | AWS Certified Machine Learning – Specialty | Certification | — | Retired 31 Mar 2026; successor MLA-C01 · T0-11 |
 | 76 | Azure AI Engineer Associate (AI-102) | Certification | — | Retired 30 Jun 2026; replaced by AI-103 · T0-11 |
 | 77 | Backend LLM Engineer | Alias | `ai-engineer` | n=1 (LiteLLM, $120–180K + equity) · T0-05 |
 | 78 | Backend / Systems Software Engineer | Persona | feeder: backend | ~6 months to applied AI engineer at 15–20 h/wk (model) · T0-06 |
 | 79 | Chief AI Officer (CAIO) | Canonical | `chief-ai-officer` | V · OMB M-25-21 federal mandate (B) · T0-15 |
-| 80 | Chief AI Officer / VP of AI | Alias | `chief-ai-officer` | Combined executive label merging two distinct roles · T0-02, T0-18 |
+| 80 | Chief AI Officer / VP of AI | Alias | `chief-ai-officer` | Unsourced label [P]; one string for two distinct roles (see Chief AI Officer and VP / Head of AI) |
 | 81 | Cleared GenAI Engineer | Alias | `ai-engineer` | Accenture Federal Services posting · T0-11 |
 | 82 | Client-Side AI Specialist | Not a role | `ai-product-engineer` | Persona-3 heading; on-device AI 'a differentiator, not a job' · T2-01 |
 | 83 | Cognitive Architect | Quarantined | — | 339–1,000 raw hits are false positives, except one legacy IBM posting · T0-01 F6 |
@@ -743,7 +743,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 91 | Customer Engineer, AI/ML | Alias | `ai-solutions-architect` | Google Cloud; experience-based · T0-11 |
 | 92 | Data Annotator | Alias | `domain-evaluation-specialist` | LinkedIn Jobs on the Rise #4 (C) · T0-06 |
 | 93 | Data / Context Engineer | Quarantined | — | Staffing listing; part of Context Engineer count · T0-01 F5 |
-| 94 | Data Operations & RLHF Lead | Level variant | `domain-evaluation-specialist` | Vendor label; 'Scale AI/Mercor pipeline' citation not in T0-05 |
+| 94 | Data Operations & RLHF Lead | Level variant | `domain-evaluation-specialist` | Unsourced label [P] |
 | 95 | Data Protection Officer (DPO, AI) | Specialisation | `ai-risk-assurance-specialist` | Adjacent statutory role; India DPDP duties from 13 May 2027 · T0-15 |
 | 96 | Data Scientist / BI Analyst | Persona | feeder: data_scientist | DS ~8 months, BI ~11 months (model) · T0-06 |
 | 97 | Databricks Certified Generative AI Engineer Associate | Certification | — | $200 exam; 'Low' signal at startups · T0-11 |
@@ -757,19 +757,19 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 105 | Distributed Training Engineer | Unmeasured buzzword | `ai-infrastructure-engineer` | Title not found; function carried under MTS/RE or infra titles · T0-03 Tier 3 |
 | 106 | Domain Evaluation Lead | Alias | `domain-evaluation-specialist` | 'Highest leverage' non-technical lane · T0-06 |
 | 107 | Domain Evaluation Specialist / AI Trainer | Canonical | `domain-evaluation-specialist` | W · expert-contract marketplaces (Mercor >30,000 experts) · T0-06 |
-| 108 | Enterprise AI Solutions Architect | Alias | `ai-solutions-architect` | Enterprise variant form · T0-01 |
+| 108 | Enterprise AI Solutions Architect | Alias | `ai-solutions-architect` | Unsourced label [P] |
 | 109 | EU AI Office Staff | Specialisation | `ai-governance-lead` | >125 professionals; ~40 contract agents sought (D) · T0-15 |
 | 110 | Evals Engineer | Alias | `ai-evaluation-engineer` | No separate count |
 | 111 | Expert Contractor (AI Training) | Alias | `domain-evaluation-specialist` | Mercor ~$85–110/hr average (C/D) · T0-06 |
 | 112 | FDE Lead / Manager, Forward Deployed Engineering | Level variant | `forward-deployed-engineer` | n8n, OpenAI postings · T0-01 D3, D7 |
 | 113 | Forward Deployed AI Engineer | Alias | `forward-deployed-engineer` | Weekday India listings · T0-01 D8 |
-| 114 | Forward Deployed AI Engineer (FDE / FDSE) | Alias | `forward-deployed-engineer` | Combined title form · T0-01 |
+| 114 | Forward Deployed AI Engineer (FDE / FDSE) | Alias | `forward-deployed-engineer` | Unsourced label [P] |
 | 115 | Forward Deployed Banker | Cluster variant | `forward-deployed-engineer` | Single financial-services listing · T0-01 F3 |
 | 116 | Forward Deployed Engineer (FDE) | Canonical | `forward-deployed-engineer` | E · 933-role cluster at 343 AI startups · T0-01 F3 |
 | 117 | Forward Deployed Product Manager (FDPM) | Cluster variant | `forward-deployed-engineer` | 6 of newest 50 FDE rows; see ai-product-manager · T0-01 F3 |
 | 118 | Forward Deployed Software Engineer (FDSE) | Alias | `forward-deployed-engineer` | Alias map · T0-01 Recommendation 1 |
 | 119 | Foundation Model Engineer | Unmeasured buzzword | `research-engineer` | Listed in FAD §5.3; never searched in T0-01 |
-| 120 | Foundation Model Pre-Training Engineer | Unmeasured buzzword | `research-engineer` | Speculative title with no posting evidence; Levels.fyi has no pre-training cut · T0-02 |
+| 120 | Foundation Model Pre-Training Engineer | Unmeasured buzzword | `research-engineer` | Unsourced label [P]; no posting evidence; Levels.fyi has no pre-training cut · T0-02 |
 | 121 | Fractional AI Architect | Alias | `fractional-ai-leader` | Vantage Point package $1,800–6,400/month · T0-18 |
 | 122 | Fractional AI CTO | Alias | `fractional-ai-leader` | Agency marketing $200–500/hr (C) · T0-18 |
 | 123 | Fractional Chief AI Officer (Fractional CAIO) | Alias | `fractional-ai-leader` | Asks avg $190–208/hr; demand 'falling sharply' · T0-18 |
@@ -777,7 +777,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 125 | Fractional Head of AI / Fractional CAIO | Canonical | `fractional-ai-leader` | V · Go Fractional rates and post counts · T0-18 |
 | 126 | Frontend Engineer (AI) | Alias | `ai-product-engineer` | Forward-deployed frontend listing · T0-06 |
 | 127 | Frontend / Full-Stack Engineer | Persona | feeder: frontend | ~7 months to AI product/full-stack engineer (model) · T0-06 |
-| 128 | Frontend / Full-Stack Engineer (AI Product Engineer) | Persona | feeder: frontend | Merged feeder persona and target role label · T0-06 |
+| 128 | Frontend / Full-Stack Engineer (AI Product Engineer) | Persona | feeder: frontend | Unsourced label [P]; one string for a feeder persona and a target role (see AI Product Engineer) |
 | 129 | Frontier Agents Engineer | Alias | `forward-deployed-engineer` | '(Forward Deployed Engineering)'; ~22 postings/90 days · T0-01 F3, T0-16 |
 | 130 | Frontier AI Safety / Alignment Researcher | Canonical | `ai-safety-researcher` | V · ~600 technical FTEs across 67 orgs (C) · T0-15 F8 |
 | 131 | Frontier Lab Research Engineer | Brief label | `research-engineer` | Pipeline-brief PhD target · T2-01 |
@@ -787,7 +787,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 135 | GenAI Engineer / GenAI Developer | Alias | `ai-engineer` | Dominant India GCC label (Taggd, C) · T0-01 D8 |
 | 136 | Generative AI Engineer | Alias | `ai-engineer` | Quest Global, Genia, Danta postings · T0-01 D2 |
 | 137 | Google Cloud Professional ML Engineer (PMLE) | Certification | — | Active; refreshed for GenAI · T0-11 |
-| 138 | GPU Cluster & Infra Platform Engineer | Alias | `ai-infrastructure-engineer` | Unverified composite label; scarcity claims unsupported · T0-03 |
+| 138 | GPU Cluster & Infra Platform Engineer | Alias | `ai-infrastructure-engineer` | Unsourced label [P]; scarcity claims unsupported |
 | 139 | GPU Kernel / ML Compiler Engineer | Canonical | `gpu-kernel-engineer` | V · CUDA/kernels in 6.6% of S09 postings · T0-03 §6.3 |
 | 140 | Graduate / Junior GenAI Engineer | Level variant | `ai-engineer` | Capgemini Singapore posting · T0-11 |
 | 141 | GTM AI Engineer / GTM Engineer | Cluster variant | `forward-deployed-engineer` | 4 of newest 50 FDE rows · T0-01 F3 |
@@ -798,7 +798,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 146 | Inference Engineer | Alias | `inference-engineer` | Rise 'inference engineer' 28 (small corpus) · T0-01 D2 |
 | 147 | Inference / LLM Serving Engineer | Canonical | `inference-engineer` | V · Rise 28; ≥8 named JDs · T0-01 D2, T0-03 §6.2 |
 | 148 | Inference Runtime Engineer | Alias | `inference-engineer` | Anthropic Staff+ SWE, Inference Runtime ($405–485K) · T0-03 J2 |
-| 149 | Inference & Serving Systems Engineer | Alias | `inference-engineer` | Combined systems variant label · T0-03 |
+| 149 | Inference & Serving Systems Engineer | Alias | `inference-engineer` | Unsourced label [P] |
 | 150 | Inference Systems Engineer | Alias | `inference-engineer` | Archetype label · T0-03 §4.1 |
 | 151 | ISO/IEC 42001 Auditor | Specialisation | `ai-risk-assurance-specialist` | No hiring-weight data · T0-15 |
 | 152 | Kernel Engineer / CUDA Engineer | Alias | `gpu-kernel-engineer` | NVIDIA, AMD, River AI postings · T0-13 |
@@ -807,10 +807,10 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 155 | LLM Serving Engineer | Alias | `inference-engineer` | No separate count |
 | 156 | LLMOps Engineer | Legacy/absorbed | `ml-platform-engineer` | Skill tag under ML Platform/MLOps (T0-01 Rec. 3); FAD §5.3 mislists it as quarantined |
 | 157 | Machine Learning Engineer | Canonical | `ml-engineer` | E · US 1,084 / global 2,157 live (JobsPipe) · T0-01 F1 |
-| 158 | Machine Learning Engineer (GenAI MLE) | Alias | `ml-engineer` | Common GenAI MLE variant label · T0-01 |
+| 158 | Machine Learning Engineer (GenAI MLE) | Alias | `ml-engineer` | Unsourced label [P] |
 | 159 | Manager / Senior Manager, AI Risk & Validation | Level variant | `ai-risk-assurance-specialist` | Deloitte, $171.6–338.3K (seen 16 times) · T0-15 |
 | 160 | MCP Control Plane Engineer | Specialisation | `ml-platform-engineer` | No literal title (T0-16 KF-10); MCP hiring 'not verified at scale' (T0-16 verdict); fold into platform |
-| 161 | Mechanistic Interpretability Researcher | Specialisation | `ai-safety-researcher` | Unverified '~150 FTEs' claim not found in empirical sessions · T0-15 |
+| 161 | Mechanistic Interpretability Researcher | Specialisation | `ai-safety-researcher` | Unsourced label [P]; no headcount source in the corpus |
 | 162 | Member of Technical Staff, Developer Technology | Alias | `gpu-kernel-engineer` | RadixArk; 4+ yrs GPU/LLM infra · T0-05 |
 | 163 | Member of Technical Staff, Inference | Alias | `inference-engineer` | Inferact ($200–400K + equity) · T0-03 J8, T0-05 |
 | 164 | Member of Technical Staff, Language Model Evaluations | Alias | `ai-evaluation-engineer` | Artificial Analysis · T0-05 |
@@ -833,11 +833,11 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 181 | Non-Technical AI Product Manager | Alias | `ai-product-manager` | Non-technical lane ~7 months (model) · T0-06 |
 | 182 | Non-Technical Professional (Product / Ops / Domain) | Persona | feeder: non_technical | ~7 months with 5+ yrs domain; ~22 months from zero code · T0-06 |
 | 183 | On-Device / Edge AI Engineer | Candidate (unmeasured) | `ai-product-engineer` | No posting evidence; differentiator only · T2-01, T0-06 |
-| 184 | On-Device & Edge SLM Engineer | Candidate (unmeasured) | `ai-product-engineer` | Candidate label; CoreML/ONNX claims not found in posting data · T2-01 |
+| 184 | On-Device & Edge SLM Engineer | Candidate (unmeasured) | `ai-product-engineer` | Unsourced label [P]; CoreML/ONNX claims not found in the corpus |
 | 185 | Open-Source Machine Learning Engineer | Alias | `ml-engineer` | n=1 (Hugging Face, US Remote; merged PRs required) · T0-05 |
 | 186 | Optimization Engineer (LLM Serving) | Alias | `inference-engineer` | Together AI 'LLM Inference Frameworks & Optimization Engineer' · T0-03 J5 |
 | 187 | Partner Applied AI Engineer | Alias | `applied-ai-engineer` | OpenAI posting · T0-01 D7 |
-| 188 | PhD / Academic ML Researcher | Persona | feeder: phd | Variant label for PhD feeder persona · T0-06 |
+| 188 | PhD / Academic ML Researcher | Persona | feeder: phd | Unsourced label [P]; duplicate string for the PhD feeder persona |
 | 189 | Physical AI Engineer | Alias | `physical-ai-engineer` | JobsPipe US sample · T0-01 F2 |
 | 190 | Physical AI / Robotics AI Engineer | Canonical | `physical-ai-engineer` | W · 8 of newest 50 AI rows were Figure AI · T0-01 F2 |
 | 191 | Platform Engineer (Enterprise AI) | Alias | `ml-platform-engineer` | Boston Scientific 'Senior Platform Engineer – Enterprise AI' · T0-16 |
@@ -853,7 +853,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 201 | Principal AI Evaluation Engineer | Level variant | `ai-evaluation-engineer` | Backbase, Hyderabad · T0-09 |
 | 202 | Principal ML Engineer, llama.cpp | Alias | `inference-engineer` | Red Hat ($189,600–351,050; closed) · T0-05 |
 | 203 | Production AI Application Engineer | Brief label | `ai-engineer` | Pipeline-brief target for DS/BI; no posting count · T2-01 |
-| 204 | Prompt & Context Optimization Engineer | Legacy/absorbed | `ai-engineer` | Absorbed candidate label; no posting evidence · T0-01 |
+| 204 | Prompt & Context Optimization Engineer | Legacy/absorbed | `ai-engineer` | Unsourced label [P]; no posting evidence |
 | 205 | Prompt Engineer | Legacy/absorbed | `ai-engineer` | 72 of 20,662 LinkedIn AI postings (0.35%; 2025 arXiv study) · T0-03 KF2; T0-01 F8 |
 | 206 | Prompt Wizard | Quarantined | — | 0 postings (null result) · T0-01 F8 |
 | 207 | Reasoning Engineer | Unmeasured buzzword | — | Listed in FAD §5.3 without a search |
@@ -863,7 +863,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 211 | Research Scientist | Alias | `research-scientist` | JobsPipe JD (all fields): LLM 24.4%, RL 17.1% |
 | 212 | Research Scientist (AI/ML) | Canonical | `research-scientist` | V · OpenAI MTS-RS 68 LCA positions (2025) · T0-02 |
 | 213 | Responsible AI / AI Governance Engineer | Canonical | `responsible-ai-engineer` | W · thin technical niche · T0-15 F6 |
-| 214 | Responsible AI Analyst / Senior AI Risk Analyst | Alias | `ai-risk-assurance-specialist` | Merged JD string (see Sr. Responsible AI Analyst) · T0-15 |
+| 214 | Responsible AI Analyst / Senior AI Risk Analyst | Alias | `ai-risk-assurance-specialist` | Unsourced label [P]; one string for two different JD titles (see Sr. Responsible AI Analyst) |
 | 215 | Responsible AI Engineer | Alias | `responsible-ai-engineer` | Cognizant (Chennai) · T0-15 |
 | 216 | Responsible AI Governance Lead | Alias | `ai-governance-lead` | McKinsey JD (Dec 2024), $152.3–203K · T0-15 |
 | 217 | Responsible AI Officer | Alias | `ai-governance-lead` | RBI FREE-AI report term (India), not a recommendation · T0-15 |
@@ -886,7 +886,7 @@ All 241 title strings, sorted alphabetically (case-insensitive, punctuation igno
 | 234 | Staff AI Frontend Engineer | Level variant | `ai-product-engineer` | One recruiter posting, $250–315K (C/D) · T0-06 |
 | 235 | Technical Program Manager (AI) | Candidate (unmeasured) | — | Only as 'managers and TPMs (6)' inside the FDE sample · T0-01 F3 |
 | 236 | Transformer Specialist | Unmeasured buzzword | — | Listed in FAD §5.3 without a search |
-| 237 | Vector Search & Retrieval Systems Engineer | Candidate (unmeasured) | `ai-engineer` | Candidate label; retrieval is a skill area (RAG in 54% of AI Eng JDs) · T0-01 |
+| 237 | Vector Search & Retrieval Systems Engineer | Candidate (unmeasured) | `ai-engineer` | Unsourced label [P]; retrieval is a skill area (RAG in 54% of AI Eng JDs) |
 | 238 | Vibe Engineer | Quarantined | — | Not searched; blog-labelled 'theater' · T0-01 D2, D4 |
 | 239 | VP / Head of AI | Canonical | `vp-head-of-ai` | V · Radford 'Head of AI' survey job family (data paywalled); no count or pay in corpus · T0-02 |
 | 240 | VP of AI / VP of Machine Learning | Alias | `vp-head-of-ai` | No count or pay in corpus |
@@ -967,7 +967,7 @@ Domain ML variants (NLP, CV, RecSys, Speech) are long-standing specialisations, 
 | Non-technical, 5+ yrs domain | AI PM, AI ops/enablement, domain-evaluation lead, solutions/FDE-adjacent | ~7 months (5–11); ~22 months from zero code |
 | Academic / Quantitative PhD (can code) | Applied AI engineer, Applied Scientist, Research Engineer | ~8 months (5–12.5); frontier research is "not plannable" |
 
-Early drafts listed the PhD persona twice ("Academic ML/NLP Researcher", "PhD / Academic ML Researcher") and merged the frontend persona with a target role. Both are fixed in §4.
+The two PhD persona strings ("Academic ML/NLP Researcher", "PhD / Academic ML Researcher") map to one feeder persona, and the frontend persona is kept apart from the AI Product Engineer role (§4).
 
 ### 6.2 Certifications frequently misclassified as roles
 
@@ -1071,21 +1071,19 @@ D-003 calls the FAD §4.1 bands "research-validated". This catalog treats them a
 
 ---
 
-## 9. Errata and Reconciliation Log
+## 9. Errata and Claims Checked
 
 ### 9.1 Upstream research errata
 
-The 12 errors found in the sealed Phase 0 records (FAD, T1-01, T2-01 and DECISIONS) during this rebuild are logged in [research/ERRATA.md](../../research/ERRATA.md), with their correct readings and evidence. This catalog already applies them.
+The 12 errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T1-01 and T2-01) while building this catalog are logged in [research/ERRATA.md](../../research/ERRATA.md), with their correct readings and evidence. This catalog applies them.
 
-### 9.2 Title deduplication and classification audit (highlights)
+### 9.2 Claims checked during classification (highlights)
 
-| Common misconception | Empirical correction |
+| Claim checked | What the evidence shows |
 |---|---|
-| "123 distinct roles" | 29 canonical roles; 241 title strings classified (§4) |
-| Applied Scientist "PASSED QUORUM (~700 US)" | Status V; volume unmeasured |
-| FDE "~48% technical engineering" read as "~48% of FDEs write production code daily" (speculative rank) | ~48% of the newest 50 cluster postings are engineer-*titled* |
-| MLE count given as both 1,082 and 1,084 | 1,084 US (JobsPipe) |
-| Agentic AI Engineer "Verified Sub-node (59.3% in AI JDs)" | 59.3% is a *skill* share inside AI Engineer JDs; the title is on the watchlist (~66 postings in 90 days) |
+| Applied Scientist "~700 US postings", "Established" (FAD §5.1; T1-01:80) | Status V; volume unmeasured (ERRATA U1) |
+| FDE: "~48% of FDEs write production code daily" | ~48% of the newest 50 cluster postings are engineer-*titled* |
+| Agentic AI Engineer as a verified role on the strength of "59.3% in AI JDs" | 59.3% is a *skill* share inside AI Engineer JDs; the title is on the watchlist (~66 postings in 90 days) |
 | AI Infrastructure Engineer "11–19% infra" | That is a company share of engine mentions, not a role count |
 | Inference Engineer "High demand"; "28 postings on Rise; 11–19% of specialized infrastructure postings (Fast AI Jobs)" | Rise 28 is a small corpus; engines appear in only 2.0–3.9% of postings; the 11–19% is not from Fast AI Jobs |
 | AI Platform / ML Platform "18–43% supply gap" cited to T0-01 F2, T0-03 P5, T0-06 and T0-16 | The source is Quess via T0-01 F10 (Grade C) |
@@ -1095,11 +1093,9 @@ The 12 errors found in the sealed Phase 0 records (FAD, T1-01, T2-01 and DECISIO
 | Principal AI Evaluation Engineer "US / EU" | Backbase, Hyderabad |
 | Responsible AI Officer "US / EU enterprise" | A term from India's RBI FREE-AI report; "not a recommendation" |
 | MTS-AI Systems / RE / RS / SWE described as "formal leveling titles" | OpenAI visa-filing *job titles*, not levels (OpenAI levels are L2–L7) |
-| Per-role pay ranges (FDE, Evals, Inference, Applied Scientist, Governance, Safety, Auditor, CAIO) | Replaced by sourced figures, or marked "none in corpus" |
-| Tier 2 India "Median ₹1.06–1.22Cr" vs "Median ₹45L–₹55L" (inconsistent ranges) | Bengaluru Senior SWE median ₹56.0L (Levels.fyi); ₹1.06–1.22Cr is the top-employer ceiling |
+| India senior median "₹1.06–1.22Cr" (FAD §4.2–4.3) | Bengaluru Senior SWE median ₹56.0L (Levels.fyi); ₹1.06–1.22Cr is the top-employer ceiling (ERRATA U4) |
 | Fractional Head of AI in Tier 3 ($350–500K) | Modelled revenue P90 $245K; best two-retainer case $259.2K revenue |
 | "₹75L cliff ($90K)" | ₹75L ≈ $79K |
-| Lifecycle matrix of "●/○" dots (unsourced) | Replaced by an evidence-based interview-track × proof-of-work table (§8.2) |
 
 ---
 

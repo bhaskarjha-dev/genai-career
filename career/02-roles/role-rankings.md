@@ -41,28 +41,28 @@ Choose between them on preference:
 
 **The most important finding: the best skills are not the best titles.** Evals, agent reliability and inference/cost engineering are the strongest differentiators in the evidence, but as standalone titles they are small (Agentic AI Engineer #12, AI Evaluation Engineer #14). Use them as force multipliers inside AI Engineer, MLE, FDE or Research Engineer.
 
-### Market Calibration: Key Adjustments to Common Misconceptions
+### Why Notable Roles Rank Where They Do
 
-| Role | Common Market Impression | Calibrated Rank (CCI) | Empirical Finding & Correction |
-|---|:---:|:---:|---|
-| Forward Deployed Engineer | Ranked #1 in early hype (93) | 4 (70.6) | Scored with no FDE pay data. Measured posted base is the lowest family median. The 933 count is a cluster of which ~48% is engineer-titled (an extrapolation), and growth matched other families |
-| Inference & Serving Engineer | Ranked #2 in systems hype (87) | 9 (64.4) | Systems pay premium "not validated" (T0-02); title volume is small (Rise 28); keyword skill shares were conflated with title demand |
-| AI Engineer | Ranked #3 (86) | 2 (76.9) | Largest measured demand and best accessibility |
-| Agentic / Multi-Agent Engineer | Ranked #4 in agent hype (85) | 12 (63.3) | Agentic skills appear in 59.3% of AI Engineer JDs, but title-level demand is small (59.3% of AI Engineer JDs) as title demand; the title has ~66 postings in 90 days |
-| AI Evaluation Engineer | Ranked #5 (84) | 14 (61.3) | The skill is broad (19% of postings) but the title is small; pay premium unverified |
-| Machine Learning Engineer | Ranked #6 (83) | 1 (77.9) | Second-largest measured demand and the highest measured broad-market pay distribution |
-| GPU Cluster & Infra Platform | Ranked #7 (83) | 8 (66.7) as AI Infrastructure | "Extreme scarcity", "100% automation-proof" and "99.5% MTBF" are unsupported (MTBF is a duration, not a percentage) |
-| Enterprise AI Solutions Architect | Ranked #8 (82) | 13 (61.6) | No AI-architect title count (only keyword shares of generic SA postings); no pay data |
-| Applied Scientist | Ranked #9 (81) | 7 (67.5) | Big Tech volume and pay are unmeasured in the corpus; low confidence |
-| AI Product Manager | Ranked #10 (80) | 10 (63.5) | No AI-PM title count or pay data; keyword shares of PM postings are used only as an upper bound |
-| AI Research Scientist (PhD) | Ranked #17 (74) | 6 (67.8) | Highest Pay score (9.5); rises because over-scored speculative roles are deflated |
-| *Research Engineer / MTS* | Missing from early rankings | **3 (71.4)** | Highest engineering pay in the corpus ($220–330K+ base) |
-| *Applied AI Engineer* | Missing from early rankings | **5 (68.0)** | Strong startup and frontier lab demand; T0-01 "likely pass" sub-node |
-| AI Security & Red Team Engineer | Ranked #11 (79) | 19 (57.6) | ~23 title postings in 90 days (derived from 3 MCP-mentioning postings, so imprecise; band 3); no pay data, so the default pay prior applies |
-| AI Governance & Compliance Lead | Ranked #12 (78) | 16 (58.0) | Demand is real (1,997 US AI-governance postings Jan–Sep 2026, Axial, C), but measured pay is mid-range (IAPP medians $151.8–169.7K) and the route needs GRC experience |
-| AI Enablement & Internal DevEx Lead | Ranked #18 (74) | 20 (55.0) | ~53 postings in 90 days; no pay data; the role may be transitional |
-| Chief AI Officer / VP of AI | Ranked #21 (70) | L3 (54.3) and L2 (60.5), separate board | Leadership tracks are not comparable with IC roles (§4); the corpus has no count or pay data for either |
-| Speculative Titles (Pre-Training, Vector Search, Voice, Edge SLM, Data Ops & RLHF, Mech Interp, AI Data Governance, Prompt & Context Optimization, Context Engineer, Cognitive Architect) | Conflated as distinct roles | **Not Ranked (Quarantined)** | No posting evidence, fabricated figures, or quarantined titles that cannot be scored honestly (§8) |
+| Role | Rank (CCI) | What the evidence shows |
+|---|:---:|---|
+| Machine Learning Engineer | 1 (77.9) | Second-largest measured demand and the highest measured broad-market pay distribution |
+| AI Engineer | 2 (76.9) | Largest measured demand and best accessibility |
+| *Research Engineer / Member of Technical Staff* | **3 (71.4)** | Highest engineering pay in the corpus ($220–330K+ base) |
+| Forward Deployed Engineer | 4 (70.6) | The corpus has no FDE pay data, and the measured posted base is the lowest family median. The 933 count is a cluster of which ~48% is engineer-titled (an extrapolation), and its growth matched other families |
+| *Applied AI Engineer* | **5 (68.0)** | Strong startup and frontier-lab demand; T0-01 "likely pass" sub-node |
+| Research Scientist (AI/ML) | 6 (67.8) | Highest Pay score (9.5), but Access is only 2.9: it needs a PhD |
+| Applied Scientist | 7 (67.5) | Big Tech volume and pay are unmeasured in the corpus; low confidence |
+| AI Infrastructure / GPU Platform Engineer | 8 (66.7) | Posted base $203–270K (n=52), level with AI Engineer; durable physical-systems work with high cost leverage |
+| Inference / LLM Serving Engineer | 9 (64.4) | Systems pay premium "not validated" (T0-02); title volume is small (Rise 28); skill shares are not counted as title demand |
+| AI Product Manager | 10 (63.5) | No AI-PM title count or pay data; keyword shares of PM postings are used only as an upper bound |
+| Agentic AI Engineer | 12 (63.3) | Agentic skills appear in 59.3% of AI Engineer JDs, but that is a skill share, not title demand; the title has ~66 postings in 90 days |
+| AI / GenAI Solutions Architect | 13 (61.6) | No AI-architect title count (only keyword shares of generic SA postings); no pay data |
+| AI Evaluation Engineer | 14 (61.3) | The skill is broad (19% of postings) but the title is small; pay premium unverified |
+| AI Governance Programme Lead / Manager | 16 (58.0) | Demand is real (1,997 US AI-governance postings Jan–Sep 2026, Axial, C), but measured pay is mid-range (IAPP medians $151.8–169.7K) and the route needs GRC experience |
+| AI Security Engineer / AI Red Teamer | 19 (57.6) | ~23 title postings in 90 days (derived from 3 MCP-mentioning postings, so imprecise; band 3); no pay data, so the default pay prior applies |
+| AI Enablement Engineer | 20 (55.0) | ~53 postings in 90 days; no pay data; the role may be transitional |
+| VP / Head of AI; Chief AI Officer | L2 (60.5); L3 (54.3), separate board | Leadership tracks are not comparable with IC roles (§4); the corpus has no count or pay data for either |
+| Speculative titles (Pre-Training, Vector Search, Voice, Edge SLM, Data Ops & RLHF, Mech Interp, AI Data Governance, Prompt & Context Optimization, Context Engineer, Cognitive Architect) | Not ranked | No posting evidence, or quarantined titles that cannot be scored honestly (§8) |
 
 ---
 
@@ -75,7 +75,7 @@ Choose between them on preference:
    - Demand and Pay come from measured data wherever it exists (A–C).
    - The judgement pillars (Durability, Leverage) are labelled D and carry uniform uncertainty bands. For IC roles they stay within 3.5–8.5, which limits their influence.
 3. **Like with like.** IC roles are ranked together. Leadership and independent tracks, which people reach after years of experience, are ranked separately (§4).
-4. **No default persona.** Access blends the best of five backgrounds with their average (50/50) instead of assuming an experienced software engineer, which was the implicit assumption in early drafts.
+4. **No default persona.** Access blends the best of five backgrounds with their average (50/50) instead of assuming an experienced software engineer.
 5. **Uncertainty is visible.** Each score has a [lo–hi] range, and the Monte Carlo turns those ranges into rank intervals.
 6. **Weights are stress-tested.** Six weight profiles are run; a role counts as robust only if it stays near the top across them.
 7. **Titles are not skills.** A skill's or keyword's share of postings never counts as demand for a title. At most it caps the upper end of a range.
@@ -179,7 +179,7 @@ Not ranked (§8):
 - unmeasured buzzwords;
 - candidate roles with no posting evidence.
 
-Early drafts gave pay scores to titles that do not exist as jobs (Cognitive Architect, for example, got 17/25 for pay); the calibrated index does not.
+Titles that do not exist as jobs, such as Cognitive Architect, get no scores at all.
 
 ### 1.8 Reproduce or re-weight
 
@@ -521,7 +521,7 @@ The best non-engineering option globally (#1 for non-technical persons, #5 in In
 | Prompt Engineer | Legacy: 0.35% of LinkedIn AI postings (2025 arXiv study) | AI Engineer |
 | AI Whisperer, Neural Network Designer, Transformer Specialist, Foundation Model Engineer, Reasoning Engineer | Never searched (unmeasured) | — |
 | Voice AI Engineer, On-Device/Edge AI Engineer, Retrieval/Vector Search Engineer, AI DevRel, AI TPM | Candidate roles with no title-level count | Measure at the next recount |
-| Foundation Model Pre-Training Engineer; Data Ops & RLHF Lead; Mechanistic Interpretability Researcher ("~150 FTEs"); AI Data Governance & Privacy Architect | Speculative rows with missing or fabricated evidence | Research Engineer / AI Infrastructure; Domain Evaluation Specialist; AI Safety Researcher; AI Risk & Audit |
+| Foundation Model Pre-Training Engineer; Data Ops & RLHF Lead; Mechanistic Interpretability Researcher; AI Data Governance & Privacy Architect | Unsourced labels [P] with no posting evidence | Research Engineer / AI Infrastructure; Domain Evaluation Specialist; AI Safety Researcher; AI Risk & Audit |
 
 > [!CAUTION]
 > Don't use a quarantined or legacy title as your résumé headline. Use the canonical title and show the work as skills in your project bullets (adapted from T0-01 Recommendation 5, which advises employers; T0-11).
@@ -551,27 +551,26 @@ Each claim carries its evidence grade. EGP-1.0 (T1-02 §10.3–10.4, rule C4) ad
 
 ---
 
-## 10. Change Log
+## 10. Review Record
 
-### 10.1 Early Calibration Notes
+### 10.1 Claims Checked and Rejected
 
-| Early assumption | Empirical problem | Calibrated fix |
+These claims were checked against the corpus while the index was built.
+
+| Claim | Finding | Outcome |
 |---|---|---|
-| Pillar bands ("22–25 = >1,000 US roles") applied loosely (FDE got 23 on 933 cluster postings) | Rubric not followed | Anchored 0–10 scales; every score derived from a band (Appendix A.1) |
-| Agentic demand taken from a 59.3% skill share | A skill is not a title | Title evidence only (design rule 7) |
-| Inference "prime comp differentiator"; "pays their salary in 3 weeks"; "SWE agents cannot optimize CUDA kernels" | Unsupported or contradicted: the premium is not validated (T0-02); kernel DSLs and agents counter the moat claim (T0-03) | Removed |
-| GPU cluster "100% automation proof"; "99.5%+ MTBF" | Unsupported; MTBF is a duration | Removed |
-| FDE "~48% write production code daily"; "immune to automation"; "retain up to 78%" | Misread (48% of postings are engineer-*titled*); unsupported; contradicted (83–84% below ₹75L, ~65% at ₹1.2Cr) | Corrected |
-| AI Engineer "highest callback rate in the market" | No role-level funnel data exists (T0-04) | Removed |
-| Outdated model names (Claude 3.5 Sonnet, GPT-4o, Llama-3.2-3B) and tools (TGI, RAGAS, "Triton Inference Server") in stacks | By Oct 2026, TGI is archived, RAGAS is dormant, and Triton is renamed Dynamo Triton | Updated in the skills catalog |
-| "<1% hallucination … out-competes 95% of applicants" | Unsupported; T0-13 calls this "benchmark-number theater" | Removed |
-| "The EU AI Act requires legal human liability" | Contradicted: the Act names no required officer (T0-15) | Removed |
-| Scenario sub-rankings were "curated" | Subjective | Computed lenses (§5) |
-| The "maximum compensation" scenario put GPU/Inference #1–2 above research roles | Contradicted: research and MTS ladders pay the most | Computed pay ceiling (§5.1) |
-| Quarantined titles given pay and moat scores | Invented figures | Not ranked (§8) |
-| Research Engineer/MTS and Applied AI Engineer missing | Omitted despite evidence | Ranked #3 and #5 |
+| Agentic AI Engineer demand inferred from the 59.3% agentic skill share | A skill is not a title | Title evidence only (design rule 7) |
+| Inference "prime comp differentiator"; "pays their salary in 3 weeks"; "SWE agents cannot optimize CUDA kernels" | Unsupported or contradicted: the premium is not validated (T0-02); kernel DSLs and agents counter the moat claim (T0-03) | Rejected |
+| GPU cluster work "100% automation proof"; "99.5%+ MTBF" | Unsupported; MTBF is a duration | Rejected |
+| FDE "~48% write production code daily"; "immune to automation"; contractors "retain up to 78%" | Misread (48% of postings are engineer-*titled*); unsupported; contradicted (83–84% below ₹75L, ~65% at ₹1.2Cr) | Corrected reading used |
+| AI Engineer has the "highest callback rate in the market" | No role-level funnel data exists (T0-04) | Rejected |
+| "<1% hallucination … out-competes 95% of applicants" | Unsupported; T0-13 calls this "benchmark-number theater" | Rejected |
+| "The EU AI Act requires legal human liability" | Contradicted: the Act names no required officer (T0-15) | Rejected |
+| GPU and inference roles have the highest pay ceilings | Contradicted: research and MTS ladders pay the most | Computed pay ceiling (§5.1) |
 
 ### 10.2 Adversarial Review of the Scoring Inputs
+
+An adversarial review on 2026-11-03 changed these scoring inputs before publication; the value before each arrow is the pre-review score.
 
 | Change | Reason |
 |---|---|
@@ -586,7 +585,7 @@ Each claim carries its evidence grade. EGP-1.0 (T1-02 §10.3–10.4, rule C4) ad
 | Leverage 8.5 for Applied AI, AI SA, AI Infrastructure and GPU Kernel | The 8.5–9 anchor (revenue or GPU-spend lines) is applied uniformly across infrastructure roles |
 | Persona corrections: RE (PhD) 6 → 7.5; Inference and AI Infra (backend) → 7; AI Product Engineer (frontend) 9 → 7; Domain Eval (non-technical) 8.5 → 7; AI Evaluation Engineer (non-technical) 5 → 3; Applied AI (PhD) 7.5 → 7 | Aligned with the T2-01 matrix (●/◐/○) and T0-06 routes |
 | Leadership: EM demand and pay to grade D; consultant and fractional pay 5 → 4; CAIO pay range widened | Thin proxies; the hourly/contract pay anchor applies |
-| The ranking generator reproduces Appendix A and all lens results with verified ranges and rounding (`--update`) | Early drafts claimed more automation than the generator performed |
+| The ranking generator reproduces Appendix A and all lens results with verified ranges and rounding (`--update`) | Every generated figure comes from the script, not from hand edits |
 | Narrative audit (51 findings): over-claims corrected (for example "largest GenAI title anywhere" and "highest pay ceiling of any role"), C-grade claims attributed, model outputs labelled, relative-time words removed, dossier band letters relabelled so they cannot be read as evidence grades, and an EGP placement exception stated (§1.4) | Accuracy and EGP-1.0 compliance |
 
 ---

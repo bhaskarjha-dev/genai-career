@@ -8,7 +8,7 @@ that JSON Schema cannot express, and generates:
   * career/03-skills-and-tech/skills-vocabulary.md        GENERATED blocks: summary, classes, vocabulary
                                        by type, credentials, watch list
   * career/03-skills-and-tech/role-skill-inventories.md   GENERATED blocks: role index, cross-role views,
-                                       change log, verification summary
+                                       tier decisions, verification summary
   * career/03-skills-and-tech/inventories/<slug>.md  one fully generated file per role
 
 Rules enforced beyond the schema:
@@ -567,12 +567,12 @@ def index_blocks(o):
         parts.append("")
     out["universal"] = "\n".join(parts).rstrip("\n")
     changes = o.get("changes", [])
-    rows = ["| Role | Skill | From → to | Why | Stage |", "|---|---|:---:|---|---|"]
+    rows = ["| Role | Skill | Tier | Why | Stage |", "|---|---|:---:|---|---|"]
     for ch in sorted(changes, key=lambda c: (role_key((c["role"], o["roles"][c["role"]])), c["stage"], c["id"])):
         name = label(o, ch["id"]) if (ch["id"] in o["skills"] or ch["id"] in o["classes"]) else ch["id"]
-        rows.append(f"| {o['roles'][ch['role']]['name']} | {esc(name)} | {ch['from']} → {ch['to']} | {esc(ch['reason'])} | {ch['stage']} |")
+        rows.append(f"| {o['roles'][ch['role']]['name']} | {esc(name)} | {ch['to']} | {esc(ch['reason'])} | {ch['stage']} |")
     if not changes:
-        rows.append("| — | — | — | No tier changes recorded | — |")
+        rows.append("| — | — | — | No measured tier decisions recorded | — |")
     out["changes"] = "\n".join(rows)
     v = o["meta"].get("verification")
     if v:
@@ -611,7 +611,7 @@ def render_inventory_readme(o):
             "generated_by: scripts/build_skills.py", "---", "", GENERATED_HEADER, "",
             "# Role Skill Inventories: One File per Role", "",
             "Each file lists every skill the role needs, typed and tiered with evidence, plus posting keywords, credentials and a self-assessment. "
-            "The cross-role views, tier change log and verification are in [role-skill-inventories.md](../role-skill-inventories.md); "
+            "The cross-role views, tier decisions and verification are in [role-skill-inventories.md](../role-skill-inventories.md); "
             "skill definitions are in the [vocabulary](../skills-vocabulary.md).", "",
             "| Rank | Role | Skills | Inventory |", "|:---:|---|:---:|---|"]
     for rid, r in sorted(o["roles"].items(), key=role_key):

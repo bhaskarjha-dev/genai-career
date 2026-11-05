@@ -123,7 +123,7 @@
     "6. Not-a-Role Register",
     "7. Feeder and Adjacent Occupations (market refresh, 2026-11-02)",
     "8. Cross-Cutting References",
-    "9. Errata and Reconciliation Log",
+    "9. Errata and Claims Checked",
     "10. Maintenance"
    ]
   },
@@ -157,7 +157,7 @@
     "7. Roles 11–24 at a Glance",
     "8. Not Ranked",
     "9. Strategic Takeaways",
-    "10. Change Log",
+    "10. Review Record",
     "Appendix A: Scoring Inputs"
    ]
   },
@@ -825,7 +825,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier change log and verification.",
+   "summary": "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions and verification.",
    "sources": [
     "T0-03",
     "T0-06",
@@ -841,7 +841,7 @@
     "0. How to Use It",
     "1. Role Index",
     "2. Cross-Role Views: What Recurs (For Universal and Family Resumes)",
-    "3. Tier Changes From the Initial Concise Matrix",
+    "3. Tier Decisions Backed by Measured Shares",
     "4. Verification",
     "5. Limits and Next Steps"
    ]
@@ -899,7 +899,7 @@
     "2. Design",
     "3. Data, Scripts and How to Edit",
     "4. How the Foundation Ontology Was Built (2026-11-04)",
-    "5. Audit Baseline: Before and After",
+    "5. Coverage Checks",
     "6. Maintenance"
    ]
   },
@@ -1180,14 +1180,18 @@
    "stage": 0,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "Errors found in the sealed Phase 0 records (FAD, T1-01, T2-01, DECISIONS) and the correct reading, with evidence. Read before relying on those files.",
+   "summary": "Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T1-01, T2-01) and the correct reading, with evidence. Read before relying on those files.",
    "sources": [
     "T0-01",
+    "T0-03",
+    "T0-06",
+    "T0-14",
+    "T0-17",
     "T1-01",
     "T2-01"
    ],
    "headings": [
-    "Upstream errors found while rebuilding the role catalogs (2026-11-03)",
+    "Upstream errors found while building the role catalogs (2026-11-03)",
     "How to add an erratum"
    ]
   },

@@ -30,7 +30,7 @@ How to use this repository:
 ## Stage 03: Skills and technology
 
 - [Stage 03: Skills and technology](career/03-skills-and-tech/README.md): Index of stage 03 (skills and technology): What exactly does each role need me to know and use, and how much does each skill matter?
-- [GenAI Role Skill Inventories](career/03-skills-and-tech/role-skill-inventories.md): Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier change log and verification.
+- [GenAI Role Skill Inventories](career/03-skills-and-tech/role-skill-inventories.md): Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions and verification.
 - [GenAI Role Skills Catalog](career/03-skills-and-tech/role-skill-maps.md): Narrative skill map for every role: table-stakes, differentiating and frontier skills, tools with their status, proof of work, interview track and typical gaps; the volatile tool and credential registry.
 - [Skills Ontology: Requirements, Design, Build and Maintenance](career/03-skills-and-tech/skills-ontology-method.md): Requirements, design, build, verification and maintenance of the skills ontology that generates the vocabulary, the role inventories and the resume matrix.
 - [GenAI Skills Vocabulary](career/03-skills-and-tech/skills-vocabulary.md): Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions.
@@ -73,7 +73,7 @@ How to use this repository:
 ## Research
 
 - [Research Findings Registry](research/findings.md): Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
-- [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, T1-01, T2-01, DECISIONS) and the correct reading, with evidence. Read before relying on those files.
+- [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T1-01, T2-01) and the correct reading, with evidence. Read before relying on those files.
 - [research/sessions/](research/sessions/): The 22 Phase 0 research sessions (dated evidence reports with source ledgers).
 - [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-013).
 

@@ -54,7 +54,7 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 - **Placement:**
   - Put content in the stage folder where it is used, and add it to that folder's `README.md`.
   - Docs use kebab-case file names; scripts and data use snake_case.
-- **Every new document** under `career/` needs front matter that passes `data/schemas/frontmatter.schema.json`: `id`, `title`, `content_type`, `stage`, `status`, `version`, `last_verified`, `summary`, plus optional `sources`, `roles`, `geos`, `tags` and `generated_by`.
+- **Every new document** under `career/` needs front matter that passes `data/schemas/frontmatter.schema.json`: `id`, `title`, `content_type`, `stage`, `status`, `last_verified`, `summary`, plus optional `sources`, `roles`, `geos`, `tags` and `generated_by`.
 - **Evidence standard (EGP-1.0):**
   - Grade every empirical claim and attribute claims graded C or below.
   - Give dates; prefer ranges with reasons over single numbers when sources conflict.
@@ -62,7 +62,8 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
   - Never invent numbers.
   - No relative-time words ("now", "currently", "recently", "latest"); write dates.
 - **Links:** relative only; never `file://`.
-- **After any change:** run the generators you affected, then `python3 scripts/validate_docs.py`. It must print `PROBLEMS: 0`. CI runs it on every push. Then add an entry to [CHANGELOG.md](CHANGELOG.md).
+- **Versioning (D-014):** documents carry no version number. The repository is versioned with SemVer git tags, one [CHANGELOG.md](CHANGELOG.md) section per release. Published history is never rewritten.
+- **After any change:** run the generators you affected, then `python3 scripts/validate_docs.py`. It must print `PROBLEMS: 0`. CI runs it on every push. Then add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md).
 - **Scripts:**
   - standard library only;
   - run with `python3 -B` or `PYTHONDONTWRITEBYTECODE=1`, so that no `__pycache__` is left in `scripts/`;

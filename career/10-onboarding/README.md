@@ -4,7 +4,7 @@ title: "Stage 10: Onboarding and the first 90 days"
 content_type: index
 stage: 10
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of stage 10 (onboarding and the first 90 days): How do I pass probation and succeed in the first 90 days?"
 sources: [T0-09]
 ---
@@ -12,17 +12,18 @@ sources: [T0-09]
 # Stage 10: Onboarding and the first 90 days
 
 > **The question this stage answers:** How do I pass probation and succeed in the first 90 days?
-> **Status:** Evidence only: the guides are planned; read the research below in the meantime. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: the first-90-days playbook and the growth guide exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
-No guide has been written yet.
+| Document | What it gives you |
+|---|---|
+| [first-90-days.md](first-90-days.md) | How to pass probation in a GenAI role: the expectations gap, a 30-60-90 plan with weekly artefacts, a scorecard and escalation rules |
+| [growth-and-progression.md](growth-and-progression.md) | After the first 90 days: levelling and promotion, hop versus stay, IC versus manager, and sustainable learning |
 
 ## Planned
 
-| Document | Scope | Built from |
-|---|---|---|
-| first-90-days.md | The expectations gap, probation rubrics and persona-specific failure prevention | T0-09 |
+Nothing planned for this stage beyond maintenance. Gaps that need new research are listed in [ROADMAP.md](../../ROADMAP.md).
 
 ## Evidence to read now
 

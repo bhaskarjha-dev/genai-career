@@ -1,0 +1,108 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "interview_prompts.schema.json",
+ "title": "GenAI interview practice prompts (tracks, system-design archetypes, prompts)",
+ "description": "Schema for data/interview_prompts.json: practice prompts for GenAI interviews keyed to interview tracks, the fifteen system-design archetypes of T0-14 §6.3, roles and skills; it feeds the generated prep-pack page. Each prompt carries its session source line, an EGP-1.0 grade (A-D), what a strong answer covers, red flags, and answer_source (the session lines behind covers and red_flags). Rules this schema subset cannot express, which a consuming script must check: every skill ID exists in data/skills_ontology.json (skills or classes); covers hold 3-6 items and red_flags 1-3; every track and archetype has at least one prompt; line references point at existing session lines.",
+ "type": "object",
+ "required": ["schema", "as_of", "description", "basis", "tracks", "archetypes", "prompts"],
+ "additionalProperties": false,
+ "properties": {
+  "schema": {"const": "interview-prompts/1.0"},
+  "as_of": {"$ref": "#/$defs/date"},
+  "description": {"type": "string", "minLength": 20},
+  "basis": {"type": "string", "minLength": 20},
+  "tracks": {
+   "type": "object",
+   "required": ["application", "customer-application", "ml-system-design", "infrastructure", "evaluation", "research", "governance", "product", "behavioural", "coding"],
+   "additionalProperties": false,
+   "properties": {
+    "application": {"$ref": "#/$defs/track"},
+    "customer-application": {"$ref": "#/$defs/track"},
+    "ml-system-design": {"$ref": "#/$defs/track"},
+    "infrastructure": {"$ref": "#/$defs/track"},
+    "evaluation": {"$ref": "#/$defs/track"},
+    "research": {"$ref": "#/$defs/track"},
+    "governance": {"$ref": "#/$defs/track"},
+    "product": {"$ref": "#/$defs/track"},
+    "behavioural": {"$ref": "#/$defs/track"},
+    "coding": {"$ref": "#/$defs/track"}
+   }
+  },
+  "archetypes": {
+   "type": "object",
+   "required": ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "A10", "A11", "A12", "A13", "A14", "A15"],
+   "propertyNames": {"pattern": "^A([1-9]|1[0-5])$"},
+   "additionalProperties": {"$ref": "#/$defs/archetype"}
+  },
+  "loop_types": {
+   "type": "object",
+   "propertyNames": {"pattern": "^[a-z]+(-[a-z]+)*$"},
+   "additionalProperties": {"$ref": "#/$defs/loop_type"}
+  },
+  "prompts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/prompt"}}
+ },
+ "$defs": {
+  "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "archetype_id": {"type": "string", "pattern": "^A([1-9]|1[0-5])$"},
+  "track_id": {"enum": ["application", "customer-application", "ml-system-design", "infrastructure", "evaluation", "research", "governance", "product", "behavioural", "coding"]},
+  "role_id": {"enum": ["ai-engineer", "ml-engineer", "forward-deployed-engineer", "applied-ai-engineer", "agentic-ai-engineer", "ai-product-engineer", "ai-enablement-engineer", "ai-solutions-architect", "applied-scientist", "inference-engineer", "gpu-kernel-engineer", "ai-infrastructure-engineer", "ml-platform-engineer", "ai-evaluation-engineer", "ai-security-engineer", "responsible-ai-engineer", "research-engineer", "research-scientist", "ai-safety-researcher", "ai-governance-lead", "ai-risk-assurance-specialist", "ai-product-manager", "domain-evaluation-specialist", "physical-ai-engineer", "ai-engineering-manager", "vp-head-of-ai", "chief-ai-officer", "fractional-ai-leader", "independent-ai-consultant"]},
+  "skill_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+  "line_ref": {"type": "string", "minLength": 8, "maxLength": 120, "pattern": "^T[0-2]-\\d{2}( §[0-9.]+)? L\\d+"},
+  "track": {
+   "type": "object",
+   "required": ["name", "tests", "source"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 3, "maxLength": 60},
+    "tests": {"type": "string", "minLength": 10, "maxLength": 400},
+    "source": {"type": "string", "minLength": 5, "maxLength": 120}
+   }
+  },
+  "archetype": {
+   "type": "object",
+   "required": ["name", "family", "core_tension", "staff_tell", "report_evidence", "most_reported_at", "source"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 5, "maxLength": 120},
+    "family": {"enum": ["serving", "platform", "applications", "cross-cutting"]},
+    "core_tension": {"type": "string", "minLength": 10, "maxLength": 160},
+    "staff_tell": {"type": "string", "minLength": 10, "maxLength": 400},
+    "report_evidence": {"type": "string", "pattern": "^[A-D](/[A-D])?( \\(.+\\))?$"},
+    "most_reported_at": {"type": "string", "minLength": 3, "maxLength": 160},
+    "source": {"$ref": "#/$defs/line_ref"}
+   }
+  },
+  "loop_type": {
+   "type": "object",
+   "required": ["name", "employers", "drill_first", "drill_next", "advice", "source"],
+   "additionalProperties": false,
+   "properties": {
+    "name": {"type": "string", "minLength": 5, "maxLength": 80},
+    "employers": {"type": "string", "minLength": 3, "maxLength": 160},
+    "drill_first": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/archetype_id"}},
+    "drill_next": {"type": "array", "items": {"$ref": "#/$defs/archetype_id"}},
+    "advice": {"type": "string", "minLength": 10, "maxLength": 300},
+    "source": {"$ref": "#/$defs/line_ref"}
+   }
+  },
+  "prompt": {
+   "type": "object",
+   "required": ["id", "track", "archetype", "prompt", "reported_by", "covers", "red_flags", "answer_source", "roles", "skills", "source", "grade"],
+   "additionalProperties": false,
+   "properties": {
+    "id": {"type": "string", "pattern": "^p\\d{3}$"},
+    "track": {"$ref": "#/$defs/track_id"},
+    "archetype": {"type": ["string", "null"], "pattern": "^A([1-9]|1[0-5])$"},
+    "prompt": {"type": "string", "minLength": 10, "maxLength": 200},
+    "reported_by": {"type": "string", "minLength": 3, "maxLength": 260},
+    "covers": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 5, "maxLength": 280}},
+    "red_flags": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 5, "maxLength": 160}},
+    "answer_source": {"$ref": "#/$defs/line_ref"},
+    "roles": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/role_id"}},
+    "skills": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/skill_id"}},
+    "source": {"$ref": "#/$defs/line_ref"},
+    "grade": {"enum": ["A", "B", "C", "D"]}
+   }
+  }
+ }
+}

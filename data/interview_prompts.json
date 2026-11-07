@@ -1,0 +1,2457 @@
+{
+ "schema": "interview-prompts/1.0",
+ "as_of": "2026-11-05",
+ "description": "Practice prompts for GenAI interviews, keyed to interview tracks, T0-14's fifteen system-design archetypes, roles and skills. Each prompt states what a strong answer covers, the red flags, its source line and an evidence grade. Feeds the generated prep-pack page (career/08-interviewing/prep-packs.md).",
+ "basis": "Prompts are quoted or closely paraphrased from what the research sessions report: T0-14 (firm table §6.2, archetypes §6.3, round formats §6.3b, the Dataford aggregate in K9), T1-03 (behavioural bank §6.2, coding formats §6.3) and T0-06 (applied-AI startup loops). The grade is that of the strongest report: B for aggregator tallies and coaching guides that T0-14 grades B (AceOffer's 112 Anthropic reports, Hello Interview); C for a single aggregator, review or listicle, and for the T1-03 synthesis; D where no prompt is reported, in which case reported_by says so and names the round description the prompt is built from. Variants named in reported_by may rest on weaker sources. Covers and red flags paraphrase the cited lines (T0-14 elicitation lists, trade-offs, Staff tells, formulas and rubrics; T1-03 STAR-AI and competencies C1–C4; T0-15 and T2-01 for the D-graded tracks), and answer_source lists those lines. They are coach-authored or synthesised criteria: no firm publishes an AI interview rubric (T0-14 K10; T1-03 §6.2). Role and skill keys are editorial (D): design prompts start from each role's interview track in data/role_scores.json and add roles whose reported loops include the prompt; behavioural prompts list every role whose skills-ontology links include each competency the question tests. Aggregator counts rank reported prompts; they do not measure prevalence or pass rates (T0-14 §7.1 O1, O12).",
+ "tracks": {
+  "application": {
+   "name": "Application",
+   "tests": "RAG with access control, agent loop control, evaluation architecture, context management",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "customer-application": {
+   "name": "Application plus customer scoping",
+   "tests": "RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "ml-system-design": {
+   "name": "Classic ML system design",
+   "tests": "recommendation, fraud or ETA system design, plus where an LLM would help",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "infrastructure": {
+   "name": "Infrastructure",
+   "tests": "KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "evaluation": {
+   "name": "Evaluation design",
+   "tests": "golden sets, judge calibration, online sampling, A/B tests",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "research": {
+   "name": "Research",
+   "tests": "a research talk plus coding; the full research loop at frontier labs",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "governance": {
+   "name": "Governance",
+   "tests": "a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "product": {
+   "name": "Product",
+   "tests": "a scoping or product round",
+   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+  },
+  "behavioural": {
+   "name": "Behavioural",
+   "tests": "four AI-specific competencies answered in STAR-AI form (Situation, Task, Action, Result with a metric delta and a continuous-monitoring step): C1 technical pragmatism and ambiguity tolerance, C2 cross-functional communication and trade-off translation, C3 ownership, accountability and incident response, C4 responsible AI and safety consciousness",
+   "source": "T1-03 §6.2 L171–204"
+  },
+  "coding": {
+   "name": "Coding",
+   "tests": "classic algorithmic coding, AI-enabled coding with an assistant, code or design-document review, and hybrid coding-plus-design rounds",
+   "source": "T1-03 §6.3 L216–232; T0-14 L171"
+  }
+ },
+ "archetypes": {
+  "A1": {
+   "name": "Multi-tenant LLM inference API / serving platform",
+   "family": "serving",
+   "core_tension": "Throughput versus latency; goodput under TTFT and TPOT SLOs",
+   "staff_tell": "Defines the SLO as goodput (requests per second per GPU that meet both TTFT and TPOT) rather than raw throughput, ties capacity to KV-cache maths, and specifies tenant fairness and a canary rollout with an eval gate",
+   "report_evidence": "B (41 Anthropic reports)",
+   "most_reported_at": "Anthropic, OpenAI infrastructure, Google (C)",
+   "source": "T0-14 L186; L228"
+  },
+  "A2": {
+   "name": "GPU request-batching service",
+   "family": "serving",
+   "core_tension": "Batch fill versus queue wait",
+   "staff_tell": "Derives max wait from the latency budget, notes that continuous batching supersedes the timer design for generative workloads, and handles poison requests and cancellation",
+   "report_evidence": "B",
+   "most_reported_at": "Anthropic (among the most reported prompts)",
+   "source": "T0-14 L187; L249"
+  },
+  "A3": {
+   "name": "Offline/async batch-inference API",
+   "family": "serving",
+   "core_tension": "Using idle capacity versus protecting online SLOs",
+   "staff_tell": "Treats price as a scheduling signal and batch work as the utilisation-smoothing layer for the fleet",
+   "report_evidence": "B (12)",
+   "most_reported_at": "Anthropic",
+   "source": "T0-14 L188; L272"
+  },
+  "A4": {
+   "name": "GPU fleet scheduling, placement, quotas/credits",
+   "family": "serving",
+   "core_tension": "Bin-packing versus fairness versus cold-start cost",
+   "staff_tell": "Derives placement constraints from weights plus KV memory, and notes that context length sets the concurrency ceiling",
+   "report_evidence": "B (7 + 4)",
+   "most_reported_at": "Anthropic, OpenAI",
+   "source": "T0-14 L189; L292"
+  },
+  "A5": {
+   "name": "Model-weights distribution and safe rollout",
+   "family": "serving",
+   "core_tension": "Source egress versus P2P complexity; rollback safety",
+   "staff_tell": "Computes the distribution time before choosing a topology",
+   "report_evidence": "B (16 + 2)",
+   "most_reported_at": "Anthropic",
+   "source": "T0-14 L190; L312"
+  },
+  "A6": {
+   "name": "LLM gateway / internal AI platform",
+   "family": "platform",
+   "core_tension": "Central control versus team autonomy; token-based limits",
+   "staff_tell": "Uses organisation-level levers: a model-change policy with eval gates, cost attribution and exception handling",
+   "report_evidence": "C",
+   "most_reported_at": "Listicles; Databricks-style platform teams",
+   "source": "T0-14 L191; L334"
+  },
+  "A7": {
+   "name": "Prompt playground / prompt registry and experimentation",
+   "family": "platform",
+   "core_tension": "Versioning, streaming, multi-model fan-out cost",
+   "staff_tell": "Closes the loop from playground to eval to CI gate to deployment ('prompts as code')",
+   "report_evidence": "B (15)",
+   "most_reported_at": "Anthropic, OpenAI",
+   "source": "T0-14 L192; L355"
+  },
+  "A8": {
+   "name": "Enterprise RAG / permission-aware search (including multimodal documents)",
+   "family": "applications",
+   "core_tension": "Recall versus latency; ACL correctness; freshness",
+   "staff_tell": "Treats ACL enforcement as a retrieval-time, fail-closed invariant, evaluates retrieval (recall@k) separately from generation (faithfulness), plans the embedding-model migration, and keeps untrusted content and sensitive data from meeting in one context without egress control (the EchoLeak lesson)",
+   "report_evidence": "B/C",
+   "most_reported_at": "OpenAI, Databricks, Google, Anthropic (search over 1B documents)",
+   "source": "T0-14 L193; L386"
+  },
+  "A9": {
+   "name": "ChatGPT-style assistant with context assembly and memory",
+   "family": "applications",
+   "core_tension": "Context budget versus quality; memory governance",
+   "staff_tell": "Explains how prompt layout drives the prefix-cache hit rate and cost, and names memory governance (what is stored, who can delete it)",
+   "report_evidence": "B/C",
+   "most_reported_at": "OpenAI, Anthropic, Meta ML",
+   "source": "T0-14 L194; L410"
+  },
+  "A10": {
+   "name": "Latency-critical code completion plus coding assistant",
+   "family": "applications",
+   "core_tension": "Sub-second TTFT versus context quality",
+   "staff_tell": "Pairs execution-based offline evals with online retention metrics and plans capacity for keystroke bursts",
+   "report_evidence": "C",
+   "most_reported_at": "Meta ML pool, listicles",
+   "source": "T0-14 L195; L430"
+  },
+  "A11": {
+   "name": "Long-running tool-using agent platform",
+   "family": "applications",
+   "core_tension": "Autonomy versus blast radius; resumability",
+   "staff_tell": "Designs the blast radius first (Rule of Two), makes tools idempotent and the loop resumable, and builds the eval harness before adding agent features",
+   "report_evidence": "C",
+   "most_reported_at": "OpenAI (2026), Google agentic, Anthropic, scale-ups",
+   "source": "T0-14 L196; L453"
+  },
+  "A12": {
+   "name": "Real-time voice assistant",
+   "family": "applications",
+   "core_tension": "End-to-end latency versus turn-taking correctness",
+   "staff_tell": "States a per-stage p95 budget and overlaps stages (partial STT streamed into the LLM, sentences chunked into TTS)",
+   "report_evidence": "C",
+   "most_reported_at": "PracHub ML-design pools, listicles",
+   "source": "T0-14 L197; L476"
+  },
+  "A13": {
+   "name": "Document / multimodal ingestion and extraction at scale",
+   "family": "applications",
+   "core_tension": "Cost versus accuracy; reprocessing on model change",
+   "staff_tell": "Reasons in cost per correct document and versions outputs so a model or prompt change can be re-run safely",
+   "report_evidence": "C",
+   "most_reported_at": "Databricks, listicles",
+   "source": "T0-14 L198; L500"
+  },
+  "A14": {
+   "name": "LLM/agent evaluation platform and observability",
+   "family": "cross-cutting",
+   "core_tension": "Grader trust versus cost; saturation",
+   "staff_tell": "Sets an ownership model (the platform owns infrastructure, product teams contribute tasks) and links eval metrics to business outcomes",
+   "report_evidence": "B/C",
+   "most_reported_at": "Anthropic (eval/monitoring and benchmark systems), Dataford GenAI-engineer aggregate, Staff+ listicles",
+   "source": "T0-14 L199; L522"
+  },
+  "A15": {
+   "name": "Safety, abuse and prompt-injection defence architecture",
+   "family": "cross-cutting",
+   "core_tension": "Containment versus usability; false positives",
+   "staff_tell": "Designs for compromise: blast-radius analysis, kill switches, an audit trail and incident response",
+   "report_evidence": "B/C",
+   "most_reported_at": "Anthropic (malware analysis, safety layer), OpenAI moderation, Databricks",
+   "source": "T0-14 L200; L544"
+  }
+ },
+ "loop_types": {
+  "ai-lab-infrastructure": {
+   "name": "AI-lab infrastructure loop",
+   "employers": "Anthropic; OpenAI infrastructure and inference teams",
+   "drill_first": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5"
+   ],
+   "drill_next": [
+    "A7",
+    "A14"
+   ],
+   "advice": "Expect numbers early, 50–60 minute rounds and failure-mode probing; Anthropic rounds have shown a design-document review variant.",
+   "source": "T0-14 L119"
+  },
+  "applied-ai": {
+   "name": "Applied-AI / AI-engineer loop",
+   "employers": "Databricks, Google GenAI, scale-ups, Meta ML",
+   "drill_first": [
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15"
+   ],
+   "drill_next": [],
+   "advice": "Drill RAG, assistant, copilot, agent, voice, extraction, eval and safety designs first.",
+   "source": "T0-14 L120"
+  },
+  "classic-with-ai-flavour": {
+   "name": "Classic loop with AI flavour",
+   "employers": "Meta and Google SWE, Stripe, Uber",
+   "drill_first": [
+    "A8",
+    "A9"
+   ],
+   "drill_next": [],
+   "advice": "Keep classic design sharp; prepare one or two LLM-flavoured prompts (A8, A9) as insurance, and be ready to place an LLM component sensibly.",
+   "source": "T0-14 L121"
+  }
+ },
+ "prompts": [
+  {
+   "id": "p001",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "How would you build an LLM-powered enterprise search system?",
+   "reported_by": "OpenAI (2026 Glassdoor review); OpenAI's PracHub ML-design pool adds low-latency RAG and an enterprise RAG assistant for internal documents",
+   "covers": [
+    "Elicit corpus size and modalities, the ACL model, freshness, QPS, latency budget, citation requirement, accuracy bar and the cost of a wrong answer",
+    "ACL enforcement as a retrieval-time, fail-closed invariant: pre-filter at the index, re-check at context assembly",
+    "Hybrid BM25 plus dense retrieval with rank fusion and a reranker, each stage proven on recall@k",
+    "Retrieval (recall@k) evaluated separately from generation (faithfulness)",
+    "An embedding-model migration plan; re-embedding also invalidates any semantic cache",
+    "Untrusted content and sensitive data kept from meeting in one context without egress control (the EchoLeak lesson)"
+   ],
+   "red_flags": [
+    "ACL post-filtering, which leaks and wastes top-k",
+    "Permissions enforced in the prompt"
+   ],
+   "answer_source": "T0-14 L360, L385–386, L563, L572, L753",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "rag",
+    "access_controlled_retrieval",
+    "hybrid_search",
+    "reranking",
+    "retrieval_evaluation",
+    "embedding_models"
+   ],
+   "source": "T0-14 L359",
+   "grade": "C"
+  },
+  {
+   "id": "p002",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "Design distributed search over about 1 billion documents.",
+   "reported_by": "Anthropic (the most consistently reported design prompt, per IGotAnOffer)",
+   "covers": [
+    "Vector memory = vectors × dimensions × bytes: 1B vectors at 1,024 dimensions take about 4.1 TB in fp32, 1.0 TB in int8 and 0.13 TB with product quantisation",
+    "Recall versus latency, ACL correctness and freshness",
+    "Hybrid BM25 plus dense retrieval with rank fusion; a reranker only where top-k precision matters and the latency budget allows",
+    "Per-tenant indices or namespaces with an ACL pre-filter that fails closed",
+    "Re-embedding migration when the embedding model changes"
+   ],
+   "red_flags": [
+    "Never quantifies",
+    "ACL post-filtering, which leaks and wastes top-k"
+   ],
+   "answer_source": "T0-14 L193, L385, L563, L651, L740, L802",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ml-platform-engineer",
+    "ai-infrastructure-engineer"
+   ],
+   "skills": [
+    "vector_search",
+    "ann_indexes",
+    "hybrid_search",
+    "ranking_search",
+    "access_controlled_retrieval",
+    "system_design"
+   ],
+   "source": "T0-14 L359",
+   "grade": "C"
+  },
+  {
+   "id": "p003",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "Design retrieval and reranking for coding agents.",
+   "reported_by": "Databricks (one reported SWE phone screen)",
+   "covers": [
+    "Hybrid retrieval with rank fusion where the corpus has identifiers, jargon or exact terms; a reranker when top-k precision matters and latency allows",
+    "Context ranked from open files, symbols and recent edits",
+    "Rerank latency versus recall; context size versus time to first token",
+    "Each retrieval stage proven on recall@k before it is added"
+   ],
+   "red_flags": [
+    "Surface-level technology choices with no reason or number behind them"
+   ],
+   "answer_source": "T0-14 L385, L420, L429, L563, L810",
+   "roles": [
+    "ai-engineer",
+    "agentic-ai-engineer",
+    "ai-enablement-engineer",
+    "applied-ai-engineer"
+   ],
+   "skills": [
+    "retrieval_quality",
+    "hybrid_search",
+    "reranking",
+    "retrieval_evaluation",
+    "context_engineering"
+   ],
+   "source": "T0-14 L359; L175",
+   "grade": "C"
+  },
+  {
+   "id": "p004",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "Take-home: answer questions over about 50 documents and report recall@5 and faithfulness on a 20-question set.",
+   "reported_by": "Applied-AI startup take-home (described in one write-up)",
+   "covers": [
+    "Retrieval (recall@k) measured separately from generation (faithfulness)",
+    "Questions unambiguous enough that two experts would agree on pass or fail, with positive and negative cases",
+    "Hybrid BM25 plus dense retrieval and a reranker, each stage proven on recall@k before it is added",
+    "Chunk size and context prefixes",
+    "A citation and faithfulness check on every answer"
+   ],
+   "red_flags": [
+    "'We'd test it with some prompts', or one uncalibrated LLM judge"
+   ],
+   "answer_source": "T0-14 L379, L385–386, L563, L712, L716, L724",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-enablement-engineer",
+    "ai-product-engineer"
+   ],
+   "skills": [
+    "rag",
+    "retrieval_evaluation",
+    "hybrid_search",
+    "reranking",
+    "grounding_citations",
+    "golden_datasets"
+   ],
+   "source": "T0-06 L318",
+   "grade": "D"
+  },
+  {
+   "id": "p005",
+   "track": "application",
+   "archetype": "A9",
+   "prompt": "Design a ChatGPT-style chat assistant at high scale, with context assembly and memory.",
+   "reported_by": "Anthropic (chat system: 7 of 112 AceOffer reports); OpenAI (high-scale chat application); DesignGurus ('Design ChatGPT'); Meta's ML pool (LLM-based conversational assistant)",
+   "covers": [
+    "Elicit DAU and concurrent streams, context length, tools, memory scope and deletion rules, moderation and multi-device sync",
+    "Cache-friendly prompt layout (static prefix first) and how it drives prefix-cache hit rate and cost",
+    "Summarisation or compaction versus a sliding window, tuned for recall first",
+    "Memory governance: write policy (supersession, contradiction), what is stored and who can delete it",
+    "Moderating a stream without blocking time to first token; SSE versus WebSocket",
+    "Server-side state versus client re-send"
+   ],
+   "red_flags": [
+    "Ignores streaming and latency physics (TTFT versus TPOT)",
+    "No evaluation story ('we'd test it')"
+   ],
+   "answer_source": "T0-14 L391, L409–410, L804, L807",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "context_engineering",
+    "agent_memory",
+    "prefix_caching",
+    "guardrails",
+    "sse",
+    "streaming_ux"
+   ],
+   "source": "T0-14 L390; L173",
+   "grade": "B"
+  },
+  {
+   "id": "p006",
+   "track": "application",
+   "archetype": "A9",
+   "prompt": "Design a customer-support chatbot on a third-party LLM platform.",
+   "reported_by": "Aced (formerly Exponent) list of 2026 prompts",
+   "covers": [
+    "Requirements first: whether it acts or only answers, knowledge source and freshness, quality bar and the cost of a wrong answer",
+    "Context assembly: static prefix first, then memory, then trimmed history",
+    "Input moderation before generation, streamed output moderation with a small lag buffer, and a post-hoc audit pass",
+    "A golden set drawn from real failures, with production traffic sampled through the same graders",
+    "What happens when the provider is down or a model version changes behaviour"
+   ],
+   "red_flags": [
+    "Treats the LLM as a source of truth, with no validation",
+    "Hand-wavy safety"
+   ],
+   "answer_source": "T0-14 L397, L574, L586, L712, L719, L770, L805–806",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-enablement-engineer",
+    "forward-deployed-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "llm_apis",
+    "context_engineering",
+    "guardrails",
+    "evals",
+    "model_selection"
+   ],
+   "source": "T0-14 L390",
+   "grade": "C"
+  },
+  {
+   "id": "p007",
+   "track": "application",
+   "archetype": "A10",
+   "prompt": "Design an LLM-based coding assistant, including latency-critical inline code completion.",
+   "reported_by": "Meta (ML system design pool); code-completion design in coach lists",
+   "covers": [
+    "Elicit the inline-completion latency budget (coach sources suggest a few hundred milliseconds), keystroke-rate bursts, code privacy and telemetry",
+    "A small model close to the user versus a large central model; prefix KV reuse as the user types",
+    "Context size versus time to first token, with context ranked from open files, symbols and recent edits",
+    "Speculative decoding, which helps most at low-to-medium QPS",
+    "Retained-after-N-seconds beats raw acceptance; execution-based offline evals paired with online retention metrics",
+    "Capacity planned for keystroke bursts"
+   ],
+   "red_flags": [
+    "Ignores streaming and latency physics (TTFT versus TPOT)"
+   ],
+   "answer_source": "T0-14 L415, L420–421, L429–430, L807",
+   "roles": [
+    "ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "cost_latency",
+    "spec_decoding",
+    "prefix_caching",
+    "context_engineering",
+    "online_evals",
+    "ux_telemetry"
+   ],
+   "source": "T0-14 L414",
+   "grade": "C"
+  },
+  {
+   "id": "p008",
+   "track": "application",
+   "archetype": "A11",
+   "prompt": "Design an agent system that executes tasks for users from a chat interface.",
+   "reported_by": "OpenAI (Aug 2026 Glassdoor review); variants: Anthropic (an agent system that adapts to new tasks), Meta's ML pool (agentic ticket investigation), Google Cloud GenAI forward-deployed engineer loops (agentic system design)",
+   "covers": [
+    "Elicit side-effect classes (read-only, reversible, irreversible), budgets (steps, tokens, wall-clock), concurrency, tenancy and human-approval policy",
+    "Blast radius first (Rule of Two): at most two of untrusted input, sensitive access and the ability to act externally, otherwise human approval",
+    "Idempotent tools and a resumable loop: an append-only event log and checkpoints",
+    "A deterministic workflow by default; an agent only where the path cannot be predetermined; sub-agents only to isolate context",
+    "Reliability over repeated trials: pass^k (0.75 per trial gives about 42% for three in a row)",
+    "The eval harness built before agent features"
+   ],
+   "red_flags": [
+    "An unbounded loop with no budgets",
+    "Grading only the agent's final answer"
+   ],
+   "answer_source": "T0-14 L435, L445–446, L452–454, L570, L652, L724, L733",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer"
+   ],
+   "skills": [
+    "agents",
+    "agent_reliability",
+    "durable_execution",
+    "hitl_design",
+    "agent_evals",
+    "containment"
+   ],
+   "source": "T0-14 L434; L173",
+   "grade": "C"
+  },
+  {
+   "id": "p009",
+   "track": "application",
+   "archetype": "A11",
+   "prompt": "Agent-debugging round: an agent fails on a task; find out why and fix it.",
+   "reported_by": "No fixed prompt reported (D): agent-debugging rounds are reported in applied-AI startup loops; the wording is this repository's",
+   "covers": [
+    "Read the trace first: turns, tool calls, tokens and latency, with prompt and model versions and replay",
+    "Grade the outcome (end state), not the exact tool-call path",
+    "Several trials per task, because outputs are non-deterministic; report pass^k",
+    "Check the loop budgets and the tool router: schema validation, authorisation and idempotency keys",
+    "Turn the failure into a new eval task"
+   ],
+   "red_flags": [
+    "An unbounded loop with no budgets",
+    "Grading only the agent's final answer"
+   ],
+   "answer_source": "T0-14 L435, L442, L454, L714, L717, L719, L724, L764, L767",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "agent_evals",
+    "tracing",
+    "agent_reliability",
+    "error_analysis",
+    "eval_stats"
+   ],
+   "source": "T0-06 L318",
+   "grade": "D"
+  },
+  {
+   "id": "p010",
+   "track": "application",
+   "archetype": "A12",
+   "prompt": "Design a real-time AI voice system.",
+   "reported_by": "PracHub software-engineer ML-design pool; Meta (ML pool); listicles",
+   "covers": [
+    "Elicit the end-to-end latency target (most vendor sources say about 800 ms voice-to-voice, range about 300–1,000 ms), telephony versus WebRTC, barge-in, languages and cost per minute",
+    "A per-stage p95 budget that sums to the target: network, endpointing, STT, LLM time to first token, TTS first audio",
+    "Overlapped stages: partial STT streamed into the LLM, sentences chunked into TTS",
+    "Cascaded STT, LLM and TTS (observable, swappable) versus speech-to-speech (lower latency, less control)",
+    "Endpointing aggressiveness and interruption semantics"
+   ],
+   "red_flags": [
+    "Stage latencies added in sequence with no overlap (one vendor's illustrative sequential budget reaches about 1,180 ms)",
+    "Ignores streaming and latency physics (TTFT versus TPOT)"
+   ],
+   "answer_source": "T0-14 L459, L475–476, L663, L807",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-product-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "speech_voice",
+    "cost_latency",
+    "streaming_ux",
+    "load_testing"
+   ],
+   "source": "T0-14 L458; L173",
+   "grade": "C"
+  },
+  {
+   "id": "p011",
+   "track": "application",
+   "archetype": "A13",
+   "prompt": "Design a document-processing pipeline that ingests heterogeneous documents for LLM use.",
+   "reported_by": "Databricks; listicles add very long document summarisation and extraction with reliability targets",
+   "covers": [
+    "Elicit volume per day, document types and lengths, field-level accuracy target, turnaround and human-review capacity",
+    "Cost per correct document, not per document",
+    "A small-model-first cascade with escalation versus an upfront router (savings vary 35–85% by workload)",
+    "Schema-constrained decoding versus post-validation; OCR versus a vision LLM",
+    "Single-pass long context versus chunked map-reduce (long context degrades mid-document)",
+    "Versioned outputs so a model or prompt change can be re-run safely; the batch API for non-urgent work"
+   ],
+   "red_flags": [
+    "Treats the LLM as a source of truth, with no validation"
+   ],
+   "answer_source": "T0-14 L481, L495, L499–500, L806",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "document_ingestion",
+    "structured_output",
+    "structured_generation",
+    "model_selection",
+    "multimodal",
+    "cost_latency"
+   ],
+   "source": "T0-14 L480",
+   "grade": "C"
+  },
+  {
+   "id": "p012",
+   "track": "application",
+   "archetype": "A15",
+   "prompt": "Design a malware-analysis system.",
+   "reported_by": "Anthropic (Hello Interview's Anthropic Staff list)",
+   "covers": [
+    "Trust boundaries first: what content is untrusted, sensitive assets, irreversible actions, tenancy and false-positive tolerance",
+    "Design for compromise: blast-radius analysis, kill switches, an audit trail and incident response",
+    "Sandboxing and egress control (a domain allowlist, no auto-rendered URLs)",
+    "Classifiers as one layer of defence in depth, measured with adaptive attacks rather than static prompt sets",
+    "False positives versus missed attacks"
+   ],
+   "red_flags": [
+    "'Add guardrails' with no placement by layer",
+    "Drops classic engineering (queues, retries, idempotency) once a model appears"
+   ],
+   "answer_source": "T0-14 L527, L537, L543–544, L745, L753, L755, L814",
+   "roles": [
+    "ai-security-engineer",
+    "ai-engineer",
+    "applied-ai-engineer"
+   ],
+   "skills": [
+    "containment",
+    "threat_modeling",
+    "red_teaming",
+    "incident_response",
+    "llm_security"
+   ],
+   "source": "T0-14 L526",
+   "grade": "B"
+  },
+  {
+   "id": "p013",
+   "track": "application",
+   "archetype": "A15",
+   "prompt": "Design an LLM API with a safety layer.",
+   "reported_by": "Anthropic (coaching and aggregator pages)",
+   "covers": [
+    "Controls placed by layer: ingestion, retrieval, context assembly, model, tool gateway, output, egress, cost and abuse, response",
+    "Input moderated before generation; streamed output moderated with a small lag buffer; a post-hoc audit pass",
+    "Output treated as untrusted input downstream: schema validation, auto-rendering markdown and links stripped, PII and secret filters",
+    "Token-based rate limits, max output tokens and per-tenant budgets (OWASP LLM10)",
+    "False positives versus missed attacks, and the response-time overhead"
+   ],
+   "red_flags": [
+    "'Tell the model to ignore malicious instructions'",
+    "A static benchmark score offered as proof that a defence works"
+   ],
+   "answer_source": "T0-14 L527, L543, L574, L731, L737–747, L753",
+   "roles": [
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "ai-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "guardrails",
+    "llm_security",
+    "owasp_llm_top10",
+    "pii_protection",
+    "production_hardening"
+   ],
+   "source": "T0-14 L526",
+   "grade": "C"
+  },
+  {
+   "id": "p014",
+   "track": "application",
+   "archetype": "A15",
+   "prompt": "Design safeguards for an AI system that can take actions on behalf of a user.",
+   "reported_by": "Aced (formerly Exponent) list of 2026 prompts",
+   "covers": [
+    "Trust-boundary analysis with the Rule of Two: untrusted input, sensitive access, ability to act externally; if all three are needed, split the agent or add approval",
+    "Assume the injection succeeds and bound the blast radius",
+    "Permissions in the tool gateway and retrieval layer, not the prompt: least privilege, scoped short-lived credentials, allowlists, human approval for irreversible actions",
+    "Egress control: a domain allowlist and proxy, no data-bearing URLs",
+    "A kill switch, audit log and incident runbook; adaptive red-team evals in CI"
+   ],
+   "red_flags": [
+    "Classifier-only defence: adaptive attacks bypassed 12 published defences with over 90% success in most cases",
+    "Permissions enforced in the prompt"
+   ],
+   "answer_source": "T0-14 L95, L733, L743, L745, L747, L753, L755, L757",
+   "roles": [
+    "ai-security-engineer",
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "applied-ai-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "prompt_injection",
+    "containment",
+    "agent_abuse",
+    "hitl_design",
+    "red_teaming",
+    "iam"
+   ],
+   "source": "T0-14 L526",
+   "grade": "C"
+  },
+  {
+   "id": "p015",
+   "track": "application",
+   "archetype": null,
+   "prompt": "How would you reduce hallucinations in an LLM application?",
+   "reported_by": "Dataford GenAI-engineer aggregate (12 guides)",
+   "covers": [
+    "Answers grounded in retrieved sources, with a citation and faithfulness check",
+    "Validators, citations and fallbacks rather than trusting the model",
+    "Retrieval (recall@k) evaluated separately from generation (faithfulness, groundedness)",
+    "Retrieve when the corpus exceeds the window, changes often or needs per-user ACLs; fine-tune for style or format, not for facts that change",
+    "Guardrails, confidence thresholds and fallbacks instead of promising 100% accuracy"
+   ],
+   "red_flags": [
+    "Treats the LLM as a source of truth, with no validation",
+    "Assumes a bigger context window removes the need for retrieval"
+   ],
+   "answer_source": "T0-14 L379, L386, L565, L716, L806, L875; T1-03 L194",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "ai-evaluation-engineer"
+   ],
+   "skills": [
+    "grounding_citations",
+    "rag",
+    "retrieval_evaluation",
+    "guardrails",
+    "adaptation_choice",
+    "evals"
+   ],
+   "source": "T0-14 L104",
+   "grade": "C"
+  },
+  {
+   "id": "p016",
+   "track": "application",
+   "archetype": null,
+   "prompt": "What is your approach to fine-tuning? When would you fine-tune rather than prompt or retrieve?",
+   "reported_by": "Dataford GenAI-engineer aggregate (12 guides)",
+   "covers": [
+    "Prompt and retrieve first; fine-tune or distil when the task is narrow, stable and high-volume, a small model must hit a latency or cost target, and a golden set exists to prove parity",
+    "Fine-tune for style or format, not for facts that change; retrieve for large, changing or permissioned knowledge",
+    "The price gap between small and frontier models, quoted as ratios rather than memorised prices",
+    "A regression eval budgeted for every base-model upgrade"
+   ],
+   "red_flags": [
+    "Fine-tuning before showing that prompting and retrieval fail",
+    "Fine-tuning to inject facts that change"
+   ],
+   "answer_source": "T0-14 L562, L565, L625; T0-06 L496",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ml-engineer",
+    "applied-scientist"
+   ],
+   "skills": [
+    "adaptation_choice",
+    "finetuning",
+    "model_selection",
+    "golden_datasets",
+    "cost_latency"
+   ],
+   "source": "T0-14 L104",
+   "grade": "C"
+  },
+  {
+   "id": "p017",
+   "track": "customer-application",
+   "archetype": "A8",
+   "prompt": "Design RAG over sensitive, fast-changing documents.",
+   "reported_by": "Databricks (AI forward-deployed engineer track)",
+   "covers": [
+    "Freshness: connectors and change capture feeding the ingest pipeline (parse, chunk, embed, index)",
+    "ACL metadata in every index and an ACL pre-filter that fails closed, re-checked at context assembly",
+    "Secrets kept out of prompts; per-tenant indices or namespaces",
+    "Untrusted content and sensitive data kept from meeting in one context without egress control",
+    "Retrieval quality and answer faithfulness evaluated separately"
+   ],
+   "red_flags": [
+    "ACL post-filtering, which leaks and wastes top-k",
+    "Permissions enforced in the prompt"
+   ],
+   "answer_source": "T0-14 L365–370, L385–386, L572, L740–741, L753",
+   "roles": [
+    "forward-deployed-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "rag",
+    "access_controlled_retrieval",
+    "document_ingestion",
+    "pii_protection",
+    "retrieval_evaluation",
+    "data_pipelines"
+   ],
+   "source": "T0-14 L359; L175",
+   "grade": "C"
+  },
+  {
+   "id": "p018",
+   "track": "customer-application",
+   "archetype": "A14",
+   "prompt": "Evaluate a multi-agent GenAI system in production.",
+   "reported_by": "Databricks (AI forward-deployed engineer track)",
+   "covers": [
+    "Trajectories and outcomes evaluated over repeated trials, with pass^k",
+    "Component evals: tool selection and argument accuracy, router accuracy",
+    "Sub-agents multiply token cost but isolate context",
+    "Production traffic sampled through the same graders, with implicit signals (regenerations, edits, abandonment, escalations)",
+    "Every incident fed back into the golden set"
+   ],
+   "red_flags": [
+    "Grading only the agent's final answer",
+    "No production feedback loop"
+   ],
+   "answer_source": "T0-14 L452, L605, L716–717, L719, L724",
+   "roles": [
+    "forward-deployed-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "agent_evals",
+    "multi_agent",
+    "online_evals",
+    "eval_stats",
+    "tracing"
+   ],
+   "source": "T0-14 L175",
+   "grade": "C"
+  },
+  {
+   "id": "p019",
+   "track": "customer-application",
+   "archetype": null,
+   "prompt": "Customer-style scoping round: scope a customer's GenAI use case before proposing a design.",
+   "reported_by": "No reported prompt (D): scoping and customer-style rounds are reported in applied-AI startup loops; the prompt is built from T0-14's requirements step",
+   "covers": [
+    "The six requirement questions: users, QPS and tokens; latency targets; whether it acts or only answers; knowledge source, freshness and permissions; quality bar and the cost of a wrong answer; constraints such as privacy, residency, vendor and on-premises",
+    "The top three requirements restated, with what is out of scope",
+    "The premise questioned: is an LLM needed, build or buy, what not to build",
+    "Latency-versus-accuracy and cost-versus-safety trade-offs translated into business terms",
+    "A staged rollout with exit criteria (MVP, then v2)"
+   ],
+   "red_flags": [
+    "Dismisses product requirements or acts defensively about model limitations",
+    "Opens with model architecture instead of requirements and scale"
+   ],
+   "answer_source": "T0-14 L586, L778, L791, L801; T1-03 L176",
+   "roles": [
+    "forward-deployed-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "customer_scoping",
+    "customer_communication",
+    "c2_tradeoffs",
+    "success_metrics",
+    "build_vs_buy"
+   ],
+   "source": "T0-06 L318",
+   "grade": "D"
+  },
+  {
+   "id": "p020",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Design a surge-pricing, ETA, fraud-detection or recommendation system.",
+   "reported_by": "Uber (MLE loops); Stripe (MLE: fraud and authorisation optimisation)",
+   "covers": [
+    "The classic ML system design frame: data, features, training, offline metrics and deployment",
+    "Numbers only where they change the design",
+    "Where an LLM would help, placed as a sensible component"
+   ],
+   "red_flags": [
+    "Prepares LLM system design for an ML design round (the wrong round type)",
+    "Never quantifies"
+   ],
+   "answer_source": "T0-14 L121, L141, L580, L802, L812",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist"
+   ],
+   "skills": [
+    "ml_fundamentals",
+    "recsys",
+    "system_design",
+    "data_pipelines",
+    "experiment_design",
+    "feature_store"
+   ],
+   "source": "T0-14 L177; L176",
+   "grade": "C"
+  },
+  {
+   "id": "p021",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Where could ML or LLMs help in this workflow?",
+   "reported_by": "Uber (Aug 2026 MLE phone screen: 15 minutes of free-form discussion after 45 minutes of coding)",
+   "covers": [
+    "The premise questioned: is an LLM needed, build or buy, what not to build",
+    "An LLM component placed sensibly inside the existing system",
+    "The cost of a wrong answer, which sets the quality bar and the eval spec",
+    "Token cost per request and per month: requests × (input tokens × input price + output tokens × output price) ÷ 10^6"
+   ],
+   "red_flags": [
+    "Opens with model architecture or training instead of requirements and scale"
+   ],
+   "answer_source": "T0-14 L121, L586, L644, L778, L801",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist"
+   ],
+   "skills": [
+    "model_selection",
+    "adaptation_choice",
+    "unit_economics",
+    "product_sense"
+   ],
+   "source": "T0-14 L177",
+   "grade": "C"
+  },
+  {
+   "id": "p022",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Classic system design, then: now add RAG or an agent.",
+   "reported_by": "Classic design rounds (the add-on pattern reported in trend pieces)",
+   "covers": [
+    "Classic engineering kept once a model appears: queues, retries, idempotency",
+    "For RAG: an ACL pre-filter that fails closed, hybrid retrieval, and retrieval evaluated separately from generation",
+    "For an agent: step, token and time budgets, and a workflow unless the path cannot be predetermined",
+    "Evaluation and safety as named sections of the answer, not a closing sentence"
+   ],
+   "red_flags": [
+    "Drops classic engineering once a model appears",
+    "Unbounded agent loops"
+   ],
+   "answer_source": "T0-14 L128, L386, L563, L570, L572, L808, L814",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist",
+    "ai-engineer",
+    "applied-ai-engineer"
+   ],
+   "skills": [
+    "system_design",
+    "rag",
+    "agents",
+    "evals",
+    "access_controlled_retrieval"
+   ],
+   "source": "T0-14 L83",
+   "grade": "C"
+  },
+  {
+   "id": "p023",
+   "track": "infrastructure",
+   "archetype": "A1",
+   "prompt": "Design an inference API for serving LLMs.",
+   "reported_by": "Anthropic (41 of 112 AceOffer reports); close variants in Databricks' GenAI-engineer track and Meta's ML pool",
+   "covers": [
+    "Elicit tenants and priority tiers, peak RPS, input and output token distributions, streaming, TTFT p99 and TPOT targets, model sizes and a cost target",
+    "Goodput as the SLO: requests per second per GPU that meet both TTFT and TPOT",
+    "Capacity from KV-cache maths: KV bytes per token = 2 × layers × KV heads × head dim × bytes per element, then concurrency per node",
+    "Continuous batching with paged KV; colocated versus disaggregated prefill and decode",
+    "Admission control and load shedding; autoscaling on queue depth and KV utilisation, with a warm pool",
+    "Tenant fairness and a canary rollout behind an eval gate"
+   ],
+   "red_flags": [
+    "One request per GPU",
+    "Autoscaling on CPU",
+    "No distinction between prefill and decode"
+   ],
+   "answer_source": "T0-14 L207, L227–229, L646–647",
+   "roles": [
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "serving_literacy",
+    "batching_kv",
+    "pd_disagg",
+    "inference_autoscaling",
+    "load_testing",
+    "capacity_cost"
+   ],
+   "source": "T0-14 L206; L173",
+   "grade": "B"
+  },
+  {
+   "id": "p024",
+   "track": "infrastructure",
+   "archetype": "A1",
+   "prompt": "Design a token-generation service that handles about 100K requests per second.",
+   "reported_by": "Anthropic",
+   "covers": [
+    "Traffic first: average and peak requests per second, then input and output tokens per second",
+    "Concurrent streams by Little's law (streams = arrival rate × time in system), then nodes at the per-node concurrency limit",
+    "Per-node concurrency = (HBM − weights − overhead) ÷ (KV bytes per token × context length)",
+    "Output length dominates latency: E2E = TTFT + (output tokens − 1) × inter-token latency",
+    "Goodput under TTFT and TPOT SLOs, not raw throughput"
+   ],
+   "red_flags": [
+    "Never quantifies",
+    "Correct arithmetic with no design consequence ('so it's a lot')"
+   ],
+   "answer_source": "T0-14 L228, L643, L647, L649–650, L700, L802",
+   "roles": [
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "capacity_cost",
+    "batching_kv",
+    "load_testing",
+    "gpu_fundamentals",
+    "serving_literacy"
+   ],
+   "source": "T0-14 L206",
+   "grade": "C"
+  },
+  {
+   "id": "p025",
+   "track": "infrastructure",
+   "archetype": "A2",
+   "prompt": "Design an end-to-end batching system for LLM inference requests (one reported variant: 100 requests should take about the same time as one).",
+   "reported_by": "Anthropic (among the most frequently reported design prompts; the variant comes from one report)",
+   "covers": [
+    "Elicit max batch size, latency SLO, arrival rate and burstiness, input-length variance, and cancellation and timeout semantics",
+    "Static batching with a timer versus dynamic versus continuous (iteration-level) batching",
+    "Max wait derived from the latency budget (arrival rate × max wait approximates batch fill)",
+    "Length bucketing to cut padding; head-of-line blocking from long prompts",
+    "A bounded queue with backpressure, and correct demultiplexing of results under partial failure",
+    "Poison requests and cancellation"
+   ],
+   "red_flags": [
+    "No bound on the queue",
+    "No answer for 'one request in the batch fails'"
+   ],
+   "answer_source": "T0-14 L234, L248–250",
+   "roles": [
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "batching_kv",
+    "serving_literacy",
+    "gpu_fundamentals",
+    "load_testing",
+    "system_design"
+   ],
+   "source": "T0-14 L233",
+   "grade": "B"
+  },
+  {
+   "id": "p026",
+   "track": "infrastructure",
+   "archetype": "A3",
+   "prompt": "Design an offline (asynchronous) batch-inference API.",
+   "reported_by": "Anthropic (12 of 112 AceOffer reports); OpenAI's pool has a related long-running job: orchestrating Sora-style video generation",
+   "covers": [
+    "Elicit turnaround SLA, priority relative to online traffic, result retrieval, idempotency and partial-failure semantics",
+    "Deadline-aware scheduling that fills the diurnal trough with preemptible capacity, plus checkpointing",
+    "Grouping by shared prefix to reuse the cache; cache hits inside batches are best-effort, so warm the cache first",
+    "Idempotent retries, per-item status and fairness with online traffic",
+    "Price as a scheduling signal: batch work as the fleet's utilisation-smoothing layer"
+   ],
+   "red_flags": [
+    "Drops classic engineering (queues, retries, idempotency) once a model appears",
+    "States provider batch-size limits without checking provider docs (secondary sources give 10,000, 50,000 or 100,000 requests)"
+   ],
+   "answer_source": "T0-14 L255, L263–264, L271–272, L814, L880",
+   "roles": [
+    "inference-engineer",
+    "ml-platform-engineer",
+    "ai-infrastructure-engineer"
+   ],
+   "skills": [
+    "capacity_cost",
+    "gpu_fleet",
+    "prefix_caching",
+    "cost_latency",
+    "system_design"
+   ],
+   "source": "T0-14 L254",
+   "grade": "B"
+  },
+  {
+   "id": "p027",
+   "track": "infrastructure",
+   "archetype": "A4",
+   "prompt": "Design GPU allocation for a cluster that serves a mix of large and small models.",
+   "reported_by": "Anthropic (GPU cluster: 7 of 112 AceOffer reports; mixed large and small model allocation: 4)",
+   "covers": [
+    "Elicit model memory footprints and tensor-parallel degrees, heterogeneous GPUs, preemption policy, per-org quotas and cold-start tolerance",
+    "Placement from weights plus KV memory; context length sets the concurrency ceiling",
+    "Dedicated pools per model versus multiplexing; tensor-parallel degree versus replica count",
+    "Warm-pool cost versus cold-start latency; reserved versus spot capacity",
+    "Bin-packing versus fairness versus cold-start cost"
+   ],
+   "red_flags": [
+    "Never quantifies"
+   ],
+   "answer_source": "T0-14 L189, L277, L291–292, L802",
+   "roles": [
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "inference-engineer",
+    "gpu-kernel-engineer"
+   ],
+   "skills": [
+    "gpu_fleet",
+    "capacity_cost",
+    "parallel_serving",
+    "inference_autoscaling",
+    "hpc_schedulers"
+   ],
+   "source": "T0-14 L276",
+   "grade": "B"
+  },
+  {
+   "id": "p028",
+   "track": "infrastructure",
+   "archetype": "A4",
+   "prompt": "Design a GPU scheduling system that uses credits, with credit expiry and atomic credit transactions.",
+   "reported_by": "Anthropic (GPU scheduling with credits); OpenAI (GPU-credit allocator, credit expiry tracking, atomic credit transactions); PracHub ML-design pool",
+   "covers": [
+    "A credits ledger that is idempotent and append-only",
+    "Ledger correctness: idempotency, double-spend and reconciliation",
+    "A quota and fairness policy feeding the scheduler, with preemption of low-priority work",
+    "Placement constraints from weights plus KV memory"
+   ],
+   "red_flags": [
+    "Drops classic engineering (queues, retries, idempotency) once a model appears"
+   ],
+   "answer_source": "T0-14 L285–288, L291–292, L814",
+   "roles": [
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "inference-engineer"
+   ],
+   "skills": [
+    "gpu_fleet",
+    "capacity_cost",
+    "system_design"
+   ],
+   "source": "T0-14 L276",
+   "grade": "C"
+  },
+  {
+   "id": "p029",
+   "track": "infrastructure",
+   "archetype": "A5",
+   "prompt": "Design large model-file distribution to a GPU fleet, with safe rollout and rollback.",
+   "reported_by": "Anthropic (ML-model distribution: 16 of 112 AceOffer reports; large-file streaming: 2); Hello Interview's Anthropic Staff list",
+   "covers": [
+    "Elicit weight size (hundreds of GB), fleet size, source bandwidth, integrity requirements, rollout and rollback policy, and time-to-ready",
+    "Distribution time before topology: T = size × nodes ÷ source egress (140 GB to 1,000 nodes from a 100 Gbps source is about 3.1 hours)",
+    "P2P swarm versus hierarchical cache versus object-store fan-out; chunk size; topology awareness",
+    "Throttling so distribution does not starve serving traffic",
+    "Hash verification, a health check and eval smoke test, and canary traffic with a rollback pointer"
+   ],
+   "red_flags": [
+    "Never quantifies"
+   ],
+   "answer_source": "T0-14 L297, L304–306, L310–312, L662, L802",
+   "roles": [
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "inference-engineer"
+   ],
+   "skills": [
+    "storage_checkpoint",
+    "networking",
+    "progressive_delivery",
+    "gpu_fleet",
+    "mlops_lifecycle"
+   ],
+   "source": "T0-14 L296",
+   "grade": "B"
+  },
+  {
+   "id": "p030",
+   "track": "infrastructure",
+   "archetype": "A6",
+   "prompt": "Design an LLM gateway and router for a multi-team AI platform.",
+   "reported_by": "Listicles (no firm attribution)",
+   "covers": [
+    "Elicit number of teams, providers, per-team budgets, compliance (PII), failover policy and reproducibility needs",
+    "Token-based limits, estimated before the call and reconciled after, rather than request limits",
+    "Degrade to a cheaper tier versus reject; failover on 429 or 5xx responses",
+    "Cache layers: prefix, exact, then an opt-in semantic cache per route",
+    "Pinned versus floating model versions, with a model-change policy behind eval gates and cost attribution",
+    "Central logging versus privacy"
+   ],
+   "red_flags": [
+    "A semantic cache on high-stakes or personalised routes"
+   ],
+   "answer_source": "T0-14 L317, L324, L330, L333–334, L567",
+   "roles": [
+    "ml-platform-engineer",
+    "ai-infrastructure-engineer",
+    "ai-enablement-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "llm_gateways",
+    "model_selection",
+    "semantic_caching",
+    "pii_protection",
+    "cost_latency"
+   ],
+   "source": "T0-14 L316",
+   "grade": "C"
+  },
+  {
+   "id": "p031",
+   "track": "infrastructure",
+   "archetype": "A6",
+   "prompt": "Design a prompt caching and retrieval system.",
+   "reported_by": "Anthropic (SWE candidates, per IGotAnOffer)",
+   "covers": [
+    "Cache layers in order: prefix (prompt) cache, then exact-match cache, then a semantic cache only on low-stakes, high-repeat, non-personalised routes",
+    "Prefix caching needs an exact prefix match: static content first and breakpoints at stable boundaries, with the hit rate verified",
+    "Prompt-cache economics: break-even reads per write = (w − 1) ÷ (1 − r), so one read repays a write at the multipliers quoted in October 2026",
+    "Semantic-cache hygiene: per-route thresholds, keys scoped by tenant and by prompt and model version, invalidation on embedding-model change",
+    "Semantic-cache value net of the cost of false hits"
+   ],
+   "red_flags": [
+    "A cache breakpoint on changing content, such as a timestamp, causing perpetual misses and repeated write charges",
+    "A semantic cache whose false-hit rate is never measured"
+   ],
+   "answer_source": "T0-14 L98, L567, L645, L661, L869, L871",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ml-platform-engineer",
+    "inference-engineer"
+   ],
+   "skills": [
+    "prefix_caching",
+    "semantic_caching",
+    "cost_latency",
+    "llm_gateways",
+    "vector_search"
+   ],
+   "source": "T0-14 L316",
+   "grade": "C"
+  },
+  {
+   "id": "p032",
+   "track": "infrastructure",
+   "archetype": "A7",
+   "prompt": "Design a prompt playground, such as the OpenAI Playground.",
+   "reported_by": "Anthropic (15 of 112 AceOffer reports); OpenAI (reported as a phone-screen prompt)",
+   "covers": [
+    "Elicit users and scale, multi-model comparison, sharing and permissions, dataset runs and retention of completions",
+    "Content-addressed, immutable prompt versions",
+    "Streaming transport and reconnect",
+    "Fan-out cost and quotas when one prompt runs against several models",
+    "A permission model for shared prompts; retention and privacy of stored completions",
+    "The loop from playground to eval to CI gate to deployment ('prompts as code')"
+   ],
+   "red_flags": [
+    "Surface-level technology choices ('Kafka because Kafka')"
+   ],
+   "answer_source": "T0-14 L339, L354–355, L810",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ml-platform-engineer",
+    "ai-infrastructure-engineer",
+    "ai-product-engineer"
+   ],
+   "skills": [
+    "prompt_versioning",
+    "eval_ci_gates",
+    "sse",
+    "apis",
+    "system_design"
+   ],
+   "source": "T0-14 L338",
+   "grade": "B"
+  },
+  {
+   "id": "p033",
+   "track": "infrastructure",
+   "archetype": null,
+   "prompt": "Roofline analysis: is LLM prefill or decode compute-bound or memory-bound, and why?",
+   "reported_by": "Anthropic (4 of 112 AceOffer reports)",
+   "covers": [
+    "Arithmetic intensity: decode at batch 1 is about 1 FLOP per byte, against an H100 ridge point of roughly 300 FLOP per byte (989 TFLOPS ÷ 3.35 TB/s)",
+    "Prefill is compute-bound and decode memory-bound, so goodput is the SLO metric",
+    "Decode ceiling: minimum time per output token = (weights + active KV) ÷ total memory bandwidth; real systems reach a fraction of it (MBU)",
+    "Prefill time ≈ 2 × parameters × input tokens ÷ (peak FLOPs × MFU)",
+    "Dense versus with-sparsity FLOPs checked before any spec-sheet number is used"
+   ],
+   "red_flags": [
+    "Uses the with-sparsity H100 figure (1,979 TFLOPS) as the dense BF16 number",
+    "No distinction between prefill and decode"
+   ],
+   "answer_source": "T0-14 L89, L229, L551, L634, L648, L658, L882",
+   "roles": [
+    "gpu-kernel-engineer",
+    "inference-engineer",
+    "ai-infrastructure-engineer"
+   ],
+   "skills": [
+    "gpu_fundamentals",
+    "profiling",
+    "memory_perf",
+    "batching_kv",
+    "serving_literacy"
+   ],
+   "source": "T0-14 L551",
+   "grade": "B"
+  },
+  {
+   "id": "p034",
+   "track": "infrastructure",
+   "archetype": null,
+   "prompt": "p95 latency has jumped from about 100 ms to about 2,000 ms. Debug it.",
+   "reported_by": "Anthropic (one report: a debugging exercise inside the design round)",
+   "covers": [
+    "Segment by percentile and cohort before guessing",
+    "Split latency into queue, prefill and decode",
+    "Check batch size, KV-cache pressure and long-context outliers",
+    "Check retries and timeouts, a shift in cache-hit rate, a noisy neighbour and the diff of the last deploy"
+   ],
+   "red_flags": [
+    "Guessing without data",
+    "Not forming hypotheses"
+   ],
+   "answer_source": "T0-14 L552; T1-03 L223",
+   "roles": [
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "load_testing",
+    "observability",
+    "batching_kv",
+    "sre"
+   ],
+   "source": "T0-14 L552",
+   "grade": "C"
+  },
+  {
+   "id": "p035",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "How would you evaluate an LLM system?",
+   "reported_by": "Dataford GenAI-engineer aggregate (its most frequent question, in 19 guides)",
+   "covers": [
+    "Success defined from the cost of a wrong answer, mapped from business metric to proxy to offline metric",
+    "A golden set of 20–50 tasks from real failures, unambiguous enough that two experts agree, with positive and negative cases",
+    "Capability suites kept separate from regression suites, with saturation watched",
+    "Code graders where outcomes are checkable, an LLM judge calibrated against humans elsewhere, humans to calibrate",
+    "Several trials per task, with pass^k for user-facing reliability",
+    "A CI gate on regressions, and production traffic sampled through the same graders"
+   ],
+   "red_flags": [
+    "'We'd test it with some prompts'",
+    "One uncalibrated LLM judge, or a model judging its own outputs",
+    "No regression gate and no production feedback loop"
+   ],
+   "answer_source": "T0-14 L573, L711–714, L717–719, L724",
+   "roles": [
+    "ai-evaluation-engineer",
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "applied-scientist",
+    "domain-evaluation-specialist"
+   ],
+   "skills": [
+    "evals",
+    "golden_datasets",
+    "llm_judges",
+    "eval_stats",
+    "eval_ci_gates",
+    "online_evals"
+   ],
+   "source": "T0-14 L104; L504",
+   "grade": "C"
+  },
+  {
+   "id": "p036",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Design a model evaluation and monitoring system (one variant: run evaluation benchmarks across hundreds of model variants).",
+   "reported_by": "Anthropic (SWE candidates, per IGotAnOffer; the benchmark variant comes from one aggregator)",
+   "covers": [
+    "Elicit number of teams and agents, trial cost, grader mix, CI integration and production sampling",
+    "Sandboxed runners with a clean environment for every trial",
+    "Code versus LLM versus human graders (cost, determinism, nuance), with judge versions pinned",
+    "Trials versus cost (the batch API for offline runs); static versus rolling datasets (saturation, contamination)",
+    "Flaky-task detection, and tests for the eval itself: one reported benchmark score moved from 42% to 95% once grader bugs were fixed",
+    "Ownership: the platform owns infrastructure, product teams contribute tasks; eval metrics tied to business outcomes"
+   ],
+   "red_flags": [
+    "One uncalibrated LLM judge",
+    "No regression gate and no production feedback loop"
+   ],
+   "answer_source": "T0-14 L505, L510, L521–522, L720, L724",
+   "roles": [
+    "ai-evaluation-engineer",
+    "ml-platform-engineer",
+    "research-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "evals",
+    "benchmark_design",
+    "llm_judges",
+    "eval_ci_gates",
+    "online_evals",
+    "observability"
+   ],
+   "source": "T0-14 L504",
+   "grade": "C"
+  },
+  {
+   "id": "p037",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Design an evaluation platform for many agent workflows.",
+   "reported_by": "Staff-level listicles",
+   "covers": [
+    "Trajectories and outcomes evaluated over repeated trials",
+    "The outcome (end state) graded, not the exact tool-call path",
+    "pass@k versus pass^k, and chained steps multiplying (0.98 per step over 20 steps is about 67%)",
+    "A clean, isolated environment for every trial",
+    "Trial isolation and grader calibration as the two deep dives",
+    "Ownership: the platform owns infrastructure, product teams contribute tasks"
+   ],
+   "red_flags": [
+    "Grading only the agent's final answer"
+   ],
+   "answer_source": "T0-14 L522, L605, L607, L652, L714, L717, L724",
+   "roles": [
+    "ai-evaluation-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "agent_evals",
+    "eval_stats",
+    "llm_judges",
+    "evals",
+    "tracing"
+   ],
+   "source": "T0-14 L504",
+   "grade": "C"
+  },
+  {
+   "id": "p038",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Evaluation discussion: when would you use an LLM judge, and when human annotation?",
+   "reported_by": "Google (ML-platform and GenAI design rounds, where this discussion is reported as central)",
+   "covers": [
+    "Code graders first, LLM judges where needed, humans to calibrate",
+    "Judge validity: over 80% agreement with humans on MT-Bench-style tasks (2023, one benchmark), with position, verbosity and self-enhancement bias",
+    "Mitigations: swap answer order, use rubrics and references, avoid judging with the generator's model family, re-calibrate when the judge version changes",
+    "One dimension per judge, with an 'Unknown' option",
+    "Humans as the slow, costly gold standard that calibrates the rest"
+   ],
+   "red_flags": [
+    "A model judging its own outputs",
+    "One uncalibrated LLM judge"
+   ],
+   "answer_source": "T0-14 L573, L714–715, L724",
+   "roles": [
+    "ai-evaluation-engineer",
+    "applied-scientist",
+    "ml-engineer",
+    "ai-engineer",
+    "domain-evaluation-specialist"
+   ],
+   "skills": [
+    "llm_judges",
+    "human_evaluation",
+    "eval_rubrics",
+    "eval_stats",
+    "evals"
+   ],
+   "source": "T0-14 L174",
+   "grade": "C"
+  },
+  {
+   "id": "p039",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Give a research talk on your own work (one round of a frontier-lab loop that also has coding and values rounds).",
+   "reported_by": "No reported prompt (D): built from the research-talk round in T2-01's frontier-lab loop and role-catalog §8.2",
+   "covers": [
+    "Research depth together with engineering depth (research taste plus the ability to build)",
+    "Your own contribution separated from the team's: 'I designed the evaluation methodology, implemented the baseline comparison…'",
+    "Measurement rigour: the evaluation methodology and the baseline comparison",
+    "Impact framing ('I shipped/scaled…') rather than academic framing ('I researched…')"
+   ],
+   "red_flags": [
+    "Academic framing instead of impact (a Meta veto trigger)",
+    "'We published a paper on…' with no personal contribution isolated"
+   ],
+   "answer_source": "T0-06 L320; T2-01 L565, L572, L609, L612–614; T1-03 L177, L212",
+   "roles": [
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher"
+   ],
+   "skills": [
+    "research_taste",
+    "research_methods",
+    "presenting",
+    "research_to_prod",
+    "c3_ownership"
+   ],
+   "source": "T2-01 L609",
+   "grade": "D"
+  },
+  {
+   "id": "p040",
+   "track": "governance",
+   "archetype": null,
+   "prompt": "Scoping round: set up an AI governance programme (inventory, risk-assessment method, committee and evidence) mapped to the EU AI Act, NIST AI RMF and ISO/IEC 42001.",
+   "reported_by": "No reported prompt (D): built from the governance round in role-catalog §8.2 and the programme work described in T0-15",
+   "covers": [
+    "An AI inventory or registry: systems, owners, use cases and risk tiers",
+    "A risk-assessment method and committee operations, with one accountable programme lead and a cross-functional committee",
+    "Evidence as a by-product of delivery: Art. 12-style logs, evaluation reports, system documentation and incident records kept in the ML platform",
+    "Translation from legal text to evidence, the part of the work that is specific to compliance",
+    "Incident tracking and reporting, including the ability to halt a system"
+   ],
+   "red_flags": [
+    "Assumes most high-risk systems need a notified body (most Annex III points use internal control)",
+    "Treats ISO/IEC 42001 as a presumption of EU AI Act conformity (it gives none)",
+    "Dismisses guardrails as 'red tape' that slows shipping"
+   ],
+   "answer_source": "T0-15 L87, L162, L173–174, L334, L337, L342; T1-03 L178",
+   "roles": [
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "ai_inventory",
+    "grc",
+    "regulation",
+    "eu_ai_act",
+    "nist_ai_rmf",
+    "iso_42001",
+    "operating_model"
+   ],
+   "source": "T0-15 L162",
+   "grade": "D"
+  },
+  {
+   "id": "p041",
+   "track": "product",
+   "archetype": null,
+   "prompt": "Product or scoping round: scope a GenAI feature or pilot, from whether to use an LLM to success metrics, an evaluation rubric and exit criteria.",
+   "reported_by": "No reported prompt (D): built from the product round in role-catalog §8.2 and the scoping round T2-01 lists for non-technical candidates",
+   "covers": [
+    "The premise questioned: is an LLM needed, build or buy, what not to build; stakeholders and success metrics named",
+    "'Good' defined measurably (task success, groundedness, safety, latency, cost) and mapped from business metric to proxy to offline metric, starting from the cost of a wrong answer",
+    "A rubric whose tasks are unambiguous enough that two domain experts reach the same verdict, with positive and negative cases",
+    "Token economics: cost per request and per month from input and output tokens and prices",
+    "A staged rollout with exit criteria (MVP, then v2)",
+    "Latency-versus-accuracy and cost-versus-safety trade-offs translated into business terms"
+   ],
+   "red_flags": [
+    "Over-promises accuracy instead of proposing guardrails, confidence thresholds and fallbacks",
+    "Uses jargon without linking decisions to user impact"
+   ],
+   "answer_source": "T0-14 L644, L711–712, L778, L791; T1-03 L176, L194",
+   "roles": [
+    "ai-product-manager",
+    "domain-evaluation-specialist"
+   ],
+   "skills": [
+    "product_sense",
+    "success_metrics",
+    "eval_rubrics",
+    "unit_economics",
+    "pilots",
+    "build_vs_buy"
+   ],
+   "source": "T2-01 L767",
+   "grade": "D"
+  },
+  {
+   "id": "p042",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Tell me about a time your model failed catastrophically in production. How did you detect it?",
+   "reported_by": "T1-03 bank (B1)",
+   "covers": [
+    "Detection by alerts and monitoring, not by a customer complaint",
+    "Root-cause discipline and a postmortem artefact",
+    "Immediate remediation (rollback, fallback, routing) plus systemic prevention (alerts, eval pipelines)",
+    "What you did, not the team, ending with a metric delta and a continuous-monitoring step"
+   ],
+   "red_flags": [
+    "Deflects blame to teammates, data engineers or third-party model providers",
+    "Blames external factors ('the data was bad') without systematic troubleshooting"
+   ],
+   "answer_source": "T1-03 L175, L177, L186–187, L193",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "c3_ownership",
+    "postmortems",
+    "observability"
+   ],
+   "source": "T1-03 L193",
+   "grade": "C"
+  },
+  {
+   "id": "p043",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "How do you explain hallucination risks to an executive demanding 100% accuracy?",
+   "reported_by": "T1-03 bank (B2)",
+   "covers": [
+    "Translation into business terms, with analogies and quantified impact",
+    "Guardrails, confidence thresholds and fallbacks proposed instead of over-promising",
+    "The cost of a wrong answer for this use case (a hallucination in medical summarisation versus a slightly wrong product recommendation)"
+   ],
+   "red_flags": [
+    "Jargon with no link to user impact",
+    "Defensive about model limitations"
+   ],
+   "answer_source": "T1-03 L176, L185, L194",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c2_tradeoffs",
+    "executive_communication",
+    "guardrails",
+    "llm_fundamentals"
+   ],
+   "source": "T1-03 L194",
+   "grade": "C"
+  },
+  {
+   "id": "p044",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe a scenario where you chose a simple heuristic over an LLM.",
+   "reported_by": "T1-03 bank (B3)",
+   "covers": [
+    "Cost-awareness: knowing when not to use the expensive tool",
+    "A baseline and an eval metric that justified the choice",
+    "The constraint that decided it (latency ceiling, accuracy bar or cost cap) and the result as a metric delta"
+   ],
+   "red_flags": [
+    "Focuses on framework choice over data quality and metric drift"
+   ],
+   "answer_source": "T1-03 L175, L185, L187, L195",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "domain-evaluation-specialist",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "cost_latency",
+    "model_selection",
+    "unit_economics"
+   ],
+   "source": "T1-03 L195",
+   "grade": "C"
+  },
+  {
+   "id": "p045",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Tell me about a project where the data was severely bottlenecked, biased, or missing labels.",
+   "reported_by": "T1-03 bank (B4)",
+   "covers": [
+    "Proxy labels, active learning or human-in-the-loop labelling",
+    "The problem scoped to the data available",
+    "Baselines and eval metrics, with a pivot when a hypothesis failed"
+   ],
+   "red_flags": [
+    "Blames external factors ('the data was bad') without systematic troubleshooting"
+   ],
+   "answer_source": "T1-03 L175, L196",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "domain-evaluation-specialist",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "annotation",
+    "error_analysis",
+    "data_pipelines"
+   ],
+   "source": "T1-03 L196",
+   "grade": "C"
+  },
+  {
+   "id": "p046",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Give an example of when you caught a potential bias, privacy leak, or safety hazard in a model output.",
+   "reported_by": "T1-03 bank (B5)",
+   "covers": [
+    "The escalation path, including when to pause deployment and escalate to legal or trust-and-safety",
+    "A concrete action, not just 'I flagged it'",
+    "A systemic fix, with safety, fairness and privacy built into the design phase"
+   ],
+   "red_flags": [
+    "Dismisses guardrails as 'red tape' that slows shipping",
+    "Considers ethics only when prompted"
+   ],
+   "answer_source": "T1-03 L178, L197",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "domain-evaluation-specialist",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c4_responsible_ai",
+    "bias_fairness",
+    "pii_protection",
+    "guardrails"
+   ],
+   "source": "T1-03 L197",
+   "grade": "C"
+  },
+  {
+   "id": "p047",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe a time you shipped a feature with known model limitations. How did you communicate the risk?",
+   "reported_by": "T1-03 bank (B6)",
+   "covers": [
+    "Honest framing of the limitation to stakeholders",
+    "A risk-acceptance framework",
+    "A monitoring plan after launch",
+    "Cost-versus-safety trade-offs translated into business terms"
+   ],
+   "red_flags": [
+    "Defensive about model limitations"
+   ],
+   "answer_source": "T1-03 L176, L198",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c2_tradeoffs",
+    "c4_responsible_ai",
+    "stakeholder",
+    "online_evals"
+   ],
+   "source": "T1-03 L198",
+   "grade": "C"
+  },
+  {
+   "id": "p048",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Tell me about the most expensive compute mistake you've made.",
+   "reported_by": "T1-03 bank (B7)",
+   "covers": [
+    "The cost quantified",
+    "The root cause",
+    "Systemic prevention: budget alerts, experiment tracking",
+    "Personal ownership of the mistake"
+   ],
+   "red_flags": [
+    "Deflects blame to teammates or providers",
+    "Describes what 'the team' did without isolating a personal contribution"
+   ],
+   "answer_source": "T1-03 L177, L199",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "c3_ownership",
+    "capacity_cost",
+    "experiment_tracking"
+   ],
+   "source": "T1-03 L199",
+   "grade": "C"
+  },
+  {
+   "id": "p049",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "How did you handle disagreement with a PM or executive about whether to ship a GenAI feature?",
+   "reported_by": "T1-03 bank (B8)",
+   "covers": [
+    "Data-driven pushback",
+    "A pilot or rollback proposal",
+    "The relationship preserved",
+    "Latency-versus-accuracy or cost-versus-safety trade-offs translated into business terms"
+   ],
+   "red_flags": [
+    "Friction with non-technical stakeholders, or dismissing product requirements",
+    "Blames the PM (a Google veto trigger)"
+   ],
+   "answer_source": "T1-03 L176, L200, L211",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c2_tradeoffs",
+    "stakeholder",
+    "cross_functional",
+    "pilots"
+   ],
+   "source": "T1-03 L200",
+   "grade": "C"
+  },
+  {
+   "id": "p050",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe a time you had to re-architect a system mid-project because the model's behaviour changed.",
+   "reported_by": "T1-03 bank (B9)",
+   "covers": [
+    "Adaptability",
+    "Prompt and model versioning",
+    "An eval-gated rollout",
+    "Non-determinism treated as a first-class design constraint"
+   ],
+   "red_flags": [
+    "Treats ML like deterministic software"
+   ],
+   "answer_source": "T1-03 L175, L201",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "domain-evaluation-specialist",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "adaptability",
+    "prompt_versioning",
+    "eval_ci_gates"
+   ],
+   "source": "T1-03 L201",
+   "grade": "C"
+  },
+  {
+   "id": "p051",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Tell me about a time you had to shut down or roll back a deployed AI feature.",
+   "reported_by": "T1-03 bank (B10)",
+   "covers": [
+    "Speed of response",
+    "Blast-radius analysis",
+    "Stakeholder communication",
+    "Immediate remediation plus systemic prevention (alerts, eval pipelines, postmortem artefacts)"
+   ],
+   "red_flags": [
+    "Deflects blame",
+    "Cannot admit mistakes (an Anthropic veto trigger)"
+   ],
+   "answer_source": "T1-03 L177, L202, L210",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c3_ownership",
+    "c4_responsible_ai",
+    "progressive_delivery",
+    "postmortems"
+   ],
+   "source": "T1-03 L202",
+   "grade": "C"
+  },
+  {
+   "id": "p052",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "How do you evaluate whether an LLM-based feature is actually working in production?",
+   "reported_by": "T1-03 bank (B11)",
+   "covers": [
+    "An offline golden set",
+    "Online sampling of production traffic through the same graders",
+    "Human calibration of the graders",
+    "A/B tests tied to business metrics"
+   ],
+   "red_flags": [
+    "'We'd test it with some prompts'",
+    "No production feedback loop"
+   ],
+   "answer_source": "T1-03 L203; T0-14 L719, L724",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "domain-evaluation-specialist",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "golden_datasets",
+    "online_evals",
+    "llm_judges",
+    "experiment_design"
+   ],
+   "source": "T1-03 L203",
+   "grade": "C"
+  },
+  {
+   "id": "p053",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe a system you built where the evaluation was harder than the feature itself.",
+   "reported_by": "T1-03 bank (B12)",
+   "covers": [
+    "Recognises that the evaluation was more complex than the feature",
+    "Grader design",
+    "Contamination management",
+    "Tests for the eval itself (one reported benchmark score moved from 42% to 95% once grader bugs were fixed)"
+   ],
+   "red_flags": [
+    "One uncalibrated LLM judge, or a model judging its own outputs"
+   ],
+   "answer_source": "T1-03 L204; T0-14 L720, L724",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "domain-evaluation-specialist",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "evals",
+    "llm_judges",
+    "benchmark_design"
+   ],
+   "source": "T1-03 L204",
+   "grade": "C"
+  },
+  {
+   "id": "p054",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Classic algorithmic coding round, with no AI assistant: solve a data-structures and algorithms problem.",
+   "reported_by": "Google, Meta (still the primary format), Stripe and many others",
+   "covers": [
+    "The approach communicated before coding",
+    "Standard data structures plus optimisation",
+    "Edge cases tested",
+    "Time and space complexity stated"
+   ],
+   "red_flags": [
+    "Jumping to code without framing",
+    "Silent coding",
+    "Not testing"
+   ],
+   "answer_source": "T1-03 L220, L232",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "dsa",
+    "python",
+    "testing",
+    "problem_solving"
+   ],
+   "source": "T1-03 L220",
+   "grade": "C"
+  },
+  {
+   "id": "p055",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "AI-enabled coding round: solve the task with an AI assistant in the editor.",
+   "reported_by": "Meta (spring 2026, early signal)",
+   "covers": [
+    "Orient first: confirm the input, the output and the SLA before writing code (about the first 10% of the clock)",
+    "Decide what to delegate and what to own, and say it aloud ('the assistant scaffolds the data loader while I design the retrieval loop')",
+    "Audit AI output line by line; catching a hallucination scores higher than writing clean code from scratch",
+    "Harden at the end: time and space complexity, and failure modes such as a downstream API timeout"
+   ],
+   "red_flags": [
+    "'Vibe coding': pasting giant prompts and accepting unverified output",
+    "Silent AI interaction",
+    "Cannot explain AI-generated code"
+   ],
+   "answer_source": "T1-03 L221, L229–232",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "coding_agent_tools",
+    "python",
+    "testing",
+    "attention_to_detail"
+   ],
+   "source": "T1-03 L221",
+   "grade": "C"
+  },
+  {
+   "id": "p056",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Design-document review: critique a pre-written system design and prioritise your findings.",
+   "reported_by": "Anthropic (3 reports, first observed April 2026); Aced says the format has come up for staff-level engineers and engineering leaders",
+   "covers": [
+    "What the round tests: missing requirements, capacity assumptions, failure modes, rollout and alternatives",
+    "A checklist covering requirements, numbers, failure modes, migration, observability, security and alternatives rejected",
+    "A time-boxed read, then findings ordered by severity"
+   ],
+   "red_flags": [
+    "Surface-level comments ('could use more comments')",
+    "Missing the structural issues"
+   ],
+   "answer_source": "T0-14 L550; T1-03 L222",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer",
+    "ai-engineering-manager"
+   ],
+   "skills": [
+    "design_docs",
+    "system_design",
+    "technical_leadership"
+   ],
+   "source": "T0-14 L550; T1-03 L222",
+   "grade": "B"
+  },
+  {
+   "id": "p057",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Hybrid coding and design: build a service that calls an external ride API, then make it work at 100x volume.",
+   "reported_by": "Anthropic",
+   "covers": [
+    "A traffic estimate first: average and peak requests per second at 100x",
+    "Downstream failure handling: timeouts, retries and idempotency",
+    "Backpressure: a bounded queue that sheds load or returns 429 with retry-after, rather than unbounded queueing",
+    "Time and space complexity of the core logic"
+   ],
+   "red_flags": [
+    "Drops classic engineering (queues, retries, idempotency)",
+    "Over-engineers beyond the stated scale"
+   ],
+   "answer_source": "T0-14 L227, L243, L643, L803, L814; T1-03 L232",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "forward-deployed-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "inference-engineer",
+    "ml-platform-engineer",
+    "ai-infrastructure-engineer"
+   ],
+   "skills": [
+    "apis",
+    "system_design",
+    "python",
+    "testing"
+   ],
+   "source": "T0-14 L171",
+   "grade": "C"
+  }
+ ]
+}

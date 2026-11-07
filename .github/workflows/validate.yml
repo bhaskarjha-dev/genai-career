@@ -1,6 +1,7 @@
 # Runs the repository validator on every push and pull request.
-# It checks links, anchors, tables, front matter, every generated output (each generator's --check),
-# cross-file ranks and corpus coverage. Standard-library Python only; no dependencies to install.
+# It checks links, anchors, tables, front matter, writing rules, dead ends, the guide pattern, the stack model,
+# every generated output (each generator's --check), cross-file ranks and corpus coverage, and lists pages past
+# their review_by date (a report, not a failure). Standard-library Python only; no dependencies to install.
 name: validate
 
 on:

@@ -33,12 +33,15 @@ STAGE_NAMES = OrderedDict([(1, "Landscape"), (2, "Roles"), (3, "Skills and techn
                            (6, "Job search"), (7, "Networking"), (8, "Interviewing"), (9, "Compensation"), (10, "Onboarding"),
                            (11, "Tracks and transitions")])
 DATA_FILES = OrderedDict([
-    ("data/role_scores.json", "Scoring inputs for the role rankings: every pillar score with its [lo, mid, hi] range, evidence grade and sourced basis"),
-    ("data/skills_ontology.json", "The skills ontology: 523 typed skills, choose-one classes, credentials, resume variants and every role's tiered, evidence-tagged skill links"),
-    ("data/project_archetypes.json", "Proof-of-work project archetypes and the headline skills each one evidences"),
+    ("data/role_scores.json", "Role facts and scoring inputs: each role's definition, work footprint and interview track, and every pillar score with its [lo, mid, hi] range, evidence grade and sourced basis"),
+    ("data/skills_ontology.json", "The skills ontology: 523 typed skills, choose-one classes, credentials, resume variants, every role's tiered, evidence-tagged skill links and the register of devalued skills"),
+    ("data/project_archetypes.json", "Proof-of-work project archetypes: the problem, build steps, evidence to publish, verifiability target, interview archetypes, pitfalls and the skills each one evidences"),
+    ("data/interview_prompts.json", "Interview practice prompts keyed to interview tracks, system-design archetypes, roles and skills, with what a strong answer covers"),
+    ("data/tools.json", "External career tools and platforms by stage, with a verdict, evidence grade, source and date"),
+    ("data/stack_model.json", "The stack map: six layers, four cross-cutting planes, the skill-category map and the specialisations inside roles (decision D-015)"),
     ("data/findings.json", "Key findings of every research session, with grade, exact line and lifecycle stages"),
     ("data/manifest.json", "This manifest: every document with its front matter and section headings"),
-    ("data/schemas/", "JSON Schemas for the skills ontology and for document front matter"),
+    ("data/schemas/", "JSON Schemas for the data files and for document front matter"),
 ])
 
 
@@ -90,6 +93,13 @@ def manifest_text(docs):
                                    ("documents", order)]), indent=1, ensure_ascii=False) + "\n"
 
 
+def decision_range():
+    """The first and last decision IDs in research/DECISIONS.md, read from its headings."""
+    path = ROOT / "research" / "DECISIONS.md"
+    ids = re.findall(r"^# (D-\d{3}):", path.read_text(encoding="utf-8"), re.M) if path.exists() else []
+    return f"{ids[0]} to {ids[-1]}" if ids else "none yet"
+
+
 def llms_text(docs):
     by_path = {d["path"]: d for d in docs}
 
@@ -97,10 +107,11 @@ def llms_text(docs):
         return f"- [{d['title']}]({d['path']}): {d['summary']}"
 
     out = ["# GenAI Career Intelligence System", "",
-           "> Evidence-graded knowledge and guidance for GenAI careers: which roles exist and which are best, what each role needs "
-           "(every concept, tool and soft skill, tiered and evidence-tagged), how to run a job search, and the 22 research sessions "
-           "behind it all. Every empirical claim carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, "
-           "M model output) and a date.", "",
+           "> Evidence-graded knowledge and guidance for GenAI careers, across the whole lifecycle: which roles exist, where their work "
+           "sits and which are best; what each role needs (every concept, tool and soft skill, tiered and evidence-tagged); how to prove it, "
+           "get seen, pass the interview loop, evaluate and negotiate an offer and start well; tracks for transitions, India-based remote "
+           "work, visas, independent practice and governance careers; and the 22 research sessions behind it all. Every empirical claim "
+           "carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output, P practice-curated) and a date.", "",
            "How to use this repository:",
            "",
            "- Start at career/README.md (Start Here) or a stage README; each stage README links its guides and its graded research findings.",
@@ -114,18 +125,23 @@ def llms_text(docs):
     out += ["- [ROADMAP.md](ROADMAP.md): What is covered, what is planned next, and the open decisions.",
             "- [AGENTS.md](AGENTS.md): Rules for AI agents: sources of truth, evidence standard, generators and validation.", ""]
     inventories = [d for d in docs if d["path"].startswith("career/03-skills-and-tech/inventories/")]
+    hubs = [d for d in docs if d["path"].startswith("career/02-roles/hubs/") and not d["path"].endswith("README.md")]
+    optional = inventories + hubs
+    tools = [d for d in docs if d["path"].startswith("career/") and d.get("stage") == 0 and d["path"] != "career/README.md"]
+    if tools:
+        out += ["## Stage 00: Start-here tools", ""] + [item(d) for d in sorted(tools, key=lambda d: d["path"])] + [""]
     for n, name in STAGE_NAMES.items():
         stage_docs = [d for d in docs if d["path"].startswith("career/") and d.get("stage") == n
-                      and d not in inventories and d["path"] != "career/README.md"]
+                      and d not in optional and d["path"] != "career/README.md"]
         if not stage_docs:
             continue
         stage_docs.sort(key=lambda d: (0 if d["path"].endswith("README.md") else 1, d["path"]))
         out += [f"## Stage {n:02d}: {name}", ""] + [item(d) for d in stage_docs] + [""]
     out += ["## Research", ""] + [item(by_path[p]) for p in RESEARCH_PAGES[1:] if p in by_path]
     out += ["- [research/sessions/](research/sessions/): The 22 Phase 0 research sessions (dated evidence reports with source ledgers).",
-            "- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-013).", ""]
-    out += ["## Data", ""] + [f"- [{p}]({p}): {desc}" for p, desc in DATA_FILES.items()] + [""]
-    out += ["## Optional", ""] + [item(d) for d in sorted(inventories, key=lambda d: d["path"])]
+            f"- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry ({decision_range()}).", ""]
+    out += ["## Data", ""] + [f"- [{p}]({p}): {desc}" for p, desc in DATA_FILES.items() if (ROOT / p).exists()] + [""]
+    out += ["## Optional", ""] + [item(d) for d in sorted(optional, key=lambda d: d["path"])]
     return "\n".join(out) + "\n"
 
 

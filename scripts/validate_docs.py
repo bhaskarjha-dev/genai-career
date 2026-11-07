@@ -5,9 +5,10 @@ Checks, across every career/*.md file, the generated role inventories and README
   * relative links resolve to existing files and anchors; no absolute file:// links;
     no duplicate anchors; no leftover template placeholders
   * every Markdown table row has the same number of cells as its header
-  * every generated block is current: rank_roles.py, build_index.py, build_skills.py,
-    build_resume_matrix.py, resume_layers.py, build_findings.py and build_manifest.py are each
-    run with --check
+  * every generated block is current: rank_roles.py, build_index.py, build_skills.py, build_resume_matrix.py,
+    resume_layers.py, build_findings.py, target_roles.py, build_role_map.py, build_role_hubs.py,
+    build_skills_views.py, build_archetypes.py, build_prompts.py, build_tool_catalog.py and build_manifest.py
+    are each run with --check
   * ranks agree across the master catalog, the skills catalog, the ranked catalog's
     dossiers and scripts/rank_roles.py
   * every career/ document and research index page carries valid front matter
@@ -15,12 +16,26 @@ Checks, across every career/*.md file, the generated role inventories and README
   * the skills ontology covers exactly the individual-contributor roles of role_scores.json
   * corpus coverage: every technology named in the research sessions or the skills catalog
     (the 2026-11-04 audit list below) resolves to a typed vocabulary entry
+  * the stack model (data/stack_model.json) and every role's work footprint are consistent (decision D-015)
+  * writing rules (EGP-1.0 and D-016): no relative-time words outside quotes and code ("currently",
+    "recently", "nowadays", "these days", "as of now", "right now", "at present", "at the moment", or
+    "latest" without a date nearby); no references to the legacy handbook (once kept in the git-ignored temp/
+    folder), and none of its signature phrases outside quotes and code, in the documents and in data/*.json
+  * no dead ends: every document under career/ links to at least one other document
+  * the guide pattern (D-016): every guide has "The short answer", "Checklist", "Evidence and limits" and
+    "Next steps", in that order (three guides that predate the pattern are listed in LEGACY_GUIDES)
+  * freshness: documents whose front matter `review_by` date has passed are listed as DUE
+    (reported, not counted as problems unless --strict)
 
 Usage:
-    python3 scripts/validate_docs.py      # prints PROBLEMS: <n> and the list; exit 1 if any
+    python3 scripts/validate_docs.py                  # prints PROBLEMS: <n> and the list; exit 1 if any
+    python3 scripts/validate_docs.py --strict         # also counts DUE documents as problems
+    python3 scripts/validate_docs.py --files A.md B.md  # document-level checks for the named files only
 
 Standard library only.
 """
+import argparse
+import datetime
 import json
 import re
 import subprocess
@@ -36,14 +51,30 @@ sys.path.insert(0, str(SCRIPTS))
 import rank_roles as rr  # noqa: E402
 from build_manifest import parse_front_matter  # noqa: E402
 from build_skills import schema_errors  # noqa: E402
+import stack_lib  # noqa: E402
 
 SEALED = {"FAD.md", "DECISIONS.md", "RESEARCH-PIPELINE.md"}  # Phase 0 records: checked by hand, not linted here
 FILES = (sorted(CAREER.rglob("*.md")) + sorted(ROOT.glob("*.md"))
          + sorted(p for p in (ROOT / "research").glob("*.md") if p.name not in SEALED)
          + [p for p in [ROOT / "llms.txt", ROOT / "data" / "README.md", ROOT / "scripts" / "README.md"] if p.exists()])
 GENERATORS = ["rank_roles.py", "build_index.py", "build_skills.py", "build_resume_matrix.py", "resume_layers.py",
-              "build_findings.py", "build_manifest.py"]
+              "build_findings.py", "target_roles.py", "build_role_map.py", "build_role_hubs.py", "build_skills_views.py",
+              "build_archetypes.py", "build_prompts.py", "build_tool_catalog.py", "build_manifest.py"]
+RELATIVE_TIME = re.compile(r"\b(currently|recently|nowadays|these days|as of now|right now|at present|at the moment)\b"
+                           r"|\blatest\b(?![^\n]{0,40}\d{4}(-\d{2}){0,2})", re.I)
+LEGACY = re.compile(r"old-genai-career|temp/old")
+# Signature phrases of the legacy handbook (decision D-016). A final scan on 2026-11-07 compared the handbook with this
+# repository and found no figure or prose from it that is not also in the research records; these phrases keep a leak
+# check running after the handbook is deleted.
+LEGACY_PHRASES = re.compile(r"\b54 roles\b|\b(?:7|seven) (?:macro )?clusters\b|\b6-layer AI stack\b|\bTier-1 projects?\b|"
+                            r"\bTalent Bridge Matrix\b|300% year-over-year", re.I)
+LEGACY_EXEMPT = {"AGENTS.md", "CONTRIBUTING.md", "CHANGELOG.md"}  # they state the rules, so they may name what is banned
+LEGACY_PHRASES_SKIP = {"research/findings.md"}  # generated from the sealed sessions, so it cannot be edited to comply
 FRONT_MATTER_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md"]
+GUIDE_HEADINGS = ["The short answer", "Checklist", "Evidence and limits", "Next steps"]
+# Guides written before the guide pattern was adopted (D-016, 2026-11-05); migrate each when it is next revised.
+LEGACY_GUIDES = {"career/02-roles/genai-target-roles.md", "career/06-job-search/job-search-strategy.md",
+                 "career/06-job-search/resume-strategy.md"}
 
 # Technologies named in the research sessions or the skills catalog (skills audit, 2026-11-04).
 TECH = """Python TypeScript JavaScript C++ Rust Go Java SQL CUDA Scala
@@ -136,6 +167,103 @@ def check_doc(path, problems):
         i += 1
 
 
+def prose(text):
+    """Text with fenced code, inline code, HTML comments, link targets and quoted strings removed."""
+    out, in_code = [], False
+    for line in text.splitlines():
+        if line.startswith("```"):
+            in_code = not in_code
+            continue
+        if not in_code:
+            out.append(line)
+    t = "\n".join(out)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
+    t = re.sub(r"`[^`\n]*`", " ", t)
+    t = re.sub(r"\]\([^)\s]*\)", "]", t)
+    t = re.sub(r'"[^"\n]*"', " ", t)
+    t = re.sub(r"\u201c[^\u201d\n]*\u201d", " ", t)
+    return t
+
+
+def check_writing(path, problems):
+    text = path.read_text(encoding="utf-8")
+    name = path.relative_to(ROOT)
+    body = prose(text)
+    for m in RELATIVE_TIME.finditer(body):
+        line = body[:m.start()].count("\n") + 1
+        problems.append(f"{name}: relative-time word '{m.group(0)}' near prose line {line}; write a date (EGP-1.0)")
+    if path.name not in LEGACY_EXEMPT:
+        if LEGACY.search(text):
+            problems.append(f"{name}: refers to the legacy handbook (decision D-016: never linked or cited)")
+        if name.as_posix() not in LEGACY_PHRASES_SKIP:
+            for m in LEGACY_PHRASES.finditer(body):  # prose only: a phrase in quotes or code may be discussed
+                problems.append(f"{name}: '{m.group(0)}' is a signature phrase of the legacy handbook (decision D-016); "
+                                "use the repository's own evidence")
+
+
+def check_legacy_data(problems):
+    """The D-016 checks for the data files (the manifest is skipped: it repeats the documents' front matter)."""
+    for p in sorted((ROOT / "data").glob("*.json")):
+        if p.name == "manifest.json":
+            continue
+        text = p.read_text(encoding="utf-8")
+        for m in list(LEGACY.finditer(text)) + list(LEGACY_PHRASES.finditer(text)):
+            problems.append(f"{p.relative_to(ROOT)}: '{m.group(0)}' refers to or copies the legacy handbook (decision D-016)")
+
+
+def check_dead_end(path, problems):
+    rel = path.relative_to(ROOT).as_posix()
+    if not rel.startswith("career/"):
+        return
+    text = path.read_text(encoding="utf-8")
+    for m in re.finditer(r"\[[^\]]*\]\(([^)\s#]+)(#[^)\s]*)?\)", text):
+        url = m.group(1)
+        if not url.startswith(("http://", "https://", "mailto:")) and url.endswith(".md"):
+            if (path.parent / url).resolve() != path.resolve():
+                return
+    problems.append(f"{rel}: dead end (links to no other document)")
+
+
+def check_guide_pattern(path, problems):
+    """Guides follow the D-016 pattern: these four headings, in this order (other sections may sit between them)."""
+    rel = path.relative_to(ROOT).as_posix()
+    if not rel.startswith("career/") or rel in LEGACY_GUIDES:
+        return
+    text = path.read_text(encoding="utf-8")
+    try:
+        fm = parse_front_matter(text)
+    except ValueError:
+        return
+    if not fm or fm.get("content_type") != "guide":
+        return
+    heads = re.findall(r"^## (.+?)\s*$", text, re.M)
+    pos = [next((i for i, h in enumerate(heads) if h == want), None) for want in GUIDE_HEADINGS]
+    missing = [w for w, p in zip(GUIDE_HEADINGS, pos) if p is None]
+    if missing:
+        problems.append(f"{rel}: guide pattern (D-016) is missing the heading(s) {missing}")
+    elif pos != sorted(pos):
+        problems.append(f"{rel}: guide pattern (D-016) headings are out of order; expected {GUIDE_HEADINGS}")
+
+
+def due_documents(today):
+    due = []
+    for p in sorted(CAREER.rglob("*.md")) + [ROOT / q for q in FRONT_MATTER_PAGES if (ROOT / q).exists()]:
+        try:
+            fm = parse_front_matter(p.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
+        if fm and fm.get("review_by") and fm["review_by"] < today and fm.get("status") == "published":
+            due.append(f"{p.relative_to(ROOT).as_posix()}: review_by {fm['review_by']} has passed")
+    return due
+
+
+def check_stack(problems):
+    stack = stack_lib.load(stack_lib.STACK)
+    scores = stack_lib.load(stack_lib.SCORES)
+    onto = stack_lib.load(stack_lib.ONTOLOGY)
+    problems.extend(stack_lib.errors(stack, scores, onto))
+
+
 def check_generators(problems):
     for script in GENERATORS:
         run = subprocess.run([sys.executable, "-B", str(SCRIPTS / script), "--check"], capture_output=True, text=True, cwd=ROOT)
@@ -160,7 +288,7 @@ def check_ranks(problems):
     if order != [r["id"] for r in res["base"]] + [r["id"] for r in res["leadership"]]:
         problems.append("master catalog: registry rows are not in rank order")
     skills = (CAREER / "03-skills-and-tech" / "role-skill-maps.md").read_text(encoding="utf-8")
-    for n, slug, rk in re.findall(r"^### 3\.(\d+) .*?\(`([a-z0-9-]+)`\) · Rank #(\d+)$", skills, re.M):
+    for n, slug, rk in re.findall(r"^### 3\.(\d+) .*?\(`([a-z0-9-]+)`\) · CCI rank #(\d+)$", skills, re.M):
         if rank.get(slug) != rk or n != rk:
             problems.append(f"skills catalog: section 3.{n} {slug} says Rank #{rk}, rank_roles.py says {rank.get(slug)}")
     ranked = (CAREER / "02-roles" / "role-rankings.md").read_text(encoding="utf-8")
@@ -207,9 +335,11 @@ def check_ontology(problems):
         problems.append(f"validate_docs.py TERM_TO_ID points to unknown IDs: {bad}")
 
 
-def check_front_matter(problems):
+def check_front_matter(problems, only=None):
     schema = json.loads((ROOT / "data" / "schemas" / "frontmatter.schema.json").read_text(encoding="utf-8"))
     paths = sorted(CAREER.rglob("*.md")) + [ROOT / p for p in FRONT_MATTER_PAGES if (ROOT / p).exists()]
+    if only is not None:
+        paths = [p for p in paths if p.resolve() in only]
     seen = {}
     for p in paths:
         rel = p.relative_to(ROOT).as_posix()
@@ -231,16 +361,45 @@ def check_front_matter(problems):
 
 
 def main():
+    ap = argparse.ArgumentParser(description="Validate documents, generated outputs and data consistency.")
+    ap.add_argument("--strict", action="store_true", help="count documents past their review_by date as problems")
+    ap.add_argument("--files", nargs="+", metavar="PATH", help="run only the document-level checks on these files")
+    args = ap.parse_args()
     problems = []
+    if args.files:
+        only = {Path(f).resolve() for f in args.files}
+        for path in [Path(f) for f in args.files]:
+            path = path.resolve()
+            check_doc(path, problems)
+            check_writing(path, problems)
+            check_dead_end(path, problems)
+            check_guide_pattern(path, problems)
+        check_front_matter(problems, only)
+        print("PROBLEMS:", len(problems))
+        for p in problems:
+            print(" -", p)
+        sys.exit(1 if problems else 0)
     for path in FILES:
         check_doc(path, problems)
+        check_writing(path, problems)
+        check_dead_end(path, problems)
+        check_guide_pattern(path, problems)
     check_front_matter(problems)
+    check_legacy_data(problems)
+    check_stack(problems)
     check_generators(problems)
     check_ranks(problems)
     check_ontology(problems)
+    due = due_documents(datetime.date.today().isoformat())
+    if args.strict:
+        problems += due
     print("PROBLEMS:", len(problems))
     for p in problems:
         print(" -", p)
+    if due and not args.strict:
+        print("DUE FOR RE-VERIFICATION:", len(due))
+        for d in due:
+            print(" -", d)
     sys.exit(1 if problems else 0)
 
 

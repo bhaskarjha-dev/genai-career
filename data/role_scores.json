@@ -10,6 +10,48 @@
     "non_technical",
     "phd"
   ],
+  "interview_tracks": {
+    "application": {
+      "name": "Application",
+      "tests": "RAG with access control, agent loop control, evaluation architecture, context management",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "customer-application": {
+      "name": "Application plus customer scoping",
+      "tests": "RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "ml-system-design": {
+      "name": "Classic ML system design",
+      "tests": "recommendation, fraud or ETA system design, plus where an LLM would help",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "infrastructure": {
+      "name": "Infrastructure",
+      "tests": "KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "evaluation": {
+      "name": "Evaluation design",
+      "tests": "golden sets, judge calibration, online sampling, A/B tests",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "research": {
+      "name": "Research",
+      "tests": "a research talk plus coding; the full research loop at frontier labs",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "governance": {
+      "name": "Governance",
+      "tests": "a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    },
+    "product": {
+      "name": "Product",
+      "tests": "a scoping or product round",
+      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+    }
+  },
   "roles": [
     {
       "id": "ai-engineer",
@@ -17,6 +59,19 @@
       "family": "Applied AI Engineering",
       "track": "ic",
       "status": "E",
+      "definition": "Builds LLM-powered product features: API orchestration, retrieval (RAG), agents, evaluation and deployment. The title is a broad umbrella that also covers non-GenAI variants.",
+      "stack": {
+        "primary": "L5",
+        "secondary": [
+          "L6"
+        ],
+        "planes": [
+          "evaluation"
+        ],
+        "basis": "Catalog §3: API orchestration, RAG, agents, evals and deployment; AI Engineer postings name agentic work 59.3% and RAG 54.0% [A/B · T0-01 F4]",
+        "grade": "D"
+      },
+      "interview_track": "application",
       "demand": {
         "lo": 9,
         "mid": 10,
@@ -75,6 +130,18 @@
       "family": "ML Engineering & Applied Science",
       "track": "ic",
       "status": "E",
+      "definition": "Builds, trains, adapts and serves models: training pipelines, fine-tuning and inference, increasingly for LLM systems; much of the title is still classic ML such as recommendation, ads and vision.",
+      "stack": {
+        "primary": "L4",
+        "secondary": [
+          "L2",
+          "L3"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: builds, trains, adapts and serves models; LLM named in 45.0% of postings [B · JobsPipe JD]",
+        "grade": "D"
+      },
+      "interview_track": "ml-system-design",
       "demand": {
         "lo": 8,
         "mid": 9,
@@ -133,6 +200,17 @@
       "family": "Forward Deployment & Solutions",
       "track": "ic",
       "status": "E",
+      "definition": "Engineer embedded with customers who deploys, integrates and adapts AI products end to end, usually with domain depth and travel.",
+      "stack": {
+        "primary": "L6",
+        "secondary": [
+          "L5"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: deploy, integrate and adapt AI products end to end, embedded with customers",
+        "grade": "D"
+      },
+      "interview_track": "customer-application",
       "demand": {
         "lo": 6.5,
         "mid": 7.5,
@@ -191,6 +269,19 @@
       "family": "Applied AI Engineering",
       "track": "ic",
       "status": "V",
+      "definition": "Customer- and solutions-facing LLM engineering at labs and AI vendors: delivery for customers, evaluation, and safety in regulated settings.",
+      "stack": {
+        "primary": "L6",
+        "secondary": [
+          "L5"
+        ],
+        "planes": [
+          "evaluation"
+        ],
+        "basis": "Catalog §3: customer delivery, evals and safety at labs and AI vendors",
+        "grade": "D"
+      },
+      "interview_track": "application",
       "demand": {
         "lo": 4,
         "mid": 5,
@@ -249,6 +340,17 @@
       "family": "Applied AI Engineering",
       "track": "ic",
       "status": "W",
+      "definition": "Builds tool-using, multi-step agent systems: state machines, durable execution, tool gateways and human approvals.",
+      "stack": {
+        "primary": "L5",
+        "secondary": [
+          "L6"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: tool-using, multi-step agent systems with durable execution and tool gateways",
+        "grade": "D"
+      },
+      "interview_track": "application",
       "demand": {
         "lo": 3.5,
         "mid": 4.5,
@@ -307,6 +409,17 @@
       "family": "Applied AI Engineering",
       "track": "ic",
       "status": "W",
+      "definition": "Frontend and full-stack engineering for AI-native user experience: streaming responses, tool-use visualisation and human-in-the-loop checkpoints.",
+      "stack": {
+        "primary": "L6",
+        "secondary": [
+          "L5"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: AI-native UX (streaming, tool-use visualisation, HITL checkpoints)",
+        "grade": "D"
+      },
+      "interview_track": "application",
       "demand": {
         "lo": 2.5,
         "mid": 3.5,
@@ -365,6 +478,17 @@
       "family": "Applied AI Engineering",
       "track": "ic",
       "status": "W",
+      "definition": "Drives internal AI adoption: internal copilots and agents, MCP integrations and developer-productivity tooling.",
+      "stack": {
+        "primary": "L6",
+        "secondary": [
+          "L5"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: internal copilots and agents, MCP integrations, developer-productivity tooling",
+        "grade": "D"
+      },
+      "interview_track": "application",
       "demand": {
         "lo": 2.5,
         "mid": 3.5,
@@ -423,6 +547,18 @@
       "family": "Forward Deployment & Solutions",
       "track": "ic",
       "status": "V",
+      "definition": "Designs enterprise AI solutions on cloud and vendor stacks, across pre-sales and delivery architecture.",
+      "stack": {
+        "primary": "L6",
+        "secondary": [
+          "L5",
+          "L3"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: enterprise AI solutions on cloud and vendor stacks; pre-sales and delivery",
+        "grade": "D"
+      },
+      "interview_track": "customer-application",
       "demand": {
         "lo": 3.5,
         "mid": 5,
@@ -481,6 +617,19 @@
       "family": "ML Engineering & Applied Science",
       "track": "ic",
       "status": "V",
+      "definition": "Research-to-production scientist at large technology firms: modelling, experimentation and shipping models.",
+      "stack": {
+        "primary": "L4",
+        "secondary": [
+          "L2"
+        ],
+        "planes": [
+          "evaluation"
+        ],
+        "basis": "Catalog §3: modelling, experimentation and shipping models; target card edge skills are eval statistics and fine-tuning",
+        "grade": "D"
+      },
+      "interview_track": "ml-system-design",
       "demand": {
         "lo": 3,
         "mid": 5,
@@ -539,6 +688,17 @@
       "family": "AI Infrastructure & Platform",
       "track": "ic",
       "status": "V",
+      "definition": "Owns the inference data path: batching, KV cache, scheduling, quantisation, speculative decoding, latency and cost.",
+      "stack": {
+        "primary": "L3",
+        "secondary": [
+          "L1"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: the inference data path (batching, KV cache, quantisation, speculative decoding)",
+        "grade": "D"
+      },
+      "interview_track": "infrastructure",
       "demand": {
         "lo": 3,
         "mid": 4,
@@ -597,6 +757,17 @@
       "family": "AI Infrastructure & Platform",
       "track": "ic",
       "status": "V",
+      "definition": "Writes and tunes GPU kernels and compiler paths for training and inference, and validates their numerics.",
+      "stack": {
+        "primary": "L1",
+        "secondary": [
+          "L3"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: GPU kernels and compiler paths (CUDA, Triton, CUTLASS, XLA/NeuronX)",
+        "grade": "D"
+      },
+      "interview_track": "infrastructure",
       "demand": {
         "lo": 3,
         "mid": 4,
@@ -655,6 +826,17 @@
       "family": "AI Infrastructure & Platform",
       "track": "ic",
       "status": "V",
+      "definition": "Runs the compute estate behind training and inference: GPU clusters, scheduling, high-speed networking, storage, reliability and capacity.",
+      "stack": {
+        "primary": "L1",
+        "secondary": [
+          "L3"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: GPU clusters, scheduling, NCCL/RDMA/InfiniBand networking, storage",
+        "grade": "D"
+      },
+      "interview_track": "infrastructure",
       "demand": {
         "lo": 4,
         "mid": 5.5,
@@ -713,6 +895,18 @@
       "family": "AI Infrastructure & Platform",
       "track": "ic",
       "status": "V",
+      "definition": "Builds the internal platform for the model lifecycle and LLM serving: Kubernetes serving, LLM and MCP gateways, observability, CI/CD for models and prompts, and cost attribution.",
+      "stack": {
+        "primary": "L3",
+        "secondary": [
+          "L5",
+          "L1"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: Kubernetes serving, LLM/MCP gateways, observability, CI/CD for models and prompts",
+        "grade": "D"
+      },
+      "interview_track": "infrastructure",
       "demand": {
         "lo": 4.5,
         "mid": 5.5,
@@ -771,6 +965,20 @@
       "family": "Evaluation, Safety & Security",
       "track": "ic",
       "status": "W",
+      "definition": "Designs evaluation harnesses, golden sets, LLM-judge calibration, regression gates and online monitoring.",
+      "stack": {
+        "primary": null,
+        "secondary": [
+          "L5",
+          "L4"
+        ],
+        "planes": [
+          "evaluation"
+        ],
+        "basis": "Catalog §3: eval harnesses, golden sets, judge calibration, regression gates; mostly application-level evals",
+        "grade": "D"
+      },
+      "interview_track": "evaluation",
       "demand": {
         "lo": 3,
         "mid": 4,
@@ -829,6 +1037,21 @@
       "family": "Evaluation, Safety & Security",
       "track": "ic",
       "status": "W",
+      "definition": "Secures LLM and agent systems: prompt injection, tool and agent abuse, supply chain, MCP authorisation and red-teaming.",
+      "stack": {
+        "primary": null,
+        "secondary": [
+          "L5",
+          "L3",
+          "L6"
+        ],
+        "planes": [
+          "assurance"
+        ],
+        "basis": "Catalog §3: prompt injection, agent abuse, supply chain, MCP authorisation; threats span serving engines to applications",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 2,
         "mid": 3,
@@ -887,6 +1110,20 @@
       "family": "Evaluation, Safety & Security",
       "track": "ic",
       "status": "W",
+      "definition": "Technical compliance engineering: guardrails; fairness, hallucination and subgroup evaluations; logging and documentation for the EU AI Act, NIST AI RMF and ISO 42001.",
+      "stack": {
+        "primary": null,
+        "secondary": [
+          "L4",
+          "L3"
+        ],
+        "planes": [
+          "assurance"
+        ],
+        "basis": "Catalog §3: guardrails, fairness and hallucination evals, compliance logging; an extension of ML-platform, MLOps and security engineering",
+        "grade": "D"
+      },
+      "interview_track": "governance",
       "demand": {
         "lo": 2,
         "mid": 3,
@@ -945,6 +1182,18 @@
       "family": "Research",
       "track": "ic",
       "status": "V",
+      "definition": "Engineering for frontier research: training runs, post-training and reinforcement learning, evaluations and research infrastructure; often titled Member of Technical Staff.",
+      "stack": {
+        "primary": "L2",
+        "secondary": [
+          "L4",
+          "L1"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: training runs, post-training/RL, evals and research infrastructure; absorbs post-training work",
+        "grade": "D"
+      },
+      "interview_track": "research",
       "demand": {
         "lo": 4.5,
         "mid": 5.5,
@@ -1003,6 +1252,17 @@
       "family": "Research",
       "track": "ic",
       "status": "V",
+      "definition": "Originates new methods, publishes and leads research agendas in machine learning and LLMs.",
+      "stack": {
+        "primary": "L2",
+        "secondary": [
+          "L4"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: originates new methods, publishes, leads research agendas",
+        "grade": "D"
+      },
+      "interview_track": "research",
       "demand": {
         "lo": 4,
         "mid": 5,
@@ -1061,6 +1321,20 @@
       "family": "Research",
       "track": "ic",
       "status": "V",
+      "definition": "Alignment, interpretability, dangerous-capability evaluations and other safety research at frontier labs and safety organisations.",
+      "stack": {
+        "primary": "L4",
+        "secondary": [
+          "L2"
+        ],
+        "planes": [
+          "assurance",
+          "evaluation"
+        ],
+        "basis": "Catalog §3: alignment (post-training), interpretability (model internals) and dangerous-capability evals",
+        "grade": "D"
+      },
+      "interview_track": "research",
       "demand": {
         "lo": 2,
         "mid": 3,
@@ -1119,6 +1393,17 @@
       "family": "Governance, Risk & Assurance",
       "track": "ic",
       "status": "V",
+      "definition": "The dedicated, mostly non-coding governance career: runs the AI inventory, risk method, committees and conformity with the EU AI Act, NIST AI RMF and ISO 42001.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "assurance"
+        ],
+        "basis": "Catalog §3: AI inventory, risk method, committees and regulatory conformity",
+        "grade": "D"
+      },
+      "interview_track": "governance",
       "demand": {
         "lo": 4.5,
         "mid": 5.5,
@@ -1177,6 +1462,17 @@
       "family": "Governance, Risk & Assurance",
       "track": "ic",
       "status": "A",
+      "definition": "AI risk, audit and compliance work done inside existing professions such as audit, model risk management and data protection.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "assurance"
+        ],
+        "basis": "Catalog §3: risk, audit and compliance work inside existing professions",
+        "grade": "D"
+      },
+      "interview_track": "governance",
       "demand": {
         "lo": 3.5,
         "mid": 4.5,
@@ -1235,6 +1531,19 @@
       "family": "Product & Program",
       "track": "ic",
       "status": "V",
+      "definition": "Owns AI product outcomes for probabilistic systems: scoping, evaluation rubrics, success metrics, token economics and pilots.",
+      "stack": {
+        "primary": null,
+        "secondary": [
+          "L6"
+        ],
+        "planes": [
+          "product"
+        ],
+        "basis": "Catalog §3: product outcomes, eval rubrics, success metrics and token economics; product work spans layers",
+        "grade": "D"
+      },
+      "interview_track": "product",
       "demand": {
         "lo": 4.5,
         "mid": 6,
@@ -1293,6 +1602,17 @@
       "family": "Human Data & Evaluation Operations",
       "track": "ic",
       "status": "W",
+      "definition": "Domain experts who write rubrics, label golden sets, adjudicate disagreements and grade model outputs, as in-house leads or expert contractors.",
+      "stack": {
+        "primary": "L4",
+        "secondary": [],
+        "planes": [
+          "evaluation"
+        ],
+        "basis": "Catalog §3: rubrics, golden sets and grading of model outputs (human data for post-training and evaluation)",
+        "grade": "D"
+      },
+      "interview_track": "product",
       "demand": {
         "lo": 3.5,
         "mid": 5.5,
@@ -1351,6 +1671,18 @@
       "family": "Embodied & Physical AI",
       "track": "ic",
       "status": "W",
+      "definition": "AI for robots and physical systems: robot foundation and vision-language-action models, and sim-to-real transfer.",
+      "stack": {
+        "primary": "L2",
+        "secondary": [
+          "L4",
+          "L6"
+        ],
+        "planes": [],
+        "basis": "Catalog §3: robot foundation and VLA models, sim-to-real; embodied AI sits partly outside an LLM stack, so the footprint is approximate",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 3,
         "mid": 4.5,
@@ -1409,6 +1741,17 @@
       "family": "Leadership & Executive",
       "track": "leadership",
       "status": "V",
+      "definition": "Leads AI engineering teams: hiring, delivery and technical direction for LLM and ML systems; usually reached after senior or staff individual-contributor work.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "leadership"
+        ],
+        "basis": "Catalog §3.9: Head / Director / Manager of AI Engineering postings; the team's layers vary",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 3.5,
         "mid": 5,
@@ -1451,6 +1794,17 @@
       "family": "Leadership & Executive",
       "track": "leadership",
       "status": "V",
+      "definition": "Owns an organisation's AI function: strategy, portfolio, platform and teams across product and engineering.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "leadership"
+        ],
+        "basis": "Catalog §3.9: Head of AI survey job family; no posting count in the corpus",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 2,
         "mid": 3,
@@ -1493,6 +1847,18 @@
       "family": "Leadership & Executive",
       "track": "leadership",
       "status": "V",
+      "definition": "Executive accountable for an organisation's AI strategy, adoption and governance.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "leadership",
+          "assurance"
+        ],
+        "basis": "Catalog §3.9: CAIO mandates and governance accountability",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 1.5,
         "mid": 2.5,
@@ -1535,6 +1901,17 @@
       "family": "Independent & Fractional",
       "track": "leadership",
       "status": "V",
+      "definition": "Part-time Head of AI or Chief AI Officer for one or more companies, usually on a monthly retainer.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "leadership"
+        ],
+        "basis": "Catalog §3.9: fractional Head of AI / CAIO retainers",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 1.5,
         "mid": 2.5,
@@ -1577,6 +1954,17 @@
       "family": "Independent & Fractional",
       "track": "leadership",
       "status": "V",
+      "definition": "Self-employed practitioner who delivers AI projects or advice to clients on hourly, daily or project terms.",
+      "stack": {
+        "primary": null,
+        "secondary": [],
+        "planes": [
+          "leadership"
+        ],
+        "basis": "Catalog §3.9: independent practice found mostly through networks",
+        "grade": "D"
+      },
+      "interview_track": null,
       "demand": {
         "lo": 2.5,
         "mid": 4,

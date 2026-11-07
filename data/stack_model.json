@@ -1,0 +1,90 @@
+{
+ "schema": "stack-model/1.0",
+ "as_of": "2026-11-05",
+ "description": "Map of where GenAI work sits (decision D-015): six stack layers plus four cross-cutting planes. Roles carry a work footprint (data/role_scores.json, field stack), skill categories map to layers here, and specialisations name the work that happens inside canonical roles. Rendered by scripts/build_role_map.py and scripts/build_role_hubs.py.",
+ "basis": "Layer names and order follow the legacy handbook's six-layer stack (structure only, decision D-016); the definitions, planes, footprints and specialisations are this repository's, drawn from the role definitions in career/02-roles/role-catalog.md §3. Footprints are judgement (Grade D).",
+ "not_a_pay_model": "Pay tracks employer tier and seniority, not application versus infrastructure work [B · T0-03 KF1]; the ranked catalog rejected the claim that GPU and inference roles have the highest pay ceilings. No pay, demand or value-capture figure is published per layer.",
+ "layers": {
+  "L6": {
+   "name": "Applications and deployment",
+   "covers": "AI features and products, deployment into customer environments, solution architecture, AI-native user experience",
+   "categories": ["LLM applications", "Frontend & UX"]
+  },
+  "L5": {
+   "name": "Orchestration and context",
+   "covers": "agents and tool use, retrieval and RAG, agent protocols (MCP, A2A), memory and context pipelines",
+   "categories": ["Retrieval & RAG", "Agents"]
+  },
+  "L4": {
+   "name": "Post-training and adaptation",
+   "covers": "fine-tuning, preference optimisation and reinforcement learning, domain adaptation, model-level evaluation, human data for training",
+   "categories": ["Training & post-training", "Human data & annotation"]
+  },
+  "L3": {
+   "name": "Inference and ML platforms",
+   "covers": "serving engines and their optimisation, gateways and routing, MLOps and LLMOps platforms, observability",
+   "categories": ["Inference & serving", "MLOps & platform", "Observability & LLMOps"]
+  },
+  "L2": {
+   "name": "Foundation models and research",
+   "covers": "pre-training, architectures and scaling, interpretability, new methods at frontier labs",
+   "categories": ["ML & deep learning", "Research", "Models"]
+  },
+  "L1": {
+   "name": "Compute and hardware",
+   "covers": "accelerators, GPU kernels and compilers, clusters, interconnects and storage, capacity and reliability",
+   "categories": ["GPU & kernels", "Infrastructure & HPC"]
+  }
+ },
+ "planes": {
+  "evaluation": {
+   "name": "Evaluation and quality",
+   "covers": "measuring whether AI systems work at every layer: eval harnesses, golden sets, judge calibration, regression gates, online monitoring",
+   "categories": ["Evaluation"]
+  },
+  "assurance": {
+   "name": "Security, safety and governance",
+   "covers": "security and red-teaming, responsible-AI controls, risk, audit and regulatory compliance",
+   "categories": ["Security & safety", "Governance, risk & compliance"]
+  },
+  "product": {
+   "name": "Product and strategy",
+   "covers": "product outcomes for probabilistic systems: scoping, success metrics, economics, pilots",
+   "categories": ["Product & business"]
+  },
+  "leadership": {
+   "name": "Leadership and independent practice",
+   "covers": "leading AI teams and organisations, or practising independently as a consultant or fractional leader",
+   "categories": ["Leadership"]
+  }
+ },
+ "cross_cutting_categories": ["Programming", "Cloud & platforms", "Data engineering", "Infrastructure & DevOps", "Communication & collaboration", "Behavioural", "Domain", "Robotics & physical AI"],
+ "specialisations": [
+  {"id": "rag-retrieval", "name": "RAG and retrieval", "where": "L5", "home": ["ai-engineer"], "skills": ["rag", "retrieval_quality", "access_controlled_retrieval", "vector_search"], "catalog": "Candidate title: Retrieval / Search Engineer (LLM), role catalog §5.3"},
+  {"id": "graph-rag", "name": "Graph RAG and knowledge graphs", "where": "L5", "home": ["ai-engineer"], "skills": ["graphrag"], "catalog": "No title of its own in the catalog"},
+  {"id": "document-ingestion", "name": "Document parsing and multimodal ingestion", "where": "L5", "home": ["ai-engineer"], "skills": ["document_ingestion", "multimodal"], "catalog": "No title of its own in the catalog"},
+  {"id": "vector-search", "name": "Vector search infrastructure", "where": "L5", "home": ["ai-engineer", "ml-platform-engineer"], "skills": ["vector_search", "vector_dbs"], "catalog": "Candidate title: Vector Database / Search Infrastructure Engineer, role catalog §5.3"},
+  {"id": "context-engineering", "name": "Context engineering", "where": "L5", "home": ["ai-engineer", "agentic-ai-engineer"], "skills": ["context_engineering", "prompt_context"], "catalog": "Quarantined title on the watchlist (Context Engineer), role catalog §5.1 and §5.4"},
+  {"id": "agent-memory", "name": "Agent memory", "where": "L5", "home": ["agentic-ai-engineer"], "skills": ["agent_memory"], "catalog": "No title of its own in the catalog"},
+  {"id": "multi-agent", "name": "Multi-agent orchestration", "where": "L5", "home": ["agentic-ai-engineer"], "skills": ["multi_agent", "agent_reliability"], "catalog": "Alias of Agentic AI Engineer in the A–Z index"},
+  {"id": "coding-agents", "name": "Coding agents", "where": "L5", "home": ["agentic-ai-engineer", "ai-engineer"], "skills": ["coding_agents"], "catalog": "No title of its own in the catalog"},
+  {"id": "agent-protocols", "name": "MCP and agent protocols", "where": "L5", "home": ["ai-enablement-engineer", "ml-platform-engineer", "agentic-ai-engineer"], "skills": ["mcp", "llm_gateways"], "catalog": "Specialisation label MCP Control Plane Engineer in the A–Z index; no literal title"},
+  {"id": "voice-agents", "name": "Voice and conversational agents", "where": "L6", "home": ["ai-engineer", "ai-product-engineer"], "skills": ["speech_voice"], "catalog": "Candidate title: Conversational AI & Voice Engineer, role catalog §5.3"},
+  {"id": "edge-models", "name": "Edge and on-device models", "where": "L3", "home": ["ai-product-engineer", "inference-engineer"], "skills": ["on_device", "edge_inference"], "catalog": "Candidate title: On-Device / Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself)"},
+  {"id": "fine-tuning", "name": "Fine-tuning and domain adaptation", "where": "L4", "home": ["ml-engineer", "applied-scientist"], "skills": ["finetuning", "peft"], "catalog": "No title of its own in the catalog"},
+  {"id": "post-training", "name": "Post-training and reinforcement learning", "where": "L4", "home": ["research-engineer"], "skills": ["post_training", "rlhf", "reward_modeling"], "catalog": "Absorbed into Research Engineer (legacy title in the A–Z index)"},
+  {"id": "synthetic-data", "name": "Synthetic data", "where": "L4", "home": ["research-engineer", "ml-engineer"], "skills": ["synthetic_data"], "catalog": "No title of its own in the catalog"},
+  {"id": "benchmarking", "name": "Benchmark design and model evaluation", "where": "evaluation", "home": ["ai-evaluation-engineer"], "skills": ["benchmark_design", "eval_stats"], "catalog": "Alias of AI Evaluation Engineer in the A–Z index"},
+  {"id": "quantisation", "name": "Quantisation and distillation", "where": "L3", "home": ["inference-engineer"], "skills": ["quantization", "distillation"], "catalog": "No title of its own in the catalog"},
+  {"id": "pd-disaggregation", "name": "Disaggregated serving (prefill and decode)", "where": "L3", "home": ["inference-engineer"], "skills": ["pd_disagg"], "catalog": "No title of its own in the catalog"},
+  {"id": "gateways", "name": "Gateways and model routing", "where": "L3", "home": ["ml-platform-engineer"], "skills": ["llm_gateways"], "catalog": "No title of its own in the catalog (Agent Gateway Engineer: legacy label, 0 postings)"},
+  {"id": "pre-training", "name": "Pre-training at scale", "where": "L2", "home": ["research-engineer", "ai-infrastructure-engineer"], "skills": ["pretraining", "distributed_training"], "catalog": "Unmeasured buzzword: Foundation Model Pre-Training Engineer, role catalog §5.2"},
+  {"id": "interpretability", "name": "Mechanistic interpretability", "where": "L2", "home": ["ai-safety-researcher"], "skills": ["interpretability"], "catalog": "Specialisation of Frontier AI Safety / Alignment Researcher in the A–Z index"},
+  {"id": "multimodal-models", "name": "Multimodal models", "where": "L2", "home": ["research-scientist"], "skills": ["multimodal"], "catalog": "No title of its own in the catalog"},
+  {"id": "reasoning-models", "name": "Reasoning models and test-time compute", "where": "L2", "home": ["research-scientist", "research-engineer"], "skills": ["reasoning_models"], "catalog": "Unmeasured buzzword: Reasoning Engineer, role catalog §5.2"},
+  {"id": "red-teaming", "name": "Red-teaming and adversarial testing", "where": "assurance", "home": ["ai-security-engineer"], "skills": ["red_teaming"], "catalog": "Alias of AI Security Engineer (AI Red Teamer) in the A–Z index"},
+  {"id": "agent-security", "name": "Agent and tool security", "where": "assurance", "home": ["ai-security-engineer"], "skills": ["prompt_injection", "agent_abuse", "owasp_agentic"], "catalog": "No title of its own in the catalog"},
+  {"id": "content-provenance", "name": "Content provenance", "where": "assurance", "home": ["responsible-ai-engineer", "ai-security-engineer"], "skills": ["c2pa", "provenance"], "catalog": "No title of its own in the catalog"},
+  {"id": "robot-learning", "name": "Robot learning and VLA models", "where": "L2", "home": ["physical-ai-engineer"], "skills": ["vla_models", "robot_learning", "simulation"], "catalog": "Covered by the canonical Physical AI / Robotics AI Engineer"}
+ ]
+}

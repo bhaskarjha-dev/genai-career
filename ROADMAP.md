@@ -101,7 +101,6 @@ Ordered by impact on hiring odds, then by dependency:
 4. **Generic or personal:** keep the system generic for anyone, or also build a personal instance from one person's background, targets and constraints? `scripts/gap_analysis.py` is the first personal tool.
 5. **Claims registry:** keep page-level `review_by` dates (D-017), or add per-claim IDs with their own expiry once the guides stabilise?
 6. **Upstream errata:** apply the [ERRATA.md](research/ERRATA.md) corrections inside FAD and DECISIONS, or keep those records as written (the current choice) with status notes?
-7. **Release:** the work of 2026-11-05 to 2026-11-07 sits under `[Unreleased]` in [CHANGELOG.md](CHANGELOG.md) until it is committed and tagged. It changes paths, schemas and data formats, so it is a minor release under D-014 (planned v0.2.0). Remove this item when the tag exists.
 
 ---
 

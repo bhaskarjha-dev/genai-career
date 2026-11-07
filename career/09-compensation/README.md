@@ -4,7 +4,7 @@ title: "Stage 09: Compensation and negotiation"
 content_type: index
 stage: 9
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of stage 09 (compensation and negotiation): Is this offer good, and how do I negotiate it?"
 sources: [T0-02, T0-17, T1-03, T0-07, T0-18]
 ---
@@ -12,21 +12,24 @@ sources: [T0-02, T0-17, T1-03, T0-07, T0-18]
 # Stage 09: Compensation and negotiation
 
 > **The question this stage answers:** Is this offer good, and how do I negotiate it?
-> **Status:** Evidence only: the guides are planned; read the research below in the meantime. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: pay benchmarks, offer evaluation, the negotiation playbook and India remote tax pointers exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
-No guide has been written yet.
-
-In the meantime, each role's pay evidence is in its dossier in the [role rankings](../02-roles/role-rankings.md).
+| Document | What it gives you |
+|---|---|
+| [pay-benchmarks.md](pay-benchmarks.md) | What GenAI roles pay by title, city, level and employer type, as measured, and how to read the numbers; the tier bands explained against measured anchors |
+| [offer-evaluation.md](offer-evaluation.md) | How to value and compare offers (cash, liquid and paper equity), the diligence before you sign, and hop-versus-stay |
+| [negotiation-playbook.md](negotiation-playbook.md) | The phases, scripts, levers and counter-moves for negotiating a GenAI offer, including competing offers and deadlines |
+| [india-remote-tax.md](india-remote-tax.md) | India-based engineers paid by foreign clients: structure, thresholds, compliance and traps (pointers, not tax advice) |
 
 ## Planned
 
-| Document | Scope | Built from |
-|---|---|---|
-| compensation-ladder.md | The six-tier ladder with geographic variants (90-day expiry on pay figures) | T0-02, T0-17 |
-| negotiation-playbook.md | Benchmarks, equity risk adjustment, offer diligence, scripts, timing several offers | T1-03, T0-17 |
-| india-remote-tax.md | India-based remote work: §44ADA, GST LUT, FIRC (pointers, not tax advice) | T0-07 |
+Nothing planned for this stage beyond maintenance. Gaps that need new research are listed in [ROADMAP.md](../../ROADMAP.md).
+
+**Moved or renamed:**
+
+- The planned six-tier "compensation ladder" became [pay benchmarks](pay-benchmarks.md): the tier bands are design brackets whose India values conflict ([ERRATA](../../research/ERRATA.md) U4, U5, U7, U14), so the page leads with measured anchors.
 
 ## Evidence to read now
 

@@ -8,7 +8,7 @@ last_verified: 2026-11-04
 summary: "First-principles job-search strategy: what moves P(offer), how the layered resume system works (master, universal, family, role, posting), which roles need their own resume, how many projects prove which roles, and how to sequence targets."
 sources: [T0-04, T0-10, T0-13, T0-14, T1-03, T0-06, T0-01, T0-02, T0-17]
 roles: [all]
-generated_by: "scripts/resume_layers.py (computed blocks only)"
+generated_by: "scripts/resume_layers.py (generated blocks)"
 ---
 
 # GenAI Job-Search Strategy

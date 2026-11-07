@@ -4,7 +4,7 @@ title: "Stage 08: Interviewing"
 content_type: index
 stage: 8
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of stage 08 (interviewing): How do I pass the interview loop for my track?"
 sources: [T0-14, T1-03]
 ---
@@ -12,21 +12,21 @@ sources: [T0-14, T1-03]
 # Stage 08: Interviewing
 
 > **The question this stage answers:** How do I pass the interview loop for my track?
-> **Status:** Evidence only: the guides are planned; read the research below in the meantime. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: the loop guide, the three round guides and the generated prep packs exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
-No guide has been written yet.
-
-In the meantime, each role's interview track is in the [skill maps](../03-skills-and-tech/role-skill-maps.md) and the behavioural competencies are in its §1.2.
+| Document | What it gives you |
+|---|---|
+| [interview-loops.md](interview-loops.md) | How GenAI loops are structured, how to classify yours before preparing, the day itself, follow-up and debrief, and questions to ask |
+| [system-design-archetypes.md](system-design-archetypes.md) | The GenAI system-design interview: the 15 archetypes as case cards, the 45-minute blueprint, the formula kit and the rubrics interviewers use |
+| [behavioral-calibration.md](behavioral-calibration.md) | How behavioural rounds are scored: the four competencies C1–C4, the STAR-AI story bank, the 12-question bank and veto signals |
+| [coding-rounds.md](coding-rounds.md) | Classic, AI-enabled, document-review and debugging rounds: what each scores and how to prepare |
+| [prep-packs.md](prep-packs.md) | Practice prompts for every interview track, with what a strong answer covers and the red flags (generated) |
 
 ## Planned
 
-| Document | Scope | Built from |
-|---|---|---|
-| system-design-archetypes.md | AI system-design archetypes, the 45-minute blueprint, application vs infrastructure tracks | T0-14, T1-03 |
-| behavioral-calibration.md | The STAR-AI framework and competencies C1–C4; veto signals | T1-03 |
-| prep-packs.md | A preparation pack per role family: design, coding, stories, company loops, AI-tool policies | T0-14, T1-03 |
+Nothing planned for this stage beyond maintenance. Gaps that need new research are listed in [ROADMAP.md](../../ROADMAP.md).
 
 ## Evidence to read now
 

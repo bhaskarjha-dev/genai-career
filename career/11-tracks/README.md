@@ -4,7 +4,7 @@ title: "Stage 11: Tracks and transitions"
 content_type: index
 stage: 11
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of stage 11 (tracks and transitions): What changes for my background, location or way of working?"
 sources: [T0-06, T2-01, T0-07, T0-08, T0-18, T0-15]
 ---
@@ -12,22 +12,24 @@ sources: [T0-06, T2-01, T0-07, T0-08, T0-18, T0-15]
 # Stage 11: Tracks and transitions
 
 > **The question this stage answers:** What changes for my background, location or way of working?
-> **Status:** Evidence only: the guides are planned; read the research below in the meantime. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: playbooks for transitions, PhDs, India remote work, visas, independent practice and governance careers exist. Three starting backgrounds have provisional routes only. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
-No guide has been written yet.
+| Document | What it gives you |
+|---|---|
+| [career-transitions.md](career-transitions.md) | Roadmaps into GenAI from five starting backgrounds (what transfers, what to learn and unlearn, modelled timelines, gated quarterly plans), plus provisional routes for DevOps/SRE, PMs and students |
+| [phd-to-industry.md](phd-to-industry.md) | The PhD-to-industry track: research versus applied roles, the skills gap that matters, fellowships, timelines and the O-1A angle |
+| [india-remote-playbook.md](india-remote-playbook.md) | India to US or EU work end to end: GCC, remote employee via EOR, direct contractor or relocation, with setup steps |
+| [visa-and-relocation.md](visa-and-relocation.md) | Talent-visa corridors and relocation decisions: routes, evidence bars, timelines and what to verify (pointers, not legal advice) |
+| [freelance-fractional.md](freelance-fractional.md) | Independent consulting and fractional Head-of-AI work: rates, income reality, client acquisition, contracts and stall risk |
+| [governance-careers.md](governance-careers.md) | Entering AI governance, risk and assurance from GRC, privacy, audit, legal or security: what regulation created, volumes, entry routes and proof |
 
 ## Planned
 
-| Document | Scope | Built from |
+| Item | Scope | Depends on |
 |---|---|---|
-| career-transitions.md | Roadmaps from five starting backgrounds, with skill deltas and timelines | T0-06, T2-01 |
-| india-remote-playbook.md | India → US/EU remote work end to end | T0-07, T0-08, T2-01 |
-| visa-and-relocation.md | Talent-visa corridors and relocation decisions | T0-08 |
-| freelance-fractional.md | Independent and fractional practice: rates, contracts, client acquisition | T0-18 |
-| phd-to-industry.md | PhD-specific transition playbook | T0-06, T2-01 |
-| governance-careers.md | Entering AI governance, risk and assurance from GRC, privacy, audit or security | T0-15 |
+| Research-backed routes for DevOps/SRE engineers, product managers and students | Replace the provisional [P] routes in career-transitions.md with researched ones | A new research session |
 
 ## Evidence to read now
 

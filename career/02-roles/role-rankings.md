@@ -16,6 +16,7 @@ sources: [T0-01, T0-02, T0-17, T0-03, T0-06, T0-15, T0-16]
 > **Evidence standard:** EGP-1.0. Composite scores are **model outputs (Grade M** per the [README](../../README.md) evidence standard: a model output inherits the weakest grade among its inputs). They combine graded measurements (A–C) with labelled judgements (D). They are decision aids, not facts.
 > **Reproduce:** `python3 scripts/rank_roles.py --update` reads [data/role_scores.json](../../data/role_scores.json) and rewrites every block between the `BEGIN/END GENERATED` markers in this file, including Appendix A (standard library only, fixed seed). The narrative and the hand-written tables in §0, §5.1 and §7 are checked by hand after any change in ranks
 > **Companions:** [role-skill-maps.md](../03-skills-and-tech/role-skill-maps.md) gives the full skill stack for every ranked role · [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md) types every skill per role (concepts, methods, tools, frameworks, platforms, non-technical skills) with evidence · [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md) tiers those skills for resumes
+> **Role hubs:** each role's rank, scores and evidence are summarised on its one-page hub ([hubs](hubs/README.md)); the [role map](role-map.md) shows where each role's work sits.
 
 ---
 
@@ -48,7 +49,7 @@ Choose between them on preference:
 | Machine Learning Engineer | 1 (77.9) | Second-largest measured demand and the highest measured broad-market pay distribution |
 | AI Engineer | 2 (76.9) | Largest measured demand and best accessibility |
 | *Research Engineer / Member of Technical Staff* | **3 (71.4)** | Highest engineering pay in the corpus ($220–330K+ base) |
-| Forward Deployed Engineer | 4 (70.6) | The corpus has no FDE pay data, and the measured posted base is the lowest family median. The 933 count is a cluster of which ~48% is engineer-titled (an extrapolation), and its growth matched other families |
+| Forward Deployed Engineer | 4 (70.6) | The measured posted base ($180–248K, n=304) is the lowest family median [B · T0-03], and the corpus has no FDE total-compensation data. The 933 count is a cluster of which ~48% is engineer-titled (an extrapolation), and its growth matched other families |
 | *Applied AI Engineer* | **5 (68.0)** | Strong startup and frontier-lab demand; T0-01 "likely pass" sub-node |
 | Research Scientist (AI/ML) | 6 (67.8) | Highest Pay score (9.5), but Access is only 2.9: it needs a PhD |
 | Applied Scientist | 7 (67.5) | Big Tech volume and pay are unmeasured in the corpus; low confidence |

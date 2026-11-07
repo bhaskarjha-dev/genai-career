@@ -16,6 +16,7 @@ sources: [T0-01, T0-02, T0-17, T0-06]
 > - [ranked catalog](role-rankings.md) (scores and lenses)
 > - [skills catalog](../03-skills-and-tech/role-skill-maps.md) (what to learn)
 > - [role_scores.json](../../data/role_scores.json) (inputs)
+> - [role hubs](hubs/README.md) (one page per role) and the [role map](role-map.md) (where the work sits)
 >
 > **Scope:** GenAI-domain roles only. Classic-titled roles (ML Engineer, Applied Scientist, Research Scientist) are included through their GenAI track.
 >

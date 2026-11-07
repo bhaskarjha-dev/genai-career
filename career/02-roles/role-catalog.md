@@ -4,7 +4,7 @@ title: "GenAI Role Master Catalog"
 content_type: reference
 stage: 2
 status: published
-last_verified: 2026-11-05
+last_verified: 2026-11-06
 summary: "All 29 canonical GenAI roles and 241 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index."
 sources: [T0-01, T0-15, T0-16, T0-02, T0-03, T0-06, T0-17]
 ---
@@ -15,6 +15,7 @@ sources: [T0-01, T0-15, T0-16, T0-02, T0-03, T0-06, T0-17]
 > **Evidence standard:** EGP-1.0 grades (A–E, M) · **Evidence window:** posting counts 2026-06-09 → 2026-11-02; pay, survey and regulatory evidence 2023–2026, dated at each use · **Temporal anchor:** October 2026
 > **Inputs:** 22 research sessions, [FAD.md](../../research/FAD.md), [DECISIONS.md](../../research/DECISIONS.md) (D-002), and a public-page refresh of JobsPipe retrieved 2026-11-02
 > **Companion files:** [role-rankings.md](role-rankings.md) ranks the roles · [role-skill-maps.md](../03-skills-and-tech/role-skill-maps.md) lists every skill per role · [data/role_scores.json](../../data/role_scores.json) and [scripts/rank_roles.py](../../scripts/rank_roles.py) reproduce the scores · [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md) and [skills-vocabulary.md](../03-skills-and-tech/skills-vocabulary.md) type every skill per role, with evidence · [resume-strategy.md](../06-job-search/resume-strategy.md) and [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md) turn each role's skills into resumes
+> **Role hubs:** each role also has a one-page hub with its key facts and links to this evidence ([hubs](hubs/README.md)); the [role map](role-map.md) shows where each role's work sits.
 
 ---
 
@@ -41,7 +42,7 @@ This file answers one question: **which GenAI roles exist, what is each one, and
 2. **241 title strings resolve to 29 canonical roles.** The others are aliases, seniority levels, transition personas, duplicate strings, certification names (one retired on 2026-06-30), a non-existent "AWS AI Solutions Architect", a newsletter ("Pragmatic Engineer") and two titles fabricated from source names ("Workday / ATS Systems Administrator", "AIDN Developer").
 3. **The quarantine register matches T0-01 D4.** Five FAD-listed buzzwords were never searched: AI Whisperer, Neural Network Designer, Transformer Specialist, Foundation Model Engineer and Reasoning Engineer. This catalog labels them *unmeasured*, not "zero postings". LLMOps is a skill tag under ML Platform/MLOps, not a quarantined title.
 4. **FAD's pay labels are corrected (ERRATA U4–U5).** **$312K** is the US all-company Senior median total comp (Levels.fyi 2025) and is not AI-specific. **₹1.06–1.22Cr** is the range of senior medians at the five best-paying Bengaluru employers, which is roughly the P90 ceiling; the Greater Bengaluru Senior SWE median on Levels.fyi (n=4,836, a large-employer-skewed sample) is **₹56.0L**. FAD's US Tier 0 and Tier 1 caps sit *below* the measured Entry ($155K) and Mid ($226K) medians.
-5. **Every pay figure carries its source.** Per-role pay appears only where the corpus has a source; where it has none (for example FDE, AI PM and AI Solutions Architect), this file says so.
+5. **Every pay figure carries its source.** Per-role pay appears only where the corpus has a source; where it has none (for example AI PM and AI Solutions Architect), this file says so. FDE has posted base pay only ($180–248K, n=304 [B · T0-03]) and no total-compensation data.
 6. **India contractor tax, in numbers (T0-07).** §44ADA (s.58 under the Income-tax Act 2025) keeps about 83–84% of billing up to ₹75L and about 65% at ₹1.2Cr; ₹75L is about $79K. In the ₹75L to ~₹92–98L "dead zone" restructuring is not the answer; at ≥₹1Cr, T0-07 lists LLP and Pvt Ltd options whose cash outcomes differ by only ~₹3–10L.
 
 **How the three files connect:** this catalog defines the role universe → the [ranked catalog](role-rankings.md) scores every canonical role on a 100-point index with uncertainty bands → the [skills catalog](../03-skills-and-tech/role-skill-maps.md) lists the full skill stack for each role.
@@ -203,35 +204,35 @@ Rank = position in the [ranked catalog](role-rankings.md). IC roles are ranked 1
 
 | Slug | Canonical role | Family | Status | Best demand evidence | Best pay evidence | Rank |
 |---|---|---|:---:|---|---|:---:|
-| `ml-engineer` | [Machine Learning Engineer](#profile-ml-engineer) | ML Eng & Applied Science | **E** | US 1,084 / global 2,157 / India 90 live [B · JP, T0-01] | US TC P50 $280K, P90 $497.5K [B · T0-02] | 1 |
+| `ml-engineer` | [Machine Learning Engineer](#profile-ml-engineer) | ML Engineering & Applied Science | **E** | US 1,084 / global 2,157 / India 90 live [B · JP, T0-01] | US TC P50 $280K, P90 $497.5K [B · T0-02] | 1 |
 | `ai-engineer` | [AI Engineer](#profile-ai-engineer) | Applied AI Engineering | **E** | US 1,697 / global 3,944 / India 398 live [B · JP, T0-01] | US TC P50 $154K, P90 $280K [B · T0-02] | 2 |
 | `research-engineer` | [Research Engineer / MTS](#profile-research-engineer) | Research | V | 2025 LCA: OpenAI MTS-RE 84, Anthropic RE 63 positions; live count unmeasured [B · T0-02] | OpenAI/Anthropic SWE-MTS TC median $875K / $882.5K [B · T0-02] | 3 |
-| `forward-deployed-engineer` | [Forward Deployed Engineer](#profile-forward-deployed-engineer) | Deployment & Solutions | **E** | 933-role cluster at 343 AI startups; ~48% engineer-titled [B · T0-01 F3] | Posted base $180–248K (n=304), lowest family median [B · T0-03] | 4 |
+| `forward-deployed-engineer` | [Forward Deployed Engineer](#profile-forward-deployed-engineer) | Forward Deployment & Solutions | **E** | 933-role cluster at 343 AI startups; ~48% engineer-titled [B · T0-01 F3] | Posted base $180–248K (n=304), lowest family median [B · T0-03] | 4 |
 | `applied-ai-engineer` | [Applied AI Engineer](#profile-applied-ai-engineer) | Applied AI Engineering | V | 16 of newest 50 AI rows (~100 extrapolated) [C · T0-01] | None in corpus | 5 |
 | `research-scientist` | [Research Scientist (AI/ML)](#profile-research-scientist) | Research | V | 2025 LCA: OpenAI MTS-RS 68 positions [B · T0-02] | OpenAI RS TC ~$1.25M [B]; Pave equity $4.1–4.7M [A · T0-02] | 6 |
-| `applied-scientist` | [Applied Scientist](#profile-applied-scientist) | ML Eng & Applied Science | V | Only count: 14 at 12 AI startups (Jun 2026); Big Tech unmeasured [B · T0-01] | None in corpus (scored on a Big Tech MLE proxy) | 7 |
-| `ai-infrastructure-engineer` | [AI Infrastructure / GPU Platform Engineer](#profile-ai-infrastructure-engineer) | Infra & Platform | V | 52 base-disclosing infra postings (S09) [B · T0-03] | Posted base $203–270K, level with AI Engineer [B · T0-03] | 8 |
-| `inference-engineer` | [Inference / LLM Serving Engineer](#profile-inference-engineer) | Infra & Platform | V | Rise 28 (small corpus); ≥8 named JDs [C · T0-01, T0-03] | Typical JD base ~$270K; range $150–485K across 8 JDs [B/C · T0-03] | 9 |
+| `applied-scientist` | [Applied Scientist](#profile-applied-scientist) | ML Engineering & Applied Science | V | Only count: 14 at 12 AI startups (Jun 2026); Big Tech unmeasured [B · T0-01] | None in corpus (scored on a Big Tech MLE proxy) | 7 |
+| `ai-infrastructure-engineer` | [AI Infrastructure / GPU Platform Engineer](#profile-ai-infrastructure-engineer) | AI Infrastructure & Platform | V | 52 base-disclosing infra postings (S09) [B · T0-03] | Posted base $203–270K, level with AI Engineer [B · T0-03] | 8 |
+| `inference-engineer` | [Inference / LLM Serving Engineer](#profile-inference-engineer) | AI Infrastructure & Platform | V | Rise 28 (small corpus); ≥8 named JDs [C · T0-01, T0-03] | Typical JD base ~$270K; range $150–485K across 8 JDs [B/C · T0-03] | 9 |
 | `ai-product-manager` | [AI Product Manager](#profile-ai-product-manager) | Product & Program | V | No AI-PM title count; ≥~970 US PM postings mention AI (upper bound, not titles) [M · JP] | None in corpus | 10 |
-| `ml-platform-engineer` | [ML Platform / MLOps Engineer](#profile-ml-platform-engineer) | Infra & Platform | V | "Probable, count missing"; GCC gap 18–43% [C · T0-01] | Posted base $186–277K (n=10) [B · T0-03] | 11 |
+| `ml-platform-engineer` | [ML Platform / MLOps Engineer](#profile-ml-platform-engineer) | AI Infrastructure & Platform | V | "Probable, count missing"; GCC gap 18–43% [C · T0-01] | Posted base $186–277K (n=10) [B · T0-03] | 11 |
 | `agentic-ai-engineer` | [Agentic AI Engineer](#profile-agentic-ai-engineer) | Applied AI Engineering | W | ~66 + 28 postings in 90 days [C · T0-16] | None (AI Engineer variant) | 12 |
-| `ai-solutions-architect` | [AI / GenAI Solutions Architect](#profile-ai-solutions-architect) | Deployment & Solutions | V | No AI-architect title count; ≥~350 US SA postings mention AI (upper bound, not titles) [M · JP] | None in corpus | 13 |
-| `ai-evaluation-engineer` | [AI Evaluation Engineer](#profile-ai-evaluation-engineer) | Eval, Safety & Security | W | Rise 26; named JDs; skill in 19.0% of postings [C/B · T0-01, T0-03] | Premium unverified [T0-03] | 14 |
-| `gpu-kernel-engineer` | [GPU Kernel / ML Compiler Engineer](#profile-gpu-kernel-engineer) | Infra & Platform | V | Kernels in 6.6% of S09 postings (a skill share) [B · T0-03] | NVIDIA base $152–356.5K [B · T0-03] | 15 |
-| `ai-governance-lead` | [AI Governance Programme Lead](#profile-ai-governance-lead) | Governance & Assurance | V | 1,997 US postings Jan–Sep 2026 [C · T0-15] | Median $169K (probably top of range); IAPP $152–170K [C/B · T0-15] | 16 |
-| `physical-ai-engineer` | [Physical AI / Robotics AI Engineer](#profile-physical-ai-engineer) | Physical AI | W | 8 of newest 50 AI rows, one employer [B · T0-01] | None in corpus | 17 |
+| `ai-solutions-architect` | [AI / GenAI Solutions Architect](#profile-ai-solutions-architect) | Forward Deployment & Solutions | V | No AI-architect title count; ≥~350 US SA postings mention AI (upper bound, not titles) [M · JP] | None in corpus | 13 |
+| `ai-evaluation-engineer` | [AI Evaluation Engineer](#profile-ai-evaluation-engineer) | Evaluation, Safety & Security | W | Rise 26; named JDs; skill in 19.0% of postings [C/B · T0-01, T0-03] | Premium unverified [T0-03] | 14 |
+| `gpu-kernel-engineer` | [GPU Kernel / ML Compiler Engineer](#profile-gpu-kernel-engineer) | AI Infrastructure & Platform | V | Kernels in 6.6% of S09 postings (a skill share) [B · T0-03] | NVIDIA base $152–356.5K [B · T0-03] | 15 |
+| `ai-governance-lead` | [AI Governance Programme Lead](#profile-ai-governance-lead) | Governance, Risk & Assurance | V | 1,997 US postings Jan–Sep 2026 [C · T0-15] | Median $169K (probably top of range); IAPP $152–170K [C/B · T0-15] | 16 |
+| `physical-ai-engineer` | [Physical AI / Robotics AI Engineer](#profile-physical-ai-engineer) | Embodied & Physical AI | W | 8 of newest 50 AI rows, one employer [B · T0-01] | None in corpus | 17 |
 | `ai-safety-researcher` | [Frontier AI Safety Researcher](#profile-ai-safety-researcher) | Research | V | ~600 technical FTEs across 67 orgs [C · T0-15] | None for this market | 18 |
-| `ai-security-engineer` | [AI Security Engineer / AI Red Teamer](#profile-ai-security-engineer) | Eval, Safety & Security | W | ~23 postings in 90 days [C · T0-16] | None in corpus | 19 |
+| `ai-security-engineer` | [AI Security Engineer / AI Red Teamer](#profile-ai-security-engineer) | Evaluation, Safety & Security | W | ~23 postings in 90 days [C · T0-16] | None in corpus | 19 |
 | `ai-enablement-engineer` | [AI Enablement Engineer](#profile-ai-enablement-engineer) | Applied AI Engineering | W | ~53 postings in 90 days [C · T0-16] | None in corpus | 20 |
 | `ai-product-engineer` | [AI Product Engineer (AI Frontend)](#profile-ai-product-engineer) | Applied AI Engineering | W | Thin and senior-skewed [C · T0-06] | One posting $250–315K [C/D · T0-06] | 21 |
-| `ai-risk-assurance-specialist` | [AI Risk, Audit & Compliance Specialist](#profile-ai-risk-assurance-specialist) | Governance & Assurance | A | Specialisation inside audit/model-risk [B/C · T0-15] | Deloitte $171.6–338.3K posted [C · T0-15] | 22 |
-| `responsible-ai-engineer` | [Responsible AI / AI Governance Engineer](#profile-responsible-ai-engineer) | Eval, Safety & Security | W | Thin niche, few openings [C · T0-15] | Stryker $112.8–239.9K [C · T0-15] | 23 |
-| `domain-evaluation-specialist` | [Domain Evaluation Specialist / AI Trainer](#profile-domain-evaluation-specialist) | Human Data & Eval Ops | W | Mercor >30,000 experts [C/D · T0-06] | ~$85–110/hr contract [C/D · T0-06] | 24 |
-| `ai-engineering-manager` | [AI Engineering Manager / Director](#profile-ai-engineering-manager) | Leadership | V | Lead/manager label on 5.6% of AI Eng postings [B · JP] | Anthropic MTS (Manager) base median $405K [B · T0-02] | L1 |
-| `vp-head-of-ai` | [VP / Head of AI](#profile-vp-head-of-ai) | Leadership | V | Radford "Head of AI" survey job family (data paywalled); no count [B · T0-02] | None in corpus | L2 |
-| `chief-ai-officer` | [Chief AI Officer](#profile-chief-ai-officer) | Leadership | V | OMB M-25-21 federal mandate [B · T0-15] | None in corpus | L3 |
-| `independent-ai-consultant` | [Independent AI Consultant](#profile-independent-ai-consultant) | Independent | V | Network-driven; no posting count | Asks $150–250/hr (US) [C · T0-18] | L4 |
-| `fractional-ai-leader` | [Fractional Head of AI / CAIO](#profile-fractional-ai-leader) | Independent | V | CAIO 6 then 10 posts per 90 days (label "falling sharply") [C · T0-18] | Retainers ~$8–13K/month [C · T0-18] | L5 |
+| `ai-risk-assurance-specialist` | [AI Risk, Audit & Compliance Specialist](#profile-ai-risk-assurance-specialist) | Governance, Risk & Assurance | A | Specialisation inside audit/model-risk [B/C · T0-15] | Deloitte $171.6–338.3K posted [C · T0-15] | 22 |
+| `responsible-ai-engineer` | [Responsible AI / AI Governance Engineer](#profile-responsible-ai-engineer) | Evaluation, Safety & Security | W | Thin niche, few openings [C · T0-15] | Stryker $112.8–239.9K [C · T0-15] | 23 |
+| `domain-evaluation-specialist` | [Domain Evaluation Specialist / AI Trainer](#profile-domain-evaluation-specialist) | Human Data & Evaluation Operations | W | Mercor >30,000 experts [C/D · T0-06] | ~$85–110/hr contract [C/D · T0-06] | 24 |
+| `ai-engineering-manager` | [AI Engineering Manager / Director](#profile-ai-engineering-manager) | Leadership & Executive | V | Lead/manager label on 5.6% of AI Eng postings [B · JP] | Anthropic MTS (Manager) base median $405K [B · T0-02] | L1 |
+| `vp-head-of-ai` | [VP / Head of AI](#profile-vp-head-of-ai) | Leadership & Executive | V | Radford "Head of AI" survey job family (data paywalled); no count [B · T0-02] | None in corpus | L2 |
+| `chief-ai-officer` | [Chief AI Officer](#profile-chief-ai-officer) | Leadership & Executive | V | OMB M-25-21 federal mandate [B · T0-15] | None in corpus | L3 |
+| `independent-ai-consultant` | [Independent AI Consultant](#profile-independent-ai-consultant) | Independent & Fractional | V | Network-driven; no posting count | Asks $150–250/hr (US) [C · T0-18] | L4 |
+| `fractional-ai-leader` | [Fractional Head of AI / CAIO](#profile-fractional-ai-leader) | Independent & Fractional | V | CAIO 6 then 10 posts per 90 days (label "falling sharply") [C · T0-18] | Retainers ~$8–13K/month [C · T0-18] | L5 |
 
 ---
 
@@ -243,6 +244,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-engineer"></a>
 #### `ai-engineer`: AI Engineer · E · Rank 2
+- **Hub:** [AI Engineer on one page](hubs/ai-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** builds LLM-powered product features: API orchestration, retrieval (RAG), agents, evals and deployment. The title is a heterogeneous umbrella; robotics, construction and Power Platform variants share it [B · T0-01 F2].
 - **Demand:**
   - Counts [B · JP, T0-01 F1]: US 1,697 live; India 398; global 3,944. Fast AI Jobs lists 326 at 183 AI startups. LinkedIn Jobs on the Rise 2026 ranks it #1.
@@ -265,6 +267,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-applied-ai-engineer"></a>
 #### `applied-ai-engineer`: Applied AI Engineer · V · Rank 5
+- **Hub:** [Applied AI Engineer on one page](hubs/applied-ai-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** customer- and solutions-facing LLM engineering at labs and AI vendors: delivery for customers, evals, and safety in regulated settings [C · T0-01 D3].
 - **Demand:**
   - 16 of the newest 50 Fast AI Jobs AI-Engineer rows (2026-10-19). That is about 100 of 326 if the sample is representative (an extrapolation) [C · T0-01 D2].
@@ -279,6 +282,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-agentic-ai-engineer"></a>
 #### `agentic-ai-engineer`: Agentic AI Engineer · W · Rank 12
+- **Hub:** [Agentic AI Engineer on one page](hubs/agentic-ai-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** builds tool-using, multi-step agent systems: state machines, durable execution, tool gateways and human approvals.
 - **Demand:**
   - Skillenai, 90 days to 2026-10-14 [C · T0-16]: ~66 "Agentic AI Engineer" postings (derived) plus 28 "Agent Engineer".
@@ -291,6 +295,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-enablement-engineer"></a>
 #### `ai-enablement-engineer`: AI Enablement Engineer · W · Rank 20
+- **Hub:** [AI Enablement Engineer on one page](hubs/ai-enablement-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** drives internal AI adoption: internal copilots and agents, MCP integrations, developer-productivity tooling. Its non-coding variant is the AI ops/enablement lead.
 - **Demand:** ~53 postings in 90 days. 30.2% (16) mention MCP, the highest MCP share of any title [C · T0-16]. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-enablement-engineer)
 - **Pay:** none in corpus.
@@ -299,6 +304,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-product-engineer"></a>
 #### `ai-product-engineer`: AI Product Engineer (AI Frontend) · W · Rank 21
+- **Hub:** [AI Product Engineer (AI Frontend) on one page](hubs/ai-product-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** frontend and full-stack engineers building AI-native UX: streaming responses, tool-use visualisation, HITL checkpoints, generative components [C · T0-06].
 - **Demand:** "thin and senior-skewed". Postings seen: Productboard, Artisan, and one recruiter-listed Staff AI Frontend role that appears under more than one company name [C/D · T0-06 KF-6].
 - **Pay:** one Staff AI Frontend posting at $250–315K, 6+ years [C/D · T0-06]. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer)
@@ -309,6 +315,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ml-engineer"></a>
 #### `ml-engineer`: Machine Learning Engineer · E · Rank 1
+- **Hub:** [Machine Learning Engineer on one page](hubs/ml-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** builds, trains, adapts and serves models: training pipelines, fine-tuning, inference, recsys/ads/AV, and increasingly LLM systems. LLM is named in 45.0% of MLE postings [B · JP JD].
 - **Demand:**
   - Counts [B · T0-01 D2]: US 1,084; global 2,157; India 90; UK 108; Canada 60. Fast AI Jobs lists 273 at 159 AI startups.
@@ -329,6 +336,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-applied-scientist"></a>
 #### `applied-scientist`: Applied Scientist · V · Rank 7
+- **Hub:** [Applied Scientist on one page](hubs/applied-scientist.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** research-to-production scientists at large tech firms: modelling, experimentation and shipping models.
 - **Demand:** Fast AI Jobs listed 14 at 12 AI startups (cached 2026-06-09) [B · T0-01 D2]. **Big Tech volume is unmeasured.** The "~700" figure in FAD §5.1 has no primary source (ERRATA U1).
 - **Pay:** none in corpus. The ranked catalog scores it with Big Tech MLE as a proxy (Meta E5 $458K; Google L5 $393–445K) [B, proxy]. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-applied-scientist)
@@ -340,6 +348,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-forward-deployed-engineer"></a>
 #### `forward-deployed-engineer`: Forward Deployed Engineer · E · Rank 4
+- **Hub:** [Forward Deployed Engineer on one page](hubs/forward-deployed-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** engineers embedded with customers who deploy, integrate and adapt AI products end to end. The work needs vertical depth; one JD lists 2–6 years of experience and up to 50% travel [B · T0-01 D3].
 - **Demand:**
   - **Volume [B · T0-01 F3]:**
@@ -363,6 +372,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-solutions-architect"></a>
 #### `ai-solutions-architect`: AI / GenAI Solutions Architect · V · Rank 13
+- **Hub:** [AI / GenAI Solutions Architect on one page](hubs/ai-solutions-architect.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** designs enterprise AI solutions on cloud and vendor stacks; pre-sales and delivery architecture.
 - **Demand:**
   - **Market refresh [M from B]:** JobsPipe lists 1,515 live US Solutions Architect postings (2026-11-02). *generative-ai* is named in 17.1% of them and *artificial-intelligence* in 23.2%. That implies at least ~350 AI-mentioning SA postings (up to ~610 if the two tags never overlap). These are keyword mentions, not AI-architect titles; no title-level count exists.
@@ -377,6 +387,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-infrastructure-engineer"></a>
 #### `ai-infrastructure-engineer`: AI Infrastructure / GPU Platform Engineer · V · Rank 8
+- **Hub:** [AI Infrastructure / GPU Platform Engineer on one page](hubs/ai-infrastructure-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** runs the compute estate behind training and inference: GPU clusters, scheduling, networking (NCCL/RDMA/InfiniBand), storage, reliability and capacity.
 - **Demand:**
   - 52 base-disclosing "Infrastructure / Platform Engineer (GPU clusters, inference platforms)" postings in S09 [B · T0-03].
@@ -391,6 +402,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-inference-engineer"></a>
 #### `inference-engineer`: Inference / LLM Serving Engineer · V · Rank 9
+- **Hub:** [Inference / LLM Serving Engineer on one page](hubs/inference-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** owns the inference data path: batching, KV cache, scheduling, quantisation, speculative decoding, latency and cost. It splits into two kinds of work [B · T0-03]:
   - distributed-runtime engineering (Anthropic J1/J2);
   - engine and kernel optimisation (NVIDIA, Together, Baseten, Inferact).
@@ -419,6 +431,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ml-platform-engineer"></a>
 #### `ml-platform-engineer`: ML Platform / MLOps Engineer · V · Rank 11
+- **Hub:** [ML Platform / MLOps Engineer on one page](hubs/ml-platform-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** builds the internal platform for the model lifecycle and LLM serving. Scope: Kubernetes serving, LLM/MCP gateways, observability, CI/CD for models and prompts, cost attribution. Also absorbs LLMOps and the AI control plane.
 - **Demand:**
   - T0-01 rates it "probable, count missing"; the GCC supply gap in AI/MLOps/platform roles is 18–43% (Quess) [C].
@@ -432,6 +445,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-gpu-kernel-engineer"></a>
 #### `gpu-kernel-engineer`: GPU Kernel / ML Compiler Engineer · V · Rank 15
+- **Hub:** [GPU Kernel / ML Compiler Engineer on one page](hubs/gpu-kernel-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** writes and tunes GPU kernels and compiler paths for training and inference (CUDA, Triton, CUTLASS, tile DSLs, XLA/NeuronX), and validates numerics.
 - **Demand:** CUDA/GPU kernels are named in 6.6% of S09 postings (29.3% of companies) [B · T0-03]. Postings at NVIDIA, AMD, River AI and Together AI [B · T0-13].
 - **Pay:** NVIDIA DL SWE base $152–356.5K; frontier runtime roles $405–485K base [A/B · T0-03]. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer)
@@ -442,6 +456,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-evaluation-engineer"></a>
 #### `ai-evaluation-engineer`: AI Evaluation Engineer · W · Rank 14
+- **Hub:** [AI Evaluation Engineer on one page](hubs/ai-evaluation-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** designs eval harnesses, golden sets, LLM-judge calibration, regression gates and online monitoring.
 - **Demand:**
   - **As a title:**
@@ -463,6 +478,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-security-engineer"></a>
 #### `ai-security-engineer`: AI Security Engineer / AI Red Teamer · W · Rank 19
+- **Hub:** [AI Security Engineer / AI Red Teamer on one page](hubs/ai-security-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** secures LLM and agent systems: prompt injection, tool and agent abuse, supply chain, MCP authorisation, red-teaming.
 - **Demand:** ~23 "AI Security Specialist" postings in 90 days; 13.0% (3) mention MCP [C · T0-16]. JobsPipe lists 2,827 generic US Security Engineer postings (2026-11-02); the AI share is unmeasured [B · JP].
 - **Pay:** none in corpus.
@@ -477,6 +493,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-responsible-ai-engineer"></a>
 #### `responsible-ai-engineer`: Responsible AI / AI Governance Engineer · W · Rank 23
+- **Hub:** [Responsible AI / AI Governance Engineer on one page](hubs/responsible-ai-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** technical compliance engineering: guardrails; fairness, hallucination and subgroup evals; logging and documentation for the EU AI Act, NIST and ISO 42001 [B/C · T0-15].
 - **Demand:** a thin technical niche; "expect few openings". Postings at Stryker, Beacon Hill, Cognizant (Chennai), Infosys (Bengaluru; fresher; closed) and Workday (title only) [C · T0-15].
 - **Pay:** Stryker $112.8–239.9K and Beacon Hill $75–85/hr (posted, C); IAPP tech-sector *technical* AI-governance median $221K (B) [T0-15]. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer)
@@ -487,6 +504,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-research-engineer"></a>
 #### `research-engineer`: Research Engineer / Member of Technical Staff · V · Rank 3
+- **Hub:** [Research Engineer / Member of Technical Staff on one page](hubs/research-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** frontier-lab engineering for research: training runs, post-training/RL, evals and research infrastructure. At OpenAI and Anthropic the title is usually "Member of Technical Staff" (MTS), which hides both function and level [B · T0-02].
 - **Demand:** the live count is unmeasured [T0-01]. 2025 visa wage filings (LCA) show [B · T0-02]:
   - OpenAI: MTS-Research Engineer 84, MTS-Software Engineer 107, MTS-AI Systems 67 positions.
@@ -506,6 +524,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-research-scientist"></a>
 #### `research-scientist`: Research Scientist (AI/ML) · V · Rank 6
+- **Hub:** [Research Scientist (AI/ML) on one page](hubs/research-scientist.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** originates new methods, publishes and leads research agendas.
 - **Demand:** the AI-specific count is unmeasured. OpenAI filed 68 MTS-Research Scientist LCA positions in 2025 [B · T0-02]. JobsPipe research-scientist postings (all fields): LLM 24.4%, RL 17.1%, remote 3.3%, US 65.0% [B · JP JD].
 - **Pay:**
@@ -518,6 +537,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-safety-researcher"></a>
 #### `ai-safety-researcher`: Frontier AI Safety / Alignment Researcher · V · Rank 18
+- **Hub:** [Frontier AI Safety / Alignment Researcher on one page](hubs/ai-safety-researcher.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** alignment, interpretability, dangerous-capability evals and safety research at frontier labs and safety organisations.
 - **Demand:** ~600 technical plus ~500 non-technical FTEs across 67 and 49 organisations (single-author 2025 estimate) [C · T0-15]. Technical headcount is growing ~21% a year [C].
 - **Pay:** "no pay or volume figures for this market" [T0-15]. Lab-employed researchers sit on Research Scientist / Research Engineer ladders. → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher)
@@ -528,6 +548,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-governance-lead"></a>
 #### `ai-governance-lead`: AI Governance Programme Lead / Manager · V · Rank 16
+- **Hub:** [AI Governance Programme Lead / Manager on one page](hubs/ai-governance-lead.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** the one dedicated, mostly non-coding governance career. It runs the AI inventory, risk method, committees, and conformity with the EU AI Act, NIST AI RMF and ISO 42001 [B/C · T0-15].
 - **Demand:**
   - Axial counted 1,997 US AI-governance postings Jan–Sep 2026: ~2,700 a year annualised and ≈51 a week by arithmetic, although Axial itself quotes ~71 a week [C].
@@ -551,6 +572,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-risk-assurance-specialist"></a>
 #### `ai-risk-assurance-specialist`: AI Risk, Audit & Compliance Specialist · A · Rank 22
+- **Hub:** [AI Risk, Audit & Compliance Specialist on one page](hubs/ai-risk-assurance-specialist.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** AI risk, audit and compliance work done inside existing professions:
   - algorithmic audits (NYC LL144, EU DSA);
   - model-risk validation (predictive AI under SR 26-2);
@@ -569,6 +591,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-product-manager"></a>
 #### `ai-product-manager`: AI Product Manager · V · Rank 10
+- **Hub:** [AI Product Manager on one page](hubs/ai-product-manager.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** owns AI product outcomes for probabilistic systems: scoping, eval rubrics, success metrics, token economics and pilots.
 - **Demand:**
   - JobsPipe lists 6,289 live US Product Manager postings (2026-11-02). *artificial-intelligence* appears in 15.4% and *agentic-ai* in 13.6%. That implies at least ~970 AI-mentioning PM postings (up to ~1,820 if the two tags never overlap) [M from B]. These are keyword mentions, not AI-PM titles; no title-level count exists.
@@ -580,6 +603,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-physical-ai-engineer"></a>
 #### `physical-ai-engineer`: Physical AI / Robotics AI Engineer · W · Rank 17
+- **Hub:** [Physical AI / Robotics AI Engineer on one page](hubs/physical-ai-engineer.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** AI for robots and physical systems: foundation and VLA models for robotics, sim-to-real.
 - **Demand:** 8 of the newest 50 Fast AI Jobs AI-Engineer rows were Figure AI "Helix AI Engineer", all from one employer [B · T0-01 F2]. JobsPipe's US sample includes "Physical AI Engineer". → [Skills](../03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer)
 - **Pay:** none in corpus.
@@ -588,6 +612,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-domain-evaluation-specialist"></a>
 #### `domain-evaluation-specialist`: Domain Evaluation Specialist / AI Trainer · W · Rank 24
+- **Hub:** [Domain Evaluation Specialist / AI Trainer on one page](hubs/domain-evaluation-specialist.md): key facts, scores, skills, proof and interview track, with links back here.
 - **What it is:** domain experts who write rubrics, label golden sets, adjudicate disagreements and grade model outputs, as in-house leads or expert contractors.
 - **Demand:** LinkedIn Jobs on the Rise ranks data annotators #4 (median 3.5 years of experience) [C]. Mercor has >30,000 experts on contract [C/D · T0-06].
 - **Pay [C/D · T0-06]:**
@@ -602,6 +627,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-ai-engineering-manager"></a>
 #### `ai-engineering-manager`: AI Engineering Manager / Director of AI Engineering · V · Rank L1
+- **Hub:** [AI Engineering Manager / Director of AI Engineering on one page](hubs/ai-engineering-manager.md): key facts, scores, skills, proof and interview track, with links back here.
 - **Demand:**
   - "Lead or manager" labels appear on 5.6% of AI Engineer postings and 9.2% of MLE postings [B · JP JD].
   - Named roles [C · T0-01 D3]: Head / Director / Manager of AI Engineering at Teradata, Front and Harrington Starr; Director FDE & AI GTM at Aircall; FDE Lead at n8n.
@@ -610,11 +636,13 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-vp-head-of-ai"></a>
 #### `vp-head-of-ai`: VP / Head of AI · V · Rank L2
+- **Hub:** [VP / Head of AI on one page](hubs/vp-head-of-ai.md): key facts, scores, skills, proof and interview track, with links back here.
 - **Why V:** Radford maintains a "Head of AI" survey job family (its data is paywalled) [B · T0-02], and T0-01 D3 found Head / Director of AI Engineering posts (mapped to `ai-engineering-manager`).
 - **Evidence gaps:** no posting count and no pay data in the corpus. Treat the score as judgement-heavy (low evidence confidence).
 
 <a id="profile-chief-ai-officer"></a>
 #### `chief-ai-officer`: Chief AI Officer · V · Rank L3
+- **Hub:** [Chief AI Officer on one page](hubs/chief-ai-officer.md): key facts, scores, skills, proof and interview track, with links back here.
 - OMB M-25-21 requires US federal agencies to appoint a CAIO within 60 days [B · T0-15].
 - "76% of firms report a CAIO" comes from IBM via a secondary source [C · T0-01 F12].
 - The EU AI Act names no required officer [A · T0-15].
@@ -622,6 +650,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-independent-ai-consultant"></a>
 #### `independent-ai-consultant`: Independent AI Consultant / Contractor · V · Rank L4
+- **Hub:** [Independent AI Consultant / Contractor on one page](hubs/independent-ai-consultant.md): key facts, scores, skills, proof and interview track, with links back here.
 - **Rates [C/D · T0-18]:**
   - US asks $150–250/hr ("$300+ is a stretch tier"); senior AI contractors $130–235/hr.
   - UK median £550/day.
@@ -635,6 +664,7 @@ Each profile extends the T1-01 role-page contract (definition, demand, skill req
 
 <a id="profile-fractional-ai-leader"></a>
 #### `fractional-ai-leader`: Fractional Head of AI / Fractional CAIO · V · Rank L5
+- **Hub:** [Fractional Head of AI / Fractional CAIO on one page](hubs/fractional-ai-leader.md): key facts, scores, skills, proof and interview track, with links back here.
 - **Rates [C · T0-18]:** asks average $190–208/hr (P25–P75 $150–250). Offers run at 0.59–0.91× of asks; CAIO offers are $125–189/hr.
 - **Retainers:** about $8–13K a month for 10–13 hours a week [C].
 - **Demand (Go Fractional) [C]:** CAIO had 6, then 10 posts in 90 days across two reads (Go Fractional's label: "falling sharply") against 326 profiles. Fractional CTO had 19, then 17 posts (labels "rising sharply", then "rising") against 1,042–1,116 profiles. T0-18 rates this demand evidence "conflicting".
@@ -932,7 +962,7 @@ FAD §5.3 lists the five FAD titles as quarantined "per D-002". D-002 itself set
 
 | Candidate (index type "Candidate") | Why it is plausible | Evidence today |
 |---|---|---|
-| Conversational & Voice AI Engineer | Real-time voice is an AI design-interview archetype at Meta (ML pool) | Interview archetype only [C · T0-14 A12]; speculative "sub-450 ms LiveKit" claims are not in any session (T0-14 cites ~800 ms voice-to-voice) |
+| Conversational & Voice AI Engineer | A real-time voice system is a reported AI design-interview prompt: T0-14's firm table lists it in Meta's ML pool, and its A12 card traces it to a multi-company question pool (PracHub) | Interview archetype only [C · T0-14 L173, A12]; speculative "sub-450 ms LiveKit" claims are not in any session (T0-14 cites ~800 ms voice-to-voice) |
 | On-Device / Edge AI Engineer | WebGPU in all major browsers; Transformers.js v4 | "A differentiator, not a job by itself" [T2-01]; no postings counted |
 | On-Device & Edge SLM Engineer (candidate label) | Same function as the row above | Speculative CoreML/ONNX claims are not in any session |
 | Retrieval / Search Engineer (LLM) | RAG in 54% of AI Engineer JDs; Databricks "Context Retrieval" | Skill area; no title count |

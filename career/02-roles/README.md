@@ -4,7 +4,7 @@ title: "Stage 02: Roles"
 content_type: index
 stage: 2
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of stage 02 (roles): Which GenAI roles exist, which are the best, and which should I target?"
 sources: [T0-01, T0-15, T0-16]
 ---
@@ -12,21 +12,21 @@ sources: [T0-01, T0-15, T0-16]
 # Stage 02: Roles
 
 > **The question this stage answers:** Which GenAI roles exist, which are the best, and which should I target?
-> **Status:** Covered: reference documents exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: reference documents, the role map and one hub per role exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
 | Document | What it gives you |
 |---|---|
+| [role-map.md](role-map.md) | Where each role's work sits: six stack layers from compute to applications, four cross-cutting planes, every role's footprint, the specialisations inside roles, and how to choose a direction (generated) |
+| [hubs/](hubs/README.md) | One generated page per role: definition, footprint, graded scores, who it suits, skills, proof, interview track and résumé pointers, with links to the evidence |
 | [role-catalog.md](role-catalog.md) | All 29 canonical roles and 241 classified titles: profiles, evidence status, aliases, quarantine register, A–Z index |
 | [role-rankings.md](role-rankings.md) | Evidence-weighted ranking (CCI) with uncertainty ranges, Monte Carlo, persona and India lenses, per-role dossiers |
 | [genai-target-roles.md](genai-target-roles.md) | The GenAI-only target order: a consensus of eight lenses, with the reasoning per role |
 
 ## Planned
 
-| Document | Scope | Built from |
-|---|---|---|
-| one hub page per role | Profile, rank, skills, resume block, interview track and pay in one place (roadmap phase 4) | all |
+Nothing planned for this stage beyond maintenance. Gaps that need new research are listed in [ROADMAP.md](../../ROADMAP.md).
 
 ## Evidence to read now
 

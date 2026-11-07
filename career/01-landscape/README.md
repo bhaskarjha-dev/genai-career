@@ -4,7 +4,7 @@ title: "Stage 01: Landscape"
 content_type: index
 stage: 1
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of stage 01 (landscape): What does the GenAI job market look like, globally and in India?"
 sources: [T0-01, T0-02, T0-08, T0-15, T0-17]
 ---
@@ -12,21 +12,26 @@ sources: [T0-01, T0-02, T0-08, T0-15, T0-17]
 # Stage 01: Landscape
 
 > **The question this stage answers:** What does the GenAI job market look like, globally and in India?
-> **Status:** Evidence only: the guides are planned; read the research below in the meantime. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: the market overview, the employer landscape and the emerging-roles guide exist. India job platforms are not yet researched (see [ROADMAP.md](../../ROADMAP.md)).
 
 ## In this folder
 
-No guide has been written yet.
+| Document | What it gives you |
+|---|---|
+| [market-overview.md](market-overview.md) | The GenAI job market as of October 2026, globally and in India: volumes, the quorum rule, where demand and pay concentrate, dated events, and what it means for each persona |
+| [employer-landscape.md](employer-landscape.md) | One employer taxonomy (frontier labs, Big Tech, AI-native startups, enterprises and GCCs, IT services, public sector) mapped to how each hires, interviews, pays and onboards |
+| [emerging-roles.md](emerging-roles.md) | How to judge a new GenAI title: the graduation tests, a dated watchlist of candidate and quarantined titles, and how to use emerging terms honestly |
 
-In the meantime, the [role catalog](../02-roles/role-catalog.md) (§7–§8) and the [role rankings](../02-roles/role-rankings.md) (India lens) cover role volumes and pay context.
+The [role catalog](../02-roles/role-catalog.md) (§7–§8) and the [role rankings](../02-roles/role-rankings.md) (India lens) hold the role-level volumes and pay context.
 
 ## Planned
 
-| Document | Scope | Built from |
-|---|---|---|
-| market-overview.md | Role volumes, posting trends, employer types, geography | T0-01, T0-02 |
-| visa-and-immigration.md | Talent-visa corridors and constraints (14-day expiry on status claims) | T0-08 |
-| regulated-ai-careers.md | How regulation (EU AI Act, NIST AI RMF, ISO 42001) creates governance roles | T0-15 |
+Nothing planned for this stage beyond maintenance. Gaps that need new research are listed in [ROADMAP.md](../../ROADMAP.md).
+
+**Moved or renamed:**
+
+- Visa and immigration moved to [11 Tracks: visa and relocation](../11-tracks/visa-and-relocation.md).
+- Regulated AI careers moved to [11 Tracks: governance careers](../11-tracks/governance-careers.md).
 
 ## Evidence to read now
 

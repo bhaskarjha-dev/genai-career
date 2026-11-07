@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Infrastructure / GPU Platform Engineer needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Infrastructure / GPU Platform Engineer needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-infrastructure-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Infrastructure / GPU Platform Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #7 · **Resume variant:** D2 (AI Systems & Infrastructure: Platform & infrastructure) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-infrastructure-engineer) · [narrative skill map](../role-skill-maps.md#skills-ai-infrastructure-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-infrastructure-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-infrastructure-engineer) · [role hub](../../02-roles/hubs/ai-infrastructure-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-infrastructure-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-infrastructure-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **59 skills:** Must 7 · Important 17 · Should 22 · Optional 13. **Evidence:** JD 12 · S09 3 · S 26 · P 18 (31% practice-curated). **Non-technical:** 7.
 

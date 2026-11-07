@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [applied-ai-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Applied AI Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #6 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-ai-engineer) · [narrative skill map](../role-skill-maps.md#skills-applied-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-ai-engineer) · [role hub](../../02-roles/hubs/applied-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-applied-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **46 skills:** Must 4 · Important 16 · Should 14 · Optional 12. **Evidence:** JD 11 · S 10 · P 25 (54% practice-curated). **Non-technical:** 12.
 

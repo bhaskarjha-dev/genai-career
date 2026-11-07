@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-enablement-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Enablement Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #20 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-enablement-engineer) · [narrative skill map](../role-skill-maps.md#skills-ai-enablement-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-enablement-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-enablement-engineer) · [role hub](../../02-roles/hubs/ai-enablement-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-enablement-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-enablement-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **51 skills:** Must 4 · Important 14 · Should 22 · Optional 11. **Evidence:** JD 2 · S 16 · P 33 (65% practice-curated). **Non-technical:** 13.
 

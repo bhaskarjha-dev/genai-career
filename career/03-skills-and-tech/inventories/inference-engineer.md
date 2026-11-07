@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a Inference / LLM Serving Engineer needs: 71 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an Inference / LLM Serving Engineer needs: 71 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [inference-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Inference / LLM Serving Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #9 · **Resume variant:** D1 (AI Systems & Infrastructure: Serving & kernels) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-inference-engineer) · [narrative skill map](../role-skill-maps.md#skills-inference-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-inference-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-inference-engineer) · [role hub](../../02-roles/hubs/inference-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-inference-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-inference-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **71 skills:** Must 7 · Important 17 · Should 26 · Optional 20 · Avoid 1. **Evidence:** S09 6 · S 49 · P 16 (23% practice-curated). **Non-technical:** 8.
 

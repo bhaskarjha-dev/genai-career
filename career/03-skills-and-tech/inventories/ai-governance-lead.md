@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Governance Programme Lead / Manager needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Governance Programme Lead / Manager needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-governance-lead]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Governance Programme Lead / Manager: Complete Skill Inventory
 
 > **GenAI target rank:** #17 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-governance-lead) · [narrative skill map](../role-skill-maps.md#skills-ai-governance-lead) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-governance-lead) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-governance-lead) · [role hub](../../02-roles/hubs/ai-governance-lead.md) · [narrative skill map](../role-skill-maps.md#skills-ai-governance-lead) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-governance-lead) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **58 skills:** Must 6 · Important 21 · Should 19 · Optional 12. **Evidence:** S 38 · P 20 (34% practice-curated). **Non-technical:** 16.
 

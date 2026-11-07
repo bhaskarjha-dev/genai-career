@@ -1,6 +1,6 @@
 {
  "meta": {
-  "schema": "skills-ontology/1.0",
+  "schema": "skills-ontology/1.1",
   "as_of": "2026-11-04",
   "description": "Typed GenAI skills ontology: one vocabulary of skills (concepts, methods, concrete technologies and non-technical skills) with aliases, implements links, parents, choose-one classes, statuses and corpus-match rules; per-role tiered links with evidence; credentials; resume variants. Source of truth for career/03-skills-and-tech/skills-vocabulary.md, career/03-skills-and-tech/role-skill-inventories.md and career/06-job-search/resume-skills-matrix.md.",
   "sources": {
@@ -8,7 +8,8 @@
    "posting_shares": "JobsPipe job-description measurements retrieved 2026-11-02 (Grade B); S09 corpus shares from T0-03 §6.3 (Grade B)",
    "statuses": "career/03-skills-and-tech/role-skill-maps.md §5 registry (T0-03, T0-11, T0-16); class V2 facts, re-verify by 2027-01-21",
    "target_order": "career/02-roles/genai-target-roles.md (consensus of eight lenses, GenAI-restricted demand)",
-   "screening": "research/sessions T0-04, T0-10, T0-11, T0-13"
+   "screening": "research/sessions T0-04, T0-10, T0-11, T0-13",
+   "devalued": "T0-03 §4.3 (what to deprioritise) and §6.8.2 (skills undergoing devaluation); grades as the session gives them; tool facts as of 2026-10-23, re-verify by 2027-01-21"
   },
   "ttl": {
    "tool_status_reverify_by": "2027-01-21",
@@ -19432,6 +19433,199 @@
    "reason": "data structures are named in 26.0% of all-field Research Scientist postings (JobsPipe)",
    "src": [],
    "stage": "assignment"
+  }
+ ],
+ "devalued": [
+  {
+   "id": "standalone_prompting",
+   "name": "Standalone prompt writing and the Prompt Engineer title",
+   "skills": [
+    "prompt_engineering"
+   ],
+   "evidence": "The Prompt Engineer title is 72 of 20,662 LinkedIn AI postings (0.35%); prompts written without regression tests, eval harnesses or cost accounting are commoditised",
+   "residual": "Prompt engineering is still named as a sub-skill in 29.1% of 895 job descriptions",
+   "verdict": "Devalued as a title; baseline as a skill",
+   "action": "Keep it as a baseline skill and pair it with regression tests, evals and cost accounting",
+   "instead": [
+    "evals",
+    "eval_ci_gates",
+    "cost_latency"
+   ],
+   "src": [
+    "T0-03:L152",
+    "T0-03:L419"
+   ],
+   "grade": "B"
+  },
+  {
+   "id": "framework_syntax",
+   "name": "Framework-specific syntax as a differentiator (LangChain, CrewAI)",
+   "skills": [
+    "langchain",
+    "crewai"
+   ],
+   "evidence": "LangChain is named in 3.6% of postings and in 0 of 10 top-lab job descriptions; in a study of 20 deployed systems, 85% of production teams built custom loops",
+   "residual": "Framework adoption doubled to 18% of organisations",
+   "verdict": "Devalued as a differentiator",
+   "action": "Learn portable state-machine concepts: state checkpoints, retries, idempotent tool execution, human interrupts and token budgets",
+   "instead": [
+    "durable_execution",
+    "agents"
+   ],
+   "src": [
+    "T0-03:L149",
+    "T0-03:L420"
+   ],
+   "grade": "B"
+  },
+  {
+   "id": "demo_rag",
+   "name": "Demo RAG pipelines (naive vector search)",
+   "skills": [
+    "rag"
+   ],
+   "evidence": "RAG is named in 10.0% of broad postings and treated as table stakes; naive vector search carries no hiring signal",
+   "residual": "Retrieval-quality engineering (hybrid search, cross-encoders) keeps its value",
+   "verdict": "Commoditised",
+   "action": "Show retrieval quality with measured recall and reranking, not a working demo",
+   "instead": [
+    "retrieval_quality",
+    "hybrid_search",
+    "reranking",
+    "retrieval_evaluation"
+   ],
+   "src": [
+    "T0-03:L421"
+   ],
+   "grade": "B"
+  },
+  {
+   "id": "vector_db_brand",
+   "name": "Vendor-specific vector-database fluency",
+   "skills": [
+    "pinecone"
+   ],
+   "evidence": "Pinecone is named in 0.7% of postings, against 9.8% for vector databases in general",
+   "residual": "Vector databases are widely deployed in enterprise stacks",
+   "verdict": "Commoditised by brand",
+   "action": "Learn the concepts; the session reports that PostgreSQL (pgvector) and Redis dominate",
+   "instead": [
+    "vector_search",
+    "pgvector"
+   ],
+   "src": [
+    "T0-03:L422"
+   ],
+   "grade": "B"
+  },
+  {
+   "id": "eval_brand",
+   "name": "Loyalty to one eval-platform brand",
+   "skills": [],
+   "evidence": "Named eval platforms appear in under 3% of postings and in 0 of 10 top-lab postings, and the vendors are consolidating (OpenAI bought Promptfoo; ClickHouse bought Langfuse)",
+   "residual": "Evaluation as a practice appears at 68.2% of companies",
+   "verdict": "Methodology over brand",
+   "action": "Master the methodology: chance-corrected inter-annotator agreement (Cohen's kappa), position-bias elimination and synthetic adversarial test generation",
+   "instead": [
+    "eval_rubrics",
+    "eval_stats"
+   ],
+   "src": [
+    "T0-03:L59",
+    "T0-03:L150"
+   ],
+   "grade": "B"
+  },
+  {
+   "id": "tgi",
+   "name": "Hugging Face TGI skills",
+   "skills": [
+    "tgi"
+   ],
+   "evidence": "Hugging Face archived the TGI repository on 2026-03-21",
+   "residual": "Legacy installations remain in maintenance",
+   "verdict": "Deprecated",
+   "action": "Move self-hosted serving to vLLM or SGLang",
+   "instead": [
+    "vllm",
+    "sglang"
+   ],
+   "src": [
+    "T0-03:L377",
+    "T0-03:L423"
+   ],
+   "grade": "A"
+  },
+  {
+   "id": "autogen",
+   "name": "AutoGen-specific skills",
+   "skills": [
+    "autogen"
+   ],
+   "evidence": "No PyPI release in 365 days; superseded by Microsoft Agent Framework",
+   "residual": "A large historical installed base (61.5K GitHub stars)",
+   "verdict": "Stalled",
+   "action": "Move to Microsoft Agent Framework or LangGraph",
+   "instead": [
+    "ms_agent_framework",
+    "langgraph"
+   ],
+   "src": [
+    "T0-03:L424"
+   ],
+   "grade": "A"
+  },
+  {
+   "id": "ragas",
+   "name": "RAGAS-based evaluation pipelines",
+   "skills": [
+    "ragas"
+   ],
+   "evidence": "No release since 2026-01-13 and no commit on main since 2026-02-24",
+   "residual": "Its metric definitions remain conceptually useful",
+   "verdict": "High risk",
+   "action": "Move to DeepEval or a custom eval harness",
+   "instead": [
+    "deepeval",
+    "evals"
+   ],
+   "src": [
+    "T0-03:L375",
+    "T0-03:L425"
+   ],
+   "grade": "A"
+  },
+  {
+   "id": "static_trt_engines",
+   "name": "Static TensorRT-LLM engine compilation (trtllm-build)",
+   "skills": [],
+   "evidence": "TensorRT-LLM 1.3 removed trtllm-build; PyTorch is its only backend",
+   "verdict": "Deprecated",
+   "action": "Drop static engine-compilation workflows; use TensorRT-LLM's PyTorch backend",
+   "instead": [
+    "trt_llm"
+   ],
+   "src": [
+    "T0-03:L99",
+    "T0-03:L151"
+   ],
+   "grade": "A"
+  },
+  {
+   "id": "single_provider",
+   "name": "Single-provider chat wrappers",
+   "skills": [],
+   "evidence": "OpenAI's share of traced traffic fell from 75% to 63%, and more than 70% of organisations use three or more models",
+   "residual": "OpenAI remains the largest single provider",
+   "verdict": "Devalued",
+   "action": "Design for several models: routing, fallbacks and a gateway",
+   "instead": [
+    "llm_gateways"
+   ],
+   "src": [
+    "T0-03:L426"
+   ],
+   "grade": "A"
   }
  ]
 }

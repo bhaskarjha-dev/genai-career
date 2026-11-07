@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Frontier AI Safety / Alignment Researcher: Complete Skill Inventory
 
 > **GenAI target rank:** #19 · **Resume variant:** C2 (Frontier Research: Science) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-safety-researcher) · [narrative skill map](../role-skill-maps.md#skills-ai-safety-researcher) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-safety-researcher) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-safety-researcher) · [role hub](../../02-roles/hubs/ai-safety-researcher.md) · [narrative skill map](../role-skill-maps.md#skills-ai-safety-researcher) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-safety-researcher) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **41 skills:** Must 4 · Important 13 · Should 20 · Optional 4. **Evidence:** JD 5 · S 12 · P 24 (59% practice-curated). **Non-technical:** 11.
 

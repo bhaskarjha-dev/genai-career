@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-security-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Security Engineer / AI Red Teamer: Complete Skill Inventory
 
 > **GenAI target rank:** #16 · **Resume variant:** D3 (AI Systems & Infrastructure: Security) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-security-engineer) · [narrative skill map](../role-skill-maps.md#skills-ai-security-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-security-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-security-engineer) · [role hub](../../02-roles/hubs/ai-security-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-security-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-security-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **49 skills:** Must 7 · Important 14 · Should 19 · Optional 9. **Evidence:** JD 8 · S 26 · P 15 (31% practice-curated). **Non-technical:** 7.
 

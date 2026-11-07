@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Forward Deployed Engineer (AI): Complete Skill Inventory
 
 > **GenAI target rank:** #4 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-forward-deployed-engineer) · [narrative skill map](../role-skill-maps.md#skills-forward-deployed-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-forward-deployed-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-forward-deployed-engineer) · [role hub](../../02-roles/hubs/forward-deployed-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-forward-deployed-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-forward-deployed-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **57 skills:** Must 5 · Important 15 · Should 17 · Optional 20. **Evidence:** JD 2 · S 28 · P 27 (47% practice-curated). **Non-technical:** 18.
 

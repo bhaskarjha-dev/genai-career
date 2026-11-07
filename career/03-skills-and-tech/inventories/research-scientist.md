@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Research Scientist (LLM research): Complete Skill Inventory
 
 > **GenAI target rank:** #8 · **Resume variant:** C2 (Frontier Research: Science) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-research-scientist) · [narrative skill map](../role-skill-maps.md#skills-research-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-research-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-research-scientist) · [role hub](../../02-roles/hubs/research-scientist.md) · [narrative skill map](../role-skill-maps.md#skills-research-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-research-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **54 skills:** Must 6 · Important 16 · Should 16 · Optional 16. **Evidence:** JD 10 · S 6 · P 38 (70% practice-curated). **Non-technical:** 14.
 

@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-product-manager]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Product Manager: Complete Skill Inventory
 
 > **GenAI target rank:** #12 · **Resume variant:** E1 (AI Product, Governance & Assurance: Product) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-product-manager) · [narrative skill map](../role-skill-maps.md#skills-ai-product-manager) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-product-manager) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-product-manager) · [role hub](../../02-roles/hubs/ai-product-manager.md) · [narrative skill map](../role-skill-maps.md#skills-ai-product-manager) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-product-manager) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **47 skills:** Must 4 · Important 16 · Should 20 · Optional 7. **Evidence:** JD 9 · S 15 · P 23 (49% practice-curated). **Non-technical:** 24.
 

@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #1 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-engineer) · [narrative skill map](../role-skill-maps.md#skills-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-engineer) · [role hub](../../02-roles/hubs/ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **148 skills:** Must 4 · Important 20 · Should 59 · Optional 63 · Avoid 2. **Evidence:** JD 14 · S09 7 · S 88 · P 39 (26% practice-curated). **Non-technical:** 12.
 

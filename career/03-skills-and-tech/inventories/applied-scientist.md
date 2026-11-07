@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [applied-scientist]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Applied Scientist (GenAI/LLM teams): Complete Skill Inventory
 
 > **GenAI target rank:** #5 · **Resume variant:** B2 (ML & Applied Science: Scientist) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-scientist) · [narrative skill map](../role-skill-maps.md#skills-applied-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-scientist) · [role hub](../../02-roles/hubs/applied-scientist.md) · [narrative skill map](../role-skill-maps.md#skills-applied-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **64 skills:** Must 6 · Important 17 · Should 25 · Optional 16. **Evidence:** JD 13 · S09 1 · S 15 · P 35 (55% practice-curated). **Non-technical:** 13.
 

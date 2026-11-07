@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # VP / Head of AI / CAIO: Complete Skill Inventory
 
 > **GenAI target rank:** L2–L3 · **Resume variant:** L2 (Leadership: VP / Head of AI / CAIO) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile: vp-head-of-ai](../../02-roles/role-catalog.md#profile-vp-head-of-ai) · [role profile: chief-ai-officer](../../02-roles/role-catalog.md#profile-chief-ai-officer) · [narrative skill map](../role-skill-maps.md#skills-leadership) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-vp-head-of-ai) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile: vp-head-of-ai](../../02-roles/role-catalog.md#profile-vp-head-of-ai) · [role profile: chief-ai-officer](../../02-roles/role-catalog.md#profile-chief-ai-officer) · [role hub](../../02-roles/hubs/vp-head-of-ai.md) · [role hub](../../02-roles/hubs/chief-ai-officer.md) · [narrative skill map](../role-skill-maps.md#skills-leadership) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-vp-head-of-ai) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **41 skills:** Must 4 · Important 14 · Should 17 · Optional 6. **Evidence:** JD 2 · S 9 · P 30 (73% practice-curated). **Non-technical:** 25.
 

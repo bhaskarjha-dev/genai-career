@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Responsible AI / AI Governance Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #23 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-responsible-ai-engineer) · [narrative skill map](../role-skill-maps.md#skills-responsible-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-responsible-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-responsible-ai-engineer) · [role hub](../../02-roles/hubs/responsible-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-responsible-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-responsible-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **56 skills:** Must 3 · Important 20 · Should 26 · Optional 7. **Evidence:** S 45 · P 11 (20% practice-curated). **Non-technical:** 9.
 

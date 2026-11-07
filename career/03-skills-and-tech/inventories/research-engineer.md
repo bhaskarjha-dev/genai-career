@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Research Engineer / Member of Technical Staff: Complete Skill Inventory
 
 > **GenAI target rank:** #3 · **Resume variant:** C1 (Frontier Research: Engineering) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-research-engineer) · [narrative skill map](../role-skill-maps.md#skills-research-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-research-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-research-engineer) · [role hub](../../02-roles/hubs/research-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-research-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-research-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **59 skills:** Must 6 · Important 14 · Should 18 · Optional 21. **Evidence:** JD 6 · S09 1 · S 26 · P 26 (44% practice-curated). **Non-technical:** 11.
 

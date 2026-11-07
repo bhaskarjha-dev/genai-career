@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Evaluation Engineer needs: 65 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Evaluation Engineer needs: 65 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-evaluation-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Evaluation Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #13 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-evaluation-engineer) · [narrative skill map](../role-skill-maps.md#skills-ai-evaluation-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-evaluation-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-evaluation-engineer) · [role hub](../../02-roles/hubs/ai-evaluation-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-evaluation-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-evaluation-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **65 skills:** Must 5 · Important 19 · Should 28 · Optional 12 · Avoid 1. **Evidence:** JD 5 · S09 3 · S 42 · P 15 (23% practice-curated). **Non-technical:** 10.
 

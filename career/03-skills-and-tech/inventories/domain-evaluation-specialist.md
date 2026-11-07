@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Domain Evaluation Specialist / AI Trainer: Complete Skill Inventory
 
 > **GenAI target rank:** #24 · **Resume variant:** E3 (AI Product, Governance & Assurance: Domain evaluation) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-domain-evaluation-specialist) · [narrative skill map](../role-skill-maps.md#skills-domain-evaluation-specialist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-domain-evaluation-specialist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-domain-evaluation-specialist) · [role hub](../../02-roles/hubs/domain-evaluation-specialist.md) · [narrative skill map](../role-skill-maps.md#skills-domain-evaluation-specialist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-domain-evaluation-specialist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **42 skills:** Must 4 · Important 7 · Should 19 · Optional 12. **Evidence:** S 14 · P 28 (67% practice-curated). **Non-technical:** 16.
 

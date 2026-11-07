@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Risk, Audit & Compliance Specialist needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Risk, Audit & Compliance Specialist needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-risk-assurance-specialist]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Risk, Audit & Compliance Specialist: Complete Skill Inventory
 
 > **GenAI target rank:** #22 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-risk-assurance-specialist) · [narrative skill map](../role-skill-maps.md#skills-ai-risk-assurance-specialist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-risk-assurance-specialist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-risk-assurance-specialist) · [role hub](../../02-roles/hubs/ai-risk-assurance-specialist.md) · [narrative skill map](../role-skill-maps.md#skills-ai-risk-assurance-specialist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-risk-assurance-specialist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **47 skills:** Must 5 · Important 18 · Should 14 · Optional 10. **Evidence:** S 30 · P 17 (36% practice-curated). **Non-technical:** 9.
 

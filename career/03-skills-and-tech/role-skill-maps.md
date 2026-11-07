@@ -164,9 +164,9 @@ Each figure is the share of postings, with the share of companies in brackets. T
 Roles appear in ranked-catalog order. Each map gives table-stakes, differentiating and frontier skills, tools with their October 2026 status, human skills, proof of work, the interview track, and typical gaps by background.
 
 <a id="skills-ml-engineer"></a>
-### 3.1 Machine Learning Engineer (`ml-engineer`) · Rank #1
+### 3.1 Machine Learning Engineer (`ml-engineer`) · CCI rank #1
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ml-engineer.md](inventories/ml-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ml-engineer.md](inventories/ml-engineer.md).*
 
 **Measured:** ML 98.6 · Python 71.3 · PyTorch 48.2 · LLM 45.0 · data structures 33.7 · deep learning 32.6 · TensorFlow 31.8 · A/B testing 23.5 · NLP 23.3 · C++ 23.3 [JD].
 
@@ -209,9 +209,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
   - PhDs: production craft and shipping speed [D · T0-06].
 
 <a id="skills-ai-engineer"></a>
-### 3.2 AI Engineer (`ai-engineer`) · Rank #2
+### 3.2 AI Engineer (`ai-engineer`) · CCI rank #2
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-engineer.md](inventories/ai-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-engineer.md](inventories/ai-engineer.md).*
 
 **Measured:** Python 78.4 · LLM 76.7 · agentic AI 59.3 · RAG 54.0 · ML 39.8 · generative AI 37.6 · Azure 35.1 · AWS 35.1 · CI/CD 34.4 · vector DBs 32.6 · prompt engineering 31.1 [JD].
 
@@ -287,9 +287,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Avoid:** wrapper-only demos; framework-syntax memorisation; new RAGAS dependencies.
 
 <a id="skills-research-engineer"></a>
-### 3.3 Research Engineer / Member of Technical Staff (`research-engineer`) · Rank #3
+### 3.3 Research Engineer / Member of Technical Staff (`research-engineer`) · CCI rank #3
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/research-engineer.md](inventories/research-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/research-engineer.md](inventories/research-engineer.md).*
 
 - **Table-stakes:** Python and PyTorch, including internals [S · Inferact JD]; DSA; Linux; ML fundamentals; experimenting at scale [P].
 - **Differentiating:**
@@ -310,9 +310,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** a research talk plus coding. Frontier labs add infrastructure research-engineering rounds (KV cache, batching, GPU scheduling); Tier 4 candidates face the full research loop [S · T2-01, T1-03].
 
 <a id="skills-forward-deployed-engineer"></a>
-### 3.4 Forward Deployed Engineer (`forward-deployed-engineer`) · Rank #4
+### 3.4 Forward Deployed Engineer (`forward-deployed-engineer`) · CCI rank #4
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/forward-deployed-engineer.md](inventories/forward-deployed-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/forward-deployed-engineer.md](inventories/forward-deployed-engineer.md).*
 
 - **Table-stakes:**
   - Production Python and/or TypeScript.
@@ -342,9 +342,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
   - Non-technical candidates: coding plus infrastructure, roughly 10 months of work [D · T2-01].
 
 <a id="skills-applied-ai-engineer"></a>
-### 3.5 Applied AI Engineer (`applied-ai-engineer`) · Rank #5
+### 3.5 Applied AI Engineer (`applied-ai-engineer`) · CCI rank #5
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/applied-ai-engineer.md](inventories/applied-ai-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/applied-ai-engineer.md](inventories/applied-ai-engineer.md).*
 
 - **Table-stakes:** the full [AI Engineer](#skills-ai-engineer) table-stakes stack.
 - **Differentiating:**
@@ -359,9 +359,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** the application track plus customer scenarios [S · T0-14 Applied-AI loop].
 
 <a id="skills-research-scientist"></a>
-### 3.6 Research Scientist (AI/ML) (`research-scientist`) · Rank #6
+### 3.6 Research Scientist (AI/ML) (`research-scientist`) · CCI rank #6
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/research-scientist.md](inventories/research-scientist.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/research-scientist.md](inventories/research-scientist.md).*
 
 **Measured (all-field research-scientist postings):** Python 42.3 · communication 41.3 · ML 39.2 · PyTorch 25.4 · LLM 24.4 · creativity 23.0 · deep learning 18.6 · C++ 17.4 · reinforcement learning 17.1 [JD].
 
@@ -376,9 +376,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** a research talk, deep technical discussion and coding. Offers are "not plannable" [D · T0-06].
 
 <a id="skills-applied-scientist"></a>
-### 3.7 Applied Scientist (`applied-scientist`) · Rank #7
+### 3.7 Applied Scientist (`applied-scientist`) · CCI rank #7
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/applied-scientist.md](inventories/applied-scientist.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/applied-scientist.md](inventories/applied-scientist.md).*
 
 - **Table-stakes:** ML and statistics depth; Python and PyTorch; experiment design; coding and DSA for big-company loops [S · T0-06]; SQL [P].
 - **Differentiating:**
@@ -397,9 +397,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** ML design is usually a strength for PhDs; coding is the usual gap. Some loops include a research talk [S · T2-01].
 
 <a id="skills-ai-infrastructure-engineer"></a>
-### 3.8 AI Infrastructure / GPU Platform Engineer (`ai-infrastructure-engineer`) · Rank #8
+### 3.8 AI Infrastructure / GPU Platform Engineer (`ai-infrastructure-engineer`) · CCI rank #8
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-infrastructure-engineer.md](inventories/ai-infrastructure-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-infrastructure-engineer.md](inventories/ai-infrastructure-engineer.md).*
 
 - **Table-stakes:** Linux; Kubernetes; networking; IaC (Terraform); Python or Go; observability; SRE and on-call practice [JD for DevOps/SRE feeders].
 - **Differentiating:**
@@ -424,9 +424,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Entry routes:** a paid residency: RadixArk AI Infra Resident, listed at $200K, SGLang experience not required. Caveats: the Accel listing showed "Posted 6+ months ago" and the Greenhouse copy lists no salary [B · T0-05].
 
 <a id="skills-inference-engineer"></a>
-### 3.9 Inference / LLM Serving Engineer (`inference-engineer`) · Rank #9
+### 3.9 Inference / LLM Serving Engineer (`inference-engineer`) · CCI rank #9
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/inference-engineer.md](inventories/inference-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/inference-engineer.md](inventories/inference-engineer.md).*
 
 - **Table-stakes** [S · T0-03 J1–J8]:
   - Python plus C++ (or Rust).
@@ -476,9 +476,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Typical gap:** backend engineers moving to Tier 3 need infrastructure depth; plan on roughly 10–14 months [D · T2-01].
 
 <a id="skills-ai-product-manager"></a>
-### 3.10 AI Product Manager (`ai-product-manager`) · Rank #10
+### 3.10 AI Product Manager (`ai-product-manager`) · CCI rank #10
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-product-manager.md](inventories/ai-product-manager.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-product-manager.md](inventories/ai-product-manager.md).*
 
 **Measured (PM postings):** product management 92.6 · communication 53.7 · leadership 40.1 · compliance 26.1 · agile 22.7 · roadmapping 18.4 · AI 15.4 · stakeholder management 14.2 · agentic AI 13.6 [JD].
 
@@ -501,9 +501,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Entry fee:** 4+ years as a PM plus at least one shipped model-powered feature [D · T0-06].
 
 <a id="skills-ml-platform-engineer"></a>
-### 3.11 ML Platform / MLOps Engineer (`ml-platform-engineer`) · Rank #11
+### 3.11 ML Platform / MLOps Engineer (`ml-platform-engineer`) · CCI rank #11
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ml-platform-engineer.md](inventories/ml-platform-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ml-platform-engineer.md](inventories/ml-platform-engineer.md).*
 
 - **Table-stakes:** Kubernetes [JD 69.4% of DevOps]; Terraform [JD 59.1%]; CI/CD [JD 81.2%]; Docker; Python; a major cloud; monitoring [JD].
 - **Differentiating:**
@@ -527,9 +527,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** the infrastructure track plus platform design questions: gateway, playground, model distribution [S · T0-14].
 
 <a id="skills-agentic-ai-engineer"></a>
-### 3.12 Agentic AI Engineer (`agentic-ai-engineer`) · Rank #12
+### 3.12 Agentic AI Engineer (`agentic-ai-engineer`) · CCI rank #12
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/agentic-ai-engineer.md](inventories/agentic-ai-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/agentic-ai-engineer.md](inventories/agentic-ai-engineer.md).*
 
 **Measured:** LangGraph is named in 35.8% of Agentic AI Engineer postings vs MCP in 13.8%; Agent Engineer postings name LangChain 42.9% and LangGraph 39.3% [C · T0-16].
 
@@ -566,9 +566,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** agent loop control; tool-gateway design; workflow vs agent trade-offs [S · T1-03, T0-14].
 
 <a id="skills-ai-solutions-architect"></a>
-### 3.13 AI / GenAI Solutions Architect (`ai-solutions-architect`) · Rank #13
+### 3.13 AI / GenAI Solutions Architect (`ai-solutions-architect`) · CCI rank #13
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-solutions-architect.md](inventories/ai-solutions-architect.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-solutions-architect.md](inventories/ai-solutions-architect.md).*
 
 **Measured (all Solutions Architect postings):** AWS 53.6 · leadership 43.0 · communication 42.9 · mentoring 35.1 · Azure 29.5 · compliance 25.3 · Python 23.6 · AI 23.2 · GCP 22.6 · generative AI 17.1 [JD].
 
@@ -587,9 +587,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Proof of work:** a reference architecture with a cost model and a working infrastructure-as-code deployment [P].
 
 <a id="skills-ai-evaluation-engineer"></a>
-### 3.14 AI Evaluation Engineer (`ai-evaluation-engineer`) · Rank #14
+### 3.14 AI Evaluation Engineer (`ai-evaluation-engineer`) · CCI rank #14
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-evaluation-engineer.md](inventories/ai-evaluation-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-evaluation-engineer.md](inventories/ai-evaluation-engineer.md).*
 
 **Measured:** evals/benchmarking appears in 19.0% of S09 postings and at 68.2% of companies [S09], and in 59.7% of AI-first roles [T0-13]. Only 52.4% of agent teams run offline evals and 37.3% online evals [B/C · LangChain survey].
 
@@ -625,9 +625,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Best feeders:** data scientists (error analysis, judge validation), PhDs (measurement rigour), backend engineers (CI, observability) [D · T0-06].
 
 <a id="skills-gpu-kernel-engineer"></a>
-### 3.15 GPU Kernel / ML Compiler Engineer (`gpu-kernel-engineer`) · Rank #15
+### 3.15 GPU Kernel / ML Compiler Engineer (`gpu-kernel-engineer`) · CCI rank #15
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/gpu-kernel-engineer.md](inventories/gpu-kernel-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/gpu-kernel-engineer.md](inventories/gpu-kernel-engineer.md).*
 
 - **Table-stakes:** C++; the CUDA programming model; GPU architecture (SMs, warps, memory hierarchy, tensor cores); linear algebra; profiling [S · T0-03 J3/J4].
 - **Differentiating:**
@@ -648,9 +648,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** kernel and system internals. Reported AMD kernel interviews overlap with GPU MODE material [C/D · T0-12].
 
 <a id="skills-ai-governance-lead"></a>
-### 3.16 AI Governance Programme Lead / Manager (`ai-governance-lead`) · Rank #16
+### 3.16 AI Governance Programme Lead / Manager (`ai-governance-lead`) · CCI rank #16
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-governance-lead.md](inventories/ai-governance-lead.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-governance-lead.md](inventories/ai-governance-lead.md).*
 
 **Measured (Axial, US AI-governance postings) [C]:** Python 27.1% · observability/monitoring 42.3% · OneTrust 8.7–9.2% · Azure 11.1% · AIGP 8.9% (CISSP 10.4%, CIPP 8.2%, CISA 5.9%).
 
@@ -681,9 +681,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Proof of work:** an AI inventory, risk register and governance playbook mapped to the EU AI Act, NIST and ISO 42001 [S · T0-06 non-technical lane].
 
 <a id="skills-physical-ai-engineer"></a>
-### 3.17 Physical AI / Robotics AI Engineer (`physical-ai-engineer`) · Rank #17
+### 3.17 Physical AI / Robotics AI Engineer (`physical-ai-engineer`) · CCI rank #17
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/physical-ai-engineer.md](inventories/physical-ai-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/physical-ai-engineer.md](inventories/physical-ai-engineer.md).*
 
 *The corpus has no skill measurements for this role; everything below is [P]. Check it against current postings such as Figure AI's "Helix AI Engineer".*
 
@@ -692,9 +692,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Proof of work:** a sim-to-real or manipulation project with measured success rates and failure analysis.
 
 <a id="skills-ai-safety-researcher"></a>
-### 3.18 Frontier AI Safety / Alignment Researcher (`ai-safety-researcher`) · Rank #18
+### 3.18 Frontier AI Safety / Alignment Researcher (`ai-safety-researcher`) · CCI rank #18
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-safety-researcher.md](inventories/ai-safety-researcher.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-safety-researcher.md](inventories/ai-safety-researcher.md).*
 
 - **Table-stakes:** strong ML research foundations; Python/PyTorch; experiment design [P].
 - **Differentiating:**
@@ -706,9 +706,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Market reality:** about 600 technical FTEs worldwide, growing about 21% a year; no pay data [C · T0-15].
 
 <a id="skills-ai-security-engineer"></a>
-### 3.19 AI Security Engineer / AI Red Teamer (`ai-security-engineer`) · Rank #19
+### 3.19 AI Security Engineer / AI Red Teamer (`ai-security-engineer`) · CCI rank #19
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-security-engineer.md](inventories/ai-security-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-security-engineer.md](inventories/ai-security-engineer.md).*
 
 - **Table-stakes:** application-security fundamentals; threat modelling; Python [JD 45.7%]; cloud IAM [JD 21.6%]; incident response [JD 32.4%].
 - **Differentiating** [S · T0-14 §6.8, T0-16 §8, T0-03]:
@@ -732,9 +732,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Programme:** Anthropic AI Security Fellow (requires US/UK/Canada work authorisation; >40% of fellows got full-time offers) [A · T0-12].
 
 <a id="skills-ai-enablement-engineer"></a>
-### 3.20 AI Enablement Engineer (`ai-enablement-engineer`) · Rank #20
+### 3.20 AI Enablement Engineer (`ai-enablement-engineer`) · CCI rank #20
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-enablement-engineer.md](inventories/ai-enablement-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-enablement-engineer.md](inventories/ai-enablement-engineer.md).*
 
 - **Table-stakes:** internal tooling in Python or TypeScript; LLM APIs; SSO/identity basics [P].
 - **Differentiating:**
@@ -748,9 +748,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Proof of work:** an internal pilot with 5–10 colleagues, measuring adoption and time saved, with a runbook and a risk register [S · T0-06].
 
 <a id="skills-ai-product-engineer"></a>
-### 3.21 AI Product Engineer (AI Frontend) (`ai-product-engineer`) · Rank #21
+### 3.21 AI Product Engineer (AI Frontend) (`ai-product-engineer`) · CCI rank #21
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-product-engineer.md](inventories/ai-product-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-product-engineer.md](inventories/ai-product-engineer.md).*
 
 **Measured (full-stack postings):** React 69.4 · TypeScript 52.7 · Python 41.8 · AWS 41.3 · CI/CD 37.8 · Node.js 32.3 · REST API 27.6 [JD].
 
@@ -769,9 +769,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Interview:** the application track (agent UX), and AI-enabled coding rounds in the Meta format [S · T2-01].
 
 <a id="skills-ai-risk-assurance-specialist"></a>
-### 3.22 AI Risk, Audit & Compliance Specialist (`ai-risk-assurance-specialist`) · Rank #22
+### 3.22 AI Risk, Audit & Compliance Specialist (`ai-risk-assurance-specialist`) · CCI rank #22
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/ai-risk-assurance-specialist.md](inventories/ai-risk-assurance-specialist.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/ai-risk-assurance-specialist.md](inventories/ai-risk-assurance-specialist.md).*
 
 - **Table-stakes:** audit methodology; CISA, CIA or CPA (required for the AAIA credential) [B · T0-15]; model-risk management; privacy law [S].
 - **Differentiating:**
@@ -783,9 +783,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Proof of work:** a model-validation or bias-audit report on a public model, using documented methodology [P].
 
 <a id="skills-responsible-ai-engineer"></a>
-### 3.23 Responsible AI / AI Governance Engineer (`responsible-ai-engineer`) · Rank #23
+### 3.23 Responsible AI / AI Governance Engineer (`responsible-ai-engineer`) · CCI rank #23
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/responsible-ai-engineer.md](inventories/responsible-ai-engineer.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/responsible-ai-engineer.md](inventories/responsible-ai-engineer.md).*
 
 - **Table-stakes:** Python; ML/MLOps basics; documentation discipline [S · T0-15].
 - **Differentiating** [S · T0-15]:
@@ -804,9 +804,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Proof of work:** a compliance packet mapped to NIST AI 600-1 and the OWASP LLM Top 10, with runtime guardrails, subgroup evals, and a calibrated judge on ~100 traces [S · T0-09, T0-15].
 
 <a id="skills-domain-evaluation-specialist"></a>
-### 3.24 Domain Evaluation Specialist / AI Trainer (`domain-evaluation-specialist`) · Rank #24
+### 3.24 Domain Evaluation Specialist / AI Trainer (`domain-evaluation-specialist`) · CCI rank #24
 
-*Complete typed inventory, with evidence for every skill: [role_inventories/domain-evaluation-specialist.md](inventories/domain-evaluation-specialist.md).*
+*Complete typed inventory, with evidence for every skill: [inventories/domain-evaluation-specialist.md](inventories/domain-evaluation-specialist.md).*
 
 - **Table-stakes:** deep domain expertise (4+ years; MA/JD/MD/PhD for premium rates); clear writing; attention to detail [C · T0-06].
 - **Differentiating:**

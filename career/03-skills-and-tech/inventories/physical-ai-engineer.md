@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Physical AI / Robotics AI Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #18 · **Resume variant:** B3 (ML & Applied Science: Robotics) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-physical-ai-engineer) · [narrative skill map](../role-skill-maps.md#skills-physical-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-physical-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-physical-ai-engineer) · [role hub](../../02-roles/hubs/physical-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-physical-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-physical-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **42 skills:** Must 6 · Important 14 · Should 18 · Optional 4. **Evidence:** JD 1 · S 4 · P 37 (88% practice-curated). **Non-technical:** 8.
 

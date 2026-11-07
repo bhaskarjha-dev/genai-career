@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # Machine Learning Engineer (GenAI/LLM track): Complete Skill Inventory
 
 > **GenAI target rank:** #2 · **Resume variant:** B1 (ML & Applied Science: Engineer) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-engineer) · [narrative skill map](../role-skill-maps.md#skills-ml-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-engineer) · [role hub](../../02-roles/hubs/ml-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ml-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **84 skills:** Must 4 · Important 18 · Should 28 · Optional 34. **Evidence:** JD 11 · S09 2 · S 24 · P 47 (56% practice-curated). **Non-technical:** 9.
 

@@ -228,6 +228,17 @@ def integrity_errors(o, sessions):
     for ch in o.get("changes", []):
         if ch["role"] not in R or (ch["id"] not in S and ch["id"] not in C):
             errs.append(f"change {ch['role']}/{ch['id']}: unknown role or skill")
+    seen_devalued = set()
+    for d in o.get("devalued", []):
+        if d["id"] in seen_devalued:
+            errs.append(f"devalued {d['id']}: duplicate id")
+        seen_devalued.add(d["id"])
+        errs += [f"devalued {d['id']}: unknown skill or class {k}" for k in d["skills"] + d["instead"] if k not in S and k not in C]
+        for ref in d["src"]:
+            m = REF.match(ref)
+            a, b = int(m.group(2)), int(m.group(3) or m.group(2))
+            if m.group(1) not in lines or not 1 <= a <= b <= lines[m.group(1)]:
+                errs.append(f"devalued {d['id']}: source {ref} does not exist")
     return errs
 
 
@@ -325,6 +336,15 @@ def usage(o):
 def role_key(item):
     t = item[1]["target"]
     return (0, t) if isinstance(t, int) else (1, str(t))
+
+
+def article(name):
+    """'a' or 'an' by sound: vowel letters, and initialisms that start with a vowel sound (AI, ML, LLM, MLOps, NLP, SRE)."""
+    first = name.split()[0].strip("(") if name else ""
+    vowel_initialisms = ("AI", "ML", "LLM", "MLOps", "NLP", "SRE", "FDE", "MTS", "HR", "R&D", "X")
+    if first.upper() == first and first[:1].isalpha() and len(first) <= 6:
+        return "an" if first.startswith(vowel_initialisms) or first[0] in "AEFHILMNORSX" else "a"
+    return "an" if first[:1].lower() in "aeiou" else "a"
 
 
 def rank_tag(r):
@@ -470,12 +490,12 @@ def render_role(o, rid, r):
     name_q = r["name"].replace('"', "'")
     lines = ["---", f"id: skills.inventory.{rid}", f'title: "{name_q}: Complete Skill Inventory"', "content_type: reference",
              "stage: 3", "status: published", f"last_verified: {o['meta']['as_of']}",
-             f'summary: "Every skill a {name_q} needs: {n} skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."',
+             f'summary: "Every skill {article(name_q)} {name_q} needs: {n} skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."',
              f"roles: [{rid}]", "generated_by: scripts/build_skills.py", "---", "",
              GENERATED_HEADER, "",
              f"# {r['name']}: Complete Skill Inventory", "",
              f"> **GenAI target rank:** {rank_tag(r)} · **Resume variant:** {r['flavour']} ({variant['name']}: {flavour}) · **Ontology as of:** {o['meta']['as_of']}",
-             f"> **Links:** {prof} · [narrative skill map](../role-skill-maps.md#{skills_anchor}) · "
+             f"> **Links:** {prof} · {' · '.join(f'[role hub](../../02-roles/hubs/{p}.md)' for p in profiles)} · [narrative skill map](../role-skill-maps.md#{skills_anchor}) · "
              f"[concise resume block](../../06-job-search/resume-skills-matrix.md#resume-{rid}) · [all inventories](../role-skill-inventories.md) · "
              f"[vocabulary](../skills-vocabulary.md)", "",
              f"**{n} skills:** " + " · ".join(f"{TIER_NAME[t]} {tiers[t]}" for t in TIERS if tiers[t]) + ". "

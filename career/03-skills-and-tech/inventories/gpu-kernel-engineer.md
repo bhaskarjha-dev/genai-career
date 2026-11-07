@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # GPU Kernel / ML Compiler Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #15 · **Resume variant:** D1 (AI Systems & Infrastructure: Serving & kernels) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-gpu-kernel-engineer) · [narrative skill map](../role-skill-maps.md#skills-gpu-kernel-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-gpu-kernel-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-gpu-kernel-engineer) · [role hub](../../02-roles/hubs/gpu-kernel-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-gpu-kernel-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-gpu-kernel-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **45 skills:** Must 6 · Important 15 · Should 11 · Optional 13. **Evidence:** S09 2 · S 30 · P 13 (29% practice-curated). **Non-technical:** 7.
 

@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ml-platform-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # ML Platform / MLOps (LLMOps) Engineer: Complete Skill Inventory
 
 > **GenAI target rank:** #11 · **Resume variant:** D2 (AI Systems & Infrastructure: Platform & infrastructure) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-platform-engineer) · [narrative skill map](../role-skill-maps.md#skills-ml-platform-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-platform-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-platform-engineer) · [role hub](../../02-roles/hubs/ml-platform-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ml-platform-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-platform-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **77 skills:** Must 7 · Important 15 · Should 34 · Optional 21. **Evidence:** JD 12 · S09 5 · S 34 · P 26 (34% practice-curated). **Non-technical:** 6.
 

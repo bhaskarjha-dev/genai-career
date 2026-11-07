@@ -5,7 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Every skill a AI Engineering Manager / Director needs: 44 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Engineering Manager / Director needs: 44 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-engineering-manager]
 generated_by: scripts/build_skills.py
 ---
@@ -15,7 +15,7 @@ generated_by: scripts/build_skills.py
 # AI Engineering Manager / Director: Complete Skill Inventory
 
 > **GenAI target rank:** L1 · **Resume variant:** L1 (Leadership: AI Engineering Manager / Director) · **Ontology as of:** 2026-11-04
-> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-engineering-manager) · [narrative skill map](../role-skill-maps.md#skills-leadership) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-engineering-manager) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
+> **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-engineering-manager) · [role hub](../../02-roles/hubs/ai-engineering-manager.md) · [narrative skill map](../role-skill-maps.md#skills-leadership) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-engineering-manager) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **44 skills:** Must 4 · Important 16 · Should 17 · Optional 7. **Evidence:** JD 7 · S 5 · P 32 (73% practice-curated). **Non-technical:** 24.
 

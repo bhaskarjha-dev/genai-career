@@ -4,7 +4,7 @@ title: "Research Layer: Sessions, Findings, Decisions and Errata"
 content_type: index
 stage: 0
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-05
 summary: "Index of the evidence layer: the 22 Phase 0 research sessions, the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research."
 sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-01, T1-02, T1-03, T2-01]
 ---
@@ -30,7 +30,7 @@ This folder is the repository's **evidence layer**. Each session is a dated rese
 |---|---|---|
 | [findings.md](findings.md) | Generated registry of every session's key findings, by stage and by session ([data](../data/findings.json); `python3 scripts/build_findings.py --update`) | Current |
 | [ERRATA.md](ERRATA.md) | Known errors in the Phase 0 records, with the correct reading and evidence | Current |
-| [DECISIONS.md](DECISIONS.md) | Architecture decision registry: D-001 to D-012 from Phase 0, plus later decisions appended (D-013: repository architecture v2) | Append-only |
+| [DECISIONS.md](DECISIONS.md) | Architecture decision registry: D-001 to D-012 from Phase 0, plus later decisions appended (D-013 repository architecture v2; D-014 versioning; D-015 the stack map; D-016 the legacy-handbook policy and the guide pattern; D-017 review-by dates; D-018 evidence conventions for the stage guides) | Append-only |
 | [FAD.md](FAD.md) | Founding Architecture Document: the Phase 0 capstone synthesis and Phase 1 plan | Historical record; superseded in parts (see its status note) |
 | [RESEARCH-PIPELINE.md](RESEARCH-PIPELINE.md) | The Phase 0 pipeline specification: session DAG, briefs and execution rules | Historical record |
 | [templates/](templates/) | Templates for sessions, comparisons, conflicts, decisions and gates | Reusable |

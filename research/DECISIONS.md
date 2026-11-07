@@ -829,7 +829,7 @@ review_date: 2027-05-04
 prediction: "A stage spine for guidance, reference placed in its stage, one machine-readable data layer and generated indexes will let both people and AI agents reach any answer within two clicks of README.md, with one source of truth per fact."
 tags: [architecture, information-design, ai-readability, maintenance]
 authored_by: "Jetski (LLM assistant), at the owner's request"
-human_reviewed: false
+human_reviewed: true
 schema_version: "0.1.0"
 ---
 
@@ -896,7 +896,7 @@ review_date: 2027-05-04
 prediction: "Tracking releases via repository-level Git SemVer tags and CHANGELOG.md while tracking document freshness via last_verified and status will eliminate meaningless per-page version drift and manual incrementation."
 tags: [governance, versioning, semver, maintenance]
 authored_by: "Antigravity (LLM assistant), at the owner's request"
-human_reviewed: false
+human_reviewed: true
 schema_version: "0.1.0"
 ---
 
@@ -935,5 +935,222 @@ Phase 1 initially assigned ad-hoc version strings to individual documents (e.g. 
 
 > Fill this section ONLY during scheduled review or when the review_trigger fires.
 <!-- /DECISION: D-014 -->
+
+---
+
+<!-- DECISION: D-015 -->
+---
+id: D-015
+title: "Stack Map: Layers and Planes as a Work Footprint for Roles, Skills and Projects"
+status: accepted
+door_type: two-way
+date: 2026-11-05
+confidence: medium
+evidence_refs: [T0-03-KF1, T0-01-F4, T0-03-S4.1, T1-03-R2, T2-01-F5, T0-14-F3]
+informed_by_sessions: [T0-01, T0-03, T0-14, T1-03, T2-01]
+supersedes: null
+superseded_by: null
+amends: D-013
+review_trigger: "Job-description mining shows layer-specific demand or pay, or three or more role footprints are contested"
+review_date: 2027-05-04
+prediction: "A single map of where work sits, stored as data and rendered by generators, will help newcomers place every role and skill without creating a fifth role taxonomy or implying pay differences between layers."
+tags: [architecture, roles, taxonomy, navigation, ai-readability]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: true
+schema_version: "0.1.0"
+---
+
+# D-015: Stack Map: Layers and Planes as a Work Footprint
+
+## Context
+
+None of the repository's role groupings showed where in the technical stack a role's work sits: family is job function, the résumé variant is packaging, target clusters are job-search portfolios, and the CCI rank and target order are value rankings. A legacy handbook (outside the repository, unsourced) organised roles on a six-layer stack, which readers find intuitive. Its version had three defects: it put each title in one layer, although umbrella titles span several; it attached pay, job-share and value-capture figures to layers that our evidence contradicts (pay tracks employer tier and seniority, not application versus infrastructure work [B · T0-03 KF1]); and it filled layers with titles that the evidence shows are skills inside AI Engineer postings [A/B · T0-01 F4].
+
+## Decision
+
+1. **Model:** six layers (L1 compute and hardware, L2 foundation models and research, L3 inference and ML platforms, L4 post-training and adaptation, L5 orchestration and context, L6 applications and deployment) plus four cross-cutting planes (evaluation and quality; security, safety and governance; product and strategy; leadership and independent practice), defined once in `data/stack_model.json`.
+2. **Footprint:** every role in `data/role_scores.json` carries a work footprint (primary layer or none, secondary layers, planes, basis, Grade D), plus a one-line definition and its interview track. Cross-cutting roles have no primary layer; their home is a plane.
+3. **Skills and projects:** every skills-ontology category maps to exactly one layer, plane or the cross-cutting list; proof-of-work archetypes are placed by the categories of the skills they evidence (computed, Grade M).
+4. **Specialisations:** work the legacy handbook listed as separate titles (RAG engineer, context engineer, agent memory architect and others) is recorded as specialisations inside canonical roles, with each title's catalog status. No title becomes a canonical role without passing D-002's quorum and graduation tests.
+5. **Rendering and checks:** `scripts/build_role_map.py` renders `career/02-roles/role-map.md`; `scripts/build_role_hubs.py` renders one hub per role; `scripts/validate_docs.py` checks the model, every footprint and every specialisation.
+6. **Not a router, not a pay model:** directions are chosen by background (persona access) and interview track. No pay, demand or value-capture figure is published per layer.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Adopting the handbook's clusters as the role taxonomy:** rejected. It would add a fifth grouping and import titles without quorum.
+- **One layer per role:** rejected. Titles are not layers (the same error rule 7 of the ranked catalog forbids for skills).
+- **Layer economics (salary ceiling, job share, value capture):** rejected as contradicted or unmeasured [B · T0-03 KF1].
+
+## Failure Modes & Reversal Triggers
+
+- If three or more footprints are contested in review, simplify to the interview tracks.
+- If job-description mining (roadmap, research pipeline 2) shows layer-specific demand or pay, revisit the "no economics" rule with that evidence.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-015 -->
+
+---
+
+<!-- DECISION: D-016 -->
+---
+id: D-016
+title: "Legacy Handbook Policy and the Guide Pattern"
+status: accepted
+door_type: two-way
+date: 2026-11-05
+confidence: high
+evidence_refs: [T1-02-KF1, T0-14-F3, T0-13-F2]
+informed_by_sessions: [T1-02, T0-14, T0-13, T1-03]
+supersedes: null
+superseded_by: null
+amends: D-013
+review_trigger: "Review of the first stage guides written under the pattern"
+review_date: 2027-05-04
+prediction: "Presenting the repository's evidence in a consistent, action-first guide pattern will close the guidance gap in stages 01 and 04–11 without lowering the evidence standard."
+tags: [governance, writing, evidence, guides]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: true
+schema_version: "0.1.0"
+---
+
+# D-016: Legacy Handbook Policy and the Guide Pattern
+
+## Context
+
+An older GenAI career handbook, kept outside the repository and git-ignored, has strong structure and teaching formats (named frameworks, cards, templates, routers, contrast pairs) but unsourced and partly contradicted facts. Eight of the eleven stages in this repository had no guide.
+
+## Decision
+
+1. **The legacy handbook is never evidence.** It is never cited or linked, and no figure is copied from it. Only its formats may be adopted, and every fact placed in an adopted format comes from this repository's evidence with a grade and date. Formats that are standard practice but unmeasured are labelled [P].
+2. **Guide pattern.** Every new guide follows the pattern in CONTRIBUTING.md: a one-line promise, the short answer, an overview, named frameworks, steps with "done when" criteria, templates and examples, a checklist, pitfalls, evidence and limits, and next steps.
+3. **Teaching scope.** Interview and skills content gives practice prompts, what a strong answer covers and pointers to primary sources; it does not teach fundamentals (CHARTER, "What This Is Not").
+4. **Checks.** The validator rejects links to the legacy handbook and relative-time words, and requires every career document to link onward (no dead ends). A leak check against the handbook's distinctive figures runs before each release.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Importing the handbook's text and fixing it later:** rejected. Unsourced figures would enter published content.
+- **Full canonical answers for interview questions:** rejected for scope (charter) and decay (memorised banks are rejected by the evidence [T0-14 L146]).
+
+## Failure Modes & Reversal Triggers
+
+- If readers report the guides as too long to act on, shorten the pattern to the short answer, steps, templates and next steps.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-016 -->
+
+---
+
+<!-- DECISION: D-017 -->
+---
+id: D-017
+title: "Freshness Tracking: Review-By Dates and a Due Report"
+status: accepted
+door_type: two-way
+date: 2026-11-05
+confidence: medium
+evidence_refs: [T1-02-KF1, T1-02-KF3]
+informed_by_sessions: [T1-02]
+supersedes: null
+superseded_by: null
+amends: D-013
+review_trigger: "More than 20 documents carry review_by dates, or a claims registry becomes necessary for agent use"
+review_date: 2027-05-04
+prediction: "A document-level review_by date plus a due report will catch expiring volatile facts (tool statuses, pay, visa and regulatory status) at a fraction of the maintenance cost of a per-claim registry."
+tags: [governance, freshness, maintenance, evidence]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: true
+schema_version: "0.1.0"
+---
+
+# D-017: Freshness Tracking: Review-By Dates and a Due Report
+
+## Context
+
+EGP-1.0 gives volatile facts expiry classes (tool statuses and pay 90 days; visa and regulatory status 14–31 days). The roadmap planned a per-claim registry with `cNNNN` IDs and an expiry scanner. New guides in stages 04, 09 and 11 carry exactly those volatile facts. A per-claim registry is the most precise design, but for a single-author repository it multiplies the work of writing every guide.
+
+## Decision
+
+1. Documents with volatile facts carry an optional front-matter field `review_by`: the earliest date by which any of their volatile facts expires.
+2. Volatile facts in prose carry their own date ("as of 2026-10-23").
+3. `scripts/validate_docs.py` lists published documents past their `review_by` date under DUE FOR RE-VERIFICATION; `--strict` counts them as problems.
+4. The per-claim registry stays on the roadmap as a later option, to be built when agents need claim-level IDs or more than 20 documents carry review dates.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Per-claim registry now:** deferred, for the maintenance cost above.
+- **Failing CI on expiry:** rejected for the default run: an expiry date would break unrelated changes. The due report and `--strict` serve scheduled reviews.
+
+## Failure Modes & Reversal Triggers
+
+- If due documents accumulate unreviewed for more than one quarter, make `--strict` part of CI.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-017 -->
+
+---
+
+<!-- DECISION: D-018 -->
+---
+id: D-018
+title: "Evidence Conventions for the Stage Guides"
+status: accepted
+door_type: two-way
+date: 2026-11-06
+confidence: medium
+evidence_refs: [T1-02-KF3]
+informed_by_sessions: [T1-02, T0-06]
+supersedes: null
+superseded_by: null
+amends: D-017
+review_trigger: "The first human expert review of the stage guides finds a convention that misleads readers, or new research changes how a platform's data should be graded"
+review_date: 2027-05-06
+prediction: "Applying EGP-1.0's own grade, expiry and platform rules uniformly will keep the 31 stage guides consistent with each other and with the role and skills catalogs, so that a reader never sees the same figure carry two grades or two expiry dates."
+tags: [governance, evidence, freshness, grading]
+authored_by: "Jetski (LLM assistant), at the owner's request; approved by the owner on 2026-11-07"
+human_reviewed: true
+schema_version: "0.1.0"
+---
+
+# D-018: Evidence Conventions for the Stage Guides
+
+## Context
+
+Writing and fact-checking the 31 stage guides on 2026-11-05 and 2026-11-06 exposed four places where the repository's summaries of EGP-1.0 (T1-02) differed from the protocol, or where pages graded the same evidence differently:
+
+- README and CONTRIBUTING defined Grade E as "no evidence found after searching"; T1-02 §10.3.1 defines it as speculative, unverifiable or promotional, never asserted.
+- CONTRIBUTING, and D-017's context, paraphrased the expiry classes as "tool statuses and pay 90 days; visa and regulatory status 14–31 days". T1-02 §10.6 defines seven classes, among them posting counts at 31 days (V1) and pay medians at 180 days (V3), counted from the date a fact was last verified.
+- Some guides kept a session's Grade A for Levels.fyi, JobsPipe and Fast AI Jobs figures, while the role catalog (§1.3) and T1-02 L164 grade these platforms B.
+- The integration plan proposed two data files, `backgrounds.json` and `learning_resources.json`.
+
+## Decision
+
+1. **Grade E** follows T1-02 §10.3.1: speculative, unverifiable or promotional, or nothing found after searching. It is never asserted; it appears only as an attributed quotation with a warning, or as a reported absence.
+2. **Expiry follows T1-02 §10.6, counted from the date a fact was last verified:** V0 live status of contested policies and pending rules, 14 days; V1 monthly series such as live posting counts and posting indices, 31 days; V2 platform and product facts such as tool and credential statuses, prices and model names, 90 days; V3 market estimates such as pay medians and skill-demand shares, 180 days; V4 statute and rule text and annual datasets, 365 days; V5 foundations, 1,095 days; V6 dated history, no expiry. This repository re-verifies pay figures after 90 days, sooner than V3 requires. A page's `review_by` is the earliest expiry among the facts it states. A page may count from a dataset's own, older date to be conservative, and says so when it does. This amends the paraphrase in D-017's context; D-017's mechanism is unchanged.
+3. **Platform data are Grade B.** Figures from Levels.fyi, JobsPipe and Fast AI Jobs are graded B (a platform aggregate whose method is taken on trust), even where a session graded them A. US visa wage filings (LCA) are A for what was filed, never for what people earn.
+4. **Interview prep packs give practice prompts, what a strong answer covers and red flags, each with its source and grade, and no model answers** (CHARTER: the repository curates and does not teach). A prompt the research does not report is labelled and graded D.
+5. **Two proposed data files are not built.** `backgrounds.json` is unnecessary: the career-transitions guide carries the per-background skill deltas, and `scripts/gap_analysis.py` computes a person's own gaps. `learning_resources.json` is deferred: no GenAI course or bootcamp has outcome data that is not vendor-reported (T0-06 L203), so a curated list needs a stated rating method first (ROADMAP P2).
+6. **New guides are fact-checked before publication** by someone other than the author, figure by figure against the lines they cite. Figures that no source supports are removed or relabelled as judgement (D) or practice [P].
+
+## Rejected Alternatives & Tradeoffs
+
+- **Keep each session's own grades:** rejected. The same Levels.fyi figure would carry A on one page and B on another, and readers could not compare pages.
+- **One 90-day expiry for everything:** rejected. It overstates the life of posting counts (31 days) and understates the life of statute text (365 days); T1-02 rejects a single TTL (its alternative A5).
+- **Count expiry from each dataset's own date:** not mandated. It is the conservative reading, but it makes freshly verified pages due on the day they are published; pages may still choose it, and say so.
+
+## Failure Modes & Reversal Triggers
+
+- If a human expert review finds that grading platform data B hides a real difference in quality between sources, split the class (for example, primary platform pages opened by the researcher against search excerpts).
+- If posting counts cannot be refreshed monthly, state the count's date prominently on each page rather than lengthening the expiry.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-018 -->
 
 ---

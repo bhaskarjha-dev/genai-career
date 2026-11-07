@@ -21,6 +21,9 @@ scratch/
 # temp
 temp/
 
+# Personal data (self-assessments for scripts/gap_analysis.py, a master résumé inventory): never committed
+personal/
+
 # Phase 1 tooling
 site/
 node_modules/

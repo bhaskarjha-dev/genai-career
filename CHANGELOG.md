@@ -7,6 +7,58 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Every lifecycle stage now has its core guides. The structure of an older handbook informed some formats (decision D-016); every fact comes from the repository's own research. This release changes paths, a schema and data formats, so it is a minor version under D-014. Known issues at release are listed in `ROADMAP.md` §7, and two pages are due for re-verification: visa and relocation, and the market overview's pay snapshot.
+
+### Added
+- **Role map and stack model (D-015):** `data/stack_model.json` and its schema (six layers, four cross-cutting planes, the map from every skill category to a layer or plane, 26 specialisations inside roles); a definition, work footprint and interview track for every role in `data/role_scores.json`; `scripts/build_role_map.py` generates `career/02-roles/role-map.md`. The map shows where work sits; it is not a pay model.
+- **Role hubs:** one generated page per role (29) and an index in `career/02-roles/hubs/` (`scripts/build_role_hubs.py`), linking each role's numbers, skills, projects, interview pack, résumé block and track playbook.
+- **Stage 00, start-here tools:** the targeting workbook, the glossary and the tool catalog (`data/tools.json` and its schema; `scripts/build_tool_catalog.py`).
+- **Stage guides** in the guide pattern (D-016):
+  - 01: market overview, employer landscape, emerging roles;
+  - 03: learning roadmaps, agentic protocols;
+  - 04: credential ROI;
+  - 05: proof-of-work standards;
+  - 06: ATS mechanics, channels and boards, application operating system;
+  - 07: referrals and outreach, communities guide, online presence;
+  - 08: interview loops, system-design archetypes, behavioural calibration, coding rounds;
+  - 09: pay benchmarks, offer evaluation, negotiation playbook, India remote tax;
+  - 10: first 90 days, growth and progression;
+  - 11: career transitions, PhD to industry, India remote playbook, visa and relocation, freelance and fractional, governance careers.
+- **Generated views:**
+  - the skills radar and credentials by role (`scripts/build_skills_views.py`), with a register of devalued skills and what to learn instead in the ontology (T0-03 §4.3, §6.8.2);
+  - project archetype cards with minimal project sets (`scripts/build_archetypes.py`; `data/project_archetypes.json` format 1.1 with problem, build steps, evidence, verifiability target, effort, compute, interview archetypes, pitfalls and sources, plus a schema);
+  - interview prep packs (`data/interview_prompts.json` and its schema; `scripts/build_prompts.py`).
+- **Personal gap analysis:** `scripts/gap_analysis.py` compares your 0–3 self-ratings with several target roles and prints gaps, priorities and the projects that would evidence them; `personal/` is git-ignored for such files.
+- **Decisions:** D-015 (stack map), D-016 (legacy-handbook policy and the guide pattern), D-017 (review-by dates and a due report), D-018 (evidence conventions for the stage guides).
+- **`ROADMAP.md` §7, known issues and follow-ups:** candidate errata to verify, grading edge cases, checks against primary sources, and data that need refreshing.
+- **Errata U13–U26:** a retired AWS certification in T2-01, conflicting India tier bands, FAD's repeat of U12, FAD's ATS "parser bypass" plan and Jobscan, FAD's interview-platform list, FAD's "PhD skips stage 03", T2-01's dollar conversion of the India tax dead zone, D-004's unmeasured ">80% of postings" tier thresholds, T2-01's misread onboarding statistics, D-007's wrong T0-08 finding numbers, T2-01's UK hourly-rate range, T1-03's funnel stage rates against T0-04, T0-06's leisure-share range and T1-03's count of Anthropic infrastructure reports.
+- **Front matter:** `content_type: tool` and an optional `review_by` date.
+- **Validator:** writing rules (relative-time words outside quotes and code; any reference to the legacy handbook, and its signature phrases outside quotes and code, in the documents and the data files), a dead-end check, the guide-pattern headings (D-016), the stack-model checks, every new generator's `--check`, a list of pages past their `review_by` date (`--strict` counts them as problems), and `--files` for checking single documents.
+
+### Changed
+- **Start Here** (`career/README.md`): routes by situation (eleven situations) and by question, shows the map of the field, defines the five role labels once, gives the stage status and paths for five researched backgrounds (with modelled times) plus three provisional ones.
+- **Stage READMEs 01–11:** list the new documents; record the merges (visa and regulated careers into stage 11, unconventional tactics into referrals and outreach) and the renaming of the planned compensation ladder to pay benchmarks.
+- **`AGENTS.md`:** the folder-to-funnel stage map, sources of truth for the new data files and generators, freshness rules, the D-016 legacy rule, the D-018 conventions, the validator's options, and a pointer to the pending work in ROADMAP §4–§7. **`CONTRIBUTING.md`:** placement (stage 00, role facts in data), front matter, the writing standard with the P grade, the guide pattern, the generators table, and the steps before finishing, including an independent fact-check of new guides.
+- **`README.md`, `ROADMAP.md`, `research/README.md`, `data/README.md`, `scripts/README.md`:** updated for full stage coverage, the remaining research gaps, the maintenance calendar and the open decisions.
+- **`scripts/target_roles.py`:** `--update` writes the GenAI target order into the skills ontology and `--check` verifies it and the target-roles table.
+- **Skills ontology format 1.1:** adds the devalued-skills register, validated by `build_skills.py`.
+- **Role catalog:** the registry's family labels match `data/role_scores.json`; every profile links to its hub; the catalog, rankings and target roles point to the hubs and the role map.
+- **`llms.txt` and the manifest:** a stage 00 section, the hubs grouped under Optional, and the new data files.
+- **Skill maps:** role headings read "CCI rank #N", and inventory links use the `inventories/` path.
+- D-013 to D-018 are marked as human-reviewed: the owner approved D-013 and D-014 on 2026-11-05 and D-015 to D-018 on 2026-11-07.
+- **`CONTRIBUTING.md` §3** states EGP-1.0's time-to-live classes as T1-02 §10.6 defines them (posting counts 31 days, tool statuses 90 days, pay medians 180 days, with pay re-verified here after 90), and the rule that Levels.fyi, JobsPipe and Fast AI Jobs data are Grade B; the guides' `review_by` dates and platform grades follow them.
+- **Fact-check:** 13 independent agents checked 4,829 claims in the new guides against their cited session lines and made 234 fixes; a script cross-checked every figure against the lines each page cites.
+- **Leak check (D-016):** on 2026-11-07 a script compared the legacy handbook with the repository's published content. No figure that appears only in the handbook, and none of its prose, appears in the content. The overlaps it found are standard terms (a stock-option definition, the public X-Y-Z résumé pattern, TTFT and TPOT), two FAD and T0-17 pay bands written in a different format, and job titles that the v0.1.0 catalog already classified. The stack map's layer order follows the handbook's six-layer stack by design, as its basis states. The validator keeps the handbook's signature phrases as canaries, so the check no longer needs the handbook.
+
+### Fixed
+- The FDE pay contradiction: the catalog and the rankings said the corpus had no FDE pay data, while both quoted a measured posted base of $180–248K (n=304) [B · T0-03]. Both now say that FDE has posted base pay only and no total-compensation data.
+- "a AI" in the generated inventory headers.
+- Grade E in `CONTRIBUTING.md` and `README.md` now matches EGP-1.0 (T1-02 §10.3.1): speculative, unverifiable or promotional, or nothing found; never asserted.
+- A relative-time word in `CHARTER.md`.
+- The job-search strategy's `generated_by` now marks it as a file with generated blocks.
+- The role catalog's Voice AI entry now gives both of T0-14's attributions (Meta's ML pool and a multi-company question pool) instead of Meta alone.
+- Project archetype P2's verifiability target is V1 with a 30-day operations log, as reference spec R2 sets it (T0-13 L275), not V3; the archetype data and page carry a `review_by` date for their dollar caps.
+
 ## [0.1.0] - 2026-11-04
 
 First development release: the Phase 0 evidence base and the Phase 1 foundation.

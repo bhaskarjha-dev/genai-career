@@ -109,7 +109,7 @@ The project succeeds when:
 
 - **Temporal anchor: October 2026.** All current findings reflect late-2026 ground truth. Content from earlier periods is valid only where explicitly marked as historical or where the underlying fact has not changed.
 - **Global breadth, India depth.** The repository is globally applicable but provides unmatched tactical depth for India-based professionals — reflecting both the author's context and the complexity of India's cross-border compensation, tax, and immigration landscape.
-- **Single-author capacity.** The repository is currently maintained by one person. Architectural decisions must account for this constraint. Automation is preferred over manual process wherever the scale justifies it.
+- **Single-author capacity.** The repository is maintained by one person (as of November 2026). Architectural decisions must account for this constraint. Automation is preferred over manual process wherever the scale justifies it.
 - **Not legal, tax, or financial advice.** The repository documents regulatory landscapes and tax structures for informational purposes. Users must consult qualified professionals for their specific circumstances.
 
 ---

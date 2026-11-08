@@ -17,9 +17,9 @@ tags: [interviewing, behavioural, star-ai, story-bank, competencies, hiring-comm
 
 > How behavioural rounds are scored in GenAI hiring, the four competencies that decide them, and how to build a STAR-AI story bank that survives a round where one No Hire can veto the loop.
 
-**Dates.** Firm practices are as reported in [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md), dated 2026-10-25, which takes its level signals from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md). Re-verify the firm rows by 2027-01-23. [ERRATA](../../research/ERRATA.md) lists two corrections to T1-03: U14 (India pay bands) and U24 (funnel stage rates). Neither touches the behavioural material used here; the onsite-to-offer figure under Evidence and limits carries T0-04's rate beside T1-03's.
+**Dates.** Firm practices are as reported in [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md), dated 2026-10-25, which takes its level signals from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md). Re-verify the firm rows by 2027-01-23. [ERRATA](../../research/ERRATA.md) lists these corrections to T1-03: U14 (India pay bands), U24 (funnel stage rates) and U26 (the count behind the infrastructure track). None touches the behavioural material used here; the onsite-to-offer figure under Evidence and limits carries T0-04's rate beside T1-03's.
 
-**Grades** (EGP-1.0): A primary or measured; B transparent secondary; C coaching, vendor or single source; D judgement; E searched, nothing found; M model output or count; P practice-curated and unmeasured. A compound grade such as B/C rests on both; rely on the weaker.
+**Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary; C coaching, vendor or single source; D judgement; E searched, nothing found; M model output or count; P practice-curated and unmeasured. A compound grade such as B/C rests on both; rely on the weaker.
 
 ## The short answer
 
@@ -81,7 +81,7 @@ Source: [B/C · T1-03 L206–212], from web research. T1-03 covers these three f
 
 ### Level signal: Senior versus Staff
 
-T0-14's level table is for system design, and its AI-specific evidence is thin [B/C · T0-14.F10]. The last column is our adaptation to behavioural stories [D].
+T0-14's level table is for system design, and its AI-specific evidence is thin [B/C · T0-14.F10]; the full table, with nine dimensions and a Principal column, is in [system design archetypes](system-design-archetypes.md#senior-staff-and-principal-signals). This page uses five of its dimensions, and the last column is our adaptation to behavioural stories [D].
 
 | Dimension | Senior signal | Staff signal | How it shows in a story [D] |
 |---|---|---|---|
@@ -95,29 +95,14 @@ Source: [B/C · T0-14 L776–786]. A Staff AI Engineer job description cited by 
 
 ### The twelve high-yield questions
 
-T1-03's bank, with what the interviewer listens for [B/C/D · T1-03 L189–204]. The last column points to the example story-bank matrix in the templates [P].
-
-| # | Question | Competency | A strong answer covers | Bank slot |
-|---|---|---|---|---|
-| B1 | "Tell me about a time your model failed catastrophically in production. How did you detect it?" | C1, C3 | Detection through alerts, not a customer complaint; root-cause discipline; a postmortem artefact | S1 |
-| B2 | "How do you explain hallucination risks to an executive demanding 100% accuracy?" | C2 | Translation; proposing guardrails, confidence thresholds and fallbacks rather than over-promising | S3 |
-| B3 | "Describe a scenario where you chose a simple heuristic over an LLM." | C1 | Cost-awareness; knowing when not to use the expensive tool | S2 |
-| B4 | "Tell me about a project where the data was severely bottlenecked, biased, or missing labels." | C1 | Proxy labels, active learning, human-in-the-loop, scoping to the available data | S6 |
-| B5 | "Give an example of when you caught a potential bias, privacy leak, or safety hazard in a model output." | C4 | The escalation path; a concrete action, not just "I flagged it"; a systemic fix | S4 |
-| B6 | "Describe a time you shipped a feature with known model limitations. How did you communicate the risk?" | C2, C4 | Honest framing to stakeholders; a risk-acceptance framework; a monitoring plan | S3, S4 |
-| B7 | "Tell me about the most expensive compute mistake you've made." | C1, C3 | Quantification; root cause; systemic prevention such as budget alerts and experiment tracking | S1, S2 |
-| B8 | "How did you handle disagreement with a PM or executive about whether to ship a GenAI feature?" | C2 | Data-driven pushback; a pilot or rollback proposal; the relationship preserved | S3 |
-| B9 | "Describe a time you had to re-architect a system mid-project because the model's behaviour changed." | C1 | Adaptability; prompt and model versioning; eval-gated rollout | S6 |
-| B10 | "Tell me about a time you had to shut down or roll back a deployed AI feature." | C3, C4 | Speed of response; blast-radius analysis; stakeholder communication | S1, S4 |
-| B11 | "How do you evaluate whether an LLM-based feature is actually working in production?" | C1 | Offline golden set, online sampling, human calibration, A/B tests, ties to business metrics | S5 |
-| B12 | "Describe a system you built where the evaluation was harder than the feature itself." | C1 | Recognising that the eval can be harder than the feature; grader design; contamination management | S5 |
+T1-03's bank of twelve questions, B1–B12 [T1-03 L189–204], is in the [behavioural pack](prep-packs.md#behavioural-pack) as prompts p042 to p053, in the same order (B1 is p042, B12 is p053), each with the competencies it probes, what a strong answer covers and the red flags. The [story-bank matrix](#story-bank-matrix-p) below gives every question a story slot.
 
 Some loops also run a project deep dive (Anthropic, OpenAI and Uber); OpenAI's works like a reverse design interview [B/C · T0-14 L554]. T0-14 suggests rehearsing two systems with numbers and rollbacks (synthesis) [D · T0-14 L554]. Your S1 and S5 stories can double as that material [P].
 
 ## How to build the bank
 
 1. **Confirm the format.** Ask the recruiter which round is behavioural and what the firm calls it: a values round, G&L or core values [P]. *Done when* you can name the behavioural round in each loop and the framework behind it.
-2. **Mine for raw stories.** Use B1–B12 as prompts, plus four situations from T0-09's onboarding research (using them as story prompts is [P]):
+2. **Mine for raw stories.** Use B1–B12 ([behavioural pack](prep-packs.md#behavioural-pack)) as prompts, plus four situations from T0-09's onboarding research (using them as story prompts is [P]):
    - starting with no usable data, which T0-09 found is a common starting state, not an exception [B · T0-09.F4] → B4;
    - quantifying non-determinism, which T0-09 finds measurable and partly fixable by engineering [A · T0-09.F6] → B9, B11;
    - a small regression eval suite built from real failures, or a measured cost cut, the two quick wins with independent support [A · T0-09.F10] → B7, B11, B12;
@@ -129,7 +114,7 @@ Some loops also run a project deep dive (Anthropic, OpenAI and Uber); OpenAI's w
 5. **Add level signal.** *Done when* each story says what you gave up and whether the decision was reversible, and, for Staff loops, at least one story shows work other teams used [B/C · T0-14.F10; C · T0-14 L774].
 6. **Veto-proof each story for the target firm.** Read it against the firm's triggers above. *Done when* no story blames a person, a team or a model provider; at least one story admits a mistake and what you changed; and, for Meta, every story leads with shipped impact [P, built on B/C · T1-03 L210–212].
 7. **Rehearse aloud, then mock.** Tell each story without notes. Then have a partner choose the question and add three follow-ups: "What would you do differently?", "How did you know it worked?" and "What would have changed your mind?" [P]. *Done when* you can answer all three for every story.
-8. **Debrief after every mock and every real round.** Use the 30-minute debrief below, then update the bank [D · T1-03 L236–246]. *Done when* every round has a debrief entry and every gap has a dated action.
+8. **Debrief after every mock and every real round.** Use the 30-minute debrief in [interview loops](interview-loops.md#debrief-within-30-minutes-of-each-round), with the behavioural additions below, then update the bank [D · T1-03 L236–246]. *Done when* every round has a debrief entry and every gap has a dated action.
 
 ## Templates and examples
 
@@ -208,17 +193,9 @@ Illustrative pairs built from T1-03's anchors. Bracketed values are placeholders
 
 ### The 30-minute debrief
 
-Run it straight after every round [D · T1-03 L238–246]. No controlled study shows that it improves pass rates [C/D · T1-03.F12].
+Run T1-03's five-step debrief straight after every round, with the template in [interview loops](interview-loops.md#debrief-within-30-minutes-of-each-round) [D · T1-03 L238–246]. No controlled study shows that it improves pass rates [C/D · T1-03.F12].
 
-| Step | Time | What to capture | Format |
-|---|---|---|---|
-| 1. Exact questions | 5 min | Every question, verbatim or as close as you can | Bullet list |
-| 2. Your answers | 10 min | What you said, including the numbers and trade-offs you stated | Narrative |
-| 3. Interviewer reactions | 5 min | Where they probed, nodded, looked sceptical or redirected | Annotate the answers |
-| 4. Knowledge gaps | 5 min | What you did not know, or hand-waved | Tag each: [formula], [concept], [tool], [trade-off] |
-| 5. Iteration plan | 5 min | What to study and by when; update the story bank if a behavioural gap emerged | Actions with deadlines |
-
-For behavioural rounds, also note which competency each question probed, which story you used and which follow-up you struggled with [P]. Across loops, track the date and firm, the round type, the questions asked, a 1–5 self-assessment per scored dimension, the gaps and the outcome if known [D · T1-03 L250–257]. For C1–C4, rate yourself against the 4/2/1 anchors [P].
+For behavioural rounds, also note which competency each question probed, which story you used and which follow-up you struggled with, and rate yourself on C1–C4 against the 4/2/1 anchors [P]. Log every round in the Interviews tab of the [application operating system's tracker](../06-job-search/application-operating-system.md#the-tracker-fill-in-schema) [D · T1-03 L250–257].
 
 ## Checklist
 
@@ -271,7 +248,7 @@ For behavioural rounds, also note which competency each question probed, which s
 - [Interview loops](interview-loops.md): where the behavioural round sits in each loop.
 - [Prep packs: behavioural pack](prep-packs.md#behavioural-pack): practice prompts.
 - [Coding rounds](coding-rounds.md) and [system design archetypes](system-design-archetypes.md): the technical rounds in the same loop.
-- [Role skill maps](../03-skills-and-tech/role-skill-maps.md): §1.2 lists these four competencies for every GenAI loop.
+- [Role skill maps](../03-skills-and-tech/role-skill-maps.md): each role's interview track, practice notes and typical gaps, to aim your stories at the role.
 - [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md): artefacts that make a story checkable.
 - [Offer evaluation](../09-compensation/offer-evaluation.md) and [negotiation playbook](../09-compensation/negotiation-playbook.md): what comes after the loop.
 - [First 90 days](../10-onboarding/first-90-days.md): the work that becomes your next stories.

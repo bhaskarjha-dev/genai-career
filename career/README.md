@@ -19,7 +19,7 @@ This folder is the user-facing half of the repository. It follows the career lif
 
 | Your situation | Read first | Then |
 |---|---|---|
-| **Exploring:** is GenAI work for you, and which roles exist? | [Role map](02-roles/role-map.md), then [market overview](01-landscape/market-overview.md) | [GenAI target roles](02-roles/genai-target-roles.md) → [targeting workbook](00-start/targeting-workbook.md) |
+| **Exploring:** is GenAI work for you, and which roles exist? | [GenAI target roles](02-roles/genai-target-roles.md), then the [role hubs](02-roles/hubs/README.md) of the roles that interest you | [Role map](02-roles/role-map.md) and [emerging roles](01-landscape/emerging-roles.md) → the evidence: [role catalog](02-roles/role-catalog.md) and [role rankings](02-roles/role-rankings.md) → [targeting workbook](00-start/targeting-workbook.md). For the market as a whole, the [market overview](01-landscape/market-overview.md) |
 | **Switching** from another technical role | [Career transitions](11-tracks/career-transitions.md): the roadmap for your background | [Targeting workbook](00-start/targeting-workbook.md) → [learning roadmaps](03-skills-and-tech/learning-roadmaps.md) → [project archetypes](05-portfolio/project-archetypes.md) |
 | **Student or new graduate** | [Career transitions](11-tracks/career-transitions.md) (the provisional student route) and [proof-of-work standards](05-portfolio/proof-of-work-standards.md) | [Targeting workbook](00-start/targeting-workbook.md) → [referrals and outreach](07-networking/referrals-and-outreach.md) |
 | **Interviews scheduled** | [Interview loops](08-interviewing/interview-loops.md): classify your loop first | [System design](08-interviewing/system-design-archetypes.md), [behavioural](08-interviewing/behavioral-calibration.md), [coding rounds](08-interviewing/coding-rounds.md), [prep packs](08-interviewing/prep-packs.md) |
@@ -35,11 +35,11 @@ This folder is the user-facing half of the repository. It follows the career lif
 
 | If you want to know… | Go to |
 |---|---|
-| Where each role's work sits, from GPUs to applications | [Role map](02-roles/role-map.md) |
-| Everything about one role on one page | [Role hubs](02-roles/hubs/README.md) |
-| Which GenAI roles exist, and which titles are real | [Role catalog](02-roles/role-catalog.md) and [emerging roles](01-landscape/emerging-roles.md) |
-| Which roles are best, with uncertainty, and for whom | [Role rankings](02-roles/role-rankings.md) |
 | Which roles to target, in what order | [GenAI target roles](02-roles/genai-target-roles.md), then the [targeting workbook](00-start/targeting-workbook.md) |
+| Everything about one role on one page | [Role hubs](02-roles/hubs/README.md) |
+| Where each role's work sits, from GPUs to applications | [Role map](02-roles/role-map.md) |
+| Which GenAI roles exist, and which titles are real | [Role catalog](02-roles/role-catalog.md) and [emerging roles](01-landscape/emerging-roles.md) |
+| How roles rank on the evidence across all demand, with uncertainty and lenses for your background | [Role rankings](02-roles/role-rankings.md) |
 | Which kinds of employer hire, and how they differ | [Employer landscape](01-landscape/employer-landscape.md) |
 | What to learn first, and what to stop learning | [Skills radar](03-skills-and-tech/skills-radar.md) and [learning roadmaps](03-skills-and-tech/learning-roadmaps.md) |
 | Everything a role needs, with priority and evidence | [Role skill inventories](03-skills-and-tech/role-skill-inventories.md) (one file per role) |
@@ -68,17 +68,11 @@ The [role map](02-roles/role-map.md) places every role, specialisation and proje
 
 ## 4. How roles are organised
 
-Five labels recur across the repository. Each is defined once:
+Five labels recur on role pages: a role's **family**, its **work footprint** on the map above, its **résumé variant**, its **GenAI target number** and its **CCI rank**. The [glossary](00-start/glossary.md) defines each and links the page that owns it.
 
-| Label | What it tells you | Defined in |
-|---|---|---|
-| **Family** | The catalog's grouping of related roles, for example Applied AI Engineering | [Role catalog §2](02-roles/role-catalog.md#2-canonical-role-registry) |
-| **Work footprint** | The layer where most of a role's work sits, the other layers it touches, and its planes | [Role map](02-roles/role-map.md) |
-| **Résumé variant** | The skill-based résumé family a role shares (A–E for IC roles, L for leadership) | [Résumé skills matrix](06-job-search/resume-skills-matrix.md) |
-| **GenAI target number** | The role's place in the GenAI-only target order (#1–#24) | [GenAI target roles](02-roles/genai-target-roles.md) |
-| **CCI rank** | The role's rank on the evidence-weighted Composite Career Index across all demand (#1–#24; leadership L1–L5) | [Role rankings](02-roles/role-rankings.md) |
-
-The two numbers differ by design: the target order counts GenAI demand only.
+The two numbers rank different things, by design. Both are model outputs [M]:
+- The **Composite Career Index (CCI)** in the [role rankings](02-roles/role-rankings.md) scores each role on all of its demand, GenAI or not, together with pay, durability, leverage and access. Machine Learning Engineer comes first.
+- The **GenAI target order** in [GenAI target roles](02-roles/genai-target-roles.md) counts GenAI work only. AI Engineer comes first.
 
 ## 5. Follow the lifecycle
 
@@ -101,32 +95,13 @@ The two numbers differ by design: the target order counts GenAI demand only.
 
 ## 6. Paths by background
 
-Five backgrounds have their own research-backed roadmap in [career transitions](11-tracks/career-transitions.md). The modelled time to a first offer assumes 15–20 hours a week and is a model output with low confidence, conditional on success [M · T0-06 R2]:
-
-| Background | Modelled time to first offer | Start with |
-|---|---|---|
-| Backend or systems engineer (5+ years) | ~6 months (3.5–8) | [AI Engineer](02-roles/hubs/ai-engineer.md) or [Applied AI Engineer](02-roles/hubs/applied-ai-engineer.md) |
-| Data scientist / BI analyst | ~8 months (5–11) / ~11 months (7–15) | [AI Engineer](02-roles/hubs/ai-engineer.md) with an evaluation edge; [AI Evaluation Engineer](02-roles/hubs/ai-evaluation-engineer.md) |
-| Frontend or full-stack engineer | ~7 months (5–11) | [AI Product Engineer](02-roles/hubs/ai-product-engineer.md) or [AI Engineer](02-roles/hubs/ai-engineer.md) |
-| Non-technical, 5+ years in a domain (AI-adjacent roles) | ~7 months (5–11); ~22 months (15–34) for an engineering role from zero code | [AI Product Manager](02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist](02-roles/hubs/domain-evaluation-specialist.md), [AI Governance Lead](02-roles/hubs/ai-governance-lead.md) |
-| PhD who can code | ~8 months (5–12.5) | [PhD to industry](11-tracks/phd-to-industry.md); [Research Engineer](02-roles/hubs/research-engineer.md), [Applied Scientist](02-roles/hubs/applied-scientist.md) |
-
-Three more starting points have no dedicated research yet. [Career transitions](11-tracks/career-transitions.md) gives provisional routes for them, labelled [P]: DevOps or SRE engineers (toward [ML Platform](02-roles/hubs/ml-platform-engineer.md) and [AI Infrastructure](02-roles/hubs/ai-infrastructure-engineer.md)), product managers (toward [AI Product Manager](02-roles/hubs/ai-product-manager.md)) and students or new graduates.
+[Career transitions](11-tracks/career-transitions.md) gives five backgrounds (backend or systems, data science or BI, frontend or full-stack, non-technical, PhD) a research-backed roadmap each: the roles to start with, the modelled time to a first offer (a low-confidence model output, conditional on success [M · T0-06 R2]) and the gates G1–G4. It also gives provisional routes, labelled [P], for three starting points without dedicated research: DevOps or SRE engineers, product managers, and students or new graduates.
 
 **By geography:** India-based readers should add the India lens in the [role rankings](02-roles/role-rankings.md), the [India remote playbook](11-tracks/india-remote-playbook.md) and the India sections of [pay benchmarks](09-compensation/pay-benchmarks.md).
 
 ## 7. How to read the evidence
 
-| Tag | Meaning |
-|---|---|
-| **A, B** | Measured or primary evidence |
-| **C** | Small sample, vendor or practitioner evidence (attributed) |
-| **D** | Judgement |
-| **M** | A model output computed from graded inputs |
-| **[JD x%]** | Share of live job postings that name the item |
-| **[S · T0-xx]** | Named in a research session |
-| **[P]** | Practice-curated: standard in the field but unmeasured, so check it against live postings |
+Every claim carries a grade and a source, as in [B · T0-04.F10]: A and B are measured or primary evidence, C is attributed vendor, small-sample or practitioner evidence, D is judgement, M is a model output, and [P] marks practice-curated items that no session measured. [CONTRIBUTING §3](../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief) defines the grades; the [glossary](00-start/glossary.md#1-evidence-and-method) defines the evidence tags, such as [JD x%] and [S · T0-xx], and every acronym used here.
 
-- **Dates matter.** Figures are as of their stated dates. Pages with volatile facts (tool statuses, pay, visas, tax) carry a `review_by` date in their front matter.
-- **Terms:** the [glossary](00-start/glossary.md) defines every acronym used here.
-- **The full standard** is EGP-1.0 ([T1-02](../research/sessions/T1-02-evidence-grounding-protocol.md)); [CONTRIBUTING.md](../CONTRIBUTING.md) summarises it.
+- **Dates matter.** Figures are as of their stated dates. Pages with volatile facts (tool statuses, pay, posting counts, visas, tax) carry a `review_by` date in their front matter.
+- **The full standard** is EGP-1.0 ([T1-02](../research/sessions/T1-02-evidence-grounding-protocol.md)).

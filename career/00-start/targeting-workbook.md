@@ -24,8 +24,8 @@ tags: [targeting, self-assessment, constraints, pay-floor, shortlist, expanding-
 1. **Measure before you choose.** Score yourself 0–3 on twelve readiness skills (S1–S12), with evidence for every score. Your two or three largest gaps set the first 90 days [M · T0-06 D9].
 2. **Constraints bind before skills.** Pick an hours tier you can keep: a 17.5-hour week (Tier B) uses 56–74% of an employed adult's average leisure in US time-use data [A data, M derivation · T0-06 KF-10]. If logged hours fall below 70% of plan for three weeks in a row, move to the next-longer timeline rather than push harder [M · T0-06 R1.4].
 3. **Filter, then rank.** Park any role that fails a hard constraint (hours and horizon, location, work authorisation, pay floor, risk). Rank the rest by access from your background, market position and your readiness on the role's Must skills [P scheme; inputs D and M].
-4. **Check pay against measured, level-matched anchors, never tier bands.** The tier bands in the Phase 0 records are unmeasured or mis-sourced ([ERRATA](../../research/ERRATA.md) U4, U5, U7, U14). Use Levels.fyi median total compensation instead: US Senior ≈ $312K (2025 figures); Bengaluru Senior software engineer ≈ ₹56.0L (October 2026) [B · T0-17 KF3, KF4].
-5. **Sequence in rings, one company at a time.** One primary family first (one résumé family, one or two flagship projects, one interview track), adjacent families next, stretch roles only once their proof exists [D · job-search strategy §2.7]. Apply once per company per cycle [C · T0-10].
+4. **Check pay against measured, level-matched anchors, never tier bands.** The tier bands in the Phase 0 records are unmeasured or mis-sourced ([ERRATA](../../research/ERRATA.md) U4, U5, U7, U14). Use the Levels.fyi medians by level, title and city in [pay benchmarks](../09-compensation/pay-benchmarks.md) instead, matched to your population, level and location [B · T0-17 KF3, KF4].
+5. **Sequence in rings, one company at a time.** One primary family first (one résumé family, one or two flagship projects, one interview track), adjacent families next, stretch roles only once their proof exists [D · job-search strategy, expanding rings]. Apply once per company per cycle [C · T0-10].
 6. **Commit for 90 days and judge by the gate.** One route, one hours tier. At Tier B, the day-90 test is G1, a measured v0, not hours logged or courses finished [M · T0-06 R0, D3].
 
 ## At a glance
@@ -49,11 +49,11 @@ flowchart TD
 | Step | You produce | Built from |
 |---|---|---|
 | 1 Starting point | Background, level and years; the persona column that applies | [T0-06 R2](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#r2-per-archetype-recommendation-and-modeled-time-to-first-offer) and its level mapping |
-| 2 Readiness | Twelve scores with evidence; three largest gaps; three fast tests | [T0-06 D9](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d9-skills-diagnostic-matrix-and-three-fast-tests); [skills catalog §1.1](../03-skills-and-tech/role-skill-maps.md#11-twelve-skill-readiness-rubric-t0-06-target-levels-for-an-ai-engineer-role); T0-13 verifiability ladder |
+| 2 Readiness | Twelve scores with evidence; three largest gaps; three fast tests | [T0-06 D9](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d9-skills-diagnostic-matrix-and-three-fast-tests); [role skill maps §1.1](../03-skills-and-tech/role-skill-maps.md#11-twelve-skill-readiness-rubric-t0-06-target-levels-for-an-ai-engineer-role); T0-13 verifiability ladder |
 | 3 Constraints | Hours tier, horizon, pay floor, location, work authorisation, risk | T0-06 KF-10, R1.4, R2; [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) KF3–KF4; [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md) |
 | 4 Long-list | 5–8 candidate roles with their hubs read | [GenAI target roles §5](../02-roles/genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses); [role map](../02-roles/role-map.md); role hubs |
 | 5 Shortlist score | Gate results and 0–9 points per role | [Role rankings A.2](../02-roles/role-rankings.md#a2-persona-access-scores-inputs-to-the-access-pillar-and-the-persona-lenses); GenAI target order; role inventories |
-| 6 Rings | Rings 1–3 and parked roles | [Job-search strategy §2.7](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings); [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md); T0-06 R1 |
+| 6 Rings | Rings 1–3 and parked roles | [Job-search strategy: expanding rings](../06-job-search/job-search-strategy.md#recommended-sequencing-expanding-rings); [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md); T0-06 R1 |
 | 7 90-day plan | Weekly plan, hours log, G1 date, slip rules | [T0-06 R3](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#r3-what-to-do-in-the-next-14-days), [D2](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d2-weekly-hours-versus-pivot-duration-the-model), [D3](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d3-the-shared-milestone-spine-g1-g4) |
 
 ## How to do it
@@ -92,9 +92,9 @@ Source: T0-06 R2 [M].
 
 ### Step 2. Score your readiness on S1–S12
 
-The rubric is T0-06's twelve-skill diagnostic, reproduced in the [skills catalog §1.1](../03-skills-and-tech/role-skill-maps.md#11-twelve-skill-readiness-rubric-t0-06-target-levels-for-an-ai-engineer-role). The scale runs 0–3: 0 none · 1 tutorial-level awareness · 2 built and shipped something small with feedback · 3 owns it in production or could teach it.
+The rubric is T0-06's twelve-skill diagnostic, reproduced in the [role skill maps §1.1](../03-skills-and-tech/role-skill-maps.md#11-twelve-skill-readiness-rubric-t0-06-target-levels-for-an-ai-engineer-role). The scale runs 0–3: 0 none · 1 tutorial-level awareness · 2 built and shipped something small with feedback · 3 owns it in production or could teach it.
 
-Give each score an evidence entry on the [verifiability ladder](../03-skills-and-tech/role-skill-maps.md#13-proof-of-work-by-tier-t2-01-kf9-t0-13): V0 self-asserted, V1 reproducible, V2 externally attested, V3 operationally evidenced [T0-13]. Treat a 2 or 3 backed only by V0 as a claim to test, not a score [P].
+Give each score an evidence entry on the [verifiability ladder](../05-portfolio/proof-of-work-standards.md#the-verifiability-ladder-and-the-level-model): V0 self-asserted, V1 reproducible, V2 externally attested, V3 operationally evidenced [T0-13]. Treat a 2 or 3 backed only by V0 as a claim to test, not a score [P].
 
 | # | Skill | Target (AI-engineer role) | You (0–3) | Evidence (link, V0–V3) | Gap |
 |---|---|:---:|:---:|---|:---:|
@@ -113,6 +113,7 @@ Give each score an evidence entry on the [verifiability ladder](../03-skills-and
 
 - Targets are T0-06's levels for an AI-engineer role [M · T0-06 D9]. Compute each gap against the low end of a range.
 - For any other role, use the role's own self-assessment: every [role inventory](../03-skills-and-tech/role-skill-inventories.md) has a table for its Must skills (target 3) and Important skills (target 2) on the same scale, for example [AI Engineer §7](../03-skills-and-tech/inventories/ai-engineer.md#7-self-assessment-must-and-important). Its targets are judgement [D]. Step 5 uses it.
+- **To rate yourself against several roles at once,** run [scripts/gap_analysis.py](../../scripts/gap_analysis.py). It prints a rating template from your target roles' tiered skills; once you have filled in your 0–3 ratings, it prints each role's coverage of its Must and Important skills, the gaps to close first across all your targets, and the project archetypes that would evidence the most of them. Its target levels are the same judgement [D]. Keep the rating file in the git-ignored `personal/` folder; usage is in the [Stage 00 index](README.md#personal-tool-skill-gap-analysis).
 
 **Calibrate against your background.** T0-06's hypotheses for the largest gaps [M · Grade D]:
 
@@ -146,7 +147,7 @@ T0-06's finding is that hours, not compute, are the binding constraint [A data, 
 | B | 15–20 (17.5) | 0.75 | 13.1 | Employed and disciplined; the central planning case | 56% / 74% |
 | C | 35–40 (38) | 0.85 | 32.3 | Sabbatical, notice period, bench time or a full-time programme | 121% / 160%: not possible alongside full-time work |
 
-Tiers and parameters are T0-06's model [M · D2]. The leisure shares divide each tier by the BLS American Time Use Survey 2025 averages for employed US adults [A data, M derivation · KF-10]. They are a plausibility check, not your capacity.
+Tiers and parameters are T0-06's model [M · D2]. The leisure shares divide each tier by the BLS American Time Use Survey 2025 averages for employed US adults [A data, M derivation · KF-10]. They are a plausibility check, not your capacity. [Career transitions](../11-tracks/career-transitions.md) owns this model, with its gates and a roadmap for each background; this workbook repeats only the tables its steps work from.
 
 - **The 70% rule.** Log your hours every week. If logged hours fall below 70% of plan for three consecutive weeks, move to the next-longer tier's timeline instead of pushing harder [M · T0-06 R1.4]. T0-06 judges its own timelines probably optimistic for people who do not log hours [D · D11].
 - **T0-06's decision rules** [M]:
@@ -181,33 +182,12 @@ Three rules [P]:
 3. Never compare against a tier band.
 
 > [!IMPORTANT]
-> Do not use the tier pay bands in the Phase 0 records. Neither India band set is measured: T2 ₹60L–1.2Cr with a T3 floor of ₹1.2Cr (T0-17, T1-03), and T2 ₹30–75L with T3 ₹75L–1.5Cr (FAD, T2-01) (U14). FAD's US T0 and T1 caps sit below the measured Entry and Mid medians (U5), and T2-01's US tier ranges disagree with FAD's (U7). FAD's India "T2 median" of ₹1.06–1.22Cr is really the top five employers' senior medians, about the P90; its US "T2 median" of $312K is T0-17's all-company Senior median, credited to the wrong session (U4). Details: [ERRATA](../../research/ERRATA.md).
+> Do not use the tier pay bands in the Phase 0 records. None of them is measured, they conflict with each other, and two "T2 medians" are credited to the wrong session (ERRATA U4, U5, U7, U14). [Pay benchmarks](../09-compensation/pay-benchmarks.md#the-tier-band-problem) sets the conflicting bands beside the measured anchors.
 
-**US anchors.** Levels.fyi US all-company median TC by level, 2025 figures checked in T0-17 on 2026-10-23 [B · T0-17 KF3 L129–130]:
-
-| Level | Approximate Big Tech level | Median TC | AI premium over non-AI engineers |
-|---|---|:---:|:---:|
-| Entry | L3 / E3 / SDE I | ≈ $155K | 6.2% |
-| Mid (Levels.fyi "Engineer") | L4 / E4 / SDE II | ≈ $226K | 11.9% |
-| Senior | L5 / E5 / SDE III | ≈ $312K | 14.2% |
-| Staff | L6 / E6 | ≈ $457K | 18.7% |
-| Principal | L7 / E7 | ≈ $551K | not reported |
-
-- The level mapping is T0-17's approximation. All-company medians understate Big Tech baselines [C · T0-17 L132].
-- By title (US, all levels, October 2026): AI Engineer P50 $154K, P75 $212.5K, P90 $280K (n = 335); ML Engineer P50 $280K, P75 $385.5K, P90 $497.5K (n = 1,063). The gap reflects title and employer mix, not a measured skill premium [B · T0-02 F1].
-
-**India anchors.** Levels.fyi, Greater Bengaluru, TC:
-
-| Population | P50 | P75 | P90 | Grade and source |
-|---|:---:|:---:|:---:|---|
-| Senior software engineer, not AI-specific (n = 4,836; October 2026) | ≈ ₹56.0L | ≈ ₹79.9L | ≈ ₹1.07Cr | B · T0-17 KF4 L137 |
-| ML Engineer, all levels (n = 96; 2026-10-12) | ₹44.5L | ₹68.6L | ₹94.6L | B · T0-02 F3 |
-| AI Engineer, all levels (small sample, unstable between snapshots; October 2026) | ₹21.4–24.5L | ₹40.4L | ₹62.6L | B · T0-17 L139; T0-02 L146 |
-| ML Ops Engineer, all levels (cached page) | ₹23.6L | ₹41.1L | ₹63.5L | C · T0-02 L147 |
-
-- The five best-paying employers' senior medians are ₹1.06–1.22Cr, about the senior P90 [B · T0-17 KF4].
-- India pay is two populations. Levels.fyi's samples are self-selected and heavy in MNC, GCC and product firms; broad-market sources (Glassdoor, Indeed, Payscale, AIM Research) centre far lower [B/C · T0-02 F3]. Know which population your target employers belong to.
-- The corpus has no level-by-level India percentiles for AI titles (T0-02 L505).
+**Where the anchors are.** [Pay benchmarks](../09-compensation/pay-benchmarks.md) holds every measured anchor, each with its grade, sample size and date. Read the one that matches your population, level and location:
+- **US, by level:** the Levels.fyi all-company ladder from Entry to Principal, with the AI premium at each level ([the level ladder](../09-compensation/pay-benchmarks.md#the-level-ladder)). It covers software engineers at all companies, and all-company medians understate Big Tech baselines [C · T0-17 L132].
+- **US, by title:** Levels.fyi percentiles for ML Engineer and AI Engineer, pooled across levels ([bands by title and city](../09-compensation/pay-benchmarks.md#united-states-bands-by-title-and-city)). The gap between the two titles reflects title and employer mix, not a measured skill premium [B · T0-02 F1].
+- **India:** Greater Bengaluru percentiles for ML Engineer, AI Engineer and senior software engineers, and the best-paying employers' senior medians ([India by city, level and employer](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer)). India pay is two populations: Levels.fyi's self-selected samples are heavy in MNC, GCC and product firms, while broad-market sources centre far lower [B/C · T0-02 F3]. Know which population your target employers belong to. The corpus has no level-by-level India percentiles for AI titles (T0-02 L505).
 
 | Item | Your answer |
 |---|---|
@@ -221,13 +201,13 @@ Three rules [P]:
 
 #### 3.3 Location, work authorisation and risk
 
-**Location.** Measured facts:
-- AI titles are rarely remote: 11.0% of AI Engineer and 14.0% of ML Engineer postings, against 31.6% of generic backend postings [B · JobsPipe, retrieved 2026-11-02, in the [skills catalog §2.1](../03-skills-and-tech/role-skill-maps.md#21-jobspipe-job-description-measurements-live-postings-retrieved-2026-11-02-b)].
-- Research scientist postings (all fields) are 65.0% US and 3.7% India [B · same source; India share in [role rankings A.3](../02-roles/role-rankings.md#a3-india-lens-inputs)].
-- Forward Deployed Engineer postings were mostly non-remote in an August 2026 snapshot (San Francisco 172, New York 133, remote 65 of about 779) [B · [T0-01](../../research/sessions/T0-01-genai-role-taxonomy-market-volume.md) L117], and one posting asked for up to 50% travel [B · T0-01 L146].
+**Location.** Measured facts; the dated counts and shares sit on the linked pages:
+- AI titles are rarely remote, and less often than generic backend postings [B · JobsPipe, retrieved 2026-11-02]. The shares are in the [market overview's India section](../01-landscape/market-overview.md#8-india-more-ai-intensive-younger-smaller-in-counts-split-in-pay).
+- Research scientist postings (all fields) are concentrated in the US, with a small India share [B · same source; shares in [role rankings A.3](../02-roles/role-rankings.md#a3-india-lens-inputs)].
+- Forward Deployed Engineer postings were mostly non-remote in an August 2026 snapshot, with San Francisco and New York the largest locations [B · [T0-01](../../research/sessions/T0-01-genai-role-taxonomy-market-volume.md) L117; counts in the [role catalog profile](../02-roles/role-catalog.md#profile-forward-deployed-engineer)], and one posting asked for up to 50% travel [B · T0-01 L146].
 - India demand by role: the [India-first order](../02-roles/genai-target-roles.md#6-india-first-target-order-genai-india-lens) and its inputs in A.3. Most inputs are Grade C or D, so treat the order as directional.
 
-**Work authorisation.** List the right to work for each target location. For Indian engineers, [T0-08](../../research/sessions/T0-08-global-talent-visa-relocation-pathways.md) covers the US O-1A, UK Global Talent, Canada's Global Talent Stream and the EU Blue Card; the [visa and relocation guide](../11-tracks/visa-and-relocation.md) turns it into steps. Visa and regulatory facts expire in 14–31 days, so re-check them before relying on them. This is a pointer, not legal advice.
+**Work authorisation.** List the right to work for each target location. For Indian engineers, [T0-08](../../research/sessions/T0-08-global-talent-visa-relocation-pathways.md) covers the US O-1A, UK Global Talent, Canada's Global Talent Stream and the EU Blue Card; the [visa and relocation guide](../11-tracks/visa-and-relocation.md) turns it into steps. The live status of contested visa policies and pending rules expires fastest, after 14 days in EGP-1.0's classes ([CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief); decision D-018), so re-check it before relying on it. This is a pointer, not legal advice.
 
 **Risk.** Facts to weigh:
 - At OpenAI and Anthropic, stock is 49–72% of senior-and-above pay (49% at Anthropic Senior, 59–60% at OpenAI L4–L5, 61–72% at Lead and Staff) [B · T0-02 L561].
@@ -251,21 +231,13 @@ Three rules [P]:
 
 ### Step 4. Build a long-list of 5–8 roles
 
-1. Copy your background's row from the table below ([GenAI target roles §5](../02-roles/genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses), as of 2026-11-04).
+1. Copy your background's row from [GenAI target roles §5](../02-roles/genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses): a primary target, the next targets in the lens's order, and the stretch roles. The order is a model output [M]; the access scores behind it are judgement [D].
 2. Searching in India? Read the [India-first order](../02-roles/genai-target-roles.md#6-india-first-target-order-genai-india-lens) as well.
 3. Browse the [role map](../02-roles/role-map.md) for roles whose work interests you, and note each one's interview track ([choosing a direction](../02-roles/role-map.md#choosing-a-direction)).
 4. Prefer one cluster. The target-roles guide advises: "pick one cluster, aim at its top title, and apply to two adjacent titles in the same cluster with the same portfolio" ([target clusters](../02-roles/genai-target-roles.md#7-target-clusters-one-skill-stack-several-titles)) [D].
-5. Read every role's hub: your access score, the Must skills, the proof, the interview track and the résumé variant. The [role catalog](../02-roles/role-catalog.md) defines each title and lists the aliases postings use.
+5. Read every role's [hub](../02-roles/hubs/README.md): your access score, the Must skills, the proof, the interview track and the résumé variant. The [role catalog](../02-roles/role-catalog.md) defines each title and lists the aliases postings use.
 
-| Background | Primary | Next targets | Stretch or later |
-|---|---|---|---|
-| Backend or systems | [AI Engineer](../02-roles/hubs/ai-engineer.md) | [FDE](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI](../02-roles/hubs/applied-ai-engineer.md), [AI Infrastructure](../02-roles/hubs/ai-infrastructure-engineer.md), [Agentic](../02-roles/hubs/agentic-ai-engineer.md), [ML Engineer](../02-roles/hubs/ml-engineer.md) | [Inference Engineer](../02-roles/hubs/inference-engineer.md) |
-| Data scientist or BI | AI Engineer with an evals edge | ML Engineer, [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), Applied AI | [Applied Scientist](../02-roles/hubs/applied-scientist.md) |
-| Frontend or full-stack | AI Engineer (full-stack) | FDE, Applied AI, Agentic | [AI Product Engineer](../02-roles/hubs/ai-product-engineer.md), applied for as "full-stack AI engineer" |
-| Non-technical, 5+ years in a domain | [AI Product Manager](../02-roles/hubs/ai-product-manager.md) | FDE-adjacent roles (FDE proper requires coding), [AI Governance Lead](../02-roles/hubs/ai-governance-lead.md), [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) | [Domain evaluation](../02-roles/hubs/domain-evaluation-specialist.md), as a bridge |
-| PhD or researcher | ML Engineer, or AI Engineer for volume | [Research Engineer / MTS](../02-roles/hubs/research-engineer.md), Applied Scientist | [Research Scientist](../02-roles/hubs/research-scientist.md) ("not plannable") |
-
-The order is a model output [M]; the access scores behind it are judgement [D]. Leadership and independent tracks are ranked separately and reached after years of experience; add them only if you already meet their entry conditions ([§8](../02-roles/genai-target-roles.md#8-leadership-and-independent-tracks-when-to-target-them)).
+Leadership and independent tracks are ranked separately and reached after years of experience; add them only if you already meet their entry conditions ([§8](../02-roles/genai-target-roles.md#8-leadership-and-independent-tracks-when-to-target-them)).
 
 | # | Role (hub) | Why it is on your list | Résumé variant | Interview track |
 |---|---|---|---|---|
@@ -293,7 +265,7 @@ Gates first, then points. The scheme is practice-curated [P]: no session tests a
 |---|---|:---:|:---:|:---:|:---:|
 | Access from your background | Your persona column in [role rankings A.2](../02-roles/role-rankings.md#a2-persona-access-scores-inputs-to-the-access-pillar-and-the-persona-lenses), also on each hub [D] | 7.5 or more (●) | 6–7.4 | 4–5.9 | Under 4 (○) |
 | Market position | Rank in the [GenAI target order](../02-roles/genai-target-roles.md#0-the-sorted-target-list) [M]; for an India-based search, the India-first order | Rank 1–2 | Rank 3–8 | Rank 9–14 | Rank 15 or below, or outside the India top 12 |
-| Readiness | Your scores on the role's Must skills (its inventory §7) | All at 2 or more | At least half at 2 or more | At least one at 2 or more | None at 2 or more |
+| Readiness | Your scores on the role's Must skills (its inventory §7, or your gap-analysis report) | All at 2 or more | At least half at 2 or more | At least one at 2 or more | None at 2 or more |
 
 - On A.2's scale, 7.5 or more is a high-volume corridor of about 6–8 months at 15–20 hours a week, 4–7 is plausible but extended, and under 4 is not plausible within 12 months [D · role rankings A.2].
 - The rank cut-offs follow the GenAI tiers: ranks 1–2 are Tier 1, 3–8 Tiers 2–3 and 9–14 Tier 4 ([tier rules](../02-roles/genai-target-roles.md#14-tier-rules)).
@@ -311,7 +283,7 @@ Gates first, then points. The scheme is practice-curated [P]: no session tests a
 
 ### Step 6. Place roles in rings
 
-The [job-search strategy §2.7](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings) sequences targets in expanding rings [D]. These thresholds turn your Step 5 results into rings [P]:
+The [job-search strategy](../06-job-search/job-search-strategy.md#recommended-sequencing-expanding-rings) sequences targets in expanding rings [D]. These thresholds turn your Step 5 results into rings [P]:
 
 | Ring | Rule | What it gets |
 |---|---|---|
@@ -321,7 +293,7 @@ The [job-search strategy §2.7](../06-job-search/job-search-strategy.md#27-recom
 | Parked | Any Fail, or access under 4 | A note of the constraint that would bring it back |
 
 Three rules apply across the rings:
-- **One company, one application per cycle** (T0-10 allows an exception for genuinely distinct roles) [C · T0-10 L159]. If a company has openings in two of your rings, apply to the one whose basic qualifications your evidence matches best ([selection rule](../06-job-search/job-search-strategy.md#23-selection-rule-choose-by-content-then-tailor)). In Huntr's vendor data the interview rate was 6.07% for one application at a company and 1.91% for eight or more (correlational) [C · T0-10 L71]. Many applicant tracking systems can also block repeat applications by email or phone, at the employer's choice [A · T0-10 L238]. T0-10 does not define how long a cycle lasts.
+- **One company, one application per cycle** (T0-10 allows an exception for genuinely distinct roles) [C · T0-10 L159]. If a company has openings in two of your rings, apply to the one whose basic qualifications your evidence matches best ([selection rule](../06-job-search/resume-strategy.md#for-each-posting-choose-by-content-then-tailor)). In Huntr's vendor data the interview rate was 6.07% for one application at a company and 1.91% for eight or more (correlational) [C · T0-10 L71]. Many applicant tracking systems can also block repeat applications by email or phone, at the employer's choice [A · T0-10 L238]. T0-10 does not define how long a cycle lasts.
 - **Do not mix funnels.** Expert-contract work, AI PM, FDE and AI engineering have different gatekeepers and different proof [M · T0-06 R1.8]. Keep ring 1 inside one of them.
 - **Prepare for the loop type, not the title.** Applied-AI startups use take-homes, agent debugging and scoping rounds; big-company loops use algorithmic coding, system design and ML design; frontier labs are highly selective, an upside rather than a base case [M · T0-06 R1.3].
 
@@ -332,7 +304,7 @@ Three rules apply across the rings:
 | 3 | [ ] | [ ] | [ ] | [ ] | When its proof exists |
 | Parked | [ ] | — | — | — | When [constraint] changes |
 
-Each hub lists the project archetypes that cover most of the role's Must and Important skills; [job-search strategy §2.6](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest project sets that cover several roles.
+Each hub lists the project archetypes that cover most of the role's Must and Important skills; the job-search strategy's [constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest project sets that cover several roles.
 
 **Done when:** ring 1 has one interview track and one résumé family, every ring-2 role has a named project, and every parked role names the constraint that parks it.
 
@@ -364,7 +336,7 @@ months                 = weeks ÷ 4.345
 - Core hours is the model's least-validated parameter. Recalibrate it at G1 from your own pace [M · T0-06 D2].
 - Lower adherence stretches the build: 0.6 instead of 0.75 adds 25% [M · T0-06 D2].
 
-**The gates** [M · T0-06 D3]:
+**The gates** [M · T0-06 D3]. [Career transitions](../11-tracks/career-transitions.md) owns them and adds how a stranger checks each one:
 
 | Gate | Due at Tier B | Pass when |
 |---|---|---|
@@ -387,7 +359,7 @@ months                 = weeks ÷ 4.345
 
 Two habits run through the whole plan. Build the eval harness before the second feature: evaluation is the most-cited stack challenge in the 2026 AI Engineering Survey and the most consistent theme in hiring write-ups [B/C · T0-06 KF-4, R1.1]. And publish at G1 rather than building in private [D · T0-06 D11].
 
-The template below assumes Tier B and follows T0-06's backend roadmap for weeks 3–12. At Tier A or C, stretch or compress weeks 3–12 by the scaling rule above; at Tier A, day 90 is a progress check at roughly half of G1, not the gate. For other backgrounds, the months 1–3 row of T0-06 D4–D8, or the [learning order by background](../03-skills-and-tech/role-skill-maps.md#6-suggested-learning-order-by-background), changes the content but not the gate.
+The template below assumes Tier B and follows T0-06's backend roadmap for weeks 3–12. At Tier A or C, stretch or compress weeks 3–12 by the scaling rule above; at Tier A, day 90 is a progress check at roughly half of G1, not the gate. For other backgrounds, the months 1–3 row of T0-06 D4–D8, or the [learning order by background](../03-skills-and-tech/learning-roadmaps.md#adjust-for-your-starting-background), changes the content but not the gate.
 
 | Weeks | Focus | Deliverable | Done when | Hours planned | Hours logged |
 |---|---|---|---|:---:|:---:|
@@ -438,24 +410,24 @@ The largest gaps are S4 evaluation design (3) and S2 LLM API fluency (2). Eight 
 **Step 3 results.**
 - **Horizon:** the backend model gives ~6 months (3.5–8) at Tier B [M · T0-06 R2]. Both the central value and the high end fit 9 months, so the horizon test passes. At Tier A (~10 months, 6–14) it would fail.
 - **Hours:** 17.5 hours is about 56% of average leisure for an employed adult without children in US data. The corpus has no India equivalent.
-- **Pay floor:** ₹56.0L sits above the P75 and below the P90 of the Bengaluru all-level distributions for AI Engineer (₹40.4L and ₹62.6L) and ML Ops Engineer (₹41.1L and ₹63.5L), and between the P50 and P75 for ML Engineer (₹44.5L and ₹68.6L). There is no India pay data for Agentic AI Engineer (A.3 treats it as AI Engineer), AI Infrastructure, Inference, Applied AI or FDE. **Effect:** the floor filters employers more than roles. For AI Engineer and MLOps titles, this persona should target the upper population: MNC, GCC and product firms.
+- **Pay floor:** ₹56.0L sits above the P75 and below the P90 of the Bengaluru all-level distributions for AI Engineer (₹40.4L and ₹62.6L, from a small sample that is unstable between snapshots) [B · T0-17 L139; T0-02 L146] and ML Ops Engineer (₹41.1L and ₹63.5L, from a cached page) [C · T0-02 L147], and between the P50 and P75 for ML Engineer (₹44.5L and ₹68.6L) [B · T0-02 F3]; the dated bands are in [pay benchmarks](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer). There is no India pay data for Agentic AI Engineer (A.3 treats it as AI Engineer), AI Infrastructure, Inference, Applied AI or FDE. **Effect:** the floor filters employers more than roles. For AI Engineer and MLOps titles, this persona should target the upper population: MNC, GCC and product firms.
 
 **Step 4 long-list.** The backend row of §5 (AI Engineer, FDE, Applied AI, AI Infrastructure, Agentic, ML Engineer, and Inference as stretch), plus ML Platform / MLOps, which is #4 in the India-first order and one of the backend lens's next-best roles ([role rankings §5.2](../02-roles/role-rankings.md#52-persona-lenses-switcher-weights-roles-not-plausible-within-12-months-are-excluded)).
 
 ### Example scores and gates (Step 5)
 
-Access is the backend column of A.2. Market is the India-first order, because the search is India-based. Readiness counts the role's Must skills (its inventory §7) where the persona's self-score is 2 or more.
+Access is the backend column of A.2. Market is the India-first order, because the search is India-based. Readiness counts the role's Must skills (its inventory §7) where the persona's self-score is 2 or more. The gates rest on dated JobsPipe posting counts, which this page does not copy: India counts by title are in the [market overview's India section](../01-landscape/market-overview.md#8-india-more-ai-intensive-younger-smaller-in-counts-split-in-pay), and the share of ML Engineer postings that name LLM work is in [GenAI target roles §1.2](../02-roles/genai-target-roles.md#12-genai-restriction-of-the-two-mixed-title-families).
 
 | Role | Gate result | Access | Market (India) | Readiness | Total |
 |---|---|:---:|:---:|:---:|:---:|
-| [AI Engineer](../02-roles/hubs/ai-engineer.md) | Pass: 398 live India postings [B]; the floor filters employers | 9 → 3 | #1 → 3 | 1 of 4 → 1 | **7** |
+| [AI Engineer](../02-roles/hubs/ai-engineer.md) | Pass: live India postings measured [B]; the floor filters employers | 9 → 3 | #1 → 3 | 1 of 4 → 1 | **7** |
 | [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md) | Pass: appears on India listings [C]; pay treated as AI Engineer | 8.5 → 3 | #8 → 2 | 1 of 5 → 1 | **6** |
 | [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md) | Pass: a common GCC title [C]; the floor filters employers | 7 → 2 | #4 → 2 | 6 of 7 → 2 | **6** |
 | [AI Infrastructure Engineer](../02-roles/hubs/ai-infrastructure-engineer.md) | Flag: no India evidence [D] | 7 → 2 | #7 → 2 | 6 of 7 → 2 | **6** |
-| [ML Engineer, GenAI track](../02-roles/hubs/ml-engineer.md) | Pass: 90 live India postings, ~41 naming LLM [B; M] | 5.5 → 1 | #2 → 3 | 1 of 4 → 1 | **5** |
+| [ML Engineer, GenAI track](../02-roles/hubs/ml-engineer.md) | Pass: live India postings measured, under half of them naming LLM [B; M] | 5.5 → 1 | #2 → 3 | 1 of 4 → 1 | **5** |
 | [Inference Engineer](../02-roles/hubs/inference-engineer.md) | Flag: no India evidence [D] | 7 → 2 | #6 → 2 | 3 of 7 → 1 | **5** |
 | [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md) | Flag: no India evidence [D] | 8.5 → 3 | #11 → 1 | 1 of 4 → 1 | **5** |
-| [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md) | Fail: mostly non-remote postings, largest in San Francisco and New York [A]; up to 50% travel in one posting [B] | 7.5 | #10 | — | Parked |
+| [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md) | Fail: mostly non-remote postings, largest in San Francisco and New York [B]; up to 50% travel in one posting [B] | 7.5 | #10 | — | Parked |
 
 The example's self-scores on Must skills:
 - **AI Engineer, Agentic and Applied AI:** Python at 2; LLM APIs and tool calling, tool and function calling, agents and tool use, RAG, and prompt and context design at 1.
@@ -473,7 +445,7 @@ The example's self-scores on Must skills:
 | Parked | Forward Deployed Engineer | — | — | — | If relocation or travel becomes acceptable |
 
 Why:
-- Agentic joins ring 1 because it shares AI Engineer's résumé variant (A1) and interview track, and the A1 family résumé plus tailoring covers it ([job-search strategy §2.5](../06-job-search/job-search-strategy.md#25-which-roles-need-their-own-resume-computed)).
+- Agentic joins ring 1 because it shares AI Engineer's résumé variant (A1) and interview track, and the A1 family résumé plus tailoring covers it ([which roles need their own résumé](../06-job-search/resume-strategy.md#which-roles-need-their-own-résumé-computed)).
 - P1 covers 68% of AI Engineer's Must and Important skills and P2 covers 81% of Agentic's; P6 covers 92% of ML Platform's; P1 also covers 59% of Applied AI's [M · role hubs].
 - ML Engineer goes to ring 3 on access (5.5) despite its India rank (#2) and higher pay. P4 is the project that covers it best (76%) [M · hub].
 - Inference has a Staff-level depth gate (~10–14 months from backend) [D · hub] and no India evidence. Applied AI has a lab-tier hiring bar and no India evidence.
@@ -527,25 +499,25 @@ For GCC roles, the persona asks in screens whether the team's AI work is in prod
 | Planning Tier B without logging hours | 17.5 hours is 56–74% of average leisure, and unlogged plans run optimistic [A data, M; D · T0-06 KF-10, D11] | Log weekly and apply the 70% rule |
 | Reading modelled months as a promise | Every timeline is conditional on success and rests on survivor-biased anchors [D · T0-06 KF-9] | Judge by gates; recalibrate core hours at G1 |
 | Studying foundations for months before shipping | Hiring write-ups ask for built and evaluated systems [D · T0-06 D11] | Ship a v0 within two weeks |
-| Scoring roles before checking location | AI titles are rarely remote (11.0% and 14.0% of postings) [B] | Run the gates before the points |
+| Scoring roles before checking location | AI titles are rarely remote [B · JobsPipe, retrieved 2026-11-02] | Run the gates before the points |
 
 ## Evidence and limits
 
-- **Measured (A, B):** the pay anchors (Levels.fyi, October 2026; the US level medians are 2025 figures checked on 2026-10-23); posting shares (JobsPipe, retrieved 2026-11-02); US time-use averages (BLS ATUS 2025); repeat-application controls in applicant tracking systems.
+- **Measured (A, B):** the pay figures in the worked example (Levels.fyi, October 2026); the remote and location patterns (JobsPipe, retrieved 2026-11-02; Fast AI Jobs, August 2026); US time-use averages (BLS ATUS 2025); repeat-application controls in applicant tracking systems. The pay anchors themselves are in [pay benchmarks](../09-compensation/pay-benchmarks.md), and dated posting counts on the pages linked from Step 3.3 and the worked example.
 - **Single-source, vendor or correlational (C):** Huntr's same-company interview rates; the small-sample India AI Engineer page; the cached MLOps page; India listing evidence for Agentic and MLOps titles.
-- **Models and judgement (M, D):** time to first offer (T0-06 R2: confidence medium-low for backend, low for every other background); the starting-gap hypotheses; persona access scores (role rankings A.2); the GenAI target order; the S1–S12 targets. T0-06 found no longitudinal cohort study of GenAI career changers, so every timeline is conditional on persisting and succeeding.
+- **Models and judgement (M, D):** time to first offer (T0-06 R2: confidence medium-low for backend, low for every other background); the starting-gap hypotheses; persona access scores (role rankings A.2); the GenAI target order; the S1–S12 targets and the gap-analysis script's target levels. T0-06 found no longitudinal cohort study of GenAI career changers, so every timeline is conditional on persisting and succeeding.
 - **Practice-curated [P]:** the point scale, the ring thresholds, the pay-floor reading rule, the horizon test and "evidence before score". No session tests them. Change them if your situation differs, and note why.
 - **Geography:** T0-06's quantitative evidence is mostly US-based, and ATUS is US-only. Most India-lens inputs are Grade C or D.
 - **Not covered:** timelines for students, new graduates and people already in AI roles; visa rules (see the visa guide).
-- **Dates:** pay figures are as of October 2026; the earliest (Levels.fyi Bengaluru ML Engineer) is dated 2026-10-12, so this page is due for re-verification by 2027-01-10. Posting shares are point-in-time counts from 2026-11-02, and the FDE locations come from an August 2026 snapshot. The role order may move at the JobsPipe recount scheduled by 2026-12-01.
+- **Dates:** the pay figures in the worked example are as of October 2026; the earliest (Levels.fyi Bengaluru ML Engineer) is dated 2026-10-12, so this page is due for re-verification by 2027-01-10, under this repository's 90-day rule for pay. Posting counts, which expire after 31 days, are linked rather than copied. The role order may move at the JobsPipe recount scheduled by 2026-12-01.
 - **Errata applied:** U4, U5, U7 and U14 (tier pay bands) and U18 (PhDs keep the skills stage).
 - **What would change this workbook:** a cohort study with time to offer by background would replace the R2 table; evidence that credentials beat artifacts for career changers would change the gates; a collapse in posting volumes would lengthen every horizon (T0-06, "What would change this recommendation"); a recount that moves roles across tier boundaries would change the market points.
 
 ## Next steps
 
-- **Your ring-1 roles:** open each role's hub (for example [AI Engineer](../02-roles/hubs/ai-engineer.md)) and fill in its inventory self-assessment ([AI Engineer §7](../03-skills-and-tech/inventories/ai-engineer.md#7-self-assessment-must-and-important); every role in the [inventories index](../03-skills-and-tech/role-skill-inventories.md)).
-- **Close the gaps:** [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md) and the [learning order by background](../03-skills-and-tech/role-skill-maps.md#6-suggested-learning-order-by-background).
-- **Build the proof:** [project archetypes](../05-portfolio/project-archetypes.md), [proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and the smallest project sets in [job-search strategy §2.6](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first).
+- **Your ring-1 roles:** open each role's hub (for example [AI Engineer](../02-roles/hubs/ai-engineer.md)) and fill in its inventory self-assessment ([AI Engineer §7](../03-skills-and-tech/inventories/ai-engineer.md#7-self-assessment-must-and-important); every role in the [inventories index](../03-skills-and-tech/role-skill-inventories.md)), or run the [gap-analysis script](README.md#personal-tool-skill-gap-analysis) across all your targets at once.
+- **Close the gaps:** [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md), including the [learning order by background](../03-skills-and-tech/learning-roadmaps.md#adjust-for-your-starting-background).
+- **Build the proof:** [project archetypes](../05-portfolio/project-archetypes.md), [proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and the smallest project sets in the job-search strategy's [constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first).
 - **Run the search:** the [application operating system](../06-job-search/application-operating-system.md), the [résumé strategy](../06-job-search/resume-strategy.md) and your role's block in the [résumé skills matrix](../06-job-search/resume-skills-matrix.md#resume-ai-engineer); referrals in [referrals and outreach](../07-networking/referrals-and-outreach.md).
 - **Prepare the loop:** [interview loops](../08-interviewing/interview-loops.md).
 - **Pay and offers:** [pay benchmarks](../09-compensation/pay-benchmarks.md) and [offer evaluation](../09-compensation/offer-evaluation.md).

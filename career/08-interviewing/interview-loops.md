@@ -17,7 +17,7 @@ tags: [interviewing, interview-loops, loop-classification, system-design, coding
 
 > How GenAI interview loops are structured, how to classify yours before you prepare, what each round tests, what to do on the day, and how to debrief and follow up, with recruiter questions, templates and questions to ask your interviewers.
 
-**Dates and grades.** Loop structures come from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) (dated 2026-10-21) and [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (dated 2026-10-25); loop types and take-homes from [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md); the probes behind your own questions from [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md); funnel stage rates from [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) (dated 2026-10-23), which [erratum U24](../../research/ERRATA.md) prefers to T1-03's. They record what candidates, aggregators and coaching vendors *report*, not official employer processes. Formats, tools and AI policies change: re-verify by 2027-01-19. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, aggregator or single source; D judgement; E searched, nothing found; M model output; P practice-curated and unmeasured. Terms are in the [glossary](../00-start/glossary.md).
+**Dates and grades.** Loop structures come from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) (dated 2026-10-21) and [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (dated 2026-10-25); loop types and take-homes from [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md); the probes behind your own questions from [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md); funnel stage rates from [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) (dated 2026-10-23), which [erratum U24](../../research/ERRATA.md) prefers to T1-03's. They record what candidates, aggregators and coaching vendors *report*, not official employer processes. Formats, tools and AI policies change: re-verify by 2027-01-19. **Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary; C vendor, aggregator or single source; D judgement; E searched, nothing found; M model output; P practice-curated and unmeasured. Terms are in the [glossary](../00-start/glossary.md).
 
 ## The short answer
 
@@ -74,11 +74,11 @@ T0-14 sorts engineering loops by what the system design round is about [B/C · T
 
 ### Reported loop structures by employer
 
-This is what is reported, not what is official [T0-14 L167]; aggregator tallies are unaudited [T0-14 L80].
+This is what is reported, not what is official [T0-14 L167]; aggregator tallies are unaudited [T0-14 L80]. The design prompts each firm is reported to set are in [system design archetypes](system-design-archetypes.md#reported-design-prompts-by-firm).
 
 | Employer | Reported format | Design flavour | Grade |
 |---|---|---|---|
-| Anthropic | Onsite 4–5 rounds per Aced, 3–5 per DesignGurus; design rounds 50–60 minutes (sources differ); run over Google Meet, with the one-hour design round in a shared Google Doc; Staff phone screens more often design; document-review, roofline and p95-debugging variants | AI-framed infrastructure; AI-native prompts exist but rank lower | B · T0-14 L171 |
+| Anthropic | Onsite 4–5 rounds per Aced, 3–5 per DesignGurus; design rounds 50–55 minutes (Aced guide), 55–60 (Aced process page) or about 60 (DesignGurus, interviewing.io); run over Google Meet, with the one-hour design round in a shared Google Doc (interviewing.io); Staff phone screens more often design; document-review, roofline and p95-debugging variants | AI-framed infrastructure; AI-native prompts exist but rank lower | B · T0-14 L171 |
 | OpenAI | 45–60-minute rounds; the phone screen includes a 60-minute design round per Aced; the technical deep dive works like a reverse design interview (explain a system you built); level is set after the loop | Mixed: classic plus AI products; agent-building experience expected for some teams | B/C · T0-14 L172 |
 | Meta | E6: two 45-minute design rounds, about 35–40 usable minutes; Excalidraw; an AI-enabled variant reportedly uses Mermaid in CoderPad (spring 2026, early signal) | SWE classic; ML pool LLM-native | B/C · T0-14 L101, L173 |
 | Google | L6: 60-minute rounds; classic or ML design depending on role and interviewer; one MLE reviewer calls the design round the biggest filter | Role-dependent | B/C · T0-14 L174 |
@@ -90,17 +90,10 @@ This is what is reported, not what is official [T0-14 L167]; aggregator tallies 
 
 ### Where the funnel narrows
 
-Cold-inbound engineering applications, from T0-04's reading of Gem and Ashby benchmarks (dated 2026-10-23). [Erratum U24](../../research/ERRATA.md) replaces the stage rates T1-03 gives for the same sources [T1-03 L158–161]:
-
-| Stage | Benchmark conversion | Basis | Grade |
-|---|---|---|---|
-| Application → first human stage (Gem "pre-onsite", Ashby "interview") | 3.6–6% | Ashby technical, Q1 2026 (3.6%); Gem engineering (6%) | B · T0-04.F9 |
-| First human stage → onsite | 17% | Gem engineering; the published figures do not separate recruiter and technical screens | B · T0-04.F9; T0-04 L409 |
-| Onsite → offer | 29% (Gem engineering); ≈ 15–20% by industry consensus | Gem; T1-03, firm rates unpublished | B · T0-04.F9; C · T1-03 L160, L404 |
-| Offer → accept | 73% | Gem; Ashby | B · T0-04.F9 |
+The stage-by-stage conversion rates for cold-inbound engineering applications are in the [application operating system](../06-job-search/application-operating-system.md#the-funnel-you-are-running): T0-04's reading of Gem and Ashby benchmarks (dated 2026-10-23), which [erratum U24](../../research/ERRATA.md) prefers to the stage rates T1-03 gives for the same sources [T1-03 L158–161]. The published figures do not separate recruiter screens from technical screens [B · T0-04.F9; T0-04 L409]. For planning interviews, two points matter:
 
 - **Most of the loss happens before the loop.** Cold inbound converts at ≈ 0.2% from application to hire, about 340–380 applications per offer [B · T0-04.F9], and referrals yield 11–36× more per application [B/C · T1-03.F1].
-- **Most loops end without an offer** [M]: onsite-to-offer is 29% in Gem's engineering chain [B · T0-04.F9] and ≈ 15–20% by industry consensus [C · T1-03 L160]. Frontier labs may convert lower still: some anecdotal accounts put onsite-to-offer below 10%, and there is no firm data [D · T1-03 L421]. Read one rejection as weak evidence; read patterns across loops in the tracker [P].
+- **Most loops end without an offer** [M]: onsite-to-offer is 29% in Gem's engineering chain [B · T0-04.F9] and ≈ 15–20% by industry consensus, with no firm publishing its own rate [C · T1-03 L160, L404]. Frontier labs may convert lower still: some anecdotal accounts put onsite-to-offer below 10%, and there is no firm data [D · T1-03 L421]. Read one rejection as weak evidence; read patterns across loops in the tracker [P].
 
 ### The loop also sets your level
 
@@ -267,20 +260,7 @@ Loop: [Company] · [Team] · [Round type] · [Date]
 
 ### Loop tracker
 
-Columns from T1-03 [D · T1-03 L250–257]; the loop-class column is added here [P].
-
-| Date and firm | Loop class | Round type | Questions asked | Self-assessment, 1–5 per dimension | Gaps | Outcome |
-|---|---|---|---|---|---|---|
-| [YYYY-MM-DD], [Company] | [Infrastructure / Applied / Classic] | [Coding / System design / Behavioural / Domain deep dive] | [Verbatim list] | [Dimension: score] | [Tagged gaps] | [Pending / Offer / No hire] |
-
-Read the tracker with T0-06's heuristics [D · T0-06 L403–405]:
-
-| Pattern | Likely cause | Action |
-|---|---|---|
-| No screens after 15 targeted applications | Positioning or résumé signal, not skill | A practitioner review of your artifacts and résumé; see [résumé strategy](../06-job-search/resume-strategy.md) |
-| Three failed take-homes | Eval design and error analysis | Invest there; see the [evaluation design pack](prep-packs.md#evaluation-design-pack) |
-| Failed onsites at system design | Design and coding depth for the loop class | Practise system design and DSA for big-company loops, or retarget applied-AI loops |
-| The round's flavour surprised you | Classification | Ask the classification questions in writing next time [P] |
+Log every round in the Interviews tab of the [application operating system's tracker](../06-job-search/application-operating-system.md#the-tracker-fill-in-schema), which owns the tracker, its thresholds and its [decision table](../06-job-search/application-operating-system.md#when-to-change-course-decision-table) [D · T1-03 L250–257; T0-06 L403–405]. Add a loop-class column (infrastructure, applied or classic) so that patterns show by class [P]. Two readings are specific to interviews: failed onsites at system design call for system design and DSA practice for big-company loops, or a switch to applied-AI loops [D · T0-06 L405]; a round whose flavour surprised you is a classification miss, so ask the classification questions in writing next time [P].
 
 ### Follow-up notes
 
@@ -368,7 +348,7 @@ Ask to decide, and write down what the loop promises. In a 2018 Jobvite survey, 
 **After each round and after the loop**
 
 - [ ] Five-step debrief within 30 minutes [C/D · T1-03.F12].
-- [ ] Tracker row updated, and patterns checked against the read-the-tracker table [D · T0-06 L403–405].
+- [ ] Tracker row updated, and patterns checked against the [decision table](../06-job-search/application-operating-system.md#when-to-change-course-decision-table) [D · T0-06 L403–405].
 - [ ] Thank-you note sent; a status check after the promised date [P].
 - [ ] The loop's promises recorded, to check in days 3–10 of the job [D · T0-09 L150, L167].
 - [ ] Offer: a 48-hour pause, then [offer evaluation](../09-compensation/offer-evaluation.md) [C/D · T1-03 L284].
@@ -391,7 +371,7 @@ Ask to decide, and write down what the loop promises. In a 2018 Jobvite survey, 
 
 ## Evidence and limits
 
-- **What is measured.** Stage conversion rates are vendor benchmarks (Gem engineering; Ashby technical, Q1 2026) as compiled by T0-04 [B · T0-04.F9]; erratum U24 sets aside the stage rates T1-03 gives for the same sources [T1-03 L158–161]. T1-03's onsite-to-offer figure of 15–20% is industry consensus [C · T1-03 L404]. Nothing on this page is a controlled measurement of interview outcomes.
+- **What is measured.** The stage conversion rates behind the funnel section are vendor benchmarks (Gem engineering; Ashby technical, Q1 2026) as compiled by T0-04 [B · T0-04.F9], held in the [application operating system](../06-job-search/application-operating-system.md); erratum U24 sets aside the stage rates T1-03 gives for the same sources [T1-03 L158–161]. T1-03's onsite-to-offer figure of 15–20% is industry consensus [C · T1-03 L404]. Nothing on this page is a controlled measurement of interview outcomes.
 - **What is reported.** Loop structures and prompts are candidate, aggregator and coaching-vendor reports, unaudited and dated October 2026 [T0-14 L80, L167].
 - **No pass-rate data.** No firm publishes pass rates by round for AI engineers. T1-03 holds AI-specific pass rates at lower confidence (C/G) and notes that the 15–20% may overstate frontier-lab rates [T1-03 L34, L404, L421].
 - **No firm-published rubrics.** There is no AI-specific behavioural rubric [E · T1-03 L169, L407], and no AI-specific or Principal-level design rubric [B/C · T0-14.F10].
@@ -406,7 +386,7 @@ Ask to decide, and write down what the loop promises. In a 2018 Jobvite survey, 
 ## Next steps
 
 - **Prepare each round:** [AI system design archetypes](system-design-archetypes.md), [coding rounds](coding-rounds.md), [behavioural calibration](behavioral-calibration.md) and the [prep packs](prep-packs.md).
-- **Get more loops:** getting in is the binding constraint [B/C · T1-03.F1]. See the [job-search strategy](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings), [referrals and outreach](../07-networking/referrals-and-outreach.md) and the [application operating system](../06-job-search/application-operating-system.md).
+- **Get more loops:** getting in is the binding constraint [B/C · T1-03.F1]. See the [job-search strategy](../06-job-search/job-search-strategy.md#recommended-sequencing-expanding-rings), [referrals and outreach](../07-networking/referrals-and-outreach.md) and the [application operating system](../06-job-search/application-operating-system.md).
 - **After an offer:** [offer evaluation](../09-compensation/offer-evaluation.md), the [negotiation playbook](../09-compensation/negotiation-playbook.md) and [pay benchmarks](../09-compensation/pay-benchmarks.md).
 - **After you accept:** [first 90 days](../10-onboarding/first-90-days.md); re-run the expectations-gap probes in days 3–10 [D · T0-09 L150].
 - **By role:** [AI engineer](../02-roles/hubs/ai-engineer.md), [ML engineer](../02-roles/hubs/ml-engineer.md), [inference engineer](../02-roles/hubs/inference-engineer.md), [AI infrastructure engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [forward-deployed engineer](../02-roles/hubs/forward-deployed-engineer.md), [research engineer](../02-roles/hubs/research-engineer.md), [AI evaluation engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI product manager](../02-roles/hubs/ai-product-manager.md); every role is in the [role map](../02-roles/role-map.md).

@@ -17,7 +17,7 @@ tags: [system-design, interviewing, llm-serving, batching, rag, agents, evals, g
 
 > How to prepare for and run a GenAI system-design round: classify the loop, drill the right archetypes out of 15, run the 45-minute blueprint, compute the numbers that change the design, and meet the evaluation, safety and Staff-level rubrics.
 
-**Dates and grades.** The evidence is [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md), dated 2026-10-21, plus findings from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md). Prices were fetched on 2026-10-21. Re-verify prices, tool names and round formats by 2027-01-19. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, coach or single source; D judgement; E searched, nothing found; M model output (T0-14's re-executed arithmetic); P practice-curated. "Synthesis" marks T0-14's own frameworks, which no firm publishes; they are graded D. T0-14 §6.3 has a reference component diagram for each of the 15 archetypes, in Mermaid.
+**Dates and grades.** The evidence is [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md), dated 2026-10-21, plus findings from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md). Prices were fetched on 2026-10-21. Re-verify prices, tool names and round formats by 2027-01-19. **Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary; C vendor, coach or single source; D judgement; E searched, nothing found; M model output (T0-14's re-executed arithmetic); P practice-curated. "Synthesis" marks T0-14's own frameworks, which no firm publishes; they are graded D. T0-14 §6.3 has a reference component diagram for each of the 15 archetypes, in Mermaid.
 
 ## The short answer
 
@@ -50,26 +50,30 @@ flowchart TD
 
 ## Step zero: classify the loop
 
-| Loop type | Where it is reported | Repository track and prep pack | Drill first | Then |
-|---|---|---|---|---|
-| AI-lab infrastructure | Anthropic; OpenAI infrastructure and inference teams | `infrastructure`: [infrastructure pack](prep-packs.md#infrastructure-pack) | A1–A5 | A7 and A14; expect numbers early, 50–60-minute rounds and failure probing |
-| Applied-AI or AI engineer | Databricks, Google GenAI, scale-ups, Meta ML | `application`, `evaluation`, `customer-application`: [application](prep-packs.md#application-pack), [evaluation design](prep-packs.md#evaluation-design-pack), [application plus customer scoping](prep-packs.md#application-plus-customer-scoping-pack) | A8–A15, best-evidenced first: A8, A9, A11, A14 | Evaluation roles lead with A14; forward-deployed loops report A8, A11 and A14 |
-| Classic with an AI flavour | Meta and Google SWE, Stripe, Uber | `ml-system-design`: [classic ML system-design pack](prep-packs.md#classic-ml-system-design-pack) | Classic design | A8 and A9 as insurance; be ready to place an LLM component sensibly |
+Classify the loop with the recruiter first: [interview loops](interview-loops.md#the-three-engineering-classes) owns the three loop classes, where each is reported and the questions to ask. Each class sets a different drill order for the design round:
+
+| Loop type | Repository track and prep pack | Drill first | Then |
+|---|---|---|---|
+| AI-lab infrastructure | `infrastructure`: [infrastructure pack](prep-packs.md#infrastructure-pack) | A1–A5 | A7 and A14; expect numbers early, 50–60-minute rounds and failure probing |
+| Applied-AI or AI engineer | `application`, `evaluation`, `customer-application`: [application](prep-packs.md#application-pack), [evaluation design](prep-packs.md#evaluation-design-pack), [application plus customer scoping](prep-packs.md#application-plus-customer-scoping-pack) | A8–A15, best-evidenced first: A8, A9, A11, A14 | Evaluation roles lead with A14; forward-deployed loops report A8, A11 and A14 |
+| Classic with an AI flavour | `ml-system-design`: [classic ML system-design pack](prep-packs.md#classic-ml-system-design-pack) | Classic design | A8 and A9 as insurance; be ready to place an LLM component sensibly |
 
 Loop types and drill order: T0-14 L118–121 [D]. Best-evidenced clusters [B/C · T0-14.F3]; forward-deployed prompts [C · T0-14 L174–175]. Each role hub states its interview track; mapping those tracks onto T0-14's loop types is this page's judgement [P].
 
-**What each firm's design round reports** (candidate reports, not official formats; T0-14 §6.2, L171–178):
+### Reported design prompts by firm
 
-| Firm | Length and format | Reported prompts | Flavour | Grade |
-|---|---|---|---|---|
-| Anthropic | 50–55 min (Aced guide), 55–60 (Aced process page), about 60 (DesignGurus, interviewing.io); interviewing.io says the one-hour design round runs in a shared Google Doc | Inference API and batching, distributed search over about 1B documents, P2P weight distribution, GPU scheduling with credits, prompt playground, eval and monitoring, design-doc review, roofline, p95 debugging | AI-framed infrastructure; the model is treated as a black box | B |
-| OpenAI | 45–60 min; 60 in the phone screen per Aced | Playground, enterprise search, GPU-credit allocation, RAG assistants, Sora-style video orchestration, beside classic prompts (payments, chat, rate limiter, job scheduler); 2026 reviews add task-executing agents | Mixed | B/C |
-| Meta | E6: two 45-min rounds, about 35–40 usable; Excalidraw; an AI-enabled variant reportedly uses Mermaid in CoderPad (spring 2026, early signal) | SWE: auctions, ticketing, click aggregation, chat. ML pool: LLM assistant, coding assistant, agentic ticket investigation, real-time voice, LLM inference | SWE classic; ML LLM-native | B/C |
-| Google | L6: 60 min; classic or ML style by role and interviewer | SWE classic. ML-platform and GenAI tracks: LLM serving with strict latency; agentic design in Cloud GenAI FDE loops; evaluation discussion central | Role-dependent | B/C |
-| Databricks | Role-dependent | AI-FDE: RAG over sensitive, fast-changing documents; evaluating a multi-agent system. GenAI engineer: distributed LLM inference. MLE: training systems, RAG at millions of documents | Role-dependent | C |
-| Stripe | Coding, integration, debugging, design; a 2026 review lists an "AI round" | Payments, reliability, consistency, graceful failure; no LLM-design evidence | Classic | C |
-| Uber | MLE; an Aug 2026 phone screen: 45 min coding plus 15 min on where ML or LLMs could help | Surge pricing, ETA, fraud, matching | Classic ML, LLM probes | C |
-| Scale-ups | ML or "applied system design" after a take-home (one playbook) | Agents, RAG, evals | AI-native | C/D |
+Candidate reports, not official formats (T0-14 §6.2, L171–178). Each firm's round lengths, format and design flavour are in [interview loops](interview-loops.md#reported-loop-structures-by-employer); practice versions of these prompts, with answer criteria, are in the [prep packs](prep-packs.md).
+
+| Firm | Reported prompts | Grade |
+|---|---|---|
+| Anthropic | Inference API and batching, distributed search over about 1B documents, P2P weight distribution, GPU scheduling with credits, prompt playground, eval and monitoring, design-doc review, roofline, p95 debugging | B |
+| OpenAI | Playground, enterprise search, GPU-credit allocation, RAG assistants, Sora-style video orchestration, beside classic prompts (payments, chat, rate limiter, job scheduler); 2026 reviews add task-executing agents | B/C |
+| Meta | SWE: auctions, ticketing, click aggregation, chat. ML pool: LLM assistant, coding assistant, agentic ticket investigation, real-time voice, LLM inference | B/C |
+| Google | SWE classic. ML-platform and GenAI tracks: LLM serving with strict latency; agentic design in Cloud GenAI FDE loops; evaluation discussion central | B/C |
+| Databricks | AI-FDE: RAG over sensitive, fast-changing documents; evaluating a multi-agent system. GenAI engineer: distributed LLM inference. MLE: training systems, RAG at millions of documents | C |
+| Stripe | Payments, reliability, consistency, graceful failure; no LLM-design evidence | C |
+| Uber | Surge pricing, ETA, fraud, matching | C |
+| Scale-ups | Agents, RAG, evals | C/D |
 
 ## The 45-minute blueprint
 
@@ -125,60 +129,42 @@ Source: T0-14 L584–591 [D].
 
 T0-14 merged every AI-flavoured prompt in its sources into 15 archetypes. It kept those reported by at least two independent sources or by one quantified aggregate [B/C · T0-14.F3; D · T0-14 L182]. Voice and document extraction rest mainly on listicles [T0-14 L86]. Practise the archetype and its numbers, not the title: question lists rotate [D · T0-14 L920].
 
-| ID | Archetype | Evidence | Most reported at | Core tension |
-|---|---|---|---|---|
-| A1 | Multi-tenant LLM inference API | B (41 Anthropic reports) | Anthropic, OpenAI infra, Google (C) | Throughput vs latency; goodput under TTFT and TPOT SLOs |
-| A2 | GPU request-batching service | B | Anthropic | Batch fill vs queue wait |
-| A3 | Offline batch-inference API | B (12) | Anthropic | Idle capacity vs protecting online SLOs |
-| A4 | GPU fleet scheduling, quotas and credits | B (7 + 4) | Anthropic, OpenAI | Bin-packing vs fairness vs cold-start cost |
-| A5 | Model-weights distribution and safe rollout | B (16 + 2) | Anthropic | Source egress vs P2P complexity; rollback safety |
-| A6 | LLM gateway or internal AI platform | C | Listicles; platform teams | Central control vs team autonomy; token-based limits |
-| A7 | Prompt playground, registry and experiments | B (15) | Anthropic, OpenAI | Versioning, streaming, multi-model fan-out cost |
-| A8 | Enterprise RAG and permission-aware search | B/C | OpenAI, Databricks, Google, Anthropic | Recall vs latency; ACL correctness; freshness |
-| A9 | Chat assistant with context assembly and memory | B/C | OpenAI, Anthropic, Meta ML | Context budget vs quality; memory governance |
-| A10 | Code completion and coding assistant | C | Meta ML pool, listicles | Sub-second TTFT vs context quality |
-| A11 | Long-running tool-using agent platform | C | OpenAI, Google, Anthropic, scale-ups | Autonomy vs blast radius; resumability |
-| A12 | Real-time voice assistant | C | PracHub pools, listicles | End-to-end latency vs turn-taking correctness |
-| A13 | Document and multimodal extraction at scale | C | Databricks, listicles | Cost vs accuracy; reprocessing on model change |
-| A14 | LLM and agent evaluation platform | B/C | Anthropic, Dataford aggregate, Staff+ listicles | Grader trust vs cost; saturation |
-| A15 | Safety, abuse and injection defense | B/C | Anthropic, OpenAI, Databricks | Containment vs usability; false positives |
+The index of the 15 (each one's family, core tension, Staff-level tell, where it is most reported with its evidence grade, and its practice prompts) is generated from data in the [prep packs](prep-packs.md#system-design-archetypes), after T0-14 L184–200. The cards below teach how to answer each one.
 
-Source: T0-14 L184–200.
-
-**How to read a card.** *Brief* lists reported prompts, graded by the archetype's evidence. *Elicit*, *Decide* and *Staff tell* are T0-14's synthesis [D] unless a grade is shown. *Compute* points to the formula kit; worked figures are [M].
+**How to read a card.** *Prompts* names the archetype's practice prompts in the [prep packs](prep-packs.md), which hold each prompt's wording, source, grade and answer criteria; it leads with the most reported prompt and adds any reported variant the packs do not hold. *Elicit*, *Decide* and *Staff tell* are T0-14's synthesis [D] unless a grade is shown. *Compute* points to the formula kit; worked figures are [M].
 
 ### Serving (A1–A5)
 
 #### A1. Multi-tenant LLM inference API
-- **Brief:** "Design an inference API for serving LLMs" (41 of 112 Anthropic reports); a token-generation service at about 100K RPS; distributed LLM inference (Databricks GenAI engineer); low-latency serving (a practice prompt for a Google ML-platform role) [B · T0-14 L80, L206].
+- **Prompts:** p023 and p024 in the [infrastructure pack](prep-packs.md#infrastructure-pack), led by the inference-API prompt (41 of 112 Anthropic reports) [B · T0-14 L80, L206]. Also reported: low-latency serving, a practice prompt for a Google ML-platform role [T0-14 L206].
 - **Elicit:** tenants and priority tiers; peak RPS; input and output token distributions (p50, p99); streaming; TTFT p99 and TPOT targets; model sizes; regions; deploy cadence; cost target in GPU-hours per million tokens [T0-14 L207].
 - **Decide:** colocated continuous batching vs prefill/decode disaggregation (no interference, but KV transfer and fault propagation); paged KV, since naive allocators used only 20.4–38.2% of KV memory for real token state [A]; admission control and load shedding vs unbounded queues; prefix-aware routing vs even load; autoscaling on queue depth and KV utilisation, not CPU, with a warm pool because model loads take minutes; speculative decoding only at low QPS [A/B · T0-14 L89, L227].
 - **Compute:** F4–F6 for KV, concurrency and the decode ceiling; F7 for prefill; F9 for streams; F10 for unit cost.
 - **Staff tell:** defines the SLO as goodput (requests per second per GPU that meet both TTFT and TPOT), ties capacity to KV math, and specifies tenant fairness and a canary rollout with an eval gate. Red flags: "one request per GPU", CPU autoscaling, no prefill/decode distinction [T0-14 L228–229].
 
 #### A2. GPU request-batching service
-- **Brief:** "Design an inference batching system" and "an end-to-end batching system for LLM queries", among the most reported Anthropic prompts [B]; one variant asks for 100 requests to take about the time of one [C · T0-14 L233].
+- **Prompts:** p025 in the [infrastructure pack](prep-packs.md#infrastructure-pack): an end-to-end batching system for LLM requests, among the most reported Anthropic prompts [B · T0-14 L233].
 - **Elicit:** max batch size; latency SLO; arrival rate and burstiness; input-length variance; cancellation and timeout semantics; failure domain [T0-14 L234].
 - **Decide:** static batching with a timer vs dynamic vs continuous (iteration-level) batching; length bucketing to cut padding; head-of-line blocking from long prompts; backpressure vs queueing; returning results to the right callers under partial failure [T0-14 L248].
 - **Compute:** batch fill ≈ arrival rate × max wait, by Little's law (textbook, D) [T0-14 L248]; F8 for the latency budget that sets the max wait.
 - **Staff tell:** derives the max wait from the latency budget, then notes that continuous batching supersedes the timer design for generative work; handles poison requests and cancellation. Red flags: an unbounded queue; no answer to "one request in the batch fails" [T0-14 L249–250].
 
 #### A3. Offline batch-inference API
-- **Brief:** batch inference (12 Anthropic reports) [B]. The real-world reference: provider batch APIs return results within 24 hours at 50% of standard token prices, and the discount stacks with prompt caching [A · T0-14 L254]. A related long-running job in OpenAI's pool: Sora-style video-generation orchestration [C · T0-14 L254].
+- **Prompts:** p026 in the [infrastructure pack](prep-packs.md#infrastructure-pack): batch inference (12 of 112 Anthropic reports) [B · T0-14 L254]. The real-world reference: provider batch APIs return results within 24 hours at 50% of standard token prices, and the discount stacks with prompt caching [A · T0-14 L254].
 - **Elicit:** batch size limits (sources disagree, so check the provider's documentation); turnaround SLA; priority against online traffic; result retrieval; idempotency; partial-failure semantics [T0-14 L255].
 - **Decide:** deadline-aware scheduling that fills the diurnal trough; preemption and checkpointing; grouping by shared prefix, where cache hits inside batches are best-effort, so warm the cache first or use the 1-hour TTL [A]; idempotent retries; fairness with online traffic [T0-14 L271].
 - **Compute:** F2 at the batch rate (half price); F3 for cache stacking.
 - **Staff tell:** treats price as a scheduling signal and batch work as the fleet's utilisation-smoothing layer [T0-14 L272].
 
 #### A4. GPU fleet scheduling, placement and credits
-- **Brief:** GPU cluster (7) and mixed large/small-model GPU allocation (4) in the Anthropic tally [B]; a GPU scheduling system using credits [C]; GPU-credit allocation, credit expiry and atomic credit transactions at OpenAI [T0-14 L276].
+- **Prompts:** p027 and p028 in the [infrastructure pack](prep-packs.md#infrastructure-pack): GPU allocation for a mix of model sizes (GPU cluster 7 and mixed-size allocation 4 of 112 Anthropic reports) [B · T0-14 L276] and GPU scheduling with credits, reported at Anthropic and OpenAI [C · T0-14 L276].
 - **Elicit:** model memory footprints and tensor-parallel (TP) degrees; heterogeneous GPUs; preemption policy; per-org quotas; cold-start tolerance [T0-14 L277].
 - **Decide:** dedicated pools per model vs multiplexing; TP degree vs replica count; warm-pool cost vs cold-start latency; reserved vs spot; credit-ledger correctness: idempotency, double-spend, reconciliation [T0-14 L291].
 - **Compute:** F5 for weights plus KV per replica.
 - **Staff tell:** derives placement constraints from weights plus KV memory, and notes that context length sets the concurrency ceiling [T0-14 L292].
 
 #### A5. Model-weights distribution and safe rollout
-- **Brief:** ML-model distribution (16) and large-file streaming (2) in the Anthropic tally; "large model file distribution" in Hello Interview's Staff list [B · T0-14 L296].
+- **Prompts:** p029 in the [infrastructure pack](prep-packs.md#infrastructure-pack): large model-file distribution (ML-model distribution 16 and large-file streaming 2 of 112 Anthropic reports; also on Hello Interview's Staff list) [B · T0-14 L296].
 - **Elicit:** weight size (hundreds of GB); fleet size; source bandwidth; integrity; rollout and rollback policy; time-to-ready target [T0-14 L297].
 - **Decide:** P2P vs hierarchical cache vs direct object-store fan-out; chunk size; topology awareness; throttling so distribution does not starve serving; version consistency; verification cost; a health check, eval smoke test and canary with a rollback pointer before traffic shifts [T0-14 L305–310].
 - **Compute:** F15. Sending 140 GB to 1,000 nodes from a 100 Gbps source moves 140 TB in about 11,200 s (3.1 h), while one node ingests 140 GB in about 45 s on a 25 Gbps NIC. The source is the bottleneck, so a swarm or tree is justified [M · T0-14 L311].
@@ -187,14 +173,14 @@ Source: T0-14 L184–200.
 ### Platform (A6–A7)
 
 #### A6. LLM gateway or internal AI platform
-- **Brief:** "design an LLM gateway/router" and "multi-team AI platform" in listicles; "Design a prompt caching and retrieval system" from Anthropic SWE candidates (IGotAnOffer) [C · T0-14 L316].
+- **Prompts:** p030 and p031 in the [infrastructure pack](prep-packs.md#infrastructure-pack): an LLM gateway and router for a multi-team platform (listicles) and a prompt caching and retrieval system (Anthropic SWE candidates, per IGotAnOffer) [C · T0-14 L316].
 - **Elicit:** number of teams; providers; per-team budgets; compliance (PII); failover policy; reproducibility [T0-14 L317].
 - **Decide:** token-based limits (estimate pre-flight, reconcile post-flight) vs request limits; degrade to a cheaper tier vs reject; semantic cache opt-in per route; pinned vs floating model versions; central logging vs privacy; backpressure through streaming proxies [T0-14 L333].
 - **Compute:** F2 per team; F3 and F14 for the cache layers; F13 for router vs cascade.
 - **Staff tell:** org-level levers: a model-change policy with eval gates, cost attribution, exception handling [T0-14 L334].
 
 #### A7. Prompt playground, registry and experimentation
-- **Brief:** Prompt Playground (15 Anthropic reports); "Design the OpenAI Playground" (reported as an OpenAI phone-screen prompt); "AI playground editor" [B · T0-14 L338].
+- **Prompts:** p032 in the [infrastructure pack](prep-packs.md#infrastructure-pack): a prompt playground (15 of 112 Anthropic reports; also reported as an OpenAI phone-screen prompt) [B · T0-14 L338]. Also reported: an AI playground editor [T0-14 L338].
 - **Elicit:** users and scale; multi-model comparison; sharing and permissions; dataset runs; retention of completions [T0-14 L339].
 - **Decide:** content-addressed immutable prompt versions; streaming transport and reconnect; fan-out cost and quotas; permissions on shared prompts; retention and privacy of stored completions [T0-14 L354].
 - **Compute:** F2 per run, multiplied by the models compared and the dataset size.
@@ -205,42 +191,42 @@ Source: T0-14 L184–200.
 For product-focused Applied-AI teams, Aced warns that 15 minutes on GPU allocation or model routing wastes time [C · T0-14 L172].
 
 #### A8. Enterprise RAG and permission-aware search
-- **Brief:** "How would you build an LLM-powered enterprise search system?" (OpenAI, 2026); low-latency RAG and an enterprise RAG assistant (OpenAI pool on PracHub); distributed search over about 1B documents (the most consistently reported Anthropic prompt per IGotAnOffer); RAG over sensitive, fast-changing documents (Databricks AI-FDE) [B/C · T0-14 L359].
+- **Prompts:** p001–p004 in the [application pack](prep-packs.md#application-pack) and p017 in the [application plus customer scoping pack](prep-packs.md#application-plus-customer-scoping-pack), led by LLM-powered enterprise search (OpenAI, 2026) and distributed search over about 1B documents, the most consistently reported Anthropic prompt per IGotAnOffer [B/C · T0-14 L359].
 - **Elicit:** corpus size and modalities; ACL model; freshness; QPS; latency budget; citation requirement; accuracy bar and cost of a wrong answer [T0-14 L360].
 - **Decide:** dense-only vs hybrid BM25 + dense + reranker. In Anthropic's Contextual Retrieval study the top-20 retrieval failure rate fell from 5.7% to 3.7% with contextual embeddings, 2.9% with contextual BM25 and 1.9% with reranking (one vendor, top-20 metric, so gains are smaller at smaller k) [A]. Also: chunk size and context prefixes; rerank latency vs recall; ACL pre-filter vs post-filter (post-filter leaks and wastes top-k); re-embedding migration, which also invalidates any semantic cache; long context vs retrieval, since accuracy falls for mid-context facts and with length [A/B · T0-14 L385].
 - **Compute:** F11. 50M documents × 20 chunks = 1B vectors; × 1,024 dimensions × 4 B = 4.1 TB in fp32, about 1.0 TB in int8, about 0.13 TB with PQ [M · T0-14 L651]. F8 for the latency budget.
 - **Staff tell:** makes ACL enforcement a retrieval-time, fail-closed invariant; evaluates retrieval (recall@k) separately from generation (faithfulness); plans the embedding-model migration; keeps untrusted content and sensitive data out of one context unless egress is controlled (the EchoLeak lesson) [T0-14 L386].
 
 #### A9. Chat assistant with context assembly and memory
-- **Brief:** "Design ChatGPT"; a high-scale chat application (OpenAI); chat system (7 Anthropic reports); conversational memory; a customer-support chatbot on a third-party LLM platform (Aced's 2026 list) [B/C · T0-14 L390].
+- **Prompts:** p005 and p006 in the [application pack](prep-packs.md#application-pack): a ChatGPT-style assistant at high scale, with context assembly and memory (chat system: 7 of 112 Anthropic reports), and a customer-support chatbot on a third-party LLM platform [B/C · T0-14 L390].
 - **Elicit:** DAU and concurrent streams; context length; tools; memory scope and deletion rules; moderation; multi-device sync [T0-14 L391].
 - **Decide:** server-side state vs client re-send; compaction vs sliding window (compaction can drop details, so tune for recall first); cache-friendly layout with static content first; memory write policy (supersession, contradiction) and deletion; moderating a stream without blocking time-to-first-token; SSE vs WebSocket [T0-14 L409].
 - **Compute:** F3. With 2,500 static and 500 dynamic tokens on Sonnet 5.5, an uncached request costs $0.0060 and a cache hit $0.00125, 79% cheaper; one read repays the write [M · T0-14 L645]. F9 for concurrent streams.
 - **Staff tell:** explains how prompt layout drives the prefix-cache hit rate and cost, and names memory governance: what is stored and who can delete it [T0-14 L410].
 
 #### A10. Code completion and coding assistant
-- **Brief:** "LLM-based coding assistant" in Meta's ML pool; code-completion design in coach lists [C · T0-14 L414].
+- **Prompts:** p007 in the [application pack](prep-packs.md#application-pack): an LLM-based coding assistant with inline completion (Meta's ML pool; coach lists) [C · T0-14 L414].
 - **Elicit:** latency budget for inline completions (coach sources suggest a few hundred milliseconds) [C]; keystroke-rate bursts; code privacy; telemetry [T0-14 L415].
 - **Decide:** small model near the user vs large central model; prefix reuse as the user types; speculative decoding, which helps most at low-to-medium QPS with smaller gains at high QPS [A]; context size vs TTFT; acceptance vs correctness, where retained-after-N-seconds beats raw acceptance [T0-14 L429].
 - **Compute:** F8 for the TTFT budget; F1 with a burst factor for keystroke peaks; F6 for the small model's decode ceiling.
 - **Staff tell:** pairs execution-based offline evals with online retention metrics, and plans capacity for keystroke bursts [T0-14 L430].
 
 #### A11. Long-running tool-using agent platform
-- **Brief:** an agent system that adapts to new tasks (Anthropic); agents executing tasks in a chat use case (OpenAI, Aug 2026 review); agentic system design in Google Cloud GenAI FDE loops; hours-long coding agents that resume from checkpoints (listicles) [C · T0-14 L434].
+- **Prompts:** p008 and p009 in the [application pack](prep-packs.md#application-pack): an agent system that executes tasks from a chat interface (OpenAI, August 2026 review, with variants at Anthropic, Meta and Google Cloud GenAI FDE loops) [C · T0-14 L434], and an agent-debugging round [D · T0-06 L318]. Also reported: hours-long coding agents that resume from checkpoints (listicles) [C · T0-14 L434].
 - **Elicit:** side-effect classes (read-only, reversible, irreversible); budgets (steps, tokens, wall-clock); concurrency; tenancy; human-approval policy [T0-14 L435].
 - **Decide:** deterministic workflow vs autonomous agent (default to the workflow; use an agent when the path cannot be predetermined); single vs multi-agent (sub-agents isolate context but multiply token cost); compaction, structured notes and just-in-time retrieval; sandbox strength vs start-up latency [T0-14 L452, L570].
 - **Compute:** F12. At p = 0.75 per trial, pass^3 is about 42% [A]; 0.98 per step over 20 steps gives 67% (textbook, D) [T0-14 L652].
 - **Staff tell:** designs the blast radius first (Rule of Two), makes tools idempotent and the loop resumable, and builds the eval harness before adding agent features. Red flag: an unbounded loop with no budgets [T0-14 L453–454].
 
 #### A12. Real-time voice assistant
-- **Brief:** "Design a Real-Time AI Voice System" in PracHub's ML-design pool (about 97 questions across several companies), in listicles and in Meta's ML pool; no firm-level aggregate found [C · T0-14 L173, L458].
+- **Prompts:** p010 in the [application pack](prep-packs.md#application-pack): a real-time AI voice system, from PracHub's ML-design pool (about 97 questions across several companies), listicles and Meta's ML pool; no firm-level aggregate was found [C · T0-14 L173, L458].
 - **Elicit:** the end-to-end target, where most vendor sources say about 800 ms voice-to-voice (range about 300–1,000 ms) against a human turn gap of about 200 ms [C · T0-14 L459]; telephony vs WebRTC; barge-in; languages; cost per minute.
 - **Decide:** cascaded STT-LLM-TTS (observable, swappable) vs speech-to-speech (lower latency, less control); endpointing aggressiveness (premature cut-offs vs added delay); a smaller model for lower TTFT; co-location; interruption semantics [T0-14 L475].
 - **Compute:** F16. Network in 40 + endpointing 200 + STT final 100 + LLM TTFT 300 + TTS first audio 150 + network out 40 = 830 ms, over the 800 ms target, so trim endpointing or LLM TTFT [C/D · T0-14 L663].
 - **Staff tell:** states a per-stage p95 budget and overlaps stages: partial transcripts into the LLM, sentence chunks into TTS [T0-14 L476].
 
 #### A13. Document and multimodal extraction at scale
-- **Brief:** a pipeline that ingests heterogeneous documents for LLM use (Databricks track); summarising very long documents; extraction with reliability targets (listicles) [C · T0-14 L480].
+- **Prompts:** p011 in the [application pack](prep-packs.md#application-pack): a pipeline that ingests heterogeneous documents for LLM use (Databricks track), with listicle variants on summarising very long documents and extraction with reliability targets [C · T0-14 L480].
 - **Elicit:** volume per day; document types and lengths; field-level accuracy target; turnaround; human-review capacity [T0-14 L481].
 - **Decide:** single-pass long context vs chunked map-reduce (long context degrades mid-document); sync vs batch API at half price; small-model-first cascade vs upfront router, with RouteLLM-style savings of 35–85% by workload [A]; schema-constrained decoding vs post-validation; OCR vs a vision LLM [T0-14 L499].
 - **Compute:** F2 at the batch rate; F13 for cascade vs router, priced per correct document.
@@ -249,14 +235,14 @@ For product-focused Applied-AI teams, Aced warns that 15 minutes on GPU allocati
 ### Cross-cutting (A14–A15)
 
 #### A14. LLM and agent evaluation platform
-- **Brief:** "Design a model evaluation and monitoring system" (Anthropic SWE candidates, IGotAnOffer); a system that runs benchmarks across hundreds of model variants (Anthropic, one aggregator); an evaluation platform for many agent workflows (Staff+ listicles). "Evaluate an LLM System" is the most frequent question in Dataford's GenAI-engineer aggregate (19 guides) [C · T0-14 L104, L504].
+- **Prompts:** p035–p038 in the [evaluation design pack](prep-packs.md#evaluation-design-pack) and p018 in the [application plus customer scoping pack](prep-packs.md#application-plus-customer-scoping-pack). "Evaluate an LLM System" is the most frequent question in Dataford's GenAI-engineer aggregate (19 guides), and Anthropic SWE candidates report a model evaluation and monitoring system [C · T0-14 L104, L504].
 - **Elicit:** number of teams and agents; trial cost; grader mix; CI integration; production sampling [T0-14 L505].
 - **Decide:** code vs LLM vs human graders; outcomes over paths; trials vs cost (batch API for offline runs); static vs rolling datasets (saturation, contamination); judge-version pinning; flaky-task detection [T0-14 L521].
 - **Compute:** F12 for pass@k and pass^k; F2 at the batch rate for offline runs.
 - **Staff tell:** sets the ownership model (the platform owns infrastructure, product teams contribute tasks) and links eval metrics to business outcomes [T0-14 L522]. Use the [evaluation rubric](#evaluation-layers-l0l9) as the deep-dive spine.
 
 #### A15. Safety, abuse and prompt-injection defense
-- **Brief:** a malware-analysis system (Hello Interview's Anthropic Staff list); an LLM API with a safety layer; safeguards for an AI system that acts on a user's behalf (Aced's 2026 list); moderation and multi-tenant agent isolation (Databricks-type tracks) [B/C · T0-14 L526].
+- **Prompts:** p012–p014 in the [application pack](prep-packs.md#application-pack): a malware-analysis system (Hello Interview's Anthropic Staff list), an LLM API with a safety layer, and safeguards for an AI system that acts on a user's behalf [B/C · T0-14 L526]. Also reported: moderation and multi-tenant agent isolation in Databricks-type tracks [T0-14 L526].
 - **Elicit:** trust boundaries (which content is untrusted); sensitive assets; irreversible actions; tenancy; false-positive tolerance; response-time overhead [T0-14 L527].
 - **Decide:** classifier-only vs architectural containment; false positives vs missed attacks; human-in-the-loop friction; separating read-only agents from acting agents [A/B · T0-14 L543].
 - **Compute:** F8, because guardrails sit inside TTFT; per-tenant token budgets against unbounded consumption.
@@ -287,7 +273,7 @@ For product-focused Applied-AI teams, Aced warns that 15 minutes on GPU allocati
 | AI-enabled design round | Meta, spring 2026, early signal [B/C] | Designing with an AI assistant, Mermaid in CoderPad | Produce Mermaid quickly and critique AI output; policy varies by team |
 | Project deep dive | Anthropic, OpenAI (works like a reverse design interview), Uber [B/C] | Depth on systems you built | Rehearse two systems with numbers and rollbacks |
 
-Source: T0-14 L550–554, L608.
+Source: T0-14 L550–554, L608. Practice prompts: p056 (design-document review) in the [coding pack](prep-packs.md#coding-pack); p033 (roofline) and p034 (p95 debugging) in the [infrastructure pack](prep-packs.md#infrastructure-pack).
 
 ## The numbers: formula kit F1–F16
 
@@ -438,7 +424,7 @@ The steps follow T0-14's recommended order [D · T0-14 L116–123]; the "done wh
 5. **Drill the scripts.** The sixty-second evaluation answer and the thirty-second safety script below. *Done when* you deliver each inside its time, adapted to the archetype in front of you.
 6. **Mock with a human.** For GenAI system design the best-verifiable prep offering is Hello Interview [B/C · T0-10.F9], though its pricing page no longer listed human mock interviews on 2026-10-21 [B · T0-10 L86]; no prep platform has independent outcome evidence [E · T0-10 L86; ERRATA U17]. T0-14's practice stack adds Excalidraw (the common board in Meta rounds [B]), a Mermaid cheat-sheet, Aced (formerly Exponent) company guides, a KV calculator for cross-checks, and AIPerf or `vllm bench serve` on a small model for TTFT and TPOT intuition [D · T0-14 L825, L859]. See the [tool catalog](../00-start/tool-catalog.md). *Done when* a human interviewer has scored you against the rubrics above.
 7. **Add the variant formats your loop has.** One design-document review and one p95-debugging drill for Anthropic or Staff+ loops [B/C · T0-14 L550–552]. *Done when* you produce severity-ordered findings inside the time-box.
-8. **Debrief every round within 30 minutes.** Capture the exact questions, audit knowledge gaps and adjust before the next loop. Coaching sources recommend this universally; no controlled evidence shows a pass-rate effect [C/D · T1-03.F12]. *Done when* each gap is a dated task in your drill set.
+8. **Debrief every round within 30 minutes,** with the five-step template in [interview loops](interview-loops.md#debrief-within-30-minutes-of-each-round): capture the exact questions, audit knowledge gaps and adjust before the next loop. Coaching sources recommend this universally; no controlled evidence shows a pass-rate effect [C/D · T1-03.F12]. *Done when* each gap is a dated task in your drill set.
 
 ## Templates and examples
 

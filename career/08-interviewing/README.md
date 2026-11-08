@@ -18,11 +18,11 @@ sources: [T0-14, T1-03]
 
 | Document | What it gives you |
 |---|---|
-| [interview-loops.md](interview-loops.md) | How GenAI loops are structured, how to classify yours before preparing, the day itself, follow-up and debrief, and questions to ask |
-| [system-design-archetypes.md](system-design-archetypes.md) | The GenAI system-design interview: the 15 archetypes as case cards, the 45-minute blueprint, the formula kit and the rubrics interviewers use |
-| [behavioral-calibration.md](behavioral-calibration.md) | How behavioural rounds are scored: the four competencies C1–C4, the STAR-AI story bank, the 12-question bank and veto signals |
-| [coding-rounds.md](coding-rounds.md) | Classic, AI-enabled, document-review and debugging rounds: what each scores and how to prepare |
-| [prep-packs.md](prep-packs.md) | Practice prompts for every interview track, with what a strong answer covers and the red flags (generated) |
+| [interview-loops.md](interview-loops.md) | How GenAI loops are structured and reported by employer, how to classify yours before preparing, what each round tests, the day itself, the debrief template, follow-up notes and questions to ask |
+| [system-design-archetypes.md](system-design-archetypes.md) | The GenAI system-design interview: the drill order per loop class, design prompts by firm, the 15 archetypes as case cards, the 45-minute blueprint, the formula kit, the design-document review and p95-debugging formats, and the rubrics interviewers use |
+| [behavioral-calibration.md](behavioral-calibration.md) | How behavioural rounds are scored: the four competencies C1–C4 and their 4/2/1 rubric, firm veto signals, and a STAR-AI story bank mapped to the twelve high-yield questions in the prep packs |
+| [coding-rounds.md](coding-rounds.md) | Classic, AI-enabled, document-review and debugging rounds: what each scores, a timed AI-enabled protocol and a practice ladder |
+| [prep-packs.md](prep-packs.md) | Practice prompts for every interview track, with what a strong answer covers and the red flags, plus the index of the 15 system-design archetypes (generated) |
 
 ## Planned
 

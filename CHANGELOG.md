@@ -7,6 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Consolidation after a whole-repository audit (2026-11-07): every shared fact has one owner, every guide follows the guide pattern, generated pages carry review dates, and the machinery enforces more of what it promises. One page is removed and data formats change, so the next release is a minor version under D-014.
+
+### Added
+- **Decisions:** D-019 (one owner per fact) and D-020 (generated review dates and a weekly reminder), appended as accepted, not yet human-reviewed; D-017's calibration record, filled when its trigger fired (35 pages with review dates, against 20).
+- **Data:**
+  - `data/posting_skill_shares.json` and its schema: the JobsPipe posting-term shares retrieved 2026-11-02, moved unchanged from the role skill maps. `scripts/build_skills.py` checks every JD share in the ontology against it (154 of 154 match) and renders it in the role skill inventories under "Posting evidence".
+  - `data/role_titles.json` and its schema: the A–Z title list, moved out of `scripts/build_index.py`; canonical titles are checked against the role ids.
+  - A schema for `data/role_scores.json`; in that file, the GenAI-restricted demand ranges and the track playbooks (both moved out of scripts) and the date each posting-count source was last verified.
+  - Per-variant résumé headlines in the skills ontology (from the résumé strategy's variant catalogue).
+- **Machinery:**
+  - `scripts/build_all.py`: every generator in dependency order, then the validator; its `GENERATORS` list is the single registry, and the validator fails if a script with `--check` is missing from it.
+  - `scripts/common.py`: the JSON Schema subset, citation checks for session line references, and shared text helpers.
+  - `scripts/tests/`: 15 tests (schema subset, citations, the validator's document rules, every data file against its schema, a smoke test of the gap-analysis tool), run in CI before the validator.
+  - `.github/workflows/due-report.yml`: a weekly run with `--strict` that fails while any page is due (D-020); `validate.yml` gained `permissions: contents: read`.
+- **For agents:** a session-ID-to-file map and the project documents in `llms.txt`; the owners table in AGENTS.md §2; rules to prefer Layer 0 sessions over syntheses and to curate, not teach.
+
+### Changed
+- **Every guide follows the guide pattern** (`LEGACY_GUIDES` is empty): GenAI target roles, the job-search strategy and the résumé strategy were migrated. The résumé strategy is the single résumé guide (layers, variant catalogue, tailoring, master inventory and the computed résumé decisions, whose blocks `scripts/resume_layers.py` now writes there); the job-search strategy keeps hiring levers, binding constraints and sequencing, and links the stage guides added in v0.2.0.
+- **One owner per fact (D-019):**
+  - the role skill maps are narrative only (944 → 473 lines): the D-004 tier lists, which contradicted the ontology, and the D-004 pay claim that ERRATA U20 rejects are gone; duplicated sections point to their owners;
+  - the role catalog's §6.1 and §8.1–§8.3 point to career transitions, pay benchmarks, the role map and the market overview; the market overview links pay benchmarks instead of copying pay;
+  - pay figures, funnel rates, transition timelines, credential and tool statuses, interview tables, visa and India facts are each kept by one owner, with one line and a link elsewhere.
+- **Role pages:**
+  - role rankings retitled "Role Rankings: The Composite Career Index (All Demand)", with a note on why it and the GenAI target order have different first roles; the role-views reading order is the same on README, Start Here and the roles folder (target roles, hubs, map, then the evidence);
+  - role hubs print each role's own résumé headline (13 hubs printed the family's, 5 of them the literal "(per flavour)"); 8 hubs no longer show an India rank built only on placeholder inputs, and 7 flag a single placeholder input; leadership hubs open with their track playbook; leadership ranks read "Leadership #N", so they no longer look like layer codes;
+  - interview-track sources cite T1-03 and T0-14 directly.
+- **Skills:** borrowed posting shares carry "(feeder)", "(adjacent)" or "(closest)" in the inventories' summaries (AGENTS §3.4); the skills-ontology method page was merged into the role skill inventories; the inventories folder page and the vocabulary's credentials section point to the single tables; credential ROI links credentials by role instead of keeping its own status register.
+- **Freshness (D-020):** 99 pages carry `review_by` (35 before). Role hubs take theirs from the oldest posting-count source they cite (2026-11-14 to 2026-12-03), inventories from the tool-status date. The role catalog and rankings fall due on 2026-11-14 (Skillenai counts). The visa page collects its contested-rule statuses in one dated table and stays due until someone re-verifies it.
+- **Validation:** the validator rejects schema keywords it does not enforce (the front-matter `maximum` is now enforced); no schema check is skipped when a schema file is missing; session line references in `tools.json` and `interview_prompts.json`, prompt counts and track and archetype coverage are checked; rank checks fail when a format stops matching; counts in generated text are computed from the data; the manifest ignores headings inside code blocks.
+- **Prep packs:** role lists are names, linked once in the track table (113.6 KB → 90.4 KB).
+- **Documentation:** AGENTS, CONTRIBUTING (owners, British spelling in prose, the generator registry, tests), README (one-line grade summary), research/README (the research pipeline 2 procedure, session numbering by layer, the Vivechak templates and tool files), data/README (every reader of each file), scripts/README (build order, shared modules, tests), CHARTER (a dated status note), the session template's pointer to EGP-1.0.
+
+### Fixed
+- ERRATA's list of records with errata, and its copies in AGENTS.md and the glossary, now include T0-06 (U25); its sources and next-ID instruction were corrected.
+- Negotiation playbook: ≈0.2% is application to hire, not to offer (ERRATA U24). Pay benchmarks: platform data are Grade B (D-018). Role rankings: an unsourced "$220–330K+" base replaced with sourced T0-02 figures. Role skill inventories: a fact-check claim contradicted by its own verification section. Résumé strategy: the target order is computed, not hand-edited. Channels and boards and referrals and outreach now agree on referral timing; channels links the tool catalog's verdicts. Stack model: three candidate titles match the catalog. CAIO hub: T0-18 rates the demand evidence "conflicting". Employer landscape: a non-EGP grade tag. Coding rounds: both readings of T0-03 on lab job descriptions.
+
+### Removed
+- `career/03-skills-and-tech/skills-ontology-method.md` (merged into the role skill inventories).
+
 ## [0.2.0] - 2026-11-07
 
 Every lifecycle stage now has its core guides. The structure of an older handbook informed some formats (decision D-016); every fact comes from the repository's own research. This release changes paths, a schema and data formats, so it is a minor version under D-014. Known issues at release are listed in `ROADMAP.md` §7, and two pages are due for re-verification: visa and relocation, and the market overview's pay snapshot.

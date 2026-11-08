@@ -1,5 +1,11 @@
 # Charter: GenAI Career Intelligence System
 
+> **Status note (2026-11-07).** This charter was written for Phase 0 (October 2026) and is kept as the statement of vision and scope; where it and later records differ, the later records apply:
+> - **Research:** "23 research sessions" counts the 22 session files in [research/sessions/](research/sessions/) plus the Founding Architecture Document ([research/FAD.md](research/FAD.md)), the Layer 3 synthesis.
+> - **Grades:** besides A–E, the repository uses M (model output) and P (practice-curated); the definitions are in [CONTRIBUTING.md](CONTRIBUTING.md) §3.
+> - **Pay tiers:** the six tiers remain a vocabulary, but their bands are contested in the evidence ([research/ERRATA.md](research/ERRATA.md) U5 and U14), so the guides use measured pay by title, level and location ([pay benchmarks](career/09-compensation/pay-benchmarks.md)) rather than tier bands.
+> - **Scope rule in practice:** the repository curates and does not teach; interview prep packs give prompts, what a strong answer covers and red flags, never model answers (decision D-018).
+
 ## Vision
 
 Build the most reliable source of career intelligence for professionals working in Generative AI, ML Systems, and Applied AI Engineering.

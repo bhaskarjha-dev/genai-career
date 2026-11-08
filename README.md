@@ -26,11 +26,11 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 |---|---|
 | Find my way around the career content, by situation or by question | **[career/README.md](career/README.md): Start Here** |
 | See where each GenAI role's work sits, from GPUs to applications | [Role map](career/02-roles/role-map.md) · [Role hubs](career/02-roles/hubs/README.md) (one page per role) |
-| See which GenAI roles exist and which are best | [Role catalog](career/02-roles/role-catalog.md) · [Role rankings](career/02-roles/role-rankings.md) · [GenAI target roles](career/02-roles/genai-target-roles.md) |
+| See which GenAI roles to target, then the evidence | [GenAI target roles](career/02-roles/genai-target-roles.md) → [role hubs](career/02-roles/hubs/README.md) → [role catalog](career/02-roles/role-catalog.md) and [role rankings](career/02-roles/role-rankings.md) (all demand) |
 | Choose my targets and plan the next 90 days | [Targeting workbook](career/00-start/targeting-workbook.md) |
 | Know everything a role needs, with priority and evidence | [Role skill inventories](career/03-skills-and-tech/role-skill-inventories.md) · [Skills radar](career/03-skills-and-tech/skills-radar.md) |
 | Build proof of work that hiring teams believe | [Proof-of-work standards](career/05-portfolio/proof-of-work-standards.md) · [Project archetypes](career/05-portfolio/project-archetypes.md) |
-| Plan a job search and resumes for several roles | [Job-search strategy](career/06-job-search/job-search-strategy.md) · [Resume strategy](career/06-job-search/resume-strategy.md) · [Referrals and outreach](career/07-networking/referrals-and-outreach.md) |
+| Plan a job search and résumés for several roles | [Job-search strategy](career/06-job-search/job-search-strategy.md) · [Résumé strategy](career/06-job-search/resume-strategy.md) · [Referrals and outreach](career/07-networking/referrals-and-outreach.md) |
 | Prepare for interviews | [Interview loops](career/08-interviewing/interview-loops.md) · [Prep packs](career/08-interviewing/prep-packs.md) |
 | Evaluate and negotiate an offer | [Offer evaluation](career/09-compensation/offer-evaluation.md) · [Negotiation playbook](career/09-compensation/negotiation-playbook.md) |
 | See what the research found, by topic | [Findings registry](research/findings.md) (262 graded findings from 22 sessions) |
@@ -42,8 +42,8 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 |---|---|---|
 | [career/](career/README.md) | Reference and guidance | User-facing content: start-here tools in `00-start` and the lifecycle stages `01-landscape` … `11-tracks`; each folder has a README index |
 | [research/](research/README.md) | Evidence and knowledge | 22 dated research sessions (immutable), the findings registry, errata, the decision registry, the Founding Architecture Document and the pipeline specification |
-| [data/](data/README.md) | Sources of truth | Role facts and scores, the skills ontology, the stack model, project archetypes, interview prompts, tools, findings, the document manifest, and JSON Schemas |
-| [scripts/](scripts/README.md) | Machinery | Generators (`--update` / `--check`), `validate_docs.py` and a personal gap-analysis tool |
+| [data/](data/README.md) | Sources of truth | Role facts and scores, role titles, the skills ontology, posting-term snapshots, the stack model, project archetypes, interview prompts, tools, findings, the document manifest, and JSON Schemas |
+| [scripts/](scripts/README.md) | Machinery | Generators (`--update` / `--check`) run by `build_all.py`, `validate_docs.py`, tests, and a personal gap-analysis tool |
 | [ROADMAP.md](ROADMAP.md) · [CHANGELOG.md](CHANGELOG.md) | Meta | Coverage, plans and open decisions; history of changes |
 | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) | For AI | Rules for agents; an LLM index of every document |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | For contributors | Placement, front matter, writing standard, the guide pattern, generated content, validation |
@@ -59,21 +59,12 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 
 ## Evidence standard
 
-All content follows the Evidence-Grounding Protocol (EGP-1.0; [T1-02](research/sessions/T1-02-evidence-grounding-protocol.md), decision D-012):
-
-| Grade | Meaning |
-|---|---|
-| **A** | Primary authoritative source: official documentation, government filings, peer-reviewed research |
-| **B** | Established secondary source with a transparent method |
-| **C** | Third-party analysis, vendor report or a single corroborating source |
-| **D** | Recalled from memory, unverified, or a single anecdote |
-| **E** | Speculative, unverifiable or promotional, or nothing found after searching; never asserted as fact |
-| **M** | Model output (calculations, estimates); it inherits the weakest grade among its inputs |
-| **P** | Practice-curated: standard practice but unmeasured, treated like D |
+All content follows the Evidence-Grounding Protocol (EGP-1.0; [T1-02](research/sessions/T1-02-evidence-grounding-protocol.md), decision D-012). Every empirical claim carries a grade, from A (primary or measured) to E (speculative, never asserted), plus M for model output and P for practice-curated; the definitions are in [CONTRIBUTING.md §3](CONTRIBUTING.md#3-writing-standard-egp-10-in-brief).
 
 **Other rules:**
 - Every factual claim cites its source and grade, or is flagged `[UNVERIFIED]`.
-- Volatile facts carry re-verification dates; pages that state them carry a `review_by` date, and the validator lists pages that are due.
+- Volatile facts carry re-verification dates; pages that state them carry a `review_by` date, the validator lists pages that are due, and a weekly CI run fails while any page is due.
+- Each fact that several pages need has one owner; the other pages link it (decision D-019).
 - Known errors in the Phase 0 records are listed in [research/ERRATA.md](research/ERRATA.md).
 
 ## Contributing and validation
@@ -81,7 +72,8 @@ All content follows the Evidence-Grounding Protocol (EGP-1.0; [T1-02](research/s
 Read [CONTRIBUTING.md](CONTRIBUTING.md) (people) or [AGENTS.md](AGENTS.md) (AI agents). Before finishing any change, run:
 
 ```bash
-python3 -B scripts/validate_docs.py     # must print PROBLEMS: 0; CI runs it on every push
+python3 -B scripts/build_all.py                       # regenerate everything, then validate: must print PROBLEMS: 0
+python3 -B -m unittest discover -s scripts/tests      # if you changed a script; CI runs both on every push
 ```
 
 ## Research methodology

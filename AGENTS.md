@@ -37,20 +37,37 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 | Topic | Edit this | Then run | It regenerates |
 |---|---|---|---|
 | Role scores and rankings | `data/role_scores.json` | `python3 -B scripts/rank_roles.py --update` | The generated blocks in `career/02-roles/role-rankings.md` |
-| Role facts: definition, work footprint (layers and planes), interview track | `data/role_scores.json` | `build_role_map.py --update`, then `build_role_hubs.py --update` | `career/02-roles/role-map.md` and the role hubs in `career/02-roles/hubs/` |
+| Role facts: definition, work footprint (layers and planes), interview track, GenAI-restricted demand, track playbooks | `data/role_scores.json` | `build_role_map.py --update`, then `build_role_hubs.py --update` | `career/02-roles/role-map.md` and the role hubs in `career/02-roles/hubs/` |
 | Stack model: layers, planes, category map, specialisations (D-015) | `data/stack_model.json` | `build_role_map.py --update`, then `build_role_hubs.py --update` | The role map and the hubs |
-| GenAI target order | Computed by `scripts/target_roles.py` from the catalog's lenses | `target_roles.py --update` writes it into the ontology; `--check` also verifies the table in `career/02-roles/genai-target-roles.md` | The `target` of each role in `data/skills_ontology.json` |
-| A–Z title index | the list `E` in `scripts/build_index.py` | `python3 -B scripts/build_index.py --update` | The index block in `career/02-roles/role-catalog.md` |
-| Skills, role skill tiers, credentials, résumé variants, devalued skills | `data/skills_ontology.json` | `build_skills.py --update`, then `build_resume_matrix.py --update`, `resume_layers.py --update` and `build_skills_views.py --update` | The skills vocabulary, the inventories index, `career/03-skills-and-tech/inventories/*.md`, the résumé skills matrix, the job-search strategy's computed blocks, the skills radar and credentials by role |
+| GenAI target order | Computed by `scripts/target_roles.py` from `data/role_scores.json` (eight lenses; GenAI-restricted demand where a role has it) | `target_roles.py --update` writes it into the ontology; `--check` also verifies the table in `career/02-roles/genai-target-roles.md` | The `target` of each role in `data/skills_ontology.json` |
+| A–Z title index | `data/role_titles.json` | `python3 -B scripts/build_index.py --update` | The index block in `career/02-roles/role-catalog.md` |
+| Posting-term shares (JobsPipe measurements) | `data/posting_skill_shares.json`: add a new dated snapshot, never edit an old one | `build_skills.py --update` | The posting-evidence table in `career/03-skills-and-tech/role-skill-inventories.md`; `build_skills.py` checks every JD share in the ontology against it |
+| Skills, role skill tiers, credentials, résumé variants, devalued skills | `data/skills_ontology.json` | `build_skills.py --update`, then `build_resume_matrix.py --update`, `resume_layers.py --update` and `build_skills_views.py --update` | The skills vocabulary, the inventories index, `career/03-skills-and-tech/inventories/*.md`, the résumé skills matrix, the computed blocks in the résumé strategy and the job-search strategy, the skills radar and credentials by role |
 | Project archetypes | `data/project_archetypes.json` | `resume_layers.py --update` and `build_archetypes.py --update` | The job-search strategy's computed blocks and `career/05-portfolio/project-archetypes.md` |
 | Interview practice prompts | `data/interview_prompts.json` | `build_prompts.py --update` | `career/08-interviewing/prep-packs.md` |
 | Ecosystem tools and their verdicts | `data/tools.json` | `build_tool_catalog.py --update` | `career/00-start/tool-catalog.md` |
 | Research findings | `research/sessions/*.md` (new sessions only) | `build_findings.py --update` | `data/findings.json`, `research/findings.md` |
 | Document index | front matter of any document | `build_manifest.py --update` | `llms.txt`, `data/manifest.json` |
 
-All scripts live in `scripts/`; run them with `python3 -B`. The role hubs read most data files, so rebuild them after any role, skills, archetype or stack change.
+All scripts live in `scripts/`; run them with `python3 -B`. **`python3 -B scripts/build_all.py` runs every generator in dependency order and then the validator**; `GENERATORS` in that file is the registry (the validator fails if a script with `--check` is missing from it). The role hubs read most data files, so rebuild them after any role, skills, archetype or stack change.
 
-**Never hand-edit** anything between `BEGIN GENERATED` and `END GENERATED` markers, or any file whose front matter has `generated_by` without "(generated blocks)". Those files are generated in full: the role map, the role hubs, the inventories, the skills radar, credentials by role, project archetypes, prep packs, the tool catalog and the findings registry.
+**Owners of shared facts (D-019).** A fact that several pages need lives in one place; other pages state the point in one line and link the owner's section:
+
+| Fact | Owner |
+|---|---|
+| Role facts, scores, titles; skills and tiers; statuses; posting shares; prompts; tools | The data files above, shown by their generated pages |
+| Pay figures | `career/09-compensation/pay-benchmarks.md`; independent rates: `career/11-tracks/freelance-fractional.md` |
+| Funnel conversion rates | `career/06-job-search/channels-and-boards.md` (how applications get in); `application-operating-system.md` (stage rates, thresholds, the tracker) |
+| Transition timelines and gates G1–G4 | `career/11-tracks/career-transitions.md` |
+| Learning order | `career/03-skills-and-tech/learning-roadmaps.md` |
+| The résumé model; screening (ATS) facts | `career/06-job-search/resume-strategy.md`; `career/06-job-search/ats-mechanics.md` |
+| Interview-loop types and the debrief; design-round exercises | `career/08-interviewing/interview-loops.md`; `system-design-archetypes.md` |
+| Proof-of-work standards | `career/05-portfolio/proof-of-work-standards.md` |
+| India market; India tax; visa rules | `career/01-landscape/market-overview.md`; `career/09-compensation/india-remote-tax.md`; `career/11-tracks/visa-and-relocation.md` |
+| Title statuses, quarantine and not-a-role registers | `career/02-roles/role-catalog.md` |
+| Grade definitions | `CONTRIBUTING.md` §3 (authority: T1-02 §10) |
+
+**Never hand-edit** anything between `BEGIN GENERATED` and `END GENERATED` markers, or any file whose front matter has `generated_by` without "(generated blocks)". Those files are generated in full: the role map, the role hubs, the inventories and their folder page, the skills radar, credentials by role, project archetypes, prep packs, the tool catalog, the findings registry, `llms.txt`, `data/findings.json` and `data/manifest.json`.
 
 ## 3. Answering questions from this repository
 
@@ -60,7 +77,8 @@ All scripts live in `scripts/`; run them with `python3 -B`. The role hubs read m
    - Figures are as of their stated dates.
    - A document whose `review_by` date has passed is due for re-verification: say so when you quote it. `python3 -B scripts/validate_docs.py` lists these documents.
    - Tool and credential statuses must be re-verified by 2027-01-21.
-   - Check [research/ERRATA.md](research/ERRATA.md) before quoting FAD, DECISIONS, T0-03, T0-17, T1-01, T1-03 or T2-01.
+   - Check [research/ERRATA.md](research/ERRATA.md) before quoting FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03 or T2-01; unconfirmed candidate errata are in ROADMAP §7.
+   - When a synthesis (FAD, DECISIONS, T1-01, T1-03, T2-01) and a Layer 0 session (T0-xx) disagree, prefer the Layer 0 session and say so: 29 of the 33 record locations in ERRATA are in syntheses. Log a new disagreement as a candidate erratum in ROADMAP §7.
 4. **Respect the evidence class:**
    - [P] means practice-curated, not measured.
    - M is a model output.
@@ -68,6 +86,7 @@ All scripts live in `scripts/`; run them with `python3 -B`. The role hubs read m
    - The role map's layers show where work sits. They are not a pay or demand model: pay tracks employer tier and seniority (D-015).
 5. **Say when the repository doesn't know.** Stage READMEs mark what is covered, partly covered or evidence only; answer gaps from the linked findings and sessions, and say so.
 6. **Tax, visa and legal material** is pointers, not advice; keep the disclaimer.
+7. **Curate, don't teach** ([CHARTER.md](CHARTER.md)): point to the evidence and the decision rule; give no model answers to interview prompts (D-018).
 
 ## 4. Changing this repository
 
@@ -75,11 +94,12 @@ Before starting new work, read [ROADMAP.md](ROADMAP.md): the build plan (§4), t
 
 - **Evidence:**
   - Never edit `research/sessions/`. Corrections go to `research/ERRATA.md`; new evidence goes into a new session (see [research/README.md](research/README.md)).
-  - `research/DECISIONS.md` is append-only: add a new decision rather than rewriting an old one.
+  - `research/DECISIONS.md` is append-only: add a new decision rather than rewriting an old one (template: `research/templates/DECISIONS.template.md`). Status fields, `human_reviewed` and calibration records are updated in place.
   - **The legacy handbook is not a source (D-016).** An older GenAI career handbook informed some of the repository's formats. It was never part of the repository: it was kept in the git-ignored `temp/` folder during the November 2026 integration and may since have been deleted. Never cite it, link it or copy a figure from it; the validator flags references to it and its signature phrases.
 - **Placement:**
   - Put content in the stage folder where it is used, and add it to that folder's `README.md`. Tools used across stages go in `career/00-start/`.
-  - Facts about a role go in `data/role_scores.json`, not in prose.
+  - Facts about a role go in `data/role_scores.json`, not in prose; no facts in scripts.
+  - One owner per fact (D-019): before writing a figure, check the owners table in §2; link it rather than copy it.
   - Docs use kebab-case file names; scripts and data use snake_case.
 - **Every new document** under `career/` needs front matter that passes `data/schemas/frontmatter.schema.json`: `id`, `title`, `content_type` (index, guide, reference, method or tool), `stage`, `status`, `last_verified`, `summary`, plus optional `review_by`, `sources`, `roles`, `geos`, `tags` and `generated_by`. Set `review_by` when the page states volatile facts (D-017).
 - **Guides** follow the pattern in [CONTRIBUTING.md §4](CONTRIBUTING.md#4-the-guide-pattern) (D-016); the validator checks its four fixed headings.
@@ -92,7 +112,8 @@ Before starting new work, read [ROADMAP.md](ROADMAP.md): the build plan (§4), t
 - **Conventions (D-018):** Levels.fyi, JobsPipe and Fast AI Jobs figures are Grade B; Grade E is never asserted; `review_by` follows EGP-1.0's expiry classes (posting counts 31 days, tool statuses 90, pay 90 in this repository). See [CONTRIBUTING.md §3](CONTRIBUTING.md#3-writing-standard-egp-10-in-brief).
 - **Links:** relative only; never `file://`. Every page under `career/` must link to at least one other document.
 - **Versioning (D-014):** documents carry no version number. The repository is versioned with SemVer git tags, one [CHANGELOG.md](CHANGELOG.md) section per release. Published history is never rewritten.
-- **After any change:** run the generators you affected, then `python3 -B scripts/validate_docs.py`. It must print `PROBLEMS: 0`; it also lists documents due for re-verification. While drafting, `--files <path>` checks single documents. CI runs the full check on every push. Then add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md).
+- **After any change:** run `python3 -B scripts/build_all.py` (or the generators you affected, then `python3 -B scripts/validate_docs.py`). It must print `PROBLEMS: 0`; it also lists documents due for re-verification. While drafting, `--files <path>` checks single documents. If you changed a script, also run `python3 -B -m unittest discover -s scripts/tests`. CI runs the tests and the full check on every push, and a weekly run fails while any page is due (D-020). Then add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md).
+- **Spelling:** British English ("behavioural", "organisation", "programme").
 - **Scripts:**
   - standard library only;
   - run with `python3 -B` or `PYTHONDONTWRITEBYTECODE=1`, so that no `__pycache__` is left in `scripts/`;

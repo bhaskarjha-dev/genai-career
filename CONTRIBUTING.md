@@ -9,11 +9,12 @@ This repository aims to be the most accurate, best-organised source on GenAI car
 | A guide, reference or tool for one lifecycle stage | `career/NN-stage/` (kebab-case file name) | List it in that folder's `README.md`; move its row out of "Planned" |
 | A tool used across stages (workbook, tracker, catalog, glossary) | `career/00-start/` with `content_type: tool` (or `reference`) | Link it from [Start Here](career/README.md) |
 | A cross-cutting playbook for a background, location or working model | `career/11-tracks/` | Same |
-| A fact about a role (definition, work footprint, interview track, pillar score) | `data/role_scores.json` | Run the generators; the role hubs and the role map are rebuilt from it |
-| Structured data that documents are built from | `data/` (snake_case), with a schema in `data/schemas/` when the structure matters | Add a generator in `scripts/` rather than hand-copying values into documents |
-| New research | `research/sessions/` as a new session (see [research/README.md](research/README.md)) | Run `python3 -B scripts/build_findings.py --update` |
+| A fact about a role (definition, work footprint, interview track, pillar score) | `data/role_scores.json` | Run `python3 -B scripts/build_all.py`; the role hubs and the role map are rebuilt from it |
+| A fact that several pages need (a pay figure, a funnel rate, a timeline, a status) | Its owner only (the owners table in [AGENTS.md](AGENTS.md) §2, decision D-019) | Other pages state the point in one line and link the owner's section |
+| Structured data that documents are built from | `data/` (snake_case), with a schema in `data/schemas/` | Add a generator in `scripts/` and register it in `GENERATORS` in `scripts/build_all.py`, rather than hand-copying values into documents; never keep facts inside a script |
+| New research | `research/sessions/` as a new session (see [research/README.md](research/README.md)) | Run `python3 -B scripts/build_all.py` |
 | A correction to a Phase 0 record | `research/ERRATA.md` | Fix the affected career documents |
-| An architectural decision | Append to `research/DECISIONS.md` | Reference it in [CHANGELOG.md](CHANGELOG.md) |
+| An architectural decision | Append to `research/DECISIONS.md`, using the fields in [research/templates/DECISIONS.template.md](research/templates/DECISIONS.template.md) | Reference it in [CHANGELOG.md](CHANGELOG.md) |
 
 The lifecycle stages are: 00 start-here tools, 01 landscape, 02 roles, 03 skills and technology, 04 certifications, 05 portfolio, 06 job search, 07 networking, 08 interviewing, 09 compensation, 10 onboarding, 11 tracks. Reference material sits in the stage where it is used. The folder numbers differ from the 12-stage funnel numbers in D-001; [AGENTS.md](AGENTS.md) maps the two.
 
@@ -77,6 +78,9 @@ Compound grades in the findings registry (for example B/C) mean the finding rest
 - **Never invent numbers.** Prefer [P] or "not measured" to a weak citation.
 - **Show the decision rule.** Guides say what to do, when, and why, with the evidence one click away.
 - **Plain register.** No "definitive", "ultimate", "guarantee" or "top 1%". Say what the evidence supports and stop.
+- **British spelling** ("behavioural", "organisation", "programme", "licence" as a noun) in prose; technical names keep their own spelling. Published file names and IDs keep theirs, so links stay stable: `behavioral-calibration.md` is the path FAD §18 planned.
+- **Curate, don't teach** ([CHARTER.md](CHARTER.md)): point to the evidence and the decision rule. Interview material gives prompts, what a strong answer covers and red flags, never model answers (decision D-018).
+- **One owner per fact** (decision D-019): a figure that several pages use is written once, at its owner, and linked from the rest.
 - **Diagrams in mermaid** (GitHub renders them), or as tables. Avoid ASCII art.
 - **The legacy handbook is not a source** (decision D-016). An older GenAI career handbook informed some of this repository's formats. Never cite or link it, and never copy a figure from it. The validator rejects references to it and flags its signature phrases.
 
@@ -106,7 +110,7 @@ Rules for the pattern:
 - **Contrast pairs show weak and strong side by side**: an outreach note, a résumé line, an interview answer.
 - **Persona and geography variations** go in their own short subsections, only where the evidence differs.
 - **No dead ends.** Every page links onward; the validator rejects pages without a link to another document.
-- **The validator enforces the four fixed headings** for every guide, except three that predate the pattern (listed in `LEGACY_GUIDES` in `scripts/validate_docs.py`).
+- **The validator enforces the four fixed headings** for every guide (`LEGACY_GUIDES` in `scripts/validate_docs.py` is empty since the last three older guides were migrated on 2026-11-07).
 
 ## 5. Generated content
 
@@ -115,10 +119,10 @@ Some documents, or blocks within them, are generated from `data/` by `scripts/`.
 | Generator | Output |
 |---|---|
 | `rank_roles.py` | Role-ranking tables |
-| `build_index.py` | A–Z title index |
-| `build_skills.py` | Skills vocabulary, inventories index, per-role inventories |
+| `build_index.py` | A–Z title index (from `data/role_titles.json`) |
+| `build_skills.py` | Skills vocabulary, inventories index and the posting-evidence table (from `data/posting_skill_shares.json`), per-role inventories |
 | `build_resume_matrix.py` | Concise résumé skills matrix |
-| `resume_layers.py` | Job-search strategy computed blocks |
+| `resume_layers.py` | Computed blocks in the résumé strategy and the job-search strategy |
 | `target_roles.py` | The GenAI target order: `--update` writes it into the skills ontology; `--check` also verifies the target-roles table |
 | `build_role_map.py` | The role map (`career/02-roles/role-map.md`) |
 | `build_role_hubs.py` | One hub per role (`career/02-roles/hubs/`) |
@@ -129,13 +133,13 @@ Some documents, or blocks within them, are generated from `data/` by `scripts/`.
 | `build_findings.py` | Findings registry |
 | `build_manifest.py` | `llms.txt`, `data/manifest.json` |
 
-Every generator supports `--check`. [scripts/README.md](scripts/README.md) lists what each one reads; `scripts/gap_analysis.py` is a personal tool that writes nothing to the repository.
+Every generator supports `--check`. **`python3 -B scripts/build_all.py` runs them all in dependency order and then the validator** (`--check` checks instead of rewriting); its `GENERATORS` list is the registry, and the validator fails if a script with `--check` is missing from it. [scripts/README.md](scripts/README.md) lists what each one reads; `scripts/gap_analysis.py` is a personal tool that writes nothing to the repository.
 
 ## 6. Before you finish
 
 1. Update `last_verified` (and `review_by`, where the page has volatile facts) in the front matter of every document whose facts you changed or re-checked. Do this first: the manifest copies these fields.
-2. Run the generators you affected, then `python3 -B scripts/build_manifest.py --update`.
-3. Run `python3 -B scripts/validate_docs.py`. It checks links, anchors, tables, front matter, writing rules, dead ends, the guide pattern, every generated output, the stack model, cross-file ranks and corpus coverage, and must print `PROBLEMS: 0`. It also lists documents due for re-verification. CI runs the same check on every push and pull request. While drafting, `python3 -B scripts/validate_docs.py --files <path>` checks one document.
+2. Run `python3 -B scripts/build_all.py` (it ends with the manifest and the validator). If you changed a script, also run the tests: `python3 -B -m unittest discover -s scripts/tests`.
+3. Run `python3 -B scripts/validate_docs.py`. It checks links, anchors, tables, front matter, writing rules, dead ends, the guide pattern, every generated output, the stack model, cross-file ranks and corpus coverage, and must print `PROBLEMS: 0`. It also lists documents due for re-verification. CI runs the tests and the same check on every push and pull request; a weekly scheduled run fails while any page is past its `review_by` date (decision D-020). While drafting, `python3 -B scripts/validate_docs.py --files <path>` checks one document.
 4. For a new or substantially revised guide, have someone other than the author check every figure against the line it cites, and fix or relabel what no source supports (decision D-018). Record open problems in [ROADMAP.md](ROADMAP.md) §7.
 5. Add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md).
 

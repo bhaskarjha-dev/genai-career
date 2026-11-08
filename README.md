@@ -41,7 +41,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 | Folder or file | Layer | Contents |
 |---|---|---|
 | [career/](career/README.md) | Reference and guidance | User-facing content: start-here tools in `00-start` and the lifecycle stages `01-landscape` … `11-tracks`; each folder has a README index |
-| [research/](research/README.md) | Evidence and knowledge | 22 dated research sessions (immutable), the findings registry, errata, the decision registry, the Founding Architecture Document and the pipeline specification |
+| [research/](research/README.md) | Evidence and knowledge | 22 dated research sessions (immutable), the findings registry, errata, the decision registry, the Founding Architecture Document, the Phase 0 pipeline specification and [research pipeline 2](research/pipeline-2/README.md) (53 planned sessions) |
 | [data/](data/README.md) | Sources of truth | Role facts and scores, role titles, the skills ontology, posting-term snapshots, the stack model, project archetypes, interview prompts, tools, findings, the document manifest, and JSON Schemas |
 | [scripts/](scripts/README.md) | Machinery | Generators (`--update` / `--check`) run by `build_all.py`, `validate_docs.py`, tests, and a personal gap-analysis tool |
 | [ROADMAP.md](ROADMAP.md) · [CHANGELOG.md](CHANGELOG.md) | Meta | Coverage, plans and open decisions; history of changes |
@@ -55,7 +55,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
   - delivered the role catalogs, rankings, target order, skills ontology and role inventories, and the job-search and resume strategy;
   - put the architecture-v2 foundation in place: the stage spine, front matter, data layer, AI indexes, findings registry and CI;
   - added the role map and one hub per role, and the core guides for every lifecycle stage, from the market overview to growth after the first 90 days, with track playbooks.
-- **What remains:** research the corpus does not yet hold (job-description mining, India job platforms, three more starting backgrounds), the résumé generator, an independent fact-check of the v0.1.0 reference documents and a human expert review of the guides, and the known issues listed in [ROADMAP.md](ROADMAP.md) §7.
+- **What remains:** research the corpus does not yet hold, planned as the 53 sessions of [research pipeline 2](research/pipeline-2/README.md) (networking, résumés, job search, certifications, countries and visas, pay, interviews and every role), the résumé generator, an independent fact-check of the v0.1.0 reference documents and a human expert review of the guides, and the known issues listed in [ROADMAP.md](ROADMAP.md) §7.
 
 ## Evidence standard
 
@@ -78,7 +78,7 @@ python3 -B -m unittest discover -s scripts/tests      # if you changed a script;
 
 ## Research methodology
 
-The research pipeline uses the [Vivechak](research/RESEARCH-PIPELINE.md) research-governance framework: parallel, independent, evidence-grounded sessions with explicit priors, graded findings, source ledgers and belief-change deltas. Its outputs are indexed in [research/README.md](research/README.md).
+The research pipeline uses the [Vivechak](research/RESEARCH-PIPELINE.md) research-governance framework: parallel, independent, evidence-grounded sessions with explicit priors, graded findings, source ledgers and belief-change deltas. Its outputs are indexed in [research/README.md](research/README.md). The second pipeline, [research pipeline 2](research/pipeline-2/README.md), keeps Vivechak's prompt discipline and designs each session backwards from the data and pages it feeds (decision D-021).
 
 ## License
 

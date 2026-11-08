@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Research pipeline 2 (RP2): the plan for targeted research on every high-impact element, designed backwards from the data and pages it will change. No research has been run yet; the owner runs the sessions. An independent review on 2026-11-08, before any session ran, split oversized sessions and tightened the record contract.
+
+### Added
+- **Decision D-021** (research pipeline 2: outcome-first targeted sessions), appended as accepted, not yet human-reviewed.
+- **`research/pipeline-2/`:**
+  - `README.md`: why a second pipeline (with the evidence gaps measured on the data), design principles, what deep research can and cannot do, the outcome map from each element to its owner pages, a generated tracker, waves and a ten-session minimum, how to run a session, quality gates, the reduce steps with the proposed methods for the credential value order and the country ranking, five measurement instruments, the refresh cadence and the limits.
+  - `PROTOCOL.md`: the output and evidence protocol appended to every prompt (EGP-1.0 grades and freshness classes for an agent that cannot open the repository, conflict-of-interest rules, ethics, the report format, and a JSON Lines data appendix with 17 record types that use the repository's role and skill IDs).
+  - `catalogue.json`: 53 sessions (T0-19 to T0-71) and nine reduce steps. Wave 1 (18): LinkedIn; GitHub, READMEs, portfolio sites and writing; X, communities, fellowships and open source as a route; referrals and cold outreach with the law and a yield-per-hour comparison; the résumé; global boards (owning ghost jobs, pay transparency and scams) and national boards with India in depth; job-search tools, agents and MCP servers; target employers and sponsor registers; a seven-part certification census; a two-part country and city scan. Wave 2 (23): six visa dossiers, remote cross-border work, pay (global and India), interview loops, AI-mediated hiring and dossiers for the twelve highest GenAI target roles. Wave 3 (12): dossiers for the other 17 roles, transitions for DevOps/SRE, product managers, IT-services engineers and students, learning resources, skill momentum and emerging titles, the market pulse and onboarding. Each of the 42 tool categories has one owning session. The certification seeds include the owner's list of credentials missing from the repository, marked unverified.
+  - `briefs/`: 23 brief templates in Vivechak's eight-block form; the role, visa, country and certification briefs serve several sessions each.
+  - `VERIFY.md` (an independent verification prompt with acceptance thresholds and batches) and `INTEGRATE.md` (registration, a record-to-owner mapping, dates, conflicts, reduce steps).
+- **`scripts/research_pipeline.py`** (registered in `GENERATORS`): validates the catalogue, the briefs and tool-category ownership, keeps the tracker current, assembles each session's prompt with the repository's claims rendered from `data/` (`--prompt`), lists what to run (`--next`), checks a session report and its data appendix before it is saved (`--appendix`) and builds a batched verification packet (`--verify`). Six new tests (21 in total).
+
+### Changed
+- The writing-rule helpers (`RELATIVE_TIME`, `prose()`) moved from the validator to `scripts/common.py`, so the validator and the report checker share them.
+- The validator lints `research/pipeline-2/` (links, tables, relative-time words) and checks its README's front matter; the manifest and `llms.txt` index it.
+- ROADMAP: phase 5 is designed; P0-2 (run wave 1), P1-6 (integrate by reduce step), P1-7 (the job-description collector) and scripts for official registers, net pay and logged-in counts added; P1-1 to P1-3 and the target-company and learning-resource items mapped to sessions; open decisions on the wave order and on the data shapes for the RP2 rankings; D-021 added to the decisions awaiting confirmation; the session-ID namespace limit recorded.
+- research/README, AGENTS, CONTRIBUTING, README and scripts/README point to the pipeline; new standalone sessions take IDs after the catalogue's reserved range (T0-72 onward).
+
 ## [0.3.0] - 2026-11-08
 
 Consolidation after a whole-repository audit (2026-11-07): every shared fact has one owner, every guide follows the guide pattern, generated pages carry review dates, and the machinery enforces more of what it promises. One page is removed and data formats change, so the next release is a minor version under D-014.

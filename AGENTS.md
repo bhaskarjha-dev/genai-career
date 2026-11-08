@@ -7,6 +7,7 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 | Layer | Where | What it is |
 |---|---|---|
 | Evidence | `research/sessions/` | 22 dated research reports (October 2026). **Immutable.** |
+| Research plan | `research/pipeline-2/` | Research pipeline 2 (D-021): the spec and generated tracker, the shared protocol, the briefs and the catalogue of planned sessions |
 | Knowledge | `research/findings.md`, `data/findings.json` | 262 key findings distilled from the sessions, each with grade and line |
 | Reference and guidance | `career/00-start/` … `career/11-tracks/` | User-facing documents on the lifecycle spine; every document has YAML front matter |
 | Data | `data/` | Machine-readable sources of truth and their schemas |
@@ -47,6 +48,7 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 | Interview practice prompts | `data/interview_prompts.json` | `build_prompts.py --update` | `career/08-interviewing/prep-packs.md` |
 | Ecosystem tools and their verdicts | `data/tools.json` | `build_tool_catalog.py --update` | `career/00-start/tool-catalog.md` |
 | Research findings | `research/sessions/*.md` (new sessions only) | `build_findings.py --update` | `data/findings.json`, `research/findings.md` |
+| Planned research sessions and reduce steps | `research/pipeline-2/catalogue.json`; briefs in `research/pipeline-2/briefs/` | `research_pipeline.py --update` | The tracker in `research/pipeline-2/README.md`; `--prompt <id>` assembles a session's prompt |
 | Document index | front matter of any document | `build_manifest.py --update` | `llms.txt`, `data/manifest.json` |
 
 All scripts live in `scripts/`; run them with `python3 -B`. **`python3 -B scripts/build_all.py` runs every generator in dependency order and then the validator**; `GENERATORS` in that file is the registry (the validator fails if a script with `--check` is missing from it). The role hubs read most data files, so rebuild them after any role, skills, archetype or stack change.
@@ -94,6 +96,7 @@ Before starting new work, read [ROADMAP.md](ROADMAP.md): the build plan (§4), t
 
 - **Evidence:**
   - Never edit `research/sessions/`. Corrections go to `research/ERRATA.md`; new evidence goes into a new session (see [research/README.md](research/README.md)).
+  - New research follows [research pipeline 2](research/pipeline-2/README.md): assemble the prompt with `python3 -B scripts/research_pipeline.py --prompt <id>`, check the report with `--appendix` before saving it, verify it ([VERIFY.md](research/pipeline-2/VERIFY.md)), then integrate it ([INTEGRATE.md](research/pipeline-2/INTEGRATE.md)).
   - `research/DECISIONS.md` is append-only: add a new decision rather than rewriting an old one (template: `research/templates/DECISIONS.template.md`). Status fields, `human_reviewed` and calibration records are updated in place.
   - **The legacy handbook is not a source (D-016).** An older GenAI career handbook informed some of the repository's formats. It was never part of the repository: it was kept in the git-ignored `temp/` folder during the November 2026 integration and may since have been deleted. Never cite it, link it or copy a figure from it; the validator flags references to it and its signature phrases.
 - **Placement:**

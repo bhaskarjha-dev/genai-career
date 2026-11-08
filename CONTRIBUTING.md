@@ -12,7 +12,7 @@ This repository aims to be the most accurate, best-organised source on GenAI car
 | A fact about a role (definition, work footprint, interview track, pillar score) | `data/role_scores.json` | Run `python3 -B scripts/build_all.py`; the role hubs and the role map are rebuilt from it |
 | A fact that several pages need (a pay figure, a funnel rate, a timeline, a status) | Its owner only (the owners table in [AGENTS.md](AGENTS.md) §2, decision D-019) | Other pages state the point in one line and link the owner's section |
 | Structured data that documents are built from | `data/` (snake_case), with a schema in `data/schemas/` | Add a generator in `scripts/` and register it in `GENERATORS` in `scripts/build_all.py`, rather than hand-copying values into documents; never keep facts inside a script |
-| New research | `research/sessions/` as a new session (see [research/README.md](research/README.md)) | Run `python3 -B scripts/build_all.py` |
+| New research | `research/sessions/` as a new session; planned sessions, their briefs and the protocol are in [research pipeline 2](research/pipeline-2/README.md) | Check the report with `scripts/research_pipeline.py --appendix` before saving; verify and integrate it ([INTEGRATE.md](research/pipeline-2/INTEGRATE.md)); run `python3 -B scripts/build_all.py` |
 | A correction to a Phase 0 record | `research/ERRATA.md` | Fix the affected career documents |
 | An architectural decision | Append to `research/DECISIONS.md`, using the fields in [research/templates/DECISIONS.template.md](research/templates/DECISIONS.template.md) | Reference it in [CHANGELOG.md](CHANGELOG.md) |
 
@@ -130,6 +130,7 @@ Some documents, or blocks within them, are generated from `data/` by `scripts/`.
 | `build_archetypes.py` | Project archetypes (`career/05-portfolio/project-archetypes.md`) |
 | `build_prompts.py` | Interview prep packs (`career/08-interviewing/prep-packs.md`) |
 | `build_tool_catalog.py` | The tool catalog (`career/00-start/tool-catalog.md`) |
+| `research_pipeline.py` | The research pipeline 2 tracker (`research/pipeline-2/README.md`); it also assembles session prompts and checks session reports |
 | `build_findings.py` | Findings registry |
 | `build_manifest.py` | `llms.txt`, `data/manifest.json` |
 

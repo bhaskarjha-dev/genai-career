@@ -5,13 +5,15 @@ content_type: reference
 stage: 0
 status: published
 last_verified: 2026-11-06
-summary: "Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files."
-sources: [T0-01, T0-03, T0-04, T0-06, T0-10, T0-11, T0-14, T0-17, T1-01, T1-03, T2-01]
+summary: "Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files."
+sources: [T0-01, T0-02, T0-03, T0-04, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-14, T0-17, T0-18, T1-01, T1-03, T2-01]
 ---
 
 # Research Errata
 
 The research sessions, FAD and the decision registry are dated Phase 0 records. They are kept as written, so that their provenance stays intact. Errors found later are logged here, with the correct reading and its evidence. **The career documents already apply these corrections.** When a sealed record and this list disagree, this list wins.
+
+**Records with errata (2026-11-07):** FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03 and T2-01. Candidate errata that are not yet confirmed are listed in [ROADMAP.md](../ROADMAP.md) §7. Of the 33 record locations the 26 errata cite (one per record per row), 29 are in syntheses (FAD, DECISIONS, T1-01, T1-03, T2-01); the corrections rest on the Layer 0 sessions.
 
 ## Upstream errors found while building the role catalogs (2026-11-03)
 
@@ -41,7 +43,7 @@ The research sessions, FAD and the decision registry are dated Phase 0 records. 
 | U17 | FAD §10 (L385) | Lists interviewing.io and Pramp as the primary interview-prep platforms | For GenAI system design the best-verifiable offering is Hello Interview, and no prep platform has independent outcome evidence | T0-10.F9 L85 |
 | U18 | FAD §3.3 (L121) | "PhD → T3+: skip 01, 03, 04" | T2-01's own PhD playbook runs an 8-week Stage 3 (skills) block: production Python, deployment, evaluation infrastructure, agents | T2-01 L574–581; T0-06 D8 |
 | U19 | T2-01 §8 (L706) | A $75K–$94K billing range is the §44ADA "dead zone" | At T2-01's own rate of ₹96 per dollar, T0-07's dead zone of ₹75L to roughly ₹92–98L is about $78K to $96–102K. Use T0-07's rupee band and convert at the current rate | T0-07 L125; T2-01 L706 |
-| U20 | DECISIONS D-004 rationale (L271) | Table-stakes skills "appear in >80% of postings but command T0–T1 compensation"; differentiating skills appear in <30% and command T2–T4 | No measurement supports the >80% threshold: RAG is named in 54.0% of AI Engineer postings and 10.0% of broad postings, and LLM skills in 76.7% of AI Engineer postings. T0-03 itself finds that posted pay tracks seniority and employer tier more than skill tier. The skills ontology tiers skills by role-defining status and measured shares, not by these thresholds | T0-03 L41, L421; role-skill-maps §2.1 (JobsPipe, 2026-11-02) |
+| U20 | DECISIONS D-004 rationale (L271) | Table-stakes skills "appear in >80% of postings but command T0–T1 compensation"; differentiating skills appear in <30% and command T2–T4 | No measurement supports the >80% threshold: RAG is named in 54.0% of AI Engineer postings and 10.0% of broad postings, and LLM skills in 76.7% of AI Engineer postings. T0-03 itself finds that posted pay tracks seniority and employer tier more than skill tier. The skills ontology tiers skills by role-defining status and measured shares, not by these thresholds | T0-03 L41, L421; data/posting_skill_shares.json (JobsPipe, 2026-11-02; formerly role-skill-maps §2.1) |
 | U21 | T2-01 KF6 (L78) | First-90-day failure modes: "role ambiguity (43% of all hires)" and "compute gating (85% delayed)" | 43% is the share of surveyed job seekers who said the role differed from what hiring led them to expect (Jobvite 2018). 85% is the share of 1,367 AI professionals whose organisations had delayed projects for lack of GPUs, in a survey sponsored by Civo, a GPU-cloud vendor. Neither is a per-hire rate | T0-09 L81, L94 |
 | U22 | DECISIONS D-007 rationale (L463); T2-01 L177, L599 and KF4 (L76) | D-007 credits the 12–18-month O-1A evidence-building estimate to T0-08 KF1 and the UK no-employer route to T0-08 KF6; T2-01 credits the same estimate to T0-08 KF1–KF2 and grades it A/B in KF4 | In T0-08, 12–18 months is a practitioner estimate (Grade C; §8.1 L375, Recommendation L77). The UK no-employer route is Key Finding 7 (L58); Key Finding 1 (L46) is about USCIS policy and Key Finding 6 (L56) about O-1A as a bridge to permanent residence. Quote the 12–18 months as a Grade C practitioner estimate | T0-08 L46, L56, L58, L77, L375 |
 | U23 | T2-01 §6.6 (L642) | UK contract rates "£463–£675/day (P25–P75)" shown beside "£58–£99/hr" | At 8 hours a day, P25–P75 is about £58–£84 an hour; £99 corresponds to the P90 day rate (£788). All are asking rates in job adverts, not transacted rates | T0-18 L95 |
@@ -51,7 +53,7 @@ The research sessions, FAD and the decision registry are dated Phase 0 records. 
 
 ## How to add an erratum
 
-1. Give it the next ID (U13, U14, …).
+1. Give it the next free ID: one more than the last row above (U27 after U26).
 2. Cite the exact location (file, section and line).
 3. State the correct reading and its evidence (session and line, or an external source with a date).
 4. Apply the correction in the affected career documents, and note it in [CHANGELOG.md](../CHANGELOG.md).

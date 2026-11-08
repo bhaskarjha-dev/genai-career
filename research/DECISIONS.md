@@ -5,6 +5,7 @@
 > **Human Review:** Completed 2026-10-25 · **Next Scheduled Review:** 2027-01-31
 > **Canonical Tier Boundaries:** See FAD.md §4.1 — all tier figures in this file are sourced from the sealed FAD.
 > **Update (2026-11-04):** D-013 (architecture v2) and D-014 (versioning policy) were appended. Known errors in Phase 0 records are listed in [ERRATA.md](ERRATA.md).
+> **Update (2026-11-07):** D-015 to D-018 (stack map, legacy-handbook policy and guide pattern, review-by dates, evidence conventions) were appended on 2026-11-05 to 2026-11-07; D-019 (one owner per fact) and D-020 (freshness tracking, second stage) were appended on 2026-11-07, and D-017's calibration record was filled when its trigger fired. Decision text is append-only; status fields, `human_reviewed` and calibration records are updated in place.
 
 ---
 
@@ -1091,6 +1092,8 @@ EGP-1.0 gives volatile facts expiry classes (tool statuses and pay 90 days; visa
 ## Calibration Record (Post-Review)
 
 > Fill this section ONLY during scheduled review or when the review_trigger fires.
+
+**Trigger fired, reviewed 2026-11-07.** 35 documents carried `review_by` dates, past the threshold of 20. Findings: two pages had been due since the day they were published (their fastest facts expired before `last_verified`); about 60 pages with volatile facts carried no `review_by` at all, among them the role catalog, the role rankings, the GenAI target roles, the 29 role hubs and the 26 skill inventories; nobody saw the due report unless they pushed. Outcome: page-level dates stay, and the per-claim registry stays deferred; generated pages now carry `review_by` computed by their generators, and a weekly scheduled run fails while any page is due. The new rules and the next trigger are in D-020.
 <!-- /DECISION: D-017 -->
 
 ---
@@ -1152,5 +1155,110 @@ Writing and fact-checking the 31 stage guides on 2026-11-05 and 2026-11-06 expos
 
 > Fill this section ONLY during scheduled review or when the review_trigger fires.
 <!-- /DECISION: D-018 -->
+
+---
+
+<!-- DECISION: D-019 -->
+---
+id: D-019
+title: "One Owner per Fact"
+status: accepted
+door_type: two-way
+date: 2026-11-07
+confidence: medium
+evidence_refs: []
+informed_by_sessions: [T1-02]
+supersedes: null
+superseded_by: null
+amends: D-013
+review_trigger: "A reader or reviewer reports that a page sends them to too many other pages to act, or a shared fact is found with two owners"
+review_date: 2027-05-07
+prediction: "Once each shared volatile fact has one owner, a refresh (pay on 2027-01-17, posting counts on 2026-12-03) touches one page or one data file instead of up to nine, and no two pages give different values or dates for the same fact"
+tags: [architecture, evidence, maintenance, data]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: false
+schema_version: "0.1.0"
+---
+
+# D-019: One Owner per Fact
+
+## Context
+
+D-013 put role facts in one data layer and generated the views from it. The rule stopped at the data files: a repository audit on 2026-11-07 found the facts that guides share restated by hand in two to nine pages each. Pay figures appeared in eight pages, the T0-04 funnel rates in nine, the T0-06 transition timelines in seven, credential statuses in six. Most copies agreed on their numbers, but their dates and review deadlines differed, and some had drifted apart: two résumé counts (25 against "two or three"), a 0.2% rate labelled application-to-offer where ERRATA U24 says application-to-hire, two vocabularies of tool verdicts, and a skill-tier system in the v0.1.0 skill maps that contradicted the skills ontology. The v0.1.0 references (role catalog, role rankings, GenAI target roles, skill maps) had not been slimmed when v0.2.0 generated hubs, inventories and the skills radar from the same data. The ontology also cited a prose page (the skill maps) as the source of its posting shares, and three sets of facts lived inside scripts (the A–Z title list, the GenAI demand adjustments and the track-playbook links).
+
+## Decision
+
+1. **Every fact that more than one page needs has one owner:** a data file, or one section of one page. Other pages state the point in one line, without restating the volatile figure, and link the owner's section. The owners are listed in AGENTS.md §2.
+2. **Measurements that data cite live in data, dated:** the JobsPipe posting-term shares retrieved 2026-11-02 moved from the skill maps into `data/posting_skill_shares.json`, and `scripts/build_skills.py` checks every JD share in the ontology against it.
+3. **No facts in code:** the A–Z title list moved to `data/role_titles.json`, the GenAI demand adjustments and the track-playbook links to `data/role_scores.json`.
+4. **A page's `review_by` follows the facts it owns.** A page that links a fact does not inherit its expiry.
+5. **Tables that are data are generated** (prompts, statuses, posting shares); prose that explains a fact links the generated table.
+6. **Role skill tiers come only from the skills ontology** (Must, Important, Should, Optional, Avoid). The three tiers of D-004 (table-stakes, differentiating, frontier) are no longer used in the guides: their pay rationale is unsupported (ERRATA U20), and their members differed from the ontology's. The role skill maps keep the narrative only.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Keep the copies and cross-check them in the validator:** rejected. Regular expressions over prose are brittle, and each new copy would need its own check.
+- **Generate every shared fact into every page that uses it:** rejected where a link serves. It keeps every page self-contained, but multiplies generated text and the volume a reader has to scan.
+- **Tradeoff:** pages are less self-contained; a reader follows a link for the figure. The one-line statement keeps the decision on the page.
+
+## Failure Modes & Reversal Triggers
+
+- If readers report that guides no longer stand alone, allow a dated copy of a key figure with a link to its owner, and have the validator compare the copy with the owner.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-019 -->
+
+---
+
+<!-- DECISION: D-020 -->
+---
+id: D-020
+title: "Freshness Tracking, Second Stage: Generated Review Dates and a Weekly Reminder"
+status: accepted
+door_type: two-way
+date: 2026-11-07
+confidence: medium
+evidence_refs: [T1-02-KF1, T1-02-KF3]
+informed_by_sessions: [T1-02]
+supersedes: null
+superseded_by: null
+amends: D-017
+review_trigger: "Agents or readers need expiry per claim rather than per page, or the weekly reminder lists more than 25 pages due at once"
+review_date: 2027-05-07
+prediction: "With generated pages carrying review_by and a weekly failing run while anything is due, no page stays due for more than two weeks without someone seeing it"
+tags: [governance, freshness, maintenance, ci]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: false
+schema_version: "0.1.0"
+---
+
+# D-020: Freshness Tracking, Second Stage: Generated Review Dates and a Weekly Reminder
+
+## Context
+
+D-017's review trigger fired on 2026-11-07 (35 pages with `review_by`, against a threshold of 20); its calibration record lists what the review found. Generated pages (role hubs, skill inventories) state volatile facts but had no `review_by`, and the due report reached the owner only through a push.
+
+## Decision
+
+1. **Generators emit `review_by`** for the pages they write, from the dates in the data: role hubs from the posting counts behind their demand scores (31 days, class V1); skill inventories from the tool-status date (90 days, class V2). Hand-written pages keep setting it by hand (D-017, D-018).
+2. **A weekly scheduled workflow** (`.github/workflows/due-report.yml`) runs the validator with `--strict`, so it fails, and GitHub notifies the owner, while any page is due. Push and pull-request runs still only report due pages, as D-017 requires.
+3. **Page-level dates stay; the per-claim registry stays deferred** until the trigger above fires.
+
+## Rejected Alternatives & Tradeoffs
+
+- **`--strict` on every push:** rejected, as in D-017: an expiry would block unrelated changes.
+- **Per-claim registry now:** deferred again; the page-level dates found every expired fact in the review.
+- **Tradeoff:** the weekly run will fail often while posting counts (31 days) are refreshed monthly; that is the reminder working.
+
+## Failure Modes & Reversal Triggers
+
+- If the weekly failures are ignored for a quarter, reduce what expires (link volatile facts to their owners, D-019) before adding more automation.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-020 -->
 
 ---

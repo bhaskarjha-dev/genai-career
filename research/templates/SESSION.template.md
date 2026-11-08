@@ -21,7 +21,7 @@ last_verified: "[YYYY-MM-DD]"    # Date of last verification pass
 
 # [SESSION-ID]: [Session Title]
 
-> **Epistemic Guide.** `S##` references the Sources & Evidence Ledger (§9). Grades **A–E** follow EGP-1.0 (see `.agents/rules/egp-protocol.md`). Grade **M** = model output inheriting weakest input grade. `↑` = inherited grade from upstream session. `[D]` = design judgement. The temporal anchor is [YYYY-MM-DD].
+> **Epistemic Guide.** `S##` references the Sources & Evidence Ledger (§9). Grades **A–E** follow EGP-1.0 (the protocol is [T1-02](../sessions/T1-02-evidence-grounding-protocol.md) §10, summarised in [CONTRIBUTING.md](../../CONTRIBUTING.md) §3; Vivechak also installs it as `.agents/rules/egp-protocol.md`). Grade **M** = model output inheriting weakest input grade. `↑` = inherited grade from upstream session. `[D]` = design judgement. The temporal anchor is [YYYY-MM-DD].
 
 ## Prior
 

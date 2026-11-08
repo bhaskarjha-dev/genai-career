@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-12-03
 summary: "AI Product Manager on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [ai-product-manager]
 generated_by: scripts/build_role_hubs.py
@@ -40,7 +41,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | India demand | 5.5 (4–7) | D | JobsPipe Product Manager India 719 live (2026-11-02); AI-mention share assumed as US (≥15.4%, ~110) as an upper bound; no AI-PM title count. |
 | India pay | 6.5 (5–8) | D | No India evidence. |
 
-India rank (CCI with India inputs): #5 of 24.
+India rank (CCI with India inputs): #5 of 24. One input (India comp) is a Grade D placeholder.
 
 ## Who it suits
 
@@ -48,7 +49,7 @@ India rank (CCI with India inputs): #5 of 24.
 |:---:|:---:|:---:|:---:|:---:|
 | ◐ 4 | ◐ 4.5 | ◐ 4 | ◐ 6.5 | ○ 3.5 |
 
-Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). For the modelled time to a first offer and the best targets by background, see [GenAI target roles §5](../genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses).
+Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). The modelled time to a first offer by background is in [career transitions](../../11-tracks/career-transitions.md#modelled-months-to-a-first-offer); the best targets by background are in [GenAI target roles](../genai-target-roles.md#best-targets-by-background).
 
 ## What you need
 
@@ -62,18 +63,18 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## How to prove it
 
 - **What the evidence asks for:** A PRD plus eval rubric plus pilot metrics; a domain rubric with 50+ labelled cases; "10 failure modes ranked by business impact"
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P12 AI PM case: PRD, eval rubric, pilot metrics](../../05-portfolio/project-archetypes.md#p12) (68%); [P17 Domain gold standard with inter-rater agreement](../../05-portfolio/project-archetypes.md#p17) (20%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (20%). One project rarely covers a role; [job-search strategy §2.6](../../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P12 AI PM case: PRD, eval rubric, pilot metrics](../../05-portfolio/project-archetypes.md#p12) (68%); [P17 Domain gold standard with inter-rater agreement](../../05-portfolio/project-archetypes.md#p17) (20%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (20%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Product.** It tests a scoping or product round. Source: career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+- **Track: Product.** It tests a scoping or product round. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
 - **Practise:** the [product prep pack](../../08-interviewing/prep-packs.md#product-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
 
-- **Variant:** E1 (AI Product, Governance & Assurance). Headline pattern: "AI Product Manager | AI Governance Lead (per flavour)".
+- **Variant:** E1 Product (AI Product, Governance & Assurance); headline pattern: "AI Product Manager: LLM products, evaluation, pilots". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** product management (92.6%), communication (53.7%), leadership (40.1%), compliance (26.1%), agile (22.7%), roadmapping (18.4%), AI (15.4%), stakeholder management (14.2%), agentic AI (13.6%)
 - **Leave out or reframe:** "AI-powered" buzzwords without a shipped model feature or metrics
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ai-product-manager).
@@ -85,13 +86,14 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-ai-product-manager): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager): narrative skills, tools, interview and typical gaps.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (JobsPipe 2026-11-02), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-12-03.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

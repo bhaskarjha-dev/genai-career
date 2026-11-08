@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-12-03
 summary: "Inference / LLM Serving Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [inference-engineer]
 generated_by: scripts/build_role_hubs.py
@@ -40,7 +41,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | India demand | 3 (2–4) | D | No India evidence. |
 | India pay | 7 (5.5–8.5) | D | No India evidence. |
 
-India rank (CCI with India inputs): #6 of 24.
+India rank: not shown. Neither India input has evidence for this role (both are Grade D placeholders), so a rank would only restate the defaults.
 
 ## Who it suits
 
@@ -48,7 +49,7 @@ India rank (CCI with India inputs): #6 of 24.
 |:---:|:---:|:---:|:---:|:---:|
 | ◐ 7 | ○ 2.5 | ○ 2.5 | ○ 1 | ◐ 4.5 |
 
-Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). For the modelled time to a first offer and the best targets by background, see [GenAI target roles §5](../genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses).
+Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). The modelled time to a first offer by background is in [career transitions](../../11-tracks/career-transitions.md#modelled-months-to-a-first-offer); the best targets by background are in [GenAI target roles](../genai-target-roles.md#best-targets-by-background).
 
 ## What you need
 
@@ -62,25 +63,25 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## How to prove it
 
 - **What the evidence asks for:** A single-GPU serving study (BF16 vs FP8/4-bit, prefix caching, chunked prefill, speculative decoding) with a roofline and $/M tokens at the SLO; a custom Triton kernel tested against a reference; an upstream PR to vLLM, SGLang or FlashInfer
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P5 Single-GPU serving and quantisation study](../../05-portfolio/project-archetypes.md#p5) (60%); [P6 Self-hosted LLM platform on Kubernetes](../../05-portfolio/project-archetypes.md#p6) (26%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (23%). One project rarely covers a role; [job-search strategy §2.6](../../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P5 Single-GPU serving and quantisation study](../../05-portfolio/project-archetypes.md#p5) (60%); [P6 Self-hosted LLM platform on Kubernetes](../../05-portfolio/project-archetypes.md#p6) (26%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (23%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Infrastructure.** It tests KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. Source: career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+- **Track: Infrastructure.** It tests KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
 - **Practise:** the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
 
-- **Variant:** D1 (AI Systems & Infrastructure). Headline pattern: "Inference / AI Infrastructure Engineer | serving, GPUs, Kubernetes".
+- **Variant:** D1 Serving & kernels (AI Systems & Infrastructure); headline pattern: "Inference Engineer: LLM serving and GPU performance". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** inference, vLLM, SGLang, TensorRT-LLM, KV cache, latency, throughput, quantization, CUDA
 - **Leave out or reframe:** TGI (archived 2026-03-21); the removed trtllm-build static engine path; single-process load generators
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-inference-engineer).
 
 ## Specialisations inside this role
 
-- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device / Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself).
+- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device & Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself).
 - **Quantisation and distillation** (L3 Inference and ML platforms): No title of its own in the catalog.
 - **Disaggregated serving (prefill and decode)** (L3 Inference and ML platforms): No title of its own in the catalog.
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
@@ -93,13 +94,14 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-inference-engineer): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-inference-engineer): narrative skills, tools, interview and typical gaps.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (as of 2026-11-02), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-12-03.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

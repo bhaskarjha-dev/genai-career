@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-12-03
 summary: "AI Product Engineer (AI Frontend) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [ai-product-engineer]
 generated_by: scripts/build_role_hubs.py
@@ -40,7 +41,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | India demand | 2.5 (1.5–4) | D | No India evidence. |
 | India pay | 5 (4–6.5) | D | No India evidence. |
 
-India rank (CCI with India inputs): #20 of 24.
+India rank: not shown. Neither India input has evidence for this role (both are Grade D placeholders), so a rank would only restate the defaults.
 
 ## Who it suits
 
@@ -48,7 +49,7 @@ India rank (CCI with India inputs): #20 of 24.
 |:---:|:---:|:---:|:---:|:---:|
 | ◐ 6 | ◐ 4 | ◐ 7 | ○ 2 | ◐ 4 |
 
-Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). For the modelled time to a first offer and the best targets by background, see [GenAI target roles §5](../genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses).
+Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). The modelled time to a first offer by background is in [career transitions](../../11-tracks/career-transitions.md#modelled-months-to-a-first-offer); the best targets by background are in [GenAI target roles](../genai-target-roles.md#best-targets-by-background).
 
 ## What you need
 
@@ -61,26 +62,26 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## How to prove it
 
 - **What the evidence asks for:** A full-stack app (frontend → API → LLM → eval) with 50 eval cases and UX metrics; an on-device module benchmarked on 3+ device/browser combinations
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P14 Full-stack AI app with streaming agent UX and UX metrics](../../05-portfolio/project-archetypes.md#p14) (77%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (35%); [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (35%). One project rarely covers a role; [job-search strategy §2.6](../../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P14 Full-stack AI app with streaming agent UX and UX metrics](../../05-portfolio/project-archetypes.md#p14) (77%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (35%); [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (35%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Application.** It tests RAG with access control, agent loop control, evaluation architecture, context management. Source: career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+- **Track: Application.** It tests RAG with access control, agent loop control, evaluation architecture, context management. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
 - **Practise:** the [application prep pack](../../08-interviewing/prep-packs.md#application-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
 
-- **Variant:** A1 (Applied GenAI Engineering). Headline pattern: "AI Engineer | LLM systems, RAG, agents, evals".
+- **Variant:** A1 Builder (Applied GenAI Engineering); headline pattern: "AI Engineer: LLM systems, RAG, agents, evaluation". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** React (69.4%), TypeScript (52.7%), Python (41.8%), AWS (41.3%), CI/CD (37.8%), Node.js (32.3%), REST API (27.6%), streaming, LLM
 - **Leave out or reframe:** Pure UI work with no model-facing evidence
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ai-product-engineer).
 
 ## Specialisations inside this role
 
-- **Voice and conversational agents** (L6 Applications and deployment): Candidate title: Conversational AI & Voice Engineer, role catalog §5.3.
-- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device / Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself).
+- **Voice and conversational agents** (L6 Applications and deployment): Candidate title: Conversational & Voice AI Engineer, role catalog §5.3.
+- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device & Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself).
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
@@ -91,13 +92,14 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-ai-product-engineer): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer): narrative skills, tools, interview and typical gaps.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (as of 2026-11-02), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-12-03.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

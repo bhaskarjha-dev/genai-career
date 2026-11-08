@@ -25,6 +25,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import stack_lib as sl  # noqa: E402
+from common import heading_slug, require_anchor, skill_name  # noqa: E402  (shared helpers)
 
 DOC = sl.ROOT / "career" / "02-roles" / "role-map.md"
 
@@ -35,11 +36,6 @@ def skill_category(onto, sid):
     members = onto["classes"].get(sid, {}).get("members", [])
     cats = Counter(onto["skills"][m]["category"] for m in members if m in onto["skills"])
     return cats.most_common(1)[0][0] if cats else None
-
-
-def skill_name(onto, sid):
-    e = onto["skills"].get(sid) or onto["classes"].get(sid)
-    return e["name"] if e else sid
 
 
 def archetype_places(stack, onto, archetypes):
@@ -61,13 +57,6 @@ def link(r):
     return f"[{r['name']}](hubs/{r['id']}.md)"
 
 
-def heading_slug(path, prefix):
-    for line in path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("## ") and line[3:].startswith(prefix):
-            return sl.gh_slug(line[3:])
-    raise SystemExit(f"build_role_map.py: no heading starting {prefix!r} in {path.name}")
-
-
 def render(stack, scores, onto, archetypes):
     roles = scores["roles"]
     area_list = sl.areas(stack)
@@ -78,7 +67,7 @@ def render(stack, scores, onto, archetypes):
     places = archetype_places(stack, onto, archetypes)
     tgt = sl.ROOT / "career" / "02-roles" / "genai-target-roles.md"
     rnk = sl.ROOT / "career" / "02-roles" / "role-rankings.md"
-    bg_slug, lens_slug = heading_slug(tgt, "5. Best targets by background"), heading_slug(rnk, "5. Lenses")
+    bg_slug, lens_slug = require_anchor(tgt, "best-targets-by-background"), heading_slug(rnk, "5. Lenses")
 
     out = ["---", "id: roles.map", 'title: "The GenAI Role Map: Where the Work Sits"', "content_type: reference", "stage: 2",
            "status: published", f"last_verified: {stack['as_of']}",
@@ -128,7 +117,7 @@ def render(stack, scores, onto, archetypes):
         arch = "; ".join(f"{pid} {name}" for pid, name in places[code]) or "—"
         out.append(f"| **{code} {a['name']}** | {a['covers']} | {based} | {also} | {', '.join(a['categories'])} | {arch} |")
     out += ["", "Archetypes are placed where most of the skills they evidence sit (computed from the skill categories, Grade M). "
-            "[Job-search strategy §2.6](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes which archetypes cover which roles.", "",
+            "The [job-search strategy](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes which archetypes cover which roles.", "",
             "## Cross-cutting planes", "",
             "| Plane | What it covers | Roles based here | Roles that also work in it | Skill categories | Proof-of-work archetypes placed here |",
             "|---|---|---|---|---|---|"]
@@ -164,7 +153,7 @@ def render(stack, scores, onto, archetypes):
     out += ["", "## Choosing a direction", "",
             "The map shows where work sits; it does not tell you where to go. Two things do, and both rest on evidence:", "",
             f"1. **Your background.** The [GenAI target roles by background](genai-target-roles.md#{bg_slug}) and the "
-            f"[persona lenses in the ranked catalog](role-rankings.md#{lens_slug}) score how reachable each role is from five starting points.",
+            f"[persona lenses in the role rankings](role-rankings.md#{lens_slug}) score how reachable each role is from five starting points.",
             "2. **The interview track you can pass.** Employers interview by track, not by layer; pick the track whose loop you can prepare for:", "",
             "| Interview track | What it tests | Roles |", "|---|---|---|"]
     for tid, t in scores["interview_tracks"].items():

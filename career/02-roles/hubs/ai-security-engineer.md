@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-11-14
 summary: "AI Security Engineer / AI Red Teamer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [ai-security-engineer]
 generated_by: scripts/build_role_hubs.py
@@ -40,7 +41,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | India demand | 3 (2–4.5) | D | Generic Security Engineer India 239 live (2026-11-02); AI share unknown. |
 | India pay | 6 (4.5–7) | D | No India evidence. |
 
-India rank (CCI with India inputs): #14 of 24.
+India rank (CCI with India inputs): #14 of 24. One input (India comp) is a Grade D placeholder.
 
 ## Who it suits
 
@@ -48,7 +49,7 @@ India rank (CCI with India inputs): #14 of 24.
 |:---:|:---:|:---:|:---:|:---:|
 | ◐ 5.5 | ○ 3 | ○ 3.5 | ○ 2 | ◐ 4 |
 
-Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). For the modelled time to a first offer and the best targets by background, see [GenAI target roles §5](../genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses).
+Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). The modelled time to a first offer by background is in [career transitions](../../11-tracks/career-transitions.md#modelled-months-to-a-first-offer); the best targets by background are in [GenAI target roles](../genai-target-roles.md#best-targets-by-background).
 
 ## What you need
 
@@ -62,7 +63,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## How to prove it
 
 - **What the evidence asks for:** A red-team suite in CI against a working agent, with attack-success rates before and after mitigation; an MCP security audit
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P10 Red-team suite in CI against a working agent](../../05-portfolio/project-archetypes.md#p10) (48%); [P6 Self-hosted LLM platform on Kubernetes](../../05-portfolio/project-archetypes.md#p6) (28%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (28%). One project rarely covers a role; [job-search strategy §2.6](../../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P10 Red-team suite in CI against a working agent](../../05-portfolio/project-archetypes.md#p10) (48%); [P6 Self-hosted LLM platform on Kubernetes](../../05-portfolio/project-archetypes.md#p6) (28%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (28%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -72,7 +73,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Résumé
 
-- **Variant:** D3 (AI Systems & Infrastructure). Headline pattern: "Inference / AI Infrastructure Engineer | serving, GPUs, Kubernetes".
+- **Variant:** D3 Security (AI Systems & Infrastructure); headline pattern: "AI Security Engineer: LLM and agent security". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** application security (26.5% of Security Engineer postings), cybersecurity (42.3%), Python (45.7%), IAM (21.6%), incident response (32.4%), AI security, prompt injection, red team, OWASP
 - **Leave out or reframe:** Classifier-only defences presented as complete (adaptive attacks beat 12 published defences)
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ai-security-engineer).
@@ -92,13 +93,14 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-ai-security-engineer): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer): narrative skills, tools, interview and typical gaps.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (Skillenai 2026-10-14), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-11-14.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

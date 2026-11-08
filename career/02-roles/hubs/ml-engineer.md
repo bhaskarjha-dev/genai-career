@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-11-19
 summary: "Machine Learning Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [ml-engineer]
 generated_by: scripts/build_role_hubs.py
@@ -48,7 +49,7 @@ India rank (CCI with India inputs): #2 of 24.
 |:---:|:---:|:---:|:---:|:---:|
 | ◐ 5.5 | ◐ 7 | ○ 3.5 | ○ 1.5 | ◐ 7 |
 
-Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). For the modelled time to a first offer and the best targets by background, see [GenAI target roles §5](../genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses).
+Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). The modelled time to a first offer by background is in [career transitions](../../11-tracks/career-transitions.md#modelled-months-to-a-first-offer); the best targets by background are in [GenAI target roles](../genai-target-roles.md#best-targets-by-background).
 
 ## What you need
 
@@ -62,18 +63,18 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## How to prove it
 
 - **What the evidence asks for:** A baseline-first model with measured lift and error analysis; a prompt vs RAG vs fine-tune comparison with cost and quality; a serving benchmark (tokens/s, p95, $/M tokens); small-budget training evidence (FSDP2 smoke tests, MFU)
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P4 Prompt vs RAG vs fine-tune comparison](../../05-portfolio/project-archetypes.md#p4) (76%); [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (47%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (32%). One project rarely covers a role; [job-search strategy §2.6](../../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P4 Prompt vs RAG vs fine-tune comparison](../../05-portfolio/project-archetypes.md#p4) (76%); [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (47%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (32%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Classic ML system design.** It tests recommendation, fraud or ETA system design, plus where an LLM would help. Source: career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+- **Track: Classic ML system design.** It tests recommendation, fraud or ETA system design, plus where an LLM would help. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
 - **Practise:** the [classic ml system design prep pack](../../08-interviewing/prep-packs.md#classic-ml-system-design-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
 
-- **Variant:** B1 (ML & Applied Science). Headline pattern: "Machine Learning Engineer | LLM fine-tuning, evaluation, serving".
+- **Variant:** B1 Engineer (ML & Applied Science); headline pattern: "Machine Learning Engineer: LLM fine-tuning, evaluation, serving". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** machine learning (98.6%), Python (71.3%), PyTorch (48.2%), LLM (45.0%), data structures (33.7%), deep learning (32.6%), TensorFlow (31.8%), A/B testing (23.5%), NLP (23.3%), C++ (23.3%)
 - **Leave out or reframe:** Fine-tuning as the default answer (70% of 20 studied production systems used off-the-shelf models); tools you have only read about
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ml-engineer).
@@ -92,13 +93,14 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-ml-engineer): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-ml-engineer): narrative skills, tools, interview and typical gaps.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (JobsPipe 2026-11-02; Fast AI Jobs 2026-10-19), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-11-19.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

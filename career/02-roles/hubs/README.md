@@ -5,6 +5,7 @@ content_type: index
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-11-14
 summary: "Index of the 29 role hubs: one generated page per canonical role with its definition, footprint, graded scores, skills, proof, interview track and résumé pointers."
 generated_by: scripts/build_role_hubs.py
 ---
@@ -43,13 +44,13 @@ generated_by: scripts/build_role_hubs.py
 | #22 | [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) | Governance, Risk & Assurance | Security, safety and governance | A | #22 |
 | #23 | [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) | Evaluation, Safety & Security | Security, safety and governance | W | #23 |
 | #24 | [Domain Evaluation Specialist / AI Trainer](domain-evaluation-specialist.md) | Human Data & Evaluation Operations | L4 Post-training and adaptation | W | #24 |
-| L1 | [AI Engineering Manager / Director of AI Engineering](ai-engineering-manager.md) | Leadership & Executive | Leadership and independent practice | V | L1 |
-| L2 | [VP / Head of AI](vp-head-of-ai.md) | Leadership & Executive | Leadership and independent practice | V | L2 |
-| L3 | [Chief AI Officer (CAIO)](chief-ai-officer.md) | Leadership & Executive | Leadership and independent practice | V | L3 |
-| L4 | [Independent AI Consultant / Contractor](independent-ai-consultant.md) | Independent & Fractional | Leadership and independent practice | V | L4 |
-| L5 | [Fractional Head of AI / Fractional CAIO](fractional-ai-leader.md) | Independent & Fractional | Leadership and independent practice | V | L5 |
+| Leadership #1 | [AI Engineering Manager / Director of AI Engineering](ai-engineering-manager.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #1 |
+| Leadership #2 | [VP / Head of AI](vp-head-of-ai.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #2 |
+| Leadership #3 | [Chief AI Officer (CAIO)](chief-ai-officer.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #3 |
+| Leadership #4 | [Independent AI Consultant / Contractor](independent-ai-consultant.md) | Independent & Fractional | Leadership and independent practice | V | Leadership #4 |
+| Leadership #5 | [Fractional Head of AI / Fractional CAIO](fractional-ai-leader.md) | Independent & Fractional | Leadership and independent practice | V | Leadership #5 |
 
-Status: E established, V verified, W watch, A absorbed (see the [catalog's status classes](../role-catalog.md#12-status-classes-for-canonical-roles)). Leadership and independent tracks are ranked separately (L1–L5).
+Status: E established, V verified, W watch, A absorbed (see the [catalog's status classes](../role-catalog.md#12-status-classes-for-canonical-roles)). Leadership and independent tracks are ranked separately (Leadership #1–#5). Codes L1–L6 elsewhere on the role map are work layers, not ranks.
 
 ## How hubs are built
 

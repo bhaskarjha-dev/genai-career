@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-12-03
 summary: "Chief AI Officer (CAIO) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [chief-ai-officer]
 generated_by: scripts/build_role_hubs.py
@@ -18,9 +19,11 @@ generated_by: scripts/build_role_hubs.py
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Leadership & Executive | Leadership and independent practice (plane); planes: Security, safety and governance | Verified (V) | L3 (leadership and independent tracks) | L3 of 5 (ranked separately) | L2 VP / Head of AI / CAIO |
+| Leadership & Executive | Leadership and independent practice (plane); planes: Security, safety and governance | Verified (V) | Leadership #3 (ranked separately) | Leadership #3 of 5 (ranked separately) | L2 VP / Head of AI / CAIO |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
+
+> **Start with the track playbook:** [Governance careers](../../11-tracks/governance-careers.md). Most of the evidence for leadership and independent tracks lives there; this hub keeps the scores and pointers.
 
 ## The numbers
 
@@ -28,7 +31,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 2.5 (1.5–3.5) | C | OMB M-25-21 requires a CAIO at US federal agencies (B) [T0-15:357]; '76% of firms report a CAIO' (IBM via secondary, C) [T0-01 F12]. |
 | Pay | 8.5 (5–10) | D | No pay data in corpus; corporate and US-federal CAIO pay differ widely, so the range is wide. Unanchored judgement: no proxy. |
-| Durability | 5.5 (4–7) | D | Judgement. May be transitional; fractional CAIO demand 'falling sharply' [T0-18:193-194]. |
+| Durability | 5.5 (4–7) | D | Judgement. May be transitional; fractional CAIO demand was labelled 'falling sharply' [T0-18:193-194], but T0-18 rates this demand evidence 'conflicting' [T0-18:1261]. |
 | Leverage | 9 (8–10) | D | Judgement. |
 | Access (experience gate) | 1.5 (0.5–2.5) | D | Executive track record. |
 
@@ -36,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 ## Who it suits
 
-A leadership or independent track: people reach it after years of experience. When to target it: [GenAI target roles §8](../genai-target-roles.md#8-leadership-and-independent-tracks-when-to-target-them).
+A leadership or independent track: people reach it after years of experience. When to target it: [GenAI target roles: leadership and independent tracks](../genai-target-roles.md#leadership-and-independent-tracks-when-to-target-them).
 
 ## What you need
 
@@ -59,7 +62,7 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## Résumé
 
-- **Variant:** L2 (Leadership). Headline pattern: "AI Engineering Manager / Head of AI".
+- **Variant:** L2 VP / Head of AI / CAIO (Leadership); headline: outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** AI strategy, roadmap, governance, operating model, budget, build vs buy
 - **Leave out or reframe:** Technology lists in place of business outcomes
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-vp-head-of-ai).
@@ -71,14 +74,15 @@ A leadership or independent track: people reach it after years of experience. Wh
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-chief-ai-officer): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog, leadership tracks](../role-rankings.md#4-leadership-and-independent-tracks).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings, leadership tracks](../role-rankings.md#4-leadership-and-independent-tracks).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-leadership): narrative skills, tools, interview and typical gaps.
 - [Governance careers](../../11-tracks/governance-careers.md): the track playbook for this role.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (as of 2026-11-02), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-12-03.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

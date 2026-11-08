@@ -5,6 +5,7 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
+review_by: 2026-12-03
 summary: "Research Scientist (AI/ML) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence."
 roles: [research-scientist]
 generated_by: scripts/build_role_hubs.py
@@ -40,7 +41,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | India demand | 2.5 (1.5–3.5) | C | India 3.7% of Research Scientist postings vs US 65.0% (JobsPipe JD, all fields, 2026-11-02); scope mismatch (not AI-specific), so Grade C. |
 | India pay | 8.5 (6.5–9.5) | D | No India evidence. |
 
-India rank (CCI with India inputs): #12 of 24.
+India rank (CCI with India inputs): #12 of 24. One input (India comp) is a Grade D placeholder.
 
 ## Who it suits
 
@@ -48,7 +49,7 @@ India rank (CCI with India inputs): #12 of 24.
 |:---:|:---:|:---:|:---:|:---:|
 | ○ 1 | ○ 1.5 | ○ 1 | ○ 1 | ◐ 4 |
 
-Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). For the modelled time to a first offer and the best targets by background, see [GenAI target roles §5](../genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses).
+Access from each background (0–10): ● ≥7.5 is a high-volume corridor (about 6–8 months at 15–20 hours a week), ◐ 4–7.4 is plausible but extended, ○ below 4 is not plausible within 12 months. These timelines are model outputs (Grade D). The modelled time to a first offer by background is in [career transitions](../../11-tracks/career-transitions.md#modelled-months-to-a-first-offer); the best targets by background are in [GenAI target roles](../genai-target-roles.md#best-targets-by-background).
 
 ## What you need
 
@@ -61,18 +62,18 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## How to prove it
 
 - **What the evidence asks for:** Papers, open research code, talks
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (59%); [P4 Prompt vs RAG vs fine-tune comparison](../../05-portfolio/project-archetypes.md#p4) (44%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (38%). One project rarely covers a role; [job-search strategy §2.6](../../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (59%); [P4 Prompt vs RAG vs fine-tune comparison](../../05-portfolio/project-archetypes.md#p4) (44%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (38%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Research.** It tests a research talk plus coding; the full research loop at frontier labs. Source: career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+- **Track: Research.** It tests a research talk plus coding; the full research loop at frontier labs. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
 - **Practise:** the [research prep pack](../../08-interviewing/prep-packs.md#research-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
 
-- **Variant:** C2 (Frontier Research). Headline pattern: "Research Engineer | distributed training, post-training, evals at scale".
+- **Variant:** C2 Science (Frontier Research); headline: CV format with a Publications section. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** Python (42.3%), communication (41.3%), machine learning (39.2%), PyTorch (25.4%), LLM (24.4%), deep learning (18.6%), C++ (17.4%), reinforcement learning (17.1%)
 - **Leave out or reframe:** Unpublished claims of novelty; burying the publication list
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-research-scientist).
@@ -91,14 +92,15 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## Go deeper
 
 - [Catalog profile](../role-catalog.md#profile-research-scientist): definition, demand, pay, who hires, entry routes, aliases and watch items.
-- [Ranked catalog](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
-- [GenAI target roles](../genai-target-roles.md#0-the-sorted-target-list): where this role sits in the GenAI target order and why.
+- [Role rankings](../role-rankings.md#2-master-leaderboard-ic-roles): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs).
+- [GenAI target roles](../genai-target-roles.md#at-a-glance-the-sorted-target-list): where this role sits in the GenAI target order and why.
 - [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-research-scientist): narrative skills, tools, interview and typical gaps.
 - [PhD to industry](../../11-tracks/phd-to-industry.md): the track playbook for this role.
 
 ## Evidence and dates
 
 - Pillar scores as of 2026-11-02; skills ontology as of 2026-11-04; tool and credential statuses are due for re-verification by 2027-01-21.
+- The demand scores rest on posting counts (JobsPipe 2026-11-02), which expire 31 days after they were counted (EGP-1.0 class V1), so this page is due for re-verification by 2026-12-03.
 - The work footprint is judgement (Grade D, decision D-015); ranks, coverage and similarity are model outputs (Grade M).
 
 ## Next steps

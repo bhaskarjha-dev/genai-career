@@ -15,6 +15,7 @@ import json
 import re
 from collections import OrderedDict
 from pathlib import Path
+from common import gh_slug  # noqa: E402  (shared helpers)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -61,13 +62,6 @@ def home(role):
     """The role's main place on the map: its primary layer, else its first plane."""
     st = role["stack"]
     return st["primary"] or st["planes"][0]
-
-
-def gh_slug(heading):
-    s = heading.strip().lower()
-    s = re.sub(r"[`*_~]", "", s)
-    s = re.sub(r"[^\w\- ]", "", s)
-    return s.replace(" ", "-")
 
 
 def errors(stack, scores, onto):

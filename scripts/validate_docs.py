@@ -5,16 +5,14 @@ Checks, across every career/*.md file, the generated role inventories and README
   * relative links resolve to existing files and anchors; no absolute file:// links;
     no duplicate anchors; no leftover template placeholders
   * every Markdown table row has the same number of cells as its header
-  * every generated block is current: rank_roles.py, build_index.py, build_skills.py, build_resume_matrix.py,
-    resume_layers.py, build_findings.py, target_roles.py, build_role_map.py, build_role_hubs.py,
-    build_skills_views.py, build_archetypes.py, build_prompts.py, build_tool_catalog.py and build_manifest.py
-    are each run with --check
-  * ranks agree across the master catalog, the skills catalog, the ranked catalog's
-    dossiers and scripts/rank_roles.py
+  * every generated output is current: each generator in the registry (GENERATORS in scripts/build_all.py)
+    is run with --check, and any script that supports --check but is missing from the registry is a problem
+  * ranks agree across the role catalog, the role skill maps, the role rankings' dossiers and
+    scripts/rank_roles.py, and each of those formats is found as many times as there are roles to rank
   * every career/ document and research index page carries valid front matter
     (data/schemas/frontmatter.schema.json), with a unique id and a stage that matches its folder
   * the skills ontology covers exactly the individual-contributor roles of role_scores.json
-  * corpus coverage: every technology named in the research sessions or the skills catalog
+  * corpus coverage: every technology named in the research sessions or the role skill maps
     (the 2026-11-04 audit list below) resolves to a typed vocabulary entry
   * the stack model (data/stack_model.json) and every role's work footprint are consistent (decision D-015)
   * writing rules (EGP-1.0 and D-016): no relative-time words outside quotes and code ("currently",
@@ -23,7 +21,7 @@ Checks, across every career/*.md file, the generated role inventories and README
     folder), and none of its signature phrases outside quotes and code, in the documents and in data/*.json
   * no dead ends: every document under career/ links to at least one other document
   * the guide pattern (D-016): every guide has "The short answer", "Checklist", "Evidence and limits" and
-    "Next steps", in that order (three guides that predate the pattern are listed in LEGACY_GUIDES)
+    "Next steps", in that order (any guide that predates the pattern is listed in LEGACY_GUIDES)
   * freshness: documents whose front matter `review_by` date has passed are listed as DUE
     (reported, not counted as problems unless --strict)
 
@@ -50,16 +48,17 @@ CAREER = ROOT / "career"
 sys.path.insert(0, str(SCRIPTS))
 import rank_roles as rr  # noqa: E402
 from build_manifest import parse_front_matter  # noqa: E402
-from build_skills import schema_errors  # noqa: E402
+from build_all import GENERATORS  # noqa: E402  (the single registry of generators)
+from common import schema_errors  # noqa: E402
 import stack_lib  # noqa: E402
+from common import gh_slug  # noqa: E402  (shared helpers)
 
 SEALED = {"FAD.md", "DECISIONS.md", "RESEARCH-PIPELINE.md"}  # Phase 0 records: checked by hand, not linted here
 FILES = (sorted(CAREER.rglob("*.md")) + sorted(ROOT.glob("*.md"))
          + sorted(p for p in (ROOT / "research").glob("*.md") if p.name not in SEALED)
          + [p for p in [ROOT / "llms.txt", ROOT / "data" / "README.md", ROOT / "scripts" / "README.md"] if p.exists()])
-GENERATORS = ["rank_roles.py", "build_index.py", "build_skills.py", "build_resume_matrix.py", "resume_layers.py",
-              "build_findings.py", "target_roles.py", "build_role_map.py", "build_role_hubs.py", "build_skills_views.py",
-              "build_archetypes.py", "build_prompts.py", "build_tool_catalog.py", "build_manifest.py"]
+DOSSIERS = 10  # role-rankings.md "Top-10 Dossiers"
+NOT_GENERATORS = {"common.py", "stack_lib.py", "validate_docs.py", "build_all.py", "gap_analysis.py"}
 RELATIVE_TIME = re.compile(r"\b(currently|recently|nowadays|these days|as of now|right now|at present|at the moment)\b"
                            r"|\blatest\b(?![^\n]{0,40}\d{4}(-\d{2}){0,2})", re.I)
 LEGACY = re.compile(r"old-genai-career|temp/old")
@@ -73,10 +72,9 @@ LEGACY_PHRASES_SKIP = {"research/findings.md"}  # generated from the sealed sess
 FRONT_MATTER_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md"]
 GUIDE_HEADINGS = ["The short answer", "Checklist", "Evidence and limits", "Next steps"]
 # Guides written before the guide pattern was adopted (D-016, 2026-11-05); migrate each when it is next revised.
-LEGACY_GUIDES = {"career/02-roles/genai-target-roles.md", "career/06-job-search/job-search-strategy.md",
-                 "career/06-job-search/resume-strategy.md"}
+LEGACY_GUIDES = set()  # every guide follows the pattern since 2026-11-07; list a guide here only while migrating it
 
-# Technologies named in the research sessions or the skills catalog (skills audit, 2026-11-04).
+# Technologies named in the research sessions or the role skill maps (skills audit, 2026-11-04).
 TECH = """Python TypeScript JavaScript C++ Rust Go Java SQL CUDA Scala
 LangChain LangGraph LlamaIndex Haystack DSPy Semantic Kernel AutoGen CrewAI OpenAI Agents SDK Claude Agent SDK Pydantic AI
 Microsoft Agent Framework ADK smolagents Mastra Vercel AI SDK CopilotKit
@@ -102,13 +100,6 @@ TERM_TO_ID = {"Triton": "triton_lang", "Inspect": "inspect_ai", "Phoenix": "phoe
               "Megatron": "megatron", "Dynamo": "dynamo", "Ray Serve": "ray_serve", "Ray": "ray", "CuTe": "cute",
               "CuteDSL": "cutedsl", "Cohere": "cohere_models", "Transformers": "transformers", "Accelerate": "accelerate",
               "FSDP": "fsdp", "Nsight": "nsight", "NIM": "nim", "Isaac": "isaac", "ROS": "ros", "W&B": "wandb"}
-
-
-def gh_slug(heading):
-    s = heading.strip().lower()
-    s = re.sub(r"[`*_~]", "", s)
-    s = re.sub(r"[^\w\- ]", "", s)
-    return s.replace(" ", "-")
 
 
 @lru_cache(maxsize=None)
@@ -269,6 +260,9 @@ def check_generators(problems):
         run = subprocess.run([sys.executable, "-B", str(SCRIPTS / script), "--check"], capture_output=True, text=True, cwd=ROOT)
         if run.returncode != 0:
             problems.append(f"{script} --check: " + (run.stdout + run.stderr).strip()[:1500])
+    for path in sorted(SCRIPTS.glob("*.py")):
+        if path.name not in GENERATORS and path.name not in NOT_GENERATORS and '"--check"' in path.read_text(encoding="utf-8"):
+            problems.append(f"scripts/{path.name} supports --check but is not in GENERATORS in scripts/build_all.py")
 
 
 def check_ranks(problems):
@@ -278,25 +272,37 @@ def check_ranks(problems):
     rank.update({r["id"]: f"L{r['rank']}" for r in res["leadership"]})
     cci = {r["id"]: r["cci"] for r in res["base"]}
     master = (CAREER / "02-roles" / "role-catalog.md").read_text(encoding="utf-8")
-    for slug, rk in re.findall(r"^#### `([a-z0-9-]+)`: .*? · Rank ([L0-9]+)$", master, re.M):
+    n_all, n_ic = len(rank), len(res["base"])
+
+    def expect(found, want, what):
+        if len(found) != want:
+            problems.append(f"{what}: found {len(found)} rank entries in the expected format, wanted {want} "
+                            "(was the format changed? check_ranks in scripts/validate_docs.py parses it)")
+        return found
+
+    for slug, rk in expect(re.findall(r"^#### `([a-z0-9-]+)`: .*? · Rank ([L0-9]+)$", master, re.M), n_all,
+                           "role catalog profiles"):
         if rank.get(slug) != rk:
-            problems.append(f"master catalog: profile {slug} says Rank {rk}, rank_roles.py says {rank.get(slug)}")
-    for slug, rk in re.findall(r"^\| `([a-z0-9-]+)` \| .*\| ([L0-9]+) \|$", master, re.M):
+            problems.append(f"role catalog: profile {slug} says Rank {rk}, rank_roles.py says {rank.get(slug)}")
+    for slug, rk in expect(re.findall(r"^\| `([a-z0-9-]+)` \| .*\| ([L0-9]+) \|$", master, re.M), n_all,
+                           "role catalog registry"):
         if slug in rank and rank[slug] != rk:
-            problems.append(f"master catalog: registry {slug} says {rk}, rank_roles.py says {rank[slug]}")
+            problems.append(f"role catalog: registry {slug} says {rk}, rank_roles.py says {rank[slug]}")
     order = [s for s, _ in re.findall(r"^\| `([a-z0-9-]+)` \| \[.*\| ([L0-9]+) \|$", master, re.M)]
     if order != [r["id"] for r in res["base"]] + [r["id"] for r in res["leadership"]]:
-        problems.append("master catalog: registry rows are not in rank order")
+        problems.append("role catalog: registry rows are not in rank order")
     skills = (CAREER / "03-skills-and-tech" / "role-skill-maps.md").read_text(encoding="utf-8")
-    for n, slug, rk in re.findall(r"^### 3\.(\d+) .*?\(`([a-z0-9-]+)`\) · CCI rank #(\d+)$", skills, re.M):
+    for n, slug, rk in expect(re.findall(r"^### 3\.(\d+) .*?\(`([a-z0-9-]+)`\) · CCI rank #(\d+)$", skills, re.M), n_ic,
+                              "role skill maps"):
         if rank.get(slug) != rk or n != rk:
-            problems.append(f"skills catalog: section 3.{n} {slug} says Rank #{rk}, rank_roles.py says {rank.get(slug)}")
+            problems.append(f"role skill maps: section 3.{n} {slug} says Rank #{rk}, rank_roles.py says {rank.get(slug)}")
     ranked = (CAREER / "02-roles" / "role-rankings.md").read_text(encoding="utf-8")
-    for rk, title, val in re.findall(r"^### #(\d+) (.*?): CCI ([0-9.]+) ", ranked, re.M):
+    for rk, title, val in expect(re.findall(r"^### #(\d+) (.*?): CCI ([0-9.]+) ", ranked, re.M), DOSSIERS,
+                                 "role rankings dossiers"):
         sid = res["base"][int(rk) - 1]["id"]
         want = f"{float(cci[sid]) + 1e-9:.1f}"
         if val != want:
-            problems.append(f"ranked catalog: dossier #{rk} {title} shows CCI {val}, rank_roles.py gives {want}")
+            problems.append(f"role rankings: dossier #{rk} {title} shows CCI {val}, rank_roles.py gives {want}")
 
 
 def check_ontology(problems):

@@ -1,22 +1,28 @@
-# Runs the repository validator on every push and pull request.
-# It checks links, anchors, tables, front matter, writing rules, dead ends, the guide pattern, the stack model,
-# every generated output (each generator's --check), cross-file ranks and corpus coverage, and lists pages past
-# their review_by date (a report, not a failure). Standard-library Python only; no dependencies to install.
+# Runs the repository validator and the machinery tests on every push and pull request.
+# The validator checks links, anchors, tables, front matter, writing rules, dead ends, the guide pattern, the stack
+# model, every generated output (each generator's --check, from the registry in scripts/build_all.py), cross-file
+# ranks and corpus coverage, and lists pages past their review_by date (a report here, not a failure; the weekly
+# due-report workflow fails on them). Standard-library Python only; no dependencies to install.
 name: validate
 
 on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Test the machinery
+        run: python3 -m unittest discover -s scripts/tests -v
       - name: Validate documents and generated outputs
-        env:
-          PYTHONDONTWRITEBYTECODE: "1"
         run: python3 scripts/validate_docs.py

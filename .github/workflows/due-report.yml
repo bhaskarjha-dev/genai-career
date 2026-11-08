@@ -1,0 +1,25 @@
+# Weekly re-verification reminder (decision D-020). Runs the validator with --strict, which counts every page past
+# its review_by date as a problem, so the run fails, and GitHub notifies the owner, whenever a page falls due.
+# Push and pull-request runs (validate.yml) only report due pages, as decision D-017 requires.
+name: due-report
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  due-report:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: List pages due for re-verification (fails if any)
+        run: python3 scripts/validate_docs.py --strict

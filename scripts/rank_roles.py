@@ -14,7 +14,7 @@ career/02-roles/role-rankings.md:
 
 Usage:
     python3 scripts/rank_roles.py                       # print all generated blocks
-    python3 scripts/rank_roles.py --update              # rewrite the GENERATED blocks in the ranked catalog in place
+    python3 scripts/rank_roles.py --update              # rewrite the GENERATED blocks in the role rankings in place
     python3 scripts/rank_roles.py --check               # exit 1 if those blocks are out of date
     python3 scripts/rank_roles.py --markdown out.md     # write the blocks to a separate file
     python3 scripts/rank_roles.py --json out.json       # machine-readable results
@@ -26,8 +26,12 @@ import argparse
 import json
 import random
 import statistics
+import sys
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import schema_errors  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DATA = ROOT / "data" / "role_scores.json"
@@ -337,18 +341,37 @@ def stale_blocks(path, blocks):
 
 
 def validate(data):
-    for r in data["roles"]:
-        checks = [(p, r[p]) for p in ["demand", "comp", "durability", "leverage"]]
-        if r["track"] == "ic":
-            assert set(r["persona_access"]) == set(PERSONAS), r["id"]
-            assert all(0 <= v <= 10 for v in r["persona_access"].values()), r["id"]
-            checks += [("india." + p, r["india"][p]) for p in ("demand", "comp")]
-        else:
-            checks.append(("access", r["access"]))
-        for name, v in checks:
-            assert 0 <= v["lo"] <= v["mid"] <= v["hi"] <= 10, (r["id"], name, v)
-            assert v["grade"] in GRADE_ORDER, (r["id"], name, v["grade"])
-            assert v.get("basis"), (r["id"], name, "missing basis")
+    """Check data/role_scores.json against its schema and the rules a schema cannot express; exit with every error."""
+    schema_path = Path(__file__).resolve().parent.parent / "data" / "schemas" / "role_scores.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    errs = [f"role_scores.json {e[2:]}" for e in schema_errors(data, schema, schema)]
+    if not errs:
+        seen = set()
+        for r in data["roles"]:
+            rid = r["id"]
+            if rid in seen:
+                errs.append(f"role_scores.json: duplicate role id {rid}")
+            seen.add(rid)
+            if r["interview_track"] is not None and r["interview_track"] not in data["interview_tracks"]:
+                errs.append(f"role_scores.json: {rid} names unknown interview track {r['interview_track']!r}")
+            checks = [(p, r[p]) for p in ["demand", "comp", "durability", "leverage", "genai_demand", "genai_india_demand"] if p in r]
+            if r["track"] == "ic":
+                if "persona_access" not in r or "india" not in r:
+                    errs.append(f"role_scores.json: individual-contributor role {rid} needs persona_access and india")
+                    continue
+                if set(r["persona_access"]) != set(data["persona_keys"]) or set(data["persona_keys"]) != set(PERSONAS):
+                    errs.append(f"role_scores.json: {rid} persona_access keys {sorted(r['persona_access'])} differ from persona_keys")
+                checks += [("india." + p, r["india"][p]) for p in ("demand", "comp")]
+            else:
+                if "access" not in r:
+                    errs.append(f"role_scores.json: leadership role {rid} needs access")
+                    continue
+                checks.append(("access", r["access"]))
+            for name, v in checks:
+                if not v["lo"] <= v["mid"] <= v["hi"]:
+                    errs.append(f"role_scores.json: {rid} {name} needs lo <= mid <= hi, has {v['lo']}, {v['mid']}, {v['hi']}")
+    if errs:
+        raise SystemExit("role_scores.json is invalid:\n  " + "\n  ".join(errs))
 
 
 def main():
@@ -357,9 +380,9 @@ def main():
     ap.add_argument("--markdown", help="write all generated markdown blocks to this path")
     ap.add_argument("--json", help="write machine-readable results to this path")
     ap.add_argument("--update", nargs="?", const=str(DEFAULT_DOC), metavar="DOC",
-                    help="rewrite the GENERATED blocks of the ranked catalog in place (default: %(const)s)")
+                    help="rewrite the GENERATED blocks of the role rankings in place (default: %(const)s)")
     ap.add_argument("--check", nargs="?", const=str(DEFAULT_DOC), metavar="DOC",
-                    help="exit 1 if the GENERATED blocks of the ranked catalog are out of date (default: %(const)s)")
+                    help="exit 1 if the GENERATED blocks of the role rankings are out of date (default: %(const)s)")
     args = ap.parse_args()
     data = json.loads(Path(args.data).read_text(encoding="utf-8"))
     validate(data)

@@ -7,42 +7,42 @@
   "application": {
    "name": "Application",
    "tests": "RAG with access control, agent loop control, evaluation architecture, context management",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "customer-application": {
    "name": "Application plus customer scoping",
    "tests": "RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "ml-system-design": {
    "name": "Classic ML system design",
    "tests": "recommendation, fraud or ETA system design, plus where an LLM would help",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "infrastructure": {
    "name": "Infrastructure",
    "tests": "KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "evaluation": {
    "name": "Evaluation design",
    "tests": "golden sets, judge calibration, online sampling, A/B tests",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "research": {
    "name": "Research",
    "tests": "a research talk plus coding; the full research loop at frontier labs",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "governance": {
    "name": "Governance",
    "tests": "a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "product": {
    "name": "Product",
    "tests": "a scoping or product round",
-   "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
   },
   "behavioural": {
    "name": "Behavioural",
@@ -1541,7 +1541,7 @@
    "track": "research",
    "archetype": null,
    "prompt": "Give a research talk on your own work (one round of a frontier-lab loop that also has coding and values rounds).",
-   "reported_by": "No reported prompt (D): built from the research-talk round in T2-01's frontier-lab loop and role-catalog §8.2",
+   "reported_by": "No reported prompt (D): built from the research-talk round in T2-01's frontier-lab loop and the research interview track (T1-03, T0-14)",
    "covers": [
     "Research depth together with engineering depth (research taste plus the ability to build)",
     "Your own contribution separated from the team's: 'I designed the evaluation methodology, implemented the baseline comparison…'",
@@ -1573,7 +1573,7 @@
    "track": "governance",
    "archetype": null,
    "prompt": "Scoping round: set up an AI governance programme (inventory, risk-assessment method, committee and evidence) mapped to the EU AI Act, NIST AI RMF and ISO/IEC 42001.",
-   "reported_by": "No reported prompt (D): built from the governance round in role-catalog §8.2 and the programme work described in T0-15",
+   "reported_by": "No reported prompt (D): built from the governance interview track (T1-03, T0-14) and the programme work described in T0-15",
    "covers": [
     "An AI inventory or registry: systems, owners, use cases and risk tiers",
     "A risk-assessment method and committee operations, with one accountable programme lead and a cross-functional committee",
@@ -1609,7 +1609,7 @@
    "track": "product",
    "archetype": null,
    "prompt": "Product or scoping round: scope a GenAI feature or pilot, from whether to use an LLM to success metrics, an evaluation rubric and exit criteria.",
-   "reported_by": "No reported prompt (D): built from the product round in role-catalog §8.2 and the scoping round T2-01 lists for non-technical candidates",
+   "reported_by": "No reported prompt (D): built from the product interview track (T1-03, T0-14) and the scoping round T2-01 lists for non-technical candidates",
    "covers": [
     "The premise questioned: is an LLM needed, build or buy, what not to build; stakeholders and success metrics named",
     "'Good' defined measurably (task success, groundedness, safety, latency, cost) and mapped from business metric to proxy to offline metric, starting from the cost of a wrong answer",

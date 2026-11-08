@@ -1,0 +1,544 @@
+{
+ "schema": "posting-skill-shares/1.0",
+ "description": "Dated snapshots of the skills that job postings name, by posting title, taken from job-board aggregates. Source of truth for the posting-evidence table in career/03-skills-and-tech/role-skill-inventories.md and for the JD shares that role links in data/skills_ontology.json cite.",
+ "snapshots": [
+  {
+   "id": "jobspipe-2026-11-02",
+   "source": "JobsPipe",
+   "retrieved": "2026-11-02",
+   "grade": "B",
+   "basis": "Platform aggregate of live postings: for each posting title, the skills most often named and their share of postings (per cent). Grade B under decision D-018 (platform data). Recorded on 2026-11-02 in career/03-skills-and-tech/role-skill-maps.md §2.1 and moved to this data file unchanged on 2026-11-07. Sample sizes were not recorded.",
+   "expiry": "EGP-1.0 class V3 (skill-demand shares): 180 days from retrieval, so re-verify by 2027-05-01",
+   "titles": [
+    {
+     "title": "AI Engineer",
+     "skills": [
+      {
+       "name": "Python",
+       "share": 78.4
+      },
+      {
+       "name": "LLM",
+       "share": 76.7
+      },
+      {
+       "name": "agentic AI",
+       "share": 59.3
+      },
+      {
+       "name": "RAG",
+       "share": 54.0
+      },
+      {
+       "name": "machine learning",
+       "share": 39.8
+      },
+      {
+       "name": "AI",
+       "share": 37.8
+      },
+      {
+       "name": "generative AI",
+       "share": 37.6
+      },
+      {
+       "name": "Azure",
+       "share": 35.1
+      },
+      {
+       "name": "AWS",
+       "share": 35.1
+      },
+      {
+       "name": "CI/CD",
+       "share": 34.4
+      },
+      {
+       "name": "vector DBs",
+       "share": 32.6
+      },
+      {
+       "name": "prompt engineering",
+       "share": 31.1
+      }
+     ],
+     "notes": "Remote 11.0%; pay disclosed 19.6%; senior 24.6%, entry 7.0%"
+    },
+    {
+     "title": "Machine Learning Engineer",
+     "skills": [
+      {
+       "name": "ML",
+       "share": 98.6
+      },
+      {
+       "name": "Python",
+       "share": 71.3
+      },
+      {
+       "name": "PyTorch",
+       "share": 48.2
+      },
+      {
+       "name": "LLM",
+       "share": 45.0
+      },
+      {
+       "name": "data structures",
+       "share": 33.7
+      },
+      {
+       "name": "deep learning",
+       "share": 32.6
+      },
+      {
+       "name": "TensorFlow",
+       "share": 31.8
+      },
+      {
+       "name": "communication",
+       "share": 30.3
+      },
+      {
+       "name": "AI",
+       "share": 27.0
+      },
+      {
+       "name": "A/B testing",
+       "share": 23.5
+      },
+      {
+       "name": "NLP",
+       "share": 23.3
+      },
+      {
+       "name": "C++",
+       "share": 23.3
+      }
+     ],
+     "notes": "Remote 14.0%; pay disclosed 38.5%; entry 13.7%, senior 23.2%"
+    },
+    {
+     "title": "Research Scientist",
+     "qualifier": "all fields",
+     "skills": [
+      {
+       "name": "Python",
+       "share": 42.3
+      },
+      {
+       "name": "communication",
+       "share": 41.3
+      },
+      {
+       "name": "ML",
+       "share": 39.2
+      },
+      {
+       "name": "data structures",
+       "share": 26.0
+      },
+      {
+       "name": "PyTorch",
+       "share": 25.4
+      },
+      {
+       "name": "AI",
+       "share": 25.1
+      },
+      {
+       "name": "LLM",
+       "share": 24.4
+      },
+      {
+       "name": "creativity",
+       "share": 23.0
+      },
+      {
+       "name": "deep learning",
+       "share": 18.6
+      },
+      {
+       "name": "C++",
+       "share": 17.4
+      },
+      {
+       "name": "reinforcement learning",
+       "share": 17.1
+      }
+     ],
+     "notes": "Remote 3.3%; US 65.0% of postings"
+    },
+    {
+     "title": "Solutions Architect",
+     "skills": [
+      {
+       "name": "AWS",
+       "share": 53.6
+      },
+      {
+       "name": "leadership",
+       "share": 43.0
+      },
+      {
+       "name": "communication",
+       "share": 42.9
+      },
+      {
+       "name": "mentoring",
+       "share": 35.1
+      },
+      {
+       "name": "Azure",
+       "share": 29.5
+      },
+      {
+       "name": "adaptability",
+       "share": 26.5
+      },
+      {
+       "name": "compliance",
+       "share": 25.3
+      },
+      {
+       "name": "Python",
+       "share": 23.6
+      },
+      {
+       "name": "AI",
+       "share": 23.2
+      },
+      {
+       "name": "GCP",
+       "share": 22.6
+      },
+      {
+       "name": "DevOps",
+       "share": 17.2
+      },
+      {
+       "name": "generative AI",
+       "share": 17.1
+      }
+     ],
+     "notes": "Remote 16.2%"
+    },
+    {
+     "title": "Data Scientist",
+     "skills": [
+      {
+       "name": "data science",
+       "share": 90.1
+      },
+      {
+       "name": "Python",
+       "share": 86.0
+      },
+      {
+       "name": "ML",
+       "share": 69.3
+      },
+      {
+       "name": "SQL",
+       "share": 63.8
+      },
+      {
+       "name": "statistics",
+       "share": 52.7
+      },
+      {
+       "name": "communication",
+       "share": 42.3
+      },
+      {
+       "name": "data analysis",
+       "share": 33.1
+      },
+      {
+       "name": "LLM",
+       "share": 30.1
+      },
+      {
+       "name": "AI",
+       "share": 27.2
+      },
+      {
+       "name": "AWS",
+       "share": 24.8
+      },
+      {
+       "name": "generative AI",
+       "share": 22.0
+      }
+     ],
+     "notes": "Feeder for AI Engineer / Evals"
+    },
+    {
+     "title": "Product Manager",
+     "skills": [
+      {
+       "name": "product management",
+       "share": 92.6
+      },
+      {
+       "name": "communication",
+       "share": 53.7
+      },
+      {
+       "name": "leadership",
+       "share": 40.1
+      },
+      {
+       "name": "compliance",
+       "share": 26.1
+      },
+      {
+       "name": "time management",
+       "share": 24.0
+      },
+      {
+       "name": "agile",
+       "share": 22.7
+      },
+      {
+       "name": "roadmapping",
+       "share": 18.4
+      },
+      {
+       "name": "AI",
+       "share": 15.4
+      },
+      {
+       "name": "stakeholder management",
+       "share": 14.2
+      },
+      {
+       "name": "agentic AI",
+       "share": 13.6
+      }
+     ],
+     "notes": "Feeder for AI PM"
+    },
+    {
+     "title": "Software Engineer",
+     "skills": [
+      {
+       "name": "Python",
+       "share": 44.4
+      },
+      {
+       "name": "communication",
+       "share": 44.2
+      },
+      {
+       "name": "Java",
+       "share": 32.4
+      },
+      {
+       "name": "CI/CD",
+       "share": 31.3
+      },
+      {
+       "name": "AWS",
+       "share": 30.8
+      },
+      {
+       "name": "system design",
+       "share": 28.3
+      },
+      {
+       "name": "C++",
+       "share": 24.6
+      },
+      {
+       "name": "AI",
+       "share": 24.0
+      }
+     ]
+    },
+    {
+     "title": "Backend Engineer",
+     "skills": [
+      {
+       "name": "communication",
+       "share": 40.4
+      },
+      {
+       "name": "AWS",
+       "share": 39.7
+      },
+      {
+       "name": "Python",
+       "share": 38.4
+      },
+      {
+       "name": "system design",
+       "share": 37.0
+      },
+      {
+       "name": "Kubernetes",
+       "share": 31.2
+      },
+      {
+       "name": "PostgreSQL",
+       "share": 30.7
+      },
+      {
+       "name": "Docker",
+       "share": 28.0
+      },
+      {
+       "name": "CI/CD",
+       "share": 26.8
+      },
+      {
+       "name": "observability",
+       "share": 25.0
+      }
+     ],
+     "notes": "Remote 31.6%"
+    },
+    {
+     "title": "Full-Stack Engineer",
+     "skills": [
+      {
+       "name": "React",
+       "share": 69.4
+      },
+      {
+       "name": "TypeScript",
+       "share": 52.7
+      },
+      {
+       "name": "Python",
+       "share": 41.8
+      },
+      {
+       "name": "AWS",
+       "share": 41.3
+      },
+      {
+       "name": "CI/CD",
+       "share": 37.8
+      },
+      {
+       "name": "Node.js",
+       "share": 32.3
+      },
+      {
+       "name": "REST API",
+       "share": 27.6
+      }
+     ],
+     "notes": "Remote 21.6%"
+    },
+    {
+     "title": "DevOps Engineer",
+     "skills": [
+      {
+       "name": "DevOps",
+       "share": 99.0
+      },
+      {
+       "name": "CI/CD",
+       "share": 81.2
+      },
+      {
+       "name": "Kubernetes",
+       "share": 69.4
+      },
+      {
+       "name": "Terraform",
+       "share": 59.1
+      },
+      {
+       "name": "Python",
+       "share": 55.7
+      },
+      {
+       "name": "Docker",
+       "share": 53.4
+      },
+      {
+       "name": "AWS",
+       "share": 52.9
+      },
+      {
+       "name": "Linux",
+       "share": 45.1
+      }
+     ],
+     "notes": "Feeder for ML Platform / AI Infra"
+    },
+    {
+     "title": "Security Engineer",
+     "skills": [
+      {
+       "name": "Python",
+       "share": 45.7
+      },
+      {
+       "name": "cybersecurity",
+       "share": 42.3
+      },
+      {
+       "name": "compliance",
+       "share": 39.4
+      },
+      {
+       "name": "AWS",
+       "share": 38.8
+      },
+      {
+       "name": "incident response",
+       "share": 32.4
+      },
+      {
+       "name": "application security",
+       "share": 26.5
+      },
+      {
+       "name": "IAM",
+       "share": 21.6
+      }
+     ],
+     "notes": "Feeder for AI Security"
+    },
+    {
+     "title": "Engineering Manager",
+     "skills": [
+      {
+       "name": "leadership",
+       "share": 72.7
+      },
+      {
+       "name": "communication",
+       "share": 51.4
+      },
+      {
+       "name": "mentoring",
+       "share": 47.1
+      },
+      {
+       "name": "compliance",
+       "share": 30.9
+      },
+      {
+       "name": "system design",
+       "share": 25.3
+      },
+      {
+       "name": "observability",
+       "share": 18.0
+      },
+      {
+       "name": "agentic AI",
+       "share": 14.8
+      }
+     ],
+     "notes": "Feeder for AI EM"
+    }
+   ]
+  }
+ ]
+}

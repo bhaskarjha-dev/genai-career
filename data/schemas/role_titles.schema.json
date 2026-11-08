@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bhaskarjha-dev/genai-career/data/schemas/role_titles.schema.json",
+  "title": "Role titles",
+  "description": "Schema for data/role_titles.json: every posting title the role catalog classifies. It uses only the JSON Schema subset that scripts/common.py schema_errors() implements. scripts/build_index.py also checks that titles are unique, that every type is listed in types, and that the canonical titles map one-to-one to the role ids in data/role_scores.json.",
+  "type": "object",
+  "required": ["schema", "description", "types", "titles"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "role-titles/1.0"},
+    "description": {"type": "string", "minLength": 1},
+    "types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "titles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title", "type", "maps_to", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "title": {"type": "string", "minLength": 1},
+          "type": {"type": "string", "minLength": 1},
+          "maps_to": {"type": "string", "minLength": 1},
+          "note": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

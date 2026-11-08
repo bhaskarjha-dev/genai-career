@@ -2,8 +2,8 @@
  "schema": "project-archetypes/1.1",
  "as_of": "2026-11-06",
  "review_by": "2027-01-19",
- "description": "Proof-of-work project archetypes, one per kind of flagship project named in career/06-job-search/resume-strategy.md §2.1 and in the proof-of-work lines of career/03-skills-and-tech/role-skill-maps.md. scripts/resume_layers.py reads only name and skills (headline-skill IDs from skills_ontology.json) to compute which projects cover which roles in career/06-job-search/job-search-strategy.md, so change those two only together with a regenerated strategy. Other fields: problem, the real problem the project solves and why it is a credible signal, with an inline grade on each empirical claim; build, 4–7 stack-neutral steps in which named tools are examples only; evidence, 3–5 items to measure and publish, each mapped to the T0-13 D2 artefacts PA-01 to PA-15 where one fits; verifiability, the highest level of the T0-13 §4.1 ladder the evidence should reach (V1 reproducible, V2 externally attested, V3 operationally evidenced), with every headline claim at V1 or above; under spec R2, V3 means T0-13's V3-lite, a 30+ day demo log without real users; for the document-type archetypes P12, P13, P17 and P19, V1 is applied by analogy [P]: every claim traces to committed data or a dated source that a reviewer can check in minutes; effort, S, M or L in part-time working time against T0-13's reference time boxes (S about R1's 4–6 weeks, M about the 6–10 weeks of R2 and R3, L about R4's 3–6 months), not counting the calendar time that V2 and V3 evidence spends waiting on others (maintainer review, users, 30+ day logs); spec, present only where a T0-13 D3 reference specification (R1–R4) sets the time box and compute cap; compute, quoted from that cap or from a T0-13 D8 modest-budget rung, otherwise prefixed [P]; dollar caps are T0-13 prices retrieved 2026-10-21, so re-verify them by 2027-01-19; interview_archetypes, the T0-14 §6.3 system-design archetypes A1–A15 whose rounds the project rehearses, empty where none applies, because T0-14 covers AI-engineering design rounds only; pitfalls, the T0-13 D1 anti-portfolio failure modes AP-1 to AP-9 the project must avoid; sources, session references with a finding, section or line (sessions are immutable) and career documents by path with an anchor or section.",
- "basis": "No field is a measurement. No source links any project type to hiring outcomes, and the claim that tutorial repositories screen candidates out faster than no GitHub at all is unverified (T0-13.F1, T0-13 D10 L604, §7.1 NF1 and NF5). Grades by field (EGP-1.0): name and skills are judgement (D) drawn from the proof-of-work lines in role-skill-maps.md and resume-strategy.md §2.1; problem carries an inline grade on each empirical claim; build, evidence, spec and compute apply T0-13's reference specifications (D3), artefacts (D2) and modest-budget rungs (D8), which are that session's own synthesis anchored to A and B sources, so grade D as standards, and their numeric defaults are starting points to change with a stated reason (T0-13 L270); steps for archetypes without a spec follow the cited proof lines and are practice-curated [P]; verifiability applies the T0-13 §4.1 ladder, taking the target from the specification where spec is set (R1 V1; R2 V1 plus V3-lite, a 30+ day demo log without real users; R3 V1 plus one V2 item) and from judgement (D) elsewhere, and applies V1 by analogy [P] to the document-type archetypes P12, P13, P17 and P19 (every claim traces to committed data or a dated source); effort is [P] unless spec is set, sized against T0-13's part-time time boxes (S about 4–6 weeks, M about 6–10 weeks, L about 3–6 months; T0-13 D3 L272-277); interview_archetypes uses the T0-14 §6.3 catalog, a synthesis whose per-archetype evidence runs from B to C (T0-14.F3), and each project-to-archetype mapping is judgement (D); pitfalls use T0-13 D1, which grades each failure mode B or C, mapped by judgement (D). T0-13 discloses that three of its A-grade sources are first-party Anthropic material (T0-13 §2, K8). A project counts as proof only when its headline claims reach V1 (T0-13 L138). Dollar caps in compute are T0-13 prices retrieved 2026-10-21; re-verify them by 2027-01-19.",
+ "description": "Proof-of-work project archetypes, one per kind of flagship project named in career/06-job-search/resume-strategy.md (the variant catalogue) and in the proof-of-work lines of career/03-skills-and-tech/role-skill-maps.md. scripts/resume_layers.py reads only name and skills (headline-skill IDs from skills_ontology.json) to compute which projects cover which roles in career/06-job-search/job-search-strategy.md, so change those two only together with a regenerated strategy. Other fields: problem, the real problem the project solves and why it is a credible signal, with an inline grade on each empirical claim; build, 4–7 stack-neutral steps in which named tools are examples only; evidence, 3–5 items to measure and publish, each mapped to the T0-13 D2 artefacts PA-01 to PA-15 where one fits; verifiability, the highest level of the T0-13 §4.1 ladder the evidence should reach (V1 reproducible, V2 externally attested, V3 operationally evidenced), with every headline claim at V1 or above; under spec R2, V3 means T0-13's V3-lite, a 30+ day demo log without real users; for the document-type archetypes P12, P13, P17 and P19, V1 is applied by analogy [P]: every claim traces to committed data or a dated source that a reviewer can check in minutes; effort, S, M or L in part-time working time against T0-13's reference time boxes (S about R1's 4–6 weeks, M about the 6–10 weeks of R2 and R3, L about R4's 3–6 months), not counting the calendar time that V2 and V3 evidence spends waiting on others (maintainer review, users, 30+ day logs); spec, present only where a T0-13 D3 reference specification (R1–R4) sets the time box and compute cap; compute, quoted from that cap or from a T0-13 D8 modest-budget rung, otherwise prefixed [P]; dollar caps are T0-13 prices retrieved 2026-10-21, so re-verify them by 2027-01-19; interview_archetypes, the T0-14 §6.3 system-design archetypes A1–A15 whose rounds the project rehearses, empty where none applies, because T0-14 covers AI-engineering design rounds only; pitfalls, the T0-13 D1 anti-portfolio failure modes AP-1 to AP-9 the project must avoid; sources, session references with a finding, section or line (sessions are immutable) and career documents by path with an anchor or section.",
+ "basis": "No field is a measurement. No source links any project type to hiring outcomes, and the claim that tutorial repositories screen candidates out faster than no GitHub at all is unverified (T0-13.F1, T0-13 D10 L604, §7.1 NF1 and NF5). Grades by field (EGP-1.0): name and skills are judgement (D) drawn from the proof-of-work lines in role-skill-maps.md and resume-strategy.md (the variant catalogue); problem carries an inline grade on each empirical claim; build, evidence, spec and compute apply T0-13's reference specifications (D3), artefacts (D2) and modest-budget rungs (D8), which are that session's own synthesis anchored to A and B sources, so grade D as standards, and their numeric defaults are starting points to change with a stated reason (T0-13 L270); steps for archetypes without a spec follow the cited proof lines and are practice-curated [P]; verifiability applies the T0-13 §4.1 ladder, taking the target from the specification where spec is set (R1 V1; R2 V1 plus V3-lite, a 30+ day demo log without real users; R3 V1 plus one V2 item) and from judgement (D) elsewhere, and applies V1 by analogy [P] to the document-type archetypes P12, P13, P17 and P19 (every claim traces to committed data or a dated source); effort is [P] unless spec is set, sized against T0-13's part-time time boxes (S about 4–6 weeks, M about 6–10 weeks, L about 3–6 months; T0-13 D3 L272-277); interview_archetypes uses the T0-14 §6.3 catalog, a synthesis whose per-archetype evidence runs from B to C (T0-14.F3), and each project-to-archetype mapping is judgement (D); pitfalls use T0-13 D1, which grades each failure mode B or C, mapped by judgement (D). T0-13 discloses that three of its A-grade sources are first-party Anthropic material (T0-13 §2, K8). A project counts as proof only when its headline claims reach V1 (T0-13 L138). Dollar caps in compute are T0-13 prices retrieved 2026-10-21; re-verify them by 2027-01-19.",
  "archetypes": {
   "P1": {
    "name": "Evaluated RAG system over a real corpus",
@@ -22,7 +22,7 @@
     "git_ci",
     "docker"
    ],
-   "problem": "Answering questions over a specialised, changing document set is core AI-engineer work: RAG is named in roughly a third to 54% of AI-engineer postings, depending on the sample [B · T0-13.F2; role-skill-maps §2.1]. Unmeasured PDF chat is the archetypal tutorial clone [C · T0-13 AP-1], so the signal comes from baselines, a calibrated judge and error analysis over a versioned corpus.",
+   "problem": "Answering questions over a specialised, changing document set is core AI-engineer work: RAG is named in roughly a third to 54% of AI-engineer postings, depending on the sample [B · T0-13.F2; JobsPipe 2026-11-02, data/posting_skill_shares.json]. Unmeasured PDF chat is the archetypal tutorial clone [C · T0-13 AP-1], so the signal comes from baselines, a calibrated judge and error analysis over a versioned corpus.",
    "build": [
     "Snapshot a public, licensed, versioned corpus that is not a generic PDF, roughly 300 or more documents (for example a library's versioned docs and changelogs), and record its hash and licence in a dataset card.",
     "Write at least 50 questions with gold answer spans and source IDs, including at least 10 unanswerable ones, and fix the dev and test split before any tuning.",
@@ -64,7 +64,7 @@
     "T0-14 §6.3 L199",
     "career/03-skills-and-tech/role-skill-maps.md §2.1",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P2": {
@@ -122,7 +122,7 @@
     "T0-14 §6.7 L717",
     "T0-03 L135",
     "career/03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P3": {
@@ -231,7 +231,7 @@
     "T0-14 §6.3 L193",
     "T0-14 §6.3 L198",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P5": {
@@ -288,7 +288,7 @@
     "T0-14 §6.3 L186-189",
     "T0-03 L137",
     "career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P6": {
@@ -353,7 +353,7 @@
     "T0-14 A6 L314-334",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P7": {
@@ -404,7 +404,7 @@
     "T0-14 A4 L274-292",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P8": {
@@ -451,7 +451,7 @@
     "T0-13 D1 AP-6 L204-207",
     "T0-13 D1 AP-7 L209-212",
     "career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P9": {
@@ -500,7 +500,7 @@
     "T0-03 L137",
     "career/03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P10": {
@@ -550,7 +550,7 @@
     "T0-13 D2 PA-09 L238",
     "T0-13 D6 L511-524",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P11": {
@@ -609,7 +609,7 @@
     "T0-14 A8 L386",
     "career/03-skills-and-tech/role-skill-maps.md#skills-forward-deployed-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-solutions-architect",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P12": {
@@ -657,7 +657,7 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-6 L204-207",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P13": {
@@ -704,7 +704,7 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-6 L204-207",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-governance-lead",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P14": {
@@ -754,7 +754,7 @@
     "T0-14 A9 L388-410",
     "T0-14 A11 L432-454",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P15": {
@@ -846,7 +846,7 @@
    ],
    "sources": [
     "career/03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer",
-    "career/06-job-search/resume-strategy.md §2.1",
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
     "T0-13 §4.1 L129-138",
     "T0-13 D2 L228-244",
     "T0-13 D1 AP-5 L199-202",
@@ -898,7 +898,7 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-6 L204-207",
     "career/03-skills-and-tech/role-skill-maps.md#skills-domain-evaluation-specialist",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P18": {
@@ -948,7 +948,7 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-7 L209-212",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P19": {
@@ -994,7 +994,7 @@
     "T0-13 D1 AP-3 L189-192",
     "T0-13 D1 AP-5 L199-202",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-risk-assurance-specialist",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   },
   "P20": {
@@ -1048,7 +1048,7 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-8 L214-217",
     "career/03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer",
-    "career/06-job-search/resume-strategy.md §2.1"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
    ]
   }
  }

@@ -3,6 +3,12 @@
   "as_of": "2026-11-02",
   "scale": "Each pillar is scored 0-10 on an anchored rubric (see career/02-roles/role-rankings.md section 1). lo/mid/hi = plausible range given evidence quality; Monte Carlo samples a triangular distribution (lo, mid, hi).",
   "grades": "EGP-1.0 grades of the evidence behind each pillar: A primary record; B authoritative secondary or platform aggregate with disclosed method (JobsPipe, Fast AI Jobs and Levels.fyi pages are B); C practitioner, small-corpus or vendor survey; D judgement or recalled; M model output from graded inputs (treated as C for confidence).",
+  "count_sources": {
+    "JobsPipe": "2026-11-02",
+    "Fast AI Jobs": "2026-10-19",
+    "Skillenai": "2026-10-14",
+    "Go Fractional": "2026-10-25"
+  },
   "persona_keys": [
     "backend",
     "data_scientist",
@@ -14,42 +20,69 @@
     "application": {
       "name": "Application",
       "tests": "RAG with access control, agent loop control, evaluation architecture, context management",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "customer-application": {
       "name": "Application plus customer scoping",
       "tests": "RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "ml-system-design": {
       "name": "Classic ML system design",
       "tests": "recommendation, fraud or ETA system design, plus where an LLM would help",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "infrastructure": {
       "name": "Infrastructure",
       "tests": "KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "evaluation": {
       "name": "Evaluation design",
       "tests": "golden sets, judge calibration, online sampling, A/B tests",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "research": {
       "name": "Research",
       "tests": "a research talk plus coding; the full research loop at frontier labs",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "governance": {
       "name": "Governance",
       "tests": "a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
     },
     "product": {
       "name": "Product",
       "tests": "a scoping or product round",
-      "source": "career/02-roles/role-catalog.md §8.2 (T1-03, T0-14)"
+      "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
+    }
+  },
+  "track_playbooks": {
+    "phd-to-industry.md": {
+      "label": "PhD to industry",
+      "roles": [
+        "research-engineer",
+        "research-scientist",
+        "applied-scientist",
+        "ai-safety-researcher"
+      ]
+    },
+    "governance-careers.md": {
+      "label": "Governance careers",
+      "roles": [
+        "ai-governance-lead",
+        "ai-risk-assurance-specialist",
+        "responsible-ai-engineer",
+        "chief-ai-officer"
+      ]
+    },
+    "freelance-fractional.md": {
+      "label": "Freelance and fractional practice",
+      "roles": [
+        "independent-ai-consultant",
+        "fractional-ai-leader"
+      ]
     }
   },
   "roles": [
@@ -122,6 +155,20 @@
           "grade": "B",
           "basis": "Levels.fyi Bengaluru AI Engineer P50 Rs21.4-24.5L, P75 Rs40.4L, P90 Rs62.6L (unstable) [T0-02:146, T0-17:139]; broad market centres Rs10-15L [T0-02:71]."
         }
+      },
+      "genai_demand": {
+        "lo": 8.5,
+        "mid": 9,
+        "hi": 9.5,
+        "grade": "M",
+        "basis": "GenAI subset of postings (those naming LLM, JobsPipe JD 2026-11-02): US 1,697 x 76.7% = about 1,302 -> demand band 9 (used only for the GenAI target order; scripts/target_roles.py)"
+      },
+      "genai_india_demand": {
+        "lo": 8.5,
+        "mid": 10,
+        "hi": 10,
+        "grade": "M",
+        "basis": "India 398 x 76.7% = about 305 -> India band 10 (used only for the GenAI target order)"
       }
     },
     {
@@ -192,6 +239,20 @@
           "grade": "B",
           "basis": "Levels.fyi Bengaluru MLE TC P50 Rs44.5L, P90 Rs94.6L (n=96) [T0-02:145]; Hyderabad P50 Rs30.3L [T0-02:149]."
         }
+      },
+      "genai_demand": {
+        "lo": 6.5,
+        "mid": 7,
+        "hi": 8,
+        "grade": "M",
+        "basis": "GenAI subset of postings (those naming LLM, JobsPipe JD 2026-11-02): US 1,084 x 45.0% = about 488 -> demand band 7 (used only for the GenAI target order; scripts/target_roles.py)"
+      },
+      "genai_india_demand": {
+        "lo": 4,
+        "mid": 5.5,
+        "hi": 7,
+        "grade": "M",
+        "basis": "India 90 x 45.0% = about 41 -> India band 5.5 (used only for the GenAI target order)"
       }
     },
     {
@@ -1878,7 +1939,7 @@
         "mid": 5.5,
         "hi": 7.0,
         "grade": "D",
-        "basis": "Judgement. May be transitional; fractional CAIO demand 'falling sharply' [T0-18:193-194]."
+        "basis": "Judgement. May be transitional; fractional CAIO demand was labelled 'falling sharply' [T0-18:193-194], but T0-18 rates this demand evidence 'conflicting' [T0-18:1261]."
       },
       "leverage": {
         "lo": 8.0,

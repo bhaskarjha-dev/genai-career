@@ -2,10 +2,9 @@
 """GenAI target order: computes it, keeps its copies in sync, and prints the analysis.
 
 The GenAI target order is computed here from data/role_scores.json (the source of truth) using
-scripts/rank_roles.py. Two inputs are restricted to their GenAI subset (postings naming LLM, JobsPipe JD 2026-11-02):
-  * AI Engineer: US 1,697 x 76.7% ~ 1,302 -> Demand band 9; India 398 x 76.7% ~ 305 -> India band 10
-  * ML Engineer: US 1,084 x 45.0% ~ 488 -> Demand band 7; India 90 x 45.0% ~ 41 -> India band 5.5
-Everything else is the catalog's data. The order is the consensus (mean) rank across 8 lenses.
+scripts/rank_roles.py. Where a role's demand is restricted to its GenAI subset (postings naming LLM, JobsPipe JD
+2026-11-02), role_scores.json gives the restricted ranges as genai_demand and genai_india_demand (Grade M, with
+their arithmetic as the basis); on 2026-11-07 that is AI Engineer and ML Engineer. Everything else is the catalog's data. The order is the consensus (mean) rank across 8 lenses.
 
 Copies of the order live in two places, and this script keeps them honest:
   * data/skills_ontology.json  roles[*].target (used to order inventories and résumé blocks)
@@ -36,21 +35,18 @@ import rank_roles as rr  # noqa: E402
 SCORES = ROOT / 'data' / 'role_scores.json'
 ONTOLOGY = ROOT / 'data' / 'skills_ontology.json'
 DOC = ROOT / 'career' / '02-roles' / 'genai-target-roles.md'
-GENAI_ADJ = {
-    'ai-engineer': {'demand': {'lo': 8.5, 'mid': 9, 'hi': 9.5}, 'india_demand': {'lo': 8.5, 'mid': 10, 'hi': 10}},
-    'ml-engineer': {'demand': {'lo': 6.5, 'mid': 7, 'hi': 8}, 'india_demand': {'lo': 4, 'mid': 5.5, 'hi': 7}},
-}
 LENSES = ['base', 'equal', 'pay_max', 'hiring_safety', 'moat_first', 'switcher', 'india', 'mc']
 ROW = re.compile(r"^\| (\d+) \| .*? \| (?:\d|—) \| ([0-9.]+) \| (\d+)–(\d+) \|", re.M)
 
 
 def adjusted(d):
+    """Restrict demand to its GenAI subset where data/role_scores.json gives one (genai_demand, genai_india_demand)."""
     d = copy.deepcopy(d)
     for r in d['roles']:
-        a = GENAI_ADJ.get(r['id'])
-        if a:
-            r['demand'].update(a['demand'])
-            r['india']['demand'].update(a['india_demand'])
+        if 'genai_demand' in r:
+            r['demand'].update({k: r['genai_demand'][k] for k in ('lo', 'mid', 'hi')})
+        if 'genai_india_demand' in r:
+            r['india']['demand'].update({k: r['genai_india_demand'][k] for k in ('lo', 'mid', 'hi')})
     return d
 
 

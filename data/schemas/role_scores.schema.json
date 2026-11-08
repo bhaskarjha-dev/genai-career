@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bhaskarjha-dev/genai-career/data/schemas/role_scores.schema.json",
+  "title": "Role scores",
+  "description": "Schema for data/role_scores.json: the 29 canonical roles with their definitions, work footprints, interview tracks and graded 0-10 pillar ranges. It uses only the JSON Schema subset that scripts/common.py schema_errors() implements. Rules the schema cannot express are checked by scripts/rank_roles.py validate(): ids are unique; lo <= mid <= hi; every interview_track exists; individual-contributor roles carry persona_access and india, leadership roles carry access; persona_access keys equal persona_keys.",
+  "type": "object",
+  "required": ["schema", "as_of", "scale", "grades", "count_sources", "persona_keys", "interview_tracks", "track_playbooks", "roles"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "role-scores/1.0"},
+    "as_of": {"$ref": "#/$defs/date"},
+    "scale": {"type": "string", "minLength": 1},
+    "grades": {"type": "string", "minLength": 1},
+    "count_sources": {
+      "description": "Posting-count sources cited in the demand bases, each with the date its counts were last verified; role hubs take their review_by (EGP-1.0 class V1, 31 days) from the oldest source a role cites.",
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/date"}
+    },
+    "persona_keys": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z_]+$"}},
+    "interview_tracks": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z][a-z-]*$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "tests", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "tests": {"type": "string", "minLength": 1},
+          "source": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "track_playbooks": {
+      "description": "Track playbooks in career/11-tracks/ written for particular roles: file name -> label and role ids (role hubs link them).",
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9-]+\\.md$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "roles"],
+        "additionalProperties": false,
+        "properties": {
+          "label": {"type": "string", "minLength": 1},
+          "roles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"}}
+        }
+      }
+    },
+    "roles": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/role"}}
+  },
+  "$defs": {
+    "date": {"type": "string", "pattern": "^20[0-9]{2}-[01][0-9]-[0-3][0-9]$"},
+    "score": {"type": "number", "minimum": 0, "maximum": 10},
+    "pillar": {
+      "type": "object",
+      "required": ["lo", "mid", "hi", "grade", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "lo": {"$ref": "#/$defs/score"},
+        "mid": {"$ref": "#/$defs/score"},
+        "hi": {"$ref": "#/$defs/score"},
+        "grade": {"enum": ["A", "B", "C", "D", "M"]},
+        "basis": {"type": "string", "minLength": 1}
+      }
+    },
+    "role": {
+      "type": "object",
+      "required": ["id", "name", "family", "track", "status", "definition", "stack", "interview_track", "demand", "comp", "durability", "leverage"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+        "name": {"type": "string", "minLength": 1},
+        "family": {"type": "string", "minLength": 1},
+        "track": {"enum": ["ic", "leadership"]},
+        "status": {"enum": ["E", "V", "W", "A"]},
+        "definition": {"type": "string", "minLength": 20},
+        "stack": {
+          "type": "object",
+          "required": ["primary", "secondary", "planes", "basis", "grade"],
+          "additionalProperties": false,
+          "properties": {
+            "primary": {"type": ["string", "null"], "pattern": "^L[0-9]$"},
+            "secondary": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^L[0-9]$"}},
+            "planes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+            "basis": {"type": "string", "minLength": 1},
+            "grade": {"enum": ["A", "B", "C", "D", "M"]}
+          }
+        },
+        "interview_track": {"type": ["string", "null"]},
+        "demand": {"$ref": "#/$defs/pillar"},
+        "comp": {"$ref": "#/$defs/pillar"},
+        "durability": {"$ref": "#/$defs/pillar"},
+        "leverage": {"$ref": "#/$defs/pillar"},
+        "access": {"$ref": "#/$defs/pillar"},
+        "genai_demand": {"$ref": "#/$defs/pillar"},
+        "genai_india_demand": {"$ref": "#/$defs/pillar"},
+        "persona_access": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/score"}
+        },
+        "india": {
+          "type": "object",
+          "required": ["demand", "comp"],
+          "additionalProperties": false,
+          "properties": {
+            "demand": {"$ref": "#/$defs/pillar"},
+            "comp": {"$ref": "#/$defs/pillar"}
+          }
+        }
+      }
+    }
+  }
+}

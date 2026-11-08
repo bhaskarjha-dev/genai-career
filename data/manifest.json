@@ -10,13 +10,14 @@
    "stage": 0,
    "status": "published",
    "last_verified": "2026-11-05",
-   "summary": "Index of stage 00 (start-here tools): the workbook, glossary and tool catalog that help at every stage of a GenAI career search.",
+   "summary": "Index of stage 00 (start-here tools): the workbook, glossary and tool catalog that help at every stage of a GenAI career search, plus a personal script that turns your skill ratings into a gap report.",
    "sources": [
     "T0-06",
     "T0-10"
    ],
    "headings": [
     "In this folder",
+    "Personal tool: skill-gap analysis",
     "Planned",
     "Evidence to read now"
    ]
@@ -344,7 +345,7 @@
    "stage": 1,
    "status": "published",
    "last_verified": "2026-11-06",
-   "review_by": "2026-11-03",
+   "review_by": "2026-11-19",
    "summary": "What the GenAI job market looks like as of October 2026, globally and in India: which titles have measured volume, where demand, pay and applicant pressure sit, what is short and what is commoditised, and the decision rules that follow for each kind of job seeker.",
    "sources": [
     "T0-01",
@@ -422,24 +423,46 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "The sorted shortlist of GenAI roles to target: a consensus of eight lenses restricted to GenAI demand, with reasoning per role and persona notes.",
+   "review_by": "2026-12-03",
+   "summary": "Which GenAI roles to target, in order: a sorted shortlist from a consensus of eight lenses restricted to GenAI demand, with the tier rules, one line per role, and a method for choosing one cluster, its top title and two adjacent titles.",
    "sources": [
     "T0-01",
     "T0-02",
+    "T0-03",
+    "T0-04",
+    "T0-06",
+    "T0-14",
+    "T0-15",
     "T0-17",
-    "T0-06"
+    "T0-18"
+   ],
+   "roles": [
+    "all"
+   ],
+   "geos": [
+    "global",
+    "india"
+   ],
+   "tags": [
+    "target-roles",
+    "shortlist",
+    "genai",
+    "ranking",
+    "tiers",
+    "clusters",
+    "persona",
+    "india"
    ],
    "headings": [
-    "0. The sorted target list",
-    "1. How the order was built",
-    "2. Target cards: Tiers 1–3",
-    "3. Tiers 4–5 at a glance",
-    "4. Not primary GenAI targets, and titles to avoid as a headline",
-    "5. Best targets by background (GenAI persona lenses)",
-    "6. India-first target order (GenAI India lens)",
-    "7. Target clusters: one skill stack, several titles",
-    "8. Leadership and independent tracks: when to target them",
-    "9. Caveats, and what would change the order"
+    "The short answer",
+    "At a glance: the sorted target list",
+    "How the order is computed: a GenAI filter, eight lenses and five tiers",
+    "How to do it",
+    "Templates and examples",
+    "Checklist",
+    "Pitfalls",
+    "Evidence and limits",
+    "Next steps"
    ]
   },
   {
@@ -450,6 +473,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-14",
    "summary": "Index of the 29 role hubs: one generated page per canonical role with its definition, footprint, graded scores, skills, proof, interview track and résumé pointers.",
    "generated_by": "scripts/build_role_hubs.py",
    "headings": [
@@ -466,6 +490,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-14",
    "summary": "Agentic AI Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "agentic-ai-engineer"
@@ -493,6 +518,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-14",
    "summary": "AI Enablement Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-enablement-engineer"
@@ -520,6 +546,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-19",
    "summary": "AI Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-engineer"
@@ -547,6 +574,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Engineering Manager / Director of AI Engineering on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-engineering-manager"
@@ -573,6 +601,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Evaluation Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-evaluation-engineer"
@@ -600,6 +629,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Governance Programme Lead / Manager on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-governance-lead"
@@ -626,6 +656,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Infrastructure / GPU Platform Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-infrastructure-engineer"
@@ -653,6 +684,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Product Engineer (AI Frontend) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-product-engineer"
@@ -680,6 +712,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Product Manager on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-product-manager"
@@ -706,6 +739,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI Risk, Audit & Compliance Specialist on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-risk-assurance-specialist"
@@ -732,6 +766,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Frontier AI Safety / Alignment Researcher on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-safety-researcher"
@@ -759,6 +794,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-14",
    "summary": "AI Security Engineer / AI Red Teamer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-security-engineer"
@@ -786,6 +822,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "AI / GenAI Solutions Architect on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ai-solutions-architect"
@@ -812,6 +849,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-19",
    "summary": "Applied AI Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "applied-ai-engineer"
@@ -838,6 +876,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-19",
    "summary": "Applied Scientist on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "applied-scientist"
@@ -865,6 +904,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Chief AI Officer (CAIO) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "chief-ai-officer"
@@ -891,6 +931,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Domain Evaluation Specialist / AI Trainer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "domain-evaluation-specialist"
@@ -917,6 +958,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-19",
    "summary": "Forward Deployed Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "forward-deployed-engineer"
@@ -943,6 +985,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-25",
    "summary": "Fractional Head of AI / Fractional CAIO on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "fractional-ai-leader"
@@ -969,6 +1012,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "GPU Kernel / ML Compiler Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "gpu-kernel-engineer"
@@ -995,6 +1039,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Independent AI Consultant / Contractor on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "independent-ai-consultant"
@@ -1021,6 +1066,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Inference / LLM Serving Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "inference-engineer"
@@ -1048,6 +1094,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-11-19",
    "summary": "Machine Learning Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ml-engineer"
@@ -1075,6 +1122,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "ML Platform / MLOps Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "ml-platform-engineer"
@@ -1102,6 +1150,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Physical AI / Robotics AI Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "physical-ai-engineer"
@@ -1129,6 +1178,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Research Engineer / Member of Technical Staff on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "research-engineer"
@@ -1156,6 +1206,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Research Scientist (AI/ML) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "research-scientist"
@@ -1183,6 +1234,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "Responsible AI / AI Governance Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "responsible-ai-engineer"
@@ -1210,6 +1262,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
+   "review_by": "2026-12-03",
    "summary": "VP / Head of AI on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.",
    "roles": [
     "vp-head-of-ai"
@@ -1236,6 +1289,7 @@
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-06",
+   "review_by": "2026-11-14",
    "summary": "All 29 canonical GenAI roles and 241 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index.",
    "sources": [
     "T0-01",
@@ -1292,12 +1346,13 @@
   {
    "path": "career/02-roles/role-rankings.md",
    "id": "roles.rankings",
-   "title": "Best GenAI Jobs, Ranked",
+   "title": "Role Rankings: The Composite Career Index (All Demand)",
    "content_type": "reference",
    "stage": 2,
    "status": "published",
    "last_verified": "2026-11-05",
-   "summary": "Evidence-weighted ranking of the GenAI roles (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role.",
+   "review_by": "2026-11-14",
+   "summary": "Evidence-weighted ranking of the GenAI roles on all demand for each title (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role.",
    "sources": [
     "T0-01",
     "T0-02",
@@ -1395,7 +1450,6 @@
     "How to do it",
     "How to prove it",
     "Templates and examples",
-    "Protocol evidence",
     "Checklist",
     "Pitfalls",
     "Evidence and limits",
@@ -1410,7 +1464,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "Folder index of the generated per-role skill inventories, in GenAI target order, with links to the cross-role index and the vocabulary.",
+   "summary": "Folder page for the generated per-role skill inventories; the counted index, cross-role views and method are in role-skill-inventories.md.",
    "generated_by": "scripts/build_skills.py",
    "headings": []
   },
@@ -1422,6 +1476,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an Agentic AI Engineer needs: 73 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "agentic-ai-engineer"
@@ -1446,6 +1501,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-enablement-engineer"
@@ -1470,6 +1526,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-engineer"
@@ -1494,6 +1551,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Engineering Manager / Director needs: 44 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-engineering-manager"
@@ -1518,6 +1576,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Evaluation Engineer needs: 65 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-evaluation-engineer"
@@ -1542,6 +1601,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Governance Programme Lead / Manager needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-governance-lead"
@@ -1566,6 +1626,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Infrastructure / GPU Platform Engineer needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-infrastructure-engineer"
@@ -1590,6 +1651,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Product Engineer (AI Frontend) needs: 53 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-product-engineer"
@@ -1614,6 +1676,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-product-manager"
@@ -1638,6 +1701,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Risk, Audit & Compliance Specialist needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-risk-assurance-specialist"
@@ -1662,6 +1726,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Frontier AI Safety / Alignment Researcher needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-safety-researcher"
@@ -1686,6 +1751,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-security-engineer"
@@ -1710,6 +1776,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an AI / GenAI Solutions Architect needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-solutions-architect"
@@ -1734,6 +1801,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "applied-ai-engineer"
@@ -1758,6 +1826,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "applied-scientist"
@@ -1782,6 +1851,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Domain Evaluation Specialist / AI Trainer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "domain-evaluation-specialist"
@@ -1806,6 +1876,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Forward Deployed Engineer (AI) needs: 57 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "forward-deployed-engineer"
@@ -1830,6 +1901,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a GPU Kernel / ML Compiler Engineer needs: 45 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "gpu-kernel-engineer"
@@ -1854,6 +1926,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an Inference / LLM Serving Engineer needs: 71 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "inference-engineer"
@@ -1878,6 +1951,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 84 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ml-engineer"
@@ -1902,6 +1976,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill an ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ml-platform-engineer"
@@ -1926,6 +2001,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Physical AI / Robotics AI Engineer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "physical-ai-engineer"
@@ -1950,6 +2026,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Research Engineer / Member of Technical Staff needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "research-engineer"
@@ -1974,6 +2051,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Research Scientist (LLM research) needs: 54 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "research-scientist"
@@ -1998,6 +2076,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a Responsible AI / AI Governance Engineer needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "responsible-ai-engineer"
@@ -2022,6 +2101,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill a VP / Head of AI / CAIO needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "vp-head-of-ai"
@@ -2101,7 +2181,8 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions and verification.",
+   "review_by": "2027-01-21",
+   "summary": "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions, verification, and the requirements and tier rule behind the skills ontology.",
    "sources": [
     "T0-03",
     "T0-06",
@@ -2119,18 +2200,20 @@
     "2. Cross-Role Views: What Recurs (For Universal and Family Resumes)",
     "3. Tier Decisions Backed by Measured Shares",
     "4. Verification",
-    "5. Limits and Next Steps"
+    "5. How the Ontology Is Designed",
+    "6. Limits and Next Steps"
    ]
   },
   {
    "path": "career/03-skills-and-tech/role-skill-maps.md",
    "id": "skills.role-maps",
-   "title": "GenAI Role Skills Catalog",
+   "title": "Role Skill Maps",
    "content_type": "reference",
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "Narrative skill map for every role: table-stakes, differentiating and frontier skills, tools with their status, proof of work, interview track and typical gaps; the volatile tool and credential registry.",
+   "review_by": "2027-01-19",
+   "summary": "Narrative skill map for every role: practice notes from the evidence, tools in use with their October 2026 status, proof of work, interview track, typical gaps and entry routes. Each role's skills and tiers are in its generated inventory.",
    "sources": [
     "T0-03",
     "T0-06",
@@ -2141,7 +2224,7 @@
     "T1-03"
    ],
    "headings": [
-    "The Full Skill Stack for Every Canonical GenAI Role: Tiered, Evidence-Tagged, Interview- and Portfolio-Linked",
+    "What the Evidence Says About Each Canonical GenAI Role: Practice Notes, Tools, Proof of Work, Interviews and Gaps",
     "0. How to Read This File",
     "1. The Universal GenAI Skill Spine",
     "2. What Postings Actually Ask For",
@@ -2149,34 +2232,6 @@
     "4. Skill × Role Matrices",
     "5. Volatile Tool and Credential Registry (status as of October 2026)",
     "6. Suggested Learning Order by Background"
-   ]
-  },
-  {
-   "path": "career/03-skills-and-tech/skills-ontology-method.md",
-   "id": "skills.method",
-   "title": "Skills Ontology: Requirements, Design, Build and Maintenance",
-   "content_type": "method",
-   "stage": 3,
-   "status": "published",
-   "last_verified": "2026-11-04",
-   "summary": "Requirements, design, build, verification and maintenance of the skills ontology that generates the vocabulary, the role inventories and the resume matrix.",
-   "sources": [
-    "T0-03",
-    "T0-04",
-    "T0-06",
-    "T0-11",
-    "T0-13",
-    "T1-02",
-    "T1-03"
-   ],
-   "headings": [
-    "Why the Skills Layer Is Shaped the Way It Is, How It Was Built and Verified, and How to Keep It Accurate",
-    "1. What a Resume Needs From the Skills Layer",
-    "2. Design",
-    "3. Data, Scripts and How to Edit",
-    "4. How the Foundation Ontology Was Built (2026-11-04)",
-    "5. Coverage Checks",
-    "6. Maintenance"
    ]
   },
   {
@@ -2223,6 +2278,7 @@
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-04",
+   "review_by": "2027-01-21",
    "summary": "Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions.",
    "sources": [
     "T0-03",
@@ -2270,7 +2326,7 @@
    "status": "published",
    "last_verified": "2026-11-06",
    "review_by": "2027-01-21",
-   "summary": "Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with a dated register of current, retired and renamed credentials.",
+   "summary": "Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with the dated events behind current, retired and renamed credentials.",
    "sources": [
     "T0-11",
     "T0-15",
@@ -2306,7 +2362,7 @@
     "The decision rule: three conditions and one cap",
     "Which one: persona × channel",
     "What it costs and what it must return",
-    "Status register: current, retired and renamed",
+    "Status: current, retired and renamed credentials",
     "How to do it",
     "Templates and examples",
     "Checklist",
@@ -2440,14 +2496,6 @@
     "Systems depth on a modest budget",
     "How to do it",
     "Templates and examples",
-    "Evidence (generated [YYYY-MM-DD] from commit [sha])",
-    "1. Failure taxonomy (PA-11)",
-    "2. What broke: three specific failures (G1 memo, 500+ words in all)",
-    "3. Incident postmortem: [title] (PA-13; say whether real or staged)",
-    "4. An evaluation bug I found",
-    "5. Negative results",
-    "6. Threats to validity",
-    "7. Non-claims",
     "Checklist",
     "Pitfalls",
     "Evidence and limits",
@@ -2628,12 +2676,13 @@
   {
    "path": "career/06-job-search/job-search-strategy.md",
    "id": "job-search.strategy",
-   "title": "GenAI Job-Search Strategy: Hiring Levers, Layered Resumes, Proof of Work and Sequencing",
+   "title": "GenAI Job-Search Strategy: Hiring Levers, Binding Constraints and Sequencing",
    "content_type": "guide",
    "stage": 6,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "First-principles job-search strategy: what moves P(offer), how the layered resume system works (master, universal, family, role, posting), which roles need their own resume, how many projects prove which roles, and how to sequence targets.",
+   "review_by": "2026-12-03",
+   "summary": "First-principles job-search strategy: the four levers that turn an application into an offer, the constraints that bind before the number of résumés does (proof of work, maintenance, interview tracks, one application per company), and how to sequence targets in expanding rings.",
    "sources": [
     "T0-04",
     "T0-10",
@@ -2641,20 +2690,33 @@
     "T0-14",
     "T1-03",
     "T0-06",
-    "T0-01",
     "T0-02",
     "T0-17"
    ],
    "roles": [
     "all"
    ],
+   "tags": [
+    "job-search",
+    "strategy",
+    "hiring-levers",
+    "proof-of-work",
+    "sequencing",
+    "expanding-rings"
+   ],
    "generated_by": "scripts/resume_layers.py (generated blocks)",
    "headings": [
-    "Hiring Levers, Layered Resumes, Proof of Work and Sequencing",
-    "0. The Short Answer",
-    "1. First Principles: What Gets Someone Hired",
-    "2. The Layered Resume Model, Evaluated",
-    "3. Where the Rest of the Search Lives"
+    "The short answer",
+    "At a glance",
+    "The four hiring levers",
+    "The constraints that bind first",
+    "Recommended sequencing: expanding rings",
+    "How to do it",
+    "Templates and examples",
+    "Checklist",
+    "Pitfalls",
+    "Evidence and limits",
+    "Next steps"
    ]
   },
   {
@@ -2685,25 +2747,43 @@
   {
    "path": "career/06-job-search/resume-strategy.md",
    "id": "job-search.resume-strategy",
-   "title": "GenAI Resume Strategy",
+   "title": "GenAI Résumé Strategy: One Master Inventory, Layered Résumés, Light Tailoring",
    "content_type": "guide",
    "stage": 6,
    "status": "published",
    "last_verified": "2026-11-04",
-   "summary": "How to run resumes for many target roles: one tagged master inventory, 15 role-family variants and light per-posting tailoring, grounded in screening evidence.",
+   "review_by": "2026-12-03",
+   "summary": "How to run résumés for many GenAI roles: one private master inventory, one universal résumé, two or three variants from a catalogue of 15, light tailoring per posting, and the computed decisions on which roles need a résumé of their own.",
    "sources": [
     "T0-04",
     "T0-10",
     "T0-11",
-    "T0-13"
+    "T0-13",
+    "T0-01",
+    "T0-06",
+    "T1-03"
    ],
+   "roles": [
+    "all"
+   ],
+   "tags": [
+    "resume",
+    "resume-variants",
+    "universal-resume",
+    "master-inventory",
+    "tailoring"
+   ],
+   "generated_by": "scripts/resume_layers.py (generated blocks)",
    "headings": [
-    "One Master Inventory, a Few Role-Family Variants, Light Per-Posting Tailoring",
-    "0. The answer",
-    "1. What the evidence says about screening",
-    "2. The design: master → variants → per-posting tailoring",
-    "3. Building the master inventory",
-    "4. Maintenance"
+    "The short answer",
+    "At a glance",
+    "The layered résumé model: five layers",
+    "How to do it",
+    "Templates and examples",
+    "Checklist",
+    "Pitfalls",
+    "Evidence and limits",
+    "Next steps"
    ]
   },
   {
@@ -2813,8 +2893,6 @@
     "The four surfaces and what each must prove",
     "How to do it",
     "Templates and examples",
-    "Evidence (generated [YYYY-MM-DD] from commit [sha])",
-    "Limits",
     "A writing plan: every post paired with an artefact",
     "Consistency rules with the universal résumé",
     "Checklist",
@@ -3319,7 +3397,7 @@
    "stage": 9,
    "status": "published",
    "last_verified": "2026-11-06",
-   "review_by": "2027-01-17",
+   "review_by": "2027-01-19",
    "summary": "Measured pay for GenAI roles by title, city, level and employer type as of October 2026, with the source, date and grade of every figure, and the rules for reading pay data without being misled.",
    "sources": [
     "T0-02",
@@ -3381,9 +3459,10 @@
    "stage": 10,
    "status": "published",
    "last_verified": "2026-11-05",
-   "summary": "Index of stage 10 (onboarding and the first 90 days): How do I pass probation and succeed in the first 90 days?",
+   "summary": "Index of stage 10 (onboarding and the first 90 days): How do I pass probation and keep growing?",
    "sources": [
-    "T0-09"
+    "T0-09",
+    "T0-17"
    ],
    "headings": [
     "In this folder",
@@ -3453,7 +3532,7 @@
    "stage": 10,
    "status": "published",
    "last_verified": "2026-11-06",
-   "review_by": "2027-01-21",
+   "review_by": "2027-01-19",
    "summary": "After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, how to choose between the IC and manager tracks, and how to keep learning at a pace you can sustain.",
    "sources": [
     "T0-17",
@@ -3595,7 +3674,8 @@
     "T0-18",
     "T2-01",
     "T0-06",
-    "T0-07"
+    "T0-07",
+    "T0-02"
    ],
    "roles": [
     "independent-ai-consultant",
@@ -3698,7 +3778,7 @@
    "stage": 11,
    "status": "published",
    "last_verified": "2026-11-06",
-   "review_by": "2026-11-21",
+   "review_by": "2027-01-19",
    "summary": "For India-based engineers who want US or EU work: how to choose between a GCC job, remote employment through an EOR, direct contracting and relocation, how to find the work from India, what each route pays, and what to set up before the first offer or invoice.",
    "sources": [
     "T0-02",
@@ -3810,7 +3890,7 @@
    "stage": 11,
    "status": "published",
    "last_verified": "2026-11-06",
-   "review_by": "2026-09-15",
+   "review_by": "2026-08-01",
    "summary": "Which talent-visa and employer-offer routes fit an AI professional, with depth for Indian nationals: what evidence each needs, how long and how much it takes, whether to relocate at all, and what to verify before acting. Not legal advice.",
    "sources": [
     "T0-08",
@@ -3846,6 +3926,7 @@
    "headings": [
     "The short answer",
     "At a glance",
+    "Status table",
     "The seven corridors, compared",
     "Relocate or stay remote",
     "How to do it",
@@ -3866,16 +3947,21 @@
    "stage": 0,
    "status": "published",
    "last_verified": "2026-11-06",
-   "summary": "Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.",
+   "summary": "Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.",
    "sources": [
     "T0-01",
+    "T0-02",
     "T0-03",
     "T0-04",
     "T0-06",
+    "T0-07",
+    "T0-08",
+    "T0-09",
     "T0-10",
     "T0-11",
     "T0-14",
     "T0-17",
+    "T0-18",
     "T1-01",
     "T1-03",
     "T2-01"

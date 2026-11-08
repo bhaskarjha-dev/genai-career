@@ -18,7 +18,7 @@ How to use this repository:
 
 ## Stage 00: Start-here tools
 
-- [Stage 00: Start-here tools](career/00-start/README.md): Index of stage 00 (start-here tools): the workbook, glossary and tool catalog that help at every stage of a GenAI career search.
+- [Stage 00: Start-here tools](career/00-start/README.md): Index of stage 00 (start-here tools): the workbook, glossary and tool catalog that help at every stage of a GenAI career search, plus a personal script that turns your skill ratings into a gap report.
 - [Glossary: Terms, Codes and Acronyms Used in This Repository](career/00-start/glossary.md): Plain one-line definitions of the evidence codes, role and skill terms, and the hiring, pay, India, visa and governance vocabulary used across the repository, each linked to a page that uses it, so a newcomer or an AI agent can read any page.
 - [Targeting Workbook: From Point Zero to a Ranked Target List and a 90-Day Plan](career/00-start/targeting-workbook.md): A fill-in workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors, score a shortlist, place it in primary, adjacent and stretch rings, and write a 90-day plan judged by gate G1.
 - [Career Tool Catalog: What to Use, Use With Care, Avoid or Watch](career/00-start/tool-catalog.md): 132 external career tools and platforms across the lifecycle, each with a verdict (use, use with care, avoid, watch), the evidence behind it, its source and the date it was checked.
@@ -34,26 +34,25 @@ How to use this repository:
 
 - [Stage 02: Roles](career/02-roles/README.md): Index of stage 02 (roles): Which GenAI roles exist, which are the best, and which should I target?
 - [Role Hubs: One Page per Role](career/02-roles/hubs/README.md): Index of the 29 role hubs: one generated page per canonical role with its definition, footprint, graded scores, skills, proof, interview track and résumé pointers.
-- [GenAI Target Roles: The Sorted Shortlist](career/02-roles/genai-target-roles.md): The sorted shortlist of GenAI roles to target: a consensus of eight lenses restricted to GenAI demand, with reasoning per role and persona notes.
+- [GenAI Target Roles: The Sorted Shortlist](career/02-roles/genai-target-roles.md): Which GenAI roles to target, in order: a sorted shortlist from a consensus of eight lenses restricted to GenAI demand, with the tier rules, one line per role, and a method for choosing one cluster, its top title and two adjacent titles.
 - [GenAI Role Master Catalog](career/02-roles/role-catalog.md): All 29 canonical GenAI roles and 241 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index.
 - [The GenAI Role Map: Where the Work Sits](career/02-roles/role-map.md): Where each GenAI role's work sits: six stack layers from compute to applications, four cross-cutting planes, every role's footprint, the specialisations inside roles, and how to choose a direction. A map, not a pay model.
-- [Best GenAI Jobs, Ranked](career/02-roles/role-rankings.md): Evidence-weighted ranking of the GenAI roles (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role.
+- [Role Rankings: The Composite Career Index (All Demand)](career/02-roles/role-rankings.md): Evidence-weighted ranking of the GenAI roles on all demand for each title (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role.
 
 ## Stage 03: Skills and technology
 
 - [Stage 03: Skills and technology](career/03-skills-and-tech/README.md): Index of stage 03 (skills and technology): What exactly does each role need me to know and use, and how much does each skill matter?
 - [Agentic Protocols: MCP, A2A and AG-UI at the Depth Your Role Needs](career/03-skills-and-tech/agentic-protocols.md): What MCP, A2A and AG-UI are and their dated status as of October 2026, what to know at each depth (awareness, build, operate) for your role, how employers ask for protocol skills, the security essentials, and how to prove the skill.
 - [Learning Roadmaps: What to Learn, in What Order, and How Long It Takes](career/03-skills-and-tech/learning-roadmaps.md): How to learn what a target GenAI role needs: the order by role family and starting background, how long it takes at 8–10, 15–20 or 35–40 hours a week, the four gates that prove progress, and where to spend hours (durable concepts) versus pin and wait (fast-moving tools).
-- [GenAI Role Skill Inventories](career/03-skills-and-tech/role-skill-inventories.md): Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions and verification.
-- [GenAI Role Skills Catalog](career/03-skills-and-tech/role-skill-maps.md): Narrative skill map for every role: table-stakes, differentiating and frontier skills, tools with their status, proof of work, interview track and typical gaps; the volatile tool and credential registry.
-- [Skills Ontology: Requirements, Design, Build and Maintenance](career/03-skills-and-tech/skills-ontology-method.md): Requirements, design, build, verification and maintenance of the skills ontology that generates the vocabulary, the role inventories and the resume matrix.
+- [GenAI Role Skill Inventories](career/03-skills-and-tech/role-skill-inventories.md): Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions, verification, and the requirements and tier rule behind the skills ontology.
+- [Role Skill Maps](career/03-skills-and-tech/role-skill-maps.md): Narrative skill map for every role: practice notes from the evidence, tools in use with their October 2026 status, proof of work, interview track, typical gaps and entry routes. Each role's skills and tiers are in its generated inventory.
 - [GenAI Skills Radar: Learn First, Differentiate, Specialise, Replace](career/03-skills-and-tech/skills-radar.md): What to learn first, what sets each résumé family apart, which skills only one or two roles demand, and what to stop investing in, computed from the skills ontology for the 24 individual-contributor roles.
 - [GenAI Skills Vocabulary](career/03-skills-and-tech/skills-vocabulary.md): Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions.
 
 ## Stage 04: Certifications
 
 - [Stage 04: Certifications](career/04-certifications/README.md): Index of stage 04 (certifications): Is a certificate worth it for my target role and hiring channel?
-- [Credential ROI: Whether a Certificate Is Worth It, Which One, and How to Show It](career/04-certifications/credential-roi.md): Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with a dated register of current, retired and renamed credentials.
+- [Credential ROI: Whether a Certificate Is Worth It, Which One, and How to Show It](career/04-certifications/credential-roi.md): Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with the dated events behind current, retired and renamed credentials.
 - [Credentials by Role](career/04-certifications/credentials-by-role.md): Which certifications the evidence lists for each GenAI role, at which tier, and each credential's dated status, generated from the skills ontology.
 
 ## Stage 05: Portfolio
@@ -68,9 +67,9 @@ How to use this repository:
 - [Application Operating System: Tracker, Weekly Rhythm, Funnel Metrics and When to Change Course](career/06-job-search/application-operating-system.md): A weekly operating system for running a job search: a fill-in tracker, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours.
 - [ATS Mechanics: How Applicant Tracking and AI Screening Work](career/06-job-search/ats-mechanics.md): How applicant tracking systems and AI screening layers handle an application, which myths to ignore, and the exact rules for a portal résumé and knockout answers that parse cleanly and pass.
 - [Channels and Boards: Where GenAI Postings Are and Which Channels Convert](career/06-job-search/channels-and-boards.md): Where GenAI postings are listed and which channels turn applications into offers: referrals, sourcing, cold inbound, ATS-hosted boards, aggregators, specialist boards and India platforms, with alert setup and a scam and ghost-job check.
-- [GenAI Job-Search Strategy: Hiring Levers, Layered Resumes, Proof of Work and Sequencing](career/06-job-search/job-search-strategy.md): First-principles job-search strategy: what moves P(offer), how the layered resume system works (master, universal, family, role, posting), which roles need their own resume, how many projects prove which roles, and how to sequence targets.
+- [GenAI Job-Search Strategy: Hiring Levers, Binding Constraints and Sequencing](career/06-job-search/job-search-strategy.md): First-principles job-search strategy: the four levers that turn an application into an offer, the constraints that bind before the number of résumés does (proof of work, maintenance, interview tracks, one application per company), and how to sequence targets in expanding rings.
 - [GenAI Resume Skills Matrix](career/06-job-search/resume-skills-matrix.md): The concise skills section for every role (Must / Important / Should / Optional headline skills), shared skills across roles, and a skills-section blueprint per resume variant.
-- [GenAI Resume Strategy](career/06-job-search/resume-strategy.md): How to run resumes for many target roles: one tagged master inventory, 15 role-family variants and light per-posting tailoring, grounded in screening evidence.
+- [GenAI Résumé Strategy: One Master Inventory, Layered Résumés, Light Tailoring](career/06-job-search/resume-strategy.md): How to run résumés for many GenAI roles: one private master inventory, one universal résumé, two or three variants from a catalogue of 15, light tailoring per posting, and the computed decisions on which roles need a résumé of their own.
 
 ## Stage 07: Networking
 
@@ -98,7 +97,7 @@ How to use this repository:
 
 ## Stage 10: Onboarding
 
-- [Stage 10: Onboarding and the first 90 days](career/10-onboarding/README.md): Index of stage 10 (onboarding and the first 90 days): How do I pass probation and succeed in the first 90 days?
+- [Stage 10: Onboarding and the first 90 days](career/10-onboarding/README.md): Index of stage 10 (onboarding and the first 90 days): How do I pass probation and keep growing?
 - [First 90 Days: Close the Expectations Gap and Pass Probation in a GenAI Role](career/10-onboarding/first-90-days.md): How to pass probation in a GenAI role: score the expectations gap in weeks 1–2, ship the 13 weekly artefacts of a 30-60-90 plan, get a scorecard confirmed by day 14, report variance upward and escalate by written rules.
 - [Growth and Progression: Promotion, Moving On, IC or Manager, and Sustainable Learning](career/10-onboarding/growth-and-progression.md): After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, how to choose between the IC and manager tracks, and how to keep learning at a pace you can sustain.
 
@@ -115,14 +114,43 @@ How to use this repository:
 ## Research
 
 - [Research Findings Registry](research/findings.md): Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
-- [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.
-- [research/sessions/](research/sessions/): The 22 Phase 0 research sessions (dated evidence reports with source ledgers).
-- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-018).
+- [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.
+- [research/sessions/](research/sessions/): The 22 research sessions (dated evidence reports with source ledgers).
+- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-020).
+
+## Research sessions
+
+Session IDs cited across the repository (for example T0-04 L120) map to these files:
+
+- [T0-01](research/sessions/T0-01-genai-role-taxonomy-market-volume.md): GenAI role taxonomy and live market volume: which titles clear a 50-posting quorum (Oct 2026) (2026-10-21)
+- [T0-02](research/sessions/T0-02-global-regional-compensation-benchmarks.md): Global & Regional Compensation Benchmarks for GenAI Roles — US, Europe, India, GCC, Singapore, Remote (October 2026) (2026-10-21)
+- [T0-03](research/sessions/T0-03-skills-compute-infra-eval-stack.md): Skills, Compute Frameworks & Evaluation Tooling: What Separates Commoditized GenAI App Developers from High-Earning Production Engineers (October 2026) (2026-10-24)
+- [T0-04](research/sessions/T0-04-ats-filtering-funnel-conversion-math.md): ATS parsing, AI screening layers and cold-inbound funnel math for GenAI engineering resumes (October 2026) (2026-10-23)
+- [T0-05](research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md): Unconventional hiring tactics for GenAI roles, late 2026: OSS contributions, public micro-audits, targeted outreach (2026-10-23)
+- [T0-06](research/sessions/T0-06-career-transition-timelines-5-backgrounds.md): Career Transition Timelines, Skill Deltas and Quarterly Roadmaps: Five Starting Backgrounds into GenAI (Oct 2026) (2026-10-21)
+- [T0-07](research/sessions/T0-07-india-remote-tax-statutory-compliance.md): India-based software/AI engineers paid directly by US/EU/UK clients: optimal legal, statutory and tax structure (position as at 21 October 2026) (2026-10-21)
+- [T0-08](research/sessions/T0-08-global-talent-visa-relocation-pathways.md): Global talent-visa relocation pathways for Indian AI engineers: evidentiary and policy audit (October 2026) (2026-10-21)
+- [T0-09](research/sessions/T0-09-onboarding-probation-first-90-days.md): GenAI engineer first 90 days (2026): the expectations gap, probation rubrics and a 30-60-90 operating playbook (2026-10-23)
+- [T0-10](research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md): Career Tooling Ecosystem Audit: Evidence-Graded Map of the 12-Stage Career Funnel (October 2026) (2026-10-21)
+- [T0-11](research/sessions/T0-11-certification-cloud-credential-roi.md): Commercial AI/ML certifications and cloud-credential ROI for GenAI hiring (October 2026) (2026-10-21)
+- [T0-12](research/sessions/T0-12-high-signal-communities-technical-visibility.md): High-signal AI-engineering communities and technical visibility: global and India, October 2026 (2026-10-21)
+- [T0-13](research/sessions/T0-13-production-portfolio-proof-of-work-standards.md): Production GenAI Portfolio Proof-of-Work Standards: High-Signal Artifacts vs. the Tutorial-Clone Anti-Portfolio (Oct 2026) (2026-10-21)
+- [T0-14](research/sessions/T0-14-ai-system-design-interview-patterns.md): AI System Design Interview Loops (Oct 2026): 15 Archetypes, a 45-Minute Blueprint, Calculation Formulas, Eval/Safety Rubric, and Senior-vs-Staff Differentiators (2026-10-21)
+- [T0-15](research/sessions/T0-15-regulatory-ai-governance-career-families.md): Regulatory AI-governance career families, October 2026: what the EU AI Act, NIST AI RMF, India's DPDP Act and US executive orders actually produced (2026-10-23)
+- [T0-16](research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md): Agentic Protocol Stack (MCP / A2A / ACP / AG-UI): Standardization Status and Enterprise Hiring Demand, October 2026 (2026-10-21)
+- [T0-17](research/sessions/T0-17-compensation-progression-plateaus-equity.md): GenAI engineering career economics (Oct 2026): promotion velocity, compensation inflections, equity risk-discounting, and liquidity realities (2026-10-23)
+- [T0-18](research/sessions/T0-18-freelance-fractional-ai-practice-economics.md): Independent GenAI Consulting & Fractional Head-of-AI Practice Economics (October 2026) (2026-10-25)
+- [T1-01](research/sessions/T1-01-repository-information-architecture.md): Repository Information Architecture, Hybrid Navigation & 12-Stage Funnel Blueprint (2026-10-25)
+- [T1-02](research/sessions/T1-02-evidence-grounding-protocol.md): Epistemic Governance & Evidence-Grounding Protocol (EGP-1.0) for an AI-Careers Repository (2026-10-21)
+- [T1-03](research/sessions/T1-03-interview-execution-offer-negotiation.md): Technical Interview Execution, Behavioral Calibrations & Executive Offer Negotiation for GenAI Engineers (Oct 2026) (2026-10-25)
+- [T2-01](research/sessions/T2-01-tier-calibrated-execution-playbooks.md): Tier-Calibrated Execution Playbooks across 6 Tiers and 5 Personas (2026-10-25)
 
 ## Data
 
 - [data/role_scores.json](data/role_scores.json): Role facts and scoring inputs: each role's definition, work footprint and interview track, and every pillar score with its [lo, mid, hi] range, evidence grade and sourced basis
 - [data/skills_ontology.json](data/skills_ontology.json): The skills ontology: 523 typed skills, choose-one classes, credentials, resume variants, every role's tiered, evidence-tagged skill links and the register of devalued skills
+- [data/posting_skill_shares.json](data/posting_skill_shares.json): Dated snapshots of the skills job postings name, by posting title (JobsPipe, Grade B), cited by the role links in the ontology
+- [data/role_titles.json](data/role_titles.json): The A–Z index of posting titles: each title's index type and the canonical role it maps to
 - [data/project_archetypes.json](data/project_archetypes.json): Proof-of-work project archetypes: the problem, build steps, evidence to publish, verifiability target, interview archetypes, pitfalls and the skills each one evidences
 - [data/interview_prompts.json](data/interview_prompts.json): Interview practice prompts keyed to interview tracks, system-design archetypes, roles and skills, with what a strong answer covers
 - [data/tools.json](data/tools.json): External career tools and platforms by stage, with a verdict, evidence grade, source and date
@@ -130,6 +158,13 @@ How to use this repository:
 - [data/findings.json](data/findings.json): Key findings of every research session, with grade, exact line and lifecycle stages
 - [data/manifest.json](data/manifest.json): This manifest: every document with its front matter and section headings
 - [data/schemas/](data/schemas/): JSON Schemas for the data files and for document front matter
+
+## Project documents
+
+- [README.md](README.md): What the repository is, who it is for, how it is organised and its status
+- [CONTRIBUTING.md](CONTRIBUTING.md): How to add or change content: placement, front matter, the writing standard (EGP-1.0 in brief), the guide pattern, generators and releases
+- [CHARTER.md](CHARTER.md): Vision, scope and what the repository is not, audience, success criteria and constraints
+- [CHANGELOG.md](CHANGELOG.md): Release history
 
 ## Optional
 
@@ -162,7 +197,7 @@ How to use this repository:
 - [Research Scientist (AI/ML): Role Hub](career/02-roles/hubs/research-scientist.md): Research Scientist (AI/ML) on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.
 - [Responsible AI / AI Governance Engineer: Role Hub](career/02-roles/hubs/responsible-ai-engineer.md): Responsible AI / AI Governance Engineer on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.
 - [VP / Head of AI: Role Hub](career/02-roles/hubs/vp-head-of-ai.md): VP / Head of AI on one page: what it is, where the work sits, its scores with evidence grades, who it suits, the skills and proof it needs, how it is interviewed and how to present for it, with links to the full evidence.
-- [Role Skill Inventories: One File per Role](career/03-skills-and-tech/inventories/README.md): Folder index of the generated per-role skill inventories, in GenAI target order, with links to the cross-role index and the vocabulary.
+- [Role Skill Inventories: One File per Role](career/03-skills-and-tech/inventories/README.md): Folder page for the generated per-role skill inventories; the counted index, cross-role views and method are in role-skill-inventories.md.
 - [Agentic AI Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/agentic-ai-engineer.md): Every skill an Agentic AI Engineer needs: 73 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
 - [AI Enablement Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-enablement-engineer.md): Every skill an AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.
 - [AI Engineer: Complete Skill Inventory](career/03-skills-and-tech/inventories/ai-engineer.md): Every skill an AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.

@@ -210,7 +210,7 @@ Every tool with a status record, including those that are simply active, is in t
 ## Evidence and limits
 
 - Rings are computed from 1529 tiered links in the ontology (as of 2026-11-04); their evidence mix is in [role skill inventories §4](role-skill-inventories.md#4-verification). The rules and thresholds (at least 6 roles for the core; half the family and 25 points of lift for differentiators; at most two roles for role-defining skills) are judgement (Grade D).
-- Posting shares come from JobsPipe (retrieved 2026-11-02). Several roles borrow a feeder or adjacent title's shares; the evidence column names the title.
+- Posting shares come from JobsPipe (retrieved 2026-11-02; [data](../../data/posting_skill_shares.json)). Several roles borrow a feeder or adjacent title's shares; the evidence column names the title.
 - The replace ring reproduces the research's verdicts with their grades; it does not add new ones.
 - Nothing here measures change over time. Treat a ring as a snapshot, and re-check tools and statuses by 2027-01-21.
 

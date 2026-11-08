@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-security-engineer]
 generated_by: scripts/build_skills.py
@@ -19,20 +20,20 @@ generated_by: scripts/build_skills.py
 
 **49 skills:** Must 7 · Important 14 · Should 19 · Optional 9. **Evidence:** JD 8 · S 26 · P 15 (31% practice-curated). **Non-technical:** 7.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** OAuth/OIDC, RBAC, SSO [JD 21.6%] · LLM security (prompt injection, OWASP) [S · T0-14] · Cybersecurity fundamentals [JD 42.3%]<br>**Important:** Prompt-injection attack & defence [S · T0-14] · Agent abuse & MCP authorisation [S · T0-16] · Model supply chain & CVEs [S · T0-03] · Containment (DLP, sandboxing, egress) [S · T0-14]<br>**Should:** Observability (OpenTelemetry traces, metrics) [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Data & model poisoning [P] · Computer-use & browser agents [P] |
-| Technical: knowledge | **Method / practice** | **Must:** AppSec & threat modelling [JD 26.5%] · Incident response & SIEM [JD 32.4%] · Threat modelling for AI systems [S · T0-14]<br>**Important:** Red-teaming [S · T0-13] · GRC & risk assessment [JD 39.4%]<br>**Optional:** Safety & capability evals [S · T0-15] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 45.7%] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** OAuth/OIDC, RBAC, SSO [JD 21.6% (feeder)] · LLM security (prompt injection, OWASP) [S · T0-14] · Cybersecurity fundamentals [JD 42.3% (feeder)]<br>**Important:** Prompt-injection attack & defence [S · T0-14] · Agent abuse & MCP authorisation [S · T0-16] · Model supply chain & CVEs [S · T0-03] · Containment (DLP, sandboxing, egress) [S · T0-14]<br>**Should:** Observability (OpenTelemetry traces, metrics) [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Data & model poisoning [P] · Computer-use & browser agents [P] |
+| Technical: knowledge | **Method / practice** | **Must:** AppSec & threat modelling [JD 26.5% (feeder)] · Incident response & SIEM [JD 32.4% (feeder)] · Threat modelling for AI systems [S · T0-14]<br>**Important:** Red-teaming [S · T0-13] · GRC & risk assessment [JD 39.4% (feeder)]<br>**Optional:** Safety & capability evals [S · T0-15] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 45.7% (feeder)] |
 | Technical: concrete | **Library / package** | **Should:** Microsoft Presidio [P] · Guardrails AI [P] |
 | Technical: concrete | **Model / model family** | **Should:** Llama Guard [S · T0-15] |
-| Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 38.8%]<br>**Should:** Amazon Web Services (AWS) [JD 38.8%] |
+| Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 38.8% (feeder)]<br>**Should:** Amazon Web Services (AWS) [JD 38.8% (feeder)] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Docker [P] · Kubernetes [P] |
 | Technical: concrete | **Specialised product** | **Should:** garak [S · T0-15] · PyRIT [S · T0-15] · Promptfoo [S · T0-13] · AI red-teaming tools (choose 1: garak \| PyRIT \| Promptfoo \| Giskard) [S · T0-15] · Guardrail tools (choose 1: NeMo Guardrails \| Guardrails AI \| Llama Guard) [S · T0-15] · NeMo Guardrails [S · T0-15] |
 | Technical: concrete | **Protocol / standard** | **Important:** OAuth 2.x [S · T0-16]<br>**Should:** MCP (Model Context Protocol) [S · T0-16] · A2A (Agent2Agent) [S · T0-16]<br>**Optional:** safetensors [P] |

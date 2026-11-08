@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-product-manager]
 generated_by: scripts/build_skills.py
@@ -19,26 +20,26 @@ generated_by: scripts/build_skills.py
 
 **47 skills:** Must 4 · Important 16 · Should 20 · Optional 7. **Evidence:** JD 9 · S 15 · P 23 (49% practice-curated). **Non-technical:** 24.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** AI literacy (tokens, RAG vs fine-tune, cost) [S · T0-06]<br>**Should:** Agents & tool use [JD 13.6%] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] |
-| Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 26.1%] · Agile delivery (Scrum, Kanban) [JD 22.7%] · Rubrics & inter-rater agreement [S · T0-06] · Pilots & adoption measurement [S · T0-06] · Risk & compliance docs (Annex IV, model cards) [P]<br>**Should:** Human-in-the-loop design [P] · Prompt engineering [S · T2-01] · Golden datasets & test-set curation [S · T0-06] · LLM-as-judge design & calibration [P] · User research & discovery [P] · Product analytics [P] · Rapid prototyping [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** AI literacy (tokens, RAG vs fine-tune, cost) [S · T0-06]<br>**Should:** Agents & tool use [JD 13.6% (feeder)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] |
+| Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 26.1% (feeder)] · Agile delivery (Scrum, Kanban) [JD 22.7% (feeder)] · Rubrics & inter-rater agreement [S · T0-06] · Pilots & adoption measurement [S · T0-06] · Risk & compliance docs (Annex IV, model cards) [P]<br>**Should:** Human-in-the-loop design [P] · Prompt engineering [S · T2-01] · Golden datasets & test-set curation [S · T0-06] · LLM-as-judge design & calibration [P] · User research & discovery [P] · Product analytics [P] · Rapid prototyping [P] |
 | Technical: concrete | **Programming language** | **Important:** Python/SQL (notebook level) [S · T0-06] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** LLM API providers (choose 1: OpenAI API platform \| Anthropic API \| Gemini API) [P] |
 | Technical: concrete | **Specialised product** | **Should:** Jira [P] · Figma [P] |
 | Technical: concrete | **Protocol / standard** | **Optional:** MCP (Model Context Protocol) [S · T0-16] |
 | Technical: concrete | **Regulation / framework** | **Optional:** EU AI Act [P] · NIST AI RMF [P] |
-| Non-technical | **Communication & collaboration** | **Must:** Communication (written & verbal) [JD 53.7%] · Stakeholder communication [JD 14.2%]<br>**Important:** PRDs & product specs [S · T0-06]<br>**Should:** Technical writing [P] · Cross-functional collaboration [P] · Presenting & live demos [P] · Executive & board communication [P] |
-| Non-technical | **Behavioural competency** | **Important:** Time management & prioritisation [JD 24.0%] · Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
-| Non-technical | **Business & product** | **Must:** Product management [JD 92.6%]<br>**Important:** Metrics for non-deterministic systems [S · T2-01] · Token & unit economics [P] · Product sense [S · T0-06]<br>**Should:** Roadmapping & prioritisation [JD 18.4%] · ROI & business cases [P] · Build-vs-buy & vendor evaluation [P] · Go-to-market & pricing [P]<br>**Optional:** AI strategy & portfolio [P] |
-| Non-technical | **Leadership & people** | **Important:** Leadership & mentoring [JD 40.1%]<br>**Optional:** Mentoring [P] |
+| Non-technical | **Communication & collaboration** | **Must:** Communication (written & verbal) [JD 53.7% (feeder)] · Stakeholder communication [JD 14.2% (feeder)]<br>**Important:** PRDs & product specs [S · T0-06]<br>**Should:** Technical writing [P] · Cross-functional collaboration [P] · Presenting & live demos [P] · Executive & board communication [P] |
+| Non-technical | **Behavioural competency** | **Important:** Time management & prioritisation [JD 24.0% (feeder)] · Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
+| Non-technical | **Business & product** | **Must:** Product management [JD 92.6% (feeder)]<br>**Important:** Metrics for non-deterministic systems [S · T2-01] · Token & unit economics [P] · Product sense [S · T0-06]<br>**Should:** Roadmapping & prioritisation [JD 18.4% (feeder)] · ROI & business cases [P] · Build-vs-buy & vendor evaluation [P] · Go-to-market & pricing [P]<br>**Optional:** AI strategy & portfolio [P] |
+| Non-technical | **Leadership & people** | **Important:** Leadership & mentoring [JD 40.1% (feeder)]<br>**Optional:** Mentoring [P] |
 | Non-technical | **Domain knowledge** | **Should:** Domain expertise [P] |
 
 ## 2. Avoid

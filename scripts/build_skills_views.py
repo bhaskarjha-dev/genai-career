@@ -32,6 +32,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_skills import load_ontology, validate_ontology  # noqa: E402
+from common import esc, skill_name as name  # noqa: E402  (shared helpers)
 
 ROOT = Path(__file__).resolve().parent.parent
 RADAR = ROOT / "career" / "03-skills-and-tech" / "skills-radar.md"
@@ -46,13 +47,11 @@ GRADE_RANK = {"A": 0, "B": 1, "C": 2, "D": 3}
 TIER_WORD = OrderedDict([("I", "Important"), ("O", "Optional"), ("X", "Avoid")])
 
 
-def esc(text):
-    return str(text).replace("|", "\\|").replace("\n", " ")
-
-
-def name(o, sid):
-    e = o["skills"].get(sid) or o["classes"].get(sid)
-    return e["name"] if e else sid
+def posting_date():
+    """Retrieval date of the newest posting snapshot (data/posting_skill_shares.json)."""
+    import json
+    snaps = json.loads((ROOT / "data" / "posting_skill_shares.json").read_text(encoding="utf-8"))["snapshots"]
+    return max(s["retrieved"] for s in snaps)
 
 
 def type_label(o, sid):
@@ -193,10 +192,10 @@ def radar(o):
     review_by = meta["ttl"]["tool_status_reverify_by"]
     out = front("skills.radar", "GenAI Skills Radar: Learn First, Differentiate, Specialise, Replace", 3, meta["as_of"], review_by,
                 "What to learn first, what sets each résumé family apart, which skills only one or two roles demand, and what to "
-                "stop investing in, computed from the skills ontology for the 24 individual-contributor roles.",
+                f"stop investing in, computed from the skills ontology for the {len(ic)} individual-contributor roles.",
                 ["T0-03", "T0-06", "T0-14", "T0-15", "T0-16", "T1-03"], ["skills", "learning", "radar"])
     out += ["# GenAI Skills Radar: Learn First, Differentiate, Specialise, Replace", "",
-            "> Five rings computed from the skill tiers of the 24 individual-contributor roles: the skills to learn first, the skills "
+            f"> Five rings computed from the skill tiers of the {len(ic)} individual-contributor roles: the skills to learn first, the skills "
             "that set each résumé family apart, the skills only one or two roles demand, what to stop investing in, and what to watch.", "",
             "## How to read this radar", "",
             "- **Every ring is computed** (Grade M) from the tiers in [data/skills_ontology.json](../../data/skills_ontology.json): "
@@ -294,7 +293,7 @@ def radar(o):
             f"their evidence mix is in [role skill inventories §4](role-skill-inventories.md#4-verification). The rules and thresholds "
             f"(at least {CORE_MIN} roles for the core; half the family and {int(FAMILY_LIFT * 100)} points of lift for differentiators; "
             "at most two roles for role-defining skills) are judgement (Grade D).",
-            "- Posting shares come from JobsPipe (retrieved 2026-11-02). Several roles borrow a feeder or adjacent title's shares; "
+            f"- Posting shares come from JobsPipe (retrieved {posting_date()}; [data](../../data/posting_skill_shares.json)). Several roles borrow a feeder or adjacent title's shares; "
             "the evidence column names the title.",
             "- The replace ring reproduces the research's verdicts with their grades; it does not add new ones.",
             "- Nothing here measures change over time. Treat a ring as a snapshot, and re-check tools and statuses by "

@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [applied-scientist]
 generated_by: scripts/build_skills.py
@@ -19,24 +20,24 @@ generated_by: scripts/build_skills.py
 
 **64 skills:** Must 6 · Important 17 · Should 25 · Optional 16. **Evidence:** JD 13 · S09 1 · S 15 · P 35 (55% practice-curated). **Non-technical:** 13.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 69.3%] · Statistics (inference, hypothesis tests, regression) [JD 52.7%] · Data structures & algorithms [S · T0-06]<br>**Important:** Data science [JD 90.1%] · LLM APIs & tool calling [JD 30.1%] · Generative AI [JD 22.0%] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Causal inference [P] · Deep learning & transformers [JD 32.6%]<br>**Should:** LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Data pipelines & quality [P] · Search & ranking (learning to rank) [P] · Recommender systems [P] · Natural language processing (NLP) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Distributed training (FSDP2, TP/PP, MoE) [P] · Preference optimisation (DPO and variants) [P] |
-| Technical: knowledge | **Method / practice** | **Must:** Experiment design & A/B testing [S · T0-06]<br>**Important:** Data analysis [JD 33.1%] · Research-to-production [S · T0-06] · Eval statistics (CIs, power, pass^k) [S · T0-06] · Research methods & re-implementation [P] · Ablations & controlled experiments [S · T0-06]<br>**Should:** Testing (pytest) [S · T0-06] · Git & CI/CD [P] · LLM-as-judge design & calibration [S · T0-06] · Model & data drift monitoring [S · T0-06] · Experiment tracking & reproducibility [P] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 86.0%]<br>**Important:** SQL [JD 63.8%]<br>**Should:** R [P] |
-| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2%]<br>**Optional:** Apache Spark [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 69.3% (feeder)] · Statistics (inference, hypothesis tests, regression) [JD 52.7% (feeder)] · Data structures & algorithms [S · T0-06]<br>**Important:** Data science [JD 90.1% (feeder)] · LLM APIs & tool calling [JD 30.1% (feeder)] · Generative AI [JD 22.0% (feeder)] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Causal inference [P] · Deep learning & transformers [JD 32.6% (adjacent)]<br>**Should:** LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Data pipelines & quality [P] · Search & ranking (learning to rank) [P] · Recommender systems [P] · Natural language processing (NLP) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Distributed training (FSDP2, TP/PP, MoE) [P] · Preference optimisation (DPO and variants) [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Experiment design & A/B testing [S · T0-06]<br>**Important:** Data analysis [JD 33.1% (feeder)] · Research-to-production [S · T0-06] · Eval statistics (CIs, power, pass^k) [S · T0-06] · Research methods & re-implementation [P] · Ablations & controlled experiments [S · T0-06]<br>**Should:** Testing (pytest) [S · T0-06] · Git & CI/CD [P] · LLM-as-judge design & calibration [S · T0-06] · Model & data drift monitoring [S · T0-06] · Experiment tracking & reproducibility [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 86.0% (feeder)]<br>**Important:** SQL [JD 63.8% (feeder)]<br>**Should:** R [P] |
+| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2% (adjacent)]<br>**Optional:** Apache Spark [P] |
 | Technical: concrete | **Library / package** | **Should:** scikit-learn [P] · pandas [P] · NumPy [P] · SciPy [P] · Hugging Face Transformers [P]<br>**Optional:** XGBoost [P] · Polars [P] · spaCy [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [P] |
-| Technical: concrete | **Platform / cloud service** | **Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 24.8%] · Hugging Face Hub [P]<br>**Optional:** Amazon Web Services (AWS) [JD 24.8%] · Amazon SageMaker [P] · Databricks (incl. Mosaic AI) [P] · Data platforms and warehouses (choose 1: Databricks \| Snowflake \| Google BigQuery) [P] |
+| Technical: concrete | **Platform / cloud service** | **Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 24.8% (feeder)] · Hugging Face Hub [P]<br>**Optional:** Amazon Web Services (AWS) [JD 24.8% (feeder)] · Amazon SageMaker [P] · Databricks (incl. Mosaic AI) [P] · Data platforms and warehouses (choose 1: Databricks \| Snowflake \| Google BigQuery) [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Docker [P] |
 | Technical: concrete | **Specialised product** | **Should:** Weights & Biases (incl. Weave) [P] · MLflow [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 42.3%]<br>**Should:** Stakeholder communication [S · T0-06] · Design docs & RFCs [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 42.3% (feeder)]<br>**Should:** Stakeholder communication [S · T0-06] · Design docs & RFCs [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Should:** ROI & business cases [S · T0-06] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |

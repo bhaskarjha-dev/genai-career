@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill a VP / Head of AI / CAIO needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [vp-head-of-ai]
 generated_by: scripts/build_skills.py
@@ -19,9 +20,9 @@ generated_by: scripts/build_skills.py
 
 **41 skills:** Must 4 · Important 14 · Should 17 · Optional 6. **Evidence:** JD 2 · S 9 · P 30 (73% practice-curated). **Non-technical:** 25.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
@@ -33,10 +34,10 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Platform / cloud service** | **Optional:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [P] |
 | Technical: concrete | **Specialised product** | **Optional:** AI governance platforms (choose 1: OneTrust \| Credo AI \| Holistic AI \| IBM OpenPages / watsonx.governance) [P] |
 | Technical: concrete | **Regulation / framework** | **Should:** EU AI Act [S · T0-15] · NIST AI RMF [P] · ISO/IEC 42001 [P] |
-| Non-technical | **Communication & collaboration** | **Must:** Stakeholder communication [P] · Executive & board communication [P]<br>**Important:** Communication (written & verbal) [JD 51.4%] |
+| Non-technical | **Communication & collaboration** | **Must:** Stakeholder communication [P] · Executive & board communication [P]<br>**Important:** Communication (written & verbal) [JD 51.4% (adjacent)] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Must:** AI strategy & portfolio [P]<br>**Important:** AI operating model & governance boards [S · T0-01] · Token & unit economics [P] · Build-vs-buy & vendor evaluation [P] · ROI & business cases [P]<br>**Should:** Product management [P] · Programme & project management [P] · Go-to-market & pricing [P] |
-| Non-technical | **Leadership & people** | **Must:** Leadership & mentoring [JD 72.7%]<br>**Important:** Budget & P&L ownership [P] · Organisation design [P] · Hiring & interviewing [P]<br>**Should:** People management [P] · Mentoring [P] · Influence without authority [P] · Technical leadership [P] |
+| Non-technical | **Leadership & people** | **Must:** Leadership & mentoring [JD 72.7% (adjacent)]<br>**Important:** Budget & P&L ownership [P] · Organisation design [P] · Hiring & interviewing [P]<br>**Should:** People management [P] · Mentoring [P] · Influence without authority [P] · Technical leadership [P] |
 | Non-technical | **Domain knowledge** | **Optional:** Public sector & government [S · T0-15] · Financial services [P] |
 
 ## 2. Avoid

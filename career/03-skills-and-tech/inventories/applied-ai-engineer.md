@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [applied-ai-engineer]
 generated_by: scripts/build_skills.py
@@ -19,27 +20,27 @@ generated_by: scripts/build_skills.py
 
 **46 skills:** Must 4 · Important 16 · Should 14 · Optional 12. **Evidence:** JD 11 · S 10 · P 25 (54% practice-curated). **Non-technical:** 12.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7%] · RAG [JD 54.0%] · Agents & tool use [JD 59.3%]<br>**Important:** LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Guardrails [S · T0-01] · Prompt & context design [P] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-01] · ML fundamentals [JD 39.8%] · Generative AI [JD 37.6%] · Embeddings & vector search [JD 32.6%]<br>**Should:** APIs & integrations [P] · Observability (OpenTelemetry traces, metrics) [P] · Cost & latency engineering [P]<br>**Optional:** Fine-tuning (SFT, LoRA) [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 34.4%] · Prompt engineering [JD 31.1%] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4%]<br>**Should:** TypeScript / JavaScript [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · RAG [JD 54.0% (closest)] · Agents & tool use [JD 59.3% (closest)]<br>**Important:** LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Guardrails [S · T0-01] · Prompt & context design [P] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-01] · ML fundamentals [JD 39.8% (closest)] · Generative AI [JD 37.6% (closest)] · Embeddings & vector search [JD 32.6% (closest)]<br>**Should:** APIs & integrations [P] · Observability (OpenTelemetry traces, metrics) [P] · Cost & latency engineering [P]<br>**Optional:** Fine-tuning (SFT, LoRA) [P] |
+| Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 34.4% (closest)] · Prompt engineering [JD 31.1% (closest)] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (closest)]<br>**Should:** TypeScript / JavaScript [P] |
 | Technical: concrete | **Framework / SDK** | **Should:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] · FastAPI [P] |
 | Technical: concrete | **Library / package** | **Should:** Pydantic [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
-| Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 35.1%]<br>**Should:** LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [S · T0-03]<br>**Optional:** Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [P] |
+| Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 35.1% (closest)]<br>**Should:** LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [S · T0-03]<br>**Optional:** Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [P] |
 | Technical: concrete | **Data store** | **Optional:** Vector stores (choose 1: pgvector \| Pinecone \| Weaviate \| Qdrant \| Milvus / Zilliz \| Chroma \| OpenSearch \| Elasticsearch) [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Docker [P] |
 | Technical: concrete | **Specialised product** | **Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [P] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [P] |
 | Technical: concrete | **Protocol / standard** | **Should:** JSON Schema [P]<br>**Optional:** MCP (Model Context Protocol) [S · T0-16] · OAuth 2.x [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] · EU AI Act [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Technical writing [P]<br>**Should:** Customer-facing communication [P] · Presenting & live demos [P] · Communication (written & verbal) [JD 44.2%] · Stakeholder communication [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Technical writing [P]<br>**Should:** Customer-facing communication [P] · Presenting & live demos [P] · Communication (written & verbal) [JD 44.2% (feeder)] · Stakeholder communication [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Important:** Customer scoping & demos [S · T0-01] |
 | Non-technical | **Leadership & people** | **Optional:** Influence without authority [P] |

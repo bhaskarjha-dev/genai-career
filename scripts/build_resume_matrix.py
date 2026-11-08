@@ -30,6 +30,7 @@ from pathlib import Path
 sys.dont_write_bytecode = True  # keep scripts/ free of __pycache__ when importing the shared validator
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_skills import validate_ontology  # noqa: E402
+from common import short  # noqa: E402  (shared helpers)
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DATA = ROOT / "data" / "skills_ontology.json"
@@ -109,10 +110,6 @@ def names(data, ids):
     return ", ".join(data["skills"][k]["name"] for k in ids) if ids else "—"
 
 
-def short(name):
-    return name.split(" (")[0]
-
-
 def tag(r):
     return f"#{r['target']}" if isinstance(r["target"], int) else r["target"]
 
@@ -177,7 +174,7 @@ def role_links(rid, r):
     else:
         prof = " · ".join(f"[Role profile: {p}](../02-roles/role-catalog.md#profile-{p})" for p in profiles)
     skills_anchor = "skills-leadership" if r["variant"] == "L" else f"skills-{rid}"
-    return (f"{prof} · [Full skill map](../03-skills-and-tech/role-skill-maps.md#{skills_anchor}) · "
+    return (f"{prof} · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#{skills_anchor}) · "
             f"[Complete typed inventory](../03-skills-and-tech/inventories/{rid}.md)")
 
 

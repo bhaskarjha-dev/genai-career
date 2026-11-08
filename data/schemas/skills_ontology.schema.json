@@ -27,12 +27,13 @@
    "type": "object",
    "additionalProperties": {
     "type": "object",
-    "required": ["name", "headline", "flavours", "proof"],
+    "required": ["name", "headline", "flavours", "flavour_headlines", "proof"],
     "additionalProperties": false,
     "properties": {
      "name": {"type": "string", "minLength": 1},
      "headline": {"type": "string", "minLength": 1},
      "flavours": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+     "flavour_headlines": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
      "proof": {"type": "string", "minLength": 1}
     }
    }

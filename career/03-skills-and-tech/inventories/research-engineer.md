@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill a Research Engineer / Member of Technical Staff needs: 59 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [research-engineer]
 generated_by: scripts/build_skills.py
@@ -19,25 +20,25 @@ generated_by: scripts/build_skills.py
 
 **59 skills:** Must 6 · Important 14 · Should 18 · Optional 21. **Evidence:** JD 6 · S09 1 · S 26 · P 26 (44% practice-curated). **Non-technical:** 11.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** PyTorch internals [S · T0-03] · ML fundamentals [P] · Deep learning & transformers [JD 32.6%] · Data structures & algorithms [JD 33.7%]<br>**Important:** Distributed training (FSDP2, TP/PP, MoE) [S · T0-13] · Post-training (SFT, preference, RL) [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-03] · Data pipelines & quality [P]<br>**Should:** Continuous batching & KV cache [S · T0-13] · Reinforcement learning [JD 17.1%] · Mixed-precision training (BF16, FP8) [P]<br>**Optional:** Pre-training at scale [P] · CUDA / Triton / CUTLASS [S · T0-03] · RL with verifiable rewards (GRPO) [P] · Preference optimisation (DPO and variants) [P] · Scaling laws & compute-optimal training [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** PyTorch internals [S · T0-03] · ML fundamentals [P] · Deep learning & transformers [JD 32.6% (adjacent)] · Data structures & algorithms [JD 33.7% (adjacent)]<br>**Important:** Distributed training (FSDP2, TP/PP, MoE) [S · T0-13] · Post-training (SFT, preference, RL) [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-03] · Data pipelines & quality [P]<br>**Should:** Continuous batching & KV cache [S · T0-13] · Reinforcement learning [JD 17.1% (adjacent)] · Mixed-precision training (BF16, FP8) [P]<br>**Optional:** Pre-training at scale [P] · CUDA / Triton / CUTLASS [S · T0-03] · RL with verifiable rewards (GRPO) [P] · Preference optimisation (DPO and variants) [P] · Scaling laws & compute-optimal training [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Training-run debugging [P] · Profiling & roofline (Nsight) [P]<br>**Should:** Research methods & re-implementation [P] · Experiment tracking & reproducibility [P] · Training-data curation (filtering, dedup, mixtures) [P]<br>**Optional:** Numerics validation [S · T0-03] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [S · T0-03]<br>**Should:** C++ [JD 23.3%]<br>**Optional:** Triton (kernel language) [S · T0-03] |
-| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2%]<br>**Important:** Megatron-LM / Megatron Core [S · T0-05]<br>**Should:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03] · verl [S · T0-03] · OpenRLHF [S · T0-03] · LLaMA-Factory [S · T0-03]<br>**Optional:** JAX [P] · DeepSpeed [P] · Ray [S09 3.0%] · Axolotl [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [S · T0-03]<br>**Should:** C++ [JD 23.3% (adjacent)]<br>**Optional:** Triton (kernel language) [S · T0-03] |
+| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2% (adjacent)]<br>**Important:** Megatron-LM / Megatron Core [S · T0-05]<br>**Should:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03] · verl [S · T0-03] · OpenRLHF [S · T0-03] · LLaMA-Factory [S · T0-03]<br>**Optional:** JAX [P] · DeepSpeed [P] · Ray [S09 3.0%] · Axolotl [P] |
 | Technical: concrete | **Library / package** | **Important:** PyTorch FSDP2 [S · T0-13]<br>**Should:** Unsloth [S · T0-03]<br>**Optional:** Hugging Face Transformers [P] · Hugging Face Accelerate [P] |
 | Technical: concrete | **Model / model family** | **Should:** Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [P] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** Hugging Face Hub [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Linux [P]<br>**Optional:** Slurm [P] · Kubernetes [P] |
 | Technical: concrete | **Specialised product** | **Should:** Weights & Biases (incl. Weave) [S · T0-03] |
 | Technical: concrete | **Hardware / accelerator** | **Optional:** TPU / Trainium / ROCm (choose 1: Google TPU \| AWS Trainium / Inferentia \| AMD ROCm) [S · T0-03] · Google TPU [S · T0-03] · AWS Trainium / Inferentia [S · T0-03] |
-| Non-technical | **Communication & collaboration** | **Important:** Cross-functional collaboration [S · T0-06]<br>**Should:** Presenting & live demos [S · T2-01] · Communication (written & verbal) [JD 41.3%] |
+| Non-technical | **Communication & collaboration** | **Important:** Cross-functional collaboration [S · T0-06]<br>**Should:** Presenting & live demos [S · T2-01] · Communication (written & verbal) [JD 41.3% (adjacent)] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
 | Non-technical | **Research craft** | **Important:** Research taste & problem selection [P]<br>**Should:** Scientific writing [P]<br>**Optional:** Novel research & publications [S · T0-06] |

@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill a Frontier AI Safety / Alignment Researcher needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-safety-researcher]
 generated_by: scripts/build_skills.py
@@ -19,24 +20,24 @@ generated_by: scripts/build_skills.py
 
 **41 skills:** Must 4 · Important 13 · Should 20 · Optional 4. **Evidence:** JD 5 · S 12 · P 24 (59% practice-curated). **Non-technical:** 11.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [P]<br>**Important:** Alignment methods [P] · Interpretability [P]<br>**Should:** Deep learning & transformers [JD 18.6%] · LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Reinforcement learning [JD 17.1%] · Statistics (inference, hypothesis tests, regression) [P] · RLHF (reward models, PPO) [P] · Reward modelling [P] · Preference optimisation (DPO and variants) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Data & model poisoning [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [P]<br>**Important:** Alignment methods [P] · Interpretability [P]<br>**Should:** Deep learning & transformers [JD 18.6% (adjacent)] · LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Reinforcement learning [JD 17.1% (adjacent)] · Statistics (inference, hypothesis tests, regression) [P] · RLHF (reward models, PPO) [P] · Reward modelling [P] · Preference optimisation (DPO and variants) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Data & model poisoning [P] |
 | Technical: knowledge | **Method / practice** | **Must:** Research methods & re-implementation [P]<br>**Important:** Safety & capability evals [S · T0-15] · Red-teaming [S · T0-15] · AI incident management & reporting [S · T0-15]<br>**Should:** Eval statistics (CIs, power, pass^k) [P] · LLM-as-judge design & calibration [P] · Agent evaluation (trajectories, task success) [P] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 42.3%] |
-| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 25.4%]<br>**Should:** JAX [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 42.3% (adjacent)] |
+| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 25.4% (adjacent)]<br>**Should:** JAX [P] |
 | Technical: concrete | **Library / package** | **Should:** TransformerLens [P] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] · Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [P] |
 | Technical: concrete | **Platform / cloud service** | **Should:** Hugging Face Hub [P] |
 | Technical: concrete | **Specialised product** | **Should:** Inspect (UK AISI) [S · T0-15]<br>**Optional:** AI red-teaming tools (choose 1: garak \| PyRIT \| Promptfoo \| Giskard) [S · T0-15] |
 | Technical: concrete | **Regulation / framework** | **Should:** EU AI Act [S · T0-15] · California SB 53 [S · T0-15] |
-| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 41.3%]<br>**Should:** Presenting & live demos [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 41.3% (adjacent)]<br>**Should:** Presenting & live demos [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
 | Non-technical | **Research craft** | **Important:** Novel research & publications [S · T0-06] · Scientific writing [P] · Research taste & problem selection [P]<br>**Should:** Peer review [P] |

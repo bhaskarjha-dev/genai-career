@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-enablement-engineer]
 generated_by: scripts/build_skills.py
@@ -19,17 +20,17 @@ generated_by: scripts/build_skills.py
 
 **51 skills:** Must 4 · Important 14 · Should 22 · Optional 11. **Evidence:** JD 2 · S 16 · P 33 (65% practice-curated). **Non-technical:** 13.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7%] · Internal tooling & DevEx [P] · OAuth/OIDC, RBAC, SSO [P]<br>**Important:** Agents & tool use [P] · Guardrails [S · T0-14] · LLM gateways [S · T0-14]<br>**Should:** RAG [P] · Observability (OpenTelemetry traces, metrics) [P] · PII detection & redaction [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (adjacent)] · Internal tooling & DevEx [P] · OAuth/OIDC, RBAC, SSO [P]<br>**Important:** Agents & tool use [P] · Guardrails [S · T0-14] · LLM gateways [S · T0-14]<br>**Should:** RAG [P] · Observability (OpenTelemetry traces, metrics) [P] · PII detection & redaction [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Change management & adoption [P] · Coding-agent rollout [S · T0-16] · Pilots & adoption measurement [S · T0-06]<br>**Should:** AI inventory & risk register [S · T0-06] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4%]<br>**Should:** TypeScript / JavaScript [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (adjacent)]<br>**Should:** TypeScript / JavaScript [P] |
 | Technical: concrete | **Framework / SDK** | **Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [P] |
 | Technical: concrete | **Library / package** | **Should:** LiteLLM [S · T0-16] · FastMCP [S · T0-16] · langchain-mcp-adapters [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |

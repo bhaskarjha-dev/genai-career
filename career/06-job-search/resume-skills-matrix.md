@@ -14,10 +14,10 @@ generated_by: "scripts/build_resume_matrix.py (generated blocks)"
 
 > **Updated:** 2026-11-04 · **Scope:** Programmatic headline resume skills matrix generated from the typed skills ontology.
 > **How to use it:** [resume-strategy.md](resume-strategy.md) explains the master → variant → per-posting system that these lists feed.
-> **Role universe:** the 24 individual-contributor roles of the [master catalog](../02-roles/role-catalog.md), in the order of the [GenAI target roles](../02-roles/genai-target-roles.md), plus the employed leadership tracks.
+> **Role universe:** the individual-contributor roles of the [role catalog](../02-roles/role-catalog.md), in the order of the [GenAI target roles](../02-roles/genai-target-roles.md), plus the employed leadership tracks.
 > **Sources:**
-> - Tiers and evidence tags: the [skills catalog](../03-skills-and-tech/role-skill-maps.md).
-> - JobsPipe job-description measurements, retrieved 2026-11-02 [B].
+> - Tiers and evidence tags: [data/skills_ontology.json](../../data/skills_ontology.json), shown in full in the [role skill inventories](../03-skills-and-tech/role-skill-inventories.md).
+> - JobsPipe job-description measurements, retrieved 2026-11-02 [B] ([data/posting_skill_shares.json](../../data/posting_skill_shares.json)).
 > - Skill shares from T0-03, T0-15 and T0-16.
 >
 > **Concise layer of one ontology:** this file shows only the *headline* skills, the resume phrases that fit a skills section. The complete typed inventory for each role (every concept, method, tool, framework, platform and non-technical skill, with evidence) is in [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md); each role block below links to it.
@@ -33,18 +33,18 @@ generated_by: "scripts/build_resume_matrix.py (generated blocks)"
 | Tier | Meaning | Evidence rule used here | Where it goes on the resume |
 |---|---|---|---|
 | **Must** | The screen gate: what most postings put in *basic qualifications*, plus recruiter-search hooks (titles, languages, frameworks, LLM terms) | Role-defining, or named in roughly half or more of the title's postings | Skills section **and** an evidence line in a recent role or project |
-| **Important** | The differentiators that win interviews and set your level (*preferred qualifications*; D-004 Tier 2) | Catalog "differentiating" skills, or skills probed in the role's interview track | A project or experience bullet with a metric; also the skills section |
+| **Important** | The differentiators that win interviews and set your level (*preferred qualifications*) | Skills that set strong candidates apart in the evidence, or skills probed in the role's interview track (the older three-tier model of D-004 is not used: ERRATA U20) | A project or experience bullet with a metric; also the skills section |
 | **Should** | Common supporting skills | Named in roughly 20–50% of postings, or standard hygiene | Skills section if true, in the posting's exact wording |
 | **Optional** | Employer-specific or frontier skills | Under ~20% of postings, frontier tier, or named only by specific employers | Only when the posting names it |
-| **Avoid** | Devalued, deprecated or counter-productive items | The skills catalog's devaluation and deprecation records | Leave out, or reframe |
+| **Avoid** | Devalued, deprecated or counter-productive items | The ontology's register of devalued skills and its tool statuses ([skills radar](../03-skills-and-tech/skills-radar.md#4-replace-what-to-stop-investing-in)) | Leave out, or reframe |
 
 **Prerequisites are not skills.** Years of experience, degree, PhD, credentials and work authorisation are facts. They cannot be tailored, so state them plainly; if you miss a hard requirement, route around it with a referral ([T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) R5).
 
-**Ordering:** within a tier, skills are in priority order. That is posting share where postings were measured; otherwise the skills catalog's order.
+**Ordering:** within a tier, skills are in priority order. That is posting share where postings were measured; otherwise the ontology's order.
 
 **Evidence basis:** each role names one of three bases:
 - *JD-measured* (JobsPipe posting shares, B).
-- *Catalog tiers* (B–D in the skills catalog).
+- *Catalog tiers* (B–D, from the research sessions cited per skill in the ontology).
 - *Practice-curated* (D; check it against 10–20 live postings before investing).
 
 The tiers themselves are a model output (Grade M).
@@ -125,7 +125,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 "Senior AI Engineer" cut assumes 5+ years [B]. 72% of AI-engineering postings state a degree requirement [C · T0-06].
 - **Proof to show:** An evaluated end-to-end system over a real corpus (metrics table, cost/latency budget, reproducible README); for T2–T3, a second system with a different failure surface plus CI-gated evals, traces, a load test and a postmortem.
 - **Posting terms to mirror:** Python (78.4%), LLM (76.7%), agentic AI (59.3%), RAG (54.0%), machine learning (39.8%), generative AI (37.6%), AWS / Azure (35.1% each), CI/CD (34.4%), vector databases (32.6%), prompt engineering (31.1%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-engineer.md)
 
 <a id="resume-ml-engineer"></a>
 #### #2 · Machine Learning Engineer (GenAI/LLM track) · variant B1
@@ -142,7 +142,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Degree common (72% of AI-engineering postings state one [C]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06].
 - **Proof to show:** A baseline-first model with measured lift and error analysis; a prompt vs RAG vs fine-tune comparison with cost and quality; a serving benchmark (tokens/s, p95, $/M tokens); small-budget training evidence (FSDP2 smoke tests, MFU).
 - **Posting terms to mirror:** machine learning (98.6%), Python (71.3%), PyTorch (48.2%), LLM (45.0%), data structures (33.7%), deep learning (32.6%), TensorFlow (31.8%), A/B testing (23.5%), NLP (23.3%), C++ (23.3%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ml-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ml-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ml-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ml-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ml-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ml-engineer.md)
 
 <a id="resume-research-engineer"></a>
 #### #3 · Research Engineer / Member of Technical Staff · variant C1
@@ -159,7 +159,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** PhD-level profile, a fellowship (Anthropic Fellows: no PhD required) or strong OSS (vLLM, SGLang).
 - **Proof to show:** Paper re-implementations with rigorous evals; a nano-vLLM-style engine benchmarked against vLLM; DDP/FSDP2 smoke tests; upstream OSS contributions; fellowship projects.
 - **Posting terms to mirror:** Member of Technical Staff, research engineer, PyTorch, distributed training, post-training, RL / RLHF, evals.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-research-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-research-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/research-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-research-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-research-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/research-engineer.md)
 
 <a id="resume-forward-deployed-engineer"></a>
 #### #4 · Forward Deployed Engineer (AI) · variant A2
@@ -176,7 +176,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** One JD: 2–6 years and up to 50% travel [B · T0-01]. Only ~48% of the cluster is engineer-titled, so target those titles.
 - **Proof to show:** A customer pilot case study with numbers; a demo on real data shown to at least two potential users; a deployment write-up that covers failure modes.
 - **Posting terms to mirror:** forward deployed, FDE, customer-facing, deployment, integration, RAG, agents, travel.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-forward-deployed-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-forward-deployed-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/forward-deployed-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-forward-deployed-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-forward-deployed-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/forward-deployed-engineer.md)
 
 <a id="resume-applied-scientist"></a>
 #### #5 · Applied Scientist (GenAI/LLM teams) · variant B2
@@ -193,7 +193,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Often a PhD (T2-01 names Applied Scientist as the main high-volume PhD corridor); coding/DSA is the usual gap for PhDs.
 - **Proof to show:** Your own method turned into a service with tests and CI; at least three code reviews via OSS PRs; an eval-statistics write-up.
 - **Posting terms to mirror:** applied scientist, machine learning, statistics, experimentation, A/B testing, LLM, PyTorch.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-applied-scientist) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-applied-scientist) · [Complete typed inventory](../03-skills-and-tech/inventories/applied-scientist.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-applied-scientist) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-applied-scientist) · [Complete typed inventory](../03-skills-and-tech/inventories/applied-scientist.md)
 
 <a id="resume-applied-ai-engineer"></a>
 #### #6 · Applied AI Engineer · variant A2
@@ -210,7 +210,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Lab-tier hiring bar on top of the AI Engineer stack; backend (~6 months) and PhD (~8 months) routes [D · T0-06].
 - **Proof to show:** A customer-facing reference implementation with evals and a published write-up; the AI Engineer T2–T3 portfolio.
 - **Posting terms to mirror:** applied AI, LLM, customers, evals, deployment, solutions, safety.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-applied-ai-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-applied-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/applied-ai-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-applied-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-applied-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/applied-ai-engineer.md)
 
 <a id="resume-ai-infrastructure-engineer"></a>
 #### #7 · AI Infrastructure / GPU Platform Engineer · variant D2
@@ -227,7 +227,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Infrastructure depth; best feeders are SRE, DevOps and backend infrastructure engineers.
 - **Proof to show:** A self-hosted cluster with continuous synthetic load, automated failover, autoscaling and dashboards, plus a written postmortem.
 - **Posting terms to mirror:** GPU, Kubernetes, infrastructure, distributed systems, NCCL, InfiniBand, SRE, Terraform (DevOps JDs: Kubernetes 69.4%, Terraform 59.1%, Linux 45.1%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-infrastructure-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-infrastructure-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-infrastructure-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-infrastructure-engineer.md)
 
 <a id="resume-research-scientist"></a>
 #### #8 · Research Scientist (LLM research) · variant C2
@@ -244,7 +244,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** PhD plus publications; frontier offers are "not plannable" [D · T0-06].
 - **Proof to show:** Papers, open research code, talks.
 - **Posting terms to mirror:** Python (42.3%), communication (41.3%), machine learning (39.2%), PyTorch (25.4%), LLM (24.4%), deep learning (18.6%), C++ (17.4%), reinforcement learning (17.1%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-research-scientist) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-research-scientist) · [Complete typed inventory](../03-skills-and-tech/inventories/research-scientist.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-research-scientist) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-research-scientist) · [Complete typed inventory](../03-skills-and-tech/inventories/research-scientist.md)
 
 <a id="resume-inference-engineer"></a>
 #### #9 · Inference / LLM Serving Engineer · variant D1
@@ -261,7 +261,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Backend → Staff-level inference takes ~10–14 months with infrastructure depth [D · T2-01].
 - **Proof to show:** A single-GPU serving study (BF16 vs FP8/4-bit, prefix caching, chunked prefill, speculative decoding) with a roofline and $/M tokens at the SLO; a custom Triton kernel tested against a reference; an upstream PR to vLLM, SGLang or FlashInfer.
 - **Posting terms to mirror:** inference, vLLM, SGLang, TensorRT-LLM, KV cache, latency, throughput, quantization, CUDA.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-inference-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-inference-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/inference-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-inference-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-inference-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/inference-engineer.md)
 
 <a id="resume-agentic-ai-engineer"></a>
 #### #10 · Agentic AI Engineer · variant A1
@@ -278,7 +278,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Usually an AI Engineer title in practice; the standalone title is small (~66 + 28 postings in 90 days).
 - **Proof to show:** An agent with human approval, sandboxed tools, deterministic trace replay and failure-injection tests (timeouts, malformed arguments, prompt injection), reporting cost per task.
 - **Posting terms to mirror:** agentic AI, agents, multi-agent, LangGraph (35.8% of Agentic AI Engineer postings), LangChain, MCP, tool calling.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-agentic-ai-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/agentic-ai-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-agentic-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/agentic-ai-engineer.md)
 
 <a id="resume-ml-platform-engineer"></a>
 #### #11 · ML Platform / MLOps (LLMOps) Engineer · variant D2
@@ -295,7 +295,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Backend, DevOps or SRE background; India GCCs use the MLOps Engineer title (Taggd, C).
 - **Proof to show:** A self-hosted vLLM/SGLang cluster with continuous synthetic load benchmarks, automated failover, dynamic LoRA routing and Grafana dashboards.
 - **Posting terms to mirror:** MLOps, LLMOps, Kubernetes (69.4% of DevOps postings), Terraform (59.1%), CI/CD (81.2%), model serving, KServe, monitoring.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ml-platform-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ml-platform-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ml-platform-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ml-platform-engineer.md)
 
 <a id="resume-ai-product-manager"></a>
 #### #12 · AI Product Manager · variant E1
@@ -312,7 +312,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** 4+ years as a PM plus at least one shipped model-powered feature [D · T0-06]; T2-01 asks for 5+ years in product/ops plus notebook-level Python.
 - **Proof to show:** A PRD plus eval rubric plus pilot metrics; a domain rubric with 50+ labelled cases; "10 failure modes ranked by business impact".
 - **Posting terms to mirror:** product management (92.6%), communication (53.7%), leadership (40.1%), compliance (26.1%), agile (22.7%), roadmapping (18.4%), AI (15.4%), stakeholder management (14.2%), agentic AI (13.6%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-product-manager) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-product-manager.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-product-manager) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-product-manager.md)
 
 <a id="resume-ai-evaluation-engineer"></a>
 #### #13 · AI Evaluation Engineer · variant A1
@@ -329,7 +329,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Best feeders: data scientists (error analysis), PhDs (measurement rigour), backend engineers (CI, observability) [D · T0-06].
 - **Proof to show:** An eval harness with a kappa-calibrated judge validated on 100+ human labels, plus position and verbosity bias tests; a CI regression threshold and a cost–quality frontier chart.
 - **Posting terms to mirror:** LLM evaluation, evals, benchmarking, LLM-as-a-judge, golden dataset, A/B testing, pytest.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-evaluation-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-evaluation-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-evaluation-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-evaluation-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-evaluation-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-evaluation-engineer.md)
 
 <a id="resume-ai-solutions-architect"></a>
 #### #14 · AI / GenAI Solutions Architect · variant A2
@@ -346,7 +346,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Senior engineer / cloud architect background. Certifications (AIP-C01, PMLE, AI-103) are tie-breakers mainly in IT-services, staffing and partner channels [B/C · T0-11].
 - **Proof to show:** A reference architecture with a cost model and a working infrastructure-as-code deployment.
 - **Posting terms to mirror:** solutions architect, AWS (53.6%), Azure (29.5%), GCP (22.6%), leadership (43.0%), communication (42.9%), mentoring (35.1%), compliance (25.3%), Python (23.6%), AI (23.2%), generative AI (17.1%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-solutions-architect) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-solutions-architect) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-solutions-architect.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-solutions-architect) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-solutions-architect) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-solutions-architect.md)
 
 <a id="resume-gpu-kernel-engineer"></a>
 #### #15 · GPU Kernel / ML Compiler Engineer · variant D1
@@ -363,7 +363,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Systems / C++ / CUDA background or a PhD.
 - **Proof to show:** GPU MODE leaderboard submissions; kernel PRs to vLLM, SGLang, FlashInfer or Triton, benchmarked on the target hardware with correctness tests.
 - **Posting terms to mirror:** CUDA, Triton, CUTLASS, kernels, GPU, compiler, XLA, performance.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-gpu-kernel-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/gpu-kernel-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-gpu-kernel-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/gpu-kernel-engineer.md)
 
 <a id="resume-ai-security-engineer"></a>
 #### #16 · AI Security Engineer / AI Red Teamer · variant D3
@@ -380,7 +380,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Application-security background; Anthropic AI Security Fellow requires US/UK/Canada work authorisation [A · T0-12].
 - **Proof to show:** A red-team suite in CI against a working agent, with attack-success rates before and after mitigation; an MCP security audit.
 - **Posting terms to mirror:** application security (26.5% of Security Engineer postings), cybersecurity (42.3%), Python (45.7%), IAM (21.6%), incident response (32.4%), AI security, prompt injection, red team, OWASP.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-security-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-security-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-security-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-security-engineer.md)
 
 <a id="resume-ai-governance-lead"></a>
 #### #17 · AI Governance Programme Lead / Manager · variant E2
@@ -397,7 +397,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** About 5 years in GRC, privacy, audit or security; domain certifications first (CIPP/CIPM, CISSP/CISA/CRISC); AIGP optional [B · T0-15].
 - **Proof to show:** An AI inventory, risk register and governance playbook mapped to the EU AI Act, NIST AI RMF and ISO 42001.
 - **Posting terms to mirror:** AI governance, EU AI Act, NIST AI RMF, ISO 42001, risk management, compliance, privacy; Axial: observability/monitoring 42.3%, Python 27.1%.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-governance-lead) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-governance-lead) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-governance-lead.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-governance-lead) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-governance-lead) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-governance-lead.md)
 
 <a id="resume-physical-ai-engineer"></a>
 #### #18 · Physical AI / Robotics AI Engineer · variant B3
@@ -414,7 +414,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Robotics or controls background with ML.
 - **Proof to show:** A sim-to-real or manipulation project with measured success rates and failure analysis.
 - **Posting terms to mirror:** robotics, VLA, imitation learning, reinforcement learning, sim-to-real, ROS, perception.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-physical-ai-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/physical-ai-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-physical-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/physical-ai-engineer.md)
 
 <a id="resume-ai-safety-researcher"></a>
 #### #19 · Frontier AI Safety / Alignment Researcher · variant C2
@@ -431,7 +431,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** PhD or a fellowship is typical; ~600 technical FTEs worldwide (single-author estimate, C).
 - **Proof to show:** Fellowship projects; published safety research; open eval contributions.
 - **Posting terms to mirror:** AI safety, alignment, interpretability, evaluations, red teaming.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-safety-researcher) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-safety-researcher.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-safety-researcher) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-safety-researcher.md)
 
 <a id="resume-ai-enablement-engineer"></a>
 #### #20 · AI Enablement Engineer · variant A1
@@ -448,7 +448,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Backend/DevEx engineers; a non-technical ops lane exists (~7 months) [D · T0-06].
 - **Proof to show:** An internal pilot with 5–10 colleagues measuring adoption and time saved, with a runbook and a risk register.
 - **Posting terms to mirror:** AI enablement, MCP, internal tools, copilot, developer productivity, adoption.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-enablement-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-enablement-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-enablement-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-enablement-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-enablement-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-enablement-engineer.md)
 
 <a id="resume-ai-product-engineer"></a>
 #### #21 · AI Product Engineer (AI Frontend) · variant A1
@@ -465,7 +465,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Visible AI-frontend roles are Staff-level asking 5–6+ years [C/D · T0-06]; apply as "full-stack AI engineer".
 - **Proof to show:** A full-stack app (frontend → API → LLM → eval) with 50 eval cases and UX metrics; an on-device module benchmarked on 3+ device/browser combinations.
 - **Posting terms to mirror:** React (69.4%), TypeScript (52.7%), Python (41.8%), AWS (41.3%), CI/CD (37.8%), Node.js (32.3%), REST API (27.6%), streaming, LLM.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-product-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-product-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-product-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-product-engineer.md)
 
 <a id="resume-ai-risk-assurance-specialist"></a>
 #### #22 · AI Risk, Audit & Compliance Specialist · variant E2
@@ -482,7 +482,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** CISA, CIA or CPA (required for the AAIA credential) [B · T0-15].
 - **Proof to show:** A model-validation or bias-audit report on a public model, using a documented methodology.
 - **Posting terms to mirror:** audit, model risk, AI risk, compliance, ISO 42001, bias audit, privacy.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-risk-assurance-specialist) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-risk-assurance-specialist) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-risk-assurance-specialist.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-risk-assurance-specialist) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-ai-risk-assurance-specialist) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-risk-assurance-specialist.md)
 
 <a id="resume-responsible-ai-engineer"></a>
 #### #23 · Responsible AI / AI Governance Engineer · variant E2
@@ -499,7 +499,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** MLOps or security engineering background in a regulated firm.
 - **Proof to show:** A compliance packet mapped to NIST AI 600-1 and the OWASP LLM Top 10, with runtime guardrails, subgroup evals and a calibrated judge on ~100 traces.
 - **Posting terms to mirror:** responsible AI, AI governance, guardrails, fairness, explainability, EU AI Act, model cards.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-responsible-ai-engineer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/responsible-ai-engineer.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-responsible-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/responsible-ai-engineer.md)
 
 <a id="resume-domain-evaluation-specialist"></a>
 #### #24 · Domain Evaluation Specialist / AI Trainer · variant E3
@@ -516,7 +516,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** 4+ years in the domain; MA/JD/MD/PhD for premium rates [C · T0-06].
 - **Proof to show:** A domain gold standard: 100+ real tasks with rubrics, adjudication rules and two-reviewer agreement, comparing 2–3 models with the human baseline.
 - **Posting terms to mirror:** AI trainer, evaluation, rubric, annotation, RLHF, plus your domain terms.
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-domain-evaluation-specialist) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-domain-evaluation-specialist) · [Complete typed inventory](../03-skills-and-tech/inventories/domain-evaluation-specialist.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-domain-evaluation-specialist) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-domain-evaluation-specialist) · [Complete typed inventory](../03-skills-and-tech/inventories/domain-evaluation-specialist.md)
 
 <a id="resume-ai-engineering-manager"></a>
 #### L1 · AI Engineering Manager / Director · variant L1
@@ -533,7 +533,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** Senior/Staff IC first; AI engineers move into management in under 3 years on average (SignalFire, C).
 - **Proof to show:** Delivery record: AI systems shipped, eval/observability practices adopted across teams, cost governance results.
 - **Posting terms to mirror:** leadership (72.7%), communication (51.4%), mentoring (47.1%), compliance (30.9%), system design (25.3%), observability (18.0%), agentic AI (14.8%).
-- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-engineering-manager) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-engineering-manager.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-engineering-manager) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-engineering-manager.md)
 
 <a id="resume-vp-head-of-ai"></a>
 #### L2–L3 · VP / Head of AI / CAIO · variant L2
@@ -550,7 +550,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 - **Prerequisites:** EM/Director track record; US federal CAIOs are required by OMB M-25-21 [B · T0-15].
 - **Proof to show:** Portfolio outcomes: revenue or cost impact, governance boards stood up, vendor decisions.
 - **Posting terms to mirror:** AI strategy, roadmap, governance, operating model, budget, build vs buy.
-- **Links:** [Role profile: vp-head-of-ai](../02-roles/role-catalog.md#profile-vp-head-of-ai) · [Role profile: chief-ai-officer](../02-roles/role-catalog.md#profile-chief-ai-officer) · [Full skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/vp-head-of-ai.md)
+- **Links:** [Role profile: vp-head-of-ai](../02-roles/role-catalog.md#profile-vp-head-of-ai) · [Role profile: chief-ai-officer](../02-roles/role-catalog.md#profile-chief-ai-officer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/vp-head-of-ai.md)
 <!-- END GENERATED -->
 
 ---

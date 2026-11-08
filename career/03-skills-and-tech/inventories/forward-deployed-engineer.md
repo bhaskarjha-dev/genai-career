@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill a Forward Deployed Engineer (AI) needs: 57 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [forward-deployed-engineer]
 generated_by: scripts/build_skills.py
@@ -19,9 +20,9 @@ generated_by: scripts/build_skills.py
 
 **57 skills:** Must 5 · Important 15 · Should 17 · Optional 20. **Evidence:** JD 2 · S 28 · P 27 (47% practice-curated). **Non-technical:** 18.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
@@ -29,7 +30,7 @@ generated_by: scripts/build_skills.py
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** APIs & integrations [P] · LLM APIs & tool calling [S · T0-06] · RAG [S · T0-14]<br>**Important:** Retrieval quality (hybrid, reranking, recall@k) [S · T1-03] · Permission-aware retrieval (ACLs, tenancy) [S · T1-03] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Agents & tool use [S · T0-14] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14]<br>**Should:** Data pipelines & quality [P] · Agent reliability (durable state, budgets, approvals) [P] · Tool and function calling [P] · System design [P]<br>**Optional:** Self-hosting open models [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Rapid prototyping [S · T2-01]<br>**Should:** Prompt engineering [P]<br>**Optional:** Change management & adoption [P] · AppSec & threat modelling [P] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 44.4%]<br>**Should:** TypeScript / JavaScript [P] · SQL [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 44.4% (adjacent)]<br>**Should:** TypeScript / JavaScript [P] · SQL [P] |
 | Technical: concrete | **Framework / SDK** | **Should:** FastAPI [P]<br>**Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] |
 | Technical: concrete | **Library / package** | **Optional:** Pydantic [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
@@ -39,7 +40,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Specialised product** | **Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] |
 | Technical: concrete | **Protocol / standard** | **Should:** OAuth 2.x [S · T0-16] · OpenID Connect (OIDC) [S · T0-16]<br>**Optional:** MCP (Model Context Protocol) [S · T0-16] · OpenAPI [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** GDPR [P] · EU AI Act [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Stakeholder communication [P] · Customer-facing communication [S · T2-01] · Executive & board communication [P] · Presenting & live demos [S · T2-01]<br>**Should:** Communication (written & verbal) [JD 42.9%] · Design docs & RFCs [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Stakeholder communication [P] · Customer-facing communication [S · T2-01] · Executive & board communication [P] · Presenting & live demos [S · T2-01]<br>**Should:** Communication (written & verbal) [JD 42.9% (adjacent)] · Design docs & RFCs [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Must:** Customer scoping & demos [S · T0-06]<br>**Optional:** Product management [P] · Pre-sales [P] |
 | Non-technical | **Leadership & people** | **Optional:** Influence without authority [P] |

@@ -5,7 +5,7 @@ content_type: index
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Folder index of the generated per-role skill inventories, in GenAI target order, with links to the cross-role index and the vocabulary."
+summary: "Folder page for the generated per-role skill inventories; the counted index, cross-role views and method are in role-skill-inventories.md."
 generated_by: scripts/build_skills.py
 ---
 
@@ -13,33 +13,33 @@ generated_by: scripts/build_skills.py
 
 # Role Skill Inventories: One File per Role
 
-Each file lists every skill the role needs, typed and tiered with evidence, plus posting keywords, credentials and a self-assessment. The cross-role views, tier decisions and verification are in [role-skill-inventories.md](../role-skill-inventories.md); skill definitions are in the [vocabulary](../skills-vocabulary.md).
+> One generated file per role: every skill it needs, typed and tiered with evidence, posting keywords, credentials and a self-assessment. The index with counts, the cross-role views and how the inventories are built are in [role-skill-inventories.md](../role-skill-inventories.md); skill definitions are in the [vocabulary](../skills-vocabulary.md).
 
-| Rank | Role | Skills | Inventory |
-|:---:|---|:---:|---|
-| #1 | AI Engineer | 148 | [ai-engineer.md](ai-engineer.md) |
-| #2 | Machine Learning Engineer (GenAI/LLM track) | 84 | [ml-engineer.md](ml-engineer.md) |
-| #3 | Research Engineer / Member of Technical Staff | 59 | [research-engineer.md](research-engineer.md) |
-| #4 | Forward Deployed Engineer (AI) | 57 | [forward-deployed-engineer.md](forward-deployed-engineer.md) |
-| #5 | Applied Scientist (GenAI/LLM teams) | 64 | [applied-scientist.md](applied-scientist.md) |
-| #6 | Applied AI Engineer | 46 | [applied-ai-engineer.md](applied-ai-engineer.md) |
-| #7 | AI Infrastructure / GPU Platform Engineer | 59 | [ai-infrastructure-engineer.md](ai-infrastructure-engineer.md) |
-| #8 | Research Scientist (LLM research) | 54 | [research-scientist.md](research-scientist.md) |
-| #9 | Inference / LLM Serving Engineer | 71 | [inference-engineer.md](inference-engineer.md) |
-| #10 | Agentic AI Engineer | 73 | [agentic-ai-engineer.md](agentic-ai-engineer.md) |
-| #11 | ML Platform / MLOps (LLMOps) Engineer | 77 | [ml-platform-engineer.md](ml-platform-engineer.md) |
-| #12 | AI Product Manager | 47 | [ai-product-manager.md](ai-product-manager.md) |
-| #13 | AI Evaluation Engineer | 65 | [ai-evaluation-engineer.md](ai-evaluation-engineer.md) |
-| #14 | AI / GenAI Solutions Architect | 56 | [ai-solutions-architect.md](ai-solutions-architect.md) |
-| #15 | GPU Kernel / ML Compiler Engineer | 45 | [gpu-kernel-engineer.md](gpu-kernel-engineer.md) |
-| #16 | AI Security Engineer / AI Red Teamer | 49 | [ai-security-engineer.md](ai-security-engineer.md) |
-| #17 | AI Governance Programme Lead / Manager | 58 | [ai-governance-lead.md](ai-governance-lead.md) |
-| #18 | Physical AI / Robotics AI Engineer | 42 | [physical-ai-engineer.md](physical-ai-engineer.md) |
-| #19 | Frontier AI Safety / Alignment Researcher | 41 | [ai-safety-researcher.md](ai-safety-researcher.md) |
-| #20 | AI Enablement Engineer | 51 | [ai-enablement-engineer.md](ai-enablement-engineer.md) |
-| #21 | AI Product Engineer (AI Frontend) | 53 | [ai-product-engineer.md](ai-product-engineer.md) |
-| #22 | AI Risk, Audit & Compliance Specialist | 47 | [ai-risk-assurance-specialist.md](ai-risk-assurance-specialist.md) |
-| #23 | Responsible AI / AI Governance Engineer | 56 | [responsible-ai-engineer.md](responsible-ai-engineer.md) |
-| #24 | Domain Evaluation Specialist / AI Trainer | 42 | [domain-evaluation-specialist.md](domain-evaluation-specialist.md) |
-| L1 | AI Engineering Manager / Director | 44 | [ai-engineering-manager.md](ai-engineering-manager.md) |
-| L2–L3 | VP / Head of AI / CAIO | 41 | [vp-head-of-ai.md](vp-head-of-ai.md) |
+Files, in GenAI target order:
+
+- [AI Engineer](ai-engineer.md)
+- [Machine Learning Engineer (GenAI/LLM track)](ml-engineer.md)
+- [Research Engineer / Member of Technical Staff](research-engineer.md)
+- [Forward Deployed Engineer (AI)](forward-deployed-engineer.md)
+- [Applied Scientist (GenAI/LLM teams)](applied-scientist.md)
+- [Applied AI Engineer](applied-ai-engineer.md)
+- [AI Infrastructure / GPU Platform Engineer](ai-infrastructure-engineer.md)
+- [Research Scientist (LLM research)](research-scientist.md)
+- [Inference / LLM Serving Engineer](inference-engineer.md)
+- [Agentic AI Engineer](agentic-ai-engineer.md)
+- [ML Platform / MLOps (LLMOps) Engineer](ml-platform-engineer.md)
+- [AI Product Manager](ai-product-manager.md)
+- [AI Evaluation Engineer](ai-evaluation-engineer.md)
+- [AI / GenAI Solutions Architect](ai-solutions-architect.md)
+- [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md)
+- [AI Security Engineer / AI Red Teamer](ai-security-engineer.md)
+- [AI Governance Programme Lead / Manager](ai-governance-lead.md)
+- [Physical AI / Robotics AI Engineer](physical-ai-engineer.md)
+- [Frontier AI Safety / Alignment Researcher](ai-safety-researcher.md)
+- [AI Enablement Engineer](ai-enablement-engineer.md)
+- [AI Product Engineer (AI Frontend)](ai-product-engineer.md)
+- [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md)
+- [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md)
+- [Domain Evaluation Specialist / AI Trainer](domain-evaluation-specialist.md)
+- [AI Engineering Manager / Director](ai-engineering-manager.md)
+- [VP / Head of AI / CAIO](vp-head-of-ai.md)

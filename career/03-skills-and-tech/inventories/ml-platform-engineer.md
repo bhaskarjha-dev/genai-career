@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ml-platform-engineer]
 generated_by: scripts/build_skills.py
@@ -19,27 +20,27 @@ generated_by: scripts/build_skills.py
 
 **77 skills:** Must 7 · Important 15 · Should 34 · Optional 21. **Evidence:** JD 12 · S09 5 · S 34 · P 26 (34% practice-curated). **Non-technical:** 6.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** Observability (OpenTelemetry traces, metrics) [S · T0-03]<br>**Important:** DevOps [JD 99.0%] · LLM gateways [S · T0-14] · OAuth/OIDC, RBAC, SSO [S · T0-16] · MLOps lifecycle (model & prompt CI/CD) [S · T0-03] · Model supply chain & CVEs [S · T0-16]<br>**Should:** Capacity & GPU/API cost governance [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Engine internals & multi-LoRA [S · T0-03] · Prefill/decode disaggregation [S · T0-03] · GPU fleet ops & scheduling [S · T0-03] · Inference autoscaling [S · T0-03] · Feature stores [P] |
-| Technical: knowledge | **Method / practice** | **Must:** Terraform / IaC [JD 59.1%] · Git & CI/CD [JD 81.2%]<br>**Important:** SRE (SLOs, on-call, incidents) [S · T0-14]<br>**Should:** Prompt & model versioning [S · T0-03] · Progressive delivery (canary, shadow, feature flags) [P] · Experiment tracking & reproducibility [P] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 55.7%]<br>**Should:** Go / Java (choose 1: Go \| Java) [P] · Bash / shell scripting [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Observability (OpenTelemetry traces, metrics) [S · T0-03]<br>**Important:** DevOps [JD 99.0% (feeder)] · LLM gateways [S · T0-14] · OAuth/OIDC, RBAC, SSO [S · T0-16] · MLOps lifecycle (model & prompt CI/CD) [S · T0-03] · Model supply chain & CVEs [S · T0-16]<br>**Should:** Capacity & GPU/API cost governance [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Engine internals & multi-LoRA [S · T0-03] · Prefill/decode disaggregation [S · T0-03] · GPU fleet ops & scheduling [S · T0-03] · Inference autoscaling [S · T0-03] · Feature stores [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Terraform / IaC [JD 59.1% (feeder)] · Git & CI/CD [JD 81.2% (feeder)]<br>**Important:** SRE (SLOs, on-call, incidents) [S · T0-14]<br>**Should:** Prompt & model versioning [S · T0-03] · Progressive delivery (canary, shadow, feature flags) [P] · Experiment tracking & reproducibility [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 55.7% (feeder)]<br>**Should:** Go / Java (choose 1: Go \| Java) [P] · Bash / shell scripting [P] |
 | Technical: concrete | **Framework / SDK** | **Important:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03]<br>**Should:** Ray [S09 3.0%] · NVIDIA Dynamo [S · T0-03] · NVIDIA Dynamo Triton [S · T0-03] · vLLM [S09 3.9%] · SGLang [S09 2.6%] |
 | Technical: concrete | **Library / package** | **Should:** LiteLLM [S · T0-16] |
-| Technical: concrete | **Platform / cloud service** | **Must:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 52.9%]<br>**Important:** Amazon Web Services (AWS) [JD 52.9%] · KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) [S · T0-03]<br>**Should:** Amazon Bedrock AgentCore [S · T0-16] · KServe [S · T0-03]<br>**Optional:** Kubeflow [P] · Amazon SageMaker [P] · Google Vertex AI [P] · Azure Machine Learning [P] · Databricks (incl. Mosaic AI) [P] · Anyscale [P] |
-| Technical: concrete | **Data store** | **Should:** PostgreSQL [JD 30.7%]<br>**Optional:** Feast [P] |
-| Technical: concrete | **Infrastructure / DevOps tool** | **Must:** Kubernetes [JD 69.4%] · Docker [JD 53.4%]<br>**Important:** Terraform [JD 59.1%] · Linux [JD 45.1%]<br>**Should:** Prometheus [S · T0-03] · Grafana [S09 2.9%] · Helm [P] · GitHub Actions [P] · Git [P]<br>**Optional:** Apache Airflow [P] · Apache Kafka [P] · General load-testing tools (choose 1: Locust \| k6) [P] |
+| Technical: concrete | **Platform / cloud service** | **Must:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 52.9% (feeder)]<br>**Important:** Amazon Web Services (AWS) [JD 52.9% (feeder)] · KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) [S · T0-03]<br>**Should:** Amazon Bedrock AgentCore [S · T0-16] · KServe [S · T0-03]<br>**Optional:** Kubeflow [P] · Amazon SageMaker [P] · Google Vertex AI [P] · Azure Machine Learning [P] · Databricks (incl. Mosaic AI) [P] · Anyscale [P] |
+| Technical: concrete | **Data store** | **Should:** PostgreSQL [JD 30.7% (feeder)]<br>**Optional:** Feast [P] |
+| Technical: concrete | **Infrastructure / DevOps tool** | **Must:** Kubernetes [JD 69.4% (feeder)] · Docker [JD 53.4% (feeder)]<br>**Important:** Terraform [JD 59.1% (feeder)] · Linux [JD 45.1% (feeder)]<br>**Should:** Prometheus [S · T0-03] · Grafana [S09 2.9%] · Helm [P] · GitHub Actions [P] · Git [P]<br>**Optional:** Apache Airflow [P] · Apache Kafka [P] · General load-testing tools (choose 1: Locust \| k6) [P] |
 | Technical: concrete | **Specialised product** | **Should:** Datadog (incl. LLM Observability) [S09 2.4%] · Azure API Management (AI gateway) [S · T0-16] · agentgateway [S · T0-16] · Langfuse [S · T0-03] · Arize Phoenix [S · T0-03] · MLflow [P] · Weights & Biases (incl. Weave) [P] |
 | Technical: concrete | **Hardware / accelerator** | **Optional:** NVIDIA Hopper (H100 / H200) [P] |
 | Technical: concrete | **Protocol / standard** | **Should:** MCP (Model Context Protocol) [S · T0-16] · OpenTelemetry [S · T0-03] · OTel GenAI semantic conventions [S · T0-03] · OAuth 2.x [S · T0-16] · OpenID Connect (OIDC) [S · T0-16]<br>**Optional:** safetensors [P] · OpenLineage [P] · gRPC [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] |
-| Non-technical | **Communication & collaboration** | **Should:** Communication (written & verbal) [JD 40.4%] |
+| Non-technical | **Communication & collaboration** | **Should:** Communication (written & verbal) [JD 40.4% (feeder)] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
 

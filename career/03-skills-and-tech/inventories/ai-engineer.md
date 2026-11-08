@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-engineer]
 generated_by: scripts/build_skills.py
@@ -19,9 +20,9 @@ generated_by: scripts/build_skills.py
 
 **148 skills:** Must 4 · Important 20 · Should 59 · Optional 63 · Avoid 2. **Evidence:** JD 14 · S09 7 · S 88 · P 39 (26% practice-curated). **Non-technical:** 12.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
@@ -34,12 +35,12 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Library / package** | **Should:** Pydantic [S · T0-03] · LiteLLM [S · T0-16] · pytest [S · T0-03]<br>**Optional:** Instructor [P] · sentence-transformers [P] · FAISS [P] · Unstructured [P] · Outlines [P] · Celery [P] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P]<br>**Optional:** Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [S · T0-03] · Whisper [P] · Cohere Command, Embed and Rerank [P] |
 | Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 35.1%] · LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [S · T0-03]<br>**Should:** Amazon Web Services (AWS) [JD 35.1%] · Microsoft Azure [JD 35.1%]<br>**Optional:** Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [S · T0-11] · Hugging Face Hub [S · T0-13] · Modal [S · T0-13] · Google Cloud (GCP) [P] · AWS Lambda [P] · Google Cloud Run [P] · Serverless GPU and inference clouds (choose 1: Modal \| Replicate \| Together AI \| Fireworks AI \| Baseten) [P] |
-| Technical: concrete | **Data store** | **Should:** Vector stores (choose 1: pgvector \| Pinecone \| Weaviate \| Qdrant \| Milvus / Zilliz \| Chroma \| OpenSearch \| Elasticsearch) [S · T0-03] · pgvector [S · T0-03] · PostgreSQL [JD 30.7%] · Redis [S · T0-03]<br>**Optional:** Pinecone [S09 0.7%] · Neo4j [P] · MongoDB [P] |
+| Technical: concrete | **Data store** | **Should:** Vector stores (choose 1: pgvector \| Pinecone \| Weaviate \| Qdrant \| Milvus / Zilliz \| Chroma \| OpenSearch \| Elasticsearch) [S · T0-03] · pgvector [S · T0-03] · PostgreSQL [JD 30.7% (feeder)] · Redis [S · T0-03]<br>**Optional:** Pinecone [S09 0.7%] · Neo4j [P] · MongoDB [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Docker [S · T0-03] · GitHub Actions [S · T0-13] · Git [P]<br>**Optional:** Kubernetes [S09 15.5%] · Terraform [P] · General load-testing tools (choose 1: Locust \| k6) [P] |
 | Technical: concrete | **Specialised product** | **Should:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] · DeepEval [S · T0-03]<br>**Optional:** Promptfoo [S · T0-03] · Langfuse [S · T0-03] · LangSmith [S09 0.7%] · Arize Phoenix [S · T0-03] · Braintrust [S · T0-03] · Guardrail tools (choose 1: NeMo Guardrails \| Guardrails AI \| Llama Guard) [S · T0-15] · AI red-teaming tools (choose 1: garak \| PyRIT \| Promptfoo \| Giskard) [S · T0-15]<br>**Avoid:** RAGAS [S · T0-03] |
 | Technical: concrete | **Protocol / standard** | **Should:** JSON Schema [S · T0-03] · Server-Sent Events (SSE) [S · T0-16] · OpenTelemetry [S · T0-03] · OAuth 2.x [S · T0-16]<br>**Optional:** MCP (Model Context Protocol) [S09 4.3%] · A2A (Agent2Agent) [S · T0-16] · OTel GenAI semantic conventions [S · T0-03] · OpenAPI [P] · gRPC [P] |
 | Technical: concrete | **Regulation / framework** | **Should:** OWASP Top 10 for LLM Applications [S · T0-13]<br>**Optional:** EU AI Act [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 44.2%]<br>**Should:** Stakeholder communication [P] · Design docs & RFCs [S · T0-06] |
+| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 44.2% (feeder)]<br>**Should:** Stakeholder communication [P] · Design docs & RFCs [S · T0-06] |
 | Non-technical | **Behavioural competency** | **Important:** Explaining probabilistic trade-offs (C2) [S · T1-03] · Pragmatism under ambiguity (C1) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03]<br>**Should:** Adaptability & learning agility [P] |
 | Non-technical | **Business & product** | **Important:** Product sense [S · T0-06]<br>**Should:** Token & unit economics [S · T0-14] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |

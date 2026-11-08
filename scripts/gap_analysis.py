@@ -33,17 +33,13 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_skills import load_ontology  # noqa: E402
+from common import skill_name as name  # noqa: E402  (shared helpers)
 
 ROOT = Path(__file__).resolve().parent.parent
 ARCHETYPES = ROOT / "data" / "project_archetypes.json"
 TARGET = {"M": 3, "I": 2, "S": 1, "O": 0}
 WEIGHT = {"M": 3, "I": 2, "S": 1, "O": 0}
 TIER_NAME = {"M": "Must", "I": "Important", "S": "Should", "O": "Optional"}
-
-
-def name(o, sid):
-    e = o["skills"].get(sid) or o["classes"].get(sid)
-    return e["name"] if e else sid
 
 
 def level(o, levels, sid):

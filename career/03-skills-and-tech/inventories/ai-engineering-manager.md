@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill an AI Engineering Manager / Director needs: 44 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-engineering-manager]
 generated_by: scripts/build_skills.py
@@ -19,26 +20,26 @@ generated_by: scripts/build_skills.py
 
 **44 skills:** Must 4 · Important 16 · Should 17 · Optional 7. **Evidence:** JD 7 · S 5 · P 32 (73% practice-curated). **Non-technical:** 24.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Important:** System design [JD 25.3%] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14] · Observability (OpenTelemetry traces, metrics) [JD 18.0%] · Capacity & GPU/API cost governance [P] · Guardrails [P]<br>**Should:** Agents & tool use [JD 14.8%] · AI literacy (tokens, RAG vs fine-tune, cost) [P] · LLM fundamentals (tokens, context windows, sampling, hallucination) [P] · MLOps lifecycle (model & prompt CI/CD) [P]<br>**Optional:** EU AI Act / NIST AI RMF / ISO 42001 [P] |
-| Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 30.9%]<br>**Should:** SRE (SLOs, on-call, incidents) [P] · Incident postmortems [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Important:** System design [JD 25.3% (feeder)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14] · Observability (OpenTelemetry traces, metrics) [JD 18.0% (feeder)] · Capacity & GPU/API cost governance [P] · Guardrails [P]<br>**Should:** Agents & tool use [JD 14.8% (feeder)] · AI literacy (tokens, RAG vs fine-tune, cost) [P] · LLM fundamentals (tokens, context windows, sampling, hallucination) [P] · MLOps lifecycle (model & prompt CI/CD) [P]<br>**Optional:** EU AI Act / NIST AI RMF / ISO 42001 [P] |
+| Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 30.9% (feeder)]<br>**Should:** SRE (SLOs, on-call, incidents) [P] · Incident postmortems [P] |
 | Technical: concrete | **Programming language** | **Should:** Python (production) [P] |
 | Technical: concrete | **Framework / SDK** | **Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [P] |
 | Technical: concrete | **Specialised product** | **Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [P] |
 | Technical: concrete | **Regulation / framework** | **Should:** EU AI Act [P] · NIST AI RMF [P] |
-| Non-technical | **Communication & collaboration** | **Must:** Communication (written & verbal) [JD 51.4%] · Stakeholder communication [P]<br>**Important:** Executive & board communication [P]<br>**Should:** Design docs & RFCs [P] · Cross-functional collaboration [P] |
+| Non-technical | **Communication & collaboration** | **Must:** Communication (written & verbal) [JD 51.4% (feeder)] · Stakeholder communication [P]<br>**Important:** Executive & board communication [P]<br>**Should:** Design docs & RFCs [P] · Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Important:** AI strategy & portfolio [P] · Roadmapping & prioritisation [P]<br>**Should:** Token & unit economics [P] · Build-vs-buy & vendor evaluation [P] · Programme & project management [P] · ROI & business cases [P] |
-| Non-technical | **Leadership & people** | **Must:** Leadership & mentoring [JD 72.7%] · People management [P]<br>**Important:** Mentoring [JD 47.1%] · Hiring & interviewing [P] · Technical leadership [P]<br>**Should:** Organisation design [P] · Influence without authority [P]<br>**Optional:** Budget & P&L ownership [P] |
+| Non-technical | **Leadership & people** | **Must:** Leadership & mentoring [JD 72.7% (feeder)] · People management [P]<br>**Important:** Mentoring [JD 47.1% (feeder)] · Hiring & interviewing [P] · Technical leadership [P]<br>**Should:** Organisation design [P] · Influence without authority [P]<br>**Optional:** Budget & P&L ownership [P] |
 | Non-technical | **Domain knowledge** | **Optional:** Domain expertise [P] |
 
 ## 2. Avoid

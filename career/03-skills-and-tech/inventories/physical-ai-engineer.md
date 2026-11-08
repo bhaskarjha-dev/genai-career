@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill a Physical AI / Robotics AI Engineer needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [physical-ai-engineer]
 generated_by: scripts/build_skills.py
@@ -19,9 +20,9 @@ generated_by: scripts/build_skills.py
 
 **42 skills:** Must 6 · Important 14 · Should 18 · Optional 4. **Evidence:** JD 1 · S 4 · P 37 (88% practice-curated). **Non-technical:** 8.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of October 2026; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
 
-**Tags:** [JD x%] share of live postings (JobsPipe, B) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
+**Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
 ## 1. Typed inventory
 
@@ -30,7 +31,7 @@ generated_by: scripts/build_skills.py
 | Technical: knowledge | **Concept / knowledge area** | **Must:** Robotics fundamentals [P] · Perception / computer vision [P] · Simulation & sim-to-real [P]<br>**Important:** Robot learning & VLA models [P] · Edge inference [P] · Vision-language-action (VLA) models [P] · Imitation learning [P] · Computer vision [P] · Control systems [P] · Motion planning [P]<br>**Should:** Deep learning & transformers [P] · Quantisation (FP8/FP4, AWQ, GPTQ) [P] · Reinforcement learning [P] · Sensor fusion [P] · SLAM & state estimation [P] · World models [P] · Data pipelines & quality [P]<br>**Optional:** CUDA / Triton / CUTLASS [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Teleoperation data pipelines [P] · Safety cases [P] |
 | Technical: concrete | **Programming language** | **Must:** C++ [P] · Python (production) [P] |
-| Technical: concrete | **Framework / SDK** | **Must:** ROS [P]<br>**Should:** PyTorch [JD 48.2%] · LeRobot [P] |
+| Technical: concrete | **Framework / SDK** | **Must:** ROS [P]<br>**Should:** PyTorch [JD 48.2% (adjacent)] · LeRobot [P] |
 | Technical: concrete | **Library / package** | **Should:** OpenCV [P] · TensorRT [P] |
 | Technical: concrete | **Model / model family** | **Optional:** CLIP / SigLIP [P] |
 | Technical: concrete | **Platform / cloud service** | **Should:** Robot simulators (choose 1: NVIDIA Isaac Sim / Isaac Lab \| MuJoCo \| Gazebo) [P] |

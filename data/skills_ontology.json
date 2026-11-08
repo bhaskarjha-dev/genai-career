@@ -4,14 +4,15 @@
   "as_of": "2026-11-04",
   "description": "Typed GenAI skills ontology: one vocabulary of skills (concepts, methods, concrete technologies and non-technical skills) with aliases, implements links, parents, choose-one classes, statuses and corpus-match rules; per-role tiered links with evidence; credentials; resume variants. Source of truth for career/03-skills-and-tech/skills-vocabulary.md, career/03-skills-and-tech/role-skill-inventories.md and career/06-job-search/resume-skills-matrix.md.",
   "sources": {
-   "tiers": "career/03-skills-and-tech/role-skill-maps.md (skill tiers and evidence tags) and the research sessions cited per link",
-   "posting_shares": "JobsPipe job-description measurements retrieved 2026-11-02 (Grade B); S09 corpus shares from T0-03 §6.3 (Grade B)",
-   "statuses": "career/03-skills-and-tech/role-skill-maps.md §5 registry (T0-03, T0-11, T0-16); class V2 facts, re-verify by 2027-01-21",
-   "target_order": "career/02-roles/genai-target-roles.md (consensus of eight lenses, GenAI-restricted demand)",
+   "tiers": "Set on 2026-11-04 from the evidence cited per link: posting shares (data/posting_skill_shares.json, S09 in T0-03 §6.3) and research-session lines; the v0.1.0 skill maps (career/03-skills-and-tech/role-skill-maps.md, D-004 tiers) were the starting point",
+   "posting_shares": "JobsPipe job-description measurements retrieved 2026-11-02 (Grade B), recorded in data/posting_skill_shares.json; S09 corpus shares from T0-03 §6.3 (Grade B)",
+   "statuses": "Tool and credential status facts from T0-03, T0-11 and T0-16 (first collected in the v0.1.0 skill-map registry, as of 2026-10-23); class V2 facts, re-verify by 2027-01-21",
+   "target_order": "Computed by scripts/target_roles.py from data/role_scores.json (consensus of eight lenses, GenAI-restricted demand); shown in career/02-roles/genai-target-roles.md",
    "screening": "research/sessions T0-04, T0-10, T0-11, T0-13",
    "devalued": "T0-03 §4.3 (what to deprioritise) and §6.8.2 (skills undergoing devaluation); grades as the session gives them; tool facts as of 2026-10-23, re-verify by 2027-01-21"
   },
   "ttl": {
+   "tool_status_as_of": "2026-10-23",
    "tool_status_reverify_by": "2027-01-21",
    "rule": "EGP-1.0 class V2: platform and product facts re-verified within 90 days of 2026-10-23"
   },
@@ -177,8 +178,7 @@
   ],
   "verification": {
    "date": "2026-11-04",
-   "links": "1529 role links across 26 roles; evidence JD 154 · S09 31 · S 679 · P 665",
-   "posting_shares": "all 154 JD shares matched to their title's row in career/03-skills-and-tech/role-skill-maps.md §2.1; all 31 S09 shares matched to §2.2 and to the cited T0-03 line",
+   "posting_shares": "all 154 JD shares match their title's row in data/posting_skill_shares.json (scripts/build_skills.py checks this on every run); all 31 S09 shares matched to the cited T0-03 §6.3 line",
    "session_citations": "all 679 S citations point at an existing session line that names the item; candidate lines were scored for role relevance (role keyword on or near the line, terms from the note, table or bullet rows), weak knowledge-skill citations at Should or Optional were downgraded to P (11), and the remaining low-relevance lines plus a random sample of 40 were read and 40 were replaced with exact lines or downgraded",
    "rules": "every role covers all 19 types or states why a type does not apply; archived, dormant and retired tools and retired credentials are tiered Avoid; every change to a headline tier carries a reason",
    "limits": "the planned independent agent fact-check of every link was blocked by the model quota on 2026-11-04, so citations matched by keyword can still be weaker than a close reading; tool tiers outside the measured titles rest on session mentions and practice curation until job-description mining (30+ dated postings per role) measures them"
@@ -6522,6 +6522,10 @@
     "A1": "Builder: AI Engineer, Agentic, AI Evaluation, AI Enablement, AI Product Engineer",
     "A2": "Deployer: FDE, Applied AI Engineer, AI Solutions Architect"
    },
+   "flavour_headlines": {
+    "A1": "AI Engineer: LLM systems, RAG, agents, evaluation",
+    "A2": "Forward Deployed / Applied AI Engineer: customer-facing LLM systems"
+   },
    "proof": "One evaluated RAG or agent system (metrics, cost/latency budget, reproducible README) plus a reliability layer (CI-gated evals, traces, budgets). Deployer flavour adds a customer pilot or reference-architecture case study"
   },
   "B": {
@@ -6532,6 +6536,11 @@
     "B2": "Scientist: Applied Scientist",
     "B3": "Robotics: Physical AI (only for robotics backgrounds)"
    },
+   "flavour_headlines": {
+    "B1": "Machine Learning Engineer: LLM fine-tuning, evaluation, serving",
+    "B2": "Applied Scientist: LLM evaluation, experimentation, research to production",
+    "B3": "(For robotics backgrounds only)"
+   },
    "proof": "A baseline-first model with measured lift; a prompt vs RAG vs fine-tune comparison; a serving benchmark; small-budget training evidence. Scientist flavour adds an eval-statistics write-up"
   },
   "C": {
@@ -6540,6 +6549,10 @@
    "flavours": {
     "C1": "Engineering: Research Engineer / MTS",
     "C2": "Science: Research Scientist, AI Safety Researcher"
+   },
+   "flavour_headlines": {
+    "C1": "Research Engineer: distributed training, post-training, evals at scale",
+    "C2": "(CV format with a Publications section)"
    },
    "proof": "Paper re-implementations with rigorous evals; a compact engine or training-stack reimplementation; OSS contributions; publications or fellowship projects (CV format with a Publications section)"
   },
@@ -6551,6 +6564,11 @@
     "D2": "Platform & infrastructure: AI Infrastructure, ML Platform / MLOps",
     "D3": "Security: AI Security Engineer / Red Teamer"
    },
+   "flavour_headlines": {
+    "D1": "Inference Engineer: LLM serving and GPU performance",
+    "D2": "AI Infrastructure Engineer: GPUs, Kubernetes, model serving",
+    "D3": "AI Security Engineer: LLM and agent security"
+   },
    "proof": "A serving study with a roofline and $/M tokens at an SLO, or a self-hosted cluster with load tests, failover and dashboards; an upstream PR (vLLM, SGLang, FlashInfer). Security flavour: a red-team suite in CI with before/after attack-success rates"
   },
   "E": {
@@ -6561,6 +6579,11 @@
     "E2": "Governance & assurance: AI Governance Lead, AI Risk/Audit, Responsible AI Engineer",
     "E3": "Domain evaluation: Domain Evaluation Specialist (bridge)"
    },
+   "flavour_headlines": {
+    "E1": "AI Product Manager: LLM products, evaluation, pilots",
+    "E2": "AI Governance Lead: EU AI Act, NIST AI RMF, ISO 42001",
+    "E3": "(A bridge, not a destination)"
+   },
    "proof": "A PRD plus eval rubric plus pilot metrics (product), or an AI inventory, risk register and playbook mapped to the EU AI Act / NIST / ISO 42001 (governance), or a domain gold standard with inter-rater agreement"
   },
   "L": {
@@ -6569,6 +6592,10 @@
    "flavours": {
     "L1": "AI Engineering Manager / Director",
     "L2": "VP / Head of AI / CAIO"
+   },
+   "flavour_headlines": {
+    "L1": "(Outcome-led)",
+    "L2": "(Outcome-led)"
    },
    "proof": "Delivery and adoption outcomes across teams; cost and governance results"
   }

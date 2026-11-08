@@ -17,7 +17,7 @@ tags: [compensation, offers, equity, rsu, stock-options, tender-offers, 409a, 83
 
 > How to put GenAI offers on one cash-equivalent basis (base, bonus, liquid equity and discounted paper equity, adjusted for vesting, liquidity and non-financial terms), decide whether a move beats staying, and run equity due diligence before you sign.
 
-**Dates.** Pay mixes, level tables and discount factors come from [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md) (evidence as of 2026-10-21). Hop-versus-stay rates, risk-adjusted values, liquidity facts and the trap register come from [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) (2026-10-23). The due-diligence questions come from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (2026-10-25). Re-verify pay figures and tender terms by 2027-01-19. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source; D judgement; M model output (arithmetic on stated inputs, no stronger than its weakest input); P practice-curated and unmeasured. **Not advice.** Nothing here is tax, legal or financial advice [T1-03 L18]; treat every tax point as a question for a qualified adviser. For terms, see the [glossary](../00-start/glossary.md).
+**Dates.** Discount factors and the level figures in the worked example come from [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md) (evidence as of 2026-10-21); measured pay mixes and level ladders, each dated by its dataset, are in [pay benchmarks](pay-benchmarks.md). Hop-versus-stay rates, risk-adjusted values, liquidity facts and the trap register come from [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) (2026-10-23). The due-diligence questions come from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (2026-10-25). Re-verify pay figures and tender terms by 2027-01-19. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source; D judgement; M model output (arithmetic on stated inputs, no stronger than its weakest input); P practice-curated and unmeasured. **Not advice.** Nothing here is tax, legal or financial advice [T1-03 L18]; treat every tax point as a question for a qualified adviser. For terms, see the [glossary](../00-start/glossary.md).
 
 ## The short answer
 
@@ -54,21 +54,11 @@ An offer has four pay components. Before you compare two offers, or an offer wit
 
 ### The four components, by employer archetype
 
-"Liquid" means sellable at vest on a public market; "paper" means not freely sellable [T0-02 L215].
-
-| Archetype (example) | Base | Bonus | Liquid equity | Paper equity | Grade |
-|---|---|---|---|---|---|
-| Public Big Tech (Google ML L3) | 77% | 5% | 18% | 0% | B |
-| Public Big Tech (Google ML L4) | 64% | 6% | 30% | 0% | B |
-| Frontier lab (OpenAI L5) | 40% | about 0% | 0% by default | 60%, semi-liquid through tenders | B, small n |
-| Frontier lab (Anthropic Staff) | 29% | about 0% | 0% by default | 72%, semi-liquid through tenders | B, small n |
-| AI-native startup valued above $500M (Carta P80–95 AI/ML engineer) | 64% of paper TC | not reported | 0% | 36% of paper TC; about 20–26% of cash-equivalent TC at DF 0.42–0.61 | B; cash-equivalent share D |
-| Indian employer, all-company (Levels.fyi Bengaluru) | about 85% | about 5% | about 4.5%, type not shown | not shown; ESOP data not found | B |
-
-Source: T0-02 Table C3 [T0-02 L217–224]. Three readings:
+"Liquid" means sellable at vest on a public market; "paper" means not freely sellable [T0-02 L215]. How the four components split by employer archetype (public Big Tech, frontier lab, AI-native startup, Indian employer) is measured, with each row's date, in [pay benchmarks: base, bonus and equity](pay-benchmarks.md#base-bonus-and-equity). The spread is wide: base is 77% of a Google ML L3 package but only 29% of an Anthropic Staff package, most of which is semi-liquid paper [B · T0-02 L217–L224]. Four readings for valuing an offer:
 
 - **Posted ranges are base-only.** Only 14% of 43,480 US AI-engineering postings mention equity and 31% a bonus [B · T0-02.F8]. Compare base with base, then ask for the full package.
 - **Lab paper is semi-liquid, not Series-A paper.** OpenAI's and Anthropic's 2026 tenders priced at the last round, with no visible discount; per-person caps and the share of vested stock that could be sold were not reported for them [B · T0-02.F7].
+- **Startup paper shrinks once discounted.** In Carta's profile of a P80–95 AI/ML engineer at an AI-native startup valued above $500M, paper equity is 36% of paper TC; at late-stage DF 0.42–0.61 it is about 20–26% of cash-equivalent TC [B inputs; D share · T0-02 L223, L451].
 - **Indian employers pay mostly cash.** See the India notes below.
 
 ### Adjustment 1: discount paper equity, with a band
@@ -119,7 +109,7 @@ Plan liquidity as three separate events: a tender, an IPO followed by a lock-up,
 
 | Term | Why it counts | Grade · source |
 |---|---|---|
-| Level and title | Level-median steps are ×1.38–1.46 (×1.21 from Staff to Principal) | B/C · T1-03 L330; B · T0-17 L129 |
+| Level and title | Level-median steps are ×1.38–1.46 (×1.21 from Staff to Principal); the ladder is in [pay benchmarks](pay-benchmarks.md#us-all-company-ladder) | B/C · T1-03 L330; B · T0-17 L129 |
 | Refresh policy and promotion timing | A promotion adds ≈ +16–24% TC at the event (base +6.5–8.6%, equity grant +39%). Refresh size and cadence by employer are not measured in the corpus, so count only what is written | C · T0-17 L195; P |
 | Compute budget | Low cost to the employer, high value to you; a trade when they cannot match cash | D · T1-03 L322, L340 |
 | Remote stipend, conference budget, relocation | The same logic | D · T1-03 L340 |
@@ -295,7 +285,7 @@ Do not underwrite seed or Series A paper: treat it as option value and ask for c
 
 - **Prefer cash-heavy packages when the equity is unlisted foreign stock.** Indian advisory blogs (Wisemonk, Treelife) report that such shares are taxed as a perquisite at vest or exercise and again as capital gains on sale (a 24-month threshold for long-term treatment, at a 12.5% rate), which creates a cash crunch before liquidity [C · T0-17 L229, L702–L703; T1-03 L369]. Ask for a cash-heavy mix, plan for the perquisite tax and clarify the pay band [C/G · T1-03 L339].
 - **Indian employers pay mostly cash:** about 85% base, 5% bonus and 4.5% stock of a type not shown, on the Levels.fyi Bengaluru city page; ESOP data were not found [B · T0-02 L210, L224].
-- **Benchmark against measured anchors, not tier bands.** Greater Bengaluru Senior SWE: median ≈ ₹56.0L, P90 ≈ ₹1.07Cr; top-employer senior medians ≈ ₹1.06–1.22Cr (Levels.fyi, n = 4,836) [B · T0-17 L137]. The two India tier-band sets in the research are not measured ([errata U14](../../research/ERRATA.md)).
+- **Benchmark against measured anchors, not tier bands.** Greater Bengaluru Senior SWE: median ≈ ₹56.0L, P90 ≈ ₹1.07Cr; top-employer senior medians ≈ ₹1.06–1.22Cr (Levels.fyi, n = 4,836) [B · T0-17 L137]. The two India tier-band sets in the research are not measured ([errata U14](../../research/ERRATA.md)). Full India bands and employer medians: [pay benchmarks](pay-benchmarks.md#india-by-city-level-and-employer).
 - **Pick the currency lens for the goal.** Market FX (about ₹95.2 per USD on 19 Oct 2026) is the lens for savings and remittances; PPP (about ₹22–23 per international dollar) for local spending. Tax and cost of living were not modelled [A/B for FX, C for PPP · T0-02.F9].
 - **More:** [India remote tax](india-remote-tax.md) and the [India remote playbook](../11-tracks/india-remote-playbook.md).
 

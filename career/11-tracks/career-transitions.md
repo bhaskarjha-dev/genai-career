@@ -308,38 +308,11 @@ Watch for the Dunning-Kruger effect after early wins, the halo effect of fluent 
 
 ## Route 5: academic researcher or quantitative PhD
 
-**Profile.** Strong in mathematics, statistics, experimental design and deep specialisation. Likely gaps: production engineering craft, iteration speed, scoping for product value, communication with non-experts, baseline discipline and an accurate picture of where roles exist [M · T0-06 L658]. New AI PhDs in the US and Canada rose 22% from 2022 to 2024, the increase went to academia [A · T0-06 L186], and the derived industry-bound count is roughly flat [M · T0-06 L187]. The plannable path is applied AI engineering, applied science or research engineering [M · T0-06 L192]. PhDs do not skip the skills stage (ERRATA U18).
+**This route has its own guide, [PhD to industry](phd-to-industry.md).** It holds the profile and the seven translation barriers, the research habits to unlearn (in its pitfalls), the ranked skill delta, the 8-week skills block, the quarter-by-quarter plan with its deliverables, the portfolio specialisation, fellowships and the O-1A angle. This page keeps what it owns for every route:
 
-| Old habit | What it looks like | New habit | Evidence |
-|---|---|---|---|
-| Novelty bias | The newest method before a baseline fails | Beat BM25 or a plain prompt first | [M · T0-06 L670, L687] |
-| Perfectionism | Slow iteration, a delayed first release | Ship a v0 in two weeks | [M · T0-06 L688, L789] |
-| Publication mindset | Paper-grade results | Decision-useful results in one-page memos | [M · T0-06 L689, L702] |
-| Benchmark fixation | Leaderboard gains read as product gains | Use the user's outcome as the metric | [M · T0-06 L669, L690] |
-| Solo-coding habits | No tests, no review, private repositories | Tests, CI and at least three reviewed pull requests | [M · T0-06 L691, L701] |
-| Prestige signalling | A CV of papers where a repo of shipped, evaluated systems is wanted | Lead with repositories and eval tables | [M · T0-06 L692] |
-| Over-targeting lab slots | Survivorship bias in lab success stories | Applied roles as the base case; lab roles as upside | [M · T0-06 L693] |
-
-**Ranked skill delta** [M · T0-06 L675–681]:
-1. Production engineering: tests, packaging, CI, code review, containers.
-2. LLM application patterns: API fluency, retrieval, tool use.
-3. Evaluation at production fidelity: golden sets, judge calibration, drift monitoring; a strength to lean on.
-4. Product scoping and communication.
-5. Loop preparation: DSA and system design.
-6. Inference economics: cost and latency.
-
-**Quarterly roadmap, applied track** (tier B; add about 5 months at tier A) [M · T0-06 L697–704]:
-
-| Months | Focus | Done when | Gate |
-|---|---|---|---|
-| 1–3 | Productionise and measure | Your method, or a relevant technique, as a reproducible service or library with tests, type checks and CI; code review at least three times via open-source pull requests; G1 passed with every sophisticated step beating a simple baseline on the eval set | G1 |
-| 4–6 | Product framing | A business-framed problem delivered to a real user; one-page decision memos; a cost and latency budget; eval in CI; judge calibration; deployment | G2 |
-| 7–9 | Measurement-rigour artifact and applications | A statistical methodology for LLM evals published as a write-up and small open-source tool (confidence intervals, power analysis for eval-set size, judge-bias tests, drift detection); residency or fellowship applications for the research track; mock loops including DSA and system design; 15–20 targeted applications | G3 |
-| 10–12 | Convert | Loops for applied AI engineer, applied scientist and research-engineer roles; level negotiated; a six-month plan if no offer lands | G4 |
-
-**Checkpoints (tier B)** [M · T0-06 L708]: month 3, a productionised method and reviewed pull requests; offers unlikely. Month 6, an applied project with a real user; interviews begin. Month 9, the evaluation-rigour artifact is published; the modelled median first offer for applied roles is near month 8 (5.3–12.5). Frontier research roles are not plannable.
-
-**Portfolio specialisation.** Rigorous evaluation and method-to-product translation: a public eval methodology and tool, a reproduction of a method as a service with ablations against simple baselines, and decision memos [M · T0-06 L710]. The 8-week skills block, role choice, fellowships and the O-1A angle are in [PhD to industry](phd-to-industry.md).
+- **Timeline.** About 8 months (5–12.5) to a first applied-role offer at hours tier B, about 13 (9–20) at tier A and 5 (3–8) at tier C, from 300 core hours (200–450) and a 12-week search lag (8–20) [M · T0-06 L269, L355]. The modelled median falls near month 8 (5.3–12.5); frontier research roles are not plannable [M · T0-06 L708].
+- **Gates.** The shared spine applies unchanged: G1–G4 at months 3, 6, 9 and 12. At G1 the PhD route adds one test: every sophisticated step must beat a simple baseline on the eval set [M · T0-06 L697–L704].
+- **Targets.** Applied AI engineer, applied scientist or research engineer is the plannable path; research scientist is upside [M · T0-06 L192, L660]. PhDs do not skip the skills stage (ERRATA U18).
 
 ## Provisional routes [P]
 

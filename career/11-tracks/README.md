@@ -18,11 +18,11 @@ sources: [T0-06, T2-01, T0-07, T0-08, T0-18, T0-15]
 
 | Document | What it gives you |
 |---|---|
-| [career-transitions.md](career-transitions.md) | Roadmaps into GenAI from five starting backgrounds (what transfers, what to learn and unlearn, modelled timelines, gated quarterly plans), plus provisional routes for DevOps/SRE, PMs and students |
+| [career-transitions.md](career-transitions.md) | Roadmaps into GenAI from five starting backgrounds (what transfers, what to learn and unlearn, modelled timelines, gated quarterly plans), plus provisional routes for DevOps/SRE, PMs and students. It owns the transition timelines and the gates G1–G4; the PhD route's detail is in its own guide |
 | [phd-to-industry.md](phd-to-industry.md) | The PhD-to-industry track: research versus applied roles, the skills gap that matters, fellowships, timelines and the O-1A angle |
-| [india-remote-playbook.md](india-remote-playbook.md) | India to US or EU work end to end: GCC, remote employee via EOR, direct contractor or relocation, with setup steps |
-| [visa-and-relocation.md](visa-and-relocation.md) | Talent-visa corridors and relocation decisions: routes, evidence bars, timelines and what to verify (pointers, not legal advice) |
-| [freelance-fractional.md](freelance-fractional.md) | Independent consulting and fractional Head-of-AI work: rates, income reality, client acquisition, contracts and stall risk |
+| [india-remote-playbook.md](india-remote-playbook.md) | Choosing a route from India to US or EU work (GCC, remote employee via EOR, direct contractor or relocation), finding the work and what to set up; pay, tax and community detail link to their owner pages |
+| [visa-and-relocation.md](visa-and-relocation.md) | Talent-visa corridors and relocation decisions: routes, evidence bars, timelines, a dated status table of pending rules, and what to verify (pointers, not legal advice) |
+| [freelance-fractional.md](freelance-fractional.md) | Independent consulting and fractional Head-of-AI work: rates (this page owns independent rates), income reality, client acquisition, contracts and stall risk |
 | [governance-careers.md](governance-careers.md) | Entering AI governance, risk and assurance from GRC, privacy, audit, legal or security: what regulation created, volumes, entry routes and proof |
 
 ## Planned

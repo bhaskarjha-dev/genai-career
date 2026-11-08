@@ -18,10 +18,10 @@ sources: [T0-02, T0-17, T1-03, T0-07, T0-18]
 
 | Document | What it gives you |
 |---|---|
-| [pay-benchmarks.md](pay-benchmarks.md) | What GenAI roles pay by title, city, level and employer type, as measured, and how to read the numbers; the tier bands explained against measured anchors |
+| [pay-benchmarks.md](pay-benchmarks.md) | What GenAI roles pay by title, city, level and employer type, as measured, and how to read the numbers; the tier bands explained against measured anchors. It owns the repository's pay figures, each row dated by its dataset; independent rates are in [freelance and fractional](../11-tracks/freelance-fractional.md) |
 | [offer-evaluation.md](offer-evaluation.md) | How to value and compare offers (cash, liquid and paper equity), the diligence before you sign, and hop-versus-stay |
 | [negotiation-playbook.md](negotiation-playbook.md) | The phases, scripts, levers and counter-moves for negotiating a GenAI offer, including competing offers and deadlines |
-| [india-remote-tax.md](india-remote-tax.md) | India-based engineers paid by foreign clients: structure, thresholds, compliance and traps (pointers, not tax advice) |
+| [india-remote-tax.md](india-remote-tax.md) | India-based contractors paid by foreign clients: structure, thresholds, compliance, the EOR alternative and traps (pointers, not tax advice) |
 
 ## Planned
 

@@ -7,7 +7,7 @@ status: published
 last_verified: 2026-11-06
 review_by: 2027-01-18
 summary: "Whether to go independent as an AI consultant or fractional Head of AI: dated rates and modelled income, the prerequisites to check first, a network-first client plan, retainer and contract terms to hold, and the stop rules for a practice that stalls."
-sources: [T0-18, T2-01, T0-06, T0-07]
+sources: [T0-18, T2-01, T0-06, T0-07, T0-02]
 roles: [independent-ai-consultant, fractional-ai-leader]
 geos: [global, us, uk, europe, india]
 tags: [freelance, fractional, consulting, independent-practice, rates, retainers, income, client-acquisition, referrals, contracts, msa, insurance, india-tax]
@@ -17,7 +17,7 @@ tags: [freelance, fractional, consulting, independent-practice, rates, retainers
 
 > Whether to go independent as an AI consultant or fractional Head of AI: dated rates and modelled income, the prerequisites to check first, a network-first client plan, retainer and contract terms to hold, and the stop rules for a practice that stalls.
 
-**Dates.** Rates and platform fees are as read by [T0-18](../../research/sessions/T0-18-freelance-fractional-ai-practice-economics.md) between about 2026-10-20 and 2026-10-25; the session is dated as of 2026-10-24. Every rate on this page is asked, advertised or computed. None is a transacted rate. Re-verify them by 2027-01-18. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, platform or single source; D judgement, recalled or modelled (T0-18 grades its own income model D); E searched, nothing found; M calculation, which inherits the weakest grade of its inputs; P practice-curated and unmeasured. **This is not legal or tax advice.** Have a lawyer review contracts, and a CPA or chartered accountant review tax, in your jurisdiction.
+**Dates.** Rates and platform fees are as read by [T0-18](../../research/sessions/T0-18-freelance-fractional-ai-practice-economics.md) between about 2026-10-20 and 2026-10-25; the session is dated as of 2026-10-24. The India mid-level rate card comes from [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md), relayed by one vendor in September–October 2026 and retrieved on 2026-10-21. This page owns the repository's independent and fractional rates; salaried pay is in [pay benchmarks](../09-compensation/pay-benchmarks.md). Every rate on this page is asked, advertised or computed. None is a transacted rate. Re-verify them by 2027-01-18. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, platform or single source; D judgement, recalled or modelled (T0-18 grades its own income model D); E searched, nothing found; M calculation, which inherits the weakest grade of its inputs; P practice-curated and unmeasured. **This is not legal or tax advice.** Have a lawyer review contracts, and a CPA or chartered accountant review tax, in your jurisdiction.
 
 ## The short answer
 
@@ -103,7 +103,8 @@ The people who take this path skew senior. 87% of Fractional Jobs respondents (n
 | UK GenAI contract | Median £550 a day; P25 £463, P75 £675, P90 £788; London median £575 | 900 job-advert rates | B · T0-18.F3, L214 | Six months to 2026-10-20 |
 | Germany, DACH survey | €103/hr average; €108 for data and analytics | Survey, n=5,412 | C · T0-18.F3 | Fielded November 2025 to February 2026 |
 | France | €600–900 a day; €1,000–1,500 for gen-AI and agent specialists | Blog citing Malt, Hays and Free-Work | C · T0-18.F3 | As of 2026-10-24 |
-| India-based senior, international clients | $50–100/hr quoted: Second Talent $50–75, Navtechy $60–100; $50–90 for gen-AI work | Vendor quotes; no realised-rate dataset | C · T0-18.F4 | As of 2026-10-24 |
+| India-based senior, international clients | $50–100/hr quoted: Second Talent $50–75, Navtechy $60–100; $50–90 for gen-AI work, against $120–200 in the US (Prakash, undated) | Vendor quotes; no realised-rate dataset | C · T0-18.F4, L98 | As of 2026-10-24 |
+| India-based mid-level AI/ML engineer | $35–50/hr on international-client contracts, $44–63/hr freelance; $28–72/hr overall. Marketplace ranges relayed by the same vendor: Upwork $25–150, Toptal $70–200, Arc $61–100 | One vendor's rate card (Second Talent); no platform-native data | C · T0-02.F11 | Sep–Oct 2026 |
 
 **How to read the rates.**
 - Treat $150–250 an hour as the US asking corridor and $300 as a stretch tier; figures above $300 appear only in agency marketing [C · T0-18.F2]. If your realised median is $140 rather than $165, modelled median net falls by $17K [D · T0-18 L1291].
@@ -295,8 +296,9 @@ Why the positioning row matters: Go Fractional showed 6, then 10 CAIO posts in 9
 ### India-based providers selling to US or European clients
 
 - **Rate.** Quote in USD at $70–100 an hour until you have evidence of a higher realised rate, then test $120 and above with a few clients; no dataset supports the higher figure [D · T0-18 L151]. T0-18 found no data on what US or European startups pay India-based AI consultants, and none on Indian domestic client rates [E · T0-18 L228].
+- **Against a salary.** At 160 billable hours a month, the mid-level card's $35–63 an hour is $5.6–10.1K a month, or ₹64–115 lakh a year at ₹95.25: about P70 to above P90 of Levels.fyi Bengaluru full-time ML pay, before benefits, tax and bench time [C · T0-02.F11]. That range straddles the ₹75 lakh presumptive-tax ceiling in the next bullet [M].
 - **Receipts.** Use Wise or Payoneer rather than PayPal. Payment friction runs from about 1.2% to 5% on Payoneer's own schedule to 8–9% on PayPal, per a payments vendor [C · T0-18.F4].
-- **The tax ceiling.** The presumptive scheme (section 58 of the Income-tax Act 2025, which consolidates the old §44ADA) keeps about 83–84% of billing [M · T0-07 L90] up to ₹75 lakh (about $79K), provided cash receipts are at most 5% [A · T0-07 L84]. One rupee above ₹75 lakh adds about ₹11.8 lakh of tax, and matching the take-home needs about ₹92–98 lakh of billing [M · T0-07 L87; T2-01 L667]. T0-18's model has net income falling by about $7K as receipts rise from $75K to $80K [D · T0-18.F4].
+- **The tax ceiling.** Under the presumptive scheme, receipts up to ₹75 lakh keep most of the billing, and crossing the limit by a little costs more than it earns; the thresholds, the take-home model and the billing needed past the cliff are owned by [India remote tax](../09-compensation/india-remote-tax.md#the-structure-ladder-four-billing-bands-and-one-override) (its review date governs them). T0-18's own practice model shows the same cliff: net income falls by about $7K as receipts rise from $75K to $80K [D · T0-18.F4].
 - **Eligibility is not settled.** One source says technical consultancy "may qualify" for the scheme. If it does not apply, the modelled India P50 falls from $53K to $45K [C/D · T0-18 L1323–1324].
 - **GST.** One accounting blog reports zero-rating for exported services under a Letter of Undertaking, and a ₹20 lakh registration threshold [C · T0-18 L151].
 - **Do this:** see a chartered accountant before receipts approach ₹75 lakh, and read [India remote tax](../09-compensation/india-remote-tax.md) and the [India remote playbook](india-remote-playbook.md).

@@ -57,7 +57,7 @@ flowchart TD
 | Assemble competing processes | 3–5 parallel loops, staggered so that offers overlap | D · T1-03 L270 |
 | Know your stay value | Merit +3.4% a year (AI/ML ≈ +4.4%); a same-tier move is worth ≈ +15–25% TC and a level-up ≈ +35–50% | B; C; B/C · T0-17 L194–197 |
 
-- **Why the loops come first.** In T1-03's funnel math, cold inbound applications convert to offers at about 0.2% (340–380 applications per offer); referrals yield 11–36× more per application [B/C · T1-03.F1]. Offers that arrive weeks apart cannot be weighed against each other [P].
+- **Why the loops come first.** About 0.2% of cold inbound applications end in a hire (about 460–520 applications per hire); reaching an offer takes about 340–380 applications. T1-03 called the 0.2% figure the rate to an offer, which [errata U24](../../research/ERRATA.md) corrects [B/C · T1-03.F1; ERRATA U24]. Referrals yield 11–36× more per application [B/C · T1-03.F1]. Stage-by-stage rates are in the [application operating system](../06-job-search/application-operating-system.md). Offers that arrive weeks apart cannot be weighed against each other [P].
 - **Staying is an alternative too.** A move beats staying only when the premium exceeds roughly 25% or promotion is blocked [A/B/C · T1-03.F7]. Below that bar you can decline without loss, which lets you hold your counter [P].
 - **Coaching pays mainly with leverage.** Levels.fyi Negotiation Coaching reports a median client uplift of +21–24% (self-selected, B); Candor and Rora are rated C; Josh Doody's Fearless Salary Negotiation is the most-cited method (B) [T1-03 L381–384]. Because the lift depends on competing offers, the case for paying is strongest when you hold them [B/C · T1-03.F10]. Tool verdicts: [tool catalog](../00-start/tool-catalog.md).
 
@@ -250,13 +250,13 @@ Pattern from T1-03 L276–321; the pairs are practice [P].
 
 - **Evidence gap.** T1-03 rates its India guidance lower confidence (C/G) [T1-03 L34]. The corpus has no data on Indian negotiation outcomes and no evidence on Indian norms for disclosing pay; the salary-history bans T1-03 cites are a US protection [T1-03 L276].
 - **Ask for a cash-heavy structure (lever 11).** Indian advisory blogs (Wisemonk, Treelife) report that unlisted foreign shares are taxed as a perquisite at vest or exercise and again as capital gains on sale, creating a cash crunch before liquidity [C · T1-03 L369; T0-17 L229, L702–L703]. **Not tax advice:** confirm with a chartered accountant, and see [India remote tax](india-remote-tax.md).
-- **Anchor on measured figures, not tier bands.** Greater Bengaluru Senior SWE: median ≈ ₹56.0L, P90 ≈ ₹1.07Cr; top-employer senior medians ≈ ₹1.06–1.22Cr (Levels.fyi, n = 4,836) [B · T0-17 L137]. The research's two India tier-band sets are not measured ([errata U14](../../research/ERRATA.md)).
+- **Anchor on measured figures, not tier bands.** Greater Bengaluru Senior SWE: median ≈ ₹56.0L, P90 ≈ ₹1.07Cr; top-employer senior medians ≈ ₹1.06–1.22Cr (Levels.fyi, n = 4,836) [B · T0-17 L137]. The research's two India tier-band sets are not measured ([errata U14](../../research/ERRATA.md)). Full India bands, with their dates: [pay benchmarks](pay-benchmarks.md#india-by-city-level-and-employer).
 - **Remote pay compression** for India-based hires has no controlled evidence (G) [T1-03 L406]; see the [India remote playbook](../11-tracks/india-remote-playbook.md).
 
 ### Europe
 
 - **Evidence gap.** T1-03 rates its Europe guidance lower confidence (C/G) [T1-03 L34]; evidence on remote or US-band routes from Europe is thin (G) [T1-03 L375].
-- **Pay anchor.** London Senior median ≈ £122K, P90 ≈ £221K on Levels.fyi [C · T1-03 L373]; T0-17 notes that this comes from a search snippet [T0-17 L143].
+- **Pay anchor.** London Senior median ≈ £122K, P90 ≈ £221K on Levels.fyi [C · T1-03 L373]; T0-17 notes that this comes from a search snippet [T0-17 L143]. Other European bands: [pay benchmarks](pay-benchmarks.md#uk-europe-singapore-and-the-gcc).
 - **UK startups.** From 6 April 2026, EMI limits rise to 500 employees, £120M of assets, a £6M option cap and a 15-year option life [B · T1-03 L374]. At a qualifying UK startup, ask whether your grant is an EMI option [P].
 
 ### US
@@ -297,7 +297,7 @@ Leverage is greatest with two or more competing offers at the same level. Risk-a
 - **Self-selected.** The +21–24% uplift comes from Levels.fyi coaching clients and covers any negotiation, not only job changes [B · T0-17 L114]. The 80–87% positive-adjustment rate comes from coaching services [B/C · T1-03.F10]. There is no controlled evidence of coaching returns for candidates without competing offers [T1-03 L405].
 - **Judgement.** The scripts (C/D) and the floor and parallel-loop targets (D) [T1-03 L34, L268–270]; the competing-offer note, the companion note and the weak → strong pairs [P].
 - **Gaps.** India and Europe playbooks (C/G) [T1-03 L34]; legal limits of playing offers against each other (D) [T1-03 L410]; counter-offer retention rates (D) [T1-03 L411]; remote pay compression for India-based hires (G) [T1-03 L406].
-- **Errata applied.** India anchors follow [errata U14](../../research/ERRATA.md).
+- **Errata applied.** India anchors follow [errata U14](../../research/ERRATA.md); the funnel figure under Phase 0 follows U24 (≈ 0.2% is application to hire; an offer takes about 340–380 applications).
 - **What would change this page.** Controlled data on negotiation outcomes without competing offers; India or Europe negotiation data; Levels.fyi's end-of-year 2026 report and Pave H2 2026 data, two of T0-17's re-run triggers [T0-17 L233].
 - **Dates.** T1-03 2026-10-25; T0-17 2026-10-23; T0-02 evidence as of 2026-10-21. Re-verify figures by 2027-01-19.
 

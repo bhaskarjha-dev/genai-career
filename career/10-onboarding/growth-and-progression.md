@@ -5,7 +5,7 @@ content_type: guide
 stage: 10
 status: published
 last_verified: 2026-11-06
-review_by: 2027-01-21
+review_by: 2027-01-19
 summary: "After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, how to choose between the IC and manager tracks, and how to keep learning at a pace you can sustain."
 sources: [T0-17, T1-03, T0-09, T0-12, T0-06]
 roles: [all]
@@ -54,15 +54,7 @@ The 25% threshold and the blocked-promotion rule are T1-03's [A/B/C · T1-03.F7]
 
 ### The US ladder: measured anchors
 
-| Level | Median (Levels.fyi 2025, US, all companies) | Step from the level below | AI premium over non-AI engineers |
-|---|---|---|---|
-| Entry | $155K | — | 6.2% |
-| Engineer (mid) | $226K | ×1.46 | 11.9% |
-| Senior | $312K | ×1.38 | 14.2% |
-| Staff | $457K | ×1.46 | 18.7% |
-| Principal | $551K | ×1.21 | Not reported |
-
-Medians and steps [B · T0-17 L129]; AI premium [B · T0-17 L130]. The Principal median fell about 6.6% year on year while Staff rose about 7.5% [B · T0-17 L129]. For role and regional figures, use [Pay benchmarks](../09-compensation/pay-benchmarks.md).
+US all-company medians step ×1.2–1.5 per level from Entry to Principal, and the AI premium over non-AI engineers rises from 6.2% at Entry to 18.7% at Staff (Levels.fyi 2025 data and Q3 2025 analysis) [B · T0-17 L129–L130]. The ladder itself, with every median, step and date, is in [pay benchmarks: the US all-company ladder](../09-compensation/pay-benchmarks.md#us-all-company-ladder); role and regional figures are on the same page.
 
 **Time in level.** No AI-specific dataset exists [E · T0-17 L122]. The proxies:
 - The average software engineer in Levels.fyi's database reaches Senior at about 8.6 years of experience, with Google and Apple at about 7–9 and Netflix mostly 10+ (reported by its cofounder; seen as a search snippet) [C · T0-17 L123].
@@ -78,18 +70,16 @@ Medians and steps [B · T0-17 L129]; AI premium [B · T0-17 L130]. The Principal
 
 ### Outside the US, and at frontier labs
 
-- **India.** Greater Bengaluru Senior SWE (Levels.fyi, n = 4,836): P25 ≈ ₹38.4L, median ≈ ₹56.0L, P75 ≈ ₹79.9L, P90 ≈ ₹1.07Cr; the highest employer senior medians run ≈ ₹1.06–1.22Cr [B · T0-17 L137]. A local Staff role typically does not reach ₹1.2Cr, on Levels.fyi job-board estimates [C · T0-17 L138]. The "AI Engineer" title in Bengaluru showed a median ≈ ₹24.5L, with small-sample instability [B · T0-17 L139]. Do not use the India "T2/T3" bands: neither band set is measured [errata U14]. The corpus does not measure what moves people past the local senior ceiling; see the [India remote playbook](../11-tracks/india-remote-playbook.md).
-- **Europe.** London Senior median ≈ £122–123K, P90 ≈ £221–226K (search snippet) [C · T0-17 L143]. No Europe-specific time-in-level data was found, so plateau claims are inference [E · T0-17 L145].
+- **India.** The local senior ceiling is a Greater Bengaluru Senior SWE median of ≈ ₹56.0L and a P90 of ≈ ₹1.07Cr (Levels.fyi, n = 4,836) [B · T0-17 L137], and a local Staff role typically does not reach ₹1.2Cr, on Levels.fyi job-board estimates [C · T0-17 L138]. The full distribution, the highest employer senior medians and the unstable "AI Engineer" title page are in [pay benchmarks: India](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer). Do not use the India "T2/T3" bands: neither band set is measured [errata U14]. The corpus does not measure what moves people past the local senior ceiling; see the [India remote playbook](../11-tracks/india-remote-playbook.md).
+- **Europe.** No Europe-specific time-in-level data was found, so plateau claims are inference [E · T0-17 L145]. London's senior band, from a search snippet (Grade C), is in [pay benchmarks](../09-compensation/pay-benchmarks.md#uk-europe-singapore-and-the-gcc).
 - **Frontier labs.** Headline Levels.fyi medians run ×2.0 (Anthropic Senior) to ×2.9 (OpenAI L5) of the US all-company Senior median, and ×2.8 (OpenAI L6) to ×3.1 (Anthropic Staff) at Staff; treat lab medians as ±30–50% [C · T0-17 L131–132]. After equity risk-adjustment, an OpenAI-L6-like package is ≈ ×1.7–2.4 of the all-company Staff median [C · T0-17 L133]. The largest single OpenAI step is L3→L4, ×2.2 [B · T0-17 L131].
 
 ## Hop or stay: the decision table
 
+The money rule, and what each kind of move pays, belong to [offer evaluation: hop or stay](../09-compensation/offer-evaluation.md#hop-or-stay). In short: stay while promotion is within reach and outside offers at your level clear less than about 25%; move when the risk-adjusted premium clears about 25%, when the offer is a level up (≈ +35–50%), or when promotion is blocked by no scope, no budget or a level many treat as terminal [A/B/C · T1-03.F7; A/B/C · T0-17.F1]. Before you act on that rule, check the timing and the job, not only the number:
+
 | If… | Lean | Why |
 |---|---|---|
-| Promotion is within reach at your next cycle, and outside offers are at your level and at most about 25% higher | Stay | A promotion is worth about 16–24% in total compensation [C · T0-17 L115]; a same-tier move about +15–25% [A/B/C · T0-17.F1] |
-| Promotion is blocked: no scope, no budget, or a level many treat as terminal | Explore outside | A hop beats staying when promotion is blocked [A/B/C · T1-03.F7] |
-| The offer is a level up | A move is plausible | +35–50% appears when a move crosses a level or tier [A/B/C · T0-17.F1] |
-| Same level, with a premium above about 25% after risk-adjusting any private equity | Move | [A/B/C · T1-03.F7]; risk-adjust equity with [Offer evaluation](../09-compensation/offer-evaluation.md) |
 | A tender eligibility date or a large vest is close | Time the move | Frontier-lab tenders use 1–2-year tenure gates and dollar caps [A/B · T0-17.F8] |
 | The new employer is a startup where an acqui-hire is plausible | Read the carve-outs | In the 2025 Windsurf deal, employees hired within the prior year reportedly received no payout [B · T0-17 L180] |
 | Pay is your only complaint | Get a level-matched market number and ask internally first [P] | Stated drivers of early exits are mostly growth, scope and management; compensation was the least-named reason to stay (4%) in the India survey [C · T0-09 L83] |
@@ -99,7 +89,7 @@ Medians and steps [B · T0-17 L129]; AI premium [B · T0-17 L130]. The Principal
 - Economy-wide, ADP's September 2026 release puts job-changers at +4.8% base pay growth against +3.0% for stayers, across all industries [A · T0-17 L112]. The Atlanta Fed tracker had switchers at 4.8% against 4.6% for stayers in early 2025, the narrowest gap in about a decade [B · T0-17 L112].
 - Levels.fyi's coaching cohort shows median improvements of about 21% (mid), 23% (senior) and 24% (staff). The buyers are self-selected, and the figures cover negotiation of any offer, not only job changes [B · T0-17 L114].
 - "+35–50% every two years" would compound to ×4.5–7.6 over ten years, yet Levels.fyi medians rise only ×3.6 from Entry to Principal [C · T0-17 L116].
-- At 28% annual attrition, T0-17's model expects 0.56 of a four-year grant to vest, against 0.71 at 17% [C/D · T0-17 L177].
+- If you might leave before a grant vests, discount the grant for attrition as [offer evaluation](../09-compensation/offer-evaluation.md#adjustment-2-vesting-cliff-and-forfeiture) shows.
 
 ## IC or manager: decision questions
 

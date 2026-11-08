@@ -5,13 +5,13 @@ content_type: index
 stage: 10
 status: published
 last_verified: 2026-11-05
-summary: "Index of stage 10 (onboarding and the first 90 days): How do I pass probation and succeed in the first 90 days?"
-sources: [T0-09]
+summary: "Index of stage 10 (onboarding and the first 90 days): How do I pass probation and keep growing?"
+sources: [T0-09, T0-17]
 ---
 
 # Stage 10: Onboarding and the first 90 days
 
-> **The question this stage answers:** How do I pass probation and succeed in the first 90 days?
+> **The question this stage answers:** How do I pass probation and keep growing?
 > **Status:** Covered: the first-90-days playbook and the growth guide exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
@@ -30,5 +30,6 @@ Nothing planned for this stage beyond maintenance. Gaps that need new research a
 - **Findings:** the [findings registry](../../research/findings.md#stage-10) lists the 12 key findings for this stage, each with its grade and line.
 - **Research sessions:**
   - [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md): GenAI engineer first 90 days (2026): the expectations gap, probation rubrics and a 30-60-90 operating playbook
+  - [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md): GenAI engineering career economics (Oct 2026): promotion velocity, compensation inflections, equity risk-discounting, and liquidity realities (the evidence behind the growth guide)
 
 [← Start Here](../README.md)

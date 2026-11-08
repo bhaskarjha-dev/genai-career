@@ -17,7 +17,7 @@ tags: [phd, research, career-transition, fellowships, o-1a, research-engineer, a
 
 > For PhDs and academic researchers moving into GenAI: which role to target, the engineering gap that decides offers, an 8-week skills block, fellowships, modelled timelines, and how a research record maps to O-1A evidence.
 
-**Dates and grades.** Sources are [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md), [T0-08](../../research/sessions/T0-08-global-talent-visa-relocation-pathways.md) and [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md) (all 21 October 2026) and [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md) (25 October 2026). Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source; D judgement; M model output; P practice-curated. Timelines are model outputs, conditional on success. Visa material expires first: re-verify it by 2026-11-21. **The O-1A section is pointers, not legal or immigration advice.**
+**Dates and grades.** Sources are [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md), [T0-08](../../research/sessions/T0-08-global-talent-visa-relocation-pathways.md), [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md) and [T0-01](../../research/sessions/T0-01-genai-role-taxonomy-market-volume.md) (all 21 October 2026) and [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md) (25 October 2026). Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source; D judgement; M model output; P practice-curated. Timelines are model outputs, conditional on success. Expiry follows decision D-018, counted from 21 October 2026. The fact that expires first is T0-01's posting-count finding that "post-training" is not a quorum-level title (class V1, 31 days): re-verify it by 2026-11-21. The fellowship and course facts (class V2) last to 2027-01-19, and the O-1A rule text (class V4) to 2027-10-21; visa statuses live on [visa and relocation](visa-and-relocation.md#status-table), which expires sooner. **The O-1A section is pointers, not legal or immigration advice.**
 
 ## The short answer
 
@@ -55,12 +55,12 @@ Months are for hours tier B, 15–20 hours a week.
 | AI safety researcher | Alignment, interpretability, dangerous-capability evaluations and other safety research at frontier labs and safety organisations | Research talk plus coding | As for research engineer | No timeline evidence in the corpus | [AI Safety Researcher](../02-roles/hubs/ai-safety-researcher.md) |
 | Applied AI engineer | Builds GenAI applications at a product company; T0-06's base-case track for PhDs [M · T0-06 L660] | Take-home plus scoping; shipping speed and customer orientation are the gap [D · T2-01 L607] | One evaluated end-to-end system, the T0–T1 portfolio bar [B/C/D · T2-01.F9] | T1 Growth in ~6–8 months, which may feel like a step down [D · T2-01 L556] | [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md) |
 
-Definitions, interview tracks and proof follow the role hubs and the [role catalog](../02-roles/role-catalog.md) §8.2. Target-tier names follow T2-01; their pay bands are omitted because they are unmeasured (ERRATA U7, U14).
+Definitions and proof follow the role hubs; interview tracks follow the [role map](../02-roles/role-map.md#choosing-a-direction). Target-tier names follow T2-01; their pay bands are omitted because they are unmeasured (ERRATA U7, U14).
 
 **Decision rules:**
 - **Need an offer within 12 months?** Target applied scientist or applied AI engineer. Frontier research roles are not plannable [M · T0-06 L708].
 - **Engineering depth is your edge?** Target research engineer, and reverse foundations-first sequencing there, because depth is the differentiator [D · T0-06 L253; T2-01 L583].
-- **Want to originate methods or do safety research?** Treat research scientist and safety roles as upside, entered through papers, re-implementations and fellowships (role catalog §8.2).
+- **Want to originate methods or do safety research?** Treat research scientist and safety roles as upside, entered through papers, re-implementations and fellowships [D · T2-01 L592–L596]; they interview on the research track in the [role map](../02-roles/role-map.md#choosing-a-direction).
 - **Searching for "post-training specialist"?** T2-01 lists it as a PhD target [T2-01 L548], but LLM post-training is not a quorum-level exact title [C · T0-01.F9]. Post-training work sits inside the research-engineer role; search for that title instead.
 
 ## The skills gap that matters
@@ -113,7 +113,7 @@ Skip foundations-first sequencing for application roles, and reverse it for the 
 
 ## Publications versus engineering proof
 
-**Decision rule.** Papers prove research ability. Research-track loops value them, along with open-source re-implementations and fellowships (role catalog §8.2). Applied loops want a repository of shipped, evaluated systems [M · T0-06 L692]. One artifact serves both: a public evaluation-methodology tool [M · T0-06 L703].
+**Decision rule.** Papers prove research ability. Research-track loops value them, along with open-source re-implementations and fellowships [D · T2-01 L592–L596; research track in the [role map](../02-roles/role-map.md#choosing-a-direction)]. Applied loops want a repository of shipped, evaluated systems [M · T0-06 L692]. One artifact serves both: a public evaluation-methodology tool [M · T0-06 L703].
 
 | What you need to show | Paper-first form | Industry form |
 |---|---|---|
@@ -166,38 +166,36 @@ Source: [D · T2-01 L554–560].
 
 ### Quarter by quarter
 
-| Months | Focus | Gate | Realistic state [M · T0-06 L708] |
-|---|---|---|---|
-| 1–3 | The 8-week block, then productionise and measure your method | G1 | A productionised method and reviewed pull requests; offers unlikely |
-| 4–6 | Product framing: a real user, decision memos, eval in CI | G2 | Interviews begin |
-| 7–9 | The measurement-rigour artifact; fellowship cycles; mock loops with DSA and system design; 15–20 targeted applications | G3 | Artifact published; the modelled median first offer falls near month 8 |
-| 10–12 | Loops for applied AI engineer, applied scientist and research engineer; negotiate level | G4 | Offers plausible for applied roles; frontier research roles not plannable |
+T0-06's applied-track roadmap at hours tier B [M · T0-06 L697–L704]. The gates G1–G4 are defined once, for every background, in [career transitions](career-transitions.md#the-shared-spine-four-gates-and-an-hours-budget).
 
-Add about 5 months at tier A [M · T0-06 L697]. The full deliverables per quarter are in [career transitions](career-transitions.md), route 5.
+| Months | Focus | Done when | Gate | Realistic state [M · T0-06 L708] |
+|---|---|---|---|---|
+| 1–3 | The 8-week block, then productionise and measure your method | Your method, or a relevant technique, as a reproducible service or library with tests, type checks and CI; code review at least three times through open-source pull requests; every sophisticated step beats a simple baseline on the eval set | G1 | A productionised method and reviewed pull requests; offers unlikely |
+| 4–6 | Product framing | A business-framed problem delivered to a real user; one-page decision memos; a cost and latency budget; eval in CI; judge calibration; deployment | G2 | Interviews begin |
+| 7–9 | The measurement-rigour artifact and applications | A statistical methodology for LLM evals published as a write-up and small open-source tool (confidence intervals, power analysis for eval-set size, judge-bias tests, drift detection); residency or fellowship applications for the research track; mock loops including DSA and system design; 15–20 targeted applications | G3 | Artifact published; the modelled median first offer falls near month 8 (5.3–12.5) |
+| 10–12 | Convert | Loops for applied AI engineer, applied scientist and research-engineer roles; level negotiated; a six-month plan if no offer lands | G4 | Offers plausible for applied roles; frontier research roles not plannable |
+
+Add about 5 months at tier A [M · T0-06 L697].
 
 ## The O-1A angle: mapping a research record to evidence
 
-> **Pointers, not legal advice.** Immigration rules change. Confirm with an immigration attorney and read [visa and relocation](visa-and-relocation.md) before acting. Re-verify this section by 2026-11-21.
+> **Pointers, not legal advice.** Immigration rules change. Confirm with an immigration attorney and read [visa and relocation](visa-and-relocation.md) before acting. The rule text below is class V4 (365 days from 21 October 2026); the statuses that change within weeks are in the visa page's [status table](visa-and-relocation.md#status-table).
 
-**The rule, as T0-08 read it on 21 October 2026** [A · T0-08 L46, L137]:
-- O-1A needs "sustained national or international acclaim": a major internationally recognised award, or at least three of eight evidentiary criteria. An officer then weighs everything in a separate final-merits step; meeting three criteria "does not necessarily" establish eligibility. The burden is a preponderance of the evidence.
+**The rule, as T0-08 read it on 21 October 2026** [A · T0-08 L46, L137]: a major internationally recognised award, or at least three of eight evidentiary criteria, then a separate final-merits judgement of "sustained national or international acclaim". The eight criteria, the evidence that fits each and what failed in 2025–26 appeal decisions are on the visa page: [O-1A, the eight criteria](visa-and-relocation.md#o-1a-the-eight-criteria-for-an-industry-engineer). Four points matter most for a researcher:
 - There is no degree, PhD, citation-count or academic-employment prerequisite, and citations matter less early in a career.
 - Authorship of even one qualifying article satisfies criterion 6 at the evidence step; quality is weighed at the final-merits step.
 - The work must continue in your area of extraordinary ability, which USCIS reads broadly; the Policy Manual names an academic moving into a private company as an example.
 - Caveat: the manual chapter T0-08 could read predates the January 2025 revision that added AI and critical-and-emerging-technology examples.
 
+**How a research record maps.** T2-01 maps PhDs to criteria 4, 5 and 6 [D · T2-01 L595–L599]:
+
 | # | Criterion | Evidence from a research record | What failed in 2025–26 AAO decisions |
 |---|---|---|---|
-| 1 | Awards | Best-paper awards; selective, open-field competition placements; awards that name you personally | Funding or accelerator acceptance; awards given to the company |
-| 2 | Membership | Only bodies with merit-based admission; practitioner sources name IEEE Senior Member and ACM Distinguished Member or Fellow (check the bylaws) | A selection offered as membership, where the record did not describe admission criteria |
-| 3 | Published material about you | A feature or profile of your project, model or system that names you | Passing mentions and quotes; coverage of the company, not you |
 | 4 | Judging | Completed peer reviews for conferences or journals [D · T2-01 L597]; keep the invitation, the submitted review and the organiser's confirmation | Invitations or "I'll review" replies without completed reviews (March 2026) |
 | 5 | Original contributions of major significance | Research with documented impact [D · T2-01 L598]: named outside adopters, usage metrics with baselines, benchmarks or datasets used by independent groups, independent expert letters | Adoption by one or a few companies; potential rather than impact; citation totals without a baseline; adjectives-only letters (April and June 2026) |
 | 6 | Authorship of scholarly articles | Your conference, workshop and journal papers [D · T2-01 L596] | Problems appear at the final-merits step, not here |
-| 7 | Critical or essential capacity | Org charts, results attributable to you, specific letters from senior leaders, proof of the employer's distinguished reputation; the January 2025 update adds a "key committee or high-performing team" | Not among the decisions T0-08 summarised |
-| 8 | Salary | Comparable evidence is allowed: for founders, highly valued equity can stand in for salary [A · T0-08 L46] | See [visa and relocation](visa-and-relocation.md) |
 
-Criterion wording and the rule are A. The evidence column adapts T0-08's own mapping (analysis) for engineers; the failure column draws on Tukki's article summarising nine AAO decisions [A/C · T0-08 L139–150, L477]. T2-01 maps PhDs to criteria 4, 5 and 6 [D · T2-01 L595–599].
+Criterion wording and the rule are A. The evidence column adapts T0-08's own mapping (analysis) for researchers; the failure column draws on Tukki's article summarising nine AAO decisions [A/C · T0-08 L144–L149, L477]. For the other five criteria (awards, membership, published material about you, critical capacity, salary) and how to choose three, use the visa page.
 
 **Decision rules:**
 - **Start at month 0.** Evidence-building runs 12–18 months before filing, a practitioner estimate (Tukki) [C · T0-08 L96, L375; ERRATA U22], and it cannot be retrofitted [D · T2-01.F4].
@@ -266,9 +264,10 @@ Significance against a baseline: [one line]
 | Skipping the skills stage | The old "PhDs skip stage 3" plan was wrong (ERRATA U18) | Run the 8-week block |
 | A CV of papers for an applied role | Applied loops want shipped, evaluated systems [M · T0-06 L692] | Lead with repositories, eval tables and memos |
 | No baseline | Novelty bias: the newest method before a simple baseline fails [M · T0-06 L670, L687] | Every sophisticated step must beat BM25 or a plain prompt |
+| Paper-grade results where a decision is needed | Publication mindset: optimising for paper-grade results rather than decision-useful ones [M · T0-06 L689] | Decision-useful results in one-page memos [M · T0-06 L702] |
 | Leaderboard gains read as product gains | Benchmark fixation [M · T0-06 L690] | Use the user's outcome as the metric |
-| Months on one experiment | Perfectionism delays the first release [M · T0-06 L688] | Ship a v0 in two weeks |
-| Solo, private, untested code | It fails code review and shared ownership [D · T0-06 L667] | Tests, CI and reviewed pull requests |
+| Months on one experiment | Perfectionism delays the first release [M · T0-06 L688] | Ship a v0 in two weeks [M · T0-06 L789] |
+| Solo, private, untested code | It fails code review and shared ownership [D · T0-06 L667] | Tests, CI and at least three reviewed pull requests [M · T0-06 L691, L701] |
 | "We" answers in interviews | Ownership is the PhD's biggest behavioural risk [D · T2-01 L612] | First-person answers with numbers |
 | No DSA or system-design practice | Big-company and engineering-track loops test both [D · T0-06 L673] | Mock loops from month 7 |
 | Fellowship applications without work authorisation | US, UK or Canada authorisation is required [A/B · T0-12 L111] | Check eligibility; use open community routes |

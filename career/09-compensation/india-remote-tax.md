@@ -20,6 +20,8 @@ tags: [india, tax, presumptive-tax, section-58, section-44ada, gst, lut, fema, e
 > [!WARNING]
 > **Not legal or tax advice.** This page curates one research session, [T0-07](../../research/sessions/T0-07-india-remote-tax-statutory-compliance.md): a synthesis written by an AI assistant, not by a Chartered Accountant (CA), lawyer or financial adviser. Its position is as at **21 October 2026**, in a year in which the income-tax statute, its rules and the FEMA export regulations all changed. Confirm anything you act on with a practising CA for income tax, GST and FEMA, and with a lawyer or US tax adviser for the MSA and US forms [T0-07 L38].
 
+**Scope.** Despite "remote" in the title, this page is for India-based engineers who sell their services to foreign clients as contractors (a sole proprietor, an LLP or a company); an employer of record appears only as the alternative to compare, and salaried employment with an Indian employer or a GCC is outside it [T0-07 title, L74]. To choose between those routes first, use the [India remote playbook](../11-tracks/india-remote-playbook.md).
+
 **Dates and grades.** Statutory, GST and FEMA facts are as at 21 October 2026; re-verify them by 2026-11-21. Take-home figures come from T0-07's model for tax year 2026-27 and are only as good as the assumptions listed with it. Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source, attributed; D judgement or recalled; M model output, which inherits its weakest input; P practice-curated and unmeasured. T0-07 rates its own confidence at 0.62: high on statutory mechanics where official text was seen, medium on the 1 October 2026 FEMA regime, medium-low on take-home figures [T0-07 L32–33].
 
 ## The short answer

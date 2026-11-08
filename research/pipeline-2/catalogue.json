@@ -1,0 +1,1581 @@
+{
+  "schema": "rp2-catalogue/1.0",
+  "description": "Research pipeline 2: every planned session, its brief, parameters, the knowledge-base outputs it feeds and its status; and the reduce steps that turn sessions into data and pages. Read by scripts/research_pipeline.py, which validates it, renders the tracker in research/pipeline-2/README.md and assembles each session's prompt.",
+  "statuses": {
+    "ready": "Brief written; not yet run, or run but not saved in research/sessions/",
+    "integrated": "Saved, verified and integrated into the data and pages it feeds",
+    "dropped": "Will not be run (say why in the session's note)"
+  },
+  "waves": {
+    "1": "Get hired, plus the two catalogues the owner asked for: networking, résumé, job search, the certification census and the country scan",
+    "2": "Depth for the top targets: the twelve highest GenAI target roles, visas and remote work, pay and interviews",
+    "3": "Completeness: grouped dossiers for the remaining roles, transitions, learning, skill momentum, the market pulse and onboarding"
+  },
+  "families": {
+    "networking": "Networking and visibility",
+    "resume": "Résumé and screening",
+    "job-search": "Job search",
+    "certifications": "Certifications",
+    "geography": "Countries, visas and remote work",
+    "pay": "Pay and negotiation",
+    "interviewing": "Interviewing and AI-mediated hiring",
+    "roles": "Role dossiers",
+    "tracks": "Transitions",
+    "skills": "Skills and learning",
+    "market": "Market",
+    "onboarding": "Onboarding and growth"
+  },
+  "sessions": [
+    {
+      "id": "T0-19",
+      "slug": "linkedin-profile-search-content-engagement",
+      "title": "LinkedIn for GenAI Job Seekers: Recruiter Search, Profile, Content and Engagement",
+      "family": "networking",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "linkedin.md",
+      "decisions": ["D-005", "D-011"],
+      "stages": [7],
+      "feeds": ["career/07-networking/online-presence.md", "career/07-networking/referrals-and-outreach.md", "data/tools.json"],
+      "records": ["practice", "tool", "measure", "absence"],
+      "tool_categories": ["LinkedIn add-on"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-20",
+      "slug": "github-readme-portfolio-site-writing",
+      "title": "GitHub Profiles, Project READMEs, Portfolio Websites and Technical Writing",
+      "family": "networking",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "github-portfolio-writing.md",
+      "decisions": ["D-011"],
+      "stages": [5, 7],
+      "feeds": ["career/07-networking/online-presence.md", "career/05-portfolio/proof-of-work-standards.md", "data/project_archetypes.json", "data/tools.json"],
+      "records": ["practice", "tool", "measure", "absence"],
+      "tool_categories": ["Portfolio hosting", "Portfolio tooling", "Demo cost control", "Open-source research"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-21",
+      "slug": "x-frontier-communities-fellowships-events",
+      "title": "X, Frontier-Lab Communities, Fellowships, Events and Competitions",
+      "family": "networking",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "x-communities-fellowships.md",
+      "decisions": ["D-005", "D-011"],
+      "stages": [7],
+      "feeds": ["career/07-networking/communities-guide.md", "career/11-tracks/phd-to-industry.md", "data/tools.json"],
+      "records": ["community", "practice", "measure", "absence"],
+      "tool_categories": ["Mentorship"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-22",
+      "slug": "referrals-warm-intros-cold-outreach-law",
+      "title": "Referrals, Warm Introductions and Cold Outreach, Including the Law",
+      "family": "networking",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "referrals-outreach.md",
+      "decisions": ["D-011"],
+      "stages": [6, 7],
+      "feeds": ["career/07-networking/referrals-and-outreach.md", "career/06-job-search/application-operating-system.md", "data/tools.json"],
+      "records": ["practice", "tool", "rule", "measure", "absence"],
+      "tool_categories": ["Contact finder", "Outreach automation"],
+      "verify": "required",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-23",
+      "slug": "resume-format-content-screening-2026",
+      "title": "The GenAI Résumé in 2026: Format, Content, Regional Norms and AI Screening",
+      "family": "resume",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "resume.md",
+      "decisions": ["D-009"],
+      "stages": [6],
+      "feeds": ["career/06-job-search/resume-strategy.md", "career/06-job-search/ats-mechanics.md", "data/skills_ontology.json", "ROADMAP.md#4-build-plan"],
+      "records": ["practice", "tool", "measure", "absence"],
+      "tool_categories": ["Resume builder", "Parse check", "ATS-score checker"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-24",
+      "slug": "job-boards-global-ai-startup-remote",
+      "title": "Job Boards for GenAI Roles 1: Global, AI-Specific, Startup, Remote and Employer Boards",
+      "family": "job-search",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "job-boards-global.md",
+      "decisions": ["D-005", "D-009"],
+      "stages": [6],
+      "feeds": ["career/06-job-search/channels-and-boards.md", "data/tools.json"],
+      "records": ["board", "rule", "measure", "practice", "absence"],
+      "tool_categories": ["Job board"],
+      "verify": "sample",
+      "params": {
+        "min_records": {
+          "board": 25
+        }
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-25",
+      "slug": "job-boards-regional-india-in-depth",
+      "title": "Job Boards for GenAI Roles 2: National and Regional Boards, with India in Depth",
+      "family": "job-search",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "job-boards-regional.md",
+      "decisions": ["D-005", "D-009"],
+      "stages": [6],
+      "feeds": ["career/06-job-search/channels-and-boards.md", "career/11-tracks/india-remote-playbook.md", "data/tools.json"],
+      "records": ["board", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "sample",
+      "params": {
+        "markets": "the United States and Canada (national boards only), the United Kingdom, Ireland, Germany, the Netherlands, France, Switzerland, the Nordic countries, Spain, Portugal, Italy, Poland, Estonia, Austria, Israel, the Gulf states, Singapore, Malaysia, Japan, South Korea, Taiwan, Hong Kong, Australia, New Zealand and China",
+        "claims": [
+          "India has the highest AI-title share of postings of the five countries compared (3.0% against 1.3% in the US) and about twice the US entry-level share of AI roles (21.2% against 10.4%), but fewer live AI Engineer postings (398 against 1,697 on JobsPipe) [B, as of 2026-11-02].",
+          "India accounts for 13.6% of AI Engineer postings, and GenAI Engineer / GenAI Developer is the dominant alias at India's GCCs [B].",
+          "In LinkedIn's 2026 survey of India recruiters, 74% said they struggle to find qualified candidates, with AI-generated applications a key challenge [B].",
+          "\"Nearly 70%\" of India GCCs were reported stuck at the pilot stage of AI work [B]."
+        ],
+        "context": [
+          "No research behind it has measured Indian job platforms (Naukri, Instahyre and others); it has been an open question since its first research phase.",
+          "It holds no evaluation of national boards outside India."
+        ],
+        "min_records": {
+          "board": 20
+        }
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-26",
+      "slug": "job-search-tools-agents-oss-mcp",
+      "title": "Job-Search Tools: Trackers, Builders, Autofill, Auto-Apply, Agents, Open Source and MCP Servers",
+      "family": "job-search",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "job-search-tools.md",
+      "decisions": ["D-005"],
+      "stages": [0, 6],
+      "feeds": ["data/tools.json", "career/00-start/tool-catalog.md", "career/06-job-search/application-operating-system.md"],
+      "records": ["tool", "practice", "absence"],
+      "tool_categories": ["Application tracker", "Application autofill", "Auto-apply agent", "AI assistant"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-27",
+      "slug": "target-employers-sponsor-registers-data",
+      "title": "Target Employers, Sponsor Registers and Hiring Data Corpora",
+      "family": "job-search",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "target-employers.md",
+      "decisions": ["D-003", "D-005"],
+      "stages": [1, 6],
+      "feeds": [
+        "career/01-landscape/employer-landscape.md",
+        "career/06-job-search/job-search-strategy.md",
+        "career/11-tracks/visa-and-relocation.md",
+        "data/tools.json"
+      ],
+      "records": ["company", "measure", "tool", "absence"],
+      "tool_categories": ["Labour-market data"],
+      "verify": "sample",
+      "params": {
+        "min_records": {
+          "company": 40
+        }
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-28",
+      "slug": "certifications-hyperscalers-enterprise-clouds",
+      "title": "Certification Census 1: Hyperscalers and Enterprise Clouds",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": ["data/skills_ontology.json", "career/04-certifications/credential-roi.md", "career/04-certifications/credentials-by-role.md"],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": ["Certification portal", "Credential verification", "Exam material"],
+      "verify": "required",
+      "run_after": "2026-12-05",
+      "params": {
+        "group": "the hyperscalers and enterprise clouds: AWS, Microsoft (Azure and Microsoft Learn), Google Cloud, Oracle Cloud Infrastructure, IBM, Alibaba Cloud and Huawei Cloud",
+        "issuers": ["AWS", "Microsoft", "Google Cloud", "Oracle", "IBM", "Alibaba", "Huawei"],
+        "seeds": [
+          "AWS AI Business Strategist (requester-stated; reported as exam AIB-C01): confirm whether it is a certification, its exact name, level and status",
+          "AWS Certified Data Engineer – Associate (DEA-C01), as a common pairing for ML and GenAI roles",
+          "Microsoft AI-103: the final exam and certification name, and whether it has left beta",
+          "Microsoft AI-900 (Azure AI Fundamentals), and the AI-300 and AI-200 exams named in the knowledge base's credential guide: names and status",
+          "Microsoft DP-100 (Azure Data Scientist Associate): status",
+          "Microsoft Applied Skills credentials for generative AI and agents on Azure: names and status",
+          "Google Agentic Architect Professional (requester-stated): confirm existence, exact name, exam format and status",
+          "Google Cloud Professional Cloud Architect and Professional Data Engineer, as common pairings",
+          "Oracle Cloud Infrastructure Generative AI Professional and OCI AI Foundations Associate: names, codes and status",
+          "IBM watsonx and generative AI certifications: names and status",
+          "Alibaba Cloud and Huawei AI certifications (for example HCIA-AI and HCIP-AI): include them if they carry signal in any market in scope",
+          "Oracle AI Vector Search Professional and other Oracle AI database certifications"
+        ],
+        "probes": [
+          "Re-verify the retirement dates of AWS Machine Learning – Specialty and Microsoft AI-102, and what replaced each.",
+          "Announcements between 2026-10-01 and the research date that launch, rename or retire AI certifications at these issuers, including Microsoft Ignite and AWS re:Invent (held in November and December) if they precede the research date.",
+          "Partner-programme specialisations that count individual AI certifications (for example the AWS Generative AI Competency, Microsoft's Solutions Partner and AI specialisation rules, and Google Cloud's generative AI specialisation): how many certified individuals each requires.",
+          "Free certification challenges, vouchers and India pricing.",
+          "How IT-services firms and GCCs in India set certification targets or bonuses for these credentials.",
+          "Stacking: does a second or third credential add hiring signal beyond the first, in postings or employer statements?"
+        ],
+        "claims": [
+          "A certificate is a tie-breaker, and the hiring channel sets its value. It counts most where hiring runs through IT services, staffing agencies, hyperscaler partners and GCC volume programmes, especially when the employer pays; it counts little at product companies and close to nothing at frontier labs and AI-first startups that publish credential-agnostic criteria [B/C, as of 2026-10-21].",
+          "No single certification was verified in more than 10% of GenAI job descriptions [B/C].",
+          "Published recruiter search strings for AI/ML roles key on titles, languages and frameworks, not certification names [C].",
+          "Take a certification only if most of three conditions hold: the target channel rewards it, someone else pays or the hours fit the plan, and the résumé lacks stronger verifiable signals [B/C, a decision rule].",
+          "AWS Machine Learning – Specialty had its last exam on 31 March 2026, and Microsoft AI-102 retired on 30 June 2026; the AWS options are MLA-C01 and AIP-C01, and Microsoft's successor is AI-103 [A/B].",
+          "AI-103 was still marked beta on its Microsoft Learn exam page [A, as of 2026-10-21].",
+          "Take one certification per cloud, at your level: associate level after 6–12 months of hands-on work; professional level (AIP-C01, PMLE) only with 2–3 years of hands-on work or employer sponsorship [P].",
+          "Partner programmes count certified individuals towards partner tiers, which is why services firms and partners pay for certifications [A]."
+        ],
+        "run_after_reason": "Microsoft Ignite and AWS re:Invent (November and December 2026) often launch, rename or retire AI certifications"
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-29",
+      "slug": "certifications-frontier-labs-ai-native-vendors",
+      "title": "Certification Census 2: Frontier Labs and AI-Native Vendors",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": ["data/skills_ontology.json", "career/04-certifications/credential-roi.md", "career/04-certifications/credentials-by-role.md"],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "group": "frontier labs and AI-native vendors: Anthropic, OpenAI, Google's AI certificates outside Google Cloud, Hugging Face, DeepLearning.AI, LangChain, LlamaIndex, and retrieval and graph vendors such as Pinecone, Weaviate and Neo4j",
+        "issuers": ["Anthropic", "OpenAI", "Hugging Face", "DeepLearning", "LangChain", "LlamaIndex", "Pinecone", "Weaviate", "Neo4j"],
+        "seeds": [
+          "Claude Certified Associate (requester-stated)",
+          "Claude Certified Developer (requester-stated)",
+          "Claude Certified Architect – Foundation (requester-stated; reported as CCAR-F)",
+          "Claude Certified Architect – Professional (requester-stated; reported as CCAR-P)",
+          "Anthropic Academy course certificates (for example on the Claude API, Claude Code and the Model Context Protocol): names, format and whether any is a proctored exam",
+          "OpenAI Certifications, announced in September 2025 through OpenAI Academy: launch status, levels, names, format and price",
+          "Google AI Essentials, Google Prompting Essentials and other Google career certificates related to AI",
+          "Hugging Face course certificates (for example the LLM, Agents and MCP courses)",
+          "DeepLearning.AI certificates (for example Generative AI with Large Language Models)",
+          "LangChain Academy certificates (for example LangGraph and LangSmith)",
+          "Neo4j, Pinecone, Weaviate and LlamaIndex certifications or badges relevant to retrieval and GenAI"
+        ],
+        "probes": [
+          "If you are a model built by Anthropic, OpenAI or Google, declare the conflict of interest for that developer's credentials and grade accordingly.",
+          "Do frontier labs themselves name their own credentials, or any credential, in their job postings or published hiring criteria?",
+          "Keep proctored exams apart from course-completion certificates throughout; a completion certificate is not a certification.",
+          "How each lab's credentials are taken (directly, through a partner academy, through employers) and at what price."
+        ],
+        "context": [
+          "It lists no credential from a frontier lab or AI-native vendor.",
+          "Its general view, tested in another session: a certificate is a tie-breaker whose value depends on the hiring channel, and no single certification was verified in more than 10% of GenAI job descriptions (as of October 2026)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-30",
+      "slug": "certifications-courses-universities-india-programmes",
+      "title": "Certification Census 3: Course Platforms, Universities, Indian Programmes, Credential Bodies and Recognition Programmes",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": ["data/skills_ontology.json", "career/04-certifications/credential-roi.md", "career/03-skills-and-tech/learning-roadmaps.md"],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "group": "course platforms (Coursera, edX, Udacity, DataCamp), university online programmes, Indian institute and industry programmes, credential bodies marketed to Indian job seekers, and credential-like recognition programmes run by vendors",
+        "issuers": ["Coursera", "edX", "Udacity", "DataCamp", "Stanford", "NASSCOM"],
+        "seeds": [
+          "Coursera professional certificates for generative AI engineering (for example IBM's, Microsoft's and Google's)",
+          "edX, Udacity and DataCamp certificates and certifications in AI engineering and ML",
+          "University online programmes in AI with credit or certificates (for example Stanford's AI professional and graduate certificates, MIT Professional Education, CMU, Berkeley)",
+          "Indian programmes: IIT Madras, IISc, IIIT Hyderabad and IIT executive programmes in AI; NPTEL proctored certificates in AI subjects; NASSCOM FutureSkills Prime; university certificates sold through ed-tech partners",
+          "Credential bodies marketed to Indian job seekers (for example USAII, ARTiBA, DASCA, IABAC, Blockchain Council and GSDC): accreditation, ownership and employer recognition",
+          "Credential-like recognition programmes (for example Google Developer Experts, AWS Community Builders and Heroes, Microsoft MVP): how people qualify and whether employers notice"
+        ],
+        "probes": [
+          "Keep proctored exams, course-completion certificates, degrees with credit and recognition programmes apart throughout.",
+          "Employer recognition: any evidence in postings or employer statements that these programmes or bodies count in hiring.",
+          "Accreditation (for example ISO/IEC 17024 or a national regulator) and ownership of each credential body.",
+          "Prices, financing, refunds and mis-selling complaints, including Indian consumer-court and regulator actions against ed-tech firms."
+        ],
+        "claims": [
+          "The one randomised study of certificates the knowledge base cites covers Coursera certificates for learners without degrees in developing countries, not cloud badges, degree-holders or GenAI roles [B]."
+        ],
+        "context": [
+          "It lists no credential from a course platform, university, Indian programme, credential body or recognition programme.",
+          "Its research has not measured the hiring signal of university certificates.",
+          "Its general view, tested in another session: a certificate is a tie-breaker whose value depends on the hiring channel, and no single certification was verified in more than 10% of GenAI job descriptions (as of October 2026)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-31",
+      "slug": "certifications-data-enterprise-ai-platforms",
+      "title": "Certification Census 4: Data and Enterprise AI Platforms",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": ["data/skills_ontology.json", "career/04-certifications/credential-roi.md", "career/04-certifications/credentials-by-role.md"],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "group": "data and enterprise AI platforms: Databricks, Snowflake, Salesforce, ServiceNow, SAP, Palantir, UiPath, MongoDB, Elastic, Dataiku and DataRobot",
+        "issuers": ["Databricks", "Snowflake", "Salesforce", "ServiceNow", "SAP", "Palantir", "UiPath", "MongoDB", "Elastic", "Dataiku", "DataRobot"],
+        "seeds": [
+          "Databricks Certified Generative AI Engineer Associate (in the knowledge base): re-verify",
+          "Databricks Certified Machine Learning Associate and Professional, and Data Engineer Associate and Professional, as pairings",
+          "Databricks Context Engineer (requester-stated; reported as Databricks Certified Context Engineer Associate): confirm existence, exact name and status",
+          "Snowflake SnowPro Specialty for generative AI, and SnowPro Advanced: Data Scientist",
+          "Salesforce Certified Agentforce Specialist (formerly AI Specialist) and Salesforce AI Associate",
+          "ServiceNow certifications for Now Assist and AI agents",
+          "SAP certifications for generative AI development and SAP Business AI",
+          "Palantir Foundry and AIP certifications",
+          "UiPath agentic automation certifications",
+          "MongoDB, Elastic, Dataiku and DataRobot certifications relevant to retrieval or ML"
+        ],
+        "probes": [
+          "Systems-integrator and consultancy demand: how firms such as Accenture, Deloitte, Infosys, TCS and Wipro use these credentials for staffing and partner tiers.",
+          "Posting counts for Agentforce, Databricks and Snowflake AI credentials in the US and India.",
+          "Partner-programme rules at Databricks, Snowflake, Salesforce, ServiceNow and SAP that count certified individuals."
+        ],
+        "claims": [
+          "Databricks Certified Generative AI Engineer Associate is active (as of 2026-10-23) and useful mainly where the team runs Databricks; the knowledge base tiers it Optional for AI engineers [B/C]."
+        ],
+        "context": [
+          "Its research has not measured the hiring signal of Databricks credentials.",
+          "Its general view, tested in another session: a certificate is a tie-breaker whose value depends on the hiring channel, and no single certification was verified in more than 10% of GenAI job descriptions (as of October 2026)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-32",
+      "slug": "certifications-gpu-infrastructure-open-source",
+      "title": "Certification Census 5: GPU, Infrastructure, Networking and Open-Source Foundations",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": ["data/skills_ontology.json", "career/04-certifications/credential-roi.md", "career/04-certifications/credentials-by-role.md"],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "group": "GPU, infrastructure and networking vendors and open-source foundations: NVIDIA, AMD, Intel, Cisco, the Linux Foundation and CNCF, the PyTorch Foundation, Red Hat and Anyscale (Ray)",
+        "issuers": ["NVIDIA", "AMD", "Intel", "Linux Foundation", "CNCF", "PyTorch", "Red Hat", "Anyscale", "Cisco"],
+        "seeds": [
+          "NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL) and NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (in the knowledge base): re-verify",
+          "NVIDIA-Certified Associate: Generative AI Multimodal (NCA-GENM)",
+          "NVIDIA agentic AI certification (requester-stated; reported as NCP-AAI): confirm the exact name, code and status",
+          "NVIDIA AI infrastructure and AI operations certifications, at associate and professional levels",
+          "NVIDIA Deep Learning Institute course certificates, kept apart from certifications",
+          "AMD ROCm Certified Associate (requester-stated): confirm existence, exact name and status",
+          "Intel AI certifications, if any",
+          "Kubernetes certifications: CKA (in the knowledge base), CKAD, CKS and KCNA",
+          "Linux Foundation and CNCF certifications for AI or ML workloads, and any certification connected to the Agentic AI Foundation or the Model Context Protocol",
+          "A PyTorch Foundation certification, if launched",
+          "Red Hat Certified Specialist in OpenShift AI",
+          "Anyscale or Ray certifications",
+          "Cisco AI certifications (for example its AI technical practitioner exam and its data-centre AI infrastructure exam)"
+        ],
+        "probes": [
+          "Hands-on (performance-based) against multiple-choice formats at NVIDIA and the Linux Foundation.",
+          "Posting counts naming NVIDIA certifications, ROCm skills and Kubernetes certifications for AI infrastructure and inference roles.",
+          "NVIDIA Partner Network requirements for certified individuals.",
+          "India availability and pricing."
+        ],
+        "context": [
+          "Its research has not measured the hiring signal of NVIDIA credentials.",
+          "Its general view, tested in another session: a certificate is a tie-breaker whose value depends on the hiring channel, and no single certification was verified in more than 10% of GenAI job descriptions (as of October 2026)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-33",
+      "slug": "certifications-developer-tools-agentic-product",
+      "title": "Certification Census 6: Developer Tools, Agentic AI, and AI Product and Business",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": ["data/skills_ontology.json", "career/04-certifications/credential-roi.md", "career/04-certifications/credentials-by-role.md"],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "run_after": "2026-12-05",
+      "params": {
+        "group": "developer-tool, agentic-AI and AI product and business credentials: GitHub, Microsoft Copilot and Power Platform AI, agent-framework vendors (for example CrewAI), PMI, product-management bodies, and the agentic-AI certificates sold by training companies",
+        "issuers": ["GitHub", "PMI", "CrewAI", "Product School"],
+        "seeds": [
+          "GitHub Copilot certification (exam GH-300): status",
+          "GitHub Certified Agentic AI Developer (requester-stated; reported as exam GH-600): confirm existence, exact name and status",
+          "GitHub Agentic AI Business Professional, beta (requester-stated; reported as exam GH-700): confirm existence, exact name and status",
+          "Microsoft's AI business certifications for Copilot and agents (reported as exams AB-100, AB-730, AB-731 and AB-900): names, levels and status",
+          "Microsoft Copilot Studio and Power Platform AI certifications: names and status",
+          "PMI-CPMAI (PMI Certified Professional in Managing AI; formerly CPMAI)",
+          "AI product-management certificates (for example Product School's), and whether AI product-manager postings name any",
+          "Agent-framework vendor certifications (for example CrewAI) and agentic-AI certificates from training companies",
+          "Google Cloud skill badges and AWS Skill Builder badges for building agents, kept apart from certifications"
+        ],
+        "probes": [
+          "Quality signals for the many unaccredited agentic-AI certificates: issuer standing, proctoring, accreditation (for example ISO/IEC 17024), and whether any employer names them.",
+          "Whether AI engineer, agentic AI engineer and AI product manager postings name any of these credentials (sample counts).",
+          "Changes to GitHub's certification programme since 2025."
+        ],
+        "context": [
+          "It lists no GitHub, Copilot, agentic-AI or AI product-management credential.",
+          "Its general view, tested in another session: a certificate is a tie-breaker whose value depends on the hiring channel, and no single certification was verified in more than 10% of GenAI job descriptions (as of October 2026)."
+        ],
+        "run_after_reason": "Microsoft Ignite (November 2026) often launches or changes Microsoft and GitHub AI certifications"
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-34",
+      "slug": "certifications-governance-security-privacy-audit",
+      "title": "Certification Census 7: AI Governance, Security, Privacy and Audit",
+      "family": "certifications",
+      "wave": 1,
+      "priority": "P1",
+      "brief": "certifications.md",
+      "decisions": ["D-005"],
+      "stages": [4],
+      "feeds": [
+        "data/skills_ontology.json",
+        "career/04-certifications/credential-roi.md",
+        "career/04-certifications/credentials-by-role.md",
+        "career/11-tracks/governance-careers.md"
+      ],
+      "records": ["credential", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "group": "AI governance, security, privacy and audit bodies: IAPP, ISACA, ISC2, the Cloud Security Alliance, CompTIA, ISO/IEC 42001 training and certification bodies (for example PECB, BSI and TÜV), EXIN, GIAC and SANS, IEEE, ForHumanity, BCS, India's DSCI, and AI red-teaming programmes",
+        "issuers": ["IAPP", "ISACA", "ISC2", "CSA", "CompTIA", "PECB", "BSI", "EXIN", "GIAC", "IEEE", "DSCI"],
+        "seeds": [
+          "IAPP AIGP, CIPP, CIPM and CIPT (in the knowledge base): re-verify",
+          "ISACA AAIA, CISA and CRISC (in the knowledge base); ISACA Advanced in AI Security Management (AAISM); CISM",
+          "ISC2 CISSP (in the knowledge base) and any ISC2 AI security certificate",
+          "Cloud Security Alliance Trusted AI Safety Expert (TAISE), and AI content in CCSK",
+          "CompTIA SecAI+ and other CompTIA AI credentials",
+          "ISO/IEC 42001 Lead Implementer and Lead Auditor from PECB, BSI, TÜV and others, with their accreditation",
+          "EXIN AI compliance and AI foundation certificates",
+          "GIAC or SANS AI security certifications",
+          "IEEE CertifAIEd assessor and ForHumanity certified auditor programmes",
+          "BCS AI certificates",
+          "DSCI Certified Privacy Professional (DCPP) and Certified Privacy Lead Assessor (DCPLA) in India",
+          "AI red-teaming certifications (for example from Hack The Box, OffSec or Practical DevSecOps)",
+          "EU AI Act compliance certificates sold by training companies",
+          "EC-Council AI certifications (reported as C|AIPM, C|OASP, C|RAGE and AI|E): names, formats and status"
+        ],
+        "probes": [
+          "Accreditation (ISO/IEC 17024) and the standing of each body.",
+          "Posting counts naming these credentials for AI governance, risk, responsible-AI and AI security roles in the US, the UK, the EU and India.",
+          "How the EU AI Act timetable, ISO/IEC 42001 certification demand and India's DPDP obligations drive demand for each credential.",
+          "Fees, renewal and continuing-education requirements."
+        ],
+        "claims": [
+          "For governance, risk and audit roles a domain credential comes first (CIPP or CIPM, or CISSP, CISA or CRISC); AIGP is optional; AAIA only if you already hold CISA, CIA or CPA [C].",
+          "AIGP is named in 8.9% of Axial's US AI-governance postings and required in none of 13 sampled job descriptions; no credential has an evidenced pay premium [C].",
+          "AIGP costs $649 for IAPP members and $799 otherwise [A].",
+          "IAPP owns AIGP and ISACA sells AAIA, and IAPP's pay medians come from an owner-sponsored survey [A; B]."
+        ],
+        "context": [
+          "Its general view, tested in another session: a certificate is a tie-breaker whose value depends on the hiring channel, and no single certification was verified in more than 10% of GenAI job descriptions (as of October 2026)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-35",
+      "slug": "countries-cities-americas-europe-israel",
+      "title": "Countries and Cities for GenAI Careers 1: the Americas, Europe and Israel",
+      "family": "geography",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "country-scan.md",
+      "decisions": ["D-003", "D-007"],
+      "stages": [1, 11],
+      "feeds": ["career/01-landscape/market-overview.md", "career/11-tracks/visa-and-relocation.md", "career/09-compensation/pay-benchmarks.md"],
+      "records": ["measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "the Americas, Europe and Israel",
+        "countries": "United States, Canada, United Kingdom, Ireland, Germany, Netherlands, France, Switzerland, Sweden, Denmark, Finland, Norway, Spain, Portugal, Italy, Poland, Estonia, Austria, Israel",
+        "cities": "San Francisco Bay Area, Seattle, New York, Boston, Austin; Toronto, Montreal, Vancouver; London, Cambridge; Dublin; Berlin, Munich; Amsterdam; Paris; Zurich; Stockholm; Copenhagen; Helsinki; Oslo; Madrid, Barcelona; Lisbon; Milan; Warsaw, Kraków; Tallinn; Vienna; Tel Aviv",
+        "claims": [
+          "Talent-visa routes split into three gates: a qualifying job offer (EU Blue Card in Germany or France, Canada's Global Talent Stream), a salary test (Singapore ONE Pass, UAE Golden Visa) or adjudicated merit (UK Global Talent with no employer, US O-1A with a petitioner) [A, as of 2026-10-22].",
+          "Germany's 2026 EU Blue Card salary floors are €50,700, or €45,934.20 for ICT and other shortage roles [A, as of 2026-10-22].",
+          "The US software-engineer pay ladder (all companies, Levels.fyi 2025) runs $155K → $226K → $312K → $457K → $551K by level; the US ML Engineer median total compensation is $280K (n = 1,063, 19 Oct 2026) [B]."
+        ],
+        "context": [
+          "Its relocation corridors in this region are US O-1A, UK Global Talent, Canada's Global Talent Stream and the EU Blue Card in Germany and France; H-1B was outside its audit.",
+          "Its pay evidence for the UK and continental Europe is much thinner than for the US.",
+          "It counts GenAI posting volume from these sources (last counted): {{count_sources}}."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-36",
+      "slug": "countries-cities-gulf-india-asia-pacific",
+      "title": "Countries and Cities for GenAI Careers 2: the Gulf, India and Asia-Pacific",
+      "family": "geography",
+      "wave": 1,
+      "priority": "P0",
+      "brief": "country-scan.md",
+      "decisions": ["D-003", "D-007"],
+      "stages": [1, 11],
+      "feeds": ["career/01-landscape/market-overview.md", "career/11-tracks/visa-and-relocation.md", "career/09-compensation/pay-benchmarks.md"],
+      "records": ["measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "the Gulf, India and Asia-Pacific",
+        "countries": "United Arab Emirates, Saudi Arabia, Qatar, Bahrain, India, Singapore, Malaysia, Japan, South Korea, Taiwan, Hong Kong, Australia, New Zealand, China (measured for completeness; note the practical limits on access for foreign workers)",
+        "cities": "Dubai, Abu Dhabi; Riyadh; Doha; Manama; Bengaluru, Hyderabad, Pune, Delhi NCR, Chennai, Mumbai; Singapore; Kuala Lumpur; Tokyo; Seoul; Taipei; Hong Kong; Sydney, Melbourne; Auckland; Beijing, Shanghai, Hangzhou",
+        "claims": [
+          "Singapore's ONE Pass needs fixed pay of at least S$30,000 a month, and the UAE Golden Visa for skilled professionals needs a UAE employer paying at least AED 30,000 a month [A, as of 2026-10-22].",
+          "Levels.fyi's Greater Bengaluru ML Engineer median is ₹44.5 lakh (n = 96, 12 Oct 2026), while broad-market Indian sources centre on ₹10–15 lakh: two populations about 3–4× apart [B; C].",
+          "India has the highest AI-title share of postings of the five countries compared (3.0% against 1.3% in the US) and about twice the US entry-level share of AI roles (21.2% against 10.4%), but fewer live AI Engineer postings (398 against 1,697) [B]."
+        ],
+        "context": [
+          "Its relocation corridors in this region are Singapore's ONE Pass and the UAE Golden Visa only.",
+          "Its pay evidence for Singapore and the Gulf is much thinner than for India.",
+          "It counts GenAI posting volume from these sources (last counted): {{count_sources}}."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-37",
+      "slug": "visa-dossier-united-states",
+      "title": "Visa and Work-Permit Dossier: United States",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "visa-dossier.md",
+      "decisions": ["D-007"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/visa-and-relocation.md"],
+      "records": ["visa_route", "measure", "absence"],
+      "tool_categories": ["Immigration"],
+      "verify": "required",
+      "params": {
+        "region": "the United States",
+        "countries": ["United States"],
+        "claims": [
+          "O-1A sets no degree, PhD or citation prerequisite: a major award or three of eight criteria, then a final-merits judgement of sustained acclaim [A].",
+          "O-1A premium processing costs $2,965 (since 1 March 2026) and takes 15 business days [B].",
+          "USCIS publishes only the combined O class: 93.9% approved in FY2025 and 91.0% in FY2026 Q1–Q3; RFEs were reported near 23% in Q3 FY2026 [B].",
+          "In the October 2026 Visa Bulletin, India's EB-1 final action date was 1 February 2023, EB-2 1 November 2013 and EB-3 1 January 2014 [B, from law-firm summaries].",
+          "The H-1B $100,000 proclamation was extended to 21 September 2027 but struck down by two courts (Massachusetts in June 2026; N.D. California on 30 September 2026, scope unconfirmed); a separate DHS fee proposal of $103,265 (August 2026) was pending [B, re-checked 22 October 2026]."
+        ],
+        "probes": [
+          "H-1B in full: the cap, the selection process and any weighted-selection rule, the $100,000 proclamation and its litigation, cap-exempt employers (universities and research non-profits), costs, timelines, portability and H-4 work authorisation.",
+          "EB-1A and EB-2 National Interest Waiver for AI researchers and engineers: criteria, reported approval rates and timelines.",
+          "L-1A and L-1B transfers through multinational employers, a common route for Indian nationals in IT services and GCCs.",
+          "Student routes: F-1 OPT and the STEM OPT extension.",
+          "Any US investor or 'gold card' programme and its status."
+        ],
+        "context": [
+          "It asks readers to re-verify every visa status on its official page within 14 days of acting (decision D-007); contested and pending rules expire 14 days after the date they describe.",
+          "Beyond the status of its fees, H-1B was outside the audit behind its visa page, as were EB-2, L-1 and student routes."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-38",
+      "slug": "visa-dossier-canada",
+      "title": "Visa and Work-Permit Dossier: Canada",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "visa-dossier.md",
+      "decisions": ["D-007"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/visa-and-relocation.md"],
+      "records": ["visa_route", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "Canada",
+        "countries": ["Canada"],
+        "claims": [
+          "Canada's Global Talent Stream needs no worker merit test (the employer's LMIA, a Labour Market Benefits Plan and the prevailing wage), takes about 1–2 months after an offer, and costs C$1,000 per position for the LMIA [A; B/C].",
+          "Canada announced a pathway for H-1B holders in Budget 2025 with no launch or eligibility rules published, and consulted in August 2026 on 2027 Express Entry categories [B/C, as of September 2026]."
+        ],
+        "probes": [
+          "Express Entry: category-based draws for STEM and technology occupations, and recent score cut-offs.",
+          "The Global Talent Stream: eligible occupations, employer obligations and processing.",
+          "Provincial technology streams (for example British Columbia and Ontario).",
+          "Intra-company transfers, spousal open work permits and Quebec's separate system.",
+          "The Start-up Visa: its status at the research date (secondary sources report intake changes and a successor pilot).",
+          "Any pathway for US H-1B holders: launch status and rules."
+        ],
+        "context": [
+          "It asks readers to re-verify every visa status on its official page within 14 days of acting (decision D-007); contested and pending rules expire 14 days after the date they describe.",
+          "Its visa page covers Canada's Global Talent Stream only."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-39",
+      "slug": "visa-dossier-uk-ireland-western-europe",
+      "title": "Visa and Work-Permit Dossier: UK, Ireland, Germany, Netherlands, France and Switzerland",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "visa-dossier.md",
+      "decisions": ["D-007"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/visa-and-relocation.md"],
+      "records": ["visa_route", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "the United Kingdom, Ireland, Germany, the Netherlands, France and Switzerland",
+        "countries": ["United Kingdom", "Ireland", "Germany", "Netherlands", "France", "Switzerland"],
+        "claims": [
+          "UK Global Talent needs no job: an endorsement (one mandatory and two optional criteria, three dated letters, up to ten evidence items) comes before the visa; fees are £766 plus the Immigration Health Surcharge of £1,035 a year [A].",
+          "No Exceptional Promise pass rate is published; adviser pages report historical endorsement rates of about 72% across fields and 54–65% for digital technology [C].",
+          "A law-firm page reported B2 English for UK settlement applications from 26 March 2027 under HC 1691, while Home Office guidance (v19.0) stated B1 [C, as of 24 September 2026].",
+          "The UK's earned-settlement consultation (a 10-year baseline) closed on 12 February 2026 with no government response by 24 September 2026 [C].",
+          "Germany's 2026 EU Blue Card floors are €50,700, or €45,934.20 for ICT and shortage roles; ICT specialists without a degree qualify with 3 years' experience in the last 7; with the employer's fast-track the process takes about 2–3 months; settlement can follow after 21 months with B1 German or 27 months with A1 [A; M; B].",
+          "Germany's 2027 Blue Card floors had not been published (they are published in December) [as of 22 October 2026].",
+          "France's EU Blue Card needs an offer of at least €59,373 and a 3-year degree or 5 years' experience; the minimum contract length was unresolved (6 months in summaries of Decree 2026-308, one year on France-Visas) [A; A/B]."
+        ],
+        "probes": [
+          "UK: the Skilled Worker route and its thresholds after the 2025 changes, the Immigration Salary List, the endorsing body for digital technology under Global Talent, the High Potential Individual route and its university list, the Scale-up route, the Graduate route's length, settlement rules, and the UK–India Young Professionals Scheme.",
+          "Ireland: the Critical Skills Employment Permit (ICT occupations and threshold), the General Employment Permit, and Stamp 4.",
+          "Germany: the EU Blue Card, the Opportunity Card (Chancenkarte), other skilled-worker residence titles, degree recognition (anabin), and fast-track procedures.",
+          "Netherlands: the Highly Skilled Migrant thresholds for the research year, the recognised-sponsor requirement, the 30% ruling and its scheduled changes, the EU Blue Card, and the orientation year for graduates.",
+          "France: the Talent Passport categories, the French Tech Visa, and the EU Blue Card.",
+          "Switzerland: quotas for non-EU nationals, cantonal procedures and salary norms."
+        ],
+        "context": [
+          "It asks readers to re-verify every visa status on its official page within 14 days of acting (decision D-007); contested and pending rules expire 14 days after the date they describe.",
+          "Its visa page covers UK Global Talent and the EU Blue Card in Germany and France only."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-40",
+      "slug": "visa-dossier-nordics-southern-central-europe",
+      "title": "Visa and Work-Permit Dossier: Nordics, Southern and Central Europe",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P2",
+      "brief": "visa-dossier.md",
+      "decisions": ["D-007"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/visa-and-relocation.md"],
+      "records": ["visa_route", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "the Nordic countries and southern and central Europe",
+        "countries": ["Sweden", "Denmark", "Finland", "Norway", "Spain", "Portugal", "Poland", "Estonia", "Austria", "Italy"],
+        "probes": [
+          "Sweden: the work-permit salary floor and its changes since 2023, and the EU Blue Card.",
+          "Denmark: the Pay Limit Scheme threshold, the Positive Lists and the Fast-track scheme.",
+          "Finland: the specialist permit, the fast track and the EU Blue Card.",
+          "Norway: the skilled-worker permit.",
+          "Spain: the highly qualified professional route, the digital-nomad visa and the special tax regime for incoming workers.",
+          "Portugal: the Tech Visa, the highly qualified activity visa, the digital-nomad visa and the IFICI tax regime.",
+          "Poland: work-permit types and the EU Blue Card.",
+          "Estonia: the start-up visa, the digital-nomad visa and work routes for IT specialists.",
+          "Austria: the Red-White-Red Card categories and the EU Blue Card.",
+          "Italy: the EU Blue Card, the highly skilled worker route and the impatriate tax regime."
+        ],
+        "context": [
+          "It asks readers to re-verify every visa status on its official page within 14 days of acting (decision D-007); contested and pending rules expire 14 days after the date they describe.",
+          "It has no coverage of work routes in these countries."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-41",
+      "slug": "visa-dossier-gulf-israel",
+      "title": "Visa and Work-Permit Dossier: the Gulf States and Israel",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P2",
+      "brief": "visa-dossier.md",
+      "decisions": ["D-007"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/visa-and-relocation.md"],
+      "records": ["visa_route", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "the Gulf states and Israel",
+        "countries": ["United Arab Emirates", "Saudi Arabia", "Qatar", "Bahrain", "Israel"],
+        "claims": [
+          "The UAE Golden Visa for skilled professionals needs a UAE employer paying at least AED 30,000 a month, a MOHRE level 1 or 2 role and a bachelor's degree; it costs about AED 3,800–4,800 plus medical and Emirates ID (a vendor estimate) [A; C, as of 2026-10-22]."
+        ],
+        "probes": [
+          "UAE: the standard employment visa, the Green Visa (skilled employees and freelancers), Golden Visa categories that cover AI and coding talent, Dubai and Abu Dhabi programmes for AI talent, and free-zone employment.",
+          "Saudi Arabia: Premium Residency tracks (for example special talent), the standard work visa, Saudisation (Nitaqat) quotas that affect hiring foreigners, and large AI employers.",
+          "Qatar and Bahrain: work visas and long-term residence (for example Bahrain's Golden Residency).",
+          "Israel: the B-1 expert work visa and fast-track procedures for high-tech experts, and security conditions that affect hiring.",
+          "For Indian nationals: labour protections, sponsorship-system reforms, document attestation and the treatment of degrees."
+        ],
+        "context": [
+          "It asks readers to re-verify every visa status on its official page within 14 days of acting (decision D-007); contested and pending rules expire 14 days after the date they describe.",
+          "Its visa page covers the UAE Golden Visa only for this region."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-42",
+      "slug": "visa-dossier-asia-pacific",
+      "title": "Visa and Work-Permit Dossier: Asia-Pacific",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "visa-dossier.md",
+      "decisions": ["D-007"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/visa-and-relocation.md"],
+      "records": ["visa_route", "measure", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "region": "Asia-Pacific",
+        "countries": ["Singapore", "Japan", "South Korea", "Taiwan", "Hong Kong", "Australia", "New Zealand", "Malaysia"],
+        "claims": [
+          "Singapore's ONE Pass needs fixed pay of at least S$30,000 a month for 12 consecutive months from one established employer, gains an AI & Tech track from 28 January 2027, takes about 1–2 months and costs S$105 to apply plus S$225 on issuance; its achievements route excludes technology [A for the rules; B for fees and speed, as of 2026-10-21]."
+        ],
+        "probes": [
+          "Singapore: the Employment Pass and COMPASS points (including any shortage-occupation bonus for AI roles), Employment Pass salary thresholds, and the status of earlier tech passes.",
+          "Japan: the Highly Skilled Professional points system, the Engineer/Specialist in Humanities status, J-Skip and J-Find, and fast-track permanent residence.",
+          "South Korea: the E-7 visa and any new top-talent or technology visas.",
+          "Taiwan: the Employment Gold Card for technology professionals.",
+          "Hong Kong: the Top Talent Pass Scheme, the Technology Talent Admission Scheme and the General Employment Policy.",
+          "Australia: the Skills in Demand visa (including its specialist-skills stream and threshold), the National Innovation visa, employer nomination routes, and the MATES scheme for Indian graduates.",
+          "New Zealand: the Accredited Employer Work Visa, the skilled-migrant points system and the Green List for ICT roles.",
+          "Malaysia: Employment Pass categories and the DE Rantau digital-nomad pass."
+        ],
+        "context": [
+          "It asks readers to re-verify every visa status on its official page within 14 days of acting (decision D-007); contested and pending rules expire 14 days after the date they describe.",
+          "Its visa page covers Singapore's ONE Pass only for this region."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-43",
+      "slug": "remote-cross-border-work-eor-platforms",
+      "title": "Remote Cross-Border Work for GenAI Roles: Who Hires, at What Pay, Through Which Structures",
+      "family": "geography",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "remote-work.md",
+      "decisions": ["D-003", "D-006"],
+      "stages": [9, 11],
+      "feeds": [
+        "career/11-tracks/india-remote-playbook.md",
+        "career/09-compensation/india-remote-tax.md",
+        "career/11-tracks/freelance-fractional.md",
+        "data/tools.json"
+      ],
+      "records": ["company", "tool", "pay", "measure", "practice", "absence"],
+      "tool_categories": ["Employer of record", "Payment rail", "Invoicing", "Statutory portal"],
+      "verify": "required",
+      "params": {
+        "min_records": {
+          "company": 30
+        }
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-44",
+      "slug": "pay-us-uk-europe-singapore-gulf",
+      "title": "Pay Refresh: US, Canada, UK, Europe, Israel, Singapore, the Gulf, Japan and Australia",
+      "family": "pay",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "pay-global.md",
+      "decisions": ["D-003"],
+      "stages": [9],
+      "feeds": ["career/09-compensation/pay-benchmarks.md", "career/09-compensation/negotiation-playbook.md", "data/role_scores.json"],
+      "records": ["pay", "measure", "practice", "absence"],
+      "tool_categories": ["Salary data", "Negotiation coaching", "Equity data and modelling"],
+      "verify": "required",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-45",
+      "slug": "pay-negotiation-india-city-employer",
+      "title": "Pay and Negotiation in India: by City, Employer Type, Role and Level",
+      "family": "pay",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "pay-india.md",
+      "decisions": ["D-003", "D-006"],
+      "stages": [9, 11],
+      "feeds": [
+        "career/09-compensation/pay-benchmarks.md",
+        "career/09-compensation/negotiation-playbook.md",
+        "career/11-tracks/india-remote-playbook.md",
+        "data/role_scores.json"
+      ],
+      "records": ["pay", "measure", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-46",
+      "slug": "interview-loops-genai-employers-2026",
+      "title": "Interview Loops for GenAI Roles: by Employer and Track",
+      "family": "interviewing",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "interview-loops.md",
+      "decisions": ["D-009"],
+      "stages": [8],
+      "feeds": [
+        "career/08-interviewing/interview-loops.md",
+        "career/08-interviewing/coding-rounds.md",
+        "career/08-interviewing/system-design-archetypes.md",
+        "data/interview_prompts.json"
+      ],
+      "records": ["loop", "prompt", "practice", "measure", "absence"],
+      "tool_categories": ["Interview prep", "AI mock interview", "Interview whiteboard", "Sizing calculator"],
+      "verify": "sample",
+      "params": {
+        "min_records": {
+          "loop": 25
+        }
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-47",
+      "slug": "ai-mediated-hiring-screening-interviews-fraud",
+      "title": "AI-Mediated Hiring: Screening, AI Interviewers, Candidate AI Policies and Fraud Checks",
+      "family": "interviewing",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "ai-mediated-hiring.md",
+      "decisions": ["D-009"],
+      "stages": [6, 8],
+      "feeds": ["career/06-job-search/ats-mechanics.md", "career/08-interviewing/interview-loops.md", "data/tools.json"],
+      "records": ["practice", "tool", "rule", "measure", "absence"],
+      "tool_categories": ["Live interview copilot", "Assessment security", "Identity verification"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-48",
+      "slug": "role-dossier-ai-engineer",
+      "title": "Role Dossier: AI Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/09-compensation/pay-benchmarks.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-engineer"],
+        "probes": [
+          "Separate GenAI AI Engineer postings from robotics, low-code (for example Power Platform) and MLOps postings that share the title, and report the share of each.",
+          "How the title's pay gap with Machine Learning Engineer (about 0.55×) behaves within the same employers.",
+          "The shares of agentic, retrieval and evaluation work inside the role."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-49",
+      "slug": "role-dossier-ml-engineer",
+      "title": "Role Dossier: Machine Learning Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/09-compensation/pay-benchmarks.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ml-engineer"],
+        "probes": [
+          "The share of Machine Learning Engineer postings that involve LLMs or generative AI (the knowledge base restricts demand to GenAI work for its target order).",
+          "Classic ML system design against LLM work in interviews.",
+          "The pay premium of the title over AI Engineer within the same employers."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-50",
+      "slug": "role-dossier-research-engineer",
+      "title": "Role Dossier: Research Engineer / Member of Technical Staff",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/11-tracks/phd-to-industry.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["research-engineer"],
+        "probes": [
+          "Member of Technical Staff titles at labs: how they map to research engineering and research science.",
+          "Publication, degree and open-source expectations; routes in without a PhD.",
+          "Measured volume (the knowledge base grades demand C)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-51",
+      "slug": "role-dossier-forward-deployed-engineer",
+      "title": "Role Dossier: Forward Deployed Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P0",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/09-compensation/pay-benchmarks.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["forward-deployed-engineer"],
+        "probes": [
+          "Measured volume (the knowledge base's demand input is a model output, grade M).",
+          "The boundary between forward-deployed engineers, solutions architects and applied AI engineers; travel and customer-facing expectations.",
+          "Pay and equity at AI labs and AI-native companies that hire forward-deployed engineers."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-52",
+      "slug": "role-dossier-applied-scientist",
+      "title": "Role Dossier: Applied Scientist",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["applied-scientist"],
+        "probes": [
+          "Amazon's applied-scientist ladder against other employers' use of the title.",
+          "The PhD share in postings and among hires; measured volume (the knowledge base grades demand D)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-53",
+      "slug": "role-dossier-applied-ai-engineer",
+      "title": "Role Dossier: Applied AI Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["applied-ai-engineer"],
+        "probes": [
+          "How Applied AI Engineer postings differ from AI Engineer postings, especially on labs' applied-AI and customer teams.",
+          "Measured volume (the knowledge base grades demand C) and pay (graded D); India pay inputs are placeholders."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-54",
+      "slug": "role-dossier-ai-infrastructure-engineer",
+      "title": "Role Dossier: AI Infrastructure / GPU Platform Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-infrastructure-engineer"],
+        "probes": [
+          "GPU cluster, scheduling, networking and training-infrastructure requirements; the overlap with SRE and HPC roles.",
+          "Measured volume (graded C); India pay inputs are placeholders."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-55",
+      "slug": "role-dossier-research-scientist",
+      "title": "Role Dossier: Research Scientist (AI/ML)",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/11-tracks/phd-to-industry.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["research-scientist"],
+        "probes": ["The PhD and publication requirements in postings; research-taste interviews.", "Industry against academic pay; measured volume (graded C)."]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-56",
+      "slug": "role-dossier-inference-engineer",
+      "title": "Role Dossier: Inference / LLM Serving Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["inference-engineer"],
+        "probes": [
+          "Which serving engines and optimisation techniques postings name (for example vLLM, SGLang, TensorRT-LLM, speculative decoding, quantisation) and the overlap with kernel work.",
+          "Measured volume (graded C); India pay inputs are placeholders."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-57",
+      "slug": "role-dossier-agentic-ai-engineer",
+      "title": "Role Dossier: Agentic AI Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/01-landscape/emerging-roles.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["agentic-ai-engineer"],
+        "probes": [
+          "Is Agentic AI Engineer a distinct title or an alias of AI Engineer? Apply the knowledge base's seven graduation tests (volume, persistence, breadth, a shared skill set, a seniority ladder, adoption by a lab or Big Tech employer, not an alias).",
+          "Measured volume (the knowledge base derives about 66 postings in 90 days, graded C)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-58",
+      "slug": "role-dossier-ml-platform-engineer",
+      "title": "Role Dossier: ML Platform / MLOps Engineer",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ml-platform-engineer"],
+        "probes": ["MLOps against LLM operations: how platform teams changed with generative AI.", "Measured volume (graded D)."]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-59",
+      "slug": "role-dossier-ai-product-manager",
+      "title": "Role Dossier: AI Product Manager",
+      "family": "roles",
+      "wave": 2,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-product-manager"],
+        "probes": [
+          "The technical depth AI product-manager postings expect (evaluation, data, prototyping) and how AI product-manager loops differ from general product-manager loops.",
+          "Measured volume and pay (both graded D)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-60",
+      "slug": "role-group-evaluation-security-safety",
+      "title": "Role Group Dossier: Evaluation, Security and Safety",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-evaluation-engineer", "ai-security-engineer", "ai-safety-researcher"],
+        "probes": [
+          "Title variants for AI red teaming and AI security; whether AI Evaluation Engineer has grown as a title.",
+          "Fellowships and residencies as entry routes into safety research, and safety roles at labs against independent organisations."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-61",
+      "slug": "role-group-governance-risk-responsible-ai",
+      "title": "Role Group Dossier: Governance, Risk and Responsible AI",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P1",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": [
+        "data/role_scores.json",
+        "data/skills_ontology.json",
+        "data/role_titles.json",
+        "career/02-roles/role-catalog.md",
+        "career/11-tracks/governance-careers.md"
+      ],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-governance-lead", "ai-risk-assurance-specialist", "responsible-ai-engineer"],
+        "probes": [
+          "Demand driven by the EU AI Act timetable, ISO/IEC 42001 certification and sector regulators (for example model-risk teams in banks).",
+          "Governance titles in India's GCCs and IT-services firms."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-62",
+      "slug": "role-group-solutions-enablement-product-engineering",
+      "title": "Role Group Dossier: Solutions, Enablement and AI Product Engineering",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-solutions-architect", "ai-enablement-engineer", "ai-product-engineer"],
+        "probes": [
+          "Solutions-architect titles at hyperscalers and AI vendors; pre-sales against delivery.",
+          "Whether AI Enablement Engineer and AI Product Engineer are growing titles or aliases (India pay inputs are placeholders for both)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-63",
+      "slug": "role-dossier-gpu-kernel-engineer",
+      "title": "Role Dossier: GPU Kernel / ML Compiler Engineer",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["gpu-kernel-engineer"],
+        "probes": [
+          "Kernel languages and tools that postings name (for example CUDA, Triton, CuTe and other tile languages, ROCm) and the compiler overlap.",
+          "The overlap with inference and AI-infrastructure engineering, and where kernel work is hired (labs, chip vendors, inference companies)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-64",
+      "slug": "role-dossier-physical-ai-engineer",
+      "title": "Role Dossier: Physical AI / Robotics AI Engineer",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/skills_ontology.json", "data/role_titles.json", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["physical-ai-engineer"],
+        "probes": [
+          "Physical AI: robot-learning and vision-language-action work, simulation tools, and hardware experience; the knowledge base's skills for this role are mostly practice-curated, so the sample matters most here.",
+          "Which employers hire for robot learning and embodied AI (robotics companies, labs, automotive), and where (countries and cities)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-65",
+      "slug": "role-group-ai-leadership",
+      "title": "Role Group Dossier: AI Engineering Managers, Heads of AI and Chief AI Officers",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-004", "D-015"],
+      "stages": [2, 3],
+      "feeds": ["data/role_scores.json", "data/role_titles.json", "career/02-roles/role-catalog.md", "career/02-roles/hubs/README.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": [],
+      "verify": "required",
+      "params": {
+        "roles": ["ai-engineering-manager", "vp-head-of-ai", "chief-ai-officer"],
+        "probes": [
+          "The knowledge base's leadership pages are mostly 'no evidence': postings, scope, reporting lines, pay and interview processes for these roles, including executive search.",
+          "Government mandates for chief AI officers (for example US federal agencies under OMB memo M-25-21: confirm its issue date, which the knowledge base lacks)."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-66",
+      "slug": "role-group-independent-fractional-contract",
+      "title": "Role Group Dossier: Independent, Fractional and Contract AI Work",
+      "family": "roles",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "role-dossier.md",
+      "decisions": ["D-002", "D-003", "D-006"],
+      "stages": [2, 9, 11],
+      "feeds": ["data/role_scores.json", "data/role_titles.json", "career/11-tracks/freelance-fractional.md", "career/02-roles/role-catalog.md"],
+      "records": ["jd", "skill_signal", "pay", "measure", "loop", "practice", "absence"],
+      "tool_categories": ["Freelance marketplace", "Contract templates"],
+      "verify": "required",
+      "params": {
+        "roles": ["fractional-ai-leader", "independent-ai-consultant", "domain-evaluation-specialist"],
+        "probes": [
+          "Refresh the rate evidence for consultants and fractional leaders (the knowledge base's Go Fractional counts date from 2026-10-25).",
+          "Expert-data and AI-training platforms that hire domain evaluation specialists (for example Mercor, Outlier, micro1, Handshake AI): pay rates, terms, volume and complaints."
+        ]
+      },
+      "status": "ready"
+    },
+    {
+      "id": "T0-67",
+      "slug": "transitions-devops-pm-it-services-students",
+      "title": "Transitions into GenAI Roles: DevOps and SRE Engineers, Product Managers, IT-Services Engineers, Students and New Graduates",
+      "family": "tracks",
+      "wave": 3,
+      "priority": "P1",
+      "brief": "transitions.md",
+      "decisions": ["D-008"],
+      "stages": [11],
+      "feeds": ["career/11-tracks/career-transitions.md", "career/03-skills-and-tech/learning-roadmaps.md", "data/role_scores.json"],
+      "records": ["measure", "practice", "resource", "absence"],
+      "tool_categories": [],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-68",
+      "slug": "learning-resources-rated",
+      "title": "Learning Resources for GenAI Roles, Rated: Documentation, Courses, Books, Cohorts and Bootcamps",
+      "family": "skills",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "learning-resources.md",
+      "decisions": ["D-008", "D-005"],
+      "stages": [3],
+      "feeds": ["career/03-skills-and-tech/learning-roadmaps.md", "data/tools.json"],
+      "records": ["resource", "tool", "practice", "absence"],
+      "tool_categories": ["Learning platform", "Paid bootcamp", "GPU compute", "Career planning"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-69",
+      "slug": "skill-tool-momentum-dated-series",
+      "title": "Skill and Tool Momentum: What Is Rising and Falling, as Dated Series",
+      "family": "skills",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "skill-momentum.md",
+      "decisions": ["D-004"],
+      "stages": [3],
+      "feeds": [
+        "career/03-skills-and-tech/skills-radar.md",
+        "career/01-landscape/emerging-roles.md",
+        "data/skills_ontology.json",
+        "data/posting_skill_shares.json"
+      ],
+      "records": ["measure", "skill_signal", "absence"],
+      "tool_categories": [],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-70",
+      "slug": "market-pulse-hiring-layoffs-funding",
+      "title": "Market Pulse: Hiring Volume, Layoffs, Funding and Employer Mix",
+      "family": "market",
+      "wave": 3,
+      "priority": "P1",
+      "brief": "market-pulse.md",
+      "decisions": ["D-002", "D-003"],
+      "stages": [1],
+      "feeds": ["career/01-landscape/market-overview.md", "career/01-landscape/employer-landscape.md", "data/role_scores.json"],
+      "records": ["measure", "company", "absence"],
+      "tool_categories": [],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    },
+    {
+      "id": "T0-71",
+      "slug": "onboarding-growth-ai-roles",
+      "title": "First 90 Days and Growth in AI Roles: Expectations, Probation, Promotion and Sustainable Pace",
+      "family": "onboarding",
+      "wave": 3,
+      "priority": "P2",
+      "brief": "onboarding-growth.md",
+      "decisions": ["D-010"],
+      "stages": [10],
+      "feeds": ["career/10-onboarding/first-90-days.md", "career/10-onboarding/growth-and-progression.md"],
+      "records": ["practice", "measure", "absence"],
+      "tool_categories": ["Case and incident library"],
+      "verify": "sample",
+      "params": {},
+      "status": "ready"
+    }
+  ],
+  "reduce": [
+    {
+      "id": "R1",
+      "title": "Credentials: census to data, a computed value order and the credential pages",
+      "needs": ["T0-28", "T0-29", "T0-30", "T0-31", "T0-32", "T0-33", "T0-34"],
+      "outputs": "A credential data file with a schema (or an extended ontology), a value-order script with lenses per role family and channel and a cost-ordered collector's list, a generated credential catalogue page, updated credentials-by-role and credential ROI",
+      "status": "pending"
+    },
+    {
+      "id": "R2",
+      "title": "Geography: country and city data, a computed ranking with lenses, and the visa and remote pages",
+      "needs": ["T0-35", "T0-36", "T0-37", "T0-38", "T0-39", "T0-40", "T0-41", "T0-42", "T0-43", "T0-44", "T0-45"],
+      "outputs": "A country data file with a schema, a ranking script with five lenses, a generated country-ranking page, a rewritten visa-and-relocation status table and corridors, an updated India remote playbook",
+      "status": "pending"
+    },
+    {
+      "id": "R3",
+      "title": "Roles: dossiers to role scores, titles, skill tiers and hubs",
+      "needs": [
+        "T0-48",
+        "T0-49",
+        "T0-50",
+        "T0-51",
+        "T0-52",
+        "T0-53",
+        "T0-54",
+        "T0-55",
+        "T0-56",
+        "T0-57",
+        "T0-58",
+        "T0-59",
+        "T0-60",
+        "T0-61",
+        "T0-62",
+        "T0-63",
+        "T0-64",
+        "T0-65",
+        "T0-66"
+      ],
+      "outputs": "Updated data/role_scores.json pillars and India lens, data/role_titles.json aliases, ontology links with job-description evidence, regenerated rankings, target order and hubs; it can run role by role as each dossier lands",
+      "status": "pending"
+    },
+    {
+      "id": "R4",
+      "title": "Networking and presence: the networking guides and tools",
+      "needs": ["T0-19", "T0-20", "T0-21", "T0-22"],
+      "outputs": "Revised online presence, referrals and outreach, communities guide and proof-of-work standards; tools in data/tools.json; a dedicated LinkedIn guide if the evidence warrants one",
+      "status": "pending"
+    },
+    {
+      "id": "R5",
+      "title": "Résumé: the résumé model, screening facts and the résumé generator's inputs",
+      "needs": ["T0-23"],
+      "outputs": "Revised résumé strategy and ATS mechanics; the section-order skeletons and regional table; inputs for the résumé generator (ROADMAP P0-1), with per-role evidence-line patterns from the role dossiers",
+      "status": "pending"
+    },
+    {
+      "id": "R6",
+      "title": "Job search: boards, tools and target employers",
+      "needs": ["T0-24", "T0-25", "T0-26", "T0-27"],
+      "outputs": "Revised channels and boards (India measured), application operating system and employer landscape; tools and boards in data/tools.json; a target-employer list (a decision: a data file or a page)",
+      "status": "pending"
+    },
+    {
+      "id": "R7",
+      "title": "Pay: benchmarks, negotiation and the pay pillar",
+      "needs": ["T0-44", "T0-45"],
+      "outputs": "Revised pay benchmarks, negotiation playbook and offer evaluation; comp and India-comp inputs in data/role_scores.json",
+      "status": "pending"
+    },
+    {
+      "id": "R8",
+      "title": "Interviewing: loops, AI-mediated hiring and practice prompts",
+      "needs": ["T0-46", "T0-47"],
+      "outputs": "Revised interview loops, coding rounds, system-design archetypes (with model prices) and ATS mechanics; new prompts in data/interview_prompts.json",
+      "status": "pending"
+    },
+    {
+      "id": "R9",
+      "title": "Tracks, skills, market and onboarding",
+      "needs": ["T0-67", "T0-68", "T0-69", "T0-70", "T0-71"],
+      "outputs": "Researched routes for four new backgrounds in career transitions; learning resources in learning roadmaps; a measured surging ring for the skills radar and emerging-title verdicts; a refreshed market overview; revised first 90 days and growth",
+      "status": "pending"
+    }
+  ]
+}

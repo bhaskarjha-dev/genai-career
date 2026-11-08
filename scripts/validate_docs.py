@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Documentation validator for the career catalogs.
 
-Checks, across every career/*.md file, the generated role inventories and README.md:
+Checks, across every career/*.md file, the top-level documents, the research index pages, research pipeline 2
+(research/pipeline-2/, including its briefs) and the data and scripts READMEs:
   * relative links resolve to existing files and anchors; no absolute file:// links;
     no duplicate anchors; no leftover template placeholders
   * every Markdown table row has the same number of cells as its header
@@ -51,16 +52,15 @@ from build_manifest import parse_front_matter  # noqa: E402
 from build_all import GENERATORS  # noqa: E402  (the single registry of generators)
 from common import schema_errors  # noqa: E402
 import stack_lib  # noqa: E402
-from common import gh_slug  # noqa: E402  (shared helpers)
+from common import gh_slug, prose, RELATIVE_TIME  # noqa: E402  (shared helpers and writing rules)
 
 SEALED = {"FAD.md", "DECISIONS.md", "RESEARCH-PIPELINE.md"}  # Phase 0 records: checked by hand, not linted here
 FILES = (sorted(CAREER.rglob("*.md")) + sorted(ROOT.glob("*.md"))
          + sorted(p for p in (ROOT / "research").glob("*.md") if p.name not in SEALED)
+         + sorted((ROOT / "research" / "pipeline-2").rglob("*.md"))  # research pipeline 2: spec, protocol, briefs
          + [p for p in [ROOT / "llms.txt", ROOT / "data" / "README.md", ROOT / "scripts" / "README.md"] if p.exists()])
 DOSSIERS = 10  # role-rankings.md "Top-10 Dossiers"
 NOT_GENERATORS = {"common.py", "stack_lib.py", "validate_docs.py", "build_all.py", "gap_analysis.py"}
-RELATIVE_TIME = re.compile(r"\b(currently|recently|nowadays|these days|as of now|right now|at present|at the moment)\b"
-                           r"|\blatest\b(?![^\n]{0,40}\d{4}(-\d{2}){0,2})", re.I)
 LEGACY = re.compile(r"old-genai-career|temp/old")
 # Signature phrases of the legacy handbook (decision D-016). A final scan on 2026-11-07 compared the handbook with this
 # repository and found no figure or prose from it that is not also in the research records; these phrases keep a leak
@@ -69,7 +69,7 @@ LEGACY_PHRASES = re.compile(r"\b54 roles\b|\b(?:7|seven) (?:macro )?clusters\b|\
                             r"\bTalent Bridge Matrix\b|300% year-over-year", re.I)
 LEGACY_EXEMPT = {"AGENTS.md", "CONTRIBUTING.md", "CHANGELOG.md"}  # they state the rules, so they may name what is banned
 LEGACY_PHRASES_SKIP = {"research/findings.md"}  # generated from the sealed sessions, so it cannot be edited to comply
-FRONT_MATTER_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md"]
+FRONT_MATTER_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md", "research/pipeline-2/README.md"]
 GUIDE_HEADINGS = ["The short answer", "Checklist", "Evidence and limits", "Next steps"]
 # Guides written before the guide pattern was adopted (D-016, 2026-11-05); migrate each when it is next revised.
 LEGACY_GUIDES = set()  # every guide follows the pattern since 2026-11-07; list a guide here only while migrating it
@@ -156,24 +156,6 @@ def check_doc(path, problems):
             i = j
             continue
         i += 1
-
-
-def prose(text):
-    """Text with fenced code, inline code, HTML comments, link targets and quoted strings removed."""
-    out, in_code = [], False
-    for line in text.splitlines():
-        if line.startswith("```"):
-            in_code = not in_code
-            continue
-        if not in_code:
-            out.append(line)
-    t = "\n".join(out)
-    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
-    t = re.sub(r"`[^`\n]*`", " ", t)
-    t = re.sub(r"\]\([^)\s]*\)", "]", t)
-    t = re.sub(r'"[^"\n]*"', " ", t)
-    t = re.sub(r"\u201c[^\u201d\n]*\u201d", " ", t)
-    return t
 
 
 def check_writing(path, problems):

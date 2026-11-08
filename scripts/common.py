@@ -4,6 +4,7 @@
 * schema_errors(): validates data against the JSON Schema subset the schemas in
   data/schemas/ use, and rejects any keyword it does not implement, so a schema
   rule can never be ignored silently.
+* RELATIVE_TIME and prose(): the writing rule against relative-time words, applied to prose only.
 * session_line_counts() and ref_errors(): check that citations such as
   "T0-10 L74, L539" or "T0-14 L385–386" point at lines that exist.
 
@@ -169,6 +170,30 @@ def require_anchor(path, slug):
     if slug in slugs or f'<a id="{slug}"></a>' in text:
         return slug
     raise SystemExit(f"no heading or anchor #{slug} in {Path(path).name}")
+
+
+# ---------------------------------------------------------------- writing rules (EGP-1.0), shared by the validator and
+# scripts/research_pipeline.py's report check
+RELATIVE_TIME = re.compile(r"\b(currently|recently|nowadays|these days|as of now|right now|at present|at the moment)\b"
+                           r"|\blatest\b(?![^\n]{0,40}\d{4}(-\d{2}){0,2})", re.I)
+
+
+def prose(text):
+    """Text with fenced code, inline code, HTML comments, link targets and quoted strings removed."""
+    out, in_code = [], False
+    for line in text.splitlines():
+        if line.startswith("```"):
+            in_code = not in_code
+            continue
+        if not in_code:
+            out.append(line)
+    t = "\n".join(out)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
+    t = re.sub(r"`[^`\n]*`", " ", t)
+    t = re.sub(r"\]\([^)\s]*\)", "]", t)
+    t = re.sub(r'"[^"\n]*"', " ", t)
+    t = re.sub(r"\u201c[^\u201d\n]*\u201d", " ", t)
+    return t
 
 
 # ---------------------------------------------------------------- session line references

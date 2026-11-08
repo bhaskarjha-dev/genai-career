@@ -29,7 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LLMS = ROOT / "llms.txt"
 MANIFEST = ROOT / "data" / "manifest.json"
-RESEARCH_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md"]
+RESEARCH_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md", "research/pipeline-2/README.md"]
 STAGE_NAMES = OrderedDict([(1, "Landscape"), (2, "Roles"), (3, "Skills and technology"), (4, "Certifications"), (5, "Portfolio"),
                            (6, "Job search"), (7, "Networking"), (8, "Interviewing"), (9, "Compensation"), (10, "Onboarding"),
                            (11, "Tracks and transitions")])

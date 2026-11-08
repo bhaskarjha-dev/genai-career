@@ -30,6 +30,7 @@ python3 -B -m unittest discover -s scripts/tests -v   # tests for the machinery
 | [build_role_hubs.py](build_role_hubs.py) | Every data file above, plus `rank_roles.py` and `resume_layers.py` | `career/02-roles/hubs/` (one hub per role and an index) |
 | [build_prompts.py](build_prompts.py) | `data/interview_prompts.json` + schema, `data/role_scores.json`, the ontology, session line counts | `career/08-interviewing/prep-packs.md` |
 | [build_tool_catalog.py](build_tool_catalog.py) | `data/tools.json` + schema, session line counts | `career/00-start/tool-catalog.md` |
+| [research_pipeline.py](research_pipeline.py) | `research/pipeline-2/catalogue.json`, its briefs and protocol, `data/role_scores.json`, the ontology, `data/role_titles.json`, `data/tools.json`, `data/posting_skill_shares.json`, `research/sessions/` (which sessions are saved) | The tracker block in `research/pipeline-2/README.md`. Also, writing nothing: `--prompt <id>` prints a session's prompt, `--next` lists sessions to run, `--appendix` checks a session report, `--verify` prints a verification packet |
 | [build_manifest.py](build_manifest.py) | Front matter of `career/` and the research index pages; session front matter | `llms.txt`, `data/manifest.json` (last, because it indexes everything) |
 
 ## Shared modules, validator and tests

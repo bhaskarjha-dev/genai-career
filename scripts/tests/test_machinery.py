@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Tests for the repository machinery: the schema checker, citation checks, the validator's document rules,
-the data files against their schemas, and a smoke test of the personal gap-analysis tool.
+the data files against their schemas, a smoke test of the personal gap-analysis tool, and research pipeline 2
+(catalogue validation, prompt assembly and the session-report checker).
 
 Run:  python3 -B -m unittest discover -s scripts/tests -v
 Standard library only; temporary files go to the system temp directory, never into the repository.
 """
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -148,6 +150,107 @@ class GapAnalysisSmoke(unittest.TestCase):
             run = subprocess.run([sys.executable, "-B", str(script), str(path)], capture_output=True, text=True, cwd=ROOT)
         self.assertEqual(run.returncode, 0, run.stderr)
         self.assertIn("AI Engineer", run.stdout)
+
+
+class ResearchPipeline(unittest.TestCase):
+    """Research pipeline 2: the catalogue validates, prompts assemble, and the report checker catches errors."""
+
+    @classmethod
+    def setUpClass(cls):
+        import research_pipeline as rp
+        cls.rp = rp
+        cls.cat = rp.catalogue()
+        cls.ctx = rp.Context()
+
+    def session(self, sid):
+        return next(s for s in self.cat["sessions"] if s["id"] == sid)
+
+    def test_catalogue_is_valid(self):
+        self.assertEqual(self.rp.validate(self.cat, self.ctx), [])
+
+    def test_every_tool_category_has_exactly_one_owner(self):
+        owners = [c for s in self.cat["sessions"] for c in s["tool_categories"]]
+        self.assertEqual(sorted(owners), sorted(self.ctx.tool_categories))
+
+    def test_prompts_assemble_with_numbered_claims(self):
+        for sid in ("T0-19", "T0-28", "T0-37", "T0-48", "T0-65"):
+            with self.subTest(session=sid):
+                prompt, n = self.rp.build_prompt(self.ctx, self.session(sid), "2026-11-08")
+                self.assertNotIn("{{", prompt)
+                self.assertGreater(n, 0)
+                found = [int(k) for k in re.findall(r"^- K(\d+)\. ", prompt, re.M)]
+                self.assertEqual(found, list(range(1, n + 1)))
+                self.assertIn("# OUTPUT AND EVIDENCE PROTOCOL", prompt)
+                self.assertIn(f"{sid}-{self.session(sid)['slug']}.md", prompt)
+                self.assertIn("today is 2026-11-08", prompt)
+
+    def test_front_matter_is_found_when_fenced_or_indented(self):
+        fm = "---\nid: \"T0-22\"\ndate: \"2026-11-08\"\n---\n"
+        for raw in (fm, "```yaml\n" + fm + "```\n", "".join("    " + line for line in fm.splitlines(True)), "\ufeff" + fm.replace("\n", "\r\n")):
+            with self.subTest(raw=raw[:12]):
+                self.assertEqual(self.rp.front_matter(self.rp.normalise(raw + "# body\n")).get("id"), "T0-22")
+
+    def report(self, sid, records_extra=(), drop_k=False):
+        _, n = self.rp.build_prompt(self.ctx, self.session(sid), "2026-11-08")
+        ks = [f"K{i}" for i in range(1, n + 1)]
+        if drop_k:
+            ks = ks[1:]
+        recs = [{"type": "practice", "area": "outreach", "tactic": "short note", "claim": "replies", "evidence": "survey",
+                 "verdict": "use-with-care", "grade": "C", "src": ["S1"], "as_of": "2026-11-08", "ttl": "V3"}]
+        recs += list(records_extra)
+        body = ["---", f'id: "{sid}"', 'title: "t"', 'date: "2026-11-08"', "status: complete", 'topic: "x"',
+                'confidence: "medium"', 'temporal_anchor: "2026-11"', 'authored_by_model: "test"',
+                'protocol_version: "EGP-1.0"', "---", "", f"# {sid}: t", ""]
+        for name in self.rp.SECTIONS:
+            body += [f"## {name}", ""]
+            if name == "Key Findings":
+                body += ["| # | Finding | Key evidence | Grade |", "|---|---|---|---|"]
+                body += [f"| **KF{i}** | Finding {i} | [S1] | **B** |" for i in (1, 2, 3)] + [""]
+            elif name == "Repository Deltas":
+                body += ["| K# | Claim | Verdict | Evidence | Grade |", "|---|---|---|---|---|"]
+                body += [f"| {k} | c | confirmed | [S1] | B |" for k in ks] + [""]
+            elif name == "Data Appendix":
+                body += ["```jsonl"] + [json.dumps(r) if isinstance(r, dict) else r for r in recs] + ["```", ""]
+            elif name == "Sources & Evidence Ledger":
+                body += ["| # | Source | Published | Retrieved | Grade | Access | Modifiers | Used for |",
+                         "|---|---|---|---|---|---|---|---|", "| S1 | A report, https://example.org | 2026-01-01 | 2026-11-08 | B | Read | — | KF1 |", ""]
+            else:
+                body += ["Text.", ""]
+        return "\n".join(body)
+
+    def check(self, text):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "draft.md"
+            path.write_text(text, encoding="utf-8")
+            return self.rp.check_report(self.cat, self.ctx, path)
+
+    def test_report_checker_accepts_a_complete_report(self):
+        errs, _warns, counts, n_kf, n_src = self.check(self.report("T0-22"))
+        self.assertEqual(errs, [])
+        self.assertEqual((n_kf, n_src), (3, 1))
+        self.assertEqual(counts["practice"], 1)
+
+    def test_report_checker_catches_errors(self):
+        bad = [{"type": "credential", "id": "x", "name": "X", "issuer": "Y", "level": "associate", "state": "live",
+                "url": "https://example.org", "ttl": "V2", "grade": "A", "src": ["S9"], "as_of": "2026-11-08"},
+               {"type": "measure", "subject": "role:ai-engineer", "measure": "us_postings", "value": 10, "ttl": "V1",
+                "grade": "B", "src": ["S1"], "as_of": "8 Nov 2026"},
+               {"type": "company", "name": "Z", "employer_type": "unicorn", "hq": "US", "regions": ["US"], "grade": "B",
+                "src": ["S1"], "as_of": "2026-11-08"},
+               {"type": "pay", "role": "ai-engineer", "location": "US", "stat": "p50", "currency": "USD", "period": "year",
+                "basis": "tc", "source_name": "x", "lo": 1, "ttl": "V3", "grade": "B", "src": ["S1"], "as_of": "2026-11-08"},
+               "{not json"]
+        errs, *_ = self.check(self.report("T0-22", records_extra=bad, drop_k=True))
+        joined = " ".join(errs)
+        self.assertIn("state 'live'", joined)
+        self.assertIn("['S9'] not in the ledger", joined)
+        self.assertIn('missing "unit"', joined)
+        self.assertIn("as_of must be YYYY-MM-DD", joined)
+        self.assertIn('missing "ttl"', joined)
+        self.assertIn('"lo" needs "hi"', joined)
+        self.assertIn("employer_type 'unicorn'", joined)
+        self.assertIn("not valid JSON", joined)
+        self.assertIn("no verdict in the Repository Deltas table for ['K1']", joined)
 
 
 if __name__ == "__main__":

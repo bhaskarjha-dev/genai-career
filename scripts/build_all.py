@@ -34,6 +34,7 @@ GENERATORS = [
     "build_role_hubs.py",      # everything above -> 29 role hubs and their index
     "build_prompts.py",        # interview prompts -> prep packs
     "build_tool_catalog.py",   # tools -> tool catalog
+    "research_pipeline.py",    # research pipeline 2 catalogue, briefs, data -> tracker in research/pipeline-2/README.md
     "build_manifest.py",       # last: front matter of every document -> llms.txt, data/manifest.json
 ]
 

@@ -115,8 +115,9 @@ How to use this repository:
 
 - [Research Findings Registry](research/findings.md): Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
 - [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.
+- [Research Pipeline 2: Targeted Sessions for Every High-Impact Element](research/pipeline-2/README.md): The second research pipeline: 53 targeted sessions on networking, résumés, job search, certifications, countries and visas, remote work, pay, interviews and every role, each designed backwards from the data and pages it feeds, with a shared protocol, verification, integration and a generated tracker.
 - [research/sessions/](research/sessions/): The 22 research sessions (dated evidence reports with source ledgers).
-- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-020).
+- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-021).
 
 ## Research sessions
 

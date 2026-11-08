@@ -4009,7 +4009,7 @@
     "Key documents",
     "Phase 0 pipeline (complete)",
     "Sessions by theme",
-    "Adding research (pipeline 2)"
+    "Adding research"
    ]
   },
   {
@@ -4049,6 +4049,31 @@
    "headings": [
     "By lifecycle stage",
     "By session"
+   ]
+  },
+  {
+   "path": "research/pipeline-2/README.md",
+   "id": "research.pipeline-2",
+   "title": "Research Pipeline 2: Targeted Sessions for Every High-Impact Element",
+   "content_type": "method",
+   "stage": 0,
+   "status": "published",
+   "last_verified": "2026-11-08",
+   "summary": "The second research pipeline: 53 targeted sessions on networking, résumés, job search, certifications, countries and visas, remote work, pay, interviews and every role, each designed backwards from the data and pages it feeds, with a shared protocol, verification, integration and a generated tracker.",
+   "headings": [
+    "Why a second pipeline",
+    "Design principles",
+    "What deep research can and cannot do",
+    "Outcome map: from each element to its owner pages",
+    "Tracker",
+    "Waves and the recommended order",
+    "How to run a session",
+    "Quality gates",
+    "Reduce steps: from sessions to data and pages",
+    "Measurement instruments",
+    "Refresh cadence",
+    "Limits and risks",
+    "Files"
    ]
   }
  ]

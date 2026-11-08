@@ -124,7 +124,7 @@ Tiers come from the skills ontology, as rendered in each role's [inventory](role
 | [AI Governance Programme Lead](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [Responsible AI Engineer](../02-roles/hubs/responsible-ai-engineer.md) | — | — | — | — | Awareness of the risks and the guidance [P] |
 | Other roles (ML, inference, kernel, research, evaluation) | — | — | — | — | Optional awareness [P] |
 
-One tension to know: the ontology tiers MCP itself at Should for ML Platform engineers, while the skill-map matrix marks "Gateways, identity, MCP" as core for that role (a Grade D cell) ([role skill maps §4.1](role-skill-maps.md#41-engineering-roles)). The operate target above follows the gateway duties in the postings.
+One tension to know: the ontology tiers MCP itself at Should for ML Platform engineers, while the postings T0-16 sampled ask that role to run gateways [C · T0-16 §9.3]. The operate target above follows the gateway duties in the postings.
 
 ## How employers ask for it
 
@@ -134,8 +134,8 @@ The universes differ, so do not average these figures [C · T0-16.F9].
 
 | Universe (source) | Window | MCP share | Grade |
 |---|---|---|---|
-| All postings at 984 large companies: 775 Fortune 1000 and 209 API providers (API Evangelist); counts only the full phrase "Model Context Protocol", so it undercounts | Q3 2026 | 0.068% of 343,299 postings; 10.4% of companies (102) | C · T0-16 L377 |
-| Postings index built from about 2,600 employers (Skillenai) | 90 days to 2026-10-14 | 1,747 postings, about 0.7% adjusted share | C · T0-16 L378 |
+| All postings at 984 large companies: 775 Fortune 1000 and 209 API providers (API Evangelist); counts only the full phrase "Model Context Protocol", so it undercounts | Q3 2026 | 234 of 343,299 postings (0.068%); 10.4% of companies (102) | C · T0-16 L377 |
+| Postings index built from about 2,600 employers (Skillenai) | 90 days to 2026-10-14 | 1,747 postings, about 0.7% adjusted share (+9.7% against the prior four weeks) | C · T0-16 L378 |
 | Engineering postings with an AI-native skew (landed.jobs; 115,348 postings) | January to mid-2026 | 1.2% → 2.7%–4% (the report is internally inconsistent) | C · T0-16 L379 |
 | AI-engineering postings at 198 AI companies, skewed senior and infra (S09) | Published 2026-08-05 | 4.3% of 3,647 postings; 28.8% of companies | B · T0-03 L274, L630 |
 | 315 sampled AI job ads (S11) | July–September 2026 | 9% of ads | B/C · T0-03 L214, L632 |
@@ -150,7 +150,7 @@ Every figure in this list comes from the Skillenai index (90-day windows to mid-
 - **MCP demand sits mostly outside the LangGraph audience:** only 14.9% of MCP postings (261 of 1,747) also mention LangGraph [C · T0-16 L391].
 - **MCP postings by role:** software engineer 21.0%, AI engineer 9.2%, product manager 8.0% [C · T0-16 L392].
 - **Title-level MCP shares** (small samples; the count is postings that mention MCP): AI Enablement Engineer 30.2% (16), Frontier Agents Engineer 27.3% (6), AI Application Engineer 20.0% (6), Agentic AI Engineer 13.8% (9), AI Security Specialist 13.0% (3) [C · T0-16 L389, L393].
-- **Skills that co-occur with MCP:** Python 849, TypeScript 476, RAG 378, CI/CD 362 and AWS 312 of the 1,747 postings [C · T0-16 L394].
+- **Skills that co-occur with MCP:** Python 849, TypeScript 476, RAG 378, CI/CD 362, AWS 312, LLMs 282, SQL 273, LangGraph 261, Claude Code 258 and Kubernetes 254 of the 1,747 postings [C · T0-16 L394].
 - **Who posts most:** MintMCP 40, ServiceNow 24, Cisco 23, Ping Identity 22, Anthropic 17, NVIDIA 17, Parloa 17; T0-16 reads this as a skew to gateway, identity and platform vendors [C · T0-16 L395].
 
 ### What the wording asks for
@@ -333,7 +333,7 @@ T0-05 measured contribution dynamics in eight AI repositories (vLLM, SGLang, tra
 - **Prove it:** [proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and [project archetypes](../05-portfolio/project-archetypes.md) (P2, P10, P14, P15).
 - **Present it:** [résumé strategy](../06-job-search/resume-strategy.md), and the résumé rows for [Agentic AI Engineer](../06-job-search/resume-skills-matrix.md#resume-agentic-ai-engineer), [AI Enablement Engineer](../06-job-search/resume-skills-matrix.md#resume-ai-enablement-engineer), [ML Platform Engineer](../06-job-search/resume-skills-matrix.md#resume-ml-platform-engineer) and [AI Security Engineer](../06-job-search/resume-skills-matrix.md#resume-ai-security-engineer).
 - **Interview for it:** [system-design archetypes](../08-interviewing/system-design-archetypes.md) and [prep packs](../08-interviewing/prep-packs.md).
-- **Learn it in order:** [learning roadmaps](learning-roadmaps.md), the [skills radar](skills-radar.md), the [protocol entries in the skills vocabulary](skills-vocabulary.md#type-protocol) and the [protocol demand notes in the skill maps](role-skill-maps.md#23-agentic-and-protocol-skills-t0-16-c).
+- **Learn it in order:** [learning roadmaps](learning-roadmaps.md), the [skills radar](skills-radar.md), the [protocol entries in the skills vocabulary](skills-vocabulary.md#type-protocol) and the protocol notes in the [Agentic AI Engineer skill map](role-skill-maps.md#skills-agentic-ai-engineer).
 - **Market context:** the [market overview](../01-landscape/market-overview.md) and [emerging roles](../01-landscape/emerging-roles.md), on why there is no protocol title to aim at.
 - **Role hubs:** [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md) · [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md) · [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md) · [AI Security Engineer](../02-roles/hubs/ai-security-engineer.md) · [AI Engineer](../02-roles/hubs/ai-engineer.md) · [AI Product Engineer](../02-roles/hubs/ai-product-engineer.md).
 - **Evidence:** [T0-16](../../research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md), [stage 03 findings](../../research/findings.md#stage-03) and [errata](../../research/ERRATA.md). Back to [Start Here](../README.md).

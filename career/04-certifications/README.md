@@ -18,10 +18,10 @@ sources: [T0-11, T0-15]
 
 | Document | What it gives you |
 |---|---|
-| [credential-roi.md](credential-roi.md) | Whether a certificate is worth it for your target role and hiring channel, which one, how to show it, and when to stop; with a dated status register |
-| [credentials-by-role.md](credentials-by-role.md) | Which credentials the evidence lists for each role, at which tier, with each credential's dated status (generated) |
+| [credential-roi.md](credential-roi.md) | Whether a certificate is worth it for your target role and hiring channel, which one, how to show it, and when to stop; with the dated events behind retirements and renames |
+| [credentials-by-role.md](credentials-by-role.md) | The single status table: which credentials the evidence lists for each role, at which tier, with each credential's dated status (generated from the skills ontology) |
 
-The [credentials table](../03-skills-and-tech/skills-vocabulary.md#4-credentials) in the skills vocabulary lists every credential with its status.
+Credential statuses are kept in one place, [credentials by role](credentials-by-role.md#by-credential); other pages link to it.
 
 ## Planned
 

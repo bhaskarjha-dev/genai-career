@@ -21,10 +21,9 @@ sources: [T0-03, T0-16, T0-06]
 | [skills-radar.md](skills-radar.md) | What to learn first, what sets each résumé family apart, which skills only one or two roles demand, and what to stop investing in, with what to learn instead (generated) |
 | [learning-roadmaps.md](learning-roadmaps.md) | How to learn what a target role needs, in what order and how long it takes, by role family and starting background, with gates and durable-versus-fast-moving skills |
 | [agentic-protocols.md](agentic-protocols.md) | MCP, A2A and AG-UI: dated status, what to know at each depth (awareness, build, operate), security essentials and how to prove it |
-| [role-skill-inventories.md](role-skill-inventories.md) | Complete typed inventory per role (concepts, methods, tools, frameworks, platforms, non-technical skills), with tiers, evidence, keywords and a self-assessment; one file per role in [inventories/](inventories/README.md) |
-| [role-skill-maps.md](role-skill-maps.md) | Narrative skill maps per role: table-stakes, differentiating and frontier skills, proof of work, interview track, typical gaps; the volatile tool registry |
-| [skills-vocabulary.md](skills-vocabulary.md) | Every skill, typed, with posting wording, relations, alternatives, status and corpus mentions |
-| [skills-ontology-method.md](skills-ontology-method.md) | How the skills layer was designed, built, verified and is maintained |
+| [role-skill-inventories.md](role-skill-inventories.md) | Complete typed inventory per role (concepts, methods, tools, frameworks, platforms, non-technical skills), with tiers, evidence, keywords and a self-assessment; one file per role in [inventories/](inventories/README.md). Also the cross-role views, the tier decisions, the verification record and how the skills ontology is designed (its ten requirements and the tier rule) |
+| [role-skill-maps.md](role-skill-maps.md) | Narrative skill map per role: practice notes from the evidence, tools in use with their dated status, proof of work, interview track, typical gaps and entry routes; each map links the role's inventory for its skills and tiers |
+| [skills-vocabulary.md](skills-vocabulary.md) | Every skill, typed, with posting wording, relations, alternatives, status and corpus mentions; the watch list of tools with a notable status |
 
 ## Planned
 

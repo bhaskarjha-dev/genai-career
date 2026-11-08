@@ -1,21 +1,22 @@
 ---
 id: skills.role-maps
-title: "GenAI Role Skills Catalog"
+title: "Role Skill Maps"
 content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Narrative skill map for every role: table-stakes, differentiating and frontier skills, tools with their status, proof of work, interview track and typical gaps; the volatile tool and credential registry."
+review_by: 2027-01-19
+summary: "Narrative skill map for every role: practice notes from the evidence, tools in use with their October 2026 status, proof of work, interview track, typical gaps and entry routes. Each role's skills and tiers are in its generated inventory."
 sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T1-03]
 ---
-# GenAI Role Skills Catalog
-## The Full Skill Stack for Every Canonical GenAI Role: Tiered, Evidence-Tagged, Interview- and Portfolio-Linked
+# Role Skill Maps
+## What the Evidence Says About Each Canonical GenAI Role: Practice Notes, Tools, Proof of Work, Interviews and Gaps
 
 > **Updated:** 2026-11-04 · **Temporal anchor:** October 2026
 > **Role universe:** the 29 canonical roles in the [master catalog](../02-roles/role-catalog.md), in the order of the [ranked catalog](../02-roles/role-rankings.md)
-> **Skill tiers:** Decision **D-004**, the three-tier competency model (T0-03 §6.4): **Table-stakes** (gets you screened), **Differentiating** (the main pay driver at Tier 2–4 per D-004) and **Frontier** (specialist employers, Tier 4–5)
+> **Skills and tiers:** every role's skills, each with its tier (Must, Important, Should, Optional, Avoid) and evidence tag, are generated from [data/skills_ontology.json](../../data/skills_ontology.json) into the role's inventory, indexed in [role-skill-inventories.md](role-skill-inventories.md); [skills-vocabulary.md](skills-vocabulary.md) types every skill. This page keeps the narrative the inventories cannot show: practice notes, tools in use, proof of work, interview tracks, typical gaps and entry routes.
+> **No D-004 tiers here.** This page no longer sorts skills into table-stakes, differentiating and frontier tiers. Erratum U20 finds the D-004 thresholds behind those tiers unsupported (posted pay tracks seniority and employer tier more than skill tier), and the labels contradicted the ontology's tiers, which are the source of truth for role skill tiers ([AGENTS.md §2](../../AGENTS.md#2-sources-of-truth)).
 > **Evidence standard:** EGP-1.0. A skill list is guidance, not a measurement. Measured prevalence carries a grade; everything else is tagged by where it came from (§0).
-> **Complete typed inventories:** this file keeps the narrative skill maps. The complete inventory for each role (every concept, method, language, framework, library, model, platform, data store, infrastructure tool, specialised product, protocol, regulation and non-technical skill, each tiered and evidence-tagged) is generated from [data/skills_ontology.json](../../data/skills_ontology.json) into [role-skill-inventories.md](role-skill-inventories.md); [skills-vocabulary.md](skills-vocabulary.md) types every skill.
 
 ---
 
@@ -23,21 +24,21 @@ sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T1-03]
 
 | Tag | Meaning | Grade |
 |---|---|---|
-| **[JD x%]** | Share of live postings for that title that name the skill (JobsPipe job-description measurements, retrieved 2026-11-02) | B |
 | **[S09 x%]** | Share of the 3,647-posting S09 corpus (198 companies, 2026-08-05; skews senior/infra) that names the skill ([T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) §6.3) | B |
 | **[S]** | Named in research sessions or in real job descriptions cited there | B/C |
 | **[P]** | Practice-curated: standard for the role, but **not** evidenced in the corpus. Check it against 10–20 live JDs before investing heavily | D |
 
-**How to use it:**
-1. Pick a role from the [ranked catalog](../02-roles/role-rankings.md).
-2. Close the **table-stakes** gaps first; these get you through screens.
-3. Build **2–3 differentiating** skills into proof of work; these win Tier 2–3 offers.
-4. Add **frontier** skills only if you are targeting specialist employers or Tier 4–5.
+Other claims carry an EGP-1.0 grade and their source, for example [A · T0-14]. The JobsPipe posting shares (retrieved 2026-11-02) that the inventories tag [JD x%] are in [posting evidence](role-skill-inventories.md#posting-evidence).
 
-Three facts from the evidence frame every list below:
-- **Evaluation is the most consistent separator, but it is "common, not universal":** evals appear in 19.0% of S09 postings and at 68.2% of companies [T0-03], and in 59.7% of AI-first roles [T0-13].
+**How to use it:**
+1. Pick a role from the [ranked catalog](../02-roles/role-rankings.md) and open its map below.
+2. Open the role's inventory for its skills and tiers: close Must gaps first, then build two or three Important skills into proof of work ([role skill inventories §0](role-skill-inventories.md#0-how-to-use-it)).
+3. Use the map for what the inventory cannot show: practice notes, the tools in use, the proof of work, the interview track and the typical gaps.
+
+Three facts from the evidence frame every map below:
+- **Evaluation is the most consistent separator, but it is "common, not universal":** evals appear in 19.0% of S09 postings and at 68.2% of companies [B · T0-03 §6.3], and in 59.7% of AI-first roles [B · T0-13.F3].
 - **Hiring signals reward practice, not brands.** Named eval frameworks barely register in postings, and framework-syntax mastery is devalued [T0-03 §4.3].
-- **Tools churn fast.** Since late 2025: TGI was archived, RAGAS went dormant, AutoGen was superseded and `trtllm-build` was removed (§5). Learn the concepts first and the tools second.
+- **Tools churn fast.** Since late 2025: TGI was archived, RAGAS went dormant, AutoGen was superseded and `trtllm-build` was removed (the [watch list](skills-vocabulary.md#5-watch-list-tools-with-a-notable-status) has the dates). Learn the concepts first and the tools second.
 
 ---
 
@@ -65,47 +66,11 @@ The scale runs 0–3 (T0-06 D9): 0 = none, 1 = tutorial-level awareness, 2 = bui
 
 ### 1.2 Behavioural competencies every GenAI loop probes (T1-03)
 
-- **C1:** pragmatism under ambiguity.
-- **C2:** explaining probabilistic trade-offs.
-- **C3:** ownership and incident response.
-- **C4:** responsible AI.
-
-Prepare four STAR-AI stories. A behavioural "No Hire" is a near-automatic veto at Anthropic and Google [B/C · T1-03].
+The four competencies (C1–C4), the STAR-AI story bank and the behavioural veto at Anthropic and Google are in [behavioural calibration](../08-interviewing/behavioral-calibration.md) [B/C · T1-03.F4, F5].
 
 ### 1.3 Proof of work by tier (T2-01 KF9, T0-13)
 
-| Target tier | Portfolio bar |
-|---|---|
-| T0–T1 | One evaluated end-to-end system over a non-generic corpus: metrics, cost accounting, and a README a stranger can reproduce in under 30 minutes |
-| T2–T3 | Two systems with *different failure surfaces*, CI-gated evals, observability and cost-optimisation evidence; at T3, a serving or kernel study plus an upstream PR |
-| T4–T5 | A methodology programme with external adopters, published research, industry-visible OSS, evidence at O-1A level |
-
-**Anti-portfolio** (widely treated as low-signal): generic PDF-chat or RAG demos, Streamlit-over-API wrappers, tutorial clones, and toy chatbots without eval metrics [T0-13, FAD §9.1].
-
-**Verifiability ladder (T0-13):**
-
-| Level | Meaning | Example |
-|---|---|---|
-| V0 | Self-asserted | Screenshot, "achieves 95% accuracy" |
-| V1 | Reproducible | One command regenerates the results table; pinned versions; CI run linked |
-| V2 | Externally attested | Merged upstream PR; leaderboard row with commit hash; independent reproduction |
-| V3 | Operationally evidenced | 30+ days of uptime and spend logs; an incident postmortem; real users |
-
-Every headline README claim should be V1 or higher. Tier 3 portfolios need at least one V2 item; Tier 4 portfolios need V2 as the norm.
-
-**Repository anatomy (T0-13 PA-01 to PA-12):**
-- **Front matter:** evidence block (PA-01), `make repro` (PA-02), dataset card (PA-03).
-- **Measurement:** eval harness (PA-04), CI gates (PA-05), latency benchmark (PA-06), cost accounting (PA-07), telemetry (PA-08).
-- **Engineering hygiene:** abuse resistance (PA-09), architecture and ≥3 ADRs (PA-10), failure analysis (PA-11), AI-use disclosure in `docs/PROCESS.md` (PA-12).
-
-**How T0-13's portfolio rubric weights shift by tier (T0–1 / T2 / T3 / T4):**
-
-| Criterion | T0–1 | T2 | T3 | T4 |
-|---|:---:|:---:|:---:|:---:|
-| Eval | 20 | 20 | 15 | 15 |
-| Perf/cost | 8 | 12 | 20 | 15 |
-| Third-party verifiability | 5 | 5 | 10 | 15 |
-| Depth/influence | 2 | 3 | 5 | 15 |
+The portfolio bar by target level, the verifiability ladder (V0–V3), the fifteen artefacts (PA-01 to PA-15), the anti-portfolio and the rubric weights are in [proof-of-work standards](../05-portfolio/proof-of-work-standards.md#the-verifiability-ladder-and-the-level-model).
 
 ---
 
@@ -113,87 +78,34 @@ Every headline README claim should be V1 or higher. Tier 3 portfolios need at le
 
 ### 2.1 JobsPipe job-description measurements (live postings, retrieved 2026-11-02) [B]
 
-| Title | Top skills named (share of postings) | Other signals |
-|---|---|---|
-| **AI Engineer** | Python 78.4 · LLM 76.7 · agentic AI 59.3 · RAG 54.0 · machine learning 39.8 · AI 37.8 · generative AI 37.6 · Azure 35.1 · AWS 35.1 · CI/CD 34.4 · vector DBs 32.6 · prompt engineering 31.1 | Remote 11.0%; pay disclosed 19.6%; senior 24.6%, entry 7.0% |
-| **Machine Learning Engineer** | ML 98.6 · Python 71.3 · PyTorch 48.2 · LLM 45.0 · data structures 33.7 · deep learning 32.6 · TensorFlow 31.8 · communication 30.3 · AI 27.0 · A/B testing 23.5 · NLP 23.3 · C++ 23.3 | Remote 14.0%; pay disclosed 38.5%; entry 13.7%, senior 23.2% |
-| **Research Scientist** (all fields) | Python 42.3 · communication 41.3 · ML 39.2 · data structures 26.0 · PyTorch 25.4 · AI 25.1 · LLM 24.4 · creativity 23.0 · deep learning 18.6 · C++ 17.4 · reinforcement learning 17.1 | Remote 3.3%; US 65.0% of postings |
-| **Solutions Architect** | AWS 53.6 · leadership 43.0 · communication 42.9 · mentoring 35.1 · Azure 29.5 · adaptability 26.5 · compliance 25.3 · Python 23.6 · AI 23.2 · GCP 22.6 · DevOps 17.2 · generative AI 17.1 | Remote 16.2% |
-| **Data Scientist** | data science 90.1 · Python 86.0 · ML 69.3 · SQL 63.8 · statistics 52.7 · communication 42.3 · data analysis 33.1 · LLM 30.1 · AI 27.2 · AWS 24.8 · generative AI 22.0 | Feeder for AI Engineer / Evals |
-| **Product Manager** | product management 92.6 · communication 53.7 · leadership 40.1 · compliance 26.1 · time management 24.0 · agile 22.7 · roadmapping 18.4 · AI 15.4 · stakeholder management 14.2 · agentic AI 13.6 | Feeder for AI PM |
-| **Software Engineer** | Python 44.4 · communication 44.2 · Java 32.4 · CI/CD 31.3 · AWS 30.8 · system design 28.3 · C++ 24.6 · AI 24.0 | — |
-| **Backend Engineer** | communication 40.4 · AWS 39.7 · Python 38.4 · system design 37.0 · Kubernetes 31.2 · PostgreSQL 30.7 · Docker 28.0 · CI/CD 26.8 · observability 25.0 | Remote 31.6% |
-| **Full-Stack Engineer** | React 69.4 · TypeScript 52.7 · Python 41.8 · AWS 41.3 · CI/CD 37.8 · Node.js 32.3 · REST API 27.6 | Remote 21.6% |
-| **DevOps Engineer** | DevOps 99.0 · CI/CD 81.2 · Kubernetes 69.4 · Terraform 59.1 · Python 55.7 · Docker 53.4 · AWS 52.9 · Linux 45.1 | Feeder for ML Platform / AI Infra |
-| **Security Engineer** | Python 45.7 · cybersecurity 42.3 · compliance 39.4 · AWS 38.8 · incident response 32.4 · application security 26.5 · IAM 21.6 | Feeder for AI Security |
-| **Engineering Manager** | leadership 72.7 · communication 51.4 · mentoring 47.1 · compliance 30.9 · system design 25.3 · observability 18.0 · agentic AI 14.8 | Feeder for AI EM |
+The per-title skill shares, remote shares and pay-disclosure shares from this JobsPipe pull are kept in [data/posting_skill_shares.json](../../data/posting_skill_shares.json) and shown in [role skill inventories: posting evidence](role-skill-inventories.md#posting-evidence).
 
 ### 2.2 Skill and tool mentions in the S09 corpus (T0-03 §6.3) [B]
 
-Each figure is the share of postings, with the share of companies in brackets. Two caveats: S09 skews senior and infra-heavy, and the three corpora T0-03 compared disagree by up to 5× on some skills. Only the *ordering* "evals > fine-tuning" held across all three.
-
-| Group | Skill (postings % / companies %) |
-|---|---|
-| Broad engineering | Agents/orchestration 37.0 (80.8) · observability/monitoring 28.5 (77.8) · distributed systems 19.1 (62.1) · evals/benchmarking 19.0 (68.2) · PyTorch 18.0 (54.0) · Kubernetes 15.5 (60.1) |
-| Model work | Inference-optimisation concept 14.8 (57.1) · fine-tuning/SFT 13.0 (50.5) · RAG 10.0 (40.4) · prompt engineering 7.5 (38.4) |
-| Specialist systems | CUDA/GPU kernels 6.6 (29.3) · MCP 4.3 (28.8) · vLLM 3.9 (19.2) · TensorRT 3.9 (19.2) · LangChain 3.6 (23.2) |
-| Smaller | Ray 3.0 · Triton 2.8 · SGLang 2.6 · Temporal 2.3 · LangGraph 2.1 · TensorRT-LLM 2.0 · Grafana 2.9 · Datadog 2.4 · OpenTelemetry 1.3 · Pinecone 0.7 · LangSmith 0.7 · Arize 0.4 |
+S09's posting and company shares are in [T0-03 §6.3](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md#63-skill-and-tool-mention-shares-s09-dataset-audit), and its comparison with two other corpora, which disagree by up to 5× (only "evals > fine-tuning" held in all three), is in [T0-03 §6.1.1](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md#611-corpora-comparison-same-skill-across-three-sampling-frames); the inventories tag each S09 share [S09 x%].
 
 ### 2.3 Agentic and protocol skills (T0-16) [C]
 
-- **MCP's share of the market is small but growing.**
-  - Skillenai: 1,747 postings in the 90 days to 2026-10-14 (~0.7% adjusted share), +9.7% vs the prior 4 weeks.
-  - API Evangelist: 234 of 343,299 postings (0.068%), at 102 of 984 companies.
-- **Role mix of MCP postings:** software engineer 21.0%, AI engineer 9.2%, product manager 8.0%.
-- **MCP share by title** (the count in brackets is the number of postings that mention MCP, not the sample size): AI Enablement Engineer 30.2% (16, so n≈53), Frontier Agents Engineer 27.3% (6), AI Application Engineer 20.0% (6), AI Security Specialist 13.0% (3).
-- **Frameworks still dominate agent-titled roles:** in Agentic AI Engineer postings LangGraph appears in 35.8%, MCP in 13.8%; in Agent Engineer postings LangChain 42.9%, LangGraph 39.3%.
-- **Top co-skills in MCP postings:** Python 849 · TypeScript 476 · RAG 378 · CI/CD 362 · AWS 312 · LLMs 282 · SQL 273 · LangGraph 261 · Claude Code 258 · Kubernetes 254.
-- **Protocol-level skills (JSON-RPC, transports, tool-schema authoring) are unmeasured:** no dataset found measures them.
+MCP's share in each postings index, the frameworks that lead inside agent-titled roles and the skills that co-occur with MCP are in [agentic protocols: how employers ask for it](agentic-protocols.md#how-employers-ask-for-it).
 
 ### 2.4 What the market devalues (T0-03 §4.3)
 
-1. **Framework-syntax memorisation.** In a study of 20 deployed systems, 85% ran custom loops [A]. Learn portable state-machine concepts instead.
-2. **Loyalty to an eval-platform brand.** The vendors are consolidating: OpenAI bought Promptfoo, ClickHouse bought Langfuse. Learn the methodology.
-3. **Legacy static engine compilation.** The static engine-build backend (`trtllm-build`) was removed from TensorRT-LLM v1.3 onward; PyTorch is the sole backend.
-4. **Standalone prompt writing.** Without regression tests, evals or cost accounting, it is commoditised. The "prompt engineer" title is 0.35% of LinkedIn AI postings [B].
+What to stop investing in (framework syntax, loyalty to one eval platform, static TensorRT-LLM engine builds, standalone prompt writing), and what to learn instead, is in the [skills radar](skills-radar.md#4-replace-what-to-stop-investing-in).
 
 ---
 
 ## 3. Skill Maps by Role
 
-Roles appear in ranked-catalog order. Each map gives table-stakes, differentiating and frontier skills, tools with their October 2026 status, human skills, proof of work, the interview track, and typical gaps by background.
+Roles appear in ranked-catalog order. Each map opens with the role's inventory, which lists every skill with its ontology tier and evidence. Below it come practice notes (graded points from the evidence, or a pointer to the page that works them through; they are not tiers), tools in use with their October 2026 status, proof of work, the interview track, and typical gaps or entry routes where the evidence has them.
 
 <a id="skills-ml-engineer"></a>
 ### 3.1 Machine Learning Engineer (`ml-engineer`) · CCI rank #1
 
-*Complete typed inventory, with evidence for every skill: [inventories/ml-engineer.md](inventories/ml-engineer.md).*
+*Skills and tiers: [inventories/ml-engineer.md](inventories/ml-engineer.md). Posting shares for Machine Learning Engineer postings: [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-**Measured:** ML 98.6 · Python 71.3 · PyTorch 48.2 · LLM 45.0 · data structures 33.7 · deep learning 32.6 · TensorFlow 31.8 · A/B testing 23.5 · NLP 23.3 · C++ 23.3 [JD].
-
-- **Table-stakes:**
-  - Python and PyTorch [JD].
-  - ML fundamentals: supervised learning, loss functions, optimisation, regularisation, metrics [JD].
-  - Data structures and algorithms [JD 33.7%].
-  - SQL and data wrangling [P].
-  - Experiment design and A/B testing [JD 23.5%].
-  - Deployment basics: Docker, a REST service, CI [P].
-- **Differentiating:**
-  - Deep learning and transformers: attention, tokenisation, embeddings [JD].
-  - **When *not* to fine-tune.** 70% of production LLM apps use off-the-shelf models [A · T0-03 S31]. Fine-tune or distil only for narrow, stable, high-volume tasks that have a golden set [D · T0-14].
-  - Fine-tuning methods: SFT and LoRA [S09 13.0% for fine-tuning; LoRA named in a Baseten JD, S · T0-03]; QLoRA and PEFT [P].
-  - Embedding and retrieval models.
-  - LLM evals: offline and online metrics, CIs [S].
-  - Serving literacy: vLLM/SGLang, batching, quantisation [S].
-  - Recsys and ranking for recsys-heavy employers [S · T0-14].
-  - Data-centric work: labelling and data quality [P].
-- **Frontier:**
-  - Distributed training: DDP/FSDP2 sharding, checkpoint and resume logic; memory and throughput arithmetic from the Ultra-Scale Playbook [S · T0-13 D8]; tensor/pipeline parallelism and MoE [S · T0-03 serving JD]; data-parallel wording [P].
-  - Distributed post-training and RL infrastructure (verl, OpenRLHF) [S].
-  - Custom kernels [S].
 - **Tools (Oct 2026):**
   - PyTorch; Hugging Face Transformers/PEFT/TRL [P]; Ray Train/Serve [S09 3.0%]; W&B [S · T0-03 J9]; MLflow [P]; vLLM 0.32 / SGLang 0.5.22; TensorRT-LLM (stable 1.2.1 as of October 2026, v1.4.0rc1 tagged; static engine build removed from v1.3) [S · T0-03].
   - FSDP2/DDP [S · T0-13 D8]; Megatron [S · T0-05, RadixArk JD]; DeepSpeed and SLURM are not named in the sessions [P].
-- **Human:** communication [JD 30.3%]; translating model metrics into business impact [P].
 - **Proof of work:**
   - A baseline-first model with measured lift and error analysis.
   - A prompt vs RAG vs fine-tune comparison with cost and quality numbers.
@@ -211,73 +123,22 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-engineer"></a>
 ### 3.2 AI Engineer (`ai-engineer`) · CCI rank #2
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-engineer.md](inventories/ai-engineer.md).*
+*Skills and tiers: [inventories/ai-engineer.md](inventories/ai-engineer.md). Posting shares for AI Engineer postings: [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-**Measured:** Python 78.4 · LLM 76.7 · agentic AI 59.3 · RAG 54.0 · ML 39.8 · generative AI 37.6 · Azure 35.1 · AWS 35.1 · CI/CD 34.4 · vector DBs 32.6 · prompt engineering 31.1 [JD].
-
-- **Table-stakes** [S · T0-03 Tier 1]:
-  - Production Python: typing, asyncio, Pydantic.
-  - Provider SDKs: OpenAI, Anthropic, Google GenAI.
-  - Structured outputs (JSON Schema); tool/function calling; streaming (SSE).
-  - Embeddings and vector search; naive RAG.
-  - Prompt versioning and few-shot design.
-  - Docker and basic cloud on AWS/Azure/GCP [JD 35%].
-  - FastAPI/REST; SQL; Git and CI/CD [JD 34.4%].
-- **Differentiating** [S · T0-03 Tier 2]:
-  - **Evaluation harnesses:**
-    - pytest regression in CI.
-    - Golden sets: 20–50 seed tasks built from real failures, growing to 100+.
-    - LLM-judge calibration with position swaps and Cohen's κ.
-    - pass@k and pass^k metrics.
-  - **Retrieval quality:**
-    - Hybrid search: BM25 + dense vectors + cross-encoder reranking.
-    - recall@k and MRR; citation faithfulness; abstention.
-    - ACL-aware retrieval.
-    - Treat ACL enforcement as a fail-closed, retrieval-time invariant [S · T0-14 A8].
-    - Plan embedding-model migrations; they also invalidate semantic caches [C · T0-14].
-    - Choose RAG vs long context vs fine-tuning deliberately [A/B · T0-14 T4]:
-      - Accuracy drops for facts that sit mid-context.
-      - Retrieve when the corpus exceeds the window, changes often or needs per-user ACLs.
-      - Fine-tune for style or format, not for facts that change.
-  - **Agent reliability:**
-    - Durable state (LangGraph or Temporal) with checkpoints.
-    - Loop limits and step/token budgets.
-    - Idempotent tools; human approval for irreversible actions.
-  - **Cost and latency engineering:**
-    - Cache-aware prompt layout, stable prefix first. Only 28% of LLM spans on cache-capable models show cached reads, even though 69% of input tokens are system prompts [A · Datadog].
-    - Model routing and multi-provider fallback. 60% of LLM errors in Feb 2026 were rate limits [A].
-    - TTFT/TPOT budgets.
-    - Token economics [A · T0-14]:
-      - Cache pricing: reads bill at 0.1× base input (lower on some model tiers); writes at 1.25× (5-minute) or 2× (1-hour).
-      - A cache breakpoint placed on changing content causes perpetual misses.
-      - Batch APIs are 50% cheaper for up to 24-hour latency, so route evals, backfills and enrichment to batch.
-      - Layer caches as prefix → exact → semantic; semantic goes last because of false hits.
-  - **Observability:** OpenTelemetry GenAI traces, per-tenant cost attribution.
-  - **Security basics:** prompt injection, OWASP LLM Top 10.
-  - **Context management:** compaction, just-in-time retrieval [S · T0-14].
-- **Frontier (role-relative):**
-  - Self-hosting with vLLM/SGLang plus utilisation-aware cost models [S].
-  - Structured generation with JSON-schema enforcement (constrained decoding) [S · T0-03 §4.1, T0-14 A13].
-  - MCP server/client design to spec revision 2026-07-28 [S · T0-16].
-  - Distillation or fine-tuning for narrow tasks [S].
+- **Practice notes:**
+  - **Cache-aware prompt layout, stable prefix first.** Only 28% of LLM spans on cache-capable models show cached reads, even though 69% of input tokens are system prompts [A · Datadog, T0-03 §6.10].
+  - **Model routing and multi-provider fallback.** 60% of LLM errors in Feb 2026 were rate limits [A · Datadog, T0-03 §6.10].
+  - **Token economics** (cache pricing, batch discounts, cache layering) and the RAG vs long-context vs fine-tuning decision are worked through in [system-design archetypes](../08-interviewing/system-design-archetypes.md) [A/B · T0-14].
 - **Tools (Oct 2026)** [S · T0-03, T0-16]:
   - **Agent frameworks:** LangGraph 1.x, LlamaIndex Workflows, OpenAI Agents SDK (GA 2026-03-23, native Temporal), Claude Agent SDK, Pydantic AI 2.x, Microsoft Agent Framework 1.x, Google ADK 2.x.
   - **Evals:** DeepEval and Promptfoo (OpenAI-owned as of October 2026).
   - **Tracing:** Langfuse, Phoenix, LangSmith and Braintrust are listed interchangeably in JDs.
   - **Storage and gateways:** generic vector DBs (brand names devalued); LiteLLM gateway.
-- **Human:** scoping with stakeholders; explaining probabilistic trade-offs; writing failure-mode docs; product sense [S · T0-06 S12].
 - **Proof of work:**
   - **T0–T1:** an evaluated system over a real corpus. Include a metrics table (recall@k, rubric correctness, faithfulness), a cost/latency budget, and a reproducible README.
   - **T2–T3:** a second system with a different failure surface (an agent with approvals and budgets), plus CI-gated evals, traces, a load test and a postmortem [S · T0-06, T2-01].
   - **Specialisation option:** a "reliability layer for LLM apps": caching, backoff, budgets, fallbacks, trace replay, eval-regression CI [S · T0-06].
-  - **If you host a live demo** [S · T0-13 H1–H12]:
-    - Default to replay mode.
-    - Use a dedicated key with a hard spend cap.
-    - Add per-IP and global rate limits plus a daily budget counter.
-    - Cap tokens and set timeouts.
-    - Expose no side-effecting tools; keep secrets in a store.
-    - Run injection tests in CI.
-    - Add a kill switch and a visible budget meter (protects against denial-of-wallet).
+  - **If you host a live demo,** default to replay mode and harden it with the H1–H14 checklist in [proof-of-work standards](../05-portfolio/proof-of-work-standards.md#checklist) [D · T0-13].
 - **Interview:** the application track: RAG with ACL enforcement, agent loop control, eval architecture, context management [B/C · T1-03]. Plus the 45-minute design blueprint (5 / 4 / 9 / 16 / 7 / 4 minutes) [S · T0-14].
 - **Typical gaps:**
   - Backend: evals (the largest gap), LLM API fluency, retrieval, and Python if coming from Java/Go.
@@ -289,19 +150,8 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-research-engineer"></a>
 ### 3.3 Research Engineer / Member of Technical Staff (`research-engineer`) · CCI rank #3
 
-*Complete typed inventory, with evidence for every skill: [inventories/research-engineer.md](inventories/research-engineer.md).*
+*Skills and tiers: [inventories/research-engineer.md](inventories/research-engineer.md).*
 
-- **Table-stakes:** Python and PyTorch, including internals [S · Inferact JD]; DSA; Linux; ML fundamentals; experimenting at scale [P].
-- **Differentiating:**
-  - **Distributed training:** DDP/FSDP2 sharding, checkpoint and resume [S · T0-13 D8]; tensor/pipeline parallelism and MoE [S · T0-03]; Megatron [S · T0-05].
-  - **Debugging training runs:** loss spikes and numerics [P].
-  - **Post-training:** SFT, preference and RL methods [P; T0-03 lists distributed post-training and RL infrastructure as frontier].
-  - **RL and fine-tuning tooling:** RL frameworks verl and OpenRLHF; fine-tuning tools Unsloth and LlamaFactory. All four appear as bonus vLLM integrations in an Inferact *inference* JD [S · T0-03 J8].
-  - **Evals at scale; research data pipelines; profiling** [S].
-- **Frontier:**
-  - Pre-training at scale; custom kernels; accelerator ecosystems (TPU, Trainium) [S · T0-03 J2].
-  - Numerics validation: exact vs approximate top-k, FP32 islands [S · Anthropic postmortem].
-- **Human:** close collaboration with researchers; research taste [S · T0-06].
 - **Proof of work:**
   - Paper re-implementations with rigorous evals [S · T2-01].
   - Compact reimplementations: a nano-vLLM-style engine (continuous batching, paged KV, prefix caching) in 1–2k lines, benchmarked against vLLM; distributed-training smoke tests with DDP/FSDP2 [S · T0-13 D8].
@@ -312,25 +162,9 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-forward-deployed-engineer"></a>
 ### 3.4 Forward Deployed Engineer (`forward-deployed-engineer`) · CCI rank #4
 
-*Complete typed inventory, with evidence for every skill: [inventories/forward-deployed-engineer.md](inventories/forward-deployed-engineer.md).*
+*Skills and tiers: [inventories/forward-deployed-engineer.md](inventories/forward-deployed-engineer.md).*
 
-- **Table-stakes:**
-  - Production Python and/or TypeScript.
-  - APIs and integrations: REST, webhooks, auth.
-  - SQL and data pipelines.
-  - LLM APIs plus RAG plus tool calling.
-  - Docker and cloud deployment [S · T0-06 "coding, GenAI and infrastructure skills"].
-- **Differentiating:**
-  - **Discovery and scoping with customers**; demos and proofs of concept under time pressure; stakeholder communication [S · T0-06, T2-01].
-  - **Enterprise integration:** ACL-enforced retrieval [S · T1-03 AI-FDE prep]; OAuth/OIDC and RBAC [S · T0-16 PTC JD]; SSO and customer data access in private networks [P].
-  - **Agent design for customer workflows**; evals tied to customer KPIs [S].
-  - **Vertical domain depth:** Databricks splits FDE work by manufacturing, public sector, financial services and retail [S · T0-01].
-  - **Security reviews and change management** [P].
-- **Frontier:**
-  - On-prem or hybrid model deployment (self-hosted serving) [P].
-  - Turning field patterns into product requirements [P].
 - **Tools:** the AI Engineer stack, plus the customer's data platforms (Databricks is named) [S], cloud AI services (Bedrock, Azure OpenAI, Vertex) [P], and enterprise connectors [P].
-- **Human:** customer empathy, executive communication, comfort with ambiguity, and willingness to travel (up to 50% in one JD) [S].
 - **Proof of work:**
   - A customer pilot case study with numbers [S · T0-06].
   - A demo on a real data source shown to ≥2 potential users [S · T2-01].
@@ -344,52 +178,24 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-applied-ai-engineer"></a>
 ### 3.5 Applied AI Engineer (`applied-ai-engineer`) · CCI rank #5
 
-*Complete typed inventory, with evidence for every skill: [inventories/applied-ai-engineer.md](inventories/applied-ai-engineer.md).*
+*Skills and tiers: [inventories/applied-ai-engineer.md](inventories/applied-ai-engineer.md).*
 
-- **Table-stakes:** the full [AI Engineer](#skills-ai-engineer) table-stakes stack.
-- **Differentiating:**
-  - Customer delivery of LLM applications [S · T0-01 D3].
-  - Evals defined per customer use case.
-  - Safety in regulated settings: Anthropic's "Beneficial Deployments" team is an example [S].
-  - Model-behaviour knowledge and prompting at scale [P].
-  - Partner enablement and technical writing [P].
-  - The context-retrieval specialisation (a Databricks posting) [S].
-- **Frontier:** shaping lab products from field feedback [P].
 - **Proof of work:** a customer-facing reference implementation with evals and a published write-up [P]; then the AI Engineer T2–T3 portfolio.
 - **Interview:** the application track plus customer scenarios [S · T0-14 Applied-AI loop].
 
 <a id="skills-research-scientist"></a>
 ### 3.6 Research Scientist (AI/ML) (`research-scientist`) · CCI rank #6
 
-*Complete typed inventory, with evidence for every skill: [inventories/research-scientist.md](inventories/research-scientist.md).*
+*Skills and tiers: [inventories/research-scientist.md](inventories/research-scientist.md). Posting shares for all-field Research Scientist postings: [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-**Measured (all-field research-scientist postings):** Python 42.3 · communication 41.3 · ML 39.2 · PyTorch 25.4 · LLM 24.4 · creativity 23.0 · deep learning 18.6 · C++ 17.4 · reinforcement learning 17.1 [JD].
-
-- **Table-stakes:** deep ML theory and maths (optimisation, probability, linear algebra); Python/PyTorch; experiment design; scientific writing [P/JD].
-- **Differentiating:**
-  - Research taste and novel method development [S · T0-06].
-  - A publication record [S].
-  - Reinforcement learning [JD 17.1%] and LLM research [JD 24.4%].
-  - Communication [JD 41.3%].
-- **Frontier:** field-defining work; leading research agendas [S · T0-17 Tier 5].
 - **Proof of work:** papers, open research code, talks [S].
 - **Interview:** a research talk, deep technical discussion and coding. Offers are "not plannable" [D · T0-06].
 
 <a id="skills-applied-scientist"></a>
 ### 3.7 Applied Scientist (`applied-scientist`) · CCI rank #7
 
-*Complete typed inventory, with evidence for every skill: [inventories/applied-scientist.md](inventories/applied-scientist.md).*
+*Skills and tiers: [inventories/applied-scientist.md](inventories/applied-scientist.md).*
 
-- **Table-stakes:** ML and statistics depth; Python and PyTorch; experiment design; coding and DSA for big-company loops [S · T0-06]; SQL [P].
-- **Differentiating:**
-  - **Research-to-production translation:** turning a method into a tested service [S · T0-06].
-  - **Evaluation statistics:** confidence intervals, power analysis, judge-bias tests, drift detection [S · T0-06].
-  - **Baseline-first discipline** and one-page decision memos [S].
-  - **Causal inference and A/B testing** [P].
-  - **LLM fine-tuning and alignment basics** [S09 13.0%].
-  - **Reading papers and adapting them** to product constraints [P].
-- **Frontier:** novel methods, publications and patents [P].
-- **Human:** framing impact for business stakeholders; scoping [S · T0-06].
 - **Proof of work:**
   - Your own method turned into a service with tests and CI.
   - At least three code reviews via OSS pull requests.
@@ -399,22 +205,8 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-infrastructure-engineer"></a>
 ### 3.8 AI Infrastructure / GPU Platform Engineer (`ai-infrastructure-engineer`) · CCI rank #8
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-infrastructure-engineer.md](inventories/ai-infrastructure-engineer.md).*
+*Skills and tiers: [inventories/ai-infrastructure-engineer.md](inventories/ai-infrastructure-engineer.md). Posting shares for DevOps Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-- **Table-stakes:** Linux; Kubernetes; networking; IaC (Terraform); Python or Go; observability; SRE and on-call practice [JD for DevOps/SRE feeders].
-- **Differentiating:**
-  - **GPU fleet operations:** H100/H200/B200; reserved vs spot capacity; tensor-parallel groups [S · T0-14].
-  - **GPU scheduling and allocation ledgers** (archetype A4); weight distribution and canary rollouts (A5) [S · T0-14].
-  - **Distributed-systems depth**, the minimum in top-band JDs [S · T0-03 J1].
-  - **Cluster interconnect basics:** NCCL / RDMA / InfiniBand [S].
-  - **Checkpoint and storage throughput; failure recovery** [P].
-  - **Reliability under hardware faults:** silent data corruption (Anthropic's postmortem describes TPU silent corruption) [S · T0-03].
-  - **Capacity planning and GPU cost governance** [S].
-- **Frontier:**
-  - Multi-node interconnect optimisation [S].
-  - Disaggregated serving fleets [S].
-  - Mixed accelerator estates (CUDA, TPU, Trainium) [S · T0-03 J2].
-  - Hardware CI with canary, shadow and rollback [S].
 - **Tools:**
   - **Cluster and serving:** Kubernetes GPU scheduling; Ray [S09 3.0%]; Dynamo [S].
   - **Monitoring:** Prometheus/Grafana [S].
@@ -426,38 +218,14 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-inference-engineer"></a>
 ### 3.9 Inference / LLM Serving Engineer (`inference-engineer`) · CCI rank #9
 
-*Complete typed inventory, with evidence for every skill: [inventories/inference-engineer.md](inventories/inference-engineer.md).*
+*Skills and tiers: [inventories/inference-engineer.md](inventories/inference-engineer.md).*
 
-- **Table-stakes** [S · T0-03 J1–J8]:
-  - Python plus C++ (or Rust).
-  - Distributed-systems fundamentals [S]; Linux [P].
-  - GPU basics: compute-bound prefill vs memory-bandwidth-bound decode [S · T0-03 §6.10]; HBM capacity and bandwidth [S · T0-14 §6.6]; SRAM/memory hierarchy [P].
-  - PyTorch internals; Kubernetes.
-- **Differentiating** [S · T0-03, T0-14]:
-  - **Serving engines:** vLLM is the default; SGLang suits prefix-heavy and agentic workloads; TensorRT-LLM is NVIDIA-only.
-  - **Batching and memory:** continuous batching, PagedAttention / KV-cache management, chunked prefill, prefix caching.
-  - **Speculative decoding:** lossless; best for inter-token latency at low-to-medium QPS in memory-bound workloads; measure acceptance rate and goodput before enabling by default [A · T0-14]. T0-03 gives α < 0.6 as an example of where drafting overhead can cause a net regression; the threshold depends on draft cost, length and load.
-  - **Quantisation:** FP8/FP4, AWQ, GPTQ, INT4/W4A16.
-  - **Parallelism:** tensor and pipeline parallelism; MoE serving.
-  - **Latency budgeting:**
-    - Track TTFT, ITL/TPOT, goodput, p95 and p99.
-    - `E2E = TTFT + (N_out − 1) × ITL`.
-  - **KV-cache memory math:**
-    - Bytes per token = `2 × L × H_kv × d_head × bytes`.
-    - Llama-3.1-70B ≈ 320 KiB/token at BF16 [S · T0-14 F4] (T0-03 §6.10 mislabels this value as FP8; FP8 is half).
-  - **Profiling:** roofline analysis with Nsight Systems and the PyTorch Profiler.
-  - **Load testing:** `vllm bench serve`, AIPerf.
-  - **Fleet control:** autoscaling on queue depth and KV utilisation; admission control; prefix-aware routing.
-  - **Utilisation-aware cost models:** the GEICO study found a 2.5–24× cost penalty at 1–10 req/s on H100s.
-- **Frontier** [S · T0-03 Tier 3]:
-  - Engine internals: scheduler, KVBM.
-  - Prefill/decode disaggregation: NVIDIA Dynamo, llm-d.
-  - Custom kernels: Triton, CUDA, CUTLASS, tile DSLs.
-  - Interconnect: NCCL / RDMA.
-  - Numerics validation; multi-LoRA serving.
+- **Practice notes:**
+  - **Speculative decoding:** measure acceptance rate and goodput before enabling it by default [A · T0-14]. T0-03 gives α < 0.6 as an example of where drafting overhead can cause a net regression; the threshold depends on draft cost, length and load.
+  - **KV-cache and latency arithmetic** (bytes per token, the end-to-end latency budget) is in the formula kit of the [system-design archetypes](../08-interviewing/system-design-archetypes.md). Llama-3.1-70B needs about 320 KiB per token at BF16 [S · T0-14 F4]; T0-03 §6.10 mislabels that value as FP8, which is half (erratum U11).
 - **Security:** patch serving-engine CVEs promptly [A/B · T0-03]:
-  - SGLang CVE-2026-5760 (GGUF template RCE).
-  - vLLM CVE-2026-22778 (weight-loader RCE) and CVE-2026-27893 (`trust_remote_code`).
+  - SGLang had three critical CVEs in H1 2026: CVE-2026-5760 (GGUF template RCE) and CVE-2026-3059/3060 (pickle deserialisation).
+  - vLLM CVE-2026-22778 (weight-loader RCE) and CVE-2026-27893 (`trust_remote_code`, fixed in v0.18.0).
   - Parse templates in a sandbox.
 - **Tools (Oct 2026):** vLLM 0.32, SGLang 0.5.22, TensorRT-LLM (stable 1.2.1 as of October 2026; static engine build removed from v1.3), NVIDIA Dynamo 1.6.0 (1.0 GA 2026-03-16), Dynamo Triton (the renamed Triton Inference Server), FlashInfer, LMCache, Mooncake, llm-d. **TGI was archived on 2026-03-21; do not use it for new work** [A/B · T0-03].
 - **Proof of work** (T0-13 R3 specification):
@@ -478,21 +246,8 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-product-manager"></a>
 ### 3.10 AI Product Manager (`ai-product-manager`) · CCI rank #10
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-product-manager.md](inventories/ai-product-manager.md).*
+*Skills and tiers: [inventories/ai-product-manager.md](inventories/ai-product-manager.md). Posting shares for Product Manager postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-**Measured (PM postings):** product management 92.6 · communication 53.7 · leadership 40.1 · compliance 26.1 · agile 22.7 · roadmapping 18.4 · AI 15.4 · stakeholder management 14.2 · agentic AI 13.6 [JD].
-
-- **Table-stakes:** PM fundamentals (discovery, prioritisation, roadmaps); metrics; stakeholder management [JD].
-- **Differentiating:**
-  - **AI literacy** [S · T0-06]: tokens, context windows, hallucination, RAG vs fine-tuning vs prompting, latency and cost.
-  - **Eval fluency:** rubrics, golden sets, inter-rater agreement, the limits of LLM judges [S].
-  - **Success metrics for non-deterministic systems**, and how to report them [S · T2-01].
-  - **Token and unit economics** [S].
-  - **Pilot execution and adoption measurement** [S].
-  - **Risk and governance documentation** [S].
-  - **Notebook-level SQL and Python** [S · T0-06]; hands-on prompting in a console or playground [S · T2-01].
-  - **Human-in-the-loop design** [P].
-- **Frontier:** platform and agent product strategy; MCP/AI control-plane products (e.g., Workato's Senior PM, Enterprise MCP posting) [S · T0-16].
 - **Proof of work:**
   - A PRD plus eval rubric plus pilot metrics [S · T0-06].
   - A domain rubric with 50+ labelled cases.
@@ -503,22 +258,8 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ml-platform-engineer"></a>
 ### 3.11 ML Platform / MLOps Engineer (`ml-platform-engineer`) · CCI rank #11
 
-*Complete typed inventory, with evidence for every skill: [inventories/ml-platform-engineer.md](inventories/ml-platform-engineer.md).*
+*Skills and tiers: [inventories/ml-platform-engineer.md](inventories/ml-platform-engineer.md). Posting shares for DevOps Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-- **Table-stakes:** Kubernetes [JD 69.4% of DevOps]; Terraform [JD 59.1%]; CI/CD [JD 81.2%]; Docker; Python; a major cloud; monitoring [JD].
-- **Differentiating:**
-  - **Model serving on Kubernetes:** vLLM/SGLang, KServe, Ray Serve, NVIDIA Dynamo / Dynamo Triton [S · T0-03 §4.1].
-  - **LLM gateways** (archetype A6) [S · T0-14]: per-team budgets, PII redaction, routing, cache layers, usage ledgers.
-  - **MCP gateways and tool registries** [S · T0-16]:
-    - Identity: OAuth/OIDC/JWT, RBAC, identity propagation.
-    - Governance: approvals, server tiering, drift detection.
-  - **Observability:**
-    - Prometheus/Grafana for TTFT, TPOT and KV saturation; per-tenant cost attribution.
-    - OpenTelemetry: the GenAI semantic conventions are still in *Development*, so keep them behind adapters [S · T0-03].
-  - **Lifecycle:** CI/CD for models and prompts; model and prompt registries [S].
-  - **Supply chain:** model provenance, SBOMs, CVE patching [S].
-  - **Operations:** SLOs, error budgets, cost governance [S · T0-14].
-- **Frontier:** multi-LoRA serving, prefill/decode disaggregation, GPU autoscaling, supply-chain hardening [S · T0-03].
 - **Tools (Oct 2026):**
   - **Serving and gateways:** KServe, Ray, LiteLLM, Azure APIM MCP, Foundry AI Gateway, AgentCore Gateway, agentgateway, Cloudflare MCP server portals [S].
   - **Observability:** Langfuse (ClickHouse-owned as of October 2026), Phoenix (ELv2 licence), Prometheus/Grafana/Datadog [S].
@@ -529,21 +270,10 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-agentic-ai-engineer"></a>
 ### 3.12 Agentic AI Engineer (`agentic-ai-engineer`) · CCI rank #12
 
-*Complete typed inventory, with evidence for every skill: [inventories/agentic-ai-engineer.md](inventories/agentic-ai-engineer.md).*
+*Skills and tiers: [inventories/agentic-ai-engineer.md](inventories/agentic-ai-engineer.md).*
 
-**Measured:** LangGraph is named in 35.8% of Agentic AI Engineer postings vs MCP in 13.8%; Agent Engineer postings name LangChain 42.9% and LangGraph 39.3% [C · T0-16].
-
-- **Table-stakes:** tool/function calling with JSON-schema tools; state-machine basics; prompt and context design; Python [S].
-- **Differentiating** [S · T0-03, T0-14 A11, T0-16]:
-  - **Durable execution:** checkpoints, retries with jitter, idempotency keys, compensation where possible.
-  - **Human approval** for irreversible actions.
-  - **Budgets:** step, token and time limits; loop detection.
-  - **Tool routers** with schema validation and authorisation.
-  - **Sandboxes:** containers or microVMs with an egress policy.
-  - **Replay and reliability:** append-only event logs and deterministic replay; pass^k reliability evals.
-  - **Design choices:** workflow vs agent, and single vs multi-agent.
-  - **Context handling:** compaction and just-in-time retrieval.
-- **Protocols** [S · T0-16]:
+- **Measured:** frameworks are named more often than MCP in agent-titled postings; the shares are in [agentic protocols](agentic-protocols.md#inside-agent-titled-roles-frameworks-lead) [C · T0-16.F10].
+- **Protocols** [S · T0-16] (protocol facts are kept in [agentic protocols](agentic-protocols.md)):
   - **MCP, spec revision 2026-07-28:**
     - Stateless core; Client ID Metadata Documents replace dynamic client registration (DCR).
     - Extensions: MCP Apps, Enterprise-Managed Authorization, Tasks.
@@ -568,51 +298,20 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-solutions-architect"></a>
 ### 3.13 AI / GenAI Solutions Architect (`ai-solutions-architect`) · CCI rank #13
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-solutions-architect.md](inventories/ai-solutions-architect.md).*
+*Skills and tiers: [inventories/ai-solutions-architect.md](inventories/ai-solutions-architect.md). Posting shares for all Solutions Architect postings (adjacent): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-**Measured (all Solutions Architect postings):** AWS 53.6 · leadership 43.0 · communication 42.9 · mentoring 35.1 · Azure 29.5 · compliance 25.3 · Python 23.6 · AI 23.2 · GCP 22.6 · generative AI 17.1 [JD].
-
-- **Table-stakes:** cloud architecture on AWS/Azure/GCP [JD]; networking and security basics; Python [JD 23.6%]; communication and leadership [JD].
-- **Differentiating:**
-  - Reference architectures for RAG and agents on managed services (Bedrock, Azure OpenAI, Vertex) [P; Amazon GenAI SA posting S].
-  - Model routing and multi-model strategy. Over 70% of organisations use 3+ models [A · Datadog]; learned routing preserved about 95% of GPT-4 quality at 35–85% lower cost, depending on the benchmark [A · T0-14 T1].
-  - Data governance and compliance architecture [JD 25.3%].
-  - Cost modelling, including the self-host vs managed-API decision [S · T0-03].
-  - Gateway and identity patterns [S · T0-16].
-  - Pre-sales: demos and proposals [P].
-- **Frontier:** enterprise AI platform strategy; multi-cloud AI governance [P].
 - **Credentials:** a tie-breaker only in IT services, staffing and partner firms:
-  - Current options: AIP-C01 (AWS Generative AI Developer – Professional), PMLE (Google), AI-103 (Azure AI Apps and Agents Developer Associate).
+  - Current options: AIP-C01 (AWS Generative AI Developer – Professional), PMLE (Google), AI-103 (Azure AI Apps and Agents Developer Associate); statuses in [credentials by role](../04-certifications/credentials-by-role.md).
   - No certification is verified in more than 10% of GenAI JDs [B · T0-11].
 - **Proof of work:** a reference architecture with a cost model and a working infrastructure-as-code deployment [P].
 
 <a id="skills-ai-evaluation-engineer"></a>
 ### 3.14 AI Evaluation Engineer (`ai-evaluation-engineer`) · CCI rank #14
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-evaluation-engineer.md](inventories/ai-evaluation-engineer.md).*
+*Skills and tiers: [inventories/ai-evaluation-engineer.md](inventories/ai-evaluation-engineer.md).*
 
 **Measured:** evals/benchmarking appears in 19.0% of S09 postings and at 68.2% of companies [S09], and in 59.7% of AI-first roles [T0-13]. Only 52.4% of agent teams run offline evals and 37.3% online evals [B/C · LangChain survey].
 
-- **Table-stakes:** Python; pytest; statistics fundamentals; data handling; LLM APIs [S].
-- **Differentiating** [S · T0-03, T0-13, T0-14]:
-  - **Eval design:** separate capability and regression suites; 20–50 seed tasks drawn from real failures; golden sets with adjudication rules.
-  - **Graders, code-based first:**
-    - Code checks wherever possible.
-    - Model graders calibrated against ~50 passing and ~50 failing human labels (TPR/TNR).
-    - Human graders where needed.
-  - **Judge calibration:**
-    - Position swaps; checks for verbosity, self-preference and anchoring bias.
-    - Cohen's κ: raw agreement overstates quality by **33–41 points** [A/B].
-  - **Statistics:** pass@k vs pass^k; confidence intervals and power analysis; contamination and saturation checks.
-  - **Component evals:** recall@k, MRR, faithfulness, tool accuracy, router accuracy, cache false-hit rate, guardrail precision/recall.
-  - **Online evals:** sampling, A/B tests, and an incident → golden-set loop.
-  - **Error analysis:** taxonomies from ≥100 reviewed traces.
-  - **Operations:** CI regression gates, judge-version pinning, flaky-task detection.
-  - **Test the eval itself:** one reported benchmark score moved from 42% to 95% after grader bugs were fixed [A · T0-14 §6.7].
-    - Give model judges an "Unknown" option and one dimension each.
-    - Grade outcomes, not exact tool-call paths.
-    - Run each trial in a clean, isolated environment.
-- **Frontier:** benchmark construction; safety and capability evals; methodology programmes with external adopters [S · T0-13 R4].
 - **Tools (Oct 2026):**
   - **Eval frameworks:** DeepEval (active), Promptfoo (OpenAI-owned), TruLens.
   - **Tracing platforms:** LangSmith, Langfuse, Phoenix, Braintrust; JDs treat these as interchangeable.
@@ -627,20 +326,8 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-gpu-kernel-engineer"></a>
 ### 3.15 GPU Kernel / ML Compiler Engineer (`gpu-kernel-engineer`) · CCI rank #15
 
-*Complete typed inventory, with evidence for every skill: [inventories/gpu-kernel-engineer.md](inventories/gpu-kernel-engineer.md).*
+*Skills and tiers: [inventories/gpu-kernel-engineer.md](inventories/gpu-kernel-engineer.md).*
 
-- **Table-stakes:** C++; the CUDA programming model; GPU architecture (SMs, warps, memory hierarchy, tensor cores); linear algebra; profiling [S · T0-03 J3/J4].
-- **Differentiating:**
-  - **Kernel languages:** Triton, CUTLASS/CuTe [S].
-  - **Core kernels:** fused attention; GEMM tuning; quantised kernels (FP8/FP4/INT4) [S].
-  - **Memory performance:** coalescing, bank conflicts, occupancy [P].
-  - **Analysis:** roofline (ridge ≈ 300 FLOP/byte on an H100 at BF16 dense, a calculated figure) [S · T0-14]; Nsight Systems [S · T0-03]; Nsight Compute [P].
-  - **Numerics validation** [S].
-  - **Compiler stacks:** XLA, the Triton compiler, TorchInductor, NeuronX [S · T0-03 J2].
-- **Frontier:**
-  - **Tile DSLs:** CUDA Tile IR, Helion, CuteDSL. With these DSLs, fused attention can be written in about 60 lines of Python on B200 (2026) [S · T0-03].
-  - **Other platforms:** AMD ROCm [S · T0-05]; HIP [P].
-  - **New hardware and collectives:** new-architecture bring-up; custom collectives [P].
 - **Watch:** DSLs and automated kernel agents are abstracting raw kernel writing. Pair kernel skills with system-level judgement [S · T0-03].
 - **Proof of work:**
   - GPU MODE leaderboard submissions (teams of up to 3) [S · T0-12]; AMD × GPU MODE kernel competitions run on organiser hardware [S · T0-13 M4].
@@ -650,30 +337,13 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-governance-lead"></a>
 ### 3.16 AI Governance Programme Lead / Manager (`ai-governance-lead`) · CCI rank #16
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-governance-lead.md](inventories/ai-governance-lead.md).*
+*Skills and tiers: [inventories/ai-governance-lead.md](inventories/ai-governance-lead.md).*
 
 **Measured (Axial, US AI-governance postings) [C]:** Python 27.1% · observability/monitoring 42.3% · OneTrust 8.7–9.2% · Azure 11.1% · AIGP 8.9% (CISSP 10.4%, CIPP 8.2%, CISA 5.9%).
 
-- **Table-stakes:** about 5 years in GRC, privacy, audit or security; risk assessment methods; policy writing; running committees; stakeholder management [S · T0-15].
-- **Differentiating:**
-  - **EU AI Act literacy** [A · T0-15]:
-    - Timeline: GPAI duties since 2 Aug 2025; Annex III high-risk duties from 2 Dec 2027; Annex I from 2 Aug 2028.
-    - Annex VI internal-control route for Annex III points 2–8.
-    - Art. 101 fines up to EUR 15m or 3%.
-  - **Other frameworks:** NIST AI RMF (voluntary, under revision); ISO/IEC 42001 (gives no Art. 40 presumption of conformity) [A/B].
-  - **Sector rules:**
-    - US: SR 26-2 (model risk; excludes GenAI and agentic AI), NYC LL144, OMB M-25-21.
-    - EU: EIOPA.
-    - India: RBI FREE-AI; DPDP (main obligations from 13 May 2027) [B].
-    - **Transparency and provenance** [A/B · T0-15]:
-      - EU AI Act Art. 50 duties apply from 2 Aug 2026 (machine-readable marking of synthetic content). 2 Dec 2026 only ends the grace period for older generative systems.
-      - The voluntary transparency Code (final 10 Jun 2026, ~190 signatories) asks for at least two marking layers and does not name C2PA.
-      - India's IT Rules amendment on synthetic content took effect 20 Feb 2026: permanent metadata or provenance markers, and 3-hour takedowns.
-    - **US state and sector drivers:**
-      - The NAIC bulletin covers 29 jurisdictions.
-      - Colorado SB 24-205 never took effect; SB26-189 (notice, disclosure and human review) applies from 1 Jan 2027 [B · T0-15].
-  - **Programme operations:** the AI inventory/registry, approvals before go-live, vendor risk, monitoring dashboards [S].
-  - **Technical literacy:** observability and Python basics [C].
+- **Practice notes:**
+  - **The regulatory map** (EU AI Act dates and the Annex III internal-control route, US, EU and India sector rules, transparency duties) is laid out against the work in [governance careers](../11-tracks/governance-careers.md) [A/B · T0-15].
+  - **Transparency marking:** the voluntary transparency Code (final 10 Jun 2026, ~190 signatories) asks for at least two marking layers and does not name C2PA [A/B · T0-15].
 - **Credentials:** domain certifications first (CIPP/CIPM, CISSP/CISA/CRISC); AIGP optional ($649 for IAPP members, $799 otherwise) [B · T0-15].
 - **Tools:**
   - Seen in postings: OneTrust; IBM OpenPages (one analyst JD) [S].
@@ -683,50 +353,25 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-physical-ai-engineer"></a>
 ### 3.17 Physical AI / Robotics AI Engineer (`physical-ai-engineer`) · CCI rank #17
 
-*Complete typed inventory, with evidence for every skill: [inventories/physical-ai-engineer.md](inventories/physical-ai-engineer.md).*
+*Skills and tiers: [inventories/physical-ai-engineer.md](inventories/physical-ai-engineer.md).*
 
-*The corpus has no skill measurements for this role; everything below is [P]. Check it against current postings such as Figure AI's "Helix AI Engineer".*
+*The corpus has no skill measurements for this role, so its inventory is almost entirely practice-curated [P]. Check it against current postings such as Figure AI's "Helix AI Engineer".*
 
-- **Table-stakes:** robotics fundamentals (kinematics, dynamics, control); C++ and Python; perception (computer vision); simulation; ROS-style middleware.
-- **Differentiating:** robot learning (imitation learning, RL); vision-language-action models; sim-to-real transfer; real-time inference on edge hardware; teleoperation data pipelines; safety cases.
-- **Proof of work:** a sim-to-real or manipulation project with measured success rates and failure analysis.
+- **Proof of work:** a sim-to-real or manipulation project with measured success rates and failure analysis [P].
 
 <a id="skills-ai-safety-researcher"></a>
 ### 3.18 Frontier AI Safety / Alignment Researcher (`ai-safety-researcher`) · CCI rank #18
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-safety-researcher.md](inventories/ai-safety-researcher.md).*
+*Skills and tiers: [inventories/ai-safety-researcher.md](inventories/ai-safety-researcher.md).*
 
-- **Table-stakes:** strong ML research foundations; Python/PyTorch; experiment design [P].
-- **Differentiating:**
-  - Dangerous-capability and safety evals; adversarial testing; red-teaming [S · EU AI Act Art. 55 duties, T0-15].
-  - Alignment methods: preference learning, scalable oversight [P].
-  - Interpretability, including mechanistic approaches (probing, circuits, sparse dictionary methods) [P; no headcount evidence].
-  - Incident analysis [S].
 - **Proof of work:** fellowship projects (Anthropic Fellows: about 4 months with stipend and compute; Anthropic reports that >40% of the first cohort later joined it full-time 🏷️, a self-reported figure) [B · T0-06]; published safety research; open eval contributions [P].
 - **Market reality:** about 600 technical FTEs worldwide, growing about 21% a year; no pay data [C · T0-15].
 
 <a id="skills-ai-security-engineer"></a>
 ### 3.19 AI Security Engineer / AI Red Teamer (`ai-security-engineer`) · CCI rank #19
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-security-engineer.md](inventories/ai-security-engineer.md).*
+*Skills and tiers: [inventories/ai-security-engineer.md](inventories/ai-security-engineer.md). Posting shares for Security Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-- **Table-stakes:** application-security fundamentals; threat modelling; Python [JD 45.7%]; cloud IAM [JD 21.6%]; incident response [JD 32.4%].
-- **Differentiating** [S · T0-14 §6.8, T0-16 §8, T0-03]:
-  - **Frameworks:** OWASP LLM Top 10 and OWASP Agentic Top 10.
-  - **Prompt injection, direct and indirect.** Adaptive attacks beat 12 published defences, with >90% success against most of them [A · T0-14].
-  - **Tool and agent abuse:** confused deputy, rug pulls, SSRF/RCE/path-traversal CVEs in MCP servers.
-  - **MCP authorisation:**
-    - Use token exchange / on-behalf-of flows; never pass tokens through.
-    - Static secrets are used in 53% of ~5,200 OSS MCP servers, and OAuth in only 8.5% (2025 scan; skews to local/OSS servers; predates the 2026-07-28 spec) [B · T0-16].
-  - **Supply chain:** model provenance, `trust_remote_code` hygiene, serving-engine CVEs.
-  - **Containment:** output DLP; sandboxing and egress control; kill switches.
-  - **Real attack chains pass classifiers.** EchoLeak (CVE-2025-32711) chained bypasses of an injection classifier, link redaction and a CSP to exfiltrate data with no user click [A/B · T0-14].
-    - Controls: treat model output as untrusted (OWASP LLM05): schema validation, stripping auto-rendered markdown images and links, sandboxed code, PII and secret filters.
-    - Enforce egress through a domain allowlist and proxy.
-  - **Assurance:** adaptive red-team evals; logging and SIEM export.
-  - **MCP estate hygiene:** shadow-MCP scanning; signed Agent Cards.
-  - **Guidance:** NSA and Five Eyes advisories.
-- **Frontier:** automated red-teaming systems; model-level attacks (jailbreak research, backdoors) [P].
 - **Proof of work:** a red-team suite in CI (custom or Promptfoo) against a working agent, with measured attack-success rates before and after mitigation [S · T0-13 R2]; an MCP security audit [P].
 - **Interview:** "design safeguards for an AI system that can take actions on behalf of a user" [S · T0-14 A15].
 - **Programme:** Anthropic AI Security Fellow (requires US/UK/Canada work authorisation; >40% of fellows got full-time offers) [A · T0-12].
@@ -734,35 +379,17 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-enablement-engineer"></a>
 ### 3.20 AI Enablement Engineer (`ai-enablement-engineer`) · CCI rank #20
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-enablement-engineer.md](inventories/ai-enablement-engineer.md).*
+*Skills and tiers: [inventories/ai-enablement-engineer.md](inventories/ai-enablement-engineer.md).*
 
-- **Table-stakes:** internal tooling in Python or TypeScript; LLM APIs; SSO/identity basics [P].
-- **Differentiating:**
-  - **MCP servers for internal systems.** This title has the highest MCP share of any (30.2%) [C · T0-16].
-  - **Internal copilots and agent platforms** [P].
-  - **Guardrails:** PII redaction and access controls [S · T0-14 A6].
-  - **Adoption metrics:** usage, time saved [S · T0-06].
-  - **Change management and training** [S].
-  - **Per-team budgets** through a gateway [S].
-  - **Coding-agent rollout:** Claude Code appears 258 times among the co-skills of MCP postings [C · T0-16].
+- **Practice notes:** AI Enablement Engineer has the highest title-level MCP share in T0-16's postings index; the figures are in [agentic protocols](agentic-protocols.md#inside-agent-titled-roles-frameworks-lead) [C · T0-16].
 - **Proof of work:** an internal pilot with 5–10 colleagues, measuring adoption and time saved, with a runbook and a risk register [S · T0-06].
 
 <a id="skills-ai-product-engineer"></a>
 ### 3.21 AI Product Engineer (AI Frontend) (`ai-product-engineer`) · CCI rank #21
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-product-engineer.md](inventories/ai-product-engineer.md).*
+*Skills and tiers: [inventories/ai-product-engineer.md](inventories/ai-product-engineer.md). Posting shares for Full-Stack Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
-**Measured (full-stack postings):** React 69.4 · TypeScript 52.7 · Python 41.8 · AWS 41.3 · CI/CD 37.8 · Node.js 32.3 · REST API 27.6 [JD].
-
-- **Table-stakes:** React/TypeScript; a Node or Python service layer; REST/SSE/WebSocket; auth [JD].
-- **Differentiating** [S · T0-06, T2-01]:
-  - **Streaming UI:** partial states, cancellation, error states.
-  - **Showing agent work:** tool-use visualisation; human-in-the-loop approval UX; citations and provenance; generative UI components.
-  - **UX for uncertainty and transparency.**
-  - **Agent-UX telemetry:** acceptance rate, edit distance, abandonment, TTFT p50/p95.
-  - **Human-in-the-loop evals.**
-  - **Libraries and protocols:** Vercel AI SDK 6; AG-UI, MCP Apps, A2UI.
-- **Frontier:** on-device and browser inference: WebGPU (in all major browsers), Transformers.js v4, Chrome built-in AI (Prompt API), WebMCP (volatile). Treat these as a differentiator, not a job [S · T0-06, T2-01].
+- **Tools (Oct 2026):** Vercel AI SDK 6; AG-UI, MCP Apps and A2UI for agent UI. On-device and browser inference: WebGPU (in all major browsers), Transformers.js v4, Chrome built-in AI (Prompt API), WebMCP (volatile); treat these as a differentiator, not a job [S · T0-06, T2-01].
 - **Proof of work:**
   - A full-stack app (frontend → API → LLM → eval) with 50 eval cases and UX metrics.
   - An on-device module benchmarked on ≥3 device/browser combinations, with feature detection and a fallback [S · T0-06].
@@ -771,31 +398,19 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-ai-risk-assurance-specialist"></a>
 ### 3.22 AI Risk, Audit & Compliance Specialist (`ai-risk-assurance-specialist`) · CCI rank #22
 
-*Complete typed inventory, with evidence for every skill: [inventories/ai-risk-assurance-specialist.md](inventories/ai-risk-assurance-specialist.md).*
+*Skills and tiers: [inventories/ai-risk-assurance-specialist.md](inventories/ai-risk-assurance-specialist.md).*
 
-- **Table-stakes:** audit methodology; CISA, CIA or CPA (required for the AAIA credential) [B · T0-15]; model-risk management; privacy law [S].
-- **Differentiating:**
-  - **Algorithmic bias audits:** NYC LL144 impact-ratio audits (only 18 of 391 employers had posted one) [A/B].
-  - **EU-side assurance:** DSA audits; ISO/IEC 42001 audit or implementation; conformity assessment (notified bodies apply by 28 Jan 2028) [S].
-  - **Model validation for predictive AI** under SR 26-2 [S].
-  - **GenAI risk controls,** which have no settled owner [S].
-  - **DPO duties** for India DPDP Significant Data Fiduciaries [S].
 - **Proof of work:** a model-validation or bias-audit report on a public model, using documented methodology [P].
 
 <a id="skills-responsible-ai-engineer"></a>
 ### 3.23 Responsible AI / AI Governance Engineer (`responsible-ai-engineer`) · CCI rank #23
 
-*Complete typed inventory, with evidence for every skill: [inventories/responsible-ai-engineer.md](inventories/responsible-ai-engineer.md).*
+*Skills and tiers: [inventories/responsible-ai-engineer.md](inventories/responsible-ai-engineer.md).*
 
-- **Table-stakes:** Python; ML/MLOps basics; documentation discipline [S · T0-15].
-- **Differentiating** [S · T0-15]:
-  - **Guardrails:** prompt-injection detection; red-teaming.
-  - **Eval pipelines:** hallucination, groundedness, subgroup fairness; observability.
-  - **Turning regulation into engineering controls:** EU AI Act Annex IV documentation and Art. 12 logging; mappings to NIST AI RMF and ISO 42001.
-  - **Fairness and explainability tooling:** Fairlearn (0.15.0, Oct 2026), SHAP, LIME, Captum; AIF360 (stale since Apr 2024; pin or fork); model cards [S · T0-15].
-  - **Cloud AI governance tooling:** Azure AI, Azure ML, AI Foundry, Microsoft Fabric and Purview (Beacon Hill, Tampa JD) [S · T0-15].
 - **Tools:**
   - Named in JDs: NeMo Guardrails, Giskard (v3) and Arize (preferred in the Cognizant JD).
+  - Fairness and explainability: Fairlearn (0.15.0, Oct 2026), SHAP, LIME, Captum; AIF360 (stale since Apr 2024; pin or fork); model cards [S · T0-15].
+  - Cloud AI governance tooling: Azure AI, Azure ML, AI Foundry, Microsoft Fabric and Purview (Beacon Hill, Tampa JD) [S · T0-15].
   - Absent from the 13 JDs: Guardrails AI and C2PA (portfolio-only) [S · T0-15].
   - Component maturity [S · T0-15]:
     - c2pa-python 0.38.0 (pre-1.0; pin versions).
@@ -806,23 +421,18 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 <a id="skills-domain-evaluation-specialist"></a>
 ### 3.24 Domain Evaluation Specialist / AI Trainer (`domain-evaluation-specialist`) · CCI rank #24
 
-*Complete typed inventory, with evidence for every skill: [inventories/domain-evaluation-specialist.md](inventories/domain-evaluation-specialist.md).*
+*Skills and tiers: [inventories/domain-evaluation-specialist.md](inventories/domain-evaluation-specialist.md).*
 
-- **Table-stakes:** deep domain expertise (4+ years; MA/JD/MD/PhD for premium rates); clear writing; attention to detail [C · T0-06].
-- **Differentiating:**
-  - **Evaluation craft:** rubric design; golden-set construction with adjudication rules; inter-rater agreement (Cohen's κ) [S · T0-06].
-  - **Benchmarking:** comparing models against today's human process; failure taxonomies [S].
-  - **Working tools:** basic spreadsheets/SQL and hands-on prompting [S · T2-01].
 - **Proof of work:** a domain gold standard: 100+ real tasks with rubrics, adjudication rules and two-reviewer agreement, comparing 2–3 models against today's human baseline [S · T0-06].
 - **Next step:** this is "a bridge, not a destination". Move toward an in-house eval-lead, AI PM or governance role [S · T0-06].
 
 <a id="skills-leadership"></a>
 ### 3.25 Leadership and independent tracks
 
-*Complete typed inventories, with evidence for every skill: [AI engineering manager](inventories/ai-engineering-manager.md) · [VP / Head of AI and Chief AI Officer](inventories/vp-head-of-ai.md).*
+*Skills and tiers: [AI engineering manager](inventories/ai-engineering-manager.md) · [VP / Head of AI and Chief AI Officer](inventories/vp-head-of-ai.md). The Chief AI Officer, fractional and independent tracks have no inventory of their own; see the hubs for [Chief AI Officer](../02-roles/hubs/chief-ai-officer.md), [fractional AI leader](../02-roles/hubs/fractional-ai-leader.md) and [independent AI consultant](../02-roles/hubs/independent-ai-consultant.md).*
 
 **AI Engineering Manager / Director:**
-- **Measured (EM postings):** leadership 72.7 · communication 51.4 · mentoring 47.1 · compliance 30.9 · system design 25.3 · observability 18.0 · agentic AI 14.8 [JD].
+- **Measured:** posting shares for Engineering Manager postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).
 - **AI-specific skills:**
   - Making eval and observability a shared practice other teams consume (the "Staff scope" in T0-14) [S].
   - Hiring for AI roles; AI roadmaps; GPU and API cost governance; responsible-AI processes [P].
@@ -837,108 +447,27 @@ Roles appear in ranked-catalog order. Each map gives table-stakes, differentiati
 - **Mandate:** own AI strategy, architecture and eval standards, vendor decisions and the hiring plan, with 30/60/90-day deliverables [C · T0-18].
 - **Contracting:** MSA + SOW; monthly advance billing; an explicit overage rate; no rollover; 30-day notice; IP carve-outs; liability capped at 1× fees [C · T0-18].
 - **Client acquisition:** 92% find clients through networks; the model assumes 8–18 first calls a year to sustain two retainers [C/D · T0-18].
-- **India compliance (not tax advice) [B · T0-07]:**
-  - s.58 / old §44ADA presumptive taxation up to ₹75L (cash receipts ≤5%).
-  - GST LUT; RBI purpose code P0802 (P1006 for advisory work); W-8BEN.
-  - FEMA requires export proceeds to be realised within 9 months.
+- **India compliance (not tax advice):** the ₹75 lakh presumptive-tax ceiling, GST and the LUT, purpose codes (P0802; P1006 for advisory work), W-8BEN and FEMA's 9-month realisation rule are in [India remote tax](../09-compensation/india-remote-tax.md) [B · T0-07].
 - **Insurance:** tech E&O (~$899/yr) and cyber (~$1,540/yr) [C · T0-18].
 
 ---
 
 ## 4. Skill × Role Matrices
 
-Legend: **●●** core (the role is defined by it) · **●** important · **○** useful · blank = rarely needed. Cells are practice judgements (Grade D) that summarise the role maps in §3; check them against live JDs.
-
-### 4.1 Engineering roles
-
-| Skill cluster | AI Eng | Applied AI | Agentic | FDE | MLE | Applied Sci | Inference | Kernel | AI Infra | ML Platform | Evals | AI Security | AI Product Eng | AI Enablement | Physical AI |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Production Python / TypeScript | ●● | ●● | ●● | ●● | ●● | ● | ● | ○ | ● | ●● | ●● | ● | ●● | ●● | ● |
-| C++ / Rust / systems languages | | | | | ○ | ○ | ●● | ●● | ● | ○ | | ○ | | | ●● |
-| LLM APIs, structured output, tool calling | ●● | ●● | ●● | ●● | ● | ○ | ○ | | | ○ | ● | ● | ●● | ●● | ○ |
-| Retrieval / RAG quality | ●● | ●● | ● | ●● | ● | ○ | | | | | ● | ○ | ○ | ● | |
-| Evaluation and judge calibration | ●● | ●● | ●● | ● | ● | ●● | ○ | | | ● | ●● | ● | ● | ○ | ● |
-| Agent runtimes and reliability | ● | ● | ●● | ● | | | | | | ○ | ● | ● | ● | ● | |
-| Observability and cost engineering | ●● | ● | ●● | ● | ○ | | ● | | ● | ●● | ● | ○ | ● | ● | |
-| Serving engines, batching, KV cache | ○ | ○ | | ○ | ● | | ●● | ● | ● | ●● | | ○ | | | ○ |
-| Quantisation, speculative decoding | | | | | ○ | | ●● | ●● | | ● | | | ○ | | ● |
-| GPU kernels and compilers | | | | | | | ● | ●● | ○ | | | | | | |
-| Distributed training / post-training | | | | | ● | ● | ○ | ● | ● | ○ | | | | | ● |
-| ML and statistics depth | ○ | ○ | | | ●● | ●● | ○ | ○ | | ○ | ●● | | | | ●● |
-| Kubernetes, IaC, platform | ○ | ○ | ○ | ● | ○ | | ● | | ●● | ●● | | ○ | | ○ | |
-| Gateways, identity, MCP | ○ | ○ | ●● | ● | | | | | ○ | ●● | | ●● | ○ | ●● | |
-| AI security (OWASP LLM / Agentic) | ● | ● | ●● | ● | | | ○ | | ○ | ● | ○ | ●● | ○ | ● | |
-| Customer scoping and communication | ○ | ●● | ○ | ●● | ○ | ● | | | | ○ | ○ | ○ | ○ | ● | |
-| Frontend and agent UX (streaming, HITL approval, citations) | ○ | ○ | ○ | ● | | | | | | | | | ●● | ○ | |
-| Robotics, control, simulation, sim-to-real | | | | | ○ | | | | | | | | | | ●● |
-
-### 4.2 Research, product, governance and human-data roles
-
-| Skill cluster | Research Eng | Research Sci | Safety Research | AI PM | Solutions Arch | Governance Lead | Risk & Audit | Responsible AI Eng | Domain Eval |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Production coding | ●● | ● | ● | ○ | ● | | | ●● | |
-| ML and statistics depth | ●● | ●● | ●● | ○ | ○ | | ● | ● | |
-| Research methods and publishing | ● | ●● | ●● | | | | | | |
-| Distributed training / post-training | ●● | ● | ● | | | | | | |
-| Evaluation and rubric design | ●● | ● | ●● | ● | ○ | ○ | ● | ●● | ●● |
-| Cloud and solution architecture | ○ | | | ○ | ●● | | | ● | |
-| Regulation (EU AI Act, NIST, ISO 42001) | | | ● | ○ | ● | ●● | ●● | ●● | |
-| Audit and risk methodology | | | | | | ● | ●● | ● | |
-| Product sense and metrics | ○ | ○ | | ●● | ● | ○ | | | ○ |
-| Stakeholder communication | ● | ● | ● | ●● | ●● | ●● | ● | ● | ● |
-| Deep domain expertise | | ● | ● | ● | ● | ● | ● | ○ | ●● |
+<a id="41-engineering-roles"></a>
+Each role's tier for every skill comes from the ontology: see the [role index](role-skill-inventories.md#1-role-index) and the [cross-role views](role-skill-inventories.md#2-cross-role-views-what-recurs-for-universal-and-family-resumes). The practice-judgement (Grade D) cluster matrices that stood here disagreed with the ontology's tiers and were removed; the ontology is the source of truth for role skill tiers (AGENTS.md §2).
 
 ---
 
 ## 5. Volatile Tool and Credential Registry (status as of October 2026)
 
-The tool facts come from T0-03 (PyPI/GitHub checks on 2026-10-23/24), T0-16 and T0-11. They are class V2 (platform and product facts) under EGP-1.0: re-verify within 90 days of 2026-10-23, i.e. by 2027-01-21.
-
-| Item | Status | Implication |
-|---|---|---|
-| Hugging Face TGI | **Archived 2026-03-21** | Do not use for new deployments |
-| Triton Inference Server | Renamed **Dynamo Triton**; NVIDIA **Dynamo** (1.0 GA 2026-03-16; 1.6.0 on 2026-10-22) fronts vLLM, SGLang and TRT-LLM | Update stacks and résumés |
-| TensorRT-LLM | Latest stable 1.2.1 (2026-04-20), v1.4.0rc1 tagged; static engine-build backend removed from v1.3 (PyTorch sole backend) | Drop static engine-compilation skills |
-| vLLM | 0.32.0 (2026-10-18), pre-1.0; default open serving engine; CVE-2026-22778 (weight-loader RCE), CVE-2026-27893 (`trust_remote_code`, fixed in v0.18.0) | Pin versions; patch quickly |
-| SGLang | 0.5.22 (2026-10-16); challenger for prefix-heavy and agentic serving; three critical CVEs in H1 2026: CVE-2026-5760 (GGUF template RCE), CVE-2026-3059/3060 (pickle deserialisation) | Sandbox template parsing; patch quickly |
-| RAGAS | **Dormant**: no release since Jan 2026, no commit since Feb 2026 | Avoid new dependencies |
-| DeepEval | Active (64 releases a year) | Safe default CI eval runner |
-| Promptfoo | Acquired by OpenAI (2026-03-09) | Watch roadmap alignment |
-| Langfuse | Acquired by ClickHouse (2026-01-16); MIT core | Still viable |
-| Arize Phoenix | Elastic License 2.0 (source-available, not OSI) | Check licence fit |
-| Braintrust | Breach 2026-05-04: customers had to rotate provider keys | Keep master keys out of SaaS eval tools |
-| AutoGen | **Dormant**; superseded by **Microsoft Agent Framework 1.0** (2026-04-02) | Migrate |
-| LangChain / LangGraph | 1.0 released 2025-10-17; legacy chains moved to a classic package | Learn LangGraph concepts, not chain syntax |
-| OpenAI Agents SDK | GA 2026-03-23, native Temporal integration | Durable agents |
-| MCP | Spec revision **2026-07-28** (stateless core; extensions; OTel trace context) | Re-check auth and transport assumptions |
-| A2A | v1.0 (2026-03-12); joining the Linux Foundation AAIF (announced 2026-08-27) | Interop literacy |
-| AG-UI | 1.0 (2026-09-18), CopilotKit; not in AAIF | Agent-UX protocol |
-| OTel GenAI semantic conventions | Still in *Development* | Isolate behind adapters |
-| AWS ML – Specialty certification | **Retired** (last exam 2026-03-31); successor MLA-C01; AIP-C01 (GenAI Developer – Professional) generally available | Update certification plans |
-| Azure AI-102 | **Retired 2026-06-30**; replaced by AI-103 (Apps and Agents); DP-100 → AI-300; AZ-204 → AI-200 | AI-103 is still marked beta |
-| Google PMLE | Active; refreshed for GenAI | Tie-breaker in GCP shops |
-
-**Model names:** avoid hard-coding a model version as a skill. T0-14 anchors its cost and latency maths to the October 2026 model generation, and at one vendor, model-deprecation notices arrived about every 57 days in 2025–26 (T1-02 KF3).
+Tool and protocol statuses live in the skills ontology and are shown, dated, in the [skills vocabulary watch list](skills-vocabulary.md#5-watch-list-tools-with-a-notable-status); credential statuses are in [credentials by role](../04-certifications/credentials-by-role.md#by-credential), and protocol facts are in [agentic protocols](agentic-protocols.md#at-a-glance).
 
 ---
 
 ## 6. Suggested Learning Order by Background
 
-These are planning models (T0-06 and T2-01) at 15–20 hours a week. They are Grade D and conditional on success.
-
-| Background | Weeks 1–8 | Months 3–6 | Months 6–9 | Target |
-|---|---|---|---|---|
-| **Backend / Systems** | LLM API fluency, retrieval, evals (the largest gap), Python if coming from Java/Go | System 1: evaluated RAG/agent with CI evals and traces | System 2 (different failure surface); serving lab | AI Engineer / Applied AI / FDE in ~6 months; infra roles at T3 in 10–14 months |
-| **Data Scientist / BI** | Packaging, tests, CI, Docker; then RAG/tools/agents | Eval-and-error-analysis lab; FastAPI service | Judge-calibration study; DSA practice (≥3 weeks) | AI Engineer with an evals edge (DS ~8 months; BI ~11) |
-| **Frontend / Full-Stack** | Evals; retrieval; FastAPI or server-side TypeScript | Full-stack app with 50 eval cases and UX metrics | On-device module; agent-UX case study | Full-stack AI Engineer / AI Product Engineer (~7 months) |
-| **Non-Technical (5+ yrs domain)** | AI literacy; eval fluency; notebook-level SQL/Python | Domain golden set (100+ tasks) or a pilot with metrics | Governance playbook / PRD + rubric | AI PM, AI ops, domain-eval lead (~7 months) |
-| **PhD** | Production Python; serving, batching, cost; eval pipelines | Method → service with tests and CI; ≥3 OSS code reviews | Eval-statistics write-up; fellowship applications | Applied Scientist / Research Engineer (~8 months) |
-
-Milestone gates (T0-06 G1–G4):
-- **G1, end of month 3:** a measured v0: ≥50 labelled eval cases, ≥2 baselines, an error taxonomy from ≥100 traces.
-- **G2, month 6:** CI evals, a judge validated on ≥100 labels, tracing, ≥1 real user, a postmortem.
-- **G3, month 9:** a second system, a public write-up, one external contribution, ≥5 mock interview loops, 15–20 targeted applications.
-- **G4, month 12:** an offer, or a written diagnosis of your hiring funnel and a revised plan.
+Learning order by role family and starting background is in [learning roadmaps](learning-roadmaps.md#adjust-for-your-starting-background); modelled timelines and the gates G1–G4 are in [career transitions](../11-tracks/career-transitions.md#the-shared-spine-four-gates-and-an-hours-budget).
 
 ---
-*Skills catalog maintained under the Vivechak research governance framework. [P] items are practice-curated (Grade D) and should be checked against live job descriptions. Tool status has a 90-day TTL (EGP class V2); next review by 2027-01-21.*
+*Role skill maps. [P] items are practice-curated (Grade D) and should be checked against live job descriptions. Tool and protocol statuses are class V2 under EGP-1.0 (90 days). The earliest checks quoted here are dated 2026-10-21 (T0-13, T0-14, T0-16), so the next review is due by 2027-01-19.*

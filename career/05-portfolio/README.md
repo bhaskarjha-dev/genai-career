@@ -21,7 +21,7 @@ sources: [T0-13, T0-05, T0-12]
 | [proof-of-work-standards.md](proof-of-work-standards.md) | What a portfolio must show to be believed: the verifiability ladder (V0–V3), the artefacts by tier, the anti-portfolio, demo hardening, templates and how many projects |
 | [project-archetypes.md](project-archetypes.md) | The proof-of-work project archetypes as build cards: problem, steps, evidence to publish, verifiability target, effort, interview archetypes, pitfalls, the roles each covers and the minimal sets (generated) |
 
-The [job-search strategy](../06-job-search/job-search-strategy.md) §2.6 computes which projects cover which roles.
+[The constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first), in the job-search strategy, compute which projects cover which roles.
 
 ## Planned
 

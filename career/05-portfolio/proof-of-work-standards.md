@@ -79,7 +79,7 @@ Source: [D · T0-13 L262–277], calibrated by T0-13 against an interview framew
 
 ### How many projects
 
-T0-13 rejected breadth: unmeasured small demos read as tool assembly, and extra mildly positive items risk diluting an impression when a profile is judged alone. It recommends 2 to 3 deep repos instead [C · T0-13 L161]. The dilution mechanism is contested: a student thesis reports a failed replication [C/D · T0-13 L605]. T2-01 sets the minimum by target tier [B/C/D · T2-01.F9], and T0-06's milestone spine shows one way to build it, at 15–20 hours a week [M · T0-06 L261, L393–397]:
+T0-13 rejected breadth: unmeasured small demos read as tool assembly, and extra mildly positive items risk diluting an impression when a profile is judged alone. It recommends 2 to 3 deep repos instead [C · T0-13 L161]. The dilution mechanism is contested: a student thesis reports a failed replication [C/D · T0-13 L605]. T2-01 sets the minimum by target tier [B/C/D · T2-01.F9], and T0-06's milestone spine shows one way to build it, at 15–20 hours a week [M · T0-06 L261, L393–397]; the gates' full criteria are in [career transitions](../11-tracks/career-transitions.md#the-shared-spine-four-gates-and-an-hours-budget):
 
 | Target (T2-01 tier) | Minimum portfolio | How the T0-06 spine builds it |
 |---|---|---|
@@ -245,7 +245,7 @@ flowchart TD
 9. **Run the stranger test.** *Done when* someone else reproduces your headline evaluation numbers from the README in under 30 minutes [M · T0-06 L395] and the five-minute protocol finds no hard fail.
 10. **Keep it fresh.** *Done when* tool and model versions are pinned, every benchmark and price table is dated, the smoke evaluation re-runs on a schedule and the README shows a "last verified" date [D · T0-13 L150, L520].
 
-**If it is not working** [D · T0-06 L401–404]: G1 not met by month 4 at 15–20 hours a week means checking adherence first, then scope creep and a missing evaluation set, and extending the timeline before adding hours. No screens after 15 targeted applications points to positioning or résumé signal, not skill: get a practitioner to review the artefacts and the résumé. Three failed take-homes call for work on evaluation design and error analysis.
+**If it is not working** [D · T0-06 L401–404]: G1 not met by month 4 at 15–20 hours a week means checking adherence first, then scope creep and a missing evaluation set, and extending the timeline before adding hours. No screens after 15 targeted applications points to positioning or résumé signal, not skill: get a practitioner to review the artefacts and the résumé. Three failed take-homes call for work on evaluation design and error analysis. The other slip rules are in [career transitions](../11-tracks/career-transitions.md#the-shared-spine-four-gates-and-an-hours-budget).
 
 ## Templates and examples
 
@@ -394,7 +394,7 @@ PA-12 asks what was AI-assisted, what was verified by hand, an iterative history
 ## Next steps
 
 - **Choose what to build:** [project archetypes](project-archetypes.md), the [skills radar](../03-skills-and-tech/skills-radar.md) and the [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md).
-- **Put the evidence where screens see it:** [résumé strategy](../06-job-search/resume-strategy.md), [résumé skills matrix](../06-job-search/resume-skills-matrix.md), [ATS mechanics](../06-job-search/ats-mechanics.md), and [job-search strategy §2.6](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) on the constraints that bind first.
+- **Put the evidence where screens see it:** [résumé strategy](../06-job-search/resume-strategy.md), [résumé skills matrix](../06-job-search/resume-skills-matrix.md), [ATS mechanics](../06-job-search/ats-mechanics.md), and the job-search strategy's [constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first).
 - **Make it visible:** [online presence](../07-networking/online-presence.md) and [referrals and outreach](../07-networking/referrals-and-outreach.md).
 - **Defend it in interviews:** [interview loops](../08-interviewing/interview-loops.md), [system-design archetypes](../08-interviewing/system-design-archetypes.md), and the prep packs for [evaluation design](../08-interviewing/prep-packs.md#evaluation-design-pack), [applications](../08-interviewing/prep-packs.md#application-pack) and [infrastructure](../08-interviewing/prep-packs.md#infrastructure-pack).
 - **Certificate or artefact:** [credential ROI](../04-certifications/credential-roi.md).

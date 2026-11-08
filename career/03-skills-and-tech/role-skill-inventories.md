@@ -5,7 +5,8 @@ content_type: index
 stage: 3
 status: published
 last_verified: 2026-11-04
-summary: "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions and verification."
+review_by: 2027-01-21
+summary: "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions, verification, and the requirements and tier rule behind the skills ontology."
 sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T1-03]
 generated_by: "scripts/build_skills.py (generated blocks)"
 ---
@@ -20,7 +21,7 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 >
 > Every skill has a tier (Must → Avoid) and an evidence tag.
 >
-> **Source of truth:** [data/skills_ontology.json](../../data/skills_ontology.json). The per-role files in [inventories/](inventories/) and the generated blocks below are rebuilt by `python3 scripts/build_skills.py --update`.
+> **Source of truth:** [data/skills_ontology.json](../../data/skills_ontology.json). The per-role files in [inventories/](inventories/) and the generated blocks below are rebuilt by `python3 -B scripts/build_skills.py --update`; [AGENTS.md §2](../../AGENTS.md#2-sources-of-truth) lists the generators to run after a data change. How the ontology is designed is in §5.
 >
 > **Companions:**
 > - [skills-vocabulary.md](skills-vocabulary.md): every skill, typed, with aliases, relations, status and corpus mentions.
@@ -53,25 +54,27 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 | **Optional** | Employer-specific or frontier; include only when the posting names it |
 | **Avoid** | Archived, dormant, deprecated or devalued; leave it out, or reframe it |
 
+**Tier rule.** Where a measured share of postings exists, the tier follows it: about 50% or more is Must, 20–50% is Important, and lower is Should or Optional. A role-defining skill can depart from the rule, and the link's note says why; the measured decisions are listed in §3.
+
 | Tag | Evidence | Grade |
 |---|---|:---:|
-| [JD x%] | Share of live postings for the title that name the skill (JobsPipe, retrieved 2026-11-02) | B |
+| [JD x%] | Share of live postings for the title, or for a labelled feeder or adjacent title, that name the skill (JobsPipe, retrieved 2026-11-02) | B |
 | [S09 x%] | Share of the 3,647-posting S09 corpus ([T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) §6.3; skews senior and infra) | B |
 | [S · T0-xx] | Named for the role in a research session or in a job description cited there; the ontology stores the exact session lines | A–C |
 | [P] | Practice-curated: standard for the role but not evidenced in the corpus; check it against 10–20 live postings before investing heavily | D |
 
-**How the inventories were built:**
-1. **Vocabulary.** The 138 skills of the initial headline matrix were typed and their bundles split. Added to them:
-   - every technology named in the research sessions and the skills catalog;
+**How the inventories were built** (2026-11-04):
+1. **Vocabulary.** The 138 skills of the initial headline matrix were typed and their bundles split: interchangeable tools became choose-one classes, and complementary tools became concepts implemented by individual tools. Added to them:
+   - every technology named in the research sessions and the role skill maps;
    - the JobsPipe skill terms that had no match;
-   - the T1-03 behavioural competencies;
+   - the T1-03 behavioural competencies C1–C4;
    - common practice-curated tools;
    - the skills the role agents proposed.
-2. **Assignment.** One agent per role family drafted each inventory from the catalogs and the sessions, citing exact session lines for every [S] link. A checker enforced:
+2. **Assignment.** One agent per role family drafted each inventory from the catalogs (including the role's skill map in [role-skill-maps.md](role-skill-maps.md) §3, as it stood on 2026-11-04), the initial headline tiers and the sessions, citing exact session lines for every [S] link. Tiers follow measured shares where they exist. A checker enforced:
    - coverage of all 19 types, or a stated reason why a type does not apply;
    - the evidence formats;
    - the status rules.
-3. **Verification.** An independent fact-checker per family re-checked the links against their sources (§4).
+3. **Verification.** A scripted check matched every posting share to its source and every [S] link to a session line that names the item, and low-relevance lines plus a random sample were read by hand (§4). The planned independent agent fact-check of every link was blocked by the model quota on 2026-11-04 and has not been run ([ROADMAP](../../ROADMAP.md) P1-5).
 
 ---
 
@@ -228,14 +231,38 @@ Where a measured share of postings decided a skill's tier, the decision and its 
 | AI Engineering Manager / Director | GRC & risk assessment | I | "compliance" is named in 30.9% of Engineering Manager postings (feeder title) | assignment |
 <!-- END GENERATED -->
 
+<a id="posting-evidence"></a>
+### Posting evidence: the measured shares behind JD tags
+
+Every `[JD x%]` tag in the inventories is one of these shares. A tag marked (feeder), (adjacent) or (closest) borrows the share of the related title named in its evidence table. `scripts/build_skills.py` checks every JD share in the ontology against this table on each run.
+
+<!-- BEGIN GENERATED: scripts/build_skills.py (posting evidence) -->
+**JobsPipe, retrieved 2026-11-02** (Grade B). Platform aggregate of live postings: for each posting title, the skills most often named and their share of postings (per cent). Grade B under decision D-018 (platform data). Recorded on 2026-11-02 in career/03-skills-and-tech/role-skill-maps.md §2.1 and moved to this data file unchanged on 2026-11-07. Sample sizes were not recorded. Expiry: EGP-1.0 class V3 (skill-demand shares): 180 days from retrieval, so re-verify by 2027-05-01. Data: [data/posting_skill_shares.json](../../data/posting_skill_shares.json).
+
+| Posting title | Skills named most often (share of postings, %) | Notes |
+|---|---|---|
+| **AI Engineer** | Python 78.4 · LLM 76.7 · agentic AI 59.3 · RAG 54.0 · machine learning 39.8 · AI 37.8 · generative AI 37.6 · Azure 35.1 · AWS 35.1 · CI/CD 34.4 · vector DBs 32.6 · prompt engineering 31.1 | Remote 11.0%; pay disclosed 19.6%; senior 24.6%, entry 7.0% |
+| **Machine Learning Engineer** | ML 98.6 · Python 71.3 · PyTorch 48.2 · LLM 45.0 · data structures 33.7 · deep learning 32.6 · TensorFlow 31.8 · communication 30.3 · AI 27.0 · A/B testing 23.5 · NLP 23.3 · C++ 23.3 | Remote 14.0%; pay disclosed 38.5%; entry 13.7%, senior 23.2% |
+| **Research Scientist (all fields)** | Python 42.3 · communication 41.3 · ML 39.2 · data structures 26.0 · PyTorch 25.4 · AI 25.1 · LLM 24.4 · creativity 23.0 · deep learning 18.6 · C++ 17.4 · reinforcement learning 17.1 | Remote 3.3%; US 65.0% of postings |
+| **Solutions Architect** | AWS 53.6 · leadership 43.0 · communication 42.9 · mentoring 35.1 · Azure 29.5 · adaptability 26.5 · compliance 25.3 · Python 23.6 · AI 23.2 · GCP 22.6 · DevOps 17.2 · generative AI 17.1 | Remote 16.2% |
+| **Data Scientist** | data science 90.1 · Python 86.0 · ML 69.3 · SQL 63.8 · statistics 52.7 · communication 42.3 · data analysis 33.1 · LLM 30.1 · AI 27.2 · AWS 24.8 · generative AI 22.0 | Feeder for AI Engineer / Evals |
+| **Product Manager** | product management 92.6 · communication 53.7 · leadership 40.1 · compliance 26.1 · time management 24.0 · agile 22.7 · roadmapping 18.4 · AI 15.4 · stakeholder management 14.2 · agentic AI 13.6 | Feeder for AI PM |
+| **Software Engineer** | Python 44.4 · communication 44.2 · Java 32.4 · CI/CD 31.3 · AWS 30.8 · system design 28.3 · C++ 24.6 · AI 24.0 | — |
+| **Backend Engineer** | communication 40.4 · AWS 39.7 · Python 38.4 · system design 37.0 · Kubernetes 31.2 · PostgreSQL 30.7 · Docker 28.0 · CI/CD 26.8 · observability 25.0 | Remote 31.6% |
+| **Full-Stack Engineer** | React 69.4 · TypeScript 52.7 · Python 41.8 · AWS 41.3 · CI/CD 37.8 · Node.js 32.3 · REST API 27.6 | Remote 21.6% |
+| **DevOps Engineer** | DevOps 99.0 · CI/CD 81.2 · Kubernetes 69.4 · Terraform 59.1 · Python 55.7 · Docker 53.4 · AWS 52.9 · Linux 45.1 | Feeder for ML Platform / AI Infra |
+| **Security Engineer** | Python 45.7 · cybersecurity 42.3 · compliance 39.4 · AWS 38.8 · incident response 32.4 · application security 26.5 · IAM 21.6 | Feeder for AI Security |
+| **Engineering Manager** | leadership 72.7 · communication 51.4 · mentoring 47.1 · compliance 30.9 · system design 25.3 · observability 18.0 · agentic AI 14.8 | Feeder for AI EM |
+<!-- END GENERATED -->
+
 ---
 
 ## 4. Verification
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (verification) -->
+- **Links:** 1529 role links across 26 roles; evidence JD 154 · S09 31 · S 679 · P 665 (computed by scripts/build_skills.py)
 - **Date:** 2026-11-04
-- **Links:** 1529 role links across 26 roles; evidence JD 154 · S09 31 · S 679 · P 665
-- **Posting shares:** all 154 JD shares matched to their title's row in career/03-skills-and-tech/role-skill-maps.md §2.1; all 31 S09 shares matched to §2.2 and to the cited T0-03 line
+- **Posting shares:** all 154 JD shares match their title's row in data/posting_skill_shares.json (scripts/build_skills.py checks this on every run); all 31 S09 shares matched to the cited T0-03 §6.3 line
 - **Session citations:** all 679 S citations point at an existing session line that names the item; candidate lines were scored for role relevance (role keyword on or near the line, terms from the note, table or bullet rows), weak knowledge-skill citations at Should or Optional were downgraded to P (11), and the remaining low-relevance lines plus a random sample of 40 were read and 40 were replaced with exact lines or downgraded
 - **Rules:** every role covers all 19 types or states why a type does not apply; archived, dormant and retired tools and retired credentials are tiered Avoid; every change to a headline tier carries a reason
 - **Limits:** the planned independent agent fact-check of every link was blocked by the model quota on 2026-11-04, so citations matched by keyword can still be weaker than a close reading; tool tiers outside the measured titles rest on session mentions and practice curation until job-description mining (30+ dated postings per role) measures them
@@ -243,13 +270,53 @@ Where a measured share of postings decided a skill's tier, the decision and its 
 
 ---
 
-## 5. Limits and Next Steps
+## 5. How the Ontology Is Designed
+
+The method behind [data/skills_ontology.json](../../data/skills_ontology.json) and the pages generated from it: the [skills vocabulary](skills-vocabulary.md), these inventories, the [résumé skills matrix](../06-job-search/resume-skills-matrix.md), the [skills radar](skills-radar.md) and [credentials by role](../04-certifications/credentials-by-role.md). Evidence grades are EGP-1.0: A/B measured; C small-sample, vendor or practitioner; D judgement; M model output.
+
+### 5.1 Ten requirements: what a résumé needs from the skills layer
+
+A résumé can only be as good as its skills input. The ontology was designed against ten requirements:
+
+| # | Requirement | Why | Evidence | How the ontology meets it |
+|---|---|---|---|---|
+| R1 | Exact names of tools, frameworks and platforms | Recruiter searches key on titles, languages and frameworks; AI screening extracts canonical skill names | C · [T0-11](../../research/sessions/T0-11-certification-cloud-credential-roi.md); A · [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) | Concrete entries across 11 concrete types, unbundled |
+| R2 | Concept phrases (RAG, LLM evaluation, agents) | Screening criteria and human readers judge capability | A · T0-04 | Concept and method entries, with sub-concepts linked to their parents |
+| R3 | Tool ↔ concept links and groups of alternatives | Turns "used Qdrant" into "vector search"; handles "LangGraph or similar" | D | `implements` links; choose-one classes such as vector stores and tracing products |
+| R4 | Aliases and posting wording | "evals" vs "LLM evaluation"; "GenAI" vs "generative AI" | B · JobsPipe terms | `aliases` on every entry; each role file lists keywords to mirror |
+| R5 | Priority per role, Must → Optional | Fills a limited skills section | — | Five tiers: Must, Important, Should, Optional, Avoid |
+| R6 | Status and freshness of each tool | Don't list archived or dormant tools such as TGI, RAGAS or AutoGen | A/B · [T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) | Dated `status`; archived, dormant and retired items are always tiered Avoid |
+| R7 | Non-technical skills, shown rather than listed | Postings measure them, interviews probe them, and a behavioural "No Hire" is a near-veto | B · JobsPipe; B/C · [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) | Six non-technical types, present in every role inventory |
+| R8 | How to evidence each skill | Unbacked skills are discounted; AI review cites evidence per requirement | A · T0-04; [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md) | A résumé pattern per type; the V0–V3 verifiability ladder |
+| R9 | A proficiency scale | Gap analysis and honest claims | [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md) D9 | The 0–3 scale; self-assessment tables in every role file |
+| R10 | Credentials and prerequisites kept apart from skills | They are facts, not skills | T0-11; T0-04 | Separate `credentials` entries; prerequisites and proof kept as role facts |
+
+### 5.2 Design rules
+
+- **Types and relations.** Every skill has exactly one of 19 types in three groups (technical knowledge, technical concrete, non-technical), and four kinds of relation: implements, parent (part of), choose-one classes, and aliases (posting wording). A choose-one class link is satisfied by any member, and a link can require *n* members. [Skills vocabulary §0](skills-vocabulary.md#0-how-to-read-this-file) defines each type, where it goes on a résumé and how the relations read.
+- **Role links.** Each role link carries a tier (M, I, S, O or X: Must, Important, Should, Optional, Avoid) and one of the four evidence classes in the tag table in §0.
+- **Tiers.** Measured shares set tiers by the tier rule in §0. Every change to a headline tier is recorded with its reason (§3).
+- **Two layers for résumés.** The *headline* layer holds the concise skills-section phrases in the résumé matrix, including classes such as "AWS / Azure / GCP"; the *full inventory* holds every typed entry. Both are projections of the same links, so they cannot disagree.
+- **Rules checked on every build,** beyond the JSON Schema ([scripts/build_skills.py](../../scripts/build_skills.py)):
+  - every ID resolves, and `implements` and `parent` point at concepts or methods;
+  - every S link cites a real session line, and JD and S09 links carry a share and a source;
+  - archived, dormant and retired tools and credentials are tiered Avoid;
+  - every role covers all 19 types or says why a type does not apply, and has at least one Must, one communication and one behavioural link.
+- **Coverage.** The validator checks that every technology on the skills audit list of 2026-11-04 has a typed entry; that audit also found all 114 JobsPipe skill terms typed. Entry counts by type are in the [vocabulary summary](skills-vocabulary.md#1-summary), and skills per role in the role index (§1).
+- **Never cite a session line that does not support the claim;** use P when the corpus is silent.
+- **To change something,** edit the data, run the generators that [AGENTS.md §2](../../AGENTS.md#2-sources-of-truth) lists for it, then run the validator. Never edit a generated block or an inventory file.
+
+---
+
+<a id="5-limits-and-next-steps"></a>
+## 6. Limits and Next Steps
 
 - **Practice-curated items are hypotheses.** Each [P] tag marks a skill that is standard for the role but unmeasured in the research. Physical AI rests almost entirely on [P].
 - **Shares come from adjacent titles for many roles.** JobsPipe measures a dozen titles, and several inventories cite a feeder title (for example Security Engineer for AI Security). The inventories say so where they do.
 - **Next: job-description mining.**
-  - Sample 30 or more dated postings per role from public ATS boards (Greenhouse, Lever, Ashby).
+  - Sample 30 or more dated postings per role from public ATS boards (Greenhouse, Lever, Ashby) and career pages.
   - Extract skills with model assistance and human checks.
   - Accept an inventory as complete only when at least 95% of the skills those postings name are in it, under a canonical name or an alias.
   - Promote measured tools from [S] or [P] to [JD].
+  - Start with the roles whose practice-curated share in the role index (§1) is highest.
 - **Maintenance:** re-verify tool statuses every 90 days (next by 2027-01-21), then regenerate.

@@ -5,6 +5,7 @@ content_type: reference
 stage: 3
 status: published
 last_verified: 2026-11-04
+review_by: 2027-01-21
 summary: "Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions."
 sources: [T0-03, T0-11, T0-15, T0-16]
 generated_by: "scripts/build_skills.py (generated blocks)"
@@ -14,13 +15,13 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 
 > **Updated:** 2026-11-04 · **Scope:** Controlled vocabulary of 523 typed skills across 19 categories.
 > **Source of truth:** [data/skills_ontology.json](../../data/skills_ontology.json), with its schema in [data/skills_ontology.schema.json](../../data/schemas/skills_ontology.schema.json).
-> - Every table between the `BEGIN/END GENERATED` markers is produced by `python3 scripts/build_skills.py --update`, which validates the ontology first.
-> - To add or change a skill, edit the ontology, never these tables.
+> - Every table between the `BEGIN/END GENERATED` markers is produced by `python3 -B scripts/build_skills.py --update`, which validates the ontology first.
+> - To add or change a skill, edit the ontology, never these tables ([AGENTS.md §2](../../AGENTS.md#2-sources-of-truth) lists the generators to run).
 >
 > **Companions:**
-> - [role-skill-inventories.md](role-skill-inventories.md): the complete typed inventory for each role.
+> - [role-skill-inventories.md](role-skill-inventories.md): the complete typed inventory for each role, and how the ontology is designed.
 > - [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md): the concise resume layer (headline skills only).
-> - [role-skill-maps.md](role-skill-maps.md): narrative skill maps and the volatile tool registry.
+> - [role-skill-maps.md](role-skill-maps.md): narrative skill maps per role.
 > - [resume-strategy.md](../06-job-search/resume-strategy.md): how the lists feed master, variant and per-posting resumes.
 
 ---
@@ -42,7 +43,7 @@ This vocabulary gives every skill a **type**, its **posting wording** and its **
 | Technical: concrete | Programming language · Framework / SDK · Library / package · Model / model family · Platform / cloud service · Data store · Infrastructure / DevOps tool · Specialised product · Hardware / accelerator · Protocol / standard · Regulation / framework |
 | Non-technical | Communication & collaboration · Behavioural competency · Business & product · Leadership & people · Domain knowledge · Research craft |
 
-Credentials, prerequisites and proof artefacts are kept apart. They are facts and artefacts, not skills (§4 lists the credentials).
+Credentials, prerequisites and proof artefacts are kept apart. They are facts and artefacts, not skills; [credentials by role](../04-certifications/credentials-by-role.md) lists each credential with its dated status and the roles that list it.
 
 **Relations:**
 - **Implements (→):** a tool realises a concept (vLLM → LLM serving; pgvector → vector search). On a resume, name the tool *and* the concept.
@@ -51,14 +52,14 @@ Credentials, prerequisites and proof artefacts are kept apart. They are facts an
 - **Posting wording:** aliases that postings use for the same skill. Mirror them only when they are true for you.
 - **Status:** the date-stamped state of a volatile tool:
   - the states are active, beta, development, acquired, renamed, dormant, archived and retired;
-  - statuses come from the skills catalog's §5 registry and must be re-verified by 2027-01-21;
+  - each status is recorded, with its date and a note, on the skill's or credential's entry in the ontology (credential entries also name their source session); the status facts come from T0-03, T0-11 and T0-16 and must be re-verified by 2027-01-21;
   - archived, dormant and retired items are always tiered Avoid.
 - **Corpus mentions:** how often the 22 research sessions name a concrete technology, by name and alias matching.
   - A few ambiguous names (for example "R") are not counted.
   - Zero means practice-curated: standard in the field, but unmeasured in the research.
 - **Roles listing it:** how many role inventories list the skill directly (the number at Must or Important in brackets), plus the roles that cover it only through a choose-one class link.
 
-**Never list a model version as a skill.** Model families appear without version numbers: vendors deprecate models every few months, so the skill is the family and its trade-offs (T0-14; T1-02 KF3).
+**Never list a model version as a skill.** Model families appear without version numbers. Versions churn: one vendor's deprecation page lists seven model-deprecation notices between 2025-06-30 and 2026-06-05, a mean gap of about 57 days (T1-02 KF3), and T0-14 anchors its cost and latency maths to the October 2026 model generation. The skill is the family and its trade-offs.
 
 ---
 
@@ -823,28 +824,7 @@ Within each type, rows are sorted by category, then name.
 Credentials are tie-breakers, not skills. Their signal depends on the hiring channel [B/C · T0-11]. Retired credentials are tiered Avoid for new candidates; holders may still list them with the date.
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (credentials) -->
-| Credential | Issuer | Level | Status | Roles that list it |
-|---|---|---|---|:---:|
-| **AWS Certified AI Practitioner (AIF-C01)** (`aws_aif_c01`) | AWS | foundational | active 2026-10-23: foundational; for people who work with AI rather than build it | 1 |
-| **AWS Certified Machine Learning Engineer – Associate (MLA-C01)** (`aws_mla_c01`) | AWS | associate | active 2026-10-23: successor to the retired ML – Specialty | 2 |
-| **AWS Certified Generative AI Developer – Professional (AIP-C01)** (`aws_aip_c01`) | AWS | professional | active 2026-10-23: generally available | 6 |
-| **AWS Certified Machine Learning – Specialty** (`aws_mls_c01`) | AWS | specialty | retired 2026-03-31: last exam 2026-03-31; holders may list it with the date | 2 |
-| **Microsoft AI-103 (Azure AI apps and agents)** (`ms_ai_103`) | Microsoft | associate | beta 2026-10-23: replaces AI-102; still marked beta | 3 |
-| **Microsoft Azure AI Engineer Associate (AI-102)** (`ms_ai_102`) | Microsoft | associate | retired 2026-06-30: replaced by AI-103 | 1 |
-| **Google Cloud Professional Machine Learning Engineer (PMLE)** (`gcp_pmle`) | Google Cloud | professional | active 2026-10-23: refreshed for generative AI; tie-breaker in GCP shops | 2 |
-| **Google Cloud Generative AI Leader** (`gcp_genai_leader`) | Google Cloud | foundational | active 2026-10-23: non-technical literacy credential | 1 |
-| **Databricks Certified Generative AI Engineer Associate** (`databricks_genai`) | Databricks | associate | active 2026-10-23: only if the target team runs Databricks | 1 |
-| **NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL)** (`nvidia_nca_genl`) | NVIDIA | associate | active 2026-10-23: a cheap structured syllabus | — |
-| **NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL)** (`nvidia_ncp_genl`) | NVIDIA | professional | active 2026-10-23: for LLM training or inference-infrastructure roles | 3 |
-| **IAPP Artificial Intelligence Governance Professional (AIGP)** (`iapp_aigp`) | IAPP | professional | active 2026-10-23: the most-named AI-governance credential in T0-15 | 3 |
-| **IAPP CIPP (privacy law, regional variants)** (`iapp_cipp`) | IAPP | professional | active 2026-10-23: privacy-law credential | 2 |
-| **IAPP CIPM (privacy programme management)** (`iapp_cipm`) | IAPP | professional | active 2026-10-23: privacy-programme credential | 1 |
-| **IAPP CIPT (privacy technologist)** (`iapp_cipt`) | IAPP | professional | active 2026-10-23: privacy-engineering credential | — |
-| **ISACA CISA** (`isaca_cisa`) | ISACA | professional | active 2026-10-23: IT-audit credential; prerequisite route for AAIA | 2 |
-| **ISACA Advanced in AI Audit (AAIA)** (`isaca_aaia`) | ISACA | advanced | active 2026-10-23: requires CISA, CIA or CPA | 1 |
-| **ISACA CRISC** (`isaca_crisc`) | ISACA | professional | active 2026-10-23: IT-risk credential | 2 |
-| **ISC2 CISSP** (`isc2_cissp`) | ISC2 | professional | active 2026-10-23: security credential | 2 |
-| **Certified Kubernetes Administrator (CKA)** (`cka`) | CNCF / Linux Foundation | professional | not in the research corpus (practice-curated) | 2 |
+The 20 credentials, their statuses and the roles that list each one are in a single generated table: [credentials by role](../04-certifications/credentials-by-role.md). Whether a credential is worth it: [credential ROI](../04-certifications/credential-roi.md).
 <!-- END GENERATED -->
 
 ---

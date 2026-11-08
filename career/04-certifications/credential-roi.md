@@ -6,7 +6,7 @@ stage: 4
 status: published
 last_verified: 2026-11-06
 review_by: 2027-01-21
-summary: "Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with a dated register of current, retired and renamed credentials."
+summary: "Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with the dated events behind current, retired and renamed credentials."
 sources: [T0-11, T0-15, T0-10, T0-06, T0-04]
 roles: [all]
 geos: [global, india, us]
@@ -15,7 +15,7 @@ tags: [certifications, credentials, roi, aws, azure, google-cloud, databricks, n
 
 # Credential ROI: Whether a Certificate Is Worth It
 
-> Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with a dated register of current, retired and renamed credentials.
+> Whether a certificate is worth it for your target role and hiring channel, which one to take, how to show it on a résumé and LinkedIn, and when to stop, with the dated events behind current, retired and renamed credentials.
 
 **Dates.** Statuses, fees and formats are as retrieved by [T0-11](../../research/sessions/T0-11-certification-cloud-credential-roi.md) on 2026-10-21 and by [T0-15](../../research/sessions/T0-15-regulatory-ai-governance-career-families.md) on 2026-10-21 to 2026-10-23; the skills ontology records them as of 2026-10-23. Re-verify them by 2027-01-21. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement; M model output; P practice-curated and unmeasured.
 
@@ -147,32 +147,28 @@ List prices and hours as of 2026-10-21 [T0-11 L181–207; T0-15 L391]. Prep hour
 - **Through hiring, the bar rises with level.** Assuming a 10% pay uplift, entry-level credentials must raise your odds of the better job by 2.6–10.1 percentage points, associate 8.0–17.5 and professional 12.4–28.1. The measured effect is 11 points, for weak-résumé Coursera learners. Professional exams clear the bar for no salary persona unless the employer pays, the uplift is nearer 20%, or the effect is larger than measured [M · T0-11 L358].
 - **Against a portfolio.** If an hour of skill-building earned the skills premium as reliably as an hour of prep earns the certification premium (a strong assumption), a portfolio path matches when it takes at most 1.65 times the certification's hours [M · T0-11 L326].
 
-## Status register: current, retired and renamed
+## Status: current, retired and renamed credentials
 
-Statuses as retrieved on 2026-10-21 unless a row says otherwise. Re-verify by 2027-01-21, and check the issuer's page before booking, because two credential families were retired within months in 2026 [A/B · T0-11 L126].
+Each credential's status, dated and with the roles that list it, is in the single status table: [credentials by role](credentials-by-role.md#by-credential), generated from the skills ontology (statuses as of 2026-10-23; re-verify by 2027-01-21). Check the issuer's page before booking, because two credential families were retired within months in 2026 [A/B · T0-11 L126].
 
-| Credential | Status | Dated event | Successor or note | Grade · source |
-|---|---|---|---|---|
-| AWS Certified Machine Learning – Specialty | **Retired** | Last exam 2026-03-31 | Holders stay certified to their original expiry. Successors: MLA-C01 (associate); AIP-C01 for GenAI at professional level | A · T0-11 L166, L216 |
-| AWS Certified Generative AI Developer – Professional (AIP-C01) | Active | Beta ended 2026-03-31; standard registration since | Distinct from AIF-C01 and MLA-C01 | A · T0-11 L165 |
-| AWS Certified AI Practitioner (AIF-C01) | Active | Official page updated 2026-10-15 | Foundational | A · T0-11 L165 |
-| AWS Certified Machine Learning Engineer – Associate (MLA-C01) | Active | — | Successor to the retired ML – Specialty | A/C · T0-11 L165, L216 |
-| AWS AI Business Strategist | Mentioned on the AIF-C01 page | — | Not researched | A · T0-11 L165 |
-| Microsoft Azure AI Engineer Associate (AI-102) | **Retired** | 2026-06-30 | Successor: Azure AI Apps and Agents Developer Associate (AI-103). Whether existing holders can still renew was not checked | B · T0-11.F1, L167 |
-| Microsoft AI-103 | **Beta** label on the exam page in the retrieved text | — | Confirm status before booking | A · T0-11 L167 |
-| Microsoft DP-100 and AZ-204 | **Replaced** in 2026 | — | DP-100 by AI-300 (MLOps Engineer Associate); AZ-204 by AI-200 (Azure AI Cloud Developer Associate) | B/C · T0-11.F1, L167 |
-| Google Cloud Professional Machine Learning Engineer (PMLE) | Active; **refreshed** | — | Exam refreshed for generative AI, with renamed products | A · T0-11 L168 |
-| Google Cloud Generative AI Leader | Active | — | Non-technical | A · T0-11 L168 |
-| Databricks Certified Generative AI Engineer Associate | Active | Exam guide dated March 2026 | No professional-level GenAI credential was verified | A · T0-11 L169, S24 |
-| NVIDIA NCA-GENL and NCP-GENL | Active proctored exams | — | Separate from DLI workshop certificates, whose catalogs date from 2019–2021 (price and format unverified) | A/C · T0-11 L170 |
-| DeepLearning.AI certificates | Course completion, not an exam | — | Certificate access needs a paid Pro membership | B/C · T0-11 L171 |
-| IAPP AIGP | Active | Candidate handbook effective 2024-04-02, read 2026-10-21 | No holder count published | A · T0-15 L391, L730 |
-| ISACA Advanced in AI Audit (AAIA) | Active | Launched 2025-05-19 | Requires CISA, CIA or CPA | B · T0-15 L373 |
-| IAPP CIPP, CIPM, CIPT; ISC2 CISSP; ISACA CISA, CRISC, CISM | Named in 2026 postings | — | Exam status not checked separately; the skills ontology lists them active as of 2026-10-23 | C · T0-15 L392–393 |
-| ISO/IEC 42001 auditor or implementer courses | Offered by various providers | — | No hiring-weight data; accreditation of certification bodies under way in 2025–26 | n/a · T0-15 L396, L372 |
-| Certified Kubernetes Administrator (CKA) | Not assessed in the corpus | — | Listed as practice-curated in the role × credential view | P |
+**Event notes** that the status table does not carry, as retrieved on 2026-10-21 unless a row says otherwise:
 
-The full credential list, with the roles that name each one, is in the [skills vocabulary §4](../03-skills-and-tech/skills-vocabulary.md#4-credentials).
+| Credential | Dated event or note | Grade · source |
+|---|---|---|
+| AWS Certified Machine Learning – Specialty | Last exam 2026-03-31; holders stay certified to their original expiry. Successors: MLA-C01 (associate); AIP-C01 for GenAI at professional level | A · T0-11 L166, L216 |
+| AWS Certified Generative AI Developer – Professional (AIP-C01) | Beta ended 2026-03-31; standard registration since. Distinct from AIF-C01 and MLA-C01 | A · T0-11 L165 |
+| AWS Certified AI Practitioner (AIF-C01) | Official page updated 2026-10-15. The page also mentions an AWS AI Business Strategist credential, which T0-11 did not research | A · T0-11 L165 |
+| Microsoft Azure AI Engineer Associate (AI-102) | Retired 2026-06-30; successor: Azure AI Apps and Agents Developer Associate (AI-103). Whether existing holders can still renew was not checked | B · T0-11.F1, L167 |
+| Microsoft AI-103 | **Beta** label on the exam page in the retrieved text; confirm status before booking | A · T0-11 L167 |
+| Microsoft DP-100 and AZ-204 | Replaced in 2026: DP-100 by AI-300 (MLOps Engineer Associate); AZ-204 by AI-200 (Azure AI Cloud Developer Associate) | B/C · T0-11.F1, L167 |
+| Google Cloud Professional Machine Learning Engineer (PMLE) | Exam refreshed for generative AI, with renamed products | A · T0-11 L168 |
+| Databricks Certified Generative AI Engineer Associate | Exam guide dated March 2026; no professional-level GenAI credential was verified | A · T0-11 L169, S24 |
+| NVIDIA NCA-GENL and NCP-GENL | Proctored exams, separate from DLI workshop certificates, whose catalogs date from 2019–2021 (price and format unverified) | A/C · T0-11 L170 |
+| DeepLearning.AI certificates | Course completion, not an exam; certificate access needs a paid Pro membership | B/C · T0-11 L171 |
+| IAPP AIGP | Candidate handbook effective 2024-04-02, read 2026-10-21; no holder count published | A · T0-15 L391, L730 |
+| ISACA Advanced in AI Audit (AAIA) | Launched 2025-05-19; requires CISA, CIA or CPA | B · T0-15 L373 |
+| IAPP CIPP, CIPM, CIPT; ISC2 CISSP; ISACA CISA, CRISC, CISM | Named in 2026 postings; T0-15 did not check their exam status separately, so the ontology's "active" rests on that | C · T0-15 L392–393 |
+| ISO/IEC 42001 auditor or implementer courses | Offered by various providers; no hiring-weight data; accreditation of certification bodies under way in 2025–26 | n/a · T0-15 L396, L372 |
 
 ### Names that are credentials, not roles
 
@@ -299,9 +295,9 @@ Use both sections. Secondary sources disagree on whether LinkedIn Recruiter sear
 ## Next steps
 
 - **Build the evidence that outweighs a badge:** [proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and [project archetypes](../05-portfolio/project-archetypes.md).
-- **See each role's credentials:** [credentials by role](credentials-by-role.md) and the [credentials table](../03-skills-and-tech/skills-vocabulary.md#4-credentials).
+- **See each role's credentials and each credential's status:** [credentials by role](credentials-by-role.md).
 - **Show it:** [résumé strategy](../06-job-search/resume-strategy.md), the [résumé skills matrix](../06-job-search/resume-skills-matrix.md) (for example [AI Engineer](../06-job-search/resume-skills-matrix.md#resume-ai-engineer) or [AI Governance Lead](../06-job-search/resume-skills-matrix.md#resume-ai-governance-lead)), [ATS mechanics](../06-job-search/ats-mechanics.md) for knockout questions and [online presence](../07-networking/online-presence.md) for LinkedIn.
-- **Choose the channel:** [channels and boards](../06-job-search/channels-and-boards.md) and the job-search strategy's [binding constraints](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first) and [expanding rings](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings).
+- **Choose the channel:** [channels and boards](../06-job-search/channels-and-boards.md) and the job-search strategy's [binding constraints](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) and [expanding rings](../06-job-search/job-search-strategy.md#recommended-sequencing-expanding-rings).
 - **Your track:** [career transitions](../11-tracks/career-transitions.md), [PhD to industry](../11-tracks/phd-to-industry.md), [governance careers](../11-tracks/governance-careers.md), [India remote playbook](../11-tracks/india-remote-playbook.md) and [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md).
 - **Role hubs by persona** (mapping is practice-curated [P]):
   - Services-channel engineers (personas A, C, D, E): [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md).

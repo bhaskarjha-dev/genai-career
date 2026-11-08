@@ -27,7 +27,8 @@ from pathlib import Path
 
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_skills import schema_errors  # noqa: E402
+from common import ref_errors, schema_errors, session_line_counts  # noqa: E402
+from common import esc  # noqa: E402  (shared helpers)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "tools.json"
@@ -35,10 +36,6 @@ SCHEMA = ROOT / "data" / "schemas" / "tools.schema.json"
 DOC = ROOT / "career" / "00-start" / "tool-catalog.md"
 VERDICTS = OrderedDict([("use", "Use"), ("use-with-care", "Use with care"), ("avoid", "Avoid"), ("watch", "Watch")])
 TTL_DAYS = 90
-
-
-def esc(text):
-    return str(text).replace("|", "\\|").replace("\n", " ")
 
 
 def stage_folders():
@@ -60,13 +57,11 @@ def stage_title(folder):
 
 
 def validate(data):
-    errs = []
-    if SCHEMA.exists():
-        schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-        errs += [f"tools.json {e[2:]}" for e in schema_errors(data, schema, schema)]
-        if errs:
-            return errs
-    seen, folders = set(), stage_folders()
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    errs = [f"tools.json {e[2:]}" for e in schema_errors(data, schema, schema)]
+    if errs:
+        return errs
+    seen, folders, lines = set(), stage_folders(), session_line_counts()
     for t in data["tools"]:
         if t["id"] in seen:
             errs.append(f"tools.json: duplicate id {t['id']}")
@@ -79,6 +74,7 @@ def validate(data):
             datetime.date.fromisoformat(t["as_of"])
         except ValueError:
             errs.append(f"tools.json: {t['id']} as_of {t['as_of']!r} is not a date")
+        errs += ref_errors(t["source"], lines, f"tools.json: {t['id']} source")
     return errs
 
 

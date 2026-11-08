@@ -57,7 +57,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 
 ### Application pack
 
-*What it tests:* RAG with access control, agent loop control, evaluation architecture, context management. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* RAG with access control, agent loop control, evaluation architecture, context management. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p001 · A8 Enterprise RAG / permission-aware search (including multimodal documents)
 
@@ -74,7 +74,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - ACL post-filtering, which leaks and wastes top-k
   - Permissions enforced in the prompt
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, Agentic AI Engineer, AI Enablement Engineer
 - **Skills probed:** RAG, Permission-aware retrieval (ACLs, tenancy), Hybrid search (BM25 + dense), Reranking, Retrieval metrics (recall@k, MRR, nDCG), Embedding & reranker models
 
 #### p002 · A8 Enterprise RAG / permission-aware search (including multimodal documents)
@@ -91,7 +91,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Never quantifies
   - ACL post-filtering, which leaks and wastes top-k
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, ML Platform / MLOps Engineer, AI Infrastructure / GPU Platform Engineer
 - **Skills probed:** Embeddings & vector search, ANN indexes (HNSW, IVF, PQ), Hybrid search (BM25 + dense), Search & ranking (learning to rank), Permission-aware retrieval (ACLs, tenancy), System design
 
 #### p003 · A8 Enterprise RAG / permission-aware search (including multimodal documents)
@@ -106,7 +106,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Each retrieval stage proven on recall@k before it is added
 - **Red flags:**
   - Surface-level technology choices with no reason or number behind them
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md)
+- **Roles:** AI Engineer, Agentic AI Engineer, AI Enablement Engineer, Applied AI Engineer
 - **Skills probed:** Retrieval quality (hybrid, reranking, recall@k), Hybrid search (BM25 + dense), Reranking, Retrieval metrics (recall@k, MRR, nDCG), Context engineering
 
 #### p004 · A8 Enterprise RAG / permission-aware search (including multimodal documents)
@@ -122,7 +122,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - A citation and faithfulness check on every answer
 - **Red flags:**
   - 'We'd test it with some prompts', or one uncalibrated LLM judge
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, Agentic AI Engineer, AI Enablement Engineer, AI Product Engineer (AI Frontend)
 - **Skills probed:** RAG, Retrieval metrics (recall@k, MRR, nDCG), Hybrid search (BM25 + dense), Reranking, Grounding & citations (hallucination control), Golden datasets & test-set curation
 
 #### p005 · A9 ChatGPT-style assistant with context assembly and memory
@@ -140,7 +140,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Ignores streaming and latency physics (TTFT versus TPOT)
   - No evaluation story ('we'd test it')
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), Machine Learning Engineer
 - **Skills probed:** Context engineering, Agent memory & state, Prefix caching & KV reuse, Guardrails, Server-Sent Events (SSE), Streaming & agent UX
 
 #### p006 · A9 ChatGPT-style assistant with context assembly and memory
@@ -157,7 +157,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Treats the LLM as a source of truth, with no validation
   - Hand-wavy safety
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md)
+- **Roles:** AI Engineer, Applied AI Engineer, AI Enablement Engineer, Forward Deployed Engineer, AI / GenAI Solutions Architect
 - **Skills probed:** LLM APIs & tool calling, Context engineering, Guardrails, LLM evaluation (golden sets, calibrated judges, CI gates), Model selection & routing
 
 #### p007 · A10 Latency-critical code completion plus coding assistant
@@ -174,7 +174,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Capacity planned for keystroke bursts
 - **Red flags:**
   - Ignores streaming and latency physics (TTFT versus TPOT)
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md)
+- **Roles:** AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, Machine Learning Engineer
 - **Skills probed:** Cost & latency engineering, Speculative decoding, Prefix caching & KV reuse, Context engineering, Online evaluation & production monitoring, Agent-UX telemetry
 
 #### p008 · A11 Long-running tool-using agent platform
@@ -192,7 +192,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - An unbounded loop with no budgets
   - Grading only the agent's final answer
-- **Roles:** [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md)
+- **Roles:** Agentic AI Engineer, AI Engineer, Applied AI Engineer, AI Enablement Engineer, AI Product Engineer (AI Frontend), Machine Learning Engineer, Forward Deployed Engineer
 - **Skills probed:** Agents & tool use, Agent reliability (durable state, budgets, approvals), Durable execution & workflow state, Human-in-the-loop design, Agent evaluation (trajectories, task success), Containment (DLP, sandboxing, egress)
 
 #### p009 · A11 Long-running tool-using agent platform
@@ -209,7 +209,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - An unbounded loop with no budgets
   - Grading only the agent's final answer
-- **Roles:** [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md)
+- **Roles:** Agentic AI Engineer, AI Engineer, Applied AI Engineer, AI Enablement Engineer
 - **Skills probed:** Agent evaluation (trajectories, task success), LLM tracing, Agent reliability (durable state, budgets, approvals), Error analysis, Eval statistics (CIs, power, pass^k)
 
 #### p010 · A12 Real-time voice assistant
@@ -226,7 +226,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Stage latencies added in sequence with no overlap (one vendor's illustrative sequential budget reaches about 1,180 ms)
   - Ignores streaming and latency physics (TTFT versus TPOT)
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, AI Product Engineer (AI Frontend), Machine Learning Engineer
 - **Skills probed:** Speech & voice AI (ASR, TTS, realtime voice agents), Cost & latency engineering, Streaming & agent UX, Load testing & latency SLOs
 
 #### p011 · A13 Document / multimodal ingestion and extraction at scale
@@ -243,7 +243,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Versioned outputs so a model or prompt change can be re-run safely; the batch API for non-urgent work
 - **Red flags:**
   - Treats the LLM as a source of truth, with no validation
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, AI Enablement Engineer
 - **Skills probed:** Document ingestion, parsing & chunking, Structured output & tool schemas, Constrained decoding, Model selection & routing, Multimodal AI (vision, documents, audio), Cost & latency engineering
 
 #### p012 · A15 Safety, abuse and prompt-injection defence architecture
@@ -260,7 +260,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - 'Add guardrails' with no placement by layer
   - Drops classic engineering (queues, retries, idempotency) once a model appears
-- **Roles:** [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md)
+- **Roles:** AI Security Engineer / AI Red Teamer, AI Engineer, Applied AI Engineer
 - **Skills probed:** Containment (DLP, sandboxing, egress), Threat modelling for AI systems, Red-teaming, Incident response & SIEM, LLM security (prompt injection, OWASP)
 
 #### p013 · A15 Safety, abuse and prompt-injection defence architecture
@@ -277,7 +277,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - 'Tell the model to ignore malicious instructions'
   - A static benchmark score offered as proof that a defence works
-- **Roles:** [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md)
+- **Roles:** AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, AI Engineer, ML Platform / MLOps Engineer
 - **Skills probed:** Guardrails, LLM security (prompt injection, OWASP), OWASP Top 10 for LLM Applications, PII detection & redaction, Production hardening (rate limits, spend caps, kill switches)
 
 #### p014 · A15 Safety, abuse and prompt-injection defence architecture
@@ -294,7 +294,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Classifier-only defence: adaptive attacks bypassed 12 published defences with over 90% success in most cases
   - Permissions enforced in the prompt
-- **Roles:** [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md)
+- **Roles:** AI Security Engineer / AI Red Teamer, Agentic AI Engineer, AI Engineer, Applied AI Engineer, Responsible AI / AI Governance Engineer
 - **Skills probed:** Prompt-injection attack & defence, Containment (DLP, sandboxing, egress), Agent abuse & MCP authorisation, Human-in-the-loop design, Red-teaming, OAuth/OIDC, RBAC, SSO
 
 #### p015
@@ -311,7 +311,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Treats the LLM as a source of truth, with no validation
   - Assumes a bigger context window removes the need for retrieval
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, Agentic AI Engineer, AI Enablement Engineer, AI Product Engineer (AI Frontend), AI Evaluation Engineer
 - **Skills probed:** Grounding & citations (hallucination control), RAG, Retrieval metrics (recall@k, MRR, nDCG), Guardrails, Choosing RAG vs long context vs fine-tuning, LLM evaluation (golden sets, calibrated judges, CI gates)
 
 #### p016
@@ -327,12 +327,12 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Fine-tuning before showing that prompting and retrieval fail
   - Fine-tuning to inject facts that change
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md)
+- **Roles:** AI Engineer, Applied AI Engineer, Agentic AI Engineer, Machine Learning Engineer, Applied Scientist
 - **Skills probed:** Choosing RAG vs long context vs fine-tuning, Fine-tuning (SFT, LoRA), Model selection & routing, Golden datasets & test-set curation, Cost & latency engineering
 
 ### Application plus customer scoping pack
 
-*What it tests:* RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p017 · A8 Enterprise RAG / permission-aware search (including multimodal documents)
 
@@ -348,7 +348,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - ACL post-filtering, which leaks and wastes top-k
   - Permissions enforced in the prompt
-- **Roles:** [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md)
+- **Roles:** Forward Deployed Engineer, AI / GenAI Solutions Architect
 - **Skills probed:** RAG, Permission-aware retrieval (ACLs, tenancy), Document ingestion, parsing & chunking, PII detection & redaction, Retrieval metrics (recall@k, MRR, nDCG), Data pipelines & quality
 
 #### p018 · A14 LLM/agent evaluation platform and observability
@@ -365,7 +365,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Grading only the agent's final answer
   - No production feedback loop
-- **Roles:** [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md)
+- **Roles:** Forward Deployed Engineer, AI / GenAI Solutions Architect
 - **Skills probed:** Agent evaluation (trajectories, task success), Multi-agent orchestration, Online evaluation & production monitoring, Eval statistics (CIs, power, pass^k), LLM tracing
 
 #### p019
@@ -382,12 +382,12 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Dismisses product requirements or acts defensively about model limitations
   - Opens with model architecture instead of requirements and scale
-- **Roles:** [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md)
+- **Roles:** Forward Deployed Engineer, AI / GenAI Solutions Architect
 - **Skills probed:** Customer scoping & demos, Customer-facing communication, Explaining probabilistic trade-offs (C2), Metrics for non-deterministic systems, Build-vs-buy & vendor evaluation
 
 ### Classic ML system design pack
 
-*What it tests:* recommendation, fraud or ETA system design, plus where an LLM would help. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* recommendation, fraud or ETA system design, plus where an LLM would help. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p020
 
@@ -401,7 +401,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Prepares LLM system design for an ML design round (the wrong round type)
   - Never quantifies
-- **Roles:** [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md)
+- **Roles:** Machine Learning Engineer, Applied Scientist
 - **Skills probed:** ML fundamentals, Recommender systems, System design, Data pipelines & quality, Experiment design & A/B testing, Feature stores
 
 #### p021
@@ -416,7 +416,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Token cost per request and per month: requests × (input tokens × input price + output tokens × output price) ÷ 10^6
 - **Red flags:**
   - Opens with model architecture or training instead of requirements and scale
-- **Roles:** [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md)
+- **Roles:** Machine Learning Engineer, Applied Scientist
 - **Skills probed:** Model selection & routing, Choosing RAG vs long context vs fine-tuning, Token & unit economics, Product sense
 
 #### p022
@@ -432,12 +432,12 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Drops classic engineering once a model appears
   - Unbounded agent loops
-- **Roles:** [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md)
+- **Roles:** Machine Learning Engineer, Applied Scientist, AI Engineer, Applied AI Engineer
 - **Skills probed:** System design, RAG, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Permission-aware retrieval (ACLs, tenancy)
 
 ### Infrastructure pack
 
-*What it tests:* KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p023 · A1 Multi-tenant LLM inference API / serving platform
 
@@ -455,7 +455,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - One request per GPU
   - Autoscaling on CPU
   - No distinction between prefill and decode
-- **Roles:** [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md)
+- **Roles:** Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Engineer, Machine Learning Engineer
 - **Skills probed:** Serving literacy (vLLM, batching, quantisation), Continuous batching & KV cache, Prefill/decode disaggregation, Inference autoscaling, Load testing & latency SLOs, Capacity & GPU/API cost governance
 
 #### p024 · A1 Multi-tenant LLM inference API / serving platform
@@ -472,7 +472,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Never quantifies
   - Correct arithmetic with no design consequence ('so it's a lot')
-- **Roles:** [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md)
+- **Roles:** Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer
 - **Skills probed:** Capacity & GPU/API cost governance, Continuous batching & KV cache, Load testing & latency SLOs, GPU fundamentals (HBM, prefill vs decode), Serving literacy (vLLM, batching, quantisation)
 
 #### p025 · A2 GPU request-batching service
@@ -490,7 +490,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - No bound on the queue
   - No answer for 'one request in the batch fails'
-- **Roles:** [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md)
+- **Roles:** Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer
 - **Skills probed:** Continuous batching & KV cache, Serving literacy (vLLM, batching, quantisation), GPU fundamentals (HBM, prefill vs decode), Load testing & latency SLOs, System design
 
 #### p026 · A3 Offline/async batch-inference API
@@ -507,7 +507,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Drops classic engineering (queues, retries, idempotency) once a model appears
   - States provider batch-size limits without checking provider docs (secondary sources give 10,000, 50,000 or 100,000 requests)
-- **Roles:** [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md)
+- **Roles:** Inference / LLM Serving Engineer, ML Platform / MLOps Engineer, AI Infrastructure / GPU Platform Engineer
 - **Skills probed:** Capacity & GPU/API cost governance, GPU fleet ops & scheduling, Prefix caching & KV reuse, Cost & latency engineering, System design
 
 #### p027 · A4 GPU fleet scheduling, placement, quotas/credits
@@ -523,7 +523,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Bin-packing versus fairness versus cold-start cost
 - **Red flags:**
   - Never quantifies
-- **Roles:** [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md)
+- **Roles:** AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer
 - **Skills probed:** GPU fleet ops & scheduling, Capacity & GPU/API cost governance, TP/PP & MoE serving, Inference autoscaling, Cluster schedulers
 
 #### p028 · A4 GPU fleet scheduling, placement, quotas/credits
@@ -538,7 +538,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Placement constraints from weights plus KV memory
 - **Red flags:**
   - Drops classic engineering (queues, retries, idempotency) once a model appears
-- **Roles:** [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md)
+- **Roles:** AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, Inference / LLM Serving Engineer
 - **Skills probed:** GPU fleet ops & scheduling, Capacity & GPU/API cost governance, System design
 
 #### p029 · A5 Model-weights distribution and safe rollout
@@ -554,7 +554,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Hash verification, a health check and eval smoke test, and canary traffic with a rollback pointer
 - **Red flags:**
   - Never quantifies
-- **Roles:** [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md)
+- **Roles:** AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, Inference / LLM Serving Engineer
 - **Skills probed:** Checkpointing & storage throughput, Networking, Progressive delivery (canary, shadow, feature flags), GPU fleet ops & scheduling, MLOps lifecycle (model & prompt CI/CD)
 
 #### p030 · A6 LLM gateway / internal AI platform
@@ -571,7 +571,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Central logging versus privacy
 - **Red flags:**
   - A semantic cache on high-stakes or personalised routes
-- **Roles:** [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md)
+- **Roles:** ML Platform / MLOps Engineer, AI Infrastructure / GPU Platform Engineer, AI Enablement Engineer, AI Engineer
 - **Skills probed:** LLM gateways, Model selection & routing, Semantic & prompt caching, PII detection & redaction, Cost & latency engineering
 
 #### p031 · A6 LLM gateway / internal AI platform
@@ -588,7 +588,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - A cache breakpoint on changing content, such as a timestamp, causing perpetual misses and repeated write charges
   - A semantic cache whose false-hit rate is never measured
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, ML Platform / MLOps Engineer, Inference / LLM Serving Engineer
 - **Skills probed:** Prefix caching & KV reuse, Semantic & prompt caching, Cost & latency engineering, LLM gateways, Embeddings & vector search
 
 #### p032 · A7 Prompt playground / prompt registry and experimentation
@@ -605,7 +605,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - The loop from playground to eval to CI gate to deployment ('prompts as code')
 - **Red flags:**
   - Surface-level technology choices ('Kafka because Kafka')
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, ML Platform / MLOps Engineer, AI Infrastructure / GPU Platform Engineer, AI Product Engineer (AI Frontend)
 - **Skills probed:** Prompt & model versioning, Eval regression gates in CI, Server-Sent Events (SSE), APIs & integrations, System design
 
 #### p033
@@ -622,7 +622,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Uses the with-sparsity H100 figure (1,979 TFLOPS) as the dense BF16 number
   - No distinction between prefill and decode
-- **Roles:** [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md)
+- **Roles:** GPU Kernel / ML Compiler Engineer, Inference / LLM Serving Engineer, AI Infrastructure / GPU Platform Engineer
 - **Skills probed:** GPU fundamentals (HBM, prefill vs decode), Profiling & roofline (Nsight), GPU memory performance, Continuous batching & KV cache, Serving literacy (vLLM, batching, quantisation)
 
 #### p034
@@ -638,12 +638,12 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Guessing without data
   - Not forming hypotheses
-- **Roles:** [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md)
+- **Roles:** Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer
 - **Skills probed:** Load testing & latency SLOs, Observability (OpenTelemetry traces, metrics), Continuous batching & KV cache, SRE (SLOs, on-call, incidents)
 
 ### Evaluation design pack
 
-*What it tests:* golden sets, judge calibration, online sampling, A/B tests. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* golden sets, judge calibration, online sampling, A/B tests. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p035 · A14 LLM/agent evaluation platform and observability
 
@@ -661,7 +661,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - 'We'd test it with some prompts'
   - One uncalibrated LLM judge, or a model judging its own outputs
   - No regression gate and no production feedback loop
-- **Roles:** [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md)
+- **Roles:** AI Evaluation Engineer, AI Engineer, Applied AI Engineer, Agentic AI Engineer, Applied Scientist, Domain Evaluation Specialist / AI Trainer
 - **Skills probed:** LLM evaluation (golden sets, calibrated judges, CI gates), Golden datasets & test-set curation, LLM-as-judge design & calibration, Eval statistics (CIs, power, pass^k), Eval regression gates in CI, Online evaluation & production monitoring
 
 #### p036 · A14 LLM/agent evaluation platform and observability
@@ -679,7 +679,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - One uncalibrated LLM judge
   - No regression gate and no production feedback loop
-- **Roles:** [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md)
+- **Roles:** AI Evaluation Engineer, ML Platform / MLOps Engineer, Research Engineer / Member of Technical Staff, AI Engineer
 - **Skills probed:** LLM evaluation (golden sets, calibrated judges, CI gates), Benchmark construction, LLM-as-judge design & calibration, Eval regression gates in CI, Online evaluation & production monitoring, Observability (OpenTelemetry traces, metrics)
 
 #### p037 · A14 LLM/agent evaluation platform and observability
@@ -696,7 +696,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Ownership: the platform owns infrastructure, product teams contribute tasks
 - **Red flags:**
   - Grading only the agent's final answer
-- **Roles:** [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md)
+- **Roles:** AI Evaluation Engineer, Agentic AI Engineer, ML Platform / MLOps Engineer, AI Engineer
 - **Skills probed:** Agent evaluation (trajectories, task success), Eval statistics (CIs, power, pass^k), LLM-as-judge design & calibration, LLM evaluation (golden sets, calibrated judges, CI gates), LLM tracing
 
 #### p038 · A14 LLM/agent evaluation platform and observability
@@ -713,18 +713,18 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - A model judging its own outputs
   - One uncalibrated LLM judge
-- **Roles:** [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [AI Engineer](../02-roles/hubs/ai-engineer.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md)
+- **Roles:** AI Evaluation Engineer, Applied Scientist, Machine Learning Engineer, AI Engineer, Domain Evaluation Specialist / AI Trainer
 - **Skills probed:** LLM-as-judge design & calibration, Human evaluation programmes, Rubrics & inter-rater agreement, Eval statistics (CIs, power, pass^k), LLM evaluation (golden sets, calibrated judges, CI gates)
 
 ### Research pack
 
-*What it tests:* a research talk plus coding; the full research loop at frontier labs. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* a research talk plus coding; the full research loop at frontier labs. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p039
 
 > Give a research talk on your own work (one round of a frontier-lab loop that also has coding and values rounds).
 
-- **Source:** No reported prompt (D): built from the research-talk round in T2-01's frontier-lab loop and role-catalog §8.2 [D · T2-01 L609]
+- **Source:** No reported prompt (D): built from the research-talk round in T2-01's frontier-lab loop and the research interview track (T1-03, T0-14) [D · T2-01 L609]
 - **A strong answer covers** (from T0-06 L320; T2-01 L565, L572, L609, L612–614; T1-03 L177, L212):
   - Research depth together with engineering depth (research taste plus the ability to build)
   - Your own contribution separated from the team's: 'I designed the evaluation methodology, implemented the baseline comparison…'
@@ -733,18 +733,18 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Academic framing instead of impact (a Meta veto trigger)
   - 'We published a paper on…' with no personal contribution isolated
-- **Roles:** [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md)
+- **Roles:** Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher
 - **Skills probed:** Research taste & problem selection, Research methods & re-implementation, Presenting & live demos, Research-to-production, Ownership & incident response (C3)
 
 ### Governance pack
 
-*What it tests:* a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p040
 
 > Scoping round: set up an AI governance programme (inventory, risk-assessment method, committee and evidence) mapped to the EU AI Act, NIST AI RMF and ISO/IEC 42001.
 
-- **Source:** No reported prompt (D): built from the governance round in role-catalog §8.2 and the programme work described in T0-15 [D · T0-15 L162]
+- **Source:** No reported prompt (D): built from the governance interview track (T1-03, T0-14) and the programme work described in T0-15 [D · T0-15 L162]
 - **A strong answer covers** (from T0-15 L87, L162, L173–174, L334, L337, L342; T1-03 L178):
   - An AI inventory or registry: systems, owners, use cases and risk tiers
   - A risk-assessment method and committee operations, with one accountable programme lead and a cross-functional committee
@@ -755,18 +755,18 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Assumes most high-risk systems need a notified body (most Annex III points use internal control)
   - Treats ISO/IEC 42001 as a presumption of EU AI Act conformity (it gives none)
   - Dismisses guardrails as 'red tape' that slows shipping
-- **Roles:** [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md)
+- **Roles:** AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, Responsible AI / AI Governance Engineer
 - **Skills probed:** AI inventory & risk register, GRC & risk assessment, EU AI Act / NIST AI RMF / ISO 42001, EU AI Act, NIST AI RMF, ISO/IEC 42001, AI operating model & governance boards
 
 ### Product pack
 
-*What it tests:* a scoping or product round. *Source:* career/02-roles/role-catalog.md §8.2 (T1-03, T0-14).
+*What it tests:* a scoping or product round. *Source:* T1-03, T0-14 (first collected in the role catalog §8.2).
 
 #### p041
 
 > Product or scoping round: scope a GenAI feature or pilot, from whether to use an LLM to success metrics, an evaluation rubric and exit criteria.
 
-- **Source:** No reported prompt (D): built from the product round in role-catalog §8.2 and the scoping round T2-01 lists for non-technical candidates [D · T2-01 L767]
+- **Source:** No reported prompt (D): built from the product interview track (T1-03, T0-14) and the scoping round T2-01 lists for non-technical candidates [D · T2-01 L767]
 - **A strong answer covers** (from T0-14 L644, L711–712, L778, L791; T1-03 L176, L194):
   - The premise questioned: is an LLM needed, build or buy, what not to build; stakeholders and success metrics named
   - 'Good' defined measurably (task success, groundedness, safety, latency, cost) and mapped from business metric to proxy to offline metric, starting from the cost of a wrong answer
@@ -777,7 +777,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Over-promises accuracy instead of proposing guardrails, confidence thresholds and fallbacks
   - Uses jargon without linking decisions to user impact
-- **Roles:** [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md)
+- **Roles:** AI Product Manager, Domain Evaluation Specialist / AI Trainer
 - **Skills probed:** Product sense, Metrics for non-deterministic systems, Rubrics & inter-rater agreement, Token & unit economics, Pilots & adoption measurement, Build-vs-buy & vendor evaluation
 
 ### Behavioural pack
@@ -797,7 +797,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Deflects blame to teammates, data engineers or third-party model providers
   - Blames external factors ('the data was bad') without systematic troubleshooting
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), Ownership & incident response (C3), Incident postmortems, Observability (OpenTelemetry traces, metrics)
 
 #### p043
@@ -812,7 +812,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Jargon with no link to user impact
   - Defensive about model limitations
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Explaining probabilistic trade-offs (C2), Executive & board communication, Guardrails, LLM fundamentals (tokens, context windows, sampling, hallucination)
 
 #### p044
@@ -826,7 +826,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - The constraint that decided it (latency ceiling, accuracy bar or cost cap) and the result as a metric delta
 - **Red flags:**
   - Focuses on framework choice over data quality and metric drift
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Domain Evaluation Specialist / AI Trainer, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), Cost & latency engineering, Model selection & routing, Token & unit economics
 
 #### p045
@@ -840,7 +840,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Baselines and eval metrics, with a pivot when a hypothesis failed
 - **Red flags:**
   - Blames external factors ('the data was bad') without systematic troubleshooting
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Domain Evaluation Specialist / AI Trainer, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), Annotation workflows, Error analysis, Data pipelines & quality
 
 #### p046
@@ -855,7 +855,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Dismisses guardrails as 'red tape' that slows shipping
   - Considers ethics only when prompted
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Domain Evaluation Specialist / AI Trainer, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Responsible-AI judgement (C4), Fairness & bias assessment, PII detection & redaction, Guardrails
 
 #### p047
@@ -870,7 +870,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Cost-versus-safety trade-offs translated into business terms
 - **Red flags:**
   - Defensive about model limitations
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Explaining probabilistic trade-offs (C2), Responsible-AI judgement (C4), Stakeholder communication, Online evaluation & production monitoring
 
 #### p048
@@ -886,7 +886,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Deflects blame to teammates or providers
   - Describes what 'the team' did without isolating a personal contribution
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), Ownership & incident response (C3), Capacity & GPU/API cost governance, Experiment tracking & reproducibility
 
 #### p049
@@ -902,7 +902,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Friction with non-technical stakeholders, or dismissing product requirements
   - Blames the PM (a Google veto trigger)
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Explaining probabilistic trade-offs (C2), Stakeholder communication, Cross-functional collaboration, Pilots & adoption measurement
 
 #### p050
@@ -917,7 +917,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Non-determinism treated as a first-class design constraint
 - **Red flags:**
   - Treats ML like deterministic software
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Domain Evaluation Specialist / AI Trainer, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), Adaptability & learning agility, Prompt & model versioning, Eval regression gates in CI
 
 #### p051
@@ -933,7 +933,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Deflects blame
   - Cannot admit mistakes (an Anthropic veto trigger)
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Ownership & incident response (C3), Responsible-AI judgement (C4), Progressive delivery (canary, shadow, feature flags), Incident postmortems
 
 #### p052
@@ -949,7 +949,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - 'We'd test it with some prompts'
   - No production feedback loop
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Domain Evaluation Specialist / AI Trainer, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), Golden datasets & test-set curation, Online evaluation & production monitoring, LLM-as-judge design & calibration, Experiment design & A/B testing
 
 #### p053
@@ -964,7 +964,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Tests for the eval itself (one reported benchmark score moved from 42% to 95% once grader bugs were fixed)
 - **Red flags:**
   - One uncalibrated LLM judge, or a model judging its own outputs
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md), [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md), [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md), [VP / Head of AI](../02-roles/hubs/vp-head-of-ai.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Forward Deployed Engineer, Applied AI Engineer, Agentic AI Engineer, AI Product Engineer (AI Frontend), AI Enablement Engineer, AI / GenAI Solutions Architect, Applied Scientist, Inference / LLM Serving Engineer, GPU Kernel / ML Compiler Engineer, AI Infrastructure / GPU Platform Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, AI Security Engineer / AI Red Teamer, Responsible AI / AI Governance Engineer, Research Engineer / Member of Technical Staff, Research Scientist (AI/ML), Frontier AI Safety / Alignment Researcher, AI Governance Programme Lead / Manager, AI Risk, Audit & Compliance Specialist, AI Product Manager, Domain Evaluation Specialist / AI Trainer, Physical AI / Robotics AI Engineer, AI Engineering Manager / Director of AI Engineering, VP / Head of AI
 - **Skills probed:** Pragmatism under ambiguity (C1), LLM evaluation (golden sets, calibrated judges, CI gates), LLM-as-judge design & calibration, Benchmark construction
 
 ### Coding pack
@@ -985,7 +985,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - Jumping to code without framing
   - Silent coding
   - Not testing
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Research Engineer / Member of Technical Staff, Forward Deployed Engineer, Applied Scientist, Applied AI Engineer, AI Infrastructure / GPU Platform Engineer, Research Scientist (AI/ML), Inference / LLM Serving Engineer, Agentic AI Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, GPU Kernel / ML Compiler Engineer, AI Security Engineer / AI Red Teamer, Physical AI / Robotics AI Engineer, Frontier AI Safety / Alignment Researcher, AI Enablement Engineer, AI Product Engineer (AI Frontend), Responsible AI / AI Governance Engineer
 - **Skills probed:** Data structures & algorithms, Python (production), Testing (pytest), Problem solving
 
 #### p055
@@ -1002,7 +1002,7 @@ Classify the loop before you prepare: the three loop types drill different arche
   - 'Vibe coding': pasting giant prompts and accepting unverified output
   - Silent AI interaction
   - Cannot explain AI-generated code
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Research Engineer / Member of Technical Staff, Forward Deployed Engineer, Applied Scientist, Applied AI Engineer, AI Infrastructure / GPU Platform Engineer, Research Scientist (AI/ML), Inference / LLM Serving Engineer, Agentic AI Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, GPU Kernel / ML Compiler Engineer, AI Security Engineer / AI Red Teamer, Physical AI / Robotics AI Engineer, Frontier AI Safety / Alignment Researcher, AI Enablement Engineer, AI Product Engineer (AI Frontend), Responsible AI / AI Governance Engineer
 - **Skills probed:** Coding-agent tools, Python (production), Testing (pytest), Attention to detail
 
 #### p056
@@ -1017,7 +1017,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Surface-level comments ('could use more comments')
   - Missing the structural issues
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [Research Scientist (AI/ML)](../02-roles/hubs/research-scientist.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md), [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md), [AI Engineering Manager / Director of AI Engineering](../02-roles/hubs/ai-engineering-manager.md)
+- **Roles:** AI Engineer, Machine Learning Engineer, Research Engineer / Member of Technical Staff, Forward Deployed Engineer, Applied Scientist, Applied AI Engineer, AI Infrastructure / GPU Platform Engineer, Research Scientist (AI/ML), Inference / LLM Serving Engineer, Agentic AI Engineer, ML Platform / MLOps Engineer, AI Evaluation Engineer, GPU Kernel / ML Compiler Engineer, AI Security Engineer / AI Red Teamer, Physical AI / Robotics AI Engineer, Frontier AI Safety / Alignment Researcher, AI Enablement Engineer, AI Product Engineer (AI Frontend), Responsible AI / AI Governance Engineer, AI Engineering Manager / Director of AI Engineering
 - **Skills probed:** Design docs & RFCs, System design, Technical leadership
 
 #### p057
@@ -1033,7 +1033,7 @@ Classify the loop before you prepare: the three loop types drill different arche
 - **Red flags:**
   - Drops classic engineering (queues, retries, idempotency)
   - Over-engineers beyond the stated scale
-- **Roles:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md), [Machine Learning Engineer](../02-roles/hubs/ml-engineer.md), [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [ML Platform / MLOps Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md)
+- **Roles:** AI Engineer, Applied AI Engineer, Agentic AI Engineer, AI Enablement Engineer, AI Product Engineer (AI Frontend), Forward Deployed Engineer, Machine Learning Engineer, Research Engineer / Member of Technical Staff, Inference / LLM Serving Engineer, ML Platform / MLOps Engineer, AI Infrastructure / GPU Platform Engineer
 - **Skills probed:** APIs & integrations, System design, Python (production), Testing (pytest)
 
 ## System-design archetypes

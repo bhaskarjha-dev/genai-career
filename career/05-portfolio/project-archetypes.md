@@ -55,7 +55,7 @@ Coverage percentages are model outputs (Grade M) from judgement-graded skill tie
 
 ## Minimal project sets
 
-The smallest sets of archetypes that bring roles to at least 60% coverage of their weighted Must and Important skills (greedy search, Grade M; [job-search strategy §2.6](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first)):
+The smallest sets of archetypes that bring roles to at least 60% coverage of their weighted Must and Important skills (greedy search, Grade M; [job-search strategy: the constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first)):
 
 | Goal | Set | Roles reaching the threshold |
 |---|---|:---:|
@@ -70,7 +70,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 ### P1 · Evaluated RAG system over a real corpus
 
-**The problem.** Answering questions over a specialised, changing document set is core AI-engineer work: RAG is named in roughly a third to 54% of AI-engineer postings, depending on the sample [B · T0-13.F2; role-skill-maps §2.1]. Unmeasured PDF chat is the archetypal tutorial clone [C · T0-13 AP-1], so the signal comes from baselines, a calibrated judge and error analysis over a versioned corpus.
+**The problem.** Answering questions over a specialised, changing document set is core AI-engineer work: RAG is named in roughly a third to 54% of AI-engineer postings, depending on the sample [B · T0-13.F2; JobsPipe 2026-11-02, data/posting_skill_shares.json]. Unmeasured PDF chat is the archetypal tutorial clone [C · T0-13 AP-1], so the signal comes from baselines, a calibrated judge and error analysis over a versioned corpus.
 
 **Best for:** [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) (69%), [AI Engineer](../02-roles/hubs/ai-engineer.md) (68%), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md) (59%). **On the map:** L5 Orchestration and context.
 
@@ -102,7 +102,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Python (production), LLM APIs & tool calling, RAG, Embeddings & vector search, Retrieval quality (hybrid, reranking, recall@k), LLM evaluation (golden sets, calibrated judges, CI gates), Error analysis, Observability (OpenTelemetry traces, metrics), Cost & latency engineering, Prompt & context design, Testing (pytest), Git & CI/CD, Docker.
 
-**Sources:** T0-13 D3 R1 L281-312, T0-13 D3 L272-277, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13.F2 L90-91, T0-13 D1 AP-1 L179-182, T0-14 §6.3 L193, T0-14 §6.3 L199, career/03-skills-and-tech/role-skill-maps.md §2.1, career/03-skills-and-tech/role-skill-maps.md#skills-ai-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D3 R1 L281-312, T0-13 D3 L272-277, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13.F2 L90-91, T0-13 D1 AP-1 L179-182, T0-14 §6.3 L193, T0-14 §6.3 L199, career/03-skills-and-tech/role-skill-maps.md §2.1, career/03-skills-and-tech/role-skill-maps.md#skills-ai-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p2"></a>
 
@@ -140,7 +140,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Python (production), LLM APIs & tool calling, Agents & tool use, Agent reliability (durable state, budgets, approvals), Agent frameworks (LangGraph, Agents SDKs), MCP (Model Context Protocol), Containment (DLP, sandboxing, egress), LLM security (prompt injection, OWASP), LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics).
 
-**Sources:** T0-13 D3 R2 L316-349, T0-13 D3 L272-277, T0-13 D1 AP-4 L194-197, T0-13 D2 L228-244, T0-14 §6.3 L196, T0-14 A11 L432-454, T0-14 §6.7 L717, T0-03 L135, career/03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D3 R2 L316-349, T0-13 D3 L272-277, T0-13 D1 AP-4 L194-197, T0-13 D2 L228-244, T0-14 §6.3 L196, T0-14 A11 L432-454, T0-14 §6.7 L717, T0-03 L135, career/03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p3"></a>
 
@@ -213,7 +213,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Python (production), PyTorch, ML fundamentals, Deep learning & transformers, Fine-tuning (SFT, LoRA), LLM evaluation (golden sets, calibrated judges, CI gates), Eval statistics (CIs, power, pass^k), Embedding & reranker models, Data pipelines & quality, Serving literacy (vLLM, batching, quantisation), Experiment design & A/B testing.
 
-**Sources:** T0-13 D1 AP-7 L209-212, T0-13 §5 A4 L163, T0-13 D2 L228-244, T0-14 §6.4 T1 L562, T0-14 §6.4 T4 L565, T0-14 §6.3 L193, T0-14 §6.3 L198, career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D1 AP-7 L209-212, T0-13 §5 A4 L163, T0-13 D2 L228-244, T0-14 §6.4 T1 L562, T0-14 §6.4 T4 L565, T0-14 §6.3 L193, T0-14 §6.3 L198, career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p5"></a>
 
@@ -251,7 +251,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Python (production), vLLM / SGLang / TensorRT-LLM, Continuous batching & KV cache, Speculative decoding, Quantisation (FP8/FP4, AWQ, GPTQ), Profiling & roofline (Nsight), Load testing & latency SLOs, Cost & latency engineering, GPU fundamentals (HBM, prefill vs decode), Serving literacy (vLLM, batching, quantisation).
 
-**Sources:** T0-13 D3 R3 L353-383, T0-13 D3 L272-277, T0-13.F5 L99-100, T0-13.F9 L111-112, T0-13.F10 L114-115, T0-13 D8 M6 L552, T0-14 §6.3 L186-189, T0-03 L137, career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D3 R3 L353-383, T0-13 D3 L272-277, T0-13.F5 L99-100, T0-13.F9 L111-112, T0-13.F10 L114-115, T0-13 D8 M6 L552, T0-14 §6.3 L186-189, T0-03 L137, career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p6"></a>
 
@@ -289,7 +289,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Kubernetes, Terraform / IaC, Docker, Git & CI/CD, Observability (OpenTelemetry traces, metrics), LLM gateways, KServe / Ray Serve, vLLM / SGLang / TensorRT-LLM, MLOps lifecycle (model & prompt CI/CD), OAuth/OIDC, RBAC, SSO, SRE (SLOs, on-call, incidents), Model supply chain & CVEs, Linux, Python (production), Capacity & GPU/API cost governance.
 
-**Sources:** T0-13 D2 PA-13 L242, T0-13 D8 M6 L552, T0-13 D8 M8 L554, T0-13 D6 L526-530, T0-03 L136, T0-14.F1 L79-80, T0-14 A1 L227, T0-14 A5 L294-312, T0-14 A6 L314-334, career/03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D2 PA-13 L242, T0-13 D8 M6 L552, T0-13 D8 M8 L554, T0-13 D6 L526-530, T0-03 L136, T0-14.F1 L79-80, T0-14 A1 L227, T0-14 A5 L294-312, T0-14 A6 L314-334, career/03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p7"></a>
 
@@ -326,7 +326,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Python (production), PyTorch, PyTorch internals, Distributed training (FSDP2, TP/PP, MoE), Post-training (SFT, preference, RL), Training-run debugging, Profiling & roofline (Nsight), LLM evaluation (golden sets, calibrated judges, CI gates), Data pipelines & quality, Reinforcement learning.
 
-**Sources:** T0-13 D8 L541-559, T0-13.F10 L114-115, T0-13 D1 AP-7 L209-212, T0-13 §4.5 L146, T0-14 A4 L274-292, career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D8 L541-559, T0-13.F10 L114-115, T0-13 D1 AP-7 L209-212, T0-13 §4.5 L146, T0-14 A4 L274-292, career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p8"></a>
 
@@ -361,7 +361,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Research methods & re-implementation, PyTorch, Deep learning & transformers, ML fundamentals, LLM evaluation (golden sets, calibrated judges, CI gates), Eval statistics (CIs, power, pass^k), Clear writing & presenting, Python (production).
 
-**Sources:** T2-01 L594, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-6 L204-207, T0-13 D1 AP-7 L209-212, career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T2-01 L594, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-6 L204-207, T0-13 D1 AP-7 L209-212, career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p9"></a>
 
@@ -396,7 +396,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** CUDA / Triton / CUTLASS, Attention, GEMM & quantised kernels, GPU fundamentals (HBM, prefill vs decode), Profiling & roofline (Nsight), Numerics validation, GPU memory performance, Linear algebra, Quantisation (FP8/FP4, AWQ, GPTQ).
 
-**Sources:** T0-13 D3 R3 L374, T0-13 D2 PA-14 L243, T0-13 D8 M4 L550, T0-13 D8 M7 L553, T0-13.F9 L111-112, T0-14 §6.3b L551, T0-03 L137, career/03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-13 D3 R3 L374, T0-13 D2 PA-14 L243, T0-13 D8 M4 L550, T0-13 D8 M7 L553, T0-13.F9 L111-112, T0-14 §6.3b L551, T0-03 L137, career/03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p10"></a>
 
@@ -432,7 +432,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** LLM security (prompt injection, OWASP), Prompt-injection attack & defence, Agent abuse & MCP authorisation, Red-teaming, Containment (DLP, sandboxing, egress), LLM evaluation (golden sets, calibrated judges, CI gates), Git & CI/CD, Python (production), Guardrails.
 
-**Sources:** T0-14.F6 L94-95, T0-14 §6.8 L726-757, T0-14 A15 L524-544, T0-13 D3 R2 L339, T0-13 D2 PA-09 L238, T0-13 D6 L511-524, career/03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-14.F6 L94-95, T0-14 §6.8 L726-757, T0-14 A15 L524-544, T0-13 D3 R2 L339, T0-13 D2 PA-09 L238, T0-13 D6 L511-524, career/03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p11"></a>
 
@@ -469,7 +469,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Customer scoping & demos, GenAI reference architectures, Managed AI (Bedrock, Azure OpenAI, Vertex), Cost & latency engineering, Token & unit economics, Stakeholder communication, Domain expertise, Technical writing, Pre-sales, OAuth/OIDC, RBAC, SSO, AWS / Azure / GCP.
 
-**Sources:** T2-01 L514-516, T0-13 D2 PA-07 L236, T0-13 D2 PA-10 L239, T0-13 §4.1 L135, T0-13 D1 AP-2 L184-187, T0-13 D1 AP-5 L199-202, T0-14 §6.2 L174-175, T0-14 §6.4 T5 L566, T0-14 A8 L386, career/03-skills-and-tech/role-skill-maps.md#skills-forward-deployed-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-ai-solutions-architect, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T2-01 L514-516, T0-13 D2 PA-07 L236, T0-13 D2 PA-10 L239, T0-13 §4.1 L135, T0-13 D1 AP-2 L184-187, T0-13 D1 AP-5 L199-202, T0-14 §6.2 L174-175, T0-14 §6.4 T5 L566, T0-14 A8 L386, career/03-skills-and-tech/role-skill-maps.md#skills-forward-deployed-engineer, career/03-skills-and-tech/role-skill-maps.md#skills-ai-solutions-architect, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p12"></a>
 
@@ -504,7 +504,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Product management, AI literacy (tokens, RAG vs fine-tune, cost), Rubrics & inter-rater agreement, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement, Human-in-the-loop design, Stakeholder communication.
 
-**Sources:** T0-06 L604, T2-01 L509-511, T0-14 §6.7 L711-712, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207, career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-06 L604, T2-01 L509-511, T0-14 §6.7 L711-712, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207, career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p13"></a>
 
@@ -539,7 +539,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** EU AI Act / NIST AI RMF / ISO 42001, Sector rules (SR 26-2, LL144, DPDP), GRC & risk assessment, AI inventory & risk register, Risk & compliance docs (Annex IV, model cards), Content provenance (EU AI Act Art. 50), Privacy law & DPO duties, Fairness & explainability tools.
 
-**Sources:** T0-15 L162, T0-15 L337, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207, career/03-skills-and-tech/role-skill-maps.md#skills-ai-governance-lead, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-15 L162, T0-15 L337, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207, career/03-skills-and-tech/role-skill-maps.md#skills-ai-governance-lead, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p14"></a>
 
@@ -575,7 +575,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** React, TypeScript / JavaScript, APIs & integrations, LLM APIs & tool calling, Streaming & agent UX, Agent-UX telemetry, Human-in-the-loop design, LLM evaluation (golden sets, calibrated judges, CI gates).
 
-**Sources:** T0-06 L583, T0-13 D1 AP-2 L184-187, T0-13 D6 L504-530, T0-13 D2 L228-244, T0-14 A9 L388-410, T0-14 A11 L432-454, career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-06 L583, T0-13 D1 AP-2 L184-187, T0-13 D6 L504-530, T0-13 D2 L228-244, T0-14 A9 L388-410, T0-14 A11 L432-454, career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p15"></a>
 
@@ -646,7 +646,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Robotics fundamentals, Perception / computer vision, Simulation & sim-to-real, ROS, Robot learning & VLA models, Edge inference, C++, Python (production).
 
-**Sources:** career/03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer, career/06-job-search/resume-strategy.md §2.1, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207.
+**Sources:** career/03-skills-and-tech/role-skill-maps.md#skills-physical-ai-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207.
 
 <a id="p17"></a>
 
@@ -682,7 +682,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Domain expertise, Rubrics & inter-rater agreement, Clear writing & presenting, Error analysis, Annotation workflows, AI literacy (tokens, RAG vs fine-tune, cost).
 
-**Sources:** T0-06 L636, T0-06 L643, T0-14 §6.7 L712, T0-14 §6.7 L720, T0-14 §6.3 L199, T0-13 D2 PA-03 L232, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207, career/03-skills-and-tech/role-skill-maps.md#skills-domain-evaluation-specialist, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-06 L636, T0-06 L643, T0-14 §6.7 L712, T0-14 §6.7 L720, T0-14 §6.3 L199, T0-13 D2 PA-03 L232, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-6 L204-207, career/03-skills-and-tech/role-skill-maps.md#skills-domain-evaluation-specialist, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p18"></a>
 
@@ -717,7 +717,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Safety & capability evals, Alignment methods, Interpretability, Red-teaming, Research methods & re-implementation, PyTorch, Python (production), Clear writing & presenting.
 
-**Sources:** T0-06 L706, T0-14 §6.8 L731, T0-14 §6.8 L755, T0-14 §6.7 L720, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-7 L209-212, career/03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-06 L706, T0-14 §6.8 L731, T0-14 §6.8 L755, T0-14 §6.7 L720, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-7 L209-212, career/03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p19"></a>
 
@@ -751,7 +751,7 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Audit methodology, Model validation, Fairness & explainability tools, Eval statistics (CIs, power, pass^k), EU AI Act / NIST AI RMF / ISO 42001, Sector rules (SR 26-2, LL144, DPDP), Clear writing & presenting, Python/SQL (notebook level).
 
-**Sources:** T0-15 L164, T0-15 L331, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-3 L189-192, T0-13 D1 AP-5 L199-202, career/03-skills-and-tech/role-skill-maps.md#skills-ai-risk-assurance-specialist, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-15 L164, T0-15 L331, T0-13 §4.1 L129-138, T0-13 D2 L228-244, T0-13 D1 AP-3 L189-192, T0-13 D1 AP-5 L199-202, career/03-skills-and-tech/role-skill-maps.md#skills-ai-risk-assurance-specialist, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 <a id="p20"></a>
 
@@ -788,11 +788,11 @@ Nobody needs every role. Choose your targets first ([targeting workbook](../00-s
 
 **Skills it evidences:** Guardrails, LLM evaluation (golden sets, calibrated judges, CI gates), Risk & compliance docs (Annex IV, model cards), Fairness & explainability tools, EU AI Act / NIST AI RMF / ISO 42001, Observability (OpenTelemetry traces, metrics), Python (production), LLM security (prompt injection, OWASP), ML fundamentals.
 
-**Sources:** T0-15 L163, T0-15 L331-332, T0-14 §6.8 L735-747, T0-14 §6.7 L716, T0-14 §6.3 L200, T0-13 D2 PA-04 L233, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-8 L214-217, career/03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer, career/06-job-search/resume-strategy.md §2.1.
+**Sources:** T0-15 L163, T0-15 L331-332, T0-14 §6.8 L735-747, T0-14 §6.7 L716, T0-14 §6.3 L200, T0-13 D2 PA-04 L233, T0-13 D1 AP-5 L199-202, T0-13 D1 AP-8 L214-217, career/03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer, career/06-job-search/resume-strategy.md#the-variant-catalogue.
 
 ## Evidence and limits
 
-- No field is a measurement. No source links any project type to hiring outcomes, and the claim that tutorial repositories screen candidates out faster than no GitHub at all is unverified (T0-13.F1, T0-13 D10 L604, §7.1 NF1 and NF5). Grades by field (EGP-1.0): name and skills are judgement (D) drawn from the proof-of-work lines in role-skill-maps.md and resume-strategy.md §2.1; problem carries an inline grade on each empirical claim; build, evidence, spec and compute apply T0-13's reference specifications (D3), artefacts (D2) and modest-budget rungs (D8), which are that session's own synthesis anchored to A and B sources, so grade D as standards, and their numeric defaults are starting points to change with a stated reason (T0-13 L270); steps for archetypes without a spec follow the cited proof lines and are practice-curated [P]; verifiability applies the T0-13 §4.1 ladder, taking the target from the specification where spec is set (R1 V1; R2 V1 plus V3-lite, a 30+ day demo log without real users; R3 V1 plus one V2 item) and from judgement (D) elsewhere, and applies V1 by analogy [P] to the document-type archetypes P12, P13, P17 and P19 (every claim traces to committed data or a dated source); effort is [P] unless spec is set, sized against T0-13's part-time time boxes (S about 4–6 weeks, M about 6–10 weeks, L about 3–6 months; T0-13 D3 L272-277); interview_archetypes uses the T0-14 §6.3 catalog, a synthesis whose per-archetype evidence runs from B to C (T0-14.F3), and each project-to-archetype mapping is judgement (D); pitfalls use T0-13 D1, which grades each failure mode B or C, mapped by judgement (D). T0-13 discloses that three of its A-grade sources are first-party Anthropic material (T0-13 §2, K8). A project counts as proof only when its headline claims reach V1 (T0-13 L138). Dollar caps in compute are T0-13 prices retrieved 2026-10-21; re-verify them by 2027-01-19.
+- No field is a measurement. No source links any project type to hiring outcomes, and the claim that tutorial repositories screen candidates out faster than no GitHub at all is unverified (T0-13.F1, T0-13 D10 L604, §7.1 NF1 and NF5). Grades by field (EGP-1.0): name and skills are judgement (D) drawn from the proof-of-work lines in role-skill-maps.md and resume-strategy.md (the variant catalogue); problem carries an inline grade on each empirical claim; build, evidence, spec and compute apply T0-13's reference specifications (D3), artefacts (D2) and modest-budget rungs (D8), which are that session's own synthesis anchored to A and B sources, so grade D as standards, and their numeric defaults are starting points to change with a stated reason (T0-13 L270); steps for archetypes without a spec follow the cited proof lines and are practice-curated [P]; verifiability applies the T0-13 §4.1 ladder, taking the target from the specification where spec is set (R1 V1; R2 V1 plus V3-lite, a 30+ day demo log without real users; R3 V1 plus one V2 item) and from judgement (D) elsewhere, and applies V1 by analogy [P] to the document-type archetypes P12, P13, P17 and P19 (every claim traces to committed data or a dated source); effort is [P] unless spec is set, sized against T0-13's part-time time boxes (S about 4–6 weeks, M about 6–10 weeks, L about 3–6 months; T0-13 D3 L272-277); interview_archetypes uses the T0-14 §6.3 catalog, a synthesis whose per-archetype evidence runs from B to C (T0-14.F3), and each project-to-archetype mapping is judgement (D); pitfalls use T0-13 D1, which grades each failure mode B or C, mapped by judgement (D). T0-13 discloses that three of its A-grade sources are first-party Anthropic material (T0-13 §2, K8). A project counts as proof only when its headline claims reach V1 (T0-13 L138). Dollar caps in compute are T0-13 prices retrieved 2026-10-21; re-verify them by 2027-01-19.
 - "Best for" percentages and the minimal sets are computed (Grade M) from the archetypes' skill lists and the roles' headline Must and Important skills; they rank options, they do not predict offers.
 - Effort labels without a reference spec are practice-curated [P]. No session measures how long these projects take.
 - What makes a project credible is its evidence: the verifiability level and the artefacts, not the topic ([proof-of-work standards](proof-of-work-standards.md)).

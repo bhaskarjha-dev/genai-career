@@ -5,11 +5,12 @@ Every document under career/ and the research index pages carry YAML front matte
 (schema: data/schemas/frontmatter.schema.json). This script reads it and writes:
 
   * data/manifest.json  one record per document (path, id, title, type, stage, status,
-                        version, last_verified, summary, sources, roles, generator,
-                        section headings) for agents and tools
+                        last_verified, review_by, summary, sources, roles, generator,
+                        section headings outside code blocks) for agents and tools
   * llms.txt            an index of the repository for language models (llmstxt.org
-                        format): what the repo is, how to use it, and every document
-                        with its one-line summary, grouped by stage
+                        format): what the repo is, how to use it, every document with its
+                        one-line summary grouped by stage, the project documents, and a map
+                        from each research session ID to its file
 
 Usage:
     python3 scripts/build_manifest.py            # print the llms.txt text
@@ -32,9 +33,17 @@ RESEARCH_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA
 STAGE_NAMES = OrderedDict([(1, "Landscape"), (2, "Roles"), (3, "Skills and technology"), (4, "Certifications"), (5, "Portfolio"),
                            (6, "Job search"), (7, "Networking"), (8, "Interviewing"), (9, "Compensation"), (10, "Onboarding"),
                            (11, "Tracks and transitions")])
+PROJECT_DOCS = OrderedDict([
+    ("README.md", "What the repository is, who it is for, how it is organised and its status"),
+    ("CONTRIBUTING.md", "How to add or change content: placement, front matter, the writing standard (EGP-1.0 in brief), the guide pattern, generators and releases"),
+    ("CHARTER.md", "Vision, scope and what the repository is not, audience, success criteria and constraints"),
+    ("CHANGELOG.md", "Release history"),
+])
 DATA_FILES = OrderedDict([
     ("data/role_scores.json", "Role facts and scoring inputs: each role's definition, work footprint and interview track, and every pillar score with its [lo, mid, hi] range, evidence grade and sourced basis"),
-    ("data/skills_ontology.json", "The skills ontology: 523 typed skills, choose-one classes, credentials, resume variants, every role's tiered, evidence-tagged skill links and the register of devalued skills"),
+    ("data/skills_ontology.json", "The skills ontology: {n_skills} typed skills, choose-one classes, credentials, resume variants, every role's tiered, evidence-tagged skill links and the register of devalued skills"),
+    ("data/posting_skill_shares.json", "Dated snapshots of the skills job postings name, by posting title (JobsPipe, Grade B), cited by the role links in the ontology"),
+    ("data/role_titles.json", "The A–Z index of posting titles: each title's index type and the canonical role it maps to"),
     ("data/project_archetypes.json", "Proof-of-work project archetypes: the problem, build steps, evidence to publish, verifiability target, interview archetypes, pitfalls and the skills each one evidences"),
     ("data/interview_prompts.json", "Interview practice prompts keyed to interview tracks, system-design archetypes, roles and skills, with what a strong answer covers"),
     ("data/tools.json", "External career tools and platforms by stage, with a verdict, evidence grade, source and date"),
@@ -79,7 +88,7 @@ def documents():
         if fm is None:
             continue
         rel = p.relative_to(ROOT).as_posix()
-        heads = [h.strip() for h in re.findall(r"^## (.+)$", text, re.M)]
+        heads = [h.strip() for h in re.findall(r"^## (.+)$", re.sub(r"(?ms)^```.*?^```", "", text), re.M)]
         rec = OrderedDict([("path", rel)])
         rec.update(fm)
         rec["headings"] = heads
@@ -100,8 +109,31 @@ def decision_range():
     return f"{ids[0]} to {ids[-1]}" if ids else "none yet"
 
 
+def sessions():
+    """[(id, title, date, path)] for every research session, from its front matter."""
+    out = []
+    for p in sorted((ROOT / "research" / "sessions").glob("T*.md")):
+        head = re.match(r"^---\n(.*?)\n---\n", p.read_text(encoding="utf-8"), re.S)
+        field = lambda k: (re.search(rf"^{k}:\s*(.*)$", head.group(1), re.M) if head else None)  # noqa: E731
+        sid, title, date = field("id"), field("title"), field("date")
+        sid = sid.group(1).strip() if sid else ""
+        out.append((sid if re.fullmatch(r"T\d-\d\d", sid) else p.name[:5], title.group(1).strip().strip('"') if title else p.stem,
+                    date.group(1).strip() if date else "", p.relative_to(ROOT).as_posix()))
+    return out
+
+
+def month_span(dates):
+    months = sorted({d[:7] for d in dates if d})
+    name = lambda ym: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",  # noqa: E731
+                       "November", "December"][int(ym[5:7]) - 1] + " " + ym[:4]
+    return name(months[0]) if len(months) == 1 else f"{name(months[0])} to {name(months[-1])}"
+
+
 def llms_text(docs):
     by_path = {d["path"]: d for d in docs}
+    sess = sessions()
+    n_sessions = len(sess)
+    onto = json.loads((ROOT / "data" / "skills_ontology.json").read_text(encoding="utf-8"))
 
     def item(d):
         return f"- [{d['title']}]({d['path']}): {d['summary']}"
@@ -110,13 +142,13 @@ def llms_text(docs):
            "> Evidence-graded knowledge and guidance for GenAI careers, across the whole lifecycle: which roles exist, where their work "
            "sits and which are best; what each role needs (every concept, tool and soft skill, tiered and evidence-tagged); how to prove it, "
            "get seen, pass the interview loop, evaluate and negotiate an offer and start well; tracks for transitions, India-based remote "
-           "work, visas, independent practice and governance careers; and the 22 research sessions behind it all. Every empirical claim "
+           f"work, visas, independent practice and governance careers; and the {n_sessions} research sessions behind it all. Every empirical claim "
            "carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output, P practice-curated) and a date.", "",
            "How to use this repository:",
            "",
            "- Start at career/README.md (Start Here) or a stage README; each stage README links its guides and its graded research findings.",
            "- Facts live once: machine-readable sources of truth are in data/, and the generated documents are rebuilt from them by scripts/.",
-           "- Research sessions are dated snapshots (October 2026): check research/ERRATA.md and each claim's date before relying on a figure.",
+           f"- Research sessions are dated snapshots ({month_span([s[2] for s in sess])}): check research/ERRATA.md and each claim's date before relying on a figure.",
            "- Rules for agents that edit or answer from this repository are in AGENTS.md.", ""]
     out += ["## Start here", ""]
     for p in ["career/README.md", "research/README.md"]:
@@ -138,9 +170,13 @@ def llms_text(docs):
         stage_docs.sort(key=lambda d: (0 if d["path"].endswith("README.md") else 1, d["path"]))
         out += [f"## Stage {n:02d}: {name}", ""] + [item(d) for d in stage_docs] + [""]
     out += ["## Research", ""] + [item(by_path[p]) for p in RESEARCH_PAGES[1:] if p in by_path]
-    out += ["- [research/sessions/](research/sessions/): The 22 Phase 0 research sessions (dated evidence reports with source ledgers).",
+    out += [f"- [research/sessions/](research/sessions/): The {n_sessions} research sessions (dated evidence reports with source ledgers).",
             f"- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry ({decision_range()}).", ""]
-    out += ["## Data", ""] + [f"- [{p}]({p}): {desc}" for p, desc in DATA_FILES.items() if (ROOT / p).exists()] + [""]
+    out += ["## Research sessions", "", "Session IDs cited across the repository (for example T0-04 L120) map to these files:", ""]
+    out += [f"- [{sid}]({path}): {title} ({date})" for sid, title, date, path in sess] + [""]
+    out += ["## Data", ""] + [f"- [{p}]({p}): {desc.format(n_skills=len(onto['skills']))}" for p, desc in DATA_FILES.items()
+                              if (ROOT / p).exists()] + [""]
+    out += ["## Project documents", ""] + [f"- [{p}]({p}): {desc}" for p, desc in PROJECT_DOCS.items() if (ROOT / p).exists()] + [""]
     out += ["## Optional", ""] + [item(d) for d in sorted(optional, key=lambda d: d["path"])]
     return "\n".join(out) + "\n"
 

@@ -32,6 +32,7 @@ from build_resume_matrix import project  # noqa: E402
 from build_role_map import archetype_places  # noqa: E402
 from build_skills import load_ontology, schema_errors  # noqa: E402
 from resume_layers import THRESHOLD, analyse  # noqa: E402
+from common import esc, skill_name  # noqa: E402  (shared helpers)
 
 ROOT = sl.ROOT
 DOC = ROOT / "career" / "05-portfolio" / "project-archetypes.md"
@@ -41,20 +42,9 @@ BEST_FOR_MIN = 0.25   # show a role under "best for" when one project covers at 
 EFFORT = {"S": "small", "M": "medium", "L": "large"}
 
 
-def esc(text):
-    return str(text).replace("|", "\\|").replace("\n", " ")
-
-
-def skill_name(onto, sid):
-    e = onto["skills"].get(sid) or onto["classes"].get(sid)
-    return e["name"] if e else sid
-
-
 def validate(data, onto):
-    errs = []
-    if SCHEMA.exists():
-        schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-        errs += [f"project_archetypes.json {e[2:]}" for e in schema_errors(data, schema, schema)]
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    errs = [f"project_archetypes.json {e[2:]}" for e in schema_errors(data, schema, schema)]
     known = set(onto["skills"]) | set(onto["classes"])
     for pid, p in data["archetypes"].items():
         errs += [f"project_archetypes.json: {pid} names unknown skill {s}" for s in p["skills"] if s not in known]
@@ -120,7 +110,7 @@ def render(data, onto, stack, prompts):
             "\"Where on the map\" places each project where most of its skills sit on the [role map](../02-roles/role-map.md).", "",
             "## Minimal project sets", "",
             f"The smallest sets of archetypes that bring roles to at least {THRESHOLD:.0%} coverage of their weighted Must and Important "
-            "skills (greedy search, Grade M; [job-search strategy §2.6](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first)):", "",
+            "skills (greedy search, Grade M; [job-search strategy: the constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first)):", "",
             "| Goal | Set | Roles reaching the threshold |", "|---|---|:---:|",
             f"| Every individual-contributor role | {set_text(an['all_set'])} | {all_ok} of {len(ic)} |",
             f"| The top 8 GenAI targets | {set_text(an['top8_set'])} | {top_ok} of {len(an['top8'])} |",

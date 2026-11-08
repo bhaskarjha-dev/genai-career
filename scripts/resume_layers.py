@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Resume-layer and proof-of-work analysis for career/06-job-search/job-search-strategy.md.
+"""Résumé-layer and proof-of-work analysis for the résumé strategy and the job-search strategy.
 
 Works on the concise resume layer of data/skills_ontology.json: the headline
 skills and their per-role tiers, the same projection the resume matrix shows. With the
@@ -14,12 +14,14 @@ project archetypes in data/project_archetypes.json it computes:
   * proof of work: greedy minimum sets of archetypes that bring every individual-contributor
     role, and the top-8 targets, to at least 60% of their weighted Must (3) + Important (2) skills
 
-and writes the results into the GENERATED blocks of the blueprint.
+and writes the results into GENERATED blocks: key numbers, universal coverage, role-résumé decisions and
+similar roles in career/06-job-search/resume-strategy.md; proof-of-work sets in
+career/06-job-search/job-search-strategy.md (DOCS below).
 
 Usage:
-    python3 scripts/resume_layers.py              # print every generated block
-    python3 scripts/resume_layers.py --update     # rewrite the GENERATED blocks in the blueprint
-    python3 scripts/resume_layers.py --check      # exit 1 if they are out of date
+    python3 -B scripts/resume_layers.py              # print every generated block
+    python3 -B scripts/resume_layers.py --update     # rewrite the GENERATED blocks in both guides
+    python3 -B scripts/resume_layers.py --check      # exit 1 if any is out of date
 
 Percentages are model outputs (EGP grade M) computed from judgement-graded tiers and archetypes.
 Standard library only.
@@ -35,19 +37,19 @@ sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_resume_matrix import project  # noqa: E402
 from build_skills import load_ontology, validate_ontology  # noqa: E402
+from common import short  # noqa: E402  (shared helpers)
 
 ROOT = Path(__file__).resolve().parent.parent
-DOC = ROOT / "career" / "06-job-search" / "job-search-strategy.md"
+RESUME_DOC = ROOT / "career" / "06-job-search" / "resume-strategy.md"
+STRATEGY_DOC = ROOT / "career" / "06-job-search" / "job-search-strategy.md"
 ARCHETYPES = ROOT / "data" / "project_archetypes.json"
 LABELS = OrderedDict([("summary", "key numbers"), ("universal", "universal coverage"), ("decisions", "role-resume decisions"),
                       ("pairs", "similar roles"), ("projects", "proof-of-work sets")])
+DOCS = OrderedDict([("summary", RESUME_DOC), ("universal", RESUME_DOC), ("decisions", RESUME_DOC), ("pairs", RESUME_DOC),
+                    ("projects", STRATEGY_DOC)])
 END_MARKER = "\n<!-- END GENERATED -->"
 WEIGHT = {"must": 3, "important": 2, "should": 1}
 THRESHOLD = 0.6
-
-
-def short(name):
-    return name.split(" (")[0]
 
 
 def tkey(r):
@@ -142,12 +144,14 @@ def blocks(data, archetypes):
     family_ok = [k for k, v in dec.items() if v[3] == "family"]
     all_ok = sum(a["role_cov"](k, a["all_set"]) >= THRESHOLD - 1e-9 for k in ic)
     out["summary"] = "\n".join([
-        f"- **Universal resume:** {len(a['uni'])} headline skills. It holds at least 75% of the Must skills of "
-        f"{len(strong)} of the {len(ic)} roles and none of the Must skills of {len(zero)} roles (§2.4).",
-        f"- **Resumes for a person targeting every role:** 1 universal + {n_family} family + {len(dedicated)} dedicated role "
-        f"resumes = **{1 + n_family + len(dedicated)}**. {len(family_ok)} roles are served by their family resume plus tailoring (§2.5).",
+        f"- **Universal résumé:** {len(a['uni'])} headline skills. It holds at least 75% of the Must skills of "
+        f"{len(strong)} of the {len(ic)} roles and none of the Must skills of {len(zero)} roles ([coverage](#what-the-universal-résumé-can-and-cannot-cover-computed)).",
+        f"- **The whole catalogue across every role:** 1 universal + {n_family} family + {len(dedicated)} dedicated role "
+        f"résumés = **{1 + n_family + len(dedicated)}**; {len(family_ok)} roles are served by their family résumé plus tailoring "
+        "([decisions](#which-roles-need-their-own-résumé-computed)). One person needs one universal résumé plus two or three variants.",
         f"- **Proof of work:** {len(a['all_set'])} project archetypes bring {all_ok} of the {len(ic)} roles to at least "
-        f"{THRESHOLD:.0%} coverage of their Must and Important skills; {len(a['top8_set'])} cover the top 8 targets (§2.6).",
+        f"{THRESHOLD:.0%} coverage of their Must and Important skills; {len(a['top8_set'])} cover the top 8 targets "
+        "([job-search strategy](job-search-strategy.md#the-constraints-that-bind-first)).",
     ])
     bands = [("**Strong (≥75%)**", lambda c: c >= 0.75 - 1e-9), ("**Partial (50–74%)**", lambda c: 0.5 - 1e-9 <= c < 0.75 - 1e-9),
              ("**Weak (<50%)**", lambda c: c < 0.5 - 1e-9)]
@@ -183,9 +187,10 @@ def blocks(data, archetypes):
     return out
 
 
-def spans(text):
+def spans(text, keys):
     found = OrderedDict()
-    for key, label in LABELS.items():
+    for key in keys:
+        label = LABELS[key]
         begin = f"<!-- BEGIN GENERATED: scripts/resume_layers.py ({label}) -->\n"
         if text.count(begin) != 1:
             raise SystemExit(f"expected exactly one marker {begin.strip()!r}")
@@ -200,7 +205,7 @@ def spans(text):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     g = ap.add_mutually_exclusive_group()
-    g.add_argument("--update", action="store_true", help="rewrite the GENERATED blocks in the blueprint")
+    g.add_argument("--update", action="store_true", help="rewrite the GENERATED blocks in both guides")
     g.add_argument("--check", action="store_true", help="exit 1 if the GENERATED blocks are out of date")
     args = ap.parse_args()
     onto = load_ontology()
@@ -217,19 +222,23 @@ def main():
         for key, label in LABELS.items():
             print(f"### {label}\n\n{out[key]}\n")
         return
-    text = DOC.read_text(encoding="utf-8")
+    stale, texts = [], OrderedDict((doc, doc.read_text(encoding="utf-8")) for doc in OrderedDict.fromkeys(DOCS.values()))
+    for doc, text in texts.items():
+        keys = [k for k in LABELS if DOCS[k] == doc]
+        found = spans(text, keys)
+        if args.check:
+            stale += [f"{LABELS[k]} ({doc.relative_to(ROOT)})" for k in keys if text[found[k][0]:found[k][1]] != out[k]]
+            continue
+        for key in reversed(keys):
+            i, j = spans(text, keys)[key]
+            text = text[:i] + out[key] + text[j:]
+        doc.write_text(text, encoding="utf-8")
+        print(f"updated {len(keys)} generated blocks in {doc.relative_to(ROOT)}")
     if args.check:
-        stale = [LABELS[k] for k, (i, j) in spans(text).items() if text[i:j] != out[k]]
         if stale:
             print("out of date: " + ", ".join(stale))
             sys.exit(1)
         print("up to date")
-        return
-    for key in reversed(list(LABELS)):
-        i, j = spans(text)[key]
-        text = text[:i] + out[key] + text[j:]
-    DOC.write_text(text, encoding="utf-8")
-    print(f"updated {len(LABELS)} generated blocks in {DOC.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

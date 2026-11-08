@@ -20,7 +20,7 @@ sources: [T0-12, T0-05, T0-04]
 |---|---|
 | [referrals-and-outreach.md](referrals-and-outreach.md) | How to get referred and reach hiring managers, founders and maintainers with an artefact they can verify: rules, fill-in scripts, the open-source route and when to stop |
 | [communities-guide.md](communities-guide.md) | Which communities are worth time, how to take part so it builds reputation, a weekly routine and a 90-day review |
-| [online-presence.md](online-presence.md) | What recruiters find when they search for you: LinkedIn, GitHub and a portfolio site kept consistent and credible, with an audit checklist |
+| [online-presence.md](online-presence.md) | What recruiters find when they search for you: LinkedIn, GitHub and a portfolio site kept consistent with your universal résumé (see the [résumé strategy](../06-job-search/resume-strategy.md)) and credible, with an audit checklist |
 
 ## Planned
 

@@ -17,7 +17,7 @@ tags: [job-search, channels, job-boards, referrals, sourcing, aggregators, alert
 
 > Where GenAI postings are listed and which channels turn applications into offers: referrals, sourcing, cold inbound, ATS-hosted boards, aggregators, specialist boards and India platforms, with alert setup and a scam and ghost-job check.
 
-**Dates.** Channel and funnel figures come from Ashby, Gem and Greenhouse datasets spanning 2021 to July 2026, compiled by [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) and [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md). Platform statuses come from the [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md) tooling audit dated 2026-10-21; re-verify them by 2027-01-19. Posting counts come from [T0-01](../../research/sessions/T0-01-genai-role-taxonomy-market-volume.md) (session dated 2026-10-21) and hold as of the dates given with each figure; as a monthly series (EGP-1.0 class V1) they expire 31 days after their 19 October 2026 count, on 2026-11-19, which sets this page's `review_by`. **Grades** (EGP-1.0): A primary or measured; B transparent secondary or sizeable vendor dataset; C vendor, practitioner or single source; D judgement; M model output; P practice-curated and unmeasured.
+**Dates.** Channel and funnel figures come from Ashby, Gem and Greenhouse datasets spanning 2021 to July 2026, compiled by [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) and [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md). Platform evidence comes from the [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md) tooling audit dated 2026-10-21; re-verify it by 2027-01-19, and take each tool's verdict from the [tool catalog](../00-start/tool-catalog.md). Posting counts come from [T0-01](../../research/sessions/T0-01-genai-role-taxonomy-market-volume.md) (session dated 2026-10-21) and hold as of the dates given with each figure; as a monthly series (EGP-1.0 class V1) they expire 31 days after their 19 October 2026 count, on 2026-11-19, which sets this page's `review_by`. **Grades** (EGP-1.0): A primary or measured; B transparent secondary or sizeable vendor dataset; C vendor, practitioner or single source; D judgement; M model output; P practice-curated and unmeasured.
 
 ## The short answer
 
@@ -41,10 +41,10 @@ flowchart TD
     D -->|"No"| S{"Is a recruiter or agency already in touch?"}
     S -->|"Yes"| T["Go through them: 25% reach interview when sourced"]
     S -->|"No"| U["Apply once on the employer's page, tailored: 3% reach interview"]
-    U --> V["Optional: contact the team with a relevant artifact"]
+    U --> V["Optional: a note to the hiring manager within 24–48 hours, with one relevant artifact"]
 ```
 
-Interview rates are Ashby's application-to-interview averages for 38M applications, 2021–2024 [B · T0-04.F10]. They include selection effects. Asking for the referral before applying is practice [P].
+Interview rates are Ashby's application-to-interview averages for 38M applications, 2021–2024 [B · T0-04.F10]. They include selection effects. Asking a contact for the referral before you submit is practice: a cold application sent first may block the referral, and no session measured what happens when a referral follows one [P]. Without a referral, apply first and send any note to the hiring manager within 24–48 hours [D · T0-05 L329].
 
 ## The two-layer model: four places to look, eight routes in
 
@@ -54,10 +54,10 @@ Channel advice often mixes two different things. **Discovery** is where you see 
 
 | Route | Conversion evidence (grade) | Effort [P] | Best for [P] |
 |---|---|---|---|
-| **Internal transfer** | 42% application-to-interview for internal and agency candidates combined, and 32% interview-to-offer for internal candidates, against 3% and 6% for inbound (Ashby, 38M applications, 2021–2024) [B · T0-04.F10] | Low, once you are inside | Anyone already employed where AI teams hire |
+| **Internal transfer** | 42% application-to-interview for internal and agency candidates combined, and 32% interview-to-offer for internal candidates, against 3% and 6% for inbound (Ashby, 38M applications, 2021–2024) [B · T0-04.F10]. By T0-04's arithmetic on those rates, about 134.4 offers per 1,000 internal applications, 74.7× inbound [B · T0-04 L413–421] | Low, once you are inside | Anyone already employed where AI teams hire |
 | **Referral**: an employee vouches for you | 40% application-to-interview and 16% interview-to-offer; about 64 offers per 1,000 applications against about 1.8 for inbound. Gem: 11× inbound hires per application. Ashby's quoted offer rates: 7.3% against 0.2%, about 36×. In Gem's engineering data, referrals were about 2% of applications and 18.7% of hires [B · T0-04.F10] | Medium to high per contact; low per application | Employers where you have a moderately weak tie, such as a former colleague or classmate [A/C · T0-12.F12] |
-| **Sourced**: a recruiter contacts you first | About 8× inbound hires per application (Gem), matching 8.3× derived from Ashby's stage rates; 25% application-to-interview; about 15 offers per 1,000 applications [B · T0-04.F10]. About 16% of all hires [A · T0-12.F4]; 28.0% of hires for "AI"-titled technical roles in July 2026 [B · T0-04.F11] | High and indirect: you cannot apply for it | People with searchable profiles and public, verifiable work [B/C · T0-05.F12] |
-| **Agency or staffing firm** | 42% application-to-interview, combined with internal candidates (Ashby, 2021–2024) [B · T0-04.F10]; 9.2% of hires for "AI"-titled technical roles in July 2026 [B · T0-04.F11] | Low to medium | Employers that fill roles through agencies. A legitimate process does not ask you for payment [A · T0-10 L176] |
+| **Sourced**: a recruiter contacts you first | About 8× inbound hires per application (Gem), matching 8.3× derived from Ashby's stage rates; 25% application-to-interview and 6% interview-to-offer; about 15 offers per 1,000 applications [B · T0-04.F10; T0-04 L413–421]. About 16% of all hires [A · T0-12.F4]; 28.0% of hires for "AI"-titled technical roles in July 2026 [B · T0-04.F11] | High and indirect: you cannot apply for it | People with searchable profiles and public, verifiable work [B/C · T0-05.F12] |
+| **Agency or staffing firm** | 42% application-to-interview, combined with internal candidates, and 8% interview-to-offer (Ashby, 2021–2024) [B · T0-04.F10]: about 33.6 offers per 1,000 applications, 18.7× inbound, by T0-04's arithmetic [B · T0-04 L413–421]; 9.2% of hires for "AI"-titled technical roles in July 2026 [B · T0-04.F11] | Low to medium | Employers that fill roles through agencies. A legitimate process does not ask you for payment [A · T0-10 L176] |
 | **Cold inbound**: you apply on a careers page or through a board | About 0.2% application-to-hire in engineering; roughly 340–380 applications per offer and 460–520 per hire; 3.6–6% reach a first human stage [B · T0-04.F9]. Still the largest single source of hires (rule 2 above) | Low per application. Tailoring costs time and went with higher conversion in Huntr's data, 4.23% against 2.07% [C · T0-10 L159] | Every posting where you meet the basic qualifications and have no faster route |
 | **Direct outreach** to an engineer or hiring manager | No verified candidate-to-hiring-manager reply rate exists. T0-05's planning range is 3–8% reply, 10%+ as a stretch; claims of 25–50% are unverified [D · T0-05.F9] | Medium per message | Turning a target into a referral or a recruiter's pull: the measurable lever is who initiates [A/B · T0-05.F2] |
 | **Communities, meetups and conferences** | No conversion rate exists for any community studied; conversion is documented in a handful of cases and quantified in one [A · T0-12.F3]. At conferences and meetups the hiring signal is mostly sponsor marketing, or explicitly disclaimed by organisers [B · T0-12.F6] | High; pays back slowly | Building the ties that later make referrals possible |
@@ -86,24 +86,26 @@ Channel advice often mixes two different things. **Discovery** is where you see 
 
 T0-01 could not query LinkedIn, Indeed, Wellfound, Otta or Ashby directly, so its confidence in any exact count for those platforms is low [T0-01 L13].
 
-### Platform statuses as of 2026-10-21
+### Platforms: what each is, and the evidence
 
-T0-10 scored each tool from 0 to 12 on six criteria. The statuses are analyst judgements, not measurements; treat plus or minus 1 as noise [D · T0-10 L112]. "Viable" means usable with the stated controls on thin evidence, not validated [T0-10 L135]. No discovery tool reached Recommended [D · T0-10 L146]. The [tool catalog](../00-start/tool-catalog.md) carries the full register.
+Each platform's verdict (use, use with care, avoid or watch), with the date it was checked, is kept in one place: the [tool catalog](../00-start/tool-catalog.md#stage-06-job-search-and-applications), which is generated from `data/tools.json`. This table keeps what each platform is and the evidence that bears on routing. T0-10's own tool scores are analyst judgements, not measurements [D · T0-10 L112].
 
-| Platform | What it is | Status (score of 12) | Main reason |
-|---|---|---|---|
-| Google Jobs and direct employer career pages | Aggregator to direct apply | Viable (8) | Highest source conversion in Huntr's data, 7.12%, correlational [C · T0-10 L551] |
-| LinkedIn Jobs, free tier, manual use | Job board and social network | Viable (8) | Large reach; 2.94% conversion in Huntr's data; Texas AG probe reported [C · T0-10 L552] |
-| LinkedIn Premium Career | Paid subscription add-on | Caution (7) | State AG investigation concerning Premium marketing (an allegation); no independent evidence of benefit found [C · T0-10 L553] |
-| Wellfound | Startup job board | Viable (8) | 5.02% conversion in Huntr's data [C · T0-10 L554] |
-| Indeed, Glassdoor, Handshake | General and campus boards | Viable (7) | About 3.1–3.4% conversion in Huntr's data [C · T0-10 L555] |
-| Jobright.ai | AI job matching and agent | Caution (5) | Evidence from competitor posts only [D · T0-10 L556] |
-| Scoutify | Alerts plus career-site auto-apply | Caution (5) | Thin evidence; T0-10 discloses that it relied on Scoutify's blog for other tools [D · T0-10 L557] |
-| Simplify Copilot | Autofill extension | Viable (8) | Autofill with a human clicking Submit [C · T0-10 L558] |
-| Simplify Autopilot (beta) | Auto-submit agent | Caution (5) | Beta; no review step, per a competitor; no outcome evidence [D · T0-10 L559] |
-| LazyApply-class bulk apply | Bulk auto-apply | Avoid | About 2.4/5 on Trustpilot, with wrong-answer and refund complaints [B/C · T0-10.F4] |
-| JobsPipe, Fast AI Jobs, Rise | Aggregator and boards | Not audited | Used by T0-01 to count postings, not rated as job-search tools |
-| Naukri, Instahyre | India job platforms | Not researched | Planned for Phase 1 data collection (FAD OQ2) |
+| Platform | What it is | What the evidence says |
+|---|---|---|
+| Google Jobs and direct employer career pages | Aggregator to direct apply | Highest source conversion in Huntr's data, 7.12%, correlational [C · T0-10 L551] |
+| LinkedIn Jobs, free tier, manual use | Job board and social network | Large reach; 2.94% conversion in Huntr's data; Texas AG probe reported [C · T0-10 L552] |
+| LinkedIn Premium Career | Paid subscription add-on | State AG investigation concerning Premium marketing (an allegation); no independent evidence of benefit found [C · T0-10 L553] |
+| Wellfound | Startup job board | 5.02% conversion in Huntr's data [C · T0-10 L554] |
+| Indeed, Glassdoor, Handshake | General and campus boards | About 3.1–3.4% conversion in Huntr's data [C · T0-10 L555] |
+| Jobright.ai | AI job matching and agent | Evidence from competitor posts only [D · T0-10 L556] |
+| Scoutify | Alerts plus career-site auto-apply | Thin evidence; T0-10 discloses that it relied on Scoutify's blog for other tools [D · T0-10 L557] |
+| Simplify Copilot | Autofill extension | Autofill with a human clicking Submit [C · T0-10 L558] |
+| Simplify Autopilot (beta) | Auto-submit agent | Beta; no review step, per a competitor; no outcome evidence [D · T0-10 L559] |
+| LazyApply-class bulk apply | Bulk auto-apply | About 2.4/5 on Trustpilot, with wrong-answer and refund complaints [B/C · T0-10.F4] |
+| JobsPipe, Fast AI Jobs, Rise | Aggregator and boards | Used by T0-01 to count postings; not audited as job-search tools |
+| Naukri, Instahyre | India job platforms | Not researched; planned for Phase 1 data collection (FAD OQ2) |
+
+The routing rules on this page apply to all of them: discover on any board, confirm on the employer's careers page, apply by hand, and never let a tool submit for you (see Alert setup and Pitfalls).
 
 ### What the multipliers mean, and what they do not
 
@@ -113,18 +115,9 @@ T0-10 scored each tool from 0 to 12 on six criteria. The statuses are analyst ju
 - **No GenAI-only funnel is published.** The nearest proxy is Ashby's July 2026 split for technical roles with "AI" in the title: 37.1% of hires from inbound, 28.0% from sourcing, 9.2% from agencies and about 26% from referral, internal and other routes, by subtraction [B · T0-04.F11].
 - **The data skew to tech.** Ashby's customers skew to tech and startups, and community-sourced hires may be filed as "sourced" or "inbound" [D · T0-12 L87].
 
-### Funnel maths for cold inbound
+### Cold inbound in numbers
 
-| Dataset | Stage rates | Application to hire |
-|---|---|---|
-| Gem, engineering | 6% to pre-onsite, 17% to onsite, 29% to offer, 73% accept | 0.22%, derived; Gem prints 0.2% [B · T0-04.F9] |
-| Ashby, technical roles, Q1 2026 | 3.6% to interview, 7.3% interview to offer, 73% accept | 0.19%, derived [B · T0-04.F9] |
-| Gem, all functions, 165M+ applications | 8% pass the initial screen | About 0.5%: one hire per 200 applications [A/B · T0-05.F2] |
-| Gem, data science | Not given | 0.1% [B · T0-04.F11] |
-
-Two independent datasets converge on about 0.2% for engineering. The Ashby Q1 2026 rates reached T0-04 through secondary restatements [C · T0-04 L636]. Gem also reports 35–36 interviews per engineering hire [B · T0-04.F11].
-
-**Cold inbound got more crowded.** Gem's application-to-pre-onsite rate fell from 13% to 8% across all functions between 2021 and 2025. Greenhouse reports applications per job up about 110% (116 to 244) and applications per recruiter up 204% (1,610 to 4,890 a year) from 2022 to 2025 [B · T0-04.F9]. In a Robert Half survey of 2,000+ US hiring managers (March 2026, reported second-hand), 67% said AI-generated applications slowed hiring and 65% said skills were harder to verify [C · T0-10 L71].
+Two independent datasets, Gem's and Ashby's, converge on about 0.2% application-to-hire for engineering [B · T0-04.F9]. The stage rates behind that figure, the odds for a given number of applications and how much more crowded cold inbound has become are in the [application operating system](application-operating-system.md#the-funnel-you-are-running), which owns stage rates and thresholds.
 
 **The decision it supports [D].** The arithmetic rewards a short list of well-matched, tailored applications, plus a referral or recruiter route wherever one exists. It does not reward volume: Huntr's rates fall as volume rises [C · T0-10.F4].
 
@@ -156,19 +149,19 @@ The evidence differs for India, so it gets its own notes.
 1. **Write your title set.** Take one primary title and the aliases your targets use from the [role map](../02-roles/role-map.md) and your role's hub, for example the [Forward Deployed Engineer hub](../02-roles/hubs/forward-deployed-engineer.md). *Done when:* each alias returns postings whose duties match your target, not only its words.
 2. **Build the target list by employer type.** Use the [targeting workbook](../00-start/targeting-workbook.md) and the employer-type table above. *Done when:* every target has a type, a careers-page URL and a note on whether you know anyone there.
 3. **Set up alerts in three layers** (see Alert setup below). *Done when:* postings from your targets reach you without manual searching, and you know which alerts overlap.
-4. **Choose the entry route before you apply**: internal first, then referral, then recruiter or agency, then a direct application. Ask for a referral before you submit a cold application [P]; no session measured what happens when a referral follows one. *Done when:* every tracker row names a route.
+4. **Choose the entry route before you apply**: internal first, then referral, then recruiter or agency, then a direct application. Ask a contact for a referral before you submit: a cold application sent first may block the referral, and no session measured what happens when a referral follows one [P]. Where there is no referral, apply first, then send any note to the hiring manager within 24–48 hours so they can find and flag the application [D · T0-05 L329]; see [referrals and outreach](../07-networking/referrals-and-outreach.md). *Done when:* every tracker row names a route.
 5. **Check, then apply once.** Run the scam and ghost-job check in the Checklist. Answer screening questions accurately: deterministic rejection is employer-configured and keyed to form answers, not résumé prose [A · T0-04.F1]. Address each basic qualification in plain words: since August 2026, Workday HiredScore's opt-in LLM mode evaluates each screenable qualification separately, and basic qualifications decide A/B against C/D grades [A · T0-04.F3]. *Done when:* the posting is confirmed on the employer's page and each basic qualification is visibly met in your application.
-6. **Review every week** [P]. Count first human contacts by route and by source. If your direct applications reach a human well below the 3.6–6% average for cold inbound [B · T0-04.F9], fix fit and tailoring before adding volume [P]. *Done when:* each week ends with one change to sources, routes or targets.
+6. **Review every week** [P], with the [weekly review](application-operating-system.md#weekly-review-p) in the application operating system. Count first human contacts by route and by source, and the postings you dropped at the scam and ghost-job check, with the reason. If your direct applications reach a human well below the 3.6–6% average for cold inbound [B · T0-04.F9], fix fit and tailoring before adding volume [P]; the other thresholds are in its [decision table](application-operating-system.md#when-to-change-course-decision-table). *Done when:* each week ends with one change to sources, routes or targets.
 
 ### Alert setup
 
 1. **Start at the source.** Follow the careers page of every named target. Fast AI Jobs builds its listings from company ATS pages such as Ashby, Greenhouse and Lever [C · T0-01 L44], so the employer page is the original.
-2. **Add one broad aggregator** for employers you have not listed: Google Jobs, LinkedIn's free tier or Indeed, all rated Viable [D · T0-10 L146]. One is enough to start [P].
-3. **Add one specialist board** if AI startups are in scope: Fast AI Jobs (not audited as a tool) or Wellfound (Viable) [D · T0-10 L554].
+2. **Add one broad aggregator** for employers you have not listed: Google Jobs, LinkedIn's free tier or Indeed; check each one's verdict in the [tool catalog](../00-start/tool-catalog.md#stage-06-job-search-and-applications). One is enough to start [P].
+3. **Add one specialist board** if AI startups are in scope: Fast AI Jobs (not audited as a tool) or Wellfound (5.02% conversion in Huntr's correlational data) [C · T0-10 L554].
 4. **Filter on exact titles and aliases, not keywords.** Fuzzy matching inflates counts: Indeed showed 921 "cognitive architect" jobs whose visible results were solutions, PLM, network and digital architects [B · T0-01.F6].
 5. **For thin titles, search the work inside a broad title.** Agentic AI is named in 59.3% of AI Engineer postings and RAG in 54.0% (JobsPipe, counted 2026-09-10) [B · T0-01.F4], while exact "Agent Architect" titles number about two [B/C · T0-01.F7]. Post-training work is posted mostly as Research Engineer or Member of Technical Staff [C · T0-01.F9].
 6. **Read before you count.** An "AI Engineer" alert returns a mixed bucket. In a 50-row sample from the 19 October 2026 Fast AI Jobs page, 16 were Applied AI Engineer variants, 8 were Figure AI robotics roles, 5 were agent-titled, 4 were FDE-flavoured and 2 were GTM roles [B · T0-01.F2]. In the FDE cluster, about 48% of a 50-row sample were engineer-titled [B · T0-01.F3].
-7. **Keep alerts free and manual.** Scoutify, Jobright.ai and LinkedIn Premium Career are rated Caution [D · T0-10 L146]. Never run automation inside a logged-in LinkedIn or Indeed session [P · T0-10 L157].
+7. **Keep alerts free and manual.** Before paying for or installing Scoutify, Jobright.ai or LinkedIn Premium Career, read its verdict in the [tool catalog](../00-start/tool-catalog.md#stage-06-job-search-and-applications): the evidence for each is thin or contested (platforms table above). Never run automation inside a logged-in LinkedIn or Indeed session [P · T0-10 L157].
 
 ## Templates and examples
 
@@ -219,16 +212,9 @@ Applied: [date] · tailored to: [the requirements you matched]
 First human contact: [date or none] · next action: [action, date]
 ```
 
-### Weekly review [P]
+### Weekly review
 
-```text
-Week of [date]
-Applications by route:     internal [n] · referral [n] · recruiter or agency [n] · direct [n]
-First human contacts:      internal [n] · referral [n] · recruiter or agency [n] · direct [n]
-Direct-application rate:   [first human contacts / direct applications] against the 3.6-6% cold-inbound average
-Dropped at the check:      [n] · why: [scam signal, ghost signal, duplicate]
-One change for next week:  [source, route or target]
-```
+Use the [weekly review](application-operating-system.md#weekly-review-p) in the application operating system, which owns the tracker and the review. Its screens-by-route and "Dropped" lines carry this page's two weekly counts: first human contacts by route, and postings dropped at the scam and ghost-job check.
 
 ## Checklist
 
@@ -256,7 +242,7 @@ One change for next week:  [source, route or target]
 
 **Every week**
 
-- [ ] First human contacts counted by route and by source, and one change made for the next week.
+- [ ] First human contacts counted by route and by source in the [weekly review](application-operating-system.md#weekly-review-p), and one change made for the next week.
 
 ## Pitfalls
 
@@ -268,7 +254,7 @@ One change for next week:  [source, route or target]
 | Believing one block follows you to every employer | Silent blocks are real but local to one employer; a tool-triggered, persistent, cross-ATS shadow-ban has no supporting evidence [A/B · T0-10.F2] | Treat a block as one employer's decision, and do not evade it |
 | Planning around a "hidden job market" | Referrals are about 18% of hires and inbound 43–52% [A · T0-12.F4] | Run referrals and direct applications in parallel |
 | Trusting a board's headline count | Fuzzy matching passes unrelated titles [B · T0-01.F6]; multi-location duplicates and ghost postings inflate live counts [D · T0-01 L42] | Exact-title filters; read the results; count distinct employers [P] |
-| Paying for a premium job-search subscription to stand out | No independent evidence of benefit for LinkedIn Premium Career, which is rated Caution [C · T0-10 L553] | Use the free tier, manually |
+| Paying for a premium job-search subscription to stand out | No independent evidence of benefit for LinkedIn Premium Career [C · T0-10 L553]; its verdict is in the [tool catalog](../00-start/tool-catalog.md#stage-06-job-search-and-applications) | Use the free tier, manually |
 | Mass-messaging your CV in communities | Communities treat mass-DMed CVs as spam and confine job-seeking to designated channels [A · T0-12.F9] | Use the jobs channels; build ties through repeated, low-cost interaction [A/C · T0-12.F12] |
 | Harvesting email addresses from GitHub for outreach | GitHub's Acceptable Use Policy bars using its information to send unsolicited emails to users [B/C · T0-05.F10] | Use the contact route the person publishes [P] |
 | Counting on one merged pull request | A single merged contribution is the modal outcome in every repository T0-05 examined [A · T0-05.F3]; the "10× per merged PR" claim has no measurement behind it [C · T0-05.F1] | Sustained, discussion-first contribution, the documented norm [B · T0-12.F10]; see [proof-of-work standards](../05-portfolio/proof-of-work-standards.md) |
@@ -278,7 +264,7 @@ One change for next week:  [source, route or target]
 
 - **What is measured (B).** Entry-route conversion comes from vendor datasets: Ashby's referrals report (16 May 2025; 38M applications, January 2021 to December 2024), Ashby's source-of-hire analysis (nearly 250K hires, January 2021 to June 2025), Ashby's AI job postings report (9 July 2026), Gem's 2026 Recruiting Benchmarks (blog dated 1 December 2025), Gem's undated engineering hiring page and Greenhouse's benchmarks page (March 2026) [T0-04 L620–624; T0-12 L87]. Two datasets converge on about 0.2% cold application-to-hire for engineering [B · T0-04.F9].
 - **What is weaker (C).** The Ashby Q1 2026 stage rates reached T0-04 through secondary restatements [C · T0-04 L625, L636]. Per-board conversion rests on Huntr's vendor-run, self-tracked data (139,927 applications from 25,635 users; report published 19 October 2026), which depends on user mix [C · T0-10 L71, L485]. Vendor customer bases are tech-forward [D · T0-04 L113].
-- **What is judgement (D, P).** T0-10's statuses are rubric scores [D · T0-10 L112]. The reply-rate planning range [D · T0-05.F9] and the time-versus-yield model [D · T0-05.F11] are judgement. The effort and best-for columns on this page are practice [P].
+- **What is judgement (D, P).** T0-10's tool scores are rubric judgements [D · T0-10 L112]; the verdicts this repository uses are in the [tool catalog](../00-start/tool-catalog.md). The reply-rate planning range [D · T0-05.F9] and the time-versus-yield model [D · T0-05.F11] are judgement. The effort and best-for columns on this page are practice [P].
 - **What is not measured.** A GenAI-only funnel [B · T0-04.F11]; startup against enterprise funnels [B · T0-04.F9]; conversion for any community [A · T0-12.F3]; exact counts on LinkedIn, Indeed, Wellfound, Otta or Ashby [T0-01 L13]; Fast AI Jobs and JobsPipe as job-search tools; Indian platforms [FAD L758]; ghost-job prevalence beyond a self-selected survey in which 93% of about 593 respondents had applied to or suspected ghost jobs [C · T0-10 L92].
 - **A dated event, not a status.** The Texas Attorney General was reported in July 2026 to have opened an investigation into LinkedIn; trade-press headlines tie it to ghost-job listings and Premium subscriptions. These are allegations, and their status after July 2026 was not checked [B · T0-10 L515].
 - **Errata.** None of the errata (U1–U26) changes the evidence used here; see [ERRATA](../../research/ERRATA.md).

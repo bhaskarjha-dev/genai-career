@@ -44,20 +44,11 @@ flowchart LR
     R -.->|"same projects"| W
 ```
 
-LinkedIn is where you are searched and cross-checked; GitHub and your write-ups are where claims are verified; the universal résumé is the source every surface copies [P].
+LinkedIn is where you are searched and cross-checked; GitHub and your write-ups are where claims are verified; the [universal résumé](../06-job-search/resume-strategy.md#the-five-layers-and-their-jobs) is the source every surface copies [P].
 
 ## The verifiability ladder
 
-T0-13's ladder classifies every public claim by what it costs a reviewer to check it [T0-13 L131–136]:
-
-| Level | Name | Example | Reviewer cost |
-|---|---|---|---|
-| V0 | Self-asserted | A screenshot; "achieves 95% accuracy" | Cannot verify |
-| V1 | Reproducible | One command regenerates `results.json` and the README table; raw data and pinned versions committed; CI run linked | Minutes |
-| V2 | Externally attested | Merged upstream PR; leaderboard row with commit hash; independent reproduction; third-party users | Minutes, trusting a third party |
-| V3 | Operationally evidenced | 30+ days of uptime and spend logs; an incident postmortem; real users | Minutes to hours |
-
-T0-13's rule is that every headline README claim is V1 or higher [P · T0-13 L138]. The ladder exists because authorship verification is the live problem of 2026 [B/C · T0-13.F8]. At senior and staff level, evidence is externally verifiable engineering plus influence, so aim for V2 items there [B · T0-13.F9].
+Rate every public claim on T0-13's verifiability ladder by what it costs a reviewer to check it: V0 self-asserted, V1 reproducible, V2 externally attested, V3 operationally evidenced. Headline only V1 or higher, and at senior and staff level, where evidence is externally verifiable engineering plus influence, aim for V2 items [D · T0-13 L131–138; B · T0-13.F9]. The full ladder, with examples, reviewer costs and what each level must prove, is in [proof-of-work standards](../05-portfolio/proof-of-work-standards.md#the-ladder).
 
 ## The four surfaces and what each must prove
 
@@ -70,8 +61,8 @@ T0-13's rule is that every headline README claim is V1 or higher [P · T0-13 L13
 
 ## How to do it
 
-1. **Fix the source of truth.** Settle your universal résumé first: titles, employers, dates, project names and numbers. It is the generic profile in the [job-search strategy](../06-job-search/job-search-strategy.md)'s layered résumé system, anchored on one identity. *Done when:* any line could be pasted onto LinkedIn without changing a fact [P].
-2. **Align LinkedIn with it.** Keep the headline, About section and skills consistent with the universal résumé, because identity mismatches risk fraud flags (the job-search strategy's rule, resting on [D · T0-04 R7]). Add each credential to Licenses and Certifications *and* its related skills to Skills, because sources disagree on which field recruiter search reads [C · T0-11 L133]. *Done when:* a side-by-side read finds no mismatch in titles, dates or numbers [P].
+1. **Fix the source of truth.** Settle your universal résumé first: titles, employers, dates, project names and numbers. It is the generic profile, layer L1, in the layered résumé model of the [résumé strategy](../06-job-search/resume-strategy.md#the-five-layers-and-their-jobs), anchored on one identity. *Done when:* any line could be pasted onto LinkedIn without changing a fact [P].
+2. **Align LinkedIn with it.** Keep the headline, About section and skills consistent with the universal résumé, because identity mismatches risk fraud flags (the [résumé strategy](../06-job-search/resume-strategy.md#what-the-universal-résumé-can-and-cannot-cover-computed)'s rule, resting on [D · T0-04 R7]). Add each credential to Licenses and Certifications *and* its related skills to Skills, because sources disagree on which field recruiter search reads [C · T0-11 L133]. *Done when:* a side-by-side read finds no mismatch in titles, dates or numbers [P].
 3. **Prune GitHub.** Archive tutorial forks, toy-dataset notebooks and single-commit repositories, or retrofit them into measured systems [C · T0-13 L140]. *Done when:* nothing pinned is V0 [P].
 4. **Add an evidence block to each pinned README.** Use T0-13's template below. *Done when:* every headline claim carries a level of V1 or higher [P · T0-13 L138].
 5. **Feature your strongest attested item.** Put a merged upstream PR, a leaderboard row with a commit hash or an independent reproduction in LinkedIn's Featured section and at the top of your GitHub profile README [P]. *Done when:* a reviewer reaches one V2 item in one click from LinkedIn [P].
@@ -188,13 +179,13 @@ Rules for the writing:
 | Name, email, phone | Identical on résumé, LinkedIn and GitHub; a stable real email address and mobile number; no VPN or disposable email while applying | D · T0-04 R7 |
 | Titles and employers | As held, word for word, on the résumé and in LinkedIn's experience section | D · T0-04 R7 |
 | Dates | Same month and year on every surface | P |
-| Headline, About, skills | Consistent with the universal résumé, because identity mismatches risk fraud flags | D · T0-04, via the job-search strategy §2.4 |
+| Headline, About, skills | Consistent with the universal résumé, because identity mismatches risk fraud flags | D · T0-04, via the [résumé strategy](../06-job-search/resume-strategy.md#what-the-universal-résumé-can-and-cannot-cover-computed) |
 | Skills | Consistent with the evidence in your bullets | A (mechanics) / D (advice) · T0-04 R4 |
 | Numbers | Every metric on LinkedIn or in a post appears, with the same value, in a README evidence block at V1 or higher | P · T0-13 §4.1 |
 | Project names | One name per project across résumé, LinkedIn Featured, GitHub and posts | P |
 | Credentials | Full name, exam code, dates and verification link; retired exams labelled "valid to [date]" | C · T0-11 L132–134 |
 
-If you also run family or role résumés, LinkedIn mirrors the universal one, which is the version uploaded to platforms and recruiter databases [P]; see the [job-search strategy](../06-job-search/job-search-strategy.md) and the [résumé strategy](../06-job-search/resume-strategy.md).
+If you also run family or role résumés, LinkedIn mirrors the universal one, which is the version uploaded to platforms and recruiter databases [P]; the layers are set out in the [résumé strategy](../06-job-search/resume-strategy.md#the-five-layers-and-their-jobs).
 
 ### Geography note: India
 
@@ -263,7 +254,7 @@ If you also run family or role résumés, LinkedIn mirrors the universal one, wh
 - **Build something worth showing:** [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and [Project archetypes](../05-portfolio/project-archetypes.md).
 - **Turn visibility into a referral:** [Referrals and outreach](referrals-and-outreach.md).
 - **Where to share your work:** [Communities guide](communities-guide.md).
-- **The résumé every profile copies:** [Résumé strategy](../06-job-search/resume-strategy.md), [Job-search strategy](../06-job-search/job-search-strategy.md) and the [résumé skills matrix](../06-job-search/resume-skills-matrix.md); screening mechanics are in [ATS mechanics](../06-job-search/ats-mechanics.md).
+- **The résumé every profile copies:** [Résumé strategy](../06-job-search/resume-strategy.md) and the [résumé skills matrix](../06-job-search/resume-skills-matrix.md); screening mechanics are in [ATS mechanics](../06-job-search/ats-mechanics.md), and the wider plan is the [job-search strategy](../06-job-search/job-search-strategy.md).
 - **Credentials:** [Credential ROI](../04-certifications/credential-roi.md).
 - **Role hubs:** [AI Engineer](../02-roles/hubs/ai-engineer.md), [ML Engineer](../02-roles/hubs/ml-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [Inference Engineer](../02-roles/hubs/inference-engineer.md).
 - **Evidence:** [findings for stage 07](../../research/findings.md#stage-07), [stage 05](../../research/findings.md#stage-05) and [stage 06](../../research/findings.md#stage-06); the stage overview is the [Networking README](README.md).

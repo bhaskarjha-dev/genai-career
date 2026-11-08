@@ -18,8 +18,8 @@ sources: [T0-04, T0-05, T0-10]
 
 | Document | What it gives you |
 |---|---|
-| [job-search-strategy.md](job-search-strategy.md) | First-principles strategy: hiring levers, the layered résumé system, which roles need their own résumé, proof-of-work sets, sequencing |
-| [resume-strategy.md](resume-strategy.md) | One master inventory, role-family variants and light per-posting tailoring |
+| [job-search-strategy.md](job-search-strategy.md) | First-principles strategy: the four hiring levers, the constraints that bind first (with the computed proof-of-work sets) and sequencing in expanding rings |
+| [resume-strategy.md](resume-strategy.md) | The résumé guide: one master inventory, a universal résumé, two or three variants from the 15-variant catalogue, the computed decisions on which roles need their own résumé, tailoring steps and the inventory schema |
 | [resume-skills-matrix.md](resume-skills-matrix.md) | The concise skills section per role (Must / Important / Should / Optional) and a blueprint per résumé variant |
 | [ats-mechanics.md](ats-mechanics.md) | How applicant tracking and AI screening work, the myths to ignore, and the rules for a résumé and application that pass: parse-safe files, knockout answers, one evidence line per requirement |
 | [channels-and-boards.md](channels-and-boards.md) | Where GenAI postings are and which channels convert, with the measured multipliers, scam and ghost-job checks, and what is not yet researched (India platforms) |
@@ -33,6 +33,7 @@ sources: [T0-04, T0-05, T0-10]
 
 **Moved or renamed:**
 
+- The layered résumé model (the five layers, the selection rule and the computed decisions on which roles need their own résumé) moved from the job-search strategy to the [résumé strategy](resume-strategy.md), which is the single résumé guide.
 - Unconventional tactics (open-source routes, micro-audits, outreach with an artefact) moved to [07 Networking: referrals and outreach](../07-networking/referrals-and-outreach.md).
 
 ## Evidence to read now

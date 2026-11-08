@@ -69,19 +69,13 @@ flowchart LR
 | Applications per offer | About 338 | About 380 |
 | Application-to-hire | 0.22% | 0.19% |
 
-Stage rates are vendor data; the per-1,000 rows are T0-04's arithmetic on them [B inputs, derived · T0-04 L397–405]. Gem prints 0.2% for engineering and 0.1% for data science [B · T0-04 L407].
+Stage rates are vendor data; the per-1,000 rows are T0-04's arithmetic on them [B inputs, derived · T0-04 L397–405]. Gem prints 0.2% for engineering and 0.1% for data science [B · T0-04 L407]. Two independent datasets thus converge on about 0.2% for engineering; the Ashby Q1 2026 rates reached T0-04 through secondary restatements [C · T0-04 L636]. Gem also reports 35–36 interviews per engineering hire [B · T0-04.F11]. Across all functions, 8% of Gem's 165M+ applications pass the initial screen, and about 0.5% end in a hire, one per 200 applications [A/B · T0-05.F2].
+
+**Cold inbound got more crowded.** Gem's application-to-pre-onsite rate fell from 13% to 8% across all functions between 2021 and 2025. Greenhouse reports applications per job up about 110% (116 to 244) and applications per recruiter up 204% (1,610 to 4,890 a year) from 2022 to 2025 [B · T0-04.F9]. In a Robert Half survey of 2,000+ US hiring managers (March 2026, reported second-hand), 67% said AI-generated applications slowed hiring and 65% said skills were harder to verify [C · T0-10 L71].
 
 ### By channel
 
-| Route | Application → interview | Interview → offer | Offers per 1,000 applications | Multiple of inbound |
-|---|---|---|---|---|
-| Inbound | 3% | 6% | 1.8 | 1.0x |
-| Sourced: a recruiter contacted you | 25% | 6% | 15.0 | 8.3x |
-| Referral | 40% | 16% | 64.0 | 35.6x |
-| Agency | 42% | 8% | 33.6 | 18.7x |
-| Internal | 42% | 32% | 134.4 | 74.7x |
-
-Ashby, 38M applications, all roles, January 2021 to December 2024. Stage rates are Ashby's; the last two columns are T0-04's arithmetic [B · T0-04 L413–421]. Gem's independent figures: referrals 11x and sourced about 8x inbound, in hires per application. In Gem's engineering data, referrals are about 2% of applications but 18.7% of hires [B · T0-04.F10]. For technical roles with "AI" in the title, Ashby's July 2026 data show 37.1% of hires from inbound, 28.0% from sourcing and 9.2% from agencies [B · T0-04.F11]. These are selection effects, not proof that a channel causes the hire [B · T0-04 L426].
+How each entry route converts is in [channels and boards](channels-and-boards.md#entry-routes-how-your-application-arrives), which owns route conversion. In Ashby's 38M applications (all roles, January 2021 to December 2024), 3% of inbound applications reached an interview against 25% of sourced and 40% of referred ones, and interview-to-offer ran 6% for inbound against 16% for referrals [B · T0-04 L413–421]. Gem's independent figures put referrals at 11x and sourced candidates at about 8x inbound, in hires per application [B · T0-04.F10]. These are selection effects, not proof that a channel causes the hire [B · T0-04 L426]. The metrics table below uses these route rates as benchmarks.
 
 ### What the odds look like
 
@@ -261,6 +255,8 @@ No session measures a healthy rate for an individual. The benchmarks are employe
 
 ### Weekly review [P]
 
+The scam and ghost-job check behind the "Dropped" line is in the [channels and boards checklist](channels-and-boards.md#checklist).
+
 ```text
 WEEKLY REVIEW [P]               week of [YYYY-MM-DD] · tier [A/B/C]
 
@@ -271,10 +267,11 @@ Counts this week
   Applications     [n]   inbound [n] · referral [n] · outreach-routed [n] · sourced [n]
   Outreach sends   [n]   of a cap of [10/15/20/30] · follow-ups sent [n]
   Replies          [n]
-  Screens          [n]
+  Screens          [n]   inbound [n] · referral [n] · outreach-routed [n] · sourced [n]
   Take-homes       [n]   passed [n]
   Loops            [n]
   Offers           [n]
+  Dropped          [n]   at the scam and ghost-job check · why: [scam signal / ghost signal / duplicate]
 
 Running counters (thresholds in brackets)
   Targeted applications since the last screen    [n]        (review at 15)
@@ -309,19 +306,9 @@ MONTHLY RETROSPECTIVE [P]       [YYYY-MM]
 8. Decision:            [keep] / [change one variable: ..] / [re-plan loop type, level or tier]
 ```
 
-### Interview debrief [D]
+### Interview debrief
 
-T1-03's 30-minute debrief, run immediately after each round. No controlled study shows that it raises pass rates; it is synthesised from coaching advice [D · T1-03 L236–246].
-
-```text
-DEBRIEF [D]       [firm] · [round type] · [YYYY-MM-DD]
-
-1. Exact questions (5 min)   [question] · [question]
-2. Your answers (10 min)     [what you said, numbers used, trade-offs stated; photo of the whiteboard]
-3. Reactions (5 min)         [where they probed, nodded, looked sceptical or redirected]
-4. Gaps (5 min)              [gap] [formula/concept/tool/trade-off] · [gap] [tag]
-5. Plan (5 min)              [what to study] by [date]; story bank updated: [yes/no]
-```
+Run T1-03's 30-minute, five-step debrief immediately after each round, with the template in [interview loops](../08-interviewing/interview-loops.md#debrief-within-30-minutes-of-each-round), which owns it. No controlled study shows that it raises pass rates; it is synthesised from coaching advice [D · T1-03 L236–246]. Its exact questions, self-scores and tagged gaps fill Tab 3 of the tracker.
 
 ## Checklist
 

@@ -22,7 +22,7 @@ tags: [referrals, outreach, cold-email, hiring-managers, founders, maintainers, 
 ## The short answer
 
 1. **Get pulled in by a named human: that is the measured lever.** In Ashby's data (38M applications, 2021–2024), 3% of inbound applications reach an interview, against 25% of sourced and 40% of referred ones. Gem puts referrals at about 11× and sourced candidates at about 8× inbound per application [B · T0-04.F10]. These are selection effects. They size the prize for being vouched for, not the effect of any tactic [A/B · T0-05.F2].
-2. **Run referrals beside applications, not instead of them.** Referrals are about 15–18% of hires and inbound about half; the "70–85% hidden job market" has no evidence base [A · T0-12.F4]. Apply through the normal channel, then message the named person within 24–48 hours so they can find and flag the application. That sequence is unmeasured [D · T0-05 L329].
+2. **Run referrals beside applications, not instead of them.** Referrals are about 15–18% of hires and inbound about half; the "70–85% hidden job market" has no evidence base [A · T0-12.F4]. Ask a contact for a referral before you submit: a cold application sent first may block the referral [P]. Where there is no referral, apply through the normal channel, then send the hiring manager a note within 24–48 hours so they can find and flag the application. That sequence is unmeasured [D · T0-05 L329].
 3. **Every message carries one artefact the reader can verify:** a merged pull request, a reproducible benchmark or a short audit, with a one-command repro. Every channel is raising its guard against low-effort volume, which raises the value of hard-to-fake artefacts [B/C · T0-05.F12].
 4. **Write to the owner of the problem, briefly, and twice at most.** Named engineering directors, hiring managers and founders, not generic inboxes. At most 30 sends a week; a first touch of ≤ ~80–90 words with one link and one ask; one follow-up on day 5–7; then stop [D · T0-05 L87, L454]. The length rule borrows from cold sales email, where the best first touches run under 80 words [B · T0-05 L387].
 5. **Plan for 3–8% replies and decide at 60 sends.** No verified candidate-to-hiring-manager reply rate exists. 3–8% is a planning judgement, and 25–50% claims are unverified [D · T0-05.F9]. Zero replies after 60 sends puts the one-sided 95% upper bound on your true rate at 4.9%: change the artefact or the targets, not the volume [M · T0-05 L401].
@@ -34,7 +34,7 @@ tags: [referrals, outreach, cold-email, hiring-managers, founders, maintainers, 
 flowchart TD
     A["Artefact: one verifiable link with a repro"] --> B["Target list: 30–40 named owners of the problem"]
     B --> C{"Best route to this person?"}
-    C -->|"Someone you know inside"| D["Referral ask: T1"]
+    C -->|"Someone you know inside"| D["Referral ask before you apply: T1"]
     C -->|"Shared connections"| E["Second-degree introduction: T6"]
     C -->|"No warm path"| F["Apply, then a note within 24–48 h: T2 or T3"]
     D --> G["One follow-up on day 5–7: T5"]
@@ -112,7 +112,7 @@ To build and present it, see [proof-of-work standards](../05-portfolio/proof-of-
 2. **List 30–40 named owners.** Start from your [targeting workbook](../00-start/targeting-workbook.md) and the [employer landscape](../01-landscape/employer-landscape.md). Find people through open roles, maintainers and committers named in public governance files, OSS Insight company tables and manual LinkedIn title searches [D · T0-05 L325]. interviewing.io advises targeting managers rather than VPs, especially those under two years in role [C · T0-05 L327]. *Done when* each row of the log (T0) names a person, the team's public problem and a contact channel that person publishes.
 3. **Mark one route per target** from the route table. *Done when* every row has a route and a template.
 4. **Set up sending hygiene** (rules below). *Done when* SPF, DKIM and DMARC pass, each address is verified and the log exists.
-5. **Apply, then send.** Apply through the normal channel, then send the note within 24–48 hours, citing the application [D · T0-05 L329]. Ramp 10 → 15 → 20 → ≤ 30 sends a week over four weeks, counting follow-ups [D · T0-05 L377]. *Done when* each send is logged on the day it goes out.
+5. **Ask, apply, then send.** For a referral (T1), ask before you submit: a cold application sent first may block the referral [P]. For a hiring-manager or founder note (T2, T3) where there is no referral, apply through the normal channel first, then send the note within 24–48 hours, citing the application [D · T0-05 L329]. Ramp 10 → 15 → 20 → ≤ 30 sends a week over four weeks, counting follow-ups [D · T0-05 L377]. *Done when* each send is logged on the day it goes out.
 6. **Follow up once.** Send T5 on day 5–7, then stop. Never re-approach through another channel after an explicit no [D · T0-05 L378, L454]. *Done when* no target has more than two touches.
 7. **Review at 60 sends** with the stop/pivot table below. *Done when* you have written down one decision: continue, tighten, or change the artefact or the targets.
 8. **Review the portfolio at week 12.** Move hours to whichever route produced interview loops [D · T0-05 L89]. *Done when* next quarter's hours are re-split.
@@ -386,7 +386,7 @@ If you're the wrong person, a pointer would help.
 - [ ] One artefact with scope, method, limits, raw data and a one-command reproduction
 - [ ] 30–40 named owners in the log, each with a public problem, a route and a published contact channel
 - [ ] Warm paths tried first: people you know (T1), then second-degree introductions (T6)
-- [ ] Applied through the normal channel before each note
+- [ ] Each referral ask sent before you applied; for each hiring-manager or founder note, applied through the normal channel first and the note sent within 24–48 hours
 - [ ] SPF, DKIM and DMARC set; every address verified; bounces under 2%
 - [ ] Each note ≤ ~80–90 words, with one artefact link, one ask, no attachment and an easy exit
 - [ ] Claims calibrated: "in my setup", "could not verify"

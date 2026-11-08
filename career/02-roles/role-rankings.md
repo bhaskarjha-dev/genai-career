@@ -1,22 +1,24 @@
 ---
 id: roles.rankings
-title: "Best GenAI Jobs, Ranked"
+title: "Role Rankings: The Composite Career Index (All Demand)"
 content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-05
-summary: "Evidence-weighted ranking of the GenAI roles (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role."
+review_by: 2026-11-14
+summary: "Evidence-weighted ranking of the GenAI roles on all demand for each title (CCI): pillar scores with uncertainty ranges, Monte Carlo ranks, weight sensitivity, goal, persona and India lenses, and a dossier per role."
 sources: [T0-01, T0-02, T0-17, T0-03, T0-06, T0-15, T0-16]
 ---
-# Best GenAI Jobs, Ranked
+# Role Rankings: The Composite Career Index (All Demand)
 ## An Evidence-Weighted, Uncertainty-Aware Composite Career Index (CCI) for Every Canonical GenAI Role
 
-> **Updated:** 2026-11-04 · **Method:** Composite Career Index (CCI) with anchored 0–10 pillars, uncertainty ranges and Monte Carlo simulation.
-> **Role universe:** the 29 canonical roles of the [master catalog](role-catalog.md): 24 individual-contributor (IC) roles plus 5 leadership/independent tracks
+> **Method:** Composite Career Index (CCI) with anchored 0–10 pillars, uncertainty ranges and Monte Carlo simulation.
+> **Role universe:** the 29 canonical roles of the [role catalog](role-catalog.md): 24 individual-contributor (IC) roles plus 5 leadership/independent tracks
 > **Evidence standard:** EGP-1.0. Composite scores are **model outputs (Grade M** per the [README](../../README.md) evidence standard: a model output inherits the weakest grade among its inputs). They combine graded measurements (A–C) with labelled judgements (D). They are decision aids, not facts.
 > **Reproduce:** `python3 scripts/rank_roles.py --update` reads [data/role_scores.json](../../data/role_scores.json) and rewrites every block between the `BEGIN/END GENERATED` markers in this file, including Appendix A (standard library only, fixed seed). The narrative and the hand-written tables in §0, §5.1 and §7 are checked by hand after any change in ranks
-> **Companions:** [role-skill-maps.md](../03-skills-and-tech/role-skill-maps.md) gives the full skill stack for every ranked role · [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md) types every skill per role (concepts, methods, tools, frameworks, platforms, non-technical skills) with evidence · [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md) tiers those skills for resumes
+> **Companions:** [role-skill-maps.md](../03-skills-and-tech/role-skill-maps.md) gives the narrative skill map for every ranked role · [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md) types every skill per role (concepts, methods, tools, frameworks, platforms, non-technical skills) with evidence · [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md) tiers those skills for resumes
 > **Role hubs:** each role's rank, scores and evidence are summarised on its one-page hub ([hubs](hubs/README.md)); the [role map](role-map.md) shows where each role's work sits.
+> **Scope: all demand.** This index scores every posting in a title family, GenAI or not. The GenAI-only order is [GenAI target roles](genai-target-roles.md): it counts only the postings that name LLM (76.7% of AI Engineer and 45.0% of ML Engineer postings [B · JobsPipe JD, 2026-11-02]) and averages eight lenses, which puts AI Engineer first, while ML Engineer's full family, with its recsys, ads and autonomous-vehicle work and higher broad-market pay, makes it #1 here [M].
 
 ---
 
@@ -48,7 +50,7 @@ Choose between them on preference:
 |---|:---:|---|
 | Machine Learning Engineer | 1 (77.9) | Second-largest measured demand and the highest measured broad-market pay distribution |
 | AI Engineer | 2 (76.9) | Largest measured demand and best accessibility |
-| *Research Engineer / Member of Technical Staff* | **3 (71.4)** | Highest engineering pay in the corpus ($220–330K+ base) |
+| *Research Engineer / Member of Technical Staff* | **3 (71.4)** | Highest engineering pay in the corpus: OpenAI and Anthropic SWE/MTS total-comp medians $875K and $882.5K [B · T0-02.F4]; 2025 visa-filing base medians, which are floors, run from $215K (Anthropic Research Engineer) to $335K (OpenAI MTS-Research Engineer) [B · T0-02 L303, L310] |
 | Forward Deployed Engineer | 4 (70.6) | The measured posted base ($180–248K, n=304) is the lowest family median [B · T0-03], and the corpus has no FDE total-compensation data. The 933 count is a cluster of which ~48% is engineer-titled (an extrapolation), and its growth matched other families |
 | *Applied AI Engineer* | **5 (68.0)** | Strong startup and frontier-lab demand; T0-01 "likely pass" sub-node |
 | Research Scientist (AI/ML) | 6 (67.8) | Highest Pay score (9.5), but Access is only 2.9: it needs a PhD |
@@ -389,7 +391,7 @@ Two caveats apply:
   - Above the ceiling presumptive tax is not available: one rupee over ₹75L adds ~₹11.8L of tax, and it takes ~₹92–98L of billing to match the ₹75L take-home (the "dead zone"). At ₹1.2Cr about 65% is kept under actual books or a company.
   - India-based seniors are quoted $50–100/hr.
   - Not legal or tax advice.
-- **GCC demand carries execution risk:** "nearly 70%" of India GCCs are stuck at AI pilots [A-/B · T0-09].
+- **GCC demand carries execution risk:** "nearly 70%" of India GCCs are stuck at AI pilots [B · T0-09 L77].
 - **Most India-lens inputs are Grade C/D; treat this ranking as directional** (Appendix A.3).
 
 ---
@@ -891,7 +893,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 2.5 [1.5–3.5] · C | OMB M-25-21 requires a CAIO at US federal agencies (B) [T0-15:357]; '76% of firms report a CAIO' (IBM via secondary, C) [T0-01 F12]. |
 | Pay | 8.5 [5–10] · D | No pay data in corpus; corporate and US-federal CAIO pay differ widely, so the range is wide. Unanchored judgement: no proxy. |
-| Durability | 5.5 [4–7] · D | Judgement. May be transitional; fractional CAIO demand 'falling sharply' [T0-18:193-194]. |
+| Durability | 5.5 [4–7] · D | Judgement. May be transitional; fractional CAIO demand was labelled 'falling sharply' [T0-18:193-194], but T0-18 rates this demand evidence 'conflicting' [T0-18:1261]. |
 | Leverage | 9 [8–10] · D | Judgement. |
 | Access | 1.5 [0.5–2.5] · D | Executive track record. |
 

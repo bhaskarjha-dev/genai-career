@@ -5,23 +5,24 @@ content_type: reference
 stage: 2
 status: published
 last_verified: 2026-11-06
+review_by: 2026-11-14
 summary: "All 29 canonical GenAI roles and 241 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index."
 sources: [T0-01, T0-15, T0-16, T0-02, T0-03, T0-06, T0-17]
 ---
 # GenAI Role Master Catalog
 ## Every GenAI, ML-Systems and AI-Governance Role: Classified, De-duplicated and Evidence-Graded
 
-> **Updated:** 2026-11-04 · **Scope:** 29 canonical GenAI roles and 241 classified title strings, de-duplicated and calibrated against posting volume.
+> **Scope:** 29 canonical GenAI roles and 241 classified title strings, de-duplicated and calibrated against posting volume.
 > **Evidence standard:** EGP-1.0 grades (A–E, M) · **Evidence window:** posting counts 2026-06-09 → 2026-11-02; pay, survey and regulatory evidence 2023–2026, dated at each use · **Temporal anchor:** October 2026
 > **Inputs:** 22 research sessions, [FAD.md](../../research/FAD.md), [DECISIONS.md](../../research/DECISIONS.md) (D-002), and a public-page refresh of JobsPipe retrieved 2026-11-02
-> **Companion files:** [role-rankings.md](role-rankings.md) ranks the roles · [role-skill-maps.md](../03-skills-and-tech/role-skill-maps.md) lists every skill per role · [data/role_scores.json](../../data/role_scores.json) and [scripts/rank_roles.py](../../scripts/rank_roles.py) reproduce the scores · [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md) and [skills-vocabulary.md](../03-skills-and-tech/skills-vocabulary.md) type every skill per role, with evidence · [resume-strategy.md](../06-job-search/resume-strategy.md) and [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md) turn each role's skills into resumes
+> **Companion files:** [role-rankings.md](role-rankings.md) ranks the roles · [role-skill-maps.md](../03-skills-and-tech/role-skill-maps.md) gives the narrative skill map per role (every skill, tiered, is in the [inventories](../03-skills-and-tech/role-skill-inventories.md)) · [data/role_scores.json](../../data/role_scores.json) and [scripts/rank_roles.py](../../scripts/rank_roles.py) reproduce the scores · [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md) and [skills-vocabulary.md](../03-skills-and-tech/skills-vocabulary.md) type every skill per role, with evidence · [resume-strategy.md](../06-job-search/resume-strategy.md) and [resume-skills-matrix.md](../06-job-search/resume-skills-matrix.md) turn each role's skills into resumes
 > **Role hubs:** each role also has a one-page hub with its key facts and links to this evidence ([hubs](hubs/README.md)); the [role map](role-map.md) shows where each role's work sits.
 
 ---
 
 ## 0. Summary
 
-This file answers one question: **which GenAI roles exist, what is each one, and how sure are we?** It is the source of truth for the role IDs (slugs) used by the ranked catalog, the skills catalog and future `02-roles/` pages.
+This file answers one question: **which GenAI roles exist, what is each one, and how sure are we?** The role facts and slugs themselves are kept in [data/role_scores.json](../../data/role_scores.json), the source of truth ([AGENTS.md §2](../../AGENTS.md#2-sources-of-truth)); this catalog presents each role with its evidence, and the [role hubs](hubs/README.md) and the [role map](role-map.md) are generated from the same data.
 
 | Bucket | Count | Meaning |
 |---|---:|---|
@@ -43,9 +44,9 @@ This file answers one question: **which GenAI roles exist, what is each one, and
 3. **The quarantine register matches T0-01 D4.** Five FAD-listed buzzwords were never searched: AI Whisperer, Neural Network Designer, Transformer Specialist, Foundation Model Engineer and Reasoning Engineer. This catalog labels them *unmeasured*, not "zero postings". LLMOps is a skill tag under ML Platform/MLOps, not a quarantined title.
 4. **FAD's pay labels are corrected (ERRATA U4–U5).** **$312K** is the US all-company Senior median total comp (Levels.fyi 2025) and is not AI-specific. **₹1.06–1.22Cr** is the range of senior medians at the five best-paying Bengaluru employers, which is roughly the P90 ceiling; the Greater Bengaluru Senior SWE median on Levels.fyi (n=4,836, a large-employer-skewed sample) is **₹56.0L**. FAD's US Tier 0 and Tier 1 caps sit *below* the measured Entry ($155K) and Mid ($226K) medians.
 5. **Every pay figure carries its source.** Per-role pay appears only where the corpus has a source; where it has none (for example AI PM and AI Solutions Architect), this file says so. FDE has posted base pay only ($180–248K, n=304 [B · T0-03]) and no total-compensation data.
-6. **India contractor tax, in numbers (T0-07).** §44ADA (s.58 under the Income-tax Act 2025) keeps about 83–84% of billing up to ₹75L and about 65% at ₹1.2Cr; ₹75L is about $79K. In the ₹75L to ~₹92–98L "dead zone" restructuring is not the answer; at ≥₹1Cr, T0-07 lists LLP and Pvt Ltd options whose cash outcomes differ by only ~₹3–10L.
+6. **India contractor tax, in numbers (T0-07).** §44ADA (s.58 under the Income-tax Act 2025) keeps about 83–84% of billing up to ₹75L and about 65% at ₹1.2Cr; ₹75L is about $79K. In the ₹75L to ~₹92–98L "dead zone" restructuring is not the answer; at ≥₹1Cr, T0-07 lists LLP and Pvt Ltd options whose cash outcomes differ by only ~₹3–10L. The full method is in [India remote tax](../09-compensation/india-remote-tax.md) (pointers, not tax advice).
 
-**How the three files connect:** this catalog defines the role universe → the [ranked catalog](role-rankings.md) scores every canonical role on a 100-point index with uncertainty bands → the [skills catalog](../03-skills-and-tech/role-skill-maps.md) lists the full skill stack for each role.
+**How the role pages connect:** this catalog defines the role universe and grades the evidence for each role → the [ranked catalog](role-rankings.md) scores every canonical role on a 100-point index with uncertainty bands, and [GenAI target roles](genai-target-roles.md) turns the same scores into a GenAI-only target order → the [role skill inventories](../03-skills-and-tech/role-skill-inventories.md) list the skills for each role → each [role hub](hubs/README.md) puts one role on one page.
 
 ---
 
@@ -238,7 +239,7 @@ Rank = position in the [ranked catalog](role-rankings.md). IC roles are ranked 1
 
 ## 3. Role Profiles
 
-Each profile extends the T1-01 role-page contract (definition, demand, skill requirements, journey) with pay evidence and watch-outs; the full skill list is in the [skills catalog](../03-skills-and-tech/role-skill-maps.md). Feeder timelines come from T0-06's model at 15–20 hours a week. They are **Grade D model outputs, conditional on success**; no persona-level success rates exist.
+Each profile extends the T1-01 role-page contract (definition, demand, skill requirements, journey) with pay evidence and watch-outs; the narrative skill map is in the [role skill maps](../03-skills-and-tech/role-skill-maps.md). Feeder timelines come from T0-06's model at 15–20 hours a week. They are **Grade D model outputs, conditional on success**; no persona-level success rates exist.
 
 ### 3.1 Applied AI Engineering
 
@@ -988,14 +989,7 @@ Domain ML variants (NLP, CV, RecSys, Speech) are long-standing specialisations, 
 
 ### 6.1 Transition personas: where people come *from*
 
-| Persona (T0-06 / T2-01) | Best first targets | Modelled time to first offer, 15–20 h/week [D] |
-|---|---|---|
-| Backend / Systems SWE (5+ yrs) | AI Engineer / Applied AI Engineer; FDE-adjacent; AI platform | ~6 months (3.5–8) |
-| Data Scientist | AI Engineer with an evals edge; MLE | ~8 months (5–11) |
-| BI Analyst | Analytics-AI engineer (text-to-SQL, copilots) | ~11 months (7–15) |
-| Frontend / Full-Stack | AI product / full-stack AI engineer | ~7 months (5–11) |
-| Non-technical, 5+ yrs domain | AI PM, AI ops/enablement, domain-evaluation lead, solutions/FDE-adjacent | ~7 months (5–11); ~22 months from zero code |
-| Academic / Quantitative PhD (can code) | Applied AI engineer, Applied Scientist, Research Engineer | ~8 months (5–12.5); frontier research is "not plannable" |
+Background personas (backend or systems engineer, data scientist or BI analyst, frontend or full-stack engineer, non-technical domain professional, academic or quantitative PhD) describe where people come from, not jobs; the A–Z index types their strings as "Persona". The best first targets for each background and the modelled time to a first offer (T0-06 and T2-01; Grade D model outputs at 15–20 hours a week, conditional on success) are kept in [career transitions](../11-tracks/career-transitions.md#background-router); the GenAI target order by background is in [GenAI target roles](genai-target-roles.md#best-targets-by-background).
 
 The two PhD persona strings ("Academic ML/NLP Researcher", "PhD / Academic ML Researcher") map to one feeder persona, and the frontend persona is kept apart from the AI Product Engineer role (§4).
 
@@ -1049,55 +1043,19 @@ For scale, the same refresh shows AI Engineer at 1,697 US / 3,944 global / 398 I
 
 ## 8. Cross-Cutting References
 
+These facts are kept on their owner pages; the headings stay because other pages and data files cite them.
+
 ### 8.1 Pay tiers: FAD design bands vs measured anchors
 
-D-003 calls the FAD §4.1 bands "research-validated". This catalog treats them as **design brackets** for navigation, because the US T0 and T1 caps sit below the measured medians (U5). The measured anchors below are all-company figures unless stated.
-
-| Tier | FAD band (US / India) | Measured US anchor | Measured India anchor | Verdict |
-|---|---|---|---|---|
-| T0 Entry | $80–120K / ₹8–15L | All-company Entry median ≈ $155K [B · T0-17]; AI Engineer all-level P25 $110K [B · T0-02] | Broad market ₹10–15L [C]; Bengaluru entry SWE median ₹18.9L [C · T0-02] | **US cap below the measured median** |
-| T1 Growth | $120–200K / ₹15–30L | Mid median ≈ $226K [B · T0-17] | Bengaluru AI Engineer P50 ₹21.4–24.5L [B] | **US cap below the measured median** |
-| T2 Senior | $200–350K / ₹30–75L | Senior median ≈ **$312K** (all-company, not AI) [B · T0-17] | Bengaluru Senior SWE median **₹56.0L**; P75 ₹79.9L [B · T0-17] | Consistent at the median |
-| T3 Staff | $350–500K / ₹75L–1.5Cr | Staff median ≈ $457K [B · T0-17] | Top-5 employers' senior medians **₹1.06–1.22Cr** ≈ all-company P90 ₹1.07Cr [B]; "a local Staff role typically does not reach ₹1.2Cr" [C] | US consistent; India Staff unmeasured |
-| T4 Principal | $500–800K / ₹1.5–3Cr | Principal median ≈ $551K [B · T0-17]; Google MLE L7 $743K [B]; Anthropic Staff $1.41M (T0-02 maps it to its Tier 4, T0-17 to T3) [B · T0-02] | Google Bengaluru MLE L5 ₹168.3L (small n) [B] | India unmeasured |
-| T5 Apex | $800K–2M+ / ₹3–5Cr+ | "Not observable in medians" [T0-17]; indirect only: Pave reports P90 new-hire equity of $45–60M at the most senior levels of private SF Bay companies that raised $1B–5B+ [B · T0-02] | None | Unmeasured |
-
-- **The AI premium over non-AI engineers rises with level:** +6.2% Entry, +11.9% Engineer, +14.2% Senior, +18.7% Staff (Levels.fyi Q3 2025 report) [B · T0-17; T0-02 grades its relay C].
-- **AI/ML retention and promotion:** AI/ML annual attrition is ~28% vs ~17% for software engineers; AI/ML promoted raises are near the bottom of R&D at 6.5%. At 28% attrition, the expected vested fraction of a 4-year grant is 0.56 (0.71 at 17%) [B inputs; vested fraction is a model output · T0-17].
-- **Job moves (Grade C):** a same-tier hop is worth about +15–25% TC; a hop that also steps up a level about +35–50%. T0-17 itself notes it found "no verifiable source for 35–50%".
-- **Private equity:** risk-adjust it (frontier labs 0.5–0.8×; Series C–D 0.4–0.8×; stale unicorns 0.15–0.3×; all model outputs) [C/D · T0-17].
+The FAD §4.1 tier bands (D-003) are design brackets for navigation, not pay data, because their US T0 and T1 caps sit below the measured Entry and Mid medians (ERRATA U5). The band sets, the measured anchor for each tier, the AI premium by level and the value of a job move are in [pay benchmarks](../09-compensation/pay-benchmarks.md#the-tier-band-problem); equity risk adjustments and the expected vested fraction of a grant are in [offer evaluation](../09-compensation/offer-evaluation.md).
 
 ### 8.2 Role × interview track × highest-signal proof of work
 
-| Roles | Interview track (T1-03 / T0-14) | Highest-signal proof of work (T0-13 / T0-06 / T2-01) |
-|---|---|---|
-| AI Engineer, Applied AI, Agentic, AI Product Engineer, AI Enablement | Application: RAG with ACL enforcement, agent loop control, eval architecture, context management | T0–T1: one evaluated end-to-end system with metrics, cost and a reproducible README. T2–T3: two systems with different failure surfaces plus CI-gated evals |
-| Machine Learning Engineer, Applied Scientist | Classic ML system design (recsys, fraud, ETA), plus "where would an LLM help?" | Baseline-first modelling with measured lift; production-quality code |
-| Forward Deployed Engineer, AI Solutions Architect | Databricks' AI-FDE loop: RAG over sensitive, fast-changing documents and evaluating a multi-agent system (T0-14; T1-03 files it under Application); plus a scoping/customer round | Customer pilot case study; a demo on real data shown to ≥2 users |
-| Inference, GPU Kernel, AI Infrastructure, ML Platform | Infrastructure: KV-cache math, decode roofline, continuous batching, P/D disaggregation, GPU scheduling, p95 debugging | A serving or kernel study with roofline analysis and an upstream PR (vLLM, SGLang, FlashInfer, Triton) |
-| AI Evaluation Engineer | Eval design: golden set, judge calibration, online sampling, A/B | Eval harness with a κ-calibrated judge validated on ≥100 human labels |
-| Research Engineer, Research Scientist, AI Safety Researcher | Research talk plus coding; full research loop at frontier labs | Papers, OSS paper re-implementations with rigorous evals, fellowships |
-| AI Governance Lead, AI Risk & Audit, Responsible AI | Scoping/solutions round; frameworks | AI inventory, risk register and governance playbook mapped to the EU AI Act / NIST / ISO 42001 |
-| AI Product Manager, Domain Evaluation Specialist | Scoping/product round | PRD plus eval rubric plus pilot metrics; a domain golden set with inter-rater agreement |
+Each role's interview track is kept in [data/role_scores.json](../../data/role_scores.json) (`interview_tracks`, from T1-03 and T0-14) and shown in the role map's [choosing a direction](role-map.md#choosing-a-direction) table. Each role's highest-signal proof of work (T0-13, T0-06, T2-01) is on its [hub](hubs/README.md), under "How to prove it", and the standards are in [proof-of-work standards](../05-portfolio/proof-of-work-standards.md).
 
 ### 8.3 India vs US realities
 
-- **Market shape:**
-  - AI-titled share of all postings: India 3.0% vs US 1.3%.
-  - Entry-level share of AI roles: India 21.2% vs US 10.4% [B · T0-01 F10].
-  - Live AI Engineer postings: India 398 vs US 1,697. Live MLE postings: India 90 vs US 1,084 [B].
-- **Titles and GCCs:** GCCs use GenAI Engineer, AI/ML Engineer, MLOps Engineer and Prompt Engineer as titles [C · T0-01 D8].
-  - Scale and supply: 2,100+ centres; AI/data is the fastest-growing function (+38%); supply gaps of 18–43% in AI/MLOps/platform roles [C].
-  - Risks: ~70% of India GCCs are stuck at the pilot stage [A-/B · T0-09]. GCC attrition evidence conflicts: Zinnov reports 18–25% in AI/Cloud against EY's 9% overall; samples and definitions differ, so T0-09 leaves it unresolved [B · T0-09].
-- **Pay is two populations:**
-  - Broad market: ₹10–15L [C].
-  - MNC / GCC / product firms: Bengaluru MLE P50 ₹44.5L, P90 ₹94.6L [B]; Senior SWE median ₹56.0L, P90 ₹1.07Cr (Levels.fyi, n=4,836) [B · T0-17].
-- **Remote share** (JobsPipe JD) [B]: AI Engineer 11.0%, MLE 14.0%, Solutions Architect 16.2%, Research Scientist 3.3%, Backend 31.6%. AI titles are rarely remote; generic backend postings are two to three times as likely to be remote. FDE postings were mostly non-remote in the August snapshot (Remote 65 of ~779).
-- **Independent contracting (T0-07):**
-  - Up to ₹75L, s.58 (old §44ADA) presumptive taxation keeps ~83–84% of billing, vs 67–73% under actual books.
-  - Billing structure: GST LUT (zero-rated export); RBI purpose code P0802 (P1006 for advisory work); W-8BEN.
-  - Above ₹75L there is a cliff and a "dead zone" up to ~₹92–98L; restructuring is not the answer there. At ≥₹1Cr, T0-07 lists LLP and Pvt Ltd options whose cash outcomes sit within ~₹3–10L of each other at ₹1.2Cr.
-  - Not legal or tax advice.
+India market facts (AI-title and entry-level shares, live counts, GCC demand, titles and risks, remote shares) are in the [market overview's India section](../01-landscape/market-overview.md#8-india-more-ai-intensive-younger-smaller-in-counts-split-in-pay); India pay bands in [pay benchmarks](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer); independent-contracting tax in [India remote tax](../09-compensation/india-remote-tax.md) (not legal or tax advice); India routes in the [India remote playbook](../11-tracks/india-remote-playbook.md).
 
 ---
 
@@ -1136,7 +1094,7 @@ The 12 errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T1-01 
 | Posting counts (volatile, EGP class V1) | Re-verify within 31 days | 2026-12-03 |
 | T0-01 recount protocol (D10: JobsPipe API `job_title_or`, Fast AI Jobs role pages, Indeed Hiring Lab CSV; inspect the first 20 results; collapse duplicates) | T0-01 schedule | 2026-12-01 and 2027-01-15 |
 | D-002 semi-annual review | Scheduled | 2027-01-31 |
-| Pay figures (class V2, 90-day TTL per FAD R4) | Quarterly | 2027-01-31 |
+| Pay figures (class V3 market estimates; this repository re-verifies pay after 90 days, FAD R4) | Quarterly | 2027-01-31 |
 | Regulatory dates (EU AI Act, DPDP, OMB) | 31-day TTL | 2026-12-03 |
 | Graduation trigger | Any W/Q title passes all seven D5 tests | On recount |
 | Escalation trigger | More than 3 quarantined titles pass 50 postings between recounts → move to quarterly recounts (D-002) | On recount |

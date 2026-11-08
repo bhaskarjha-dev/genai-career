@@ -22,7 +22,7 @@ sources: [T0-01, T0-02, T0-08, T0-15, T0-17]
 | [employer-landscape.md](employer-landscape.md) | One employer taxonomy (frontier labs, Big Tech, AI-native startups, enterprises and GCCs, IT services, public sector) mapped to how each hires, interviews, pays and onboards |
 | [emerging-roles.md](emerging-roles.md) | How to judge a new GenAI title: the graduation tests, a dated watchlist of candidate and quarantined titles, and how to use emerging terms honestly |
 
-The [role catalog](../02-roles/role-catalog.md) (§7–§8) and the [role rankings](../02-roles/role-rankings.md) (India lens) hold the role-level volumes and pay context.
+The [market overview's India section](market-overview.md#8-india-more-ai-intensive-younger-smaller-in-counts-split-in-pay) holds the repository's India market facts. Role-level volumes are in the [role catalog](../02-roles/role-catalog.md) (the registry in §2.2 and the feeder occupations in §7), pay by role, city and level in [pay benchmarks](../09-compensation/pay-benchmarks.md), and the India lens in the [role rankings](../02-roles/role-rankings.md).
 
 ## Planned
 

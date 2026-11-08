@@ -5,7 +5,7 @@ content_type: guide
 stage: 1
 status: published
 last_verified: 2026-11-06
-review_by: 2026-11-03
+review_by: 2026-11-19
 summary: "What the GenAI job market looks like as of October 2026, globally and in India: which titles have measured volume, where demand, pay and applicant pressure sit, what is short and what is commoditised, and the decision rules that follow for each kind of job seeker."
 sources: [T0-01, T0-02, T0-03, T0-04, T0-06, T0-09, T0-11, T0-13, T0-15, T0-16, T0-17]
 roles: [all]
@@ -17,16 +17,16 @@ tags: [market, posting-volume, demand, seniority, pay-structure, india, governan
 
 > What the GenAI job market looks like as of October 2026, globally and in India: which titles have measured volume, where demand, pay and applicant pressure sit, what is short and what is commoditised, and the decision rules that follow for each kind of job seeker.
 
-**Dates:** live posting counts are from 19–21 October 2026 unless a row says otherwise. The S09 pay snapshot (5 August 2026) and the Q3 2025 AI premium by level passed their 90-day re-check on 2026-11-03, and the posting counts reach their 31-day limit from 2026-11-19; see the re-check table under [Evidence and limits](#evidence-and-limits). **Grades:** EGP-1.0. Platform aggregates (JobsPipe, Fast AI Jobs, Levels.fyi) are graded B, even where a session graded its own reading A ([role catalog §1.3](../02-roles/role-catalog.md#13-evidence-grades-and-conventions)). Regulatory dates are pointers, not legal advice.
+**Dates:** live posting counts are from 19–21 October 2026 unless a row says otherwise. They reach their 31-day limit from 2026-11-19, the earliest expiry on the page, which sets its `review_by`; see the re-check table under [Evidence and limits](#evidence-and-limits). Pay figures are not repeated here: [pay benchmarks](../09-compensation/pay-benchmarks.md) holds them, each with its date. **Grades:** EGP-1.0. Platform aggregates (JobsPipe, Fast AI Jobs, Levels.fyi) are graded B, even where a session graded its own reading A ([role catalog §1.3](../02-roles/role-catalog.md#13-evidence-grades-and-conventions)). Regulatory dates are pointers, not legal advice.
 
 ## The short answer
 
 1. **Target the three title families with measured volume, and carry new work as skills.** Only AI Engineer, Machine Learning Engineer and Forward Deployed Engineer (FDE) have a measured count above the 50-posting quorum. Agentic, context and evaluation work shows up as skills inside AI Engineer postings (agentic AI in 59.3%, RAG in 54.0%), not as new titles [B · T0-01.F1, F3, F4]. Seventeen other roles are real titles whose volume the research has not measured ([role catalog §0](../02-roles/role-catalog.md#0-summary)).
 2. **Move at your current level; do not plan a reset to junior.** Of 43,480 US AI-engineering postings counted by Axial Search (January–July 2026), about 66% are individual-contributor roles: 35% mid-level and 31% senior [C · T0-06 L108]. Employment of 22–25-year-olds in the most AI-exposed occupations is 19% lower than if it had kept pace with less-exposed peers [A · T0-06 L118].
-3. **For pay, choose the employer tier and the level, not the stack.** Median posted base is nearly the same for AI Engineer, infrastructure/platform and ML Engineer postings; the top of the band sits at labs and specialist vendors [B · T0-03.F1].
+3. **For pay, choose the employer tier and the level, not the stack.** Median posted base is nearly the same for AI Engineer, infrastructure/platform and ML Engineer postings; the top of the band sits at labs and specialist vendors [B · T0-03.F1]. The figures by role, level and city are in [pay benchmarks](../09-compensation/pay-benchmarks.md).
 4. **Build where the market is short.** Evaluation is the broadest production signal (in the postings of 68.2% of the 198 companies in one corpus), yet only 52.4% of agent teams run offline evals [B · T0-03.F3; B/C · T0-03.F4]. T0-03 classes security and supply chain as mandatory production competencies, citing critical serving-engine CVEs and an eval-vendor breach in 2026 [A/B · T0-03.F12]. Thin-wrapper skills are commoditised, and Prompt Engineer is a legacy title [B · T0-03.F2; B/C · T0-01.F8].
 5. **Compete on channel, not on application volume.** Applications per job rose about 110% from 2022 to 2025 (Greenhouse), and cold applications end in a hire about 0.2% of the time; referrals yield 11–36 times more per application [B · T0-04.F9, F10].
-6. **In India, decide which of two markets you are in.** India has the highest AI-title share of postings of the five countries compared (3.0% vs 1.3% in the US) and about twice the US entry-level share of AI roles (21.2% vs 10.4%), but fewer live AI Engineer postings (398 vs 1,697) [B · T0-01.F10]. Pay splits into a broad market centred on ₹10–15L (Glassdoor, Indeed, AIM Research) [C] and an MNC, GCC and product-firm population; in the Levels.fyi sample that represents it, the Bengaluru ML Engineer median is ₹44.5L [B · T0-02.F3].
+6. **In India, decide which of two markets you are in.** India has the highest AI-title share of postings of the five countries compared (3.0% vs 1.3% in the US) and about twice the US entry-level share of AI roles (21.2% vs 10.4%), but fewer live AI Engineer postings (398 vs 1,697) [B · T0-01.F10]. Pay splits into two populations about 3–4× apart, a broad market and an MNC, GCC and product-firm population, and employer type explains the gap [B/C · T0-02.F3]; the bands are in [pay benchmarks](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer).
 
 ## At a glance
 
@@ -40,12 +40,12 @@ tags: [market, posting-volume, demand, seniority, pay-structure, india, governan
 | What AI Engineer postings ask for | Python 78.4%, LLM 76.7%, agentic AI 59.3%, RAG 54.0% (counted 2026-09-10) | B · T0-01.F4 |
 | Seniority | 66% individual contributor (35% mid, 31% senior) and about 10% management, of 43,480 US AI-engineering postings (Axial Search, January–July 2026) | C · T0-06 L108 |
 | Junior market | 22–25-year-olds in the most AI-exposed occupations: employment 19% lower than if it had kept pace with less-exposed peers (Stanford, revised 12 August 2026) | A · T0-06 L118 |
-| Pay structure | Median posted base: AI Engineer $200–275K, infrastructure/platform $203–270K, ML Engineer $213–288K (snapshot 2026-08-05); top of band at labs and specialist vendors | B · T0-03.F1 |
+| Pay structure | Median posted base nearly the same across AI Engineer, infrastructure/platform and ML Engineer postings; top of band at labs and specialist vendors. Figures: [pay benchmarks](../09-compensation/pay-benchmarks.md#posted-base-by-role-family) | B · T0-03.F1 |
 | Skills in short supply | Evaluation (in postings at 68.2% of 198 companies; offline evals run by only 52.4% of agent teams); security and supply chain | B · T0-03.F3; B/C · T0-03.F4; A/B · T0-03.F12 |
 | Commoditised | Thin-wrapper skills; the Prompt Engineer title is 0.35% of 20,662 LinkedIn AI postings (2025 study) | B · T0-03.F2 |
 | Applicant pressure | Applications per job 116 → 244 (Greenhouse, 2022–2025); cold-inbound application-to-hire about 0.2% | B · T0-04.F9 |
 | India | AI-titled share of postings 3.0% (US 1.3%); entry-level share of AI roles 21.2% (US 10.4%) (2026-10-11) | B · T0-01.F10 |
-| India pay | Broad-market centre ₹10–15L (Glassdoor, Indeed, AIM Research); Levels.fyi Bengaluru ML Engineer median ₹44.5L (n=96, 2026-10-12) | C, B · T0-02.F3 |
+| India pay | Two populations about 3–4× apart: the broad market, and MNC, GCC and product firms. Bands: [pay benchmarks](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer) | B/C · T0-02.F3 |
 | Governance | 1,997 US AI-governance postings (Axial Search, January–September 2026); no India count | C · T0-15.F4 |
 | Agent protocols | "Model Context Protocol" named in 0.068% of 343,299 Fortune-1000 and API-provider postings (API Evangelist, Q3 2026); no protocol job title in volume | C · T0-16.F9, F10 |
 
@@ -136,25 +136,13 @@ T0-06's implication: a junior GenAI role from scratch is the hardest target on t
 
 ### 5. Pay follows employer tier and level, not the app-versus-infra split
 
-| Posting cut (S09: 3,647 postings at 198 companies, snapshot 2026-08-05) | Median posted base range | n (postings disclosing base) |
-|---|---|---:|
-| Mid-level or unspecified AI engineer | $179–247K | 599 |
-| Senior AI engineer | $185–253K | 462 |
-| Staff+ or principal AI engineer | $230–310K | 322 |
-| AI Engineer (application) | $200–275K | 55 |
-| Infrastructure / platform engineer | $203–270K | 52 |
-| Machine Learning Engineer | $213–288K | 201 |
-| Forward Deployed Engineer | $180–248K | 304 |
-
-Source: [B · T0-03 §6.1.2].
-
-- **Tier sets the ceiling.** Top-of-band posted ranges come from labs and specialist vendors (2026 postings): Anthropic Inference Runtime $405–485K, NVIDIA inference up to $356.5K, Baseten $180–360K [B · T0-03.F1].
-- **Level sets the step.** The AI premium over non-AI engineers rises with level, from +6.2% at entry to +18.7% at Staff (Levels.fyi, Q3 2025) [B · T0-17 KF3].
-- **The infrastructure premium is unproven.** T0-02 calls it "partially supported, not validated": +13% to +31% in base at two datasets, with seniority not controlled [B/C/D · T0-02.F12, L99].
-- **Titles carry employer mix.** Levels.fyi US total-comp medians (18–19 October 2026) are $280K for ML Engineer and $154K for AI Engineer: "a title and employer-mix gap", not a measured skill premium [B · T0-02.F1].
+- **Tier sets the ceiling.** Median posted base is nearly the same across the AI Engineer, infrastructure/platform and ML Engineer families; top-of-band posted ranges come from labs and specialist vendors [B · T0-03.F1].
+- **Level sets the step.** Mid-level or unspecified AI-engineer postings carry the lowest posted base of the level cuts, and the AI premium over non-AI engineers rises with seniority; the figures, dated by dataset, are in [pay benchmarks](../09-compensation/pay-benchmarks.md#posted-base-by-role-family).
+- **The infrastructure premium is unproven.** T0-02 calls it "partially supported, not validated", with seniority not controlled [B/C/D · T0-02.F12, L99].
+- **Titles carry employer mix.** The ML Engineer title's higher Levels.fyi total-comp median is "a title and employer-mix gap", not a measured skill premium [B · T0-02.F1].
 - **Posted ranges exclude equity.** Only 14% of 43,480 US AI-engineering postings (Axial Search) mention equity [B/C · T0-02.F8].
 
-Pay by role, tier and city is in [pay benchmarks](../09-compensation/pay-benchmarks.md).
+The figures by family, level, city and employer, each with its date and sample size, are in [pay benchmarks](../09-compensation/pay-benchmarks.md).
 
 ### 6. In short supply: evaluation and security. Commoditised: thin-wrapper skills
 
@@ -192,9 +180,9 @@ Sources: JobsPipe rows [B · T0-01.F10, D8]; Indeed row [A · T0-01.F10], with r
 - **Counts are smaller, and the two JobsPipe figures disagree.** Live counts put India at 0.23× the US (398 vs 1,697), but the September JD page implies 0.49× (13.6% vs 27.9%). T0-01 flags the conflict without reconciling it, so use 0.23–0.49× [B · T0-01 L69]. India has 90 live ML Engineer postings [B · T0-01 D2].
 - **Demand sits in GCCs.** NASSCOM-Zinnov puts India's global capability centres at 2,100+ centres and 2.3M staff. AI, data and analytics is the fastest-growing function (+38%), about two in three new GCC roles need AI, data or automation skills, and 56% of GCC hiring is for 4–10 years' experience. Quess estimates 18–43% supply gaps in AI, MLOps and platform clusters [C · T0-01 D8, F10]. Title-level GCC counts were not obtained.
 - **Titles differ.** GCCs use GenAI Engineer, AI/ML Engineer, MLOps Engineer and Prompt Engineer as titles (Taggd) [C · T0-01 D8], although Prompt Engineer is legacy in US data.
-- **Execution risk.** "Nearly 70%" of India GCCs are stuck at the AI pilot stage, according to a Dell-Zinnov survey of senior GCC leaders (more than 50, per a trade-press report; the whitepaper states no sample) [B · T0-09 L77, L364].
-- **Pay is two populations.** Levels.fyi Greater Bengaluru ML Engineer: P25 ₹28.9L, P50 ₹44.5L, P75 ₹68.6L, P90 ₹94.6L (n=96, 2026-10-12) [B · T0-02.F3]. Broad-market sources (Glassdoor, Indeed, AIM Research) centre on ₹10–15L [C · T0-02.F3]. The 3–4× gap is employer type. For senior software engineers in Bengaluru, the median is ₹56.0L and the P90 ₹1.07Cr (Levels.fyi, n=4,836, 2026-10-21) [B · T0-17 KF4]. The India tier bands in older records are unmeasured ([ERRATA U14](../../research/ERRATA.md)).
-- **Remote is the exception for AI titles.** Remote shares: AI Engineer 11.0%, ML Engineer 14.0%, generic backend 31.6% (JobsPipe JD measurements, 2026-11-02) [B · [role catalog §8.3](../02-roles/role-catalog.md#83-india-vs-us-realities)].
+- **Execution risk.** "Nearly 70%" of India GCCs are stuck at the AI pilot stage, according to a Dell-Zinnov survey of senior GCC leaders (more than 50, per a trade-press report; the whitepaper states no sample) [B · T0-09 L77, L364]. GCC attrition evidence conflicts: Zinnov reports 18–25% in AI and cloud roles, against 9% overall from EY (2025); samples and definitions differ, so T0-09 leaves it unresolved [B · T0-09 L117].
+- **Pay is two populations.** Broad-market sources (Glassdoor, Indeed, AIM Research) and the MNC, GCC and product-firm population that Levels.fyi samples sit about 3–4× apart, and employer type explains the gap [B/C · T0-02.F3]. The bands by city, level and employer are in [pay benchmarks](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer). The India tier bands in older records are unmeasured ([ERRATA U14](../../research/ERRATA.md)).
+- **Remote is the exception for AI titles.** Remote shares of postings: AI Engineer 11.0%, ML Engineer 14.0%, Solutions Architect 16.2% and Research Scientist 3.3%, against 31.6% for generic backend postings (JobsPipe JD measurements, retrieved 2026-11-02) [B], so generic backend postings are two to three times as likely to be remote as AI Engineer or ML Engineer postings [M]. FDE postings were mostly non-remote in the August snapshot (65 of ~779 remote) [B · T0-01 D2].
 - **The India picture has blind spots.** India-specific boards (Naukri, Instahyre) were never measured ([FAD](../../research/FAD.md) OQ2), and Indeed's AI tracker does not cover India [A · T0-01.F10]. The India-centric board Weekday lists 2,527 India vs 490 US AI roles, which reflects its audience, not the market [C · T0-01 D8].
 
 India targeting is in the [GenAI target roles India order](../02-roles/genai-target-roles.md#6-india-first-target-order-genai-india-lens) and the [India remote playbook](../11-tracks/india-remote-playbook.md).
@@ -265,7 +253,7 @@ Each rule is a judgement built on the graded evidence in its row. Modelled timel
 | **PhD or academic researcher** | New AI PhDs in the US and Canada rose 22% from 2022 to 2024, and the increase went to academia, not industry [A · T0-06 L186] | Plan on applied AI engineering, applied science or research engineering; treat frontier research-scientist offers as upside [M · T0-06 L192]. Modelled: ~8 months. See [PhD to industry](../11-tracks/phd-to-industry.md) |
 | **Non-technical professional** (5+ years in a domain) | AI PM, AI ops, domain evaluation and FDE-adjacent niches exist, each with an entry fee in experience, credentials or coding [C · T0-06 KF-7] | Pick one lane; AI Product Manager is the strongest non-engineering target in the [GenAI target order](../02-roles/genai-target-roles.md) [M]. Modelled: ~7 months for AI-adjacent roles; an engineering role from zero code is a ~22-month plan |
 | **Infrastructure, SRE or systems engineer** | Named inference engines appear in 2.0–3.9% of postings, kernels in 6.6% [A/B · T0-03.F7, F8]; infrastructure posted base is level with AI Engineer [B · T0-03.F1] | Choose infrastructure for the employer tier (labs, inference vendors, GPU clouds), where top-of-band pay sits, not for a general premium, which is not validated [B/C/D · T0-02.F12] |
-| **India-based engineer** | Two pay populations with a 3–4× gap [B/C · T0-02.F3]; AI titles are rarely remote [B · role catalog §8.3], and FDE postings were mostly not remote (65 of ~779 remote, August snapshot) [B · T0-01 D2]; "nearly 70%" of India GCCs are stuck at AI pilots [B · T0-09 L77] | For pay, target GCC, MNC and product employers, and ask in interviews whether the AI work runs in production. For US-remote work, expect few remote AI-titled postings, rely on non-cold channels, and settle the contracting set-up first ([India remote playbook](../11-tracks/india-remote-playbook.md); not tax advice) |
+| **India-based engineer** | Two pay populations with a 3–4× gap [B/C · T0-02.F3]; AI titles are rarely remote [B · JobsPipe JD, 2026-11-02], and FDE postings were mostly not remote (65 of ~779 remote, August snapshot) [B · T0-01 D2]; "nearly 70%" of India GCCs are stuck at AI pilots [B · T0-09 L77] | For pay, target GCC, MNC and product employers, and ask in interviews whether the AI work runs in production. For US-remote work, expect few remote AI-titled postings, rely on non-cold channels, and settle the contracting set-up first ([India remote playbook](../11-tracks/india-remote-playbook.md); not tax advice) |
 | **GRC, privacy, audit or legal professional** | Low thousands of US postings a year; India uncounted [C · T0-15.F4]; dedicated roles at programme-lead level, absorbed below it [B · T0-15.F5] | Add AI governance to an existing privacy, security, risk or audit base and aim for programme-lead roles. AIGP is a cheap differentiator, not a gate [C · T0-15.F9]. Do not wait for an EU-driven surge before the 2027–2028 high-risk dates [A · T0-15.F1] |
 
 Fuller playbooks by background are in [career transitions](../11-tracks/career-transitions.md).
@@ -307,7 +295,7 @@ Verdict:          [use | use with caveat | discard]
 | "There are 900+ Cognitive Architect jobs." | Raw counts of 339–1,000 come from fuzzy matching; the only exact match was a legacy IBM posting [B · T0-01.F6]. |
 | "AI Engineer has split into Agent Architect and Context Engineer." | Exact-title Agent Architect has about 2 postings and Context Engineer roughly 10–25 (an estimate). The split shows up as skills: agentic AI is named in 59.3% of AI Engineer postings [B/C · T0-01.F4, F5, F7]. |
 | "Prompt engineering is a hot job." | Prompt Engineer is a legacy title: 72 of 20,662 LinkedIn AI postings (0.35%) in a 2025 study [B · T0-03.F2]. Prompting is a co-requirement in 31.1% of AI Engineer postings [B · T0-01.F4]. |
-| "AI engineers in India earn ₹50L–₹1Cr." | That is roughly P56 to just above P90 of the Levels.fyi Bengaluru ML Engineer sample (median ₹44.5L, n=96); broad-market sources centre on ₹10–15L [B/C · T0-02.F3]. |
+| "AI engineers in India earn ₹50L–₹1Cr." | That range runs from just above the median to just above the P90 of the Levels.fyi Bengaluru ML Engineer sample, an MNC- and product-heavy population; broad-market sources centre far lower [B/C · T0-02.F3]. The bands are in [pay benchmarks](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer). |
 | "Infrastructure engineers earn far more than application engineers." | Median posted base is nearly the same across AI Engineer, infrastructure/platform and ML Engineer families; pay concentrates by employer tier and level [B · T0-03.F1]. |
 | "78% of enterprise AI teams run MCP in production." | The figure has no traceable primary source, and T0-16 rejects it [T0-16.F5]. In Q3 2026, 0.068% of the postings API Evangelist sampled named "Model Context Protocol" [C · T0-16.F9]. |
 
@@ -355,24 +343,24 @@ Next recount:           [date]
 
 ## Evidence and limits
 
-- **What is measured:** live posting counts and JD shares (JobsPipe, Fast AI Jobs; B), the Indeed AI tracker (A), Levels.fyi percentiles (B), EU legal dates (A; the Omnibus publication dates are B), and protocol and credential statuses (mostly A).
+- **What is measured:** live posting counts and JD shares (JobsPipe, Fast AI Jobs; B), the Indeed AI tracker (A), one posted-base cut from the S09 corpus (B), EU legal dates (A; the Omnibus publication dates are B), and protocol and credential statuses (mostly A).
 - **What is weaker:** Axial's volume and seniority figures (C), governance volumes (C), GCC scale and supply gaps (C), MCP hiring indexes (C), modelled transition times (D), and the decision rules, which are judgement built on the cited evidence.
 - **Snapshots, not trends.** Most figures are single snapshots. The only like-for-like growth reading is Fast AI Jobs from early August to 19–20 October 2026 [B · T0-01.F3]. Skill shares were counted on 2026-09-10 and the S09 pay corpus on 2026-08-05.
 - **Postings are not hires.** Counts include duplicates, ghost postings and mass posters, and family counts include non-GenAI roles [T0-01 objections 2–3].
 - **Corpus-relative.** None of the five platforms named in the research brief could be queried directly [T0-01 D1], and a fixed quorum of 50 ignores corpus size [T0-01 objection 7].
 - **India gaps.** India-specific boards are unresearched ([FAD](../../research/FAD.md) OQ2); Indeed's tracker excludes India; JobsPipe's two India ratios disagree (0.23× vs 0.49×) [T0-01 L69]; GCC title counts are missing; most India inputs are Grade C.
 - **US-centric.** The seniority, junior-market and search-time evidence is mostly US data [T0-06 L39].
-- **Errata applied** ([ERRATA](../../research/ERRATA.md)): only three families are established, and the "~700 Applied Scientist postings" figure has no primary source (U1, U2). The 11.1–19.2% engine figure is a share of companies, not postings (U12, U15), so this page uses posting shares (2.0–3.9%). The India tier bands are unmeasured (U14), so this page uses Levels.fyi anchors.
+- **Errata applied** ([ERRATA](../../research/ERRATA.md)): only three families are established, and the "~700 Applied Scientist postings" figure has no primary source (U1, U2). The 11.1–19.2% engine figure is a share of companies, not postings (U12, U15), so this page uses posting shares (2.0–3.9%). The India tier bands are unmeasured (U14), so [pay benchmarks](../09-compensation/pay-benchmarks.md#the-tier-band-problem) uses Levels.fyi anchors instead.
 - **What would change this page:** a watchlist or quarantined title passing all seven graduation tests at a recount; direct LinkedIn, Indeed or Naukri counts; a measured pay premium for evaluation skills; a further change to EU AI Act dates.
 
-**Re-check dates.** The front-matter `review_by` (2026-11-03) is 90 days from the S09 pay snapshot (2026-08-05). That date fell before the 2026-11-06 verification, so the pay figures, including the Q3 2025 premium by level, are due for a refresh. Each class is refreshed on its own page:
+**Re-check dates.** The front-matter `review_by` (2026-11-19) is 31 days from the earliest live posting count on this page (JobsPipe corpus and Fast AI Jobs, 19 October 2026; EGP-1.0 class V1). Pay figures live in [pay benchmarks](../09-compensation/pay-benchmarks.md); the one posted-base cut kept here is counted from T0-03's reading of the S09 corpus (2026-10-24), not from the snapshot date (2026-08-05). Each class is refreshed on its own page:
 
 | Facts on this page | Dated | Re-check by | Where the refresh lives |
 |---|---|---|---|
-| Live posting counts | 2026-10-19 to 2026-10-21 | 31 days (EGP-1.0 class V1): 2026-11-19 to 2026-11-21; T0-01 recounts on 2026-12-01 and 2027-01-15 | [Role catalog](../02-roles/role-catalog.md) |
-| Skill, seniority and India shares (JobsPipe) | 2026-09-10 to 2026-10-11 | 90 days: 2026-12-09 to 2027-01-09, or at the 2026-12-01 recount | [Role skill inventories](../03-skills-and-tech/role-skill-inventories.md) |
-| Pay figures | S09 corpus 2026-08-05; Levels.fyi Q3 2025 (AI premium by level) and 2026-10-12 to 2026-10-21 | 90 days: passed for S09 (2026-11-03) and the Q3 2025 premium; 2027-01-10 for the 2026 Levels.fyi pages | [Pay benchmarks](../09-compensation/pay-benchmarks.md) |
-| Regulatory dates (EU, India, US) | Retrieved 2026-10-21 to 2026-10-23 | 31 days: 2026-11-23 | [Governance careers](../11-tracks/governance-careers.md) |
+| Live posting counts; the Indeed AI tracker | Counts 2026-10-19 to 2026-10-21; tracker data to 2026-09-30, read by T0-01 on 2026-10-21 | 31 days (EGP-1.0 class V1): 2026-11-19 to 2026-11-21; T0-01 recounts on 2026-12-01 and 2027-01-15 | [Role catalog](../02-roles/role-catalog.md) |
+| Skill, seniority, India and remote shares (JobsPipe) | 2026-09-10 to 2026-11-02 | 90 days: 2026-12-09 to 2027-01-31, or at the 2026-12-01 recount | [Role skill inventories](../03-skills-and-tech/role-skill-inventories.md) |
+| One posted-base cut (S09 mid-level, T0-03 L225) | Snapshot 2026-08-05; read by T0-03 on 2026-10-24 | 90 days from the reading: 2027-01-22. Every other pay figure is in pay benchmarks | [Pay benchmarks](../09-compensation/pay-benchmarks.md) |
+| Regulatory dates (EU, India, US) | Retrieved 2026-10-21 to 2026-10-23 | 31 days: 2026-11-21 to 2026-11-23 | [Governance careers](../11-tracks/governance-careers.md) |
 | Protocol, tool and credential statuses | 2026-10-21 to 2026-10-24 | 90 days: 2027-01-19 to 2027-01-21 | [Agentic protocols](../03-skills-and-tech/agentic-protocols.md); [credential ROI](../04-certifications/credential-roi.md) |
 
 **Sessions:** [T0-01](../../research/sessions/T0-01-genai-role-taxonomy-market-volume.md) role volumes · [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md) pay · [T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) skills, tools and posted pay · [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) funnel and channels · [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md) demand, junior market and transitions · [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md) GCC execution and governance gates · [T0-11](../../research/sessions/T0-11-certification-cloud-credential-roi.md) credentials · [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md) proof of work · [T0-15](../../research/sessions/T0-15-regulatory-ai-governance-career-families.md) regulation and governance · [T0-16](../../research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md) agent protocols · [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) pay progression. All stage findings: [findings registry, stage 01](../../research/findings.md#stage-01).

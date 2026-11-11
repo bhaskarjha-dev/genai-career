@@ -1544,9 +1544,9 @@
     },
     {
       "id": "R5",
-      "title": "Résumé: the résumé model, screening facts and the résumé generator's inputs",
+      "title": "Résumé: the résumé model, screening facts and the inputs for personal résumé tools",
       "needs": ["T0-23"],
-      "outputs": "Revised résumé strategy and ATS mechanics; the section-order skeletons and regional table; inputs for the résumé generator (ROADMAP P0-1), with per-role evidence-line patterns from the role dossiers",
+      "outputs": "Revised résumé strategy and ATS mechanics; the section-order skeletons and regional table; inputs for personal résumé tools (D-022), with per-role evidence-line patterns from the role dossiers",
       "status": "pending"
     },
     {

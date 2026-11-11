@@ -69,7 +69,7 @@ Much of the guidance was drafted by agents from the sessions plus web lookups. T
 | Element | Sessions | Owner pages and data it changes (D-019) | Reduce step |
 |---|---|---|---|
 | **Networking:** LinkedIn, GitHub and portfolio sites, X and frontier communities, fellowships, open source as a route, referrals and cold outreach, and the yield per hour of each channel | T0-19 to T0-22 | [online presence](../../career/07-networking/online-presence.md), [referrals and outreach](../../career/07-networking/referrals-and-outreach.md), [communities guide](../../career/07-networking/communities-guide.md), [proof-of-work standards](../../career/05-portfolio/proof-of-work-standards.md), `data/tools.json` | R4 |
-| **Résumé:** format, order, length, content, regional norms, AI screening | T0-23, plus each role dossier's résumé section | [résumé strategy](../../career/06-job-search/resume-strategy.md), [ATS mechanics](../../career/06-job-search/ats-mechanics.md); inputs for the résumé generator (ROADMAP P0-1) | R5 |
+| **Résumé:** format, order, length, content, regional norms, AI screening | T0-23, plus each role dossier's résumé section | [résumé strategy](../../career/06-job-search/resume-strategy.md), [ATS mechanics](../../career/06-job-search/ats-mechanics.md); the inputs that personal résumé tools use (D-022) | R5 |
 | **Job search:** global and regional boards (India measured), ghost jobs, pay transparency, scams, tools, agents, open source and MCP servers, target employers, sponsor registers, data corpora | T0-24 to T0-27 | [channels and boards](../../career/06-job-search/channels-and-boards.md), [application operating system](../../career/06-job-search/application-operating-system.md), [employer landscape](../../career/01-landscape/employer-landscape.md), `data/tools.json` | R6 |
 | **Certifications:** every prominent GenAI credential, compared and ordered | T0-28 to T0-34 | Credential data, [credentials by role](../../career/04-certifications/credentials-by-role.md), a generated credential catalogue; [credential ROI](../../career/04-certifications/credential-roi.md) keeps the decision rule | R1 |
 | **Countries and cities:** a ranking with lenses; visa and work-permit routes; remote cross-border work | T0-35 to T0-43 | Country data and a generated country ranking; [visa and relocation](../../career/11-tracks/visa-and-relocation.md); [India remote playbook](../../career/11-tracks/india-remote-playbook.md); [India remote tax](../../career/09-compensation/india-remote-tax.md) | R2 |
@@ -165,7 +165,7 @@ Generated from [catalogue.json](catalogue.json) by `scripts/research_pipeline.py
 | R2 | Geography: country and city data, a computed ranking with lenses, and the visa and remote pages | 0 of 11 | pending |
 | R3 | Roles: dossiers to role scores, titles, skill tiers and hubs | 0 of 19 | pending |
 | R4 | Networking and presence: the networking guides and tools | 0 of 4 | pending |
-| R5 | Résumé: the résumé model, screening facts and the résumé generator's inputs | 0 of 1 | pending |
+| R5 | Résumé: the résumé model, screening facts and the inputs for personal résumé tools | 0 of 1 | pending |
 | R6 | Job search: boards, tools and target employers | 0 of 4 | pending |
 | R7 | Pay: benchmarks, negotiation and the pay pillar | 0 of 2 | pending |
 | R8 | Interviewing: loops, AI-mediated hiring and practice prompts | 0 of 2 | pending |
@@ -244,7 +244,7 @@ A reduce step runs when the sessions it needs are saved (R3 can run role by role
 | R2 Geography | T0-35 to T0-45 | A country data file with a schema, a ranking script, a generated country-ranking page; the visa page's corridors and status table rewritten; the India remote playbook updated |
 | R3 Roles | T0-48 to T0-66 | Role scores and their India lens, title aliases, skill links with job-description evidence; ranks, the target order and the hubs regenerate |
 | R4 Networking | T0-19 to T0-22 | The networking guides and proof-of-work standards; tools; a dedicated LinkedIn guide if the evidence supports one |
-| R5 Résumé | T0-23 | The résumé model and screening facts; the skeletons and the regional table; the résumé generator's inputs |
+| R5 Résumé | T0-23 | The résumé model and screening facts; the skeletons and the regional table; the inputs that personal résumé tools use |
 | R6 Job search | T0-24 to T0-27 | Channels and boards (India measured), the application operating system, the employer landscape; tools; a target-employer list |
 | R7 Pay | T0-44, T0-45 | Pay benchmarks, the negotiation playbook, offer evaluation; the pay pillars |
 | R8 Interviewing | T0-46, T0-47 | Interview loops, coding rounds, system-design archetypes with model prices, ATS mechanics; practice prompts |

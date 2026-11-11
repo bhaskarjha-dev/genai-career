@@ -13,7 +13,7 @@
 |---|---|
 | **Covered** | Every stage, 00 to 11: start-here tools (targeting workbook, glossary, tool catalog), the market and employers, the role universe with a role map and one hub per role, skills with a radar and learning roadmaps, credentials, proof of work with project cards, job search, networking, interviewing with prep packs, compensation, onboarding and growth, and six track playbooks |
 | **Needs new research** | Measured tool tiers and skill momentum (job-description mining); India job platforms (FAD OQ2); research-backed routes for DevOps/SRE engineers, product managers and students (provisional [P] routes exist); live target-company lists; remote pay bands and Europe depth; burnout and sustainable pace. All of these, plus a full certification census, networking, résumés, countries and visas, interviews and a dossier for every role, are planned as the 53 sessions of [research pipeline 2](research/pipeline-2/README.md) |
-| **Needs building** | The résumé generator (P0-1); a static site, if chosen |
+| **Needs building** | A static site, if chosen. Résumé building is out of scope: résumés are built in a personal career repository from this repository's inputs (D-022) |
 
 **Quality caveat.** AI agents drafted the stage guides from the research sessions on 2026-11-05 and 2026-11-06. On 2026-11-06, 13 independent fact-checking agents checked 4,829 claims against the session lines they cite and made 234 fixes, and a script confirmed that the figures on each line appear near the line it cites. Before 1.0, CONTRIBUTING §7 requires an independent fact-check of the reference documents: the pages added on 2026-11-05 and 2026-11-06 had the agent fact-check above, and the v0.1.0 catalogs and skills references still need one (P1-5). No human domain expert has reviewed the guides yet; that is recommended before readers rely on the compensation, tax, visa and interviewing pages (P1-4). The work also logged errata U13–U26 against the Phase 0 records.
 
@@ -39,7 +39,7 @@ Stages follow D-001's 12-stage funnel, plus three stages D-001 lacks (marked +).
 | 5 | Portfolio: "What should I build to prove it?" | Proof-of-work standards, project archetype cards with minimal sets | — | [05-portfolio](career/05-portfolio/README.md) |
 | 5+ | Online presence: "What do recruiters find?" | Online-presence guide | — | [07-networking](career/07-networking/README.md) |
 | 6 | Discovery: "Where are the postings?" | Channels and boards, tool catalog | India platforms (stated as a gap in the guide) | [06-job-search](career/06-job-search/README.md) |
-| 7 | Application: "How do I apply well?" | Job-search strategy, résumé strategy and matrix, ATS mechanics | The résumé generator (P0-1) | [06-job-search](career/06-job-search/README.md) |
+| 7 | Application: "How do I apply well?" | Job-search strategy, résumé strategy and matrix, ATS mechanics | — (résumés are built in a personal career repository: D-022) | [06-job-search](career/06-job-search/README.md) |
 | 8 | Networking: "How do I get referred?" | Referrals and outreach (with the open-source route), communities guide | — | [07-networking](career/07-networking/README.md) |
 | 9 | Interview preparation: "How do I pass my track?" | System-design archetypes, behavioural calibration, coding rounds, prep packs | — | [08-interviewing](career/08-interviewing/README.md) |
 | 10 | Execution: "How do I handle the day and the follow-up?" | Interview loops (classification, day-of, follow-up, debrief) | — | [08-interviewing](career/08-interviewing/README.md) |
@@ -70,7 +70,6 @@ Ordered by impact on hiring odds, then by dependency:
 
 | Priority | Deliverable | Why | Depends on |
 |---|---|---|---|
-| **P0-1** | **Résumé generator:** build the universal, family and role résumés from one tagged personal inventory kept in `personal/` (git-ignored), following the layers in the [résumé strategy](career/06-job-search/resume-strategy.md#the-five-layers-and-their-jobs). Include a section-order skeleton for a one- to two-page résumé, and a per-role bank of evidence lines keyed to each role's Must and Important skills, with the X-Y-Z pattern as an optional [P] form ([ATS mechanics](career/06-job-search/ats-mechanics.md)) | Makes a few dozen résumés maintainable | Résumé matrix and role inventories (exist) |
 | **P0-2** | **Run research pipeline 2, wave 1:** 18 sessions (networking, the résumé, job search, the certification census, the country scan), prompts from `scripts/research_pipeline.py --prompt <id>`; then waves 2 and 3 ([order](research/pipeline-2/README.md#waves-and-the-recommended-order)) | The largest gaps by effect on a job search, and the catalogues the owner asked for | — (the owner runs them) |
 | **P1-1** | **Job-description mining:** 30 or more dated postings per role from public ATS boards; promote measured tools from [S] or [P] to [JD]; add a "surging" ring to the skills radar from dated series | Tool tiers outside a dozen measured titles rest on session mentions and practice curation | The role dossiers T0-48 to T0-66 (samples of 15–30 postings per role: aliases, wording and pay bands) and T0-69 (dated series); P1-7 for measured shares |
 | **P1-2** | **India job platforms** (Naukri, Instahyre and others; FAD OQ2) | The channels guide and the India playbook state the gap | Session T0-25 (and T0-45 for India pay); the owner's logged-in counts (INS-5) |
@@ -115,13 +114,13 @@ Ordered by impact on hiring odds, then by dependency:
 
 ## 6. Open decisions
 
-1. **Résumé generator (P0-1):** build it now, with the personal inventory under `personal/` (git-ignored)?
+1. **Résumé generator (P0-1): closed on 2026-11-10 by D-022.** Résumés are built in a personal career repository (for example [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template)) from this repository's inputs, so P0-1 is withdrawn.
 2. **Research pipeline 2 order:** the pipeline recommends wave 1 first (networking, the résumé, job search, the certification census and the country scan) and names a ten-session minimum ([waves](research/pipeline-2/README.md#waves-and-the-recommended-order)). Confirm or reorder.
 3. **Static site:** stay GitHub-native Markdown (the current choice), or publish with MkDocs Material (T1-01 KF9)? The front matter and folder indexes already support either.
-4. **Generic or personal:** keep the system generic for anyone, or also build a personal instance from one person's background, targets and constraints? `scripts/gap_analysis.py` is the first personal tool.
+4. **Generic or personal: closed on 2026-11-10 by D-022.** The repository stays generic; personal records live in a personal career repository, and tools such as `scripts/gap_analysis.py` read personal files from there without writing personal data here.
 5. **Claims registry:** keep page-level `review_by` dates (D-017, D-020), or add per-claim IDs with their own expiry? D-020's trigger: agents need claim-level expiry, or the weekly reminder lists more than 25 pages due at once.
 6. **Upstream errata:** apply the [ERRATA.md](research/ERRATA.md) corrections inside FAD and DECISIONS, or keep those records as written (the current choice) with status notes?
-7. **Confirm D-019, D-020 and D-021** (one owner per fact; generated review dates and the weekly reminder; research pipeline 2): appended on 2026-11-07 and 2026-11-08 as accepted, not yet reviewed by the owner (`human_reviewed: false`).
+7. **Confirm D-019, D-020, D-021 and D-022** (one owner per fact; generated review dates and the weekly reminder; research pipeline 2; the generic scope): appended from 2026-11-07 to 2026-11-10 as accepted, not yet reviewed by the owner (`human_reviewed: false`).
 8. **A licence for `scripts/`:** CC BY-SA 4.0 covers the whole repository, but Creative Commons licences are not designed for code. The usual choice is a code licence (MIT or Apache-2.0) for `scripts/` alongside CC BY-SA 4.0 for the content; the owner decides.
 9. **Data shapes for the research pipeline 2 rankings** (decide at each reduce step, with a decision record): credentials in their own data file or in the skills ontology (R1); where the country ranking page lives, stage 01 or stage 11 (R2); the target-employer list as a data file or a page (R6).
 

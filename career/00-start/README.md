@@ -20,7 +20,7 @@ These pages are not tied to one lifecycle stage. Use them alongside [Start Here]
 
 | Document | What it gives you |
 |---|---|
-| [targeting-workbook.md](targeting-workbook.md) | A fill-in workbook from "where do I start?" to a ranked target list (primary, adjacent and stretch) and a 90-day plan: self-assessment, constraints, shortlist scoring, gates |
+| [targeting-workbook.md](targeting-workbook.md) | A step-by-step workbook from "where do I start?" to a ranked target list (primary, adjacent and stretch) and a 90-day plan, recorded in your own career repository: self-assessment, constraints, shortlist scoring, gates |
 | [glossary.md](glossary.md) | Every term and acronym used in the repository, with a plain definition and where it is used |
 | [tool-catalog.md](tool-catalog.md) | External career tools and platforms by stage, each with a verdict (use, use with care, avoid, watch), its evidence grade and the date it was checked; generated from [data/tools.json](../../data/tools.json) |
 
@@ -31,7 +31,7 @@ These pages are not tied to one lifecycle stage. Use them alongside [Start Here]
 - across all your targets, the skills to close first, weighted by tier and by how many targets need them;
 - the [project archetypes](../05-portfolio/project-archetypes.md) that would evidence the most of your gaps.
 
-The scale is T0-06's: 0 none, 1 tutorial-level, 2 built and shipped something small with feedback, 3 owns it in production. The target level per tier (Must 3, or 2 at entry level; Important 2; Should 1) is judgement [D, anchored on T0-06]. The script prints to standard output only and writes nothing to the repository. Your ratings are personal data: keep them outside the repository or in its `personal/` folder, which git ignores.
+The scale is T0-06's: 0 none, 1 tutorial-level, 2 built and shipped something small with feedback, 3 owns it in production. The target level per tier (Must 3, or 2 at entry level; Important 2; Should 1) is judgement [D, anchored on T0-06]. The script prints to standard output only and writes nothing to the repository. Your ratings are personal data: keep them in your own career repository (decision D-022), or in this repository's `personal/` folder, which git ignores.
 
 ```bash
 python3 -B scripts/gap_analysis.py --template ai-engineer applied-ai-engineer > personal/me.json
@@ -44,9 +44,7 @@ Role IDs are the role slugs that name the hub files, such as `ai-engineer` (see 
 
 ## Planned
 
-| Document | Scope | Built from |
-|---|---|---|
-| Résumé generator | Builds role-variant résumés from a personal, git-ignored inventory (roadmap P0-1) | `data/skills_ontology.json`, résumé strategy |
+Nothing is planned for this stage. Your own records, from these ratings to your résumés, live in your own career repository, not here (decision D-022); [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template) is one free implementation.
 
 ## Evidence to read now
 

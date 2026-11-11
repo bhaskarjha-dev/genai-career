@@ -55,7 +55,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
   - delivered the role catalogs, rankings, target order, skills ontology and role inventories, and the job-search and resume strategy;
   - put the architecture-v2 foundation in place: the stage spine, front matter, data layer, AI indexes, findings registry and CI;
   - added the role map and one hub per role, and the core guides for every lifecycle stage, from the market overview to growth after the first 90 days, with track playbooks.
-- **What remains:** research the corpus does not yet hold, planned as the 53 sessions of [research pipeline 2](research/pipeline-2/README.md) (networking, résumés, job search, certifications, countries and visas, pay, interviews and every role), the résumé generator, an independent fact-check of the v0.1.0 reference documents and a human expert review of the guides, and the known issues listed in [ROADMAP.md](ROADMAP.md) §7.
+- **What remains:** research the corpus does not yet hold, planned as the 53 sessions of [research pipeline 2](research/pipeline-2/README.md) (networking, résumés, job search, certifications, countries and visas, pay, interviews and every role), an independent fact-check of the v0.1.0 reference documents and a human expert review of the guides, and the known issues listed in [ROADMAP.md](ROADMAP.md) §7.
 
 ## Evidence standard
 

@@ -12,14 +12,14 @@ sources: [T0-04, T0-05, T0-10]
 # Stage 06: Job search and applications
 
 > **The question this stage answers:** How do I find postings, apply well and get past the screens?
-> **Status:** Covered: the strategy documents and the operational guides exist. The résumé generator is planned. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: the strategy documents and the operational guides exist. Résumés are built in your own career repository from this stage's model, blueprints and screening facts (decision D-022). Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
 | Document | What it gives you |
 |---|---|
 | [job-search-strategy.md](job-search-strategy.md) | First-principles strategy: the four hiring levers, the constraints that bind first (with the computed proof-of-work sets) and sequencing in expanding rings |
-| [resume-strategy.md](resume-strategy.md) | The résumé guide: one master inventory, a universal résumé, two or three variants from the 15-variant catalogue, the computed decisions on which roles need their own résumé, tailoring steps and the inventory schema |
+| [resume-strategy.md](resume-strategy.md) | The résumé guide: one master inventory, a universal résumé, two or three variants from the 15-variant catalogue, the computed decisions on which roles need their own résumé, tailoring steps and the inventory tagging rule |
 | [resume-skills-matrix.md](resume-skills-matrix.md) | The concise skills section per role (Must / Important / Should / Optional) and a blueprint per résumé variant |
 | [ats-mechanics.md](ats-mechanics.md) | How applicant tracking and AI screening work, the myths to ignore, and the rules for a résumé and application that pass: parse-safe files, knockout answers, one evidence line per requirement |
 | [channels-and-boards.md](channels-and-boards.md) | Where GenAI postings are and which channels convert, with the measured multipliers, scam and ghost-job checks, and what is not yet researched (India platforms) |
@@ -27,9 +27,7 @@ sources: [T0-04, T0-05, T0-10]
 
 ## Planned
 
-| Item | Scope | Depends on |
-|---|---|---|
-| Résumé generator | Builds the universal, family and role résumés from one tagged personal inventory (roadmap P0-1) | `data/skills_ontology.json`, résumé strategy |
+Nothing is planned for this stage. The résumé generator once planned here (roadmap P0-1) was withdrawn on 2026-11-10 by decision D-022: résumés are built in your own career repository, for example with [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template)'s `tools/resume`, from the [résumé strategy](resume-strategy.md), the [résumé skills matrix](resume-skills-matrix.md) and [ATS mechanics](ats-mechanics.md).
 
 **Moved or renamed:**
 

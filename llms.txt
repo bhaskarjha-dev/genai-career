@@ -20,7 +20,7 @@ How to use this repository:
 
 - [Stage 00: Start-here tools](career/00-start/README.md): Index of stage 00 (start-here tools): the workbook, glossary and tool catalog that help at every stage of a GenAI career search, plus a personal script that turns your skill ratings into a gap report.
 - [Glossary: Terms, Codes and Acronyms Used in This Repository](career/00-start/glossary.md): Plain one-line definitions of the evidence codes, role and skill terms, and the hiring, pay, India, visa and governance vocabulary used across the repository, each linked to a page that uses it, so a newcomer or an AI agent can read any page.
-- [Targeting Workbook: From Point Zero to a Ranked Target List and a 90-Day Plan](career/00-start/targeting-workbook.md): A fill-in workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors, score a shortlist, place it in primary, adjacent and stretch rings, and write a 90-day plan judged by gate G1.
+- [Targeting Workbook: From Point Zero to a Ranked Target List and a 90-Day Plan](career/00-start/targeting-workbook.md): A step-by-step workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors, score a shortlist, place it in primary, adjacent and stretch rings, and write a 90-day plan judged by gate G1, recording your answers in your own career repository.
 - [Career Tool Catalog: What to Use, Use With Care, Avoid or Watch](career/00-start/tool-catalog.md): 132 external career tools and platforms across the lifecycle, each with a verdict (use, use with care, avoid, watch), the evidence behind it, its source and the date it was checked.
 
 ## Stage 01: Landscape
@@ -64,7 +64,7 @@ How to use this repository:
 ## Stage 06: Job search
 
 - [Stage 06: Job search and applications](career/06-job-search/README.md): Index of stage 06 (job search and applications): How do I find postings, apply well and get past the screens?
-- [Application Operating System: Tracker, Weekly Rhythm, Funnel Metrics and When to Change Course](career/06-job-search/application-operating-system.md): A weekly operating system for running a job search: a fill-in tracker, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours.
+- [Application Operating System: Tracker, Weekly Rhythm, Funnel Metrics and When to Change Course](career/06-job-search/application-operating-system.md): A weekly operating system for running a job search: the fields your tracker needs, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours.
 - [ATS Mechanics: How Applicant Tracking and AI Screening Work](career/06-job-search/ats-mechanics.md): How applicant tracking systems and AI screening layers handle an application, which myths to ignore, and the exact rules for a portal résumé and knockout answers that parse cleanly and pass.
 - [Channels and Boards: Where GenAI Postings Are and Which Channels Convert](career/06-job-search/channels-and-boards.md): Where GenAI postings are listed and which channels turn applications into offers: referrals, sourcing, cold inbound, ATS-hosted boards, aggregators, specialist boards and India platforms, with alert setup and a scam and ghost-job check.
 - [GenAI Job-Search Strategy: Hiring Levers, Binding Constraints and Sequencing](career/06-job-search/job-search-strategy.md): First-principles job-search strategy: the four levers that turn an application into an offer, the constraints that bind before the number of résumés does (proof of work, maintenance, interview tracks, one application per company), and how to sequence targets in expanding rings.
@@ -117,7 +117,7 @@ How to use this repository:
 - [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.
 - [Research Pipeline 2: Targeted Sessions for Every High-Impact Element](research/pipeline-2/README.md): The second research pipeline: 53 targeted sessions on networking, résumés, job search, certifications, countries and visas, remote work, pay, interviews and every role, each designed backwards from the data and pages it feeds, with a shared protocol, verification, integration and a generated tracker.
 - [research/sessions/](research/sessions/): The 22 research sessions (dated evidence reports with source ledgers).
-- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-021).
+- [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-022).
 
 ## Research sessions
 

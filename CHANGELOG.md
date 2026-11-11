@@ -11,6 +11,7 @@ Research pipeline 2 (RP2): the plan for targeted research on every high-impact e
 
 ### Added
 - **Decision D-021** (research pipeline 2: outcome-first targeted sessions), appended as accepted, not yet human-reviewed.
+- **Decision D-022** (generic scope: personal records live in a personal career repository, for example pramedha-template), appended as accepted, not yet human-reviewed.
 - **`research/pipeline-2/`:**
   - `README.md`: why a second pipeline (with the evidence gaps measured on the data), design principles, what deep research can and cannot do, the outcome map from each element to its owner pages, a generated tracker, waves and a ten-session minimum, how to run a session, quality gates, the reduce steps with the proposed methods for the credential value order and the country ranking, five measurement instruments, the refresh cadence and the limits.
   - `PROTOCOL.md`: the output and evidence protocol appended to every prompt (EGP-1.0 grades and freshness classes for an agent that cannot open the repository, conflict-of-interest rules, ethics, the report format, and a JSON Lines data appendix with 17 record types that use the repository's role and skill IDs).
@@ -24,6 +25,16 @@ Research pipeline 2 (RP2): the plan for targeted research on every high-impact e
 - The validator lints `research/pipeline-2/` (links, tables, relative-time words) and checks its README's front matter; the manifest and `llms.txt` index it.
 - ROADMAP: phase 5 is designed; P0-2 (run wave 1), P1-6 (integrate by reduce step), P1-7 (the job-description collector) and scripts for official registers, net pay and logged-in counts added; P1-1 to P1-3 and the target-company and learning-resource items mapped to sessions; open decisions on the wave order and on the data shapes for the RP2 rankings; D-021 added to the decisions awaiting confirmation; the session-ID namespace limit recorded.
 - research/README, AGENTS, CONTRIBUTING, README and scripts/README point to the pipeline; new standalone sessions take IDs after the catalogue's reserved range (T0-72 onward).
+- **Generic scope (D-022):** pages that duplicated personal records keep their GenAI-specific content and point to the reader's own career repository:
+  - the application operating system's tracker becomes a list of the fields the metrics need (four tabs and CSV headers removed);
+  - the targeting workbook's fill-in tables become "record" instructions, with a column naming the pramedha-template file for each step and a mapping of its scores to pramedha-template's P1–P8 role table;
+  - the offer comparison worksheet keeps its rows and how to fill them, without per-offer columns;
+  - the behavioural story-bank matrix keeps the core-story set, without fill-in columns;
+  - the résumé strategy's master-inventory schema becomes the skill-ID tagging rule, with one example bullet;
+  - the job-search strategy, the interview loops, the gap-analysis docs (stage 00 index, `scripts/README.md`, the script's docstring) and AGENTS.md (placement rule) follow suit.
+
+### Removed
+- ROADMAP P0-1 (the résumé generator), withdrawn by D-022; open decisions 1 (build P0-1) and 4 (generic or personal) closed by D-022. The stage 00 and 06 indexes, the README and the research pipeline 2 résumé step (R5, the résumé brief and the catalogue) no longer refer to it.
 
 ## [0.3.0] - 2026-11-08
 

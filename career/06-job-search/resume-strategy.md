@@ -233,25 +233,16 @@ About 15 minutes per application.
 
 ### Master inventory schema [P]
 
-Tag every bullet with skill IDs from [data/skills_ontology.json](../../data/skills_ontology.json) (look them up in the [skills vocabulary](../03-skills-and-tech/skills-vocabulary.md)) and with variant codes. A variant then becomes a filter.
+Keep the master inventory in your own career repository, not in this one (decision D-022). [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template) implements one: verified facts in its identity files, a bullet pool with phrasing variants in `tools/resume/master.yaml`, and variant files that select bullets and render the PDF. Whatever you use, add the one GenAI-specific rule: tag every bullet with skill IDs from [data/skills_ontology.json](../../data/skills_ontology.json) (look them up in the [skills vocabulary](../03-skills-and-tech/skills-vocabulary.md)) and with variant codes, so that a variant becomes a filter.
 
 ```yaml
-- id: exp-acme-2025-rag
-  employer: Acme Corp
-  title: Senior Software Engineer        # official title, never edited
-  dates: Mar 2023 – Present
-  bullets:
-    - short: "Built a RAG assistant over 40K support docs; recall@5 0.62 → 0.81 with hybrid search and reranking"
-      skills: [rag, retrieval_quality, evals, python]
-      variants: [A1, A2]
-      evidence: "V1: repo with metrics table"   # verifiability ladder level (T0-13)
-    - short: "Cut LLM cost per ticket 38% with prompt caching and model routing; p95 latency held under 2.5 s"
-      skills: [cost_latency, observability, llm_apis]
-      variants: [A1, D1]
-      evidence: "V3: 30-day cost dashboard"
+- short: "Built a RAG assistant over 40K support docs; recall@5 0.62 → 0.81 with hybrid search and reranking"
+  skills: [rag, retrieval_quality, evals, python]   # skill IDs from the ontology
+  variants: [A1, A2]                                # résumé variant codes
+  evidence: "V1: repo with metrics table"           # verifiability ladder level (T0-13)
 ```
 
-Keep each metric with its source (dashboard, repo or report), because interviewers probe them. The example numbers above are placeholders.
+Keep each metric with its source (dashboard, repo or report), because interviewers probe them. The example numbers are placeholders.
 
 ### Résumé set plan [P]
 

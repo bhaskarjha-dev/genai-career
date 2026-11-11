@@ -154,18 +154,18 @@ Follow-ups ready: [what I would do differently] / [how I knew it worked] / [what
 
 ### Story-bank matrix [P]
 
-An example layout. ● marks the competency a story proves best; ○ marks a secondary fit.
+Keep your stories in your own career repository, not in this one (decision D-022); in [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template), the stories go in `positioning/star-stories.md` and the story-to-question matrix in `positioning/interview-prep/behavioral.md`. The GenAI-specific part is which stories to have. ● marks the competency a story proves best; ○ marks a secondary fit.
 
-| Story | Working title | C1 | C2 | C3 | C4 | Questions | Metric delta | Monitoring step |
-|---|---|---|---|---|---|---|---|---|
-| S1 | [A production failure you detected and owned] | ○ | | ● | | B1, B7, B10 | [ ] | [ ] |
-| S2 | [A simple heuristic you chose over an LLM] | ● | ○ | | | B3, B7 | [ ] | [ ] |
-| S3 | [A model risk you explained to an executive or PM] | | ● | | ○ | B2, B6, B8 | [ ] | [ ] |
-| S4 | [A bias, privacy or safety hazard you caught] | | | ○ | ● | B5, B6, B10 | [ ] | [ ] |
-| S5 | [An eval that was harder than the feature] | ● | | | | B11, B12 | [ ] | [ ] |
-| S6 | [A data gap or model change you adapted to] | ● | | | | B4, B9 | [ ] | [ ] |
+| Story | Working title | C1 | C2 | C3 | C4 | Questions |
+|---|---|---|---|---|---|---|
+| S1 | A production failure you detected and owned | ○ | | ● | | B1, B7, B10 |
+| S2 | A simple heuristic you chose over an LLM | ● | ○ | | | B3, B7 |
+| S3 | A model risk you explained to an executive or PM | | ● | | ○ | B2, B6, B8 |
+| S4 | A bias, privacy or safety hazard you caught | | | ○ | ● | B5, B6, B10 |
+| S5 | An eval that was harder than the feature | ● | | | | B11, B12 |
+| S6 | A data gap or model change you adapted to | ● | | | | B4, B9 |
 
-Rules [P]: every competency column has a ● and an ○; every question from B1 to B12 appears in a row; S1–S4 are the four core stories that T1-03 asks for [T1-03 L117], and S5–S6 add C1 depth.
+Rules [P]: every competency column has a ● and an ○; every question from B1 to B12 appears in a row; S1–S4 are the four core stories that T1-03 asks for [T1-03 L117], and S5–S6 add C1 depth. For each story, record its metric delta and its monitoring step with the STAR-AI card fields.
 
 ### Weak and strong answers [P]
 
@@ -195,7 +195,7 @@ Illustrative pairs built from T1-03's anchors. Bracketed values are placeholders
 
 Run T1-03's five-step debrief straight after every round, with the template in [interview loops](interview-loops.md#debrief-within-30-minutes-of-each-round) [D · T1-03 L238–246]. No controlled study shows that it improves pass rates [C/D · T1-03.F12].
 
-For behavioural rounds, also note which competency each question probed, which story you used and which follow-up you struggled with, and rate yourself on C1–C4 against the 4/2/1 anchors [P]. Log every round in the Interviews tab of the [application operating system's tracker](../06-job-search/application-operating-system.md#the-tracker-fill-in-schema) [D · T1-03 L250–257].
+For behavioural rounds, also note which competency each question probed, which story you used and which follow-up you struggled with, and rate yourself on C1–C4 against the 4/2/1 anchors [P]. Log every round in your tracker's interview records; the [application operating system](../06-job-search/application-operating-system.md#the-tracker-fill-in-schema) lists the fields [D · T1-03 L250–257].
 
 ## Checklist
 

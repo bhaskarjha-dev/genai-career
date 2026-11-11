@@ -6,7 +6,7 @@ stage: 0
 status: published
 last_verified: 2026-11-06
 review_by: 2027-01-10
-summary: "A fill-in workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors, score a shortlist, place it in primary, adjacent and stretch rings, and write a 90-day plan judged by gate G1."
+summary: "A step-by-step workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors, score a shortlist, place it in primary, adjacent and stretch rings, and write a 90-day plan judged by gate G1, recording your answers in your own career repository."
 sources: [T0-06, T0-17, T0-02, T0-10, T0-01, T0-09, T0-13]
 roles: [all]
 geos: [global, us, india]
@@ -15,9 +15,9 @@ tags: [targeting, self-assessment, constraints, pay-floor, shortlist, expanding-
 
 # Targeting Workbook: From Point Zero to a Ranked Target List and a 90-Day Plan
 
-> A fill-in workbook that takes you from point zero to a ranked target list in three rings (primary, adjacent, stretch) and a 90-day plan judged by gate G1. You supply your own evidence; every market input is graded and one click from its source.
+> A step-by-step workbook that takes you from point zero to a ranked target list in three rings (primary, adjacent, stretch) and a 90-day plan judged by gate G1. You supply your own evidence and keep your answers in your own career repository; every market input is graded and one click from its source.
 
-**How to use it.** Copy the fill-in tables into your own notes and replace each bracketed placeholder, such as `[ ]`, with your answer. Steps 1–3 describe you, Steps 4–6 choose the roles, and Step 7 plans the work. At day 90, redo Steps 5–7 with what you have learned. Terms such as TC, P50, GCC and FDE are defined in the [glossary](glossary.md).
+**How to use it.** Work through the seven steps and record your answers in your own career repository, never in this one (decision D-022). The last column of [the seven steps](#the-seven-steps) names the file for each step in [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template), a free career-repository template; any private notes file also works. Steps 1–3 describe you, Steps 4–6 choose the roles, and Step 7 plans the work. At day 90, redo Steps 5–7 with what you have learned. Terms such as TC, P50, GCC and FDE are defined in the [glossary](glossary.md).
 
 ## The short answer
 
@@ -46,15 +46,15 @@ flowchart TD
 
 ## The seven steps
 
-| Step | You produce | Built from |
-|---|---|---|
-| 1 Starting point | Background, level and years; the persona column that applies | [T0-06 R2](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#r2-per-archetype-recommendation-and-modeled-time-to-first-offer) and its level mapping |
-| 2 Readiness | Twelve scores with evidence; three largest gaps; three fast tests | [T0-06 D9](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d9-skills-diagnostic-matrix-and-three-fast-tests); [role skill maps §1.1](../03-skills-and-tech/role-skill-maps.md#11-twelve-skill-readiness-rubric-t0-06-target-levels-for-an-ai-engineer-role); T0-13 verifiability ladder |
-| 3 Constraints | Hours tier, horizon, pay floor, location, work authorisation, risk | T0-06 KF-10, R1.4, R2; [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) KF3–KF4; [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md) |
-| 4 Long-list | 5–8 candidate roles with their hubs read | [GenAI target roles §5](../02-roles/genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses); [role map](../02-roles/role-map.md); role hubs |
-| 5 Shortlist score | Gate results and 0–9 points per role | [Role rankings A.2](../02-roles/role-rankings.md#a2-persona-access-scores-inputs-to-the-access-pillar-and-the-persona-lenses); GenAI target order; role inventories |
-| 6 Rings | Rings 1–3 and parked roles | [Job-search strategy: expanding rings](../06-job-search/job-search-strategy.md#recommended-sequencing-expanding-rings); [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md); T0-06 R1 |
-| 7 90-day plan | Weekly plan, hours log, G1 date, slip rules | [T0-06 R3](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#r3-what-to-do-in-the-next-14-days), [D2](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d2-weekly-hours-versus-pivot-duration-the-model), [D3](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d3-the-shared-milestone-spine-g1-g4) |
+| Step | You produce | Built from | Record it in (pramedha-template) |
+|---|---|---|---|
+| 1 Starting point | Background, level and years; the persona column that applies | [T0-06 R2](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#r2-per-archetype-recommendation-and-modeled-time-to-first-offer) and its level mapping | `identity/experience.yaml`; the current state in `VISION.md` |
+| 2 Readiness | Twelve scores with evidence; three largest gaps; three fast tests | [T0-06 D9](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d9-skills-diagnostic-matrix-and-three-fast-tests); [role skill maps §1.1](../03-skills-and-tech/role-skill-maps.md#11-twelve-skill-readiness-rubric-t0-06-target-levels-for-an-ai-engineer-role); T0-13 verifiability ladder | `identity/skills.yaml` (levels and evidence); the gaps in `strategy/study-plan.md` |
+| 3 Constraints | Hours tier, horizon, pay floor, location, work authorisation, risk | T0-06 KF-10, R1.4, R2; [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) KF3–KF4; [T0-02](../../research/sessions/T0-02-global-regional-compensation-benchmarks.md) | `VISION.md` (pay floor, horizon); `personal/preferences.yaml` (location, deal-breakers); `strategy/financial.md` (runway) |
+| 4 Long-list | 5–8 candidate roles with their hubs read | [GenAI target roles §5](../02-roles/genai-target-roles.md#5-best-targets-by-background-genai-persona-lenses); [role map](../02-roles/role-map.md); role hubs | `strategy/target-roles.md` (the role evaluation table) |
+| 5 Shortlist score | Gate results and 0–9 points per role | [Role rankings A.2](../02-roles/role-rankings.md#a2-persona-access-scores-inputs-to-the-access-pillar-and-the-persona-lenses); GenAI target order; role inventories | `strategy/target-roles.md` (the scores; mapping in Step 5) |
+| 6 Rings | Rings 1–3 and parked roles | [Job-search strategy: expanding rings](../06-job-search/job-search-strategy.md#recommended-sequencing-expanding-rings); [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md); T0-06 R1 | `strategy/target-roles.md` (tiers and the résumé-variant mapping) |
+| 7 90-day plan | Weekly plan, hours log, G1 date, slip rules | [T0-06 R3](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#r3-what-to-do-in-the-next-14-days), [D2](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d2-weekly-hours-versus-pivot-duration-the-model), [D3](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md#d3-the-shared-milestone-spine-g1-g4) | `strategy/study-plan.md`; the weekly hours in `records/learning-log.md` |
 
 ## How to do it
 
@@ -80,15 +80,9 @@ Source: T0-06 R2 [M].
 - **PhDs:** do not skip the skills stage. FAD said PhDs could skip it, but T2-01's own PhD playbook runs an 8-week skills block (ERRATA U18).
 - **No row fits** students, new graduates or people already in AI roles: T0-06 modelled pivots from these backgrounds only. Use the steps, skip the timeline model, and if you are early in your career, plan around the junior squeeze.
 
-| Item | Your answer |
-|---|---|
-| Closest background (row above) | [ ] |
-| Years of relevant experience | [ ] |
-| Current level (Junior, Mid, Senior, Staff) | [ ] |
-| Persona column you will read in Step 5 | [ ] |
-| Does your employer run an AI initiative you could join? | [yes / no / unknown] |
+**Record five answers:** your closest background (row above); years of relevant experience; current level (Junior, Mid, Senior or Staff); the persona column you will read in Step 5; and whether your employer runs an AI initiative you could join (yes, no or unknown).
 
-**Done when:** every row has an answer, and you know which persona column applies (or that none does).
+**Done when:** all five are recorded, and you know which persona column applies (or that none does).
 
 ### Step 2. Score your readiness on S1–S12
 
@@ -96,24 +90,26 @@ The rubric is T0-06's twelve-skill diagnostic, reproduced in the [role skill map
 
 Give each score an evidence entry on the [verifiability ladder](../05-portfolio/proof-of-work-standards.md#the-verifiability-ladder-and-the-level-model): V0 self-asserted, V1 reproducible, V2 externally attested, V3 operationally evidenced [T0-13]. Treat a 2 or 3 backed only by V0 as a claim to test, not a score [P].
 
-| # | Skill | Target (AI-engineer role) | You (0–3) | Evidence (link, V0–V3) | Gap |
-|---|---|:---:|:---:|---|:---:|
-| S1 | Production Python or TypeScript (typing, async, packaging, tests) | 3 | [ ] | [ ] | [ ] |
-| S2 | LLM API fluency (structured output, tool calling, streaming, token budgets) | 3 | [ ] | [ ] | [ ] |
-| S3 | Retrieval and context engineering | 2–3 | [ ] | [ ] | [ ] |
-| S4 | Evaluation design (golden sets, judge calibration, regression tests) | 3 | [ ] | [ ] | [ ] |
-| S5 | Error analysis and data literacy | 2–3 | [ ] | [ ] | [ ] |
-| S6 | Agents and tool-use reliability | 2 | [ ] | [ ] | [ ] |
-| S7 | Production ops (CI/CD, deploy, observability, cost, security) | 2–3 | [ ] | [ ] | [ ] |
-| S8 | System design for LLM applications | 2 | [ ] | [ ] | [ ] |
-| S9 | Frontend and streaming UX for AI | 1 (3 for frontend targets) | [ ] | [ ] | [ ] |
-| S10 | Model and inference literacy | 1–2 | [ ] | [ ] | [ ] |
-| S11 | Domain judgement and rubric writing | 2 | [ ] | [ ] | [ ] |
-| S12 | Product sense and stakeholder communication | 2 | [ ] | [ ] | [ ] |
+| # | Skill | Target (AI-engineer role) |
+|---|---|:---:|
+| S1 | Production Python or TypeScript (typing, async, packaging, tests) | 3 |
+| S2 | LLM API fluency (structured output, tool calling, streaming, token budgets) | 3 |
+| S3 | Retrieval and context engineering | 2–3 |
+| S4 | Evaluation design (golden sets, judge calibration, regression tests) | 3 |
+| S5 | Error analysis and data literacy | 2–3 |
+| S6 | Agents and tool-use reliability | 2 |
+| S7 | Production ops (CI/CD, deploy, observability, cost, security) | 2–3 |
+| S8 | System design for LLM applications | 2 |
+| S9 | Frontend and streaming UX for AI | 1 (3 for frontend targets) |
+| S10 | Model and inference literacy | 1–2 |
+| S11 | Domain judgement and rubric writing | 2 |
+| S12 | Product sense and stakeholder communication | 2 |
+
+Record your score (0–3), its evidence (a link and its V0–V3 level) and the gap for each skill.
 
 - Targets are T0-06's levels for an AI-engineer role [M · T0-06 D9]. Compute each gap against the low end of a range.
 - For any other role, use the role's own self-assessment: every [role inventory](../03-skills-and-tech/role-skill-inventories.md) has a table for its Must skills (target 3) and Important skills (target 2) on the same scale, for example [AI Engineer §7](../03-skills-and-tech/inventories/ai-engineer.md#7-self-assessment-must-and-important). Its targets are judgement [D]. Step 5 uses it.
-- **To rate yourself against several roles at once,** run [scripts/gap_analysis.py](../../scripts/gap_analysis.py). It prints a rating template from your target roles' tiered skills; once you have filled in your 0–3 ratings, it prints each role's coverage of its Must and Important skills, the gaps to close first across all your targets, and the project archetypes that would evidence the most of them. Its target levels are the same judgement [D]. Keep the rating file in the git-ignored `personal/` folder; usage is in the [Stage 00 index](README.md#personal-tool-skill-gap-analysis).
+- **To rate yourself against several roles at once,** run [scripts/gap_analysis.py](../../scripts/gap_analysis.py). It prints a rating template from your target roles' tiered skills; once you have filled in your 0–3 ratings, it prints each role's coverage of its Must and Important skills, the gaps to close first across all your targets, and the project archetypes that would evidence the most of them. Its target levels are the same judgement [D]. Keep the rating file in your own career repository, or in this repository's git-ignored `personal/` folder; usage is in the [Stage 00 index](README.md#personal-tool-skill-gap-analysis).
 
 **Calibrate against your background.** T0-06's hypotheses for the largest gaps [M · Grade D]:
 
@@ -189,13 +185,7 @@ Three rules [P]:
 - **US, by title:** Levels.fyi percentiles for ML Engineer and AI Engineer, pooled across levels ([bands by title and city](../09-compensation/pay-benchmarks.md#united-states-bands-by-title-and-city)). The gap between the two titles reflects title and employer mix, not a measured skill premium [B · T0-02 F1].
 - **India:** Greater Bengaluru percentiles for ML Engineer, AI Engineer and senior software engineers, and the best-paying employers' senior medians ([India by city, level and employer](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer)). India pay is two populations: Levels.fyi's self-selected samples are heavy in MNC, GCC and product firms, while broad-market sources centre far lower [B/C · T0-02 F3]. Know which population your target employers belong to. The corpus has no level-by-level India percentiles for AI titles (T0-02 L505).
 
-| Item | Your answer |
-|---|---|
-| Current TC and base | [ ] |
-| Floor TC you will accept, and why | [ ] |
-| Anchor you compare with (population, level, location, date) | [ ] |
-| Where the floor sits: below P50, P50–P75, P75–P90 or above P90 | [ ] |
-| Effect: rules out roles, filters employers, or none | [ ] |
+**Record:** your current TC and base; the floor TC you will accept, and why; the anchor you compare with (population, level, location, date); where the floor sits (below P50, P50–P75, P75–P90 or above P90); and its effect (it rules out roles, filters employers, or neither).
 
 **Reading rule** [P]: a floor above a role's P90 in your location fails that role, unless you can name employers who pay above it. A floor between the P75 and the P90 filters employers, not roles.
 
@@ -215,19 +205,18 @@ Three rules [P]:
 - Expert-contract evaluation work is at-will, project-based and credential-gated: a bridge, not a destination [C · T0-06 KF-7, D7].
 - "Nearly 70%" of India GCCs are stuck at AI pilots [A-/B · [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md) L77]. Ask whether a team's AI work is in production.
 
-| Constraint | Your value | Hard or soft | Roles it rules out or flags |
-|---|---|:---:|---|
-| Hours tier, and hours you will log each week | [ ] | [ ] | [ ] |
-| Horizon: months until you need an offer | [ ] | [ ] | [ ] |
-| Location: city, remote, hybrid, relocation | [ ] | [ ] | [ ] |
-| Work authorisation for each target location | [ ] | [ ] | [ ] |
-| Pay floor (from 3.2) | [ ] | [ ] | [ ] |
-| Runway: months of expenses without a salary | [ ] | [ ] | [ ] |
-| Share of pay you accept as illiquid stock | [ ] | [ ] | [ ] |
-| Travel and customer-facing work | [ ] | [ ] | [ ] |
-| At-will or contract work | [ ] | [ ] | [ ] |
+**Record each constraint with its value, whether it is hard or soft, and the roles it rules out or flags:**
+- hours tier, and the hours you will log each week;
+- horizon: months until you need an offer;
+- location: city, remote, hybrid or relocation;
+- work authorisation for each target location;
+- pay floor (from 3.2);
+- runway: months of expenses without a salary;
+- the share of pay you accept as illiquid stock;
+- travel and customer-facing work;
+- at-will or contract work.
 
-**Done when:** every row is filled, and each constraint is marked hard (it rules a role out) or soft (it lowers a role's ring).
+**Done when:** every constraint is recorded and marked hard (it rules a role out) or soft (it lowers a role's ring).
 
 ### Step 4. Build a long-list of 5–8 roles
 
@@ -239,14 +228,7 @@ Three rules [P]:
 
 Leadership and independent tracks are ranked separately and reached after years of experience; add them only if you already meet their entry conditions ([§8](../02-roles/genai-target-roles.md#8-leadership-and-independent-tracks-when-to-target-them)).
 
-| # | Role (hub) | Why it is on your list | Résumé variant | Interview track |
-|---|---|---|---|---|
-| 1 | [ ] | [ ] | [ ] | [ ] |
-| 2 | [ ] | [ ] | [ ] | [ ] |
-| 3 | [ ] | [ ] | [ ] | [ ] |
-| 4 | [ ] | [ ] | [ ] | [ ] |
-| 5 | [ ] | [ ] | [ ] | [ ] |
-| 6–8 | [ ] | [ ] | [ ] | [ ] |
+**Record 5–8 roles,** each with its hub, why it is on your list, its résumé variant and its interview track.
 
 **Done when:** you have 5–8 roles, each with its hub read and its résumé variant and interview track noted.
 
@@ -271,13 +253,18 @@ Gates first, then points. The scheme is practice-curated [P]: no session tests a
 - The rank cut-offs follow the GenAI tiers: ranks 1–2 are Tier 1, 3–8 Tiers 2–3 and 9–14 Tier 4 ([tier rules](../02-roles/genai-target-roles.md#14-tier-rules)).
 - **Tie-breakers:** fewer Flags; then your own interest in the work [D]; then the order of your persona lens.
 
-| Role | Gate result and reason | Access: score → points | Market: rank → points | Readiness: Must at 2+ → points | Total |
-|---|---|:---:|:---:|:---:|:---:|
-| [ ] | [Pass / Flag / Fail: why] | [ ] | [ ] | [ ] | [ ] |
-| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+**Record, for each role,** its gate result with the reason, the score behind each column and its points, and the total. If you keep your targets in pramedha-template's 8-parameter role table (P1–P8), this workbook's inputs go into it as follows [P]:
+
+| This workbook | pramedha-template `strategy/target-roles.md` |
+|---|---|
+| Gates | Checked before scoring: a role that fails is parked, not scored |
+| Access from your background | P6 Time to close gaps |
+| Market position | P3 Market demand |
+| Readiness on the role's Must skills | P1 Skills match and P7 Interview readiness |
+| Your pay floor against the role's anchor (Step 3.2) | P4 Salary potential |
+| The role's growth path ([growth and progression](../10-onboarding/growth-and-progression.md)) | P5 Growth trajectory |
+| Your interest in the work | P2 Interest |
+| No measured input in this repository | P8 Competition: your judgement |
 
 **Done when:** every long-listed role has a gate result and a total, and you have applied the tie-breakers to roles within one point of each other. A one-point difference is inside the uncertainty of the inputs; the final order is your decision.
 
@@ -297,12 +284,7 @@ Three rules apply across the rings:
 - **Do not mix funnels.** Expert-contract work, AI PM, FDE and AI engineering have different gatekeepers and different proof [M · T0-06 R1.8]. Keep ring 1 inside one of them.
 - **Prepare for the loop type, not the title.** Applied-AI startups use take-homes, agent debugging and scoping rounds; big-company loops use algorithmic coding, system design and ML design; frontier labs are highly selective, an upside rather than a base case [M · T0-06 R1.3].
 
-| Ring | Roles | Résumé variant | Flagship project (archetype) | Interview track | Work starts |
-|---|---|---|---|---|---|
-| 1 | [ ] | [ ] | [ ] | [ ] | Week 1; applications from your computed start week |
-| 2 | [ ] | [ ] | [ ] | [ ] | [for example, after G1] |
-| 3 | [ ] | [ ] | [ ] | [ ] | When its proof exists |
-| Parked | [ ] | — | — | — | When [constraint] changes |
+**Record your rings:** for each ring, its roles, résumé variant, flagship project (archetype), interview track and start (ring 1 from week 1, with applications from your computed start week; ring 2, for example, after G1; ring 3 when its proof exists), and for every parked role the constraint that would bring it back. In pramedha-template, record ring 1 as Tier A, ring 2 as Tier B and ring 3 as Tier C, and the résumé variants in the role table's variant mapping.
 
 Each hub lists the project archetypes that cover most of the role's Must and Important skills; the job-search strategy's [constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest project sets that cover several roles.
 
@@ -361,14 +343,16 @@ Two habits run through the whole plan. Build the eval harness before the second 
 
 The template below assumes Tier B and follows T0-06's backend roadmap for weeks 3–12. At Tier A or C, stretch or compress weeks 3–12 by the scaling rule above; at Tier A, day 90 is a progress check at roughly half of G1, not the gate. For other backgrounds, the months 1–3 row of T0-06 D4–D8, or the [learning order by background](../03-skills-and-tech/learning-roadmaps.md#adjust-for-your-starting-background), changes the content but not the gate.
 
-| Weeks | Focus | Deliverable | Done when | Hours planned | Hours logged |
-|---|---|---|---|:---:|:---:|
-| 1–2 | Diagnostic, route and v0 | Scores; 30 hand-written eval cases; a v0 with traces | The v0 runs end to end on your corpus | [ ] | [ ] |
-| 3–6 | Measure | 50+ labelled cases; a harness with a metrics table; two baselines | One command regenerates the metrics table | [ ] | [ ] |
-| 7–12 | Diagnose and fix | Error taxonomy from 100+ traces; top three failure classes fixed; cost and latency logged; memo; public write-up | The G1 criteria are met | [ ] | [ ] |
-| 13 | Gate review | G1 and adherence checked; applications start at your computed start week | The decision is written down | [ ] | [ ] |
-| Weekly | Hours log | Planned against logged | The 70% rule applied | [ ] | [ ] |
-| Monthly | Funnel review | Applications, screens, take-homes, onsites, offers | Numbers recorded | [ ] | [ ] |
+| Weeks | Focus | Deliverable | Done when |
+|---|---|---|---|
+| 1–2 | Diagnostic, route and v0 | Scores; 30 hand-written eval cases; a v0 with traces | The v0 runs end to end on your corpus |
+| 3–6 | Measure | 50+ labelled cases; a harness with a metrics table; two baselines | One command regenerates the metrics table |
+| 7–12 | Diagnose and fix | Error taxonomy from 100+ traces; top three failure classes fixed; cost and latency logged; memo; public write-up | The G1 criteria are met |
+| 13 | Gate review | G1 and adherence checked; applications start at your computed start week | The decision is written down |
+| Weekly | Hours log | Planned against logged | The 70% rule applied |
+| Monthly | Funnel review | Applications, screens, take-homes, onsites, offers | Numbers recorded |
+
+Record the plan, with hours planned and logged for each block, in your own career repository (pramedha-template: `strategy/study-plan.md`, with the weekly hours in `records/learning-log.md`).
 
 **If a gate slips** [M · T0-06 D3; heuristics, Grade D]:
 - G1 not passed by the end of month 4 at Tier B: check adherence first, then scope creep and a missing eval set. Move to the next-longer tier before adding hours.

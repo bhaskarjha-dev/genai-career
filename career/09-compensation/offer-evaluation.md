@@ -137,10 +137,10 @@ T0-17 estimates that the median stayer's TC grows ≈ 5% a year; promotion-track
 
 ## How to do it
 
-1. **Get each offer in writing, split into components:** base, target bonus, equity type (RSUs or options), grant size and grant-date mark, vesting schedule and cliff, sign-on, level and title. *Done when* every worksheet row below traces to the offer letter or an email [P].
+1. **Get each offer in writing, split into components:** base, target bonus, equity type (RSUs or options), grant size and grant-date mark, vesting schedule and cliff, sign-on, level and title. *Done when* every row of the comparison below traces to the offer letter or an email [P].
 2. **Classify every grant as liquid or paper, and pick its band.** *Done when* each grant has a DF band and, for private stock, a RAV band (adjustment 1).
 3. **Send the diligence questions for any paper equity.** *Done when* you hold written answers or a written refusal [T1-03 L344].
-4. **Fill the worksheet at the low and high ends of the band, then with paper at zero.** *Done when* each column has three annual figures: low, high and bust.
+4. **Compute each offer at the low and high ends of the band, then with paper at zero.** *Done when* each offer and the stay option have three annual figures: low, high and bust.
 5. **Price the vest.** *Done when* you know the value you would forfeit and the year-1 vest of each new grant [T0-17 L202–211].
 6. **Compare with staying.** *Done when* you know each offer's premium over the stay column at both ends of the band (merit alone adds +3.4% a year; AI/ML ≈ +4.4%) [B · T0-17 L194].
 7. **Decide or negotiate.** Sign after diligence if the offer clears your floor and the premium bar at the low end; negotiate if it clears only at the high end ([negotiation playbook](negotiation-playbook.md)); otherwise stay or walk [P]. *Done when* you have a written decision and, if negotiating, a target for each lever.
@@ -149,20 +149,20 @@ T0-17 estimates that the median stayer's TC grows ≈ 5% a year; promotion-track
 
 ### The offer comparison worksheet [P]
 
-Rows follow T0-02's four components [T0-02 L217]; the layout is practice [P].
+Rows follow T0-02's four components [T0-02 L217]; the layout is practice [P]. Fill one column per offer, plus one for staying, in your own career repository, not in this one (decision D-022); [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template)'s `strategy/offer-comparison.md` holds the comparison and the decision. Add these rows to it:
 
-| Row | Offer A: [company, level] | Offer B: [company, level] | Stay: [employer, level] | How to fill it |
-|---|---|---|---|---|
-| 1. Base | $[ ] | $[ ] | $[ ] | Annual, at par |
-| 2. Bonus | $[ ] | $[ ] | $[ ] | Annual target, not the maximum; at par |
-| 3. Liquid equity | $[ ] × [0.95–1.00] | $[ ] × [0.95–1.00] | $[ ] × [0.95–1.00] | Public RSUs vesting per year |
-| 4. Paper equity × DF | $[ ] × [low]–[high] | $[ ] × [low]–[high] | $[ ] × [low]–[high] | Annual vest at the grant-date mark; band from adjustment 1 |
-| **Cash-equivalent per year** (1 + 2 + 3 + 4) | $[low]–$[high] | $[low]–$[high] | $[low]–$[high] | Write both ends |
-| 5. Risk: paper at zero (1 + 2 + 3) | $[ ] | $[ ] | $[ ] | Compare with your floor |
-| 6. Vesting | [schedule], cliff [Y/N], year-1 vest [ ]%, sign-on $[ ] | [same] | Forfeited if you leave: $[grant × (1 − vested)] | Sign-on ask ≥ forfeited value |
-| 7. Refreshers | [policy and cadence; in writing?] | [same] | [your history] | Count only written terms |
-| 8. Non-financial | [level, scope, compute, remote, review date] | [same] | [same] | Score separately; do not force into dollars |
-| **Premium over staying** | [low]% to [high]% | [low]% to [high]% | — | Low = offer low ÷ stay high − 1; high = offer high ÷ stay low − 1 |
+| Row | How to fill it |
+|---|---|
+| 1. Base | Annual, at par |
+| 2. Bonus | Annual target, not the maximum; at par |
+| 3. Liquid equity × 0.95–1.00 | Public RSUs vesting per year |
+| 4. Paper equity × DF | Annual vest at the grant-date mark, times the low and the high end of the band from adjustment 1 |
+| **Cash-equivalent per year** (1 + 2 + 3 + 4) | Write both ends of the band |
+| 5. Risk: paper at zero (1 + 2 + 3) | Compare with your floor |
+| 6. Vesting | Schedule, cliff, year-1 vest and sign-on; for staying, the value forfeited if you leave (grant × (1 − vested)). Ask for a sign-on at least equal to the forfeited value |
+| 7. Refreshers | Policy and cadence; count only written terms |
+| 8. Non-financial | Level, scope, compute, remote and review date; score them separately, not in money |
+| **Premium over staying** | Low = offer low ÷ stay high − 1; high = offer high ÷ stay low − 1 |
 
 ### Worked example: a same-tier lab offer against staying (illustrative arithmetic, Grade M)
 

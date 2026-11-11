@@ -6,7 +6,7 @@ stage: 6
 status: published
 last_verified: 2026-11-06
 review_by: 2027-01-21
-summary: "A weekly operating system for running a job search: a fill-in tracker, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours."
+summary: "A weekly operating system for running a job search: the fields your tracker needs, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours."
 sources: [T0-04, T0-05, T0-06, T0-10, T1-03]
 roles: [all]
 geos: [global]
@@ -15,7 +15,7 @@ tags: [job-search, tracker, funnel-metrics, weekly-review, outreach, referrals, 
 
 # Application Operating System
 
-> A weekly operating system for running a job search: a fill-in tracker, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours.
+> A weekly operating system for running a job search: the fields your tracker needs, a weekly rhythm, funnel metrics with graded benchmarks and thresholds, and rules for when to change targets, résumé, channel or hours.
 
 **Dates.** Funnel benchmarks come from Gem, Ashby and Greenhouse datasets covering 2021 to Q1 2026, as compiled by [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md) (dated 2026-10-23). The hour split, outreach cadence and stop tables come from [T0-05](../../research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md); hours tiers and gate rules from [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md); application caps from [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md); the debrief from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md). Benchmarks move: across all functions, Gem's application-to-pre-onsite rate fell from 13% to 8% between 2021 and 2025 [B · T0-04.F9]. Re-check them by 2027-01-21. **Grades** (EGP-1.0): A primary or measured; B transparent secondary or large vendor dataset; C single source or vendor claim; D judgement; M model output; P practice-curated and unmeasured.
 
@@ -93,8 +93,8 @@ The table assumes independent applications at population-average offer rates of 
 
 ## How to use it
 
-1. **Pick an hours tier and block it in your calendar.** *Done when* the tier is chosen, the search blocks are booked, and the Hours tab has a planned figure for the week.
-2. **Set up the tracker.** *Done when* the four tabs below exist and every live application, message and interview has a row.
+1. **Pick an hours tier and block it in your calendar.** *Done when* the tier is chosen, the search blocks are booked, and your weekly hours record has a planned figure for the week.
+2. **Set up the tracker in your own career repository** (decision D-022). *Done when* it captures the four records below and every live application, message and interview has a row.
 3. **Split the hours.** *Done when* the week's plan follows the 100-hour split, or you have written down why it does not.
 4. **Run the week.** *Done when* every send, reply, screen, take-home, loop and outcome is logged on the day it happens.
 5. **Review on Friday.** *Done when* the weekly template is filled in and you have chosen one change, or decided on none.
@@ -102,77 +102,16 @@ The table assumes independent applications at population-average offer rates of 
 
 ## The tracker: fill-in schema
 
-One spreadsheet, four tabs. The column set is practice-curated [P]; what it must capture comes from T0-05's instrumentation rule [D · T0-05 L81], T0-06's monthly funnel numbers [D · T0-06 L285] and T1-03's pattern tracking [D · T1-03 L250–257].
+Keep the tracker in your own career repository or spreadsheet, not in this repository (decision D-022); [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template)'s `strategy/job-tracker.md` is one ready-made tracker. Whatever you use, it must capture the fields below, because this page's funnel metrics and decision table are computed from them. The field set is practice-curated [P]; what it must capture comes from T0-05's instrumentation rule [D · T0-05 L81], T0-06's monthly funnel numbers [D · T0-06 L285] and T1-03's pattern tracking [D · T1-03 L250–257].
 
-**Tab 1: Opportunities.** One row per role you pursue.
-
-| Column | Definition | Format or values |
-|---|---|---|
-| `id` | Unique key for the row | [company]-[role]-[YYYYMM] |
-| `company` | Employer | text |
-| `segment` | Employer segment from your [targeting workbook](../00-start/targeting-workbook.md) | [your segment labels] |
-| `role_title` | Title exactly as posted | text |
-| `target_role` | The repository role it maps to | a role id, for example `ai-engineer` |
-| `posting_url` | The posting; also keep a copy of its text | URL |
-| `date_found` | When you found it | YYYY-MM-DD |
-| `basic_met` | Basic qualifications you can evidence, out of those listed | [n]/[n] |
-| `route` | How the application reaches the employer | inbound · referral · sourced · outreach · agency · internal |
-| `named_human` | The person who vouched for you or routed you, and their role | text, or `none` |
-| `resume_variant` | The résumé version you sent | [variant name] |
-| `date_applied` | Submission date | YYYY-MM-DD |
-| `knockout_flags` | Any form answer that might fail a rule | text, or `none` |
-| `parsed_checked` | Parsed fields read and fixed after submitting | yes · no |
-| `stage` | Furthest stage reached | applied · screen · take-home · loop · offer · accepted · declined · rejected · withdrawn · no response |
-| `stage_date` | Date of the last stage change | YYYY-MM-DD |
-| `next_action` | One concrete next step, with its date | text + YYYY-MM-DD |
-| `outcome_reason` | The reason, if one was given | text |
-
-Route definitions: *inbound*, you applied cold through a board or careers page; *referral*, an employee put you forward; *sourced*, a recruiter contacted you first; *outreach*, you reached a named human first, who then routed you; *agency*; *internal*, you already work there. Every label except outreach follows Ashby's channels [B · T0-04 L413]; outreach is T0-05's route [D · T0-05 L72]. Employers log channels their own way, so these labels serve your diagnosis, not theirs [P]. Set the *no response* cut-off before you start, as [n] weeks after applying [P].
-
-**Tab 2: Outreach.** One row per message.
-
-| Column | Definition | Format or values |
-|---|---|---|
-| `date_sent` | Send date | YYYY-MM-DD |
-| `person`, `person_role`, `company` | A named engineering director, hiring manager or founder, not a generic inbox [D · T0-05 L87] | text |
-| `medium` | Email from an authenticated domain (SPF, DKIM, DMARC), or a LinkedIn message sent by hand [D · T0-05 L87] | email · LinkedIn |
-| `batch` | The 30-send batch the message belongs to | 1, 2, 3 … |
-| `template_version` | The note's version; change one thing per batch [M · T0-05 L408] | v1, v2 … |
-| `artifact_link` | The single artifact linked | URL |
-| `follow_up_due` | Day 5–7 after the first touch; one follow-up only [D · T0-05 L87] | YYYY-MM-DD |
-| `reply_date` | Date of any reply | YYYY-MM-DD or blank |
-| `result` | What the reply led to | call · referral · intro · declined · none |
-
-**Tab 3: Interviews.** One row per round, filled from the debrief [D · T1-03 L250–257].
-
-| Column | Definition |
+| Record | Fields the metrics need |
 |---|---|
-| `date`, `firm` | Timing and process cadence |
-| `round_type` | Coding · system design · behavioural · domain deep dive · take-home |
-| `questions` | The exact questions, captured in the debrief |
-| `self_score` | 1–5 per scored dimension |
-| `gaps` | Tagged [formula], [concept], [tool] or [trade-off] |
-| `outcome` | If known; it calibrates your self-scores |
+| Each application | Company and employer segment; the title as posted and the repository role it maps to (a role id such as `ai-engineer`); the dates found and applied; the basic qualifications you can evidence, out of those listed; route; the named human who vouched for or routed you; the résumé variant sent; knockout flags; whether you checked the parsed fields; the furthest stage and its date; the next action with its date; the outcome reason |
+| Each outreach message | Date; the person, their role and company (a named engineering director, hiring manager or founder, not a generic inbox [D · T0-05 L87]); medium (email from an authenticated domain, or a LinkedIn message sent by hand); the 30-send batch; the note's version, changing one thing per batch [M · T0-05 L408]; the single artefact linked; the follow-up date, day 5–7 and once only [D · T0-05 L87]; the reply date and result |
+| Each interview round | Date and firm; round type; the exact questions, captured in the debrief; a 1–5 self-score per scored dimension; gaps tagged formula, concept, tool or trade-off; the outcome, which calibrates your self-scores [D · T1-03 L250–257] |
+| Each week | Hours tier; hours planned and logged; adherence (logged ÷ planned); consecutive weeks below 70% of plan [D · T0-06 L251]; where the hours went (applications, outreach, artefacts, logging) |
 
-**Tab 4: Hours.** One row per week.
-
-| Column | Definition |
-|---|---|
-| `week` | Week start date |
-| `tier` | A, B or C (see below) |
-| `planned_h`, `logged_h` | Hours planned and hours logged |
-| `adherence` | `logged_h` ÷ `planned_h` |
-| `weeks_below_70` | Consecutive weeks below 70% of plan [D · T0-06 L251] |
-| `apply_h`, `outreach_h`, `artifact_h`, `log_h` | Where the hours went |
-
-Header rows to paste [P]:
-
-```csv
-id,company,segment,role_title,target_role,posting_url,date_found,basic_met,route,named_human,resume_variant,date_applied,knockout_flags,parsed_checked,stage,stage_date,next_action,next_action_date,outcome_reason
-date_sent,person,person_role,company,medium,batch,template_version,artifact_link,follow_up_due,reply_date,result
-date,firm,round_type,questions,self_score,gaps,outcome
-week,tier,planned_h,logged_h,adherence,weeks_below_70,apply_h,outreach_h,artifact_h,log_h
-```
+Route definitions: *inbound*, you applied cold through a board or careers page; *referral*, an employee put you forward; *sourced*, a recruiter contacted you first; *outreach*, you reached a named human first, who then routed you; *agency*; *internal*, you already work there. Every label except outreach follows Ashby's channels [B · T0-04 L413]; outreach is T0-05's route [D · T0-05 L72]. Employers log channels their own way, so these labels serve your diagnosis, not theirs [P]. Set the *no response* cut-off before you start, as a number of weeks after applying [P].
 
 ## Hours: tiers and the 100-hour split
 
@@ -315,7 +254,7 @@ Run T1-03's 30-minute, five-step debrief immediately after each round, with the 
 Set-up, once:
 
 - [ ] Hours tier chosen from your real availability; search blocks booked in the calendar
-- [ ] Tracker created with the four tabs and header rows
+- [ ] Tracker set up in your own career repository, capturing the four records in the tracker schema
 - [ ] Target list built in the [targeting workbook](../00-start/targeting-workbook.md), with segments and named humans
 - [ ] Portal résumé passes the [ATS self-test](ats-mechanics.md)
 - [ ] One category-level artifact planned or shipped

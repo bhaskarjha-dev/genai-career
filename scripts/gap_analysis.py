@@ -11,7 +11,7 @@ Important 2; Should 1; Optional 0) and prints, to standard output only:
   * the project archetypes that would evidence the most of your gaps.
 
 Target levels are judgement (Grade D, anchored on T0-06); the tiers come from data/skills_ontology.json.
-Keep your self-assessment outside the repository or under personal/ (git-ignored): it is personal data.
+Keep your self-assessment in your own career repository (decision D-022) or under personal/ (git-ignored): it is personal data.
 
 Usage:
     python3 -B scripts/gap_analysis.py --template ai-engineer applied-ai-engineer > personal/me.json

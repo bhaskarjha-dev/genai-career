@@ -103,6 +103,7 @@ Before starting new work, read [ROADMAP.md](ROADMAP.md): the build plan (§4), t
   - Put content in the stage folder where it is used, and add it to that folder's `README.md`. Tools used across stages go in `career/00-start/`.
   - Facts about a role go in `data/role_scores.json`, not in prose; no facts in scripts.
   - One owner per fact (D-019): before writing a figure, check the owners table in §2; link it rather than copy it.
+  - Personal data stays out (D-022): the repository is generic. Personal records, skill ratings and résumés live in a personal career repository (for example pramedha-template); scripts may read such files from outside but never write personal data here.
   - Docs use kebab-case file names; scripts and data use snake_case.
 - **Every new document** under `career/` needs front matter that passes `data/schemas/frontmatter.schema.json`: `id`, `title`, `content_type` (index, guide, reference, method or tool), `stage`, `status`, `last_verified`, `summary`, plus optional `review_by`, `sources`, `roles`, `geos`, `tags` and `generated_by`. Set `review_by` when the page states volatile facts (D-017).
 - **Guides** follow the pattern in [CONTRIBUTING.md §4](CONTRIBUTING.md#4-the-guide-pattern) (D-016); the validator checks its four fixed headings.

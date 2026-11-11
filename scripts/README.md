@@ -42,7 +42,7 @@ python3 -B -m unittest discover -s scripts/tests -v   # tests for the machinery
 
 ## Personal tool
 
-[gap_analysis.py](gap_analysis.py) compares your own 0–3 skill ratings with one or more target roles and prints the gaps, the skills to close first and the projects that would evidence them. It writes nothing to the repository; keep your self-assessment under `personal/` (git-ignored) or elsewhere.
+[gap_analysis.py](gap_analysis.py) compares your own 0–3 skill ratings with one or more target roles and prints the gaps, the skills to close first and the projects that would evidence them. It writes nothing to the repository; keep your self-assessment in your own career repository (decision D-022) or under `personal/` (git-ignored).
 
 ```bash
 python3 -B scripts/gap_analysis.py --template ai-engineer applied-ai-engineer > personal/me.json

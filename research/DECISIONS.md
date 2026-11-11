@@ -1178,7 +1178,7 @@ review_date: 2027-05-07
 prediction: "Once each shared volatile fact has one owner, a refresh (pay on 2027-01-17, posting counts on 2026-12-03) touches one page or one data file instead of up to nine, and no two pages give different values or dates for the same fact"
 tags: [architecture, evidence, maintenance, data]
 authored_by: "Jetski (LLM assistant), at the owner's request"
-human_reviewed: false
+human_reviewed: true
 schema_version: "0.1.0"
 ---
 
@@ -1232,7 +1232,7 @@ review_date: 2027-05-07
 prediction: "With generated pages carrying review_by and a weekly failing run while anything is due, no page stays due for more than two weeks without someone seeing it"
 tags: [governance, freshness, maintenance, ci]
 authored_by: "Jetski (LLM assistant), at the owner's request"
-human_reviewed: false
+human_reviewed: true
 schema_version: "0.1.0"
 ---
 
@@ -1283,7 +1283,7 @@ review_date: 2027-05-08
 prediction: "Sessions designed backwards from the data and pages they feed move the weakest inputs (role demand and pay graded C or D, practice-curated skill links, the credential census, the visa corridors) to dated, graded evidence, and every integrated figure is verified against its source before it changes a page"
 tags: [research, method, evidence, pipeline]
 authored_by: "Jetski (LLM assistant), at the owner's request"
-human_reviewed: false
+human_reviewed: true
 schema_version: "0.1.0"
 ---
 
@@ -1343,7 +1343,7 @@ review_date: 2027-05-10
 prediction: "One home per function: market knowledge, methods and generic tools here; personal records and résumé builds in a personal repository; no duplicated worksheets to maintain, and no personal data in this public repository"
 tags: [scope, personal-data, resume, tooling]
 authored_by: "Jetski (LLM assistant), at the owner's request"
-human_reviewed: false
+human_reviewed: true
 schema_version: "0.1.0"
 ---
 

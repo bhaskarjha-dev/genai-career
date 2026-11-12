@@ -58,8 +58,9 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** Google Cloud Professional Machine Learning Engineer (PMLE): tie-breaker in GCP shops; refreshed for GenAI [T0-11]
-- **Optional:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): successor to the retired ML Specialty [T0-11]
 - **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): only for LLM training or inference-infrastructure roles [T0-11]
+- **Optional:** AWS Certified ML Engineer – Associate (MLA-C02): replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads
+- **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by aws_mla_c02 [T0-11]
 - **Avoid:** AWS Certified Machine Learning – Specialty: retired 2026-03-31 [T0-11]
 
 ## 5. Prerequisites and proof

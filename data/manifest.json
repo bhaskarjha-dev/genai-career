@@ -3980,7 +3980,7 @@
    "stage": 0,
    "status": "published",
    "last_verified": "2026-11-05",
-   "summary": "Index of the evidence layer: the 22 Phase 0 research sessions, the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research.",
+   "summary": "Index of the evidence layer: the 24 research sessions (22 Phase 0, 2 Phase 3), the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research.",
    "sources": [
     "T0-01",
     "T0-02",
@@ -4003,7 +4003,9 @@
     "T1-01",
     "T1-02",
     "T1-03",
-    "T2-01"
+    "T2-01",
+    "T3-01",
+    "T3-02"
    ],
    "headings": [
     "Key documents",
@@ -4019,8 +4021,8 @@
    "content_type": "reference",
    "stage": 0,
    "status": "published",
-   "last_verified": "2026-10-25",
-   "summary": "Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.",
+   "last_verified": "2026-11-08",
+   "summary": "Every key finding of the 24 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.",
    "sources": [
     "T0-01",
     "T0-02",
@@ -4043,7 +4045,9 @@
     "T1-01",
     "T1-02",
     "T1-03",
-    "T2-01"
+    "T2-01",
+    "T3-01",
+    "T3-02"
    ],
    "generated_by": "scripts/build_findings.py",
    "headings": [

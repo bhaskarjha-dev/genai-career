@@ -1,18 +1,18 @@
 # GenAI Career Intelligence System
 
-> Evidence-graded knowledge and guidance for GenAI careers, across the whole lifecycle: which roles exist, where their work sits and which are best; what each role needs (every concept, tool and soft skill, tiered and evidence-tagged); how to prove it, get seen, pass the interview loop, evaluate and negotiate an offer and start well; tracks for transitions, India-based remote work, visas, independent practice and governance careers; and the 22 research sessions behind it all. Every empirical claim carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output, P practice-curated) and a date.
+> Evidence-graded knowledge and guidance for GenAI careers, across the whole lifecycle: which roles exist, where their work sits and which are best; what each role needs (every concept, tool and soft skill, tiered and evidence-tagged); how to prove it, get seen, pass the interview loop, evaluate and negotiate an offer and start well; tracks for transitions, India-based remote work, visas, independent practice and governance careers; and the 24 research sessions behind it all. Every empirical claim carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output, P practice-curated) and a date.
 
 How to use this repository:
 
 - Start at career/README.md (Start Here) or a stage README; each stage README links its guides and its graded research findings.
 - Facts live once: machine-readable sources of truth are in data/, and the generated documents are rebuilt from them by scripts/.
-- Research sessions are dated snapshots (October 2026): check research/ERRATA.md and each claim's date before relying on a figure.
+- Research sessions are dated snapshots (October 2026 to November 2026): check research/ERRATA.md and each claim's date before relying on a figure.
 - Rules for agents that edit or answer from this repository are in AGENTS.md.
 
 ## Start here
 
 - [Start Here: Navigate a GenAI Career](career/README.md): Entry point to the career content: start from your situation or your question, see the map of GenAI roles, follow the lifecycle stages, or take the path for your background. Every page links back to graded evidence.
-- [Research Layer: Sessions, Findings, Decisions and Errata](research/README.md): Index of the evidence layer: the 22 Phase 0 research sessions, the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research.
+- [Research Layer: Sessions, Findings, Decisions and Errata](research/README.md): Index of the evidence layer: the 24 research sessions (22 Phase 0, 2 Phase 3), the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research.
 - [ROADMAP.md](ROADMAP.md): What is covered, what is planned next, and the open decisions.
 - [AGENTS.md](AGENTS.md): Rules for AI agents: sources of truth, evidence standard, generators and validation.
 
@@ -113,10 +113,10 @@ How to use this repository:
 
 ## Research
 
-- [Research Findings Registry](research/findings.md): Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
+- [Research Findings Registry](research/findings.md): Every key finding of the 24 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
 - [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.
 - [Research Pipeline 2: Targeted Sessions for Every High-Impact Element](research/pipeline-2/README.md): The second research pipeline: 53 targeted sessions on networking, résumés, job search, certifications, countries and visas, remote work, pay, interviews and every role, each designed backwards from the data and pages it feeds, with a shared protocol, verification, integration and a generated tracker.
-- [research/sessions/](research/sessions/): The 22 research sessions (dated evidence reports with source ledgers).
+- [research/sessions/](research/sessions/): The 24 research sessions (dated evidence reports with source ledgers).
 - [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-022).
 
 ## Research sessions
@@ -145,6 +145,8 @@ Session IDs cited across the repository (for example T0-04 L120) map to these fi
 - [T1-02](research/sessions/T1-02-evidence-grounding-protocol.md): Epistemic Governance & Evidence-Grounding Protocol (EGP-1.0) for an AI-Careers Repository (2026-10-21)
 - [T1-03](research/sessions/T1-03-interview-execution-offer-negotiation.md): Technical Interview Execution, Behavioral Calibrations & Executive Offer Negotiation for GenAI Engineers (Oct 2026) (2026-10-25)
 - [T2-01](research/sessions/T2-01-tier-calibrated-execution-playbooks.md): Tier-Calibrated Execution Playbooks across 6 Tiers and 5 Personas (2026-10-25)
+- [T3-01](research/sessions/T3-01-genai-certification-stack-ranking-sequencing.md): GenAI / ML / AI-infra certification stack: value ranking, knowledge-overlap sequencing and dated execution calendars (November 2026) (2026-11-08)
+- [T3-02](research/sessions/T3-02-genai-certification-stack-ranking-sequencing.md): GenAI / ML / AI-infra / FDE certification stack — value ranking, knowledge-compounding sequence and execution calendars (Nov 2026) (2026-11-08)
 
 ## Data
 

@@ -207,6 +207,24 @@
    "stages": [
     11
    ]
+  },
+  "T3-01": {
+   "file": "T3-01-genai-certification-stack-ranking-sequencing.md",
+   "title": "GenAI / ML / AI-infra certification stack: value ranking, knowledge-overlap sequencing and dated execution calendars (November 2026)",
+   "date": "2026-11-08",
+   "findings": 18,
+   "stages": [
+    4
+   ]
+  },
+  "T3-02": {
+   "file": "T3-02-genai-certification-stack-ranking-sequencing.md",
+   "title": "GenAI / ML / AI-infra / FDE certification stack — value ranking, knowledge-compounding sequence and execution calendars (Nov 2026)",
+   "date": "2026-11-08",
+   "findings": 17,
+   "stages": [
+    4
+   ]
   }
  },
  "findings": [
@@ -3186,6 +3204,391 @@
    "line": 82,
    "stages": [
     11
+   ]
+  },
+  {
+   "id": "T3-01.F1",
+   "session": "T3-01",
+   "number": 1,
+   "statement": "Claude certifications are partner-gated, not publicly purchasable",
+   "grade": "A",
+   "line": 105,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F2",
+   "session": "T3-01",
+   "number": 2,
+   "statement": "Claude validity is 12 months (previously 6), with a free non-proctored renewal if done on time; a lapse means a full-fee retake",
+   "grade": "A",
+   "line": 107,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F3",
+   "session": "T3-01",
+   "number": 3,
+   "statement": "Claude certifications carry institutional pull rather than open-market pull",
+   "grade": "A/B",
+   "line": 109,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F4",
+   "session": "T3-01",
+   "number": 4,
+   "statement": "Google PAA is a confirmed hybrid: proctored MCQ plus two hands-on labs in Google Skills",
+   "grade": "A",
+   "line": 111,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F5",
+   "session": "T3-01",
+   "number": 5,
+   "statement": "PAA is not the first hands-on credential and I could not verify that its labs are proctored. [A, with absence-of-evidence caveat]",
+   "grade": "C",
+   "line": 113,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F6",
+   "session": "T3-01",
+   "number": 6,
+   "statement": "The AWS line-up changed under the brief's feet",
+   "grade": "C",
+   "line": 115,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F7",
+   "session": "T3-01",
+   "number": 7,
+   "statement": "FDE programmes demand same-vendor credentials; I found no cross-vendor acceptance",
+   "grade": "A/B",
+   "line": 117,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F8",
+   "session": "T3-01",
+   "number": 8,
+   "statement": "Gemini Enterprise Partner Specialist badges are partner-only, lab-based and short-lived",
+   "grade": "B",
+   "line": 119,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F9",
+   "session": "T3-01",
+   "number": 9,
+   "statement": "Databricks Context Engineer: facts verified, \"first\" claim unrefuted, overlap with GenAI Engineer is about 35 to 42%, not 80%. [A for facts; M for overlap]",
+   "grade": "A",
+   "line": 121,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F10",
+   "session": "T3-01",
+   "number": 10,
+   "statement": "GH-600 covers MCP at configuration depth and has no A2A; PAA covers both",
+   "grade": "A",
+   "line": 123,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F11",
+   "session": "T3-01",
+   "number": 11,
+   "statement": "NVIDIA NCP-AAI is real but has registration ambiguity; its blueprint sums to 98%",
+   "grade": "A/B",
+   "line": 125,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F12",
+   "session": "T3-01",
+   "number": 12,
+   "statement": "AMD ROCm Certified Associate is free, 24-month and AMD-ecosystem-bound",
+   "grade": "A/B",
+   "line": 127,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F13",
+   "session": "T3-01",
+   "number": 13,
+   "statement": "Hiring-signal evidence sits in partner/SI job posts, and no credential exceeds a 10% JD share in anything I could verify",
+   "grade": "B/C",
+   "line": 129,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F14",
+   "session": "T3-01",
+   "number": 14,
+   "statement": "The causal evidence is real but narrow",
+   "grade": "A",
+   "line": 131,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F15",
+   "session": "T3-01",
+   "number": 15,
+   "statement": "Blueprint overlap is large for same-vendor and agentic clusters, small for ML-versus-GenAI. [M, anchored on A/B blueprints]",
+   "grade": "",
+   "line": 133,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F16",
+   "session": "T3-01",
+   "number": 16,
+   "statement": "Seeds and ordering. [M]",
+   "grade": "A/B/D",
+   "line": 135,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F17",
+   "session": "T3-01",
+   "number": 17,
+   "statement": "Validity ranges from 6 months to 3 years and shapes the calendar",
+   "grade": "A/B/D",
+   "line": 137,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-01.F18",
+   "session": "T3-01",
+   "number": 18,
+   "statement": "Total cost and exam integrity. [M/B/C]",
+   "grade": "",
+   "line": 139,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F1",
+   "session": "T3-02",
+   "number": 1,
+   "statement": "Access, not price, is the binding constraint for 13 of 28 items",
+   "grade": "",
+   "line": 55,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F2",
+   "session": "T3-02",
+   "number": 2,
+   "statement": "Claude certifications are an institutional-demand instrument",
+   "grade": "",
+   "line": 57,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F3",
+   "session": "T3-02",
+   "number": 3,
+   "statement": "PAA is hybrid, but \"first hands-on GenAI credential\" is false",
+   "grade": "A/C",
+   "line": 59,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F4",
+   "session": "T3-02",
+   "number": 4,
+   "statement": "AWS FDE is hands-on, free, and AWS-closed",
+   "grade": "A/C",
+   "line": 61,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F5",
+   "session": "T3-02",
+   "number": 5,
+   "statement": "The FDE prerequisite graph is vendor-closed",
+   "grade": "A/B",
+   "line": 63,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F6",
+   "session": "T3-02",
+   "number": 6,
+   "statement": "Minimum credential set for all three FDE ladders = 7 credentials",
+   "grade": "D",
+   "line": 65,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F7",
+   "session": "T3-02",
+   "number": 7,
+   "statement": "Exam churn is the norm, not the exception",
+   "grade": "D",
+   "line": 67,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F8",
+   "session": "T3-02",
+   "number": 8,
+   "statement": "Databricks GenAI Engineer ↔ Context Engineer: ~60% content overlap, ~37% hours saved",
+   "grade": "A",
+   "line": 69,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F9",
+   "session": "T3-02",
+   "number": 9,
+   "statement": "The agentic core is converging across vendors",
+   "grade": "",
+   "line": 71,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F10",
+   "session": "T3-02",
+   "number": 10,
+   "statement": "Ordering matters less than selection",
+   "grade": "A",
+   "line": 73,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F11",
+   "session": "T3-02",
+   "number": 11,
+   "statement": "Hiring signal: no verified per-cert JD share > 10% (T0-11 F4 stands), but hard requirements exist in the SI segment",
+   "grade": "A",
+   "line": 75,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F12",
+   "session": "T3-02",
+   "number": 12,
+   "statement": "Vendor-employed FDE roles screen on coding, partner-employed FDE capacity is credential-gated",
+   "grade": "A/B",
+   "line": 77,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F13",
+   "session": "T3-02",
+   "number": 13,
+   "statement": "Pay/outcome evidence is thin and mixed",
+   "grade": "B/C",
+   "line": 79,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F14",
+   "session": "T3-02",
+   "number": 14,
+   "statement": "Cost: the whole in-scope list is ≈ $3,361 / ₹3.75 lakh (incl. 18% GST at ₹94.5/$); ~489 study hours in a practical order vs 815 naive",
+   "grade": "A/B/C",
+   "line": 81,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F15",
+   "session": "T3-02",
+   "number": 15,
+   "statement": "Databricks Context Engineer: \"first\" is a vendor claim; first from a major platform vendor is plausible, \"first anywhere\" is not",
+   "grade": "A/C",
+   "line": 83,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F16",
+   "session": "T3-02",
+   "number": 16,
+   "statement": "Q1 2027 will move three rankings",
+   "grade": "A/C",
+   "line": 85,
+   "stages": [
+    4
+   ]
+  },
+  {
+   "id": "T3-02.F17",
+   "session": "T3-02",
+   "number": 17,
+   "statement": "Signal-dilution risk is real for MCQ-only credentials",
+   "grade": "C",
+   "line": 87,
+   "stages": [
+    4
    ]
   }
  ]

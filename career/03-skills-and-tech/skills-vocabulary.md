@@ -70,7 +70,7 @@ Credentials, prerequisites and proof artefacts are kept apart. They are facts an
 |---|---|:---:|:---:|:---:|---|
 | Technical: knowledge | [Concept / knowledge area](#type-concept) | 134 | n/a | 134 | Name it in the summary or a core-competencies line; prove it with a bullet that shows the system and a measured outcome |
 | Technical: knowledge | [Method / practice](#type-method) | 64 | n/a | 64 | Use it as the verb of a bullet: what you did, on what, with what measured result |
-| Technical: concrete | [Programming language](#type-language) | 16 | 12 | 16 | Skills section (Languages); back it with shipped or public code |
+| Technical: concrete | [Programming language](#type-language) | 16 | 13 | 16 | Skills section (Languages); back it with shipped or public code |
 | Technical: concrete | [Framework / SDK](#type-framework) | 54 | 45 | 52 | Skills section (Frameworks) in the posting's wording; one bullet showing what you built with it |
 | Technical: concrete | [Library / package](#type-library) | 45 | 26 | 45 | Skills section when the posting names it; otherwise inside a bullet |
 | Technical: concrete | [Model / model family](#type-model) | 11 | 8 | 11 | Bullets (compared, fine-tuned, served); never a version number |
@@ -87,7 +87,7 @@ Credentials, prerequisites and proof artefacts are kept apart. They are facts an
 | Non-technical | [Leadership & people](#type-leadership) | 8 | n/a | 8 | Bullets with scope: team size, hires, mentees, decisions owned |
 | Non-technical | [Domain knowledge](#type-domain) | 6 | n/a | 6 | Summary line plus bullets with domain outcomes |
 | Non-technical | [Research craft](#type-research-craft) | 4 | n/a | 4 | Publications section and bullets (venues, citations, reproductions) |
-| **Total** | | **523** | **205 of 274 concrete** | **520** | |
+| **Total** | | **523** | **206 of 274 concrete** | **520** | |
 <!-- END GENERATED -->
 
 ---
@@ -362,17 +362,17 @@ Within each type, rows are sorted by category, then name.
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
-| **CUDA C++** (`cuda_cpp`) | GPU & kernels | CUDA; CUDA programming | → CUDA / Triton / CUTLASS | 45 in 5: T0-03 ×36, T0-12 ×3, T0-02 ×2 … | 1 (1 M/I) |
+| **CUDA C++** (`cuda_cpp`) | GPU & kernels | CUDA; CUDA programming | → CUDA / Triton / CUTLASS | 46 in 6: T0-03 ×36, T0-12 ×3, T0-02 ×2 … | 1 (1 M/I) |
 | **CuTe DSL** (`cutedsl`) | GPU & kernels | CuteDSL | → CUDA / Triton / CUTLASS; in: Tile DSLs | 3 in 1: T0-03 ×3 | 1 (0 M/I) + 1 via class |
 | **Helion** (`helion`) | GPU & kernels | Helion DSL | → CUDA / Triton / CUTLASS; in: Tile DSLs | 2 in 1: T0-03 ×2 | 1 (0 M/I) + 1 via class |
-| **HIP** (`hip`) | GPU & kernels | AMD HIP | → CUDA / Triton / CUTLASS | 0 (practice-curated) | 1 (0 M/I) |
+| **HIP** (`hip`) | GPU & kernels | AMD HIP | → CUDA / Triton / CUTLASS | 4 in 2: T3-01 ×3, T3-02 ×1 | 1 (0 M/I) |
 | **Triton (kernel language)** (`triton_lang`) | GPU & kernels | OpenAI Triton; Triton kernels | → CUDA / Triton / CUTLASS | 39 in 4: T0-03 ×30, T0-02 ×4, T0-13 ×4 … | 3 (1 M/I) |
 | **R** (`r_lang`) | ML & deep learning | R language; tidyverse | → Statistics | not counted (ambiguous name) | 1 (0 M/I) |
 | **Bash / shell scripting** (`bash`) | Programming | shell scripting | — | 0 (practice-curated) | 3 (0 M/I) |
 | **C++** (`cpp`) | Programming | modern C++; C++17; C++20 | — | 6 in 3: T0-03 ×3, T0-05 ×2, T2-01 ×1 | 6 (4 M/I) |
 | **Go** (`go`) | Programming | Golang | in: Go / Java | 10 in 3: T0-06 ×7, T0-16 ×2, T2-01 ×1 | 2 via class |
 | **Java** (`java`) | Programming | JVM | in: Go / Java | 10 in 4: T0-06 ×7, T0-11 ×1, T0-16 ×1 … | 2 via class |
-| **Python (production)** (`python`) | Programming | Python 3; production Python; asyncio | — | 107 in 17: T0-15 ×25, T0-06 ×22, T0-03 ×13 … | 21 (19 M/I) |
+| **Python (production)** (`python`) | Programming | Python 3; production Python; asyncio | — | 111 in 18: T0-15 ×25, T0-06 ×22, T0-03 ×13 … | 21 (19 M/I) |
 | **Python/SQL (notebook level)** (`python_basic`) | Programming | notebook Python; Jupyter; Python for analysis | — | 1 in 1: T0-06 ×1 | 4 (2 M/I) |
 | **Rust** (`rust`) | Programming | — | — | 10 in 2: T0-16 ×7, T0-03 ×3 | 1 (0 M/I) |
 | **Scala** (`scala`) | Programming | — | — | 0 (practice-curated) | 1 (0 M/I) |
@@ -389,7 +389,7 @@ Within each type, rows are sorted by category, then name.
 | **AutoGen** (`autogen`) · *dormant 2026-10-23* | Agents | — | → Agents & tool use | 10 in 2: T0-03 ×9, T0-01 ×1 | — |
 | **Claude Agent SDK** (`claude_agent_sdk`) | Agents | Anthropic Agent SDK | → Agents & tool use; in: Agent frameworks | 2 in 1: T0-03 ×2 | 2 (0 M/I) + 5 via class |
 | **CrewAI** (`crewai`) | Agents | — | → Agents & tool use; in: Agent frameworks | 5 in 3: T0-03 ×3, T0-01 ×1, T0-16 ×1 | 1 (0 M/I) + 6 via class |
-| **Google Agent Development Kit (ADK)** (`google_adk`) | Agents | ADK; Agent Development Kit | → Agents & tool use; in: Agent frameworks | 4 in 2: T0-03 ×3, T0-16 ×1 | 2 (0 M/I) + 5 via class |
+| **Google Agent Development Kit (ADK)** (`google_adk`) | Agents | ADK; Agent Development Kit | → Agents & tool use; in: Agent frameworks | 7 in 4: T0-03 ×3, T3-02 ×2, T0-16 ×1 … | 2 (0 M/I) + 5 via class |
 | **LangChain** (`langchain`) · *active 2025-10-17* | Agents | LangChain 1.x | → Agents & tool use, RAG | 49 in 6: T0-03 ×33, T0-16 ×10, T0-13 ×2 … | 2 (1 M/I) |
 | **LangGraph** (`langgraph`) · *active 2025-10-17* | Agents | LangGraph 1.x | → Agents & tool use, Agent reliability; in: Agent frameworks | 33 in 4: T0-03 ×20, T0-16 ×11, T0-01 ×1 … | 2 (1 M/I) + 5 via class |
 | **Mastra** (`mastra`) | Agents | — | → Agents & tool use; in: Agent frameworks | 1 in 1: T0-16 ×1 | 1 (0 M/I) + 6 via class |
@@ -417,9 +417,9 @@ Within each type, rows are sorted by category, then name.
 | **NVIDIA Dynamo Triton** (`dynamo_triton`) · *renamed 2026-10-23* | Inference & serving | Triton Inference Server | → Serving literacy; in: KServe / Ray Serve | 6 in 1: T0-03 ×6 | 2 (0 M/I) + 1 via class |
 | **Ollama** (`ollama`) | Inference & serving | — | → Self-hosting open models; in: Local inference runtimes | 30 in 2: T0-05 ×27, T0-03 ×3 | 2 via class |
 | **Ray Serve** (`ray_serve`) | Inference & serving | — | → Serving literacy; in: KServe / Ray Serve | 4 in 1: T0-03 ×4 | 2 via class |
-| **SGLang** (`sglang`) · *active 2026-10-16* | Inference & serving | — | → Serving literacy, Continuous batching & KV cache; in: vLLM / SGLang / TensorRT-LLM | 83 in 4: T0-03 ×44, T0-05 ×33, T0-13 ×5 … | 4 (1 M/I) + 2 via class |
+| **SGLang** (`sglang`) · *active 2026-10-16* | Inference & serving | — | → Serving literacy, Continuous batching & KV cache; in: vLLM / SGLang / TensorRT-LLM | 84 in 5: T0-03 ×44, T0-05 ×33, T0-13 ×5 … | 4 (1 M/I) + 2 via class |
 | **TensorRT-LLM** (`trt_llm`) · *active 2026-04-20* | Inference & serving | TRT-LLM | → Serving literacy; in: vLLM / SGLang / TensorRT-LLM | 39 in 4: T0-03 ×30, T0-02 ×6, T0-05 ×2 … | 2 (1 M/I) + 3 via class |
-| **vLLM** (`vllm`) · *active 2026-10-18* | Inference & serving | — | → Serving literacy, Continuous batching & KV cache; in: vLLM / SGLang / TensorRT-LLM | 169 in 8: T0-05 ×69, T0-03 ×53, T0-12 ×13 … | 4 (1 M/I) + 2 via class |
+| **vLLM** (`vllm`) · *active 2026-10-18* | Inference & serving | — | → Serving literacy, Continuous batching & KV cache; in: vLLM / SGLang / TensorRT-LLM | 170 in 9: T0-05 ×69, T0-03 ×53, T0-12 ×13 … | 4 (1 M/I) + 2 via class |
 | **DSPy** (`dspy`) | LLM applications | — | → Prompt & context design | 1 in 1: T0-03 ×1 | 1 (0 M/I) |
 | **JAX** (`jax`) | ML & deep learning | Flax | → Deep learning & transformers; in: TensorFlow / JAX | 3 in 2: T0-11 ×2, T0-05 ×1 | 3 (0 M/I) + 1 via class |
 | **Keras** (`keras`) | ML & deep learning | — | → Deep learning & transformers | 0 (practice-curated) | 1 (0 M/I) |
@@ -501,11 +501,11 @@ Within each type, rows are sorted by category, then name.
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
-| **Claude (Anthropic)** (`claude`) | Models | Claude models | → LLM APIs & tool calling; in: Frontier model families | 40 in 12: T0-12 ×9, T0-14 ×6, T1-02 ×6 … | 15 via class |
+| **Claude (Anthropic)** (`claude`) | Models | Claude models | → LLM APIs & tool calling; in: Frontier model families | 167 in 14: T3-01 ×73, T3-02 ×54, T0-12 ×9 … | 15 via class |
 | **CLIP / SigLIP** (`clip`) | Models | SigLIP | → Multimodal AI | 0 (practice-curated) | 1 (0 M/I) |
 | **Cohere Command, Embed and Rerank** (`cohere_models`) | Models | Cohere Rerank; Cohere Embed | → Embedding & reranker models, Reranking | 0 (practice-curated) | 1 (0 M/I) |
 | **DeepSeek** (`deepseek`) | Models | DeepSeek models | → Self-hosting open models; in: Open-weight model families | 5 in 1: T0-14 ×5 | 8 via class |
-| **Gemini (Google)** (`gemini`) | Models | Gemini models | → LLM APIs & tool calling; in: Frontier model families | 3 in 3: T0-06 ×1, T0-09 ×1, T0-10 ×1 | 15 via class |
+| **Gemini (Google)** (`gemini`) | Models | Gemini models | → LLM APIs & tool calling; in: Frontier model families | 88 in 5: T3-01 ×57, T3-02 ×28, T0-06 ×1 … | 15 via class |
 | **GPT and o-series (OpenAI)** (`gpt`) | Models | GPT; OpenAI models | → LLM APIs & tool calling; in: Frontier model families | 6 in 4: T0-13 ×2, T0-14 ×2, T0-03 ×1 … | 15 via class |
 | **Llama (Meta)** (`llama`) | Models | Llama models | → Self-hosting open models; in: Open-weight model families | 11 in 3: T0-14 ×7, T0-03 ×2, T0-05 ×2 | 8 via class |
 | **Mistral and Mixtral** (`mistral_models`) | Models | Mistral AI models | → Self-hosting open models; in: Open-weight model families | 1 in 1: T0-14 ×1 | 8 via class |
@@ -522,21 +522,21 @@ Within each type, rows are sorted by category, then name.
 |---|---|---|---|---|:---:|
 | **Amazon Bedrock AgentCore** (`bedrock_agentcore`) | Agents | AgentCore | → Agents & tool use, LLM gateways; in: LLM gateway tools | 15 in 1: T0-16 ×15 | 2 (0 M/I) |
 | **Amazon Bedrock** (`aws_bedrock`) | Cloud & platforms | AWS Bedrock; Bedrock | → LLM APIs & tool calling; in: Managed AI | 9 in 2: T0-09 ×6, T0-11 ×3 | 5 via class |
-| **Amazon Web Services (AWS)** (`aws`) | Cloud & platforms | AWS; Amazon Web Services | in: AWS / Azure / GCP | 167 in 9: T0-11 ×130, T0-16 ×14, T0-09 ×10 … | 7 (2 M/I) + 7 via class |
+| **Amazon Web Services (AWS)** (`aws`) | Cloud & platforms | AWS; Amazon Web Services | in: AWS / Azure / GCP | 415 in 11: T0-11 ×130, T3-01 ×128, T3-02 ×120 … | 7 (2 M/I) + 7 via class |
 | **AWS Lambda** (`aws_lambda`) | Cloud & platforms | — | → Serverless deployment | 0 (practice-curated) | 2 (0 M/I) |
 | **Azure AI Foundry / Azure OpenAI** (`azure_ai_foundry`) | Cloud & platforms | Azure OpenAI; AI Foundry; Microsoft Foundry | → LLM APIs & tool calling; in: Managed AI | 8 in 3: T0-09 ×4, T0-15 ×3, T0-16 ×1 | 1 (0 M/I) + 4 via class |
 | **Fireworks AI** (`fireworks`) | Cloud & platforms | Fireworks | → Self-hosting open models; in: Serverless GPU and inference clouds | 0 (practice-curated) | 2 via class |
-| **Google Cloud (GCP)** (`gcp`) | Cloud & platforms | GCP; Google Cloud Platform | in: AWS / Azure / GCP | 30 in 8: T0-11 ×20, T0-14 ×3, T0-15 ×2 … | 2 (1 M/I) + 12 via class |
+| **Google Cloud (GCP)** (`gcp`) | Cloud & platforms | GCP; Google Cloud Platform | in: AWS / Azure / GCP | 54 in 10: T0-11 ×20, T3-01 ×14, T3-02 ×10 … | 2 (1 M/I) + 12 via class |
 | **Google Cloud Run** (`cloud_run`) | Cloud & platforms | Cloud Run | → Serverless deployment | 0 (practice-curated) | 2 (0 M/I) |
 | **Google Vertex AI** (`vertex_ai`) | Cloud & platforms | Vertex AI; Vertex AI Agent Builder | → LLM APIs & tool calling; in: Managed AI | 1 in 1: T0-11 ×1 | 1 (0 M/I) + 5 via class |
 | **Microsoft Azure** (`azure`) | Cloud & platforms | Azure | in: AWS / Azure / GCP | 50 in 7: T0-11 ×30, T0-15 ×8, T0-09 ×5 … | 4 (1 M/I) + 12 via class |
 | **Modal** (`modal`) | Cloud & platforms | Modal Labs | → Self-hosting open models; in: Serverless GPU and inference clouds | 16 in 3: T0-06 ×9, T0-13 ×5, T2-01 ×2 | 1 (0 M/I) + 1 via class |
 | **Replicate** (`replicate`) | Cloud & platforms | — | → Self-hosting open models; in: Serverless GPU and inference clouds | 4 in 1: T0-13 ×4 | 2 via class |
 | **Together AI** (`together_ai`) | Cloud & platforms | — | → Self-hosting open models; in: Serverless GPU and inference clouds | 7 in 3: T0-03 ×4, T0-13 ×2, T0-14 ×1 | 2 via class |
-| **Databricks (incl. Mosaic AI)** (`databricks`) | Data engineering | Mosaic AI | → Data pipelines & quality, MLOps lifecycle; in: Data platforms and warehouses | 83 in 9: T0-11 ×34, T0-14 ×17, T0-17 ×13 … | 3 (0 M/I) + 1 via class |
+| **Databricks (incl. Mosaic AI)** (`databricks`) | Data engineering | Mosaic AI | → Data pipelines & quality, MLOps lifecycle; in: Data platforms and warehouses | 151 in 11: T3-01 ×45, T0-11 ×34, T3-02 ×23 … | 3 (0 M/I) + 1 via class |
 | **Google BigQuery** (`bigquery`) | Data engineering | BigQuery | → Data pipelines & quality; in: Data platforms and warehouses | 0 (practice-curated) | 3 via class |
-| **Snowflake (incl. Cortex)** (`snowflake`) | Data engineering | Snowflake Cortex | → Data pipelines & quality; in: Data platforms and warehouses | 1 in 1: T0-13 ×1 | 3 via class |
-| **AMD ROCm** (`rocm`) | GPU & kernels | ROCm | in: TPU / Trainium / ROCm | 1 in 1: T0-05 ×1 | 2 (0 M/I) + 2 via class |
+| **Snowflake (incl. Cortex)** (`snowflake`) | Data engineering | Snowflake Cortex | → Data pipelines & quality; in: Data platforms and warehouses | 3 in 2: T3-01 ×2, T0-13 ×1 | 3 via class |
+| **AMD ROCm** (`rocm`) | GPU & kernels | ROCm | in: TPU / Trainium / ROCm | 35 in 3: T3-02 ×18, T3-01 ×16, T0-05 ×1 | 2 (0 M/I) + 2 via class |
 | **Baseten** (`baseten`) | Inference & serving | — | → Self-hosting open models; in: Serverless GPU and inference clouds | 8 in 1: T0-03 ×8 | 1 (0 M/I) + 1 via class |
 | **KServe** (`kserve`) | Inference & serving | — | → Serving literacy; in: KServe / Ray Serve | 1 in 1: T0-03 ×1 | 2 (0 M/I) + 1 via class |
 | **CoreWeave** (`coreweave`) | Infrastructure & HPC | — | → GPU fleet ops & scheduling | 0 (practice-curated) | 1 (0 M/I) |
@@ -607,9 +607,9 @@ Within each type, rows are sorted by category, then name.
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
-| **Claude Code** (`claude_code`) | Agents | — | → Coding-agent rollout; in: Coding-agent tools | 4 in 3: T0-09 ×2, T0-05 ×1, T0-16 ×1 | 1 (1 M/I) |
+| **Claude Code** (`claude_code`) | Agents | — | → Coding-agent rollout; in: Coding-agent tools | 6 in 5: T0-09 ×2, T0-05 ×1, T0-16 ×1 … | 1 (1 M/I) |
 | **Cursor** (`cursor`) | Agents | — | → Coding-agent rollout; in: Coding-agent tools | 18 in 3: T0-12 ×16, T0-05 ×1, T0-09 ×1 | 1 (0 M/I) |
-| **GitHub Copilot** (`github_copilot`) | Agents | Copilot | → Coding-agent rollout; in: Coding-agent tools | 17 in 6: T0-10 ×8, T1-02 ×4, T0-15 ×2 … | 1 (0 M/I) |
+| **GitHub Copilot** (`github_copilot`) | Agents | Copilot | → Coding-agent rollout; in: Coding-agent tools | 28 in 8: T0-10 ×8, T3-01 ×8, T1-02 ×4 … | 1 (0 M/I) |
 | **OpenAI Codex** (`openai_codex`) | Agents | Codex | → Coding-agent rollout; in: Coding-agent tools | 6 in 4: T0-12 ×3, T0-01 ×1, T0-05 ×1 … | 1 (0 M/I) |
 | **Braintrust** (`braintrust`) · *active 2026-05-04* | Evaluation | — | → LLM evaluation, LLM tracing; in: LLM tracing and observability products, Evaluation runners and platforms | 35 in 4: T0-03 ×18, T0-18 ×14, T0-13 ×2 … | 2 (0 M/I) + 7 via class |
 | **DeepEval** (`deepeval`) · *active 2026-10-23* | Evaluation | Confident AI | → LLM evaluation, Eval regression gates in CI; in: Evaluation runners and platforms | 12 in 2: T0-03 ×10, T0-13 ×2 | 2 (0 M/I) + 4 via class |
@@ -631,7 +631,7 @@ Within each type, rows are sorted by category, then name.
 | **GuideLLM** (`guidellm`) | Inference & serving | — | → Load testing & latency SLOs; in: Inference benchmarking tools | 8 in 1: T0-13 ×8 | 1 (0 M/I) |
 | **inference-perf** (`inference_perf`) | Inference & serving | — | → Load testing & latency SLOs; in: Inference benchmarking tools | 8 in 1: T0-13 ×8 | 1 (0 M/I) |
 | **NVIDIA NIM** (`nim`) | Inference & serving | NIM microservices | → Serving literacy; in: KServe / Ray Serve | 1 in 1: T0-14 ×1 | 2 via class |
-| **MLflow** (`mlflow`) | MLOps & platform | — | → Experiment tracking & reproducibility, MLOps lifecycle; in: Experiment trackers | 4 in 1: T0-15 ×4 | 3 (0 M/I) |
+| **MLflow** (`mlflow`) | MLOps & platform | — | → Experiment tracking & reproducibility, MLOps lifecycle; in: Experiment trackers | 8 in 3: T0-15 ×4, T3-01 ×2, T3-02 ×2 | 3 (0 M/I) |
 | **Weights & Biases (incl. Weave)** (`wandb`) | MLOps & platform | W&B; Weave; wandb | → Experiment tracking & reproducibility, LLM tracing; in: Experiment trackers | 1 in 1: T0-03 ×1 | 5 (0 M/I) |
 | **agentgateway** (`agentgateway`) | Observability & LLMOps | — | → LLM gateways, Agent interoperability; in: LLM gateway tools | 18 in 1: T0-16 ×18 | 3 (0 M/I) |
 | **Arize AX** (`arize`) | Observability & LLMOps | Arize | → Observability, Online evaluation & production monitoring; in: LLM tracing and observability products | 19 in 4: T0-06 ×12, T0-15 ×5, T0-03 ×1 … | 2 (0 M/I) + 8 via class |
@@ -670,8 +670,8 @@ Within each type, rows are sorted by category, then name.
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
-| **A2A (Agent2Agent)** (`a2a`) · *active 2026-03-12* | Agents | Agent2Agent | → Agent interoperability | 66 in 1: T0-16 ×66 | 3 (0 M/I) |
-| **MCP (Model Context Protocol)** (`mcp`) | Agents | MCP; Model Context Protocol; MCP servers | → Agent interoperability | 269 in 6: T0-16 ×252, T0-03 ×9, T0-06 ×4 … | 10 (2 M/I) |
+| **A2A (Agent2Agent)** (`a2a`) · *active 2026-03-12* | Agents | Agent2Agent | → Agent interoperability | 86 in 3: T0-16 ×66, T3-01 ×14, T3-02 ×6 | 3 (0 M/I) |
+| **MCP (Model Context Protocol)** (`mcp`) | Agents | MCP; Model Context Protocol; MCP servers | → Agent interoperability | 303 in 8: T0-16 ×252, T3-01 ×19, T3-02 ×15 … | 10 (2 M/I) |
 | **OpenLineage** (`openlineage`) | Data engineering | — | → Data governance & lineage | 3 in 1: T0-15 ×3 | 2 (0 M/I) |
 | **AG-UI** (`ag_ui`) · *active 2026-09-18* | Frontend & UX | Agent-User Interaction protocol | → Streaming & agent UX, Agent interoperability | 24 in 1: T0-16 ×24 | 2 (0 M/I) |
 | **Server-Sent Events (SSE)** (`sse`) | Frontend & UX | SSE; streaming HTTP | → Streaming & agent UX | 20 in 2: T0-16 ×17, T0-14 ×3 | 2 (1 M/I) |
@@ -824,7 +824,7 @@ Within each type, rows are sorted by category, then name.
 Credentials are tie-breakers, not skills. Their signal depends on the hiring channel [B/C · T0-11]. Retired credentials are tiered Avoid for new candidates; holders may still list them with the date.
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (credentials) -->
-The 20 credentials, their statuses and the roles that list each one are in a single generated table: [credentials by role](../04-certifications/credentials-by-role.md). Whether a credential is worth it: [credential ROI](../04-certifications/credential-roi.md).
+The 37 credentials, their statuses and the roles that list each one are in a single generated table: [credentials by role](../04-certifications/credentials-by-role.md). Whether a credential is worth it: [credential ROI](../04-certifications/credential-roi.md).
 <!-- END GENERATED -->
 
 ---

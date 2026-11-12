@@ -57,7 +57,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Important (headline):** Linux, KServe / Ray Serve, LLM gateways, OAuth/OIDC, RBAC, SSO, MLOps lifecycle (model & prompt CI/CD), Model supply chain & CVEs, SRE (SLOs, on-call, incidents), vLLM / SGLang / TensorRT-LLM.
 - **Full inventory:** 77 skills (Must 7 · Important 15 · Should 34 · Optional 21), each with its evidence and posting keywords: [ml-platform-engineer.md](../../03-skills-and-tech/inventories/ml-platform-engineer.md).
 - **Prerequisites:** Backend, DevOps or SRE background; India GCCs use the MLOps Engineer title (Taggd, C)
-- **Credentials (tie-breakers, not skills):** Certified Kubernetes Administrator (CKA) (Optional: not in the corpus; common in platform hiring); AWS Certified Machine Learning Engineer – Associate (MLA-C01) (Optional: MLOps-oriented associate credential). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** Certified Kubernetes Administrator (CKA) (Optional: not in the corpus; common in platform hiring); AWS Certified Machine Learning Engineer – Associate (MLA-C01) (Avoid: retired in English 2026-09-28; replaced by aws_mla_c02); AWS Certified ML Engineer – Associate (MLA-C02) (Optional: replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it

@@ -6,7 +6,7 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 
 | Layer | Where | What it is |
 |---|---|---|
-| Evidence | `research/sessions/` | 22 dated research reports (October 2026). **Immutable.** |
+| Evidence | `research/sessions/` | 24 dated research reports (October–November 2026). **Immutable.** |
 | Research plan | `research/pipeline-2/` | Research pipeline 2 (D-021): the spec and generated tracker, the shared protocol, the briefs and the catalogue of planned sessions |
 | Knowledge | `research/findings.md`, `data/findings.json` | 262 key findings distilled from the sessions, each with grade and line |
 | Reference and guidance | `career/00-start/` … `career/11-tracks/` | User-facing documents on the lifecycle spine; every document has YAML front matter |

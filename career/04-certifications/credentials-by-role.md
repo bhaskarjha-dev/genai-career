@@ -16,7 +16,7 @@ generated_by: scripts/build_skills_views.py
 
 # Credentials by Role
 
-> Which certifications the evidence lists for each role, at which tier, and each credential's status, as of 2026-10-23.
+> Which certifications the evidence lists for each role, at which tier, and each credential's status, as of 2026-11-08.
 
 ## How to read this page
 
@@ -27,14 +27,14 @@ generated_by: scripts/build_skills_views.py
 ## At a glance
 
 - 15 of 26 roles list at least one credential; 11 list none, so proof of work decides.
-- 2 credentials are retired and 1 is in beta.
+- 3 credentials are retired and 4 is in beta.
 
 ## By role
 
 | Role | Variant | Important | Optional | Avoid (retired) |
 |---|:---:|---|---|---|
 | [AI Engineer](../02-roles/hubs/ai-engineer.md) | A1 | — | AWS Certified Generative AI Developer – Professional (AIP-C01) (tie-breaker, mostly in services and GCC channels); Microsoft AI-103 (Azure AI apps and agents) (Azure shops; still marked beta); Databricks Certified Generative AI Engineer Associate (only if the team runs Databricks) | AWS Certified Machine Learning – Specialty (retired 2026-03-31); Microsoft Azure AI Engineer Associate (AI-102) (retired 2026-06-30) |
-| [Machine Learning Engineer (GenAI/LLM track)](../02-roles/hubs/ml-engineer.md) | B1 | — | Google Cloud Professional Machine Learning Engineer (PMLE) (tie-breaker in GCP shops; refreshed for GenAI); AWS Certified Machine Learning Engineer – Associate (MLA-C01) (successor to the retired ML Specialty); NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (only for LLM training or inference-infrastructure roles) | AWS Certified Machine Learning – Specialty (retired 2026-03-31) |
+| [Machine Learning Engineer (GenAI/LLM track)](../02-roles/hubs/ml-engineer.md) | B1 | — | Google Cloud Professional Machine Learning Engineer (PMLE) (tie-breaker in GCP shops; refreshed for GenAI); NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (only for LLM training or inference-infrastructure roles); AWS Certified ML Engineer – Associate (MLA-C02) (replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads) | AWS Certified Machine Learning Engineer – Associate (MLA-C01) (retired in English 2026-09-28; replaced by aws_mla_c02); AWS Certified Machine Learning – Specialty (retired 2026-03-31) |
 | [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md) | C1 | — | — | — |
 | [Forward Deployed Engineer (AI)](../02-roles/hubs/forward-deployed-engineer.md) | A2 | — | AWS Certified Generative AI Developer – Professional (AIP-C01) (services channels); Microsoft AI-103 (Azure AI apps and agents) (Azure customers; beta) | — |
 | [Applied Scientist (GenAI/LLM teams)](../02-roles/hubs/applied-scientist.md) | B2 | — | — | — |
@@ -43,7 +43,7 @@ generated_by: scripts/build_skills_views.py
 | [Research Scientist (LLM research)](../02-roles/hubs/research-scientist.md) | C2 | — | — | — |
 | [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md) | D1 | — | NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (LLM inference-infrastructure roles) | — |
 | [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md) | A1 | — | AWS Certified Generative AI Developer – Professional (AIP-C01) (tie-breaker in services channels) | — |
-| [ML Platform / MLOps (LLMOps) Engineer](../02-roles/hubs/ml-platform-engineer.md) | D2 | — | Certified Kubernetes Administrator (CKA) (not in the corpus; common in platform hiring); AWS Certified Machine Learning Engineer – Associate (MLA-C01) (MLOps-oriented associate credential) | — |
+| [ML Platform / MLOps (LLMOps) Engineer](../02-roles/hubs/ml-platform-engineer.md) | D2 | — | Certified Kubernetes Administrator (CKA) (not in the corpus; common in platform hiring); AWS Certified ML Engineer – Associate (MLA-C02) (replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads) | AWS Certified Machine Learning Engineer – Associate (MLA-C01) (retired in English 2026-09-28; replaced by aws_mla_c02) |
 | [AI Product Manager](../02-roles/hubs/ai-product-manager.md) | E1 | — | Google Cloud Generative AI Leader (non-technical literacy credential); AWS Certified AI Practitioner (AIF-C01) (literacy credential for people who work with AI) | — |
 | [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) | A1 | — | AWS Certified Generative AI Developer – Professional (AIP-C01) (weak signal; services channels only) | — |
 | [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) | A2 | — | AWS Certified Generative AI Developer – Professional (AIP-C01) (tie-breaker in IT services, staffing and partner firms); Google Cloud Professional Machine Learning Engineer (PMLE) (GCP shops); Microsoft AI-103 (Azure AI apps and agents) (Azure partners; beta) | — |
@@ -65,7 +65,7 @@ generated_by: scripts/build_skills_views.py
 | Credential | Issuer | Level | Status | Listed for |
 |---|---|---|---|---|
 | **AWS Certified AI Practitioner (AIF-C01)** | AWS | foundational | active (2026-10-23): foundational; for people who work with AI rather than build it | AI Product Manager (Optional) |
-| **AWS Certified Machine Learning Engineer – Associate (MLA-C01)** | AWS | associate | active (2026-10-23): successor to the retired ML – Specialty | Machine Learning Engineer (GenAI/LLM track) (Optional); ML Platform / MLOps (LLMOps) Engineer (Optional) |
+| **AWS Certified Machine Learning Engineer – Associate (MLA-C01)** | AWS | associate | retired (2026-11-08): retired in English 2026-09-28; replaced by MLA-C02 (beta live, GA 2027-01-14) | Machine Learning Engineer (GenAI/LLM track) (Avoid); ML Platform / MLOps (LLMOps) Engineer (Avoid) |
 | **AWS Certified Generative AI Developer – Professional (AIP-C01)** | AWS | professional | active (2026-10-23): generally available | AI Engineer (Optional); Forward Deployed Engineer (AI) (Optional); Applied AI Engineer (Optional); Agentic AI Engineer (Optional); AI Evaluation Engineer (Optional); AI / GenAI Solutions Architect (Optional) |
 | **AWS Certified Machine Learning – Specialty** | AWS | specialty | retired (2026-03-31): last exam 2026-03-31; holders may list it with the date | AI Engineer (Avoid); Machine Learning Engineer (GenAI/LLM track) (Avoid) |
 | **Microsoft AI-103 (Azure AI apps and agents)** | Microsoft | associate | beta (2026-10-23): replaces AI-102; still marked beta | AI Engineer (Optional); Forward Deployed Engineer (AI) (Optional); AI / GenAI Solutions Architect (Optional) |
@@ -84,6 +84,23 @@ generated_by: scripts/build_skills_views.py
 | **ISACA CRISC** | ISACA | professional | active (2026-10-23): IT-risk credential | AI Governance Programme Lead / Manager (Optional); AI Risk, Audit & Compliance Specialist (Optional) |
 | **ISC2 CISSP** | ISC2 | professional | active (2026-10-23): security credential | AI Security Engineer / AI Red Teamer (Optional); AI Governance Programme Lead / Manager (Optional) |
 | **Certified Kubernetes Administrator (CKA)** | CNCF / Linux Foundation | professional | not assessed in the research corpus (practice-curated) | AI Infrastructure / GPU Platform Engineer (Optional); ML Platform / MLOps (LLMOps) Engineer (Optional) |
+| **AWS Certified ML Engineer – Associate (MLA-C02)** | AWS | associate | beta (2026-11-08): beta from 2026-09-29; GA 2027-01-14; adds GenAI, LLM and agentic workloads | Machine Learning Engineer (GenAI/LLM track) (Optional); ML Platform / MLOps (LLMOps) Engineer (Optional) |
+| **AWS Certified AI Business Strategist (AIB-C01)** | AWS | foundational | beta (2026-11-08): beta $50, standard $100; business category; early-adopter badge cut-off reported 2027-02-15 | no role (listed for reference) |
+| **Claude Certified Associate – Foundations (CCAO-F)** | Anthropic | foundational | active (2026-11-08): partner-gated (Claude Partner Network staff only); does NOT count toward partner eligibility; content refresh 2026-12-07 | no role (listed for reference) |
+| **Claude Certified Developer – Foundations (CCDV-F)** | Anthropic | associate | active (2026-11-08): partner-gated; counts toward partner tiers; content refresh 2026-12-07; 12-month validity with free renewal | no role (listed for reference) |
+| **Claude Certified Architect – Foundations (CCAR-F)** | Anthropic | professional | active (2026-11-08): partner-gated; scenario-based; counts toward partner tiers; 12-month validity with free renewal | no role (listed for reference) |
+| **Claude Certified Architect – Professional (CCAR-P)** | Anthropic | professional | active (2026-11-08): partner-gated; governance depth; content refresh 2026-12-07; 12-month validity with free renewal | no role (listed for reference) |
+| **Google Professional Agentic Architect (PAA)** | Google Cloud | professional | active (2026-11-08): GA mid-November 2026; hybrid MCQ + 2 hands-on labs; MCP and A2A in scope; 1-year validity | no role (listed for reference) |
+| **Gemini Enterprise Certified Partner Specialist – Deployment** | Google Cloud | associate | active (2026-11-08): partner-only; lab-based (3 skill badges); 6-month validity; Google FDE prerequisite | no role (listed for reference) |
+| **Gemini Enterprise Certified Partner Specialist – Agent Development** | Google Cloud | associate | active (2026-11-08): partner-only; lab-based; 6-month validity; Google FDE prerequisite | no role (listed for reference) |
+| **Databricks Certified Context Engineer Associate** | Databricks | associate | active (2026-11-08): GA 2026-07-29; 45 scored questions, 90 min, $200, 2-year validity; vendor claims industry first | no role (listed for reference) |
+| **Databricks Certified Machine Learning Associate** | Databricks | associate | active (2026-11-08): 48 questions, 90 min, $200, 2-year validity | no role (listed for reference) |
+| **Databricks Certified Machine Learning Professional** | Databricks | professional | active (2026-11-08): 59 questions, 120 min, $200, 2-year validity; hardest Databricks exam | no role (listed for reference) |
+| **GitHub Certified Copilot (GH-300)** | GitHub (Microsoft) | associate | active (2026-11-08): prerequisite for Microsoft FTE LevelUp; validity conflicting (annual free renewal vs 2 years) | no role (listed for reference) |
+| **GitHub Certified Agentic AI Developer (GH-600)** | GitHub (Microsoft) | professional | active (2026-11-08): GA July 2026; 120 min, pass 700, $165; covers MCP but not A2A | no role (listed for reference) |
+| **GitHub Agentic AI Business Professional (GH-700)** | GitHub (Microsoft) | foundational | beta (2026-11-08): beta; business audience; GA expected December 2026 | no role (listed for reference) |
+| **NVIDIA NCP Agentic AI (NCP-AAI)** | NVIDIA | professional | active (2026-11-08): 120 min, 60-70 questions, $200, 2-year validity; only 7% NVIDIA-platform content | no role (listed for reference) |
+| **AMD ROCm Certified Associate** | AMD | associate | active (2026-11-08): free; launched 2026-07-24; 3h workshop + 1h exam; 24-month validity; AMD ecosystem only | no role (listed for reference) |
 
 ## Roles with no credential in the evidence
 

@@ -58,7 +58,8 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** Certified Kubernetes Administrator (CKA): not in the corpus; common in platform hiring
-- **Optional:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): MLOps-oriented associate credential [T0-11]
+- **Optional:** AWS Certified ML Engineer – Associate (MLA-C02): replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads
+- **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by aws_mla_c02 [T0-11]
 
 ## 5. Prerequisites and proof
 

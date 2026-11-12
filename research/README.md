@@ -5,8 +5,8 @@ content_type: index
 stage: 0
 status: published
 last_verified: 2026-11-05
-summary: "Index of the evidence layer: the 22 Phase 0 research sessions, the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research."
-sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-01, T1-02, T1-03, T2-01]
+summary: "Index of the evidence layer: the 24 research sessions (22 Phase 0, 2 Phase 3), the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research."
+sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-01, T1-02, T1-03, T2-01, T3-01, T3-02]
 ---
 
 # Research Layer
@@ -76,6 +76,8 @@ Layer 3 │ Grand synthesis          │  FAD.md · 12 decisions locked
 | [T0-05](sessions/T0-05-unconventional-hiring-tactics-oss-audits.md) | Open-source contributions, micro-audits and outreach as hiring signals |
 | [T0-10](sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md) | Career tools audited across the 12 lifecycle stages |
 | [T0-11](sessions/T0-11-certification-cloud-credential-roi.md) | Certification and cloud-credential ROI |
+| [T3-01](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) | GenAI certification stack: value ranking, knowledge-overlap sequencing and dated execution calendars |
+| [T3-02](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) | GenAI certification stack (cross-check run): independent analysis with 9-module taxonomy, /35 composite scoring, directed overlap transfer tables |
 | [T0-12](sessions/T0-12-high-signal-communities-technical-visibility.md) | High-signal communities, open-source networks, conference strategy |
 | [T0-13](sessions/T0-13-production-portfolio-proof-of-work-standards.md) | Portfolio proof-of-work standards and the verifiability ladder |
 

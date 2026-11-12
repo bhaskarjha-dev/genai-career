@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Research pipeline 2 (RP2): the plan for targeted research on every high-impact element, designed backwards from the data and pages it will change. No research has been run yet; the owner runs the sessions. An independent review on 2026-11-08, before any session ran, split oversized sessions and tightened the record contract.
 
 ### Added
+- **Research session T3-01** (GenAI certification stack: value ranking, knowledge-overlap sequencing and dated execution calendars, November 2026): 18 key findings covering 24 credentials and 4 FDE programmes; composite value ranking (AIP-C01 and PAA undisputed top two), blueprint-overlap model (14-topic taxonomy, ~45% hours saved), three dated calendars (10/20/40 h/week), FDE prerequisite graph and minimum credential set (7 exams), hiring-signal audit (partner/SI only), decision gates, cost model. Builds on T0-11.
+- **Research session T3-02** (cross-check run of T3-01): independent analysis of the same 24 credentials using a 9-module taxonomy and /35 composite scoring; converges on the same Tier-1 trio (AIP-C01, PAA, CCAR-F); provides directed hours-saved transfer tables, symmetric pairwise overlap matrices, marginal-cost-after-Tier-1 tables, and 7-scenario sensitivity analysis not present in T3-01. 17 key findings.
 - **Decision D-021** (research pipeline 2: outcome-first targeted sessions), appended as accepted, not yet human-reviewed.
 - **Decision D-022** (generic scope: personal records live in a personal career repository, for example pramedha-template), appended as accepted, not yet human-reviewed.
 - **`research/pipeline-2/`:**

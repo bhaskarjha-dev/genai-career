@@ -6278,12 +6278,13 @@
    "issuer": "AWS",
    "level": "associate",
    "status": {
-    "state": "active",
-    "as_of": "2026-10-23",
-    "note": "successor to the retired ML – Specialty"
+    "state": "retired",
+    "as_of": "2026-11-08",
+    "note": "retired in English 2026-09-28; replaced by MLA-C02 (beta live, GA 2027-01-14)"
    },
    "src": [
-    "T0-11"
+    "T0-11",
+    "T3-01"
    ]
   },
   "aws_aip_c01": {
@@ -6512,6 +6513,227 @@
    "issuer": "CNCF / Linux Foundation",
    "level": "professional",
    "src": []
+  },
+  "aws_mla_c02": {
+   "name": "AWS Certified ML Engineer – Associate (MLA-C02)",
+   "issuer": "AWS",
+   "level": "associate",
+   "status": {
+    "state": "beta",
+    "as_of": "2026-11-08",
+    "note": "beta from 2026-09-29; GA 2027-01-14; adds GenAI, LLM and agentic workloads"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "aws_aib_c01": {
+   "name": "AWS Certified AI Business Strategist (AIB-C01)",
+   "issuer": "AWS",
+   "level": "foundational",
+   "status": {
+    "state": "beta",
+    "as_of": "2026-11-08",
+    "note": "beta $50, standard $100; business category; early-adopter badge cut-off reported 2027-02-15"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "anthropic_ccao_f": {
+   "name": "Claude Certified Associate – Foundations (CCAO-F)",
+   "issuer": "Anthropic",
+   "level": "foundational",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "partner-gated (Claude Partner Network staff only); does NOT count toward partner eligibility; content refresh 2026-12-07"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "anthropic_ccdv_f": {
+   "name": "Claude Certified Developer – Foundations (CCDV-F)",
+   "issuer": "Anthropic",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "partner-gated; counts toward partner tiers; content refresh 2026-12-07; 12-month validity with free renewal"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "anthropic_ccar_f": {
+   "name": "Claude Certified Architect – Foundations (CCAR-F)",
+   "issuer": "Anthropic",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "partner-gated; scenario-based; counts toward partner tiers; 12-month validity with free renewal"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "anthropic_ccar_p": {
+   "name": "Claude Certified Architect – Professional (CCAR-P)",
+   "issuer": "Anthropic",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "partner-gated; governance depth; content refresh 2026-12-07; 12-month validity with free renewal"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "gcp_paa": {
+   "name": "Google Professional Agentic Architect (PAA)",
+   "issuer": "Google Cloud",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "GA mid-November 2026; hybrid MCQ + 2 hands-on labs; MCP and A2A in scope; 1-year validity"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "gcp_ge_deployment": {
+   "name": "Gemini Enterprise Certified Partner Specialist – Deployment",
+   "issuer": "Google Cloud",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "partner-only; lab-based (3 skill badges); 6-month validity; Google FDE prerequisite"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "gcp_ge_agent_dev": {
+   "name": "Gemini Enterprise Certified Partner Specialist – Agent Development",
+   "issuer": "Google Cloud",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "partner-only; lab-based; 6-month validity; Google FDE prerequisite"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "databricks_context_eng": {
+   "name": "Databricks Certified Context Engineer Associate",
+   "issuer": "Databricks",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "GA 2026-07-29; 45 scored questions, 90 min, $200, 2-year validity; vendor claims industry first"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "databricks_ml_assoc": {
+   "name": "Databricks Certified Machine Learning Associate",
+   "issuer": "Databricks",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "48 questions, 90 min, $200, 2-year validity"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "databricks_ml_prof": {
+   "name": "Databricks Certified Machine Learning Professional",
+   "issuer": "Databricks",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "59 questions, 120 min, $200, 2-year validity; hardest Databricks exam"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "github_gh300": {
+   "name": "GitHub Certified Copilot (GH-300)",
+   "issuer": "GitHub (Microsoft)",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "prerequisite for Microsoft FTE LevelUp; validity conflicting (annual free renewal vs 2 years)"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "github_gh600": {
+   "name": "GitHub Certified Agentic AI Developer (GH-600)",
+   "issuer": "GitHub (Microsoft)",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "GA July 2026; 120 min, pass 700, $165; covers MCP but not A2A"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "github_gh700": {
+   "name": "GitHub Agentic AI Business Professional (GH-700)",
+   "issuer": "GitHub (Microsoft)",
+   "level": "foundational",
+   "status": {
+    "state": "beta",
+    "as_of": "2026-11-08",
+    "note": "beta; business audience; GA expected December 2026"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "nvidia_ncp_aai": {
+   "name": "NVIDIA NCP Agentic AI (NCP-AAI)",
+   "issuer": "NVIDIA",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "120 min, 60-70 questions, $200, 2-year validity; only 7% NVIDIA-platform content"
+   },
+   "src": [
+    "T3-01"
+   ]
+  },
+  "amd_rocm_assoc": {
+   "name": "AMD ROCm Certified Associate",
+   "issuer": "AMD",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-08",
+    "note": "free; launched 2026-07-24; 3h workshop + 1h exam; 24-month validity; AMD ecosystem only"
+   },
+   "src": [
+    "T3-01"
+   ]
   }
  },
  "resume_variants": {
@@ -8554,10 +8776,11 @@
     },
     {
      "id": "aws_mla_c01",
-     "tier": "O",
-     "note": "successor to the retired ML Specialty",
+     "tier": "X",
+     "note": "retired in English 2026-09-28; replaced by aws_mla_c02",
      "src": [
-      "T0-11"
+      "T0-11",
+      "T3-01"
      ]
     },
     {
@@ -8574,6 +8797,14 @@
      "note": "retired 2026-03-31",
      "src": [
       "T0-11"
+     ]
+    },
+    {
+     "id": "aws_mla_c02",
+     "tier": "O",
+     "note": "replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads",
+     "src": [
+      "T3-01"
      ]
     }
    ],
@@ -13195,10 +13426,19 @@
     },
     {
      "id": "aws_mla_c01",
-     "tier": "O",
-     "note": "MLOps-oriented associate credential",
+     "tier": "X",
+     "note": "retired in English 2026-09-28; replaced by aws_mla_c02",
      "src": [
-      "T0-11"
+      "T0-11",
+      "T3-01"
+     ]
+    },
+    {
+     "id": "aws_mla_c02",
+     "tier": "O",
+     "note": "replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads",
+     "src": [
+      "T3-01"
      ]
     }
    ],

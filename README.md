@@ -33,7 +33,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 | Plan a job search and résumés for several roles | [Job-search strategy](career/06-job-search/job-search-strategy.md) · [Résumé strategy](career/06-job-search/resume-strategy.md) · [Referrals and outreach](career/07-networking/referrals-and-outreach.md) |
 | Prepare for interviews | [Interview loops](career/08-interviewing/interview-loops.md) · [Prep packs](career/08-interviewing/prep-packs.md) |
 | Evaluate and negotiate an offer | [Offer evaluation](career/09-compensation/offer-evaluation.md) · [Negotiation playbook](career/09-compensation/negotiation-playbook.md) |
-| See what the research found, by topic | [Findings registry](research/findings.md) (262 graded findings from 22 sessions) |
+| See what the research found, by topic | [Findings registry](research/findings.md) (graded findings from 24 sessions) |
 | Know what is covered and what comes next | [ROADMAP.md](ROADMAP.md) |
 
 ## What's inside
@@ -41,7 +41,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 | Folder or file | Layer | Contents |
 |---|---|---|
 | [career/](career/README.md) | Reference and guidance | User-facing content: start-here tools in `00-start` and the lifecycle stages `01-landscape` … `11-tracks`; each folder has a README index |
-| [research/](research/README.md) | Evidence and knowledge | 22 dated research sessions (immutable), the findings registry, errata, the decision registry, the Founding Architecture Document, the Phase 0 pipeline specification and [research pipeline 2](research/pipeline-2/README.md) (53 planned sessions) |
+| [research/](research/README.md) | Evidence and knowledge | 24 dated research sessions (immutable), the findings registry, errata, the decision registry, the Founding Architecture Document, the Phase 0 pipeline specification and [research pipeline 2](research/pipeline-2/README.md) (53 planned sessions) |
 | [data/](data/README.md) | Sources of truth | Role facts and scores, role titles, the skills ontology, posting-term snapshots, the stack model, project archetypes, interview prompts, tools, findings, the document manifest, and JSON Schemas |
 | [scripts/](scripts/README.md) | Machinery | Generators (`--update` / `--check`) run by `build_all.py`, `validate_docs.py`, tests, and a personal gap-analysis tool |
 | [ROADMAP.md](ROADMAP.md) · [CHANGELOG.md](CHANGELOG.md) | Meta | Coverage, plans and open decisions; history of changes |
@@ -50,7 +50,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 
 ## Status
 
-- **Phase 0 (research)** is complete: 22 sessions, the Founding Architecture Document, and 12 locked decisions.
+- **Phase 0 (research)** is complete: 22 sessions, the Founding Architecture Document, and 12 locked decisions. Two additional sessions (T3-01 and T3-02, November 2026) deepen the certification evidence with independent cross-check analyses.
 - **Phase 1 (content)** has:
   - delivered the role catalogs, rankings, target order, skills ontology and role inventories, and the job-search and resume strategy;
   - put the architecture-v2 foundation in place: the stage spine, front matter, data layer, AI indexes, findings registry and CI;

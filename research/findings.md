@@ -4,9 +4,9 @@ title: "Research Findings Registry"
 content_type: reference
 stage: 0
 status: published
-last_verified: 2026-10-25
-summary: "Every key finding of the 22 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session."
-sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-01, T1-02, T1-03, T2-01]
+last_verified: 2026-11-08
+summary: "Every key finding of the 24 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session."
+sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-01, T1-02, T1-03, T2-01, T3-01, T3-02]
 generated_by: scripts/build_findings.py
 ---
 
@@ -14,9 +14,9 @@ generated_by: scripts/build_findings.py
 
 # Research Findings Registry
 
-> **262 key findings from 22 research sessions.** Each finding keeps the session's own evidence grade (EGP-1.0: A/B measured or primary; C small-sample, vendor or practitioner; D judgement) and the exact line where it is stated. Data: [data/findings.json](../data/findings.json). Sessions are dated snapshots; known errors are listed in [ERRATA.md](ERRATA.md).
+> **297 key findings from 24 research sessions.** Each finding keeps the session's own evidence grade (EGP-1.0: A/B measured or primary; C small-sample, vendor or practitioner; D judgement) and the exact line where it is stated. Data: [data/findings.json](../data/findings.json). Sessions are dated snapshots; known errors are listed in [ERRATA.md](ERRATA.md).
 
-**Grades:** A 102 · B 104 · C 45 · D 6 · M 1 · ungraded 4.
+**Grades:** A 124 · B 107 · C 48 · D 8 · M 1 · ungraded 9.
 
 ## By lifecycle stage
 
@@ -149,7 +149,7 @@ generated_by: scripts/build_findings.py
 | [T0-16.F12](sessions/T0-16-agentic-protocol-stack-enterprise-demand.md) L106 | B/C | Credible falsifiers exist: context cost, auth friction, gateway bypass, spec churn |
 
 <a id="stage-04"></a>
-### Stage 04: Certifications (12)
+### Stage 04: Certifications (47)
 
 | Finding | Grade | Statement |
 |---|:---:|---|
@@ -165,6 +165,41 @@ generated_by: scripts/build_findings.py
 | [T0-11.F10](sessions/T0-11-certification-cloud-credential-roi.md) L94 | C/D | No evidence separates how hiring managers perceive vendor-agnostic certificates (DeepLearning.AI, Stanford Online) from hyperscaler badges |
 | [T0-11.F11](sessions/T0-11-certification-cloud-credential-roi.md) L97 | B | For early-career candidates the market is tight and neither path has causal proof |
 | [T0-11.F12](sessions/T0-11-certification-cloud-credential-roi.md) L100 | M | Cash cost is small; the binding constraints are causal value and displaced time |
+| [T3-01.F1](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L105 | A | Claude certifications are partner-gated, not publicly purchasable |
+| [T3-01.F2](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L107 | A | Claude validity is 12 months (previously 6), with a free non-proctored renewal if done on time; a lapse means a full-fee retake |
+| [T3-01.F3](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L109 | A/B | Claude certifications carry institutional pull rather than open-market pull |
+| [T3-01.F4](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L111 | A | Google PAA is a confirmed hybrid: proctored MCQ plus two hands-on labs in Google Skills |
+| [T3-01.F5](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L113 | C | PAA is not the first hands-on credential and I could not verify that its labs are proctored. [A, with absence-of-evidence caveat] |
+| [T3-01.F6](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L115 | C | The AWS line-up changed under the brief's feet |
+| [T3-01.F7](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L117 | A/B | FDE programmes demand same-vendor credentials; I found no cross-vendor acceptance |
+| [T3-01.F8](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L119 | B | Gemini Enterprise Partner Specialist badges are partner-only, lab-based and short-lived |
+| [T3-01.F9](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L121 | A | Databricks Context Engineer: facts verified, "first" claim unrefuted, overlap with GenAI Engineer is about 35 to 42%, not 80%. [A for facts; M for overlap] |
+| [T3-01.F10](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L123 | A | GH-600 covers MCP at configuration depth and has no A2A; PAA covers both |
+| [T3-01.F11](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L125 | A/B | NVIDIA NCP-AAI is real but has registration ambiguity; its blueprint sums to 98% |
+| [T3-01.F12](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L127 | A/B | AMD ROCm Certified Associate is free, 24-month and AMD-ecosystem-bound |
+| [T3-01.F13](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L129 | B/C | Hiring-signal evidence sits in partner/SI job posts, and no credential exceeds a 10% JD share in anything I could verify |
+| [T3-01.F14](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L131 | A | The causal evidence is real but narrow |
+| [T3-01.F15](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L133 | — | Blueprint overlap is large for same-vendor and agentic clusters, small for ML-versus-GenAI. [M, anchored on A/B blueprints] |
+| [T3-01.F16](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L135 | A/B/D | Seeds and ordering. [M] |
+| [T3-01.F17](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L137 | A/B/D | Validity ranges from 6 months to 3 years and shapes the calendar |
+| [T3-01.F18](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) L139 | — | Total cost and exam integrity. [M/B/C] |
+| [T3-02.F1](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L55 | — | Access, not price, is the binding constraint for 13 of 28 items |
+| [T3-02.F2](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L57 | — | Claude certifications are an institutional-demand instrument |
+| [T3-02.F3](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L59 | A/C | PAA is hybrid, but "first hands-on GenAI credential" is false |
+| [T3-02.F4](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L61 | A/C | AWS FDE is hands-on, free, and AWS-closed |
+| [T3-02.F5](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L63 | A/B | The FDE prerequisite graph is vendor-closed |
+| [T3-02.F6](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L65 | D | Minimum credential set for all three FDE ladders = 7 credentials |
+| [T3-02.F7](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L67 | D | Exam churn is the norm, not the exception |
+| [T3-02.F8](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L69 | A | Databricks GenAI Engineer ↔ Context Engineer: ~60% content overlap, ~37% hours saved |
+| [T3-02.F9](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L71 | — | The agentic core is converging across vendors |
+| [T3-02.F10](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L73 | A | Ordering matters less than selection |
+| [T3-02.F11](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L75 | A | Hiring signal: no verified per-cert JD share > 10% (T0-11 F4 stands), but hard requirements exist in the SI segment |
+| [T3-02.F12](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L77 | A/B | Vendor-employed FDE roles screen on coding, partner-employed FDE capacity is credential-gated |
+| [T3-02.F13](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L79 | B/C | Pay/outcome evidence is thin and mixed |
+| [T3-02.F14](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L81 | A/B/C | Cost: the whole in-scope list is ≈ $3,361 / ₹3.75 lakh (incl. 18% GST at ₹94.5/$); ~489 study hours in a practical order vs 815 naive |
+| [T3-02.F15](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L83 | A/C | Databricks Context Engineer: "first" is a vendor claim; first from a major platform vendor is plausible, "first anywhere" is not |
+| [T3-02.F16](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L85 | A/C | Q1 2027 will move three rankings |
+| [T3-02.F17](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) L87 | C | Signal-dilution risk is real for MCQ-only credentials |
 
 <a id="stage-05"></a>
 ### Stage 05: Portfolio (24)
@@ -476,3 +511,5 @@ generated_by: scripts/build_findings.py
 | [T1-02](sessions/T1-02-evidence-grounding-protocol.md) | Epistemic Governance & Evidence-Grounding Protocol (EGP-1.0) for an AI-Careers Repository | 2026-10-21 | 11 | method |
 | [T1-03](sessions/T1-03-interview-execution-offer-negotiation.md) | Technical Interview Execution, Behavioral Calibrations & Executive Offer Negotiation for GenAI Engineers (Oct 2026) | 2026-10-25 | 12 | 08 |
 | [T2-01](sessions/T2-01-tier-calibrated-execution-playbooks.md) | Tier-Calibrated Execution Playbooks across 6 Tiers and 5 Personas | 2026-10-25 | 10 | 11 |
+| [T3-01](sessions/T3-01-genai-certification-stack-ranking-sequencing.md) | GenAI / ML / AI-infra certification stack: value ranking, knowledge-overlap sequencing and dated execution calendars (November 2026) | 2026-11-08 | 18 | 04 |
+| [T3-02](sessions/T3-02-genai-certification-stack-ranking-sequencing.md) | GenAI / ML / AI-infra / FDE certification stack — value ranking, knowledge-compounding sequence and execution calendars (Nov 2026) | 2026-11-08 | 17 | 04 |

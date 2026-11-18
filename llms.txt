@@ -1,12 +1,12 @@
 # GenAI Career Intelligence System
 
-> Evidence-graded knowledge and guidance for GenAI careers, across the whole lifecycle: which roles exist, where their work sits and which are best; what each role needs (every concept, tool and soft skill, tiered and evidence-tagged); how to prove it, get seen, pass the interview loop, evaluate and negotiate an offer and start well; tracks for transitions, India-based remote work, visas, independent practice and governance careers; and the 24 research sessions behind it all. Every empirical claim carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output, P practice-curated) and a date.
+> Evidence-graded knowledge and guidance for GenAI careers, across the whole lifecycle: which roles exist, where their work sits and which are best; what each role needs (every concept, tool and soft skill, tiered and evidence-tagged); how to prove it, get seen, pass the interview loop, evaluate and negotiate an offer and start well; tracks for transitions, India-based remote work, visas, independent practice and governance careers; and the 75 research sessions behind it all. Every empirical claim carries an EGP-1.0 grade (A/B measured, C small-sample or vendor, D judgement, M model output, P practice-curated) and a date.
 
 How to use this repository:
 
 - Start at career/README.md (Start Here) or a stage README; each stage README links its guides and its graded research findings.
 - Facts live once: machine-readable sources of truth are in data/, and the generated documents are rebuilt from them by scripts/.
-- Research sessions are dated snapshots (October 2026 to November 2026): check research/ERRATA.md and each claim's date before relying on a figure.
+- Research sessions are dated snapshots (November "202 to November 2026): check research/ERRATA.md and each claim's date before relying on a figure.
 - Rules for agents that edit or answer from this repository are in AGENTS.md.
 
 ## Start here
@@ -113,10 +113,10 @@ How to use this repository:
 
 ## Research
 
-- [Research Findings Registry](research/findings.md): Every key finding of the 24 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
+- [Research Findings Registry](research/findings.md): Every key finding of the 75 research sessions, with its evidence grade and exact line, grouped by lifecycle stage and by session.
 - [Research Errata: Known Errors in the Phase 0 Research Records](research/ERRATA.md): Errors found in the sealed Phase 0 records (FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03, T2-01) and the correct reading, with evidence. Read before relying on those files.
 - [Research Pipeline 2: Targeted Sessions for Every High-Impact Element](research/pipeline-2/README.md): The second research pipeline: 53 targeted sessions on networking, résumés, job search, certifications, countries and visas, remote work, pay, interviews and every role, each designed backwards from the data and pages it feeds, with a shared protocol, verification, integration and a generated tracker.
-- [research/sessions/](research/sessions/): The 24 research sessions (dated evidence reports with source ledgers).
+- [research/sessions/](research/sessions/): The 75 research sessions (dated evidence reports with source ledgers).
 - [research/DECISIONS.md](research/DECISIONS.md): Architecture decision registry (D-001 to D-022).
 
 ## Research sessions
@@ -141,6 +141,57 @@ Session IDs cited across the repository (for example T0-04 L120) map to these fi
 - [T0-16](research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md): Agentic Protocol Stack (MCP / A2A / ACP / AG-UI): Standardization Status and Enterprise Hiring Demand, October 2026 (2026-10-21)
 - [T0-17](research/sessions/T0-17-compensation-progression-plateaus-equity.md): GenAI engineering career economics (Oct 2026): promotion velocity, compensation inflections, equity risk-discounting, and liquidity realities (2026-10-23)
 - [T0-18](research/sessions/T0-18-freelance-fractional-ai-practice-economics.md): Independent GenAI Consulting & Fractional Head-of-AI Practice Economics (October 2026) (2026-10-25)
+- [T0-19](research/sessions/T0-19-linkedin-profile-search-content-engagement.md): LinkedIn for GenAI Job Seekers: Recruiter Search, Profile, Content and Engagement ("2026-11-11")
+- [T0-20](research/sessions/T0-20-github-readme-portfolio-site-writing.md): GitHub Profiles, Project READMEs, Portfolio Websites and Technical Writing ("2026-11-13")
+- [T0-21](research/sessions/T0-21-x-frontier-communities-fellowships-events.md): X, Frontier-Lab Communities, Fellowships, Events and Competitions ("2026-11-14")
+- [T0-22](research/sessions/T0-22-referrals-warm-intros-cold-outreach-law.md): Referrals, Warm Introductions and Cold Outreach, Including the Law ("2026-11-11")
+- [T0-23](research/sessions/T0-23-resume-format-content-screening-2026.md): The GenAI Résumé in 2026: Format, Content, Regional Norms and AI Screening ("2026-11-16")
+- [T0-24](research/sessions/T0-24-job-boards-global-ai-startup-remote.md): Job Boards for GenAI Roles 1: Global, AI-Specific, Startup, Remote and Employer Boards ("2026-11-11")
+- [T0-25](research/sessions/T0-25-job-boards-regional-india-in-depth.md): Job Boards for GenAI Roles 2: National and Regional Boards, with India in Depth ("2026-11-11")
+- [T0-26](research/sessions/T0-26-job-search-tools-agents-oss-mcp.md): Job-Search Tools: Trackers, Builders, Autofill, Auto-Apply, Agents, Open Source and MCP Servers ("2026-11-11")
+- [T0-27](research/sessions/T0-27-target-employers-sponsor-registers-data.md): Target Employers, Sponsor Registers and Hiring Data Corpora ("2026-11-13")
+- [T0-29](research/sessions/T0-29-certifications-frontier-labs-ai-native-vendors.md): Certification Census 2: Frontier Labs and AI-Native Vendors ("2026-11-11")
+- [T0-30](research/sessions/T0-30-certifications-courses-universities-india-programmes.md): Certification Census 3: Course Platforms, Universities, Indian Programmes, Credential Bodies and Recognition Programmes ("2026-11-14")
+- [T0-31](research/sessions/T0-31-certifications-data-enterprise-ai-platforms.md): Certification Census 4: Data and Enterprise AI Platforms ("2026-11-11")
+- [T0-32](research/sessions/T0-32-certifications-gpu-infrastructure-open-source.md): Certification Census 5: GPU, Infrastructure, Networking and Open-Source Foundations ("2026-11-13")
+- [T0-34](research/sessions/T0-34-certifications-governance-security-privacy-audit.md): Certification Census 7: AI Governance, Security, Privacy and Audit ("2026-11-14")
+- [T0-35](research/sessions/T0-35-countries-cities-americas-europe-israel.md): Countries and Cities for GenAI Careers 1: the Americas, Europe and Israel ("2026-11-17")
+- [T0-36](research/sessions/T0-36-countries-cities-gulf-india-asia-pacific.md): Countries and Cities for GenAI Careers 2: the Gulf, India and Asia-Pacific ("2026-11-14")
+- [T0-37](research/sessions/T0-37-visa-dossier-united-states.md): Visa and Work-Permit Dossier: United States ("2026-11-13")
+- [T0-38](research/sessions/T0-38-visa-dossier-canada.md): Visa and Work-Permit Dossier: Canada ("2026-11-13")
+- [T0-39](research/sessions/T0-39-visa-dossier-uk-ireland-western-europe.md): Visa and Work-Permit Dossier: UK, Ireland, Germany, Netherlands, France and Switzerland ("2026-11-14")
+- [T0-40](research/sessions/T0-40-visa-dossier-nordics-southern-central-europe.md): Visa and Work-Permit Dossier: Nordics, Southern and Central Europe ("2026-11-13")
+- [T0-41](research/sessions/T0-41-visa-dossier-gulf-israel.md): Visa and Work-Permit Dossier: the Gulf States and Israel ("2026-11-18")
+- [T0-42](research/sessions/T0-42-visa-dossier-asia-pacific.md): Visa and Work-Permit Dossier: Asia-Pacific ("2026-11-13")
+- [T0-43](research/sessions/T0-43-remote-cross-border-work-eor-platforms.md): Remote Cross-Border Work for GenAI Roles: Who Hires, at What Pay, Through Which Structures ("2026-11-13")
+- [T0-44](research/sessions/T0-44-pay-us-uk-europe-singapore-gulf.md): Pay Refresh: US, Canada, UK, Europe, Israel, Singapore, the Gulf, Japan and Australia ("2026-11-11")
+- [T0-45](research/sessions/T0-45-pay-negotiation-india-city-employer.md): Pay and Negotiation in India: by City, Employer Type, Role and Level ("2026-11-16")
+- [T0-46](research/sessions/T0-46-interview-loops-genai-employers-2026.md): Interview Loops for GenAI Roles: by Employer and Track ("2026-11-13")
+- [T0-47](research/sessions/T0-47-ai-mediated-hiring-screening-interviews-fraud.md): AI-Mediated Hiring: Screening, AI Interviewers, Candidate AI Policies and Fraud Checks ("2026-11-11")
+- [T0-48](research/sessions/T0-48-role-dossier-ai-engineer.md): Role Dossier: AI Engineer ("2026-11-13")
+- [T0-49](research/sessions/T0-49-role-dossier-ml-engineer.md): Role Dossier: Machine Learning Engineer ("2026-11-13")
+- [T0-50](research/sessions/T0-50-role-dossier-research-engineer.md): Role Dossier: Research Engineer / Member of Technical Staff ("2026-11-13")
+- [T0-51](research/sessions/T0-51-role-dossier-forward-deployed-engineer.md): Role Dossier: Forward Deployed Engineer ("2026-11-13")
+- [T0-52](research/sessions/T0-52-role-dossier-applied-scientist.md): Role Dossier: Applied Scientist ("2026-11-13")
+- [T0-53](research/sessions/T0-53-role-dossier-applied-ai-engineer.md): Role Dossier: Applied AI Engineer ("2026-11-13")
+- [T0-54](research/sessions/T0-54-role-dossier-ai-infrastructure-engineer.md): Role Dossier: AI Infrastructure / GPU Platform Engineer ("2026-11-13")
+- [T0-55](research/sessions/T0-55-role-dossier-research-scientist.md): Role Dossier: Research Scientist (AI/ML) ("2026-11-13")
+- [T0-56](research/sessions/T0-56-role-dossier-inference-engineer.md): Role Dossier: Inference / LLM Serving Engineer ("2026-11-13")
+- [T0-57](research/sessions/T0-57-role-dossier-agentic-ai-engineer.md): Role Dossier: Agentic AI Engineer ("2026-11-13")
+- [T0-58](research/sessions/T0-58-role-dossier-ml-platform-engineer.md): Role Dossier: ML Platform / MLOps Engineer ("2026-11-13")
+- [T0-59](research/sessions/T0-59-role-dossier-ai-product-manager.md): Role Dossier: AI Product Manager ("2026-11-13")
+- [T0-60](research/sessions/T0-60-role-group-evaluation-security-safety.md): Role Group Dossier: Evaluation, Security and Safety ("2026-11-13")
+- [T0-61](research/sessions/T0-61-role-group-governance-risk-responsible-ai.md): Role Group Dossier: Governance, Risk and Responsible AI ("2026-11-13")
+- [T0-62](research/sessions/T0-62-role-group-solutions-enablement-product-engineering.md): Role Group Dossier: Solutions, Enablement and AI Product Engineering ("2026-11-13")
+- [T0-63](research/sessions/T0-63-role-dossier-gpu-kernel-engineer.md): Role Dossier: GPU Kernel / ML Compiler Engineer ("2026-11-11")
+- [T0-64](research/sessions/T0-64-role-dossier-physical-ai-engineer.md): Role Dossier: Physical AI / Robotics AI Engineer ("2026-11-13")
+- [T0-65](research/sessions/T0-65-role-group-ai-leadership.md): Role Group Dossier: AI Engineering Managers, Heads of AI and Chief AI Officers ("2026-11-11")
+- [T0-66](research/sessions/T0-66-role-group-independent-fractional-contract.md): Role Group Dossier: Independent, Fractional and Contract AI Work ("2026-11-14")
+- [T0-67](research/sessions/T0-67-transitions-devops-pm-it-services-students.md): Transitions into GenAI Roles: DevOps and SRE Engineers, Product Managers, IT-Services Engineers, Students and New Graduates ("2026-11-13")
+- [T0-68](research/sessions/T0-68-learning-resources-rated.md): Learning Resources for GenAI Roles, Rated: Documentation, Courses, Books, Cohorts and Bootcamps ("2026-11-13")
+- [T0-69](research/sessions/T0-69-skill-tool-momentum-dated-series.md): Skill and Tool Momentum: What Is Rising and Falling, as Dated Series ("2026-11-14")
+- [T0-70](research/sessions/T0-70-market-pulse-hiring-layoffs-funding.md): Market Pulse: Hiring Volume, Layoffs, Funding and Employer Mix ("2026-11-13")
+- [T0-71](research/sessions/T0-71-onboarding-growth-ai-roles.md): First 90 Days and Growth in AI Roles: Expectations, Probation, Promotion and Sustainable Pace ("2026-11-11")
 - [T1-01](research/sessions/T1-01-repository-information-architecture.md): Repository Information Architecture, Hybrid Navigation & 12-Stage Funnel Blueprint (2026-10-25)
 - [T1-02](research/sessions/T1-02-evidence-grounding-protocol.md): Epistemic Governance & Evidence-Grounding Protocol (EGP-1.0) for an AI-Careers Repository (2026-10-21)
 - [T1-03](research/sessions/T1-03-interview-execution-offer-negotiation.md): Technical Interview Execution, Behavioral Calibrations & Executive Offer Negotiation for GenAI Engineers (Oct 2026) (2026-10-25)

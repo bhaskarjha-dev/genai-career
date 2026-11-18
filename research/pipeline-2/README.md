@@ -86,7 +86,7 @@ Generated from [catalogue.json](catalogue.json) by `scripts/research_pipeline.py
 
 <!-- BEGIN GENERATED: scripts/research_pipeline.py (tracker) -->
 
-**53 sessions:** 53 ready to run, 0 saved and awaiting integration, 0 integrated, 0 dropped. **9 reduce steps:** 0 done.
+**53 sessions:** 2 ready to run, 51 saved and awaiting integration, 0 integrated, 0 dropped. **9 reduce steps:** 0 done.
 
 | Family | Sessions | Wave 1 | Wave 2 | Wave 3 |
 |---|:---:|:---:|:---:|:---:|
@@ -105,71 +105,71 @@ Generated from [catalogue.json](catalogue.json) by `scripts/research_pipeline.py
 
 | Wave | Priority | ID | Session | Family | Verify | Status |
 |:---:|:---:|---|---|---|:---:|---|
-| 1 | P0 | T0-19 | [LinkedIn for GenAI Job Seekers: Recruiter Search, Profile, Content and Engagement](briefs/linkedin.md) | Networking and visibility | sample | ready |
-| 1 | P1 | T0-20 | [GitHub Profiles, Project READMEs, Portfolio Websites and Technical Writing](briefs/github-portfolio-writing.md) | Networking and visibility | sample | ready |
-| 1 | P1 | T0-21 | [X, Frontier-Lab Communities, Fellowships, Events and Competitions](briefs/x-communities-fellowships.md) | Networking and visibility | sample | ready |
-| 1 | P0 | T0-22 | [Referrals, Warm Introductions and Cold Outreach, Including the Law](briefs/referrals-outreach.md) | Networking and visibility | required | ready |
-| 1 | P0 | T0-23 | [The GenAI Résumé in 2026: Format, Content, Regional Norms and AI Screening](briefs/resume.md) | Résumé and screening | sample | ready |
-| 1 | P0 | T0-24 | [Job Boards for GenAI Roles 1: Global, AI-Specific, Startup, Remote and Employer Boards](briefs/job-boards-global.md) | Job search | sample | ready |
-| 1 | P0 | T0-25 | [Job Boards for GenAI Roles 2: National and Regional Boards, with India in Depth](briefs/job-boards-regional.md) | Job search | sample | ready |
-| 1 | P1 | T0-26 | [Job-Search Tools: Trackers, Builders, Autofill, Auto-Apply, Agents, Open Source and MCP Servers](briefs/job-search-tools.md) | Job search | sample | ready |
-| 1 | P0 | T0-27 | [Target Employers, Sponsor Registers and Hiring Data Corpora](briefs/target-employers.md) | Job search | sample | ready |
+| 1 | P0 | T0-19 | [LinkedIn for GenAI Job Seekers: Recruiter Search, Profile, Content and Engagement](briefs/linkedin.md) | Networking and visibility | sample | saved, to integrate: [T0-19](../sessions/T0-19-linkedin-profile-search-content-engagement.md) |
+| 1 | P1 | T0-20 | [GitHub Profiles, Project READMEs, Portfolio Websites and Technical Writing](briefs/github-portfolio-writing.md) | Networking and visibility | sample | saved, to integrate: [T0-20](../sessions/T0-20-github-readme-portfolio-site-writing.md) |
+| 1 | P1 | T0-21 | [X, Frontier-Lab Communities, Fellowships, Events and Competitions](briefs/x-communities-fellowships.md) | Networking and visibility | sample | saved, to integrate: [T0-21](../sessions/T0-21-x-frontier-communities-fellowships-events.md) |
+| 1 | P0 | T0-22 | [Referrals, Warm Introductions and Cold Outreach, Including the Law](briefs/referrals-outreach.md) | Networking and visibility | required | saved, to integrate: [T0-22](../sessions/T0-22-referrals-warm-intros-cold-outreach-law.md) |
+| 1 | P0 | T0-23 | [The GenAI Résumé in 2026: Format, Content, Regional Norms and AI Screening](briefs/resume.md) | Résumé and screening | sample | saved, to integrate: [T0-23](../sessions/T0-23-resume-format-content-screening-2026.md) |
+| 1 | P0 | T0-24 | [Job Boards for GenAI Roles 1: Global, AI-Specific, Startup, Remote and Employer Boards](briefs/job-boards-global.md) | Job search | sample | saved, to integrate: [T0-24](../sessions/T0-24-job-boards-global-ai-startup-remote.md) |
+| 1 | P0 | T0-25 | [Job Boards for GenAI Roles 2: National and Regional Boards, with India in Depth](briefs/job-boards-regional.md) | Job search | sample | saved, to integrate: [T0-25](../sessions/T0-25-job-boards-regional-india-in-depth.md) |
+| 1 | P1 | T0-26 | [Job-Search Tools: Trackers, Builders, Autofill, Auto-Apply, Agents, Open Source and MCP Servers](briefs/job-search-tools.md) | Job search | sample | saved, to integrate: [T0-26](../sessions/T0-26-job-search-tools-agents-oss-mcp.md) |
+| 1 | P0 | T0-27 | [Target Employers, Sponsor Registers and Hiring Data Corpora](briefs/target-employers.md) | Job search | sample | saved, to integrate: [T0-27](../sessions/T0-27-target-employers-sponsor-registers-data.md) |
 | 1 | P0 | T0-28 | [Certification Census 1: Hyperscalers and Enterprise Clouds](briefs/certifications.md) | Certifications | required | ready (best after 2026-12-05) |
-| 1 | P0 | T0-29 | [Certification Census 2: Frontier Labs and AI-Native Vendors](briefs/certifications.md) | Certifications | required | ready |
-| 1 | P1 | T0-30 | [Certification Census 3: Course Platforms, Universities, Indian Programmes, Credential Bodies and Recognition Programmes](briefs/certifications.md) | Certifications | required | ready |
-| 1 | P1 | T0-31 | [Certification Census 4: Data and Enterprise AI Platforms](briefs/certifications.md) | Certifications | required | ready |
-| 1 | P1 | T0-32 | [Certification Census 5: GPU, Infrastructure, Networking and Open-Source Foundations](briefs/certifications.md) | Certifications | required | ready |
+| 1 | P0 | T0-29 | [Certification Census 2: Frontier Labs and AI-Native Vendors](briefs/certifications.md) | Certifications | required | saved, to integrate: [T0-29](../sessions/T0-29-certifications-frontier-labs-ai-native-vendors.md) |
+| 1 | P1 | T0-30 | [Certification Census 3: Course Platforms, Universities, Indian Programmes, Credential Bodies and Recognition Programmes](briefs/certifications.md) | Certifications | required | saved, to integrate: [T0-30](../sessions/T0-30-certifications-courses-universities-india-programmes.md) |
+| 1 | P1 | T0-31 | [Certification Census 4: Data and Enterprise AI Platforms](briefs/certifications.md) | Certifications | required | saved, to integrate: [T0-31](../sessions/T0-31-certifications-data-enterprise-ai-platforms.md) |
+| 1 | P1 | T0-32 | [Certification Census 5: GPU, Infrastructure, Networking and Open-Source Foundations](briefs/certifications.md) | Certifications | required | saved, to integrate: [T0-32](../sessions/T0-32-certifications-gpu-infrastructure-open-source.md) |
 | 1 | P1 | T0-33 | [Certification Census 6: Developer Tools, Agentic AI, and AI Product and Business](briefs/certifications.md) | Certifications | required | ready (best after 2026-12-05) |
-| 1 | P1 | T0-34 | [Certification Census 7: AI Governance, Security, Privacy and Audit](briefs/certifications.md) | Certifications | required | ready |
-| 1 | P0 | T0-35 | [Countries and Cities for GenAI Careers 1: the Americas, Europe and Israel](briefs/country-scan.md) | Countries, visas and remote work | required | ready |
-| 1 | P0 | T0-36 | [Countries and Cities for GenAI Careers 2: the Gulf, India and Asia-Pacific](briefs/country-scan.md) | Countries, visas and remote work | required | ready |
-| 2 | P1 | T0-37 | [Visa and Work-Permit Dossier: United States](briefs/visa-dossier.md) | Countries, visas and remote work | required | ready |
-| 2 | P1 | T0-38 | [Visa and Work-Permit Dossier: Canada](briefs/visa-dossier.md) | Countries, visas and remote work | required | ready |
-| 2 | P1 | T0-39 | [Visa and Work-Permit Dossier: UK, Ireland, Germany, Netherlands, France and Switzerland](briefs/visa-dossier.md) | Countries, visas and remote work | required | ready |
-| 2 | P2 | T0-40 | [Visa and Work-Permit Dossier: Nordics, Southern and Central Europe](briefs/visa-dossier.md) | Countries, visas and remote work | required | ready |
-| 2 | P2 | T0-41 | [Visa and Work-Permit Dossier: the Gulf States and Israel](briefs/visa-dossier.md) | Countries, visas and remote work | required | ready |
-| 2 | P1 | T0-42 | [Visa and Work-Permit Dossier: Asia-Pacific](briefs/visa-dossier.md) | Countries, visas and remote work | required | ready |
-| 2 | P0 | T0-43 | [Remote Cross-Border Work for GenAI Roles: Who Hires, at What Pay, Through Which Structures](briefs/remote-work.md) | Countries, visas and remote work | required | ready |
-| 2 | P0 | T0-44 | [Pay Refresh: US, Canada, UK, Europe, Israel, Singapore, the Gulf, Japan and Australia](briefs/pay-global.md) | Pay and negotiation | required | ready |
-| 2 | P0 | T0-45 | [Pay and Negotiation in India: by City, Employer Type, Role and Level](briefs/pay-india.md) | Pay and negotiation | required | ready |
-| 2 | P0 | T0-46 | [Interview Loops for GenAI Roles: by Employer and Track](briefs/interview-loops.md) | Interviewing and AI-mediated hiring | sample | ready |
-| 2 | P1 | T0-47 | [AI-Mediated Hiring: Screening, AI Interviewers, Candidate AI Policies and Fraud Checks](briefs/ai-mediated-hiring.md) | Interviewing and AI-mediated hiring | sample | ready |
-| 2 | P0 | T0-48 | [Role Dossier: AI Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P0 | T0-49 | [Role Dossier: Machine Learning Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P0 | T0-50 | [Role Dossier: Research Engineer / Member of Technical Staff](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P0 | T0-51 | [Role Dossier: Forward Deployed Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-52 | [Role Dossier: Applied Scientist](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-53 | [Role Dossier: Applied AI Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-54 | [Role Dossier: AI Infrastructure / GPU Platform Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-55 | [Role Dossier: Research Scientist (AI/ML)](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-56 | [Role Dossier: Inference / LLM Serving Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-57 | [Role Dossier: Agentic AI Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-58 | [Role Dossier: ML Platform / MLOps Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 2 | P1 | T0-59 | [Role Dossier: AI Product Manager](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P1 | T0-60 | [Role Group Dossier: Evaluation, Security and Safety](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P1 | T0-61 | [Role Group Dossier: Governance, Risk and Responsible AI](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P2 | T0-62 | [Role Group Dossier: Solutions, Enablement and AI Product Engineering](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P2 | T0-63 | [Role Dossier: GPU Kernel / ML Compiler Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P2 | T0-64 | [Role Dossier: Physical AI / Robotics AI Engineer](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P2 | T0-65 | [Role Group Dossier: AI Engineering Managers, Heads of AI and Chief AI Officers](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P2 | T0-66 | [Role Group Dossier: Independent, Fractional and Contract AI Work](briefs/role-dossier.md) | Role dossiers | required | ready |
-| 3 | P1 | T0-67 | [Transitions into GenAI Roles: DevOps and SRE Engineers, Product Managers, IT-Services Engineers, Students and New Graduates](briefs/transitions.md) | Transitions | sample | ready |
-| 3 | P2 | T0-68 | [Learning Resources for GenAI Roles, Rated: Documentation, Courses, Books, Cohorts and Bootcamps](briefs/learning-resources.md) | Skills and learning | sample | ready |
-| 3 | P2 | T0-69 | [Skill and Tool Momentum: What Is Rising and Falling, as Dated Series](briefs/skill-momentum.md) | Skills and learning | sample | ready |
-| 3 | P1 | T0-70 | [Market Pulse: Hiring Volume, Layoffs, Funding and Employer Mix](briefs/market-pulse.md) | Market | sample | ready |
-| 3 | P2 | T0-71 | [First 90 Days and Growth in AI Roles: Expectations, Probation, Promotion and Sustainable Pace](briefs/onboarding-growth.md) | Onboarding and growth | sample | ready |
+| 1 | P1 | T0-34 | [Certification Census 7: AI Governance, Security, Privacy and Audit](briefs/certifications.md) | Certifications | required | saved, to integrate: [T0-34](../sessions/T0-34-certifications-governance-security-privacy-audit.md) |
+| 1 | P0 | T0-35 | [Countries and Cities for GenAI Careers 1: the Americas, Europe and Israel](briefs/country-scan.md) | Countries, visas and remote work | required | saved, to integrate: [T0-35](../sessions/T0-35-countries-cities-americas-europe-israel.md) |
+| 1 | P0 | T0-36 | [Countries and Cities for GenAI Careers 2: the Gulf, India and Asia-Pacific](briefs/country-scan.md) | Countries, visas and remote work | required | saved, to integrate: [T0-36](../sessions/T0-36-countries-cities-gulf-india-asia-pacific.md) |
+| 2 | P1 | T0-37 | [Visa and Work-Permit Dossier: United States](briefs/visa-dossier.md) | Countries, visas and remote work | required | saved, to integrate: [T0-37](../sessions/T0-37-visa-dossier-united-states.md) |
+| 2 | P1 | T0-38 | [Visa and Work-Permit Dossier: Canada](briefs/visa-dossier.md) | Countries, visas and remote work | required | saved, to integrate: [T0-38](../sessions/T0-38-visa-dossier-canada.md) |
+| 2 | P1 | T0-39 | [Visa and Work-Permit Dossier: UK, Ireland, Germany, Netherlands, France and Switzerland](briefs/visa-dossier.md) | Countries, visas and remote work | required | saved, to integrate: [T0-39](../sessions/T0-39-visa-dossier-uk-ireland-western-europe.md) |
+| 2 | P2 | T0-40 | [Visa and Work-Permit Dossier: Nordics, Southern and Central Europe](briefs/visa-dossier.md) | Countries, visas and remote work | required | saved, to integrate: [T0-40](../sessions/T0-40-visa-dossier-nordics-southern-central-europe.md) |
+| 2 | P2 | T0-41 | [Visa and Work-Permit Dossier: the Gulf States and Israel](briefs/visa-dossier.md) | Countries, visas and remote work | required | saved, to integrate: [T0-41](../sessions/T0-41-visa-dossier-gulf-israel.md) |
+| 2 | P1 | T0-42 | [Visa and Work-Permit Dossier: Asia-Pacific](briefs/visa-dossier.md) | Countries, visas and remote work | required | saved, to integrate: [T0-42](../sessions/T0-42-visa-dossier-asia-pacific.md) |
+| 2 | P0 | T0-43 | [Remote Cross-Border Work for GenAI Roles: Who Hires, at What Pay, Through Which Structures](briefs/remote-work.md) | Countries, visas and remote work | required | saved, to integrate: [T0-43](../sessions/T0-43-remote-cross-border-work-eor-platforms.md) |
+| 2 | P0 | T0-44 | [Pay Refresh: US, Canada, UK, Europe, Israel, Singapore, the Gulf, Japan and Australia](briefs/pay-global.md) | Pay and negotiation | required | saved, to integrate: [T0-44](../sessions/T0-44-pay-us-uk-europe-singapore-gulf.md) |
+| 2 | P0 | T0-45 | [Pay and Negotiation in India: by City, Employer Type, Role and Level](briefs/pay-india.md) | Pay and negotiation | required | saved, to integrate: [T0-45](../sessions/T0-45-pay-negotiation-india-city-employer.md) |
+| 2 | P0 | T0-46 | [Interview Loops for GenAI Roles: by Employer and Track](briefs/interview-loops.md) | Interviewing and AI-mediated hiring | sample | saved, to integrate: [T0-46](../sessions/T0-46-interview-loops-genai-employers-2026.md) |
+| 2 | P1 | T0-47 | [AI-Mediated Hiring: Screening, AI Interviewers, Candidate AI Policies and Fraud Checks](briefs/ai-mediated-hiring.md) | Interviewing and AI-mediated hiring | sample | saved, to integrate: [T0-47](../sessions/T0-47-ai-mediated-hiring-screening-interviews-fraud.md) |
+| 2 | P0 | T0-48 | [Role Dossier: AI Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-48](../sessions/T0-48-role-dossier-ai-engineer.md) |
+| 2 | P0 | T0-49 | [Role Dossier: Machine Learning Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-49](../sessions/T0-49-role-dossier-ml-engineer.md) |
+| 2 | P0 | T0-50 | [Role Dossier: Research Engineer / Member of Technical Staff](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-50](../sessions/T0-50-role-dossier-research-engineer.md) |
+| 2 | P0 | T0-51 | [Role Dossier: Forward Deployed Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-51](../sessions/T0-51-role-dossier-forward-deployed-engineer.md) |
+| 2 | P1 | T0-52 | [Role Dossier: Applied Scientist](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-52](../sessions/T0-52-role-dossier-applied-scientist.md) |
+| 2 | P1 | T0-53 | [Role Dossier: Applied AI Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-53](../sessions/T0-53-role-dossier-applied-ai-engineer.md) |
+| 2 | P1 | T0-54 | [Role Dossier: AI Infrastructure / GPU Platform Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-54](../sessions/T0-54-role-dossier-ai-infrastructure-engineer.md) |
+| 2 | P1 | T0-55 | [Role Dossier: Research Scientist (AI/ML)](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-55](../sessions/T0-55-role-dossier-research-scientist.md) |
+| 2 | P1 | T0-56 | [Role Dossier: Inference / LLM Serving Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-56](../sessions/T0-56-role-dossier-inference-engineer.md) |
+| 2 | P1 | T0-57 | [Role Dossier: Agentic AI Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-57](../sessions/T0-57-role-dossier-agentic-ai-engineer.md) |
+| 2 | P1 | T0-58 | [Role Dossier: ML Platform / MLOps Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-58](../sessions/T0-58-role-dossier-ml-platform-engineer.md) |
+| 2 | P1 | T0-59 | [Role Dossier: AI Product Manager](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-59](../sessions/T0-59-role-dossier-ai-product-manager.md) |
+| 3 | P1 | T0-60 | [Role Group Dossier: Evaluation, Security and Safety](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-60](../sessions/T0-60-role-group-evaluation-security-safety.md) |
+| 3 | P1 | T0-61 | [Role Group Dossier: Governance, Risk and Responsible AI](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-61](../sessions/T0-61-role-group-governance-risk-responsible-ai.md) |
+| 3 | P2 | T0-62 | [Role Group Dossier: Solutions, Enablement and AI Product Engineering](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-62](../sessions/T0-62-role-group-solutions-enablement-product-engineering.md) |
+| 3 | P2 | T0-63 | [Role Dossier: GPU Kernel / ML Compiler Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-63](../sessions/T0-63-role-dossier-gpu-kernel-engineer.md) |
+| 3 | P2 | T0-64 | [Role Dossier: Physical AI / Robotics AI Engineer](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-64](../sessions/T0-64-role-dossier-physical-ai-engineer.md) |
+| 3 | P2 | T0-65 | [Role Group Dossier: AI Engineering Managers, Heads of AI and Chief AI Officers](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-65](../sessions/T0-65-role-group-ai-leadership.md) |
+| 3 | P2 | T0-66 | [Role Group Dossier: Independent, Fractional and Contract AI Work](briefs/role-dossier.md) | Role dossiers | required | saved, to integrate: [T0-66](../sessions/T0-66-role-group-independent-fractional-contract.md) |
+| 3 | P1 | T0-67 | [Transitions into GenAI Roles: DevOps and SRE Engineers, Product Managers, IT-Services Engineers, Students and New Graduates](briefs/transitions.md) | Transitions | sample | saved, to integrate: [T0-67](../sessions/T0-67-transitions-devops-pm-it-services-students.md) |
+| 3 | P2 | T0-68 | [Learning Resources for GenAI Roles, Rated: Documentation, Courses, Books, Cohorts and Bootcamps](briefs/learning-resources.md) | Skills and learning | sample | saved, to integrate: [T0-68](../sessions/T0-68-learning-resources-rated.md) |
+| 3 | P2 | T0-69 | [Skill and Tool Momentum: What Is Rising and Falling, as Dated Series](briefs/skill-momentum.md) | Skills and learning | sample | saved, to integrate: [T0-69](../sessions/T0-69-skill-tool-momentum-dated-series.md) |
+| 3 | P1 | T0-70 | [Market Pulse: Hiring Volume, Layoffs, Funding and Employer Mix](briefs/market-pulse.md) | Market | sample | saved, to integrate: [T0-70](../sessions/T0-70-market-pulse-hiring-layoffs-funding.md) |
+| 3 | P2 | T0-71 | [First 90 Days and Growth in AI Roles: Expectations, Probation, Promotion and Sustainable Pace](briefs/onboarding-growth.md) | Onboarding and growth | sample | saved, to integrate: [T0-71](../sessions/T0-71-onboarding-growth-ai-roles.md) |
 
 | Step | What | Inputs saved | Status |
 |---|---|:---:|---|
-| R1 | Credentials: census to data, a computed value order and the credential pages | 0 of 7 | pending |
-| R2 | Geography: country and city data, a computed ranking with lenses, and the visa and remote pages | 0 of 11 | pending |
-| R3 | Roles: dossiers to role scores, titles, skill tiers and hubs | 0 of 19 | pending |
-| R4 | Networking and presence: the networking guides and tools | 0 of 4 | pending |
-| R5 | Résumé: the résumé model, screening facts and the inputs for personal résumé tools | 0 of 1 | pending |
-| R6 | Job search: boards, tools and target employers | 0 of 4 | pending |
-| R7 | Pay: benchmarks, negotiation and the pay pillar | 0 of 2 | pending |
-| R8 | Interviewing: loops, AI-mediated hiring and practice prompts | 0 of 2 | pending |
-| R9 | Tracks, skills, market and onboarding | 0 of 5 | pending |
+| R1 | Credentials: census to data, a computed value order and the credential pages | 5 of 7 | pending |
+| R2 | Geography: country and city data, a computed ranking with lenses, and the visa and remote pages | 11 of 11 | pending |
+| R3 | Roles: dossiers to role scores, titles, skill tiers and hubs | 19 of 19 | pending |
+| R4 | Networking and presence: the networking guides and tools | 4 of 4 | pending |
+| R5 | Résumé: the résumé model, screening facts and the inputs for personal résumé tools | 1 of 1 | pending |
+| R6 | Job search: boards, tools and target employers | 4 of 4 | pending |
+| R7 | Pay: benchmarks, negotiation and the pay pillar | 2 of 2 | pending |
+| R8 | Interviewing: loops, AI-mediated hiring and practice prompts | 2 of 2 | pending |
+| R9 | Tracks, skills, market and onboarding | 5 of 5 | pending |
 
 <!-- END GENERATED: scripts/research_pipeline.py (tracker) -->
 

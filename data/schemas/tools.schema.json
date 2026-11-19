@@ -41,7 +41,7 @@
     "evidence": {"enum": ["A", "B", "C", "D"]},
     "source": {
      "type": "string",
-     "pattern": "^T[0-2]-\\d{2} L\\d+(-L\\d+)?(, L\\d+(-L\\d+)?)*(; T[0-2]-\\d{2} L\\d+(-L\\d+)?(, L\\d+(-L\\d+)?)*)*$"
+     "pattern": "^T[0-3]-\\d{2} L\\d+(-L\\d+)?(, L\\d+(-L\\d+)?)*(; T[0-3]-\\d{2} L\\d+(-L\\d+)?(, L\\d+(-L\\d+)?)*)*$"
     },
     "as_of": {"$ref": "#/$defs/date"},
     "status": {
@@ -95,7 +95,14 @@
     "Statutory portal",
     "Freelance marketplace",
     "Contract templates",
-    "Immigration"
+    "Immigration",
+    "MCP server",
+    "Job-data API",
+    "AI job-search agent",
+    "Sponsor register",
+    "AI screening",
+    "Employer AI interviewer",
+    "Expert-data platform"
    ]
   }
  }

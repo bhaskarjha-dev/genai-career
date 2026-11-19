@@ -49,7 +49,7 @@ TIER_NAME = OrderedDict([("M", "Must"), ("I", "Important"), ("S", "Should"), ("O
 KNOWLEDGE = {"concept", "method"}
 NONTECH = {"communication", "behavioural", "business", "leadership", "domain", "research_craft"}
 DEAD = {"archived", "dormant", "retired"}
-REF = re.compile(r"^(T[0-2]-\d\d):L(\d+)(?:-L?(\d+))?$")
+REF = re.compile(r"^(T[0-3]-\d\d):L(\d+)(?:-L?(\d+))?$")
 FEEDER = re.compile(r"\((feeder|adjacent|closest) ?[^)]*\)\s*$")  # a share measured on a related title (AGENTS.md §3.4)
 POSTINGS = ROOT / "data" / "posting_skill_shares.json"
 END_MARKER = "\n<!-- END GENERATED -->"
@@ -240,6 +240,19 @@ def patterns(e):
     return out
 
 
+def literal_terms(e):
+    """Plain substrings when no custom match regex is set, for fast pre-filtering without changing results."""
+    if "match" in e:
+        return None
+    out = []
+    for term in [e["name"].split(" (")[0]] + e.get("aliases", []):
+        for part in term.split(" / "):
+            part = part.strip()
+            if len(part) >= 3 or (part == term and len(part) >= 2):
+                out.append(part)
+    return out
+
+
 def corpus_counts(o, sessions):
     """Mentions per research session for every concrete skill; None means 'not counted' (ambiguous name)."""
     res = OrderedDict()
@@ -251,7 +264,15 @@ def corpus_counts(o, sessions):
             res[sid] = None
             continue
         rx = re.compile("|".join(f"(?:{p})" for p in pats))
-        res[sid] = OrderedDict((k, n) for k, n in ((k, sum(1 for _ in rx.finditer(t))) for k, t in sessions.items()) if n)
+        terms = literal_terms(e)
+        counts = OrderedDict()
+        for k, t in sessions.items():
+            if terms is not None and not any(term in t for term in terms):
+                continue
+            n = len(rx.findall(t))
+            if n:
+                counts[k] = n
+        res[sid] = counts
     return res
 
 

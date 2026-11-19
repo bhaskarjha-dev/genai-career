@@ -121,7 +121,7 @@ class DataFiles(unittest.TestCase):
     """Every data file with a schema validates against it."""
 
     PAIRS = ["role_scores", "role_titles", "posting_skill_shares", "skills_ontology", "stack_model",
-             "project_archetypes", "interview_prompts", "tools"]
+             "project_archetypes", "interview_prompts", "tools", "target_employers", "countries", "credentials"]
 
     def test_schemas(self):
         for name in self.PAIRS:
@@ -150,6 +150,35 @@ class GapAnalysisSmoke(unittest.TestCase):
             run = subprocess.run([sys.executable, "-B", str(script), str(path)], capture_output=True, text=True, cwd=ROOT)
         self.assertEqual(run.returncode, 0, run.stderr)
         self.assertIn("AI Engineer", run.stdout)
+
+
+class RoleHubsHybrid(unittest.TestCase):
+    """Decision D-023: hybrid role hubs preserve front matter and dossier narrative across regeneration."""
+
+    def test_merge_hub_preserves_handwritten_sections(self):
+        import build_role_hubs as brh
+        existing = (
+            "---\nid: roles.hub.test\ngenerated_by: \"scripts/build_role_hubs.py (generated blocks)\"\n---\n\n"
+            + brh.CARD_BEGIN + "OLD CARD" + brh.CARD_END
+            + "\n\n## What the role actually looks like\n\nCustom dossier prose.\n"
+        )
+        merged = brh.merge_hub(existing, "NEW CARD")
+        self.assertIn("NEW CARD", merged)
+        self.assertNotIn("OLD CARD", merged)
+        self.assertIn("Custom dossier prose.", merged)
+        self.assertIn("generated blocks", merged)
+        self.assertIsNone(brh.merge_hub("no markers here", "NEW CARD"))
+
+
+class RP2Generators(unittest.TestCase):
+    """Decisions D-024, D-025, D-026: new generators validate cleanly and pass --check."""
+
+    def test_new_generators_check_clean(self):
+        for script in ("build_employers.py", "rank_countries.py", "rank_credentials.py"):
+            with self.subTest(script=script):
+                res = subprocess.run([sys.executable, "-B", str(SCRIPTS / script), "--check"],
+                                     capture_output=True, text=True, cwd=ROOT)
+                self.assertEqual(res.returncode, 0, res.stdout + res.stderr)
 
 
 class ResearchPipeline(unittest.TestCase):

@@ -29,9 +29,12 @@ GENERATORS = [
     "build_resume_matrix.py",  # skills ontology -> résumé skills matrix
     "resume_layers.py",        # ontology, archetypes -> computed résumé-layer blocks
     "build_skills_views.py",   # ontology -> skills radar, credentials by role
+    "rank_credentials.py",     # credentials, ontology -> ranked credential catalog (D-026)
     "build_archetypes.py",     # project archetypes -> project-archetypes page
     "build_role_map.py",       # stack model, scores, ontology -> role map
-    "build_role_hubs.py",      # everything above -> 29 role hubs and their index
+    "build_role_hubs.py",      # everything above -> 29 role hubs and their index (D-023 hybrid cards)
+    "build_employers.py",      # target employers -> target-employers directory (D-024)
+    "rank_countries.py",       # countries -> ranked country and city table (D-025)
     "build_prompts.py",        # interview prompts -> prep packs
     "build_tool_catalog.py",   # tools -> tool catalog
     "research_pipeline.py",    # research pipeline 2 catalogue, briefs, data -> tracker in research/pipeline-2/README.md

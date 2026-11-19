@@ -25,9 +25,12 @@ python3 -B -m unittest discover -s scripts/tests -v   # tests for the machinery
 | [build_resume_matrix.py](build_resume_matrix.py) | `data/skills_ontology.json` | Generated blocks in `career/06-job-search/resume-skills-matrix.md` |
 | [resume_layers.py](resume_layers.py) | `data/skills_ontology.json`, `data/project_archetypes.json` | The computed résumé-layer blocks in the job-search guides |
 | [build_skills_views.py](build_skills_views.py) | `data/skills_ontology.json`, `data/posting_skill_shares.json` | `career/03-skills-and-tech/skills-radar.md`, `career/04-certifications/credentials-by-role.md` |
+| [rank_credentials.py](rank_credentials.py) | `data/credentials.json` + schema, `data/skills_ontology.json` (ID resolution), session line counts | `career/04-certifications/credential-catalog.md` (D-026) |
 | [build_archetypes.py](build_archetypes.py) | `data/project_archetypes.json` + schema, the ontology, the stack model, `data/interview_prompts.json` | `career/05-portfolio/project-archetypes.md` |
 | [build_role_map.py](build_role_map.py) | `data/stack_model.json`, `data/role_scores.json`, the ontology, the project archetypes | `career/02-roles/role-map.md` |
-| [build_role_hubs.py](build_role_hubs.py) | Every data file above, plus `rank_roles.py` and `resume_layers.py` | `career/02-roles/hubs/` (one hub per role and an index) |
+| [build_role_hubs.py](build_role_hubs.py) | Every data file above, plus `rank_roles.py` and `resume_layers.py` | `career/02-roles/hubs/README.md` in full, and the generated card block in each of the 29 role hubs (D-023) |
+| [build_employers.py](build_employers.py) | `data/target_employers.json` + schema, session line counts | `career/01-landscape/target-employers.md` (D-024) |
+| [rank_countries.py](rank_countries.py) | `data/countries.json` + schema, session line counts | `career/11-tracks/country-rankings.md` (D-025) |
 | [build_prompts.py](build_prompts.py) | `data/interview_prompts.json` + schema, `data/role_scores.json`, the ontology, session line counts | `career/08-interviewing/prep-packs.md` |
 | [build_tool_catalog.py](build_tool_catalog.py) | `data/tools.json` + schema, session line counts | `career/00-start/tool-catalog.md` |
 | [research_pipeline.py](research_pipeline.py) | `research/pipeline-2/catalogue.json`, its briefs and protocol, `data/role_scores.json`, the ontology, `data/role_titles.json`, `data/tools.json`, `data/posting_skill_shares.json`, `research/sessions/` (which sessions are saved) | The tracker block in `research/pipeline-2/README.md`. Also, writing nothing: `--prompt <id>` prints a session's prompt, `--next` lists sessions to run, `--appendix` checks a session report, `--verify` prints a verification packet |

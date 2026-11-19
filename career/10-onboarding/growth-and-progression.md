@@ -1,40 +1,40 @@
 ---
 id: onboarding.growth-and-progression
-title: "Growth and Progression: Promotion, Moving On, IC or Manager, and Sustainable Learning"
+title: "Growth and Progression: Promotion, Moving On, IC or Manager, Burnout and Sustainable Pace"
 content_type: guide
 stage: 10
 status: published
-last_verified: 2026-11-06
+last_verified: 2026-11-19
 review_by: 2027-01-19
-summary: "After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, how to choose between the IC and manager tracks, and how to keep learning at a pace you can sustain."
-sources: [T0-17, T1-03, T0-09, T0-12, T0-06]
+summary: "After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, navigating thinning management tracks and Staff+ inflection, avoiding the 10x AI-productivity trap, and managing burnout and sustainable pace."
+sources: [T0-17, T1-03, T0-09, T0-12, T0-06, T0-71]
 roles: [all]
-geos: [global, india, us]
-tags: [promotion, levelling, job-hopping, retention, ic-vs-manager, learning, plateaus, compensation]
+geos: [global, india, us, eu, uk]
+tags: [promotion, levelling, job-hopping, retention, ic-vs-manager, learning, plateaus, compensation, burnout, sustainable-pace, ai-productivity]
 ---
 
 # Growth and Progression After the First 90 Days
 
-> After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, how to choose between the IC and manager tracks, and how to keep learning at a pace you can sustain.
+> After the first 90 days: how promotion and levelling pay in GenAI careers, when a move beats staying, navigating thinning management tracks and Staff+ inflection, avoiding the 10x AI-productivity trap, and managing burnout and sustainable pace.
 
-**Dates and grades.** Pay and promotion figures come from [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) (dated 2026-10-23), which compiles Levels.fyi 2025 data, Pave data and releases up to September 2026: re-verify them by 2027-01-21. The hop-or-stay rule comes from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md); reasons for leaving from [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md); the learning routine from [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md) and [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md). [Errata](../../research/ERRATA.md) U4, U5 and U14 are applied: US medians carry the level labels T0-17 measured, and India figures use measured anchors, not tier bands. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement; E no evidence found after searching; M model output; P practice-curated and unmeasured.
+**Dates and grades.** Pay and levelling anchors come from [T0-17](../../research/sessions/T0-17-compensation-progression-plateaus-equity.md) (dated `2026-10-23`, Levels.fyi 2025 and releases to September 2026: re-verify by `2027-01-21`), updated and corrected by [T0-71](../../research/sessions/T0-71-onboarding-growth-ai-roles.md) (dated `2026-11-13`, covering cross-dataset promotion rates, thinning management layers, AI-tool productivity attenuation, occupational-health and GenAI burnout research; 14 of 84 sources opened in full and 70 read as extracts, with COI marked on Anthropic studies and employer reports). The hop-or-stay rule comes from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md); reasons for leaving from [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md) and [T0-71](../../research/sessions/T0-71-onboarding-growth-ai-roles.md); the learning routine from [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md) and [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md). [Errata](../../research/ERRATA.md) U4, U5 and U14 plus two November 2026 corrections from T0-71 (`Pave 8.6%` half-year window and `SignalFire` leadership attribution) are applied. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement; E no evidence found after searching; M model output; P practice-curated and unmeasured.
 
 ## The short answer
 
-1. **A promotion pays less than the gap between level medians.** US medians step ×1.2–1.5 per level [B · T0-17 L129], but a promotion delivers about 16–24% in total compensation: Pave puts promoted base raises at 6.5% for AI/ML engineers, and ongoing equity rises 39% on promotion [C · T0-17 L115]. Only 8.6% of employees are promoted in a year [B · T0-17 L125].
+1. **A promotion pays less than the gap between level medians, and promotion rates depend sharply on definition and window.** US level medians step ×1.2–1.5 per level [B · T0-17 L129], whereas promotion raises span `7.7%` (Pave R&D H1 2026) to `22.3%` (Ravio EU 2025) [B · T0-71 L71, L203–205], and T0-17's `16–24%` total-comp estimate is a triangulation rather than a traced standalone measure [C · T0-17 L115; T0-71 L210]. *Erratum fixed:* Pave's `8.6%` promotion rate is a **half-year** figure (H1 2025 and H1 2026), not annual; across datasets annual rates run from `4.0%` (Ravio EU) to `14.9%` (Pave US 2024) [B · T0-71 L71, L198–202, L301]. In India, nearly one in three workers who received a title change in two years got no raise or under `5%` (`n = 2,533`) [C · T0-71 L71, L206].
 2. **Move only when the premium clears about 25% or promotion is blocked.** Same-tier lateral moves pay about +15–25% in total compensation and level-up moves +35–50%. "35–50% per hop" fails as a general rule; it describes tier-crossers [A/B/C · T0-17.F1; A/B/C · T1-03.F7].
-3. **The AI premium grows with level, but AI promotion speed is not measured.** The premium over non-AI engineers rises from 6.2% at Entry to 18.7% at Staff [B · T0-17 L130]. No public dataset compares months per level for AI and non-AI engineers [E · T0-17 L122]; the average software engineer reaches Senior at about 8.6 years of experience [C · T0-17 L123].
-4. **Choose IC or manager by the work, not the clock.** SignalFire reports that AI engineers move into management in under three years on average [C · T0-17 L126]. The sessions behind this page do not compare IC and manager pay for AI roles. Use the decision questions below [P].
-5. **Treat a growth stall as the signal to act.** In a vendor's voluntary survey of 200+ India AI and ML engineers (Jul–Sep 2026), no growth (39%) outranked a better offer (21%) as the reason for leaving a role early [C · T0-09 L69]. Raise scope with your manager before you test the market [P].
-6. **Learn durable concepts on a fixed cadence, and protect your energy.** Freeze stack choices six weeks at a time, and invest in context, retrieval, tool schemas and evals rather than API surfaces [D · T0-06 L254]. Burnout is not researched in this corpus; the load advice on this page is [P].
+3. **The AI premium grows with level, but independent AI promotion speed is still unmeasured.** The premium over non-AI engineers rises from 6.2% at Entry to 18.7% at Staff [B · T0-17 L130]. Still no independent dataset compares months per level for AI and non-AI engineers [E · T0-17 L122; T0-71 L315]; T0-17's `"8.6 years to Senior"` snippet was untraceable in T0-71, while SignalFire's proprietary dataset gives `2.1` years between promotions at startups against `3.18` at IBM and `3.07–5.37` years to senior among survivors [C · T0-71 L72, L207–208, L302].
+4. **Choose IC or manager as management layers thin, and test a bounded lead role first.** *Erratum fixed:* SignalFire's primary text names **data engineering and DevOps** fastest to leadership (`2–3` years); `"AI engineers under 3 years"` comes only from CIO Dive's reading of a chart, and leadership ≠ people management [C · T0-71 L219, L303]. Management spans are widening (`~12` engineers per manager at Tech Majors from `10`, `~15` at startups) alongside `"Super IC"` roles [C · T0-71 L73, L214].
+5. **Read growth, pay and work-life balance together — and never promise "10×" AI multipliers.** India retention surveys are mixed: Wisemonk (`n ≥ 200`, COI) puts no growth (`39%`) first, foundit June puts pay (`~40%`) slightly ahead of growth (`~37%`), foundit November (`n = 9,951`) puts growth (`40.3%`) ahead of pay (`29.7%`) as the top switch trigger while work-life balance leads priorities (`29.6%`), and Randstad 2026 puts work-life balance (`49%`) first [C · T0-71 L69, L145–151]. On AI coding speed, no controlled study backs `"10×"`: commits jump `30–240%` while releases rise `~30%` (NBER WP 35275) [B · T0-71 L66–67, L175].
+6. **Protect sustainable pace: long hours and AI-driven intensification carry measurable health and burnout risk.** WHO/ILO links `≥55` hours/week to `+35%` stroke and `+17%` ischaemic-heart-disease death risk [A · T0-71 L74, L225], and Feng, Afroz & Sarma (`ICSE-SEIS 2026`, `n = 442`) link GenAI job demands to burnout (`β = 0.40`) while autonomy and learning resources protect (`β = −0.36`) [B · T0-71 L74, L227]. Aim near `50` hours/week, set a review trigger at `55`, freeze stack choices six weeks at a time, and keep one rest day [A/B/P · T0-71 L90, L237–242].
 
 ## At a glance
 
 ```mermaid
 flowchart TD
-    A["Probation passed: day 90"] --> B["Every quarter: self-review and market check"]
+    A["Probation passed: day 90"] --> B["Every quarter: self-review, pace check and market check"]
     B --> C{"Next-level criteria written down and within reach?"}
-    C -->|"Yes"| D["Stay: build the promotion case"]
+    C -->|"Yes"| D["Stay: build the promotion case with shipped outcomes"]
     C -->|"No"| E{"Can a scope or team change fix it?"}
     E -->|"Yes"| F["Ask for scope, with a date"]
     F --> B
@@ -42,13 +42,13 @@ flowchart TD
     G -->|"Yes"| H["Move: evaluate the offer, then run a new first 90 days"]
     G -->|"No"| I["Stay, keep the evidence, recheck at the next review"]
     I --> B
-    D --> J{"Do you want to lead people?"}
-    J -->|"Yes"| K["Manager track"]
-    J -->|"No"| L["Staff-plus IC track"]
-    B --> M["Learning loop: durable concepts, six-week stack freeze, 90-day check"]
+    D --> J{"Do you want to lead people (and is a manager track open)?"}
+    J -->|"Yes"| K["Try a bounded lead role first, then manager track"]
+    J -->|"No"| L["Staff-plus / Super IC track"]
+    B --> M["Pace and learning: ~50h target, 55h trigger, 6-week stack freeze"]
 ```
 
-The 25% threshold and the blocked-promotion rule are T1-03's [A/B/C · T1-03.F7]. The quarterly cadence and the other branches are [P].
+The 25% threshold and the blocked-promotion rule are T1-03's [A/B/C · T1-03.F7]. The bounded-lead test and 55-hour review trigger draw on T0-71 [A/B/C/P · T0-71 L90, L92]; the quarterly cadence is [P].
 
 ## How levels and pay progress
 
@@ -56,22 +56,31 @@ The 25% threshold and the blocked-promotion rule are T1-03's [A/B/C · T1-03.F7]
 
 US all-company medians step ×1.2–1.5 per level from Entry to Principal, and the AI premium over non-AI engineers rises from 6.2% at Entry to 18.7% at Staff (Levels.fyi 2025 data and Q3 2025 analysis) [B · T0-17 L129–L130]. The ladder itself, with every median, step and date, is in [pay benchmarks: the US all-company ladder](../09-compensation/pay-benchmarks.md#us-all-company-ladder); role and regional figures are on the same page.
 
-**Time in level.** No AI-specific dataset exists [E · T0-17 L122]. The proxies:
-- The average software engineer in Levels.fyi's database reaches Senior at about 8.6 years of experience, with Google and Apple at about 7–9 and Netflix mostly 10+ (reported by its cofounder; seen as a search snippet) [C · T0-17 L123].
+**Time in level.** Still no independent AI-specific dataset exists [E · T0-17 L122; T0-71 L315]. The proxies:
+- SignalFire's proprietary profile dataset reports `2.1` years between promotions at startups versus `3.18` years at IBM, and `3.07` years (top-tier graduates) to `5.37` years (no listed degree) to reach Senior among survivors who reached that level (does not isolate AI engineers) [C · T0-71 L72, L207–208, L488].
+- T0-17's search snippet quoting `"8.6 years of experience"` to Senior on Levels.fyi could not be independently traced in T0-71 [C/E · T0-17 L123; T0-71 L302].
 - Anthropic's Levels.fyi page lists Senior at 6–8 years of experience and Lead at 7–8 (n = 49) [B · T0-17 L123].
 - Community timelines at Google-style levels: L3→L4 about 1–2 years, L4→L5 about 2–4, L5→L6 about 3–5+ or never; many treat Meta's E5 as a de facto terminal level [C/D · T0-17 L124].
 
 ### What a promotion and a stay are worth
 
-- **Raises.** AI/ML engineers get the highest non-promoted raise in R&D (4.4%) but near-bottom promoted raises (6.5%, against 7.7% for R&D and 8.6% for all employees). Employers reward AI talent through annual raises and equity more than through promotion jumps [B · T0-17 L115, L125].
-- **A promotion** is worth about 16–24% in total compensation once equity is counted: equity is 30–50% of total pay, and ongoing equity rises 39% on promotion [C · T0-17 L115].
-- **The level gap.** The Senior→Staff step between level medians is ×1.46, more than a promotion delivers. T0-17 reads the difference, about 22–30 percentage points for Senior→Staff and 14–22 for Engineer→Senior, as the most an external move can capture [C · T0-17 L115].
-- **A median year.** About 5% total-compensation growth for the median stayer (3.4% median merit plus the odds of promotion); about 9–12% for promotion-track performers [M · T0-17 L117].
+Promotion rates and raises vary widely by dataset, definition (title change versus level jump) and time window [B · T0-71 L71, L198–210]:
+
+| Measure | Value | Population and window | Grade · source |
+|---|---|---|---|
+| Promotion rate (annual) | `4.0%` (Ravio EU 2025); `5.0%` (Mercer global 2025, `5.5%` in 2024); `10.3%` (Gusto US payroll, May 2025); `14.9%` (Pave US, 2024) | Cross-market annual ranges | B · T0-71 L198–202 |
+| Promotion rate (half-year — *erratum fixed*) | `8.6%` (`10.7%` at 1–200-employee firms) | Pave H1 2025 and H1 2026 (`200+` firms, `>100k` staff) — **half-year window**, not annual (correcting T0-17 L125) | B · T0-71 L200, L301, L491 |
+| Base raise at promotion | `6.5%` AI/ML vs `7.7%` R&D (Pave H1 2026, down from `9.9%` in 2025); `~8–9%` (Mercer 2025); `22.3%` (Ravio EU tech average 2025) | AI/ML non-promoted raises led R&D (`4.4%`, Pave), while promoted base jumps sat near bottom | B · T0-17 L115, L125; T0-71 L203–205 |
+| Title without raise (India) | Nearly `1 in 3` who got a title change in two years received `0%` or `<5%`; `52%` would pick higher pay over a better title; `~60%` say title does not match pay | Indeed India / Valuvox (`n = 2,533` employees, May–Jun 2026) | C · T0-71 L71, L206 |
+
+- **Total compensation on promotion.** T0-17 triangulates a promotion at about `16–24%` in total compensation when equity (30–50% of pay) rises `39%` on promotion [C · T0-17 L115]; T0-71 notes this `16–24%` range is a triangulation rather than a traced standalone survey measure [T0-71 L210, L301].
+- **The level gap.** The Senior→Staff step between US level medians is ×1.46, larger than a single promotion jump. T0-17 reads the gap (roughly 22–30 percentage points for Senior→Staff and 14–22 for Engineer→Senior) as the upper bound an external move can capture [C · T0-17 L115].
+- **A median stayer year.** Pave's median merit raise drifted from `3.6%` to `3.5%` to `3.4%` (`2024–2026`). *Erratum note:* T0-17 L117 modelled ~5% expected annual stayer growth by plugging Pave's half-year `0.086` into an annual formula; using full-year rates (`4–15%`) yields roughly `4–7%` expected total-comp growth for a median stayer and `9–12%` on promotion track [M · T0-17 L117; B · T0-71 L198–202].
 
 ### Outside the US, and at frontier labs
 
-- **India.** The local senior ceiling is a Greater Bengaluru Senior SWE median of ≈ ₹56.0L and a P90 of ≈ ₹1.07Cr (Levels.fyi, n = 4,836) [B · T0-17 L137], and a local Staff role typically does not reach ₹1.2Cr, on Levels.fyi job-board estimates [C · T0-17 L138]. The full distribution, the highest employer senior medians and the unstable "AI Engineer" title page are in [pay benchmarks: India](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer). Do not use the India "T2/T3" bands: neither band set is measured [errata U14]. The corpus does not measure what moves people past the local senior ceiling; see the [India remote playbook](../11-tracks/india-remote-playbook.md).
-- **Europe.** No Europe-specific time-in-level data was found, so plateau claims are inference [E · T0-17 L145]. London's senior band, from a search snippet (Grade C), is in [pay benchmarks](../09-compensation/pay-benchmarks.md#uk-europe-singapore-and-the-gcc).
+- **India.** The local senior ceiling is a Greater Bengaluru Senior SWE median of ≈ ₹56.0L and a P90 of ≈ ₹1.07Cr (Levels.fyi, n = 4,836) [B · T0-17 L137], and a local Staff role typically does not reach ₹1.2Cr on Levels.fyi job-board estimates [C · T0-17 L138]. Full distributions live in [pay benchmarks: India](../09-compensation/pay-benchmarks.md#india-by-city-level-and-employer) (do not use unmeasured "T2/T3" bands [errata U14]). Appraisal and review rules are tightening in services: Accenture's `2026-02-20` internal memo records AI-platform usage in senior-manager and associate-director promotions [C · T0-71 L129], Infosys runs an Oct–Sep appraisal calendar and TCS resumed April hikes [C · T0-71 L161], and Mint/Upstox reported TCS asking managers to identify `~5%` of staff for its lowest band/PIP (unverified against TCS) [C · T0-71 L162]. Frontier-AI attrition in India is reported at `21–45%` versus `5–12%` in enterprise roles (AIM, method undisclosed) [C · T0-71 L149].
+- **Europe.** Ravio reports a `4.0%` European tech promotion rate and `22.3%` average raise at promotion (2025) [B · T0-71 L198, L205]; Europe-specific time-in-level data remain absent [E · T0-17 L145]. London's senior band is in [pay benchmarks](../09-compensation/pay-benchmarks.md#uk-europe-singapore-and-the-gcc).
 - **Frontier labs.** Headline Levels.fyi medians run ×2.0 (Anthropic Senior) to ×2.9 (OpenAI L5) of the US all-company Senior median, and ×2.8 (OpenAI L6) to ×3.1 (Anthropic Staff) at Staff; treat lab medians as ±30–50% [C · T0-17 L131–132]. After equity risk-adjustment, an OpenAI-L6-like package is ≈ ×1.7–2.4 of the all-company Staff median [C · T0-17 L133]. The largest single OpenAI step is L3→L4, ×2.2 [B · T0-17 L131].
 
 ## Hop or stay: the decision table
@@ -82,7 +91,8 @@ The money rule, and what each kind of move pays, belong to [offer evaluation: ho
 |---|---|---|
 | A tender eligibility date or a large vest is close | Time the move | Frontier-lab tenders use 1–2-year tenure gates and dollar caps [A/B · T0-17.F8] |
 | The new employer is a startup where an acqui-hire is plausible | Read the carve-outs | In the 2025 Windsurf deal, employees hired within the prior year reportedly received no payout [B · T0-17 L180] |
-| Pay is your only complaint | Get a level-matched market number and ask internally first [P] | Stated drivers of early exits are mostly growth, scope and management; compensation was the least-named reason to stay (4%) in the India survey [C · T0-09 L83] |
+| Pay is your only complaint | Get a level-matched market number and ask internally first [P] | India surveys are mixed — Wisemonk (`39%` no growth) and foundit Nov (`40.3%` growth trigger) lead with growth, while foundit Jun puts pay (`~40%`) slightly ahead and Randstad ranks work-life balance (`49%`) first [C · T0-71 L69, L145–151] |
+| You received a title change with `<5%` raise | Treat it as a market-check trigger [P] | Nearly 1 in 3 title-changed Indian workers received `0%` or `<5%` (`n = 2,533`) [C · T0-71 L206] |
 | Any external move | Price in the reset | External hires were paid about 18% more than internal promotees but performed worse early and left sooner (about 5,000 investment-bank employees; non-tech, older) [A · T0-17 L113] |
 
 **Background, not rules.**
@@ -91,35 +101,93 @@ The money rule, and what each kind of move pays, belong to [offer evaluation: ho
 - "+35–50% every two years" would compound to ×4.5–7.6 over ten years, yet Levels.fyi medians rise only ×3.6 from Entry to Principal [C · T0-17 L116].
 - If you might leave before a grant vests, discount the grant for attrition as [offer evaluation](../09-compensation/offer-evaluation.md#adjustment-2-vesting-cliff-and-forfeiture) shows.
 
-## IC or manager: decision questions
+## IC or manager: Staff+ inflection and decision questions
 
-**What the evidence says.** SignalFire reports that AI engineers move into management in under three years on average, a different measure from IC promotion speed [C · T0-17 L126]. A practitioner career ladder treats evaluation as the clearest seniority signal [C · T0-09 L429]. T0-17 and T0-09 do not compare pay for the two tracks; see the [AI Engineering Manager hub](../02-roles/hubs/ai-engineering-manager.md) for its own evidence.
+**What the evidence says (November 2026):**
+- **Management tracks are flattening while Staff+ / "Super IC" scope expands.** SignalFire's 2026 report puts spans at about `12` engineers per manager at Tech Majors (up from `10`) and about `15` at startups, with thinner senior management and `"Super IC"` roles carrying manager-scale scope [C · T0-71 L73, L214]. Anthropic's October 2026 employer report similarly shows about `17` engineers per product manager, managers committing code roughly twice as often, and ICs orchestrating coding agents needing manager-like scoping [B, COI · T0-71 L215].
+- **SignalFire erratum corrected (`T0-17 L126`).** SignalFire's primary text names **data engineering and DevOps** as fastest to leadership (`2–3` years); the `"AI engineers in under three years"` line appears only in CIO Dive's description of a chart, and `"leadership"` is not synonymous with people management [C · T0-71 L219, L303].
+- **Strong ICs do not automatically make strong managers.** Benson, Li & Shue (`QJE 2019`, sales workers) found firms weight current IC performance heavily in promotion while managerial quality of marginally promoted workers fell as pre-promotion IC output rose (transfer to engineering untested) [B · T0-71 L217]. Test management via a bounded tech-lead or acting-lead assignment first [C/B · T0-71 L92].
+- **Parallel ladders exist, and junior pipelines are thinner.** GitLab publishes a separate `Engineering Manager ML` role (`5+` years ML/PhD plus leadership) alongside `Staff ML Engineer` [A · T0-71 L218], and practitioners treat evaluation design as a clear IC seniority signal [C · T0-09 L429]. Meanwhile junior hiring tightened at AI-adopting firms (`−7.7%` to `−9%` relative drop across `62M` US workers in Harvard's study; `27%→9%` of technical hires at Anthropic, COI [B · T0-71 L215–216, L518]), shrinking the pool of junior reports for first-time managers. T0-17, T0-09 and T0-71 do not compare IC versus manager pay for AI roles; see the [AI Engineering Manager hub](../02-roles/hubs/ai-engineering-manager.md).
 
 Answer these before you accept or ask for a management role [P]:
 
 | Question | If yes | If no |
 |---|---|---|
 | Do you want your results to come through other people's work: hiring, 1:1s, reviews, unblocking? | The manager track fits | Stay IC |
-| Does your employer publish written Staff and Principal IC criteria? | The IC path has a next step | The IC ceiling may sit at Senior: weigh the manager track or a move |
+| Does your employer publish written Staff and Principal IC criteria (and keep Staff+ / Super IC scope open)? | The IC path has a next step | The IC ceiling may sit at Senior: weigh the manager track or a move |
 | Are you choosing management to escape a stalled IC track? | Fix the stall first: scope, team or manager | Continue |
 | Do you still want to own technical calls such as eval design and architecture? | Stay IC, or take a tech-lead role | The manager track fits |
-| Can you try it reversibly, as a tech lead or acting manager? | Try before you switch | Ask what the way back looks like |
+| Can you try it reversibly, as a bounded tech lead or acting manager? | Try before you switch [C/B · T0-71 L92] | Ask what the way back looks like |
 
 Leadership roles beyond line management: [VP or Head of AI](../02-roles/hubs/vp-head-of-ai.md), [Chief AI Officer](../02-roles/hubs/chief-ai-officer.md) and [Fractional AI Leader](../02-roles/hubs/fractional-ai-leader.md). Profile: [AI Engineering Manager in the role catalog](../02-roles/role-catalog.md#profile-ai-engineering-manager).
 
 ## How to do it
 
-1. **Get the next-level criteria in writing** within a month of confirmation [P]. *Done when:* you hold your employer's ladder text for your level and the next, and your manager has said which criteria you meet.
-2. **Run a quarterly self-review** with the template below [P]. *Done when:* every next-level criterion has linked evidence or a dated plan.
+1. **Get the next-level criteria and appraisal calendar in writing** within a month of confirmation [C/P · T0-71 L91, L271]. *Done when:* you hold your employer's ladder text for your level and the next, know the exact cycle dates (especially in India), and your manager has said which criteria you meet.
+2. **Run a quarterly self-review** (GitLab's handbook recommends a career development conversation at least quarterly [B · T0-71 L122]) with the template below [P]. *Done when:* every next-level criterion has linked evidence or a dated plan.
 3. **Check the market every quarter** against level-matched medians in [Pay benchmarks](../09-compensation/pay-benchmarks.md) [P]. *Done when:* you know your gap to the level median, in percent.
-4. **Ask for scope, not a title,** when the case is thin [P]. *Done when:* your manager has agreed a project that maps to a missing criterion, with a date.
+4. **Ask for scope, not a title,** when the case is thin [P]. *Done when:* your manager has agreed a project that maps to a missing criterion, with a date. If criteria are unpublished or no path exists after two review cycles, treat that as a finding [C · T0-71 L91].
 5. **Decide stay or move at most twice a year,** with the decision table [P]. *Done when:* the decision and its numbers are written down.
-6. **Keep the first-90-days habits:** a weekly written update, a decision log and measured results [D · T0-09 L193, L255]. *Done when:* a promotion packet can be assembled from existing artefacts.
-7. **Run the learning loop and its 90-day check** (below). *Done when:* the check passes, or you have changed the type of artefact or the channel [D · T0-12 L175].
+6. **Keep the first-90-days habits:** a weekly written update, a decision log and measured shipped outcomes rather than code-volume counts [D · T0-09 L193, L255; B · T0-71 L89]. *Done when:* a promotion packet can be assembled from existing artefacts.
+7. **Run the pace check and learning loop** (below). *Done when:* hours stay near 50/week (triggering review at 55) and the 90-day learning check passes [A/B/P · T0-71 L90; D · T0-12 L175].
+
+### Two-year milestones
+
+Synthesis from [T0-71 §8](../../research/sessions/T0-71-onboarding-growth-ai-roles.md) [B/C/P · T0-71 L267–275]; adjust to your employer's ladder and review calendar.
+
+| Window | Milestone | Tag | Failure mode |
+|---|---|---|---|
+| **Months 4–6** | Own one production component with explicit quality gates; lead a blameless postmortem | P | Owning without decision authority |
+| **Months 6–9** | Widen scope across teams; mentor a newer joiner; document architecture and evals | B (mentoring) / C (ladders) | Cross-team scope without a sponsor |
+| **Months 9–12** | First formal appraisal cycle: evidence log, level criteria, timeline (confirm cycle dates in India) | C | Opaque cycle or title change without raise |
+| **Months 12–18** | Promotion case or stay/move decision (SignalFire reports `2.1` yrs between promotions at startups vs `3.18` at IBM, though stability varies) | C | Moving into a new probation without a `~25%` premium or level-up |
+| **Months 18–24** | Track choice: test a bounded tech-lead or project-lead role versus Staff-scope IC | C/B | Mismatched move into people management |
+| **Throughout** | Protect debugging and review judgement by doing some core work without AI assistance; keep sustained hours near `50` and a weekly rest day | A/B/P | Skill erosion from blind delegation; cultural pressure toward `70+` hours |
+
+## AI-tool productivity and avoiding the "10×" trap
+
+Controlled studies and large-scale telemetry show real but bounded gains that **attenuate sharply before software actually ships**, and **no evidence supports a "10× engineer with AI"** [B/E · T0-71 L66–68, L169–181]:
+
+| Study | Design and sample | Measured finding | Grade · source |
+|---|---|---|---|
+| Peng et al. (2023, cited via Google) | Lab-style Copilot task (`n = 95`) | `~+56%` faster on a bounded server task | B · T0-71 L169 |
+| Cui et al. (*Management Science* 2025) | Three field RCTs (`n = 4,867`, 2022–23 tools) | `+26.08%` completed tasks (`SE 10.3`); less experienced developers gained more | B · T0-71 L170 |
+| Paradis et al. (Google 2024) | Enterprise RCT (`n = 96`, one complex task) | `~+21%` faster (wide interval); senior and heavier coders faster | B · T0-71 L171 |
+| METR (early 2025 & Feb 2026) | Task RCT on expert OSS maintainers (`n = 16`, 246 tasks; follow-up `n = 57`, 800+ tasks) | Early 2025: **`+19%` slower** (devs forecast `24%` faster). Feb 2026 follow-up (`−18%` returning, `−4%` new, every interval spanning zero) was **compromised by selection effects** (`30–50%` withheld tasks); METR calls the signal unreliable | B · T0-71 L172–173, L499 |
+| Demirer, Musolff & Yang (`NBER WP 35275`, May 2026) | Matched GitHub event study (`100k+` devs; working paper) | Commits rose **`+30% / +180% / +240%`** (or `40 / 140 / 180%` PDF) across autocomplete, interactive and autonomous agents, **attenuating to `+80%` projects and `~+30%` releases** (elasticity `0.23–0.25`, strong complements) | B · T0-71 L66, L175 |
+| METR survey (`2026-05-11`) | Convenience self-report (`n = 349`, ~2% response) | Median **`1.4–2×` value** (`3×` speed). Only `7` claimed `≥10×`; the `2` checked against public outputs were judged **overstated**. The `"10×"` label traces to a 1968 study unrelated to AI | B / E · T0-71 L67, L174 |
+| Anthropic learning RCT (`2026-01-29`, COI) | Controlled study learning a new library (`n = 52`, mostly junior) | AI group scored **`50%` vs `67%`** on a comprehension quiz (`d = 0.74`, `p = 0.01`, ~2 min faster, non-significant); delegating code/debugging scored `<40%` vs `≥65%` for conceptual questioning | B, COI · T0-71 L68, L177 |
+| Anthropic internal data (`2026-10-16`, COI) | Staggered adoption (`192` adopters, `74` non-adopters) | Commits per engineer `~5×` over six months; authors themselves warn **more code is not more impact** | B, COI · T0-71 L178 |
+
+**What this means for progression:**
+- **Report before-and-after shipped outcomes, never multipliers.** Count merged features that users rely on, latency/cost cuts and eval gains — not commits or token volume, which invite `"tokenmaxxing"` Goodhart effects [B · T0-71 L89, L350].
+- **Protect long-term debugging judgement.** Periodically write and debug critical paths without AI delegation, and use comprehension-seeking prompts when entering unfamiliar domains, so AI speed does not hollow out the systems judgement required for Staff+ reviews [B/inference · T0-71 L68, L274].
+
+## Burnout, workload and sustainable pace
+
+Long working hours and AI-driven work intensification carry documented health and burnout risks. **Honest scope gap:** no AI-engineer-specific burnout prevalence dataset and no ML/LLM-specific on-call load measurement were found [E · T0-71 L235, L317]; the evidence below comes from large occupational-health reviews, 2026 software-developer studies and employer handbooks [A/B/C · T0-71 L74, L225–234]:
+
+| Evidence | Finding | Transfer | Grade · source |
+|---|---|---|---|
+| **WHO / ILO systematic reviews (2021)** | Working **`≥55` hours/week** vs `35–40` hours is linked to **`+35%` higher stroke death risk** (`22` studies, `>839k` people) and **`+17%` ischaemic-heart-disease death risk** (`37` studies, `>768k` people) | General workforce | A · T0-71 L74, L225, L511 |
+| **Pencavel (2015)** | Output scales with hours below **`~49` hours/week**, then flattens (`70` hours differs little from `56`) | Low (WWI munitions, observational) | B · T0-71 L226 |
+| **Feng, Afroz & Sarma (`ICSE-SEIS 2026`)** | Survey of `442` developers (`14.9%` data/ML engineers): **job demands from GenAI adoption** (organisational pressure, workload) correlate with burnout (**`β = 0.40`**), while **autonomy and learning resources protect** (**`β = −0.36`**). Burnout did not vary by role, seniority or org size; **`22.4%`** of `361` open responses reported no meaningful learning support (cross-sectional, association not causation) | Medium (OSS & professional devs) | B · T0-71 L74, L227, L513 |
+| **Haas ethnography (2026)** | 8-month study of a `~200`-person US tech firm (`40+` interviews): voluntary AI tool use drove faster pace, broader scope, longer hours and burnout risk (in-progress research) | Medium | B · T0-71 L228 |
+| **Anthropic employer report (`2026-10-16`, COI)** | Human attention becomes the bottleneck: Claude sessions spend `~80%` idle waiting for input, meta-work rose `10% → 22%`, and the median employee spends **`+20%` more time in meetings** (no burnout measure) | One frontier lab (COI) | B, COI · T0-71 L229 |
+| **996-style startup reports** | Some San Francisco and New York AI startups advertise `70+` or `80+` hour norms; prevalence unmeasured | SF/NY startups only | C · T0-71 L230 |
+| **India work-life balance signal** | Randstad 2026 ranks work-life balance the `#1` reason Indian employees leave (`49%`, ahead of lack of growth `42%` and low pay `41%`); foundit Nov 2026 (`n = 9,951`) ranks work-life balance `#1` priority (`29.6%`) | India cross-industry | C · T0-71 L147–148, L231 |
+| **On-call reference points** | GitLab requires Tier 2/3 weekday, weekend and occasional night on-call for ML engineers from Intermediate upward [A]; Google SRE reference practice caps on-call at `≤25%` of time, engineering at `≥50%` and `≤2` incidents per 12h shift [P] | GitLab ML / Google SRE | A / P · T0-71 L121, L232–233 |
+
+**Safeguards for a sustainable pace** (`T0-71 L90, L237–242`):
+- **Keep sustained hours near `50` a week, set a hard review trigger at `55`, and protect one full rest day a week** [A for health risk; P for target and trigger]. If an employer expects `70–80+` hours as cultural proof, choose that environment knowingly rather than drifting into it.
+- **Ask explicitly for AI autonomy and dedicated learning time** — the two resources empirically associated with lower GenAI-adoption burnout (`β = −0.36`) [B · T0-71 L227, L242].
+- **Manage AI-review overload:** declare when AI generated a change, segment large AI-written PRs, and budget dedicated review time [P · T0-71 L241].
+- **Negotiate on-call terms before accepting:** ask for rota size, pager volume, and compensation or time off in lieu [P · T0-71 L90, L240].
+- **Treat persistent exhaustion as a health signal:** raise scope with your manager early, pause optional community slots first, and consult a health professional if exhaustion affects your health [P].
 
 ## A sustainable learning routine
 
-T0-12 built this routine for an India-based engineer looking for AI-engineering roles, with roughly six hours a week; the hours are illustrative and the weighting is judgement [C · T0-12 L143]. Using it while employed is an adaptation [P]: scale the hours to your load, and drop slots before you drop rest.
+T0-12 built this routine for an India-based engineer looking for AI-engineering roles, with roughly six hours a week; the hours are illustrative and the weighting is judgement [C · T0-12 L143]. Using it while employed is an adaptation [P]: remember that `17.5` study hours a week consumes `56–74%` of an employed adult's average leisure [M · T0-06 L213], so put learning inside working hours where allowed and drop community slots before you drop rest.
 
 | Cadence | Activity | Evidence |
 |---|---|---|
@@ -133,25 +201,19 @@ T0-12 built this routine for an India-based engineer looking for AI-engineering 
 
 **Inside the job.** Owning an eval suite, a judge or a cost dashboard is both learning and promotion evidence; practitioners treat evals as the clearest seniority signal [C · T0-09 L429]. For what to learn next, use [Learning roadmaps](../03-skills-and-tech/learning-roadmaps.md) and the [Skills radar](../03-skills-and-tech/skills-radar.md).
 
-**Load.** Burnout and recovery are not researched in this corpus, and workload only as a time budget: 17.5 study hours a week take about 56–74% of an employed adult's average leisure [M · T0-06 L213]. Practice-curated rules [P]:
-- Put learning hours inside the working week where your employer allows it, not on top of it.
-- Count your communities against the stop-loss rule; it doubles as a load limit [D · T0-12 L175].
-- When on-call or launch pressure rises, pause the community slots first and keep one depth slot.
-- If exhaustion persists for weeks, raise scope with your manager, and see a health professional if it affects your health.
-
 ## Warning signs and responses
 
 | Signal | What the evidence says | Response |
 |---|---|---|
-| The same scope for two reviews in a row (threshold [P]) | No growth was the most-named reason for leaving a role early, at 39%, in a vendor's survey of India AI and ML engineers [C · T0-09 L69] | Propose a scope change with a date; if it is refused, run the decision table |
-| The role differs from the one you accepted | "Broken promises", a role sold as one thing that turned out to be another in scope, ownership or growth path, were named by 19% in the same survey [C · T0-09 L387] | Document neutrally and renegotiate scope, as in the escalation rules of [First 90 days](first-90-days.md) |
-| Poor management | Named by 18% in the same survey [C · T0-09 L83] | A skip-level conversation or an internal transfer [P] |
-| A promotion raise that disappoints | AI/ML promoted base raises are 6.5% [B · T0-17 L125] | Compare total compensation including equity; run a market check |
-| A long plateau at Senior | L5→L6 can take 3–5+ years or never happen; many treat Meta's E5 as terminal [C/D · T0-17 L124] | Seek Staff-scope work, or weigh a level-up move |
+| The same scope for two reviews in a row (threshold [P]) | No growth led Wisemonk (`39%`, COI) and foundit Nov (`40.3%` top switch trigger, `n = 9,951`) [C · T0-71 L145, L147] | Propose a scope change with a date; if refused or criteria stay unpublished after two cycles, run the decision table [C · T0-71 L91] |
+| A title promotion with `<5%` raise | Nearly 1 in 3 title-changed Indian employees received `0%` or `<5%` (`n = 2,533`); AI/ML promoted base raises averaged `6.5%` on Pave [B · T0-17 L125; C · T0-71 L206] | Compare total compensation including equity; run a market check |
+| The role differs from the one you accepted | "Broken promises" in scope, ownership or growth path were named by `19%` in Wisemonk's India survey [C · T0-09 L387] | Document neutrally and renegotiate scope, as in [First 90 days](first-90-days.md) |
+| Poor management or lowest-band quota risk | Poor management named by `18%` [C · T0-09 L83]; TCS reportedly asked managers to flag `~5%` for lowest rating/PIP (unverified) [C · T0-71 L162] | Keep a written evidence log of shipped outcomes; pursue a skip-level conversation or internal transfer [P] |
+| A long plateau at Senior | L5→L6 can take 3–5+ years or never happen; many treat Meta's E5 as terminal [C/D · T0-17 L124] | Seek Staff-scope / Super IC work, or weigh a level-up move |
 | The local pay ceiling in India | Bengaluru Senior P90 ≈ ₹1.07Cr; top employer senior medians ≈ ₹1.06–1.22Cr [B · T0-17 L137] | See the [India remote playbook](../11-tracks/india-remote-playbook.md) |
-| Reviews that count AI usage or activity | Meta made "AI-driven impact" a core expectation from 2026, and its tool counts AI-generated lines among 200+ data points; Shopify set reflexive AI usage as a baseline expectation [B · T0-09 L112] | Agree outcome metrics; record where AI did and did not help, with data |
+| Reviews that count AI usage volume or "tokenmaxxing" | Meta, Microsoft, Google, Shopify, GitLab and Accenture write AI use into expectations; leaderboards invite Goodhart effects while NBER shows commits outrun releases [B/C · T0-71 L65–66, L350] | Agree outcome metrics; record where AI did and did not help with measured shipped data |
 | Anxiety about stack churn | API surfaces such as AI SDK 6 and WebMCP changed shape within months [D · T0-06 L254] | A six-week freeze; durable concepts |
-| Exhaustion that persists for weeks | Not researched in this corpus | Reduce scope with your manager, protect rest, and see a health professional if it affects your health [P] |
+| Sustained `≥55`-hour weeks, rising meetings or AI-intensified exhaustion | WHO/ILO links `≥55` h/week to `+35%` stroke / `+17%` IHD mortality [A]; ICSE-SEIS 2026 links GenAI job demands to burnout (`β = 0.40`) while autonomy/learning protect (`β = −0.36`) [B · T0-71 L74, L225–229] | Trigger a scope review at 55h, negotiate AI autonomy and learning time, pause optional community slots, and consult a health professional if health is affected |
 
 ## Templates and examples
 
@@ -163,10 +225,10 @@ Quarterly self-review: [quarter], [level], [months in level]
 2. Scope: [what I own]; [who depends on it]
 3. Next-level criteria [link to ladder]
    - [criterion]: evidence [link] or plan [project, date]
-4. Growth: [skill applied in production]; [durable concept learned]
+4. Growth: [skill applied in production]; [durable concept learned]; [core work done without AI delegation]
 5. Market check: my total compensation [ ]; level-matched median [ ]; gap [ ]%
 6. Signals: growth stall [y/n]; promises kept [y/n]; manager support [y/n]
-7. Load: average hours a week [ ]; on-call weeks [ ]; sustainable [y/n]
+7. Pace check: average hours a week [ ] (trigger >=55); rest day kept [y/n]; on-call weeks [ ]; AI autonomy & learning time [y/n]
 8. Decision: stay and build / ask for scope / internal move / explore outside, by [date]
 ```
 
@@ -193,7 +255,7 @@ My total compensation: [ ]. Premium: [ ]%
 Forfeited by leaving: unvested equity [ ]; refreshers [ ]; tender eligibility [ ]
 Promotion within reach at my next cycle: [y/n], evidence [ ]
 Rule (T1-03.F7): move if the premium is above about 25%, the offer is a level up, or promotion is blocked
-Reset cost: a new first 90 days; notice period [ ]
+Reset cost: a new first 90 days; notice period [ ]; on-call & hours norms [ ]
 Decision: [ ]
 ```
 
@@ -201,43 +263,44 @@ Decision: [ ]
 
 | Situation | Weak | Strong |
 |---|---|---|
-| Promotion ask | "I've been here [n] years; I think I'm ready for Senior." | "Against the Senior criteria [link], here are three outcomes with measured results [links]. The gap is [criterion]. Can we agree [project] by [date] to close it?" |
+| Promotion ask | "I've been here [n] years and shipped 5× more commits with AI." | "Against the Senior criteria [link], here are three shipped outcomes with measured results [links]. The gap is [criterion]. Can we agree [project] by [date] to close it?" |
 | Retention talk | "Another company offered me more." | "A level-matched offer is [x]% above my total compensation after risk-adjusting its equity, and I would forfeit [amount] unvested. I would rather stay if [scope or level] is possible by [date]." |
+| Workload / AI pace | "I'm burning out trying to keep up with AI tools." | "Weekly hours have averaged [58] over three weeks and review load doubled. Let's re-scope [project], reserve [N] hours for learning/evals and segment AI-generated PRs." |
 | Learning plan | "I'll keep up with every new framework." | "For six weeks I'm on [stack]; I'm learning [durable concept] and shipping [artefact] by [date]." |
 
 ## Checklist
 
-- [ ] Next-level criteria in writing within a month of confirmation
-- [ ] Quarterly self-review completed and shared with your manager
+- [ ] Next-level criteria and appraisal cycle dates confirmed in writing within a month of confirmation
+- [ ] Quarterly self-review completed and shared with your manager (using shipped outcomes, not commit volume or multipliers)
 - [ ] Quarterly market check against level-matched medians, including the AI premium for your level
-- [ ] Move math counts risk-adjusted equity, unvested grants, refreshers and tender gates
-- [ ] IC-or-manager questions answered before you accept or ask for a management role
-- [ ] Stack choices reviewed every six weeks
-- [ ] 90-day learning check run; communities with no two-way exchange dropped
-- [ ] Load checked every quarter [P]
+- [ ] Move math counts risk-adjusted equity, unvested grants, refreshers, tender gates and notice/hours norms
+- [ ] IC-or-manager questions answered and a bounded lead role tested before committing to people management
+- [ ] Sustained weekly hours tracked near 50, review trigger set at 55, one rest day protected, and on-call limits confirmed
+- [ ] AI autonomy and dedicated learning time agreed; core review/debugging skills kept sharp without blind delegation
+- [ ] Stack choices reviewed every six weeks; 90-day learning check run
 
 ## Pitfalls
 
 | Red flag | Why it hurts | Fix |
 |---|---|---|
-| Expecting "35–50% per hop" | It fails as a general rule; it describes tier-crossers and outliers [A/B/C · T0-17.F1] | Compare level-matched numbers |
-| Comparing base salary only | Equity is 30–50% of total compensation [C · T0-17 L115] | Compare total compensation; see [Offer evaluation](../09-compensation/offer-evaluation.md) |
+| Expecting "35–50% per hop" | Fails as a general rule; describes tier-crossers and outliers [A/B/C · T0-17.F1] | Compare level-matched numbers |
+| Treating Pave's 8.6% as an annual promotion rate or assuming every title jump pays | `8.6%` is a half-year window (annual rates span `4.0–14.9%`), and nearly 1 in 3 title-changed Indian workers got `<5%` [B/C · T0-71 L71, L200, L206] | Check both level criteria and total compensation before celebrating a title change |
+| Promising "10×" AI speed or chasing commit leaderboards | No controlled study backs `10×`, commits outrun releases (`+30–240%` vs `~+30%`, NBER WP 35275), and leaderboards invite Goodhart effects [B · T0-71 L66–67, L350] | Measure and report before-and-after shipped outcomes |
+| Working `70–80` hours to signal commitment | WHO/ILO links `≥55` h/week to `+35%` stroke / `+17%` IHD mortality, output flattens above `~49` h, and GenAI demands correlate with burnout (`β = 0.40`) [A/B · T0-71 L74, L225–227] | Hold a `50`h target and `55`h review trigger unless you explicitly choose a high-hours startup knowingly |
+| Comparing base salary only or counting paper equity at face value | Equity is 30–50% of US total comp, secondary pricing is bimodal and an IPO is not immediate liquidity [A/B/C · T0-17.F7, F9, L115] | Risk-adjust private equity; see [Offer evaluation](../09-compensation/offer-evaluation.md) |
 | Using the India "T2/T3" bands | Neither band set is measured [errata U14] | Use the measured Bengaluru anchors |
-| Counting paper equity as growth | Secondary pricing is bimodal, and an IPO is not liquidity [A/B · T0-17.F7; B/C · T0-17.F9] | Risk-adjust private equity before comparing |
-| Treating management as the default next step | No session behind this page shows that it pays more for AI roles | Answer the IC-or-manager questions first [P] |
+| Treating management as the default next step | Management layers are thinning (`12–15` eng/mgr), top ICs can make weaker managers (sales study), and no session shows management pays more for AI roles [B/C · T0-71 L73, L214, L217] | Test a bounded lead role first and answer the IC-or-manager questions [P] |
 | Chasing every framework release | API surfaces change within months [D · T0-06 L254] | A six-week freeze; durable concepts |
-| Moving often to raise pay | Each move resets onboarding; in one older non-tech study, external hires performed worse early and left sooner [A · T0-17 L113] | Move on the decision table's rules, not on a calendar |
-| Dropping the first-90-days habits | Promotion evidence then has to be rebuilt from memory [P] | Keep the weekly update and the decision log |
 
 ## Evidence and limits
 
-- **Measured:** US level medians and steps from Levels.fyi 2025 [B · T0-17 L129]; the AI premium by level [B · T0-17 L130]; the Bengaluru Senior SWE distribution, n = 4,836 [B · T0-17 L137]; ADP switcher and stayer pay growth across all industries [A · T0-17 L112]; Pave raises, promotion rate and attrition from vendor payroll data [B · T0-17 L125].
-- **Derived:** the 16–24% value of a promotion and the hop ranges are triangulations [C · T0-17 L115, L119]; the 5% and 9–12% annual growth figures are model output [M · T0-17 L117]; the frontier-lab multiples rest on small samples [C · T0-17 L131–133].
-- **Single source or vendor:** SignalFire's under-three-years move into management [C · T0-17 L126]; the India AI-engineer survey, which is voluntary, skews early to mid career and does not state its question wording or response base [C · T0-09 L84]; T0-12's routine and stop-loss [C/D · T0-12 L143, L170].
-- **Not found:** an AI-specific months-per-level dataset [E · T0-17 L122]; Europe time-in-level data [E · T0-17 L145]; a controlled estimate of a systems-expertise premium [E · T0-17 L182]; an IC-versus-manager pay comparison for AI roles in T0-17 or T0-09; any study of burnout, workload or sustainable learning for AI engineers in this corpus.
-- **Attrition context, not a forecast:** AI/ML annual attrition ≈ 28% against ≈ 17% for software engineers (Pave, 2025 data) [B · T0-17 L125]; India GCC AI and Cloud attrition 18–25% (Zinnov 2026) [B · T0-09 L67].
-- **Dates:** pay figures as compiled on 2026-10-23; re-verify by 2027-01-21.
-- **What would change this advice:** an AI-specific promotion-velocity dataset; IC-versus-manager pay data for AI roles; a measured study of what sustains learning and prevents burnout.
+- **Measured:** US level medians and steps (Levels.fyi 2025) and AI premium by level [B · T0-17 L129–130]; Bengaluru Senior SWE distribution (`n = 4,836`) [B · T0-17 L137]; ADP switcher/stayer pay growth [A · T0-17 L112]; cross-dataset promotion rates and raises across Pave (`H1 2025/2026` half-year and `2024` annual), Ravio EU, Mercer and Gusto [B · T0-71 L198–205]; WHO/ILO long-hours mortality reviews [A · T0-71 L225]; NBER WP 35275 commit-to-release attenuation (`100k+` GitHub devs, working paper) and Feng/Afroz/Sarma ICSE-SEIS 2026 GenAI burnout survey (`n = 442`, cross-sectional) [B · T0-71 L175, L227]; Harvard 62M-worker junior-hiring study [B · T0-71 L216, L518].
+- **Phase 0 errata corrected here (`T0-71 K4, K5, K6`):** Pave's `8.6%` promotion rate is a **half-year** window (`H1 2025/2026`), not annual (`T0-17 L117, L125` corrected); SignalFire's primary text names **data engineering and DevOps** fastest to leadership while `"AI engineers under 3 years"` is CIO Dive's chart reading and leadership ≠ management (`T0-17 L126` corrected); T0-17's `"8.6 years to Senior"` snippet was untraceable in T0-71 [T0-71 L301–303].
+- **Derived and single-source / COI:** T0-17's `16–24%` promotion total-comp value and hop ranges are triangulations [C · T0-17 L115, L119; T0-71 L210]; SignalFire spans and promotion speeds come from proprietary profiles [C · T0-71 L207–208, L214]; India retention surveys (Wisemonk COI, foundit Jun/Nov, Randstad, Valuvox) are Grade C vendor/staffing surveys with differing frames [C · T0-71 L145–151, L206]; Anthropic's learning RCT (`n = 52`) and employer report carry COI [B, COI · T0-71 L177–178, L215, L229]; T0-71 opened 14 of 84 sources in full (70 read as extracts) [T0-71 L46].
+- **Not found after searching (E):** an independent AI-specific promotion-velocity / months-per-level dataset [E · T0-17 L122; T0-71 L315]; Europe time-in-level data [E · T0-17 L145]; a controlled systems-expertise pay premium [E · T0-17 L182]; an IC-versus-manager pay comparison for AI roles; **AI-engineer-specific burnout prevalence and ML/LLM-specific on-call load measurements** [E · T0-71 L235, L317]; any controlled evidence for `"10×"` AI coding multipliers [E · T0-71 L321].
+- **Attrition context, not a forecast:** AI/ML annual attrition `≈ 28%` against `≈ 17%` for SWEs (Pave 2025) [B · T0-17 L125]; India GCC AI/Cloud attrition `18–25%` (Zinnov 2026) [B · T0-09 L67]; AIM India frontier-AI attrition `21–45%` vs `5–12%` enterprise (method undisclosed) [C · T0-71 L149].
+- **Dates:** pay anchors compiled `2026-10-23` and progression/pace evidence verified `2026-11-19`; re-verify by `2027-01-19` / `2027-01-21`.
+- **What would change this advice:** an independent AI-specific promotion-velocity dataset; IC-versus-manager pay data for AI roles; AI-engineer-specific burnout or ML on-call studies; replication of ICSE-SEIS 2026 and Haas 2026 findings [T0-71 L95–101].
 
 ## Next steps
 
@@ -247,4 +310,4 @@ Decision: [ ]
 - **Independent paths:** [Freelance and fractional](../11-tracks/freelance-fractional.md), [Fractional AI Leader](../02-roles/hubs/fractional-ai-leader.md), [Independent AI Consultant](../02-roles/hubs/independent-ai-consultant.md).
 - **India:** [India remote playbook](../11-tracks/india-remote-playbook.md).
 - **Learning and visibility:** [Learning roadmaps](../03-skills-and-tech/learning-roadmaps.md), [Skills radar](../03-skills-and-tech/skills-radar.md), [Communities guide](../07-networking/communities-guide.md), [Online presence](../07-networking/online-presence.md).
-- **This stage and the evidence:** [Onboarding README](README.md); findings for [stage 9](../../research/findings.md#stage-09) and [stage 10](../../research/findings.md#stage-10); [errata](../../research/ERRATA.md).
+- **This stage and the evidence:** [Onboarding README](README.md); [T0-71](../../research/sessions/T0-71-onboarding-growth-ai-roles.md); findings for [stage 9](../../research/findings.md#stage-09) and [stage 10](../../research/findings.md#stage-10); [errata](../../research/ERRATA.md).

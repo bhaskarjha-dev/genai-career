@@ -4,10 +4,10 @@ title: "India Remote Tax: Structure, Thresholds and Traps for Engineers Paid by 
 content_type: guide
 stage: 9
 status: published
-last_verified: 2026-11-06
-review_by: 2026-11-21
-summary: "For India-based engineers paid directly by US, EU or UK clients: which structure fits which billing level, the ₹75 lakh presumptive-tax cliff, GST and the LUT, FEMA export reporting, client forms and the EOR trade-off, as dated pointers rather than tax advice."
-sources: [T0-07, T2-01]
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "For India-based engineers paid directly by US, EU or UK clients: which structure fits which billing level, the ₹75 lakh presumptive-tax cliff (Income-tax Act 2025 s.58), GST and LUT, FEMA 2026 EDF reporting, PA-CB rails, client forms and the EOR trade-off, as dated pointers rather than tax advice."
+sources: [T0-07, T0-43, T2-01]
 roles: [all]
 geos: [india, us, europe, uk]
 tags: [india, tax, presumptive-tax, section-58, section-44ada, gst, lut, fema, edf, firc, w-8ben, eor, contractor, msa]
@@ -18,11 +18,11 @@ tags: [india, tax, presumptive-tax, section-58, section-44ada, gst, lut, fema, e
 > For India-based engineers paid directly by US, EU or UK clients: which structure fits which billing level, the ₹75 lakh presumptive-tax cliff, GST and the LUT, FEMA export reporting, client forms and the EOR trade-off, as dated pointers rather than tax advice.
 
 > [!WARNING]
-> **Not legal or tax advice.** This page curates one research session, [T0-07](../../research/sessions/T0-07-india-remote-tax-statutory-compliance.md): a synthesis written by an AI assistant, not by a Chartered Accountant (CA), lawyer or financial adviser. Its position is as at **21 October 2026**, in a year in which the income-tax statute, its rules and the FEMA export regulations all changed. Confirm anything you act on with a practising CA for income tax, GST and FEMA, and with a lawyer or US tax adviser for the MSA and US forms [T0-07 L38].
+> **Not legal or tax advice.** This page curates research sessions [T0-07](../../research/sessions/T0-07-india-remote-tax-statutory-compliance.md) and [T0-43](../../research/sessions/T0-43-remote-cross-border-work-eor-platforms.md) plus primary-source statutory and regulatory checks carried out on **19 November 2026** — written by an AI assistant, not by a Chartered Accountant (CA), lawyer or financial adviser. In 2026 India's income-tax statute, FEMA export regulations, IGST intermediary rules and payment-aggregator caps all changed. Confirm anything you act on with a practising CA for income tax, GST and FEMA, and with a lawyer or US tax adviser for the MSA and US forms [T0-07 L38].
 
-**Scope.** Despite "remote" in the title, this page is for India-based engineers who sell their services to foreign clients as contractors (a sole proprietor, an LLP or a company); an employer of record appears only as the alternative to compare, and salaried employment with an Indian employer or a GCC is outside it [T0-07 title, L74]. To choose between those routes first, use the [India remote playbook](../11-tracks/india-remote-playbook.md).
+**Scope.** Despite "remote" in the title, this page is for India-based engineers who sell their services to foreign clients as contractors (a sole proprietor, an LLP or a company); an employer of record appears as the alternative to compare, and salaried employment with an Indian employer or a GCC is outside it [T0-07 title, L74]. To choose between those routes first, use the [India remote playbook](../11-tracks/india-remote-playbook.md) and [Cross-border remote work](../11-tracks/remote-cross-border.md).
 
-**Dates and grades.** Statutory, GST and FEMA facts are as at 21 October 2026; re-verify them by 2026-11-21. Take-home figures come from T0-07's model for tax year 2026-27 and are only as good as the assumptions listed with it. Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source, attributed; D judgement or recalled; M model output, which inherits its weakest input; P practice-curated and unmeasured. T0-07 rates its own confidence at 0.62: high on statutory mechanics where official text was seen, medium on the 1 October 2026 FEMA regime, medium-low on take-home figures [T0-07 L32–33].
+**Dates and grades.** Statutory, GST, FEMA and PA-CB facts were re-verified against official sources on **19 November 2026**; re-verify by **2027-02-17**. Take-home figures come from T0-07's model for tax year 2026-27 (assumed ₹96/USD; RBI reference rate was ₹93.7650/USD on 12 November 2026, putting ₹75 lakh near $79,987 [A/M · T0-43 L62, L336]) and are only as good as the assumptions listed with it. Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source, attributed; D judgement or recalled; M model output, which inherits its weakest input; P practice-curated and unmeasured. T0-07 rated its initial confidence at 0.62 [T0-07 L32–33]; live primary-source verification on 2026-11-19 upgraded the Income-tax Act 2025 section map, FEMA 2026 September amendment and RBI ₹25 lakh PA-CB cap.
 
 ## The short answer
 
@@ -81,36 +81,37 @@ Two rules sit beside the ladder. A client whose vendor policy refuses individual
 
 ### Section numbers, old and new
 
-The Income-tax Act 2025 replaced the 1961 Act from 1 April 2026, and FY 2026-27 is "Tax Year 2026-27". Returns for FY 2025-26, filed in 2026, stay under the 1961 Act, which is why older guides, and that year's return, still say §44ADA [B · T0-07.F1, L171].
+The Income-tax Act, 2025 replaced the 1961 Act from **1 April 2026**, and FY 2026-27 is "Tax Year 2026-27" (new-regime slabs 0/5/10/15/20/25/30% at ₹4/8/12/16/20/24 lakh, full rebate up to ₹12 lakh taxable income, ₹75,000 standard deduction for salaried earners). Returns for FY 2025-26 (AY 2026-27) remain under the 1961 Act, which is why older guides and that year's return still say §44ADA [A/B · T0-07.F1, L171; T0-43 L247]. Core section numbers below were verified directly against `incometaxindia.gov.in` and statutory summaries on 19 November 2026:
 
-| Topic | Income-tax Act 1961 | Income-tax Act 2025 | Grade |
+| Topic | Income-tax Act 1961 | Income-tax Act 2025 (verified 2026-11-19) | Grade |
 |---|---|---|---|
-| Presumptive taxation | 44AD, 44ADA, 44AE | s.58 (some commentary cites 61(2); numbering unresolved) | B |
-| Specified professions | 44AA(1), with IT notified by S.O. 385(E) of 4 May 2001 | s.62(4), which names "information technology" | B/C |
-| Tax audit | 44AB | s.63 | B |
-| Advance tax; presumptive single instalment | 207–211; 211(1)(b) | ss.404; 408(2) | B/C |
-| Employer NPS deduction | 80CCD(2) | s.124(2) | C |
-| Return forms, Form 67 | ITR-3, ITR-4, Form 67 | Renumbered under the Income-tax Rules 2026 (not verified) | D |
+| Presumptive taxation (specified professions) | 44ADA (alongside 44AD, 44AE) | **s.58(2) [Table Sl. No. 3]** (unified under s.58; **s.58(4)** bars separate losses, allowances or deductions over the presumptive block) | A/B |
+| Specified professions | 44AA(1) / Rule 6F (IT notified by S.O. 385(E), 4 May 2001) | **s.62(4)** (engineering, technical consultancy and CBDT-notified IT professionals) | A/B |
+| Books of account & tax audit | 44AA; 44AB | **s.62** (books); **s.63** (tax audit, triggered if declaring below 50% with income above exemption limit) | A/B |
+| Advance tax; presumptive single instalment | 207–211; 211(1)(b) | **s.408(1)** (quarterly: 15 Jun / 15 Sep / 15 Dec / 15 Mar); **s.408(2)** read with s.58(2) (single 100% instalment by 15 March) | A/B |
+| Employer NPS deduction | 80CCD(2) | **s.124(1)–(2)** (up to 14% of salary under New Tax Regime s.202(1) for private-sector employers) | A/B |
+| Return forms, Form 67 | ITR-3, ITR-4, Form 67 | Renumbered under the Income-tax Rules 2026 (new form numbers not yet verified) | D |
 
-Source: [T0-07 L173–183]. T0-07 did not fetch the Act's own text [T0-07.F1].
+Source: [T0-07 L173–183; T0-43 L247, L668] plus live primary-source verification on 2026-11-19 (`incometaxindia.gov.in`).
 
-## Thresholds and deadlines, as at 21 October 2026
+## Thresholds and deadlines, as at 19 November 2026
 
 | Item | Threshold or deadline | What it means | Grade · source |
 |---|---|---|---|
-| Presumptive ceiling | ₹75L of gross receipts if cash receipts are 5% or less; otherwise ₹50L | Above it, presumptive treatment is lost for the year | A · T0-07 L189 |
-| Deemed profit | 50% of gross receipts, or more if declared | No further deductions on top | A/B · T0-07 L190 |
-| Declaring below 50% | While income exceeds the basic exemption limit | Books of account and a tax audit (s.63) | B · T0-07 L193 |
+| Presumptive ceiling | ₹75L of gross receipts if cash receipts are 5% or less; otherwise ₹50L (~$79,987 / $53,327 at ₹93.765/USD on 2026-11-12) | Above it, presumptive treatment under s.58(2) is lost for the year | A · T0-07 L189; M · T0-43 L336 |
+| Deemed profit | 50% of gross receipts, or more if declared | No further losses, allowances or expense deductions on top (s.58(4)) | A/B · T0-07 L190; T0-43 L247 |
+| Declaring below 50% | While income exceeds the basic exemption limit | Books of account (s.62) and a CA tax audit (s.63) | A/B · T0-07 L193 |
 | Professional tax-audit threshold | ₹50L | The general threshold outside the presumptive scheme | B · T0-07 L193 |
-| Tax regime | The new regime is the default | For presumptive incomes the old regime wins only with deductions of about ₹5.4L (₹30L billing) to ₹7.75L (₹50–75L billing); typical 80C, 80CCD(1B) and 80D totals are about ₹2.25–2.5L | B · T0-07 L108; M · T0-07 L282 |
+| Tax regime | The new regime is the default (rebate to ₹12L taxable) | For presumptive incomes the old regime wins only with deductions of about ₹5.4L (₹30L billing) to ₹7.75L (₹50–75L billing); typical 80C, 80CCD(1B) and 80D totals are about ₹2.25–2.5L | B · T0-07 L108; M · T0-07 L282 |
 | GST registration | ₹20L of aggregate turnover, exports included (₹10L in special-category states) | Compulsory at ₹30L and above | B · T0-07 L96 |
-| LUT (Form GST RFD-11) | Each financial year, before its first export | Lapses at year-end; without it the supply is treated as taxable at 18% IGST, refundable later (practitioner guides) | B · T0-07 L131; C · T0-07 L324 |
+| LUT (Form GST RFD-11) | Each financial year, before its first export (Rule 96A) | Lapses at year-end; without it the supply is treated as taxable at 18% IGST, refundable later (practitioner guides) | A/B · T0-07 L131; C · T0-07 L324 |
 | GST realisation | One year from the invoice, or longer if the Commissioner allows | Otherwise IGST plus interest falls due within 15 days of expiry | B · T0-07 L311 |
-| FEMA realisation | 9 months from the invoice date (12 months for INR) | Set by a 22 September 2026 amendment before the regulations commenced; stricter than the GST year, and runs in parallel | B · T0-07 L99, L511 |
-| EDF | Within 30 days of the end of the invoice month; one EDF can cover a month's service invoices | Replaces SOFTEX, whose withdrawal is reported by one CA source (C) | B · T0-07 L99, L345 |
+| FEMA realisation (Reg. 5) | **9 months** from the invoice date (**12 months** for INR-settled invoices) | Confirmed in RBI Notification No. `FEMA 23(R)/(1)/2026-RB` (22 September 2026) amending `FEMA 23(R)/2026-RB` before commencement on 1 October 2026; older "15–18 month" articles are outdated | A/B · T0-07 L99, L511; T0-43 L243 |
+| Unified EDF (replacing SOFTEX) | Within **30 days** of the end of the invoice month; one consolidated monthly EDF can cover multiple clients | Brings goods, services and software under one Export Declaration Form filed with your AD bank; supersedes standalone SOFTEX reporting | A/B · T0-07 L99, L345; T0-43 L243 |
 | First EDF | 30 November 2026, for October 2026 invoices | Then one a month | B · T0-07 L346 |
-| EDPMS closure on declaration | Invoices up to ₹10L | Banks load EDF data to EDPMS within five working days | B · T0-07 L345 |
-| Advance tax | Presumptive: 100% by 15 March (15 March 2027 for tax year 2026-27). Others: 15%, 45%, 75% and 100% by 15 June, 15 September, 15 December and 15 March | Default interest moves to ss.424 and 425 (single source, C) | B · T0-07 L108, L137, L181 |
+| EDPMS small-entry closure | Unrealised entries up to ₹10L | Simplified self-declaration closure; banks load EDF data to EDPMS within five working days | A/B · T0-07 L345 |
+| RBI PA-CB per-transaction cap | **₹25 lakh** (~$26.7k) per inward or outward transaction | Set by RBI Master Directions on Regulation of Payment Aggregators (15 September 2025); single invoices above ₹25L must travel via AD-bank SWIFT wire | A/B · T0-43 L245, L276 |
+| Advance tax | Presumptive (s.408(2)): 100% by 15 March (15 March 2027 for tax year 2026-27). Others (s.408(1)): 15%, 45%, 75% and 100% by 15 Jun, 15 Sep, 15 Dec and 15 Mar | Default interest moves to ss.424 and 425 (single source, C) | A/B · T0-07 L108, L137, L181 |
 | Return form | ITR-4; ITR-3 if you hold foreign assets or claim a foreign tax credit | ITR-1 and ITR-4 have no Schedule FA, FSI or TR | A · T0-07 L194 |
 | W-8BEN | Valid from signing to the end of the third following calendar year | Replace within 30 days of a change in circumstances | A · T0-07 L105 |
 | e-invoicing | Not triggered below ₹5Cr | Recalled, not verified | D · T0-07 L333 |
@@ -167,19 +168,31 @@ Billing needed to get back to the ₹62.77 lakh take-home: ₹94.0 lakh with sol
 | Benefits | None | PF, gratuity accrual, leave, employment-law protection | D · T0-07 L415 |
 | Code you write | You own it unless the MSA assigns it; a silent assignment defaults to five years and India only | The employer owns work made in the course of employment, absent a contrary agreement | B · T0-07.F11, L415 |
 | Other work | Allowed unless the MSA restricts it | Employment contracts usually restrict outside work; notice periods apply | D · T0-07 L415 |
-| The client's exposure | Misclassification risk if the arrangement works like employment | Lower misclassification and permanent-establishment exposure | D · T0-07 L415, L498 |
+| The client's exposure | Misclassification risk if the arrangement works like employment | Removes direct misclassification risk, but **does not eliminate dependent-agent PE risk**; OECD Nov 2025 home-office PE guidance sets a 50% time + commercial-reason test and India recorded reservations | B/C · T0-43 L68, L230, L673; D · T0-07 L415 |
 
-**EOR prices** (list prices, converted by T0-07 at ₹96/$) [T0-07 L407–411, L261]:
+**EOR prices** (list prices; T0-07 modelled at ₹96/$; expanded comparison including Pebl, Multiplier, Rippling, Papaya and India-specialist EORs is in [Cross-border remote work](../11-tracks/remote-cross-border.md#eor-platform-landscape-verified-november-2026)) [T0-07 L407–411, L261; T0-43 L61, L219]:
 
-| Vendor | EOR price | Grade |
-|---|---|---|
-| Remote | $599 per employee per month paid annually; $699 month to month | A (vendor page) |
-| Deel | $599 per month, from several independent aggregators | B/C |
-| Oyster | Mostly reported at $699 per month; a few sources say $599 | C |
+| Vendor | EOR price (as of 19 November 2026) | Notes | Grade · source |
+|---|---|---|---|
+| Deel | From **$599/employee-mo** (contractor $49; CoR from $325) | Read directly on Deel's pricing page; 1-mo salary deposit typical; **Rippling v. Deel** litigation proceeding (Feb & Sep 2026 rulings, B) | A (price) / B (litigation) · T0-43 L61, L219, L293, L341 |
+| Remote | **$599/mo** paid annually; **$699/mo** month to month (contractor $29; Plus $99; CoR $325) | Owned-entity model across supported markets | A/B · T0-07 L409; T0-43 L219, L340 |
+| Oyster | **$699/mo** ($599 in some third-party tables; contractor $29) | Statutory India pass-throughs billed on top | B/C · T0-07 L411; T0-43 L219, L342 |
 
-At $599 a month the fee is ₹6.90 lakh a year: 23.0%, 13.8%, 9.2% and 5.8% of client spend at ₹30 lakh, ₹50 lakh, ₹75 lakh and ₹1.2 crore, before about 1% FX margin and about 2.4% employer statutory load [M · T0-07 L261–268]. The four Labour Codes, in force from 21 November 2025, enlarge the PF and gratuity base, so that load may be understated where an EOR contributes PF on full wages [B/C · T0-07.F12].
+At $599 a month the fee is ₹6.90 lakh a year: 23.0%, 13.8%, 9.2% and 5.8% of client spend at ₹30 lakh, ₹50 lakh, ₹75 lakh and ₹1.2 crore, before about 1% FX margin and about 2.4% employer statutory load [M · T0-07 L261–268]. The four Labour Codes, in force from **21 November 2025**, enlarge the PF and gratuity base (including fixed-term gratuity after one year), so employer statutory load may be understated where an EOR contributes PF on full wages [B/C · T0-07.F12; T0-43 L248].
 
-**Platforms in between.** Contractor-management and Contractor-of-Record platforms are payment and compliance overlays; they do not change your income-tax position. For GST, what matters is who the contractual recipient of your service is, because zero-rating needs a recipient outside India. T0-07 found no authoritative source on the Contractor-of-Record flow, so read the counterparty clause before you invoice without GST [C · T0-07 L417].
+**Platforms in between.** Contractor-management and Contractor-of-Record platforms ($199–$325/mo; Remote Plus $99/mo with $100k indemnity) are payment and compliance overlays; they do not change your income-tax position. For GST, what matters is who the contractual recipient of your service is, because zero-rating needs a recipient outside India. Read the counterparty clause before you invoice without GST [C · T0-07 L417; T0-43 L219].
+
+### Payment rails for India export receipts (as at 19 November 2026)
+
+Under the RBI Master Directions on Regulation of Payment Aggregators (15 September 2025), non-bank Cross-Border Payment Aggregators (PA-CB) are capped at **₹25 lakh (~$26.7k) per transaction** [A/B · T0-43 L245, L276]. Always verify any provider's live Certificate of Authorisation on RBI's official list of authorised payment-system operators (`rbi.org.in`) before routing invoices through it:
+
+| Rail | RBI PA-CB status (Nov 2026) | Fees & FX | FIRA / e-FIRC & limits | Grade · source |
+|---|---|---|---|---|
+| **Wise Business India** | Authorised PA-CB for inward exports per its 2026-07-24 ToU (read directly) | Currency-dependent FX fee + 18% GST | Export payments only (business proof required); **₹25L per-tx cap**; auto-remitted in INR (cannot hold balance); reversal risk on receiver; eFIRC free on fee page vs $2.50 in older help docs; new USD details unavailable for some accounts | A · T0-43 L66, L269, L343 |
+| **Skydo** | Final PA-CB-I (inward) reported Jan 2026 (press/vendor; cross-checked Nov 2026) | Flat fee vendor-claimed ($19 min, $29 on $10k) | **₹25L per-tx cap**; instant FIRA vendor-claimed (COI) | B (status) / C (fees, COI) · T0-43 L271, L345 |
+| **Payoneer** | **In-principle** PA-CB authorisation on 2026-01-22 (final not verified Nov 2026) | Local receipt free, non-local 1%, INR withdrawal up to 3%, $29.95/yr if <$6k | 48-hour auto-withdrawal; confirm final RBI status before relying | B · T0-43 L270, L344 |
+| **AD-I bank SWIFT wire** (HDFC, ICICI, SBI) | Authorised Dealer Category-I bank (no PA-CB cap) | Negotiable FX spread (retail 0.5–3.5%) + ₹200–₹1,500 e-FIRC | **Mandatory for single invoices above ₹25L**; supports 100% EEFC account; confirm written EDF + P0802 e-FIRC process | A (EEFC) / C-D (bank fees) · T0-07 L369, L382; T0-43 L245 |
+| **PayPal** | Avoid for B2B export invoices | ~7.4–8.4% + $0.30 fixed (4.4% + 3–4% FX spread) | Severe margin loss; avoid for consulting invoices | C · T0-43 L272, L346 |
 
 ## Client geography: US, EU and UK
 
@@ -187,7 +200,7 @@ At $599 a month the fee is ₹6.90 lakh a year: 23.0%, 13.8%, 9.2% and 5.8% of c
 - **An LLP or company signing US forms** [A · T0-07 L398]. Entities use W-8BEN-E. Vendor guides call an Indian LLP a partnership, but under Treas. Reg. §301.7701-3(b)(2) a foreign entity whose members all have limited liability is a corporation by default, and the W-8BEN-E itself routes foreign partnerships to W-8IMY unless they claim treaty benefits. Get US tax counsel to sign off first.
 - **EU and UK business clients** [C · T0-07 L400]. In Solidgate and ACCA summaries, for business-to-business services the place of supply is the customer's country, so the customer accounts for VAT: the EU reverse charge under Articles 44 and 196; in the UK, the supply is outside the scope of UK VAT for the supplier. Invoice without VAT, show both parties' VAT IDs where available, and add a short reverse-charge note. On the Indian side the same invoice is a zero-rated export under the LUT.
 - **A client that withholds tax anyway.** Withholding by country was not researched. T0-07's recalled route to relief is India's foreign-tax-credit claim (Form 67 before the return due date, on ITR-3), with a Tax Residency Certificate and Form 10F to reduce withholding at source [D · T0-07 L400].
-- **Intermediary-type services.** The Finance Act 2026 omitted IGST s.13(8)(b), effective 30 March 2026, so intermediary-type services to overseas recipients can qualify as exports. The definition of "intermediary" is unchanged, and the treatment of advances or invoices straddling that date is contested [B · T0-07 L336].
+- **Intermediary-type services.** Section 157 of the Finance Act 2026 omitted IGST s.13(8)(b), effective **30 March 2026** (verified 2026-11-19), placing outbound intermediary services under default s.13(2) (recipient's location) so qualifying services can export zero-rated under Rule 96A LUT. The definition of "intermediary" (s.2(13)) is unchanged, inbound foreign intermediary services now attract Indian RCM, and pre-30 March 2026 disputes remain prospective [A/B · T0-07 L336; T0-43 L246].
 
 ## How to do it
 
@@ -257,7 +270,7 @@ Only the IP rule is source-checked [B · T0-07.F11]; the other rows are T0-07's 
 | Taxes | Silent | Fees exclusive of VAT and GST; you supply the W-8BEN and handle Indian taxes; the client handles its VAT and withholding; gross-up if withholding is imposed |
 | Liability | An uncapped indemnity | Indemnity limited to third-party IP infringement by your deliverables and breach of confidentiality; a cap at fees paid in the prior 12 months; consequential damages excluded |
 | Payment | Open-ended terms | 30–45-day terms, payer bears charges, no set-off, late fees, so that realisation stays inside the 9-month FEMA limit |
-| Restraints | A broad non-compete | Confidentiality and a narrow non-solicit; T0-07 recalls that Indian Contract Act s.27 voids post-termination restraints |
+| Restraints | A broad non-compete | Confidentiality and a narrow non-solicit; Indian Contract Act 1872 s.27 generally voids post-termination restraints of trade [B · T0-43 L258] |
 
 ### Asking a client to fund EOR parity [P; figures M · T0-07 L265–267]
 
@@ -316,7 +329,9 @@ budget of ₹ amount]?
 | A late-paying client | Past 9 months, a FEMA contravention; past one year, IGST plus interest | Short payment terms; an extension through the AD bank before expiry | B · T0-07 L311, L511 |
 | Proceeds parked in a foreign virtual account | A FEMA repatriation question; Schedule FA and ITR-3 | Repatriate to an Indian or EEFC account; disclose foreign assets | C (T0-07 inference) · T0-07 L382 |
 | ITR-4 filed while holding foreign assets | ITR-4 has no Schedule FA, FSI or TR | Use ITR-3 | A · T0-07 L194 |
-| An IP clause silent on duration and territory | The assignment defaults to five years and India only | A perpetual, worldwide assignment | B · T0-07 L111 |
+| An IP clause silent on duration and territory | Under Copyright Act 1957 s.17 and s.19(5)/(6) (*Gemalto v Pine Labs*, Delhi HC), the contractor is first owner and a silent assignment defaults to five years and India only | A perpetual, worldwide assignment on payment | B · T0-07 L111; T0-43 L67, L256–257 |
+| Single invoice above ₹25 lakh routed through a PA-CB fintech | Blocked or split-flagged under RBI's 15 September 2025 Master Directions ₹25L per-tx cap | Route single invoices above ₹25L via AD-I bank SWIFT wire | A/B · T0-43 L245, L276 |
+| Assuming an EOR removes all PE risk for a foreign client | EOR solves misclassification, not dependent-agent PE if you conclude contracts locally; India recorded reservations to OECD's Nov 2025 home-office PE test | Keep role scope purely technical/R&D with no local contracting authority | B/C · T0-43 L68, L230, L673 |
 | An LLP signs a W-8BEN-E as a partnership | The US default for such an entity is a corporation; withholding or form rejection follows | US tax adviser sign-off before an LLP signs a W-8 | A · T0-07 L105, L499 |
 | Receipts shifted across years, scopes or family members to stay under ₹75L | Invites scrutiny; GAAR exposure was not researched | A written CA opinion first | D · T0-07 L125 |
 | A vendor promises a "15-month" GST window, or a licence it may not hold | Rule 96A says one year, extendable by the Commissioner; vendor-reported PA-CB statuses conflict | Read the rule; check RBI's list | B · T0-07 L96; C · T0-07 L380 |
@@ -325,22 +340,24 @@ budget of ₹ amount]?
 
 ## Evidence and limits
 
-- **Primary (A):** the ₹50 lakh and ₹75 lakh ceilings, the 5% cash test and the 50% deemed profit (the Income Tax Department's ITR-4 FAQ); RBI's purpose codes; the IRS rules on the W-8BEN and US-source income; the Treasury regulation on LLP classification; Remote's EOR price; the ITR-4 schedule limits [T0-07 L83–105, L194].
-- **Secondary (B):** the 2025 Act's section map, the GST and LUT mechanics, and the FEMA 2026 regime. RBI's primary text (the January 2026 regulations and the 22 September 2026 amendment) was not fetched, and the Big-4 alert T0-07 saw predates the amendment [T0-07 L474, L344].
-- **Model (M):** every take-home, cliff and EOR figure. Its cost inputs (compliance fees, own costs, FX costs, employer load) are T0-07's own estimates; replace them with quotes [T0-07 L483].
-- **Recalled (D):** the LLP partner-remuneration cap, which drives the LLP result; the SAC codes; the GSTR filing cadence; the e-invoicing threshold; the GST interest rate; and all MSA drafting beyond the IP clause [T0-07 L211, L311, L330–333, L421].
-- **Searched and not found** [T0-07 L516–525]: tribunal or High Court rulings on IT freelancers under §44ADA; any CBDT circular or statistic on enforcing the 5% cash test; bank-published e-FIRC and EDF procedures; an authoritative RBI list confirming Wise, Payoneer and Skydo; the primary text of s.58 and s.62; an India-specific W-8BEN Line 10 template.
+- **Primary and live-verified (A/B, checked 2026-11-19):** Income-tax Act, 2025 section map (`s.58(2) [Table Sl. No. 3]`, `s.58(4)`, `s.62(4)`, `s.63`, `s.408(1)–(2)`, `s.124(1)–(2)`), FY 2026-27 new-regime slabs, ₹50L/₹75L ceilings and 5% cash test (`incometaxindia.gov.in`); RBI `FEMA 23(R)/2026-RB` & `FEMA 23(R)/(1)/2026-RB` (22 September 2026 amendment: 9/12-month realisation, unified monthly EDF within 30 days replacing standalone SOFTEX, ₹10L simplified closure); RBI Master Directions on Payment Aggregators (15 September 2025: ₹25L PA-CB per-tx cap); Finance Act 2026 s.157 omitting IGST s.13(8)(b); Wise Business India ToU (2026-07-24) and Deel pricing page (read directly in `T0-43`); IRS W-8BEN and US-source rules; Treas. Reg. §301.7701-3(b)(2) on LLP classification; ITR-4 schedule limits [T0-07 L83–105, L194; T0-43 L61–67, L243–276].
+- **Secondary and session audit (`T0-07`, `T0-43`):** `T0-43` had a 6% Read rate (9 of 141 sources opened in full); all non-primary EOR/rail claims remain graded B or C (with vendor COI noted for Skydo fees and India-specialist EORs). Copyright Act 1957 s.17/s.19(5),(6) (*Gemalto v Pine Labs*), Contract Act 1872 s.27, OECD November 2025 home-office PE reservations and Four Labour Codes (2025-11-21) carry Grade B.
+- **Model (M):** every take-home, cliff and EOR figure. Its cost inputs (compliance fees, own costs, FX costs, employer load) are T0-07's own estimates at ₹96/USD (RBI rate was ₹93.765/USD on 2026-11-12); replace them with quotes [T0-07 L483; T0-43 L62].
+- **Recalled (D):** the LLP partner-remuneration cap, which drives the LLP result; Income-tax Rules 2026 new ITR/Form 67 numbers; SAC codes; GSTR filing cadence; e-invoicing threshold; GST interest rate; and MSA drafting beyond IP and non-compete rules [T0-07 L211, L311, L330–333, L421].
+- **Still unverified or absent as of 2026-11-19:** tribunal or High Court rulings on IT freelancers under §44ADA / s.58(2); any CBDT circular or statistic on enforcing the 5% cash test; published step-by-step SBI/HDFC/ICICI EDF portal workflows; Payoneer final RBI PA-CB Certificate of Authorisation (remains in-principle); exact Income-tax Rules 2026 form renumbering; an India-specific W-8BEN Line 10 template [T0-07 L516–525; T0-43 L270].
 - **Not researched:** GAAR or sham-arrangement exposure; misclassification under Indian labour and social-security law; foreign withholding by country; exit taxes for a Pvt Ltd; state-level items (professional tax, shops-and-establishments, Udyam); GST on foreign-platform fees [T0-07 L125, L338, L480–485]. Whether platform fees netted before payout count as gross receipts is unverified [D · T0-07 L190].
-- **Unsettled readings:** whether SWIFT or TT credits count as "prescribed electronic modes" for the cash test is an inference [D · T0-07 L191]; the s.58 sub-section numbering differs across commentaries [B · T0-07 L175].
+- **Unsettled readings:** whether SWIFT or TT credits count as "prescribed electronic modes" for the cash test is an inference [D · T0-07 L191].
 - **Sources that differ.** T2-01's decision table times GST registration and the LUT "before receipts exceed ₹20L" [T2-01 L175]. This page follows T0-07: register once turnover passes ₹20 lakh, and furnish an LUT before each financial year's first export [T0-07 L131].
 - **Errata and decisions.** No entry in [ERRATA](../../research/ERRATA.md) (U1–U26, as of 2026-11-06) corrects T0-07 or T2-01's decision table at L168–180; U19 corrects T2-01's dollar version of the dead zone (L706) to T0-07's rupee band, which this page uses. Decision D-006 (accepted 2026-10-21, a one-way door, confidence high) cites T0-07 KF1 and KF7 among its evidence [DECISIONS L359–365].
-- **What would change this advice** [T0-07 L140–147]: the primary text of s.58 or s.62 differs from the commentary; a tribunal or High Court excludes software development from the profession list; RBI's operational circulars make the EDF burden heavy enough to favour a platform or an EOR; old-regime deductions above about ₹5.4–7.75 lakh; foreign assets or foreign withholding (a move to ITR-3, not a change of structure); plans to scale into an agency, which strengthen the Pvt Ltd case; a client that refuses individual contractors.
+- **What would change this advice** [T0-07 L140–147]: a tribunal or High Court excluding software development from s.62(4); AD-bank EDF workflows heavy enough to favour an EOR; old-regime deductions above about ₹5.4–7.75 lakh; foreign assets or foreign withholding (a move to ITR-3, not a change of structure); plans to scale into an agency, which strengthen the Pvt Ltd case; a client that refuses individual contractors.
 
 ## Next steps
 
 - Choosing the route first (GCC job, EOR, contracting or relocation): [India remote playbook](../11-tracks/india-remote-playbook.md).
+- Cross-border remote hiring shares, EOR vs CoR vs B2B structures, PE risk and scam checks: [Cross-border remote work](../11-tracks/remote-cross-border.md).
+- Compare 33 countries on visas, net pay, settlement and IST overlap: [Country and city rankings](../11-tracks/country-rankings.md).
 - Finding and keeping clients on MSA terms: [Freelance and fractional work](../11-tracks/freelance-fractional.md).
 - Pricing the work and the offer: [Pay benchmarks](pay-benchmarks.md), [Offer evaluation](offer-evaluation.md), [Negotiation playbook](negotiation-playbook.md).
 - Moving abroad instead: [Visa and relocation](../11-tracks/visa-and-relocation.md).
 - Role hubs for client-billing work: [Independent AI consultant](../02-roles/hubs/independent-ai-consultant.md), [Fractional AI leader](../02-roles/hubs/fractional-ai-leader.md).
-- Evidence: [T0-07](../../research/sessions/T0-07-india-remote-tax-statutory-compliance.md), [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md), [findings for this stage](../../research/findings.md#stage-09), [decision D-006](../../research/DECISIONS.md); terms in the [glossary](../00-start/glossary.md).
+- Evidence: [T0-07](../../research/sessions/T0-07-india-remote-tax-statutory-compliance.md), [T0-43](../../research/sessions/T0-43-remote-cross-border-work-eor-platforms.md), [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md), [findings for this stage](../../research/findings.md#stage-09), [decision D-006](../../research/DECISIONS.md); terms in the [glossary](../00-start/glossary.md).

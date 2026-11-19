@@ -6,9 +6,9 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 
 | Layer | Where | What it is |
 |---|---|---|
-| Evidence | `research/sessions/` | 24 dated research reports (October–November 2026). **Immutable.** |
-| Research plan | `research/pipeline-2/` | Research pipeline 2 (D-021): the spec and generated tracker, the shared protocol, the briefs and the catalogue of planned sessions |
-| Knowledge | `research/findings.md`, `data/findings.json` | 262 key findings distilled from the sessions, each with grade and line |
+| Evidence | `research/sessions/` | 75 dated research reports (22 Phase 0, 2 Phase 3, 51 RP2; October–November 2026). **Immutable.** |
+| Research plan | `research/pipeline-2/` | Research pipeline 2 (D-021): the spec and generated tracker, the shared protocol, the briefs and the catalogue of 53 sessions (51 saved, 2 deferred past 2026-12-05) |
+| Knowledge | `research/findings.md`, `data/findings.json` | 1,034 key findings distilled from the sessions, each with grade and line |
 | Reference and guidance | `career/00-start/` … `career/11-tracks/` | User-facing documents on the lifecycle spine; every document has YAML front matter |
 | Data | `data/` | Machine-readable sources of truth and their schemas |
 | Machinery | `scripts/` | Generators (`--update` / `--check`) and the validator |
@@ -47,6 +47,9 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 | Project archetypes | `data/project_archetypes.json` | `resume_layers.py --update` and `build_archetypes.py --update` | The job-search strategy's computed blocks and `career/05-portfolio/project-archetypes.md` |
 | Interview practice prompts | `data/interview_prompts.json` | `build_prompts.py --update` | `career/08-interviewing/prep-packs.md` |
 | Ecosystem tools and their verdicts | `data/tools.json` | `build_tool_catalog.py --update` | `career/00-start/tool-catalog.md` |
+| Target employers and sponsor registers (D-024) | `data/target_employers.json` | `build_employers.py --update` | `career/01-landscape/target-employers.md` |
+| Country and city rankings (D-025) | `data/countries.json` | `rank_countries.py --update` | `career/11-tracks/country-rankings.md` |
+| Ranked credential catalog (D-026) | `data/credentials.json` | `rank_credentials.py --update` | `career/04-certifications/credential-catalog.md` |
 | Research findings | `research/sessions/*.md` (new sessions only) | `build_findings.py --update` | `data/findings.json`, `research/findings.md` |
 | Planned research sessions and reduce steps | `research/pipeline-2/catalogue.json`; briefs in `research/pipeline-2/briefs/` | `research_pipeline.py --update` | The tracker in `research/pipeline-2/README.md`; `--prompt <id>` assembles a session's prompt |
 | Document index | front matter of any document | `build_manifest.py --update` | `llms.txt`, `data/manifest.json` |
@@ -69,7 +72,7 @@ All scripts live in `scripts/`; run them with `python3 -B`. **`python3 -B script
 | Title statuses, quarantine and not-a-role registers | `career/02-roles/role-catalog.md` |
 | Grade definitions | `CONTRIBUTING.md` §3 (authority: T1-02 §10) |
 
-**Never hand-edit** anything between `BEGIN GENERATED` and `END GENERATED` markers, or any file whose front matter has `generated_by` without "(generated blocks)". Those files are generated in full: the role map, the role hubs, the inventories and their folder page, the skills radar, credentials by role, project archetypes, prep packs, the tool catalog, the findings registry, `llms.txt`, `data/findings.json` and `data/manifest.json`.
+**Never hand-edit** anything between `BEGIN GENERATED` and `END GENERATED` markers, or any file whose front matter has `generated_by` without "(generated blocks)". Those files are generated in full: the role map, the role hubs index (`career/02-roles/hubs/README.md`), the inventories and their folder page, the skills radar, credentials by role, the ranked credential catalog, project archetypes, target employers, country rankings, prep packs, the tool catalog, the findings registry, `llms.txt`, `data/findings.json` and `data/manifest.json`. The 29 individual role hubs (`career/02-roles/hubs/*.md`) use `(generated blocks)` for their top summary card while preserving the hand-written dossier narrative below `<!-- END GENERATED -->` (D-023).
 
 ## 3. Answering questions from this repository
 

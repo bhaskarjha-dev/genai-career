@@ -4,9 +4,9 @@ title: "Start Here: Navigate a GenAI Career"
 content_type: index
 stage: 0
 status: published
-last_verified: 2026-11-05
+last_verified: 2026-11-19
 summary: "Entry point to the career content: start from your situation or your question, see the map of GenAI roles, follow the lifecycle stages, or take the path for your background. Every page links back to graded evidence."
-sources: [T0-01, T0-06, T2-01, T1-02]
+sources: [T0-01, T0-06, T2-01, T1-02, T0-35, T0-46, T0-67]
 ---
 
 # Start Here
@@ -19,34 +19,38 @@ This folder is the user-facing half of the repository. It follows the career lif
 
 | Your situation | Read first | Then |
 |---|---|---|
-| **Exploring:** is GenAI work for you, and which roles exist? | [GenAI target roles](02-roles/genai-target-roles.md), then the [role hubs](02-roles/hubs/README.md) of the roles that interest you | [Role map](02-roles/role-map.md) and [emerging roles](01-landscape/emerging-roles.md) → the evidence: [role catalog](02-roles/role-catalog.md) and [role rankings](02-roles/role-rankings.md) → [targeting workbook](00-start/targeting-workbook.md). For the market as a whole, the [market overview](01-landscape/market-overview.md) |
-| **Switching** from another technical role | [Career transitions](11-tracks/career-transitions.md): the roadmap for your background | [Targeting workbook](00-start/targeting-workbook.md) → [learning roadmaps](03-skills-and-tech/learning-roadmaps.md) → [project archetypes](05-portfolio/project-archetypes.md) |
-| **Student or new graduate** | [Career transitions](11-tracks/career-transitions.md) (the provisional student route) and [proof-of-work standards](05-portfolio/proof-of-work-standards.md) | [Targeting workbook](00-start/targeting-workbook.md) → [referrals and outreach](07-networking/referrals-and-outreach.md) |
-| **Interviews scheduled** | [Interview loops](08-interviewing/interview-loops.md): classify your loop first | [System design](08-interviewing/system-design-archetypes.md), [behavioural](08-interviewing/behavioral-calibration.md), [coding rounds](08-interviewing/coding-rounds.md), [prep packs](08-interviewing/prep-packs.md) |
+| **Exploring:** is GenAI work for you, and which roles exist? | [GenAI target roles](02-roles/genai-target-roles.md), then the [role hubs](02-roles/hubs/README.md) of the roles that interest you | [Role map](02-roles/role-map.md) and [emerging roles](01-landscape/emerging-roles.md) → the evidence: [role catalog](02-roles/role-catalog.md) and [role rankings](02-roles/role-rankings.md) → [targeting workbook](00-start/targeting-workbook.md). For the market as a whole, the [market overview](01-landscape/market-overview.md) and [target employers](01-landscape/target-employers.md) |
+| **Switching** from another technical role (including DevOps/SRE, PM or Indian IT services) | [Career transitions](11-tracks/career-transitions.md): the roadmap for your background | [Targeting workbook](00-start/targeting-workbook.md) → [learning roadmaps](03-skills-and-tech/learning-roadmaps.md) → [project archetypes](05-portfolio/project-archetypes.md) |
+| **Student or new graduate** | [Career transitions](11-tracks/career-transitions.md) (the researched student/new-grad route) and [proof-of-work standards](05-portfolio/proof-of-work-standards.md) | [Fellowships and residencies](07-networking/fellowships-and-residencies.md) → [referrals and outreach](07-networking/referrals-and-outreach.md) |
+| **Interviews scheduled** | [Interview loops](08-interviewing/interview-loops.md) and [employer interview loops](08-interviewing/employer-interview-loops.md): classify your loop first | [System design](08-interviewing/system-design-archetypes.md), [behavioural](08-interviewing/behavioral-calibration.md), [coding rounds](08-interviewing/coding-rounds.md), [prep packs](08-interviewing/prep-packs.md) |
 | **Holding an offer** | [Offer evaluation](09-compensation/offer-evaluation.md) | [Negotiation playbook](09-compensation/negotiation-playbook.md), [pay benchmarks](09-compensation/pay-benchmarks.md) |
 | **Starting a new role** | [First 90 days](10-onboarding/first-90-days.md) | [Growth and progression](10-onboarding/growth-and-progression.md) |
-| **India-based**, aiming for remote or international work | [India remote playbook](11-tracks/india-remote-playbook.md) | [India remote tax](09-compensation/india-remote-tax.md), [visa and relocation](11-tracks/visa-and-relocation.md) |
-| **Going independent** or fractional | [Freelance and fractional](11-tracks/freelance-fractional.md) | The [independent consultant](02-roles/hubs/independent-ai-consultant.md) and [fractional leader](02-roles/hubs/fractional-ai-leader.md) hubs |
+| **Comparing countries or planning relocation** | [Country rankings](11-tracks/country-rankings.md) (33 countries, 50 cities) and [visa and relocation](11-tracks/visa-and-relocation.md) | [Regional visa dossiers](11-tracks/visa/README.md) and [remote cross-border](11-tracks/remote-cross-border.md) |
+| **India-based**, aiming for remote or international work | [India remote playbook](11-tracks/india-remote-playbook.md) | [India remote tax](09-compensation/india-remote-tax.md), [remote cross-border](11-tracks/remote-cross-border.md), [visa and relocation](11-tracks/visa-and-relocation.md) |
+| **Going independent** or fractional | [Freelance and fractional](11-tracks/freelance-fractional.md) | The [independent consultant](02-roles/hubs/independent-ai-consultant.md), [fractional leader](02-roles/hubs/fractional-ai-leader.md) and [domain evaluation specialist](02-roles/hubs/domain-evaluation-specialist.md) hubs |
 | **Already in AI**, moving up or sideways | [Growth and progression](10-onboarding/growth-and-progression.md) | [Role map](02-roles/role-map.md) for adjacent moves; [role hubs](02-roles/hubs/README.md) for the target |
-| **Coming from GRC, privacy, audit or legal** | [Governance careers](11-tracks/governance-careers.md) | [Credential ROI](04-certifications/credential-roi.md) and the governance role hubs |
-| **Coming from a PhD** | [PhD to industry](11-tracks/phd-to-industry.md) | [Visa and relocation](11-tracks/visa-and-relocation.md) for the O-1A angle |
+| **Coming from GRC, privacy, audit or legal** | [Governance careers](11-tracks/governance-careers.md) | [Credential ROI](04-certifications/credential-roi.md), [credential catalog](04-certifications/credential-catalog.md) and the governance role hubs |
+| **Coming from a PhD** | [PhD to industry](11-tracks/phd-to-industry.md) | [Fellowships and residencies](07-networking/fellowships-and-residencies.md) and [visa and relocation](11-tracks/visa-and-relocation.md) for the O-1A angle |
 
 ## 2. Find your question
 
 | If you want to know… | Go to |
 |---|---|
 | Which roles to target, in what order | [GenAI target roles](02-roles/genai-target-roles.md), then the [targeting workbook](00-start/targeting-workbook.md) |
-| Everything about one role on one page | [Role hubs](02-roles/hubs/README.md) |
+| Everything about one role on one page | [Role hubs](02-roles/hubs/README.md) (29 hybrid dossiers) |
 | Where each role's work sits, from GPUs to applications | [Role map](02-roles/role-map.md) |
 | Which GenAI roles exist, and which titles are real | [Role catalog](02-roles/role-catalog.md) and [emerging roles](01-landscape/emerging-roles.md) |
 | How roles rank on the evidence across all demand, with uncertainty and lenses for your background | [Role rankings](02-roles/role-rankings.md) |
-| Which kinds of employer hire, and how they differ | [Employer landscape](01-landscape/employer-landscape.md) |
+| Which kinds of employer hire, and which specific employers sponsor visas | [Employer landscape](01-landscape/employer-landscape.md) and [target employers](01-landscape/target-employers.md) |
+| Which countries and cities rank highest for GenAI work and visas | [Country rankings](11-tracks/country-rankings.md), [visa and relocation](11-tracks/visa-and-relocation.md) and [regional visa dossiers](11-tracks/visa/README.md) |
 | What to learn first, and what to stop learning | [Skills radar](03-skills-and-tech/skills-radar.md) and [learning roadmaps](03-skills-and-tech/learning-roadmaps.md) |
 | Everything a role needs, with priority and evidence | [Role skill inventories](03-skills-and-tech/role-skill-inventories.md) (one file per role) |
 | What a skill or tool is, and whether it is still current | [Skills vocabulary](03-skills-and-tech/skills-vocabulary.md) |
-| Whether a certificate is worth it | [Credential ROI](04-certifications/credential-roi.md) and [credentials by role](04-certifications/credentials-by-role.md) |
+| Whether a certificate is worth it, and how 150 credentials rank | [Credential ROI](04-certifications/credential-roi.md), [credential catalog](04-certifications/credential-catalog.md) and [credentials by role](04-certifications/credentials-by-role.md) |
 | What to build to prove you can do the job | [Proof-of-work standards](05-portfolio/proof-of-work-standards.md) and [project archetypes](05-portfolio/project-archetypes.md) |
-| How to run a search and pass the screens | [Job-search strategy](06-job-search/job-search-strategy.md), [ATS mechanics](06-job-search/ats-mechanics.md), [application operating system](06-job-search/application-operating-system.md) |
+| How to run a search and pass ATS and AI-mediated screens | [Job-search strategy](06-job-search/job-search-strategy.md), [ATS mechanics](06-job-search/ats-mechanics.md), [channels and boards](06-job-search/channels-and-boards.md), [application operating system](06-job-search/application-operating-system.md) |
+| How to optimise LinkedIn, get referred or enter a fellowship | [LinkedIn guide](07-networking/linkedin-guide.md), [referrals and outreach](07-networking/referrals-and-outreach.md), [fellowships and residencies](07-networking/fellowships-and-residencies.md) |
+| How specific employers interview and what prompts to practise | [Employer interview loops](08-interviewing/employer-interview-loops.md) and [prep packs](08-interviewing/prep-packs.md) |
 | What a role pays | [Pay benchmarks](09-compensation/pay-benchmarks.md) |
 | Which career tools are worth using | [Tool catalog](00-start/tool-catalog.md) |
 | What a term or acronym means | [Glossary](00-start/glossary.md) |
@@ -95,9 +99,9 @@ The two numbers rank different things, by design. Both are model outputs [M]:
 
 ## 6. Paths by background
 
-[Career transitions](11-tracks/career-transitions.md) gives five backgrounds (backend or systems, data science or BI, frontend or full-stack, non-technical, PhD) a research-backed roadmap each: the roles to start with, the modelled time to a first offer (a low-confidence model output, conditional on success [M · T0-06 R2]) and the gates G1–G4. It also gives provisional routes, labelled [P], for three starting points without dedicated research: DevOps or SRE engineers, product managers, and students or new graduates.
+[Career transitions](11-tracks/career-transitions.md) gives nine starting backgrounds a research-backed roadmap each: five from Phase 0 (backend or systems, data science or BI, frontend or full-stack, non-technical, PhD) and four added in November 2026 (DevOps or SRE engineers, product managers, Indian IT services engineers, and students or new graduates [T0-67]), with the roles to start with, the modelled time to a first offer (a low-confidence model output, conditional on success [M · T0-06 R2; T0-67]) and the gates G1–G4.
 
-**By geography:** India-based readers should add the India lens in the [role rankings](02-roles/role-rankings.md), the [India remote playbook](11-tracks/india-remote-playbook.md) and the India sections of [pay benchmarks](09-compensation/pay-benchmarks.md).
+**By geography:** Readers comparing international hubs should start with [country rankings](11-tracks/country-rankings.md) (33 countries, 50 cities) and [visa and relocation](11-tracks/visa-and-relocation.md). India-based readers should add the India lens in the [role rankings](02-roles/role-rankings.md), the [India remote playbook](11-tracks/india-remote-playbook.md), [remote cross-border](11-tracks/remote-cross-border.md) and the India sections of [pay benchmarks](09-compensation/pay-benchmarks.md).
 
 ## 7. How to read the evidence
 

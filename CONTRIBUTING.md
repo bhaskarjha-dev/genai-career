@@ -125,8 +125,11 @@ Some documents, or blocks within them, are generated from `data/` by `scripts/`.
 | `resume_layers.py` | Computed blocks in the résumé strategy and the job-search strategy |
 | `target_roles.py` | The GenAI target order: `--update` writes it into the skills ontology; `--check` also verifies the target-roles table |
 | `build_role_map.py` | The role map (`career/02-roles/role-map.md`) |
-| `build_role_hubs.py` | One hub per role (`career/02-roles/hubs/`) |
+| `build_role_hubs.py` | The hubs index (`career/02-roles/hubs/README.md`) and the generated card block inside each role hub (D-023) |
+| `build_employers.py` | Target employers directory (`career/01-landscape/target-employers.md`, D-024) |
+| `rank_countries.py` | Country and city rankings (`career/11-tracks/country-rankings.md`, D-025) |
 | `build_skills_views.py` | The skills radar and credentials by role |
+| `rank_credentials.py` | Ranked credential catalog (`career/04-certifications/credential-catalog.md`, D-026) |
 | `build_archetypes.py` | Project archetypes (`career/05-portfolio/project-archetypes.md`) |
 | `build_prompts.py` | Interview prep packs (`career/08-interviewing/prep-packs.md`) |
 | `build_tool_catalog.py` | The tool catalog (`career/00-start/tool-catalog.md`) |

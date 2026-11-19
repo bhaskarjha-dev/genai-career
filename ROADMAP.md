@@ -1,27 +1,23 @@
 # Roadmap
 
-> **Updated:** 2026-11-08 · **Architecture:** decisions D-013 and D-015 to D-021 in [research/DECISIONS.md](research/DECISIONS.md) · **History:** [CHANGELOG.md](CHANGELOG.md)
+> **Updated:** 2026-11-19 · **Architecture:** decisions D-013 and D-015 to D-026 in [research/DECISIONS.md](research/DECISIONS.md) · **History:** [CHANGELOG.md](CHANGELOG.md)
 > This page tracks what the repository covers, what is planned next, and the decisions that are still open. Evidence-grade conventions follow EGP-1.0.
 
 ---
 
 ## 1. Where the repository stands
 
-**The question it answers:** is a person at point zero fully provided for? **Yes for every lifecycle stage, with named gaps.** Each stage has its core guides, and the gaps below are listed where readers meet them.
+**The question it answers:** is a person at point zero fully provided for? **Yes across every lifecycle stage (00 to 11), backed by 75 integrated research sessions (22 Phase 0, 2 Phase 3, 51 of 53 Research Pipeline 2), with named remaining gaps.** Every role has a hybrid hub combining generated scorecards with a full RP2 narrative dossier (D-023), and three new computed databases cover credentials (`data/credentials.json`), target employers (`data/target_employers.json`) and countries (`data/countries.json`).
 
 | Coverage | What |
 |---|---|
-| **Covered** | Every stage, 00 to 11: start-here tools (targeting workbook, glossary, tool catalog), the market and employers, the role universe with a role map and one hub per role, skills with a radar and learning roadmaps, credentials, proof of work with project cards, job search, networking, interviewing with prep packs, compensation, onboarding and growth, and six track playbooks |
-| **Needs new research** | Measured tool tiers and skill momentum (job-description mining); India job platforms (FAD OQ2); research-backed routes for DevOps/SRE engineers, product managers and students (provisional [P] routes exist); live target-company lists; remote pay bands and Europe depth; burnout and sustainable pace. All of these, plus a full certification census, networking, résumés, countries and visas, interviews and a dossier for every role, are planned as the 53 sessions of [research pipeline 2](research/pipeline-2/README.md) |
-| **Needs building** | A static site, if chosen. Résumé building is out of scope: résumés are built in a personal career repository from this repository's inputs (D-022) |
+| **Covered** | Every stage, 00 to 11: start-here tools (targeting workbook, glossary, 243-item tool catalog), market/employer landscape & 47-employer target list + 7 sponsor registers, role universe (29 hybrid role hubs, 406 classified titles, role map, rankings, GenAI targets), skills (radar with 6th multi-signal momentum view, learning roadmaps with rated resources, agentic protocols, typed inventories), credentials (150-credential scored database, ROI guide, credentials by role), portfolio standards & archetypes, job search (global & India boards, AI-mediated hiring & legal table, résumé strategy, ATS mechanics, operating system), networking (dedicated LinkedIn guide, online presence, communities, fellowships & residencies, referrals & outreach), interviewing (27-employer loop reference, 125 practice prompts across 11 tracks, multi-vendor API prices, behavioural calibration), compensation (global & India benchmarks, negotiation, offer evaluation, verified India remote tax), onboarding & growth, and 15 track playbooks including 33-country rankings, remote/EOR guide, 6 regional visa dossiers and 9 researched transition routes |
+| **Needs new research / deferred** | Deferred RP2 sessions **T0-28** (hyperscaler cloud exams) and **T0-33** (developer-tool & agentic-suite credentials), scheduled after 2026-12-05 (17 records in `data/credentials.json` carry `provisional_pending_rp2: true`); repeatable monthly job-description mining (INS-1) for two-date employer-demand skill series (JobsPipe's AI Engineer count date stayed at 2026-09-10 through 2026-11-14); logged-in India job-board counts (INS-5); role-specific India pay for 19 remaining Grade D placeholders; governance-track interview loops (Grade E); audited outcome data for GenAI courses/bootcamps (Grade E) |
+| **Needs building** | Measurement instruments INS-1, INS-2, INS-4, INS-5; a static site if chosen. Résumé building is out of scope: résumés are built in a personal career repository from this repository's inputs (D-022) |
 
-**Quality caveat.** AI agents drafted the stage guides from the research sessions on 2026-11-05 and 2026-11-06. On 2026-11-06, 13 independent fact-checking agents checked 4,829 claims against the session lines they cite and made 234 fixes, and a script confirmed that the figures on each line appear near the line it cites. Before 1.0, CONTRIBUTING §7 requires an independent fact-check of the reference documents: the pages added on 2026-11-05 and 2026-11-06 had the agent fact-check above, and the v0.1.0 catalogs and skills references still need one (P1-5). No human domain expert has reviewed the guides yet; that is recommended before readers rely on the compensation, tax, visa and interviewing pages (P1-4). The work also logged errata U13–U26 against the Phase 0 records.
+**Quality caveat.** On 2026-11-06, 13 fact-checking agents audited 4,829 Phase 0 claims and logged errata U13–U26. On 2026-11-19, full sceptical integration of all 51 saved RP2 sessions (+ Phase 3 `T3-01`/`T3-02`) audited every session for `Extract`-only Grade A violations (159 ledger rows / 55 JSONL records downgraded to Grade B unless live-verified), COI disclosures (792 rows), and cross-session contradictions, logging errata **U27–U56** in [research/ERRATA.md](research/ERRATA.md) and verifying load-bearing facts against primary government, issuer and employer pages. Before 1.0, CONTRIBUTING §7 requires an independent fact-check of the v0.1.0 reference documents (P1-5) and human domain-expert review of the compensation, tax, visa and interviewing guides (P1-4).
 
-**Consolidation (2026-11-07 to 2026-11-08).** An audit of every file found the structure sound but facts copied by hand across pages, some of them contradictory. In response:
-- each shared fact now has one owner (D-019): the v0.1.0 references were slimmed, the role skill maps are narrative only, the résumé guidance is one guide, and the posting-term shares moved into `data/posting_skill_shares.json`;
-- the three older guides follow the guide pattern, so every guide is checked;
-- generated pages carry `review_by` dates and a weekly run fails while any page is due (D-020);
-- the validator rejects schema rules it cannot enforce, checks session line references in the data, and runs every generator from one registry (`scripts/build_all.py`); machinery tests run in CI.
+**Consolidation (2026-11-07 to 2026-11-19).** One owner per fact (D-019); generated `review_by` dates and weekly CI checks (D-020); generic scope (D-022); hybrid role hubs (D-023); computed credential, target-employer and country catalogs (D-024 to D-026); all 18 generators wired into `scripts/build_all.py` with schema and regression tests in `scripts/tests/test_machinery.py`.
 
 ---
 
@@ -31,22 +27,22 @@ Stages follow D-001's 12-stage funnel, plus three stages D-001 lacks (marked +).
 
 | # | Stage: the person's question | What exists | What's still missing | Folder |
 |---|---|---|---|---|
-| + | Start: "Where do I start, and what should I target?" | Targeting workbook (self-assessment, constraints, rings, 90-day plan), glossary, tool catalog, personal gap analysis (`scripts/gap_analysis.py`) | — | [00-start](career/00-start/README.md) |
-| 1 | Awareness: "What does the market look like, globally and in India?" | Market overview, employer landscape, emerging roles | India job platforms; target-company lists | [01-landscape](career/01-landscape/README.md) |
-| 2 | Exploration: "Which roles exist, and which are best?" | Role map, role hubs, master catalog, ranked catalog, GenAI target roles | — | [02-roles](career/02-roles/README.md) |
-| 3 | Skills: "What do I lack, and in what order do I learn it?" | Skills radar, learning roadmaps, agentic protocols, typed role inventories, vocabulary, skill maps | Measured tool tiers and a "surging" ring (job-description mining) | [03-skills-and-tech](career/03-skills-and-tech/README.md) |
-| 4 | Credentials: "Is a certificate worth it?" | Credential ROI, credentials by role | — | [04-certifications](career/04-certifications/README.md) |
-| 5 | Portfolio: "What should I build to prove it?" | Proof-of-work standards, project archetype cards with minimal sets | — | [05-portfolio](career/05-portfolio/README.md) |
-| 5+ | Online presence: "What do recruiters find?" | Online-presence guide | — | [07-networking](career/07-networking/README.md) |
-| 6 | Discovery: "Where are the postings?" | Channels and boards, tool catalog | India platforms (stated as a gap in the guide) | [06-job-search](career/06-job-search/README.md) |
-| 7 | Application: "How do I apply well?" | Job-search strategy, résumé strategy and matrix, ATS mechanics | — (résumés are built in a personal career repository: D-022) | [06-job-search](career/06-job-search/README.md) |
-| 8 | Networking: "How do I get referred?" | Referrals and outreach (with the open-source route), communities guide | — | [07-networking](career/07-networking/README.md) |
-| 9 | Interview preparation: "How do I pass my track?" | System-design archetypes, behavioural calibration, coding rounds, prep packs | — | [08-interviewing](career/08-interviewing/README.md) |
-| 10 | Execution: "How do I handle the day and the follow-up?" | Interview loops (classification, day-of, follow-up, debrief) | — | [08-interviewing](career/08-interviewing/README.md) |
-| 11 | Negotiation: "Is this offer good, and how do I push?" | Pay benchmarks, offer evaluation, negotiation playbook, India remote tax | India and Europe negotiation evidence is thin (stated in the guide) | [09-compensation](career/09-compensation/README.md) |
-| 12 | First 90 days | First-90-days playbook, growth and progression | — | [10-onboarding](career/10-onboarding/README.md) |
-| + | Running the search: "Am I on track, and what's broken?" | Application operating system (tracker, rhythm, funnel thresholds) | — | [06-job-search](career/06-job-search/README.md) |
-| Tracks | Backgrounds, locations, ways of working | Career transitions, PhD to industry, India remote playbook, visa and relocation, freelance and fractional, governance careers | Research for DevOps/SRE, PM and student routes | [11-tracks](career/11-tracks/README.md) |
+| + | Start: "Where do I start, and what should I target?" | Targeting workbook, glossary, 243-item tool catalog, personal gap analysis (`scripts/gap_analysis.py`) | — | [00-start](career/00-start/README.md) |
+| 1 | Awareness: "What does the market look like, globally and in India?" | Market overview, employer landscape, 47-employer target list + 7 sponsor registers (`target-employers.md`), emerging roles | Monthly INS-1 refresh | [01-landscape](career/01-landscape/README.md) |
+| 2 | Exploration: "Which roles exist, and which are best?" | Role map, 29 hybrid role hubs (scorecards + RP2 dossiers), master catalog (406 titles), ranked catalog, GenAI target roles | 2026-12-01 recount for quorum candidates | [02-roles](career/02-roles/README.md) |
+| 3 | Skills: "What do I lack, and in what order do I learn it?" | Skills radar (5 computed rings + 6th multi-signal adoption/telemetry view), learning roadmaps (rated resources), agentic protocols, typed role inventories, vocabulary, skill maps | Two-date employer-demand JD series (INS-1; JobsPipe AI Engineer stayed at 2026-09-10) | [03-skills-and-tech](career/03-skills-and-tech/README.md) |
+| 4 | Credentials: "Is a certificate worth it?" | 150-credential scored catalog (`credential-catalog.md`), credential ROI, credentials by role | Deferred sessions T0-28 (hyperscalers) and T0-33 (developer tools) after 2026-12-05 | [04-certifications](career/04-certifications/README.md) |
+| 5 | Portfolio: "What should I build to prove it?" | Proof-of-work standards (GitHub, writing, portfolio sites), project archetype cards | — | [05-portfolio](career/05-portfolio/README.md) |
+| 5+ | Online presence: "What do recruiters find?" | Dedicated LinkedIn guide (`linkedin-guide.md`), online-presence guide | — | [07-networking](career/07-networking/README.md) |
+| 6 | Discovery: "Where are the postings?" | Channels and boards (global + measured India boards, ghost jobs, pay transparency, scams), tool catalog | Logged-in India counts (INS-5) | [06-job-search](career/06-job-search/README.md) |
+| 7 | Application: "How do I apply well?" | Job-search strategy, résumé strategy and matrix, ATS mechanics (AI-mediated hiring + V0 legal table) | — (résumés live in a personal career repository: D-022) | [06-job-search](career/06-job-search/README.md) |
+| 8 | Networking: "How do I get referred?" | Referrals and outreach (outreach law, yield/hour), communities guide, fellowships and residencies (`fellowships-and-residencies.md`) | Community-to-job baseline (OQ4) | [07-networking](career/07-networking/README.md) |
+| 9 | Interview preparation: "How do I pass my track?" | 27-employer loop reference (`employer-interview-loops.md`), system-design archetypes (multi-vendor API pricing), behavioural calibration (12 employers), coding rounds, prep packs (125 prompts / 11 tracks) | Governance-track employer loops (Grade E); 7 undocumented labs | [08-interviewing](career/08-interviewing/README.md) |
+| 10 | Execution: "How do I handle the day and the follow-up?" | Interview loops (per-cell sourced, day-of, follow-up, debrief) | — | [08-interviewing](career/08-interviewing/README.md) |
+| 11 | Negotiation: "Is this offer good, and how do I push?" | Pay benchmarks (global + India cities/GCC/startups), offer evaluation (Anthropic ANT IPO + equity risk), negotiation playbook, primary-verified India remote tax | 19 India Grade D pay placeholders; India/EU negotiation outcomes | [09-compensation](career/09-compensation/README.md) |
+| 12 | First 90 days | First-90-days playbook (role-specific + country probation mechanics), growth and progression | Burnout/retention longitudinal data | [10-onboarding](career/10-onboarding/README.md) |
+| + | Running the search: "Am I on track, and what's broken?" | Application operating system (tracker fields, Gem 14%–26% onsite conversion, thresholds) | — | [06-job-search](career/06-job-search/README.md) |
+| Tracks | Backgrounds, locations, ways of working | 33-country rankings (`country-rankings.md`), remote & EOR guide (`remote-cross-border.md`), 6 regional visa dossiers (`visa/`), visa & relocation overview, 9 researched transition routes (`career-transitions.md`), PhD to industry, India remote playbook, freelance and fractional, governance careers | Continental Europe works-council negotiation data | [11-tracks](career/11-tracks/README.md) |
 
 ---
 
@@ -54,13 +50,13 @@ Stages follow D-001's 12-stage funnel, plus three stages D-001 lacks (marked +).
 
 | Phase | Scope | Status |
 |---|---|---|
-| **1. Foundation** | Architecture v2 (D-013): the stage spine and folder READMEs, the Start Here page, front matter and its schema, the root `data/` layer, `AGENTS.md`, `llms.txt` and the manifest, the findings registry, the research index and errata, CI validation | **Done** (2026-11-04) |
-| **2. Knowledge** | Freshness tracking: page-level `review_by` dates and the validator's due report (D-017) replace the planned claims registry for now | **Done** (2026-11-05) |
-| **3. Guidance** | The core guides for every stage, in the guide pattern (D-016) | **Done** (2026-11-05); human expert review pending |
-| **4. Hubs and catalogs** | The role map (D-015) and one hub per role; the skills radar, credentials by role, project archetype cards, prep packs and the tool catalog, all generated from `data/` | **Done** (2026-11-05). Persona and situation routing lives in [Start Here](career/README.md) (§1 and §6), so no separate stage × persona index was built. A stage × tier index is deferred: the tier bands are contested ([ERRATA](research/ERRATA.md) U14) |
-| **4b. Consolidation** | One owner per fact (D-019); generated review dates and a weekly reminder (D-020); schema and validator hardening; facts moved out of scripts into `data/`; the three older guides migrated | **Done** (2026-11-08) |
-| **5. Research pipeline 2** | 53 targeted sessions designed backwards from the data and pages they feed (D-021): networking, résumés, job search with India platforms measured, a seven-part certification census, countries, visas and remote work, pay, interviews and AI-mediated hiring, a dossier for every role (job-description samples), transitions for DevOps/SRE, PMs, IT-services engineers and students, learning resources, skill momentum and emerging titles, the market pulse and onboarding; nine reduce steps; five measurement instruments | **51 of 53 sessions saved** (2026-11-19). T0-28 and T0-33 deferred to after 2026-12-05. Next: integrate by reduce step ([INTEGRATE.md](research/pipeline-2/INTEGRATE.md), P1-6) |
-| **6. Release 1.0** | An independent fact-check of the reference documents (P1-5) and paths, IDs and schemas declared stable (CONTRIBUTING §7); a human expert review of the guides is recommended first (P1-4) | After phase 5, or earlier once the fact-check is done |
+| **1. Foundation** | Architecture v2 (D-013): stage spine, front matter, `data/`, `AGENTS.md`, `llms.txt`, manifest, findings registry, errata, CI | **Done** (2026-11-04) |
+| **2. Knowledge** | Freshness tracking: page-level `review_by` dates and validator due report (D-017) | **Done** (2026-11-05) |
+| **3. Guidance** | Core guides for every stage in the guide pattern (D-016) | **Done** (2026-11-05); human expert review pending |
+| **4. Hubs and catalogs** | Role map (D-015), role hubs, skills radar, credentials by role, archetypes, prep packs, tool catalog | **Done** (2026-11-05) |
+| **4b. Consolidation** | One owner per fact (D-019); generated review dates & weekly CI (D-020); schema/validator hardening; generic scope (D-022) | **Done** (2026-11-10) |
+| **5. Research pipeline 2** | 53 targeted sessions (D-021), 9 reduce steps, Decisions D-023 to D-026, 3 new computed databases/generators, 29 hybrid role hubs, 13 new career pages, errata U27–U56 | **51 of 53 sessions integrated; 8 of 9 reduce steps done** (2026-11-19). Remaining: T0-28 & T0-33 (deferred past 2026-12-05) to complete R1 |
+| **6. Release 1.0** | Independent fact-check of v0.1.0 reference documents (P1-5) and paths/IDs/schemas declared stable (CONTRIBUTING §7); human expert review recommended first (P1-4) | Next major milestone after T0-28/T0-33 and P1-5 |
 
 ---
 
@@ -68,108 +64,95 @@ Stages follow D-001's 12-stage funnel, plus three stages D-001 lacks (marked +).
 
 Ordered by impact on hiring odds, then by dependency:
 
-| Priority | Deliverable | Why | Depends on |
+| Priority | Deliverable | Status / Why | Depends on |
 |---|---|---|---|
-| **P0-2** | **Run research pipeline 2:** all three waves ([order](research/pipeline-2/README.md#waves-and-the-recommended-order)) | The largest gaps by effect on a job search, and the catalogues the owner asked for | — (the owner runs them) |
-
-> **P0-2 status (2026-11-19).** 51 of 53 sessions saved to `research/sessions/`; 1,034 findings registered. T0-28 (hyperscaler credentials) and T0-33 (developer-tool credentials) are deferred to after 2026-12-05. All 51 pass `--appendix` with PROBLEMS: 0. Next: integrate by reduce step (P1-6).
-
-| **P1-1** | **Job-description mining:** 30 or more dated postings per role from public ATS boards; promote measured tools from [S] or [P] to [JD]; add a "surging" ring to the skills radar from dated series | Tool tiers outside a dozen measured titles rest on session mentions and practice curation | The role dossiers T0-48 to T0-66 (samples of 15–30 postings per role: aliases, wording and pay bands) and T0-69 (dated series); P1-7 for measured shares |
-| **P1-2** | **India job platforms** (Naukri, Instahyre and others; FAD OQ2) | The channels guide and the India playbook state the gap | Session T0-25 (and T0-45 for India pay); the owner's logged-in counts (INS-5) |
-| **P1-3** | **Four more starting backgrounds:** DevOps/SRE, product managers, IT-services engineers, students and new graduates | Their routes in career transitions are provisional [P] or missing | Session T0-67 |
-| **P1-4** | **Human expert review** of the stage guides, starting with compensation, tax, visa and interviewing | The guides were agent-drafted and agent-checked | — |
-| **P1-5** | **Independent fact-check of the v0.1.0 reference documents:** the role catalog, rankings and skill maps, and the 1,529 tiered skill links in the ontology. The planned agent check was blocked on 2026-11-04 ([role skill inventories §4](career/03-skills-and-tech/role-skill-inventories.md#4-verification)) | CONTRIBUTING §7 requires it before 1.0 | — |
-| **P1-6** | **Integrate research pipeline 2 by reduce step** (R1–R9): new data files with schemas where the decision records choose them, the computed credential value order (R1) and country ranking (R2) with their scripts and generated pages, and the owner pages each step names ([reduce steps](research/pipeline-2/README.md#reduce-steps-from-sessions-to-data-and-pages); [INTEGRATE.md](research/pipeline-2/INTEGRATE.md)) | Research changes nothing until it is integrated and verified | The sessions each step needs |
-| **P1-7** | **Job-description collector** (instrument INS-1, planned `scripts/collect_jds.py`): postings from employers' public job-board endpoints for the T0-27 employer list, classified by title, skills extracted with the ontology's aliases, a dated snapshot with n per title; recall measured on a labelled sample | Turns samples of about 30 postings per role into repeatable monthly measurement | Session T0-27 (employers with their job-board URLs); build it before wave 2 if possible |
-| **P2** | **Official-register script** (instrument INS-2): AI-title filings by employer and city from US LCA disclosure data and the UK and Dutch sponsor registers (A for filings, never for pay) | Sponsorship signals for the country ranking and the target-employer list | — |
-| **P2** | **Net-pay calculator** (instrument INS-4): effective tax and social contributions at reference salaries per country from official schedules, with incoming-worker regimes | The country ranking's net-pay pillar | Sessions T0-35, T0-36 |
-| **P2** | **Logged-in platform counts** (instrument INS-5): a fixed query list the owner runs monthly on platforms that hide counts from signed-out users (Naukri, Instahyre, LinkedIn), recorded as a dated table | India demand evidence agents cannot collect | — (the owner runs them) |
-| **P2** | **Tool-choice cards** (stage 03): for each choose-one class in the skills ontology (serving engines, eval runners, tracing and agent orchestration first), a sourced default and if → then rules, stored as `compare` fields and rendered in [skills vocabulary §2](career/03-skills-and-tech/skills-vocabulary.md#2-choose-one-classes). Start from T0-03's risk-aware tool selection policy (§4.2, L139–147) and its devaluation table (§6.8.2) | Readers choosing between interchangeable tools get a sourced default, not just a list | Skills ontology |
-| **P2** | **Research-track concept checklist** (stage 11): the concepts research-engineer and research-scientist loops probe, as a self-check list built from the research family's Must and Important skills and T0-06 D8, pointing to primary references rather than teaching them. Until then, the research role inventories' self-assessment tables and the [skills radar](career/03-skills-and-tech/skills-radar.md) family C view cover it | Completes the PhD and research path | Skills ontology |
-| **P2** | **Finish one owner per fact (D-019):** the role rankings §5.2 and §5.3 still copy timelines, India pay, remote shares and tax facts (link career transitions, pay benchmarks, the market overview and India remote tax instead); the targeting workbook keeps T0-06 working tables (it names career transitions as their owner); refresh the workbook's worked example (access scores, India ranks, coverage, dated 2026-11-04) against the regenerated hubs | Fewer copies to refresh | — |
-| **P2** | **Ontology clean-up:** collapse AI Engineer's 63 Optional tools into their choose-one classes (148 skills, next largest 84); merge the duplicate Physical AI entries ("Perception / computer vision" and "Computer vision"; two VLA entries) and the three governance entries in skills-radar ring 2 (EU AI Act, the combined EU AI Act/NIST/ISO entry, ISO/IEC 42001) | Cleaner inventories and radar | Skills ontology |
-| **P2** | **Leadership hubs:** the five leadership and independent hubs are mostly "no evidence" sections; have `build_role_hubs.py` collapse empty sections (they already open with their track playbook) | Shorter pages | — |
-| **P2** | Target-company lists (session T0-27, reduce step R6); learning-resource curation with a rating method (session T0-68; no GenAI course or bootcamp has outcome data that is not vendor-reported, T0-06 L203); a claims registry if page-level `review_by` proves too coarse (D-017, D-020); a static site | Context and convenience | Decisions in §6 |
+| **P0-2** | **Finish deferred RP2 sessions T0-28 & T0-33** ([tracker](research/pipeline-2/README.md)) | **51/53 integrated (2026-11-19).** Run T0-28 (AWS/GCP/Azure exams) and T0-33 (developer tools/agentic suites) after 2026-12-05 to resolve the 17 provisional records in `data/credentials.json` and close R1 | Vendor announcements (post-2026-12-05) |
+| **P1-1** | **Job-description mining (two-date skill demand series):** 30+ dated full-text postings per role from public ATS boards; promote measured tools from [S]/[P] to [JD] and add a posting-demand momentum ring | **Partially done (2026-11-19):** role dossiers T0-48 to T0-66 integrated and T0-69 added a multi-signal adoption/telemetry/governance ring (Ring 6 on `skills-radar.md`), but **no two-date employer-posting-share series exists yet** (JobsPipe AI Engineer stayed at 2026-09-10) | P1-7 (INS-1) |
+| **P1-2** | **India job platforms** (Naukri, Instahyre, Cutshort, Wellfound, Hirist; FAD OQ2) | **Done for RP2 scope (2026-11-19):** T0-25 and T0-45 integrated into `channels-and-boards.md` and `india-remote-playbook.md`. Remaining: owner's monthly logged-in counts (INS-5) | INS-5 |
+| **P1-3** | **Four more starting backgrounds:** DevOps/SRE, product managers, IT-services engineers, students and new graduates | **Done (2026-11-19):** T0-67 integrated into `career/11-tracks/career-transitions.md` (9 researched routes total) | — |
+| **P1-4** | **Human expert review** of the stage guides, starting with compensation, tax, visa and interviewing | Open — guides were agent-drafted and agent-verified (including live primary checks on 2026-11-19) | — |
+| **P1-5** | **Independent fact-check of the v0.1.0 reference documents:** role catalog, rankings, skill maps and ontology links | Open — CONTRIBUTING §7 requires it before 1.0 | — |
+| **P1-6** | **Integrate research pipeline 2 by reduce step** (R1–R9) | **8 of 9 reduce steps done (2026-11-19):** R2–R9 complete; R1 complete for 5/7 saved sessions + T3-01/T3-02 (pending T0-28 & T0-33 after 2026-12-05) | P0-2 (T0-28, T0-33) |
+| **P1-7** | **Job-description collector** (instrument INS-1, planned `scripts/collect_jds.py`): monthly full-text ATS snapshots from `data/target_employers.json` (47 employers), skill extraction via ontology aliases, n>=60 per role | Open — turns small/excerpt-heavy RP2 samples (T0-48/50/51/53/57/60) into repeatable full-text measurement | `data/target_employers.json` (ready) |
+| **P2** | **Official-register script** (instrument INS-2): AI-title filings from US DOL LCA, UK sponsor register and NL IND | Open — sponsorship counts for country rankings and target employers | — |
+| **P2** | **Net-pay calculator** (instrument INS-4): effective tax and social contributions from official schedules across 33 countries | Open — removes recalled Grade D tax models in T0-35/T0-36 (FR, FI, SE, TW, NZ, MY, etc.) | `data/countries.json` (ready) |
+| **P2** | **Logged-in platform counts** (instrument INS-5): monthly owner queries on Naukri, Instahyre, LinkedIn | Open — India demand evidence agents cannot fetch signed out | Owner runs monthly |
+| **P2** | **Tool-choice cards** (stage 03): `compare` fields per choose-one class in `data/skills_ontology.json` | Open | Skills ontology |
+| **P2** | **Research-track concept checklist** (stage 11) | Open | Skills ontology |
+| **P2** | **Finish one owner per fact (D-019):** trim remaining copied prose in `role-rankings.md` §5.2–§5.3 and refresh `targeting-workbook.md` worked example against Nov 2026 hubs | Open | — |
+| **P2** | **Ontology clean-up (remainder):** Physical AI duplicates (`perception`→`computer_vision`, `vla_models`→`robot_learning`) **Done (2026-11-19)**; remaining: collapse AI Engineer's Optional tools into choose-one classes and deduplicate the three governance entries in skills-radar ring 2 | Partially done (2026-11-19) | Skills ontology |
+| **P2** | **Leadership hubs & static site:** collapse empty sections on the 5 leadership hubs in `build_role_hubs.py`; evaluate MkDocs Material static site; claims registry if `review_by` exceeds 25 due pages | Open | Decisions in §6 |
 
 ---
 
 ## 5. Maintenance calendar
 
-99 pages carry a `review_by` date (2026-11-08); the validator lists the ones that are due, and the weekly `due-report` workflow fails while any page is due (D-020).
+Every volatile page carries a `review_by` date under EGP-1.0 classes (V0 = 14d, V1 = 31d, V2 = 90d, V3 = 180d); `scripts/validate_docs.py` reports any due page and the weekly `due-report` CI workflow fails while any page is due (D-020).
 
 | When | What |
 |---|---|
-| Every change | `python3 -B scripts/build_all.py` (every generator in order, then the validator) and, after a script change, `python3 -B -m unittest discover -s scripts/tests`. CI runs both on every push |
-| Mondays (CI) | The `due-report` workflow runs the validator with `--strict`; a failure means a page is due |
-| Overdue | Visa and relocation: its status table of contested and pending rules (class V0, 14 days) is past expiry. Re-verify each row against the official source the table names, then reset `review_by`. The visa dossiers T0-37 to T0-42 of research pipeline 2 will replace the table's content |
-| After each research pipeline 2 session | Check the report with `scripts/research_pipeline.py --appendix` before saving it; verify it ([VERIFY.md](research/pipeline-2/VERIFY.md)); integrate it ([INTEGRATE.md](research/pipeline-2/INTEGRATE.md)). Re-runs follow the pipeline's [refresh cadence](research/pipeline-2/README.md#refresh-cadence) |
-| By 2026-11-14 | Skillenai 90-day counts (window ending 2026-10-14, class V1): the role catalog, the role rankings, emerging roles, agentic protocols and four role hubs (agentic AI, AI enablement, AI security and the hubs index) |
-| By 2026-11-19 | Fast AI Jobs counts (2026-10-19): the market overview, the employer landscape, channels and boards and five role hubs |
-| By 2026-11-21 to 2026-11-25 | Regulatory and tax statuses: the glossary, India remote tax (also check the FEMA export-of-services rules and the Income-tax Act 2025 section numbers s.58, s.62(4), s.63 against the primary texts, which T0-07 did not open, §7), governance careers, the India playbook, PhD to industry, first 90 days (2026-11-23); Go Fractional counts on the fractional AI leader hub (2026-11-25) |
-| By 2026-12-01 to 2026-12-03 | JobsPipe recount (T0-01 recount protocol), starting with the ranks most likely to move: Applied Scientist, Research Engineer, AI PM, AI Solutions Architect. It refreshes `data/role_scores.json`, then `build_all.py` regenerates the rankings, the target order and 20 hubs; the GenAI target roles, the résumé strategy, the job-search strategy and career transitions fall due on 2026-12-03 |
-| By 2027-01-10 to 2027-01-23 | Pay figures (re-verified after 90 days) and tool, protocol and credential statuses (class V2): the targeting workbook (2027-01-10), freelance and fractional (2027-01-18), pay benchmarks and 12 other guides (2027-01-19), the 26 inventories, the skills radar and vocabulary, credentials pages, ATS mechanics, the application operating system and growth (2027-01-21), behavioural calibration and coding rounds (2027-01-23). Regenerate after editing the data |
-| By 2027-01-31 | Scheduled review of the Phase 0 decisions (D-001 to D-012) |
-| By 2027-05-01 | Posting-term shares (class V3, 180 days): add a new dated JobsPipe snapshot to `data/posting_skill_shares.json` and re-tier the links it changes |
-| By 2027-05-04 to 2027-05-07 | Scheduled reviews: D-013 to D-017 (2027-05-04), D-018 (2027-05-06), D-019 and D-020 (2027-05-07) |
-| Quarterly | Re-verify a sample of claims; refresh the findings registry after any new session |
+| Every change | `python3 -B scripts/build_all.py` (all 18 generators + validator) and, after script changes, `python3 -B -m unittest discover -s scripts/tests` |
+| Mondays (CI) | Weekly `due-report` workflow runs `validate_docs.py --strict` |
+| By 2026-11-30 | OpenAI hosted Evals platform shutdown (confirmed 2026-11-19); check whether replacement eval tooling changes `tool-catalog.md` or `system-design-archetypes.md` |
+| By 2026-12-01 to 2026-12-03 | **V0 14-day checks (2026-12-03):** `visa-and-relocation.md` + 6 regional visa dossiers (US $100k H-1B appeals, Dec 2026 Visa Bulletin, UK Earned Settlement Rules, NL *Belastingplan 2027* Senate, AU/NZ/SG/MY/DE 2027 rules), `ats-mechanics.md` (*Mobley v. Workday*, *Kistler v. Eightfold*, CO SB 26-189 / *xAI v. Weiser*), `governance-careers.md`, `offer-evaluation.md` (Anthropic `ANT` post-IPO lock-ups, OpenAI S-1), `credential-catalog.md` (NVIDIA NCP-GENL/AAI Certiverse booking, Anthropic DoW FASCSA rehearing). **2026-12-01 catalog recount:** check if JobsPipe title & skill-share pages refreshed past 2026-09-10 / 2026-10-19; test graduation candidates **Research Engineer** (V→E), **AI Security Engineer** (W→E/V), **AI PM**, **AI Solutions Architect**, **AI Developer Advocate**, **Edge AI Engineer**, **Distributed Training Engineer** |
+| After 2026-12-05 | Run deferred RP2 sessions **T0-28** (hyperscaler cloud exams) and **T0-33** (developer tools/agentic suites), resolve 17 provisional records in `data/credentials.json`, mark R1 `done` |
+| By 2026-12-06 to 2026-12-20 | **V1 31-day checks:** Skillenai-linked pages (`role-catalog.md`, `role-rankings.md`, `genai-target-roles.md`, `agentic-protocols.md`, `agentic-ai-engineer`, `ai-enablement-engineer`, `ai-security-engineer` hubs due 2026-12-06); Fast AI Jobs / JobsPipe-linked hubs and market/board pages due 2026-12-13 to 2026-12-20 |
+| By 2027-01-14 to 2027-02-17 | **Q1 2027 wave & V2 90-day refresh (2027-02-17):** AWS MLA-C02 GA (2027-01-14), AWS AIB-C01 early-adopter cut-off (2027-02-15), NL 30%→27% ruling & SG EP S$6,000 (2027-01-01), SG Tech.Pass close (2027-01-27) & ONE Pass AI/Tech track (2027-01-28), tool/credential/pay V2 re-verification (`data/skills_ontology.json`, `data/tools.json`, `data/credentials.json`, `pay-benchmarks.md`, `country-rankings.md`, `india-remote-tax.md`); Phase 0 decisions review (2027-01-31) |
+| By 2027-05-01 to 2027-05-13 | Posting-term shares (V3, 2027-05-01); India DPDP Rules Phase 3 full enforcement (2027-05-13); D-013 to D-026 scheduled reviews |
 
 ---
 
 ## 6. Open decisions
 
-1. **Résumé generator (P0-1): closed on 2026-11-10 by D-022.** Résumés are built in a personal career repository (for example [pramedha-template](https://github.com/bhaskarjha-dev/pramedha-template)) from this repository's inputs, so P0-1 is withdrawn.
-2. **Research pipeline 2 order:** the pipeline recommends wave 1 first (networking, the résumé, job search, the certification census and the country scan) and names a ten-session minimum ([waves](research/pipeline-2/README.md#waves-and-the-recommended-order)). Confirm or reorder.
-3. **Static site:** stay GitHub-native Markdown (the current choice), or publish with MkDocs Material (T1-01 KF9)? The front matter and folder indexes already support either.
-4. **Generic or personal: closed on 2026-11-10 by D-022.** The repository stays generic; personal records live in a personal career repository, and tools such as `scripts/gap_analysis.py` read personal files from there without writing personal data here.
-5. **Claims registry:** keep page-level `review_by` dates (D-017, D-020), or add per-claim IDs with their own expiry? D-020's trigger: agents need claim-level expiry, or the weekly reminder lists more than 25 pages due at once.
-6. **Upstream errata:** apply the [ERRATA.md](research/ERRATA.md) corrections inside FAD and DECISIONS, or keep those records as written (the current choice) with status notes?
-7. **Confirm D-019, D-020, D-021 and D-022** (one owner per fact; generated review dates and the weekly reminder; research pipeline 2; the generic scope): appended from 2026-11-07 to 2026-11-10 as accepted, not yet reviewed by the owner (`human_reviewed: false`).
-8. **A licence for `scripts/`:** CC BY-SA 4.0 covers the whole repository, but Creative Commons licences are not designed for code. The usual choice is a code licence (MIT or Apache-2.0) for `scripts/` alongside CC BY-SA 4.0 for the content; the owner decides.
-9. **Data shapes for the research pipeline 2 rankings** (decide at each reduce step, with a decision record): credentials in their own data file or in the skills ontology (R1); where the country ranking page lives, stage 01 or stage 11 (R2); the target-employer list as a data file or a page (R6).
+1. **Résumé generator (P0-1): closed on 2026-11-10 by D-022.** Résumés live in a personal career repository.
+2. **Research pipeline 2 order: mostly closed (2026-11-19).** 51 of 53 sessions are integrated; only T0-28 and T0-33 remain after 2026-12-05.
+3. **Static site:** stay GitHub-native Markdown (current choice) or publish with MkDocs Material (T1-01 KF9)?
+4. **Generic or personal: closed on 2026-11-10 by D-022.**
+5. **Claims registry:** keep page-level `review_by` dates (D-017, D-020), or add per-claim IDs if weekly due reports exceed 25 pages at once.
+6. **Upstream errata:** keep sealed Phase 0 / RP2 records immutable with [research/ERRATA.md](research/ERRATA.md) (current choice) rather than editing sessions.
+7. **Human review of accepted decisions D-019 to D-026:** D-019 (one owner per fact), D-020 (generated review dates), D-021 (RP2), D-022 (generic scope), **D-023** (hybrid role hubs), **D-024** (`data/target_employers.json`), **D-025** (`data/countries.json` + 6 visa dossiers + `remote-cross-border.md`), **D-026** (`data/credentials.json` + `rank_credentials.py`) all carry `status: accepted`, `human_reviewed: false`.
+8. **A code licence for `scripts/`:** MIT or Apache-2.0 alongside CC BY-SA 4.0 for content.
+9. **Data shapes for RP2 rankings: closed on 2026-11-19 by D-024, D-025 and D-026** (separate `data/credentials.json`, `data/countries.json` in stage 11, and `data/target_employers.json` in stage 01).
 
 ---
 
 ## 7. Known issues and follow-ups
 
-Found during the 2026-11-06 fact-check and the 2026-11-07 repository audit, and not yet resolved. Line numbers are as of those dates.
+Updated on 2026-11-19 after sceptical integration of all 51 saved RP2 sessions. Confirmed errors from Phase 0, Phase 3 (`T3-02`) and RP2 are logged in [research/ERRATA.md](research/ERRATA.md) (`U1`–`U56`).
 
-**Candidate errata in the sealed records.** Reported by the fact-checkers but not yet confirmed. Verify each against the session, then log confirmed ones in [research/ERRATA.md](research/ERRATA.md):
+**Resolved items from the 2026-11-06 / 2026-11-07 list (closed 2026-11-19):**
+- `T1-03 F4 vs L211` (Google behavioural veto): closed via T0-46 K3 (Google HC weighs variance and can downlevel; only Amazon Bar Raiser holds an explicit final No-Hire veto).
+- `T0-14 L553 vs T1-03 F6` (Meta AI coding vs design round): closed via T0-46 K4 (Meta runs two distinct AI-enabled rounds: a 60-min CoderPad AI-assisted coding round piloted Oct 2025 AND a 2026 agentic design round).
+- `interview-loops.md` umbrella C attribution: closed by per-cell sourcing across `interview-loops.md` and `employer-interview-loops.md`.
+- `system-design-archetypes.md` unverified OpenAI/Google API prices: closed via T0-46 §7 multi-vendor API pricing table.
+- `india-remote-tax.md` primary-source check of Income-tax Act 2025 sections & FEMA 2026 Regulations: closed via T0-43 + live verification (s.58, s.62(4), s.63, s.408, s.124, FEMA 2026 Reg. 3/4/5, EPFO S.O. 5109(E)).
+- `OMB M-25-21` missing issue date: closed (issued 2025-04-03, primary White House PDF, Grade A; logged in ERRATA U43).
+- `credential-roi.md` partner-credit wording: closed (T0-11 L435 + 2026 partner rules).
+- Physical AI duplicate skills (`perception`, `vla_models`): closed (merged into `computer_vision` and `robot_learning`).
 
-| Location | Reported issue | Where the guides stand |
+**Remaining unconfirmed candidate errata and cross-session conflicts:**
+
+| Location | Reported conflict or issue | Where the guides stand |
 |---|---|---|
-| T0-02 F3 and F5 | The findings say Grade A, but the session's source ledger grades the underlying sources (S13, S15, S49) as B search excerpts | Pages grade these figures B (D-018) |
-| T0-06 L130 against L152 and L808 | L152 and L808 call data scientists a top-two feeder on both LinkedIn lists; L130 lists them third on the 2025 list | Not quoted as a ranking |
-| T0-06 L387 | The 1.4–3.7-month range leaves out the zero-code route (4.6 months) | Not quoted |
-| T0-03 KF2 against L179 and L420 (and L59 for evaluation platforms) | KF2 says the top-band job descriptions read were J1–J8; L179 and L420 say 0 of 10 top-band lab job descriptions | The market overview follows L179; coding rounds states both readings |
-| T0-18 F1 (L89) against L196 | The fractional CTO second-read ask is $209–212 in F1 and $210 in the table | The freelance guide follows F1 |
-| T0-07 L229 | ₹49.91L ÷ ₹75L is 66.5%, printed as 66.6% | Immaterial; India remote tax copies the session |
-| T1-03 F4 against L211 | F4 calls a Google behavioural No Hire a near-automatic veto; the firm table says the hiring committee may downlevel instead | Behavioural calibration reports both |
-| T0-14 L553 and L826 against T1-03 F6 | T0-14 records Meta's spring 2026 AI-enabled round as a design round; T1-03 presents it as a coding round | Coding rounds flags the difference |
+| `T0-53 L221` vs `T0-44 L113` | Applied AI Engineer US Levels.fyi P90 is **$505K** (T0-53, 2026-11-11) vs **$605K** (T0-44, 2026-11-13 extract) | `pay-benchmarks.md` and `data/role_scores.json` report the reconciled **$505,000–$605,000** spread |
+| `T0-49 L239` vs `T0-02 L232` | Meta E6 MLE TC on Levels.fyi is **$660K** (T0-49 extract) vs **$782K** (T0-02) | `pay-benchmarks.md` and `ml-engineer` hub report the **$660K–$790K** band |
+| `T0-34` ISACA AAIR fees & `T3-01` GitHub GH-300/600 validity | ISACA AAIR maintenance fee conflicts ($45/$85 vs $20/$35 across ISACA pages); GH-300/600 validity conflicts between annual free Microsoft Learn renewal and 2 years; GCP PMLE validity 2 vs 3 years | Flagged in `credential-catalog.md`; resolve in T0-28 / T0-33 |
+| `T0-67 L59` & `T0-67` NACE | TCS FY26 fresher hiring (>25,000 offers on earnings call vs 44,000 onboarded in secondary press); NACE Class of 2026 AI-skill demand 10.5% vs 17.5% across chart/prose | Both ranges disclosed in `career-transitions.md` |
+| `T0-02 F3/F5`, `T0-06 L130/L387`, `T0-03 KF2 vs L179`, `T0-18 F1 vs L196`, `T0-07 L229` | Minor Phase 0 internal discrepancies retained from 2026-11-06 fact-check | Pages already apply conservative/reconciled readings |
 
-**Grading edge cases** (decide, then apply across pages):
+**RP2 low-Read-rate session caveats (re-verify via primary reads / INS-1 at next refresh):**
+- Six RP2 sessions opened ≤12% of their cited sources in full: **T0-68** (2%, 2/98), **T0-43** (6%, 9/141), **T0-36** (9%, 19/218), **T0-67** (9%, 7/75), **T0-60** (10%, 10/98), **T0-57** (11%, 6/57), and **T0-47** (12%, 10/85). Load-bearing figures were live-verified on 2026-11-19 and all un-opened Extract-only Grade A claims were downgraded to Grade B (ERRATA U49), while small-`n` / excerpt-heavy JD counts (`n=10–36`) were held on the watchlist rather than overturning ontology tiers.
 
-- **Other platform aggregates.** The employer landscape keeps T0-17's Grade A for Forge secondary-market data (for example the −61% median for 2021-vintage names). D-018 names only Levels.fyi, JobsPipe and Fast AI Jobs. Decide whether Forge and Carta data are also B.
-- **Credential ROI** grades two Microsoft facts A where T0-11.F1 grades Microsoft facts B. Checked on 2026-11-07: AI-103's beta label rests on the Microsoft Learn exam page (S15), which T0-11's source ledger grades A (L512), so A stands; F1's B covers the AI-102, AI-300 and AI-200 facts (S16, C). The partner-credit sentence says only the 2022 AWS counts were verified, but T0-11 L435 adds "and older Microsoft lists": fix the wording at the next revision.
-- **Interview loops:** grade-C claims inside the employer-loop tables rely on one umbrella attribution; name the source in each cell at the next revision.
-- **Negotiation playbook:** one row keeps A/B because it combines Levels.fyi (B) with a Pave press release (A).
+**Persistent Grade E evidence absences (after RP2):**
+- **Skills & demand:** two-date employer-posting-share series for any GenAI skill (JobsPipe AI Engineer stayed at 2026-09-10); Big Tech direct ATS scrape (Google, Meta, Apple, Amazon, Microsoft blocked automated fetches in T0-48/49/57).
+- **Compensation & negotiation:** 19 of 21 India role-level Grade D pay placeholders remain unmeasured; no US pay dataset for Inference, Agentic, AI PM or roles 13–24; zero measured India negotiation outcomes, switch-hike distributions or Continental Europe works-council negotiation data; no worker-side pay distribution for foreign-band remote roles paid into India.
+- **Interviewing:** governance-track employer interview loops (0 retrieved sources); 7 frontier labs without documented loops (Mistral, Cohere, Microsoft AI, Thinking Machines, SSI, Sakana, Poolside).
+- **Learning & credentials:** zero independent audited outcome studies for any GenAI-specific course or bootcamp (T0-68 KF1); deferred hyperscaler (T0-28) and developer-tool (T0-33) censuses.
+- **Tax & visa primary gaps:** Income-tax Rules 2026 exact ITR/Form 67 numbers and bank step-by-step EDF workflows; Payoneer final RBI PA-CB CoA; bot-blocked primary texts in T0-39 (NL/FR), T0-40 (PT AIMA) and T0-41 (SA `pr.gov.sa`, QA Hukoomi, IL PIBA Procedure 5.3.0043 post-2026-03-01 spouse EAS); Numbeo rents missing for Boston, Abu Dhabi, Pune, Delhi NCR, Chennai, Melbourne, Auckland, Beijing, Manama; recalled Grade D tax schedules in T0-35/T0-36 (close via INS-4).
 
-**Checks against primary sources:**
-
-- **India remote tax:** the export-of-services rules under FEMA and the Income-tax Act 2025 section numbers rest on secondary sources; check them at the 2026-11-21 review (§5).
-- **US federal AI governance:** OMB memo M-25-21's issue date is not in the corpus (the guides say "reported May 2025").
-- **System design:** only Anthropic's model prices were fetched (2026-10-21); OpenAI and Google prices are unverified, and secondary sources disagree on batch-API size limits.
-
-**Model consistency:** T2-01 L153 scales gate dates by ×1.5 at Tier A and ×0.5 at Tier C; the targeting workbook and learning roadmaps scale them by effective hours from T0-06 D2 (G1 near month 6 at Tier A). Both are model outputs. Reconcile the two, or explain the difference, when either page is revised.
-
-**Data freshness:** the visa page's status table needs re-verifying against the official sources it names before anyone acts on it (it is due). The market overview no longer copies pay figures; pay lives in [pay benchmarks](career/09-compensation/pay-benchmarks.md), whose rows are dated by dataset (the S09 snapshot is dated 2026-08-05). The posting counts behind the role pages expire between 2026-11-14 and 2026-12-03 (§5).
-
-**Review dates to recompute at the next edit** (they predate D-018's classes): the glossary (2026-11-21) states a V0 status (NIST AI RMF "being revised") and V1-derived quorum statements; governance careers (2026-11-21), first 90 days (2026-11-23) and India remote tax (2026-11-21) still use the old "14–31 days for policy" reading, although contested items such as "no federal preemption as of 22 Jun 2026" are V0 (14 days). Under D-018 each would already be due; recount them at those reviews, and consider a dated status table like the visa page's.
-
-**FAD open questions tracked here** (FAD §19; they were tracked nowhere else):
-- **OQ3 (High):** how consistently do different reviewers assign EGP-1.0 grades? Run the planned pilot (50 claims, two reviewers) before 1.0; research pipeline 2's quality gate 5 proposes drawing the 50 claims from its first sessions.
-- **OQ4 (Low):** how to measure community-to-job conversion, given no baseline.
-- **OQ6 (Medium):** how the repository handles AI-generated contributions. Current practice: agents draft, an independent check verifies every figure against its cited line (D-018 rule 6), and decisions record `authored_by` and `human_reviewed`; write it down as a contribution policy in CONTRIBUTING.
-
-**Session-ID namespace:** the scripts read session IDs as five characters (T#-##). Research pipeline 2 reserves T0-19 to T0-71, which leaves T0-72 to T0-99 for re-runs and new foundational sessions (about two years at the pipeline's refresh cadence). Before T0-99, widen the ID patterns in `build_findings.py`, `build_skills.py`, `build_tool_catalog.py`, `common.py`, `research_pipeline.py` and the data schemas.
-
-**Tooling:** the 2026-11-06 fact-check used a heuristic script that flags any figure that does not appear within a few lines of the session line it cites. Porting it into `scripts/` (standard library only) would speed up future re-verification (P2).
+**Grading edge cases & remaining housekeeping:**
+- **Other platform aggregates:** Decide whether Forge, Carta, Pave and Levels.fyi `.md` exports (which showed unit/currency glitches in Apr–Jul 2026 captures) should formally join D-018's Grade B list.
+- **Model consistency:** T2-01 L153 scales gate dates by ×1.5 at Tier A and ×0.5 at Tier C; `targeting-workbook.md` and `learning-roadmaps.md` scale by effective hours from T0-06 D2. Reconcile or explain when revising `targeting-workbook.md`.
+- **FAD open questions:** OQ3 (inter-rater EGP-1.0 reliability pilot on 50 claims), OQ4 (community-to-job conversion baseline), OQ6 (formal AI-contribution policy in CONTRIBUTING).
+- **Session-ID namespace:** widen `T#-##` patterns across scripts and schemas before `T0-99`.
+- **Tooling:** port the figure-to-citation verifier and `check_prose_refs.py` into `scripts/` (P2).

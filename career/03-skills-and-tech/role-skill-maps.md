@@ -4,8 +4,8 @@ title: "Role Skill Maps"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-19
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Narrative skill map for every role: practice notes from the evidence, tools in use with their October 2026 status, proof of work, interview track, typical gaps and entry routes. Each role's skills and tiers are in its generated inventory."
 sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T1-03]
 ---
@@ -147,20 +147,8 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
   - PhDs: production craft and code review [D · T0-06].
 - **Avoid:** wrapper-only demos; framework-syntax memorisation; new RAGAS dependencies.
 
-<a id="skills-research-engineer"></a>
-### 3.3 Research Engineer / Member of Technical Staff (`research-engineer`) · CCI rank #3
-
-*Skills and tiers: [inventories/research-engineer.md](inventories/research-engineer.md).*
-
-- **Proof of work:**
-  - Paper re-implementations with rigorous evals [S · T2-01].
-  - Compact reimplementations: a nano-vLLM-style engine (continuous batching, paged KV, prefix caching) in 1–2k lines, benchmarked against vLLM; distributed-training smoke tests with DDP/FSDP2 [S · T0-13 D8].
-  - OSS contributions to training or serving stacks [S].
-  - Fellowship projects; Anthropic Fellows does not require a PhD [B · T0-06].
-- **Interview:** a research talk plus coding. Frontier labs add infrastructure research-engineering rounds (KV cache, batching, GPU scheduling); Tier 4 candidates face the full research loop [S · T2-01, T1-03].
-
 <a id="skills-forward-deployed-engineer"></a>
-### 3.4 Forward Deployed Engineer (`forward-deployed-engineer`) · CCI rank #4
+### 3.3 Forward Deployed Engineer (`forward-deployed-engineer`) · CCI rank #3
 
 *Skills and tiers: [inventories/forward-deployed-engineer.md](inventories/forward-deployed-engineer.md).*
 
@@ -175,24 +163,20 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
   - Frontend engineers: backend and infrastructure.
   - Non-technical candidates: coding plus infrastructure, roughly 10 months of work [D · T2-01].
 
-<a id="skills-applied-ai-engineer"></a>
-### 3.5 Applied AI Engineer (`applied-ai-engineer`) · CCI rank #5
+<a id="skills-research-engineer"></a>
+### 3.4 Research Engineer / Member of Technical Staff (`research-engineer`) · CCI rank #4
 
-*Skills and tiers: [inventories/applied-ai-engineer.md](inventories/applied-ai-engineer.md).*
+*Skills and tiers: [inventories/research-engineer.md](inventories/research-engineer.md).*
 
-- **Proof of work:** a customer-facing reference implementation with evals and a published write-up [P]; then the AI Engineer T2–T3 portfolio.
-- **Interview:** the application track plus customer scenarios [S · T0-14 Applied-AI loop].
-
-<a id="skills-research-scientist"></a>
-### 3.6 Research Scientist (AI/ML) (`research-scientist`) · CCI rank #6
-
-*Skills and tiers: [inventories/research-scientist.md](inventories/research-scientist.md). Posting shares for all-field Research Scientist postings: [posting evidence](role-skill-inventories.md#posting-evidence).*
-
-- **Proof of work:** papers, open research code, talks [S].
-- **Interview:** a research talk, deep technical discussion and coding. Offers are "not plannable" [D · T0-06].
+- **Proof of work:**
+  - Paper re-implementations with rigorous evals [S · T2-01].
+  - Compact reimplementations: a nano-vLLM-style engine (continuous batching, paged KV, prefix caching) in 1–2k lines, benchmarked against vLLM; distributed-training smoke tests with DDP/FSDP2 [S · T0-13 D8].
+  - OSS contributions to training or serving stacks [S].
+  - Fellowship projects; Anthropic Fellows does not require a PhD [B · T0-06].
+- **Interview:** a research talk plus coding. Frontier labs add infrastructure research-engineering rounds (KV cache, batching, GPU scheduling); Tier 4 candidates face the full research loop [S · T2-01, T1-03].
 
 <a id="skills-applied-scientist"></a>
-### 3.7 Applied Scientist (`applied-scientist`) · CCI rank #7
+### 3.5 Applied Scientist (`applied-scientist`) · CCI rank #5
 
 *Skills and tiers: [inventories/applied-scientist.md](inventories/applied-scientist.md).*
 
@@ -201,6 +185,22 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
   - At least three code reviews via OSS pull requests.
   - An eval-statistics write-up [S · T0-06].
 - **Interview:** ML design is usually a strength for PhDs; coding is the usual gap. Some loops include a research talk [S · T2-01].
+
+<a id="skills-applied-ai-engineer"></a>
+### 3.6 Applied AI Engineer (`applied-ai-engineer`) · CCI rank #6
+
+*Skills and tiers: [inventories/applied-ai-engineer.md](inventories/applied-ai-engineer.md).*
+
+- **Proof of work:** a customer-facing reference implementation with evals and a published write-up [P]; then the AI Engineer T2–T3 portfolio.
+- **Interview:** the application track plus customer scenarios [S · T0-14 Applied-AI loop].
+
+<a id="skills-research-scientist"></a>
+### 3.7 Research Scientist (AI/ML) (`research-scientist`) · CCI rank #7
+
+*Skills and tiers: [inventories/research-scientist.md](inventories/research-scientist.md). Posting shares for all-field Research Scientist postings: [posting evidence](role-skill-inventories.md#posting-evidence).*
+
+- **Proof of work:** papers, open research code, talks [S].
+- **Interview:** a research talk, deep technical discussion and coding. Offers are "not plannable" [D · T0-06].
 
 <a id="skills-ai-infrastructure-engineer"></a>
 ### 3.8 AI Infrastructure / GPU Platform Engineer (`ai-infrastructure-engineer`) · CCI rank #8
@@ -215,8 +215,29 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Interview:** the infrastructure track. Anthropic prompts include GPU cluster design and mixed GPU allocation; strong infrastructure candidates without ML experience do well [B · T0-14].
 - **Entry routes:** a paid residency: RadixArk AI Infra Resident, listed at $200K, SGLang experience not required. Caveats: the Accel listing showed "Posted 6+ months ago" and the Greenhouse copy lists no salary [B · T0-05].
 
+<a id="skills-ml-platform-engineer"></a>
+### 3.9 ML Platform / MLOps Engineer (`ml-platform-engineer`) · CCI rank #9
+
+*Skills and tiers: [inventories/ml-platform-engineer.md](inventories/ml-platform-engineer.md). Posting shares for DevOps Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
+
+- **Tools (Oct 2026):**
+  - **Serving and gateways:** KServe, Ray, LiteLLM, Azure APIM MCP, Foundry AI Gateway, AgentCore Gateway, agentgateway, Cloudflare MCP server portals [S].
+  - **Observability:** Langfuse (ClickHouse-owned as of October 2026), Phoenix (ELv2 licence), Prometheus/Grafana/Datadog [S].
+  - **Experiment tracking:** MLflow / W&B [P].
+- **Proof of work:** a self-hosted vLLM/SGLang cluster with continuous synthetic load benchmarks, automated failover, dynamic LoRA routing and Grafana dashboards [S · T0-03].
+- **Interview:** the infrastructure track plus platform design questions: gateway, playground, model distribution [S · T0-14].
+
+<a id="skills-ai-security-engineer"></a>
+### 3.10 AI Security Engineer / AI Red Teamer (`ai-security-engineer`) · CCI rank #10
+
+*Skills and tiers: [inventories/ai-security-engineer.md](inventories/ai-security-engineer.md). Posting shares for Security Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
+
+- **Proof of work:** a red-team suite in CI (custom or Promptfoo) against a working agent, with measured attack-success rates before and after mitigation [S · T0-13 R2]; an MCP security audit [P].
+- **Interview:** "design safeguards for an AI system that can take actions on behalf of a user" [S · T0-14 A15].
+- **Programme:** Anthropic AI Security Fellow (requires US/UK/Canada work authorisation; >40% of fellows got full-time offers) [A · T0-12].
+
 <a id="skills-inference-engineer"></a>
-### 3.9 Inference / LLM Serving Engineer (`inference-engineer`) · CCI rank #9
+### 3.11 Inference / LLM Serving Engineer (`inference-engineer`) · CCI rank #11
 
 *Skills and tiers: [inventories/inference-engineer.md](inventories/inference-engineer.md).*
 
@@ -243,8 +264,18 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
   - The public performance take-home runs in a Python simulator and needs no GPU.
 - **Typical gap:** backend engineers moving to Tier 3 need infrastructure depth; plan on roughly 10–14 months [D · T2-01].
 
+<a id="skills-ai-solutions-architect"></a>
+### 3.12 AI / GenAI Solutions Architect (`ai-solutions-architect`) · CCI rank #12
+
+*Skills and tiers: [inventories/ai-solutions-architect.md](inventories/ai-solutions-architect.md). Posting shares for all Solutions Architect postings (adjacent): [posting evidence](role-skill-inventories.md#posting-evidence).*
+
+- **Credentials:** a tie-breaker only in IT services, staffing and partner firms:
+  - Current options: AIP-C01 (AWS Generative AI Developer – Professional), PMLE (Google), AI-103 (Azure AI Apps and Agents Developer Associate); statuses in [credentials by role](../04-certifications/credentials-by-role.md).
+  - No certification is verified in more than 10% of GenAI JDs [B · T0-11].
+- **Proof of work:** a reference architecture with a cost model and a working infrastructure-as-code deployment [P].
+
 <a id="skills-ai-product-manager"></a>
-### 3.10 AI Product Manager (`ai-product-manager`) · CCI rank #10
+### 3.13 AI Product Manager (`ai-product-manager`) · CCI rank #13
 
 *Skills and tiers: [inventories/ai-product-manager.md](inventories/ai-product-manager.md). Posting shares for Product Manager postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
@@ -255,20 +286,8 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Interview:** scoping and product sense rounds [S · T2-01].
 - **Entry fee:** 4+ years as a PM plus at least one shipped model-powered feature [D · T0-06].
 
-<a id="skills-ml-platform-engineer"></a>
-### 3.11 ML Platform / MLOps Engineer (`ml-platform-engineer`) · CCI rank #11
-
-*Skills and tiers: [inventories/ml-platform-engineer.md](inventories/ml-platform-engineer.md). Posting shares for DevOps Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
-
-- **Tools (Oct 2026):**
-  - **Serving and gateways:** KServe, Ray, LiteLLM, Azure APIM MCP, Foundry AI Gateway, AgentCore Gateway, agentgateway, Cloudflare MCP server portals [S].
-  - **Observability:** Langfuse (ClickHouse-owned as of October 2026), Phoenix (ELv2 licence), Prometheus/Grafana/Datadog [S].
-  - **Experiment tracking:** MLflow / W&B [P].
-- **Proof of work:** a self-hosted vLLM/SGLang cluster with continuous synthetic load benchmarks, automated failover, dynamic LoRA routing and Grafana dashboards [S · T0-03].
-- **Interview:** the infrastructure track plus platform design questions: gateway, playground, model distribution [S · T0-14].
-
 <a id="skills-agentic-ai-engineer"></a>
-### 3.12 Agentic AI Engineer (`agentic-ai-engineer`) · CCI rank #12
+### 3.14 Agentic AI Engineer (`agentic-ai-engineer`) · CCI rank #14
 
 *Skills and tiers: [inventories/agentic-ai-engineer.md](inventories/agentic-ai-engineer.md).*
 
@@ -295,18 +314,8 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Proof of work:** an agent with human approval, sandboxed tools, deterministic trace replay and failure-injection tests (timeouts, malformed arguments, prompt injection), reporting cost per task [S · T0-06].
 - **Interview:** agent loop control; tool-gateway design; workflow vs agent trade-offs [S · T1-03, T0-14].
 
-<a id="skills-ai-solutions-architect"></a>
-### 3.13 AI / GenAI Solutions Architect (`ai-solutions-architect`) · CCI rank #13
-
-*Skills and tiers: [inventories/ai-solutions-architect.md](inventories/ai-solutions-architect.md). Posting shares for all Solutions Architect postings (adjacent): [posting evidence](role-skill-inventories.md#posting-evidence).*
-
-- **Credentials:** a tie-breaker only in IT services, staffing and partner firms:
-  - Current options: AIP-C01 (AWS Generative AI Developer – Professional), PMLE (Google), AI-103 (Azure AI Apps and Agents Developer Associate); statuses in [credentials by role](../04-certifications/credentials-by-role.md).
-  - No certification is verified in more than 10% of GenAI JDs [B · T0-11].
-- **Proof of work:** a reference architecture with a cost model and a working infrastructure-as-code deployment [P].
-
 <a id="skills-ai-evaluation-engineer"></a>
-### 3.14 AI Evaluation Engineer (`ai-evaluation-engineer`) · CCI rank #14
+### 3.15 AI Evaluation Engineer (`ai-evaluation-engineer`) · CCI rank #15
 
 *Skills and tiers: [inventories/ai-evaluation-engineer.md](inventories/ai-evaluation-engineer.md).*
 
@@ -324,7 +333,7 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Best feeders:** data scientists (error analysis, judge validation), PhDs (measurement rigour), backend engineers (CI, observability) [D · T0-06].
 
 <a id="skills-gpu-kernel-engineer"></a>
-### 3.15 GPU Kernel / ML Compiler Engineer (`gpu-kernel-engineer`) · CCI rank #15
+### 3.16 GPU Kernel / ML Compiler Engineer (`gpu-kernel-engineer`) · CCI rank #16
 
 *Skills and tiers: [inventories/gpu-kernel-engineer.md](inventories/gpu-kernel-engineer.md).*
 
@@ -333,22 +342,6 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
   - GPU MODE leaderboard submissions (teams of up to 3) [S · T0-12]; AMD × GPU MODE kernel competitions run on organiser hardware [S · T0-13 M4].
   - Kernel PRs to vLLM, SGLang, FlashInfer or Triton, benchmarked on the target hardware and with correctness tests [S · T0-05, T0-13].
 - **Interview:** kernel and system internals. Reported AMD kernel interviews overlap with GPU MODE material [C/D · T0-12].
-
-<a id="skills-ai-governance-lead"></a>
-### 3.16 AI Governance Programme Lead / Manager (`ai-governance-lead`) · CCI rank #16
-
-*Skills and tiers: [inventories/ai-governance-lead.md](inventories/ai-governance-lead.md).*
-
-**Measured (Axial, US AI-governance postings) [C]:** Python 27.1% · observability/monitoring 42.3% · OneTrust 8.7–9.2% · Azure 11.1% · AIGP 8.9% (CISSP 10.4%, CIPP 8.2%, CISA 5.9%).
-
-- **Practice notes:**
-  - **The regulatory map** (EU AI Act dates and the Annex III internal-control route, US, EU and India sector rules, transparency duties) is laid out against the work in [governance careers](../11-tracks/governance-careers.md) [A/B · T0-15].
-  - **Transparency marking:** the voluntary transparency Code (final 10 Jun 2026, ~190 signatories) asks for at least two marking layers and does not name C2PA [A/B · T0-15].
-- **Credentials:** domain certifications first (CIPP/CIPM, CISSP/CISA/CRISC); AIGP optional ($649 for IAPP members, $799 otherwise) [B · T0-15].
-- **Tools:**
-  - Seen in postings: OneTrust; IBM OpenPages (one analyst JD) [S].
-  - Not named in Axial's lists or the 13 JDs: Credo AI and Holistic AI [S].
-- **Proof of work:** an AI inventory, risk register and governance playbook mapped to the EU AI Act, NIST and ISO 42001 [S · T0-06 non-technical lane].
 
 <a id="skills-physical-ai-engineer"></a>
 ### 3.17 Physical AI / Robotics AI Engineer (`physical-ai-engineer`) · CCI rank #17
@@ -367,25 +360,24 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Proof of work:** fellowship projects (Anthropic Fellows: about 4 months with stipend and compute; Anthropic reports that >40% of the first cohort later joined it full-time 🏷️, a self-reported figure) [B · T0-06]; published safety research; open eval contributions [P].
 - **Market reality:** about 600 technical FTEs worldwide, growing about 21% a year; no pay data [C · T0-15].
 
-<a id="skills-ai-security-engineer"></a>
-### 3.19 AI Security Engineer / AI Red Teamer (`ai-security-engineer`) · CCI rank #19
+<a id="skills-ai-governance-lead"></a>
+### 3.19 AI Governance Programme Lead / Manager (`ai-governance-lead`) · CCI rank #19
 
-*Skills and tiers: [inventories/ai-security-engineer.md](inventories/ai-security-engineer.md). Posting shares for Security Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
+*Skills and tiers: [inventories/ai-governance-lead.md](inventories/ai-governance-lead.md).*
 
-- **Proof of work:** a red-team suite in CI (custom or Promptfoo) against a working agent, with measured attack-success rates before and after mitigation [S · T0-13 R2]; an MCP security audit [P].
-- **Interview:** "design safeguards for an AI system that can take actions on behalf of a user" [S · T0-14 A15].
-- **Programme:** Anthropic AI Security Fellow (requires US/UK/Canada work authorisation; >40% of fellows got full-time offers) [A · T0-12].
+**Measured (Axial, US AI-governance postings) [C]:** Python 27.1% · observability/monitoring 42.3% · OneTrust 8.7–9.2% · Azure 11.1% · AIGP 8.9% (CISSP 10.4%, CIPP 8.2%, CISA 5.9%).
 
-<a id="skills-ai-enablement-engineer"></a>
-### 3.20 AI Enablement Engineer (`ai-enablement-engineer`) · CCI rank #20
-
-*Skills and tiers: [inventories/ai-enablement-engineer.md](inventories/ai-enablement-engineer.md).*
-
-- **Practice notes:** AI Enablement Engineer has the highest title-level MCP share in T0-16's postings index; the figures are in [agentic protocols](agentic-protocols.md#inside-agent-titled-roles-frameworks-lead) [C · T0-16].
-- **Proof of work:** an internal pilot with 5–10 colleagues, measuring adoption and time saved, with a runbook and a risk register [S · T0-06].
+- **Practice notes:**
+  - **The regulatory map** (EU AI Act dates and the Annex III internal-control route, US, EU and India sector rules, transparency duties) is laid out against the work in [governance careers](../11-tracks/governance-careers.md) [A/B · T0-15].
+  - **Transparency marking:** the voluntary transparency Code (final 10 Jun 2026, ~190 signatories) asks for at least two marking layers and does not name C2PA [A/B · T0-15].
+- **Credentials:** domain certifications first (CIPP/CIPM, CISSP/CISA/CRISC); AIGP optional ($649 for IAPP members, $799 otherwise) [B · T0-15].
+- **Tools:**
+  - Seen in postings: OneTrust; IBM OpenPages (one analyst JD) [S].
+  - Not named in Axial's lists or the 13 JDs: Credo AI and Holistic AI [S].
+- **Proof of work:** an AI inventory, risk register and governance playbook mapped to the EU AI Act, NIST and ISO 42001 [S · T0-06 non-technical lane].
 
 <a id="skills-ai-product-engineer"></a>
-### 3.21 AI Product Engineer (AI Frontend) (`ai-product-engineer`) · CCI rank #21
+### 3.20 AI Product Engineer (AI Frontend) (`ai-product-engineer`) · CCI rank #20
 
 *Skills and tiers: [inventories/ai-product-engineer.md](inventories/ai-product-engineer.md). Posting shares for Full-Stack Engineer postings (feeder): [posting evidence](role-skill-inventories.md#posting-evidence).*
 
@@ -396,14 +388,14 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Interview:** the application track (agent UX), and AI-enabled coding rounds in the Meta format [S · T2-01].
 
 <a id="skills-ai-risk-assurance-specialist"></a>
-### 3.22 AI Risk, Audit & Compliance Specialist (`ai-risk-assurance-specialist`) · CCI rank #22
+### 3.21 AI Risk, Audit & Compliance Specialist (`ai-risk-assurance-specialist`) · CCI rank #21
 
 *Skills and tiers: [inventories/ai-risk-assurance-specialist.md](inventories/ai-risk-assurance-specialist.md).*
 
 - **Proof of work:** a model-validation or bias-audit report on a public model, using documented methodology [P].
 
 <a id="skills-responsible-ai-engineer"></a>
-### 3.23 Responsible AI / AI Governance Engineer (`responsible-ai-engineer`) · CCI rank #23
+### 3.22 Responsible AI / AI Governance Engineer (`responsible-ai-engineer`) · CCI rank #22
 
 *Skills and tiers: [inventories/responsible-ai-engineer.md](inventories/responsible-ai-engineer.md).*
 
@@ -418,6 +410,14 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
     - Giskard v3 (pre-release; no tabular testing).
 - **Proof of work:** a compliance packet mapped to NIST AI 600-1 and the OWASP LLM Top 10, with runtime guardrails, subgroup evals, and a calibrated judge on ~100 traces [S · T0-09, T0-15].
 
+<a id="skills-ai-enablement-engineer"></a>
+### 3.23 AI Enablement Engineer (`ai-enablement-engineer`) · CCI rank #23
+
+*Skills and tiers: [inventories/ai-enablement-engineer.md](inventories/ai-enablement-engineer.md).*
+
+- **Practice notes:** AI Enablement Engineer has the highest title-level MCP share in T0-16's postings index; the figures are in [agentic protocols](agentic-protocols.md#inside-agent-titled-roles-frameworks-lead) [C · T0-16].
+- **Proof of work:** an internal pilot with 5–10 colleagues, measuring adoption and time saved, with a runbook and a risk register [S · T0-06].
+
 <a id="skills-domain-evaluation-specialist"></a>
 ### 3.24 Domain Evaluation Specialist / AI Trainer (`domain-evaluation-specialist`) · CCI rank #24
 
@@ -427,6 +427,7 @@ Roles appear in ranked-catalog order. Each map opens with the role's inventory, 
 - **Next step:** this is "a bridge, not a destination". Move toward an in-house eval-lead, AI PM or governance role [S · T0-06].
 
 <a id="skills-leadership"></a>
+
 ### 3.25 Leadership and independent tracks
 
 *Skills and tiers: [AI engineering manager](inventories/ai-engineering-manager.md) · [VP / Head of AI and Chief AI Officer](inventories/vp-head-of-ai.md). The Chief AI Officer, fractional and independent tracks have no inventory of their own; see the hubs for [Chief AI Officer](../02-roles/hubs/chief-ai-officer.md), [fractional AI leader](../02-roles/hubs/fractional-ai-leader.md) and [independent AI consultant](../02-roles/hubs/independent-ai-consultant.md).*

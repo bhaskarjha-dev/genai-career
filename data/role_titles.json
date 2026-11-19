@@ -502,7 +502,7 @@
    "title": "Applied Scientist (GenAI)",
    "type": "Alias",
    "maps_to": "applied-scientist",
-   "note": "Unsourced label [P]"
+   "note": "Unsourced [P] label; not observed as a literal title in T0-52 (n=33) · T0-52 L437"
   },
   {
    "title": "Forward Deployed Software Engineer (FDSE)",
@@ -1018,7 +1018,7 @@
    "title": "Anthropic Fellow",
    "type": "Programme",
    "maps_to": "ai-safety-researcher",
-   "note": "~4 months; >40% of first cohort joined Anthropic · T0-06, T0-12"
+   "note": "4 months full-time ($3,850/wk USD, £2,310/wk GBP, $4,300/wk CAD); requires US/UK/CA work authorisation (no sponsorship); self-reported offer rate conflicts across listings (25–50% RL vs >40% Safety; Grade C, COI) · T0-12 F8; T0-50 L69, L664; T0-60 L77, L766"
   },
   {
    "title": "AI Governance Officer / Manager / Lead",
@@ -1186,13 +1186,13 @@
    "title": "Helix AI Engineer",
    "type": "Alias",
    "maps_to": "physical-ai-engineer",
-   "note": "Figure AI (8 of newest 50 AI rows) · T0-01 F2"
+   "note": "Figure AI department prefix covering ML, Backend (payments/auth), Android and Data Infra (not a pure robotics-ML alias; Whole-Body-Control RL omits prefix) · T0-01 F2; T0-64 L56, L344"
   },
   {
    "title": "Autonomous Systems Engineer",
    "type": "Alias",
    "maps_to": "physical-ai-engineer",
-   "note": "Unsourced label [P]; not found in any session"
+   "note": "Adjacent / autonomy-heavy (0/48 in T0-64 physical-AI sample; platform volume dominated by autonomous driving and defence) · T0-64 L94, L344"
   },
   {
    "title": "Director of AI Engineering",
@@ -1463,6 +1463,996 @@
    "type": "Candidate (unmeasured)",
    "maps_to": "—",
    "note": "Only as 'managers and TPMs (6)' inside the FDE sample · T0-01 F3"
+  },
+  {
+   "title": "Senior AI Specialist",
+   "type": "Alias",
+   "maps_to": "ai-engineer",
+   "note": "GR8_TECH — Product AI engineering scope in European tech sample. · T0-48"
+  },
+  {
+   "title": "Sr. Software Engineer, AI",
+   "type": "Alias",
+   "maps_to": "ai-engineer",
+   "note": "NinjaTrader — SWE-prefixed AI Engineer alias. · T0-48"
+  },
+  {
+   "title": "Staff Cloud AI Engineer",
+   "type": "Level variant",
+   "maps_to": "ai-engineer",
+   "note": "Teradata India — India GCC/enterprise senior AI Engineer alias. · T0-48"
+  },
+  {
+   "title": "Founding AI Engineer",
+   "type": "Level variant",
+   "maps_to": "ai-engineer",
+   "note": "JobsPipe / AI startups — Early-stage startup variant. · T0-48"
+  },
+  {
+   "title": "Graduate AI Engineer",
+   "type": "Level variant",
+   "maps_to": "ai-engineer",
+   "note": "JobsPipe — Entry-level AI Engineer variant. · T0-48"
+  },
+  {
+   "title": "AI Engineer, Evaluation",
+   "type": "Alias",
+   "maps_to": "ai-engineer",
+   "note": "Distyl — Overlap with ai-evaluation-engineer. · T0-48"
+  },
+  {
+   "title": "AI Engineer, Quality (Evals)",
+   "type": "Alias",
+   "maps_to": "ai-engineer",
+   "note": "Fieldguide — Overlap with ai-evaluation-engineer. · T0-48"
+  },
+  {
+   "title": "Software Engineer, Machine Learning",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "Glean India, Walmart Global Tech India — Common Big Tech / GCC India alias (also abbreviated SWE–ML). · T0-49"
+  },
+  {
+   "title": "Staff, Software Engineer (Machine Learning)",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "Walmart Global Tech India — Senior/Staff GCC variant. · T0-49"
+  },
+  {
+   "title": "Machine Learning Software Engineer",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "PhysicsX — European/UK applied engineering variant. · T0-49"
+  },
+  {
+   "title": "Data Scientist (MLE)",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "Walmart Global Tech India — Hybrid India GCC title with MLE scope. · T0-49"
+  },
+  {
+   "title": "Machine Learning Systems Engineer",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "Anthropic — Overlap with ai-infrastructure-engineer / ml-platform-engineer. · T0-49"
+  },
+  {
+   "title": "Senior ML Engineer – NLP",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "voize — Domain-scoped MLE alias. · T0-49"
+  },
+  {
+   "title": "Forward Deployed Machine Learning Engineer",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "Mistral AI (cross-role boundary: forward-deployed-engineer, applied-ai-engineer, ml-engineer) · T0-49"
+  },
+  {
+   "title": "Member of Technical Staff (Forward Deployed Engineer)",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "Anthropic LCAs · T0-51 L590"
+  },
+  {
+   "title": "Member of Forward Deployed Staff (FDE)",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "OpenAI LCAs · T0-51 L590"
+  },
+  {
+   "title": "Member of Go To Market Staff (FDE)",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "OpenAI LCAs — GTM-aligned variant; check coding vs pre-sales split. · T0-51 L590"
+  },
+  {
+   "title": "Forward Deployment Engineer",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "Neuron7, Infosys — Common India/enterprise spelling variant. · T0-51 L590"
+  },
+  {
+   "title": "Forward-Deployed AI Product Architect",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "GlobalLogic — IT-services India variant. · T0-51 L590"
+  },
+  {
+   "title": "Full-Stack Software Engineer (Forward Deployed)",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "Scale AI · T0-51 L590"
+  },
+  {
+   "title": "Deployed AI Engineer",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "Helsing — European defence-AI variant. · T0-51 L590"
+  },
+  {
+   "title": "Forward Deployed Solutions Engineer",
+   "type": "Alias",
+   "maps_to": "forward-deployed-engineer",
+   "note": "Multiple AI startups — Adjacent/pre-sales risk — verify production code ownership. · T0-51"
+  },
+  {
+   "title": "Applied AI Architect",
+   "type": "Alias",
+   "maps_to": "applied-ai-engineer",
+   "note": "Anthropic, OpenAI India — Pre-sales / architecture-heavy sibling. · T0-53"
+  },
+  {
+   "title": "Member of Applied AI – Architect",
+   "type": "Alias",
+   "maps_to": "applied-ai-engineer",
+   "note": "DevRev Bangalore — India startup Applied AI alias. · T0-53 L355"
+  },
+  {
+   "title": "Frontier Agents Engineer (Applied AI)",
+   "type": "Alias",
+   "maps_to": "applied-ai-engineer",
+   "note": "Scale AI — Confirmed live on scale.com 2026-11-19. · T0-53 L439–L440"
+  },
+  {
+   "title": "Enterprise Applied AI Engineer",
+   "type": "Alias",
+   "maps_to": "applied-ai-engineer",
+   "note": "AssemblyAI · T0-53 L144"
+  },
+  {
+   "title": "Lead Applied AI Engineer",
+   "type": "Level variant",
+   "maps_to": "applied-ai-engineer",
+   "note": "Mistral, Snorkel · T0-53"
+  },
+  {
+   "title": "Staff Applied AI Engineer",
+   "type": "Level variant",
+   "maps_to": "applied-ai-engineer",
+   "note": "Scale, Flexport, Crusoe · T0-53"
+  },
+  {
+   "title": "Software Engineer, Agent",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Sierra — Primary US startup alias (also New Grad 2027). · T0-57 L112, L212, L220"
+  },
+  {
+   "title": "Software Engineer, API Agents",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "OpenAI — US frontier-lab harness/platform alias. · T0-57 L65, L100, L270"
+  },
+  {
+   "title": "Senior Software Engineer (Agentic AI)",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Microsoft — US Big Tech parenthetical alias. · T0-57 L334"
+  },
+  {
+   "title": "Sr. Software Development Engineer, Agentic AI",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Amazon — US Big Tech SDE alias. · T0-57 L334"
+  },
+  {
+   "title": "Senior Developer, Agentic AI Engineering",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Workday Dublin — European ladder alias. · T0-57 L330, L333"
+  },
+  {
+   "title": "Agentic Software Engineer",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Goldman Sachs — Banking/GCC variant. · T0-57 L45"
+  },
+  {
+   "title": "Senior AI Engineer, Agentforce Reasoning",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Salesforce — Product-agent alias. · T0-57 L100, L513"
+  },
+  {
+   "title": "Senior Staff AI-Native Software Engineer – Agentic Systems",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "ServiceNow — Enterprise harness/platform alias. · T0-57 L65, L100"
+  },
+  {
+   "title": "Engineering Lead – Agentic Hive",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Wipro India — India IT-services alias. · T0-57"
+  },
+  {
+   "title": "Agentic AI II",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Capgemini India — India IT-services graded ladder alias. · T0-57 L492"
+  },
+  {
+   "title": "GenAI / Agentic AI Engineer",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "Capgemini India · T0-57 L492"
+  },
+  {
+   "title": "Junior Agentic AI Engineer",
+   "type": "Level variant",
+   "maps_to": "agentic-ai-engineer",
+   "note": "SAP — European entry ladder title. · T0-57 L250, L333"
+  },
+  {
+   "title": "Agentic AI Engineering Expert",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "SAP — European principal ladder title. · T0-57 L333"
+  },
+  {
+   "title": "Agent Harness Engineer",
+   "type": "Alias",
+   "maps_to": "agentic-ai-engineer",
+   "note": "JAPAN AI — Emerging harness-specialist alias. · T0-57 L112"
+  },
+  {
+   "title": "Research Engineer / Scientist",
+   "type": "Alias",
+   "maps_to": "research-engineer",
+   "note": "Dual title used by Anthropic Pre-training and OpenAI Post-Training (3/18 in sample) · T0-50 L111, L115; T0-55 L149"
+  },
+  {
+   "title": "Research Engineer / Performance Engineer",
+   "type": "Alias",
+   "maps_to": "research-engineer",
+   "note": "Anthropic RL Distributed Systems posting · T0-50 L115, L494"
+  },
+  {
+   "title": "Training Performance Engineer",
+   "type": "Alias",
+   "maps_to": "research-engineer",
+   "note": "OpenAI San Francisco training-runtime performance posting ($250K–$445K base) · T0-50 L115, L500"
+  },
+  {
+   "title": "Member of Technical Staff – Post Training",
+   "type": "Alias",
+   "maps_to": "research-engineer",
+   "note": "Microsoft AI and xAI team-suffixed MTS pattern (54 of 84 Microsoft AI titles are MTS) · T0-50 L62, L115, L504"
+  },
+  {
+   "title": "Applied Scientist / Research Engineer",
+   "type": "Alias",
+   "maps_to": "applied-scientist",
+   "note": "Mistral AI dual title (also maps to research-engineer for frontier labs) · T0-50 L115, L507; T0-52 L153"
+  },
+  {
+   "title": "Applied Scientist II",
+   "type": "Level variant",
+   "maps_to": "applied-scientist",
+   "note": "Modal level-suffixed title (14/33 in sample: Amazon L5, Microsoft IC3, Uber) · T0-52 L146"
+  },
+  {
+   "title": "Senior Applied Scientist",
+   "type": "Level variant",
+   "maps_to": "applied-scientist",
+   "note": "7/33 in sample (Amazon L6, Microsoft L63, Zalando, Uber, Outreach) · T0-52 L148"
+  },
+  {
+   "title": "Principal Applied Scientist",
+   "type": "Level variant",
+   "maps_to": "applied-scientist",
+   "note": "Amazon L7, Microsoft, Zalando (incl. Senior Principal) · T0-52 L149"
+  },
+  {
+   "title": "Associate Applied Scientist",
+   "type": "Level variant",
+   "maps_to": "applied-scientist",
+   "note": "Garner Health and startup listings · T0-52 L155"
+  },
+  {
+   "title": "Data & Applied Scientist",
+   "type": "Alias",
+   "maps_to": "applied-scientist",
+   "note": "Microsoft title; check scope carefully as some roles are pure SQL/Power BI analytics · T0-52 L157, L215"
+  },
+  {
+   "title": "Applied AI Scientist",
+   "type": "Alias",
+   "maps_to": "applied-scientist",
+   "note": "External alias seen on aggregators (also AI Applied Scientist, Staff Applied AI Scientist) · T0-52 L156"
+  },
+  {
+   "title": "AI Scientist",
+   "type": "Alias",
+   "maps_to": "research-scientist",
+   "note": "Mistral AI (also Lead AI Scientist) · T0-55 L87, L151, L577-L578; T0-52 L153"
+  },
+  {
+   "title": "Senior Researcher",
+   "type": "Alias",
+   "maps_to": "research-scientist",
+   "note": "Microsoft Research (IC4) · T0-55 L87, L152, L568-L569"
+  },
+  {
+   "title": "ML Researcher / Machine Learning Researcher",
+   "type": "Alias",
+   "maps_to": "research-scientist",
+   "note": "ElevenLabs, Sarvam AI Foundational Models · T0-55 L87, L153, L581, L589"
+  },
+  {
+   "title": "AI Engineer & Researcher",
+   "type": "Alias",
+   "maps_to": "research-scientist",
+   "note": "xAI Post-training posting ($180K–$440K base) · T0-55 L87, L154, L574"
+  },
+  {
+   "title": "AI Applied Researcher",
+   "type": "Alias",
+   "maps_to": "research-scientist",
+   "note": "Accenture applied-researcher title (prototyping duties) · T0-55 L143, L157, L591"
+  },
+  {
+   "title": "Member of Technical Staff – Applied Science",
+   "type": "Alias",
+   "maps_to": "research-scientist",
+   "note": "Amazon AGI Autonomy New PhD posting with RS-style brief · T0-55 L59, L150, L593"
+  },
+  {
+   "title": "Software Engineer, Evals",
+   "type": "Alias",
+   "maps_to": "ai-evaluation-engineer",
+   "note": "Glean Bangalore and Principal SWE for Copilot Evals (Microsoft) · T0-60 L195, L569, L571"
+  },
+  {
+   "title": "AI Behavior Engineer",
+   "type": "Alias",
+   "maps_to": "ai-evaluation-engineer",
+   "note": "Transluce third-party non-profit evaluator ($310K–$500K base) · T0-60 L195, L582"
+  },
+  {
+   "title": "Senior Member of Technical Staff, AI Quality",
+   "type": "Alias",
+   "maps_to": "ai-evaluation-engineer",
+   "note": "Harper applied-evals posting · T0-60 L195, L577"
+  },
+  {
+   "title": "Research Engineer, Post-Training Model Evaluations",
+   "type": "Alias",
+   "maps_to": "ai-evaluation-engineer",
+   "note": "Anthropic lab model-evaluation variant ($500K–$850K base, COI) · T0-60 L195, L564"
+  },
+  {
+   "title": "Evals Infrastructure Tech Lead / Manager",
+   "type": "Level variant",
+   "maps_to": "ai-evaluation-engineer",
+   "note": "Anthropic evaluation infrastructure leadership role (COI) · T0-60 L195, L565"
+  },
+  {
+   "title": "AI Red Team Engineer",
+   "type": "Alias",
+   "maps_to": "ai-security-engineer",
+   "note": "White Circle, Lakera, Refractal, Amazon Senior Security Engineer (AI Red Team) · T0-60 L284, L400, L589, L607"
+  },
+  {
+   "title": "AI Security Researcher / Research Engineer",
+   "type": "Alias",
+   "maps_to": "ai-security-engineer",
+   "note": "Brave, NVIDIA, Microsoft MTS Senior Security Researcher, Ekfrazo · T0-60 L284, L400, L590-L592, L608, L611"
+  },
+  {
+   "title": "Offensive Security Engineer (Agent Security)",
+   "type": "Alias",
+   "maps_to": "ai-security-engineer",
+   "note": "OpenAI and o9 Solutions offensive agent-security postings · T0-60 L284, L593, L605"
+  },
+  {
+   "title": "AI/ML Security Engineer",
+   "type": "Alias",
+   "maps_to": "ai-security-engineer",
+   "note": "Primary SANS tracker title (>850 postings, mid-Sep 2026, median advertised $140K) · T0-60 L71, L223, L284"
+  },
+  {
+   "title": "AI Supply-Chain Security Engineer",
+   "type": "Specialisation",
+   "maps_to": "ai-security-engineer",
+   "note": "SANS tracker specialisation (93 postings, mid-Sep 2026) · T0-60 L225, L284"
+  },
+  {
+   "title": "Researcher, Safety / Alignment Science",
+   "type": "Alias",
+   "maps_to": "ai-safety-researcher",
+   "note": "OpenAI Safety Systems titles (Frontier Assurance, Agent Safety, RSI Safety, Misalignment, Alignment Science) · T0-60 L369, L632-L636"
+  },
+  {
+   "title": "Alignment Red Team / Control Red Team RE/RS",
+   "type": "Alias",
+   "maps_to": "ai-safety-researcher",
+   "note": "UK AI Security Institute technical safety research titles (distinct from commercial security red teams) · T0-60 L108, L369, L624-L625"
+  },
+  {
+   "title": "Member of Technical Staff, Evaluation Execution / Research (METR)",
+   "type": "Alias",
+   "maps_to": "ai-safety-researcher",
+   "note": "METR non-profit safety evaluator titles ($250K–$503.1K base) · T0-60 L369, L637-L638"
+  },
+  {
+   "title": "Anthropic Resident",
+   "type": "Programme",
+   "maps_to": "ai-safety-researcher",
+   "note": "Anthropic Residency (US/UK) for established technical leaders across Alignment, Interpretability, Frontier Red (COI) · T0-60 L371, L619"
+  },
+  {
+   "title": "Software Engineer, GPU Infrastructure / Compute Foundations / Frontier Clusters",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "OpenAI x6 postings (3 opened live) · T0-54 L120"
+  },
+  {
+   "title": "Staff Infrastructure Engineer, Cluster Infrastructure / Node Infra",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Anthropic x3 postings (COI) · T0-54 L121"
+  },
+  {
+   "title": "HPC Engineer / HPC Infrastructure Engineer",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "NexGen Cloud, Soket AI Labs, Nebius-like (3/35) · T0-54 L122"
+  },
+  {
+   "title": "Principal Software Engineer, AI Infrastructure / CoreAI / Supercomputing Operations",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Microsoft x3 postings · T0-54 L123"
+  },
+  {
+   "title": "Production Engineer, AI/HPC Systems",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Meta London · T0-54 L124"
+  },
+  {
+   "title": "Member of Technical Staff, GPU Infrastructure",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Prime Intellect · T0-54 L124"
+  },
+  {
+   "title": "Cloud Integrated Infrastructure Engineer (AI Infra/HPC)",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Deloitte USI India x2 · T0-54 L125"
+  },
+  {
+   "title": "SRE, AI Research Clusters / Infrastructure SRE - HPC",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "NVIDIA India, Sarvam AI · T0-54 L126"
+  },
+  {
+   "title": "Platform Engineer, AI Infrastructure",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Sarvam AI (build vs operate split) · T0-54 L127"
+  },
+  {
+   "title": "Software Engineer, Inference / Model Inference / Inference Platform",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "Most common family (11/37: Anthropic, OpenAI, Together, NVIDIA, Baseten, Fluidstack, DigitalOcean, AION) · T0-56 L130"
+  },
+  {
+   "title": "Performance Engineer, Inference",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "Sarvam AI (live, Bengaluru) · T0-56 L138"
+  },
+  {
+   "title": "Research Engineer, Inference / Latency & Throughput",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "Mistral AI x2 · T0-56 L139"
+  },
+  {
+   "title": "Applied AI Engineer, Inference",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "CoreWeave, Baseten · T0-56 L140"
+  },
+  {
+   "title": "Forward Deployed Engineer (AI Inference)",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "DigitalOcean Bengaluru (deployment variant) · T0-56 L141"
+  },
+  {
+   "title": "AI Model Serving Specialist",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "Rackspace India · T0-56 L143"
+  },
+  {
+   "title": "Cloud Inference Engineer",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "Anthropic Cloud Inference · T0-56 L145"
+  },
+  {
+   "title": "Software Engineer, ML / AI Platform",
+   "type": "Alias",
+   "maps_to": "ml-platform-engineer",
+   "note": "Big Tech convention (Uber Michelangelo, Netflix, Pinterest, Walmart Global Tech India) · T0-58 L121, L337"
+  },
+  {
+   "title": "Platform Engineer, Data Infrastructure & MLOps",
+   "type": "Alias",
+   "maps_to": "ml-platform-engineer",
+   "note": "Mistral AI · T0-58 L71, L122"
+  },
+  {
+   "title": "KI Platform Engineer / Cloud & MLOps Expert",
+   "type": "Alias",
+   "maps_to": "ml-platform-engineer",
+   "note": "German-language probe titles (Techniker Krankenkasse, enercity) · T0-58 L62, L125, L337"
+  },
+  {
+   "title": "Performance Engineer, GPU / Kernels",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Anthropic ($280-850K), Sarvam AI (live Bengaluru) · T0-63 L159, L164, L396"
+  },
+  {
+   "title": "Research Engineer, GPU Performance",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Mistral AI Paris · T0-63 L161, L396"
+  },
+  {
+   "title": "ML Kernels & Runtime / GPU Kernel and Runtime Engineer",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Graphcore, Waymo · T0-63 L159, L396"
+  },
+  {
+   "title": "Systems ML — Compilers / Backend Engineer",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Meta, Microsoft Maia, Google TPU Compilers · T0-63 L160, L396"
+  },
+  {
+   "title": "Triton Compiler and Kernel Software Engineer",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "AMD, NVIDIA, Graphcore · T0-63 L159"
+  },
+  {
+   "title": "Neuron / NKI Kernel Engineer",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Amazon AWS Annapurna Labs · T0-63 L162, L396"
+  },
+  {
+   "title": "Robot Learning Engineer / Robotic Learning Engineer",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "Most frequent explicit title (8/48: Agile Robots, Applied Intuition, Origin, Relari, 1X, Path Robotics, Laplacian) · T0-64 L56, L117, L344"
+  },
+  {
+   "title": "VLA / Robot Foundation Model Engineer",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "5/48 (Humanoid, Foundation Robotics, Laplacian, Sereact, Wayve) · T0-64 L56, L119, L344"
+  },
+  {
+   "title": "Research Engineer, Robotics",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "~13/48 (Physical Intelligence, Skild, DeepMind, 1X, Bosch, Hedra) · T0-64 L122, L344"
+  },
+  {
+   "title": "Reinforcement Learning Engineer, Whole Body Control",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "3/48 (Figure Controls dept, Apptronik, Skild) · T0-64 L120, L344"
+  },
+  {
+   "title": "Embodied AI Engineer",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "UnitX, Qualcomm Embodied AI/VLA · T0-64 L121, L344"
+  },
+  {
+   "title": "Research Product Manager",
+   "type": "Alias",
+   "maps_to": "ai-product-manager",
+   "note": "Anthropic Model Behaviors (COI) · T0-59 L108, L160"
+  },
+  {
+   "title": "Product Manager, Core Models / Model APIs / AI Studio / Context / Agents",
+   "type": "Alias",
+   "maps_to": "ai-product-manager",
+   "note": "Lab/Big-Tech naming pattern (0/17 lab & big-tech postings use literal 'AI Product Manager') · T0-59 L53, L104–L105"
+  },
+  {
+   "title": "Technical Product Manager, AI Delivery / Agent Evaluation & Observability",
+   "type": "Alias",
+   "maps_to": "ai-product-manager",
+   "note": "American Express, McKinstry · T0-59 L108, L520, L529"
+  },
+  {
+   "title": "AI Product Lead",
+   "type": "Level variant",
+   "maps_to": "ai-product-manager",
+   "note": "ADT · T0-59 L108, L530"
+  },
+  {
+   "title": "AI Product Manager I",
+   "type": "Level variant",
+   "maps_to": "ai-product-manager",
+   "note": "HCLTech Bengaluru (sole entry-level posting in n=41) · T0-59 L107, L519"
+  },
+  {
+   "title": "Head of AI Governance",
+   "type": "Level variant",
+   "maps_to": "ai-governance-lead",
+   "note": "Dotmatics Ireland, SIX Zurich · T0-61 L160, L387, L592, L595"
+  },
+  {
+   "title": "Director, Data and AI Governance",
+   "type": "Level variant",
+   "maps_to": "ai-governance-lead",
+   "note": "Visa Foster City · T0-61 L160, L387, L577"
+  },
+  {
+   "title": "Data Protection & AI Governance Advisor",
+   "type": "Alias",
+   "maps_to": "ai-governance-lead",
+   "note": "neoshare Munich · T0-61 L160, L596"
+  },
+  {
+   "title": "Compliance Analyst – AI Governance",
+   "type": "Level variant",
+   "maps_to": "ai-governance-lead",
+   "note": "AlphaSense Bengaluru · T0-61 L160, L387, L590"
+  },
+  {
+   "title": "Manager, SAP AI & Agent Governance",
+   "type": "Alias",
+   "maps_to": "ai-governance-lead",
+   "note": "KPMG (listed across 10 US cities) · T0-61 L160, L583"
+  },
+  {
+   "title": "Head of Security & AI Governance",
+   "type": "Alias",
+   "maps_to": "ai-governance-lead",
+   "note": "Flip Los Angeles (hybrid security/governance) · T0-61 L160, L585"
+  },
+  {
+   "title": "AI Technology Risk Manager / AI Tech Risk Officer",
+   "type": "Alias",
+   "maps_to": "ai-risk-assurance-specialist",
+   "note": "U.S. Bank (≥4 roles), Adyen NYC · T0-61 L401, L611, L615"
+  },
+  {
+   "title": "AI Risk Management Senior Associate",
+   "type": "Level variant",
+   "maps_to": "ai-risk-assurance-specialist",
+   "note": "Fifth Third Bank (first-line defence) · T0-61 L401, L614"
+  },
+  {
+   "title": "Director, Model Risk – AI & Fraud / Director, AI Compliance",
+   "type": "Level variant",
+   "maps_to": "ai-risk-assurance-specialist",
+   "note": "OKX NYC, Robinhood · T0-61 L609, L613"
+  },
+  {
+   "title": "Lead Compliance Risk Manager, Product Compliance – AI",
+   "type": "Alias",
+   "maps_to": "ai-risk-assurance-specialist",
+   "note": "Mercury · T0-61 L616"
+  },
+  {
+   "title": "Senior Manager, Trustworthy AI / AI Governance & Assurance Strategy Manager",
+   "type": "Alias",
+   "maps_to": "ai-risk-assurance-specialist",
+   "note": "Deloitte US requisitions · T0-61 L401, L624, L627"
+  },
+  {
+   "title": "AI Compliance Engineer (Responsible AI)",
+   "type": "Alias",
+   "maps_to": "responsible-ai-engineer",
+   "note": "SnowHeap LLC (UAE, remote MENA/EU) · T0-61 L415, L636"
+  },
+  {
+   "title": "Senior ML Engineer – AI Safety (Enterprise)",
+   "type": "Alias",
+   "maps_to": "responsible-ai-engineer",
+   "note": "Experian Brazil · T0-61 L415, L637"
+  },
+  {
+   "title": "Senior/Lead Applied Scientist, Responsible AI",
+   "type": "Alias",
+   "maps_to": "responsible-ai-engineer",
+   "note": "Salesforce California · T0-61 L415, L644"
+  },
+  {
+   "title": "AI Infrastructure & Governance Lead",
+   "type": "Alias",
+   "maps_to": "responsible-ai-engineer",
+   "note": "GE Vernova Chennai · T0-61 L639"
+  },
+  {
+   "title": "Cloud Solution Architect (AI / Agentic / Copilot)",
+   "type": "Alias",
+   "maps_to": "ai-solutions-architect",
+   "note": "Microsoft (post-sales customer success, incl. entry-level CSA 2026-11-10) · T0-62 L118, L430"
+  },
+  {
+   "title": "Specialist Solutions Architect, AI/ML",
+   "type": "Alias",
+   "maps_to": "ai-solutions-architect",
+   "note": "Databricks field engineering · T0-62 L119, L430"
+  },
+  {
+   "title": "AI Enablement Lead / Enterprise AI Enablement Lead",
+   "type": "Alias",
+   "maps_to": "ai-enablement-engineer",
+   "note": "26 postings on Skillenai to 2026-09-02; Jorie AI, Liquidity Services · T0-62 L238, L445"
+  },
+  {
+   "title": "Platform Engineer Lead – AI Enablement",
+   "type": "Alias",
+   "maps_to": "ai-enablement-engineer",
+   "note": "Platform/MCP/IAM variant (London fintech) · T0-62 L238, L445, L640"
+  },
+  {
+   "title": "Senior Staff / Staff Software Engineer – AI Enablement",
+   "type": "Level variant",
+   "maps_to": "ai-enablement-engineer",
+   "note": "Sofi, Phorest · T0-62 L238, L445, L635, L641"
+  },
+  {
+   "title": "Product Engineer / Founding Product Engineer (AI)",
+   "type": "Alias",
+   "maps_to": "ai-product-engineer",
+   "note": "Most common real posting title (6 of 16: Anthropic Computer Use, Arlo, humans&, Dash0, Clera, The Flex, myDataValue) · T0-62 L326, L459"
+  },
+  {
+   "title": "Software Engineer – AI Product Engineering",
+   "type": "Alias",
+   "maps_to": "ai-product-engineer",
+   "note": "CirrusLabs Bengaluru · T0-62 L326, L459, L657"
+  },
+  {
+   "title": "Senior Frontend Software Engineer – AI UX",
+   "type": "Alias",
+   "maps_to": "ai-product-engineer",
+   "note": "Pebl · T0-62 L326, L650"
+  },
+  {
+   "title": "Frontend Design Engineer (AI)",
+   "type": "Alias",
+   "maps_to": "ai-product-engineer",
+   "note": "Alpha India remote; Within AI Frontend overlaps design-engineer · T0-62 L326, L663"
+  },
+  {
+   "title": "Engineering Manager, Applied AI",
+   "type": "Alias",
+   "maps_to": "ai-engineering-manager",
+   "note": "OpenAI Startups, General Matter, Percepta postings (counted sample) · T0-65 L134, L529, L533, L541"
+  },
+  {
+   "title": "Engineering Manager, Agent Prompts & Evals",
+   "type": "Alias",
+   "maps_to": "ai-engineering-manager",
+   "note": "Anthropic Greenhouse posting ($320–405K base, COI) · T0-65 L127, L527"
+  },
+  {
+   "title": "Senior Software Engineering Manager, Generative AI",
+   "type": "Level variant",
+   "maps_to": "ai-engineering-manager",
+   "note": "Google Bengaluru (2026-09-02) · T0-65 L134, L539"
+  },
+  {
+   "title": "Machine Learning Engineering Manager",
+   "type": "Alias",
+   "maps_to": "ai-engineering-manager",
+   "note": "Trainline London (2026-10-16) · T0-65 L134, L540"
+  },
+  {
+   "title": "Engineering Manager, LLM Inference & Deployment",
+   "type": "Alias",
+   "maps_to": "ai-engineering-manager",
+   "note": "NVIDIA JR2020646 · T0-65 L130, L536"
+  },
+  {
+   "title": "Director, Applied AI Engineering",
+   "type": "Level variant",
+   "maps_to": "ai-engineering-manager",
+   "note": "Scale AI ($285.2–356.5K base, undated) · T0-65 L134, L543"
+  },
+  {
+   "title": "Director – AI Engineering Solutions",
+   "type": "Level variant",
+   "maps_to": "ai-engineering-manager",
+   "note": "Novo Nordisk GBS Bengaluru (15+ yrs, supplementary) · T0-65 L134, L544"
+  },
+  {
+   "title": "Manager, Generative AI (Big-4 consulting grade)",
+   "type": "Not a role",
+   "maps_to": "ai-engineering-manager",
+   "note": "Deloitte India req 101515 pairs designation Manager with role Generative AI Engineer; consulting grade, not people management · T0-65 L131, L515"
+  },
+  {
+   "title": "Head of AI Strategy & Operations",
+   "type": "Alias",
+   "maps_to": "vp-head-of-ai",
+   "note": "Accela Greenhouse ($240–280K base, enterprise strategy variant) · T0-65 L216, L545"
+  },
+  {
+   "title": "Head of AI Transformation",
+   "type": "Alias",
+   "maps_to": "vp-head-of-ai",
+   "note": "SimplePractice ($250–315K base) · T0-65 L216, L546"
+  },
+  {
+   "title": "Senior Director – Head of AI",
+   "type": "Level variant",
+   "maps_to": "vp-head-of-ai",
+   "note": "PayU Bengaluru (Oct 2026) · T0-65 L216, L555"
+  },
+  {
+   "title": "VP & GM Technology (Gen AI, Agentic AI)",
+   "type": "Alias",
+   "maps_to": "vp-head-of-ai",
+   "note": "Wipro Bengaluru (2026-09-21) · T0-65 L216, L554"
+  },
+  {
+   "title": "VP, Head of Program Management – AI",
+   "type": "Alias",
+   "maps_to": "vp-head-of-ai",
+   "note": "Synchrony ($170–290K base, AI-office operations variant) · T0-65 L214, L547"
+  },
+  {
+   "title": "Head of Applied AI",
+   "type": "Alias",
+   "maps_to": "vp-head-of-ai",
+   "note": "Player-coach startup variant reporting to CEO · T0-65 L216, L559"
+  },
+  {
+   "title": "Director of AI / Director ML & AI Engineering",
+   "type": "Alias",
+   "maps_to": "vp-head-of-ai",
+   "note": "HERE Mumbai, Honeywell Bengaluru, Paylocity US · T0-65 L216, L552, L556-L557"
+  },
+  {
+   "title": "Chief Data/AI Officer (CDAO)",
+   "type": "Alias",
+   "maps_to": "chief-ai-officer",
+   "note": "Riverside Research; combined title in ProfessionLens Fortune 500 census (54 combined vs 24 standalone) · T0-65 L290, L301, L567"
+  },
+  {
+   "title": "Chief AI & Innovation Officer",
+   "type": "Alias",
+   "maps_to": "chief-ai-officer",
+   "note": "Broad Reach Partners listing · T0-65 L290, L568"
+  },
+  {
+   "title": "Chief Health AI Officer (CHAIO)",
+   "type": "Specialisation",
+   "maps_to": "chief-ai-officer",
+   "note": "UCSF Health VP/CHAIO (2026-10-09) · T0-65 L290, L561"
+  },
+  {
+   "title": "General Manager & Chief AI Officer",
+   "type": "Alias",
+   "maps_to": "chief-ai-officer",
+   "note": "State Bank of India CRPD/SCO/2026-27/30 (fixed term, CTC up to Rs160L) · T0-65 L290, L560"
+  },
+  {
+   "title": "Director, Chief AI Officer",
+   "type": "Alias",
+   "maps_to": "chief-ai-officer",
+   "note": "College of Charleston ($150–175K, reports to CIO — non-C-suite higher-ed seat) · T0-65 L285, L290, L565"
+  },
+  {
+   "title": "Chief Technology & AI Officer (CTAIO)",
+   "type": "Alias",
+   "maps_to": "chief-ai-officer",
+   "note": "Combined executive title noted in Oct 2026 appointment roundups · T0-65 L288"
+  },
+  {
+   "title": "Fractional AI Strategy Leader",
+   "type": "Alias",
+   "maps_to": "fractional-ai-leader",
+   "note": "Arootah advisor network · T0-66 L340, L529"
+  },
+  {
+   "title": "Fractional AI Delivery Engine Leader",
+   "type": "Alias",
+   "maps_to": "fractional-ai-leader",
+   "note": "Servant via Go Fractional (2026-09-01) · T0-66 L340, L536"
+  },
+  {
+   "title": "Fractional AI Value Creation Leader",
+   "type": "Alias",
+   "maps_to": "fractional-ai-leader",
+   "note": "Observed in T0-66 fractional search · T0-66 L340"
+  },
+  {
+   "title": "AI Integration Consultant",
+   "type": "Alias",
+   "maps_to": "independent-ai-consultant",
+   "note": "AJAIA 1099 contract listing · T0-66 L345, L542"
+  },
+  {
+   "title": "Senior AI Consultant / Generative AI Consultant",
+   "type": "Alias",
+   "maps_to": "independent-ai-consultant",
+   "note": "Dice 6–12 month contracts ($60–80/hr agency sample); in India 15/17 results are permanent employee roles · T0-66 L345, L545-L546, L705"
+  },
+  {
+   "title": "AI and Data SME (Contract)",
+   "type": "Alias",
+   "maps_to": "independent-ai-consultant",
+   "note": "UK day-rate contract (£700/day, security/governance focus) · T0-66 L345, L555"
+  },
+  {
+   "title": "AI Tutor",
+   "type": "Alias",
+   "maps_to": "domain-evaluation-specialist",
+   "note": "xAI ($35–75/hr), Handshake AI ($75–125/hr older listings) · T0-66 L324, L350, L570"
+  },
+  {
+   "title": "Domain Expert Reviewer",
+   "type": "Alias",
+   "maps_to": "domain-evaluation-specialist",
+   "note": "Turing (Master's + 3 yrs, 8-week assignment, assessment-gated) · T0-66 L324, L350, L567"
+  },
+  {
+   "title": "AI Training Consultant",
+   "type": "Alias",
+   "maps_to": "domain-evaluation-specialist",
+   "note": "Scale AI Outlier 1099 contract · T0-66 L324, L350, L566"
+  },
+  {
+   "title": "Research Advisor (Human Frontier Collective)",
+   "type": "Alias",
+   "maps_to": "domain-evaluation-specialist",
+   "note": "Scale AI ($300/hr, 5–20 h/wk, US-only, MD/JD/finance) · T0-66 L324, L350, L565"
+  },
+  {
+   "title": "AI Evaluation Specialist / QA AI Evaluator",
+   "type": "Alias",
+   "maps_to": "domain-evaluation-specialist",
+   "note": "micro1 global-remote ($20–35/hr) and India salaried roles (Kore.ai, BT Group) · T0-66 L324, L350, L569, L574-L575"
+  },
+  {
+   "title": "AI Evaluation Guidelines & Rubric Specialist",
+   "type": "Alias",
+   "maps_to": "domain-evaluation-specialist",
+   "note": "24 Mag ($40–60/hr remote) · T0-66 L578"
   }
  ]
 }

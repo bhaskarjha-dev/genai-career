@@ -4,8 +4,8 @@ title: "Role Hubs: One Page per Role"
 content_type: index
 stage: 2
 status: published
-last_verified: 2026-11-05
-review_by: 2026-11-14
+last_verified: 2026-11-19
+review_by: 2026-12-06
 summary: "Index of the 29 role hubs: one generated page per canonical role with its definition, footprint, graded scores, skills, proof, interview track and résumé pointers."
 generated_by: scripts/build_role_hubs.py
 ---
@@ -22,27 +22,27 @@ generated_by: scripts/build_role_hubs.py
 |:---:|---|---|---|:---:|:---:|
 | #1 | [AI Engineer](ai-engineer.md) | Applied AI Engineering | L5 Orchestration and context | E | #2 |
 | #2 | [Machine Learning Engineer](ml-engineer.md) | ML Engineering & Applied Science | L4 Post-training and adaptation | E | #1 |
-| #3 | [Research Engineer / Member of Technical Staff](research-engineer.md) | Research | L2 Foundation models and research | V | #3 |
-| #4 | [Forward Deployed Engineer](forward-deployed-engineer.md) | Forward Deployment & Solutions | L6 Applications and deployment | E | #4 |
-| #5 | [Applied Scientist](applied-scientist.md) | ML Engineering & Applied Science | L4 Post-training and adaptation | V | #7 |
-| #6 | [Applied AI Engineer](applied-ai-engineer.md) | Applied AI Engineering | L6 Applications and deployment | V | #5 |
+| #3 | [Applied Scientist](applied-scientist.md) | ML Engineering & Applied Science | L4 Post-training and adaptation | V | #5 |
+| #4 | [Forward Deployed Engineer](forward-deployed-engineer.md) | Forward Deployment & Solutions | L6 Applications and deployment | E | #3 |
+| #5 | [Research Engineer / Member of Technical Staff](research-engineer.md) | Research | L2 Foundation models and research | V | #4 |
+| #6 | [Applied AI Engineer](applied-ai-engineer.md) | Applied AI Engineering | L6 Applications and deployment | V | #6 |
 | #7 | [AI Infrastructure / GPU Platform Engineer](ai-infrastructure-engineer.md) | AI Infrastructure & Platform | L1 Compute and hardware | V | #8 |
-| #8 | [Research Scientist (AI/ML)](research-scientist.md) | Research | L2 Foundation models and research | V | #6 |
-| #9 | [Inference / LLM Serving Engineer](inference-engineer.md) | AI Infrastructure & Platform | L3 Inference and ML platforms | V | #9 |
-| #10 | [Agentic AI Engineer](agentic-ai-engineer.md) | Applied AI Engineering | L5 Orchestration and context | W | #12 |
-| #11 | [ML Platform / MLOps Engineer](ml-platform-engineer.md) | AI Infrastructure & Platform | L3 Inference and ML platforms | V | #11 |
-| #12 | [AI Product Manager](ai-product-manager.md) | Product & Program | Product and strategy | V | #10 |
-| #13 | [AI Evaluation Engineer](ai-evaluation-engineer.md) | Evaluation, Safety & Security | Evaluation and quality | W | #14 |
-| #14 | [AI / GenAI Solutions Architect](ai-solutions-architect.md) | Forward Deployment & Solutions | L6 Applications and deployment | V | #13 |
-| #15 | [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md) | AI Infrastructure & Platform | L1 Compute and hardware | V | #15 |
-| #16 | [AI Security Engineer / AI Red Teamer](ai-security-engineer.md) | Evaluation, Safety & Security | Security, safety and governance | W | #19 |
-| #17 | [AI Governance Programme Lead / Manager](ai-governance-lead.md) | Governance, Risk & Assurance | Security, safety and governance | V | #16 |
-| #18 | [Physical AI / Robotics AI Engineer](physical-ai-engineer.md) | Embodied & Physical AI | L2 Foundation models and research | W | #17 |
+| #8 | [Research Scientist (AI/ML)](research-scientist.md) | Research | L2 Foundation models and research | V | #7 |
+| #9 | [ML Platform / MLOps Engineer](ml-platform-engineer.md) | AI Infrastructure & Platform | L3 Inference and ML platforms | E | #9 |
+| #10 | [AI Security Engineer / AI Red Teamer](ai-security-engineer.md) | Evaluation, Safety & Security | Security, safety and governance | W | #10 |
+| #11 | [Inference / LLM Serving Engineer](inference-engineer.md) | AI Infrastructure & Platform | L3 Inference and ML platforms | V | #11 |
+| #12 | [AI / GenAI Solutions Architect](ai-solutions-architect.md) | Forward Deployment & Solutions | L6 Applications and deployment | V | #12 |
+| #13 | [AI Product Manager](ai-product-manager.md) | Product & Program | Product and strategy | V | #13 |
+| #14 | [Agentic AI Engineer](agentic-ai-engineer.md) | Applied AI Engineering | L5 Orchestration and context | W | #14 |
+| #15 | [AI Evaluation Engineer](ai-evaluation-engineer.md) | Evaluation, Safety & Security | Evaluation and quality | W | #15 |
+| #16 | [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md) | AI Infrastructure & Platform | L1 Compute and hardware | V | #16 |
+| #17 | [Physical AI / Robotics AI Engineer](physical-ai-engineer.md) | Embodied & Physical AI | L2 Foundation models and research | V | #17 |
+| #18 | [AI Governance Programme Lead / Manager](ai-governance-lead.md) | Governance, Risk & Assurance | Security, safety and governance | V | #19 |
 | #19 | [Frontier AI Safety / Alignment Researcher](ai-safety-researcher.md) | Research | L4 Post-training and adaptation | V | #18 |
-| #20 | [AI Enablement Engineer](ai-enablement-engineer.md) | Applied AI Engineering | L6 Applications and deployment | W | #20 |
-| #21 | [AI Product Engineer (AI Frontend)](ai-product-engineer.md) | Applied AI Engineering | L6 Applications and deployment | W | #21 |
-| #22 | [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) | Governance, Risk & Assurance | Security, safety and governance | A | #22 |
-| #23 | [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) | Evaluation, Safety & Security | Security, safety and governance | W | #23 |
+| #20 | [AI Product Engineer (AI Frontend)](ai-product-engineer.md) | Applied AI Engineering | L6 Applications and deployment | W | #20 |
+| #21 | [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) | Governance, Risk & Assurance | Security, safety and governance | A | #21 |
+| #22 | [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) | Evaluation, Safety & Security | Security, safety and governance | W | #22 |
+| #23 | [AI Enablement Engineer](ai-enablement-engineer.md) | Applied AI Engineering | L6 Applications and deployment | W | #23 |
 | #24 | [Domain Evaluation Specialist / AI Trainer](domain-evaluation-specialist.md) | Human Data & Evaluation Operations | L4 Post-training and adaptation | W | #24 |
 | Leadership #1 | [AI Engineering Manager / Director of AI Engineering](ai-engineering-manager.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #1 |
 | Leadership #2 | [VP / Head of AI](vp-head-of-ai.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #2 |

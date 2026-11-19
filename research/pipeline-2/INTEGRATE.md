@@ -80,8 +80,9 @@ Do not accept findings blindly. For each piece of evidence:
 
 Do not copy-paste from the session into the career page. Rewrite the page's sections with the deeper evidence, **in the page's own voice and structure**:
 
-- Follow the guide pattern (CONTRIBUTING §4): Purpose and audience → Rules and decision table → How to do it → Evidence and limits.
+- Follow the guide pattern (CONTRIBUTING §4): `The short answer` → `How to do it` → `Evidence and limits` → `Next steps` (validated by `scripts/validate_docs.py`).
 - Grade every claim. Cite with `T0-XX LNNN` format (the validator checks that the line exists).
+- Note on Gate 3 (`VERIFY.md`) and Phase 3 (`T3-01`/`T3-02`): when sessions arrive without standalone Gate 3 verification reports, fold sceptical audit and live primary-source verification into each reduce step (downgrading unread `Extract`-only Grade A claims to Grade B per EGP-1.0, checking COI and logging every correction in `research/ERRATA.md`). Cross-reconcile Phase 3 `T3-01` and `T3-02` alongside R1.
 - Keep the page readable. A 491 KB session does not mean a 491 KB career page. The session is exhaustive research; the career page is **synthesised guidance**.
 - Update the page's `sources`, `last_verified` and `review_by` front matter.
 
@@ -278,11 +279,11 @@ The session-to-role mapping:
 | T0-59 | AI Product Manager |
 | T0-60 | AI Evaluation Engineer, AI Security Engineer, AI Safety Researcher |
 | T0-61 | AI Governance Lead, AI Risk Assurance Specialist, Responsible AI Engineer |
-| T0-62 | AI Solutions Architect, AI Enablement Engineer, AI Product Engineer, Domain Evaluation Specialist |
+| T0-62 | AI Solutions Architect, AI Enablement Engineer, AI Product Engineer |
 | T0-63 | GPU Kernel Engineer |
 | T0-64 | Physical AI Engineer |
-| T0-65 | AI Engineering Manager, VP/Head of AI, Chief AI Officer, Fractional AI Leader |
-| T0-66 | Independent AI Consultant, Fractional AI Leader |
+| T0-65 | AI Engineering Manager, VP/Head of AI, Chief AI Officer |
+| T0-66 | Independent AI Consultant, Fractional AI Leader, Domain Evaluation Specialist |
 
 ### R9 Tracks, skills, market and onboarding (5 sessions)
 

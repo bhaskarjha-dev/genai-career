@@ -1,34 +1,34 @@
 ---
 id: tracks.career-transitions
-title: "Career Transitions into GenAI: Roadmaps from Five Starting Backgrounds"
+title: "Career Transitions into GenAI: Roadmaps from Nine Starting Backgrounds"
 content_type: guide
 stage: 11
 status: published
-last_verified: 2026-11-06
+last_verified: 2026-11-19
 review_by: 2026-12-03
-summary: "Roadmaps into GenAI from five starting backgrounds: what transfers, what to learn and unlearn, modelled months to a first offer, quarterly plans, and the gates that show whether you are on track."
-sources: [T0-06, T2-01, T0-01, T0-12]
-roles: [ai-engineer, applied-ai-engineer, ai-product-engineer, ai-evaluation-engineer, forward-deployed-engineer, ai-infrastructure-engineer, ml-platform-engineer, ai-product-manager, domain-evaluation-specialist, ai-solutions-architect, applied-scientist, research-engineer]
-geos: [global, us, india]
-tags: [career-transition, roadmap, upskilling, evals, portfolio, timelines, milestone-gates]
+summary: "Roadmaps into GenAI from nine starting backgrounds (including DevOps/SRE, product managers, India IT-services engineers and students): what transfers, traps, modelled timelines and gates G1–G4."
+sources: [T0-06, T2-01, T0-01, T0-12, T0-67]
+roles: [ai-engineer, applied-ai-engineer, ai-product-engineer, ai-evaluation-engineer, forward-deployed-engineer, ai-infrastructure-engineer, inference-engineer, ml-platform-engineer, ai-enablement-engineer, ai-product-manager, ai-governance-lead, domain-evaluation-specialist, ai-solutions-architect, applied-scientist, research-engineer]
+geos: [global, us, uk, eu, canada, india]
+tags: [career-transition, roadmap, upskilling, evals, portfolio, timelines, milestone-gates, devops, sre, product-management, it-services, students, entry-level]
 ---
 
 # Career Transitions into GenAI
 
-> Roadmaps into GenAI from five starting backgrounds: what transfers, what to learn and unlearn, modelled months to a first offer, quarterly plans, and the gates that show whether you are on track.
+> Roadmaps into GenAI from nine starting backgrounds (including DevOps/SRE, product managers, India IT-services engineers and students): what transfers, traps, modelled timelines and gates G1–G4.
 
-**Dates and grades.** Roadmaps, gates and the time model come from [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md) (21 October 2026); the skills-stage week plans and the viability matrix come from [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md) (25 October 2026). Market figures carry their own dates: re-verify pay figures by 2027-01-09 and the feeder posting counts (JobsPipe, 2026-11-02; a monthly series, EGP-1.0 class V1) by 2026-12-03. Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor or single source; D judgement; M model output; P practice-curated. **Every month count on this page is a model output, not cohort data:** no longitudinal study of GenAI career changers was found [D · T0-06.F9].
+**Dates and grades.** Routes 1–5, gates G1–G4 and the time model come from [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md) (21 October 2026); skills-stage week plans and the viability matrix come from [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md) (25 October 2026); Routes 6–9 (DevOps/SRE, product managers, India IT-services engineers, students and new graduates) and the entry-level market audit come from [T0-67](../../research/sessions/T0-67-transitions-devops-pm-it-services-students.md) (13 November 2026; 7 of 75 sources opened in full, 68 read as search extracts, which caps those rows at B). Market figures carry their own dates: re-verify US post-study visa rules (class V0, 14 days from live verification on 2026-11-19) and JobsPipe feeder counts (2026-11-02; class V1) by 2026-12-03, and pay figures by 2027-01-09. Grades (EGP-1.0): A primary or measured; B transparent secondary or extract-capped primary; C vendor or single source; D judgement; E unverifiable or not found; M model output; P practice-curated. **Every month count on this page is a model output, not cohort data:** no longitudinal study of GenAI career changers or measured time-to-first-offer exists for any of the nine backgrounds [D · T0-06.F9; E · T0-67 L379].
 
 **Two kinds of tier.** *Hours tiers* A, B and C are your weekly study budget (T0-06). *Target tiers* T0 to T5 are employer and pay levels (T2-01). This page uses target-tier names only, because their band values are unmeasured and inconsistent ([ERRATA](../../research/ERRATA.md) U7, U14).
 
 ## The short answer
 
-1. **Ask for an internal move first, and build in parallel.** Spend 6–8 weeks seeking a scoped AI assignment at your employer. Four practitioner accounts name internal transfer as the fastest route; it is not automatic, and one engineer was turned down by several internal teams first [D · T0-06 L205, L246].
-2. **Move laterally; do not restart as a junior.** About 66% of US AI-engineering postings (Axial Search, January–July 2026) are individual-contributor roles, 35% mid-level and 31% senior [C · T0-06 L108]. Employment of 22–25-year-olds in the most AI-exposed occupations is 19% below trend, with no comparable gap for experienced workers [A · T0-06 L118]. Prior tacit experience is the hedge [A/B · T0-06.F2].
-3. **Commit to one route and one hours tier for 90 days, and judge progress by gates G1–G4,** not by hours logged or courses finished. Re-plan at month 6 from your interview-funnel numbers [M · T0-06 L241].
-4. **Make evaluation the spine of the portfolio.** It is the most-cited biggest challenge in the AI stack (20% of survey respondents) [B · T0-06 L139] and the universal gate across all five backgrounds [B · T2-01.F3]. Each background brings a different edge to it [M · T0-06 L146].
-5. **Plan on modelled months, conditional on success.** At 15–20 hours a week the model gives about 6 months to a first offer for backend engineers, 7 for frontend and non-technical AI-adjacent routes, 8 for data scientists and PhDs, 11 for BI analysts and 22 for engineering from zero code [M · T0-06 L261–269]. Confidence is medium-low for backend and low elsewhere, and every value assumes you persist and eventually succeed [T0-06 L375].
-6. **Do not mix funnels.** Expert-contract work, AI product management, forward-deployed engineering and AI engineering have different gatekeepers and different proof [M · T0-06 L255].
+1. **Test an internal move first, and build in parallel — without assuming it is fast.** Spend 6–8 weeks seeking a scoped AI assignment or internal bridge programme at your employer. Employer-side vendor data show internal hires filling roles faster (about 20 days against 49 for external), and 27% of surveyed HR leaders report avoidable external hires from skills-data gaps, but candidate-side transition speed is unmeasured and the four Phase 0 practitioner accounts were not independently located [C employer-side; E candidate speed · T0-67 L142, L367; D · T0-06 L205].
+2. **Move laterally; do not restart as a junior.** In Axial Search's US AI-engineering postings, 66% is the mid-level (35%) plus senior (31%) subtotal, while total individual-contributor postings sit near 86% (companion report dated 2026-05-22; the January–July 2026 window in T0-06 is unconfirmed) [C · T0-67 L54, L368]. Employment of 22–25-year-olds in the most AI-exposed US occupations stood 19% below counterfactual as of 2026-06-30 (Stanford Digital Economy Lab, August 2026 revision; descriptive, not causal, and shrinks under education controls), with no comparable gap for experienced workers [B · T0-67 L52, L369]. Prior tacit experience is the hedge [A/B · T0-06.F2].
+3. **Commit to one route and one hours tier for 90 days, judge progress by gates G1–G4, and plan for a long search tail.** Re-plan at month 6 from your interview-funnel numbers [M · T0-06 L241]. As a general US base rate, August 2026 unemployment duration averaged 26.3 weeks (median 11.4 weeks), with 27.0% out for 27 weeks or more; budget a 6–12-month runway with a week-27 checkpoint [B · T0-67 L72, L223, L332].
+4. **Match proof to the role's actual gate: evaluation for application and AI-PM roles, serving for inference and infrastructure.** Evaluation is the most-cited stack challenge (20% of survey respondents) [B · T0-06 L139], appears in 7 of 9 postings in one vendor AI-PM subgroup [C · T0-67 L63, L371] and is taught in early-career fellowships such as Claude Corps [B · T0-67 L321]. It is **not** universal: across 11 inference, SRE and MLOps posting extracts in T0-67, evaluation was absent while model-serving frameworks appeared in 11 of 11 and Kubernetes in 6 of 11 [B/M · T0-67 L62, L371].
+5. **Plan on modelled months, conditional on success — and treat Routes 6–9 as unmeasured.** At 15–20 hours a week, T0-06's model gives about 6 months to a first offer for backend engineers, 7 for frontend and non-technical AI-adjacent routes, 8 for data scientists and PhDs, 11 for BI analysts and 22 for engineering from zero code [M · T0-06 L261–269]. No transition-time measurements exist for DevOps/SRE, PMs, IT-services engineers or students; any analogue is untested [E · T0-67 L327–332, L372]. Every modelled value assumes you persist and eventually succeed [T0-06 L375].
+6. **Do not mix funnels.** Experience gates and proof differ sharply across tracks: frontier-lab AI PM asks 5–10+ years against ~3 years in enterprise AI teams [B · T0-67 L63, L154–155], FDE asks 5+ years with customer-facing deployment [B · T0-67 L63], inference roles ask 4–6+ years of systems/serving [B · T0-67 L62, L327], and fellowships split strictly by experience band [B · T0-67 L373; M · T0-06 L255].
 
 ## At a glance
 
@@ -57,8 +57,12 @@ Months are for hours tier B.
 | Non-technical, 5+ years in a domain, product or operations | Domain judgement for rubrics, golden sets, pilots and customers [C · T0-06.F7] | One lane: AI PM, AI ops or enablement, domain-evaluation lead, solutions or FDE-adjacent | ~7 (5–11) | [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [Domain Evaluation](../02-roles/hubs/domain-evaluation-specialist.md), [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) |
 | Non-technical, engineering from zero code | Domain knowledge | Junior engineering, as a two-year plan | ~22 (15–34) | [AI Engineer](../02-roles/hubs/ai-engineer.md) |
 | Academic or quantitative PhD who can code | Mathematics, statistics, experimental design, measurement rigour [M · T0-06 L658] | Applied AI engineer, applied scientist, research engineer; research scientist as upside | ~8 (5–12.5) | [Applied Scientist](../02-roles/hubs/applied-scientist.md), [Research Engineer](../02-roles/hubs/research-engineer.md) |
+| DevOps, SRE or cloud engineer (Route 6) | Kubernetes, autoscaling, SLOs, observability, cloud ops [B · T0-67 L120–122] | Inference engineer, AI infrastructure, ML platform; FDE infra only with 5+ yr customer record | Unmeasured (unverified backend analogue ~6) [E · T0-67 L327] | [Inference Engineer](../02-roles/hubs/inference-engineer.md), [AI Infrastructure](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform](../02-roles/hubs/ml-platform-engineer.md) |
+| Product manager (Route 7) | Product discovery, metrics, shipping, stakeholder alignment [B · T0-67 L154–155] | Enterprise or mid-size AI PM first (~3 yr gate); frontier-lab AI PM after 5–10+ yrs and shipped LLM work | Unmeasured (unverified AI-adjacent analogue ~7) [E · T0-67 L328] | [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [AI Evaluation](../02-roles/hubs/ai-evaluation-engineer.md), [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) |
+| IT-services engineer, India (Route 8) | Enterprise delivery, client integration, QA and cloud tooling [B · T0-67 L181–183] | Internal GenAI practice or bridge (2-quarter test), then GCC AI platform / enablement / applied AI at 4+ yrs | Unmeasured (unverified SWE analogue ~6–7) [E · T0-67 L329] | [Applied AI](../02-roles/hubs/applied-ai-engineer.md), [AI Enablement](../02-roles/hubs/ai-enablement-engineer.md), [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) |
+| Student or new graduate (Route 9) | Internships (in-person preferred), evaluated end-to-end project, campus placement [B · T0-67 L65, L88–89] | Internships and structured early-career SWE/data/AI programmes; avoid mass cold graduate applications | Schedule-bound by campus/internship cycle [E · T0-67 L330] | [AI Engineer](../02-roles/hubs/ai-engineer.md), [ML Engineer](../02-roles/hubs/ml-engineer.md), [FDE](../02-roles/hubs/forward-deployed-engineer.md) |
 
-Months and targets: [M · T0-06 R2 L261–269]. Experienced software engineers are the dominant feeder into AI-engineer titles and data scientists a steady second; "backend is fastest" cannot be tested with public data [B/D · T0-06.F3].
+Months and targets for Routes 1–5: [M · T0-06 R2 L261–269]; Routes 6–9 targets and unmeasured status: [B/C/E · T0-67 L118–209, L327–330]. Experienced software engineers are the dominant feeder into AI-engineer titles and data scientists a steady second; "backend is fastest" cannot be tested with public data [B/D · T0-06.F3].
 
 ### Where each background has a high-volume corridor
 
@@ -314,20 +318,128 @@ Watch for the Dunning-Kruger effect after early wins, the halo effect of fluent 
 - **Gates.** The shared spine applies unchanged: G1–G4 at months 3, 6, 9 and 12. At G1 the PhD route adds one test: every sophisticated step must beat a simple baseline on the eval set [M · T0-06 L697–L704].
 - **Targets.** Applied AI engineer, applied scientist or research engineer is the plannable path; research scientist is upside [M · T0-06 L192, L660]. PhDs do not skip the skills stage (ERRATA U18).
 
-## Provisional routes [P]
+## Route 6: DevOps, SRE or cloud engineer
 
-These backgrounds have no T0-06 roadmap. The routes are practice-curated from adjacent evidence: treat them as hypotheses and name the gap when you rely on them.
+**Profile.** Runs production Kubernetes, CI/CD, observability, incident response and cloud infrastructure. Feeder posting volumes are large (JobsPipe, 2026-11-02: DevOps Engineer 1,269 US / 3,183 global / 429 India, 69.4% naming Kubernetes; SRE 776 / 1,838 / 240; Cloud Engineer 803 / 1,587 / 128) [B · [role catalog](../02-roles/role-catalog.md) §7]. Across 11 inference, SRE and MLOps posting extracts in T0-67 (convenience sample; Extract-only), **model-serving frameworks (vLLM, SGLang, Triton, TensorRT-LLM) appeared in 11 of 11, Kubernetes in 6 of 11, observability or SLA language in 4 of 11, and model training in 0 of 11**; 3 of 11 stated 4+ years' experience [B/M · T0-67 L62, L120–128]. Model research is not the gate — serving and GPU fleet operations are.
 
-| Background | Evidence in the corpus | Provisional route [P] | Research gap |
+**Ranked target-role fit** [B/C/M · T0-67 L118–128]:
+
+| Priority | Role | Overlap | Gaps to close | Evidence |
+|---|---|---|---|---|
+| 1 | [Inference Engineer](../02-roles/hubs/inference-engineer.md) | High: serving, Kubernetes, SLOs, autoscaling | Model-serving frameworks (vLLM, SGLang, TensorRT-LLM), GPU scheduling, quantisation, benchmarking | Serving 11/11, K8s 6/11 [B/M · T0-67 L120] |
+| 2 | [AI Infrastructure Engineer](../02-roles/hubs/ai-infrastructure-engineer.md) | High: distributed systems and cloud operations | GPU fleet operations, networking, cost per GPU-hour | Same sample; title variants [B/M · T0-67 L121] |
+| 3 | [ML Platform Engineer](../02-roles/hubs/ml-platform-engineer.md) | High (best entry for ops-only staff without ML serving) | Kubeflow, MLflow, model registry, feature stores, GPU scheduling | Named in sample extracts [B · T0-67 L74, L122] |
+| 4 | [Forward-Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md) (infra family) | Medium | Customer-facing deployment record; 5+ year gate | OpenAI FDE posting mirror [B/C · T0-67 L123] |
+| 5 | [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md) | Medium–high | Internal developer tooling, adoption metrics | No posting evidence in T0-67 [W · T0-67 L124] |
+
+**Decision rules and traps** [B/C · T0-67 L73–76, L338–342]:
+- **Under 4 years' experience:** target senior SRE roles handling GPU workloads or ML platform roles rather than frontier-lab infrastructure postings, which gate at 4–6+ years [B · T0-67 L75, L327, L338].
+- **Skip model training first:** training was absent from all 11 extracts; building generic Kubernetes demos without GPU serving, SLOs or cost-per-1,000-token metrics misses the hiring bar [B · T0-67 L339, L341].
+- **Audit aggregator listings:** one inference-engineer mirror carried a 13% trust score on its aggregator; verify open roles on the employer's own careers page [C · T0-67 L340, L573].
+- **Senior residency option:** engineers with 5+ years and checkable public technical work can evaluate programmes such as the Anthropic Residency (secondary summaries note the 2026 round closing 2026-11-22; check live eligibility on the employer's page) [B · T0-67 L76, L144].
+
+**Quarterly roadmap** (timeline unmeasured; unverified backend analogue ~6 months at tier B [E · T0-67 L327]) [B/P · T0-67 L134–140]:
+
+| Window | Focus | Done when | Gate |
 |---|---|---|---|
-| DevOps, SRE or cloud engineer | Feeder counts only (JobsPipe, 2026-11-02): DevOps Engineer 1,269 US / 3,183 global / 429 India live postings, 69.4% naming Kubernetes; SRE 776 / 1,838 / 240; Cloud Engineer 803 / 1,587 / 128; all three feed ML platform or AI infrastructure roles [B · [role catalog](../02-roles/role-catalog.md) §7] | Route 1, weighted toward the serving lab and production operations; target [ML Platform](../02-roles/hubs/ml-platform-engineer.md) or [AI Infrastructure](../02-roles/hubs/ai-infrastructure-engineer.md) | No skill-delta, transition or timeline evidence; posting counts measure the feeder occupation, not transitions |
-| Product manager | The AI PM lane: one recruiter's template asks for 4+ years of PM experience and one model-powered feature shipped and measured [D · T0-06 L604]; 15.4% of Product Manager postings name AI and 13.6% agentic AI (JobsPipe, 2026-11-02) [B · role catalog §7] | Route 4's AI-adjacent roadmap, with PM proof: a PRD, an eval rubric and pilot metrics | No time-to-offer or success rates for AI PM transitions [T0-06 L821]; the 8.2-year median is not an AI PM figure (ERRATA U8) |
-| Student or new graduate | The junior door is narrowest [A · T0-06 L118]; AI-exposed entry-level roles are seven times more likely to require senior-type skills such as judgement and leadership [B · T0-06 L122]; the Stanford group notes that other studies disagree with the junior-decline finding [C · T0-06 L122] | One evaluated end-to-end system, the T0–T1 portfolio bar [B/C/D · T2-01.F9]; aim at employers that hire at entry level | No T0-06 roadmap, timeline or new-graduate outcome data; T0-06 judges entry-level pivots realistic mainly for BI analysts and new PhD graduates, at lower odds [M · T0-06 L124] |
+| Weeks 1–8 | Internal test (parallel) | Requested an inference or GPU-platform assignment at your employer and logged the answer | Internal ask [P · T0-67 L136] |
+| Months 1–3 | Serving v0 with metrics | One open-weight model served with vLLM or Triton on GPU nodes; latency (TTFT, p95), throughput and cost per 1,000 tokens measured | G1 [B skill set; P metrics · T0-67 L137] |
+| Months 4–6 | Operable GPU cluster | Kubernetes autoscaling on GPU node pools, SLO dashboard, alerts and an incident runbook | G2 [B · T0-67 L138] |
+| Months 7–9 | Second serving pattern and proof | A second serving stack (quantised model or multi-model router) plus one public benchmark write-up or upstream fix | G3 [P; outcomes unmeasured · T0-67 L139] |
+| Months 10–12 | Convert | Offer in inference, AI infrastructure or ML platform, or a weekly funnel diagnosis split by role family | G4 [P · T0-67 L140] |
+
+## Route 7: product manager
+
+**Profile.** Brings product discovery, prioritisation, metrics, roadmap ownership and stakeholder alignment. JobsPipe (2026-11-02) shows 15.4% of general Product Manager postings naming AI and 13.6% naming agentic AI [B · [role catalog](../02-roles/role-catalog.md) §7]. Across T0-67's posting sample, **enterprise and mid-size AI-PM postings ask for about 3 years of PM or technical programme experience, whereas frontier-lab and AI-native AI-PM postings gate at 5–10+ years plus shipped LLM or agentic products** (OpenAI Core Models 5+, Anthropic 6+, Vanta 8+, OpenAI Youth 10+) [B · T0-67 L63, L154–155].
+
+**Ranked target-role fit** [B/C · T0-67 L152–160]:
+
+| Priority | Role | Overlap | Gaps to close | Evidence |
+|---|---|---|---|---|
+| 1 | [AI Product Manager](../02-roles/hubs/ai-product-manager.md) (enterprise or mid-size AI team) | High on PM core | Evaluation design, LLM failure modes, cost/latency trade-offs, data literacy | Postings asking ~3 years PM/TPM [B · T0-67 L154] |
+| 2 | [AI Product Manager](../02-roles/hubs/ai-product-manager.md) (frontier or AI-native) | High on PM core | 5–10+ years PM experience; shipped LLM/agentic features | 4 named postings in sample [B · T0-67 L155] |
+| 3 | [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) (PM-led eval or human-data roles) | Medium | Rubric design, annotation pipelines, judge validation | Vendor subgroup: evals in 7 of 9 postings [C, COI · T0-67 L63, L156] |
+| 4 | [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) or [FDE](../02-roles/hubs/forward-deployed-engineer.md) | Medium | Technical architecture; FDE gates at 5+ years customer-facing engineering/deployment | OpenAI FDE posting mirror [B · T0-67 L79, L157] |
+| 5 | [AI Governance Lead](../02-roles/hubs/ai-governance-lead.md) | Medium for compliance PMs | Governance and assurance frameworks | Not tested in T0-67 [W · T0-67 L158] |
+
+**Interviews and traps** [B/C/P · T0-67 L162–164, L343–346]:
+- **Loop signals (vendor-described, no employer-published AI-PM guide found [E · T0-67 L381]):** vendor and practitioner accounts say AI-PM loops probe product sense on model failure cases, feature evaluation metrics, and live prototype exercises in some loops [C · T0-67 L162].
+- **Four traps:** applying to frontier-lab AI PM with under 5 years' PM experience [B · T0-67 L343]; showing prompt collections without a scored eval set and a written ship-or-no-ship decision [C · T0-67 L344]; relabelling generalist PM history as "AI PM" without shipping an LLM feature [P · T0-67 L345]; applying to FDE roles without a 5+ year technical customer-facing record [B · T0-67 L346]. Do not cite the 8.2-year LinkedIn median as an AI-PM requirement: it belongs to AI consultants and strategists (ERRATA U8).
+- **Early-career India signal:** IIT Guwahati's 2025–26 placement report lists associate product manager among non-technical campus profiles [A · T0-67 L160], and Deloitte India's 2026 campus survey places AI and digital PM roles in its top-10 campus outcomes [B · T0-67 L160].
+
+**Quarterly roadmap** (timeline unmeasured; unverified non-technical AI-adjacent analogue ~7 months at tier B [E · T0-67 L328]) [B/C/P · T0-67 L168–173]:
+
+| Months | Focus | Done when | Gate |
+|---|---|---|---|
+| 1–3 | Pilot feature and evals | One LLM feature built as a pilot or prototype, backed by a scored eval set (100+ cases [P]) and a written ship-or-no-ship memo | G1 [C · T0-67 L170] |
+| 4–6 | Production telemetry | Quality, cost and latency monitoring live, with a documented workflow turning real user failures into eval test cases | G2 [C/P · T0-67 L171] |
+| 7–9 | Second domain and proof | A second LLM feature in a different failure surface, plus one de-identified public case study with metrics | G3 [P · T0-67 L172] |
+| 10–12 | Convert | Offer at an enterprise or mid-size AI team, or a funnel diagnosis separating frontier-lab from enterprise gates | G4 [B · T0-67 L173] |
+
+## Route 8: IT-services engineer (India)
+
+**The India IT-services transition reality.** The traditional fresher pyramid has contracted sharply while experienced demand shifted to global capability centres (GCCs):
+- **Fresher contraction:** estimates put Indian IT-sector fresher hiring down from roughly 600,000 (FY22) to roughly 120,000 (FY25), and IT-BPM fresher hiring from ~400,000 (FY22) to ~175,000 (FY26) [C · T0-67 L59, L232–233]. TCS reported over 25,000 FY26 fresher offers on its earnings call (with 60% AI-skilled; secondary outlets cite 44,000 onboarded — an unresolved conflict) [B/C · T0-67 L59, L234–235, L419].
+- **GCCs are the experienced growth channel:** India's 2,117 GCCs (2.36 million staff) added roughly 200,000 net employees in FY26 against roughly 110,000 at IT-services firms, with **over 77% of GCC hiring at mid-to-senior levels** [C · T0-67 L60, L244–245].
+- **Training counts are not capability or job moves:** Infosys discloses internal bridge programmes without publishing move counts [B · T0-67 L191]; Wipro reported 93,994 AI-certified staff against roughly 60,000 active users out of ~242,000 staff (secondary arithmetic) [C · T0-67 L61]; Accenture reported roughly 550,000 staff trained in generative-AI fundamentals (out of ~780,000) against nearly 110,000 AI and data professionals in FY2026 [B/C · T0-67 L61, L191]. Corporate labels ("AI-aware", "AI-skilled", "AI Master") are not comparable across firms [T0-67 L426].
+- **Documented restructuring pressure:** Accenture's US$865 million restructuring phases out roles with nonviable skills and ties senior leadership promotion to regular internal AI-tool use [B · T0-67 L197]; TCS's chief executive cited skills mismatch and limited redeployment in reductions (via MediaNama) [C · T0-67 L197].
+
+**Three routes and target-role fit** [B/C/D · T0-67 L80–83, L179–195]:
+1. **Internal GenAI practice or bridge programme first** (time-box to **two quarters**; if no move materialises, pivot externally — no IT-services employer publishes reskilling-to-GenAI move rates [E · T0-67 L199, L387]).
+2. **GCC transfer at 4+ years' experience:** target [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) (strong fit for QA/test leads) or, at 5+ years, [AI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) and [FDE](../02-roles/hubs/forward-deployed-engineer.md) [B/C · T0-67 L81, L181–188].
+3. **Direct move to product companies:** unevidenced in T0-67 [D · T0-67 L193]; treat as upside once production proof exists. TCS's Prime track reviews AI/data projects in technical rounds, signalling that deployed artifacts — not certificates — set the bar [C · T0-67 L195]. Engineers with 5+ years and checkable public work can also evaluate lab residencies alongside internal routes [B · T0-67 L83].
+
+**Quarterly roadmap** (timeline unmeasured; unverified SWE analogue ~6–7 months at tier B [E · T0-67 L329]) [B/C/P · T0-67 L203–208]:
+
+| Months | Focus | Done when | Gate |
+|---|---|---|---|
+| 1–3 | Internal bridge ask and measured v0 | Asked for an internal bridge or GenAI-practice assignment; built one internal GenAI use case with an eval harness and baseline | G1 [B bridge existence; P metrics · T0-67 L205] |
+| 4–6 | Operable internal tool with usage | Deployed internal tool with adoption measured against seats or licences (documenting active usage, not certificates) | G2 [C/P · T0-67 L206] |
+| 7–9 | Public reproducible proof | Public repository and deployed demo built to project-review standard (Prime-track bar), plus targeted GCC outreach if internal transfer stalled | G3 [C/P · T0-67 L207] |
+| 10–12 | Convert | Internal move into a GenAI practice, or a GCC offer at 4+ years' experience | G4 [C · T0-67 L208] |
+
+## Route 9: student or new graduate
+
+**The entry-level market across four geographies** (dated measurements; the regions measure different constructs) [A/B/C/E · T0-67 L52–59, L214–248]:
+
+| Region | Key entry-level indicators (as dated) | What it means | Grade · source |
+|---|---|---|---|
+| **US** | NACE Spring 2026 projects +5.6% Class of 2026 hiring (45% rate market "fair"); NACE AI-skill measures conflict (10.5% chart vs >1/3 article — treat as 10–33%). NY Fed graduates aged 22–27 unemployment ~5.6% in Q2 2026 (5.2% in Q3 2026 per T0-70 L80), underemployment 42%; CS 7.0% and CE 7.8% (2024 ACS; CE 95% CI ~4–11%). CS new enrolment −8.4% (spring 2026). JobsPipe US AI-titled entry share 10.4% vs 35.8% all postings | Tight competition and seniorised entry roles (PwC: 7× more likely to ask for senior judgement [B · T0-06 L122]); internships dominate entry | B · T0-67 L53, L55–58, L214–222 |
+| **UK** | ISE member graduate hiring −8% in 2024–25, stabilised in 2025–26 at **141 applications per graduate vacancy (172 London)**. Adzuna advertised graduate vacancies −45.6% YoY (July 2026; ISE notes adverts are not hires). 87% of UK employers expect AI to change entry roles; 53% maintain and 27% expand entry recruitment | Mass cold applications face extreme ratios; focus on structured internships and work-experience conversion | B · T0-67 L57, L225–229 |
+| **EU** | Eurostat recent-graduate employment rate 83.0% overall and 87.0% tertiary (aged 20–34, 1–3 years post-graduation, 2025). **No EU-wide AI-specific graduate hiring series was found** | Broad graduate employment is stable; verify local AI-title demand yourself | B (general); E (AI-specific) · T0-67 L230–231 |
+| **India** | JobsPipe AI-titled entry share 21.2% vs 31.9% all postings (2026-10-11, one platform, no counts). Deloitte India 2026 (n=257 orgs): 35% say AI creates new entry roles/skills, 20–25% AI/data campus premium, median B.Tech pay 3.3× higher at top-10 (₹18.7L) vs tier-3 (₹5.75L). **Official campus data:** IIT Guwahati 2025–26 placement 63% overall, B.Tech 81.11% (median 22.01 LPA), CSE 90.75%, Biosciences 56.71% (AI titles not broken out) | Campus placement is the primary route; outcomes vary sharply by institute tier and discipline, and IT-services fresher volume fell by roughly four-fifths | A (IIT Guwahati); B (Deloitte, JobsPipe) · T0-67 L53, L237–246, L397 |
+
+**What works — ranked by outcome evidence** [B/C · T0-67 L65, L84–91, L252–262, L314–321]:
+1. **In-person internships (strongest measured route):** NACE reports **63.1% intern-to-full-time conversion** (88.3% acceptance, 2024–25 cohort), and **in-person interns received offers at 71.9% against 56.2% for hybrid interns** (2023–24 cohort) [B · T0-67 L65, L252]. In India, Deloitte reports pre-placement offer conversion up ~6% YoY; IIT Guwahati recorded 198 PPOs in 2025–26 [A/B · T0-67 L252, L551].
+2. **Proof employers actually ask for:** NACE employers prioritise teamwork, problem-solving and communication (28% seek AI-using early talent; nearly 60% assign interns AI projects [B]); Deloitte India ranks behavioural competencies (75%) and learning agility (72%) above technical skills for PPO conversion [B]; ISE highlights AI literacy, judgement and critical thinking [B]; CodePath reports 56% rating evaluation of AI outputs very or extremely important [C, COI] [T0-67 L314–321].
+3. **Proof channels — NOT standalone hiring pipelines:**
+   - *Open source (GSoC):* 30–36% of surveyed participants said it helped with a job or internship (programme self-reports, COI) [C · T0-67 L258].
+   - *Competitions (Kaggle, hackathons):* platform stats (>29M users) and vendor-hosted employer case studies exist, but **no independent outcome data**; practitioners treat ranks as weak signal unless you explain the engineering [C, COI · T0-67 L259, L382].
+   - *Research assistantships and REUs:* one 10-year single-site NSF REU survey found **74.7% pursued advanced degrees and 22.6% entered industry** — choose REUs for graduate study, not as an industry-hiring shortcut [C · T0-67 L90, L260].
+   - *Early-career AI programmes:* Claude Corps offers a paid 12-month US nonprofit placement for US-authorised candidates with under 2 years' experience (covers prompt design, API building and evaluation; no outcome data yet — treat as a placement, not a guaranteed hiring pipeline) [B · T0-67 L87, L261]. OpenAI Residency 2026 closed [B · T0-67 L261].
+   - *Bootcamps:* no independent GenAI outcome data; see [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md) [E · T0-67 L262].
+
+**Master's degrees and studying abroad (pointers, not legal or immigration advice):**
+- **Small cost-adjusted return for CS:** causal Texas administrative estimates (Altonji & Zhu, NBER WP 33530) and the PEER report give cost-adjusted lifetime returns of **+6% for computer science, +2% for computer engineering and +4% for electrical/mechanical engineering**, against +17% average, +13% MBA and +41% law [B · T0-67 L64, L264]. BLS 2025 puts raw median earnings at US$97,552 for master's vs US$82,056 for bachelor's (~US$15,500 gap, selection uncontrolled), while graduate costs rose 233% since 2000 (Georgetown CEW) [B · T0-67 L264]. Take a CS master's only for a specific visa or research reason [B · T0-67 L86].
+- **Study-abroad tuition and post-study work rules (as of November 2026; full visa trackers live in [visa and relocation](visa-and-relocation.md)):**
+  - *Canada:* official Statistics Canada 2026/27 international graduate tuition averages CAD 24,693/year (computing CAD 24,068; engineering CAD 27,473); master's and PhD students at public institutions are exempt from the study-permit cap, and the PGWP field-of-study list is frozen for 2026 [B · T0-67 L85, L272–274, L289].
+  - *UK:* Graduate Route stay **falls from 2 years to 18 months** for bachelor's and master's applications from 2027-01-01 (PhD keeps 3 years); secondary international master's tuition spans GBP 13,000–35,000/year [B/C · T0-67 L66, L276, L288].
+  - *US (V0 — high variance):* secondary international master's tuition spans US$25,000–55,000/year (no official US average found) [C/E · T0-67 L277–278]. Post-study rules face active rulemaking and litigation: DHS proposed university-paid OPT fees (US$70,000 initial / US$30,000 subsequent; comments closed 2026-11-09, not in effect) and a US$103,265 cap-subject H-1B fee, while the US$100,000 H-1B proclamation fee is blocked/vacated by federal courts with appeals pending [B · T0-67 L66, L286–287]. Student-visa arrivals earn a median US$115,000 vs US$87,000 native-born (NSCG 2023, selection uncontrolled), while working-paper estimates find OPT extensions shifted domestic starting wages by −0.8% to −3.5% and raised foreign graduates' starting wages by +2.6% [B · T0-67 L66, L296–297].
+
+**Quarterly roadmap, student or new graduate** (schedule-bound by internship and campus cycles [E · T0-67 L330]) [B/C/P · T0-67 L303–308]:
+
+| Months | Focus | Done when | Gate |
+|---|---|---|---|
+| 1–3 | Evaluated v0 in public | One evaluated LLM application in a public repository, demonstrating teamwork/problem-solving and AI output evaluation | G1 [B · T0-67 L305] |
+| 4–6 | Real users and internship funnel | Deployed application with real users; structured internship applications tracked by stage (targeting in-person roles early) | G2 [P · T0-67 L306] |
+| 7–9 | Reviewable external proof | One reviewable competition entry, discussion-first OSS contribution or research project (as proof, not a sole pipeline) | G3 [C; outcomes unmeasured · T0-67 L307] |
+| 10–12 | Convert | In-person internship offer (or campus placement / PPO), or a funnel review benchmarked against vacancy competition | G4 [B · T0-67 L308] |
 
 ### Geography
 
-- **Most quantitative evidence in T0-06 is US-centric** [T0-06 L39]; check local postings before committing [M · T0-06 L848].
-- **India:** AI-titled roles are 3.0% of India postings against 1.3% in the US, and the entry-level share of AI roles is 21.2% in India against 10.4% in the US (JobsPipe, 2026-10-11) [B · T0-01.F10]. India's AI-role profile is younger, but its absolute AI Engineer count is smaller than the US count. See the [India remote playbook](india-remote-playbook.md).
+- **Most quantitative transition evidence in T0-06 is US-centric** [T0-06 L39]; check local postings before committing [M · T0-06 L848].
+- **India:** AI-titled roles are 3.0% of India postings against 1.3% in the US, and the entry-level share of AI roles is 21.2% in India against 10.4% in the US (JobsPipe, 2026-10-11; one platform, no counts, and India's all-postings entry share is lower at 31.9% vs 35.8%) [B · T0-67 L53, L409]. India's experienced growth sits in GCCs (>77% mid-to-senior hiring), while IT-services fresher intake contracted sharply [C · T0-67 L59–60]. See the [India remote playbook](india-remote-playbook.md).
+- **UK and EU:** UK graduate competition averages 141 applications per vacancy (172 London) [B · T0-67 L57]; EU general recent-graduate employment sits at 83.0%, with no EU-wide AI-specific graduate series [B/E · T0-67 L230–231].
 
 ## How to do it: the first 14 days
 
@@ -353,12 +465,12 @@ Steps from T0-06's 14-day plan [M · T0-06 L277–285]:
 **Transition plan** [P]:
 
 ```text
-Route: [backend | data scientist | BI | frontend | non-technical lane | PhD applied]
+Route: [backend | data scientist | BI | frontend | non-technical lane | PhD applied | DevOps/SRE | PM | IT services | student]
 Hours tier: [A | B | C]; planned [h]/week; adherence = logged ÷ planned, reviewed weekly
-Target: [role] at [level]; loop type [applied-AI startup | big-company ML/AI | frontier lab]
-Internal ask: sponsor [name]; scope [assignment]; asked [date]; check-in [date]
-Domain corpus or task: [corpus]; 30 hand-written eval cases by [date]
-Gates: G1 [date] · G2 [date] · G3 [date] · G4 [date]
+Target: [role] at [level]; loop type [applied-AI startup | big-company ML/AI | frontier lab | GCC]
+Internal ask: sponsor [name]; scope [assignment or bridge]; asked [date]; check-in [date]
+Domain corpus or task: [corpus]; 30 hand-written eval cases by [date] (or serving benchmark for DevOps/SRE)
+Gates: G1 [date] · G2 [date] · G3 [date] · G4 [date] · Week-27 runway check [date]
 Level floor if down-levelled: [lowest level you will accept]
 Monthly funnel review: [day]; applications, screens, take-homes, onsites, offers
 ```
@@ -388,17 +500,19 @@ Change: [loop type | level | hours tier]; reviewed by [practitioner] on [date]
 | "Completed three GenAI courses and a RAG tutorial." | "Built [system] over [corpus]; [n]-case eval set versioned with the code; recall@5 of [x] against a BM25 baseline of [y]; [link]." |
 | "Data scientist passionate about LLMs." | "Validated an LLM judge against [n] human labels (agreement [statistic]); tested position and verbosity bias; [link to write-up]." |
 | "Domain expert interested in AI." | "Built a [domain] golden set of [n] real tasks with a rubric and two-reviewer agreement of [statistic]; piloted with [n] colleagues; time saved [x]." |
+| "Kubernetes engineer learning LLM training." | "Served [open-weight model] with vLLM on autoscaled GPU node pools; measured TTFT, p95 latency and cost per 1,000 tokens against SLOs; [runbook link]." |
+| "Completed employer GenAI certification programme." | "Deployed internal GenAI tool to [N] colleagues; tracked active weekly usage against licences and logged regression failures into CI evals." |
 
 ## Checklist
 
 - [ ] Route, hours tier and target loop type written down; diagnostic scored and fast tests run
-- [ ] Internal ask made in the first two weeks, with a check-in 6–8 weeks out
-- [ ] 30 hand-written eval cases versioned; v0 shipped within two weeks, logging traces
+- [ ] Internal ask (or IT-services bridge request) made in the first two weeks, with a 6–8 week check-in (or two-quarter time-box for IT-services bridges)
+- [ ] 30 hand-written eval cases versioned and v0 shipped within two weeks (or serving v0 with latency/cost metrics for DevOps/SRE)
 - [ ] Adherence logged weekly; tier changed after three weeks below 70% of plan
-- [ ] Month 3, G1: 50+ eval cases, 2+ baselines, an error taxonomy from 100+ traces with counts, a 500+ word memo; README numbers reproduce in under 30 minutes
-- [ ] Month 6, G2: eval in CI with a regression threshold; judge validated on 100+ labels with agreement and one bias test; p50/p95 latency and cost per request; a real user; one postmortem
-- [ ] Month 9, G3: a second system with a different failure surface; a public write-up with numbers; one discussion-first external contribution; 5+ mock loops; 15–20 targeted applications
-- [ ] Month 12, G4: an offer or internal move, or a funnel diagnosis reviewed by a practitioner and a re-plan
+- [ ] Month 3, G1: measured v0 (evals + baselines + error taxonomy for app/PM routes; served model + latency/cost per 1,000 tokens for DevOps/SRE)
+- [ ] Month 6, G2: operable v1 (CI evals + judge calibration + telemetry + real user; GPU autoscaling + SLOs + runbook for DevOps/SRE)
+- [ ] Month 9, G3: a second system on a different failure surface; a public write-up with numbers; one discussion-first external contribution; 5+ mock loops; 15–20 targeted applications
+- [ ] Month 12, G4: an offer or internal move, or a funnel diagnosis reviewed by a practitioner and a re-plan (with a week-27 long-tail check)
 - [ ] Monthly funnel review held and recorded
 - [ ] Only one funnel worked per 90-day block
 
@@ -407,31 +521,37 @@ Change: [loop type | level | hours tier]; reviewed by [practitioner] on [date]
 | Red flag | Why it hurts | Fix |
 |---|---|---|
 | Hours not logged | Planning fallacy: the one detailed retrospective spent much of its effort on evaluation, retrieval tuning and latency work that tutorials rarely budget for [D · T0-06 L786] | Log hours weekly; move to the next-longer tier when adherence is below 70% |
-| Success stories quoted as base rates | Every retrospective comes from someone who made it; no denominator exists [D · T0-06 L787] | Treat all ranges as conditional; track your own funnel |
+| Success stories quoted as base rates | Every retrospective comes from someone who made it; no denominator exists [D · T0-06 L787] | Treat all ranges as conditional; track your own funnel and plan for BLS's 27-week+ tail [B · T0-67 L72] |
 | Months 4–5 feel fraudulent | The retrospective describes this trough in both directions [D · T0-06 L788] | Pre-commit to G2 as the checkpoint, not to a feeling |
 | A foundations-first plan for an application role | Tutorial hell; hiring write-ups ask for building and evaluating [D · T0-06 L253, L789] | Ship v0 in two weeks; reverse this only for the research-engineer track |
+| Studying model training before serving (DevOps/SRE) | Training appeared in 0 of 11 inference/SRE extracts; serving frameworks appeared in 11 of 11 [B/M · T0-67 L62, L341] | Start with vLLM/Triton serving, GPU scheduling, SLOs and cost per 1,000 tokens |
+| Counting corporate AI training as proof (IT services) | Training counts far outstrip active use or AI-role headcount (Wipro ~60k/242k active; Accenture ~550k trained vs ~110k AI pros) [B/C · T0-67 L61, L348] | Ship a deployed system with measured usage and reproducible public code |
+| Targeting frontier-lab AI PM or FDE below the experience gate | Frontier AI-PM postings gate at 5–10+ yrs and FDE at 5+ yrs customer-facing deployment [B · T0-67 L63, L343, L346] | Enter via enterprise/mid-size AI PM (~3 yr gate) first and ship an evaluated LLM feature |
+| Relying on mass graduate applications or a CS master's alone | UK graduate roles average 141 applications per vacancy [B · T0-67 L57]; CS master's cost-adjusted return is +6% [B · T0-67 L64] | Prioritise in-person internships (71.9% offer rate [B · T0-67 L65]); take a master's only for a concrete visa or research reason |
 | Building in private | The retrospective built privately for five months and says visibility mattered [D · T0-06 L790] | Publish at G1 |
 | Mass applications | 66% of recruiters plan to increase AI pre-screening in 2026, per LinkedIn [A · T0-06 L843] | Targeted applications with role-specific artifacts |
 | Drive-by pull requests for G3 | AI "slop" has made them a liability [B · T0-12.F10] | Contribute discussion-first |
-| Mixing funnels | Different gatekeepers and proof [M · T0-06 L255] | One funnel per 90-day block |
+| Mixing funnels | Different gatekeepers and proof [B · T0-67 L373; M · T0-06 L255] | One funnel per 90-day block |
 | Burnout at tier B | Tier B's 17.5 h/week is 56–74% of average leisure [M · T0-06 L382, L792] | Schedule recovery, or accept tier A and a longer horizon |
-| Chasing API releases | AI SDK 6 and WebMCP both changed shape within months [C · T0-06 L793] | Freeze stack choices for six weeks; invest in concepts |
+| Chasing API releases | AI SDK 6 was superseded by AI SDK 7 within six months and WebMCP renamed its API [B/C · T0-68 L79, L365] | Freeze stack choices for six weeks; invest in concepts |
 
 ## Evidence and limits
 
-- **Measured:** the market context. Demand weighting and the wage premium are B [B · T0-06.F1]; the junior squeeze is A but contested by other studies [A · T0-06 L118; C · T0-06 L122]; time-use data are A; the survey rankings are B.
-- **Modelled:** every month count, hours figure and gate on this page is T0-06's model (M). Confidence is medium-low for backend and low for the rest [T0-06 L263–269], and the model is most sensitive to core hours, its least-validated parameter [T0-06 L387].
-- **Judgement:** T2-01's viability matrix and skills-stage week plans are design judgements [D · T2-01 L104]. The provisional routes are [P].
-- **Not found:** longitudinal cohort studies, success denominators, time to offer by background, non-vendor bootcamp outcomes, and AI PM or AI-ops transition rates [T0-06 L816–823].
-- **Survivorship:** every anchor is a success story [T0-06 L804].
-- **Errata applied:** U7 and U14 (tier band values not used), U8 (the 8.2-year median is the AI consultants' figure), U9 (five high-volume corridors), U13 (retired AWS exam), U18 (PhDs run the skills stage).
-- **What would change this advice** [T0-06 L861–864]: a cohort study showing different speeds by background would rewrite the timelines; evidence that credentials outperform artifacts would revise the gates; agent-conducted interviews would revise the loop guidance; a collapse in posting volumes would extend every horizon.
+- **Measured:** market demand weighting and wage premium (B) [B · T0-06.F1; B · T0-67 L224]; the US early-career employment gap (19% as of 2026-06-30, descriptive, not causal, contested by other studies; B per T0-67) [B · T0-67 L52, L369; C · T0-06 L122]; BLS time-use data (A) and August 2026 unemployment duration (B) [B · T0-67 L223]; IIT Guwahati 2025–26 official placement report (A) [A · T0-67 L240]; NACE, ISE, NY Fed, Eurostat and Statistics Canada graduate indicators (B) [T0-67 L55–58, L214–230, L272].
+- **T0-67 access and sample caveat:** T0-67 opened only 7 of 75 cited sources in full (68 were read as search extracts, capping their grade at B), includes 14 conflicted vendor/industry sources, and uses small convenience posting samples (11 inference/SRE/MLOps, 6 AI PM, 2 FDE) that do not represent entire markets [T0-67 L22, L42, L425].
+- **Modelled:** every month count, hours figure and gate for Routes 1–5 is T0-06's model (M). Confidence is medium-low for backend and low for the rest [T0-06 L263–269], and the model is most sensitive to core hours, its least-validated parameter [T0-06 L387]. Routes 6–9 have **no measured transition timelines** (A1) [E · T0-67 L327–330, L379].
+- **Judgement:** T2-01's viability matrix and skills-stage week plans are design judgements [D · T2-01 L104]. Gate metrics for Routes 6–9 are practice-curated [P · T0-67 L134–308].
+- **Not found (Grade E):** longitudinal cohort studies, success denominators, measured time to first offer by background [T0-06 L816–823; T0-67 L379], the four Phase 0 internal-transfer accounts (A2) [T0-67 L380], employer-published AI-PM or inference/FDE interview guides (A3, A10) [T0-67 L381, L388], independent outcome data for competitions, open source, fellowships or bootcamps (A4, A5, A20) [T0-67 L382–383, L398], an EU-wide AI-specific graduate series (A6) [T0-67 L384], IT-services reskilling move rates (A9) [T0-67 L387], and AI-specific master's returns (A17) [T0-67 L395].
+- **Open source conflicts:** TCS FY26 fresher counts conflict (>25,000 offers on the company call vs 44,000 onboarded in secondary press) [T0-67 L419]; NACE's two AI-skill entry shares conflict (10.5% vs >1/3) [T0-67 L56, L423]; US OPT counts conflict across summaries (240k, 300k, 418k) [T0-67 L422].
+- **Survivorship:** every retrospective anchor comes from someone who succeeded [T0-06 L804].
+- **Errata applied:** U7 and U14 (tier band values not used), U8 (the 8.2-year median is the AI consultants' figure), U9 (five high-volume corridors), U13 (retired AWS exam), U18 (PhDs run the skills stage), plus the T0-67 K2 correction to T0-06 L108 (Axial's 66% is mid plus senior; total IC sits near 86%) [C · T0-67 L54, L368].
+- **What would change this advice** [T0-06 L861–864; T0-67 L70–91]: a cohort study showing measured speeds by background would rewrite the timing tables; published internal move rates from IT-services firms would replace the two-quarter bridge rule; finalisation or permanent vacatur of US OPT and H-1B fee rules would change study-abroad planning; evidence that credentials outperform artifacts would revise the gates.
 
 ## Next steps
 
 - **Choose the target:** the [targeting workbook](../00-start/targeting-workbook.md), [GenAI target roles](../02-roles/genai-target-roles.md) and the [role map](../02-roles/role-map.md).
-- **Learn:** the [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md), [skill maps](../03-skills-and-tech/role-skill-maps.md) and the [skills radar](../03-skills-and-tech/skills-radar.md). Certificates are a tie-breaker at best: see [credential ROI](../04-certifications/credential-roi.md).
+- **Learn:** the [learning roadmaps](../03-skills-and-tech/learning-roadmaps.md) (with rated free and paid resources), [skill maps](../03-skills-and-tech/role-skill-maps.md) and the [skills radar](../03-skills-and-tech/skills-radar.md). Certificates are a tie-breaker at best: see [credential ROI](../04-certifications/credential-roi.md).
 - **Build G1–G3 artifacts:** [project archetypes](../05-portfolio/project-archetypes.md) and [proof-of-work standards](../05-portfolio/proof-of-work-standards.md).
 - **Search and interview:** [job-search strategy](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings), [referrals and outreach](../07-networking/referrals-and-outreach.md), [interview loops](../08-interviewing/interview-loops.md) and the [prep packs](../08-interviewing/prep-packs.md).
 - **Other tracks:** [PhD to industry](phd-to-industry.md), [India remote playbook](india-remote-playbook.md), [governance careers](governance-careers.md), [freelance and fractional](freelance-fractional.md) and [visa and relocation](visa-and-relocation.md).
-- **After the offer:** [first 90 days](../10-onboarding/first-90-days.md).
+- **After the offer:** [first 90 days](../10-onboarding/first-90-days.md) and [growth and progression](../10-onboarding/growth-and-progression.md).

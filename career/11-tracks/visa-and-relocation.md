@@ -1,220 +1,123 @@
 ---
 id: tracks.visa-and-relocation
-title: "Visa and Relocation: Talent-Visa Corridors for AI Professionals"
+title: "Visa and Relocation: Global Talent-Visa Corridors for AI Professionals"
 content_type: guide
 stage: 11
 status: published
-last_verified: 2026-11-06
-review_by: 2026-08-01
-summary: "Which talent-visa and employer-offer routes fit an AI professional, with depth for Indian nationals: what evidence each needs, how long and how much it takes, whether to relocate at all, and what to verify before acting. Not legal advice."
-sources: [T0-08, T2-01]
+last_verified: 2026-11-19
+review_by: 2026-12-03
+summary: "Global visa corridor comparison across 31 countries in six regions for GenAI professionals, with Indian-national depth, the central V0 contested-rule status table, and the O-1A / UK Global Talent evidence playbook. Not legal advice."
+sources: [T0-08, T0-37, T0-38, T0-39, T0-40, T0-41, T0-42, T2-01]
 roles: [all]
-geos: [global, india, us, uk, canada, germany, france, singapore, uae]
-tags: [visa, relocation, immigration, o-1a, uk-global-talent, canada-gts, eu-blue-card, singapore-one-pass, uae-golden-visa, india, evidence-ledger]
+geos: [global, in, us, ca, uk, ie, de, nl, fr, ch, se, dk, fi, no, es, pt, pl, ee, at, it, ae, sa, qa, bh, il, sg, jp, kr, tw, hk, au, nz, my]
+tags: [visa, relocation, immigration, o-1a, h-1b, uk-global-talent, canada-gts, eu-blue-card, singapore-one-pass, uae-golden-visa, india, evidence-ledger]
 ---
 
-# Visa and Relocation: Talent-Visa Corridors for AI Professionals
+# Visa and Relocation: Global Talent-Visa Corridors for AI Professionals
 
-> Which talent-visa and employer-offer routes fit an AI professional, with depth for Indian nationals: what evidence each needs, how long and how much it takes, whether to relocate at all, and what to verify before acting. Not legal advice.
+> Global visa corridor comparison across 31 countries in six regions for GenAI professionals, with Indian-national depth, the central V0 contested-rule status table, and the O-1A / UK Global Talent evidence playbook. Not legal advice.
 
 > [!CAUTION]
-> **Pointers, not legal advice. Verify the rules in force before you act.** This page curates one dated audit, [T0-08](../../research/sessions/T0-08-global-talent-visa-relocation-pathways.md) (as of 21 October 2026), which calls itself "a research audit, not legal advice" [T0-08 L19]. Thresholds, fees and processing times change within weeks. Before you resign, sign, pay or file, confirm each rule on the official pages listed under "How to do it" and with licensed counsel in the destination country [T0-08 L74].
+> **Pointers to official sources, not legal or immigration advice.** Thresholds, statutory fees, processing queues, and federal court injunctions change without notice. Confirm every rule directly on the national immigration authority's portal and with licensed immigration counsel in the destination country before signing an offer, resigning, paying fees, or filing.
 
-**The status rows are past their expiry.** Every pending, contested or monthly-changing fact on this page sits in one dated [status table](#status-table). Each row is past its expiry class (14 or 31 days), or carries no date at all: check the official source named in the row before acting.
+**Ownership and freshness (D-025).** This hub owns the cross-corridor decision framework, the O-1A / Global Talent evidence playbook, and the **central [status table](#status-table)** tracking every pending, contested, or monthly-changing rule (V0/V1) across all six regions. Every status row was re-verified via live web check on `2026-11-19` (`review_by: 2026-12-03`, the 14-day V0 cadence under [D-018](../../research/DECISIONS.md)). Country-level mechanics, thresholds, fees, dependants, and bilateral notes live in the six [regional visa dossiers](visa/README.md).
 
-**Dates and grades.** Route rules and fees are as T0-08 read them on 21 October 2026; sources marked "re-checked" were fetched again on 22 October 2026 [T0-08 L464]. Expiry follows [decision D-018](../../research/DECISIONS.md). The rule facts in the body (statute, guidance and fee text; class V4) last 365 days from that reading. Pending or contested statuses (class V0, 14 days) and monthly series such as the Visa Bulletin, consular waits and processing times (class V1, 31 days) are in the status table, each with the date it describes. This page counts their expiry from that date, D-018's conservative option, because re-reading an old status later does not re-verify it. The earliest is the July 2026 processing-time figure for O petitions (class V1, counted from 1 July 2026), so `review_by` is 2026-08-01: the page was due before it was published, and stays due until someone re-verifies the table. Grades (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement; M model output (here, T0-08's arithmetic over cited ranges); P practice-curated and unmeasured.
+**Evidence grades (EGP-1.0).** `[A]` primary government text or measured registry read directly; `[B]` transparent secondary, official snippet/fetch summary, or live web check against official/law-firm consensus; `[C]` single vendor, practitioner estimate, or conflicted source; `[D]` analytical judgement; `[M]` arithmetic over cited ranges; `[P]` practice-curated workflow. Where an underlying research session could not read raw official HTML/PDF (for example `uscis.gov`, `travel.state.gov`, `legifrance.gouv.fr`, and several Gulf/APAC portals), claims are capped at `[B]` unless confirmed from primary text.
 
 ## The short answer
 
-1. **Choose by the gate you already pass, not by the country you prefer.** The routes split into three gates: a qualifying job offer (EU Blue Card in Germany or France, Canada's Global Talent Stream), a salary test (Singapore ONE Pass, UAE Golden Visa), or adjudicated merit (UK Global Talent with no employer, US O-1A with a petitioner) [A · T0-08 L365–L367]. Use a salary-gated pass only if you already meet the salary test [D · T0-08 L79].
-2. **With an offer, the employer routes are the fastest and least ambiguous.** Germany's 2026 Blue Card floors are €50,700, or €45,934.20 for ICT and other shortage roles, and ICT specialists without a degree qualify with 3 years' experience in the last 7 [A · T0-08.F9]. With the employer's §81a fast-track the process takes about 2–3 months [M · T0-08 L99], and settlement can follow after 21 months with B1 German or 27 months with A1 [B · T0-08.F9].
-3. **Without an employer, UK Global Talent is the only route that needs no job.** A Tech Nation endorsement (one mandatory and two optional criteria, three dated letters, up to ten evidence items) comes before the visa; fees are £766 plus the Immigration Health Surcharge (IHS) of £1,035 a year [A · T0-08.F7]. No Exceptional Promise pass rate is published; law-firm and adviser pages report historical endorsement rates of about 72% across all fields and 54–65% for digital technology [C · T0-08.F7].
-4. **O-1A is open to industry engineers, but it rewards proof, not credentials.** USCIS sets no degree, PhD or citation prerequisite: a major award or three of eight criteria, then a final-merits judgement of sustained acclaim [A · T0-08.F1]. In one vendor's summary of nine appeal decisions, petitions failed on evidence that names the company rather than the person, invitations offered as judging, and letters that assert rather than explain [C · T0-08.F2]. Plan 12–18 months of evidence work (a practitioner estimate) [C · T0-08 L96] and US$10k–25k all-in (vendor-published budgets) [C · T0-08.F4].
-5. **Treat O-1A as a bridge, not a green card.** Permanent residence needs a separate petition, and the EB-1 India queue ran years behind in the October 2026 Visa Bulletin ([status table](#status-table)) [B · T0-08.F6]. If settlement is the goal, Germany and the UK have defined paths [B · T0-08 L369].
-6. **Build one dated evidence ledger, and re-verify before every step.** Completed judging, outside adoption of your work, press that names you and independent expert letters serve O-1A, Tech Nation's criteria and Singapore's experience conditions alike [D · T0-08 L90]. Check every row of the [status table](#status-table) on its official page within 14 days of acting [P · D-007].
+1. **Choose by the gate you already pass, not by the country you prefer.** Every corridor across the 31 audited countries filters on one of four gates: a **qualifying job offer** (Ireland CSEP, Germany/Spain/Netherlands/France EU Blue Card & HSM, Canada GTS, Singapore EP, Australia SID 482, New Zealand Green List), a **salary or prior-income test** (Singapore ONE Pass, Taiwan Gold Card, Hong Kong TTPS Cat A, UAE Golden Visa), **adjudicated merit** (US O-1A with a petitioner; UK Global Talent with no employer), or **points / job-search / digital-nomad entry** (Germany Opportunity Card, Austria RWR search visa, Spain DNV, Malaysia DE Rantau) `[A/B · T0-08 L365–L367; T0-39–T0-42]`.
+2. **With a job offer, European, Canadian, and APAC employer routes beat US lottery friction.** Germany's 2026 EU Blue Card (€50,700 std / €45,934.20 shortage; 21–27m PR) and two degree-free IT routes (`T0-39 L75–L77`), Ireland's CSEP (€40,904; 21-month Stamp 4, `T0-39 L81–L82`), Finland's 2-week Specialist fast track (€3,937/mo, `T0-40 L54`), Singapore's EP (explicit AI Shortage Occupation List, 10 business days, `T0-42 L63`), Australia's SID 482 Specialist Skills (AUD 146,576, 37–78d, 2y PR, `T0-42 L70`), and New Zealand's Green List Tier 1 Software Engineer (NZ$72.80/h, immediate PR, `T0-42 L71`) avoid annual lotteries entirely. Canada's GTS Category B takes 1–3 months realistically from India (`T0-38 L50`).
+3. **Without an employer, UK Global Talent, Taiwan Gold Card, Hong Kong TTPS, and Germany's Opportunity Card are the cleanest unsponsored levers.** UK Global Talent Digital Technology (endorsed by Tech Nation; £766 + IHS £1,035/yr; GOV.UK offshore endorsement wait 3 weeks as of `2026-10-27`) needs no job offer (`T0-39 L74`; live check `2026-11-19`, `[A/B]`). Prior Phase 0 pass-rate figures (`72%`, `54–65%`) were untraceable to any primary source and are retired (`T0-39 L74, L959`). Taiwan Gold Card (≥NT$160k/mo prior salary, Digital field, `T0-42 L68`) and Germany's Opportunity Card (6 points + €1,091/mo blocked funds, `T0-39 L76`) offer strong regional alternatives.
+4. **US entry in late 2026 requires dodging Level I H-1B odds and front-loading every packet.** Wage-weighted H-1B selection (4/3/2/1 entries for OEWS Levels IV–I) is in force, dropping Level I modelled odds to ~15% (`T0-37 L74, L191`, `[A]`). The `$100,000` H-1B proclamation is blocked by federal courts (not permanently struck down — appeals remain live) and DHS's `$103,265` cap-subject H-1B NPRM has no final rule as of `2026-11-19` (`T0-37 L75–L76`; live check `[B]`). Under USCIS **PA-2026-05** (`2026-08-05`), officers may deny incomplete petitions without an RFE (`T0-37 L77–L78`, `[A]`). O-1A remains viable (91.0% combined O approval FY2026 Q1–Q3, `[B · T0-37 L78]`), while EB-1A fell to 32.2% in FY2026 Q3 (`[C · T0-37 L79]`).
+5. **For Indian nationals, separate entry speed from permanent-residence speed.** US EB-2 (`2013-11-01`, ~13.0y, 356,360 waiting) and EB-3 (`2014-01-22`, ~12.8y) face multi-decade effective queues (`T0-37 L80, L238`, `[B]`), Gulf states offer 0% tax with no standard PR/citizenship (`T0-41 L56–L63`), and Israel caps B/1 work stays at 63 months with no PR (`T0-41 L64`). By contrast, Canada, Ireland, Germany, Finland, Australia, and New Zealand impose **zero per-country Indian PR backlogs** (`T0-38–T0-42`).
+6. **Build one dated evidence ledger and re-check V0 rows within 14 days of acting.** Completed judging, named outside adoption, press naming you, and independent expert letters serve US O-1A, UK Global Talent, and senior merit screens alike (`T0-08 L90`). Re-verify the [status table](#status-table) on official portals before every commitment `[P · D-007]`.
 
 ## At a glance
 
 ```mermaid
 flowchart TD
     Q1["Must you live in the destination country to do the work you want?"]
-    Q1 -->|"No"| REM["Stay remote and keep building evidence"]
+    Q1 -->|"No"| REM["Stay remote from India or current base"]
     Q1 -->|"Yes"| Q2["Which gate do you already pass?"]
-    Q2 -->|"A qualifying job offer"| OFFER["Employer routes"]
-    Q2 -->|"Fixed pay at a pass threshold"| PAY["Salary-gated passes"]
-    Q2 -->|"Impact recognised outside your employer"| MERIT["Merit routes"]
-    Q2 -->|"None yet"| LEDGER["Open an evidence ledger and stay remote meanwhile"]
-    OFFER --> DE["Germany Blue Card: about 2-3 months"]
-    OFFER --> CA["Canada GTS: about 1-2 months after the offer"]
-    OFFER --> FR["France Blue Card: EUR 59,373 floor, timeline not established"]
-    PAY --> SG["Singapore ONE Pass: S$30,000 fixed a month for 12 months"]
-    PAY --> AE["UAE Golden Visa: AED 30,000 a month"]
-    MERIT --> UK["UK Global Talent: about 3-6 months, no employer"]
-    MERIT --> US["US O-1A: about 15-27 months from a cold start"]
-    LEDGER --> MERIT
+    Q2 -->|"Qualifying job offer"| OFFER["Employer-sponsored routes"]
+    Q2 -->|"High salary or prior income"| PAY["Salary / income-gated passes"]
+    Q2 -->|"Outside-verified acclaim"| MERIT["Adjudicated merit routes"]
+    Q2 -->|"Search / remote-work funds"| SEARCH["Search & digital-nomad routes"]
+    OFFER --> EU["EU / UK / IE: DE Blue Card, IE CSEP, NL HSM, FI Fast-Track, UK SW"]
+    OFFER --> CA["Canada: GTS Cat B (1-3m) or ICT C12"]
+    OFFER --> APAC["APAC: SG EP (AI SOL), AU SID 482, NZ Green List Tier 1"]
+    OFFER --> US1["US: H-1B (OEWS III-IV) or L-1 transfer"]
+    PAY --> SG["Singapore ONE Pass (AI & Tech 2027-01-28)"]
+    PAY --> TW["Taiwan Gold Card / HK TTPS Cat A / UAE Golden Visa"]
+    MERIT --> UK["UK Global Talent (no employer, 3w abroad)"]
+    MERIT --> US2["US O-1A (15d prem + 12-18m prep; bridge to EB-1A)"]
+    SEARCH --> DNV["DE Opportunity Card / AT Search D / ES DNV / MY DE Rantau / AE Virtual"]
 ```
-
-Timelines are T0-08's arithmetic over cited ranges, and "targets are not guarantees" [M · T0-08 L92].
 
 ## Status table
 
-Every fact on this page that was pending, contested or part of a monthly series when T0-08 read it, with the date the status describes. Under decision D-018 a contested or pending status (class V0) expires 14 days after that date, and a monthly series (class V1) after 31 days; a month-only date counts from the month's first day, and an undated source can be valid at best until its class expires after the day T0-08 read it. **Every row is past its expiry, or undated: check the official source before acting.** The stable rule facts stay in the sections below.
+This table is the **single repository owner** for every contested, enjoined, proposed, or rapidly shifting immigration rule (V0/V1) across all six regions. Every row was live-verified via web search on `2026-11-19`. Verify directly on the linked official authority before acting.
 
-| Route | Item | Status as T0-08 recorded it | As of | Class and expiry | Official source to check | Grade · source |
-|---|---|---|---|---|---|---|
-| US | H-1B $100,000 proclamation | Extended to 21 Sep 2027, but struck down by two courts (Massachusetts in June 2026; N.D. California on 30 Sep 2026, scope of that ruling not confirmed). H-1B is outside this audit | Re-checked 22 Oct 2026 | V0; expired 5 Nov 2026 | USCIS H-1B pages and the court orders; T0-08 read law-firm summaries | B · T0-08 L230, L433, L485 |
-| US | DHS H-1B fee proposal of $103,265 (August 2026) | Pending; not affected by the two rulings | Re-checked 22 Oct 2026 | V0; expired 5 Nov 2026 | The proposal in the Federal Register | B · T0-08 L230, L485 |
-| US | O-1 chapter of the USCIS Policy Manual | T0-08 read a cached chapter that predates the January 2025 revision (PA-2025-02). AILA reported the revision still in effect on 4 Feb 2025; T0-08 found no later rollback but did not read the live chapter | 21 Oct 2026 | V0; expired 4 Nov 2026 | USCIS Policy Manual, Vol. 2 Part M | A/B · T0-08 L169, L413 |
-| US | Standard processing of O petitions | Sources conflict: a tracker reports 12.5 months to complete 80% of O petitions; a vendor page cites about 4–6 months. USCIS's own processing-time page was not opened | July 2026 (tracker); vendor page undated | V1; expired 1 Aug 2026 | USCIS processing times | B/C · T0-08 L198 |
-| US | Consular appointment waits in India (petition-based visas) | About 1.5 months at Chennai and Mumbai, 3 at New Delhi and 5.5 at Hyderabad (State Department data via aggregators) | 17 Sep 2026 | V1; expired 18 Oct 2026 | State Department visa appointment wait times | C · T0-08 L219 |
-| US | Visa Bulletin, India | EB-1 final action 1 Feb 2023 (filing date 1 Jul 2024), about 3.7 years behind; EB-2 1 Nov 2013; EB-3 1 Jan 2014 | October 2026 bulletin; summaries re-checked 22 Oct 2026 | V1 (monthly); expired 1 Nov 2026 | State Department Visa Bulletin; T0-08 read law-firm summaries | B · T0-08 L221, F6 |
-| UK | English level for settlement | A law-firm page reports B2 for settlement applications from 26 Mar 2027 under HC 1691, on routes including Global Talent; the Home Office guidance (v19.0) states B1 and no change date. HC 1691 was not retrieved, so plan for B2 | 24 Sep 2026 (law stated on that page); re-checked 22 Oct 2026 | V0; expired 8 Oct 2026 | HC 1691 on GOV.UK or legislation.gov.uk | C · T0-08 L271, L423 |
-| UK | Earned settlement (a 10-year baseline) | Consultation ran 20 Nov 2025 to 12 Feb 2026; no government response, and no Statement of Changes had introduced the baseline; stated target autumn 2026 | 24 Sep 2026 | V0; expired 8 Oct 2026 | GOV.UK: the consultation response and Statements of Changes | C · T0-08 L271, L425 |
-| UK | Tech Nation endorsement time | About 5–8 weeks, per secondary sources | Undated sources, read 21 Oct 2026 | V1; undated, so at best valid to 21 Nov 2026 | GOV.UK Global Talent; Tech Nation | C · T0-08 L238 |
-| Canada | Employer test for LMIAs | Secondary coverage reports that from 18 Sep 2026 staffing agencies recruiting for other businesses are not employers; the ESDC page re-read on 22 Oct 2026 carries a "New: September 18, 2026" heading but does not describe the change | 22 Oct 2026 | V0; expired 5 Nov 2026 | ESDC Global Talent Stream requirements | B · T0-08 L299 |
-| Canada | Pathway for H-1B holders | Announced in Budget 2025; no launch or eligibility rules published. IRCC consulted from 4 Aug to 1 Sep 2026 on 2027 Express Entry categories, including a possible H-1B category | September 2026 | V0; expired 15 Sep 2026 | IRCC Express Entry announcements | B/C · T0-08 L301 |
-| Germany | 2027 Blue Card salary floors | Not yet published; the floors are published in December. One secondary source derives €53,100 and €48,108.60 | 22 Oct 2026 | V0; expired 5 Nov 2026 | The Bundesanzeiger notice; the Berlin immigration office page | C · T0-08 L322; D · T0-08 L425 |
-| France | Minimum contract for the Blue Card | At least 6 months per summaries of Decree 2026-308; at least one year per the France-Visas page re-read on 22 Oct 2026. Unresolved | 22 Oct 2026 | V0; expired 5 Nov 2026 | France-Visas; the prefecture | A/B · T0-08 L326 |
-| France | Shortage occupations | The ministerial order listing occupations (3 years' experience in the last 7) was not yet published; a 1.2× shortage threshold appears on one employer-guide site only | 22 Oct 2026 | V0; expired 5 Nov 2026 | France-Visas | B/C · T0-08 L326, L328 |
-| Singapore | ONE Pass AI & Tech track | Announced to open on 28 Jan 2027 (MOM page updated 14 Sep 2026); the final rules were an open question | 21 Oct 2026 | V0; expired 4 Nov 2026 | MOM ONE Pass eligibility | A · T0-08 L335, L420 |
-| UAE | Dubai Golden Visa documentation | Reported tightening: AED 30,000 basic salary excluding allowances, two years of payment evidence and a link to tenure with the current employer. The advisory is undated | Undated advisory, read 21 Oct 2026 | V0; undated, so at best valid to 4 Nov 2026 | ICP | B/C · T0-08 L352, L419 |
+| Region / Country | Rule or series | Volatility | Status as of `2026-11-19` | Next trigger / watch date | Evidence & source |
+|---|---|---|---|---|---|
+| **US** | `$100,000` H-1B Proclamation (10973; extended by 11069 to `2027-09-21`) | V0 | **Blocked / not collected.** Agency policies vacated (`California v. Mullin`, D. Mass. `2026-06-08`; 1st Cir. stay denied `2026-07-24`) & enjoined (`Global Nurse Force v. Trump`, N.D. Cal. `2026-09-30`); `Chamber of Commerce` upheld at D.D.C. (D.C. Cir. undecided). Appeals live. | Circuit rulings (1st, 9th, D.C. Cir.) | `[B · T0-37 L75, L296; live check 2026-11-19]` |
+| **US** | DHS `$103,265` cap-subject H-1B fee NPRM (`91 FR 54817`, `USCIS-2026-0298`) | V0 | **Proposed only (not in effect).** Comments closed `2026-09-24`; no final rule published. Cap-exempt excluded. | Publication of Final Rule | `[A/B · T0-37 L76; live check 2026-11-19]` |
+| **US** | DHS `$70k/$30k` OPT school fee NPRM (`91 FR 64566`, `ICEB-2026-0100`) & 60-day grace-period elimination (`91 FR 57807`) | V0 | **Proposed only.** OPT core comments closed `2026-11-09` (PRA comments open to `2026-12-07`); grace-period comments closed `2026-11-10`; deference (`USCIS-2026-0529`) & DOL wage (`91 FR 15454`) also pending. | `2026-12-07` PRA close / Final Rules | `[B · T0-37 L77, L82; live check 2026-11-19]` |
+| **US** | USCIS **PA-2026-05** (denial without RFE/NOID) & `AAUP v. Mullin` (`1:26-cv-14527`) | V0 | **In force** since `2026-08-05`; federal challenge filed `2026-10-05` in D. Mass., pending. | District court ruling | `[A/B · T0-37 L77–L78; live check 2026-11-19]` |
+| **US** | Gold Card (`EO 14351`, Form I-140G) & `AAUP v. DHS` | V0 | **Live** inside existing EB-1/EB-2 caps (`$1M`/`$2M` + `$15k`); low early approvals; litigation pending. | Court ruling / USCIS data | `[B · T0-37 L85, L145; live check 2026-11-19]` |
+| **US** | `$250` Visa Integrity Fee (P.L. 119-21) | V0 | **Enacted; staggered consular rollout.** Active at select US posts; check local embassy payment instructions before interview. | Consular rollout notices | `[B · T0-37 L177; live check 2026-11-19]` |
+| **US** | Visa Bulletin (India Final Action) & O-1A adjudication stats | V1 | **December 2026 bulletin not yet published** as of `2026-11-19`. **November 2026 India Final Action:** EB-1 `2023-02-01`, EB-2 `2013-11-01`, EB-3 `2014-01-22` (DOF: `2024-07-01` / `2015-01-15` / `2015-01-15`). O-class FY2026 Q1–Q3 approval **91.0%** (Q4 unpublished). | Dec 2026 bulletin (imminent) | `[B · T0-37 L78, L80; live check 2026-11-19]` |
+| **US** | Wage-weighted H-1B cap selection (`90 FR 60864`) | V1 | **In force** since `2026-02-27` (4/3/2/1 entries for OEWS IV–I). FY2027 filled (no second round); FY2028 dates unpublished (historically March). | FY2028 registration notice (early 2027) | `[A/B · T0-37 L74, L192; live check 2026-11-19]` |
+| **Canada** | Express Entry CRS overhaul (`2026-11-03`) & invitation-round pause | V0 | **Draws paused through mid-November 2026** for score recalculation (+high-wage LMIA-free points; researcher update `2026-11-17`). No post-reset CEC cut-off published yet; zero STEM draws in 2025–2026. | First post-reset Express Entry draw | `[A/B · T0-38 L51–L53; live check 2026-11-19]` |
+| **Canada** | Budget 2025 H-1B pathway, AI GTS expansion & Start-Up Visa pause | V0 | **H-1B pathway not launched** (consultations closed `2026-09-01`); **AI GTS rules unpublished**; **Start-Up Visa paused** since `2026-06-30` (replacement pilot unconfirmed). | 2027 IRCC category announcements | `[A/B · T0-38 L54–L55, L57; live check 2026-11-19]` |
+| **UK** | Earned Settlement (*A Fairer Pathway to Settlement*, CP 1707) & B2 English | V0 | **Policy confirmed (`2026-11-02`):** 10y default, 5y at ≥£50,271, 3y at ≥£125,141 — **no implementing Statement of Changes laid yet** as of `2026-11-19`. **B2 English for settlement enacted** (`2027-03-26`); Graduate shrinks to 18m (`2027-01-01`). | Dec 2026 Statement of Changes | `[A/B · T0-39 L71, L73, L233; live check 2026-11-19]` |
+| **UK** | Global Talent Digital Technology endorsing body & wait | V1 | **Tech Nation** confirmed as continuing endorsing body; GOV.UK wait **3w abroad / 8w inside UK** (`2026-10-27`). | Ongoing GOV.UK updates | `[A/B · T0-39 L74, L958; live check 2026-11-19]` |
+| **Germany** | 2027 EU Blue Card salary thresholds (`Drucksache 576/26`) | V0 | **Pending Bundesrat / BMI notice.** Draft €106,200 ceiling implies €53,100 std / €48,108.60 reduced (`[M]`); **2026 binding floors remain €50,700 / €45,934.20**. | Dec 2026 Bundesanzeiger notice | `[A/M · T0-39 L75; live check 2026-11-19]` |
+| **Netherlands** | 30% → 27% expat tax ruling (`Belastingplan 2027`) & 2027 IND HSM norms | V0 | **27% cap legislated for `2027-01-01`** (2024+ entrants; pre-2024 transitional 30%). *Belastingplan 2027* **passed Tweede Kamer (`2026-11-12`, 76–74)**, now before Eerste Kamer. **2027 IND HSM norms unpublished** (2026: €5,942 / €4,357). | Dec 2026 Eerste Kamer vote & IND notice | `[B · T0-39 L78–L79; live check 2026-11-19]` |
+| **France** | Decree 2026-1001 (`2026-10-30`) & Blue Card min contract length | V0 | **Decree in force `2026-10-30`** (90d decision limit, 6m employer-change cap, unemployment search window). Minimum contract duration still conflicts across official sites (`service-public.fr` none vs older 6m/12m text); ICT floor pending order. | Ministerial ICT order / portal reconciliation | `[B · T0-39 L83; live check 2026-11-19]` |
+| **Switzerland** | 2027 third-country B/L federal quotas | V0 | **Pending Federal Council decision.** 2026 cap confirmed at **8,500 (4,500 B + 4,000 L)**; 2027 decree not confirmed published as of `2026-11-19`. | Late Nov 2026 Federal Council release | `[A/B · T0-39 L84; live check 2026-11-19]` |
+| **Nordics / EU** | Sweden `2026-12-02` extension floor; Portugal job-search visa; Estonia Aliens Act; EU–India FTA | V0 | **Sweden:** SEK 34,470/mo (90% median) compulsory for extensions registered ≥`2026-12-02`. **Portugal:** Law 61/2025 qualified job-search visa suspended pending *portaria*. **Estonia:** employer switch live `2026-05-22`, short-term permit ends `2027-01-01`. **EU–India FTA:** concluded `2026-01-27`, awaiting signature/ratification. | `2026-12-02` (SE); `2027-01-01` (EE) | `[A/B · T0-40 L51, L57, L61, L63; live check 2026-11-19]` |
+| **UAE & Saudi** | UAE Golden Visa AED 30k basic-vs-gross split; Saudi skill tiers & kafala | V0 | **UAE:** Law firms report strict **AED 30,000 basic salary** audits (+6m bank statements), while Arabic ADRO text does not specify basic vs gross; ADRO Green Visa nomination paused. **Saudi:** 2025 skill tiers lack published SAR floors; ILO closed Art. 26 complaint `2026-11-16` on a 5y workplan (kafala abolition unconfirmed). | Official ICP/ADRO & MHRSD texts | `[B · T0-41 L57, L61, L70; live check 2026-11-19]` |
+| **Israel** | B/1 Hi-Tech spouse work authorisation (Procedure 5.3.0043) | V0 | **Extension unconfirmed on `gov.il`.** Innovation Authority/law firms still describe open spouse B/1 EAS, but Procedure 5.3.0043 stated an end date of `2026-03-01` and only emergency 3m blanket extensions were confirmed. | PIBA updated procedure publication | `[B · T0-41 L82, L440, L451; live check 2026-11-19]` |
+| **Singapore** | Jan 2027 EP hike, Tech.Pass closure & ONE Pass AI & Tech launch | V0 | **Enacted:** EP rises to **S$6,000 / S$6,600** (`2027-01-01`); **Tech.Pass closes `2027-01-27 23:59`**; **ONE Pass AI & Tech opens `2027-01-28`** (≥S$30k total, ≥S$22.5k fixed + vested ESOP). | `2027-01-01` & `2027-01-28` | `[A/B · T0-42 L62–L64; live check 2026-11-19]` |
+| **Japan & Taiwan** | Japan HSP income ordinance & `2027-04-01` PR guidelines; Taiwan 2025 Act rules | V0 | **Japan:** PR fee jumped to **¥200,000** (`2026-10-01`); HSP ¥3m floor increase due by `2027-03-31`; B1 Japanese / pension PR rules effective `2027-04-01`. **Taiwan:** 2025 Act (1y PR at ≥NT$6m) implementing rules unverified. | `2027-03-31` / `2027-04-01` (JP) | `[B/C · T0-42 L66, L68; live check 2026-11-19]` |
+| **AU / NZ / MY** | AU SID 482 floors & MATES; NZ Green List & India FTA TEE; MY DE Rantau | V0 | **Resolved `2026-11-19`:** AU 2026–27 floors **AUD 146,576** (SSIT) / **AUD 79,423** (CSIT) (`homeaffairs.gov.au`); NZ Green List Software Engineer **NZ$72.80/h** (`immigration.govt.nz`). **Pending:** AU MATES 2026–27 ballot dates; NZ–India FTA TEE (in force `2026-10-20`, 5,000 cap, no direct PR) launch details; **MY DE Rantau reopens `2026-12-01`** at USD 36,000/yr (up to 4y). | `2026-12-01` (MY); AU MATES ballot | `[A/B · T0-42 L70–L72; live check 2026-11-19]` |
 
-T0-08's own list of items likely to change within six months of 21 October 2026 [T0-08 L425] is folded into this table. Its one scheduled item, Singapore's Employment Pass salaries from 1 January 2027, stays in the body with its date.
+## Global corridor comparison
 
-## The seven corridors, compared
+Compare corridors across two separate axes — **generic non-EU/third-country access** and **Indian-national friction** (caps, green-card backlogs, consular waits, and document attestation) — then drill into the matching regional dossier.
 
-T0-08 audited six routes for Indian GenAI professionals without an academic PhD; counting Germany and France separately gives seven corridors [T0-08 L6]. Most of the rules are written for any foreign national. The nationality-specific parts T0-08 found are US green-card backlogs, consular waits in India and Singapore's COMPASS nationality score [D].
-
-| Route | Who it fits | Evidence bar | Indicative timeline [M] | Fees and costs | Status as of | Grade |
-|---|---|---|---|---|---|---|
-| **US O-1A** | You want the US and can spend 12–18 months and US$10k–25k; a US employer, a US agent or your own entity can petition | A major award, or 3 of 8 criteria, then a final-merits test of "sustained national or international acclaim"; no degree, PhD or citation prerequisite | About 15–27 months from a cold start; about 3–9 months once the evidence exists | Government: $1,655 (employer with more than 25 staff) or $830 (small employer); $4,620 or $3,795 with premium processing; consular MRV $205. Attorney about $5k–15k; all-in $10k–25k | 21 Oct 2026; fees and approval data re-checked 22 Oct 2026; the manual text read predates the January 2025 revision | A rules; B government fees and approval data; C attorney costs, the MRV fee and preparation time |
-| **UK Global Talent** (digital technology) | No employer yet; 2–10 years at product companies with documented, externally visible impact | Tech Nation endorsement: 1 mandatory and 2 of 4 optional criteria; 3 dated letters; up to 10 evidence items | About 3–6 months | £766 per applicant (dependants £766 each) plus IHS £1,035 a year: £5,941 for a 5-year grant or £3,871 for 3 years (main applicant) | 22 Oct 2026 (GOV.UK page updated 20 Oct 2026) | A process and fees; C pass rates and endorsement time |
-| **Canada Global Talent Stream** (Category B) | A Canadian employer ready to run an LMIA for an occupation on the Global Talent Occupations List | No worker merit test: the employer's LMIA, a Labour Market Benefits Plan and the prevailing wage | About 1–2 months after an offer | LMIA C$1,000 per position (employer); work permit about C$155 plus C$85 biometrics (vendor-reported) | 22 Oct 2026 (ESDC page modified 16 Sep 2026) | A rules and LMIA fee; B/C service standards; C permit fees |
-| **EU Blue Card, Germany** | An offer at or above €45,934.20 (ICT and shortage roles) or €50,700, with a recognised degree or 3 years of ICT experience in the last 7 | Degree recognition (anabin) or the ICT experience test; contract of at least 6 months | About 2–3 months with the employer's §81a fast-track | Card about €100 (Berlin) plus visa €75; fast-track €411 (employer) | 22 Oct 2026 (2026 floors) | A floors and tests; B fast-track timing and fees |
-| **EU Blue Card, France** | An offer at or above €59,373 | A 3-year higher-education degree or 5 years' experience; minimum contract unresolved ([status table](#status-table)) | Not established | Not audited | 22 Oct 2026 | A floor and degree rule; B decree |
-| **Singapore ONE Pass** | Fixed pay of at least S$30,000 a month for 12 consecutive months from one established employer; from 28 Jan 2027, the AI & Tech track | Salary history and employer size; the achievements route excludes technology | About 1–2 months | S$105 application plus S$225 issuance (+S$30 if a Multiple Journey Visa applies) | 21 Oct 2026 (MOM page updated 14 Sep 2026) | A rules; B fees and speed |
-| **UAE Golden Visa** (skilled professional) | A UAE employer paying at least AED 30,000 a month, a MOHRE level 1 or 2 role and a bachelor's degree | Salary certificate, bank statements, attested degree; a practising licence where the profession needs one | Not established | About AED 3,800–4,800 plus medical and Emirates ID (vendor estimate) | 22 Oct 2026 | A criteria; C cost |
-
-Sources: fit [T0-08 L81–L88], timelines [T0-08 L94–L102], fees [T0-08 L104–L114], gates [T0-08 L363–L370], retrieval dates [T0-08 L464–L538].
-
-### US O-1A
-
-- **Standard.** An officer first checks the evidence against the wording of three criteria, then weighs everything together for sustained acclaim at the top of the field. Meeting three criteria "does not necessarily" establish eligibility, and the burden is a preponderance of the evidence [A · T0-08 L137].
-- **Petitioner.** A US employer, a US agent, or a foreign employer through a US agent may file. An entity you own may petition, but you cannot petition as an individual [A · T0-08 L172].
-- **Filing.** Form I-129, evidence for three criteria (or a major award), a written advisory opinion from a peer group or expert, the contract or a summary of an oral agreement, and an itinerary. File no more than one year before the need, ideally at least 45 days before [A · T0-08 L173].
-- **Limits.** The initial grant runs up to three years. Work is limited to the petitioned engagement, and a new employer needs a new I-129. O-3 dependants cannot work, though they may study [B · T0-08 L174]. O-1 permits dual intent by regulation [B · T0-08 L175].
-- **Approvals.** USCIS publishes only the combined O class (O-1 plus O-2): 93.9% in FY2025 (29,733 approved, 1,948 denied) and 91.0% in FY2026 Q1–Q3 (21,321 approved, 2,096 denied). RFEs were reported near 23% in Q3 FY2026, against about 19% a year earlier [B · T0-08.F3]. The pool mixes categories and extensions and is screened by attorneys, so it is not your odds. Vendor figures of 86–87% for O-1A alone are unsupported [B · T0-08 L188].
-- **Processing.** Premium processing costs $2,965 (since 1 March 2026) and takes 15 business days; the clock restarts after an RFE [B · T0-08 L196]. Standard processing times conflict between sources: see the [status table](#status-table).
-- **Consular step from India.** Appointment waits differ by post and change monthly: see the [status table](#status-table). A practitioner article of 21 June 2026 reported a spate of INA 214(b) refusals of approved O-1s. Officers may test whether your answers match the petition and DS-160; a refused applicant can re-apply [B · T0-08 L220, L486].
-- **Green card.** A separate immigrant petition; the EB queues for India move monthly in the Visa Bulletin (October 2026 dates in the [status table](#status-table)). Reported EB-1A approval rates fell from 74.7% (Q1 FY2025) to 32.2% (Q3 FY2026) [B · T0-08 L221].
-- **What public cases show.** T0-08 found no independently verifiable O-1A approval for an industry-only, no-PhD Indian national. Published success stories skew academic: a selection effect, not a legal rule [C · T0-08 L216].
-- **H-1B is outside this audit.** The status of its $100,000 fee litigation and of a separate DHS fee proposal, as T0-08 recorded them, is in the [status table](#status-table) [B · T0-08 L230, L485].
-
-### UK Global Talent (digital technology)
-
-- **Two stages.** Endorsement through one GOV.UK form (since 4 August 2025, per secondary sources), passed to Tech Nation [C · T0-08 L236]; then the visa, within 3 months of the endorsement letter [A · T0-08 L236].
-- **Timing.** The visa decision usually comes within 3 weeks from outside the UK (8 weeks inside). After a refusal, a review must be requested within 28 calendar days [A · T0-08 L238]. Endorsement time is reported only by secondary sources: see the [status table](#status-table).
-- **Entry.** No job offer and no English test at entry; grants run 1–5 years [A · T0-08 L239].
-- **Settlement.** ILR after 3 years (Exceptional Talent) or 5 years (Exceptional Promise), with absences of no more than 180 days in any 12 months, UK earnings in the endorsed field, B1 English and the Life in the UK test (Home Office guidance v19.0, 3 August 2026) [A · T0-08 L271].
-- **Pending changes.** A reported move to B2 English for settlement, and the 10-year "earned settlement" baseline, were pending when T0-08 read them: see the [status table](#status-table) [C · T0-08 L271].
-- **Endorser.** Secondary sources report that Tech Nation won the Home Office tender on 27 May 2025 for three years; GOV.UK names it as the digital-technology endorser [C · T0-08 L274].
-
-### Canada Global Talent Stream
-
-- **Employer-led.** The employer applies for the LMIA; the worker cannot. Category B needs no referral partner when the job is on the Global Talent Occupations List (updated December 2022). The list includes NOC 21211 data scientists, 21230 computer systems developers and programmers, 21231 software engineers and designers, 21232 software developers and programmers, 21220 cybersecurity specialists and 20012 computer and information systems managers [A · T0-08 L279].
-- **Pay.** The prevailing wage is the higher of the Job Bank regional median and the employer's own range for similar staff; only guaranteed wages count [A · T0-08 L280]. For NOC 21231 the Toronto-region median is C$56.49 an hour, about C$117,500 a year; British Columbia's is C$62.50, about C$130,000 (Job Bank, updated 19 November 2025) [B · T0-08.F8; M for the annual figures].
-- **Obligations.** The employer pays C$1,000 per position, non-refundable, and commits to a Labour Market Benefits Plan with annual progress reviews [A · T0-08 L281–L282].
-- **Speed.** IRCC "aims" to process complete online permit applications from outside Canada within two weeks, including spouses and children who apply at the same time [A · T0-08 L283]. The 10-business-day LMIA figure appears only in secondary sources [B/C · T0-08 L283].
-- **September 2026 changes.** On 15 September 2026 the Category A referral-partner list was updated, with one outlet reporting a 29% cut [B · T0-08 L300]. A reported employer test from 18 September 2026, under which staffing agencies recruiting for other businesses are not employers, was not yet described on the official page: see the [status table](#status-table) [B · T0-08 L299].
-- **H-1B holders.** Budget 2025 announced an accelerated pathway; its status is in the [status table](#status-table) [B/C · T0-08 L301].
-
-### EU Blue Card: Germany
-
-- **Qualification.** A recognised or comparable degree (check anabin), or an ICT role in ISCO-08 group 133 or 25 with at least 3 years' experience in the last 7 [A · T0-08 L310]. Misclassification would defeat the no-degree exception [D · T0-08 L447].
-- **Pay.** Federal Employment Agency consent applies below €50,700 (€4,225 a month) [A · T0-08 L312]. Success bonuses and fully variable payments do not count [B · T0-08 L313].
-- **Contract and validity.** A contract of at least 6 months; the card runs up to 4 years [A · T0-08.F9]. After one year in the job any employment is allowed without notifying the authority, and the card needs no language test [B · T0-08 L314–L315].
-- **Fast-track (§81a).** Employer-initiated: authority pre-approval in about 2–4 weeks, an embassy appointment within 3 weeks, and a decision within 3 weeks of a complete application [B · T0-08 L317].
-- **Settlement.** After 27 months of Blue Card employment with pension contributions and A1 German, or 21 months with B1; a "Life in Germany" test is requested [B · T0-08 L318].
-- **Annual drift.** The Berlin office says the limits "change every calendar year" [A · T0-08 L320]; the 2026 floors above apply to 2026. The 2027 floors had not been published: see the [status table](#status-table).
-
-### EU Blue Card: France
-
-- **Pay.** At least €59,373, which is 1.5 times the €39,582 reference salary, since 21 August 2025 [A · T0-08 L325]. The floor was previously €53,836.50 [B · T0-08 L325].
-- **Contract.** The minimum contract length is unresolved between official and secondary sources: see the [status table](#status-table), and confirm with the prefecture [A/B · T0-08 L326].
-- **Qualification.** A degree of at least 3 years of higher education, or 5 years of professional experience; no French at entry [A · T0-08.F10].
-- **Long-term residence.** After 5 years of EU residence, the last 2 in France for a Blue Card holder, with B1 French and a civic exam (required since 1 January 2026) [B · T0-08.F10].
-- **Unresolved.** The shortage-occupation order, and a claimed 1.2× threshold, are in the [status table](#status-table) [C · T0-08 L328]. Processing times and costs were not audited [T0-08 L100, L112].
-
-### Singapore ONE Pass and Employment Pass
-
-- **ONE Pass, salary route.** At least S$30,000 fixed monthly salary for the 12 consecutive months before applying, from one employer (two salaries cannot be added), at an established company with a market capitalisation of at least US$500m or annual revenue of at least US$200m; or a Singapore role at such a company starting within 6 months [A · T0-08 L333]. The achievements route covers sports, arts and culture, and academia and research, not technology [A · T0-08 L334].
-- **AI & Tech track, from 28 January 2027.** At least S$30,000 a month for 12 consecutive months, of which at least S$22,500 fixed and the rest possibly vested ESOP/ESOW. At least 5 cumulative years in the last 10 as founder, C-suite or a technical role such as senior software engineer. An employer (tech company, tech division or tech VC firm) with a valuation or market cap of at least US$500m, revenue of at least US$200m, assets under management of at least US$500m or, for start-ups only, at least US$30m raised [A · T0-08 L335]. The final rules were still open: see the [status table](#status-table).
-- **Flexibility.** COMPASS-exempt; you may work for several companies at once and need not reapply when changing jobs; valid for up to 5 years [A · T0-08 L336–L337].
-- **Who holds it.** 8,500 holders at December 2025, with a median monthly salary at application of S$36,000 and a 25th percentile of S$31,900 [A · T0-08.F11]. The S$30,000 floor sits below the 25th percentile of holders [A · T0-08 L338].
-- **Employment Pass.** As of 22 October 2026 the qualifying salary is S$5,600 (S$6,000 for new applications from 1 January 2027), rising with age to S$10,700 at 45 or older (S$11,500 from 2027), plus 40 COMPASS points. A fixed monthly salary of at least S$22,500 is exempt from COMPASS [A · T0-08 L342–L343].
-- **COMPASS C3.** The diversity criterion scores the candidate's nationality share among the firm's PMETs: 20 points under 5%, 10 for 5% to under 25%, 0 at 25% or more; firms with fewer than 25 PMETs score 10 by default [A · T0-08 L343]. Where Indian nationals are 25% or more of a firm's PMETs, an Indian candidate scores 0 on C3; how often this binds is not measured [D · T0-08 L344].
-- **Tax and PR.** Non-residents pay the higher of 15% or the progressive resident rates on employment income; resident rates run 0–24% in secondary summaries [A/B · T0-08 L347]. Whether ONE Pass holders can apply for PR was not verified [T0-08 L420].
-
-### UAE Golden Visa
-
-- **Skilled professional (Abu Dhabi ADDED page).** Employed in the UAE; a MOHRE level 1 (managers) or level 2 (professionals, including IT and engineering) role; at least a bachelor's degree; at least AED 30,000 a month; a salary certificate and bank statements (ADDED says the last 6 months, ADRO 3 months); an attested degree [A · T0-08 L352].
-- **Dubai.** A reported tightening of the documentation rules rests on an undated advisory: see the [status table](#status-table) [B/C · T0-08 L352].
-- **Specialist routes.** These rely on an attested PhD in priority fields, listed as "AI, Big Data, Computer and Software Engineering", or on a government recommendation [B · T0-08 L353]. A "UAE Artificial Intelligence Office nomination" track appears only on a vendor blog [C · T0-08 L354].
-- **Misinformation.** In July 2025 the ICP denied reports of "lifetime" Golden Visas and said no consultancy may submit applications [B · T0-08 L355].
-- **Validity and tax.** Vendor guides report validity of 10 years for skilled professionals [C · T0-08 L356]. Salary carries no personal income tax; a 9% corporate tax applies to business income, including a licensed freelancer's, above AED 375,000 [B · T0-08 L359].
-
-### Settlement, employer tie and family
-
-| Route | Path to permanent status | Employer tie | Family | Grade |
+| Region & dossier | Strongest employer-sponsored routes | Strongest unsponsored / merit / search routes | Generic non-EU access & PR path | Indian-national differences (caps, queues, attestation) |
 |---|---|---|---|---|
-| US O-1A | None directly; a separate immigrant petition (EB-1 India queue: [status table](#status-table)) | Petitioner-specific; an agent or your own entity can petition | O-3 dependants cannot work; study is allowed | A/B |
-| UK Global Talent | ILR after 3 years (Talent) or 5 (Promise); B1 English (a reported move to B2: [status table](#status-table)) and Life in the UK | None | Dependants £766 each, plus IHS (£776 a year for under-18s) | A; B fees |
-| Canada GTS | None directly | Employer-specific | Spouses and children who apply at the same time are included in two-week processing | A |
-| Germany Blue Card | Settlement after 21 months (B1 German) or 27 months (A1) | Tied for the first year, then free | The employer's fast-track covers spouse and minor children | A/B |
-| France Blue Card | EU long-term card after 5 years of EU residence; B1 French and a civic exam | Employer-specific | Not audited | B |
-| Singapore ONE Pass | Not verified | None; several employers at once | Family passes; a spouse may apply for a Letter of Consent | A |
-| UAE Golden Visa | The visa itself runs 10 years (reported) | Employment-based; no sponsor required on the visa | Not audited | B/C |
-
-Sources: [T0-08 L174, L237, L283, L316, L336, L365–L369].
+| **[United States](visa/united-states.md)** (`T0-37`) | H-1B (wage-weighted IV–III), L-1A / L-1B (L-2S spouse work), O-1A (employer/agent) | No unsponsored work visa; self-petition **EB-1A** (32.2% Q3 `[C]`) or **EB-2 NIW** (55.3% Q3 `[C]`) | High compensation; non-backlogged nationalities clear EB-2/NIW PR in ~1–3 years `[B]` | **Severe India PR backlog:** EB-1 `2023-02-01` (~3.8y), EB-2 `2013-11-01` (~13.0y), EB-3 `2014-01-22` (~12.8y). No TN/E-3/H-1B1 treaties; 3y Indian bachelor's blocks single-source EB-2; India consular waits 1–6.5m `[B · T0-37 L80, L84, L241]` |
+| **[Canada](visa/canada.md)** (`T0-38`) | GTS Cat B (9d LMIA, 1–3m total), ICT (C12), Francophone Mobility (C16) | Express Entry (post-`2026-11-03` high-wage LMIA-free points; French draw 407); **SUV paused** | Direct PR via Express Entry / PNP; citizenship 1,095 days / 5y; zero STEM draws 2025–2026 `[A]` | **No Indian cap** (43.5% of 2024 EE ITAs); 10-week work-permit wait from India; ECA + Passport Seva PCC required; H-1B pathway not launched `[A/B · T0-38 L50, L54, L59]` |
+| **[UK, Ireland & Western Europe](visa/uk-ireland-western-europe.md)** (`T0-39`) | IE CSEP (€40,904), DE Blue Card (€50,700 / €45,934.20 + 2 degree-free IT paths), NL HSM (€5,942/mo), UK SW (£41.7k+ / SOC ~£55k), FR Blue Card (€59,373) | **UK Global Talent** (3w abroad, no offer), DE Opportunity Card (1y), NL Zoekjaar (top-200) | Clear PR: **IE Stamp 4 in 21m**, **DE 21–27m**, NL/FR 5y, UK transitioning to 10y/5y/3y; CH strictly capped (8,500/yr) `[A/B]` | **No Indian PR caps.** UK HPI has **zero Indian univs**; UK–India CETA/DCC in force `2026-07-15`; **Germany rejects Indian Apostilles** (~8w `Urkundenüberprüfung`); NL MVV ≤10 working days in India `[A/B · T0-39 L80, L241, L557]` |
+| **[Nordics, Southern & Central Europe](visa/nordics-southern-central-europe.md)** (`T0-40`) | FI Specialist (€3,937/mo, 2w), ES Blue Card (€41,356, 20d), SE Work/Blue Card (SEK 34,470 / 53,625), DK Pay Limit (DKK 552k), EE Top Spec (€3,138), PL/AT/IT Blue Card | AT RWR Search Visa D (6m, ≥70 pts), **ES Teleworker DNV** (~€2,849/mo + 24% tax), IT impatriate 50% tax | Clean 4–5y PR (FI 4y at >€40k/yr; DK 4y fast / 8y std; SE 4y work PR, 8y citizenship); strong EU Blue Card mobility `[A/B]` | **No Indian caps** (20.8% of 2024 EU Blue Cards). All 10 accept **Hague Apostilles**; social-security pacts cover AT, DK, FI, NO, PT, SE (not ES, IT, PL, EE); EU–India FTA awaiting ratification `[A · T0-40 L63]` |
+| **[Gulf States & Israel](visa/gulf-and-israel.md)** (`T0-41`) | UAE MoHRE (2d), Saudi Qiwa, Bahrain LMRA (21d, free switch after 12m), Israel B/1 Hi-Tech (6d, NIS 27,132/mo) | UAE Golden Visa (≥AED 30k/mo, basic-vs-gross V0), UAE Virtual Working (USD 3.5k/mo), Saudi Special Talent (SAR 35k/mo `[B]`) | Gulf: **0% income tax, fast entry, no standard PR/citizenship**. Israel: **63-month cap, no PR** `[B]` | **No Indian caps**; degree holders ECR-exempt; bilateral pacts exclude IT/AI. **UAE & Qatar are NOT Hague Apostille members** (need MEA + Embassy + MOFA chain); SA/BH/IL are members `[A/B · T0-41 L66]` |
+| **[Asia-Pacific](visa/asia-pacific.md)** (`T0-42`) | SG EP (AI SOL, S$6k from `2027-01-01`, 10d), AU SID 482 (AUD 146,576 Spec / 79,423 Core), NZ Green List Tier 1 (NZ$72.80/h), JP Engineer/HSP, KR E-7-1/Top-Tier | **SG ONE Pass AI & Tech** (`2027-01-28`), **TW Gold Card** (≥NT$160k/mo), HK TTPS, JP J-Skip (1y PR) / J-Find, **MY DE Rantau** (`2026-12-01`, USD 36k) | Fastest PR in world: **NZ Green List immediate**, **JP J-Skip/HSP 1y**, **AU ENS 186 2y**; SG PR discretionary; MY DE Rantau no PR `[A/B]` | **No Indian PR caps** (India #1 AU 482 source + exclusive MATES 3k/yr + NZ FTA 5k TEE cap). Watch **SG COMPASS C3 ≥25% nationality diversity**; **JP DNV excludes India**; KR Workation & MY DE Rantau accept India `[A/B · T0-42 L63, L70–L74]` |
 
 ## Relocate or stay remote
 
-Decide this before you choose a route. The leanings below are judgement [D]; the facts behind them are cited.
+Do not treat relocation as the default answer. In the compensation data curated elsewhere in this repository, **global remote roles paying in USD from India** frequently beat local net savings in medium-tax European hubs once rent, taxes, and dual-career spousal friction are counted (`T0-08 L79`; see [pay-benchmarks.md](../09-compensation/pay-benchmarks.md) and [india-remote-playbook.md](india-remote-playbook.md)).
 
-| If this matters most | Lean | Why | Evidence |
-|---|---|---|---|
-| A defined path to settlement | Relocate via Germany or the UK | Germany: settlement after 21–27 months. UK: ILR after 3 or 5 years. O-1A and Canada GTS: no direct path | [B · T0-08 L369] |
-| Speed, with an offer in hand | Relocate via an employer route | Canada about 1–2 months after an offer; Germany about 2–3 months | [M · T0-08 L98–L99] |
-| No dependence on one employer | UK Global Talent or ONE Pass, or stay remote | Neither carries an employer tie. O-1A, Canada and France tie you to a petitioner or employer; Germany ties you for the first year | [A · T0-08 L367] |
-| Take-home pay after tax | Compare route by route | UAE: no personal income tax on salary. Singapore: non-residents at least 15%, residents 0–24%. Other routes' tax was not audited | [B · T0-08 L371] |
-| A partner's career | Check dependant work rights first | O-3 dependants cannot work; a ONE Pass holder's spouse may apply for a Letter of Consent | [B · T0-08 L174; A · T0-08 L336] |
-| No offer, pay below the pass floors, little outside recognition | Stay remote and build evidence | No audited route fits yet; O-1A evidence takes 12–18 months to build, by a practitioner estimate | [C · T0-08 L96] |
-| Income from foreign employers or clients while in India | Stay remote, with the tax set-up done first | Remote work from India runs through Indian tax and US client onboarding; relocation adds a third regime | [B · T2-01.F8] |
-
-Two gaps matter. T0-08 did not audit India-side tax residency, social security or remittance consequences, nor the tax signal of the US, UK, Canadian, German and French routes [T0-08 L371, L421]. If you stay in India, T2-01 places the entity, GST/LUT and FEMA decisions at its Stage 6, around the first invoice [D · T2-01 L174–L176]. See the [India remote playbook](india-remote-playbook.md) and [India remote tax](../09-compensation/india-remote-tax.md).
+- **Stay remote** when you want USD-denominated savings, hold strong India-side career leverage, or do not yet clear a clean offer/merit/salary gate — and use the next 12–18 months to build your evidence ledger `[D · T0-08 L90]`.
+- **Relocate** when you need in-person access to frontier AI labs or hardware clusters, want direct access to equity/leadership networks concentrated in SF/NYC/London/Zurich/Singapore, or are deliberately optimising for a second passport (Canada, Ireland, Germany, Finland, Australia, New Zealand) `[D · T0-08 L79; T0-38–T0-42]`.
+- **Verify tax residency before moving:** Remotely working for a foreign employer while physically inside another country on a tourist visa is unauthorised employment in the US and most jurisdictions (`T0-37 L250`). For India-resident export-of-services tax mechanics (Section 44ADA, GST LUT, FEMA), see [india-remote-tax.md](../09-compensation/india-remote-tax.md).
 
 ## How to do it
 
-1. **Name the reason to move.** Write down the one outcome relocation buys that remote work does not: settlement, a role that needs presence, family plans or tax [P]. *Done when:* the reason maps to a row in the relocate-or-remote table.
-2. **Find the gate you pass.** Compare your offer, fixed pay and outside recognition with the corridor table. Decide before you accept an international offer: T2-01 judges that the wrong route can waste 6–18 months [D · T2-01 L178]. *Done when:* you have one primary and one backup route, as in T0-08's decision table (for example Germany with Canada or the UK as backup, or UK Global Talent with O-1A as backup) [D · T0-08 L81–L88].
-3. **Verify the live rules.** Read the official pages T0-08 used [A · T0-08 L395–L407]:
-   - US: USCIS Policy Manual, Vol. 2 Part M, and the USCIS O-1 page.
-   - UK: GOV.UK Global Talent and the Home Office guidance; Tech Nation.
-   - Canada: ESDC Global Talent Stream requirements, the Job Bank wage search and IRCC's Global Skills Strategy.
-   - Germany: the Berlin immigration office Blue Card page and anabin.
-   - France: France-Visas.
-   - Singapore: MOM ONE Pass eligibility and the EP self-assessment tool.
-   - UAE: ICP, ADDED and ADRO.
-
-   *Done when:* every threshold, fee and timeline you rely on carries the date you checked it, and so does every row of the [status table](#status-table) that touches your route.
-4. **Audit your evidence (merit routes).** Put each item in the ledger and test it: does it name you, is the source independent, is it dated, is the act complete [D · T0-08 L384]? *Done when:* three O-1A criteria, or Tech Nation's mandatory criterion plus two optional ones, have items that pass all four tests.
-5. **Get a screen before paying full fees.** Institutional sponsors screen before spending legal fees, and specialists offer free eligibility screens [B · T0-08 L213]. Treat approval-rate claims as self-reported: no independent audit of any provider was found [C · T0-08 L213]. *Done when:* counsel has said in writing which criteria hold and which need more time.
-6. **Plan past approval.** For O-1A from India, book the consular appointment early and keep DS-160 and interview answers consistent with the petition [B · T0-08 L220]. For the UK and Germany, plan the language level for settlement: UK B1, with a reported move to B2 in the [status table](#status-table); Germany A1 or B1 [A/C · T0-08 L271; B · T0-08 L318]. *Done when:* you have a dated plan from filing to arrival and from arrival to settlement.
-7. **Re-verify within 14 days of acting.** Re-check every row of the [status table](#status-table) that touches your route on its official source [P · D-007]. *Done when:* nothing in those rows has changed, or you have re-planned.
+1. **Decide whether physical presence is worth the friction.** Compare net take-home, equity upside, spousal career continuity, and passport horizon against remote USD billing from India `[P]`. *Done when:* you have a written one-paragraph rationale linking relocation to a concrete opportunity you cannot access remotely.
+2. **Pick one primary corridor and one backup from the comparison table.** Match your current gate (offer, high pay, outside acclaim, or search funds) and open the corresponding [regional visa dossier](visa/README.md) `[D · T0-08 L365]`. *Done when:* both corridors clear your nationality, degree, and dependant work-rights constraints.
+3. **Check every live threshold and contract clause before signing.** Confirm fixed base pay (not variable bonus or unvested equity) clears the statutory floor — especially US OEWS wage level, UK SOC going rate + £50,271 Earned Settlement bar, Germany Blue Card floor + ISCO-08 code, Netherlands IND HSM norm vs 27% tax-ruling norm, Singapore COMPASS C3 diversity, and UAE **basic** salary (`≥AED 30,000`) `[A/B · T0-37–T0-42]`. *Done when:* the offer letter reflects fixed base pay and employer sponsorship obligations in writing.
+4. **Audit your evidence (for O-1A or UK Global Talent).** Score every artefact in your ledger against four filters: *Does it name you? Is the source independent? Is it dated? Is the act complete?* `[D · T0-08 L384]`. *Done when:* three O-1A criteria, or Tech Nation's mandatory + two optional criteria, pass all four filters — and for US filings under PA-2026-05, the packet stands on its own without counting on an RFE `[A · T0-37 L77–L78]`.
+5. **Get a written legal screen before paying full retainer fees.** Treat commercial vendor approval rates as self-reported marketing over pre-screened cohorts (`T0-37 L86`; `T0-08 L213`, `[C]`). *Done when:* licensed counsel specifies in writing which criteria hold today and which need 6–12 more months.
+6. **Plan past entry approval.** Book consular appointments early (accounting for India wait times, narrowed US dropbox waivers, and non-Apostille legalisation for Germany, UAE, and Qatar), verify dependant work authorisation, and map the separate PR and language timeline (UK B2 from `2027-03-26`, Germany A1/B1, France A2/B1/civic exam, Japan B1 from `2027-04-01`) `[A/B · T0-37–T0-42]`. *Done when:* you have one dated schedule from filing to landing and from landing to settlement.
+7. **Re-verify the status table within 14 days of acting.** Re-check every [status table](#status-table) row touching your route on its official government portal `[P · D-007]`. *Done when:* no rule, injunction, or threshold has shifted since your last check.
 
 ## Building the evidence for O-1A and Global Talent
 
-The same externally verifiable evidence serves both routes, so build it once [D · T0-08 L90]. Start 12–18 months before you plan to file (a practitioner estimate) [C · T0-08 L375]; T2-01 notes that this evidence "cannot be manufactured retroactively" [D · T2-01 L177]. The same items double as a senior portfolio: T2-01 sets "evidence meeting O-1A or equivalent standards" as the bar for its Tier 4–5 targets [D · T2-01.F9].
+The same externally verifiable artefacts serve US O-1A, US EB-1A, and UK Global Talent, so build one unified evidence ledger `[D · T0-08 L90]`. Plan **12–18 months** of deliberate evidence collection (a practitioner estimate `[C · T0-08 L375]`); as T2-01 notes, third-party proof "cannot be manufactured retroactively" `[D · T2-01 L177]`. Under USCIS **PA-2026-05** (`2026-08-05`), filing a thin O-1A or EB-1A packet risks immediate denial without an RFE `[A · T0-37 L77–L78]`.
 
 ### O-1A: the eight criteria for an industry engineer
 
@@ -226,175 +129,127 @@ The same externally verifiable evidence serves both routes, so build it once [D 
 | 4 | Judging | Completed peer reviews; hackathon or competition judging; accelerator selection panels. Keep the invitation, the submitted evaluation and the organiser's confirmation | Invitations, registrations and "I'll review" replies without completed reviews |
 | 5 | Original contributions of major significance | Named outside adopters; usage metrics with baselines; licensed or commercialised patents; benchmarks or datasets used by independent groups; expert letters that explain significance and the writer's basis of knowledge | Adoption by one or a few companies; potential rather than impact; citation totals without a baseline; adjectives-only letters |
 | 6 | Scholarly articles | Conference or workshop papers, journal articles, scholarly pieces in major media; authorship alone meets the criterion at the evidence step | Problems appear at the final-merits step, not here |
-| 7 | Critical or essential capacity | Org charts, scope documents, results attributable to you, specific letters from senior leaders, plus proof of the employer's distinguished reputation; the January 2025 update adds a "key committee or high-performing team" [T0-08 L150] | Not among the nine decisions summarised; the manual requires proof of both the reputation and your role |
-| 8 | High salary | A US offer or contract, occupation-and-region comparison data, an employer justification; for founders, highly valued equity as comparable evidence | An equity value contradicted by the company's own fair-market value ($0.00001 a share) |
+| 7 | Critical or essential capacity | Org charts, scope documents, results attributable to you, specific letters from senior leaders, plus proof of the employer's distinguished reputation; the January 2025 update adds a "key committee or high-performing team" `[T0-08 L150]` | Not among the nine decisions summarised; the manual requires proof of both the reputation and your role |
+| 8 | High salary | A US offer or contract, occupation-and-region comparison data, an employer justification; for founders, highly valued equity as comparable evidence | An equity value contradicted by the company's own fair-market value (`$0.00001` a share) |
 
-Grades: criterion wording A; the evidence column is T0-08's analysis, D; the failure column is a vendor summary of nine AAO decisions (17 September 2026), C [T0-08 L140–L151, L477].
+Grades: criterion wording `[A]`; evidence column is T0-08's analysis `[D]`; failure column is a vendor summary of nine AAO decisions (`2026-09-17`), `[C · T0-08 L140–L151, L477]`.
 
-**Which three?** On paper the cheapest set for an industry engineer is 7 + 8 + 4: a critical role at a distinguished employer, a high-pay offer and completed judging. Criteria 5 and 3 do most of the work at the final-merits step, because they show acclaim outside your employer. Criterion 6 is a low bar for anyone with one qualifying publication; criteria 1 and 2 are rarely buildable on demand. This is analysis plus a practitioner view, not an approval probability [D/C · T0-08 L153].
+- **Which three?** On paper the lowest-friction triad for an industry engineer is **7 + 8 + 4** (critical role at a distinguished employer, high salary, completed judging), while **5 and 3** carry the heaviest weight at the *Kazarian* step-two final-merits review (which practitioners continue to treat as active despite `Mukherji v. Miller`, `T0-37 L210`, `[B]`) `[D/C · T0-08 L153]`.
+- **Comparable evidence:** Where a criterion does not fit an industry role, comparable evidence may be argued criterion by criterion (still meeting three distinct criteria) `[A · T0-08 L168]`. PA-2025-02 added critical/emerging-technology examples referencing AI, though open-source work is best anchored under criteria 3 and 5 with independent adoption proof `[A/C · T0-08 L169]`.
+- **18-month build sequence (`[D/C · T0-08 L375–L382]`):**
+  - *Weeks 0–4:* Legal screen; define narrow field; choose petitioner (employer, agent, or owned entity); open ledger; benchmark salary.
+  - *Months 1–6:* Accumulate completed judging; present at selective technical venues; log outside adoption against baselines; secure press naming you.
+  - *Months 7–12:* Collect independent expert letters explaining contribution, significance, and basis of knowledge; obtain advisory opinion; compile employer-reputation and compensation proof.
+  - *Months 12–18:* Final counsel audit (built to survive PA-2026-05 without an RFE); file with `$2,965` premium processing (15 business days vs 14.5 months standard, `T0-37 L78, L138`); prepare consistent DS-160 and consular answers.
 
-**Comparable evidence.** If a criterion does not readily apply to your occupation, you may offer comparable evidence criterion by criterion, for example a major trade-show presentation instead of scholarly articles, or highly valued start-up equity instead of salary. You must still meet three separate criteria [A · T0-08 L168]. The January 2025 update (PA-2025-02) added examples for critical and emerging technologies, with AI named in the background [A · T0-08 L169]. One vendor claims open-source contributions are "expressly included"; T0-08 could not confirm that wording [C · T0-08 L169].
+### UK Global Talent: Exceptional Talent vs Exceptional Promise
 
-### O-1A: an 18-month plan
-
-| Window | Actions | Criteria served |
+| Dimension | Exceptional Talent | Exceptional Promise |
 |---|---|---|
-| Weeks 0–4 | Consult counsel; define your field narrowly and your area of ability broadly; choose the petitioner (employer, agent or own entity); open the ledger; gather salary comparisons | Structure |
-| Months 1–6 | Seek completed judging; present at a recognised conference or trade event; document outside adoption with baselines; pitch press that is about you | 4, 3, 5, 6 |
-| Months 7–12 | Obtain independent expert letters that explain your contribution, its significance and the writer's basis of knowledge; secure the advisory opinion; compile employer-reputation and role documents; assemble salary evidence | 5, 7, 8 |
-| Months 12–18 | Counsel review ("which criteria hold; which need another year"); file with premium processing; prepare for a consistent consular interview | Petition |
-| Throughout | Track EB-1 India dates; decide whether and when to pursue EB-1A | Green-card plan |
+| Mandatory criterion | Recognised in the last 5 years as a **leading talent** in digital technology | Recognised in the last 5 years as having the **potential** to be a leading talent |
+| Optional criteria (2 of 4) | Innovation; contributions outside day-to-day work; significant technical/commercial/entrepreneurial impact; academic contributions | Same four areas with a lower bar and no senior-executive requirement |
+| Career stage | Typically 5+ years, already leading | Under 5 years; cannot later switch to Talent |
+| Settlement (pre-Earned Settlement rules; watch Dec 2026 Statement of Changes) | 3 years (note: Earned Settlement CP 1707 also sets a 3-year tier at ≥£125,141; B2 English eff. `2027-03-26`) | 5 years (verify against implementing Rules; B2 English eff. `2027-03-26`) |
 
-Source: T0-08's roadmap, analysis [D]; the 12–18-month span is a practitioner estimate [C · T0-08 L375–L382].
+Grades: rubric `[B/C · T0-08 L242–L248]`; settlement & B2 English `[A/B · T0-39 L71, L233]`. Endorsing body for Digital Technology confirmed as **Tech Nation** (live check `2026-11-19`, `[B]`); GOV.UK endorsement wait **3 weeks outside UK / 8 weeks inside** (`2026-10-27`, `[A · T0-39 L74, L958]`).
 
-### UK Global Talent: Talent or Promise
-
-| | Exceptional Talent | Exceptional Promise |
-|---|---|---|
-| Mandatory criterion | Recognised by others in the last 5 years as a leading talent in digital technology | Recognised in the last 5 years as having the potential to be a leading talent |
-| Optional criteria (2 of 4) | Innovation; contributions outside day-to-day work; significant technical, commercial or entrepreneurial contributions; academic contributions | The same four areas with a lower bar and no senior-executive requirement |
-| Typical career stage | 5+ years, already leading | Under 5 years; cannot later switch to Talent |
-| Settlement | 3 years | 5 years |
-
-Grades: the rubric comes from a law-firm reproduction of the guidance [B/C · T0-08 L242–L248]; the settlement periods are A [T0-08 L271].
-
-- **Format rules.** Three dated letters from three different well-established organisations acknowledged as experts in digital technology; a CV; up to 10 evidence items; no objects, discs, digital files or web links (submit a scanned page with the link visible); evidence of any digital technology businesses in the last 5 years [A · T0-08 L256]. Law-firm summaries add that each writer must have known your work for at least 12 months [B/C · T0-08 L256].
-- **Referees.** An immigration-service blog reports that letters from managers or colleagues alone are insufficient to show leading talent [C · T0-08 L257].
-- **Product-led.** A Mondaq article describes a product-led company as one whose primary revenue comes from a proprietary digital product, service, platform or hardware [C · T0-08 L251].
-- **Sequence.** Weeks 0–2: choose Talent or Promise, line up three independent referees and pick at most 10 items. Weeks 2–10: assemble a scanned, link-visible pack and submit the Stage 1 form. Then the endorsement decision (its reported time is in the [status table](#status-table)), 28 days to request a review if refused, Stage 2 within 3 months of the letter and the visa within about 3 weeks from abroad [D · T0-08 L387].
+- **Strict format rules (`[A · T0-08 L256]`):** Three dated letters from three different well-established digital-technology organisations (law-firm guides add ≥12 months' personal knowledge `[B/C]`), a CV, up to **10 evidence items**, and **zero live web links or digital files** (submit scanned pages showing URLs). Letters solely from managers or colleagues are widely reported as insufficient `[C · T0-08 L257]`.
 
 ## Templates and examples
 
 ### Evidence ledger
 
-The columns are T0-08's [D · T0-08 L384]; the rows are placeholders.
-
 ```text
-EVIDENCE LEDGER  (one row per item; keep every source document in one folder)
+EVIDENCE LEDGER  (one row per artefact; store source PDFs/scans in one folder)
 Criterion        | Item                                   | Names me? | Independent source? | Date         | Document location | Status
-[4 Judging]      | [Completed reviews for [venue] [year]] | [Yes]     | [Yes: organiser]    | [YYYY-MM-DD] | [folder/file]     | [Confirmation received]
+[4 Judging]      | [Completed reviews for [venue] [year]] | [Yes]     | [Yes: organiser]    | [YYYY-MM-DD] | [folder/file]     | [Confirmation saved]
 [5 Contribution] | [Adoption of [project] by [org]]       | [Yes]     | [Yes]               | [YYYY-MM-DD] | [folder/file]     | [Letter requested]
-[3 Press]        | [[Outlet] profile of [project]]        | [Yes]     | [Yes]               | [YYYY-MM-DD] | [folder/file]     | [Scanned]
+[3 Press]        | [[Outlet] profile of [project]]        | [Yes]     | [Yes]               | [YYYY-MM-DD] | [folder/file]     | [Scanned PDF]
 ```
 
-### Expert-letter request [P]
+Columns `[D · T0-08 L384]`; rows are placeholders.
+
+### Expert-letter request `[P]`
 
 ```text
 To: [expert name], [title], [organisation]
 How you know my work: [since YYYY-MM; in what capacity]
-The contribution: [what I built or found, in one sentence]
-Why it mattered outside my employer: [named adopters; usage against a baseline]
-Evidence you may cite: [ledger items]
-Request: please explain what the work changed and how you know it, rather than describe me.
+The contribution: [what I built or published, in one sentence]
+Why it mattered outside my employer: [named adopters; metrics vs baseline]
+Evidence you may cite: [ledger item numbers]
+Request: please explain what the work changed and your basis of knowledge, rather than general praise.
 ```
 
-The content rule is sourced: letters should explain the contribution, its significance and the writer's basis of knowledge [A/C · T0-08 L148, L380], and letters that assert rather than explain failed on appeal, per a vendor's summary [C · T0-08.F2]. The layout is [P].
-
-### Questions for counsel [P]
+### Questions for immigration counsel `[P]`
 
 ```text
-1. Which criteria do my ledger items meet as of [date], and which need more time?
-2. Which petitioner fits my case: an employer, an agent, or an entity I own?
-3. What does the fee cover: advisory opinion, expert letters, RFE or NOID responses?
-4. What anonymised outcomes can you share for industry-only applicants without a PhD?
-5. What would make you advise me to wait another year?
+1. Which criteria do my ledger items satisfy as of [YYYY-MM-DD], and can this packet survive adjudication without an RFE (for US PA-2026-05)?
+2. Which petitioner or route fits best (employer, US agent, own entity, or unsponsored UK/TW/HK route)?
+3. What does the retainer include (advisory opinion, letters, RFE/NOID response, dependant filings)?
+4. What anonymised outcomes do you have for industry-only applicants without a PhD (and what denominator do your published rates use)?
+5. What exact evidence gap would make you advise waiting 6–12 months before filing?
 ```
 
-Each question maps to a cited fact: the counsel review [T0-08 L381], petitioner options [T0-08 L172], fee components [C · T0-08 L159–L164] and the missing outcome data [T0-08 L415].
+### Weak vs strong evidence
 
-### Weak and strong evidence
-
-| Evidence | Weak | Strong |
+| Artefact | Weak | Strong |
 |---|---|---|
-| Award | "Our start-up was accepted into [accelerator]." | "I placed [rank] of [n] entrants in [open competition], judged by [panel]." |
-| Press | "[Outlet] covered the company and quoted me once." | "[Outlet] profiled my [project] on [date], naming me as its author." |
+| Award | "Our startup was accepted into [accelerator]." | "Placed [rank] of [n] entrants in [open competition], judged by [panel]." |
+| Press | "[Outlet] covered the company and quoted me once." | "[Outlet] profiled my [project] on [date], naming me as creator." |
 | Judging | "Invited to review for [venue]." | "Completed [n] reviews for [venue] [year]; organiser confirmation attached." |
-| Contribution | "Used by a few companies; letters call me brilliant." | "Adopted by [named outside organisations]; [metric] rose from [baseline] to [value]; letters explain what changed." |
-| Salary | "My equity is worth [value], per a secondary-market quote." | "My offer pays [amount]; [comparison data] shows it is high for [occupation] in [region]." |
-| UK letters | "Three letters from my manager and colleagues." | "Three dated letters from experts at three different well-established organisations who have known my work for [12+] months." |
+| Contribution | "Used by several teams; letters call me brilliant." | "Adopted by [named external organisations]; [metric] moved from [baseline] to [value]; letters explain impact." |
+| Salary | "Equity valued via secondary-market estimate." | "Guaranteed base offer of [amount] exceeds [benchmark] for [SOC/region]." |
+| UK letters | "Three letters from my manager and teammates." | "Three dated letters from senior experts at three distinct established organisations who have known my work 12+ months." |
 
-The weak column restates failure patterns from appeal decisions and reported UK refusals [C · T0-08 L144–L151, L257]; the strong column follows the criteria and Home Office format rules [A · T0-08 L144–L151, L256]. The phrasing is [P].
+Weak column reflects appeal/refusal failure patterns `[C · T0-08 L144–L151, L257]`; strong column follows statutory criteria and format rules `[A · T0-08 L144–L151, L256]`; phrasing `[P]`.
 
 ## Persona and geography notes
 
-### Indian nationals
-
-- After O-1A, the green-card queue binds: the EB-1 India final-action date ran years behind in October 2026 ([status table](#status-table)) [B · T0-08.F6]. Check the bulletin for the month you plan to file.
-- The consular wait depends on the post, and the waits change monthly: see the [status table](#status-table) [C · T0-08 L219].
-- In Singapore, ONE Pass and EP salaries of at least S$22,500 fixed are COMPASS-exempt, which removes the C3 nationality-share risk [A · T0-08 L336, L343].
-- India-side tax residency, social security and remittance effects of relocating were not audited [T0-08 L421].
-
-### Engineers at IT-services firms
-
-- UK: engineers whose experience is mainly at services or outsourcing firms may find the optional criteria harder to evidence [D · T0-08 L251].
-- Canada: a reported September 2026 test bars staffing agencies from being the employer, which matters for IT-services staffing models; its official text was not yet published ([status table](#status-table)) [B · T0-08 L299].
-- O-1A criterion 7 needs proof of the organisation's distinguished reputation as well as your role [A · T0-08 L150]. Build evidence from work you can show outside client confidentiality [P].
-
-### PhD holders and researchers
-
-- Publications already meet criterion 6 at the evidence step, peer-review history counts toward criterion 4, and criterion 5 needs research with documented impact; start 12–18 months before filing [D · T2-01 L595–L599; A · T0-08 L149].
-- The UAE's specialist route relies on an attested PhD in priority fields, which include AI [B · T0-08 L353].
-- See [PhD to industry](phd-to-industry.md) for the rest of the transition.
-
-### Founders, consultants and fractional leaders
-
-- An entity you own may petition for your O-1A [A · T0-08 L172]. Highly valued equity can stand in for salary, but a claim contradicted by the company's own fair-market value failed [A/C · T0-08 L151].
-- Singapore's AI & Tech track counts founder years and accepts start-ups with at least US$30m raised [A · T0-08 L335].
-- In the UAE, a licensed freelancer's net business profit above AED 375,000 is taxed at 9% [B · T0-08 L359]. See [Freelance and fractional](freelance-fractional.md).
+- **Indian nationals:** No per-country PR backlog exists in Canada, Europe, the UK, Australia, or New Zealand (`T0-38–T0-42`), whereas US EB-2/EB-3 runs a 12–13-year Visa Bulletin gap (`T0-37 L80`). Watch three operational traps: (1) **non-Apostille countries** — Germany (`Urkundenüberprüfung`, ~8w), UAE, and Qatar (MEA + Embassy + MOFA) reject Indian Hague Apostilles (`T0-39 L557; T0-41 L66`); (2) **3-year Indian bachelor's degrees** — blocked from single-source US EB-2 (`T0-37 L241`); and (3) **nationality-concentration caps** — Singapore COMPASS C3 gives 0 points if one nationality reaches ≥25% of the firm's PMETs (`T0-42 L63, L74`).
+- **Engineers at IT-services / outsourcing firms:** Canada's `2026-09-18` ESDC rule tightening against contractor misclassification affects IT staffing models (`T0-38 L160`, `[A]`); US 50+/50% employers pay the `$4,000` H-1B / `$4,500` L-1 surcharge on **all extensions** through `2027-09-30` (`T0-37 L169`, `[A]`); UK Tech Nation optional criteria favour product-led impact over confidential client delivery (`T0-08 L251`, `[D]`).
+- **PhD holders and researchers:** Publications satisfy O-1A criterion 6 at the evidence step and peer review feeds criterion 4 (`T0-08 L149`; see [phd-to-industry.md](phd-to-industry.md)). Also check cap-exempt US H-1B employers (`T0-37 L137`), UK Royal Society/RAEng/UKRI fast-track Global Talent (2–5 weeks, `T0-39 L74, L162`), France `Talent — chercheur` (`T0-39 L83`), Japan J-Skip / HSP 80-point 1-year PR (`T0-42 L66`), and Canada's `2026-11-17` researcher Express Entry refinement (`live check 2026-11-19`, `[B]`).
+- **Founders and fractional leaders:** Owned US entities may petition for O-1A (`T0-08 L172`); Singapore's ONE Pass AI & Tech track (`2027-01-28`) counts founder tenure and startups with ≥US$30m raised (`T0-42 L62`); Canada's Start-Up Visa is **paused** (`T0-38 L57`); UAE licensed freelancers pay 9% corporate tax on net business profit above AED 375,000 (`T0-08 L359`; see [freelance-fractional.md](freelance-fractional.md)).
 
 ## Checklist
 
-- [ ] I wrote down why relocation beats remote work for me, and the cited fact behind it.
-- [ ] I know which gate I pass (offer, fixed pay or outside recognition) and have one backup route.
-- [ ] I re-checked every threshold, fee and timeline on the official page, and dated each check.
-- [ ] My ledger shows three O-1A criteria, or Tech Nation's mandatory plus two optional criteria, with items that name me, come from independent sources, are dated and are complete.
-- [ ] My expert letters explain contribution, significance and basis of knowledge; none rests on adjectives.
-- [ ] My UK pack has 3 dated letters from 3 organisations, at most 10 items and no web links or digital files.
-- [ ] I counted only fixed or guaranteed pay toward salary floors (Germany, Canada, and Singapore before 28 January 2027).
-- [ ] I chose UK Talent or Promise deliberately, knowing Promise cannot switch later and settles in 5 years, not 3.
-- [ ] I have a written eligibility screen and treat provider approval rates as self-reported.
-- [ ] I have a plan for the consular step: the post's wait, and DS-160 and interview answers that match the petition.
-- [ ] I have a separate plan for permanent residence: the EB queue, or the UK or German language level.
-- [ ] I checked my dependants' work rights.
-- [ ] I re-checked every row of the status table that touches my route within 14 days of acting.
+- [ ] I wrote down why physical relocation beats remote USD work from my current base, backed by concrete pay and career numbers.
+- [ ] I selected one primary corridor and one backup from the global comparison table and read both regional dossiers under [visa/](visa/README.md).
+- [ ] I verified my fixed/guaranteed base salary clears the exact statutory floor (and checked separate tax-ruling floors in the Netherlands and basic-vs-gross salary in the UAE).
+- [ ] If targeting a merit route (US O-1A / UK Global Talent), my ledger passes all four filters (names me, independent, dated, complete) and is strong enough to survive US PA-2026-05 without an RFE.
+- [ ] My UK Global Talent pack has 3 dated letters from 3 distinct organisations, ≤10 evidence items, and zero live web links or digital files.
+- [ ] I obtained a written legal screen and discounted every vendor's self-reported approval rate against official USCIS/national baselines.
+- [ ] I checked my spouse's and dependants' open work rights (for example, O-3 and F-2 cannot work; L-2S works incident to status; verify Israel B/1 spouse extension in writing).
+- [ ] I mapped the separate permanent-residence, language-test (UK B2 `2027-03-26`, DE A1/B1, FR A2/B1, JP B1 `2027-04-01`), and document-attestation schedule (Apostille vs full legalisation).
+- [ ] I re-verified every relevant row of the [status table](#status-table) on official government portals within 14 days of acting.
 
 ## Pitfalls
 
 | Red flag | Why it hurts | Fix |
 |---|---|---|
-| Treating Canada's "two weeks" or "10 business days" as a guarantee | The permit figure is an aim; the LMIA figure is secondary-sourced [A/B · T0-08 L116, L283] | Plan on about 1–2 months after an offer [M · T0-08 L98] |
-| Evidence that documents your employer instead of you | Appeals summarised by a vendor failed on funding offered as awards and press that mentions a founder in passing [C · T0-08.F2] | Keep only items that name you; fill the "Names me?" column |
-| Invitations counted as judging | Invitations and "I'll review" replies without completed reviews were rejected in a March 2026 appeal, per a vendor summary [C · T0-08 L147] | Keep the invitation, the submitted evaluation and the organiser's confirmation |
-| Bonuses or unvested equity counted toward floors | Variable pay does not count in Germany; bonuses and unvested equity do not count toward Singapore's S$30,000 before the 2027 track; only guaranteed wages count in Canada [B · T0-08 L116] | Agree fixed base pay above the floor [P] |
-| Choosing a provider on its approval rate | Every rate found (for example Deel's "98%") is self-reported; no independent audit exists [C · T0-08.F5, L213] | Ask for a written screen and anonymised comparable outcomes [P] |
-| Reading the 91% O-class rate as your odds | The pool mixes O-1A, O-1B, O-2 and extensions and is screened by attorneys [B · T0-08 L188] | Judge your own evidence against the criteria |
-| "Lifetime" UAE Golden Visa offers | The ICP denied them in July 2025 and said no consultancy may submit applications [B · T0-08 L355] | Use the official portals (ICP, ADDED) |
-| A GTS hire through a staffing or outsourcing intermediary | Secondary coverage reports that staffing agencies cannot be employers under a September 2026 test ([status table](#status-table)) [B · T0-08 L299] | Get the offer from the hiring company itself |
-| Filing Exceptional Promise by default | Promise cannot later switch to Talent, and settlement takes 5 years instead of 3 [B/C · T0-08 L248; A · T0-08 L271] | Choose Talent if you can evidence leading talent |
-| Letters only from your manager and colleagues | Reported as insufficient to show leading talent by an immigration-service blog [C · T0-08 L257] | Add experts from three different well-established organisations |
-| Web links or digital files in a UK pack | Not accepted under Home Office guidance [A · T0-08 L256] | Submit scanned pages with the link visible |
-| A German ICT role classified outside ISCO-08 group 133 or 25 | Misclassification would defeat the no-degree exception [D · T0-08 L447] | Confirm the classification with the employer before signing |
-| Treating O-1A as a green card | O-1A is temporary, and EB-1 India is backlogged [B · T0-08.F6] | Plan the immigrant petition separately |
-| Consular answers that drift from the petition | Officers may test whether answers match the petition and DS-160 [B · T0-08 L220] | Prepare from the petition and the itinerary |
-| Assuming the O-1A manual names open-source work | One vendor claims it is "expressly included"; T0-08 could not confirm this [C · T0-08 L169] | Present open-source work through criteria 3 and 5, with outside adoption [A/C · T0-08 L146, L148] |
+| Treating the US `$100,000` H-1B fee as "permanently dead" | Proclamation 11069 extended it to `2027-09-21` and circuit appeals remain active (`T0-37 L75`) | Monitor court dockets and DHS's parallel `$103,265` NPRM (`USCIS-2026-0298`) before relying on cap-subject H-1B |
+| Filing a thin US O-1A or EB-1A expecting an RFE | USCIS **PA-2026-05** (`2026-08-05`) allows immediate denial without RFE/NOID (`T0-37 L77–L78`) | Front-load complete primary proof, baselines, and independent letters on initial submission |
+| Relying on vendor pass rates (WeGreened 98–99%, Beyond Border 98%, retired UK 72%/54–65%) | Vendor rates cover pre-screened cohorts without denominators; UK rates had no primary source (`T0-37 L86; T0-39 L74, L959`) | Benchmark against official baselines (USCIS FY2026 Q3: EB-1A 32.2%, NIW 55.3%, O-class 91.0%) |
+| Expecting a Canada STEM Express Entry draw, H-1B pathway, or Start-Up Visa | Zero STEM draws in 2025–2026; H-1B pathway unlaunched; Start-Up Visa paused `2026-06-30` (`T0-38 L53–L57`) | Anchor on GTS Cat B (1–3m realistic), ICT C12, post-`2026-11-03` high-wage offer points, or French NCLC 7+ |
+| Counting allowances or variable pay toward salary floors | Fails in Germany, Canada, Singapore EP/ONE Pass (pre-2027 track), and UAE Golden Visa basic-pay audits (`T0-39–T0-42`) | Lock guaranteed/basic base pay above the floor in the signed contract |
+| Submitting an Indian Hague Apostille to Germany, the UAE, or Qatar | Germany objects to Indian apostilles; UAE and Qatar are non-members (`T0-39 L557; T0-41 L66`) | Budget 3–8 weeks for Germany's `Urkundenüberprüfung` or MEA + Embassy + MOFA legalisation |
+| Assuming Singapore Tech.Pass or NZ–India FTA TEE gives automatic transition/PR | Tech.Pass closes `2027-01-27` with no auto-transfer to ONE Pass AI & Tech; NZ TEE has no direct PR (`T0-42 L64, L71`) | Apply directly to ONE Pass AI & Tech (`2027-01-28`) or NZ Green List Tier 1 |
+| Buying UAE "lifetime Golden Visa" or "3-year AI residence visa" packages | Contradicted by ICP (`2025-07`); AI announcement is a visit visa only (`T0-41 L59, L69`) | Use official portals (`icp.gov.ae`, `gdrfad.gov.ae`) and confirm contract basic salary |
+| Assuming Bahrain Golden Residency grants work rights | Employee track requires prior Bahrain residency AND a separate employer LMRA work permit (`T0-41 L63`) | Treat Bahrain Golden Residency as residency stability after moving, not an entry work visa |
+| Counting invitations as judging or company press as personal acclaim | Failed repeatedly in AAO O-1A decisions (`T0-08 L144–L151`) | Log only completed reviews with confirmations and press/adopters naming you |
 
 ## Evidence and limits
 
-- **Solid (A).** The legal tests, thresholds and fees, read from official pages on 21–22 October 2026: USCIS policy, GOV.UK and Home Office guidance, ESDC and IRCC, the Berlin immigration office, France-Visas, MOM and ADDED [T0-08 L464–L538]. T0-08 rates its confidence high for the US policy framework, the UK process, Canada, Germany and Singapore; medium for US outcome statistics, France and the UAE; and low for UK pass rates [T0-08 L70]. Its overall confidence is medium [T0-08 L14].
-- **Secondary (B).** O-class approval counts and rates come from vendor pages citing USCIS data; USCIS's own tables were not opened. The Visa Bulletin figures come from law-firm summaries, and the German fast-track timings from excerpts of official pages [T0-08.F3, L221, L320].
-- **Single-source (C).** The 12–18-month preparation estimate, attorney fees and all-in budgets, UK endorsement pass rates (not verified at source) and the AAO decision patterns (summarised by a vendor; the AAO PDFs blocked automated retrieval) [T0-08.F2, F4, F7, L375].
-- **Not measured.** O-1A-specific approval and RFE rates; rates for Indian nationals or for industry-only applicants without a PhD; the Exceptional Promise pass rate; France and UAE processing times; whether ONE Pass holders can apply for PR; how often COMPASS C3 binds; India-side tax, social security and remittance effects; a detailed comparison with L-1 and other employer-tied statuses [T0-08 L413–L422].
-- **No outcome data.** T0-08 found no independently verifiable industry-only, no-PhD Indian O-1A approval [T0-08 L216], and T2-01 reports no longitudinal outcome data for any career corridor [D · T2-01.F10]. Timelines on this page are arithmetic over cited ranges, not measured journeys [M · T0-08 L92].
-- **Corrections checked.** [ERRATA](../../research/ERRATA.md) has no entry correcting T0-08 itself, and its T2-01 entries (U7–U9, U13, U14, U18, U19, U21) do not touch the lines used here. U22 records that D-007's rationale credits the 12–18-month estimate to T0-08 KF1 and the UK no-employer route to KF6; in the session these sit in §8.1 (a practitioner estimate, C) and F7. This page cites the session directly.
-- **What would change the advice.** T0-08's list of items likely to change within six months of 21 October 2026 [T0-08 L425] is folded into the [status table](#status-table): the UK settlement rules, H-1B fee litigation and the DHS proposal, Singapore's AI & Tech track, Germany's 2027 thresholds, Canada's H-1B pathway and 2027 Express Entry categories, France's shortage-occupation order, Dubai's documentation rules, and USCIS processing and consular waits. Singapore's Employment Pass salaries from 1 January 2027 are dated in the body.
+- **Audit base:** This hub synthesises six RP2 regional visa dossiers (`T0-37` United States, `T0-38` Canada, `T0-39` UK/Ireland/Western Europe, `T0-40` Nordics/Southern/Central Europe, `T0-41` Gulf/Israel, `T0-42` Asia-Pacific — 31 countries retrieved `2026-11-13` to `2026-11-18`), the Phase 0 talent-visa audit (`T0-08`, `2026-10-21`), and live web checks across all six regions on `2026-11-19`.
+- **Major updates over Phase 0 (`T0-08`):** Corrected the US `$100,000` proclamation status (blocked on appeal, not permanently struck down, `T0-37 L296`); added PA-2026-05, `$103,265` H-1B NPRM, and `$70k/$30k` OPT NPRM (`T0-37 L76–L82`); split Canada GTS Category A vs B and widened offer-to-start to 1–3 months (`T0-38 L50, L253`); retired untraceable UK Global Talent 72%/54–65% pass rates and updated endorsement wait to 3w/8w (`T0-39 L74, L958–L959`); added Germany's 2-in-5 IT route and replaced unverified 2–3 month §81a totals with component clocks (`T0-39 L76–L77, L962`); updated France Blue Card with Decree 2026-1001 (`T0-39 L83`); updated Singapore ONE Pass to 4 weeks (`T0-42 L62, L395`); and replaced UAE vendor fee estimates with official GDRFA itemisation while flagging basic-vs-gross pay (`T0-41 L57, L594`).
+- **Retrieval limits & sceptical grading:** Automated fetches were blocked on `uscis.gov`, `travel.state.gov`, `legifrance.gouv.fr`, `france-visas.gouv.fr`, `immi.homeaffairs.gov.au`, `immigration.govt.nz`, `moj.go.jp/isa`, `moj.go.kr`, `aima.gov.pt`, and `pr.gov.sa`, and `T0-41` relied on fetch summaries throughout. Claims from un-fetched primary sites are capped at Grade `[B]` (or `[C]` for single vendors), with Australia 482 SSIT/CSIT (`AUD 146,576` / `AUD 79,423`) and NZ Green List Software Engineer (`NZ$72.80/h`) conflicts resolved via live `search_web` checks against official domains on `2026-11-19`.
+- **Absences:** No country in the 31-nation audit publishes GenAI-role-specific visa approval rates; no independent longitudinal outcome dataset tracks career trajectories across visa corridors (`T2-01.F10`); India-side remittance, social-security, and double-taxation mechanics beyond basic pointers require specialist cross-border tax advice.
 
 ## Next steps
 
-- **Staying in India and working remotely:** [India remote playbook](india-remote-playbook.md) and [India remote tax](../09-compensation/india-remote-tax.md).
-- **Leaving academia:** [PhD to industry](phd-to-industry.md). **Changing field:** [Career transitions](career-transitions.md).
-- **Consulting or fractional work:** [Freelance and fractional](freelance-fractional.md). **Governance roles:** [Governance careers](governance-careers.md).
-- **Building evidence that names you:** [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md), [Online presence](../07-networking/online-presence.md) and the [Communities guide](../07-networking/communities-guide.md).
-- **Weighing an international offer:** [Offer evaluation](../09-compensation/offer-evaluation.md), [Negotiation playbook](../09-compensation/negotiation-playbook.md) and [Pay benchmarks](../09-compensation/pay-benchmarks.md).
-- **Setting search constraints first:** [Job-search strategy](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first).
-- **After the move:** [First 90 days](../10-onboarding/first-90-days.md).
-- **Context and evidence:** [Tracks index](README.md), [Role catalog](../02-roles/role-catalog.md), [Glossary](../00-start/glossary.md), [T0-08](../../research/sessions/T0-08-global-talent-visa-relocation-pathways.md), [T2-01](../../research/sessions/T2-01-tier-calibrated-execution-playbooks.md), the [findings registry](../../research/findings.md) and [DECISIONS](../../research/DECISIONS.md) (D-007).
+- **Drill into a region:** Open [Regional Visa Dossiers](visa/README.md) — [United States](visa/united-states.md), [Canada](visa/canada.md), [UK, Ireland & Western Europe](visa/uk-ireland-western-europe.md), [Nordics, Southern & Central Europe](visa/nordics-southern-central-europe.md), [Gulf States & Israel](visa/gulf-and-israel.md), or [Asia-Pacific](visa/asia-pacific.md).
+- **Compare destination markets and cities:** [Country and city rankings](country-rankings.md) (33 countries and 50 cities across six Monte Carlo lenses) and [Remote cross-border AI employment](remote-cross-border.md).
+- **Staying in India and billing globally:** [India remote playbook](india-remote-playbook.md) and [India remote tax](../09-compensation/india-remote-tax.md).
+- **Leaving academia or changing tracks:** [PhD to industry](phd-to-industry.md), [Career transitions](career-transitions.md), [Freelance and fractional](freelance-fractional.md), and [Governance careers](governance-careers.md).
+- **Building externally verifiable proof:** [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md), [Online presence](../07-networking/online-presence.md), and [Communities guide](../07-networking/communities-guide.md).
+- **Evaluating an international offer:** [Offer evaluation](../09-compensation/offer-evaluation.md), [Negotiation playbook](../09-compensation/negotiation-playbook.md), [Pay benchmarks](../09-compensation/pay-benchmarks.md), and [First 90 days](../10-onboarding/first-90-days.md).
+- **Context and evidence:** [Tracks index](README.md), [Tool catalog](../00-start/tool-catalog.md), [Glossary](../00-start/glossary.md), [findings registry](../../research/findings.md), [ERRATA](../../research/ERRATA.md), and [DECISIONS](../../research/DECISIONS.md) (D-007, D-018, D-025).

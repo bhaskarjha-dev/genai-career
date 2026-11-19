@@ -1,8 +1,8 @@
 {
  "schema": "interview-prompts/1.0",
- "as_of": "2026-11-05",
+ "as_of": "2026-11-19",
  "description": "Practice prompts for GenAI interviews, keyed to interview tracks, T0-14's fifteen system-design archetypes, roles and skills. Each prompt states what a strong answer covers, the red flags, its source line and an evidence grade. Feeds the generated prep-pack page (career/08-interviewing/prep-packs.md).",
- "basis": "Prompts are quoted or closely paraphrased from what the research sessions report: T0-14 (firm table §6.2, archetypes §6.3, round formats §6.3b, the Dataford aggregate in K9), T1-03 (behavioural bank §6.2, coding formats §6.3) and T0-06 (applied-AI startup loops). The grade is that of the strongest report: B for aggregator tallies and coaching guides that T0-14 grades B (AceOffer's 112 Anthropic reports, Hello Interview); C for a single aggregator, review or listicle, and for the T1-03 synthesis; D where no prompt is reported, in which case reported_by says so and names the round description the prompt is built from. Variants named in reported_by may rest on weaker sources. Covers and red flags paraphrase the cited lines (T0-14 elicitation lists, trade-offs, Staff tells, formulas and rubrics; T1-03 STAR-AI and competencies C1–C4; T0-15 and T2-01 for the D-graded tracks), and answer_source lists those lines. They are coach-authored or synthesised criteria: no firm publishes an AI interview rubric (T0-14 K10; T1-03 §6.2). Role and skill keys are editorial (D): design prompts start from each role's interview track in data/role_scores.json and add roles whose reported loops include the prompt; behavioural prompts list every role whose skills-ontology links include each competency the question tests. Aggregator counts rank reported prompts; they do not measure prevalence or pass rates (T0-14 §7.1 O1, O12).",
+ "basis": "Prompts are quoted or closely paraphrased from what the research sessions report: T0-14 (firm table §6.2, archetypes §6.3, round formats §6.3b, the Dataford aggregate in K9), T1-03 (behavioural bank §6.2, coding formats §6.3), T0-06 (applied-AI startup loops) and T0-46 (per-employer loops across 25 employers including frontier labs, Big Tech, AI-native startups, banks, consultancies and India loops). The grade is that of the strongest report: A for employer-published guides or posts (OpenAI, Canva, Anthropic COI); B for transparent secondary reporting or aggregator tallies graded B in T0-14 (note that T0-46 could not surface AceOffer's 112-report tally, and T0-46's 2026-06-09 read of IGotAnOffer's Anthropic system-design page did not find the model-evaluation or prompt-caching prompts attributed to it in T0-14); C for a single aggregator, candidate report, prep-vendor guide or T1-03 synthesis; D where no prompt is reported directly. Covers and red flags paraphrase the cited session lines (T0-14 rubrics and archetypes; T1-03 STAR-AI and C1–C4; T0-46 practice guidance [P], not taken from candidate reports). No firm publishes an AI interview rubric (T0-14 K10; T1-03 §6.2; T0-46 §13). Role and skill keys are editorial (D). Aggregator counts rank reported prompts; they do not measure prevalence or pass rates.",
  "tracks": {
   "application": {
    "name": "Application",
@@ -11,13 +11,13 @@
   },
   "customer-application": {
    "name": "Application plus customer scoping",
-   "tests": "RAG over sensitive, fast-changing documents and evaluating a multi-agent system (the Databricks AI-FDE loop), plus a scoping or customer round",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
+   "tests": "Coding and debugging (often practical or production-adjacent), system architecture or decomposition (RAG, agents, enterprise integration, evals), and customer scoping, discovery or technical-presentation rounds",
+   "source": "T0-14, T0-46, T0-51, T0-53, T0-62"
   },
   "ml-system-design": {
    "name": "Classic ML system design",
-   "tests": "recommendation, fraud or ETA system design, plus where an LLM would help",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
+   "tests": "recommendation, search, fraud or ETA system design, regulated ML pipelines, feature stores and hybrid classical-ML plus GenAI cases",
+   "source": "T1-03, T0-14, T0-46 L186 (first collected in the role catalog §8.2)"
   },
   "infrastructure": {
    "name": "Infrastructure",
@@ -31,8 +31,8 @@
   },
   "research": {
    "name": "Research",
-   "tests": "a research talk plus coding; the full research loop at frontier labs",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
+   "tests": "paper walkthroughs, library-free core ML coding, maths and theory, debugging failing training runs, research-problem scoping, scaling-law trade-offs and expertise-depth finals",
+   "source": "T1-03, T0-14, T0-46 L189, L335–342"
   },
   "governance": {
    "name": "Governance",
@@ -41,8 +41,8 @@
   },
   "product": {
    "name": "Product",
-   "tests": "a scoping or product round",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2)"
+   "tests": "scoping a GenAI feature or pilot, first-hand product critique and craft, founder mission and trade-off rounds, and cross-functional or end-to-end product architecture",
+   "source": "T1-03, T0-14, T0-46 L191, L744–749"
   },
   "behavioural": {
    "name": "Behavioural",
@@ -51,8 +51,13 @@
   },
   "coding": {
    "name": "Coding",
-   "tests": "classic algorithmic coding, AI-enabled coding with an assistant, code or design-document review, and hybrid coding-plus-design rounds",
-   "source": "T1-03 §6.3 L216–232; T0-14 L171"
+   "tests": "classic algorithmic coding, AI-enabled multi-file coding and code-comprehension rounds, from-scratch ML primitives, design-document review, and hybrid coding-plus-design rounds",
+   "source": "T1-03 §6.3 L216–232; T0-14 L171; T0-46 L193, L764–778"
+  },
+  "product-frontend": {
+   "name": "AI product & frontend engineering",
+   "tests": "Live streaming-UI and React/TypeScript build (token streaming, cancel/retry, state, accessibility), frontend system design including backing API, real-codebase take-home and product/design craft",
+   "source": "T0-46, T0-62 L380–L387"
   }
  },
  "archetypes": {
@@ -207,8 +212,8 @@
     "A7",
     "A14"
    ],
-   "advice": "Expect numbers early, 50–60 minute rounds and failure-mode probing; Anthropic rounds have shown a design-document review variant.",
-   "source": "T0-14 L119"
+   "advice": "Expect numbers early, 50–60 minute rounds and failure-mode probing; Anthropic rounds show design-document review reports (Apr and Sep 2026) and a timed performance take-home.",
+   "source": "T0-14 L119; T0-46 L82, L239"
   },
   "applied-ai": {
    "name": "Applied-AI / AI-engineer loop",
@@ -1263,7 +1268,7 @@
    "track": "infrastructure",
    "archetype": "A6",
    "prompt": "Design a prompt caching and retrieval system.",
-   "reported_by": "Anthropic (SWE candidates, per IGotAnOffer)",
+   "reported_by": "Anthropic (attributed to IGotAnOffer in T0-14; T0-46's 2026-06-09 check of IGotAnOffer's Anthropic system-design page did not find this prompt there)",
    "covers": [
     "Cache layers in order: prefix (prompt) cache, then exact-match cache, then a semantic cache only on low-stakes, high-repeat, non-personalised routes",
     "Prefix caching needs an exact prefix match: static content first and breakpoints at stable boundaries, with the hit rate verified",
@@ -1289,7 +1294,7 @@
     "llm_gateways",
     "vector_search"
    ],
-   "source": "T0-14 L316",
+   "source": "T0-14 L316; T0-46 L461",
    "grade": "C"
   },
   {
@@ -1365,7 +1370,7 @@
    "track": "infrastructure",
    "archetype": null,
    "prompt": "p95 latency has jumped from about 100 ms to about 2,000 ms. Debug it.",
-   "reported_by": "Anthropic (one report: a debugging exercise inside the design round)",
+   "reported_by": "Anthropic (one report in T0-14: a debugging exercise inside the design round; no latency-debugging report surfaced in T0-46)",
    "covers": [
     "Segment by percentile and cohort before guessing",
     "Split latency into queue, prefill and decode",
@@ -1389,7 +1394,7 @@
     "batching_kv",
     "sre"
    ],
-   "source": "T0-14 L552",
+   "source": "T0-14 L552; T0-46 L452",
    "grade": "C"
   },
   {
@@ -1436,7 +1441,7 @@
    "track": "evaluation",
    "archetype": "A14",
    "prompt": "Design a model evaluation and monitoring system (one variant: run evaluation benchmarks across hundreds of model variants).",
-   "reported_by": "Anthropic (SWE candidates, per IGotAnOffer; the benchmark variant comes from one aggregator)",
+   "reported_by": "Anthropic (attributed to IGotAnOffer in T0-14; T0-46's 2026-06-09 check of IGotAnOffer's Anthropic system-design page did not find this prompt there; benchmark variant from one aggregator)",
    "covers": [
     "Elicit number of teams and agents, trial cost, grader mix, CI integration and production sampling",
     "Sandboxed runners with a clean environment for every trial",
@@ -1464,7 +1469,7 @@
     "online_evals",
     "observability"
    ],
-   "source": "T0-14 L504",
+   "source": "T0-14 L504; T0-46 L461",
    "grade": "C"
   },
   {
@@ -2325,19 +2330,19 @@
    "track": "coding",
    "archetype": null,
    "prompt": "AI-enabled coding round: solve the task with an AI assistant in the editor.",
-   "reported_by": "Meta (spring 2026, early signal)",
+   "reported_by": "Meta (60-minute customised CoderPad coding round with built-in assistant, piloted Oct 2025; corroborated by CoderPad, interviewing.io and two Mar–Apr 2026 PracHub reports; separate agentic design round also reported)",
    "covers": [
-    "Orient first: confirm the input, the output and the SLA before writing code (about the first 10% of the clock)",
-    "Decide what to delegate and what to own, and say it aloud ('the assistant scaffolds the data loader while I design the retrieval loop')",
-    "Audit AI output line by line; catching a hallucination scores higher than writing clean code from scratch",
-    "Harden at the end: time and space complexity, and failure modes such as a downstream API timeout"
+    "Orient first: confirm input, output, constraints and SLA before writing code (about 10% of the clock)",
+    "Split the task into bounded subtasks, say aloud what you delegate and what you own, and ask clarifying questions",
+    "Audit generated code line by line, run tests after each piece and catch hallucinations or subtle edge-case bugs",
+    "Harden at the end: state complexity, walk through failure modes and explain every line you keep"
    ],
    "red_flags": [
     "'Vibe coding': pasting giant prompts and accepting unverified output",
     "Silent AI interaction",
     "Cannot explain AI-generated code"
    ],
-   "answer_source": "T1-03 L221, L229–232",
+   "answer_source": "T1-03 L221, L229–232; T0-46 L764, L785",
    "roles": [
     "ai-engineer",
     "ml-engineer",
@@ -2365,7 +2370,7 @@
     "testing",
     "attention_to_detail"
    ],
-   "source": "T1-03 L221",
+   "source": "T1-03 L221; T0-46 L764",
    "grade": "C"
   },
   {
@@ -2373,7 +2378,7 @@
    "track": "coding",
    "archetype": null,
    "prompt": "Design-document review: critique a pre-written system design and prioritise your findings.",
-   "reported_by": "Anthropic (3 reports, first observed April 2026); Aced says the format has come up for staff-level engineers and engineering leaders",
+   "reported_by": "Anthropic (T0-14 cites 3 Apr 2026 reports; T0-46 confirms 2 dated PracHub pages, 2026-04-16 and 2026-09-18; Aced notes staff-level and leadership loops)",
    "covers": [
     "What the round tests: missing requirements, capacity assumptions, failure modes, rollout and alternatives",
     "A checklist covering requirements, numbers, failure modes, migration, observability, security and alternatives rejected",
@@ -2383,7 +2388,7 @@
     "Surface-level comments ('could use more comments')",
     "Missing the structural issues"
    ],
-   "answer_source": "T0-14 L550; T1-03 L222",
+   "answer_source": "T0-14 L550; T1-03 L222; T0-46 L718–719",
    "roles": [
     "ai-engineer",
     "ml-engineer",
@@ -2411,7 +2416,7 @@
     "system_design",
     "technical_leadership"
    ],
-   "source": "T0-14 L550; T1-03 L222",
+   "source": "T0-14 L550; T1-03 L222; T0-46 L718–719",
    "grade": "B"
   },
   {
@@ -2451,6 +2456,2411 @@
     "testing"
    ],
    "source": "T0-14 L171",
+   "grade": "C"
+  },
+  {
+   "id": "p058",
+   "track": "application",
+   "archetype": "A11",
+   "prompt": "Design an AI agent that triages incoming support tickets: routing, priority, human hand-over and evaluation.",
+   "reported_by": "Meta (candidate report, n=1, PracHub, agentic design round interviewed Apr 2026; covers/red flags are P)",
+   "covers": [
+    "Clear input and output contract for ticket classification, priority and routing actions",
+    "Tool and context limits with bounded loops and cost caps",
+    "Confidence thresholds and a clean human-escalation path for uncertain or high-risk tickets",
+    "Offline and online evaluation of routing accuracy, escalation quality and resolution outcomes"
+   ],
+   "red_flags": [
+    "Lists components with no agent control loop",
+    "No escalation or failure path",
+    "No offline and online evaluation plan"
+   ],
+   "answer_source": "T0-46 L691",
+   "roles": [
+    "ai-engineer",
+    "agentic-ai-engineer",
+    "applied-ai-engineer",
+    "ai-product-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "agents",
+    "agent_reliability",
+    "hitl_design",
+    "agent_evals",
+    "cost_latency"
+   ],
+   "source": "T0-46 L691",
+   "grade": "C"
+  },
+  {
+   "id": "p059",
+   "track": "application",
+   "archetype": "A11",
+   "prompt": "Design an agent that reviews code changes automatically: context assembly, comment ranking, noise control and measuring usefulness.",
+   "reported_by": "Meta (candidate report, n=1, PracHub, onsite interviewed Mar 2026; AI-enabled design round with no AI available; covers/red flags are P)",
+   "covers": [
+    "Context assembly for a pull-request diff alongside relevant repository files and conventions",
+    "Comment ranking, deduplication and noise control so engineers do not mute the bot",
+    "Tool use and verification (linters, static analysis, tests) before posting findings",
+    "Human feedback loop and usefulness metrics (accepted suggestions, false-positive rate, latency and cost bounds)"
+   ],
+   "red_flags": [
+    "No way to measure comment usefulness or false-positive rate",
+    "Ignores surrounding repository context beyond the raw diff",
+    "No limit on per-PR cost or latency"
+   ],
+   "answer_source": "T0-46 L692",
+   "roles": [
+    "ai-engineer",
+    "agentic-ai-engineer",
+    "applied-ai-engineer",
+    "ai-enablement-engineer",
+    "ai-product-engineer"
+   ],
+   "skills": [
+    "agents",
+    "context_engineering",
+    "coding_agents",
+    "online_evals",
+    "agent_evals"
+   ],
+   "source": "T0-46 L692",
+   "grade": "C"
+  },
+  {
+   "id": "p060",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "Design the infrastructure behind an AI answer engine: retrieval, reranking, caching, latency, cost and citation integrity.",
+   "reported_by": "Perplexity (prep-vendor guides, n=2, techinterview.org 2026-07-11 and DesignGurus; ~60-minute design round; covers/red flags are P)",
+   "covers": [
+    "Multi-stage retrieval and reranking separated cleanly from answer synthesis",
+    "End-to-end latency and unit-cost budget across search, reranking and generation",
+    "Layered caching (query, retrieval and prefix caches) with freshness invalidation",
+    "Citation integrity checks that verify claims against retrieved spans, plus fallbacks and monitoring"
+   ],
+   "red_flags": [
+    "Treats an answer engine as a plain chatbot with no retrieval architecture",
+    "No latency or cost arithmetic",
+    "Unverified citations or no separation between retrieval and generation errors"
+   ],
+   "answer_source": "T0-46 L693–694",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ml-engineer",
+    "ai-product-engineer"
+   ],
+   "skills": [
+    "rag",
+    "hybrid_search",
+    "reranking",
+    "grounding_citations",
+    "cost_latency",
+    "retrieval_evaluation"
+   ],
+   "source": "T0-46 L693",
+   "grade": "C"
+  },
+  {
+   "id": "p061",
+   "track": "application",
+   "archetype": "A11",
+   "prompt": "Design an agent that edits several files in a repository: planning, applying changes, verifying with tests and rolling back on failure.",
+   "reported_by": "Cursor / Anysphere (prep-vendor guide, n=1, techinterview.org 2026-10-16; covers/red flags are P)",
+   "covers": [
+    "Planning and scoped context selection across repository symbols and dependencies",
+    "Atomic or patch-based edit application with merge-conflict handling",
+    "Verification loop running builds, linters and tests in a sandbox",
+    "Checkpointed rollback on failed checks, bounded loop/cost limits and human review points"
+   ],
+   "red_flags": [
+    "No verification step after applying edits",
+    "Unbounded agent loop with no step or cost cap",
+    "No rollback mechanism or human review checkpoint"
+   ],
+   "answer_source": "T0-46 L696",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "coding_agents",
+    "agents",
+    "durable_execution",
+    "agent_reliability",
+    "testing"
+   ],
+   "source": "T0-46 L696",
+   "grade": "C"
+  },
+  {
+   "id": "p062",
+   "track": "application",
+   "archetype": "A1",
+   "prompt": "Design a multi-tenant API serving text embeddings and classification to many clients, covering batching, versioning and cost.",
+   "reported_by": "Scale AI (candidate report, n=1, PracHub, backend onsite interviewed Jul 2026; covers/red flags are P)",
+   "covers": [
+    "Dynamic request batching and bounded queuing tuned for embedding and classifier throughput",
+    "Model versioning and safe rollout (re-embedding impacts downstream indexes)",
+    "Per-client quotas, rate limits and fair scheduling under bursts",
+    "Latency and throughput targets alongside per-tenant cost tracking"
+   ],
+   "red_flags": [
+    "No capacity or throughput estimate",
+    "Ignores backpressure under traffic spikes",
+    "Assumes a single global unversioned model"
+   ],
+   "answer_source": "T0-46 L697",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ml-platform-engineer",
+    "inference-engineer"
+   ],
+   "skills": [
+    "embedding_models",
+    "apis",
+    "batching_kv",
+    "capacity_cost",
+    "progressive_delivery"
+   ],
+   "source": "T0-46 L697",
+   "grade": "C"
+  },
+  {
+   "id": "p063",
+   "track": "application",
+   "archetype": "A14",
+   "prompt": "Design an LLM-backed service with production monitoring: what signals you track and how you catch a quality or cost regression.",
+   "reported_by": "Microsoft (prep-vendor guide, n=1, Dataford 2026-09-25, 8 tracked interviews / 4 loops; covers/red flags are P)",
+   "covers": [
+    "Serving architecture instrumented for latency, token-cost and quality telemetry",
+    "Sampled production trace review through calibrated offline graders",
+    "Alert thresholds on quality drift, error-budget burn and cost anomalies",
+    "Automated rollback or provider fallback when regressions fire"
+   ],
+   "red_flags": [
+    "Monitors uptime and HTTP 5xx only, with no quality signal",
+    "No trace sampling or drift detection",
+    "No rollback plan when a model or prompt regresses"
+   ],
+   "answer_source": "T0-46 L698",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-evaluation-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "observability",
+    "online_evals",
+    "tracing",
+    "drift_monitoring",
+    "cost_latency"
+   ],
+   "source": "T0-46 L698",
+   "grade": "C"
+  },
+  {
+   "id": "p064",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "Design a multimodal retrieval pipeline over text, tables, images, audio and video with hallucination guardrails and a deployment plan.",
+   "reported_by": "Infosys (candidate reports, n=14: 13 Interview Query Q3–Q4 2026 plus 1 Glassdoor Mar 2026 virtual report; covers/red flags are P)",
+   "covers": [
+    "Modality-specific ingestion (table parsers, OCR/vision models, speech transcription, video frame/segment indexing)",
+    "Unified or hybrid index design with metadata linking spans back to source artefacts",
+    "Grounding, citation verification and hallucination guardrails",
+    "Deployment architecture, production monitoring and per-modality cost control"
+   ],
+   "red_flags": [
+    "Forces every modality through one text-only chunking pipeline",
+    "No hallucination guardrail or citation check",
+    "No deployment or cost plan"
+   ],
+   "answer_source": "T0-46 L700",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-solutions-architect",
+    "forward-deployed-engineer"
+   ],
+   "skills": [
+    "multimodal",
+    "document_ingestion",
+    "rag",
+    "grounding_citations",
+    "guardrails"
+   ],
+   "source": "T0-46 L700",
+   "grade": "C"
+  },
+  {
+   "id": "p065",
+   "track": "application",
+   "archetype": "A8",
+   "prompt": "Design an end-to-end intelligent search over a SQL database and unstructured documents using an agent within latency and security bounds.",
+   "reported_by": "HCLTech (prep-vendor guide, n=1, Dataford 2026-10-07; covers/red flags are P)",
+   "covers": [
+    "Hybrid query routing deciding between structured SQL queries, vector/keyword search or both",
+    "Text-to-SQL safety: read-only views, schema allowlists, parameterised execution and row-level ACLs",
+    "Document access control enforced at retrieval time",
+    "End-to-end latency budget and freshness consistency across both stores"
+   ],
+   "red_flags": [
+    "Gives the agent unrestricted SQL execution or write privileges",
+    "No latency budget across tool calls and retrieval",
+    "Ignores index staleness between structured and unstructured stores"
+   ],
+   "answer_source": "T0-46 L702",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "agentic_rag",
+    "hybrid_search",
+    "sql",
+    "access_controlled_retrieval",
+    "cost_latency"
+   ],
+   "source": "T0-46 L702",
+   "grade": "C"
+  },
+  {
+   "id": "p066",
+   "track": "application",
+   "archetype": "A15",
+   "prompt": "Describe how an agent connects to external tools through a tool-integration protocol (such as MCP) and how you defend against prompt injection.",
+   "reported_by": "Accenture (prep-vendor guide, n=1, Dataford 2026-09-15, 8 interviews, COI; covers/red flags are P)",
+   "covers": [
+    "Typed tool schemas, least-privilege permission scoping and per-user identity propagation",
+    "Treating tool outputs as untrusted data rather than instructions",
+    "Explicit user confirmation gates for state-changing or irreversible actions",
+    "Audit logging, trace replay and adversarial prompt-injection tests in CI"
+   ],
+   "red_flags": [
+    "Trusts tool responses as trusted instructions",
+    "Shares one broad service credential across all tools",
+    "No adversarial testing of indirect injection attacks"
+   ],
+   "answer_source": "T0-46 L703",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "ai-security-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "mcp",
+    "tool_calling",
+    "prompt_injection",
+    "containment",
+    "red_teaming"
+   ],
+   "source": "T0-46 L703",
+   "grade": "C"
+  },
+  {
+   "id": "p067",
+   "track": "customer-application",
+   "archetype": null,
+   "prompt": "Take an ambiguous client business problem, frame it, choose an ML or GenAI approach and defend trade-offs in a 45–60 minute case.",
+   "reported_by": "McKinsey / QuantumBlack (prep-vendor guides, n=2, Hacking the Case Interview 2026-05-02 and Dataford 2026-09-16; covers/red flags are P)",
+   "covers": [
+    "Business problem framing, target KPI and decision criteria before naming a model",
+    "Data availability, quality constraints and a simple non-LLM baseline",
+    "Model choice, risks and failure modes translated into client impact",
+    "Phased delivery plan and clear executive communication"
+   ],
+   "red_flags": [
+    "Jumps straight to a model before framing the business problem",
+    "No baseline comparison",
+    "Ignores client data constraints"
+   ],
+   "answer_source": "T0-46 L706",
+   "roles": [
+    "forward-deployed-engineer",
+    "ai-solutions-architect",
+    "applied-ai-engineer"
+   ],
+   "skills": [
+    "customer_scoping",
+    "business_case",
+    "model_selection",
+    "c2_tradeoffs",
+    "customer_communication"
+   ],
+   "source": "T0-46 L706",
+   "grade": "C"
+  },
+  {
+   "id": "p068",
+   "track": "customer-application",
+   "archetype": null,
+   "prompt": "Present a past production AI project and defend your architecture, coding choices and rejected alternatives under deep follow-ups.",
+   "reported_by": "McKinsey / QuantumBlack (prep-vendor guides, n=2, Hacking the Case Interview 2026-05-02 and Dataford 2026-09-16; covers/red flags are P)",
+   "covers": [
+    "Concise problem statement, constraints and measurable business outcome",
+    "Architecture alternatives considered and concrete reasons others were rejected",
+    "Your own individual technical contribution separated from the wider team",
+    "What broke in production and what you would redesign with hindsight"
+   ],
+   "red_flags": [
+    "Cannot justify architectural trade-offs under probing",
+    "Presents team outcomes without isolating personal work",
+    "No measurable outcome or post-launch evidence"
+   ],
+   "answer_source": "T0-46 L707",
+   "roles": [
+    "forward-deployed-engineer",
+    "ai-solutions-architect",
+    "ai-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "presenting",
+    "system_design",
+    "c3_ownership",
+    "customer_communication"
+   ],
+   "source": "T0-46 L707",
+   "grade": "C"
+  },
+  {
+   "id": "p069",
+   "track": "customer-application",
+   "archetype": "A15",
+   "prompt": "Design a GenAI application for a regulated client with strict privacy and security requirements, including drift and retraining approvals.",
+   "reported_by": "Cognizant (prep-vendor guide, n=1, Dataford 2026-08-10, AI architect final round; covers/red flags are P)",
+   "covers": [
+    "Data residency, PII redaction, retention limits and zero-training vendor terms",
+    "Role-based access control and tamper-evident audit logging",
+    "Quality and data drift detection with explicit retraining or prompt-update triggers",
+    "Formal risk sign-off and named governance owners before production rollout"
+   ],
+   "red_flags": [
+    "Ignores client privacy, residency or regulatory constraints",
+    "No drift monitoring or retraining governance plan",
+    "No named owner for risk sign-off"
+   ],
+   "answer_source": "T0-46 L708",
+   "roles": [
+    "ai-solutions-architect",
+    "forward-deployed-engineer",
+    "ai-governance-lead",
+    "ai-security-engineer"
+   ],
+   "skills": [
+    "privacy",
+    "data_governance",
+    "drift_monitoring",
+    "grc",
+    "regulation"
+   ],
+   "source": "T0-46 L708",
+   "grade": "C"
+  },
+  {
+   "id": "p070",
+   "track": "customer-application",
+   "archetype": null,
+   "prompt": "Explain how you reset a client's expectations when technical feasibility turns out lower than promised or the AI strategy must change.",
+   "reported_by": "Cognizant (prep-vendor guide, n=1, Dataford 2026-08-10, consulting and leadership theme; covers/red flags are P)",
+   "covers": [
+    "Surface the measured facts early without hiding shortfalls",
+    "Present concrete alternatives with trade-offs in accuracy, cost and timeline",
+    "Agree a revised scope with explicit checkpoints and exit criteria",
+    "Repair stakeholder trust through transparent progress evidence"
+   ],
+   "red_flags": [
+    "Blames the client or their data without offering options",
+    "Delays surfacing the feasibility gap",
+    "Proposes no scoped alternative"
+   ],
+   "answer_source": "T0-46 L709",
+   "roles": [
+    "ai-solutions-architect",
+    "forward-deployed-engineer",
+    "fractional-ai-leader",
+    "independent-ai-consultant"
+   ],
+   "skills": [
+    "customer_communication",
+    "stakeholder",
+    "c2_tradeoffs",
+    "customer_scoping"
+   ],
+   "source": "T0-46 L709",
+   "grade": "C"
+  },
+  {
+   "id": "p071",
+   "track": "customer-application",
+   "archetype": null,
+   "prompt": "Explain an AI concept to non-technical stakeholders and walk through how you debugged a model-to-database integration issue for a user.",
+   "reported_by": "HCLTech (prep-vendor guide, n=1, Dataford 2026-10-07; covers/red flags are P)",
+   "covers": [
+    "Plain-language explanation calibrated to the stakeholder's decisions rather than model internals",
+    "Systematic end-to-end debugging across prompt, schema, query and database layers",
+    "Concrete user outcome and preventive follow-up fix"
+   ],
+   "red_flags": [
+    "Relies on jargon with no link to user decisions",
+    "No concrete debugging steps or verifiable result"
+   ],
+   "answer_source": "T0-46 L710",
+   "roles": [
+    "forward-deployed-engineer",
+    "ai-solutions-architect",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "customer_communication",
+    "c2_tradeoffs",
+    "sql",
+    "problem_solving"
+   ],
+   "source": "T0-46 L710",
+   "grade": "C"
+  },
+  {
+   "id": "p072",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Design a product search system: candidate retrieval, ranking, features and evaluation, and specify where an LLM adds value.",
+   "reported_by": "Microsoft Bing (candidate report, n=1, PracHub, MLE loop interviewed Apr 2026; covers/red flags are P)",
+   "covers": [
+    "Two-stage architecture: fast candidate retrieval followed by feature-rich ranking",
+    "Feature pipelines, training-label sources and position-bias handling",
+    "Offline relevance metrics paired with online A/B experimentation",
+    "Strict latency budget and explicit justification (with cost) for where an LLM helps (e.g. query rewriting or offline enrichment)"
+   ],
+   "red_flags": [
+    "Designs only a ranking model with no candidate retrieval stage",
+    "No online experimentation plan",
+    "Inserts an LLM on the hot path without latency or cost justification"
+   ],
+   "answer_source": "T0-46 L711",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist",
+    "ai-engineer"
+   ],
+   "skills": [
+    "ranking_search",
+    "recsys",
+    "hybrid_search",
+    "experiment_design",
+    "cost_latency"
+   ],
+   "source": "T0-46 L711",
+   "grade": "C"
+  },
+  {
+   "id": "p073",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Work through a case study building and monitoring an ML or GenAI system inside a bank: data controls, explainability, governance and drift.",
+   "reported_by": "JPMorgan Chase (prep-vendor guide, n=1 covering 7 reports, Dataford 2026-09-27, Superday; covers/red flags are P)",
+   "covers": [
+    "Data lineage, access controls and PII protection for financial records",
+    "Model selection balancing accuracy with regulatory explainability",
+    "Model-risk governance, independent validation and approval gates",
+    "Production drift monitoring, fallback paths and incident handling"
+   ],
+   "red_flags": [
+    "Ignores banking model-risk governance or explainability",
+    "No data lineage or audit trail",
+    "No post-launch drift monitoring"
+   ],
+   "answer_source": "T0-46 L712",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist",
+    "ai-engineer",
+    "ai-risk-assurance-specialist"
+   ],
+   "skills": [
+    "domain_finance",
+    "explainability",
+    "data_governance",
+    "drift_monitoring",
+    "grc"
+   ],
+   "source": "T0-46 L712",
+   "grade": "C"
+  },
+  {
+   "id": "p074",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Architect scalable ML pipelines with real-time inference, model registry, governance approvals and production monitoring for a regulated firm.",
+   "reported_by": "Goldman Sachs (prep-vendor guides, n=2, Interview Query 2026-02-09 and Dataford 2026-10-08; covers/red flags are P)",
+   "covers": [
+    "Batch and streaming feature paths with training-serving parity",
+    "Low-latency online serving, scaling and rollback mechanics",
+    "Versioned model registry integrated with model-risk sign-off",
+    "Automated monitoring, audit artefacts and governance evidence"
+   ],
+   "red_flags": [
+    "Batch-only architecture when real-time inference is required",
+    "Skips model-risk approval and governance evidence",
+    "No rollback or monitoring plan"
+   ],
+   "answer_source": "T0-46 L713",
+   "roles": [
+    "ml-engineer",
+    "ml-platform-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "mlops_lifecycle",
+    "data_pipelines",
+    "observability",
+    "progressive_delivery",
+    "domain_finance"
+   ],
+   "source": "T0-46 L713",
+   "grade": "C"
+  },
+  {
+   "id": "p075",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Design a real-time ML pipeline delivered via CI/CD with production monitoring, weighing cloud versus on-premises deployment trade-offs.",
+   "reported_by": "Cognizant (prep-vendor guide, n=1, Dataford 2026-08-10; covers/red flags are P)",
+   "covers": [
+    "Streaming feature ingestion and low-latency serving path",
+    "CI/CD automation for model packaging, evaluation gates and canary rollback",
+    "Drift monitoring and controlled retraining triggers",
+    "Hybrid-cloud vs on-premises trade-offs covering data residency, latency and total cost"
+   ],
+   "red_flags": [
+    "Manual deployment steps with no CI/CD or rollback",
+    "No retraining or drift strategy",
+    "Ignores data residency constraints"
+   ],
+   "answer_source": "T0-46 L714",
+   "roles": [
+    "ml-engineer",
+    "ml-platform-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "mlops_lifecycle",
+    "git_ci",
+    "drift_monitoring",
+    "cloud",
+    "system_design"
+   ],
+   "source": "T0-46 L714",
+   "grade": "C"
+  },
+  {
+   "id": "p076",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Design a high-level ML system for a business problem, then redesign it to fit a tight compute and latency budget.",
+   "reported_by": "Amazon (prep-vendor guide, n=1, Dataford 2026-09-01, agentic AI engineer loop; covers/red flags are P)",
+   "covers": [
+    "Clear problem definition, business KPI and offline/online metrics",
+    "End-to-end data, feature and serving architecture for the unconstrained baseline",
+    "Principled cuts under resource constraints (distillation, quantisation, caching, simpler models)",
+    "Quantified trade-offs between quality loss and compute savings, plus monitoring"
+   ],
+   "red_flags": [
+    "Gives one rigid design that cannot adapt when constraints tighten",
+    "No metric tying model quality to business value",
+    "No data or monitoring plan"
+   ],
+   "answer_source": "T0-46 L715",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist",
+    "ai-engineer",
+    "agentic-ai-engineer"
+   ],
+   "skills": [
+    "ml_fundamentals",
+    "capacity_cost",
+    "distillation",
+    "model_selection",
+    "cost_latency"
+   ],
+   "source": "T0-46 L715",
+   "grade": "C"
+  },
+  {
+   "id": "p077",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Design a fault-tolerant store serving streaming features to ML models alongside scalable embedding ETL pipelines.",
+   "reported_by": "Databricks (prep-vendor guide, n=1, Dataford 2026-09-18, editorial question list; covers/red flags are P)",
+   "covers": [
+    "Write and low-latency online read paths plus offline store parity",
+    "Consistency guarantees, replication and failure recovery",
+    "Freshness SLOs and point-in-time backfill without data leakage",
+    "Incremental embedding ETL updates, versioning and pipeline monitoring"
+   ],
+   "red_flags": [
+    "Ignores node or stream failure recovery",
+    "No freshness target or backfill path",
+    "Allows training-serving skew or label leakage"
+   ],
+   "answer_source": "T0-46 L716",
+   "roles": [
+    "ml-platform-engineer",
+    "ml-engineer",
+    "ai-infrastructure-engineer"
+   ],
+   "skills": [
+    "feature_store",
+    "data_pipelines",
+    "embedding_models",
+    "system_design",
+    "observability"
+   ],
+   "source": "T0-46 L716",
+   "grade": "C"
+  },
+  {
+   "id": "p078",
+   "track": "ml-system-design",
+   "archetype": null,
+   "prompt": "Work through a system case combining a classical ML model with a GenAI component: task split, data, serving, risks and testing.",
+   "reported_by": "McKinsey / QuantumBlack (prep-vendor guide, n=1 covering 9 interviews, Dataford 2026-09-16; covers/red flags are P)",
+   "covers": [
+    "Clean division of labour between deterministic/classical ML and the LLM component",
+    "Data, labelling and evaluation needs for both components",
+    "Serving architecture, latency/cost budgets and fallback when the LLM fails",
+    "End-to-end risk assessment and online/offline test plan"
+   ],
+   "red_flags": [
+    "Uses an LLM where a classical classifier or rule is cheaper and more reliable",
+    "No combined evaluation strategy",
+    "Ignores operational risk and fallback behaviour"
+   ],
+   "answer_source": "T0-46 L717",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist",
+    "forward-deployed-engineer",
+    "ai-solutions-architect"
+   ],
+   "skills": [
+    "adaptation_choice",
+    "ml_fundamentals",
+    "model_selection",
+    "evals",
+    "system_design"
+   ],
+   "source": "T0-46 L717",
+   "grade": "C"
+  },
+  {
+   "id": "p079",
+   "track": "infrastructure",
+   "archetype": "A1",
+   "prompt": "Review a flawed batched GPU inference API design doc: check load balancing, batching, caching, retries, throughput maths and mixed-model GPU sharing.",
+   "reported_by": "Anthropic (candidate question page, n=1, PracHub 2026-09-18; states 100 ms/batch, 10,000 QPS, 8-GPU pool; covers/red flags are P)",
+   "covers": [
+    "Order findings by severity, addressing correctness and capacity flaws before style",
+    "Check batch-latency and QPS arithmetic against stated hardware limits (e.g. 100 ms/batch at 10,000 QPS)",
+    "Spot interference and memory-budget flaws when scheduling a large and a small model on one 8-GPU pool",
+    "Flag retry amplification, admission-control gaps and propose a concrete migration and validation plan"
+   ],
+   "red_flags": [
+    "Lists cosmetic or style comments before structural correctness flaws",
+    "Skips checking the document's throughput arithmetic",
+    "Proposes no rollout or validation plan"
+   ],
+   "answer_source": "T0-46 L718",
+   "roles": [
+    "inference-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "gpu-kernel-engineer"
+   ],
+   "skills": [
+    "design_docs",
+    "batching_kv",
+    "gpu_fleet",
+    "capacity_cost",
+    "serving_literacy"
+   ],
+   "source": "T0-46 L718",
+   "grade": "C"
+  },
+  {
+   "id": "p080",
+   "track": "infrastructure",
+   "archetype": null,
+   "prompt": "Optimise a performance-critical programme in a timed take-home (2–4 hours), and explain what you measured, changed and traded off.",
+   "reported_by": "Anthropic (own engineering blog 2026-01-21, COI: AI tools allowed; v1 4 hours from early 2024, v2 2 hours mid-2025; format only)",
+   "covers": [
+    "Profile and establish a clean baseline before modifying code",
+    "Identify the true hardware or algorithmic bottleneck rather than guessing",
+    "Reason explicitly about memory hierarchy, vectorisation, parallelism and hardware limits",
+    "Time-box optimisation passes and document measured speed-ups and trade-offs clearly"
+   ],
+   "red_flags": [
+    "Rewrites code without profiling or baseline measurements",
+    "Cannot explain why a change helped or what trade-off it introduced"
+   ],
+   "answer_source": "T0-46 L721",
+   "roles": [
+    "gpu-kernel-engineer",
+    "inference-engineer",
+    "ai-infrastructure-engineer",
+    "research-engineer"
+   ],
+   "skills": [
+    "profiling",
+    "memory_perf",
+    "gpu_fundamentals",
+    "python",
+    "cuda_cpp"
+   ],
+   "source": "T0-46 L721",
+   "grade": "A"
+  },
+  {
+   "id": "p081",
+   "track": "infrastructure",
+   "archetype": "A1",
+   "prompt": "Design a GPU inference-serving system: batching, memory hierarchy, parallelism strategy and what you profile first.",
+   "reported_by": "NVIDIA (prep-vendor guide, n=1, techinterview.org 2026-07-12; covers/red flags are P)",
+   "covers": [
+    "Continuous batching, scheduling and prefill/decode behaviour",
+    "HBM memory and cache budget arithmetic for weights and activations",
+    "Parallelism choice (tensor vs pipeline vs data) matched to interconnect bandwidth",
+    "Structured profiling plan tied to latency, throughput and cost targets"
+   ],
+   "red_flags": [
+    "No GPU memory or bandwidth arithmetic",
+    "Ignores batching dynamics",
+    "Guesses bottlenecks instead of naming profiling signals"
+   ],
+   "answer_source": "T0-46 L722",
+   "roles": [
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "gpu_fundamentals",
+    "batching_kv",
+    "parallel_serving",
+    "profiling",
+    "serving_literacy"
+   ],
+   "source": "T0-46 L722",
+   "grade": "C"
+  },
+  {
+   "id": "p082",
+   "track": "infrastructure",
+   "archetype": null,
+   "prompt": "Solve an algorithm problem where memory hierarchy, cache locality or parallelism decides the right implementation.",
+   "reported_by": "NVIDIA (prep-vendor guide, n=1, techinterview.org 2026-07-12; systems-angled coding round; covers/red flags are P)",
+   "covers": [
+    "Explicit memory-access cost model (cache lines, locality, coalescing or bandwidth limits)",
+    "Parallel decomposition with synchronisation and contention analysis",
+    "Asymptotic complexity paired with constant-factor and memory-layout awareness",
+    "Edge-case and concurrency testing"
+   ],
+   "red_flags": [
+    "Analyses only big-O complexity while ignoring memory layout and cache behaviour",
+    "No concurrency or edge-case testing"
+   ],
+   "answer_source": "T0-46 L723",
+   "roles": [
+    "gpu-kernel-engineer",
+    "inference-engineer",
+    "ai-infrastructure-engineer"
+   ],
+   "skills": [
+    "memory_perf",
+    "cuda_cpp",
+    "dsa",
+    "gpu_fundamentals",
+    "testing"
+   ],
+   "source": "T0-46 L723",
+   "grade": "C"
+  },
+  {
+   "id": "p083",
+   "track": "infrastructure",
+   "archetype": "A4",
+   "prompt": "Design training or inference infrastructure at very large GPU scale, including fault-tolerant checkpointing and serving across products.",
+   "reported_by": "xAI (prep-vendor guide, n=1, techinterview.org 2026-07-15, 60-minute design round; covers/red flags are P)",
+   "covers": [
+    "Hardware failure rates at multi-thousand-GPU scale and mean time between failures",
+    "Asynchronous checkpoint frequency, storage throughput and fast recovery",
+    "Data-pipeline throughput keeping GPUs fed without stalls",
+    "Cluster utilisation, multi-surface serving isolation and cost tracking"
+   ],
+   "red_flags": [
+    "Generic web-scale datacentre design ignoring GPU failure rates",
+    "No failure model or checkpoint recovery calculation",
+    "No data-loading throughput estimate"
+   ],
+   "answer_source": "T0-46 L724",
+   "roles": [
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "inference-engineer",
+    "gpu-kernel-engineer"
+   ],
+   "skills": [
+    "gpu_fleet",
+    "storage_checkpoint",
+    "distributed_training",
+    "hpc_schedulers",
+    "capacity_cost"
+   ],
+   "source": "T0-46 L724",
+   "grade": "C"
+  },
+  {
+   "id": "p084",
+   "track": "infrastructure",
+   "archetype": null,
+   "prompt": "Design distributed training for a large foundation model: parallelism strategy, communication overhead, memory budget and fault recovery.",
+   "reported_by": "Google DeepMind (prep-vendor guide, n=1, techinterview.org 2026-07-12, research-engineer 60-min round; covers/red flags are P)",
+   "covers": [
+    "Data, tensor, pipeline and context parallelism trade-offs matched to model size and interconnect",
+    "Collective communication cost (all-reduce, all-gather) overlapped with compute",
+    "Per-device memory budget: weights, gradients, optimiser states and activations",
+    "Checkpointing, elastic failure recovery and achieved throughput (MFU)"
+   ],
+   "red_flags": [
+    "Picks one parallelism scheme with no memory or communication justification",
+    "Ignores collective communication overhead",
+    "No failure-recovery plan"
+   ],
+   "answer_source": "T0-46 L725",
+   "roles": [
+    "ai-infrastructure-engineer",
+    "research-engineer",
+    "gpu-kernel-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "distributed_training",
+    "pretraining",
+    "storage_checkpoint",
+    "gpu_fundamentals",
+    "mixed_precision"
+   ],
+   "source": "T0-46 L725",
+   "grade": "C"
+  },
+  {
+   "id": "p085",
+   "track": "infrastructure",
+   "archetype": null,
+   "prompt": "Design a thread-safe rate limiter, then extend it to a distributed service shared across many concurrent clients.",
+   "reported_by": "Microsoft CoreAI (candidate report, n=1, PracHub, senior loop Jun 2026; covers/red flags are P)",
+   "covers": [
+    "Algorithm choice (token bucket, leaky bucket, sliding window) matched to burst rules",
+    "Local concurrency, lock contention and atomic state transitions",
+    "Distributed state sharing, clock skew, race conditions and failure modes (fail-open vs fail-closed)",
+    "Per-client fairness, edge-case testing and latency overhead"
+   ],
+   "red_flags": [
+    "Ignores thread-safety race conditions",
+    "Cannot extend the local design to a multi-node distributed service"
+   ],
+   "answer_source": "T0-46 L726",
+   "roles": [
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-engineer",
+    "inference-engineer"
+   ],
+   "skills": [
+    "system_design",
+    "apis",
+    "redis",
+    "production_hardening",
+    "testing"
+   ],
+   "source": "T0-46 L726",
+   "grade": "C"
+  },
+  {
+   "id": "p086",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Set up CI-style evaluation gates that a new agent or copilot must pass before deployment.",
+   "reported_by": "Databricks (prep-vendor guide, n=1, Dataford 2026-09-18; covers/red flags are P)",
+   "covers": [
+    "Stratified test-set design covering core workflows, edge cases and past regressions",
+    "Multi-metric pass thresholds with statistical rationale rather than one aggregate score",
+    "Handling non-deterministic outputs and flaky LLM judges inside CI",
+    "Clear gate ownership and a maintenance workflow to refresh saturated test sets"
+   ],
+   "red_flags": [
+    "Gates deployment on a single uncalibrated score",
+    "No rationale for pass/fail thresholds",
+    "No process to update or expand the test set"
+   ],
+   "answer_source": "T0-46 L728",
+   "roles": [
+    "ai-evaluation-engineer",
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "eval_ci_gates",
+    "agent_evals",
+    "golden_datasets",
+    "eval_stats",
+    "git_ci"
+   ],
+   "source": "T0-46 L728",
+   "grade": "C"
+  },
+  {
+   "id": "p087",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Design a data pipeline with an evaluation harness for model outputs and a system to route labelling tasks to human workers.",
+   "reported_by": "Scale AI (prep-vendor guide, n=1, techinterview.org 2026-07-12; covers/red flags are P)",
+   "covers": [
+    "End-to-end pipeline stages with automated quality checks on ingested data",
+    "Reproducible evaluation harness pinning datasets, prompts and model versions",
+    "Task routing matched to annotator expertise plus gold-question calibration",
+    "Inter-rater agreement tracking, adjudication workflows, throughput and unit cost"
+   ],
+   "red_flags": [
+    "No quality control or gold checks on human labels",
+    "Non-reproducible evaluation runs",
+    "Ignores annotator disagreement"
+   ],
+   "answer_source": "T0-46 L729",
+   "roles": [
+    "ai-evaluation-engineer",
+    "domain-evaluation-specialist",
+    "ml-platform-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "human_evaluation",
+    "annotation",
+    "annotation_guidelines",
+    "evals",
+    "data_pipelines"
+   ],
+   "source": "T0-46 L729",
+   "grade": "C"
+  },
+  {
+   "id": "p088",
+   "track": "evaluation",
+   "archetype": null,
+   "prompt": "Discuss how human preference data is collected for RLHF and how you evaluate the resulting reward model and policy.",
+   "reported_by": "Scale AI (prep-vendor guide, n=1, techinterview.org 2026-07-12, ML and research round; covers/red flags are P)",
+   "covers": [
+    "Pairwise or rubric-based preference collection design and annotator guidelines",
+    "Annotator agreement, bias checks and filtering low-quality labels",
+    "Reward-model validation and guarding against reward hacking or over-optimisation",
+    "Held-out human and automated evaluation of the post-trained policy"
+   ],
+   "red_flags": [
+    "Treats raw preference labels as noise-free ground truth",
+    "No held-out evaluation or reward-hacking checks"
+   ],
+   "answer_source": "T0-46 L730",
+   "roles": [
+    "research-engineer",
+    "research-scientist",
+    "ai-evaluation-engineer",
+    "applied-scientist",
+    "domain-evaluation-specialist"
+   ],
+   "skills": [
+    "preference_data",
+    "rlhf",
+    "reward_modeling",
+    "human_evaluation",
+    "post_training"
+   ],
+   "source": "T0-46 L730",
+   "grade": "C"
+  },
+  {
+   "id": "p089",
+   "track": "evaluation",
+   "archetype": "A15",
+   "prompt": "Describe how you evaluate a model's safety behaviour, including red-teaming, and explain where red-teaming falls short.",
+   "reported_by": "Anthropic (prep-vendor guide, n=1, techinterview.org 2026-07-15, ML and research depth; covers/red flags are P)",
+   "covers": [
+    "Explicit threat model and prioritised harm categories",
+    "Automated and human adversarial test coverage with clear scoring rubrics",
+    "Limits of red-teaming (non-exhaustive, adaptive attacks, false sense of assurance)",
+    "Follow-up mitigations, regression tracking and defence-in-depth layers"
+   ],
+   "red_flags": [
+    "Treats a single red-team pass as proof of safety",
+    "Cannot articulate where red-teaming fails"
+   ],
+   "answer_source": "T0-46 L731",
+   "roles": [
+    "ai-safety-researcher",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "ai-evaluation-engineer"
+   ],
+   "skills": [
+    "safety_evals",
+    "red_teaming",
+    "threat_modeling",
+    "alignment",
+    "safety_cases"
+   ],
+   "source": "T0-46 L731",
+   "grade": "C"
+  },
+  {
+   "id": "p090",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Design reproducible evaluation infrastructure for large-scale model training experiments.",
+   "reported_by": "Google DeepMind (prep-vendor guide, n=1, techinterview.org 2026-07-12, research-engineer 60-min round; covers/red flags are P)",
+   "covers": [
+    "Strict versioning of datasets, prompts, harness code, seeds and model checkpoints",
+    "Deterministic or variance-bounded execution across training checkpoints",
+    "Standardised metric definitions and longitudinal result tracking",
+    "Compute-cost budgeting so evaluation scales alongside training runs"
+   ],
+   "red_flags": [
+    "Non-reproducible runs with unpinned harness or dataset versions",
+    "Ignores evaluation compute cost across checkpoints"
+   ],
+   "answer_source": "T0-46 L732",
+   "roles": [
+    "research-engineer",
+    "ai-evaluation-engineer",
+    "ml-platform-engineer"
+   ],
+   "skills": [
+    "benchmark_design",
+    "evals",
+    "experiment_design",
+    "mlops_lifecycle",
+    "capacity_cost"
+   ],
+   "source": "T0-46 L732",
+   "grade": "C"
+  },
+  {
+   "id": "p091",
+   "track": "evaluation",
+   "archetype": "A14",
+   "prompt": "Explain how you evaluate an LLM agent system both offline and online, including the reliability of its tool calls.",
+   "reported_by": "Amazon (prep-vendor guide, n=1, Dataford 2026-09-01, agentic AI engineer loop; covers/red flags are P)",
+   "covers": [
+    "Offline golden sets and component metrics for retrieval, reasoning and final outputs",
+    "Tool-call reliability metrics: tool selection accuracy, argument schema validity and execution success",
+    "Online traffic sampling, regression alerts and human review escalation",
+    "Closing incidents back into offline regression tasks"
+   ],
+   "red_flags": [
+    "Relies on offline scores with no online production monitoring",
+    "Tracks no tool-calling reliability or schema-error metrics"
+   ],
+   "answer_source": "T0-46 L733",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-evaluation-engineer",
+    "ai-engineer",
+    "applied-ai-engineer"
+   ],
+   "skills": [
+    "agent_evals",
+    "tool_calling",
+    "online_evals",
+    "evals",
+    "observability"
+   ],
+   "source": "T0-46 L733",
+   "grade": "C"
+  },
+  {
+   "id": "p092",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Walk through a research paper you know well: method, core assumptions, weaknesses and the concrete experiment you would run next.",
+   "reported_by": "Anthropic and Google DeepMind (prep-vendor guides, n=2, techinterview.org Jul 2026; DeepMind often runs 2–3 60-min rounds; covers/red flags are P)",
+   "covers": [
+    "Accurate, concise summary of the method and experimental setup",
+    "Hidden assumptions, confounders and failure modes of the claimed result",
+    "Critical assessment of baselines, ablations and evidence strength",
+    "A concrete, falsifiable next experiment and how it connects to adjacent literature"
+   ],
+   "red_flags": [
+    "Recites only the abstract without technical depth",
+    "Cannot identify weaknesses or missing baselines",
+    "Proposes no concrete next experiment"
+   ],
+   "answer_source": "T0-46 L735",
+   "roles": [
+    "research-scientist",
+    "research-engineer",
+    "ai-safety-researcher",
+    "applied-scientist"
+   ],
+   "skills": [
+    "research_taste",
+    "research_methods",
+    "ablations",
+    "experiment_design"
+   ],
+   "source": "T0-46 L735",
+   "grade": "C"
+  },
+  {
+   "id": "p093",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Explain the trade-offs among attention variants, positional encodings and tokenisation choices in modern language models.",
+   "reported_by": "Anthropic (prep-vendor guide, n=1, techinterview.org 2026-07-15, ML and research depth round; covers/red flags are P)",
+   "covers": [
+    "Mechanics of each choice (e.g. MHA vs GQA/MQA/MLA, RoPE scaling, BPE/vocabulary sizing)",
+    "Effects on quality, KV-cache memory, training stability and inference cost",
+    "Known failure cases (length extrapolation, multilingual/code tokenisation fertility)",
+    "Empirical criteria for changing a default in a new model run"
+   ],
+   "red_flags": [
+    "Recites textbook definitions with no systems or quality trade-off reasoning",
+    "Ignores KV-cache or compute implications"
+   ],
+   "answer_source": "T0-46 L736",
+   "roles": [
+    "research-scientist",
+    "research-engineer",
+    "applied-scientist",
+    "inference-engineer"
+   ],
+   "skills": [
+    "transformers",
+    "deep_learning",
+    "llm_fundamentals",
+    "pretraining"
+   ],
+   "source": "T0-46 L736",
+   "grade": "C"
+  },
+  {
+   "id": "p094",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Explain what scaling laws do and do not tell you, and how gradient-flow problems show up during training.",
+   "reported_by": "Anthropic (prep-vendor guide, n=1, techinterview.org 2026-07-15, ML and research depth round; covers/red flags are P)",
+   "covers": [
+    "Functional form of compute-optimal scaling laws and where extrapolation breaks down",
+    "Trade-offs between training-optimal and inference-optimal model sizing",
+    "Diagnostic signs of unstable gradients (loss spikes, gradient norms, activation variance)",
+    "Concrete remedies and what evidence would falsify your hypothesis"
+   ],
+   "red_flags": [
+    "Treats scaling-law fits as guarantees across architecture or data-mix changes",
+    "Names no concrete gradient diagnostics"
+   ],
+   "answer_source": "T0-46 L737",
+   "roles": [
+    "research-scientist",
+    "research-engineer",
+    "ai-safety-researcher"
+   ],
+   "skills": [
+    "scaling_laws",
+    "pretraining",
+    "training_debug",
+    "deep_learning"
+   ],
+   "source": "T0-46 L737",
+   "grade": "C"
+  },
+  {
+   "id": "p095",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Given a training run that is diverging or failing, list hypotheses, order your diagnostic experiments and state what evidence changes your mind.",
+   "reported_by": "Anthropic and xAI (prep-vendor guides, n=2, techinterview.org Jul 2026; covers/red flags are P)",
+   "covers": [
+    "Prioritised hypotheses covering data bugs, numerics/precision, learning rate, architecture and hardware",
+    "Cheapest, fastest informative experiments ordered before expensive full re-runs",
+    "Controlled baselines isolating one variable at a time",
+    "Reading loss, gradient-norm and logit telemetry with a clear decision rule"
+   ],
+   "red_flags": [
+    "Changes multiple hyperparameters at once",
+    "Runs no controlled baseline",
+    "No stopping or escalation rule"
+   ],
+   "answer_source": "T0-46 L738",
+   "roles": [
+    "research-engineer",
+    "research-scientist",
+    "ai-infrastructure-engineer",
+    "applied-scientist"
+   ],
+   "skills": [
+    "training_debug",
+    "experiment_design",
+    "ablations",
+    "pretraining",
+    "mixed_precision"
+   ],
+   "source": "T0-46 L738",
+   "grade": "C"
+  },
+  {
+   "id": "p096",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Scope an open-ended research problem in 60 minutes: formulate hypotheses, baselines, experiment ordering, risks and success criteria.",
+   "reported_by": "Google DeepMind (prep-vendor guide, n=1, techinterview.org 2026-07-12, research-scientist loop; covers/red flags are P)",
+   "covers": [
+    "Sharp, testable research question carved out of an open-ended goal",
+    "Strong baselines and metrics that actually measure the phenomenon",
+    "Staged experiment ordering that de-risks the biggest unknowns first",
+    "Explicit failure modes, fallback directions and clear success criteria"
+   ],
+   "red_flags": [
+    "Proposes no baseline comparison",
+    "Scope is too broad to produce a falsifiable test"
+   ],
+   "answer_source": "T0-46 L739",
+   "roles": [
+    "research-scientist",
+    "ai-safety-researcher",
+    "research-engineer",
+    "applied-scientist"
+   ],
+   "skills": [
+    "research_taste",
+    "research_methods",
+    "experiment_design",
+    "ablations"
+   ],
+   "source": "T0-46 L739",
+   "grade": "C"
+  },
+  {
+   "id": "p097",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Implement a core ML primitive by hand in 60 minutes without high-level ML libraries or AI assistance.",
+   "reported_by": "Google DeepMind (prep-vendor guide, n=1, techinterview.org 2026-07-12; AI tools generally prohibited; covers/red flags are P)",
+   "covers": [
+    "Correct mathematical formulation and numerical stability (e.g. log-sum-exp, scaling)",
+    "Clean, explicit tensor shapes and broadcasting checked at each step",
+    "Verification tests on small hand-checkable inputs and edge cases",
+    "Clear complexity analysis and narrated reasoning throughout"
+   ],
+   "red_flags": [
+    "Delegates the core algorithm to a high-level library call",
+    "Skips numerical checks or small-input tests"
+   ],
+   "answer_source": "T0-46 L740",
+   "roles": [
+    "research-engineer",
+    "research-scientist",
+    "applied-scientist",
+    "ml-engineer"
+   ],
+   "skills": [
+    "pytorch",
+    "numpy",
+    "deep_learning",
+    "linear_algebra",
+    "testing"
+   ],
+   "source": "T0-46 L740",
+   "grade": "C"
+  },
+  {
+   "id": "p098",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Answer probability, linear algebra and optimisation questions in a 60-minute maths-and-theory round.",
+   "reported_by": "Google DeepMind (prep-vendor guide, n=1, techinterview.org 2026-07-12, research-scientist loop; covers/red flags are P)",
+   "covers": [
+    "Clean step-by-step derivations stating every assumption",
+    "Geometric or probabilistic intuition behind each result",
+    "Explicit connection to real model training or optimisation behaviour",
+    "Worked sanity checks on small edge cases"
+   ],
+   "red_flags": [
+    "Recites memorised formulas without being able to derive them",
+    "Stalls when follow-ups change an assumption"
+   ],
+   "answer_source": "T0-46 L741",
+   "roles": [
+    "research-scientist",
+    "ai-safety-researcher",
+    "applied-scientist",
+    "research-engineer"
+   ],
+   "skills": [
+    "linear_algebra",
+    "statistics",
+    "ml_fundamentals",
+    "deep_learning"
+   ],
+   "source": "T0-46 L741",
+   "grade": "C"
+  },
+  {
+   "id": "p099",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Compare competing model architectures, use scaling laws to decide which to scale and design an experiment with controlled baselines.",
+   "reported_by": "xAI (prep-vendor guide, n=1, techinterview.org 2026-07-15, ML and research rounds; covers/red flags are P)",
+   "covers": [
+    "Architectural trade-offs across quality, memory, latency and hardware utilisation",
+    "Iso-FLOP or scaling-law reasoning across multiple model scales",
+    "Controlled baselines matching compute, data mix and hyperparameter tuning effort",
+    "Decision rule for interpreting noisy or close results within a fixed compute budget"
+   ],
+   "red_flags": [
+    "Uncontrolled comparison favouring one architecture's tuning budget",
+    "Ignores compute budget and hardware utilisation"
+   ],
+   "answer_source": "T0-46 L742",
+   "roles": [
+    "research-scientist",
+    "research-engineer",
+    "applied-scientist"
+   ],
+   "skills": [
+    "scaling_laws",
+    "ablations",
+    "experiment_design",
+    "pretraining",
+    "capacity_cost"
+   ],
+   "source": "T0-46 L742",
+   "grade": "C"
+  },
+  {
+   "id": "p100",
+   "track": "research",
+   "archetype": null,
+   "prompt": "Discuss your area of expertise in depth with 4–6 interviewers across 4–6 hours of final interviews over 1–2 days.",
+   "reported_by": "OpenAI (employer's own interview guide, undated page retrieved 2026-11-13; no question list or AI rule on page; covers/red flags are P)",
+   "covers": [
+    "First-principles depth well beyond headline project or paper claims",
+    "Candid discussion of limits, negative results and open uncertainties in your work",
+    "Direct connection between your expertise and the hiring team's technical problems",
+    "Clear communication tailored to both specialists and adjacent interviewers"
+   ],
+   "red_flags": [
+    "Stays at high-level talking points and breaks down on deep follow-ups",
+    "Overstates results or hides limitations"
+   ],
+   "answer_source": "T0-46 L743",
+   "roles": [
+    "research-scientist",
+    "research-engineer",
+    "ai-safety-researcher",
+    "applied-scientist"
+   ],
+   "skills": [
+    "research_taste",
+    "research_methods",
+    "presenting",
+    "communication"
+   ],
+   "source": "T0-46 L743",
+   "grade": "A"
+  },
+  {
+   "id": "p101",
+   "track": "product",
+   "archetype": null,
+   "prompt": "Critique the AI product you are applying to: what works, what single change you would prioritise and what metric proves it worked.",
+   "reported_by": "Perplexity (prep-vendor guide, n=1, techinterview.org 2026-07-11, product and craft round; covers/red flags are P)",
+   "covers": [
+    "Concrete observations from first-hand product usage rather than generic impressions",
+    "One prioritised improvement with user impact and engineering feasibility",
+    "Clear primary success metric plus guardrail metrics",
+    "Trade-offs and awareness of competing products"
+   ],
+   "red_flags": [
+    "Generic flattery with no evidence of hands-on product use",
+    "Lists ten unfocused ideas with no success metric"
+   ],
+   "answer_source": "T0-46 L744",
+   "roles": [
+    "ai-product-manager",
+    "ai-product-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "product_sense",
+    "product_analytics",
+    "user_research",
+    "success_metrics"
+   ],
+   "source": "T0-46 L744",
+   "grade": "C"
+  },
+  {
+   "id": "p102",
+   "track": "product",
+   "archetype": null,
+   "prompt": "Present an opinionated view on how AI-native workflows should reshape a developer tool, and defend your design against objections.",
+   "reported_by": "Cursor / Anysphere (prep-vendor guides, n=2, techinterview.org 2026-10-16 and techprep; covers/red flags are P)",
+   "covers": [
+    "A clear, falsifiable product thesis grounded in real developer workflows",
+    "Concrete friction points from hands-on usage and why current tools fail there",
+    "Explicit trade-offs (speed vs control, autonomy vs trust) and what to build first",
+    "How you would validate the thesis with users and telemetry"
+   ],
+   "red_flags": [
+    "Hedges with buzzwords instead of taking a defensible position",
+    "Ignores day-to-day developer workflow constraints"
+   ],
+   "answer_source": "T0-46 L745–746",
+   "roles": [
+    "ai-product-manager",
+    "ai-product-engineer",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "product_sense",
+    "user_research",
+    "coding_agents",
+    "product_analytics"
+   ],
+   "source": "T0-46 L745",
+   "grade": "C"
+  },
+  {
+   "id": "p103",
+   "track": "product",
+   "archetype": null,
+   "prompt": "Explain why you want to build this product and defend your technical and product trade-offs in a 30–45 minute founder conversation.",
+   "reported_by": "Perplexity and Cursor (prep-vendor guides, n=2, DesignGurus and techprep; covers/red flags are P)",
+   "covers": [
+    "Specific mission and product motivation backed by concrete work or usage",
+    "Crisp examples of high-stakes product or technical trade-offs you owned",
+    "Intellectual curiosity and honest reflection on past judgement calls"
+   ],
+   "red_flags": [
+    "Rehearsed generic mission statement",
+    "No concrete examples of independent judgement"
+   ],
+   "answer_source": "T0-46 L747",
+   "roles": [
+    "ai-product-manager",
+    "ai-product-engineer",
+    "ai-engineer",
+    "ai-engineering-manager"
+   ],
+   "skills": [
+    "product_sense",
+    "c3_ownership",
+    "communication",
+    "strategy"
+   ],
+   "source": "T0-46 L747",
+   "grade": "C"
+  },
+  {
+   "id": "p104",
+   "track": "product",
+   "archetype": null,
+   "prompt": "Demonstrate judgement on a cross-functional trade-off between product, engineering and partner teams at Staff+ scope.",
+   "reported_by": "Meta (prep-vendor guide, Substack dglearning 2026-04-25, E7+ cross-functional judgement round; covers/red flags are P)",
+   "covers": [
+    "Stakeholder map, competing incentives and hard constraints",
+    "Structured options with quantified costs and risks",
+    "Clear decision, communication plan and conditions that would make you revisit it"
+   ],
+   "red_flags": [
+    "Avoids making a decision or delegates the conflict upward",
+    "Ignores partner-team incentives and constraints"
+   ],
+   "answer_source": "T0-46 L748",
+   "roles": [
+    "ai-product-manager",
+    "ai-engineering-manager",
+    "vp-head-of-ai",
+    "ai-product-engineer"
+   ],
+   "skills": [
+    "cross_functional",
+    "stakeholder",
+    "technical_leadership",
+    "c2_tradeoffs"
+   ],
+   "source": "T0-46 L748",
+   "grade": "C"
+  },
+  {
+   "id": "p105",
+   "track": "product",
+   "archetype": null,
+   "prompt": "Design a user-facing product feature end to end, from user need and success metrics through data model and system architecture.",
+   "reported_by": "Meta (prep-vendor guide, Substack dglearning 2026-04-25, E4/E5 product-architecture round; covers/red flags are P)",
+   "covers": [
+    "User need, core flows and primary product success metric before drawing boxes",
+    "API contracts, data schema, AI/ML integration and latency budget",
+    "Explicit engineering-vs-UX trade-offs, staged rollout and failure modes"
+   ],
+   "red_flags": [
+    "Draws backend architecture disconnected from the user flow",
+    "Defines no product metric or rollout plan"
+   ],
+   "answer_source": "T0-46 L749",
+   "roles": [
+    "ai-product-engineer",
+    "ai-product-manager",
+    "ai-engineer"
+   ],
+   "skills": [
+    "product_sense",
+    "system_design",
+    "apis",
+    "success_metrics",
+    "streaming_ux"
+   ],
+   "source": "T0-46 L749",
+   "grade": "C"
+  },
+  {
+   "id": "p106",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Discuss a concrete AI safety dilemma, such as a customer automating hiring at scale or shipping a risky feature under speed pressure.",
+   "reported_by": "Anthropic (techinterview.org 2026-07-15 and Implicator.ai Bloomberg summary 2026-05-29; values and safety round)",
+   "covers": [
+    "Concrete, specific harms and affected parties rather than abstract slogans",
+    "Explicit trade-offs and technical or process mechanisms to mitigate risk",
+    "Second-order effects, residual risk and willingness to update your view under new evidence"
+   ],
+   "red_flags": [
+    "Treats a single training or guardrail method as full reassurance",
+    "Extreme doom rhetoric or casual dismissal of real harms"
+   ],
+   "answer_source": "T0-46 L750",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c4_responsible_ai",
+    "safety_evals",
+    "bias_fairness",
+    "c2_tradeoffs"
+   ],
+   "source": "T0-46 L750",
+   "grade": "C"
+  },
+  {
+   "id": "p107",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe how you use AI tools in your daily engineering work, where they fail and how you verify what they produce.",
+   "reported_by": "Amazon (Substack dglearning 2026-05-07: reported as a graded behavioural question in every 2026 loop; covers/red flags are P)",
+   "covers": [
+    "Clear judgement on tasks where AI helps versus where it hurts or misleads",
+    "Concrete verification habits (tests, diff review, edge-case checks) showing ownership of shipped code",
+    "A real example where an AI tool failed and how you caught it, plus data-handling discipline"
+   ],
+   "red_flags": [
+    "Blind reliance on AI output without verification",
+    "Claims AI handles everything or shares sensitive code carelessly"
+   ],
+   "answer_source": "T0-46 L755",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "coding_agent_tools",
+    "c1_pragmatism",
+    "c3_ownership",
+    "attention_to_detail"
+   ],
+   "source": "T0-46 L755",
+   "grade": "C"
+  },
+  {
+   "id": "p108",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe how you scoped an ambiguous generative AI project from vague idea to success criteria, phases and cut lines.",
+   "reported_by": "Databricks (prep-vendor guide, n=1, Dataford 2026-09-18; covers/red flags are P)",
+   "covers": [
+    "Clarifying questions that turned ambiguity into concrete constraints",
+    "Measurable success criteria and an early baseline before building",
+    "Phased delivery plan with stakeholder alignment, risks and explicit cut lines"
+   ],
+   "red_flags": [
+    "Starts building immediately without agreeing success criteria",
+    "No phased plan or risk boundaries"
+   ],
+   "answer_source": "T0-46 L757",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c1_pragmatism",
+    "customer_scoping",
+    "stakeholder",
+    "pilots"
+   ],
+   "source": "T0-46 L757",
+   "grade": "C"
+  },
+  {
+   "id": "p109",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Describe a time you worked at high pace with minimal direction and owned a critical technical outcome end to end.",
+   "reported_by": "xAI (prep-vendor guide, n=1, techinterview.org 2026-07-15; covers/red flags are P)",
+   "covers": [
+    "Independent problem discovery and clear personal ownership",
+    "Explicit pace-versus-quality trade-offs made under time pressure",
+    "Direct communication of blockers and verified shipped results"
+   ],
+   "red_flags": [
+    "Waits for detailed specifications before acting",
+    "Cannot point to a concrete outcome you personally owned"
+   ],
+   "answer_source": "T0-46 L760",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "c3_ownership",
+    "c1_pragmatism",
+    "rapid_prototyping"
+   ],
+   "source": "T0-46 L760",
+   "grade": "C"
+  },
+  {
+   "id": "p110",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Handle back-to-back Superday sessions mixing STAR behavioural questions with deep technical probes into your past projects.",
+   "reported_by": "Goldman Sachs and JPMorgan Chase (prep-vendor guides, n=3, Interview Query Feb 2026 and Dataford Sep–Oct 2026; covers/red flags are P)",
+   "covers": [
+    "Structured STAR framing paired with technical depth on architecture, data and metrics",
+    "Consistent facts, timelines and personal contributions across sequential interviewers",
+    "Pacing and clarity across a full day of back-to-back 30–45 minute sessions"
+   ],
+   "red_flags": [
+    "Unstructured stories that drift away from technical depth",
+    "Contradictory metrics or roles across interviewers"
+   ],
+   "answer_source": "T0-46 L762",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "communication",
+    "c3_ownership",
+    "presenting"
+   ],
+   "source": "T0-46 L762",
+   "grade": "C"
+  },
+  {
+   "id": "p111",
+   "track": "behavioural",
+   "archetype": null,
+   "prompt": "Walk a hiring manager through your GenAI project architecture and communication style, then handle pay, location and notice period in HR.",
+   "reported_by": "Infosys (candidate reports, n=14, Interview Query Q3–Q4 2026 and Glassdoor Mar 2026; India IT-services closing rounds; covers/red flags are P)",
+   "covers": [
+    "Concise summary of project architecture, your role and production impact",
+    "Concrete client or team communication examples",
+    "Prepared expectations on compensation band, work location and notice period"
+   ],
+   "red_flags": [
+    "Cannot summarise your own project cleanly in two minutes",
+    "Unprepared on notice-period or band logistics"
+   ],
+   "answer_source": "T0-46 L763",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "forward-deployed-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "ai-solutions-architect",
+    "applied-scientist",
+    "inference-engineer",
+    "gpu-kernel-engineer",
+    "ai-infrastructure-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "ai-security-engineer",
+    "responsible-ai-engineer",
+    "research-engineer",
+    "research-scientist",
+    "ai-safety-researcher",
+    "ai-governance-lead",
+    "ai-risk-assurance-specialist",
+    "ai-product-manager",
+    "physical-ai-engineer",
+    "ai-engineering-manager",
+    "vp-head-of-ai"
+   ],
+   "skills": [
+    "communication",
+    "presenting",
+    "c3_ownership"
+   ],
+   "source": "T0-46 L763",
+   "grade": "C"
+  },
+  {
+   "id": "p112",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Fix five issues in an unfamiliar multi-file repository within about 45 minutes using an AI coding agent.",
+   "reported_by": "Microsoft CoreAI (candidate report, n=1, PracHub, senior loop Jun 2026; covers/red flags are P)",
+   "covers": [
+    "Survey the repository layout and test suite before prompting edits",
+    "Prioritise the five issues by clarity and impact to protect the clock",
+    "Direct the agent on bounded subtasks, review every diff and run tests after each fix",
+    "Explain every change clearly without letting the agent edit unchecked"
+   ],
+   "red_flags": [
+    "Lets the agent make broad unreviewed edits",
+    "Skips running tests after changes",
+    "Burns the full clock stuck on one issue"
+   ],
+   "answer_source": "T0-46 L765",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "coding_agent_tools",
+    "coding_agents",
+    "testing",
+    "problem_solving"
+   ],
+   "source": "T0-46 L765",
+   "grade": "C"
+  },
+  {
+   "id": "p113",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Build an HTTP server that converts CSV uploads to JSON and enriches each record with an LLM-generated category field.",
+   "reported_by": "Scale AI (candidate report, n=1, PracHub, backend onsite interviewed Jul 2026; covers/red flags are P)",
+   "covers": [
+    "Robust CSV parsing, input validation and clean HTTP API contract",
+    "Safe model calls with structured output validation, timeouts and retries",
+    "Graceful error handling for malformed rows and LLM API failures",
+    "Automated unit and integration tests mocking the model call"
+   ],
+   "red_flags": [
+    "No input or schema validation on CSV or LLM output",
+    "No timeout or error handling around external model calls"
+   ],
+   "answer_source": "T0-46 L766",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-product-engineer",
+    "ai-enablement-engineer",
+    "forward-deployed-engineer"
+   ],
+   "skills": [
+    "python",
+    "apis",
+    "llm_apis",
+    "structured_output",
+    "testing"
+   ],
+   "source": "T0-46 L766",
+   "grade": "C"
+  },
+  {
+   "id": "p114",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Solve a GenAI coding problem and then run a low-level design round applying GenAI best practices and explicit trade-offs.",
+   "reported_by": "Amazon India / ADCI (candidate reports, n=2, PracHub Aug 2026; covers/red flags are P)",
+   "covers": [
+    "Clean object-oriented / modular class interfaces and separation of concerns",
+    "GenAI-specific constraints (token budgets, rate limits, non-determinism, retries)",
+    "Complexity analysis, explicit design trade-offs and unit tests"
+   ],
+   "red_flags": [
+    "Writes classes without justifying design trade-offs",
+    "Ignores GenAI-specific failure modes and tests"
+   ],
+   "answer_source": "T0-46 L767",
+   "roles": [
+    "ai-engineer",
+    "applied-ai-engineer",
+    "agentic-ai-engineer",
+    "ml-engineer"
+   ],
+   "skills": [
+    "python",
+    "system_design",
+    "llm_apis",
+    "testing",
+    "dsa"
+   ],
+   "source": "T0-46 L767",
+   "grade": "C"
+  },
+  {
+   "id": "p115",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Implement scaled dot-product self-attention from scratch in Python/NumPy or PyTorch, including masking and shape checks.",
+   "reported_by": "Infosys and xAI (Infosys: 13 Interview Query reports Q3–Q4 2026; xAI: techinterview.org 2026-07-15; covers/red flags are P)",
+   "covers": [
+    "Exact Q/K/V projections, 1/sqrt(d_k) scaling, softmax stability and matrix dimensions",
+    "Causal or padding mask applied before softmax",
+    "Clean, readable tensor code verified on small hand-checkable inputs"
+   ],
+   "red_flags": [
+    "Calls a pre-built attention library instead of implementing the primitive",
+    "Wrong tensor shapes or skips masking and tests"
+   ],
+   "answer_source": "T0-46 L768, L775",
+   "roles": [
+    "ml-engineer",
+    "research-engineer",
+    "applied-scientist",
+    "ai-engineer",
+    "inference-engineer"
+   ],
+   "skills": [
+    "transformers",
+    "pytorch",
+    "numpy",
+    "deep_learning",
+    "testing"
+   ],
+   "source": "T0-46 L768",
+   "grade": "C"
+  },
+  {
+   "id": "p116",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Implement k-means clustering from scratch and answer core ML fundamentals follow-ups.",
+   "reported_by": "Microsoft (candidate report, n=1, PracHub, Bing MLE loop interviewed Apr 2026; covers/red flags are P)",
+   "covers": [
+    "Correct assignment and centroid-update steps with clear initialisation choices (e.g. k-means++)",
+    "Convergence criteria, empty-cluster handling and time/space complexity",
+    "Verification on small synthetic clusters and edge cases"
+   ],
+   "red_flags": [
+    "Buggy centroid update or distance computation",
+    "No convergence stopping rule or empty-cluster check"
+   ],
+   "answer_source": "T0-46 L769",
+   "roles": [
+    "ml-engineer",
+    "applied-scientist",
+    "research-engineer"
+   ],
+   "skills": [
+    "ml_fundamentals",
+    "python",
+    "numpy",
+    "testing"
+   ],
+   "source": "T0-46 L769",
+   "grade": "C"
+  },
+  {
+   "id": "p117",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Implement a data structure with stated complexity bounds (such as an LRU cache) and refactor it live as requirements change.",
+   "reported_by": "Anthropic (prep-vendor guide, n=1, techinterview.org 2026-07-15; live Python coding with active refactoring probes; covers/red flags are P)",
+   "covers": [
+    "Right underlying data structures meeting the exact O(1) or stated bounds",
+    "Clean modular code that accommodates live follow-up refactors (e.g. TTL, concurrency, eviction hooks)",
+    "Edge-case tests and clear narrated trade-offs"
+   ],
+   "red_flags": [
+    "Silent coding without explaining structure",
+    "Violates stated time or space bounds"
+   ],
+   "answer_source": "T0-46 L770",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "dsa",
+    "python",
+    "testing",
+    "problem_solving"
+   ],
+   "source": "T0-46 L770",
+   "grade": "C"
+  },
+  {
+   "id": "p118",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Parse a data stream with bounded memory including malformed input, or implement a small tokeniser or pattern matcher.",
+   "reported_by": "Anthropic (prep-vendor guide, n=1, techinterview.org 2026-07-15; applied string and parsing coding themes; covers/red flags are P)",
+   "covers": [
+    "True streaming state machine respecting strict O(1) or bounded memory",
+    "Graceful handling of malformed, truncated or adversarial input chunks",
+    "Complexity statement and targeted tests on boundary and corrupt inputs"
+   ],
+   "red_flags": [
+    "Buffers the entire stream into memory",
+    "Crashes on malformed or split-boundary input"
+   ],
+   "answer_source": "T0-46 L771",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "python",
+    "dsa",
+    "testing",
+    "production_hardening"
+   ],
+   "source": "T0-46 L771",
+   "grade": "C"
+  },
+  {
+   "id": "p119",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Implement an agent tool-call router in code with schema validation, per-tool rate limits and error handling.",
+   "reported_by": "Databricks (prep-vendor guide, n=1, Dataford 2026-09-18, editorial question list; covers/red flags are P)",
+   "covers": [
+    "Strict input-argument schema validation before invoking any tool",
+    "Clean dispatch/routing table with per-tool rate-limit enforcement",
+    "Structured error paths for invalid schemas, throttled calls and tool timeouts",
+    "Unit tests covering happy paths, invalid payloads and rate-limit exhaustion"
+   ],
+   "red_flags": [
+    "Executes tool calls without schema validation",
+    "No handling of rate-limit exhaustion or downstream tool failures"
+   ],
+   "answer_source": "T0-46 L772",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "applied-ai-engineer",
+    "ai-enablement-engineer"
+   ],
+   "skills": [
+    "tool_calling",
+    "agents",
+    "pydantic",
+    "python",
+    "testing"
+   ],
+   "source": "T0-46 L772",
+   "grade": "C"
+  },
+  {
+   "id": "p120",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Implement a custom model component from scratch without relying on high-level libraries (such as Hugging Face or LangChain), then discuss LLD.",
+   "reported_by": "Amazon (prep-vendor guide, n=1, Dataford 2026-09-01, agentic AI engineer loop; covers/red flags are P)",
+   "covers": [
+    "Clean from-scratch implementation demonstrating genuine mechanical understanding",
+    "Extensible low-level design interfaces and clear failure handling",
+    "Unit tests and explicit complexity or memory trade-offs"
+   ],
+   "red_flags": [
+    "Wraps a high-level library call instead of writing the component",
+    "Skips tests or trade-off discussion"
+   ],
+   "answer_source": "T0-46 L776",
+   "roles": [
+    "agentic-ai-engineer",
+    "ai-engineer",
+    "ml-engineer",
+    "applied-ai-engineer"
+   ],
+   "skills": [
+    "pytorch",
+    "python",
+    "transformers",
+    "system_design",
+    "testing"
+   ],
+   "source": "T0-46 L776",
+   "grade": "C"
+  },
+  {
+   "id": "p121",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Build an ambiguous product feature using your preferred AI tools; interviewers grade decomposition, directing the assistant, fault-finding and code quality.",
+   "reported_by": "Canva (employer engineering blog 2025-06-11; mandatory AI-assisted round replacing CS screen for backend/frontend; ML also expected to use AI)",
+   "covers": [
+    "Clarifying ambiguous requirements and decomposing the feature before prompting",
+    "Choosing AI-suitable subtasks while keeping ownership of architecture and key decisions",
+    "Actively reviewing, debugging and fixing faults in generated code",
+    "Shipping modular, tested code meeting production standards"
+   ],
+   "red_flags": [
+    "Prompts and blindly accepts whatever the assistant generates (Canva's weakest pattern)",
+    "No coherent design owned by the candidate",
+    "Fails to review or test generated code"
+   ],
+   "answer_source": "T0-46 L777, L799",
+   "roles": [
+    "ai-engineer",
+    "ai-product-engineer",
+    "applied-ai-engineer",
+    "ml-engineer",
+    "agentic-ai-engineer"
+   ],
+   "skills": [
+    "coding_agent_tools",
+    "system_design",
+    "testing",
+    "production_hardening"
+   ],
+   "source": "T0-46 L777",
+   "grade": "A"
+  },
+  {
+   "id": "p122",
+   "track": "coding",
+   "archetype": null,
+   "prompt": "Read, debug and optimise an unfamiliar codebase using an approved assistant (Gemini) while graded on prompting, output validation and debugging.",
+   "reported_by": "Google (Business Insider via Yahoo Finance 2026-05-14, quoting a Google VP of recruiting; H2 2026 pilot for junior/mid SWE in select US areas)",
+   "covers": [
+    "Reading and mapping the existing codebase before asking the assistant to change it",
+    "Targeted prompts scoped to specific modules, bugs or performance bottlenecks",
+    "Rigorous validation of assistant suggestions against tests and real behaviour",
+    "Systematic debugging and measurable optimisation of the target path"
+   ],
+   "red_flags": [
+    "Accepts unvalidated assistant output without reading the surrounding code",
+    "Vague or overly broad prompts",
+    "Cannot trace or verify the bug fix"
+   ],
+   "answer_source": "T0-46 L778",
+   "roles": [
+    "ai-engineer",
+    "ml-engineer",
+    "research-engineer",
+    "forward-deployed-engineer",
+    "applied-scientist",
+    "applied-ai-engineer",
+    "ai-infrastructure-engineer",
+    "research-scientist",
+    "inference-engineer",
+    "agentic-ai-engineer",
+    "ml-platform-engineer",
+    "ai-evaluation-engineer",
+    "gpu-kernel-engineer",
+    "ai-security-engineer",
+    "physical-ai-engineer",
+    "ai-safety-researcher",
+    "ai-enablement-engineer",
+    "ai-product-engineer",
+    "responsible-ai-engineer"
+   ],
+   "skills": [
+    "coding_agent_tools",
+    "problem_solving",
+    "testing",
+    "attention_to_detail"
+   ],
+   "source": "T0-46 L778",
+   "grade": "B"
+  },
+  {
+   "id": "p123",
+   "track": "product-frontend",
+   "archetype": null,
+   "prompt": "Build a live streaming React/TypeScript chat UI with incremental token rendering, mid-stream cancel, error/retry states and keyboard/ARIA accessibility.",
+   "reported_by": "OpenAI frontend onsite pattern (prep-vendor and candidate reports, Grade C)",
+   "covers": [
+    "Incremental token streaming and async rendering without UI jank or dropped chunks",
+    "Explicit state machine for idle, streaming, cancelled, rate-limited and error states with clean retry",
+    "AbortController cancellation and race-condition prevention on rapid re-submission",
+    "Keyboard navigation, focus management and ARIA live regions for streamed output"
+   ],
+   "red_flags": [
+    "Buffers the whole response before rendering or blocks the main thread on every token",
+    "Leaves dangling streams or stale state updates after cancel or conversation switch",
+    "Treats accessibility and error recovery as afterthoughts"
+   ],
+   "answer_source": "T0-62 L384",
+   "roles": [
+    "ai-product-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "react",
+    "typescript",
+    "streaming_ux",
+    "frontend_engineering"
+   ],
+   "source": "T0-62 L384",
+   "grade": "C"
+  },
+  {
+   "id": "p124",
+   "track": "product-frontend",
+   "archetype": null,
+   "prompt": "Design the frontend architecture and backing streaming API for a multi-turn AI workspace (tool-call progress cards, optimistic state, caching and reconnection).",
+   "reported_by": "OpenAI and Vercel frontend system design pattern (prep-vendor and candidate reports, Grade C)",
+   "covers": [
+    "Transport choice (SSE vs WebSockets vs fetch streams) and backing API contract for incremental tool and text events",
+    "Client state normalisation across branched turns, streaming deltas and structured UI cards",
+    "Perceived-latency tactics, backpressure handling and reconnection after dropped streams",
+    "Security and privacy boundaries on client-side tokens, citations and untrusted markdown rendering"
+   ],
+   "red_flags": [
+    "Stops at the browser boundary without designing the backing streaming API contract",
+    "Ignores XSS/sanitisation risks when rendering model-generated markdown or rich UI components",
+    "No plan for reconnection, partial failure or slow tool-call feedback"
+   ],
+   "answer_source": "T0-62 L384–L385",
+   "roles": [
+    "ai-product-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "frontend_engineering",
+    "apis",
+    "streaming_ux",
+    "llm_apis"
+   ],
+   "source": "T0-62 L384–L385",
+   "grade": "C"
+  },
+  {
+   "id": "p125",
+   "track": "product-frontend",
+   "archetype": null,
+   "prompt": "Complete a scoped take-home or paired build in a real product codebase shipping a small AI-assisted user workflow, then defend your interaction design, trade-offs and code craft.",
+   "reported_by": "Vercel, Cursor and Series A AI-product loops (prep-vendor and candidate reports, Grade C)",
+   "covers": [
+    "Product intuition: scoping what the model should do automatically versus where the user stays in control",
+    "Visual and interaction craft: clear loading, uncertainty, undo and fallback behaviours",
+    "Clean, idiomatic integration into an existing TypeScript/Next.js or React codebase",
+    "Pragmatic time-boxed trade-offs and honest evaluation of edge cases"
+   ],
+   "red_flags": [
+    "Ships a raw chat box bolted onto the UI instead of an integrated workflow",
+    "Over-engineers abstractions while leaving core user states broken or unpolished",
+    "Cannot articulate why specific interaction or model-boundary trade-offs were chosen"
+   ],
+   "answer_source": "T0-62 L385–L387",
+   "roles": [
+    "ai-product-engineer",
+    "ai-engineer"
+   ],
+   "skills": [
+    "product_sense",
+    "design_craft",
+    "typescript",
+    "nextjs"
+   ],
+   "source": "T0-62 L385–L387",
    "grade": "C"
   }
  ]

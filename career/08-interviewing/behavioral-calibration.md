@@ -4,44 +4,44 @@ title: "Behavioural Calibration: How GenAI Behavioural Rounds Are Scored and How
 content_type: guide
 stage: 8
 status: published
-last_verified: 2026-11-06
-review_by: 2027-01-23
-summary: "How behavioural rounds are scored in GenAI hiring, the four competencies that decide them, and how to build a STAR-AI story bank that survives a round where one No Hire can veto the loop."
-sources: [T1-03, T0-14, T0-09, T0-04]
+last_verified: 2026-11-19
+review_by: 2027-02-11
+summary: "How behavioural rounds are scored across GenAI employers, the four competencies C1–C4, employer committee and veto/downlevel calibration, and how to build a STAR-AI story bank."
+sources: [T0-46, T1-03, T0-14, T0-09, T0-04]
 roles: [all]
-geos: [global]
-tags: [interviewing, behavioural, star-ai, story-bank, competencies, hiring-committee, veto, debrief, anthropic, google, meta]
+geos: [global, india]
+tags: [interviewing, behavioural, star-ai, story-bank, competencies, hiring-committee, veto, debrief, anthropic, amazon, google, meta, databricks, nvidia, xai, india]
 ---
 
 # Behavioural Calibration: How GenAI Behavioural Rounds Are Scored
 
-> How behavioural rounds are scored in GenAI hiring, the four competencies that decide them, and how to build a STAR-AI story bank that survives a round where one No Hire can veto the loop.
+> How behavioural rounds are scored across GenAI employers, the four competencies C1–C4, employer committee and veto/downlevel calibration, and how to build a STAR-AI story bank.
 
-**Dates.** Firm practices are as reported in [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md), dated 2026-10-25, which takes its level signals from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md). Re-verify the firm rows by 2027-01-23. [ERRATA](../../research/ERRATA.md) lists these corrections to T1-03: U14 (India pay bands), U24 (funnel stage rates) and U26 (the count behind the infrastructure track). None touches the behavioural material used here; the onsite-to-offer figure under Evidence and limits carries T0-04's rate beside T1-03's.
+**Dates.** Employer behavioural rubrics, committee mechanics and pass-rate context are updated from [T0-46](../../research/sessions/T0-46-interview-loops-genai-employers-2026.md) (retrieved 2026-11-13 to 2026-11-14), combined with the C1–C4 competency synthesis and STAR-AI template from [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (2026-10-25) and level signals from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) (2026-10-21). Re-verify employer practices by 2027-02-11 (90 days from T0-46 retrieval). T0-46 refines T1-03's Google/Anthropic veto claims (K3) and corrects Gem's engineering onsite-to-offer rate from 29% to 26% (K6) [B/C · T0-46 L450, L453].
 
-**Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary; C coaching, vendor or single source; D judgement; E searched, nothing found; M model output or count; P practice-curated and unmeasured. A compound grade such as B/C rests on both; rely on the weaker.
+**Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary or large platform dataset; C coaching, vendor or single source; D judgement; E searched, nothing found; M model output or count; P practice-curated and unmeasured. A compound grade such as B/C rests on both; rely on the weaker.
 
 ## The short answer
 
-1. **Treat the behavioural round as a gate, not a formality.** A behavioural No Hire is a near-automatic veto at Anthropic (values round) and Google (Googlyness and Leadership, G&L). At Meta it triggers a downlevel or rejection [B/C · T1-03.F4]. T1-03 rejects "behavioural rounds are soft" as a general claim for the firms it studied [B/C · T1-03 L418].
-2. **Four competencies decide the round:** C1 technical pragmatism under ambiguity, C2 communicating probabilistic trade-offs, C3 ownership and incident response, C4 responsible AI and safety [B/C · T1-03.F5]. No firm-published AI behavioural rubric was found; the 4/2/1 anchors below are T1-03's synthesis of coaching guides and web research [E · T1-03 L169, L407].
-3. **Bank four core stories, one per competency, then add one or two more C1 stories.** Each story needs a metric delta and a continuous-monitoring step [D · T1-03 L117]. Seven of the twelve high-yield questions probe C1; C2, C3 and C4 appear in three each [M · count of T1-03 L193–204]. The extra C1 depth is a rule of thumb [P].
+1. **Treat the behavioural or values round as a decisive gate, calibrated to each employer's rule.** Among employers studied in T0-46, **Amazon's Bar Raiser** is the only explicit final No-Hire veto; **Anthropic's** values and safety round is reported as the top late-stage hiring gate (secondary summary of Bloomberg Businessweek, May 2026); **Meta's** behavioural round alone can downlevel an E5 to an E4; and **Google's** hiring committee weighs interviewer variance heavily and can override panel votes in either direction including downlevelling ("automatic packet sink" is unsupported) [C · T0-46 L90, L324–327, L333, L450].
+2. **Four competencies decide the round, plus an AI-tool-judgement probe at some firms:** C1 technical pragmatism under ambiguity, C2 communicating probabilistic trade-offs, C3 ownership and incident response, C4 responsible AI and safety [B/C · T1-03.F5], alongside graded 2026 questions on how you use AI tools responsibly in daily work (reported in every 2026 Amazon loop) [C · T0-46 L145, L325]. No firm-published AI behavioural rubric was found [E · T1-03 L169, L407].
+3. **Bank four core stories, one per competency, then add C1 depth and an AI-tool-use example.** Each story needs a metric delta and a continuous-monitoring step [D · T1-03 L117]. Seven of T1-03's twelve high-yield questions probe C1; C2, C3 and C4 appear in three each [M · count of T1-03 L193–204]. The extra C1 and AI-tool-use depth is a rule of thumb [P; C · T0-46 L325].
 4. **Tell every story in STAR-AI order and end on monitoring.** Situation with scale and non-determinism; Task with the cost of being wrong; Action in the first person, with the eval method and the trade-off; Result with a metric delta and an artefact [D · T1-03 L182–187]. T1-03 calls STAR-AI the scoring template [B/C · T1-03.F5] but grades the framework as its own synthesis [D · T1-03 L396].
 5. **Signal level through scope, not polish.** In T0-14's level rubric, Staff candidates question the premise and volunteer trade-offs and failure modes before being asked [B/C · T0-14.F10; T0-14 L778–779]. Coaching for Google says that if the interviewer must prompt you for trade-offs, you are signalling L5 in an L6 loop [C · T0-14 L774]. These rubrics come from system design; applying them to stories is judgement [D].
-6. **Debrief within 30 minutes of every round and update the bank.** Coaching sources recommend it universally; no controlled study shows that it raises pass rates [C/D · T1-03.F12].
+6. **Debrief within 30 minutes of every round and update the bank.** Coaching sources recommend it universally; no controlled study shows that it raises pass rates [C/D · T1-03.F12]. Expect verdict noise: 38% of paired interviewer scorecards disagree by at least a point in Ashby's platform dataset [B · T0-46 L396].
 
 ## At a glance
 
 ```mermaid
 flowchart TD
-    Q["Question, for example B1 to B12"] --> C["Name the competency it probes: C1, C2, C3 or C4"]
+    Q["Question, for example B1 to B12 or AI-tool judgement"] --> C["Name the competency it probes: C1, C2, C3 or C4"]
     C --> S["Pick a banked story"]
     S --> T["Tell it in STAR-AI order"]
     T --> R["Close on metric delta, artefact and monitoring step"]
     R --> A["Rubric anchors per competency: 4 Strong Hire, 2 Partial, 1 No Hire"]
     A --> V{"Round verdict"}
-    V -->|"No Hire"| X["Anthropic: usually an automatic veto. Google: sinks the packet at target level. Meta: downlevel or rejection"]
-    V -->|"Hire"| P["Packet goes on to the hiring decision"]
+    V -->|"No Hire / weak score"| X["Amazon Bar Raiser: final veto. Anthropic: top late-stage gate. Google/Meta: committee override or downlevel"]
+    V -->|"Hire"| P["Packet goes on to hiring committee or alignment"]
 ```
 
 The anchors are T1-03's synthesis [B/C/D · T1-03 L169]. T1-03 does not say how per-competency scores combine into a round verdict.
@@ -69,15 +69,25 @@ Three archetype failures dominate behavioural No Hires [B/C · T1-03.F4]. Each b
 | Failure of ownership in production incidents | C3 | An incident you detected, owned and stopped from recurring |
 | Ethical or safety blind spots | C4 | A launch you paused or changed for a safety, privacy or fairness reason |
 
-### How three firms use the verdict
+### How employers score behavioural rounds and calibrate level
 
-| Firm | Weight of the round | Consequence of a No Hire | Top veto triggers |
-|---|---|---|---|
-| Anthropic | The values round is a heavy filter, not an HR formality | Usually an automatic veto, regardless of technical scores | Lack of epistemic humility; posturing about AI safety; evasiveness about trade-offs; inability to admit mistakes |
-| Google | Googlyness and Leadership (G&L) is a scored dimension | Sinks the packet at target level; the hiring committee may downlevel if technical scores are exceptional | Failure to take accountability; blaming PMs; poor data-privacy or ethics judgement |
-| Meta | Core values (Move Fast, Focus on Long-Term Impact) | Downlevel or rejection [T1-03.F4]; the hiring committee perceives cultural mismatch or insufficient leadership scope | Academic framing ("I researched…") instead of impact ("I shipped/scaled…"); bypassing cross-functional partners |
+T0-46 expands behavioural and committee coverage beyond T1-03's initial three firms to 12 employers across frontier labs, Big Tech, AI-native firms, banks and India IT-services [C · T0-46 L322–333]. Every row is prep-vendor or press reporting (Grade C), not an official employer rubric.
 
-Source: [B/C · T1-03 L206–212], from web research. T1-03 covers these three firms only. This page has no firm-specific behavioural evidence for other employers.
+| Firm | What is assessed | Scoring, committee and consequence | Triggers and calibration notes | Grade and sources |
+|---|---|---|---|---|
+| **Amazon** | Leadership Principles stories, an external **Bar Raiser**, and a **graded 2026 question on how you use AI tools** | Debrief uses Hire/No-Hire votes backed by LP evidence; **Bar Raiser's No-Hire veto is explicit and final**; mixed votes can yield a lower-level offer | Only explicit final veto found in T0-46; verify AI-tool judgement rather than blind adoption | C (Dataford, dglearning) · T0-46 L145, L325, L450 |
+| **Anthropic** | 200–400 word "why Anthropic" essay in application; values and safety discussion round (e.g. a concrete AI safety problem); project ownership and conflict | Secondary report calls the culture interview the **top late-stage hiring gate** (Bloomberg Businessweek summary, 2026-05-29; no primary veto statement); team matching depends on open headcount | T1-03 triggers: lack of epistemic humility; posturing about AI safety; evasiveness on trade-offs; inability to admit mistakes | C (techinterview.org, Implicator.ai, DesignGurus) · T0-46 L324, L450; B/C · T1-03 L210 |
+| **Google** | 45-minute Googleyness and Leadership (G&L) round | Hiring committee reads written packets, **weighs variance heavily**, and can override panel votes in either direction including downlevelling ("automatic packet sink" is unsupported) | T1-03 triggers: failing accountability; blaming PMs; poor data-privacy or ethics judgement | C (dglearning) · T0-46 L326, L333, L450; B/C · T1-03 L211 |
+| **Meta** | Behavioural round at every level; pre-onsite leadership assessment before E6 onsite | **Behavioural round alone can downlevel E5 to E4** (partly paywalled source); downlevel or rejection on mismatch | T1-03 triggers: academic framing ("I researched…") instead of shipped impact ("I shipped/scaled…"); bypassing cross-functional partners | C (dglearning) · T0-46 L327, L450; B/C · T1-03 L212 |
+| **Microsoft** | About 1 hour mapped to seven competencies and cross-team delivery | Committee detail not stated | Prepare cross-team alignment and delivery stories | C (PracHub, Dataford) · T0-46 L328 |
+| **Databricks** | Scoping an ambiguous project; handling an outage or model degradation; culture-fit evaluation | Hiring-committee review, then a final alignment talk with senior management | Strong fit for C1 (ambiguity) and C3 (outage/degradation ownership) | C (Dataford) · T0-46 L329 |
+| **NVIDIA** | Behavioural and cross-functional round | Panelists score each round 1–5 and one weak score can sink an offer (2024 guide, stale) | Avoid treating the cross-functional round as light | C (techinterview.org; interviewing.io 2024 stale) · T0-46 L330 |
+| **xAI, Perplexity & Cursor** | xAI: pace and ownership under minimal direction. Perplexity & Cursor: product judgement, critique and founder/culture fit | xAI founder has historically interviewed senior candidates; senior loops often add an executive round; Perplexity runs a founder interview | Demonstrate high-ownership shipping and deep product usage | C (techinterview.org, DesignGurus) · T0-46 L155, L191, L330 |
+| **Scale AI** | Working values in a fast-moving environment | Not stated | High-velocity execution and collaboration | C (techinterview.org) · T0-46 L331 |
+| **Goldman Sachs** | STAR-style behavioural questions in back-to-back Superday sessions | Not stated | Prepare governance, risk sign-off and stakeholder stories | C (Interview Query) · T0-46 L331 |
+| **Infosys (India)** | Project experience deep dive plus separate managerial and HR rounds (including compensation) | Not stated | Explain end-to-end project architecture, RAG guardrails and deployment clearly | C (Interview Query, Glassdoor) · T0-46 L165, L331 |
+
+Committee and level-calibration details remain missing for OpenAI, Microsoft, and most IT-services employers [E · T0-46 L491]. Full employer loops: [employer interview loops](employer-interview-loops.md).
 
 ### Level signal: Senior versus Staff
 
@@ -200,15 +210,16 @@ For behavioural rounds, also note which competency each question probed, which s
 ## Checklist
 
 - [ ] I know which round in each loop is behavioural and what the firm calls it.
-- [ ] I have four core stories, one per competency, and at least one more C1 story.
-- [ ] Every question from B1 to B12 has a slot in my matrix.
+- [ ] I have four core stories, one per competency, at least one extra C1 story, and one story on disciplined AI-tool use (graded in 2026 Amazon loops [C · T0-46 L325]).
+- [ ] Every question from B1 to B12 (plus employer-specific prompts in the [behavioural pack](prep-packs.md#behavioural-pack)) has a slot in my matrix.
 - [ ] Every story states the scale, the cost of being wrong, my own actions, an eval method and a trade-off.
 - [ ] Every story ends with a metric delta, an artefact and a continuous-monitoring step.
 - [ ] Every story says what I gave up; for Staff loops, at least one shows work other teams used.
 - [ ] No story blames a teammate, a PM, a data engineer or a model provider.
 - [ ] At least one story admits a mistake of mine and what I changed.
 - [ ] At least one story shows me pausing or rolling back a launch and escalating.
-- [ ] For Anthropic, I discuss safety through actions I took, not stated values.
+- [ ] For Anthropic, I prepared a concrete 200–400 word "why Anthropic" essay and discuss safety through actions taken, not stated values [C · T0-46 L324].
+- [ ] For Amazon, I mapped stories to Leadership Principles and verified AI-tool judgement for the Bar Raiser [C · T0-46 L325].
 - [ ] For Meta, every story leads with shipped impact, not research.
 - [ ] I have rehearsed every story aloud with three follow-ups.
 - [ ] My debrief template is ready, and I will fill it within 30 minutes of each round.
@@ -236,21 +247,21 @@ For behavioural rounds, also note which competency each question probed, which s
 
 ## Evidence and limits
 
-- **What is measured.** Nothing on this page is measured at firm level. The four competencies and the firm veto signals are B/C, from coaching guides and web research [T1-03.F4, T1-03.F5]. The 4/2/1 anchors are B/C/D synthesis [T1-03 L169]. STAR-AI and the debrief protocol are T1-03's own synthesis, graded D [T1-03 L236, L396].
-- **What is missing.** No firm-published AI behavioural rubric was found [E · T1-03 L407]. T0-14 found no firm-published AI level rubric and no Principal rubric [B/C · T0-14.F10]. Pass rates by round type are not published: the 15–20% onsite-to-offer figure is industry consensus [C · T1-03 L404], and T1-03 notes it may be optimistic for frontier labs [T1-03 L421]. Gem's engineering funnel, all rounds combined, gives 29% onsite-to-offer (erratum U24) [B · T0-04.F9]. T1-03 does not say how competency scores combine into a verdict.
-- **A tension to note.** T1-03's finding groups Google with Anthropic as a near-automatic veto [T1-03.F4]. Its firm table adds that a Google No Hire sinks the packet at target level and that the hiring committee may downlevel when technical scores are exceptional [T1-03 L211]. Read the table as the detail: at Google, an exceptional technical packet may survive at a lower level.
-- **Coverage.** Three firms: Anthropic, Google and Meta. Other employer types, such as startups, services firms and global capability centres, have no behavioural evidence on this page.
-- **Dates.** As reported in T1-03, dated 2026-10-25. `review_by` is 2027-01-23, 90 days on, the interval used for tool statuses [P].
-- **What would change this advice.** A firm publishing its behavioural rubric or calibration process; pass-rate data by round type; evidence from employers beyond these three; a controlled test of debriefing.
+- **What is measured.** Nothing on this page is measured at firm level. Ashby's platform dataset provides one relevant calibration statistic: **38% of paired interviewer scorecards disagree by at least a point** [B · T0-46 L396]. The four competencies are B/C synthesis [T1-03.F5]; employer committee/veto notes across 12 employers are Grade C prep-vendor and press reports [C · T0-46 L322–333]; the 4/2/1 anchors are B/C/D synthesis [T1-03 L169]; STAR-AI and the debrief protocol are T1-03's own synthesis, graded D [T1-03 L236, L396].
+- **What is missing.** No firm-published AI behavioural rubric was found [E · T1-03 L407]. T0-14 found no firm-published AI level rubric and no Principal rubric [B/C · T0-14.F10]. Pass rates by round type are not published: across platform datasets, Gem's 2024 engineering onsite-to-offer is **26%** (correcting the 29% figure in T0-04/ERRATA U24, which matched 2021 inbound pre-onsite-to-onsite), Gem's interview-to-offer is **14%** at enterprises (≥2,000 staff) vs **22%** at startups (<500 staff), and Ashby's all-role onsite pass-through is **~24%** [B · T0-46 L85, L385–390, L453]. Committee mechanics remain missing for OpenAI, Microsoft and most IT-services employers [E · T0-46 L491]. T1-03 does not say how competency scores combine into a verdict.
+- **Veto tension resolved (K3).** T1-03 grouped Google with Anthropic as a near-automatic veto [T1-03.F4] while its own table noted possible Google downlevelling [T1-03 L211]. T0-46 resolves this sharply: Google's hiring committee weighs variance heavily and can override panel votes in either direction including downlevelling — "sinks the packet automatically" is unsupported [C · T0-46 L326, L333, L450]. Only Amazon's Bar Raiser has an explicit final No-Hire veto in the retrieved sources; Anthropic's culture/values round is called the top late-stage gate by secondary reporting without a primary veto statement [C · T0-46 L324–325, L450].
+- **Coverage.** Twelve employers across frontier labs, Big Tech, AI-native firms, banks and India IT-services (expanded from T1-03's three firms via T0-46 §8), though each employer row remains Grade C single- or two-source reporting.
+- **Dates.** Updated against T0-46 (retrieved 2026-11-13 to 2026-11-14). `review_by` is 2027-02-11 (90 days on).
+- **What would change this advice.** A firm publishing its behavioural rubric or calibration process; pass-rate data by round type; primary committee evidence for OpenAI, Microsoft and India GCCs; a controlled test of debriefing.
 
 ## Next steps
 
-- [Interview loops](interview-loops.md): where the behavioural round sits in each loop.
-- [Prep packs: behavioural pack](prep-packs.md#behavioural-pack): practice prompts.
+- [Employer interview loops](employer-interview-loops.md) and [interview loops](interview-loops.md): where the behavioural round sits in each loop across 27 employers.
+- [Prep packs: behavioural pack](prep-packs.md#behavioural-pack): practice prompts (including new employer-specific prompts from T0-46).
 - [Coding rounds](coding-rounds.md) and [system design archetypes](system-design-archetypes.md): the technical rounds in the same loop.
 - [Role skill maps](../03-skills-and-tech/role-skill-maps.md): each role's interview track, practice notes and typical gaps, to aim your stories at the role.
 - [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md): artefacts that make a story checkable.
 - [Offer evaluation](../09-compensation/offer-evaluation.md) and [negotiation playbook](../09-compensation/negotiation-playbook.md): what comes after the loop.
 - [First 90 days](../10-onboarding/first-90-days.md): the work that becomes your next stories.
 - Role hubs: [AI engineer](../02-roles/hubs/ai-engineer.md), [AI product manager](../02-roles/hubs/ai-product-manager.md), [responsible AI engineer](../02-roles/hubs/responsible-ai-engineer.md), [AI safety researcher](../02-roles/hubs/ai-safety-researcher.md), [AI engineering manager](../02-roles/hubs/ai-engineering-manager.md).
-- Evidence: [findings for stage 8](../../research/findings.md#stage-08); sessions [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md), [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) and [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md); [glossary](../00-start/glossary.md).
+- Evidence: [findings for stage 8](../../research/findings.md#stage-08); sessions [T0-46](../../research/sessions/T0-46-interview-loops-genai-employers-2026.md), [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md), [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) and [T0-09](../../research/sessions/T0-09-onboarding-probation-first-90-days.md); [glossary](../00-start/glossary.md).

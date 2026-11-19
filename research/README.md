@@ -4,9 +4,9 @@ title: "Research Layer: Sessions, Findings, Decisions and Errata"
 content_type: index
 stage: 0
 status: published
-last_verified: 2026-11-05
-summary: "Index of the evidence layer: the 24 research sessions (22 Phase 0, 2 Phase 3), the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research."
-sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-01, T1-02, T1-03, T2-01, T3-01, T3-02]
+last_verified: 2026-11-19
+summary: "Index of the evidence layer: 75 research sessions (22 Phase 0, 2 Phase 3, 51 RP2), the findings registry distilled from them, the decision registry, the Founding Architecture Document, errata and how to add research."
+sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-11, T0-12, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T0-19, T0-20, T0-21, T0-22, T0-23, T0-24, T0-25, T0-26, T0-27, T0-29, T0-30, T0-31, T0-32, T0-34, T0-35, T0-36, T0-37, T0-38, T0-39, T0-40, T0-41, T0-42, T0-43, T0-44, T0-45, T0-46, T0-47, T0-48, T0-49, T0-50, T0-51, T0-52, T0-53, T0-54, T0-55, T0-56, T0-57, T0-58, T0-59, T0-60, T0-61, T0-62, T0-63, T0-64, T0-65, T0-66, T0-67, T0-68, T0-69, T0-70, T0-71, T1-01, T1-02, T1-03, T2-01, T3-01, T3-02]
 ---
 
 # Research Layer
@@ -14,7 +14,7 @@ sources: [T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, 
 This folder is the repository's **evidence layer**. Each session is a dated research report: its prior beliefs, its research question, evidence-graded findings, a source ledger and the belief changes it caused. The user-facing guidance in [career/](../career/README.md) is built from it.
 
 **How to use it:**
-1. **Start with the [findings registry](findings.md).** It lists all 262 key findings, each with its grade and exact line, grouped by lifecycle stage.
+1. **Start with the [findings registry](findings.md).** It lists all 1,034 key findings from 75 sessions, each with its grade and exact line, grouped by lifecycle stage.
 2. **Go to a session** for the full evidence: method, detailed findings, sources and open questions.
 3. **Check [ERRATA.md](ERRATA.md)** before relying on a Phase 0 record. Known errors are listed there, with corrections.
 
@@ -30,7 +30,7 @@ This folder is the repository's **evidence layer**. Each session is a dated rese
 |---|---|---|
 | [findings.md](findings.md) | Generated registry of every session's key findings, by stage and by session ([data](../data/findings.json); `python3 scripts/build_findings.py --update`) | Current |
 | [ERRATA.md](ERRATA.md) | Known errors in the Phase 0 records, with the correct reading and evidence | Current |
-| [DECISIONS.md](DECISIONS.md) | Architecture decision registry: D-001 to D-012 from Phase 0, plus later decisions appended (D-013 repository architecture v2; D-014 versioning; D-015 the stack map; D-016 the legacy-handbook policy and the guide pattern; D-017 review-by dates; D-018 evidence conventions for the stage guides; D-019 one owner per fact; D-020 generated review dates and a weekly reminder; D-021 research pipeline 2) | Append-only (status fields and calibration records are updated in place) |
+| [DECISIONS.md](DECISIONS.md) | Architecture decision registry: D-001 to D-012 from Phase 0, plus later decisions appended (D-013 architecture v2; D-014 versioning; D-015 stack map; D-016 legacy-handbook policy and guide pattern; D-017 review-by dates; D-018 evidence conventions; D-019 one owner per fact; D-020 freshness tracking; D-021 research pipeline 2; D-022 generic scope; D-023 to D-026 RP2 integration architecture) | Append-only (status fields and calibration records are updated in place) |
 | [FAD.md](FAD.md) | Founding Architecture Document: the Phase 0 capstone synthesis and Phase 1 plan | Historical record; superseded in parts (see its status note) |
 | [RESEARCH-PIPELINE.md](RESEARCH-PIPELINE.md) | The Phase 0 pipeline specification: session DAG, briefs and execution rules | Historical record |
 | [pipeline-2/](pipeline-2/README.md) | Research pipeline 2 (D-021): 53 planned sessions (T0-19 to T0-71) designed backwards from the data and pages they feed, with the shared protocol, the briefs, a generated tracker, and the verification and integration steps | Active |
@@ -98,6 +98,64 @@ Layer 3 │ Grand synthesis          │  FAD.md · 12 decisions locked
 |---|---|
 | [T1-01](sessions/T1-01-repository-information-architecture.md) | Information architecture, directory schema, navigation design |
 | [T1-02](sessions/T1-02-evidence-grounding-protocol.md) | The evidence-grounding protocol (EGP-1.0): grades, expiry classes, citation rules |
+
+### Research pipeline 2 sessions (51 of 53 saved, November 2026)
+
+Outcome-first sessions from [research pipeline 2](pipeline-2/README.md) (D-021); T0-28 and T0-33 are deferred past 2026-12-05.
+
+| Session | Focus |
+|---|---|
+| [T0-19](sessions/T0-19-linkedin-profile-search-content-engagement.md) | LinkedIn recruiter search, profile, content and engagement |
+| [T0-20](sessions/T0-20-github-readme-portfolio-site-writing.md) | GitHub profiles, READMEs, portfolio sites and technical writing |
+| [T0-21](sessions/T0-21-x-frontier-communities-fellowships-events.md) | X, frontier-lab communities, fellowships, events and competitions |
+| [T0-22](sessions/T0-22-referrals-warm-intros-cold-outreach-law.md) | Referrals, warm introductions, cold outreach and outreach law |
+| [T0-23](sessions/T0-23-resume-format-content-screening-2026.md) | GenAI résumé format, content, regional norms and AI screening (2026) |
+| [T0-24](sessions/T0-24-job-boards-global-ai-startup-remote.md) | Global, AI-specific, startup, remote and employer job boards, ghost jobs and scams |
+| [T0-25](sessions/T0-25-job-boards-regional-india-in-depth.md) | National and regional job boards, with India platforms in depth |
+| [T0-26](sessions/T0-26-job-search-tools-agents-oss-mcp.md) | Job-search tools, trackers, auto-apply agents, open source and MCP servers |
+| [T0-27](sessions/T0-27-target-employers-sponsor-registers-data.md) | Target employers, ATS board URLs, sponsor registers and hiring data corpora |
+| [T0-29](sessions/T0-29-certifications-frontier-labs-ai-native-vendors.md) | Certification census 2: frontier labs and AI-native vendors |
+| [T0-30](sessions/T0-30-certifications-courses-universities-india-programmes.md) | Certification census 3: course platforms, universities and India programmes |
+| [T0-31](sessions/T0-31-certifications-data-enterprise-ai-platforms.md) | Certification census 4: data and enterprise AI platforms |
+| [T0-32](sessions/T0-32-certifications-gpu-infrastructure-open-source.md) | Certification census 5: GPU, infrastructure, networking and open-source foundations |
+| [T0-34](sessions/T0-34-certifications-governance-security-privacy-audit.md) | Certification census 7: AI governance, security, privacy and audit |
+| [T0-35](sessions/T0-35-countries-cities-americas-europe-israel.md) | Countries and cities for GenAI careers 1: Americas, Europe and Israel |
+| [T0-36](sessions/T0-36-countries-cities-gulf-india-asia-pacific.md) | Countries and cities for GenAI careers 2: Gulf, India and Asia-Pacific |
+| [T0-37](sessions/T0-37-visa-dossier-united-states.md) | Visa and work-permit dossier: United States |
+| [T0-38](sessions/T0-38-visa-dossier-canada.md) | Visa and work-permit dossier: Canada |
+| [T0-39](sessions/T0-39-visa-dossier-uk-ireland-western-europe.md) | Visa and work-permit dossier: UK, Ireland, Germany, Netherlands, France, Switzerland |
+| [T0-40](sessions/T0-40-visa-dossier-nordics-southern-central-europe.md) | Visa and work-permit dossier: Nordics, Southern and Central Europe |
+| [T0-41](sessions/T0-41-visa-dossier-gulf-israel.md) | Visa and work-permit dossier: Gulf states and Israel |
+| [T0-42](sessions/T0-42-visa-dossier-asia-pacific.md) | Visa and work-permit dossier: Asia-Pacific |
+| [T0-43](sessions/T0-43-remote-cross-border-work-eor-platforms.md) | Remote cross-border work: employers, pay localisation, EOR platforms and structures |
+| [T0-44](sessions/T0-44-pay-us-uk-europe-singapore-gulf.md) | Pay refresh: US, Canada, UK, Europe, Israel, Singapore, Gulf, Japan and Australia |
+| [T0-45](sessions/T0-45-pay-negotiation-india-city-employer.md) | Pay and negotiation in India: by city, employer type, role and level |
+| [T0-46](sessions/T0-46-interview-loops-genai-employers-2026.md) | Interview loops for GenAI roles by employer and track (2026) |
+| [T0-47](sessions/T0-47-ai-mediated-hiring-screening-interviews-fraud.md) | AI-mediated hiring: screening, AI interviewers, candidate AI policies and fraud checks |
+| [T0-48](sessions/T0-48-role-dossier-ai-engineer.md) | Role dossier: AI Engineer |
+| [T0-49](sessions/T0-49-role-dossier-ml-engineer.md) | Role dossier: Machine Learning Engineer |
+| [T0-50](sessions/T0-50-role-dossier-research-engineer.md) | Role dossier: Research Engineer / Member of Technical Staff |
+| [T0-51](sessions/T0-51-role-dossier-forward-deployed-engineer.md) | Role dossier: Forward Deployed Engineer |
+| [T0-52](sessions/T0-52-role-dossier-applied-scientist.md) | Role dossier: Applied Scientist |
+| [T0-53](sessions/T0-53-role-dossier-applied-ai-engineer.md) | Role dossier: Applied AI Engineer |
+| [T0-54](sessions/T0-54-role-dossier-ai-infrastructure-engineer.md) | Role dossier: AI Infrastructure / GPU Platform Engineer |
+| [T0-55](sessions/T0-55-role-dossier-research-scientist.md) | Role dossier: Research Scientist (AI/ML) |
+| [T0-56](sessions/T0-56-role-dossier-inference-engineer.md) | Role dossier: Inference / LLM Serving Engineer |
+| [T0-57](sessions/T0-57-role-dossier-agentic-ai-engineer.md) | Role dossier: Agentic AI Engineer |
+| [T0-58](sessions/T0-58-role-dossier-ml-platform-engineer.md) | Role dossier: ML Platform / MLOps Engineer |
+| [T0-59](sessions/T0-59-role-dossier-ai-product-manager.md) | Role dossier: AI Product Manager |
+| [T0-60](sessions/T0-60-role-group-evaluation-security-safety.md) | Role group dossier: Evaluation, Security and Safety |
+| [T0-61](sessions/T0-61-role-group-governance-risk-responsible-ai.md) | Role group dossier: Governance, Risk and Responsible AI |
+| [T0-62](sessions/T0-62-role-group-solutions-enablement-product-engineering.md) | Role group dossier: Solutions, Enablement and AI Product Engineering |
+| [T0-63](sessions/T0-63-role-dossier-gpu-kernel-engineer.md) | Role dossier: GPU Kernel / ML Compiler Engineer |
+| [T0-64](sessions/T0-64-role-dossier-physical-ai-engineer.md) | Role dossier: Physical AI / Robotics AI Engineer |
+| [T0-65](sessions/T0-65-role-group-ai-leadership.md) | Role group dossier: AI Engineering Managers, Heads of AI and Chief AI Officers |
+| [T0-66](sessions/T0-66-role-group-independent-fractional-contract.md) | Role group dossier: Independent, Fractional and Contract AI Work |
+| [T0-67](sessions/T0-67-transitions-devops-pm-it-services-students.md) | Transitions: DevOps/SRE, product managers, IT-services engineers and students |
+| [T0-68](sessions/T0-68-learning-resources-rated.md) | Learning resources rated: documentation, courses, books, cohorts and bootcamps |
+| [T0-69](sessions/T0-69-skill-tool-momentum-dated-series.md) | Skill and tool momentum: dated rising/falling series and emerging titles |
+| [T0-70](sessions/T0-70-market-pulse-hiring-layoffs-funding.md) | Market pulse: hiring volume, layoffs, funding and employer mix |
+| [T0-71](sessions/T0-71-onboarding-growth-ai-roles.md) | First 90 days and growth in AI roles: probation, promotion and sustainable pace |
 
 ---
 

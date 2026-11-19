@@ -4,8 +4,8 @@ title: "Machine Learning Engineer (GenAI/LLM track): Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 84 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ml-engineer]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Machine Learning Engineer (GenAI/LLM track): Complete Skill Inventory
 
-> **GenAI target rank:** #2 · **Resume variant:** B1 (ML & Applied Science: Engineer) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #2 · **Resume variant:** B1 (ML & Applied Science: Engineer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-engineer) · [role hub](../../02-roles/hubs/ml-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ml-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **84 skills:** Must 4 · Important 18 · Should 28 · Optional 34. **Evidence:** JD 11 · S09 2 · S 24 · P 47 (56% practice-curated). **Non-technical:** 9.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -60,12 +60,13 @@ generated_by: scripts/build_skills.py
 - **Optional:** Google Cloud Professional Machine Learning Engineer (PMLE): tie-breaker in GCP shops; refreshed for GenAI [T0-11]
 - **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): only for LLM training or inference-infrastructure roles [T0-11]
 - **Optional:** AWS Certified ML Engineer – Associate (MLA-C02): replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads
+- **Optional:** PyTorch Certified Associate (PTCA) [T0-32]
 - **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by aws_mla_c02 [T0-11]
 - **Avoid:** AWS Certified Machine Learning – Specialty: retired 2026-03-31 [T0-11]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Degree common (72% of AI-engineering postings state one [C]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06].
+- **Prerequisites:** Degree common (72% in Axial Search [C · T0-06]; 75% of 903 Glassdoor US postings mention a degree [C · T0-23]; nearly 25% in Atlanta Fed Lightcast data list none [A · T0-23]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06].
 - **Proof to show:** A baseline-first model with measured lift and error analysis; a prompt vs RAG vs fine-tune comparison with cost and quality; a serving benchmark (tokens/s, p95, $/M tokens); small-budget training evidence (FSDP2 smoke tests, MFU).
 - **Posting terms (measured or cited):** machine learning (98.6%), Python (71.3%), PyTorch (48.2%), LLM (45.0%), data structures (33.7%), deep learning (32.6%), TensorFlow (31.8%), A/B testing (23.5%), NLP (23.3%), C++ (23.3%).
 

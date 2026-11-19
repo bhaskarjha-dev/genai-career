@@ -4,8 +4,8 @@ title: "AI Evaluation Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an AI Evaluation Engineer needs: 65 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-evaluation-engineer]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Evaluation Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #13 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #15 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-evaluation-engineer) · [role hub](../../02-roles/hubs/ai-evaluation-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-evaluation-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-evaluation-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**65 skills:** Must 5 · Important 19 · Should 28 · Optional 12 · Avoid 1. **Evidence:** JD 5 · S09 3 · S 42 · P 15 (23% practice-curated). **Non-technical:** 10.
+**65 skills:** Must 7 · Important 17 · Should 28 · Optional 13. **Evidence:** JD 5 · S09 3 · S 42 · P 15 (23% practice-curated). **Non-technical:** 10.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,13 +29,13 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** LLM evaluation (golden sets, calibrated judges, CI gates) [S09 19.0%] · LLM APIs & tool calling [S · T0-06] · Statistics (inference, hypothesis tests, regression) [JD 52.7% (feeder)]<br>**Important:** Retrieval quality (hybrid, reranking, recall@k) [S · T0-14]<br>**Should:** Observability (OpenTelemetry traces, metrics) [P] · RAG [S · T0-14] · Agents & tool use [S · T0-14] |
-| Technical: knowledge | **Method / practice** | **Must:** Testing (pytest) [S · T0-03]<br>**Important:** Eval statistics (CIs, power, pass^k) [S · T0-14] · Error analysis [S · T0-14] · Experiment design & A/B testing [S · T0-14] · Benchmark construction [S · T0-13] · Git & CI/CD [S · T0-14] · LLM-as-judge design & calibration [S · T0-03] · Golden datasets & test-set curation [S · T0-14] · Eval regression gates in CI [S · T0-14] · Online evaluation & production monitoring [S · T0-14] · Agent evaluation (trajectories, task success) [S · T0-14] · Human evaluation programmes [S · T0-14] · Rubrics & inter-rater agreement [S · T0-06] · Data analysis [JD 33.1% (feeder)]<br>**Should:** LLM tracing [S · T0-14] · Retrieval metrics (recall@k, MRR, nDCG) [S · T0-13] · Synthetic data generation [P]<br>**Optional:** Safety & capability evals [S · T0-15] · Red-teaming [S · T0-14] · Annotation workflows [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Testing (pytest) [S · T0-03] · LLM-as-judge design & calibration [S · T0-60] · Golden datasets & test-set curation [S · T0-60]<br>**Important:** Eval statistics (CIs, power, pass^k) [S · T0-14] · Error analysis [S · T0-14] · Experiment design & A/B testing [S · T0-14] · Benchmark construction [S · T0-13] · Git & CI/CD [S · T0-14] · Eval regression gates in CI [S · T0-14] · Online evaluation & production monitoring [S · T0-14] · Agent evaluation (trajectories, task success) [S · T0-14] · Human evaluation programmes [S · T0-14] · Rubrics & inter-rater agreement [S · T0-06] · Data analysis [JD 33.1% (feeder)]<br>**Should:** LLM tracing [S · T0-14] · Retrieval metrics (recall@k, MRR, nDCG) [S · T0-13] · Synthetic data generation [P]<br>**Optional:** Safety & capability evals [S · T0-15] · Red-teaming [S · T0-14] · Annotation workflows [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 86.0% (feeder)]<br>**Should:** SQL [JD 63.8% (feeder)] |
 | Technical: concrete | **Library / package** | **Should:** lm-evaluation-harness [S · T0-01] · pytest [S · T0-03] · pandas [P] · NumPy [P] · SciPy [P] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [S · T0-14] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** Hugging Face Hub [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** GitHub Actions [P] |
-| Technical: concrete | **Specialised product** | **Should:** DeepEval [S · T0-03] · Promptfoo [S · T0-03] · TruLens [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] · LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · LangSmith [S09 0.7%] · Langfuse [S · T0-03] · Arize Phoenix [S · T0-03] · Braintrust [S · T0-03] · Inspect (UK AISI) [S · T0-15]<br>**Optional:** Giskard [S · T0-15] · garak [S · T0-15] · PyRIT [S · T0-15] · Arize AX [S09 0.4%] · Annotation platforms (choose 1: Label Studio \| Labelbox \| Argilla) [P]<br>**Avoid:** RAGAS [S · T0-03] |
+| Technical: concrete | **Specialised product** | **Should:** DeepEval [S · T0-03] · Promptfoo [S · T0-03] · TruLens [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] · LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · LangSmith [S09 0.7%] · Langfuse [S · T0-03] · Arize Phoenix [S · T0-03] · Braintrust [S · T0-03] · Inspect (UK AISI) [S · T0-15]<br>**Optional:** Giskard [S · T0-15] · garak [S · T0-15] · PyRIT [S · T0-15] · Arize AX [S09 0.4%] · Annotation platforms (choose 1: Label Studio \| Labelbox \| Argilla) [P] · RAGAS [S · T0-69] |
 | Technical: concrete | **Protocol / standard** | **Should:** OpenTelemetry [S · T0-03] |
 | Technical: concrete | **Regulation / framework** | **Optional:** EU AI Act [P] |
 | Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 42.3% (feeder)]<br>**Should:** Design docs & RFCs [P] |
@@ -47,8 +47,7 @@ generated_by: scripts/build_skills.py
 
 ## 2. Avoid
 
-- **RAGAS** [S · T0-03]: dormant since Feb 2026
-- **Also avoid:** New RAGAS dependencies (dormant since Feb 2026); storing master API keys in SaaS eval platforms; "accuracy" claims without CIs
+- **Also avoid:** Eval-platform brand lock-in (7 acquisitions/closures in 13 months; OpenAI hosted Evals shutdown 2026-11-30); storing master API keys in SaaS eval platforms; 'accuracy' claims without CIs
 
 ## 3. Types that do not apply
 
@@ -59,10 +58,11 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): weak signal; services channels only [T0-11]
+- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Best feeders: data scientists (error analysis), PhDs (measurement rigour), backend engineers (CI, observability) [D · T0-06].
+- **Prerequisites:** Lead with 3+ years software/backend or data-science engineering (0/22 entry-level and 0/22 PhD required in T0-60); PhDs add measurement rigour [C · T0-60].
 - **Proof to show:** An eval harness with a kappa-calibrated judge validated on 100+ human labels, plus position and verbosity bias tests; a CI regression threshold and a cost–quality frontier chart.
 - **Posting terms (measured or cited):** LLM evaluation, evals, benchmarking, LLM-as-a-judge, golden dataset, A/B testing, pytest.
 
@@ -70,7 +70,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Python` · `Python 3` · `production Python` · `LLM evaluation` · `evals` · `Testing` · `unit testing` · `integration testing` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Statistics` · `statistical analysis` · `probability` · `Eval statistics` · `confidence intervals` · `statistical power` · `Error analysis` · `failure analysis` · `trace review` · `Experiment design & A/B testing` · `A/B testing` · `experimentation` · `Retrieval quality` · `retrieval evaluation` · `search relevance` · `Benchmark construction` · `dataset curation` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `LLM-as-judge design & calibration` · `LLM-as-a-judge` · `judge calibration` · `Golden datasets & test-set curation` · `test sets` · `eval datasets` · `Eval regression gates in CI` · `regression testing` · `CI evals` · `Online evaluation & production monitoring` · `production evals` · `online metrics` · `Agent evaluation` · `trajectory evaluation` · `agent benchmarks` · `Human evaluation programmes` · `human raters` · `side-by-side evaluation` · `Rubrics & inter-rater agreement` · `rubric design` · `inter-rater agreement` · `Data analysis` · `exploratory data analysis` · `EDA` · `Communication` · `communication skills` · `verbal communication` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Observability`
+`Python` · `Python 3` · `production Python` · `LLM evaluation` · `evals` · `Testing` · `unit testing` · `integration testing` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Statistics` · `statistical analysis` · `probability` · `LLM-as-judge design & calibration` · `LLM-as-a-judge` · `judge calibration` · `Golden datasets & test-set curation` · `test sets` · `eval datasets` · `Eval statistics` · `confidence intervals` · `statistical power` · `Error analysis` · `failure analysis` · `trace review` · `Experiment design & A/B testing` · `A/B testing` · `experimentation` · `Retrieval quality` · `retrieval evaluation` · `search relevance` · `Benchmark construction` · `dataset curation` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Eval regression gates in CI` · `regression testing` · `CI evals` · `Online evaluation & production monitoring` · `production evals` · `online metrics` · `Agent evaluation` · `trajectory evaluation` · `agent benchmarks` · `Human evaluation programmes` · `human raters` · `side-by-side evaluation` · `Rubrics & inter-rater agreement` · `rubric design` · `inter-rater agreement` · `Data analysis` · `exploratory data analysis` · `EDA` · `Communication` · `communication skills` · `verbal communication` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Observability`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -83,14 +83,14 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Testing (pytest) | Method / practice | M | 3 | | |
 | LLM APIs & tool calling | Concept / knowledge area | M | 3 | | |
 | Statistics (inference, hypothesis tests, regression) | Concept / knowledge area | M | 3 | | |
+| LLM-as-judge design & calibration | Method / practice | M | 3 | | |
+| Golden datasets & test-set curation | Method / practice | M | 3 | | |
 | Eval statistics (CIs, power, pass^k) | Method / practice | I | 2 | | |
 | Error analysis | Method / practice | I | 2 | | |
 | Experiment design & A/B testing | Method / practice | I | 2 | | |
 | Retrieval quality (hybrid, reranking, recall@k) | Concept / knowledge area | I | 2 | | |
 | Benchmark construction | Method / practice | I | 2 | | |
 | Git & CI/CD | Method / practice | I | 2 | | |
-| LLM-as-judge design & calibration | Method / practice | I | 2 | | |
-| Golden datasets & test-set curation | Method / practice | I | 2 | | |
 | Eval regression gates in CI | Method / practice | I | 2 | | |
 | Online evaluation & production monitoring | Method / practice | I | 2 | | |
 | Agent evaluation (trajectories, task success) | Method / practice | I | 2 | | |
@@ -112,14 +112,14 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Testing (pytest) | M | S (B) | T0-03:L358 | pytest-based harnesses |
 | LLM APIs & tool calling | M | S (B) | T0-06:L411 | — |
 | Statistics (inference, hypothesis tests, regression) | M | JD (B) 52.7% | JobsPipe: Data Scientist (feeder) | statistics fundamentals; role-defining for eval statistics |
+| LLM-as-judge design & calibration | M | S (C) | T0-60:L150 | 44% overall (8/18) and 8/13 non-lab eval postings |
+| Golden datasets & test-set curation | M | S (C) | T0-60:L151 | 39% overall (7/18) and 7/13 non-lab eval postings |
 | Eval statistics (CIs, power, pass^k) | I | S (B) | T0-14:L652 | pass@k vs pass^k; CIs and power; contamination and saturation checks |
 | Error analysis | I | S (B) | T0-14:L767 | taxonomies from 100+ reviewed traces |
 | Experiment design & A/B testing | I | S (B) | T0-14:L567 | online sampling and A/B tests |
 | Retrieval quality (hybrid, reranking, recall@k) | I | S (B) | T0-14:L52 | component evals: recall@k, MRR, faithfulness, router accuracy |
 | Benchmark construction | I | S (B) | T0-13:L150 | — |
 | Git & CI/CD | I | S (B) | T0-14:L165 | CI regression gates |
-| LLM-as-judge design & calibration | I | S (A) | T0-03:L98 | calibrated on ~50 pass / ~50 fail human labels; raw agreement overstates by 33-41 points |
-| Golden datasets & test-set curation | I | S (B) | T0-14:L562 | 20-50 seed tasks from real failures; adjudication rules |
 | Eval regression gates in CI | I | S (B) | T0-14:L718 | gate every prompt, model, retrieval or tool change on regression |
 | Online evaluation & production monitoring | I | S (B) | T0-14:L52 | sampling, A/B tests, incident → golden-set loop |
 | Agent evaluation (trajectories, task success) | I | S (B) | T0-14:L521 | grade outcomes, not exact tool-call paths; isolated trials |
@@ -171,4 +171,4 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | EU AI Act | O | P (D) | — | — |
 | Domain expertise | O | P (D) | — | — |
 | Mentoring | O | P (D) | — | — |
-| RAGAS | X | S (A) | T0-03:L510 | dormant since Feb 2026 |
+| RAGAS | O | S (B) | T0-69:L50 | Recovered 2026-11-13 (v0.4.4rc1); avoid eval-brand lock-in |

@@ -7,7 +7,7 @@
    "source": "JobsPipe",
    "retrieved": "2026-11-02",
    "grade": "B",
-   "basis": "Platform aggregate of live postings: for each posting title, the skills most often named and their share of postings (per cent). Grade B under decision D-018 (platform data). Recorded on 2026-11-02 in career/03-skills-and-tech/role-skill-maps.md §2.1 and moved to this data file unchanged on 2026-11-07. Sample sizes were not recorded.",
+   "basis": "Platform aggregate of live postings: for each posting title, the skills most often named and their share of postings (per cent). Grade B under decision D-018 (platform data). Recorded on 2026-11-02 in career/03-skills-and-tech/role-skill-maps.md §2.1 and moved to this data file unchanged on 2026-11-07. Sample sizes were not recorded. Re-checked in T0-69 on 2026-11-14: JobsPipe's AI Engineer skill-share page remained unchanged at underlying count date 2026-09-10 (do not treat 2026-09-10 and 2026-11-02 as two distinct dates; wait for JobsPipe's next refresh before adding a second snapshot).",
    "expiry": "EGP-1.0 class V3 (skill-demand shares): 180 days from retrieval, so re-verify by 2027-05-01",
    "titles": [
     {

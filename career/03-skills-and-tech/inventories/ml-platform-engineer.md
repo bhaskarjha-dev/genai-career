@@ -4,8 +4,8 @@ title: "ML Platform / MLOps (LLMOps) Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an ML Platform / MLOps (LLMOps) Engineer needs: 77 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ml-platform-engineer]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # ML Platform / MLOps (LLMOps) Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #11 · **Resume variant:** D2 (AI Systems & Infrastructure: Platform & infrastructure) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #9 · **Resume variant:** D2 (AI Systems & Infrastructure: Platform & infrastructure) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-platform-engineer) · [role hub](../../02-roles/hubs/ml-platform-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ml-platform-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-platform-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**77 skills:** Must 7 · Important 15 · Should 34 · Optional 21. **Evidence:** JD 12 · S09 5 · S 34 · P 26 (34% practice-curated). **Non-technical:** 6.
+**77 skills:** Must 8 · Important 14 · Should 34 · Optional 21. **Evidence:** JD 12 · S09 5 · S 34 · P 26 (34% practice-curated). **Non-technical:** 6.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -28,7 +28,7 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** Observability (OpenTelemetry traces, metrics) [S · T0-03]<br>**Important:** DevOps [JD 99.0% (feeder)] · LLM gateways [S · T0-14] · OAuth/OIDC, RBAC, SSO [S · T0-16] · MLOps lifecycle (model & prompt CI/CD) [S · T0-03] · Model supply chain & CVEs [S · T0-16]<br>**Should:** Capacity & GPU/API cost governance [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Engine internals & multi-LoRA [S · T0-03] · Prefill/decode disaggregation [S · T0-03] · GPU fleet ops & scheduling [S · T0-03] · Inference autoscaling [S · T0-03] · Feature stores [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Observability (OpenTelemetry traces, metrics) [S · T0-03] · MLOps lifecycle (model & prompt CI/CD) [S · T0-58]<br>**Important:** DevOps [JD 99.0% (feeder)] · LLM gateways [S · T0-14] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Model supply chain & CVEs [S · T0-16]<br>**Should:** Capacity & GPU/API cost governance [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Engine internals & multi-LoRA [S · T0-03] · Prefill/decode disaggregation [S · T0-03] · GPU fleet ops & scheduling [S · T0-03] · Inference autoscaling [S · T0-03] · Feature stores [P] |
 | Technical: knowledge | **Method / practice** | **Must:** Terraform / IaC [JD 59.1% (feeder)] · Git & CI/CD [JD 81.2% (feeder)]<br>**Important:** SRE (SLOs, on-call, incidents) [S · T0-14]<br>**Should:** Prompt & model versioning [S · T0-03] · Progressive delivery (canary, shadow, feature flags) [P] · Experiment tracking & reproducibility [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 55.7% (feeder)]<br>**Should:** Go / Java (choose 1: Go \| Java) [P] · Bash / shell scripting [P] |
 | Technical: concrete | **Framework / SDK** | **Important:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03]<br>**Should:** Ray [S09 3.0%] · NVIDIA Dynamo [S · T0-03] · NVIDIA Dynamo Triton [S · T0-03] · vLLM [S09 3.9%] · SGLang [S09 2.6%] |
@@ -59,6 +59,8 @@ generated_by: scripts/build_skills.py
 
 - **Optional:** Certified Kubernetes Administrator (CKA): not in the corpus; common in platform hiring
 - **Optional:** AWS Certified ML Engineer – Associate (MLA-C02): replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads
+- **Optional:** Certified Kubernetes Application Developer (CKAD) [T0-32]
+- **Optional:** SnowPro Core Certification (COF-C03) [T0-31]
 - **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by aws_mla_c02 [T0-11]
 
 ## 5. Prerequisites and proof
@@ -71,7 +73,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Kubernetes` · `K8s` · `EKS` · `Terraform / IaC` · `infrastructure as code` · `IaC` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Docker` · `containers` · `containerisation` · `Python` · `Python 3` · `production Python` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `Observability` · `LLM observability` · `monitoring` · `DevOps` · `DevOps practices` · `Terraform` · `OpenTofu` · `Linux` · `Unix` · `shell` · `KServe` · `Ray Serve` · `BentoML` · `NVIDIA Dynamo Triton` · `Triton Inference Server` · `NVIDIA NIM` · `NIM microservices` · `LLM gateways` · `AI gateway` · `LLM proxy` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `MLOps lifecycle` · `MLOps` · `LLMOps` · `Model supply chain & CVEs` · `model supply chain` · `SBOM` · `SRE` · `SLOs` · `on-call` · `vLLM` · `SGLang` · `TensorRT-LLM` · `TRT-LLM` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MCP`
+`Kubernetes` · `K8s` · `EKS` · `Terraform / IaC` · `infrastructure as code` · `IaC` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Docker` · `containers` · `containerisation` · `Python` · `Python 3` · `production Python` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `Observability` · `LLM observability` · `monitoring` · `MLOps lifecycle` · `MLOps` · `LLMOps` · `DevOps` · `DevOps practices` · `Terraform` · `OpenTofu` · `Linux` · `Unix` · `shell` · `KServe` · `Ray Serve` · `BentoML` · `NVIDIA Dynamo Triton` · `Triton Inference Server` · `NVIDIA NIM` · `NIM microservices` · `LLM gateways` · `AI gateway` · `LLM proxy` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Model supply chain & CVEs` · `model supply chain` · `SBOM` · `SRE` · `SLOs` · `on-call` · `vLLM` · `SGLang` · `TensorRT-LLM` · `TRT-LLM` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MCP`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -86,6 +88,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Python (production) | Programming language | M | 3 | | |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | Platform / cloud service | M | 3 | | |
 | Observability (OpenTelemetry traces, metrics) | Concept / knowledge area | M | 3 | | |
+| MLOps lifecycle (model & prompt CI/CD) | Concept / knowledge area | M | 3 | | |
 | DevOps | Concept / knowledge area | I | 2 | | |
 | Terraform | Infrastructure / DevOps tool | I | 2 | | |
 | Amazon Web Services (AWS) | Platform / cloud service | I | 2 | | |
@@ -93,7 +96,6 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) | Platform / cloud service | I | 2 | | |
 | LLM gateways | Concept / knowledge area | I | 2 | | |
 | OAuth/OIDC, RBAC, SSO | Concept / knowledge area | I | 2 | | |
-| MLOps lifecycle (model & prompt CI/CD) | Concept / knowledge area | I | 2 | | |
 | Model supply chain & CVEs | Concept / knowledge area | I | 2 | | |
 | SRE (SLOs, on-call, incidents) | Method / practice | I | 2 | | |
 | vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) | Framework / SDK | I | 2 | | |
@@ -113,6 +115,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Python (production) | M | JD (B) 55.7% | JobsPipe: DevOps Engineer (feeder) | — |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | M | JD (B) 52.9% | JobsPipe: DevOps Engineer (feeder) | AWS 52.9% |
 | Observability (OpenTelemetry traces, metrics) | M | S (B) | T0-03:L136 | Prometheus/Grafana for TTFT, TPOT and KV saturation; per-tenant cost |
+| MLOps lifecycle (model & prompt CI/CD) | M | S (C) | T0-58:L175 | 67.7% of ML Platform / MLOps postings in T0-58 |
 | DevOps | I | JD (B) 99.0% | JobsPipe: DevOps Engineer (feeder) | keyword in nearly every feeder posting |
 | Terraform | I | JD (B) 59.1% | JobsPipe: DevOps Engineer (feeder) | Important rather than Must: the share comes from a feeder title |
 | Amazon Web Services (AWS) | I | JD (B) 52.9% | JobsPipe: DevOps Engineer (feeder) | the cloud class (Must) carries the requirement; AWS is the most-named |
@@ -120,7 +123,6 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) | I | S (B) | T0-03:L136 | Ray Serve, KServe; Dynamo or Dynamo Triton on Kubernetes |
 | LLM gateways | I | S (B) | T0-14:L191 | per-team budgets, PII redaction, routing, cache layers, usage ledgers |
 | OAuth/OIDC, RBAC, SSO | I | S (C) | T0-16:L401 | OAuth/OIDC/JWT, RBAC, identity propagation |
-| MLOps lifecycle (model & prompt CI/CD) | I | S (C) | T0-03:L413 | CI/CD for models and prompts; model and prompt registries |
 | Model supply chain & CVEs | I | S (C) | T0-16:L365 | model provenance, SBOMs, CVE patching |
 | SRE (SLOs, on-call, incidents) | I | S (C) | T0-14:L785 | SLOs, error budgets, cost governance |
 | vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) | I | S (B) | T0-03:L99 | — |

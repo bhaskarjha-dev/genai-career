@@ -4,8 +4,8 @@ title: "AI Risk, Audit & Compliance Specialist: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an AI Risk, Audit & Compliance Specialist needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-risk-assurance-specialist]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Risk, Audit & Compliance Specialist: Complete Skill Inventory
 
-> **GenAI target rank:** #22 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #21 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-risk-assurance-specialist) · [role hub](../../02-roles/hubs/ai-risk-assurance-specialist.md) · [narrative skill map](../role-skill-maps.md#skills-ai-risk-assurance-specialist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-risk-assurance-specialist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**47 skills:** Must 5 · Important 18 · Should 14 · Optional 10. **Evidence:** S 30 · P 17 (36% practice-curated). **Non-technical:** 9.
+**47 skills:** Must 5 · Important 19 · Should 13 · Optional 10. **Evidence:** S 31 · P 16 (34% practice-curated). **Non-technical:** 9.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,12 +29,12 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** Privacy law & DPO duties [S · T0-15] · Model risk management [S · T0-15]<br>**Important:** EU AI Act / NIST AI RMF / ISO 42001 [S · T0-15] · Sector rules (SR 26-2, LL144, DPDP) [S · T0-15] · Fairness & bias assessment [S · T0-15]<br>**Should:** Data governance & lineage [P] · Explainability (XAI) [P] · Statistics (inference, hypothesis tests, regression) [P] · LLM fundamentals (tokens, context windows, sampling, hallucination) [P]<br>**Optional:** Content provenance (EU AI Act Art. 50) [S · T0-15] |
-| Technical: knowledge | **Method / practice** | **Must:** Audit methodology [S · T0-15] · GRC & risk assessment [S · T0-15] · Model validation [S · T0-15]<br>**Important:** Controls design & testing [P] · AI impact & risk assessment [P] · Risk & compliance docs (Annex IV, model cards) [P]<br>**Should:** Third-party and vendor AI risk [P] · AI inventory & risk register [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Audit methodology [S · T0-15] · GRC & risk assessment [S · T0-15] · Model validation [S · T0-15]<br>**Important:** Controls design & testing [P] · AI impact & risk assessment [P] · Risk & compliance docs (Annex IV, model cards) [P] · Third-party and vendor AI risk [S · T0-61]<br>**Should:** AI inventory & risk register [P] |
 | Technical: concrete | **Programming language** | **Should:** Python/SQL (notebook level) [P] |
 | Technical: concrete | **Library / package** | **Important:** Fairness & explainability tools (choose 1: Fairlearn \| AI Fairness 360 \| SHAP \| LIME \| Captum \| Microsoft Responsible AI Toolbox) [S · T0-15]<br>**Should:** Fairlearn [S · T0-15] · SHAP [S · T0-15] · AI Fairness 360 [S · T0-15] |
 | Technical: concrete | **Specialised product** | **Optional:** IBM OpenPages / watsonx.governance [S · T0-15] · OneTrust (AI governance) [S · T0-15] |
 | Technical: concrete | **Protocol / standard** | **Optional:** C2PA [S · T0-15] |
-| Technical: concrete | **Regulation / framework** | **Important:** NYC Local Law 144 [S · T0-15] · SR 26-2 (US banking model-risk guidance) [S · T0-15] · ISO/IEC 42001 [S · T0-15] · EU AI Act [S · T0-15] · India DPDP Act [S · T0-15]<br>**Should:** GDPR [S · T0-15] · NIST AI RMF [S · T0-15] · NAIC AI model bulletin (insurance) [S · T0-15]<br>**Optional:** Colorado AI Act [S · T0-15] · HIPAA [P] · SOC 2 [P] · ISO/IEC 27001 [P] |
+| Technical: concrete | **Regulation / framework** | **Important:** NYC Local Law 144 [S · T0-15] · SR 26-2 (US banking model-risk guidance) [S · T0-15] · ISO/IEC 42001 [S · T0-15] · EU AI Act [S · T0-15] · India DPDP Act [S · T0-15]<br>**Should:** GDPR [S · T0-15] · NIST AI RMF [S · T0-15] · NAIC AI model bulletin (insurance) [S · T0-15]<br>**Optional:** Colorado ADMT law (SB 26-189; replaced SB 24-205) [S · T0-15] · HIPAA [P] · SOC 2 [P] · ISO/IEC 27001 [P] |
 | Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [P] · Technical writing [P]<br>**Should:** Stakeholder communication [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
@@ -57,15 +57,18 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Important:** ISACA CISA: CISA, CIA or CPA is the prerequisite route for AAIA [T0-15]
+- **Optional:** ISACA CISA: prerequisite route for AAIA credential, not named as a job prerequisite in T0-61 postings [T0-15, T0-61]
 - **Optional:** ISACA Advanced in AI Audit (AAIA): requires CISA, CIA or CPA [T0-15]
 - **Optional:** IAPP Artificial Intelligence Governance Professional (AIGP) [T0-15]
 - **Optional:** ISACA CRISC [T0-15]
 - **Optional:** IAPP CIPP (privacy law, regional variants) [T0-15]
+- **Optional:** ISACA Advanced in AI Risk (AAIR) [T0-34]
+- **Optional:** PECB Certified ISO/IEC 42001 Lead Auditor [T0-34]
+- **Optional:** DSCI Certified Privacy Professional (DCPP) [T0-34]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** CISA, CIA or CPA (required for the AAIA credential) [B · T0-15].
+- **Prerequisites:** 4–10+ years in model risk management (MRM), IT audit, compliance or technology risk; CISA/CIA/CPA is required only for the ISACA AAIA credential, not as a universal job gate [B · T0-61].
 - **Proof to show:** A model-validation or bias-audit report on a public model, using a documented methodology.
 - **Posting terms (measured or cited):** audit, model risk, AI risk, compliance, ISO 42001, bias audit, privacy.
 
@@ -73,7 +76,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Audit methodology` · `internal audit` · `GRC & risk assessment` · `GRC` · `risk assessment` · `Model validation` · `effective challenge` · `Privacy law & DPO duties` · `privacy law` · `data protection` · `Model risk management` · `MRM` · `model risk` · `EU AI Act / NIST AI RMF / ISO 42001` · `AI regulation` · `AI standards` · `Sector rules` · `sector AI rules` · `financial-services AI rules` · `Fairlearn` · `AI Fairness 360` · `AIF360` · `SHAP` · `LIME` · `Captum` · `Microsoft Responsible AI Toolbox` · `RAI Toolbox` · `Fairness & bias assessment` · `algorithmic fairness` · `bias testing` · `NYC Local Law 144` · `LL144` · `AEDT law` · `SR 26-2` · `ISO/IEC 42001` · `ISO 42001` · `AIMS` · `EU AI Act` · `AI Act` · `India DPDP Act` · `DPDP` · `Digital Personal Data Protection Act` · `Controls design & testing` · `control testing` · `AI impact & risk assessment` · `AI impact assessment` · `FRIA` · `Risk & compliance docs` · `technical documentation` · `Annex IV` · `Communication` · `communication skills` · `verbal communication` · `Technical writing` · `documentation` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Stakeholder communication` · `stakeholder management` · `Python/SQL` · `notebook Python`
+`Audit methodology` · `internal audit` · `GRC & risk assessment` · `GRC` · `risk assessment` · `Model validation` · `effective challenge` · `Privacy law & DPO duties` · `privacy law` · `data protection` · `Model risk management` · `MRM` · `model risk` · `EU AI Act / NIST AI RMF / ISO 42001` · `AI regulation` · `AI standards` · `Sector rules` · `sector AI rules` · `financial-services AI rules` · `Fairlearn` · `AI Fairness 360` · `AIF360` · `SHAP` · `LIME` · `Captum` · `Microsoft Responsible AI Toolbox` · `RAI Toolbox` · `Fairness & bias assessment` · `algorithmic fairness` · `bias testing` · `NYC Local Law 144` · `LL144` · `AEDT law` · `SR 26-2` · `ISO/IEC 42001` · `ISO 42001` · `AIMS` · `EU AI Act` · `AI Act` · `India DPDP Act` · `DPDP` · `Digital Personal Data Protection Act` · `Controls design & testing` · `control testing` · `AI impact & risk assessment` · `AI impact assessment` · `FRIA` · `Risk & compliance docs` · `technical documentation` · `Annex IV` · `Communication` · `communication skills` · `verbal communication` · `Technical writing` · `documentation` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Third-party and vendor AI risk` · `vendor risk` · `TPRM` · `Stakeholder communication`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -104,6 +107,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| Third-party and vendor AI risk | Method / practice | I | 2 | | |
 
 ## 8. Evidence and notes
 
@@ -132,12 +136,12 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| Third-party and vendor AI risk | I | S (C) | T0-61:L250 | 38% (3/8) of T0-61 risk/assurance postings |
 | Stakeholder communication | S | P (D) | — | — |
 | Python/SQL (notebook level) | S | P (D) | — | — |
 | GDPR | S | S (C) | T0-15:L297 | — |
 | NIST AI RMF | S | S (B) | T0-15:L162 | — |
 | NAIC AI model bulletin (insurance) | S | S (B) | T0-15:L102 | — |
-| Third-party and vendor AI risk | S | P (D) | — | — |
 | AI inventory & risk register | S | P (D) | — | — |
 | Data governance & lineage | S | P (D) | — | — |
 | Explainability (XAI) | S | P (D) | — | — |
@@ -150,7 +154,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | C2PA | O | S (B) | T0-15:L24 | — |
 | IBM OpenPages / watsonx.governance | O | S (C) | T0-15:L307 | — |
 | OneTrust (AI governance) | O | S (C) | T0-15:L337 | — |
-| Colorado AI Act | O | S (B) | T0-15:L374 | — |
+| Colorado ADMT law (SB 26-189; replaced SB 24-205) | O | S (B) | T0-15:L374 | — |
 | HIPAA | O | P (D) | — | — |
 | SOC 2 | O | P (D) | — | — |
 | ISO/IEC 27001 | O | P (D) | — | — |

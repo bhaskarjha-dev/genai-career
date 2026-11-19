@@ -4,9 +4,9 @@ title: "AI / GenAI Solutions Architect: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "Every skill an AI / GenAI Solutions Architect needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "Every skill an AI / GenAI Solutions Architect needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-solutions-architect]
 generated_by: scripts/build_skills.py
 ---
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI / GenAI Solutions Architect: Complete Skill Inventory
 
-> **GenAI target rank:** #14 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #12 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-solutions-architect) · [role hub](../../02-roles/hubs/ai-solutions-architect.md) · [narrative skill map](../role-skill-maps.md#skills-ai-solutions-architect) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-solutions-architect) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**56 skills:** Must 5 · Important 17 · Should 25 · Optional 9. **Evidence:** JD 12 · S 12 · P 32 (57% practice-curated). **Non-technical:** 20.
+**58 skills:** Must 5 · Important 19 · Should 25 · Optional 9. **Evidence:** JD 12 · S 17 · P 29 (50% practice-curated). **Non-technical:** 20.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -28,13 +28,13 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** GenAI reference architectures [P]<br>**Important:** Cost & latency engineering [S · T0-03] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Model selection & routing [S · T0-14]<br>**Should:** Generative AI [JD 17.1%] · DevOps [JD 17.2%] · RAG [P] · Agents & tool use [P] · Networking [P] · Data governance & lineage [P] · Cybersecurity fundamentals [P]<br>**Optional:** LLM gateways [S · T0-16] · Self-hosting open models [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** GenAI reference architectures [P]<br>**Important:** Cost & latency engineering [S · T0-03] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Model selection & routing [S · T0-14] · RAG [S · T0-62] · Agents & tool use [S · T0-62]<br>**Should:** Generative AI [JD 17.1%] · DevOps [JD 17.2%] · Networking [P] · Data governance & lineage [P] · Cybersecurity fundamentals [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-62] · Observability (OpenTelemetry traces, metrics) [S · T0-62]<br>**Optional:** LLM gateways [S · T0-16] · Self-hosting open models [P] |
 | Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 25.3%]<br>**Should:** Terraform / IaC [P] |
 | Technical: concrete | **Programming language** | **Important:** Python (production) [JD 23.6%] |
 | Technical: concrete | **Framework / SDK** | **Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [P] |
 | Technical: concrete | **Library / package** | **Optional:** LiteLLM [P] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] · Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [P] |
-| Technical: concrete | **Platform / cloud service** | **Must:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 53.6%] · Amazon Web Services (AWS) [JD 53.6%]<br>**Important:** Microsoft Azure [JD 29.5%] · Google Cloud (GCP) [JD 22.6%] · Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [S · T0-11]<br>**Should:** LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [P] |
+| Technical: concrete | **Platform / cloud service** | **Must:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 53.6%]<br>**Important:** Amazon Web Services (AWS) [JD 53.6%] · Microsoft Azure [JD 29.5%] · Google Cloud (GCP) [JD 22.6%] · Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [S · T0-11]<br>**Should:** LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [P] |
 | Technical: concrete | **Data store** | **Should:** Vector stores (choose 1: pgvector \| Pinecone \| Weaviate \| Qdrant \| Milvus / Zilliz \| Chroma \| OpenSearch \| Elasticsearch) [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Terraform [P] · Kubernetes [P] |
 | Technical: concrete | **Specialised product** | **Should:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [P] |
@@ -43,7 +43,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Regulation / framework** | **Should:** OWASP Top 10 for LLM Applications [P] · EU AI Act [P] · NIST AI RMF [P] |
 | Non-technical | **Communication & collaboration** | **Must:** Stakeholder communication [P] · Communication (written & verbal) [JD 42.9%]<br>**Should:** Customer-facing communication [P] · Presenting & live demos [P] · Executive & board communication [P] · Design docs & RFCs [P] |
 | Non-technical | **Behavioural competency** | **Important:** Adaptability & learning agility [JD 26.5%] · Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
-| Non-technical | **Business & product** | **Important:** Token & unit economics [S · T0-14] · Pre-sales [P]<br>**Should:** Customer scoping & demos [P] · Build-vs-buy & vendor evaluation [S · T0-03] · ROI & business cases [P]<br>**Optional:** AI strategy & portfolio [P] |
+| Non-technical | **Business & product** | **Must:** Pre-sales [S · T0-62]<br>**Important:** Token & unit economics [S · T0-14]<br>**Should:** Customer scoping & demos [P] · Build-vs-buy & vendor evaluation [S · T0-03] · ROI & business cases [P]<br>**Optional:** AI strategy & portfolio [P] |
 | Non-technical | **Leadership & people** | **Important:** Leadership & mentoring [JD 43.0%] · Mentoring [JD 35.1%] |
 | Non-technical | **Domain knowledge** | **Optional:** Domain expertise [P] |
 
@@ -59,19 +59,21 @@ generated_by: scripts/build_skills.py
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): tie-breaker in IT services, staffing and partner firms [T0-11]
 - **Optional:** Google Cloud Professional Machine Learning Engineer (PMLE): GCP shops [T0-11]
-- **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure partners; beta [T0-11]
+- **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure partners; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28 [T0-11, T0-62]
+- **Optional:** Salesforce Certified Agentforce Specialist [T0-31]
+- **Optional:** SnowPro Core Certification (COF-C03) [T0-31]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Senior engineer / cloud architect background. Certifications (AIP-C01, PMLE, AI-103) are tie-breakers mainly in IT-services, staffing and partner channels [B/C · T0-11].
-- **Proof to show:** A reference architecture with a cost model and a working infrastructure-as-code deployment.
+- **Prerequisites:** Usually 5+ (10+ at frontier labs) years in customer-facing engineering or cloud architecture, though entry-level hyperscaler CSA programmes exist; certs matter mainly in partner/SI channels [B/C · T0-11, T0-62].
+- **Proof to show:** A reference architecture with a cost/latency model, an eval-backed live demo and a customer-scenario discovery walkthrough (IaC optional outside cloud-delivery shops).
 - **Posting terms (measured or cited):** solutions architect, AWS (53.6%), Azure (29.5%), GCP (22.6%), leadership (43.0%), communication (42.9%), mentoring (35.1%), compliance (25.3%), Python (23.6%), AI (23.2%), generative AI (17.1%).
 
 ## 6. Keywords to mirror (only when true)
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `GenAI reference architectures` · `reference architectures` · `solution architecture` · `Stakeholder communication` · `stakeholder management` · `Communication` · `communication skills` · `verbal communication` · `Leadership & mentoring` · `leadership` · `technical leadership` · `Mentoring` · `mentorship` · `coaching` · `Adaptability & learning agility` · `adaptability` · `continuous learning` · `GRC & risk assessment` · `GRC` · `risk assessment` · `Python` · `Python 3` · `production Python` · `Amazon Bedrock` · `AWS Bedrock` · `Bedrock` · `Azure AI Foundry / Azure OpenAI` · `Azure OpenAI` · `AI Foundry` · `Google Vertex AI` · `Vertex AI` · `Vertex AI Agent Builder` · `Cost & latency engineering` · `cost optimisation` · `latency optimisation` · `Token & unit economics` · `token economics` · `cost per task` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Pre-sales` · `solution selling` · `Model selection & routing` · `model routing` · `LLM routing` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Generative AI` · `GenAI` · `DevOps` · `DevOps practices` · `RAG` · `retrieval-augmented generation`
+`Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `GenAI reference architectures` · `reference architectures` · `solution architecture` · `Stakeholder communication` · `stakeholder management` · `Communication` · `communication skills` · `verbal communication` · `Pre-sales` · `solution selling` · `Leadership & mentoring` · `leadership` · `technical leadership` · `Mentoring` · `mentorship` · `coaching` · `Adaptability & learning agility` · `adaptability` · `continuous learning` · `GRC & risk assessment` · `GRC` · `risk assessment` · `Python` · `Python 3` · `production Python` · `Amazon Bedrock` · `AWS Bedrock` · `Bedrock` · `Azure AI Foundry / Azure OpenAI` · `Azure OpenAI` · `AI Foundry` · `Google Vertex AI` · `Vertex AI` · `Vertex AI Agent Builder` · `Cost & latency engineering` · `cost optimisation` · `latency optimisation` · `Token & unit economics` · `token economics` · `cost per task` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Model selection & routing` · `model routing` · `LLM routing` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `RAG` · `retrieval-augmented generation` · `Agents & tool use` · `agentic AI` · `AI agents` · `Generative AI`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -80,10 +82,11 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Skill | Type | Tier | Target | You (0-3) | Best evidence (V0-V3) |
 |---|---|:---:|:---:|:---:|:---:|
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | Platform / cloud service | M | 3 | | |
-| Amazon Web Services (AWS) | Platform / cloud service | M | 3 | | |
 | GenAI reference architectures | Concept / knowledge area | M | 3 | | |
 | Stakeholder communication | Communication & collaboration | M | 3 | | |
 | Communication (written & verbal) | Communication & collaboration | M | 3 | | |
+| Pre-sales | Business & product | M | 3 | | |
+| Amazon Web Services (AWS) | Platform / cloud service | I | 2 | | |
 | Leadership & mentoring | Leadership & people | I | 2 | | |
 | Mentoring | Leadership & people | I | 2 | | |
 | Microsoft Azure | Platform / cloud service | I | 2 | | |
@@ -95,22 +98,24 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Cost & latency engineering | Concept / knowledge area | I | 2 | | |
 | Token & unit economics | Business & product | I | 2 | | |
 | OAuth/OIDC, RBAC, SSO | Concept / knowledge area | I | 2 | | |
-| Pre-sales | Business & product | I | 2 | | |
 | Model selection & routing | Concept / knowledge area | I | 2 | | |
 | Pragmatism under ambiguity (C1) | Behavioural competency | I | 2 | | |
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| RAG | Concept / knowledge area | I | 2 | | |
+| Agents & tool use | Concept / knowledge area | I | 2 | | |
 
 ## 8. Evidence and notes
 
 | Skill | Tier | Evidence | Source | Note |
 |---|:---:|---|---|---|
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | M | JD (B) 53.6% | JobsPipe: Solutions Architect | AWS 53.6%, Azure 29.5%, GCP 22.6% |
-| Amazon Web Services (AWS) | M | JD (B) 53.6% | JobsPipe: Solutions Architect | — |
 | GenAI reference architectures | M | P (D) | — | RAG and agent reference architectures on managed services |
 | Stakeholder communication | M | P (D) | — | role-defining |
 | Communication (written & verbal) | M | JD (B) 42.9% | JobsPipe: Solutions Architect | role-defining for client-facing architecture |
+| Pre-sales | M | S (C) | T0-62:L146 | 60.9% explicit pre-sales / 95.7% customer-facing technical gate in T0-62 |
+| Amazon Web Services (AWS) | I | JD (B) 53.6% | JobsPipe: Solutions Architect | JobsPipe SA is 53.6% AWS; T0-62 AI SA splits evenly (Azure 30.4%, GCP 30.4%, AWS 26.1%) — cloud stays Must |
 | Leadership & mentoring | I | JD (B) 43.0% | JobsPipe: Solutions Architect | — |
 | Mentoring | I | JD (B) 35.1% | JobsPipe: Solutions Architect | — |
 | Microsoft Azure | I | JD (B) 29.5% | JobsPipe: Solutions Architect | — |
@@ -122,16 +127,15 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Cost & latency engineering | I | S (C) | T0-03:L136 | self-host vs managed-API cost modelling |
 | Token & unit economics | I | S (A) | T0-14:L659 | self-host unit cost vs API pricing |
 | OAuth/OIDC, RBAC, SSO | I | S (C) | T0-16:L401 | gateway and identity patterns |
-| Pre-sales | I | P (D) | — | demos and proposals |
 | Model selection & routing | I | S (A) | T0-14:L562 | learned routing kept ~95% quality at 35-85% lower cost; 70%+ of orgs use 3+ models |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| RAG | I | S (C) | T0-62:L150 | 26.1% of T0-62 AI SA postings |
+| Agents & tool use | I | S (C) | T0-62:L151 | 56.5% in T0-62 (capped Important for query bias) |
 | Generative AI | S | JD (B) 17.1% | JobsPipe: Solutions Architect | — |
 | DevOps | S | JD (B) 17.2% | JobsPipe: Solutions Architect | — |
-| RAG | S | P (D) | — | — |
-| Agents & tool use | S | P (D) | — | — |
 | Terraform / IaC | S | P (D) | — | IaC deployment of the reference architecture |
 | Networking | S | P (D) | — | networking and security basics |
 | Data governance & lineage | S | P (D) | — | data governance and compliance architecture |
@@ -153,6 +157,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | OWASP Top 10 for LLM Applications | S | P (D) | — | — |
 | EU AI Act | S | P (D) | — | — |
 | NIST AI RMF | S | P (D) | — | — |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | S | S (C) | T0-62:L155 | 17.4% of T0-62 AI SA postings |
+| Observability (OpenTelemetry traces, metrics) | S | S (C) | T0-62:L203 | 39% Axial AI SA benchmark |
 | LLM gateways | O | S (C) | T0-16:L54 | — |
 | Self-hosting open models | O | P (D) | — | — |
 | AI strategy & portfolio | O | P (D) | — | enterprise AI platform strategy |

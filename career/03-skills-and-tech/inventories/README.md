@@ -4,7 +4,7 @@ title: "Role Skill Inventories: One File per Role"
 content_type: index
 stage: 3
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-19
 summary: "Folder page for the generated per-role skill inventories; the counted index, cross-role views and method are in role-skill-inventories.md."
 generated_by: scripts/build_skills.py
 ---
@@ -19,27 +19,27 @@ Files, in GenAI target order:
 
 - [AI Engineer](ai-engineer.md)
 - [Machine Learning Engineer (GenAI/LLM track)](ml-engineer.md)
-- [Research Engineer / Member of Technical Staff](research-engineer.md)
-- [Forward Deployed Engineer (AI)](forward-deployed-engineer.md)
 - [Applied Scientist (GenAI/LLM teams)](applied-scientist.md)
+- [Forward Deployed Engineer (AI)](forward-deployed-engineer.md)
+- [Research Engineer / Member of Technical Staff](research-engineer.md)
 - [Applied AI Engineer](applied-ai-engineer.md)
 - [AI Infrastructure / GPU Platform Engineer](ai-infrastructure-engineer.md)
 - [Research Scientist (LLM research)](research-scientist.md)
-- [Inference / LLM Serving Engineer](inference-engineer.md)
-- [Agentic AI Engineer](agentic-ai-engineer.md)
 - [ML Platform / MLOps (LLMOps) Engineer](ml-platform-engineer.md)
-- [AI Product Manager](ai-product-manager.md)
-- [AI Evaluation Engineer](ai-evaluation-engineer.md)
-- [AI / GenAI Solutions Architect](ai-solutions-architect.md)
-- [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md)
 - [AI Security Engineer / AI Red Teamer](ai-security-engineer.md)
-- [AI Governance Programme Lead / Manager](ai-governance-lead.md)
+- [Inference / LLM Serving Engineer](inference-engineer.md)
+- [AI / GenAI Solutions Architect](ai-solutions-architect.md)
+- [AI Product Manager](ai-product-manager.md)
+- [Agentic AI Engineer](agentic-ai-engineer.md)
+- [AI Evaluation Engineer](ai-evaluation-engineer.md)
+- [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md)
 - [Physical AI / Robotics AI Engineer](physical-ai-engineer.md)
+- [AI Governance Programme Lead / Manager](ai-governance-lead.md)
 - [Frontier AI Safety / Alignment Researcher](ai-safety-researcher.md)
-- [AI Enablement Engineer](ai-enablement-engineer.md)
 - [AI Product Engineer (AI Frontend)](ai-product-engineer.md)
 - [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md)
 - [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md)
+- [AI Enablement Engineer](ai-enablement-engineer.md)
 - [Domain Evaluation Specialist / AI Trainer](domain-evaluation-specialist.md)
 - [AI Engineering Manager / Director](ai-engineering-manager.md)
 - [VP / Head of AI / CAIO](vp-head-of-ai.md)

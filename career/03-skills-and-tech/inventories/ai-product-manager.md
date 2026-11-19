@@ -4,8 +4,8 @@ title: "AI Product Manager: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-product-manager]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Product Manager: Complete Skill Inventory
 
-> **GenAI target rank:** #12 · **Resume variant:** E1 (AI Product, Governance & Assurance: Product) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #13 · **Resume variant:** E1 (AI Product, Governance & Assurance: Product) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-product-manager) · [role hub](../../02-roles/hubs/ai-product-manager.md) · [narrative skill map](../role-skill-maps.md#skills-ai-product-manager) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-product-manager) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**47 skills:** Must 4 · Important 16 · Should 20 · Optional 7. **Evidence:** JD 9 · S 15 · P 23 (49% practice-curated). **Non-technical:** 24.
+**47 skills:** Must 5 · Important 14 · Should 20 · Optional 8. **Evidence:** JD 9 · S 17 · P 21 (45% practice-curated). **Non-technical:** 24.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,8 +29,8 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** AI literacy (tokens, RAG vs fine-tune, cost) [S · T0-06]<br>**Should:** Agents & tool use [JD 13.6% (feeder)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] |
-| Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 26.1% (feeder)] · Agile delivery (Scrum, Kanban) [JD 22.7% (feeder)] · Rubrics & inter-rater agreement [S · T0-06] · Pilots & adoption measurement [S · T0-06] · Risk & compliance docs (Annex IV, model cards) [P]<br>**Should:** Human-in-the-loop design [P] · Prompt engineering [S · T2-01] · Golden datasets & test-set curation [S · T0-06] · LLM-as-judge design & calibration [P] · User research & discovery [P] · Product analytics [P] · Rapid prototyping [P] |
-| Technical: concrete | **Programming language** | **Important:** Python/SQL (notebook level) [S · T0-06] |
+| Technical: knowledge | **Method / practice** | **Must:** Rubrics & inter-rater agreement [S · T0-59]<br>**Important:** GRC & risk assessment [JD 26.1% (feeder)] · Agile delivery (Scrum, Kanban) [JD 22.7% (feeder)] · Pilots & adoption measurement [S · T0-06] · Rapid prototyping [S · T0-59]<br>**Should:** Human-in-the-loop design [P] · Prompt engineering [S · T2-01] · Golden datasets & test-set curation [S · T0-06] · LLM-as-judge design & calibration [P] · User research & discovery [P] · Product analytics [P]<br>**Optional:** Risk & compliance docs (Annex IV, model cards) [S · T0-59] |
+| Technical: concrete | **Programming language** | **Should:** Python/SQL (notebook level) [S · T0-59] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** LLM API providers (choose 1: OpenAI API platform \| Anthropic API \| Gemini API) [P] |
 | Technical: concrete | **Specialised product** | **Should:** Jira [P] · Figma [P] |
@@ -59,18 +59,19 @@ generated_by: scripts/build_skills.py
 
 - **Optional:** Google Cloud Generative AI Leader: non-technical literacy credential [T0-11]
 - **Optional:** AWS Certified AI Practitioner (AIF-C01): literacy credential for people who work with AI [T0-11]
+- **Optional:** AWS Certified AI Business Strategist (AIB-C01): beta ($50); business AI strategist closer to PM brief than AIF-C01; 0/41 JD mentions [T0-59]
 
 ## 5. Prerequisites and proof
 
 - **Prerequisites:** 4+ years as a PM plus at least one shipped model-powered feature [D · T0-06]; T2-01 asks for 5+ years in product/ops plus notebook-level Python.
-- **Proof to show:** A PRD plus eval rubric plus pilot metrics; a domain rubric with 50+ labelled cases; "10 failure modes ranked by business impact".
+- **Proof to show:** A shipped model/agent prototype with PRD, eval rubric (50+ labelled cases) and failure-mode ranking by business impact.
 - **Posting terms (measured or cited):** product management (92.6%), communication (53.7%), leadership (40.1%), compliance (26.1%), agile (22.7%), roadmapping (18.4%), AI (15.4%), stakeholder management (14.2%), agentic AI (13.6%).
 
 ## 6. Keywords to mirror (only when true)
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Product management` · `product strategy` · `Communication` · `communication skills` · `verbal communication` · `Stakeholder communication` · `stakeholder management` · `AI literacy` · `AI fluency` · `LLM literacy` · `Leadership & mentoring` · `leadership` · `technical leadership` · `GRC & risk assessment` · `GRC` · `risk assessment` · `Time management & prioritisation` · `prioritisation` · `organisation` · `Agile delivery` · `agile` · `Scrum` · `Rubrics & inter-rater agreement` · `rubric design` · `inter-rater agreement` · `Metrics for non-deterministic systems` · `KPIs` · `north-star metrics` · `Token & unit economics` · `token economics` · `cost per task` · `Pilots & adoption measurement` · `pilots` · `POCs` · `Python/SQL` · `notebook Python` · `Jupyter` · `Risk & compliance docs` · `technical documentation` · `Annex IV` · `Product sense` · `product thinking` · `user empathy` · `PRDs & product specs` · `product requirements documents` · `specs` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Roadmapping & prioritisation` · `roadmaps` · `product roadmap` · `Agents & tool use` · `agentic AI` · `AI agents` · `Human-in-the-loop design` · `human-in-the-loop` · `human review` · `Domain expertise` · `subject-matter expertise` · `Technical writing` · `documentation`
+`Product management` · `product strategy` · `Communication` · `communication skills` · `verbal communication` · `Stakeholder communication` · `stakeholder management` · `AI literacy` · `AI fluency` · `LLM literacy` · `Rubrics & inter-rater agreement` · `rubric design` · `inter-rater agreement` · `Leadership & mentoring` · `leadership` · `technical leadership` · `GRC & risk assessment` · `GRC` · `risk assessment` · `Time management & prioritisation` · `prioritisation` · `organisation` · `Agile delivery` · `agile` · `Scrum` · `Metrics for non-deterministic systems` · `KPIs` · `north-star metrics` · `Token & unit economics` · `token economics` · `cost per task` · `Pilots & adoption measurement` · `pilots` · `POCs` · `Product sense` · `product thinking` · `user empathy` · `PRDs & product specs` · `product requirements documents` · `specs` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Rapid prototyping` · `prototyping` · `proofs of concept` · `Python/SQL` · `notebook Python` · `Jupyter` · `Roadmapping & prioritisation` · `roadmaps` · `product roadmap` · `Agents & tool use` · `agentic AI` · `AI agents` · `Human-in-the-loop design` · `human-in-the-loop` · `human review` · `Domain expertise` · `subject-matter expertise` · `Technical writing` · `documentation`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -82,22 +83,21 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Communication (written & verbal) | Communication & collaboration | M | 3 | | |
 | Stakeholder communication | Communication & collaboration | M | 3 | | |
 | AI literacy (tokens, RAG vs fine-tune, cost) | Concept / knowledge area | M | 3 | | |
+| Rubrics & inter-rater agreement | Method / practice | M | 3 | | |
 | Leadership & mentoring | Leadership & people | I | 2 | | |
 | GRC & risk assessment | Method / practice | I | 2 | | |
 | Time management & prioritisation | Behavioural competency | I | 2 | | |
 | Agile delivery (Scrum, Kanban) | Method / practice | I | 2 | | |
-| Rubrics & inter-rater agreement | Method / practice | I | 2 | | |
 | Metrics for non-deterministic systems | Business & product | I | 2 | | |
 | Token & unit economics | Business & product | I | 2 | | |
 | Pilots & adoption measurement | Method / practice | I | 2 | | |
-| Python/SQL (notebook level) | Programming language | I | 2 | | |
-| Risk & compliance docs (Annex IV, model cards) | Method / practice | I | 2 | | |
 | Product sense | Business & product | I | 2 | | |
 | PRDs & product specs | Communication & collaboration | I | 2 | | |
 | Pragmatism under ambiguity (C1) | Behavioural competency | I | 2 | | |
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| Rapid prototyping | Method / practice | I | 2 | | |
 
 ## 8. Evidence and notes
 
@@ -107,22 +107,22 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Communication (written & verbal) | M | JD (B) 53.7% | JobsPipe: Product Manager (feeder) | — |
 | Stakeholder communication | M | JD (B) 14.2% | JobsPipe: Product Manager (feeder) | role-defining; 14.2% name "stakeholder management" explicitly |
 | AI literacy (tokens, RAG vs fine-tune, cost) | M | S (B) | T0-06:L613 | tokens, context windows, hallucination, RAG vs fine-tuning, cost |
+| Rubrics & inter-rater agreement | M | S (C) | T0-59:L178 | >=27% overall and 5/9 opened postings in T0-59 (builder/model-facing variant) |
 | Leadership & mentoring | I | JD (B) 40.1% | JobsPipe: Product Manager (feeder) | — |
 | GRC & risk assessment | I | JD (B) 26.1% | JobsPipe: Product Manager (feeder) | named as "compliance" |
 | Time management & prioritisation | I | JD (B) 24.0% | JobsPipe: Product Manager (feeder) | — |
 | Agile delivery (Scrum, Kanban) | I | JD (B) 22.7% | JobsPipe: Product Manager (feeder) | — |
-| Rubrics & inter-rater agreement | I | S (B) | T0-06:L606 | rubrics, golden sets, inter-rater agreement, the limits of LLM judges |
 | Metrics for non-deterministic systems | I | S (C) | T2-01:L495 | metrics for non-deterministic systems, and how to report them |
 | Token & unit economics | I | P (D) | — | token and unit economics |
 | Pilots & adoption measurement | I | S (C) | T0-06:L637 | pilot with 5-10 users; measure adoption, time saved, error rate |
-| Python/SQL (notebook level) | I | S (C) | T0-06:L615 | notebook-level SQL and Python to analyse eval results and logs |
-| Risk & compliance docs (Annex IV, model cards) | I | P (D) | — | risk and governance documentation |
 | Product sense | I | S (C) | T0-06:L735 | scoping and product-sense rounds |
 | PRDs & product specs | I | S (C) | T0-06:L604 | a PRD plus an eval rubric plus pilot metrics |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| Rapid prototyping | I | S (C) | T0-59:L58, T0-59:L181 | AI-assisted prototyping in 5/9 opened postings (Microsoft AI, Uber, Mistral, Lovable) |
+| Python/SQL (notebook level) | S | S (C) | T0-59:L183 | 10% overall (2/9 opened postings in T0-59) |
 | Roadmapping & prioritisation | S | JD (B) 18.4% | JobsPipe: Product Manager (feeder) | — |
 | Agents & tool use | S | JD (B) 13.6% | JobsPipe: Product Manager (feeder) | named as "agentic AI" |
 | Human-in-the-loop design | S | P (D) | — | — |
@@ -134,7 +134,6 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | LLM-as-judge design & calibration | S | P (D) | — | the limits of LLM judges |
 | User research & discovery | S | P (D) | — | — |
 | Product analytics | S | P (D) | — | — |
-| Rapid prototyping | S | P (D) | — | — |
 | ROI & business cases | S | P (D) | — | — |
 | Build-vs-buy & vendor evaluation | S | P (D) | — | — |
 | Go-to-market & pricing | S | P (D) | — | — |
@@ -143,6 +142,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Executive & board communication | S | P (D) | — | — |
 | Jira | S | P (D) | — | — |
 | Figma | S | P (D) | — | — |
+| Risk & compliance docs (Annex IV, model cards) | O | S (C) | T0-59:L186 | 0/41 explicit mentions in T0-59 |
 | MCP (Model Context Protocol) | O | S (C) | T0-16:L402 | MCP and AI control-plane products (Workato Senior PM, Enterprise MCP) |
 | AI strategy & portfolio | O | P (D) | — | platform and agent product strategy |
 | Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) | O | P (D) | — | — |

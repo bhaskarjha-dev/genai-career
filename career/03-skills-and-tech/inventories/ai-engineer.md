@@ -4,9 +4,9 @@ title: "AI Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "Every skill an AI Engineer needs: 148 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "Every skill an AI Engineer needs: 149 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #1 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #1 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-engineer) · [role hub](../../02-roles/hubs/ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**148 skills:** Must 4 · Important 20 · Should 59 · Optional 63 · Avoid 2. **Evidence:** JD 14 · S09 7 · S 88 · P 39 (26% practice-curated). **Non-technical:** 12.
+**149 skills:** Must 4 · Important 20 · Should 60 · Optional 64 · Avoid 1. **Evidence:** JD 14 · S09 7 · S 89 · P 39 (26% practice-curated). **Non-technical:** 12.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,7 +29,7 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7%] · Agents & tool use [JD 59.3%] · RAG [JD 54.0%]<br>**Important:** LLM evaluation (golden sets, calibrated judges, CI gates) [S09 19.0%] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-03] · Agent reliability (durable state, budgets, approvals) [S · T0-03] · Cost & latency engineering [S · T0-14] · Observability (OpenTelemetry traces, metrics) [S09 28.5%] · LLM security (prompt injection, OWASP) [S · T0-14] · Prompt & context design [S · T0-14] · ML fundamentals [JD 39.8%] · Generative AI [JD 37.6%] · Embeddings & vector search [JD 32.6%]<br>**Should:** APIs & integrations [S · T0-06] · LLM fundamentals (tokens, context windows, sampling, hallucination) [S · T0-06] · System design [S · T0-14] · Hybrid search (BM25 + dense) [S · T0-03] · Reranking [S · T0-14] · Permission-aware retrieval (ACLs, tenancy) [S · T0-14] · Choosing RAG vs long context vs fine-tuning [S · T0-14] · Semantic & prompt caching [S · T0-14] · Model selection & routing [S · T0-14] · Structured output & tool schemas [S · T0-03] · Tool and function calling [S · T0-06] · Context engineering [S · T0-06] · Guardrails [S · T0-14] · Document ingestion, parsing & chunking [P] · Embedding & reranker models [S · T0-14] · Durable execution & workflow state [S · T0-03]<br>**Optional:** Self-hosting open models [S · T0-03] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Constrained decoding [S · T0-14] · Distillation [P] · Multimodal AI (vision, documents, audio) [P] · GraphRAG & knowledge graphs [P] · Agentic RAG [P] · Reasoning models & test-time compute [P] · Speech & voice AI (ASR, TTS, realtime voice agents) [P] · ANN indexes (HNSW, IVF, PQ) [P] · Serverless deployment [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 34.4%] · Prompt engineering [JD 31.1%]<br>**Should:** Retrieval metrics (recall@k, MRR, nDCG) [S · T0-06] · LLM-as-judge design & calibration [S · T0-03] · Golden datasets & test-set curation [S · T0-06] · Eval regression gates in CI [S · T0-03] · Error analysis [S · T0-06] · LLM tracing [S · T0-03] · Prompt & model versioning [S · T0-03] · Human-in-the-loop design [S · T0-06] · Production hardening (rate limits, spend caps, kill switches) [S · T0-13] · Load testing & latency SLOs [S · T0-06] · Incident postmortems [S · T0-06] · Online evaluation & production monitoring [S · T0-14] |
+| Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 34.4%] · Prompt engineering [JD 31.1%]<br>**Should:** Retrieval metrics (recall@k, MRR, nDCG) [S · T0-06] · LLM-as-judge design & calibration [S · T0-03] · Golden datasets & test-set curation [S · T0-06] · Eval regression gates in CI [S · T0-03] · Error analysis [S · T0-06] · LLM tracing [S · T0-03] · Prompt & model versioning [S · T0-03] · Human-in-the-loop design [S · T0-06] · Production hardening (rate limits, spend caps, kill switches) [S · T0-13] · Load testing & latency SLOs [S · T0-06] · Incident postmortems [S · T0-06] · Online evaluation & production monitoring [S · T0-14] · Coding agents & AI-assisted engineering [S · T0-57, T0-69] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4%]<br>**Should:** SQL [S · T0-06] · TypeScript / JavaScript [S · T0-06] |
 | Technical: concrete | **Framework / SDK** | **Should:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] · FastAPI [S · T0-06] · OpenAI Agents SDK [S · T0-03] · LangGraph [S · T0-16]<br>**Optional:** LangChain [S · T0-16] · LlamaIndex [S · T0-03] · Claude Agent SDK [S · T0-03] · Pydantic AI [S · T0-03] · Microsoft Agent Framework [S · T0-03] · Google Agent Development Kit (ADK) [S · T0-03] · DSPy [S · T0-03] · Vercel AI SDK [S · T0-06] · Gradio [S · T0-13] · Streamlit [P] · Semantic Kernel [S · T0-03] · Haystack [P] · smolagents [P] · Python web frameworks (choose 1: FastAPI \| Flask \| Django) [P] · Local inference runtimes (choose 1: llama.cpp \| Ollama) [P]<br>**Avoid:** AutoGen [S · T0-03] |
 | Technical: concrete | **Library / package** | **Should:** Pydantic [S · T0-03] · LiteLLM [S · T0-16] · pytest [S · T0-03]<br>**Optional:** Instructor [P] · sentence-transformers [P] · FAISS [P] · Unstructured [P] · Outlines [P] · Celery [P] |
@@ -37,7 +37,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 35.1%] · LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [S · T0-03]<br>**Should:** Amazon Web Services (AWS) [JD 35.1%] · Microsoft Azure [JD 35.1%]<br>**Optional:** Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [S · T0-11] · Hugging Face Hub [S · T0-13] · Modal [S · T0-13] · Google Cloud (GCP) [P] · AWS Lambda [P] · Google Cloud Run [P] · Serverless GPU and inference clouds (choose 1: Modal \| Replicate \| Together AI \| Fireworks AI \| Baseten) [P] |
 | Technical: concrete | **Data store** | **Should:** Vector stores (choose 1: pgvector \| Pinecone \| Weaviate \| Qdrant \| Milvus / Zilliz \| Chroma \| OpenSearch \| Elasticsearch) [S · T0-03] · pgvector [S · T0-03] · PostgreSQL [JD 30.7% (feeder)] · Redis [S · T0-03]<br>**Optional:** Pinecone [S09 0.7%] · Neo4j [P] · MongoDB [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Docker [S · T0-03] · GitHub Actions [S · T0-13] · Git [P]<br>**Optional:** Kubernetes [S09 15.5%] · Terraform [P] · General load-testing tools (choose 1: Locust \| k6) [P] |
-| Technical: concrete | **Specialised product** | **Should:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] · DeepEval [S · T0-03]<br>**Optional:** Promptfoo [S · T0-03] · Langfuse [S · T0-03] · LangSmith [S09 0.7%] · Arize Phoenix [S · T0-03] · Braintrust [S · T0-03] · Guardrail tools (choose 1: NeMo Guardrails \| Guardrails AI \| Llama Guard) [S · T0-15] · AI red-teaming tools (choose 1: garak \| PyRIT \| Promptfoo \| Giskard) [S · T0-15]<br>**Avoid:** RAGAS [S · T0-03] |
+| Technical: concrete | **Specialised product** | **Should:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] · DeepEval [S · T0-03]<br>**Optional:** Promptfoo [S · T0-03] · Langfuse [S · T0-03] · LangSmith [S09 0.7%] · Arize Phoenix [S · T0-03] · Braintrust [S · T0-03] · Guardrail tools (choose 1: NeMo Guardrails \| Guardrails AI \| Llama Guard) [S · T0-15] · AI red-teaming tools (choose 1: garak \| PyRIT \| Promptfoo \| Giskard) [S · T0-15] · RAGAS [S · T0-69] |
 | Technical: concrete | **Protocol / standard** | **Should:** JSON Schema [S · T0-03] · Server-Sent Events (SSE) [S · T0-16] · OpenTelemetry [S · T0-03] · OAuth 2.x [S · T0-16]<br>**Optional:** MCP (Model Context Protocol) [S09 4.3%] · A2A (Agent2Agent) [S · T0-16] · OTel GenAI semantic conventions [S · T0-03] · OpenAPI [P] · gRPC [P] |
 | Technical: concrete | **Regulation / framework** | **Should:** OWASP Top 10 for LLM Applications [S · T0-13]<br>**Optional:** EU AI Act [P] |
 | Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 44.2% (feeder)]<br>**Should:** Stakeholder communication [P] · Design docs & RFCs [S · T0-06] |
@@ -49,7 +49,6 @@ generated_by: scripts/build_skills.py
 ## 2. Avoid
 
 - **AutoGen** [S · T0-03]: dormant; superseded by Microsoft Agent Framework 1.0
-- **RAGAS** [S · T0-03]: dormant: no release since Jan 2026
 - **Also avoid:** Wrapper-only demos; framework-syntax mastery as a headline; new RAGAS dependencies; "Prompt Engineer" as your title
 
 ## 3. Types that do not apply
@@ -60,14 +59,16 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): tie-breaker, mostly in services and GCC channels [T0-11]
-- **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure shops; still marked beta [T0-11]
+- **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure shops; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28 [T0-11, T0-62]
 - **Optional:** Databricks Certified Generative AI Engineer Associate: only if the team runs Databricks [T0-11]
+- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
+- **Optional:** Model Context Protocol Associate (MCPA) [T0-32]
 - **Avoid:** AWS Certified Machine Learning – Specialty: retired 2026-03-31 [T0-11]
 - **Avoid:** Microsoft Azure AI Engineer Associate (AI-102): retired 2026-06-30 [T0-11]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 "Senior AI Engineer" cut assumes 5+ years [B]. 72% of AI-engineering postings state a degree requirement [C · T0-06].
+- **Prerequisites:** No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 "Senior AI Engineer" cut assumes 5+ years [B]. About 72% of US AI-engineering postings state a degree [C · T0-06] and 75% of 903 Glassdoor US postings mention one (24% bachelor's, 24% master's, 28% PhD; "mention", not "require") [C · T0-23], while nearly 25% of AI postings in Atlanta Fed Lightcast data list no education requirement [A · T0-23].
 - **Proof to show:** An evaluated end-to-end system over a real corpus (metrics table, cost/latency budget, reproducible README); for T2–T3, a second system with a different failure surface plus CI-gated evals, traces, a load test and a postmortem.
 - **Posting terms (measured or cited):** Python (78.4%), LLM (76.7%), agentic AI (59.3%), RAG (54.0%), machine learning (39.8%), generative AI (37.6%), AWS / Azure (35.1% each), CI/CD (34.4%), vector databases (32.6%), prompt engineering (31.1%).
 
@@ -195,6 +196,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Token & unit economics | S | S (A) | T0-14:L206 | cache pricing, batch APIs (50% cheaper), cost per task |
 | Adaptability & learning agility | S | P (D) | — | tools churn every few months |
 | Git | S | P (D) | — | — |
+| Coding agents & AI-assisted engineering | S | S (B) | T0-57:L64, T0-57:L268, T0-69:L57 | AI coding-tool fluency tested in live Build rounds (5/14 agentic JDs + Sierra) |
 | MCP (Model Context Protocol) | O | S09 (B) 4.3% | T0-03:L214 | MCP server/client to spec revision 2026-07-28 |
 | Self-hosting open models | O | S (B) | T0-03:L41 | vLLM/SGLang with utilisation-aware cost models |
 | Fine-tuning (SFT, LoRA) | O | S09 (B) 13.0% | T0-03:L96 | distillation or fine-tuning for narrow tasks only |
@@ -238,6 +240,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | EU AI Act | O | P (D) | — | when shipping in the EU |
 | Mentoring | O | P (D) | — | senior levels |
 | Domain expertise | O | P (D) | — | the employer's vertical (finance, health, legal) |
+| RAGAS | O | S (B) | T0-69:L50 | Recovered 2026-11-13 (v0.4.4rc1); avoid eval-brand lock-in |
 | Haystack | O | P (D) | — | — |
 | smolagents | O | P (D) | — | — |
 | Python web frameworks (choose 1: FastAPI \| Flask \| Django) | O | P (D) | — | FastAPI is the common default |
@@ -259,4 +262,3 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | General load-testing tools (choose 1: Locust \| k6) | O | P (D) | — | — |
 | Celery | O | P (D) | — | background jobs |
 | AutoGen | X | S (A) | T0-03:L102 | dormant; superseded by Microsoft Agent Framework 1.0 |
-| RAGAS | X | S (A) | T0-03:L106 | dormant: no release since Jan 2026 |

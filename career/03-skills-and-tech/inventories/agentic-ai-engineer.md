@@ -4,8 +4,8 @@ title: "Agentic AI Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an Agentic AI Engineer needs: 73 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [agentic-ai-engineer]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Agentic AI Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #10 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #14 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-agentic-ai-engineer) · [role hub](../../02-roles/hubs/agentic-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-agentic-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-agentic-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**73 skills:** Must 5 · Important 18 · Should 31 · Optional 17 · Avoid 2. **Evidence:** JD 4 · S09 1 · S 55 · P 13 (18% practice-curated). **Non-technical:** 10.
+**73 skills:** Must 5 · Important 18 · Should 32 · Optional 17 · Avoid 1. **Evidence:** JD 4 · S09 1 · S 55 · P 13 (18% practice-curated). **Non-technical:** 10.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,7 +29,7 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · Agents & tool use [JD 59.3% (closest)] · Prompt & context design [S · T0-14] · Tool and function calling [S · T0-03]<br>**Important:** Agent reliability (durable state, budgets, approvals) [S · T0-14] · Containment (DLP, sandboxing, egress) [S · T0-14] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14] · LLM security (prompt injection, OWASP) [S · T0-14] · Durable execution & workflow state [S · T0-03] · Multi-agent orchestration [S · T0-14] · Context engineering [S · T0-14]<br>**Should:** RAG [S · T0-16] · Observability (OpenTelemetry traces, metrics) [P] · Agent memory & state [S · T0-14] · Agent interoperability (tool and agent protocols) [S · T0-16]<br>**Optional:** Constrained decoding [P] · Retrieval quality (hybrid, reranking, recall@k) [P] · Computer-use & browser agents [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Human-in-the-loop design [S · T0-14] · Agent evaluation (trajectories, task success) [S · T0-14]<br>**Should:** Git & CI/CD [S · T0-16]<br>**Optional:** Coding-agent rollout [S · T0-16] |
+| Technical: knowledge | **Method / practice** | **Important:** Human-in-the-loop design [S · T0-14] · Agent evaluation (trajectories, task success) [S · T0-14]<br>**Should:** Git & CI/CD [S · T0-16] · Coding agents & AI-assisted engineering [S · T0-57, T0-69] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (closest)]<br>**Should:** TypeScript / JavaScript [S · T0-16] · SQL [S · T0-16] |
 | Technical: concrete | **Framework / SDK** | **Important:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-16] · LangGraph [S · T0-16] · LangChain [S · T0-16]<br>**Should:** OpenAI Agents SDK [S · T0-03] · Claude Agent SDK [S · T0-03] · Pydantic AI [S · T0-03] · Microsoft Agent Framework [S · T0-03] · Google Agent Development Kit (ADK) [S · T0-03] · LlamaIndex [S · T0-03]<br>**Optional:** Mastra [S · T0-16] · CrewAI [P] · smolagents [P]<br>**Avoid:** AutoGen [S · T0-03] |
 | Technical: concrete | **Library / package** | **Should:** Pydantic [S · T0-03] · LiteLLM [S · T0-16]<br>**Optional:** FastMCP [S · T0-16] · langchain-mcp-adapters [S · T0-16] · Celery [P] |
@@ -37,7 +37,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Platform / cloud service** | **Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [S · T0-16]<br>**Optional:** Amazon Bedrock AgentCore [S · T0-16] |
 | Technical: concrete | **Data store** | **Should:** Redis [S · T0-03]<br>**Optional:** PostgreSQL [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Kubernetes [S · T0-16] · Temporal [S09 2.3%] · Docker [S · T0-14]<br>**Optional:** Apache Kafka [P] |
-| Technical: concrete | **Specialised product** | **Should:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03]<br>**Optional:** agentgateway [S · T0-16]<br>**Avoid:** RAGAS [S · T0-03] |
+| Technical: concrete | **Specialised product** | **Should:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03]<br>**Optional:** agentgateway [S · T0-16] · RAGAS [S · T0-69] |
 | Technical: concrete | **Protocol / standard** | **Important:** MCP (Model Context Protocol) [S · T0-16]<br>**Should:** A2A (Agent2Agent) [S · T0-16] · AG-UI [S · T0-16] · JSON Schema [S · T0-16] · OAuth 2.x [S · T0-16]<br>**Optional:** WebMCP [S · T0-06] |
 | Technical: concrete | **Regulation / framework** | **Should:** OWASP agentic AI threat guidance [S · T0-16] |
 | Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 44.2% (feeder)]<br>**Should:** Design docs & RFCs [P] |
@@ -49,7 +49,6 @@ generated_by: scripts/build_skills.py
 ## 2. Avoid
 
 - **AutoGen** [S · T0-03]: dormant; superseded by Microsoft Agent Framework 1.0
-- **RAGAS** [S · T0-03]: dormant
 - **Also avoid:** AutoGen (dormant); CrewAI as a headline (absent from tier-1 lab postings); demo agents with no failure handling
 
 ## 3. Types that do not apply
@@ -60,6 +59,8 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): tie-breaker in services channels [T0-11]
+- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
+- **Optional:** Model Context Protocol Associate (MCPA) [T0-32]
 
 ## 5. Prerequisites and proof
 
@@ -161,7 +162,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Product sense | S | P (D) | — | — |
 | Token & unit economics | S | S (A) | T0-14:L171 | token budgets per task |
 | OWASP agentic AI threat guidance | S | S (C) | T0-16:L595 | — |
-| Coding-agent rollout | O | S (C) | T0-16:L394 | Claude Code: 258 co-mentions in MCP postings |
+| Coding agents & AI-assisted engineering | S | S (B) | T0-57:L64, T0-57:L268, T0-69:L57 | AI coding-tool fluency tested in live Build rounds (5/14 agentic JDs + Sierra) |
 | Constrained decoding | O | P (D) | — | — |
 | Retrieval quality (hybrid, reranking, recall@k) | O | P (D) | — | — |
 | Computer-use & browser agents | O | P (D) | — | — |
@@ -175,8 +176,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | PostgreSQL | O | P (D) | — | event logs and checkpoints |
 | Mentoring | O | P (D) | — | — |
 | Domain expertise | O | P (D) | — | — |
+| RAGAS | O | S (B) | T0-69:L50 | Recovered 2026-11-13 (v0.4.4rc1); avoid eval-brand lock-in |
 | smolagents | O | P (D) | — | — |
 | Apache Kafka | O | P (D) | — | event logs at scale |
 | Celery | O | P (D) | — | — |
 | AutoGen | X | S (A) | T0-03:L102 | dormant; superseded by Microsoft Agent Framework 1.0 |
-| RAGAS | X | S (A) | T0-03:L144 | dormant |

@@ -4,8 +4,8 @@ title: "AI Governance Programme Lead / Manager: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an AI Governance Programme Lead / Manager needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-governance-lead]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Governance Programme Lead / Manager: Complete Skill Inventory
 
-> **GenAI target rank:** #17 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #18 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-governance-lead) · [role hub](../../02-roles/hubs/ai-governance-lead.md) · [narrative skill map](../role-skill-maps.md#skills-ai-governance-lead) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-governance-lead) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**58 skills:** Must 6 · Important 21 · Should 19 · Optional 12. **Evidence:** S 38 · P 20 (34% practice-curated). **Non-technical:** 16.
+**58 skills:** Must 6 · Important 20 · Should 19 · Optional 13. **Evidence:** S 38 · P 20 (34% practice-curated). **Non-technical:** 16.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -34,7 +34,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Platform / cloud service** | **Should:** Microsoft Azure [S · T0-15] |
 | Technical: concrete | **Specialised product** | **Should:** OneTrust (AI governance) [S · T0-15] · IBM OpenPages / watsonx.governance [S · T0-15] · AI governance platforms (choose 1: OneTrust \| Credo AI \| Holistic AI \| IBM OpenPages / watsonx.governance) [S · T0-15]<br>**Optional:** Credo AI [S · T0-15] · Holistic AI [S · T0-15] |
 | Technical: concrete | **Protocol / standard** | **Should:** C2PA [S · T0-15] |
-| Technical: concrete | **Regulation / framework** | **Must:** EU AI Act [S · T0-15]<br>**Important:** NIST AI RMF [S · T0-15] · ISO/IEC 42001 [S · T0-15] · SR 26-2 (US banking model-risk guidance) [S · T0-15] · NYC Local Law 144 [S · T0-15] · India DPDP Act [S · T0-15] · NAIC AI model bulletin (insurance) [S · T0-15] · Colorado AI Act [S · T0-15]<br>**Should:** EU GPAI Code of Practice [S · T0-15] · California SB 53 [S · T0-15] · GDPR [S · T0-15]<br>**Optional:** OWASP Top 10 for LLM Applications [P] · MITRE ATLAS [P] · ISO/IEC 27001 [P] · SOC 2 [P] · HIPAA [P] |
+| Technical: concrete | **Regulation / framework** | **Must:** EU AI Act [S · T0-15]<br>**Important:** NIST AI RMF [S · T0-15] · ISO/IEC 42001 [S · T0-15] · SR 26-2 (US banking model-risk guidance) [S · T0-15] · NYC Local Law 144 [S · T0-15] · India DPDP Act [S · T0-15] · NAIC AI model bulletin (insurance) [S · T0-15]<br>**Should:** EU GPAI Code of Practice [S · T0-15] · California SB 53 [S · T0-15] · GDPR [S · T0-15]<br>**Optional:** Colorado ADMT law (SB 26-189; replaced SB 24-205) [S · T0-61] · OWASP Top 10 for LLM Applications [P] · MITRE ATLAS [P] · ISO/IEC 27001 [P] · SOC 2 [P] · HIPAA [P] |
 | Non-technical | **Communication & collaboration** | **Must:** Stakeholder communication [P]<br>**Important:** Communication (written & verbal) [P] · Executive & board communication [P]<br>**Should:** Technical writing [P] · Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Important:** AI operating model & governance boards [S · T0-15]<br>**Should:** Programme & project management [P] |
@@ -63,10 +63,15 @@ generated_by: scripts/build_skills.py
 - **Optional:** ISC2 CISSP: security route [T0-15]
 - **Optional:** ISACA CISA: audit route [T0-15]
 - **Optional:** ISACA CRISC: IT-risk route [T0-15]
+- **Optional:** ISACA Certified Information Security Manager (CISM) [T0-34]
+- **Optional:** ISACA Advanced in AI Security Management (AAISM) [T0-34]
+- **Optional:** ISACA Advanced in AI Risk (AAIR) [T0-34]
+- **Optional:** PECB Certified ISO/IEC 42001 Lead Auditor [T0-34]
+- **Optional:** DSCI Certified Privacy Professional (DCPP) [T0-34]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** About 5 years in GRC, privacy, audit or security; domain certifications first (CIPP/CIPM, CISSP/CISA/CRISC); AIGP optional [B · T0-15].
+- **Prerequisites:** About 5 years all-level (median 10 years stated minimum for manager/lead/director postings in T0-61) in GRC, privacy, audit or security; domain certs first, AIGP optional [B/C · T0-15, T0-61].
 - **Proof to show:** An AI inventory, risk register and governance playbook mapped to the EU AI Act, NIST AI RMF and ISO 42001.
 - **Posting terms (measured or cited):** AI governance, EU AI Act, NIST AI RMF, ISO 42001, risk management, compliance, privacy; Axial: observability/monitoring 42.3%, Python 27.1%.
 
@@ -74,7 +79,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`GRC & risk assessment` · `GRC` · `risk assessment` · `EU AI Act / NIST AI RMF / ISO 42001` · `AI regulation` · `AI standards` · `Stakeholder communication` · `stakeholder management` · `AI inventory & risk register` · `AI inventory` · `AI risk register` · `EU AI Act` · `AI Act` · `AI policy & standards writing` · `AI policies` · `acceptable-use policy` · `NIST AI RMF` · `AI Risk Management Framework` · `NIST AI 600-1` · `ISO/IEC 42001` · `ISO 42001` · `AIMS` · `Sector rules` · `sector AI rules` · `financial-services AI rules` · `SR 26-2` · `NYC Local Law 144` · `LL144` · `AEDT law` · `India DPDP Act` · `DPDP` · `Digital Personal Data Protection Act` · `NAIC AI model bulletin` · `NAIC bulletin` · `Colorado AI Act` · `Content provenance` · `watermarking` · `Privacy law & DPO duties` · `privacy law` · `data protection` · `Observability` · `LLM observability` · `monitoring` · `Python/SQL` · `notebook Python` · `Jupyter` · `Third-party and vendor AI risk` · `vendor risk` · `TPRM` · `AI impact & risk assessment` · `AI impact assessment` · `FRIA` · `AI operating model & governance boards` · `AI operating model` · `AI governance board` · `Communication` · `communication skills` · `verbal communication` · `Executive & board communication` · `executive briefings` · `board reporting` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement`
+`GRC & risk assessment` · `GRC` · `risk assessment` · `EU AI Act / NIST AI RMF / ISO 42001` · `AI regulation` · `AI standards` · `Stakeholder communication` · `stakeholder management` · `AI inventory & risk register` · `AI inventory` · `AI risk register` · `EU AI Act` · `AI Act` · `AI policy & standards writing` · `AI policies` · `acceptable-use policy` · `NIST AI RMF` · `AI Risk Management Framework` · `NIST AI 600-1` · `ISO/IEC 42001` · `ISO 42001` · `AIMS` · `Sector rules` · `sector AI rules` · `financial-services AI rules` · `SR 26-2` · `NYC Local Law 144` · `LL144` · `AEDT law` · `India DPDP Act` · `DPDP` · `Digital Personal Data Protection Act` · `NAIC AI model bulletin` · `NAIC bulletin` · `Content provenance` · `watermarking` · `Privacy law & DPO duties` · `privacy law` · `data protection` · `Observability` · `LLM observability` · `monitoring` · `Python/SQL` · `notebook Python` · `Jupyter` · `Third-party and vendor AI risk` · `vendor risk` · `TPRM` · `AI impact & risk assessment` · `AI impact assessment` · `FRIA` · `AI operating model & governance boards` · `AI operating model` · `AI governance board` · `Communication` · `communication skills` · `verbal communication` · `Executive & board communication` · `executive briefings` · `board reporting` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -95,7 +100,6 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | NYC Local Law 144 | Regulation / framework | I | 2 | | |
 | India DPDP Act | Regulation / framework | I | 2 | | |
 | NAIC AI model bulletin (insurance) | Regulation / framework | I | 2 | | |
-| Colorado AI Act | Regulation / framework | I | 2 | | |
 | Content provenance (EU AI Act Art. 50) | Concept / knowledge area | I | 2 | | |
 | Privacy law & DPO duties | Concept / knowledge area | I | 2 | | |
 | Observability (OpenTelemetry traces, metrics) | Concept / knowledge area | I | 2 | | |
@@ -127,7 +131,6 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | NYC Local Law 144 | I | S (B) | T0-15:L138 | — |
 | India DPDP Act | I | S (B) | T0-15:L142 | main obligations from 13 May 2027 |
 | NAIC AI model bulletin (insurance) | I | S (B) | T0-15:L102 | covers 29 jurisdictions |
-| Colorado AI Act | I | S (B) | T0-15:L138 | SB 24-205 never took effect; SB26-189 applies from 1 Jan 2027 |
 | Content provenance (EU AI Act Art. 50) | I | S (A) | T0-15:L24 | Art. 50 marking duties from 2 Aug 2026 |
 | Privacy law & DPO duties | I | S (B) | T0-15:L22 | — |
 | Observability (OpenTelemetry traces, metrics) | I | S (C) | T0-15:L691 | 42.3% of US AI-governance postings (Axial) |
@@ -160,6 +163,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | AI literacy (tokens, RAG vs fine-tune, cost) | S | P (D) | — | technical literacy for engineering conversations |
 | Cross-functional collaboration | S | P (D) | — | — |
 | Leadership & mentoring | S | P (D) | — | — |
+| Colorado ADMT law (SB 26-189; replaced SB 24-205) | O | S (B) | T0-61:L89, T0-61:L182 | SB 24-205 repealed May 2026; narrower SB 26-189 ADMT law enjoined under xAI v. Weiser (0/11 JDs) |
 | Audit methodology | O | S (C) | T0-15:L22 | — |
 | Credo AI | O | S (C) | T0-15:L442 | not in Axial's lists or the 13 JDs |
 | Holistic AI | O | S (C) | T0-15:L39 | not in Axial's lists or the 13 JDs |

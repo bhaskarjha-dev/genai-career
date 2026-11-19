@@ -1,20 +1,21 @@
 {
  "meta": {
   "schema": "skills-ontology/1.1",
-  "as_of": "2026-11-04",
+  "as_of": "2026-11-19",
   "description": "Typed GenAI skills ontology: one vocabulary of skills (concepts, methods, concrete technologies and non-technical skills) with aliases, implements links, parents, choose-one classes, statuses and corpus-match rules; per-role tiered links with evidence; credentials; resume variants. Source of truth for career/03-skills-and-tech/skills-vocabulary.md, career/03-skills-and-tech/role-skill-inventories.md and career/06-job-search/resume-skills-matrix.md.",
   "sources": {
-   "tiers": "Set on 2026-11-04 from the evidence cited per link: posting shares (data/posting_skill_shares.json, S09 in T0-03 §6.3) and research-session lines; the v0.1.0 skill maps (career/03-skills-and-tech/role-skill-maps.md, D-004 tiers) were the starting point",
+   "tiers": "Updated on 2026-11-19 from Phase 0 evidence (JobsPipe posting shares in data/posting_skill_shares.json, S09 in T0-03 §6.3) plus corroborated RP2 role-dossier and momentum findings (T0-48 to T0-66, T0-69); small-sample JD counts without corroboration are held on the watchlist rather than demoting existing tiers",
    "posting_shares": "JobsPipe job-description measurements retrieved 2026-11-02 (Grade B), recorded in data/posting_skill_shares.json; S09 corpus shares from T0-03 §6.3 (Grade B)",
-   "statuses": "Tool and credential status facts from T0-03, T0-11 and T0-16 (first collected in the v0.1.0 skill-map registry, as of 2026-10-23); class V2 facts, re-verify by 2027-01-21",
+   "statuses": "Tool, protocol and credential status facts refreshed on 2026-11-19 from T0-29, T0-31, T0-32, T0-34, T0-61, T0-69, T3-01 and T3-02 (building on Phase 0 T0-03, T0-11, T0-16); class V2 facts, re-verify by 2027-02-17",
    "target_order": "Computed by scripts/target_roles.py from data/role_scores.json (consensus of eight lenses, GenAI-restricted demand); shown in career/02-roles/genai-target-roles.md",
    "screening": "research/sessions T0-04, T0-10, T0-11, T0-13",
-   "devalued": "T0-03 §4.3 (what to deprioritise) and §6.8.2 (skills undergoing devaluation); grades as the session gives them; tool facts as of 2026-10-23, re-verify by 2027-01-21"
+   "devalued": "T0-03 §4.3 and §6.8.2 reconciled against T0-69 (2026-11-14) and T0-71 (2026-11-19): RAGAS dormancy lifted (v0.4.4rc1, 2026-11-13); OpenAI Assistants API (sunset 2026-08-26) and torchtune (dormant) added",
+   "momentum": "T0-69 (2026-11-14): multi-signal adoption, telemetry, transaction and governance series (>=2 independent signal types across >=2 dates); NOT employer-posting-demand trends (JobsPipe AI Engineer stayed at 2026-09-10)"
   },
   "ttl": {
-   "tool_status_as_of": "2026-10-23",
-   "tool_status_reverify_by": "2027-01-21",
-   "rule": "EGP-1.0 class V2: platform and product facts re-verified within 90 days of 2026-10-23"
+   "tool_status_as_of": "2026-11-19",
+   "tool_status_reverify_by": "2027-02-17",
+   "rule": "EGP-1.0 class V2: platform, tool and credential facts re-verified within 90 days of 2026-11-19"
   },
   "tiers": {
    "M": "Must: Screen gate: role-defining or named in most postings (basic qualifications). Skills section + evidence in a recent role or project.",
@@ -472,7 +473,12 @@
    ],
    "headline": true,
    "group": "LLM applications",
-   "match": "\\bMCP\\b|Model Context Protocol"
+   "match": "\\bMCP\\b|Model Context Protocol",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "AAIF/Linux Foundation (247 members Aug 2026); 2026-07-28 spec removes sessions and deprecates HTTP+SSE, Roots, Sampling and Logging (12-month window)"
+   }
   },
   "structured_generation": {
    "name": "Constrained decoding",
@@ -1690,13 +1696,15 @@
    "group": "Product, governance & people"
   },
   "coding_agents": {
-   "name": "Coding-agent rollout",
+   "name": "Coding agents & AI-assisted engineering",
    "type": "method",
    "category": "Agents",
-   "desc": "Coding-agent rollout (e.g. Claude Code)",
+   "desc": "AI-assisted engineering fluency and coding-agent rollout (Claude Code, Cursor, Codex, Copilot)",
    "aliases": [
     "coding agents",
-    "AI coding assistants"
+    "AI coding assistants",
+    "AI coding tools",
+    "AI-assisted development"
    ],
    "headline": true,
    "group": "Product, governance & people"
@@ -1764,18 +1772,6 @@
    "headline": true,
    "group": "Robotics"
   },
-  "perception": {
-   "name": "Perception / computer vision",
-   "type": "concept",
-   "category": "Robotics & physical AI",
-   "aliases": [
-    "3D vision",
-    "robot perception"
-   ],
-   "parent": "computer_vision",
-   "headline": true,
-   "group": "Robotics"
-  },
   "simulation": {
    "name": "Simulation & sim-to-real",
    "type": "concept",
@@ -1811,7 +1807,11 @@
    "desc": "Robot learning (imitation learning, RL) & VLA models",
    "aliases": [
     "robot foundation models",
-    "robot policy learning"
+    "robot policy learning",
+    "VLA",
+    "vision-language-action models",
+    "OpenVLA",
+    "GR00T"
    ],
    "headline": true,
    "group": "Robotics"
@@ -2049,8 +2049,8 @@
    ],
    "status": {
     "state": "active",
-    "as_of": "2026-04-02",
-    "note": "1.0; supersedes AutoGen"
+    "as_of": "2026-11-19",
+    "note": "1.0 GA shipped 2026-04-03; named Microsoft successor to AutoGen and Semantic Kernel"
    },
    "match": "Microsoft Agent Framework"
   },
@@ -2096,8 +2096,8 @@
    ],
    "status": {
     "state": "dormant",
-    "as_of": "2026-10-23",
-    "note": "superseded by Microsoft Agent Framework 1.0"
+    "as_of": "2026-11-19",
+    "note": "last PyPI release 0.7.5 on 2025-09-30 (410 days to 2026-11-14); superseded by Microsoft Agent Framework 1.0"
    }
   },
   "semantic_kernel": {
@@ -2391,8 +2391,8 @@
    ],
    "status": {
     "state": "active",
-    "as_of": "2026-04-20",
-    "note": "1.2.1 stable; static engine-build backend removed from v1.3"
+    "as_of": "2026-11-19",
+    "note": "PyTorch is the sole backend (NVIDIA migration guide updated 2026-11-03); static TensorRT backend and trtllm-build removed"
    },
    "match": "TensorRT-LLM|TRT-LLM|trtllm"
   },
@@ -2409,8 +2409,8 @@
    ],
    "status": {
     "state": "archived",
-    "as_of": "2026-03-21",
-    "note": "do not use for new deployments"
+    "as_of": "2026-11-19",
+    "note": "Hugging Face docs carry maintenance-mode notice recommending vLLM, SGLang, llama.cpp/MLX (A); 2026-03-21 archive date rests on secondary source (C)"
    },
    "match": "\\bTGI\\b|Text Generation Inference"
   },
@@ -3870,9 +3870,9 @@
     "evals"
    ],
    "status": {
-    "state": "dormant",
-    "as_of": "2026-10-23",
-    "note": "no release since Jan 2026, no commit since Feb 2026 — avoid new dependencies"
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai (304 days after v0.4.3); dormancy lifted, avoid eval-brand lock-in"
    },
    "match": "\\bRAGAS\\b|\\bRagas\\b"
   },
@@ -4501,13 +4501,18 @@
    "match": "42001"
   },
   "colorado_ai_act": {
-   "name": "Colorado AI Act",
+   "name": "Colorado ADMT law (SB 26-189; replaced SB 24-205)",
    "type": "regulation",
    "category": "Governance, risk & compliance",
    "implements": [
     "regulation"
    ],
-   "match": "Colorado"
+   "match": "Colorado",
+   "status": {
+    "state": "renamed",
+    "as_of": "2026-11-19",
+    "note": "SB 24-205 repealed May 2026; narrower ADMT notice law SB 26-189 enacted (effective 2027-02-01) and enjoined under xAI v. Weiser (V0)"
+   }
   },
   "ca_sb53": {
    "name": "California SB 53",
@@ -4793,13 +4798,19 @@
    ]
   },
   "computer_vision": {
-   "name": "Computer vision",
+   "name": "Computer vision & robot perception",
    "type": "concept",
    "category": "ML & deep learning",
    "aliases": [
     "CV",
-    "image models"
-   ]
+    "image models",
+    "perception",
+    "robot perception",
+    "3D perception"
+   ],
+   "desc": "Computer vision, 3D perception and visual models",
+   "headline": true,
+   "group": "Robotics"
   },
   "diffusion_models": {
    "name": "Diffusion & image/video generation models",
@@ -5469,7 +5480,7 @@
    "aliases": [
     "Kalman filters"
    ],
-   "parent": "perception"
+   "parent": "computer_vision"
   },
   "imitation_learning": {
    "name": "Imitation learning",
@@ -5485,15 +5496,6 @@
    "name": "World models",
    "type": "concept",
    "category": "Robotics & physical AI",
-   "parent": "robot_learning"
-  },
-  "vla_models": {
-   "name": "Vision-language-action (VLA) models",
-   "type": "concept",
-   "category": "Robotics & physical AI",
-   "aliases": [
-    "VLA"
-   ],
    "parent": "robot_learning"
   },
   "annotation_guidelines": {
@@ -5895,6 +5897,63 @@
    "category": "Research",
    "aliases": [
     "problem selection"
+   ]
+  },
+  "openai_assistants_api": {
+   "name": "OpenAI Assistants API",
+   "type": "product",
+   "category": "LLM applications",
+   "desc": "Retired stateful OpenAI Assistants API (replaced by Responses API and Conversations API)",
+   "implements": [
+    "llm_apis"
+   ],
+   "status": {
+    "state": "retired",
+    "as_of": "2026-08-26",
+    "note": "sunset 2026-08-26; replaced by OpenAI Responses API and Conversations API"
+   },
+   "match": "Assistants API"
+  },
+  "torchtune": {
+   "name": "torchtune",
+   "type": "library",
+   "category": "Training & post-training",
+   "desc": "PyTorch fine-tuning library whose development wound down in 2025",
+   "implements": [
+    "finetuning"
+   ],
+   "status": {
+    "state": "dormant",
+    "as_of": "2026-11-19",
+    "note": "GitHub README states no longer actively maintained; development wound down in 2025"
+   },
+   "match": "\\btorchtune\\b"
+  },
+  "low_code_automation": {
+   "name": "Low-code workflow automation",
+   "type": "platform",
+   "category": "Agents",
+   "desc": "Low-code AI workflow automation platforms (n8n, Make, Zapier, Power Automate)",
+   "aliases": [
+    "n8n",
+    "Make",
+    "Zapier",
+    "Power Automate",
+    "Power Platform"
+   ],
+   "implements": [
+    "internal_tooling"
+   ]
+  },
+  "design_craft": {
+   "name": "Design craft & visual interaction systems",
+   "type": "method",
+   "category": "Frontend & UX",
+   "desc": "Interaction polish, design systems and visual craft for AI product interfaces",
+   "aliases": [
+    "design systems",
+    "UI craft",
+    "interaction design"
    ]
   }
  },
@@ -6319,11 +6378,13 @@
    "level": "associate",
    "status": {
     "state": "beta",
-    "as_of": "2026-10-23",
-    "note": "replaces AI-102; still marked beta"
+    "as_of": "2026-11-19",
+    "note": "replaces AI-102 (retired 2026-06-30); live vs beta status provisional pending deferred session T0-28"
    },
    "src": [
-    "T0-11"
+    "T0-11",
+    "T0-30",
+    "T0-62"
    ]
   },
   "ms_ai_102": {
@@ -6396,12 +6457,15 @@
    "issuer": "NVIDIA",
    "level": "professional",
    "status": {
-    "state": "active",
-    "as_of": "2026-10-23",
-    "note": "for LLM training or inference-infrastructure roles"
+    "state": "announced",
+    "as_of": "2026-11-19",
+    "note": "Reconciled T0-32 K2 (exam page showed '(Coming soon)' beside Register on 2026-10-30 while hub listed $200) with T3-01/T3-02 and 2026-11-19 Certiverse live check (mixed portal indicators alongside rolling scheduling); verify live Certiverse booking before prep."
    },
    "src": [
-    "T0-11"
+    "T0-11",
+    "T0-32",
+    "T3-01",
+    "T3-02"
    ]
   },
   "iapp_aigp": {
@@ -6410,11 +6474,13 @@
    "level": "professional",
    "status": {
     "state": "active",
-    "as_of": "2026-10-23",
-    "note": "the most-named AI-governance credential in T0-15"
+    "as_of": "2026-11-19",
+    "note": "Most-named AI-specific governance credential (8.7–8.9% Axial US AI-gov n=1,997, Grade C; 28–30% GRC Careers n=67); $649 member / $799 non-member + $250/2yr CMF non-members; BoK v2.1 effective Feb 2026 adds agentic governance."
    },
    "src": [
-    "T0-15"
+    "T0-15",
+    "T0-34",
+    "T3-01"
    ]
   },
   "iapp_cipp": {
@@ -6475,11 +6541,12 @@
    "level": "advanced",
    "status": {
     "state": "active",
-    "as_of": "2026-10-23",
-    "note": "requires CISA, CIA or CPA"
+    "as_of": "2026-11-19",
+    "note": "T0-34 K10 widens prerequisite list beyond CISA/CIA/CPA to include US/AU/CA/JP/HK CPA, ACCA/FCCA, ICAEW, CA ANZ and Nigerian CNA with IT-audit/advisory role (excludes Indian CA); $459/$599 + $50; mandatory in-person PSI test centre in India, mainland China and Hong Kong."
    },
    "src": [
-    "T0-15"
+    "T0-15",
+    "T0-34"
    ]
   },
   "isaca_crisc": {
@@ -6511,8 +6578,15 @@
   "cka": {
    "name": "Certified Kubernetes Administrator (CKA)",
    "issuer": "CNCF / Linux Foundation",
-   "level": "professional",
-   "src": []
+   "level": "intermediate",
+   "src": [
+    "T0-32"
+   ],
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "T0-32 K3 updates level to intermediate (was professional); $445, 120-min live CLI performance exam (K8s v1.37), 24-mo validity; CNCF KCSP requires 3+ CKA (CKAD excluded); 27/1,675 (1.6%) LinuxCareers postings."
+   }
   },
   "aws_mla_c02": {
    "name": "AWS Certified ML Engineer – Associate (MLA-C02)",
@@ -6546,11 +6620,13 @@
    "level": "foundational",
    "status": {
     "state": "active",
-    "as_of": "2026-11-08",
-    "note": "partner-gated (Claude Partner Network staff only); does NOT count toward partner eligibility; content refresh 2026-12-07"
+    "as_of": "2026-11-19",
+    "note": "Partner-gated (Claude Partner Network staff only); $99 list; explicitly does NOT count toward partner tiers (correcting T3-02 L116); content refresh 2026-12-07; US DoW FASCSA exclusion pending D.C. Circuit en banc review (V0)."
    },
    "src": [
-    "T3-01"
+    "T3-01",
+    "T0-29",
+    "T3-02"
    ]
   },
   "anthropic_ccdv_f": {
@@ -6559,11 +6635,12 @@
    "level": "associate",
    "status": {
     "state": "active",
-    "as_of": "2026-11-08",
-    "note": "partner-gated; counts toward partner tiers; content refresh 2026-12-07; 12-month validity with free renewal"
+    "as_of": "2026-11-19",
+    "note": "Partner-gated; $125 list (50% off Select/Preferred, free Global Premier to 2026-12-31); counts toward partner tiers; content refresh 2026-12-07; 12-mo validity; US DoW FASCSA risk (V0)."
    },
    "src": [
-    "T3-01"
+    "T3-01",
+    "T0-29"
    ]
   },
   "anthropic_ccar_f": {
@@ -6572,11 +6649,12 @@
    "level": "professional",
    "status": {
     "state": "active",
-    "as_of": "2026-11-08",
-    "note": "partner-gated; scenario-based; counts toward partner tiers; 12-month validity with free renewal"
+    "as_of": "2026-11-19",
+    "note": "Partner-gated; $125 list (formerly CCA-F); counts toward partner tiers; not in 2026-12-07 refresh; 4 India partner postings found (T0-29 L81); US DoW FASCSA risk (V0)."
    },
    "src": [
-    "T3-01"
+    "T3-01",
+    "T0-29"
    ]
   },
   "anthropic_ccar_p": {
@@ -6585,11 +6663,12 @@
    "level": "professional",
    "status": {
     "state": "active",
-    "as_of": "2026-11-08",
-    "note": "partner-gated; governance depth; content refresh 2026-12-07; 12-month validity with free renewal"
+    "as_of": "2026-11-19",
+    "note": "Partner-gated; $175 list; counts toward partner tiers; 14% governance domain; content refresh 2026-12-07; US DoW FASCSA risk (V0)."
    },
    "src": [
-    "T3-01"
+    "T3-01",
+    "T0-29"
    ]
   },
   "gcp_paa": {
@@ -6714,12 +6793,14 @@
    "issuer": "NVIDIA",
    "level": "professional",
    "status": {
-    "state": "active",
-    "as_of": "2026-11-08",
-    "note": "120 min, 60-70 questions, $200, 2-year validity; only 7% NVIDIA-platform content"
+    "state": "announced",
+    "as_of": "2026-11-19",
+    "note": "Reconciled T0-32 L74 ('(Coming soon)' on en-us/en-eu exam pages) and T3-01 L125 (registration ambiguity; blueprint weights sum to 98%) with 2026-11-19 live check; verify live Certiverse booking before prep."
    },
    "src": [
-    "T3-01"
+    "T3-01",
+    "T0-32",
+    "T3-02"
    ]
   },
   "amd_rocm_assoc": {
@@ -6733,6 +6814,254 @@
    },
    "src": [
     "T3-01"
+   ]
+  },
+  "langchain_certified_agent_engineer": {
+   "name": "LangChain Certified Agent Engineer (LCAE)",
+   "issuer": "LangChain",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Open-access, $99 (1 free resit), 40 MCQ in 120 min, Talview dual-camera proctoring + live LangSmith workspace, 24-mo validity; hiring signal unmeasured."
+   },
+   "src": [
+    "T0-29"
+   ]
+  },
+  "aaif_mcpa": {
+   "name": "Model Context Protocol Associate (MCPA)",
+   "issuer": "Linux Foundation / Agentic AI Foundation",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Vendor-neutral MCP exam launched Sept 2026; $250 (1 retake), 90 min, 24-mo validity; 24% security/governance; 0/47 posting hits so far."
+   },
+   "src": [
+    "T0-32"
+   ]
+  },
+  "lf_ptca": {
+   "name": "PyTorch Certified Associate (PTCA)",
+   "issuer": "Linux Foundation / PyTorch Foundation",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Launched 2026-06-18; $250 exam-only (1 retake), 120 min, 24-mo validity; 0/47 posting hits so far."
+   },
+   "src": [
+    "T0-32"
+   ]
+  },
+  "lf_ckad": {
+   "name": "Certified Kubernetes Application Developer (CKAD)",
+   "issuer": "CNCF / Linux Foundation",
+   "level": "intermediate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$445 hands-on CLI exam (1 retake), 24-mo validity; 27/1,675 (1.6%) LinuxCareers postings; does NOT satisfy CNCF KCSP partner requirement."
+   },
+   "src": [
+    "T0-32"
+   ]
+  },
+  "lf_cks": {
+   "name": "Certified Kubernetes Security Specialist (CKS)",
+   "issuer": "CNCF / Linux Foundation",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$445 hands-on CLI exam requiring active CKA; 24-mo validity."
+   },
+   "src": [
+    "T0-32"
+   ]
+  },
+  "nvidia_ncp_aio": {
+   "name": "NVIDIA-Certified Professional: AI Operations (NCP-AIO)",
+   "issuer": "NVIDIA",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Only NVIDIA exam verified with live hands-on VM labs (30 MCQ + 3 VM labs); $500, 24-mo validity."
+   },
+   "src": [
+    "T0-32"
+   ]
+  },
+  "nvidia_ncp_aii": {
+   "name": "NVIDIA-Certified Professional: AI Infrastructure (NCP-AII)",
+   "issuer": "NVIDIA",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$400, 24-mo validity; 76% cluster bring-up, verification and troubleshooting."
+   },
+   "src": [
+    "T0-32"
+   ]
+  },
+  "salesforce_agentforce_specialist": {
+   "name": "Salesforce Certified Agentforce Specialist",
+   "issuer": "Salesforce",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$200 (AI-201, renamed 2025-03-03; AI Associate retired 2026-02-02); strongest matching-posting signal in T0-31 enterprise shops (7/17 US, 12/17 India, convenience sample)."
+   },
+   "src": [
+    "T0-31"
+   ]
+  },
+  "palantir_ai_eng_specialist": {
+   "name": "Palantir AI Engineer Specialist",
+   "issuer": "Palantir",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Employer-gated (customers/partners via Ontologize); $350, 3h live Zoom-proctored hands-on exam, 24-mo validity; 8/14 US Foundry postings named a Palantir cert."
+   },
+   "src": [
+    "T0-31"
+   ]
+  },
+  "snowpro_core": {
+   "name": "SnowPro Core Certification (COF-C03)",
+   "issuer": "Snowflake",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$175, 24-mo validity; 14/15 US and 7/17 India Snowflake-AI postings named Core (vs 0/32 for Gen AI Specialty GES-C02)."
+   },
+   "src": [
+    "T0-31"
+   ]
+  },
+  "isaca_cism": {
+   "name": "ISACA Certified Information Security Manager (CISM)",
+   "issuer": "ISACA",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "4.0% in Axial US AI-gov postings (Grade C); prerequisite route for ISACA AAISM and AAIR."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "isaca_aaism": {
+   "name": "ISACA Advanced in AI Security Management (AAISM)",
+   "issuer": "ISACA",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$459/$599 + $50; requires CISM or CISSP; India/China/HK PSI test-centre only; 0 posting hits in T0-34."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "isaca_aair": {
+   "name": "ISACA Advanced in AI Risk (AAIR)",
+   "issuer": "ISACA",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Launched 2026-04-15; $459/$599 + $50; 27 qualifying designations (incl. CRISC/CISM/CISSP); India/China/HK PSI test-centre only."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "pecb_iso42001_lead_auditor": {
+   "name": "PECB Certified ISO/IEC 42001 Lead Auditor",
+   "issuer": "PECB",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "ISO/IEC 17024 accredited (IAS, UKAS, COFRAC, KAB); bundled 5-day partner course (~$2,000–$3,000); 36-mo validity."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "dsci_dcpp": {
+   "name": "DSCI Certified Privacy Professional (DCPP)",
+   "issuer": "DSCI (India)",
+   "level": "associate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "₹15,000 proctored India privacy/DPDP baseline."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "comptia_secai_plus": {
+   "name": "CompTIA SecAI+ (CY0-001)",
+   "issuer": "CompTIA",
+   "level": "intermediate",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "Launched Feb 2026; $359 US list, 36-mo validity; 0 posting hits so far."
+   },
+   "src": [
+    "T0-34",
+    "T3-01"
+   ]
+  },
+  "offsec_osai": {
+   "name": "OffSec AI Red Teamer (OSAI / AI-300)",
+   "issuer": "OffSec",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "24h live proctored practical red-team exam; $1,749 bundle (Learn One $2,749/yr); 0 posting hits so far."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "htb_coae": {
+   "name": "Hack The Box Certified Offensive AI Expert (HTB COAE)",
+   "issuer": "Hack The Box",
+   "level": "specialist",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "7-day practical lab exam + report; ~$210 voucher (2 attempts) or $550/yr Silver Annual; 0 posting hits so far."
+   },
+   "src": [
+    "T0-34"
+   ]
+  },
+  "giac_gaips": {
+   "name": "GIAC AI Platform Security (GAIPS)",
+   "issuer": "GIAC / SANS",
+   "level": "professional",
+   "status": {
+    "state": "active",
+    "as_of": "2026-11-19",
+    "note": "$999 exam-only (opened 2026-07-28; SANS SEC545 separate); CyberLive hands-on items; 48-mo validity."
+   },
+   "src": [
+    "T0-34"
    ]
   }
  },
@@ -7967,13 +8296,13 @@
     },
     {
      "id": "ragas",
-     "tier": "X",
+     "tier": "O",
      "ev": "S",
-     "grade": "A",
+     "grade": "B",
      "src": [
-      "T0-03:L106"
+      "T0-69:L50"
      ],
-     "note": "dormant: no release since Jan 2026"
+     "note": "Recovered 2026-11-13 (v0.4.4rc1); avoid eval-brand lock-in"
     },
     {
      "id": "haystack",
@@ -8092,6 +8421,18 @@
      "id": "git",
      "tier": "S",
      "ev": "P"
+    },
+    {
+     "id": "coding_agents",
+     "tier": "S",
+     "ev": "S",
+     "grade": "B",
+     "src": [
+      "T0-57:L64",
+      "T0-57:L268",
+      "T0-69:L57"
+     ],
+     "note": "AI coding-tool fluency tested in live Build rounds (5/14 agentic JDs + Sierra)"
     }
    ],
    "none": {
@@ -8110,9 +8451,10 @@
     {
      "id": "ms_ai_103",
      "tier": "O",
-     "note": "Azure shops; still marked beta",
+     "note": "Azure shops; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28",
      "src": [
-      "T0-11"
+      "T0-11",
+      "T0-62"
      ]
     },
     {
@@ -8138,10 +8480,24 @@
      "src": [
       "T0-11"
      ]
+    },
+    {
+     "id": "langchain_certified_agent_engineer",
+     "tier": "O",
+     "src": [
+      "T0-29"
+     ]
+    },
+    {
+     "id": "aaif_mcpa",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
     }
    ],
    "avoid": "Wrapper-only demos; framework-syntax mastery as a headline; new RAGAS dependencies; \"Prompt Engineer\" as your title",
-   "prereq": "No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 \"Senior AI Engineer\" cut assumes 5+ years [B]. 72% of AI-engineering postings state a degree requirement [C · T0-06]",
+   "prereq": "No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 \"Senior AI Engineer\" cut assumes 5+ years [B]. About 72% of US AI-engineering postings state a degree [C · T0-06] and 75% of 903 Glassdoor US postings mention one (24% bachelor's, 24% master's, 28% PhD; \"mention\", not \"require\") [C · T0-23], while nearly 25% of AI postings in Atlanta Fed Lightcast data list no education requirement [A · T0-23]",
    "proof": "An evaluated end-to-end system over a real corpus (metrics table, cost/latency budget, reproducible README); for T2–T3, a second system with a different failure surface plus CI-gated evals, traces, a load test and a postmortem",
    "mirror": "Python (78.4%), LLM (76.7%), agentic AI (59.3%), RAG (54.0%), machine learning (39.8%), generative AI (37.6%), AWS / Azure (35.1% each), CI/CD (34.4%), vector databases (32.6%), prompt engineering (31.1%)"
   },
@@ -8806,16 +9162,23 @@
      "src": [
       "T3-01"
      ]
+    },
+    {
+     "id": "lf_ptca",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
     }
    ],
    "avoid": "Fine-tuning as the default answer (70% of 20 studied production systems used off-the-shelf models); tools you have only read about",
-   "prereq": "Degree common (72% of AI-engineering postings state one [C]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06]",
+   "prereq": "Degree common (72% in Axial Search [C · T0-06]; 75% of 903 Glassdoor US postings mention a degree [C · T0-23]; nearly 25% in Atlanta Fed Lightcast data list none [A · T0-23]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06]",
    "proof": "A baseline-first model with measured lift and error analysis; a prompt vs RAG vs fine-tune comparison with cost and quality; a serving benchmark (tokens/s, p95, $/M tokens); small-budget training evidence (FSDP2 smoke tests, MFU)",
    "mirror": "machine learning (98.6%), Python (71.3%), PyTorch (48.2%), LLM (45.0%), data structures (33.7%), deep learning (32.6%), TensorFlow (31.8%), A/B testing (23.5%), NLP (23.3%), C++ (23.3%)"
   },
   "research-engineer": {
    "name": "Research Engineer / Member of Technical Staff",
-   "target": 3,
+   "target": 5,
    "variant": "C",
    "flavour": "C1",
    "basis": "Catalog tiers ([S]/[P]); no JD measurement",
@@ -9279,7 +9642,7 @@
    },
    "credentials": [],
    "avoid": "Listing frameworks without scale evidence; claiming research taste without artifacts",
-   "prereq": "PhD-level profile, a fellowship (Anthropic Fellows: no PhD required) or strong OSS (vLLM, SGLang)",
+   "prereq": "Strong systems/ML engineering profile, fellowship (Anthropic Fellows: no PhD required) or OSS (vLLM, SGLang); only 1/18 JDs in T0-50 required a PhD [B/C · T0-50]",
    "proof": "Paper re-implementations with rigorous evals; a nano-vLLM-style engine benchmarked against vLLM; DDP/FSDP2 smoke tests; upstream OSS contributions; fellowship projects",
    "mirror": "Member of Technical Staff, research engineer, PyTorch, distributed training, post-training, RL / RLHF, evals"
   },
@@ -9725,6 +10088,18 @@
      "id": "openapi",
      "tier": "O",
      "ev": "P"
+    },
+    {
+     "id": "coding_agents",
+     "tier": "S",
+     "ev": "S",
+     "grade": "B",
+     "src": [
+      "T0-57:L64",
+      "T0-57:L268",
+      "T0-69:L57"
+     ],
+     "note": "AI coding-tool fluency tested in live Build rounds (5/14 agentic JDs + Sierra)"
     }
    ],
    "none": {
@@ -9743,9 +10118,24 @@
     {
      "id": "ms_ai_103",
      "tier": "O",
-     "note": "Azure customers; beta",
+     "note": "Azure customers; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28",
      "src": [
-      "T0-11"
+      "T0-11",
+      "T0-62"
+     ]
+    },
+    {
+     "id": "salesforce_agentforce_specialist",
+     "tier": "O",
+     "src": [
+      "T0-31"
+     ]
+    },
+    {
+     "id": "palantir_ai_eng_specialist",
+     "tier": "O",
+     "src": [
+      "T0-31"
      ]
     }
    ],
@@ -9756,7 +10146,7 @@
   },
   "applied-scientist": {
    "name": "Applied Scientist (GenAI/LLM teams)",
-   "target": 5,
+   "target": 3,
    "variant": "B",
    "flavour": "B2",
    "basis": "Catalog tiers ([S]/[P]); no JD measurement",
@@ -9876,13 +10266,14 @@
     },
     {
      "id": "research_to_prod",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "C",
+     "grade": "A",
      "src": [
-      "T0-06:L471"
+      "T0-52:L131",
+      "T0-52:L236"
      ],
-     "note": "turning a method into a tested service"
+     "note": "75%–78% of JDs + Amazon Science official guidance"
     },
     {
      "id": "eval_stats",
@@ -10226,9 +10617,17 @@
     "regulation": "not part of this role",
     "hardware": "compute is provided; hardware is not screened"
    },
-   "credentials": [],
-   "avoid": "A publication list with no shipped systems; claims of \"state of the art\" without baselines",
-   "prereq": "Often a PhD (T2-01 names Applied Scientist as the main high-volume PhD corridor); coding/DSA is the usual gap for PhDs",
+   "credentials": [
+    {
+     "id": "lf_ptca",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    }
+   ],
+   "avoid": "A publication list uncoupled from shipped production impact (publications/patents appear in 11/23 JDs, so pair them with production code); claims of 'state of the art' without baselines",
+   "prereq": "Amazon US uses PhD or Master's+4 (7/9), while Microsoft (BS+2/MS+1), Uber (BS+3–4/MS+2), Zalando (MS+2) and Mistral offer broader routes; coding/DSA is the usual gap for PhDs [A/C · T0-52]",
    "proof": "Your own method turned into a service with tests and CI; at least three code reviews via OSS PRs; an eval-statistics write-up",
    "mirror": "applied scientist, machine learning, statistics, experimentation, A/B testing, LLM, PyTorch"
   },
@@ -10277,19 +10676,25 @@
     },
     {
      "id": "customer_scoping",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-01:L147"
+      "T0-53:L193",
+      "T0-53:L361"
      ],
-     "note": "customer delivery of LLM applications (T0-01 D3)"
+     "note": "9/10 (90%) full-read Applied AI JDs"
     },
     {
      "id": "evals",
-     "tier": "I",
-     "ev": "P",
-     "note": "evals defined per customer use case"
+     "tier": "M",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-53:L194",
+      "T0-53:L361"
+     ],
+     "note": "8/10 (80%) full-read Applied AI JDs"
     },
     {
      "id": "guardrails",
@@ -10578,6 +10983,13 @@
      "src": [
       "T0-11"
      ]
+    },
+    {
+     "id": "langchain_certified_agent_engineer",
+     "tier": "O",
+     "src": [
+      "T0-29"
+     ]
     }
    ],
    "avoid": "Generic chatbot demos; no evidence of working with external users",
@@ -10706,13 +11118,13 @@
     },
     {
      "id": "gpu_fleet",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-14:L171"
+      "T0-54:L187"
      ],
-     "note": "H100/H200/B200; reserved vs spot; tensor-parallel groups; allocation ledgers"
+     "note": "94.3% all, 83.3% full-read in T0-54"
     },
     {
      "id": "system_design",
@@ -10944,9 +11356,13 @@
     },
     {
      "id": "slurm",
-     "tier": "S",
-     "ev": "P",
-     "note": "not named in the sessions"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-54:L190"
+     ],
+     "note": "42.9% all, 50.0% full-read, 62.5% cluster variants B–D"
     },
     {
      "id": "lustre",
@@ -11091,18 +11507,52 @@
     {
      "id": "nvidia_ncp_genl",
      "tier": "O",
-     "note": "inference-infrastructure roles",
+     "note": "announced (verify live Certiverse booking); NCP-AII and NCP-AIO target GPU infra more directly",
      "src": [
-      "T0-11"
+      "T0-11",
+      "T0-32",
+      "T0-54"
      ]
     },
     {
      "id": "cka",
      "tier": "O",
-     "note": "not in the corpus; common in platform hiring"
+     "note": "intermediate live CLI exam ($445); CNCF KCSP requires 3+ CKA; 0/35 direct AI infra JD mentions",
+     "src": [
+      "T0-32",
+      "T0-54"
+     ]
+    },
+    {
+     "id": "lf_ckad",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    },
+    {
+     "id": "lf_cks",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    },
+    {
+     "id": "nvidia_ncp_aio",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    },
+    {
+     "id": "nvidia_ncp_aii",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
     }
    ],
-   "avoid": "Listing SLURM or storage products you have not run (not named in the research corpus); generic DevOps bullets with no GPU scale",
+   "avoid": "Listing Slurm or parallel storage systems (Lustre, Weka) you have not operated at cluster scale (Slurm appears in 15/35 T0-54 postings); generic DevOps bullets with no GPU scale",
    "prereq": "Infrastructure depth; best feeders are SRE, DevOps and backend infrastructure engineers",
    "proof": "A self-hosted cluster with continuous synthetic load, automated failover, autoscaling and dashboards, plus a written postmortem",
    "mirror": "GPU, Kubernetes, infrastructure, distributed systems, NCCL, InfiniBand, SRE, Terraform (DevOps JDs: Kubernetes 69.4%, Terraform 59.1%, Linux 45.1%)"
@@ -11186,13 +11636,13 @@
     },
     {
      "id": "llm_apis",
-     "tier": "I",
-     "ev": "JD",
-     "share": "24.4%",
+     "tier": "O",
+     "ev": "S",
+     "grade": "C",
      "src": [
-      "JobsPipe: Research Scientist"
+      "T0-55:L209"
      ],
-     "note": "named as \"LLM\": LLM research"
+     "note": "Only 1/12 AI RS JDs names API/tool calling"
     },
     {
      "id": "dsa",
@@ -11205,13 +11655,14 @@
     },
     {
      "id": "research_novelty",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "C",
+     "grade": "B",
      "src": [
-      "T0-06:L689"
+      "T0-55:L205",
+      "T0-55:L332"
      ],
-     "note": "a publication record"
+     "note": "91.7% (11/12) JDs; NBER WP 34964 top-firm move predictor"
     },
     {
      "id": "writing",
@@ -11317,9 +11768,13 @@
     },
     {
      "id": "jax",
-     "tier": "S",
-     "ev": "P",
-     "note": "JAX in TPU-centric labs"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-55:L218"
+     ],
+     "note": "41.7% (5/12); Must at Google DeepMind and xAI"
     },
     {
      "id": "experiment_tracking",
@@ -11463,6 +11918,16 @@
      "id": "data_curation",
      "tier": "O",
      "ev": "P"
+    },
+    {
+     "id": "llm_fundamentals",
+     "tier": "I",
+     "ev": "JD",
+     "src": [
+      "JobsPipe: Research Scientist"
+     ],
+     "share": "24.4%",
+     "note": "Remapped from llm_apis: JobsPipe 'LLM' measures LLM research, not API wrappers"
     }
    ],
    "none": {
@@ -11480,7 +11945,7 @@
   },
   "inference-engineer": {
    "name": "Inference / LLM Serving Engineer",
-   "target": 9,
+   "target": 11,
    "variant": "D",
    "flavour": "D1",
    "basis": "Catalog tiers ([S]/[A]); named JDs at Anthropic, NVIDIA, Together AI, Baseten, Inferact",
@@ -11555,23 +12020,23 @@
     },
     {
      "id": "vllm",
-     "tier": "I",
-     "ev": "S09",
-     "share": "3.9%",
+     "tier": "M",
+     "ev": "S",
+     "grade": "C",
      "src": [
-      "T0-03:L58"
+      "T0-56:L182"
      ],
-     "note": "the default open engine; role-defining despite the corpus-wide share"
+     "note": "76% overall and 100% of engine-naming JDs in T0-56"
     },
     {
      "id": "batching_kv",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-03:L137"
+      "T0-56:L184"
      ],
-     "note": "continuous batching, PagedAttention, chunked prefill"
+     "note": "49% overall — top inference optimisation technique in T0-56"
     },
     {
      "id": "spec_decoding",
@@ -12110,6 +12575,13 @@
      "src": [
       "T0-11"
      ]
+    },
+    {
+     "id": "nvidia_ncp_aio",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
     }
    ],
    "avoid": "TGI (archived 2026-03-21); the removed trtllm-build static engine path; single-process load generators",
@@ -12119,7 +12591,7 @@
   },
   "agentic-ai-engineer": {
    "name": "Agentic AI Engineer",
-   "target": 10,
+   "target": 14,
    "variant": "A",
    "flavour": "A1",
    "basis": "T0-16 title shares (LangGraph 35.8%, MCP 13.8%) + catalog tiers",
@@ -12635,13 +13107,15 @@
     },
     {
      "id": "coding_agents",
-     "tier": "O",
+     "tier": "S",
      "ev": "S",
-     "grade": "C",
+     "grade": "B",
      "src": [
-      "T0-16:L394"
+      "T0-57:L64",
+      "T0-57:L268",
+      "T0-69:L57"
      ],
-     "note": "Claude Code: 258 co-mentions in MCP postings"
+     "note": "AI coding-tool fluency tested in live Build rounds (5/14 agentic JDs + Sierra)"
     },
     {
      "id": "structured_generation",
@@ -12745,13 +13219,13 @@
     },
     {
      "id": "ragas",
-     "tier": "X",
+     "tier": "O",
      "ev": "S",
-     "grade": "A",
+     "grade": "B",
      "src": [
-      "T0-03:L144"
+      "T0-69:L50"
      ],
-     "note": "dormant"
+     "note": "Recovered 2026-11-13 (v0.4.4rc1); avoid eval-brand lock-in"
     },
     {
      "id": "smolagents",
@@ -12782,6 +13256,20 @@
      "src": [
       "T0-11"
      ]
+    },
+    {
+     "id": "langchain_certified_agent_engineer",
+     "tier": "O",
+     "src": [
+      "T0-29"
+     ]
+    },
+    {
+     "id": "aaif_mcpa",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
     }
    ],
    "avoid": "AutoGen (dormant); CrewAI as a headline (absent from tier-1 lab postings); demo agents with no failure handling",
@@ -12791,7 +13279,7 @@
   },
   "ml-platform-engineer": {
    "name": "ML Platform / MLOps (LLMOps) Engineer",
-   "target": 11,
+   "target": 9,
    "variant": "D",
    "flavour": "D2",
    "basis": "Catalog tiers + DevOps feeder JD shares",
@@ -12934,13 +13422,13 @@
     },
     {
      "id": "mlops_lifecycle",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-03:L413"
+      "T0-58:L175"
      ],
-     "note": "CI/CD for models and prompts; model and prompt registries"
+     "note": "67.7% of ML Platform / MLOps postings in T0-58"
     },
     {
      "id": "supply_chain",
@@ -13440,6 +13928,20 @@
      "src": [
       "T3-01"
      ]
+    },
+    {
+     "id": "lf_ckad",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    },
+    {
+     "id": "snowpro_core",
+     "tier": "O",
+     "src": [
+      "T0-31"
+     ]
     }
    ],
    "avoid": "Generic DevOps bullets with no model-serving scope",
@@ -13449,7 +13951,7 @@
   },
   "ai-product-manager": {
    "name": "AI Product Manager",
-   "target": 12,
+   "target": 13,
    "variant": "E",
    "flavour": "E1",
    "basis": "JD-measured (all PM postings) + catalog tiers",
@@ -13531,13 +14033,13 @@
     },
     {
      "id": "eval_rubrics",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-06:L606"
+      "T0-59:L178"
      ],
-     "note": "rubrics, golden sets, inter-rater agreement, the limits of LLM judges"
+     "note": ">=27% overall and 5/9 opened postings in T0-59 (builder/model-facing variant)"
     },
     {
      "id": "success_metrics",
@@ -13567,19 +14069,23 @@
     },
     {
      "id": "python_basic",
-     "tier": "I",
+     "tier": "S",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-06:L615"
+      "T0-59:L183"
      ],
-     "note": "notebook-level SQL and Python to analyse eval results and logs"
+     "note": "10% overall (2/9 opened postings in T0-59)"
     },
     {
      "id": "compliance_docs",
-     "tier": "I",
-     "ev": "P",
-     "note": "risk and governance documentation"
+     "tier": "O",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-59:L186"
+     ],
+     "note": "0/41 explicit mentions in T0-59"
     },
     {
      "id": "product_sense",
@@ -13719,8 +14225,14 @@
     },
     {
      "id": "rapid_prototyping",
-     "tier": "S",
-     "ev": "P"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-59:L58",
+      "T0-59:L181"
+     ],
+     "note": "AI-assisted prototyping in 5/9 opened postings (Microsoft AI, Uber, Mistral, Lovable)"
     },
     {
      "id": "business_case",
@@ -13830,16 +14342,25 @@
      "src": [
       "T0-11"
      ]
+    },
+    {
+     "id": "aws_aib_c01",
+     "tier": "O",
+     "note": "beta ($50); business AI strategist closer to PM brief than AIF-C01; 0/41 JD mentions",
+     "src": [
+      "T0-59",
+      "T3-01"
+     ]
     }
    ],
    "avoid": "\"AI-powered\" buzzwords without a shipped model feature or metrics",
    "prereq": "4+ years as a PM plus at least one shipped model-powered feature [D · T0-06]; T2-01 asks for 5+ years in product/ops plus notebook-level Python",
-   "proof": "A PRD plus eval rubric plus pilot metrics; a domain rubric with 50+ labelled cases; \"10 failure modes ranked by business impact\"",
+   "proof": "A shipped model/agent prototype with PRD, eval rubric (50+ labelled cases) and failure-mode ranking by business impact",
    "mirror": "product management (92.6%), communication (53.7%), leadership (40.1%), compliance (26.1%), agile (22.7%), roadmapping (18.4%), AI (15.4%), stakeholder management (14.2%), agentic AI (13.6%)"
   },
   "ai-evaluation-engineer": {
    "name": "AI Evaluation Engineer",
-   "target": 13,
+   "target": 15,
    "variant": "A",
    "flavour": "A1",
    "basis": "Catalog tiers; evals in 19.0% of S09 postings (68.2% of companies)",
@@ -13954,23 +14475,23 @@
     },
     {
      "id": "llm_judges",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "A",
+     "grade": "C",
      "src": [
-      "T0-03:L98"
+      "T0-60:L150"
      ],
-     "note": "calibrated on ~50 pass / ~50 fail human labels; raw agreement overstates by 33-41 points"
+     "note": "44% overall (8/18) and 8/13 non-lab eval postings"
     },
     {
      "id": "golden_datasets",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-14:L562"
+      "T0-60:L151"
      ],
-     "note": "20-50 seed tasks from real failures; adjudication rules"
+     "note": "39% overall (7/18) and 7/13 non-lab eval postings"
     },
     {
      "id": "eval_ci_gates",
@@ -14390,13 +14911,13 @@
     },
     {
      "id": "ragas",
-     "tier": "X",
+     "tier": "O",
      "ev": "S",
-     "grade": "A",
+     "grade": "B",
      "src": [
-      "T0-03:L510"
+      "T0-69:L50"
      ],
-     "note": "dormant since Feb 2026"
+     "note": "Recovered 2026-11-13 (v0.4.4rc1); avoid eval-brand lock-in"
     }
    ],
    "none": {
@@ -14412,16 +14933,23 @@
      "src": [
       "T0-11"
      ]
+    },
+    {
+     "id": "langchain_certified_agent_engineer",
+     "tier": "O",
+     "src": [
+      "T0-29"
+     ]
     }
    ],
-   "avoid": "New RAGAS dependencies (dormant since Feb 2026); storing master API keys in SaaS eval platforms; \"accuracy\" claims without CIs",
-   "prereq": "Best feeders: data scientists (error analysis), PhDs (measurement rigour), backend engineers (CI, observability) [D · T0-06]",
+   "avoid": "Eval-platform brand lock-in (7 acquisitions/closures in 13 months; OpenAI hosted Evals shutdown 2026-11-30); storing master API keys in SaaS eval platforms; 'accuracy' claims without CIs",
+   "prereq": "Lead with 3+ years software/backend or data-science engineering (0/22 entry-level and 0/22 PhD required in T0-60); PhDs add measurement rigour [C · T0-60]",
    "proof": "An eval harness with a kappa-calibrated judge validated on 100+ human labels, plus position and verbosity bias tests; a CI regression threshold and a cost–quality frontier chart",
    "mirror": "LLM evaluation, evals, benchmarking, LLM-as-a-judge, golden dataset, A/B testing, pytest"
   },
   "ai-solutions-architect": {
    "name": "AI / GenAI Solutions Architect",
-   "target": 14,
+   "target": 12,
    "variant": "A",
    "flavour": "A2",
    "basis": "JD-measured (all Solutions Architect postings) + catalog tiers",
@@ -14438,12 +14966,13 @@
     },
     {
      "id": "aws",
-     "tier": "M",
+     "tier": "I",
      "ev": "JD",
-     "share": "53.6%",
      "src": [
       "JobsPipe: Solutions Architect"
-     ]
+     ],
+     "share": "53.6%",
+     "note": "JobsPipe SA is 53.6% AWS; T0-62 AI SA splits evenly (Azure 30.4%, GCP 30.4%, AWS 26.1%) — cloud stays Must"
     },
     {
      "id": "ref_architecture",
@@ -14573,9 +15102,13 @@
     },
     {
      "id": "presales",
-     "tier": "I",
-     "ev": "P",
-     "note": "demos and proposals"
+     "tier": "M",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L146"
+     ],
+     "note": "60.9% explicit pre-sales / 95.7% customer-facing technical gate in T0-62"
     },
     {
      "id": "model_selection",
@@ -14643,13 +15176,23 @@
     },
     {
      "id": "rag",
-     "tier": "S",
-     "ev": "P"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L150"
+     ],
+     "note": "26.1% of T0-62 AI SA postings"
     },
     {
      "id": "agents",
-     "tier": "S",
-     "ev": "P"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L151"
+     ],
+     "note": "56.5% in T0-62 (capped Important for query bias)"
     },
     {
      "id": "iac",
@@ -14824,6 +15367,26 @@
      "id": "domain_depth",
      "tier": "O",
      "ev": "P"
+    },
+    {
+     "id": "evals",
+     "tier": "S",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L155"
+     ],
+     "note": "17.4% of T0-62 AI SA postings"
+    },
+    {
+     "id": "observability",
+     "tier": "S",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L203"
+     ],
+     "note": "39% Axial AI SA benchmark"
     }
    ],
    "none": {
@@ -14849,20 +15412,35 @@
     {
      "id": "ms_ai_103",
      "tier": "O",
-     "note": "Azure partners; beta",
+     "note": "Azure partners; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28",
      "src": [
-      "T0-11"
+      "T0-11",
+      "T0-62"
+     ]
+    },
+    {
+     "id": "salesforce_agentforce_specialist",
+     "tier": "O",
+     "src": [
+      "T0-31"
+     ]
+    },
+    {
+     "id": "snowpro_core",
+     "tier": "O",
+     "src": [
+      "T0-31"
      ]
     }
    ],
    "avoid": "Certification lists in place of delivered architectures",
-   "prereq": "Senior engineer / cloud architect background. Certifications (AIP-C01, PMLE, AI-103) are tie-breakers mainly in IT-services, staffing and partner channels [B/C · T0-11]",
-   "proof": "A reference architecture with a cost model and a working infrastructure-as-code deployment",
+   "prereq": "Usually 5+ (10+ at frontier labs) years in customer-facing engineering or cloud architecture, though entry-level hyperscaler CSA programmes exist; certs matter mainly in partner/SI channels [B/C · T0-11, T0-62]",
+   "proof": "A reference architecture with a cost/latency model, an eval-backed live demo and a customer-scenario discovery walkthrough (IaC optional outside cloud-delivery shops)",
    "mirror": "solutions architect, AWS (53.6%), Azure (29.5%), GCP (22.6%), leadership (43.0%), communication (42.9%), mentoring (35.1%), compliance (25.3%), Python (23.6%), AI (23.2%), generative AI (17.1%)"
   },
   "gpu-kernel-engineer": {
    "name": "GPU Kernel / ML Compiler Engineer",
-   "target": 15,
+   "target": 16,
    "variant": "D",
    "flavour": "D1",
    "basis": "Catalog tiers ([S]); kernels in 6.6% of S09 postings",
@@ -14968,13 +15546,13 @@
     },
     {
      "id": "triton_lang",
-     "tier": "I",
-     "ev": "S09",
-     "share": "2.8%",
+     "tier": "M",
+     "ev": "S",
+     "grade": "C",
      "src": [
-      "T0-03:L270"
+      "T0-63:L170"
      ],
-     "note": "the second kernel language; role-defining despite the corpus-wide share"
+     "note": "56.1% overall, 69% of kernel-led postings in T0-63"
     },
     {
      "id": "cutlass",
@@ -15260,7 +15838,7 @@
   },
   "ai-security-engineer": {
    "name": "AI Security Engineer / AI Red Teamer",
-   "target": 16,
+   "target": 10,
    "variant": "D",
    "flavour": "D3",
    "basis": "Security Engineer feeder JD shares + catalog tiers",
@@ -15334,13 +15912,13 @@
     },
     {
      "id": "prompt_injection",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "A",
+     "grade": "C",
      "src": [
-      "T0-14:L95"
+      "T0-60:L241"
      ],
-     "note": "adaptive attacks beat 12 published defences with >90% success"
+     "note": "Core AI attack surface across AI security loops"
     },
     {
      "id": "agent_abuse",
@@ -15374,23 +15952,24 @@
     },
     {
      "id": "red_teaming",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-13:L339"
+      "T0-60:L240"
      ],
-     "note": "red-team suite in CI; attack-success rates before and after mitigation"
+     "note": "Core offensive AI testing in T0-60 security postings"
     },
     {
      "id": "grc",
-     "tier": "I",
-     "ev": "JD",
-     "share": "39.4%",
+     "tier": "O",
+     "ev": "S",
+     "grade": "B",
      "src": [
-      "JobsPipe: Security Engineer (feeder)"
+      "T0-60:L226",
+      "T0-60:L247"
      ],
-     "note": "named as \"compliance\""
+     "note": "0/18 AI security postings; SANS tracks AI GRC as a separate family"
     },
     {
      "id": "cloud",
@@ -15606,8 +16185,13 @@
     },
     {
      "id": "mitre_atlas",
-     "tier": "S",
-     "ev": "P"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-60:L246"
+     ],
+     "note": "Named alongside OWASP LLM Top 10 in AI security JDs"
     },
     {
      "id": "communication",
@@ -15687,6 +16271,63 @@
      "src": [
       "T0-15"
      ]
+    },
+    {
+     "id": "aaif_mcpa",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    },
+    {
+     "id": "lf_cks",
+     "tier": "O",
+     "src": [
+      "T0-32"
+     ]
+    },
+    {
+     "id": "isaca_cism",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "isaca_aaism",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "comptia_secai_plus",
+     "tier": "O",
+     "src": [
+      "T0-34",
+      "T3-01"
+     ]
+    },
+    {
+     "id": "offsec_osai",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "htb_coae",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "giac_gaips",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
     }
    ],
    "avoid": "Classifier-only defences presented as complete (adaptive attacks beat 12 published defences)",
@@ -15696,7 +16337,7 @@
   },
   "ai-governance-lead": {
    "name": "AI Governance Programme Lead / Manager",
-   "target": 17,
+   "target": 18,
    "variant": "E",
    "flavour": "E2",
    "basis": "Axial shares (C) + catalog tiers",
@@ -15826,13 +16467,14 @@
     },
     {
      "id": "colorado_ai_act",
-     "tier": "I",
+     "tier": "O",
      "ev": "S",
      "grade": "B",
      "src": [
-      "T0-15:L138"
+      "T0-61:L89",
+      "T0-61:L182"
      ],
-     "note": "SB 24-205 never took effect; SB26-189 applies from 1 Jan 2027"
+     "note": "SB 24-205 repealed May 2026; narrower SB 26-189 ADMT law enjoined under xAI v. Weiser (0/11 JDs)"
     },
     {
      "id": "provenance",
@@ -16228,16 +16870,51 @@
      "src": [
       "T0-15"
      ]
+    },
+    {
+     "id": "isaca_cism",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "isaca_aaism",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "isaca_aair",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "pecb_iso42001_lead_auditor",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "dsci_dcpp",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
     }
    ],
    "avoid": "Listing AIGP as your main credential (domain certifications come first)",
-   "prereq": "About 5 years in GRC, privacy, audit or security; domain certifications first (CIPP/CIPM, CISSP/CISA/CRISC); AIGP optional [B · T0-15]",
+   "prereq": "About 5 years all-level (median 10 years stated minimum for manager/lead/director postings in T0-61) in GRC, privacy, audit or security; domain certs first, AIGP optional [B/C · T0-15, T0-61]",
    "proof": "An AI inventory, risk register and governance playbook mapped to the EU AI Act, NIST AI RMF and ISO 42001",
    "mirror": "AI governance, EU AI Act, NIST AI RMF, ISO 42001, risk management, compliance, privacy; Axial: observability/monitoring 42.3%, Python 27.1%"
   },
   "physical-ai-engineer": {
    "name": "Physical AI / Robotics AI Engineer",
-   "target": 18,
+   "target": 17,
    "variant": "B",
    "flavour": "B3",
    "basis": "Practice-curated ([P]); no skill measurements in the corpus",
@@ -16259,12 +16936,6 @@
      "ev": "P"
     },
     {
-     "id": "perception",
-     "tier": "M",
-     "ev": "P",
-     "note": "computer vision"
-    },
-    {
      "id": "simulation",
      "tier": "M",
      "ev": "P"
@@ -16277,9 +16948,13 @@
     },
     {
      "id": "robot_learning",
-     "tier": "I",
-     "ev": "P",
-     "note": "imitation learning, RL"
+     "tier": "M",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-64:L171"
+     ],
+     "note": "Merged VLA + robot learning (38/48 = 79% all, 11/12 full-text)"
     },
     {
      "id": "edge_inference",
@@ -16298,11 +16973,6 @@
      "ev": "P"
     },
     {
-     "id": "vla_models",
-     "tier": "I",
-     "ev": "P"
-    },
-    {
      "id": "imitation_learning",
      "tier": "I",
      "ev": "P"
@@ -16310,7 +16980,13 @@
     {
      "id": "computer_vision",
      "tier": "I",
-     "ev": "P"
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-64:L173",
+      "T0-64:L182"
+     ],
+     "note": "Merged perception + CV (17/48 = 35% all, 6/12 full-text; variant-dependent)"
     },
     {
      "id": "control_systems",
@@ -16365,13 +17041,13 @@
     },
     {
      "id": "pytorch",
-     "tier": "S",
+     "tier": "M",
      "ev": "JD",
-     "share": "48.2%",
      "src": [
       "JobsPipe: Machine Learning Engineer (adjacent)"
      ],
-     "note": "supporting here; the share is from an adjacent title"
+     "share": "48.2%",
+     "note": "67% full-text Physical AI JDs (T0-64); JobsPipe MLE adjacent share 48.2%"
     },
     {
      "id": "deep_learning",
@@ -16385,8 +17061,13 @@
     },
     {
      "id": "rl",
-     "tier": "S",
-     "ev": "P"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-64:L174"
+     ],
+     "note": "42% all, 75% full-text; Must for locomotion/WBC"
     },
     {
      "id": "sensor_fusion",
@@ -16803,47 +17484,56 @@
    },
    "credentials": [],
    "avoid": "Opinion pieces in place of experiments",
-   "prereq": "PhD or a fellowship is typical; ~600 technical FTEs worldwide (single-author estimate, C)",
+   "prereq": "Research track record or fellowship (0/23 visible T0-60 postings required a PhD); Anthropic Fellows requires US, UK or Canada work authorisation with no visa sponsorship [A/C · T0-60]",
    "proof": "Fellowship projects; published safety research; open eval contributions",
    "mirror": "AI safety, alignment, interpretability, evaluations, red teaming"
   },
   "ai-enablement-engineer": {
    "name": "AI Enablement Engineer",
-   "target": 20,
+   "target": 23,
    "variant": "A",
    "flavour": "A1",
    "basis": "Catalog tiers; MCP named in 30.2% of these postings (T0-16)",
    "links": [
     {
      "id": "python",
-     "tier": "M",
-     "ev": "JD",
-     "share": "78.4%",
+     "tier": "I",
+     "ev": "S",
+     "grade": "B",
      "src": [
-      "JobsPipe: AI Engineer (adjacent)"
+      "T0-62:L259-L281"
      ],
-     "note": "internal tooling in Python or TypeScript"
+     "note": "26.7% sample / 33.3% Skillenai (Must for builder variant only)"
     },
     {
      "id": "llm_apis",
-     "tier": "M",
-     "ev": "JD",
-     "share": "76.7%",
+     "tier": "I",
+     "ev": "S",
+     "grade": "B",
      "src": [
-      "JobsPipe: AI Engineer (adjacent)"
-     ]
+      "T0-62:L259-L281"
+     ],
+     "note": "26.7% sample / 16.7% Skillenai (Must for builder variant only)"
     },
     {
      "id": "internal_tooling",
      "tier": "M",
-     "ev": "P",
-     "note": "internal copilots and agent platforms"
+     "ev": "S",
+     "grade": "B",
+     "src": [
+      "T0-62:L259-L281"
+     ],
+     "note": "Core enablement work (46.7% sample)"
     },
     {
      "id": "iam",
-     "tier": "M",
-     "ev": "P",
-     "note": "SSO and identity basics"
+     "tier": "S",
+     "ev": "S",
+     "grade": "B",
+     "src": [
+      "T0-62:L259-L281"
+     ],
+     "note": "20.0% sample / 11.9% SSO Skillenai (Must for platform variant)"
     },
     {
      "id": "mcp",
@@ -16872,19 +17562,23 @@
     },
     {
      "id": "change_mgmt",
-     "tier": "I",
-     "ev": "P",
-     "note": "change management and training"
-    },
-    {
-     "id": "llm_gateways",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
      "grade": "B",
      "src": [
-      "T0-14:L317"
+      "T0-62:L259-L281"
      ],
-     "note": "per-team budgets through a gateway"
+     "note": "Org rollout & adoption (46.7% sample)"
+    },
+    {
+     "id": "llm_gateways",
+     "tier": "O",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L259-L281"
+     ],
+     "note": "6.7% sample; platform variant only"
     },
     {
      "id": "coding_agents",
@@ -16917,9 +17611,13 @@
     },
     {
      "id": "teaching",
-     "tier": "I",
-     "ev": "P",
-     "note": "workshops and training"
+     "tier": "M",
+     "ev": "S",
+     "grade": "B",
+     "src": [
+      "T0-62:L259-L281"
+     ],
+     "note": "Training, workshops & enablement (60.0% sample)"
     },
     {
      "id": "communication",
@@ -17160,6 +17858,45 @@
      "tier": "O",
      "ev": "P",
      "note": "internal APIs behind MCP servers"
+    },
+    {
+     "id": "low_code_automation",
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L272"
+     ],
+     "note": "26.7% sample (n8n, Make, Zapier, Power Automate)"
+    },
+    {
+     "id": "prompt_engineering",
+     "tier": "I",
+     "ev": "S",
+     "grade": "B",
+     "src": [
+      "T0-62:L259-L281"
+     ],
+     "note": "33.3% sample / 35.7% Skillenai"
+    },
+    {
+     "id": "grc",
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L259-L281"
+     ],
+     "note": "26.7% sample; internal policy & safe-use rollout"
+    },
+    {
+     "id": "evals",
+     "tier": "S",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L259-L281"
+     ]
     }
    ],
    "none": {
@@ -17167,15 +17904,23 @@
     "hardware": "not screened",
     "research_craft": "not expected"
    },
-   "credentials": [],
+   "credentials": [
+    {
+     "id": "salesforce_agentforce_specialist",
+     "tier": "O",
+     "src": [
+      "T0-31"
+     ]
+    }
+   ],
    "avoid": "Adoption claims without usage or time-saved numbers",
-   "prereq": "Backend/DevEx engineers; a non-technical ops lane exists (~7 months) [D · T0-06]",
+   "prereq": "Splits into builder/platform (DevEx/backend) and ops/adoption (internal ops, L&D, RevOps) lanes; 26.7%–33.3% require Python [B/C · T0-62]",
    "proof": "An internal pilot with 5–10 colleagues measuring adoption and time saved, with a runbook and a risk register",
    "mirror": "AI enablement, MCP, internal tools, copilot, developer productivity, adoption"
   },
   "ai-product-engineer": {
    "name": "AI Product Engineer (AI Frontend)",
-   "target": 21,
+   "target": 20,
    "variant": "A",
    "flavour": "A1",
    "basis": "JD-measured (Full-Stack Engineer postings) + catalog tiers",
@@ -17342,12 +18087,13 @@
     },
     {
      "id": "product_sense",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-06:L542"
-     ]
+      "T0-62:L349"
+     ],
+     "note": "50.0% of T0-62 AI Product Engineer postings"
     },
     {
      "id": "c1_pragmatism",
@@ -17579,6 +18325,16 @@
      "id": "whisper",
      "tier": "O",
      "ev": "P"
+    },
+    {
+     "id": "design_craft",
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-62:L351"
+     ],
+     "note": "37.5% (6/16) of T0-62 postings"
     }
    ],
    "none": {
@@ -17588,13 +18344,13 @@
    },
    "credentials": [],
    "avoid": "Pure UI work with no model-facing evidence",
-   "prereq": "Visible AI-frontend roles are Staff-level asking 5–6+ years [C/D · T0-06]; apply as \"full-stack AI engineer\"",
-   "proof": "A full-stack app (frontend → API → LLM → eval) with 50 eval cases and UX metrics; an on-device module benchmarked on 3+ device/browser combinations",
+   "prereq": "Median 2 years stated experience (n=6 in T0-62) for AI Product Engineer, rising to 6+ years for Staff AI Frontend; also search 'full-stack AI engineer' [C · T0-62]",
+   "proof": "A deployed streaming chat or agent UI with cancel/retry/error states, accessibility and clean frontend–API–LLM integration (evals are a differentiator; on-device WebGPU optional)",
    "mirror": "React (69.4%), TypeScript (52.7%), Python (41.8%), AWS (41.3%), CI/CD (37.8%), Node.js (32.3%), REST API (27.6%), streaming, LLM"
   },
   "ai-risk-assurance-specialist": {
    "name": "AI Risk, Audit & Compliance Specialist",
-   "target": 22,
+   "target": 21,
    "variant": "E",
    "flavour": "E2",
    "basis": "Catalog tiers ([S]/[B])",
@@ -17837,8 +18593,13 @@
     },
     {
      "id": "third_party_risk",
-     "tier": "S",
-     "ev": "P"
+     "tier": "I",
+     "ev": "S",
+     "grade": "C",
+     "src": [
+      "T0-61:L250"
+     ],
+     "note": "38% (3/8) of T0-61 risk/assurance postings"
     },
     {
      "id": "ai_inventory",
@@ -17984,10 +18745,11 @@
    "credentials": [
     {
      "id": "isaca_cisa",
-     "tier": "I",
-     "note": "CISA, CIA or CPA is the prerequisite route for AAIA",
+     "tier": "O",
+     "note": "prerequisite route for AAIA credential, not named as a job prerequisite in T0-61 postings",
      "src": [
-      "T0-15"
+      "T0-15",
+      "T0-61"
      ]
     },
     {
@@ -18018,16 +18780,37 @@
      "src": [
       "T0-15"
      ]
+    },
+    {
+     "id": "isaca_aair",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "pecb_iso42001_lead_auditor",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
+    },
+    {
+     "id": "dsci_dcpp",
+     "tier": "O",
+     "src": [
+      "T0-34"
+     ]
     }
    ],
    "avoid": "Claiming GenAI risk ownership as settled (SR 26-2 excludes generative and agentic AI)",
-   "prereq": "CISA, CIA or CPA (required for the AAIA credential) [B · T0-15]",
+   "prereq": "4–10+ years in model risk management (MRM), IT audit, compliance or technology risk; CISA/CIA/CPA is required only for the ISACA AAIA credential, not as a universal job gate [B · T0-61]",
    "proof": "A model-validation or bias-audit report on a public model, using a documented methodology",
    "mirror": "audit, model risk, AI risk, compliance, ISO 42001, bias audit, privacy"
   },
   "responsible-ai-engineer": {
    "name": "Responsible AI / AI Governance Engineer",
-   "target": 23,
+   "target": 22,
    "variant": "E",
    "flavour": "E2",
    "basis": "Catalog tiers ([S]); 13 JDs in T0-15",
@@ -18073,13 +18856,13 @@
     },
     {
      "id": "evals",
-     "tier": "I",
+     "tier": "M",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-15:L306"
+      "T0-61:L310"
      ],
-     "note": "hallucination, groundedness, subgroup fairness"
+     "note": "75% (6/8) of Responsible AI Engineer postings in T0-61"
     },
     {
      "id": "regulation",
@@ -18130,40 +18913,43 @@
     },
     {
      "id": "fairlearn",
-     "tier": "I",
+     "tier": "O",
      "ev": "S",
-     "grade": "B",
+     "grade": "C",
      "src": [
-      "T0-15:L307"
+      "T0-61:L318"
      ],
-     "note": "0.15.0 (Oct 2026)"
+     "note": "0/8 in T0-61 Responsible AI postings; legacy tabular XAI"
     },
     {
      "id": "shap",
-     "tier": "I",
+     "tier": "O",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-15:L307"
-     ]
+      "T0-61:L318"
+     ],
+     "note": "0/8 in T0-61 Responsible AI postings; legacy tabular XAI"
     },
     {
      "id": "lime",
-     "tier": "I",
+     "tier": "O",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-15:L307"
-     ]
+      "T0-61:L318"
+     ],
+     "note": "0/8 in T0-61 Responsible AI postings; legacy tabular XAI"
     },
     {
      "id": "captum",
-     "tier": "I",
+     "tier": "O",
      "ev": "S",
      "grade": "C",
      "src": [
-      "T0-15:L307"
-     ]
+      "T0-61:L318"
+     ],
+     "note": "0/8 in T0-61 Responsible AI postings; legacy tabular XAI"
     },
     {
      "id": "nemo_guardrails",
@@ -19700,6 +20486,417 @@
    "reason": "data structures are named in 26.0% of all-field Research Scientist postings (JobsPipe)",
    "src": [],
    "stage": "assignment"
+  },
+  {
+   "role": "ai-engineer",
+   "id": "ragas",
+   "from": "X",
+   "to": "O",
+   "reason": "Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai",
+   "src": [
+    "T0-69:L50"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "agentic-ai-engineer",
+   "id": "ragas",
+   "from": "X",
+   "to": "O",
+   "reason": "Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai",
+   "src": [
+    "T0-69:L50"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-evaluation-engineer",
+   "id": "ragas",
+   "from": "X",
+   "to": "O",
+   "reason": "Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai",
+   "src": [
+    "T0-69:L50"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-enablement-engineer",
+   "id": "python",
+   "from": "M",
+   "to": "I",
+   "reason": "Removed inherited AI Engineer JobsPipe share; T0-62 + Skillenai (n=42) show 26.7%–33.3%",
+   "src": [
+    "T0-62:L259-L281"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-enablement-engineer",
+   "id": "llm_apis",
+   "from": "M",
+   "to": "I",
+   "reason": "Removed inherited AI Engineer JobsPipe share; T0-62 + Skillenai (n=42) show 16.7%–26.7%",
+   "src": [
+    "T0-62:L259-L281"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-enablement-engineer",
+   "id": "teaching",
+   "from": "I",
+   "to": "M",
+   "reason": "Top required skill in T0-62 enablement postings (60.0%)",
+   "src": [
+    "T0-62:L259-L281"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-enablement-engineer",
+   "id": "change_mgmt",
+   "from": "I",
+   "to": "M",
+   "reason": "Core enablement requirement in T0-62 (46.7%)",
+   "src": [
+    "T0-62:L259-L281"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "research-scientist",
+   "id": "llm_apis",
+   "from": "I",
+   "to": "O",
+   "reason": "JobsPipe 24.4% 'LLM' remapped to llm_fundamentals; only 1/12 RS JDs mentions API integration",
+   "src": [
+    "T0-55:L209"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "research-scientist",
+   "id": "research_novelty",
+   "from": "I",
+   "to": "M",
+   "reason": "91.7% (11/12) of RS JDs plus NBER WP 34964 corroboration",
+   "src": [
+    "T0-55:L205"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "research-scientist",
+   "id": "jax",
+   "from": "S",
+   "to": "I",
+   "reason": "41.7% (5/12) in T0-55; required at Google DeepMind and xAI",
+   "src": [
+    "T0-55:L218"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "applied-scientist",
+   "id": "research_to_prod",
+   "from": "I",
+   "to": "M",
+   "reason": "75%–78% of JDs corroborated by Amazon Science official guidance",
+   "src": [
+    "T0-52:L131",
+    "T0-52:L236"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-security-engineer",
+   "id": "red_teaming",
+   "from": "I",
+   "to": "M",
+   "reason": "Core AI security requirement across T0-60 postings",
+   "src": [
+    "T0-60:L240"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-security-engineer",
+   "id": "prompt_injection",
+   "from": "I",
+   "to": "M",
+   "reason": "Core AI security threat model in T0-60",
+   "src": [
+    "T0-60:L241"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-security-engineer",
+   "id": "grc",
+   "from": "I",
+   "to": "O",
+   "reason": "0/18 AI security JDs; SANS tracks AI GRC separately (~430 postings)",
+   "src": [
+    "T0-60:L226"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-evaluation-engineer",
+   "id": "llm_judges",
+   "from": "I",
+   "to": "M",
+   "reason": "8/13 non-lab eval postings in T0-60",
+   "src": [
+    "T0-60:L150"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-evaluation-engineer",
+   "id": "golden_datasets",
+   "from": "I",
+   "to": "M",
+   "reason": "7/13 non-lab eval postings in T0-60",
+   "src": [
+    "T0-60:L151"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "applied-ai-engineer",
+   "id": "customer_scoping",
+   "from": "I",
+   "to": "M",
+   "reason": "9/10 full-read JDs in T0-53",
+   "src": [
+    "T0-53:L193"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "applied-ai-engineer",
+   "id": "evals",
+   "from": "I",
+   "to": "M",
+   "reason": "8/10 full-read JDs in T0-53",
+   "src": [
+    "T0-53:L194"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-engineer",
+   "id": "coding_agents",
+   "from": "none",
+   "to": "S",
+   "reason": "Cross-dossier corroborated AI coding-assistant expectation",
+   "src": [
+    "T0-57:L268",
+    "T0-69:L57"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "agentic-ai-engineer",
+   "id": "coding_agents",
+   "from": "O",
+   "to": "S",
+   "reason": "Cross-dossier corroborated AI coding-assistant expectation",
+   "src": [
+    "T0-57:L268",
+    "T0-69:L57"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "forward-deployed-engineer",
+   "id": "coding_agents",
+   "from": "none",
+   "to": "S",
+   "reason": "Cross-dossier corroborated AI coding-assistant expectation",
+   "src": [
+    "T0-57:L268",
+    "T0-69:L57"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "physical-ai-engineer",
+   "id": "robot_learning",
+   "from": "I",
+   "to": "M",
+   "reason": "Merged vla_models into robot_learning (ROADMAP P2); 79% all / 92% full-text in T0-64",
+   "src": [
+    "T0-64:L171"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "physical-ai-engineer",
+   "id": "pytorch",
+   "from": "S",
+   "to": "M",
+   "reason": "67% of full-text Physical AI JDs in T0-64",
+   "src": [
+    "T0-64:L172"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-infrastructure-engineer",
+   "id": "gpu_fleet",
+   "from": "I",
+   "to": "M",
+   "reason": "94.3% all / 83.3% full-read in T0-54",
+   "src": [
+    "T0-54:L187"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-infrastructure-engineer",
+   "id": "slurm",
+   "from": "S",
+   "to": "I",
+   "reason": "42.9% all / 62.5% cluster variants in T0-54",
+   "src": [
+    "T0-54:L190"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "inference-engineer",
+   "id": "vllm",
+   "from": "I",
+   "to": "M",
+   "reason": "76% overall and 100% of engine-naming postings in T0-56",
+   "src": [
+    "T0-56:L182"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "inference-engineer",
+   "id": "batching_kv",
+   "from": "I",
+   "to": "M",
+   "reason": "Top serving optimisation technique (49%) in T0-56",
+   "src": [
+    "T0-56:L184"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ml-platform-engineer",
+   "id": "mlops_lifecycle",
+   "from": "I",
+   "to": "M",
+   "reason": "67.7% of postings in T0-58",
+   "src": [
+    "T0-58:L175"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "gpu-kernel-engineer",
+   "id": "triton_lang",
+   "from": "I",
+   "to": "M",
+   "reason": "56.1% overall / 69% of kernel-led postings in T0-63",
+   "src": [
+    "T0-63:L170"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-governance-lead",
+   "id": "colorado_ai_act",
+   "from": "I",
+   "to": "O",
+   "reason": "SB 24-205 repealed May 2026 and replaced by narrower SB 26-189 (0/11 JDs)",
+   "src": [
+    "T0-61:L89"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-risk-assurance-specialist",
+   "id": "third_party_risk",
+   "from": "S",
+   "to": "I",
+   "reason": "Named in 3/8 (38%) T0-61 assurance postings",
+   "src": [
+    "T0-61:L250"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "responsible-ai-engineer",
+   "id": "evals",
+   "from": "I",
+   "to": "M",
+   "reason": "75% (6/8) of T0-61 postings",
+   "src": [
+    "T0-61:L310"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-solutions-architect",
+   "id": "presales",
+   "from": "I",
+   "to": "M",
+   "reason": "95.7% customer-facing technical gate and 60.9% pre-sales in T0-62",
+   "src": [
+    "T0-62:L146"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-solutions-architect",
+   "id": "aws",
+   "from": "M",
+   "to": "I",
+   "reason": "Generic cloud stays Must; T0-62 AI SA postings split evenly across AWS/Azure/GCP",
+   "src": [
+    "T0-62:L148"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-product-engineer",
+   "id": "product_sense",
+   "from": "I",
+   "to": "M",
+   "reason": "50.0% of T0-62 postings and core differentiator from pure frontend",
+   "src": [
+    "T0-62:L349"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-product-manager",
+   "id": "eval_rubrics",
+   "from": "I",
+   "to": "M",
+   "reason": "5/9 opened AI PM postings in T0-59",
+   "src": [
+    "T0-59:L178"
+   ],
+   "stage": "verification"
+  },
+  {
+   "role": "ai-product-manager",
+   "id": "python_basic",
+   "from": "I",
+   "to": "S",
+   "reason": "10% overall (2/9 opened) in T0-59",
+   "src": [
+    "T0-59:L183"
+   ],
+   "stage": "verification"
   }
  ],
  "devalued": [
@@ -19709,8 +20906,8 @@
    "skills": [
     "prompt_engineering"
    ],
-   "evidence": "The Prompt Engineer title is 72 of 20,662 LinkedIn AI postings (0.35%); prompts written without regression tests, eval harnesses or cost accounting are commoditised",
-   "residual": "Prompt engineering is still named as a sub-skill in 29.1% of 895 job descriptions",
+   "evidence": "The Prompt Engineer title is 72 of 20,662 LinkedIn AI postings (0.35%, arXiv 2506.00058, 2024–25 vintage); standalone prompt writing without evals or cost accounting is commoditised",
+   "residual": "Prompt engineering appears in 31.1% of JobsPipe AI Engineer postings (counted 2026-09-10)",
    "verdict": "Devalued as a title; baseline as a skill",
    "action": "Keep it as a baseline skill and pair it with regression tests, evals and cost accounting",
    "instead": [
@@ -19720,7 +20917,8 @@
    ],
    "src": [
     "T0-03:L152",
-    "T0-03:L419"
+    "T0-03:L419",
+    "T0-69:L308"
    ],
    "grade": "B"
   },
@@ -19731,8 +20929,8 @@
     "langchain",
     "crewai"
    ],
-   "evidence": "LangChain is named in 3.6% of postings and in 0 of 10 top-lab job descriptions; in a study of 20 deployed systems, 85% of production teams built custom loops",
-   "residual": "Framework adoption doubled to 18% of organisations",
+   "evidence": "In arXiv 2512.04123v2, 85% (17/20) of interviewed production teams built custom loops even though 61% of broader surveyed agents use frameworks; named frameworks appear in 3.6% of broad postings and 0 of 10 top-lab JDs",
+   "residual": "Datadog framework adoption doubled (>9% to ~18%, early 2025 to early 2026); LangChain (34.3%) and LangGraph (22.1%) remain active screening keywords on agentic boards (Grade C)",
    "verdict": "Devalued as a differentiator",
    "action": "Learn portable state-machine concepts: state checkpoints, retries, idempotent tool execution, human interrupts and token budgets",
    "instead": [
@@ -19741,7 +20939,9 @@
    ],
    "src": [
     "T0-03:L149",
-    "T0-03:L420"
+    "T0-03:L420",
+    "T0-69:L54",
+    "T0-69:L348"
    ],
    "grade": "B"
   },
@@ -19773,7 +20973,7 @@
     "pinecone"
    ],
    "evidence": "Pinecone is named in 0.7% of postings, against 9.8% for vector databases in general",
-   "residual": "Vector databases are widely deployed in enterprise stacks",
+   "residual": "Category appears in 32.6% of JobsPipe AI Engineer postings (2026-09-10); DB-Engines brand popularity rose +37% to +146% in 2025 (Pinecone +145%, Weaviate +146%, Qdrant +139%), so brand interest is not falling even though JDs name the category",
    "verdict": "Commoditised by brand",
    "action": "Learn the concepts; the session reports that PostgreSQL (pgvector) and Redis dominate",
    "instead": [
@@ -19781,7 +20981,9 @@
     "pgvector"
    ],
    "src": [
-    "T0-03:L422"
+    "T0-03:L422",
+    "T0-69:L59",
+    "T0-69:L350"
    ],
    "grade": "B"
   },
@@ -19789,7 +20991,7 @@
    "id": "eval_brand",
    "name": "Loyalty to one eval-platform brand",
    "skills": [],
-   "evidence": "Named eval platforms appear in under 3% of postings and in 0 of 10 top-lab postings, and the vendors are consolidating (OpenAI bought Promptfoo; ClickHouse bought Langfuse)",
+   "evidence": "Named eval platforms appear in under 3% of postings and 0 of 10 top-lab JDs, and seven tools were acquired or closed in 13 months (2025-05 to 2026-05: Weave, Humanloop, Langfuse, Helicone, Promptfoo, Traceloop, Galileo), plus OpenAI deprecated hosted Evals (shutdown 2026-11-30)",
    "residual": "Evaluation as a practice appears at 68.2% of companies",
    "verdict": "Methodology over brand",
    "action": "Master the methodology: chance-corrected inter-annotator agreement (Cohen's kappa), position-bias elimination and synthetic adversarial test generation",
@@ -19799,7 +21001,9 @@
    ],
    "src": [
     "T0-03:L59",
-    "T0-03:L150"
+    "T0-03:L150",
+    "T0-69:L51",
+    "T0-71:L352"
    ],
    "grade": "B"
   },
@@ -19809,7 +21013,7 @@
    "skills": [
     "tgi"
    ],
-   "evidence": "Hugging Face archived the TGI repository on 2026-03-21",
+   "evidence": "Hugging Face docs carry a maintenance-mode notice recommending vLLM, SGLang and llama.cpp/MLX (A); the 2026-03-21 read-only archive date rests on one secondary source (C)",
    "residual": "Legacy installations remain in maintenance",
    "verdict": "Deprecated",
    "action": "Move self-hosted serving to vLLM or SGLang",
@@ -19819,7 +21023,8 @@
    ],
    "src": [
     "T0-03:L377",
-    "T0-03:L423"
+    "T0-69:L49",
+    "T0-69:L352"
    ],
    "grade": "A"
   },
@@ -19829,8 +21034,8 @@
    "skills": [
     "autogen"
    ],
-   "evidence": "No PyPI release in 365 days; superseded by Microsoft Agent Framework",
-   "residual": "A large historical installed base (61.5K GitHub stars)",
+   "evidence": "Last PyPI release 0.7.5 on 2025-09-30 (410 days without a release to 2026-11-14); superseded by Microsoft Agent Framework 1.0 (GA 2026-04-03)",
+   "residual": "Installed base (61.5K GitHub stars) and occasional optional legacy mentions (7.9% on one Apr 2026 agentic board, Grade C)",
    "verdict": "Stalled",
    "action": "Move to Microsoft Agent Framework or LangGraph",
    "instead": [
@@ -19838,27 +21043,9 @@
     "langgraph"
    ],
    "src": [
-    "T0-03:L424"
-   ],
-   "grade": "A"
-  },
-  {
-   "id": "ragas",
-   "name": "RAGAS-based evaluation pipelines",
-   "skills": [
-    "ragas"
-   ],
-   "evidence": "No release since 2026-01-13 and no commit on main since 2026-02-24",
-   "residual": "Its metric definitions remain conceptually useful",
-   "verdict": "High risk",
-   "action": "Move to DeepEval or a custom eval harness",
-   "instead": [
-    "deepeval",
-    "evals"
-   ],
-   "src": [
-    "T0-03:L375",
-    "T0-03:L425"
+    "T0-03:L424",
+    "T0-69:L49",
+    "T0-69:L353"
    ],
    "grade": "A"
   },
@@ -19866,7 +21053,7 @@
    "id": "static_trt_engines",
    "name": "Static TensorRT-LLM engine compilation (trtllm-build)",
    "skills": [],
-   "evidence": "TensorRT-LLM 1.3 removed trtllm-build; PyTorch is its only backend",
+   "evidence": "NVIDIA migration guide (updated 2026-11-03) documents removal of the static TensorRT backend, trtllm-build, trtllm-refit, trtllm-prune and convert_checkpoint.py; PyTorch is the sole backend",
    "verdict": "Deprecated",
    "action": "Drop static engine-compilation workflows; use TensorRT-LLM's PyTorch backend",
    "instead": [
@@ -19874,7 +21061,8 @@
    ],
    "src": [
     "T0-03:L99",
-    "T0-03:L151"
+    "T0-69:L49",
+    "T0-69:L355"
    ],
    "grade": "A"
   },
@@ -19882,7 +21070,7 @@
    "id": "single_provider",
    "name": "Single-provider chat wrappers",
    "skills": [],
-   "evidence": "OpenAI's share of traced traffic fell from 75% to 63%, and more than 70% of organisations use three or more models",
+   "evidence": "Datadog OpenAI share fell 75% to 63% (>70% use 3+ models); Langfuse Cloud traced OpenAI share fell 82.7% to 55.3% (2024-10 to 2025-09); Ramp businesses paying both OpenAI and Anthropic doubled 8% to 16% (COI)",
    "residual": "OpenAI remains the largest single provider",
    "verdict": "Devalued",
    "action": "Design for several models: routing, fallbacks and a gateway",
@@ -19890,9 +21078,157 @@
     "llm_gateways"
    ],
    "src": [
-    "T0-03:L426"
+    "T0-03:L426",
+    "T0-69:L52",
+    "T0-69:L217-L228"
    ],
    "grade": "A"
+  },
+  {
+   "id": "openai_assistants_api",
+   "name": "OpenAI Assistants API",
+   "skills": [
+    "openai_assistants_api"
+   ],
+   "evidence": "Sunset on 2026-08-26; replaced by the OpenAI Responses API and Conversations API",
+   "residual": "Legacy migrations from existing Assistants-based apps only",
+   "verdict": "Retired",
+   "action": "Build stateful tool-calling flows on the Responses API or provider-neutral agent runtimes",
+   "instead": [
+    "llm_apis",
+    "agents"
+   ],
+   "src": [
+    "T0-69:L49",
+    "T0-69:L136",
+    "T0-69:L362"
+   ],
+   "grade": "A"
+  },
+  {
+   "id": "torchtune",
+   "name": "torchtune fine-tuning workflows",
+   "skills": [
+    "torchtune"
+   ],
+   "evidence": "GitHub README (checked 2026-11-14) states torchtune is no longer actively maintained; development wound down in 2025",
+   "residual": "Reference YAML configs from older PyTorch recipes",
+   "verdict": "Dormant",
+   "action": "Move post-training and LoRA/SFT pipelines to TRL (v1.0 shipped 2026-03-31) or Axolotl / Unsloth",
+   "instead": [
+    "trl",
+    "finetuning"
+   ],
+   "src": [
+    "T0-69:L49",
+    "T0-69:L192",
+    "T0-69:L367"
+   ],
+   "grade": "A"
+  }
+ ],
+ "momentum": [
+  {
+   "id": "provider_independence",
+   "skill_id": "llm_gateways",
+   "name": "Multi-provider routing & provider independence",
+   "call": "rising",
+   "signals": [
+    "telemetry",
+    "transactions",
+    "survey"
+   ],
+   "evidence": "Datadog (>1,000 orgs): OpenAI share 75% to 63%, >70% use 3+ models; Langfuse Cloud (>20,000 orgs, 2024-10 to 2025-09): OpenAI 82.7% to 55.3%, Google 0.5% to 13.1%; Ramp (>85,000 US firms, COI): dual OpenAI+Anthropic payers 8% to 16% (2025-01 to 2026-01); a16z CIO survey (COI): 3+ families 68% to 81%",
+   "caveat": "Ramp and a16z carry vendor/investor COI; Datadog and Langfuse telemetry are independent; no two-date job-posting share series",
+   "coi": true,
+   "grade": "B",
+   "src": [
+    "T0-69:L52",
+    "T0-69:L217-L228",
+    "T0-69:L302"
+   ],
+   "as_of": "2026-11-14"
+  },
+  {
+   "id": "mcp",
+   "skill_id": "mcp",
+   "name": "Model Context Protocol (MCP)",
+   "call": "rising",
+   "signals": [
+    "governance",
+    "registry_supply"
+   ],
+   "evidence": "Linux Foundation AAIF grew from 8 Platinum founders (2025-12-09) to 146 members (2026-02-24) to 247 members (2026-08) [A]; Official MCP Registry grew from ~9,650 unique servers (2026-05) to 30,375 (2026-09-10) [C]",
+   "caveat": "Anthropic originated MCP (COI); 2026-07-28 spec removes sessions and deprecates HTTP+SSE/Roots/Sampling/Logging (12-month window); 62% of registry servers have 1 version; no employer-demand trend series",
+   "coi": true,
+   "grade": "B/C",
+   "src": [
+    "T0-69:L53",
+    "T0-69:L105-L112",
+    "T0-69:L315",
+    "T0-69:L392-L398"
+   ],
+   "as_of": "2026-11-14"
+  },
+  {
+   "id": "coding_agents",
+   "skill_id": "coding_agents",
+   "name": "Coding agents (class)",
+   "call": "rising",
+   "signals": [
+    "developer_survey_jetbrains",
+    "developer_survey_stackoverflow"
+   ],
+   "evidence": "JetBrains AI Pulse (2025 Q2 to 2026-01): Claude Code work adoption ~3% to 18%, Cursor 18%, Copilot 29% stalled; Stack Overflow Developer Survey: 30.9% used agents (2025, all devs) and 66% of AI users used coding agents (2026-10-06, different denominator)",
+   "caveat": "Stack Overflow changed denominators between 2025 and 2026 (no like-for-like delta computed); adoption is developer usage, not a two-date JD series",
+   "coi": false,
+   "grade": "B",
+   "src": [
+    "T0-69:L57",
+    "T0-69:L201-L211",
+    "T0-69:L332"
+   ],
+   "as_of": "2026-11-14"
+  },
+  {
+   "id": "claude_code",
+   "skill_id": "claude_code",
+   "name": "Claude Code",
+   "call": "rising",
+   "signals": [
+    "survey_work_adoption",
+    "survey_awareness"
+   ],
+   "evidence": "JetBrains AI Pulse: work adoption rose ~3% (2025 Q2) to 18% globally and 24% US/Canada (2026-01); developer awareness rose 31% (2025 Q2) to 49% (2025-09) to 57% (2026-01)",
+   "caveat": "Anthropic product (COI) and both constructs come from one survey vendor (JetBrains AI Pulse); treat as a sub-signal of coding agents rather than standalone job-market proof",
+   "coi": true,
+   "grade": "B",
+   "src": [
+    "T0-69:L57",
+    "T0-69:L201-L208",
+    "T0-69:L333"
+   ],
+   "as_of": "2026-11-14"
+  },
+  {
+   "id": "typescript",
+   "skill_id": "typescript",
+   "name": "TypeScript",
+   "call": "rising",
+   "signals": [
+    "github_activity",
+    "developer_survey"
+   ],
+   "evidence": "GitHub Octoverse (2024-08 to 2025-08): 2,636,006 monthly contributors (+66.63% YoY, #1 fastest-growing major language); JetBrains Developer Ecosystem Survey: largest five-year rise among programming languages to mid-2025",
+   "caveat": "Measures broad developer ecosystem growth rather than GenAI-only job-posting share",
+   "coi": false,
+   "grade": "B",
+   "src": [
+    "T0-69:L58",
+    "T0-69:L262-L265",
+    "T0-69:L335"
+   ],
+   "as_of": "2026-11-14"
   }
  ]
 }

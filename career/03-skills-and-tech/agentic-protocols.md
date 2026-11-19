@@ -4,10 +4,10 @@ title: "Agentic Protocols: MCP, A2A and AG-UI at the Depth Your Role Needs"
 content_type: guide
 stage: 3
 status: published
-last_verified: 2026-11-06
-review_by: 2026-11-14
-summary: "What MCP, A2A and AG-UI are and their dated status as of October 2026, what to know at each depth (awareness, build, operate) for your role, how employers ask for protocol skills, the security essentials, and how to prove the skill."
-sources: [T0-16, T0-03, T0-14, T0-05, T0-13, T0-06, T0-11]
+last_verified: 2026-11-19
+review_by: 2026-12-06
+summary: "What MCP, A2A and AG-UI are and their dated status through November 2026, what to know at each depth (awareness, build, operate) for your role, how employers ask for protocol skills, the security essentials, and how to prove the skill."
+sources: [T0-16, T0-03, T0-14, T0-05, T0-13, T0-06, T0-11, T0-62, T0-69]
 roles: [agentic-ai-engineer, ai-enablement-engineer, ml-platform-engineer, ai-security-engineer, ai-engineer, forward-deployed-engineer, ai-product-engineer, applied-ai-engineer, ai-solutions-architect, ai-product-manager]
 geos: [global]
 tags: [mcp, a2a, ag-ui, agent-protocols, agent-gateway, agent-security, proof-of-work]
@@ -17,12 +17,12 @@ tags: [mcp, a2a, ag-ui, agent-protocols, agent-gateway, agent-security, proof-of
 
 > What MCP, A2A and AG-UI are as of October 2026, how deep your target role needs you to go (awareness, build or operate), how employers ask for protocol skills, the security essentials, and how to prove the skill with work a reviewer can check.
 
-Statuses on this page are as of 21 October 2026, the evidence cut-off of [T0-16](../../research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md); re-check them by 2027-01-19. The MCP posting indices are a monthly series (EGP-1.0 class V1) and expire first: the Skillenai window ends on 2026-10-14, so re-check them by 2026-11-14 (this page's `review_by`). Grades follow EGP-1.0 ([CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)). Terms are defined in the [glossary](../00-start/glossary.md).
+Statuses on this page are as of 21 October 2026 ([T0-16](../../research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md)), refreshed through 14 November 2026 for MCP governance, registry supply and Skillenai counts ([T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md); [T0-62](../../research/sessions/T0-62-role-group-solutions-enablement-product-engineering.md)); re-check tool/protocol statuses by 2027-02-17. The Skillenai posting window refreshed to 2026-11-05 (class V1, 31 days), so this page's `review_by` is 2026-12-06. Grades follow EGP-1.0 ([CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)). Terms are defined in the [glossary](../00-start/glossary.md).
 
 ## The short answer
 
-1. **Learn MCP first.** It has a neutral home and a dated specification: the Agentic AI Foundation (AAIF), a Linux Foundation fund, has hosted it since December 2025, and the revision in force is 2026-07-28 [A · T0-16.F1, F2]. T0-16's verdict: an industry standard for MCP, a standard with caveats for A2A, not yet a standard for AG-UI [A · T0-16 L115].
-2. **Do not chase a protocol title.** T0-16's posting search found no "Agent Gateway Engineer" title in volume; the work is posted under platform, API-management, identity and security titles [C · T0-16.F10]. MCP is named in 0.068%–0.7% of all postings (API Evangelist, Skillenai) and in 2.7%–9% of engineering- or AI-focused samples (landed.jobs, S09, S11), depending on the universe [C · T0-16.F9; B and B/C · T0-03 L214].
+1. **Learn MCP first.** It has a neutral home and a dated specification: the Agentic AI Foundation (AAIF), a Linux Foundation fund, grew from 8 Platinum founders (2025-12-09) to 146 members (2026-02-24) to 247 members (2026-08) [A · T0-16.F1; T0-69 L53], and the revision in force is 2026-07-28 [A · T0-16.F2]. Official MCP Registry supply grew from ~9,650 unique servers (2026-05) to 30,375 (2026-09-10), though 62% carry only one version and ~36% went 3+ months without an update [C · T0-69 L105–L112]. T0-16's verdict still holds: an industry standard for MCP (specification still shedding features), a standard with caveats for A2A (v1.0 shipped 2026-03-12; >150 orgs [A/C · T0-16.F3; T0-69 L114]), not yet a standard for AG-UI [A · T0-16 L115].
+2. **Do not chase a protocol title.** T0-16's posting search found no "Agent Gateway Engineer" title in volume; the work is posted under platform, API-management, identity and security titles [C · T0-16.F10]. MCP is named in 0.068%–0.7% of all postings (API Evangelist, Skillenai) and in 2.7%–9% of engineering- or AI-focused samples (landed.jobs, S09, S11), depending on the universe [C · T0-16.F9; B and B/C · T0-03 L214]; on Skillenai's 2026-11-05 AI Enablement Engineer window (n=42), MCP stood at 19.0% [B · T0-62 L259–L281]. No two-date employer-demand trend exists yet for MCP [T0-69 L53].
 3. **Match depth to role.** Awareness for most AI roles; build (client and server) for agentic, enablement and AI engineers whose postings name MCP; operate (gateway, identity, policy, audit) for platform and security engineers [D, from the skills-ontology tiers and the postings sampled in T0-16 §9.3, which are C].
 4. **Keep frameworks and evaluation first for application roles.** In Skillenai's Agentic AI Engineer postings, LangGraph appears in 35.8% and MCP in 13.8% [C · T0-16.F10], and frameworks already wrap MCP through adapters [B/C · T0-16.F11]. MCP adds to that stack; it does not replace it.
 5. **Security is the differentiator at every depth.** In a 2025 scan of about 5,200 open-source MCP servers, 53% relied on static secrets [B · T0-16.F7]; the verified 2026 CVEs cluster in URL and path handling [A/B · T0-16.F8]; security was the top adoption obstacle (64%) in Stacklok's vendor-run survey [B/C · T0-16.F5].

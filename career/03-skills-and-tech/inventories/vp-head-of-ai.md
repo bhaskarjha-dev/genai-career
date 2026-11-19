@@ -4,8 +4,8 @@ title: "VP / Head of AI / CAIO: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill a VP / Head of AI / CAIO needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [vp-head-of-ai]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # VP / Head of AI / CAIO: Complete Skill Inventory
 
-> **GenAI target rank:** L2–L3 · **Resume variant:** L2 (Leadership: VP / Head of AI / CAIO) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** L2–L3 · **Resume variant:** L2 (Leadership: VP / Head of AI / CAIO) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile: vp-head-of-ai](../../02-roles/role-catalog.md#profile-vp-head-of-ai) · [role profile: chief-ai-officer](../../02-roles/role-catalog.md#profile-chief-ai-officer) · [role hub](../../02-roles/hubs/vp-head-of-ai.md) · [role hub](../../02-roles/hubs/chief-ai-officer.md) · [narrative skill map](../role-skill-maps.md#skills-leadership) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-vp-head-of-ai) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
 **41 skills:** Must 4 · Important 14 · Should 17 · Optional 6. **Evidence:** JD 2 · S 9 · P 30 (73% practice-curated). **Non-technical:** 25.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 

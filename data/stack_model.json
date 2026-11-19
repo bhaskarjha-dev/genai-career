@@ -85,6 +85,6 @@
   {"id": "red-teaming", "name": "Red-teaming and adversarial testing", "where": "assurance", "home": ["ai-security-engineer"], "skills": ["red_teaming"], "catalog": "Alias of AI Security Engineer (AI Red Teamer) in the A–Z index"},
   {"id": "agent-security", "name": "Agent and tool security", "where": "assurance", "home": ["ai-security-engineer"], "skills": ["prompt_injection", "agent_abuse", "owasp_agentic"], "catalog": "No title of its own in the catalog"},
   {"id": "content-provenance", "name": "Content provenance", "where": "assurance", "home": ["responsible-ai-engineer", "ai-security-engineer"], "skills": ["c2pa", "provenance"], "catalog": "No title of its own in the catalog"},
-  {"id": "robot-learning", "name": "Robot learning and VLA models", "where": "L2", "home": ["physical-ai-engineer"], "skills": ["vla_models", "robot_learning", "simulation"], "catalog": "Covered by the canonical Physical AI / Robotics AI Engineer"}
+  {"id": "robot-learning", "name": "Robot learning and VLA models", "where": "L2", "home": ["physical-ai-engineer"], "skills": ["robot_learning", "simulation"], "catalog": "Covered by the canonical Physical AI / Robotics AI Engineer"}
  ]
 }

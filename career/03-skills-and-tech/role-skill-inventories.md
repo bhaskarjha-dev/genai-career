@@ -83,29 +83,29 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 <!-- BEGIN GENERATED: scripts/build_skills.py (role index) -->
 | Rank | Role | Variant | Skills | Must | Important | Should | Optional | Avoid | Evidenced (JD · S09 · S) | Practice-curated | Non-technical | Inventory |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
-| #1 | AI Engineer | A1 | 148 | 4 | 20 | 59 | 63 | 2 | 14 · 7 · 88 | 39 (26%) | 12 | [open](inventories/ai-engineer.md) |
+| #1 | AI Engineer | A1 | 149 | 4 | 20 | 60 | 64 | 1 | 14 · 7 · 89 | 39 (26%) | 12 | [open](inventories/ai-engineer.md) |
 | #2 | Machine Learning Engineer (GenAI/LLM track) | B1 | 84 | 4 | 18 | 28 | 34 | 0 | 11 · 2 · 24 | 47 (56%) | 9 | [open](inventories/ml-engineer.md) |
-| #3 | Research Engineer / Member of Technical Staff | C1 | 59 | 6 | 14 | 18 | 21 | 0 | 6 · 1 · 26 | 26 (44%) | 11 | [open](inventories/research-engineer.md) |
-| #4 | Forward Deployed Engineer (AI) | A2 | 57 | 5 | 15 | 17 | 20 | 0 | 2 · 0 · 28 | 27 (47%) | 18 | [open](inventories/forward-deployed-engineer.md) |
-| #5 | Applied Scientist (GenAI/LLM teams) | B2 | 64 | 6 | 17 | 25 | 16 | 0 | 13 · 1 · 15 | 35 (55%) | 13 | [open](inventories/applied-scientist.md) |
-| #6 | Applied AI Engineer | A2 | 46 | 4 | 16 | 14 | 12 | 0 | 11 · 0 · 10 | 25 (54%) | 12 | [open](inventories/applied-ai-engineer.md) |
-| #7 | AI Infrastructure / GPU Platform Engineer | D2 | 59 | 7 | 17 | 22 | 13 | 0 | 12 · 3 · 26 | 18 (31%) | 7 | [open](inventories/ai-infrastructure-engineer.md) |
-| #8 | Research Scientist (LLM research) | C2 | 54 | 6 | 16 | 16 | 16 | 0 | 10 · 0 · 6 | 38 (70%) | 14 | [open](inventories/research-scientist.md) |
-| #9 | Inference / LLM Serving Engineer | D1 | 71 | 7 | 17 | 26 | 20 | 1 | 0 · 6 · 49 | 16 (23%) | 8 | [open](inventories/inference-engineer.md) |
-| #10 | Agentic AI Engineer | A1 | 73 | 5 | 18 | 31 | 17 | 2 | 4 · 1 · 55 | 13 (18%) | 10 | [open](inventories/agentic-ai-engineer.md) |
-| #11 | ML Platform / MLOps (LLMOps) Engineer | D2 | 77 | 7 | 15 | 34 | 21 | 0 | 12 · 5 · 34 | 26 (34%) | 6 | [open](inventories/ml-platform-engineer.md) |
-| #12 | AI Product Manager | E1 | 47 | 4 | 16 | 20 | 7 | 0 | 9 · 0 · 15 | 23 (49%) | 24 | [open](inventories/ai-product-manager.md) |
-| #13 | AI Evaluation Engineer | A1 | 65 | 5 | 19 | 28 | 12 | 1 | 5 · 3 · 42 | 15 (23%) | 10 | [open](inventories/ai-evaluation-engineer.md) |
-| #14 | AI / GenAI Solutions Architect | A2 | 56 | 5 | 17 | 25 | 9 | 0 | 12 · 0 · 12 | 32 (57%) | 20 | [open](inventories/ai-solutions-architect.md) |
-| #15 | GPU Kernel / ML Compiler Engineer | D1 | 45 | 6 | 15 | 11 | 13 | 0 | 0 · 2 · 30 | 13 (29%) | 7 | [open](inventories/gpu-kernel-engineer.md) |
-| #16 | AI Security Engineer / AI Red Teamer | D3 | 49 | 7 | 14 | 19 | 9 | 0 | 8 · 0 · 26 | 15 (31%) | 7 | [open](inventories/ai-security-engineer.md) |
-| #17 | AI Governance Programme Lead / Manager | E2 | 58 | 6 | 21 | 19 | 12 | 0 | 0 · 0 · 38 | 20 (34%) | 16 | [open](inventories/ai-governance-lead.md) |
-| #18 | Physical AI / Robotics AI Engineer | B3 | 42 | 6 | 14 | 18 | 4 | 0 | 1 · 0 · 4 | 37 (88%) | 8 | [open](inventories/physical-ai-engineer.md) |
+| #3 | Applied Scientist (GenAI/LLM teams) | B2 | 64 | 7 | 16 | 25 | 16 | 0 | 13 · 1 · 15 | 35 (55%) | 13 | [open](inventories/applied-scientist.md) |
+| #4 | Forward Deployed Engineer (AI) | A2 | 58 | 5 | 15 | 18 | 20 | 0 | 2 · 0 · 29 | 27 (47%) | 18 | [open](inventories/forward-deployed-engineer.md) |
+| #5 | Research Engineer / Member of Technical Staff | C1 | 59 | 6 | 14 | 18 | 21 | 0 | 6 · 1 · 26 | 26 (44%) | 11 | [open](inventories/research-engineer.md) |
+| #6 | Applied AI Engineer | A2 | 46 | 6 | 14 | 14 | 12 | 0 | 11 · 0 · 11 | 24 (52%) | 12 | [open](inventories/applied-ai-engineer.md) |
+| #7 | AI Infrastructure / GPU Platform Engineer | D2 | 59 | 8 | 17 | 21 | 13 | 0 | 12 · 3 · 27 | 17 (29%) | 7 | [open](inventories/ai-infrastructure-engineer.md) |
+| #8 | Research Scientist (LLM research) | C2 | 55 | 7 | 16 | 15 | 17 | 0 | 10 · 0 · 8 | 37 (67%) | 14 | [open](inventories/research-scientist.md) |
+| #9 | ML Platform / MLOps (LLMOps) Engineer | D2 | 77 | 8 | 14 | 34 | 21 | 0 | 12 · 5 · 34 | 26 (34%) | 6 | [open](inventories/ml-platform-engineer.md) |
+| #10 | AI Security Engineer / AI Red Teamer | D3 | 49 | 9 | 12 | 18 | 10 | 0 | 7 · 0 · 28 | 14 (29%) | 7 | [open](inventories/ai-security-engineer.md) |
+| #11 | Inference / LLM Serving Engineer | D1 | 71 | 9 | 15 | 26 | 20 | 1 | 0 · 5 · 50 | 16 (23%) | 8 | [open](inventories/inference-engineer.md) |
+| #12 | AI / GenAI Solutions Architect | A2 | 58 | 5 | 19 | 25 | 9 | 0 | 12 · 0 · 17 | 29 (50%) | 20 | [open](inventories/ai-solutions-architect.md) |
+| #13 | AI Product Manager | E1 | 47 | 5 | 14 | 20 | 8 | 0 | 9 · 0 · 17 | 21 (45%) | 24 | [open](inventories/ai-product-manager.md) |
+| #14 | Agentic AI Engineer | A1 | 73 | 5 | 18 | 32 | 17 | 1 | 4 · 1 · 55 | 13 (18%) | 10 | [open](inventories/agentic-ai-engineer.md) |
+| #15 | AI Evaluation Engineer | A1 | 65 | 7 | 17 | 28 | 13 | 0 | 5 · 3 · 42 | 15 (23%) | 10 | [open](inventories/ai-evaluation-engineer.md) |
+| #16 | GPU Kernel / ML Compiler Engineer | D1 | 45 | 7 | 14 | 11 | 13 | 0 | 0 · 1 · 31 | 13 (29%) | 7 | [open](inventories/gpu-kernel-engineer.md) |
+| #17 | Physical AI / Robotics AI Engineer | B3 | 40 | 7 | 13 | 16 | 4 | 0 | 1 · 0 · 7 | 32 (80%) | 8 | [open](inventories/physical-ai-engineer.md) |
+| #18 | AI Governance Programme Lead / Manager | E2 | 58 | 6 | 20 | 19 | 13 | 0 | 0 · 0 · 38 | 20 (34%) | 16 | [open](inventories/ai-governance-lead.md) |
 | #19 | Frontier AI Safety / Alignment Researcher | C2 | 41 | 4 | 13 | 20 | 4 | 0 | 5 · 0 · 12 | 24 (59%) | 11 | [open](inventories/ai-safety-researcher.md) |
-| #20 | AI Enablement Engineer | A1 | 51 | 4 | 14 | 22 | 11 | 0 | 2 · 0 · 16 | 33 (65%) | 13 | [open](inventories/ai-enablement-engineer.md) |
-| #21 | AI Product Engineer (AI Frontend) | A1 | 53 | 5 | 17 | 17 | 14 | 0 | 8 · 0 · 20 | 25 (47%) | 8 | [open](inventories/ai-product-engineer.md) |
-| #22 | AI Risk, Audit & Compliance Specialist | E2 | 47 | 5 | 18 | 14 | 10 | 0 | 0 · 0 · 30 | 17 (36%) | 9 | [open](inventories/ai-risk-assurance-specialist.md) |
-| #23 | Responsible AI / AI Governance Engineer | E2 | 56 | 3 | 20 | 26 | 7 | 0 | 0 · 0 · 45 | 11 (20%) | 9 | [open](inventories/responsible-ai-engineer.md) |
+| #20 | AI Product Engineer (AI Frontend) | A1 | 54 | 6 | 17 | 17 | 14 | 0 | 8 · 0 · 21 | 25 (46%) | 8 | [open](inventories/ai-product-engineer.md) |
+| #21 | AI Risk, Audit & Compliance Specialist | E2 | 47 | 5 | 19 | 13 | 10 | 0 | 0 · 0 · 31 | 16 (34%) | 9 | [open](inventories/ai-risk-assurance-specialist.md) |
+| #22 | Responsible AI / AI Governance Engineer | E2 | 56 | 4 | 15 | 26 | 11 | 0 | 0 · 0 · 45 | 11 (20%) | 9 | [open](inventories/responsible-ai-engineer.md) |
+| #23 | AI Enablement Engineer | A1 | 55 | 3 | 16 | 24 | 12 | 0 | 0 · 0 · 26 | 29 (53%) | 13 | [open](inventories/ai-enablement-engineer.md) |
 | #24 | Domain Evaluation Specialist / AI Trainer | E3 | 42 | 4 | 7 | 19 | 12 | 0 | 0 · 0 · 14 | 28 (67%) | 16 | [open](inventories/domain-evaluation-specialist.md) |
 | L1 | AI Engineering Manager / Director | L1 | 44 | 4 | 16 | 17 | 7 | 0 | 7 · 0 · 5 | 32 (73%) | 24 | [open](inventories/ai-engineering-manager.md) |
 | L2–L3 | VP / Head of AI / CAIO | L2 | 41 | 4 | 14 | 17 | 6 | 0 | 2 · 0 · 9 | 30 (73%) | 25 | [open](inventories/vp-head-of-ai.md) |
@@ -122,7 +122,7 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 |---|---|:---:|:---:|
 | Python (production) | Programming language | 18 (95%) | 19 (100%) |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | Platform / cloud service | 7 (37%) | 12 (63%) |
-| PyTorch | Framework / SDK | 5 (26%) | 6 (32%) |
+| PyTorch | Framework / SDK | 6 (32%) | 6 (32%) |
 | C++ | Programming language | 4 (21%) | 6 (32%) |
 | Kubernetes | Infrastructure / DevOps tool | 3 (16%) | 10 (53%) |
 | Docker | Infrastructure / DevOps tool | 2 (11%) | 12 (63%) |
@@ -145,18 +145,19 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 
 | Skill | Type | Must or Important in | Listed at any tier in |
 |---|---|:---:|:---:|
-| LLM APIs & tool calling | Concept / knowledge area | 10 (53%) | 10 (53%) |
-| LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | 9 (47%) | 11 (58%) |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | 9 (47%) | 13 (68%) |
+| LLM APIs & tool calling | Concept / knowledge area | 9 (47%) | 10 (53%) |
 | ML fundamentals | Concept / knowledge area | 7 (37%) | 7 (37%) |
 | Git & CI/CD | Method / practice | 6 (32%) | 9 (47%) |
-| Agents & tool use | Concept / knowledge area | 5 (26%) | 8 (42%) |
-| OAuth/OIDC, RBAC, SSO | Concept / knowledge area | 5 (26%) | 5 (26%) |
+| Agents & tool use | Concept / knowledge area | 6 (32%) | 8 (42%) |
+| RAG | Concept / knowledge area | 4 (21%) | 9 (47%) |
 | Deep learning & transformers | Concept / knowledge area | 4 (21%) | 6 (32%) |
+| OAuth/OIDC, RBAC, SSO | Concept / knowledge area | 4 (21%) | 5 (26%) |
 | Retrieval quality (hybrid, reranking, recall@k) | Concept / knowledge area | 4 (21%) | 5 (26%) |
 | Data structures & algorithms | Concept / knowledge area | 4 (21%) | 4 (21%) |
-| Observability (OpenTelemetry traces, metrics) | Concept / knowledge area | 3 (16%) | 9 (47%) |
-| RAG | Concept / knowledge area | 3 (16%) | 9 (47%) |
+| Observability (OpenTelemetry traces, metrics) | Concept / knowledge area | 3 (16%) | 10 (53%) |
 | Eval statistics (CIs, power, pass^k) | Method / practice | 3 (16%) | 5 (26%) |
+| Prompt engineering | Method / practice | 3 (16%) | 5 (26%) |
 | Statistics (inference, hypothesis tests, regression) | Concept / knowledge area | 3 (16%) | 5 (26%) |
 | Cost & latency engineering | Concept / knowledge area | 3 (16%) | 4 (21%) |
 | Generative AI | Concept / knowledge area | 3 (16%) | 4 (21%) |
@@ -164,7 +165,6 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 | Research methods & re-implementation | Method / practice | 3 (16%) | 4 (21%) |
 | Experiment design & A/B testing | Method / practice | 3 (16%) | 3 (16%) |
 | LLM security (prompt injection, OWASP) | Concept / knowledge area | 3 (16%) | 3 (16%) |
-| Prompt & context design | Concept / knowledge area | 3 (16%) | 3 (16%) |
 
 **Non-technical skills most often at Must or Important across all 24 individual-contributor roles:**
 
@@ -205,29 +205,66 @@ Where a measured share of postings decided a skill's tier, the decision and its 
 | AI Engineer | Git & CI/CD | I | CI/CD is named in 34.4% of AI Engineer postings (JobsPipe) | assignment |
 | AI Engineer | ML fundamentals | I | "machine learning" is named in 39.8% of AI Engineer postings (JobsPipe) | assignment |
 | AI Engineer | Embeddings & vector search | I | vector databases are named in 32.6% of AI Engineer postings (JobsPipe) | assignment |
+| AI Engineer | Coding agents & AI-assisted engineering | S | Cross-dossier corroborated AI coding-assistant expectation | verification |
+| AI Engineer | RAGAS | O | Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai | verification |
 | Machine Learning Engineer (GenAI/LLM track) | C++ | I | C++ is named in 23.3% of ML Engineer postings (JobsPipe) | assignment |
 | Machine Learning Engineer (GenAI/LLM track) | Data structures & algorithms | I | data structures are named in 33.7% of ML Engineer postings (JobsPipe) | assignment |
 | Machine Learning Engineer (GenAI/LLM track) | Experiment design & A/B testing | I | A/B testing is named in 23.5% of ML Engineer postings (JobsPipe) | assignment |
 | Machine Learning Engineer (GenAI/LLM track) | TensorFlow / JAX (choose 1: TensorFlow \| JAX) | I | TensorFlow is named in 31.8% of ML Engineer postings (JobsPipe) | assignment |
 | Applied Scientist (GenAI/LLM teams) | SQL | I | SQL is named in 63.8% of Data Scientist postings (feeder title) | assignment |
+| Applied Scientist (GenAI/LLM teams) | Research-to-production | M | 75%–78% of JDs corroborated by Amazon Science official guidance | verification |
+| Forward Deployed Engineer (AI) | Coding agents & AI-assisted engineering | S | Cross-dossier corroborated AI coding-assistant expectation | verification |
 | Applied AI Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS and Azure are each named in 35.1% of AI Engineer postings, the closest measured title | assignment |
 | Applied AI Engineer | Git & CI/CD | I | CI/CD is named in 34.4% of AI Engineer postings, the closest measured title | assignment |
 | Applied AI Engineer | Embeddings & vector search | I | vector databases are named in 32.6% of AI Engineer postings, the closest measured title | assignment |
+| Applied AI Engineer | Customer scoping & demos | M | 9/10 full-read JDs in T0-53 | verification |
+| Applied AI Engineer | LLM evaluation (golden sets, calibrated judges, CI gates) | M | 8/10 full-read JDs in T0-53 | verification |
 | AI Infrastructure / GPU Platform Engineer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 52.9% of DevOps Engineer postings (feeder title) | assignment |
 | AI Infrastructure / GPU Platform Engineer | Docker | I | Docker is named in 53.4% of DevOps Engineer postings (feeder title) | assignment |
 | AI Infrastructure / GPU Platform Engineer | Git & CI/CD | I | CI/CD is named in 81.2% of DevOps Engineer postings (feeder title) | assignment |
+| AI Infrastructure / GPU Platform Engineer | GPU fleet ops & scheduling | M | 94.3% all / 83.3% full-read in T0-54 | verification |
+| AI Infrastructure / GPU Platform Engineer | Slurm | I | 42.9% all / 62.5% cluster variants in T0-54 | verification |
 | Research Scientist (LLM research) | Data structures & algorithms | I | data structures are named in 26.0% of all-field Research Scientist postings (JobsPipe) | assignment |
+| Research Scientist (LLM research) | JAX | I | 41.7% (5/12) in T0-55; required at Google DeepMind and xAI | verification |
+| Research Scientist (LLM research) | LLM APIs & tool calling | O | JobsPipe 24.4% 'LLM' remapped to llm_fundamentals; only 1/12 RS JDs mentions API integration | verification |
+| Research Scientist (LLM research) | Novel research & publications | M | 91.7% (11/12) of RS JDs plus NBER WP 34964 corroboration | verification |
 | ML Platform / MLOps (LLMOps) Engineer | Linux | I | Linux is named in 45.1% of DevOps Engineer postings (feeder title) | assignment |
-| AI Product Manager | Agents & tool use | S | "agentic AI" is named in 13.6% of Product Manager postings (feeder title) | assignment |
-| AI Product Manager | GRC & risk assessment | I | "compliance" is named in 26.1% of Product Manager postings (feeder title) | assignment |
-| AI Product Manager | Leadership & mentoring | I | leadership is named in 40.1% of Product Manager postings (feeder title) | assignment |
-| AI / GenAI Solutions Architect | Python (production) | I | Python is named in 23.6% of Solutions Architect postings (JobsPipe) | assignment |
+| ML Platform / MLOps (LLMOps) Engineer | MLOps lifecycle (model & prompt CI/CD) | M | 67.7% of postings in T0-58 | verification |
 | AI Security Engineer / AI Red Teamer | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 38.8% of Security Engineer postings (feeder title) | assignment |
 | AI Security Engineer / AI Red Teamer | GRC & risk assessment | I | "compliance" is named in 39.4% of Security Engineer postings (feeder title) | assignment |
 | AI Security Engineer / AI Red Teamer | MCP (Model Context Protocol) | S | MCP is named in 13.0% of AI Security Specialist postings (T0-16, small sample) | assignment |
+| AI Security Engineer / AI Red Teamer | GRC & risk assessment | O | 0/18 AI security JDs; SANS tracks AI GRC separately (~430 postings) | verification |
+| AI Security Engineer / AI Red Teamer | Prompt-injection attack & defence | M | Core AI security threat model in T0-60 | verification |
+| AI Security Engineer / AI Red Teamer | Red-teaming | M | Core AI security requirement across T0-60 postings | verification |
+| Inference / LLM Serving Engineer | Continuous batching & KV cache | M | Top serving optimisation technique (49%) in T0-56 | verification |
+| Inference / LLM Serving Engineer | vLLM | M | 76% overall and 100% of engine-naming postings in T0-56 | verification |
+| AI / GenAI Solutions Architect | Python (production) | I | Python is named in 23.6% of Solutions Architect postings (JobsPipe) | assignment |
+| AI / GenAI Solutions Architect | Amazon Web Services (AWS) | I | Generic cloud stays Must; T0-62 AI SA postings split evenly across AWS/Azure/GCP | verification |
+| AI / GenAI Solutions Architect | Pre-sales | M | 95.7% customer-facing technical gate and 60.9% pre-sales in T0-62 | verification |
+| AI Product Manager | Agents & tool use | S | "agentic AI" is named in 13.6% of Product Manager postings (feeder title) | assignment |
+| AI Product Manager | GRC & risk assessment | I | "compliance" is named in 26.1% of Product Manager postings (feeder title) | assignment |
+| AI Product Manager | Leadership & mentoring | I | leadership is named in 40.1% of Product Manager postings (feeder title) | assignment |
+| AI Product Manager | Rubrics & inter-rater agreement | M | 5/9 opened AI PM postings in T0-59 | verification |
+| AI Product Manager | Python/SQL (notebook level) | S | 10% overall (2/9 opened) in T0-59 | verification |
+| Agentic AI Engineer | Coding agents & AI-assisted engineering | S | Cross-dossier corroborated AI coding-assistant expectation | verification |
+| Agentic AI Engineer | RAGAS | O | Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai | verification |
+| AI Evaluation Engineer | Golden datasets & test-set curation | M | 7/13 non-lab eval postings in T0-60 | verification |
+| AI Evaluation Engineer | LLM-as-judge design & calibration | M | 8/13 non-lab eval postings in T0-60 | verification |
+| AI Evaluation Engineer | RAGAS | O | Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai | verification |
+| GPU Kernel / ML Compiler Engineer | Triton (kernel language) | M | 56.1% overall / 69% of kernel-led postings in T0-63 | verification |
+| Physical AI / Robotics AI Engineer | PyTorch | M | 67% of full-text Physical AI JDs in T0-64 | verification |
+| Physical AI / Robotics AI Engineer | Robot learning & VLA models | M | Merged vla_models into robot_learning (ROADMAP P2); 79% all / 92% full-text in T0-64 | verification |
+| AI Governance Programme Lead / Manager | Colorado ADMT law (SB 26-189; replaced SB 24-205) | O | SB 24-205 repealed May 2026 and replaced by narrower SB 26-189 (0/11 JDs) | verification |
 | AI Product Engineer (AI Frontend) | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 41.3% of Full-Stack Engineer postings (feeder title) | assignment |
 | AI Product Engineer (AI Frontend) | Git & CI/CD | I | CI/CD is named in 37.8% of Full-Stack Engineer postings (feeder title) | assignment |
 | AI Product Engineer (AI Frontend) | Python (production) | I | Python is named in 41.8% of Full-Stack Engineer postings (feeder title) | assignment |
+| AI Product Engineer (AI Frontend) | Product sense | M | 50.0% of T0-62 postings and core differentiator from pure frontend | verification |
+| AI Risk, Audit & Compliance Specialist | Third-party and vendor AI risk | I | Named in 3/8 (38%) T0-61 assurance postings | verification |
+| Responsible AI / AI Governance Engineer | LLM evaluation (golden sets, calibrated judges, CI gates) | M | 75% (6/8) of T0-61 postings | verification |
+| AI Enablement Engineer | Change management & adoption | M | Core enablement requirement in T0-62 (46.7%) | verification |
+| AI Enablement Engineer | LLM APIs & tool calling | I | Removed inherited AI Engineer JobsPipe share; T0-62 + Skillenai (n=42) show 16.7%–26.7% | verification |
+| AI Enablement Engineer | Python (production) | I | Removed inherited AI Engineer JobsPipe share; T0-62 + Skillenai (n=42) show 26.7%–33.3% | verification |
+| AI Enablement Engineer | Teaching & workshop delivery | M | Top required skill in T0-62 enablement postings (60.0%) | verification |
 | AI Engineering Manager / Director | GRC & risk assessment | I | "compliance" is named in 30.9% of Engineering Manager postings (feeder title) | assignment |
 <!-- END GENERATED -->
 
@@ -237,7 +274,7 @@ Where a measured share of postings decided a skill's tier, the decision and its 
 Every `[JD x%]` tag in the inventories is one of these shares. A tag marked (feeder), (adjacent) or (closest) borrows the share of the related title named in its evidence table. `scripts/build_skills.py` checks every JD share in the ontology against this table on each run.
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (posting evidence) -->
-**JobsPipe, retrieved 2026-11-02** (Grade B). Platform aggregate of live postings: for each posting title, the skills most often named and their share of postings (per cent). Grade B under decision D-018 (platform data). Recorded on 2026-11-02 in career/03-skills-and-tech/role-skill-maps.md §2.1 and moved to this data file unchanged on 2026-11-07. Sample sizes were not recorded. Expiry: EGP-1.0 class V3 (skill-demand shares): 180 days from retrieval, so re-verify by 2027-05-01. Data: [data/posting_skill_shares.json](../../data/posting_skill_shares.json).
+**JobsPipe, retrieved 2026-11-02** (Grade B). Platform aggregate of live postings: for each posting title, the skills most often named and their share of postings (per cent). Grade B under decision D-018 (platform data). Recorded on 2026-11-02 in career/03-skills-and-tech/role-skill-maps.md §2.1 and moved to this data file unchanged on 2026-11-07. Sample sizes were not recorded. Re-checked in T0-69 on 2026-11-14: JobsPipe's AI Engineer skill-share page remained unchanged at underlying count date 2026-09-10 (do not treat 2026-09-10 and 2026-11-02 as two distinct dates; wait for JobsPipe's next refresh before adding a second snapshot). Expiry: EGP-1.0 class V3 (skill-demand shares): 180 days from retrieval, so re-verify by 2027-05-01. Data: [data/posting_skill_shares.json](../../data/posting_skill_shares.json).
 
 | Posting title | Skills named most often (share of postings, %) | Notes |
 |---|---|---|
@@ -260,7 +297,7 @@ Every `[JD x%]` tag in the inventories is one of these shares. A tag marked (fee
 ## 4. Verification
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (verification) -->
-- **Links:** 1529 role links across 26 roles; evidence JD 154 · S09 31 · S 679 · P 665 (computed by scripts/build_skills.py)
+- **Links:** 1537 role links across 26 roles; evidence JD 151 · S09 29 · S 711 · P 646 (computed by scripts/build_skills.py)
 - **Date:** 2026-11-04
 - **Posting shares:** all 154 JD shares match their title's row in data/posting_skill_shares.json (scripts/build_skills.py checks this on every run); all 31 S09 shares matched to the cited T0-03 §6.3 line
 - **Session citations:** all 679 S citations point at an existing session line that names the item; candidate lines were scored for role relevance (role keyword on or near the line, terms from the note, table or bullet rows), weak knowledge-skill citations at Should or Optional were downgraded to P (11), and the remaining low-relevance lines plus a random sample of 40 were read and 40 were replaced with exact lines or downgraded

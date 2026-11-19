@@ -4,8 +4,8 @@ title: "Applied AI Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an Applied AI Engineer needs: 46 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [applied-ai-engineer]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Applied AI Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #6 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #6 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-ai-engineer) · [role hub](../../02-roles/hubs/applied-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-applied-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**46 skills:** Must 4 · Important 16 · Should 14 · Optional 12. **Evidence:** JD 11 · S 10 · P 25 (54% practice-curated). **Non-technical:** 12.
+**46 skills:** Must 6 · Important 14 · Should 14 · Optional 12. **Evidence:** JD 11 · S 11 · P 24 (52% practice-curated). **Non-technical:** 12.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -28,7 +28,7 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · RAG [JD 54.0% (closest)] · Agents & tool use [JD 59.3% (closest)]<br>**Important:** LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Guardrails [S · T0-01] · Prompt & context design [P] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-01] · ML fundamentals [JD 39.8% (closest)] · Generative AI [JD 37.6% (closest)] · Embeddings & vector search [JD 32.6% (closest)]<br>**Should:** APIs & integrations [P] · Observability (OpenTelemetry traces, metrics) [P] · Cost & latency engineering [P]<br>**Optional:** Fine-tuning (SFT, LoRA) [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · RAG [JD 54.0% (closest)] · Agents & tool use [JD 59.3% (closest)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-53]<br>**Important:** Guardrails [S · T0-01] · Prompt & context design [P] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-01] · ML fundamentals [JD 39.8% (closest)] · Generative AI [JD 37.6% (closest)] · Embeddings & vector search [JD 32.6% (closest)]<br>**Should:** APIs & integrations [P] · Observability (OpenTelemetry traces, metrics) [P] · Cost & latency engineering [P]<br>**Optional:** Fine-tuning (SFT, LoRA) [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 34.4% (closest)] · Prompt engineering [JD 31.1% (closest)] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (closest)]<br>**Should:** TypeScript / JavaScript [P] |
 | Technical: concrete | **Framework / SDK** | **Should:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] · FastAPI [P] |
@@ -42,7 +42,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] · EU AI Act [P] |
 | Non-technical | **Communication & collaboration** | **Important:** Technical writing [P]<br>**Should:** Customer-facing communication [P] · Presenting & live demos [P] · Communication (written & verbal) [JD 44.2% (feeder)] · Stakeholder communication [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
-| Non-technical | **Business & product** | **Important:** Customer scoping & demos [S · T0-01] |
+| Non-technical | **Business & product** | **Must:** Customer scoping & demos [S · T0-53] |
 | Non-technical | **Leadership & people** | **Optional:** Influence without authority [P] |
 | Non-technical | **Domain knowledge** | **Optional:** Domain expertise [P] |
 
@@ -58,6 +58,7 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): services channels [T0-11]
+- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
 
 ## 5. Prerequisites and proof
 
@@ -81,8 +82,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | LLM APIs & tool calling | Concept / knowledge area | M | 3 | | |
 | RAG | Concept / knowledge area | M | 3 | | |
 | Agents & tool use | Concept / knowledge area | M | 3 | | |
-| Customer scoping & demos | Business & product | I | 2 | | |
-| LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | I | 2 | | |
+| Customer scoping & demos | Business & product | M | 3 | | |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | M | 3 | | |
 | Guardrails | Concept / knowledge area | I | 2 | | |
 | Prompt & context design | Concept / knowledge area | I | 2 | | |
 | Technical writing | Communication & collaboration | I | 2 | | |
@@ -106,8 +107,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | LLM APIs & tool calling | M | JD (B) 76.7% | JobsPipe: AI Engineer (closest measured title) | — |
 | RAG | M | JD (B) 54.0% | JobsPipe: AI Engineer (closest measured title) | — |
 | Agents & tool use | M | JD (B) 59.3% | JobsPipe: AI Engineer (closest measured title) | — |
-| Customer scoping & demos | I | S (C) | T0-01:L147 | customer delivery of LLM applications (T0-01 D3) |
-| LLM evaluation (golden sets, calibrated judges, CI gates) | I | P (D) | — | evals defined per customer use case |
+| Customer scoping & demos | M | S (C) | T0-53:L193, T0-53:L361 | 9/10 (90%) full-read Applied AI JDs |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | M | S (C) | T0-53:L194, T0-53:L361 | 8/10 (80%) full-read Applied AI JDs |
 | Guardrails | I | S (C) | T0-01:L147 | safety in regulated settings (Anthropic Beneficial Deployments) |
 | Prompt & context design | I | P (D) | — | model-behaviour knowledge and prompting at scale |
 | Technical writing | I | P (D) | — | partner enablement and technical writing |

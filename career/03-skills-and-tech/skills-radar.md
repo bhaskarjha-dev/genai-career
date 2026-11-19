@@ -4,10 +4,10 @@ title: "GenAI Skills Radar: Learn First, Differentiate, Specialise, Replace"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "What to learn first, what sets each résumé family apart, which skills only one or two roles demand, and what to stop investing in, computed from the skills ontology for the 24 individual-contributor roles."
-sources: [T0-03, T0-06, T0-14, T0-15, T0-16, T1-03]
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "What to learn first, what sets each résumé family apart, which skills only one or two roles demand, what to stop investing in, and multi-signal adoption momentum, built from the skills ontology for the 24 IC roles."
+sources: [T0-03, T0-06, T0-14, T0-15, T0-16, T0-69, T0-71, T1-03]
 tags: [skills, learning, radar]
 generated_by: scripts/build_skills_views.py
 ---
@@ -16,30 +16,32 @@ generated_by: scripts/build_skills_views.py
 
 # GenAI Skills Radar: Learn First, Differentiate, Specialise, Replace
 
-> Five rings computed from the skill tiers of the 24 individual-contributor roles: the skills to learn first, the skills that set each résumé family apart, the skills only one or two roles demand, what to stop investing in, and what to watch.
+> Five rings computed from the skill tiers of the 24 individual-contributor roles, plus a sixth multi-signal momentum view (adoption, telemetry, transaction and governance signals — not two-date job-posting demand).
 
 ## How to read this radar
 
-- **Every ring is computed** (Grade M) from the tiers in [data/skills_ontology.json](../../data/skills_ontology.json): Must, Important, Should, Optional and Avoid. A computed ring is only as strong as the links behind it, so each table shows the strongest evidence for the skill: a share of live postings [JD, Grade B], a share of the S09 corpus [S09, Grade B], a session citation [A–C] or practice curation [P, Grade D]. A skill backed only by [P] is a hypothesis to check against 10–20 live postings.
-- **There is no "surging" ring.** The corpus has no dated series of skill demand, so nothing here measures momentum. Job-description mining is on the [roadmap](../../ROADMAP.md).
+- **Rings 1–5 are computed** (Grade M) from the tiers in [data/skills_ontology.json](../../data/skills_ontology.json): Must, Important, Should, Optional and Avoid. A computed ring is only as strong as the links behind it, so each table shows the strongest evidence for the skill: a share of live postings [JD, Grade B], a share of the S09 corpus [S09, Grade B], a session citation [A–C] or practice curation [P, Grade D]. A skill backed only by [P] is a hypothesis to check against 10–20 live postings.
+- **No two-date job-posting demand trend exists yet.** JobsPipe's AI Engineer skill-share page remained frozen at count date 2026-09-10 when re-checked on 2026-11-14 ([T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md)). Ring 6 (**Multi-signal rising**) therefore reports only items backed by two or more independent adoption, telemetry, transaction or governance signal types across two or more dates — never employer-posting-demand trends.
 - **Leadership tracks are left out**: their inventories rest mostly on practice curation.
 - **Résumé families** are the five skill-based groupings behind the résumé variants (A–E); see the [résumé skills matrix](../06-job-search/resume-skills-matrix.md).
 
 ## At a glance
 
-| Ring | Rule (computed from the tiers) | Skills | What to do |
+| Ring | Rule | Skills | What to do |
 |---|---|:---:|---|
-| **1. Core** | Must or Important in at least 6 of the 24 roles | 11 | Learn first: they transfer across families |
+| **1. Core** | Must or Important in at least 6 of the 24 roles | 13 | Learn first: they transfer across families |
 | **2. Family differentiators** | Must or Important in at least half of a family's roles, and at least 25 percentage points more often than in the other roles | 30 | Choose a family, then learn these |
-| **3. Role-defining** | Must in only one or two roles | 72 across 21 roles | Learn when you commit to the role |
-| **4. Replace** | Devalued in the research, or archived, dormant or retired | 10 | Stop investing; learn the replacement |
-| **5. Watch** | Acquired, renamed, beta or in development, or carrying a security or licence notice | 8 | Use with care; re-check by 2027-01-21 |
+| **3. Role-defining** | Must in only one or two roles | 86 across 22 roles | Learn when you commit to the role |
+| **4. Replace** | Devalued in the research, or archived, dormant or retired | 11 | Stop investing; learn the replacement |
+| **5. Watch** | Acquired, renamed, beta, announced or carrying a security or licence notice | 9 | Use with care; re-check by 2027-02-17 |
+| **6. Multi-signal rising** | >=2 independent adoption, telemetry, transaction or governance signal types across >=2 dates (not JD-share trends) | 5 | Track closely; check COI and specification churn before over-investing |
 
 ```mermaid
 flowchart LR
   core["1. Core: learn first"] --> fam["2. Family differentiators"] --> role["3. Role-defining skills"]
   replace["4. Replace: stop investing"] -.-> core
   watch["5. Watch: use with care"] -.-> fam
+  mom["6. Multi-signal rising (adoption/telemetry)"] -.-> fam
 ```
 
 ## 1. Core: learn first
@@ -50,11 +52,13 @@ Skills at Must or Important in at least 6 of the 24 roles, most widely required 
 
 | Skill | Type | Must in | Important in | Families | Strongest evidence |
 |---|---|:---:|:---:|---|---|
-| **Python (production)** | Programming language | 17 | 2 | ABCDE | JD 78.4% of AI Engineer postings [B] |
-| **LLM APIs & tool calling** | Concept / knowledge area | 7 | 3 | ABC | JD 76.7% of AI Engineer postings [B] |
-| **LLM evaluation (golden sets, calibrated judges, CI gates)** | Concept / knowledge area | 1 | 9 | ABCE | S09 19.0% [B] |
+| **Python (production)** | Programming language | 16 | 3 | ABCDE | JD 78.4% of AI Engineer postings [B] |
+| **LLM evaluation (golden sets, calibrated judges, CI gates)** | Concept / knowledge area | 3 | 7 | ABCE | S09 19.0% [B] |
+| **LLM APIs & tool calling** | Concept / knowledge area | 6 | 3 | AB | JD 76.7% of AI Engineer postings [B] |
 | **ML fundamentals** | Concept / knowledge area | 6 | 2 | ABCE | JD 98.6% of Machine Learning Engineer postings [B] |
 | **AWS / Azure / GCP** | Platform / cloud service | 2 | 5 | AD | JD 53.6% of Solutions Architect postings [B] |
+| **PyTorch** | Framework / SDK | 6 | 0 | BC | JD 48.2% of Machine Learning Engineer postings [B] |
+| **Agents & tool use** | Concept / knowledge area | 3 | 3 | A | JD 59.3% of AI Engineer postings [B] |
 | **Git & CI/CD** | Method / practice | 1 | 5 | AD | JD 34.4% of AI Engineer postings [B] |
 
 **Non-technical:**
@@ -75,13 +79,14 @@ Skills that a family's roles require far more often than the other roles do. "In
 
 ### A · Applied GenAI Engineering
 
-Roles (8): [AI Engineer](../02-roles/hubs/ai-engineer.md), [Forward Deployed Engineer (AI)](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md).
+Roles (8): [AI Engineer](../02-roles/hubs/ai-engineer.md), [Forward Deployed Engineer (AI)](../02-roles/hubs/forward-deployed-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md), [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md), [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md), [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md).
 
 | Skill | Type | In family | Elsewhere | Strongest evidence |
 |---|---|:---:|:---:|---|
-| **LLM APIs & tool calling** (core) | Concept / knowledge area | 7 of 8 | 3 of 16 | JD 76.7% of AI Engineer postings [B] |
-| **Agents & tool use** | Concept / knowledge area | 5 of 8 | 0 of 16 | JD 59.3% of AI Engineer postings [B] |
+| **LLM APIs & tool calling** (core) | Concept / knowledge area | 7 of 8 | 2 of 16 | JD 76.7% of AI Engineer postings [B] |
+| **Agents & tool use** (core) | Concept / knowledge area | 6 of 8 | 0 of 16 | JD 59.3% of AI Engineer postings [B] |
 | **LLM evaluation (golden sets, calibrated judges, CI gates)** (core) | Concept / knowledge area | 6 of 8 | 4 of 16 | S09 19.0% [B] |
+| **RAG** | Concept / knowledge area | 4 of 8 | 0 of 16 | JD 54.0% of AI Engineer postings [B] |
 | **Retrieval quality (hybrid, reranking, recall@k)** | Concept / knowledge area | 4 of 8 | 0 of 16 | Session citation [B] |
 | **Git & CI/CD** (core) | Method / practice | 4 of 8 | 2 of 16 | JD 34.4% of AI Engineer postings [B] |
 | **Python (production)** (core) | Programming language | 8 of 8 | 11 of 16 | JD 78.4% of AI Engineer postings [B] |
@@ -93,6 +98,7 @@ Roles (3): [Machine Learning Engineer (GenAI/LLM track)](../02-roles/hubs/ml-eng
 
 | Skill | Type | In family | Elsewhere | Strongest evidence |
 |---|---|:---:|:---:|---|
+| **PyTorch** (core) | Framework / SDK | 3 of 3 | 3 of 21 | JD 48.2% of Machine Learning Engineer postings [B] |
 | **Fine-tuning (SFT, LoRA)** | Concept / knowledge area | 2 of 3 | 0 of 21 | S09 13.0% [B] |
 | **Eval statistics (CIs, power, pass^k)** | Method / practice | 2 of 3 | 1 of 21 | Session citation [B] |
 | **Experiment design & A/B testing** | Method / practice | 2 of 3 | 1 of 21 | JD 23.5% of Machine Learning Engineer postings [B] |
@@ -100,7 +106,6 @@ Roles (3): [Machine Learning Engineer (GenAI/LLM track)](../02-roles/hubs/ml-eng
 | **Data structures & algorithms** | Concept / knowledge area | 2 of 3 | 2 of 21 | JD 33.7% of Machine Learning Engineer postings [B] |
 | **Deep learning & transformers** | Concept / knowledge area | 2 of 3 | 2 of 21 | JD 32.6% of Machine Learning Engineer postings [B] |
 | **Communication (written & verbal)** (core) | Communication & collaboration | 3 of 3 | 10 of 21 | JD 30.3% of Machine Learning Engineer postings [B] |
-| **PyTorch** | Framework / SDK | 2 of 3 | 3 of 21 | JD 48.2% of Machine Learning Engineer postings [B] |
 
 ### C · Frontier Research
 
@@ -109,7 +114,7 @@ Roles (3): [Research Engineer / Member of Technical Staff](../02-roles/hubs/rese
 | Skill | Type | In family | Elsewhere | Strongest evidence |
 |---|---|:---:|:---:|---|
 | **Research taste & problem selection** | Research craft | 3 of 3 | 0 of 21 | Session citation [C] |
-| **PyTorch** | Framework / SDK | 3 of 3 | 2 of 21 | JD 25.4% of Research Scientist postings [B] |
+| **PyTorch** (core) | Framework / SDK | 3 of 3 | 3 of 21 | JD 25.4% of Research Scientist postings [B] |
 | **ML fundamentals** (core) | Concept / knowledge area | 3 of 3 | 5 of 21 | JD 39.2% of Research Scientist postings [B] |
 | **Novel research & publications** | Research craft | 2 of 3 | 0 of 21 | Session citation [B] |
 | **Post-training (SFT, preference, RL)** | Concept / knowledge area | 2 of 3 | 0 of 21 | [P] practice-curated |
@@ -119,7 +124,7 @@ Roles (3): [Research Engineer / Member of Technical Staff](../02-roles/hubs/rese
 
 ### D · AI Systems & Infrastructure
 
-Roles (5): [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [ML Platform / MLOps (LLMOps) Engineer](../02-roles/hubs/ml-platform-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md).
+Roles (5): [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md), [ML Platform / MLOps (LLMOps) Engineer](../02-roles/hubs/ml-platform-engineer.md), [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md), [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md), [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md).
 
 | Skill | Type | In family | Elsewhere | Strongest evidence |
 |---|---|:---:|:---:|---|
@@ -137,7 +142,6 @@ Roles (5): [AI Product Manager](../02-roles/hubs/ai-product-manager.md), [AI Gov
 | **EU AI Act** | Regulation / framework | 3 of 5 | 0 of 19 | Session citation [A] |
 | **EU AI Act / NIST AI RMF / ISO 42001** | Concept / knowledge area | 3 of 5 | 0 of 19 | Session citation [A] |
 | **ISO/IEC 42001** | Regulation / framework | 3 of 5 | 0 of 19 | Session citation [A] |
-| **Risk & compliance docs (Annex IV, model cards)** | Method / practice | 3 of 5 | 0 of 19 | Session citation [B] |
 | **GRC & risk assessment** | Method / practice | 3 of 5 | 2 of 19 | JD 26.1% of Product Manager postings (feeder title) [B] |
 
 ## 3. Role-defining skills
@@ -148,54 +152,56 @@ Skills at Must for a role and for at most one other: learn them when you commit 
 |---|:---:|---|
 | [AI Engineer](../02-roles/hubs/ai-engineer.md) | A1 | — (its Must skills are shared with three or more roles) |
 | [Machine Learning Engineer (GenAI/LLM track)](../02-roles/hubs/ml-engineer.md) | B1 | — (its Must skills are shared with three or more roles) |
+| [Applied Scientist (GenAI/LLM teams)](../02-roles/hubs/applied-scientist.md) | B2 | Statistics (inference, hypothesis tests, regression) (also Must for AI Evaluation Engineer); Experiment design & A/B testing; Data structures & algorithms (also Must for Research Engineer / Member of Technical Staff); Research-to-production |
+| [Forward Deployed Engineer (AI)](../02-roles/hubs/forward-deployed-engineer.md) | A2 | APIs & integrations (also Must for AI Product Engineer (AI Frontend)); Customer scoping & demos (also Must for Applied AI Engineer) |
 | [Research Engineer / Member of Technical Staff](../02-roles/hubs/research-engineer.md) | C1 | PyTorch internals (also Must for Inference / LLM Serving Engineer); Data structures & algorithms (also Must for Applied Scientist (GenAI/LLM teams)) |
-| [Forward Deployed Engineer (AI)](../02-roles/hubs/forward-deployed-engineer.md) | A2 | APIs & integrations (also Must for AI Product Engineer (AI Frontend)); Customer scoping & demos |
-| [Applied Scientist (GenAI/LLM teams)](../02-roles/hubs/applied-scientist.md) | B2 | Statistics (inference, hypothesis tests, regression) (also Must for AI Evaluation Engineer); Experiment design & A/B testing; Data structures & algorithms (also Must for Research Engineer / Member of Technical Staff) |
-| [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md) | A2 | — (its Must skills are shared with three or more roles) |
-| [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md) | D2 | Linux; Networking; Terraform / IaC (also Must for ML Platform / MLOps (LLMOps) Engineer); SRE (SLOs, on-call, incidents); Observability (OpenTelemetry traces, metrics) (also Must for ML Platform / MLOps (LLMOps) Engineer) |
-| [Research Scientist (LLM research)](../02-roles/hubs/research-scientist.md) | C2 | Research methods & re-implementation (also Must for Frontier AI Safety / Alignment Researcher); Linear algebra (also Must for GPU Kernel / ML Compiler Engineer) |
-| [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md) | D1 | GPU fundamentals (HBM, prefill vs decode) (also Must for GPU Kernel / ML Compiler Engineer); PyTorch internals (also Must for Research Engineer / Member of Technical Staff); System design; vLLM / SGLang / TensorRT-LLM |
+| [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md) | A2 | Customer scoping & demos (also Must for Forward Deployed Engineer (AI)) |
+| [AI Infrastructure / GPU Platform Engineer](../02-roles/hubs/ai-infrastructure-engineer.md) | D2 | Linux; Networking; Terraform / IaC (also Must for ML Platform / MLOps (LLMOps) Engineer); SRE (SLOs, on-call, incidents); Observability (OpenTelemetry traces, metrics) (also Must for ML Platform / MLOps (LLMOps) Engineer); GPU fleet ops & scheduling |
+| [Research Scientist (LLM research)](../02-roles/hubs/research-scientist.md) | C2 | Research methods & re-implementation (also Must for Frontier AI Safety / Alignment Researcher); Linear algebra (also Must for GPU Kernel / ML Compiler Engineer); Novel research & publications |
+| [ML Platform / MLOps (LLMOps) Engineer](../02-roles/hubs/ml-platform-engineer.md) | D2 | Terraform / IaC (also Must for AI Infrastructure / GPU Platform Engineer); Git & CI/CD; Docker; AWS / Azure / GCP (also Must for AI / GenAI Solutions Architect); Observability (OpenTelemetry traces, metrics) (also Must for AI Infrastructure / GPU Platform Engineer); MLOps lifecycle (model & prompt CI/CD) |
+| [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md) | D3 | AppSec & threat modelling; OAuth/OIDC, RBAC, SSO; Incident response & SIEM; LLM security (prompt injection, OWASP); Cybersecurity fundamentals; Threat modelling for AI systems; Prompt-injection attack & defence; Red-teaming |
+| [Inference / LLM Serving Engineer](../02-roles/hubs/inference-engineer.md) | D1 | GPU fundamentals (HBM, prefill vs decode) (also Must for GPU Kernel / ML Compiler Engineer); PyTorch internals (also Must for Research Engineer / Member of Technical Staff); System design; vLLM / SGLang / TensorRT-LLM; vLLM; Continuous batching & KV cache |
+| [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) | A2 | AWS / Azure / GCP (also Must for ML Platform / MLOps (LLMOps) Engineer); GenAI reference architectures; Communication (written & verbal) (also Must for AI Product Manager); Pre-sales |
+| [AI Product Manager](../02-roles/hubs/ai-product-manager.md) | E1 | Product management; Communication (written & verbal) (also Must for AI / GenAI Solutions Architect); AI literacy (tokens, RAG vs fine-tune, cost); Rubrics & inter-rater agreement (also Must for Domain Evaluation Specialist / AI Trainer) |
 | [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md) | A1 | Prompt & context design; Tool and function calling |
-| [ML Platform / MLOps (LLMOps) Engineer](../02-roles/hubs/ml-platform-engineer.md) | D2 | Terraform / IaC (also Must for AI Infrastructure / GPU Platform Engineer); Git & CI/CD; Docker; AWS / Azure / GCP (also Must for AI / GenAI Solutions Architect); Observability (OpenTelemetry traces, metrics) (also Must for AI Infrastructure / GPU Platform Engineer) |
-| [AI Product Manager](../02-roles/hubs/ai-product-manager.md) | E1 | Product management; Communication (written & verbal) (also Must for AI / GenAI Solutions Architect); AI literacy (tokens, RAG vs fine-tune, cost) |
-| [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) | A1 | LLM evaluation (golden sets, calibrated judges, CI gates); Testing (pytest); Statistics (inference, hypothesis tests, regression) (also Must for Applied Scientist (GenAI/LLM teams)) |
-| [AI / GenAI Solutions Architect](../02-roles/hubs/ai-solutions-architect.md) | A2 | AWS / Azure / GCP (also Must for ML Platform / MLOps (LLMOps) Engineer); Amazon Web Services (AWS); GenAI reference architectures; Communication (written & verbal) (also Must for AI Product Manager) |
-| [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md) | D1 | CUDA / Triton / CUTLASS; CUDA C++; GPU fundamentals (HBM, prefill vs decode) (also Must for Inference / LLM Serving Engineer); Linear algebra (also Must for Research Scientist (LLM research)); Profiling & roofline (Nsight) |
-| [AI Security Engineer / AI Red Teamer](../02-roles/hubs/ai-security-engineer.md) | D3 | AppSec & threat modelling; OAuth/OIDC, RBAC, SSO (also Must for AI Enablement Engineer); Incident response & SIEM; LLM security (prompt injection, OWASP); Cybersecurity fundamentals; Threat modelling for AI systems |
+| [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) | A1 | Testing (pytest); Statistics (inference, hypothesis tests, regression) (also Must for Applied Scientist (GenAI/LLM teams)); LLM-as-judge design & calibration; Golden datasets & test-set curation |
+| [GPU Kernel / ML Compiler Engineer](../02-roles/hubs/gpu-kernel-engineer.md) | D1 | CUDA / Triton / CUTLASS; CUDA C++; GPU fundamentals (HBM, prefill vs decode) (also Must for Inference / LLM Serving Engineer); Linear algebra (also Must for Research Scientist (LLM research)); Profiling & roofline (Nsight); Triton (kernel language) |
+| [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md) | B3 | Robotics fundamentals; Simulation & sim-to-real; ROS; Robot learning & VLA models |
 | [AI Governance Programme Lead / Manager](../02-roles/hubs/ai-governance-lead.md) | E2 | GRC & risk assessment (also Must for AI Risk, Audit & Compliance Specialist); EU AI Act / NIST AI RMF / ISO 42001; AI inventory & risk register; EU AI Act; AI policy & standards writing |
-| [Physical AI / Robotics AI Engineer](../02-roles/hubs/physical-ai-engineer.md) | B3 | Robotics fundamentals; Perception / computer vision; Simulation & sim-to-real; ROS |
 | [Frontier AI Safety / Alignment Researcher](../02-roles/hubs/ai-safety-researcher.md) | C2 | Research methods & re-implementation (also Must for Research Scientist (LLM research)) |
-| [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md) | A1 | Internal tooling & DevEx; OAuth/OIDC, RBAC, SSO (also Must for AI Security Engineer / AI Red Teamer) |
-| [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md) | A1 | React; TypeScript / JavaScript; APIs & integrations (also Must for Forward Deployed Engineer (AI)); Frontend engineering |
+| [AI Product Engineer (AI Frontend)](../02-roles/hubs/ai-product-engineer.md) | A1 | React; TypeScript / JavaScript; APIs & integrations (also Must for Forward Deployed Engineer (AI)); Frontend engineering; Product sense |
 | [AI Risk, Audit & Compliance Specialist](../02-roles/hubs/ai-risk-assurance-specialist.md) | E2 | Audit methodology; GRC & risk assessment (also Must for AI Governance Programme Lead / Manager); Model validation; Privacy law & DPO duties; Model risk management |
 | [Responsible AI / AI Governance Engineer](../02-roles/hubs/responsible-ai-engineer.md) | E2 | Risk & compliance docs (Annex IV, model cards) |
-| [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md) | E3 | Domain expertise; Clear writing & presenting; Rubrics & inter-rater agreement; Attention to detail |
+| [AI Enablement Engineer](../02-roles/hubs/ai-enablement-engineer.md) | A1 | Internal tooling & DevEx; Change management & adoption; Teaching & workshop delivery |
+| [Domain Evaluation Specialist / AI Trainer](../02-roles/hubs/domain-evaluation-specialist.md) | E3 | Domain expertise; Clear writing & presenting; Rubrics & inter-rater agreement (also Must for AI Product Manager); Attention to detail |
 
 ## 4. Replace: what to stop investing in
 
-The research names these as devalued, or their projects are archived or dormant. Each row says what still has value and what to learn instead. Facts as of October 2026 ([T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) §4.3 and §6.8.2).
+The research names these as devalued, or their projects are archived, dormant or retired. Each row says what still has value and what to learn instead. Facts reconciled through November 2026 ([T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) §4.3 and §6.8.2; [T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md); [T0-71](../../research/sessions/T0-71-onboarding-growth-ai-roles.md)). RAGAS was removed from this ring after v0.4.4rc1 shipped on 2026-11-13 (304 days after v0.4.3), though eval-platform brand replaceability still applies.
 
 | Stop investing in | Evidence | Still useful | Do instead | Learn instead | Grade · source |
 |---|---|---|---|---|---|
-| **Standalone prompt writing and the Prompt Engineer title** (Devalued as a title; baseline as a skill) | The Prompt Engineer title is 72 of 20,662 LinkedIn AI postings (0.35%); prompts written without regression tests, eval harnesses or cost accounting are commoditised | Prompt engineering is still named as a sub-skill in 29.1% of 895 job descriptions | Keep it as a baseline skill and pair it with regression tests, evals and cost accounting | LLM evaluation (golden sets, calibrated judges, CI gates), Eval regression gates in CI, Cost & latency engineering | B · T0-03 L152, T0-03 L419 |
-| **Framework-specific syntax as a differentiator (LangChain, CrewAI)** (Devalued as a differentiator) | LangChain is named in 3.6% of postings and in 0 of 10 top-lab job descriptions; in a study of 20 deployed systems, 85% of production teams built custom loops | Framework adoption doubled to 18% of organisations | Learn portable state-machine concepts: state checkpoints, retries, idempotent tool execution, human interrupts and token budgets | Durable execution & workflow state, Agents & tool use | B · T0-03 L149, T0-03 L420 |
+| **Standalone prompt writing and the Prompt Engineer title** (Devalued as a title; baseline as a skill) | The Prompt Engineer title is 72 of 20,662 LinkedIn AI postings (0.35%, arXiv 2506.00058, 2024–25 vintage); standalone prompt writing without evals or cost accounting is commoditised | Prompt engineering appears in 31.1% of JobsPipe AI Engineer postings (counted 2026-09-10) | Keep it as a baseline skill and pair it with regression tests, evals and cost accounting | LLM evaluation (golden sets, calibrated judges, CI gates), Eval regression gates in CI, Cost & latency engineering | B · T0-03 L152, T0-03 L419, T0-69 L308 |
+| **Framework-specific syntax as a differentiator (LangChain, CrewAI)** (Devalued as a differentiator) | In arXiv 2512.04123v2, 85% (17/20) of interviewed production teams built custom loops even though 61% of broader surveyed agents use frameworks; named frameworks appear in 3.6% of broad postings and 0 of 10 top-lab JDs | Datadog framework adoption doubled (>9% to ~18%, early 2025 to early 2026); LangChain (34.3%) and LangGraph (22.1%) remain active screening keywords on agentic boards (Grade C) | Learn portable state-machine concepts: state checkpoints, retries, idempotent tool execution, human interrupts and token budgets | Durable execution & workflow state, Agents & tool use | B · T0-03 L149, T0-03 L420, T0-69 L54, T0-69 L348 |
 | **Demo RAG pipelines (naive vector search)** (Commoditised) | RAG is named in 10.0% of broad postings and treated as table stakes; naive vector search carries no hiring signal | Retrieval-quality engineering (hybrid search, cross-encoders) keeps its value | Show retrieval quality with measured recall and reranking, not a working demo | Retrieval quality (hybrid, reranking, recall@k), Hybrid search (BM25 + dense), Reranking, Retrieval metrics (recall@k, MRR, nDCG) | B · T0-03 L421 |
-| **Vendor-specific vector-database fluency** (Commoditised by brand) | Pinecone is named in 0.7% of postings, against 9.8% for vector databases in general | Vector databases are widely deployed in enterprise stacks | Learn the concepts; the session reports that PostgreSQL (pgvector) and Redis dominate | Embeddings & vector search, pgvector | B · T0-03 L422 |
-| **Loyalty to one eval-platform brand** (Methodology over brand) | Named eval platforms appear in under 3% of postings and in 0 of 10 top-lab postings, and the vendors are consolidating (OpenAI bought Promptfoo; ClickHouse bought Langfuse) | Evaluation as a practice appears at 68.2% of companies | Master the methodology: chance-corrected inter-annotator agreement (Cohen's kappa), position-bias elimination and synthetic adversarial test generation | Rubrics & inter-rater agreement, Eval statistics (CIs, power, pass^k) | B · T0-03 L59, T0-03 L150 |
-| **Hugging Face TGI skills** (Deprecated) | Hugging Face archived the TGI repository on 2026-03-21 | Legacy installations remain in maintenance | Move self-hosted serving to vLLM or SGLang | vLLM, SGLang | A · T0-03 L377, T0-03 L423 |
-| **AutoGen-specific skills** (Stalled) | No PyPI release in 365 days; superseded by Microsoft Agent Framework | A large historical installed base (61.5K GitHub stars) | Move to Microsoft Agent Framework or LangGraph | Microsoft Agent Framework, LangGraph | A · T0-03 L424 |
-| **RAGAS-based evaluation pipelines** (High risk) | No release since 2026-01-13 and no commit on main since 2026-02-24 | Its metric definitions remain conceptually useful | Move to DeepEval or a custom eval harness | DeepEval, LLM evaluation (golden sets, calibrated judges, CI gates) | A · T0-03 L375, T0-03 L425 |
-| **Static TensorRT-LLM engine compilation (trtllm-build)** (Deprecated) | TensorRT-LLM 1.3 removed trtllm-build; PyTorch is its only backend | — | Drop static engine-compilation workflows; use TensorRT-LLM's PyTorch backend | TensorRT-LLM | A · T0-03 L99, T0-03 L151 |
-| **Single-provider chat wrappers** (Devalued) | OpenAI's share of traced traffic fell from 75% to 63%, and more than 70% of organisations use three or more models | OpenAI remains the largest single provider | Design for several models: routing, fallbacks and a gateway | LLM gateways | A · T0-03 L426 |
+| **Vendor-specific vector-database fluency** (Commoditised by brand) | Pinecone is named in 0.7% of postings, against 9.8% for vector databases in general | Category appears in 32.6% of JobsPipe AI Engineer postings (2026-09-10); DB-Engines brand popularity rose +37% to +146% in 2025 (Pinecone +145%, Weaviate +146%, Qdrant +139%), so brand interest is not falling even though JDs name the category | Learn the concepts; the session reports that PostgreSQL (pgvector) and Redis dominate | Embeddings & vector search, pgvector | B · T0-03 L422, T0-69 L59, T0-69 L350 |
+| **Loyalty to one eval-platform brand** (Methodology over brand) | Named eval platforms appear in under 3% of postings and 0 of 10 top-lab JDs, and seven tools were acquired or closed in 13 months (2025-05 to 2026-05: Weave, Humanloop, Langfuse, Helicone, Promptfoo, Traceloop, Galileo), plus OpenAI deprecated hosted Evals (shutdown 2026-11-30) | Evaluation as a practice appears at 68.2% of companies | Master the methodology: chance-corrected inter-annotator agreement (Cohen's kappa), position-bias elimination and synthetic adversarial test generation | Rubrics & inter-rater agreement, Eval statistics (CIs, power, pass^k) | B · T0-03 L59, T0-03 L150, T0-69 L51, T0-71 L352 |
+| **Hugging Face TGI skills** (Deprecated) | Hugging Face docs carry a maintenance-mode notice recommending vLLM, SGLang and llama.cpp/MLX (A); the 2026-03-21 read-only archive date rests on one secondary source (C) | Legacy installations remain in maintenance | Move self-hosted serving to vLLM or SGLang | vLLM, SGLang | A · T0-03 L377, T0-69 L49, T0-69 L352 |
+| **AutoGen-specific skills** (Stalled) | Last PyPI release 0.7.5 on 2025-09-30 (410 days without a release to 2026-11-14); superseded by Microsoft Agent Framework 1.0 (GA 2026-04-03) | Installed base (61.5K GitHub stars) and occasional optional legacy mentions (7.9% on one Apr 2026 agentic board, Grade C) | Move to Microsoft Agent Framework or LangGraph | Microsoft Agent Framework, LangGraph | A · T0-03 L424, T0-69 L49, T0-69 L353 |
+| **Static TensorRT-LLM engine compilation (trtllm-build)** (Deprecated) | NVIDIA migration guide (updated 2026-11-03) documents removal of the static TensorRT backend, trtllm-build, trtllm-refit, trtllm-prune and convert_checkpoint.py; PyTorch is the sole backend | — | Drop static engine-compilation workflows; use TensorRT-LLM's PyTorch backend | TensorRT-LLM | A · T0-03 L99, T0-69 L49, T0-69 L355 |
+| **Single-provider chat wrappers** (Devalued) | Datadog OpenAI share fell 75% to 63% (>70% use 3+ models); Langfuse Cloud traced OpenAI share fell 82.7% to 55.3% (2024-10 to 2025-09); Ramp businesses paying both OpenAI and Anthropic doubled 8% to 16% (COI) | OpenAI remains the largest single provider | Design for several models: routing, fallbacks and a gateway | LLM gateways | A · T0-03 L426, T0-69 L52, T0-69 L217-L228 |
+| **OpenAI Assistants API** (Retired) | Sunset on 2026-08-26; replaced by the OpenAI Responses API and Conversations API | Legacy migrations from existing Assistants-based apps only | Build stateful tool-calling flows on the Responses API or provider-neutral agent runtimes | LLM APIs & tool calling, Agents & tool use | A · T0-69 L49, T0-69 L136, T0-69 L362 |
+| **torchtune fine-tuning workflows** (Dormant) | GitHub README (checked 2026-11-14) states torchtune is no longer actively maintained; development wound down in 2025 | Reference YAML configs from older PyTorch recipes | Move post-training and LoRA/SFT pipelines to TRL (v1.0 shipped 2026-03-31) or Axolotl / Unsloth | TRL, Fine-tuning (SFT, LoRA) | A · T0-69 L49, T0-69 L192, T0-69 L367 |
 
-Roles whose inventories tier these items Avoid: AutoGen (AI Engineer, Agentic AI Engineer); RAGAS (AI Engineer, Agentic AI Engineer, AI Evaluation Engineer); Hugging Face TGI (Inference / LLM Serving Engineer).
+Roles whose inventories tier these items Avoid: AutoGen (AI Engineer, Agentic AI Engineer); Hugging Face TGI (Inference / LLM Serving Engineer).
 
 ## 5. Watch: use with care
 
-Tools and standards whose status changed or that carry a notice. Statuses are class V2 facts: re-verify by 2027-01-21.
+Tools and standards whose status changed or that carry a notice. Statuses are class V2 facts: re-verify by 2027-02-17.
 
 | Item | Status | As of | What it means |
 |---|---|---|---|
+| **Colorado ADMT law (SB 26-189; replaced SB 24-205)** | renamed | 2026-11-19 | SB 24-205 repealed May 2026; narrower ADMT notice law SB 26-189 enacted (effective 2027-02-01) and enjoined under xAI v. Weiser (V0) |
 | **Langfuse** | acquired | 2026-01-16 | acquired by ClickHouse; MIT core, still viable |
 | **NVIDIA Dynamo Triton** | renamed | 2026-10-23 | formerly Triton Inference Server |
 | **OTel GenAI semantic conventions** | development | 2026-10-23 | still in Development — isolate behind adapters |
@@ -207,12 +213,24 @@ Tools and standards whose status changed or that carry a notice. Statuses are cl
 
 Every tool with a status record, including those that are simply active, is in the [skills vocabulary watch list](skills-vocabulary.md#5-watch-list-tools-with-a-notable-status). Credential statuses are in [credentials by role](../04-certifications/credentials-by-role.md).
 
+## 6. Multi-signal rising (adoption, telemetry & governance — not JD-share trends)
+
+Items corroborated by at least two independent signal types across two or more dates in [T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md) (as of 2026-11-14). None of these has a two-date employer-posting-demand share series yet (JobsPipe's AI Engineer count date remained 2026-09-10 on 2026-11-14). Single-signal items (A2A, LangGraph, vLLM, SGLang, TRL, evals, OTel, voice AI, AI security, vector-DB popularity) are deliberately excluded from this table until a second dated signal corroborates them.
+
+| Skill or capability | Signal types | Dated multi-signal series | Caveats & COI | Grade · source |
+|---|---|---|---|---|
+| **Multi-provider routing & provider independence** [COI] | telemetry, transactions, survey | Datadog (>1,000 orgs): OpenAI share 75% to 63%, >70% use 3+ models; Langfuse Cloud (>20,000 orgs, 2024-10 to 2025-09): OpenAI 82.7% to 55.3%, Google 0.5% to 13.1%; Ramp (>85,000 US firms, COI): dual OpenAI+Anthropic payers 8% to 16% (2025-01 to 2026-01); a16z CIO survey (COI): 3+ families 68% to 81% | Ramp and a16z carry vendor/investor COI; Datadog and Langfuse telemetry are independent; no two-date job-posting share series | B · T0-69 L52, T0-69 L217-L228, T0-69 L302 |
+| **Model Context Protocol (MCP)** [COI] | governance, registry supply | Linux Foundation AAIF grew from 8 Platinum founders (2025-12-09) to 146 members (2026-02-24) to 247 members (2026-08) [A]; Official MCP Registry grew from ~9,650 unique servers (2026-05) to 30,375 (2026-09-10) [C] | Anthropic originated MCP (COI); 2026-07-28 spec removes sessions and deprecates HTTP+SSE/Roots/Sampling/Logging (12-month window); 62% of registry servers have 1 version; no employer-demand trend series | B/C · T0-69 L53, T0-69 L105-L112, T0-69 L315, T0-69 L392-L398 |
+| **Coding agents (class)** | developer survey jetbrains, developer survey stackoverflow | JetBrains AI Pulse (2025 Q2 to 2026-01): Claude Code work adoption ~3% to 18%, Cursor 18%, Copilot 29% stalled; Stack Overflow Developer Survey: 30.9% used agents (2025, all devs) and 66% of AI users used coding agents (2026-10-06, different denominator) | Stack Overflow changed denominators between 2025 and 2026 (no like-for-like delta computed); adoption is developer usage, not a two-date JD series | B · T0-69 L57, T0-69 L201-L211, T0-69 L332 |
+| **Claude Code** [COI] | survey work adoption, survey awareness | JetBrains AI Pulse: work adoption rose ~3% (2025 Q2) to 18% globally and 24% US/Canada (2026-01); developer awareness rose 31% (2025 Q2) to 49% (2025-09) to 57% (2026-01) | Anthropic product (COI) and both constructs come from one survey vendor (JetBrains AI Pulse); treat as a sub-signal of coding agents rather than standalone job-market proof | B · T0-69 L57, T0-69 L201-L208, T0-69 L333 |
+| **TypeScript** | github activity, developer survey | GitHub Octoverse (2024-08 to 2025-08): 2,636,006 monthly contributors (+66.63% YoY, #1 fastest-growing major language); JetBrains Developer Ecosystem Survey: largest five-year rise among programming languages to mid-2025 | Measures broad developer ecosystem growth rather than GenAI-only job-posting share | B · T0-69 L58, T0-69 L262-L265, T0-69 L335 |
+
 ## Evidence and limits
 
-- Rings are computed from 1529 tiered links in the ontology (as of 2026-11-04); their evidence mix is in [role skill inventories §4](role-skill-inventories.md#4-verification). The rules and thresholds (at least 6 roles for the core; half the family and 25 points of lift for differentiators; at most two roles for role-defining skills) are judgement (Grade D).
-- Posting shares come from JobsPipe (retrieved 2026-11-02; [data](../../data/posting_skill_shares.json)). Several roles borrow a feeder or adjacent title's shares; the evidence column names the title.
+- Rings 1–5 are computed from 1537 tiered links in the ontology (as of 2026-11-19); their evidence mix is in [role skill inventories §4](role-skill-inventories.md#4-verification). The rules and thresholds (at least 6 roles for the core; half the family and 25 points of lift for differentiators; at most two roles for role-defining skills) are judgement (Grade D).
+- Posting shares come from JobsPipe (retrieved 2026-11-02, underlying AI Engineer count date 2026-09-10; [data](../../data/posting_skill_shares.json)). Several roles borrow a feeder or adjacent title's shares; the evidence column names the title.
 - The replace ring reproduces the research's verdicts with their grades; it does not add new ones.
-- Nothing here measures change over time. Treat a ring as a snapshot, and re-check tools and statuses by 2027-01-21.
+- Ring 6 measures multi-signal adoption, telemetry, transaction and governance movement as of 2026-11-14, NOT employer-posting demand over time. Treat rings 1–5 as a snapshot, and re-check tools and statuses by 2027-02-17.
 
 ## Next steps
 

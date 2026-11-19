@@ -4,8 +4,8 @@ title: "Responsible AI / AI Governance Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill a Responsible AI / AI Governance Engineer needs: 56 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [responsible-ai-engineer]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Responsible AI / AI Governance Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #23 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #22 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-responsible-ai-engineer) · [role hub](../../02-roles/hubs/responsible-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-responsible-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-responsible-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**56 skills:** Must 3 · Important 20 · Should 26 · Optional 7. **Evidence:** S 45 · P 11 (20% practice-curated). **Non-technical:** 9.
+**56 skills:** Must 4 · Important 15 · Should 26 · Optional 11. **Evidence:** S 45 · P 11 (20% practice-curated). **Non-technical:** 9.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -28,10 +28,10 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [S · T0-15]<br>**Important:** Guardrails [S · T0-15] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-15] · EU AI Act / NIST AI RMF / ISO 42001 [S · T0-15] · Observability (OpenTelemetry traces, metrics) [S · T0-15] · Fairness & bias assessment [S · T0-15] · Explainability (XAI) [S · T0-15]<br>**Should:** MLOps lifecycle (model & prompt CI/CD) [S · T0-15] · Prompt-injection attack & defence [S · T0-15] · PII detection & redaction [P]<br>**Optional:** Content provenance (EU AI Act Art. 50) [S · T0-15] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [S · T0-15] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-61]<br>**Important:** Guardrails [S · T0-15] · EU AI Act / NIST AI RMF / ISO 42001 [S · T0-15] · Observability (OpenTelemetry traces, metrics) [S · T0-15] · Fairness & bias assessment [S · T0-15] · Explainability (XAI) [S · T0-15]<br>**Should:** MLOps lifecycle (model & prompt CI/CD) [S · T0-15] · Prompt-injection attack & defence [S · T0-15] · PII detection & redaction [P]<br>**Optional:** Content provenance (EU AI Act Art. 50) [S · T0-15] |
 | Technical: knowledge | **Method / practice** | **Must:** Risk & compliance docs (Annex IV, model cards) [S · T0-15]<br>**Should:** Red-teaming [S · T0-15] · LLM-as-judge design & calibration [S · T0-15] · AI impact & risk assessment [P] · AI inventory & risk register [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [S · T0-15] |
-| Technical: concrete | **Library / package** | **Important:** Fairness & explainability tools (choose 1: Fairlearn \| AI Fairness 360 \| SHAP \| LIME \| Captum \| Microsoft Responsible AI Toolbox) [S · T0-15] · Fairlearn [S · T0-15] · SHAP [S · T0-15] · LIME [S · T0-15] · Captum [S · T0-15]<br>**Should:** AI Fairness 360 [S · T0-15] · Microsoft Responsible AI Toolbox [S · T0-15] · Guardrails AI [S · T0-15] · Microsoft Presidio [P] |
+| Technical: concrete | **Library / package** | **Important:** Fairness & explainability tools (choose 1: Fairlearn \| AI Fairness 360 \| SHAP \| LIME \| Captum \| Microsoft Responsible AI Toolbox) [S · T0-15]<br>**Should:** AI Fairness 360 [S · T0-15] · Microsoft Responsible AI Toolbox [S · T0-15] · Guardrails AI [S · T0-15] · Microsoft Presidio [P]<br>**Optional:** Fairlearn [S · T0-61] · SHAP [S · T0-61] · LIME [S · T0-61] · Captum [S · T0-61] |
 | Technical: concrete | **Model / model family** | **Should:** Llama Guard [S · T0-15] · Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Platform / cloud service** | **Should:** Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) [S · T0-15] · Microsoft Azure [S · T0-15] · Azure Machine Learning [S · T0-15] · Azure AI Foundry / Azure OpenAI [S · T0-15] |
 | Technical: concrete | **Specialised product** | **Important:** NeMo Guardrails [S · T0-15] · Giskard [S · T0-15]<br>**Should:** Arize AX [S · T0-15] · garak [S · T0-15] · PyRIT [S · T0-15] · Promptfoo [S · T0-15] · Inspect (UK AISI) [S · T0-15]<br>**Optional:** SynthID [S · T0-15] |
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Python` · `Python 3` · `production Python` · `ML fundamentals` · `machine learning` · `AI/ML` · `Risk & compliance docs` · `technical documentation` · `Annex IV` · `Guardrails` · `content filtering` · `safety filters` · `LLM evaluation` · `evals` · `EU AI Act / NIST AI RMF / ISO 42001` · `AI regulation` · `AI standards` · `Fairlearn` · `AI Fairness 360` · `AIF360` · `SHAP` · `LIME` · `Captum` · `Microsoft Responsible AI Toolbox` · `RAI Toolbox` · `Observability` · `LLM observability` · `monitoring` · `Fairness & bias assessment` · `algorithmic fairness` · `bias testing` · `Explainability` · `XAI` · `feature attribution` · `NeMo Guardrails` · `Giskard` · `EU AI Act` · `AI Act` · `NIST AI RMF` · `AI Risk Management Framework` · `NIST AI 600-1` · `ISO/IEC 42001` · `ISO 42001` · `AIMS` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MLOps lifecycle` · `MLOps` · `LLMOps` · `Amazon Bedrock` · `AWS Bedrock` · `Bedrock` · `Azure AI Foundry / Azure OpenAI` · `Azure OpenAI` · `AI Foundry` · `Google Vertex AI` · `Vertex AI` · `Vertex AI Agent Builder` · `Red-teaming` · `AI red teaming` · `adversarial testing`
+`Python` · `Python 3` · `production Python` · `ML fundamentals` · `machine learning` · `AI/ML` · `Risk & compliance docs` · `technical documentation` · `Annex IV` · `LLM evaluation` · `evals` · `Guardrails` · `content filtering` · `safety filters` · `EU AI Act / NIST AI RMF / ISO 42001` · `AI regulation` · `AI standards` · `Fairlearn` · `AI Fairness 360` · `AIF360` · `SHAP` · `LIME` · `Captum` · `Microsoft Responsible AI Toolbox` · `RAI Toolbox` · `Observability` · `LLM observability` · `monitoring` · `Fairness & bias assessment` · `algorithmic fairness` · `bias testing` · `Explainability` · `XAI` · `feature attribution` · `NeMo Guardrails` · `Giskard` · `EU AI Act` · `AI Act` · `NIST AI RMF` · `AI Risk Management Framework` · `NIST AI 600-1` · `ISO/IEC 42001` · `ISO 42001` · `AIMS` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MLOps lifecycle` · `MLOps` · `LLMOps` · `Amazon Bedrock` · `AWS Bedrock` · `Bedrock` · `Azure AI Foundry / Azure OpenAI` · `Azure OpenAI` · `AI Foundry` · `Google Vertex AI` · `Vertex AI` · `Vertex AI Agent Builder` · `Red-teaming` · `AI red teaming` · `adversarial testing`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -80,17 +80,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Python (production) | Programming language | M | 3 | | |
 | ML fundamentals | Concept / knowledge area | M | 3 | | |
 | Risk & compliance docs (Annex IV, model cards) | Method / practice | M | 3 | | |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | M | 3 | | |
 | Guardrails | Concept / knowledge area | I | 2 | | |
-| LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | I | 2 | | |
 | EU AI Act / NIST AI RMF / ISO 42001 | Concept / knowledge area | I | 2 | | |
 | Fairness & explainability tools (choose 1: Fairlearn \| AI Fairness 360 \| SHAP \| LIME \| Captum \| Microsoft Responsible AI Toolbox) | Library / package | I | 2 | | |
 | Observability (OpenTelemetry traces, metrics) | Concept / knowledge area | I | 2 | | |
 | Fairness & bias assessment | Concept / knowledge area | I | 2 | | |
 | Explainability (XAI) | Concept / knowledge area | I | 2 | | |
-| Fairlearn | Library / package | I | 2 | | |
-| SHAP | Library / package | I | 2 | | |
-| LIME | Library / package | I | 2 | | |
-| Captum | Library / package | I | 2 | | |
 | NeMo Guardrails | Specialised product | I | 2 | | |
 | Giskard | Specialised product | I | 2 | | |
 | EU AI Act | Regulation / framework | I | 2 | | |
@@ -108,17 +104,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Python (production) | M | S (B) | T0-15:L306 | — |
 | ML fundamentals | M | S (C) | T0-15:L307 | ML and MLOps basics |
 | Risk & compliance docs (Annex IV, model cards) | M | S (B) | T0-15:L163 | documentation discipline: Annex IV documentation, Art. 12 logging |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | M | S (C) | T0-61:L310 | 75% (6/8) of Responsible AI Engineer postings in T0-61 |
 | Guardrails | I | S (B) | T0-15:L306 | prompt-injection detection |
-| LLM evaluation (golden sets, calibrated judges, CI gates) | I | S (B) | T0-15:L306 | hallucination, groundedness, subgroup fairness |
 | EU AI Act / NIST AI RMF / ISO 42001 | I | S (A) | T0-15:L306 | mappings to NIST AI RMF and ISO 42001 |
 | Fairness & explainability tools (choose 1: Fairlearn \| AI Fairness 360 \| SHAP \| LIME \| Captum \| Microsoft Responsible AI Toolbox) | I | S (B) | T0-15:L307 | — |
 | Observability (OpenTelemetry traces, metrics) | I | S (C) | T0-15:L306 | — |
 | Fairness & bias assessment | I | S (B) | T0-15:L306 | — |
 | Explainability (XAI) | I | S (B) | T0-15:L307 | — |
-| Fairlearn | I | S (B) | T0-15:L307 | 0.15.0 (Oct 2026) |
-| SHAP | I | S (C) | T0-15:L307 | — |
-| LIME | I | S (C) | T0-15:L307 | — |
-| Captum | I | S (C) | T0-15:L307 | — |
 | NeMo Guardrails | I | S (C) | T0-15:L306 | named in JDs |
 | Giskard | I | S (C) | T0-15:L182 | v3 pre-release; no tabular testing |
 | EU AI Act | I | S (A) | T0-15:L110 | Annex IV documentation; Art. 12 logging |
@@ -154,6 +146,10 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Cross-functional collaboration | S | P (D) | — | — |
 | Communication (written & verbal) | S | P (D) | — | — |
 | Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) | S | P (D) | — | — |
+| Fairlearn | O | S (C) | T0-61:L318 | 0/8 in T0-61 Responsible AI postings; legacy tabular XAI |
+| SHAP | O | S (C) | T0-61:L318 | 0/8 in T0-61 Responsible AI postings; legacy tabular XAI |
+| LIME | O | S (C) | T0-61:L318 | 0/8 in T0-61 Responsible AI postings; legacy tabular XAI |
+| Captum | O | S (C) | T0-61:L318 | 0/8 in T0-61 Responsible AI postings; legacy tabular XAI |
 | Content provenance (EU AI Act Art. 50) | O | S (A) | T0-15:L333 | — |
 | C2PA | O | S (B) | T0-15:L333 | c2pa-python 0.38.0, pre-1.0; portfolio-only in the evidence |
 | SynthID | O | S (C) | T0-15:L333 | — |

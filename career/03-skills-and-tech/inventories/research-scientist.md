@@ -4,9 +4,9 @@ title: "Research Scientist (LLM research): Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "Every skill a Research Scientist (LLM research) needs: 54 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "Every skill a Research Scientist (LLM research) needs: 55 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [research-scientist]
 generated_by: scripts/build_skills.py
 ---
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Research Scientist (LLM research): Complete Skill Inventory
 
-> **GenAI target rank:** #8 · **Resume variant:** C2 (Frontier Research: Science) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #8 · **Resume variant:** C2 (Frontier Research: Science) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-research-scientist) · [role hub](../../02-roles/hubs/research-scientist.md) · [narrative skill map](../role-skill-maps.md#skills-research-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-research-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**54 skills:** Must 6 · Important 16 · Should 16 · Optional 16. **Evidence:** JD 10 · S 6 · P 38 (70% practice-curated). **Non-technical:** 14.
+**55 skills:** Must 7 · Important 16 · Should 15 · Optional 17. **Evidence:** JD 10 · S 8 · P 37 (67% practice-curated). **Non-technical:** 14.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -28,10 +28,10 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 39.2%] · Deep learning & transformers [JD 18.6%] · Linear algebra [P]<br>**Important:** LLM APIs & tool calling [JD 24.4%] · Data structures & algorithms [JD 26.0%] · Reinforcement learning [JD 17.1%] · Post-training (SFT, preference, RL) [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Statistics (inference, hypothesis tests, regression) [P]<br>**Should:** Distributed training (FSDP2, TP/PP, MoE) [P] · Scaling laws & compute-optimal training [P] · RLHF (reward models, PPO) [P] · Preference optimisation (DPO and variants) [P] · RL with verifiable rewards (GRPO) [P] · Reward modelling [P]<br>**Optional:** Interpretability [P] · Alignment methods [P] · Pre-training at scale [P] · Mixed-precision training (BF16, FP8) [P] · Multimodal AI (vision, documents, audio) [P] · Natural language processing (NLP) [P] · Computer vision [P] · Diffusion & image/video generation models [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 39.2%] · Deep learning & transformers [JD 18.6%] · Linear algebra [P]<br>**Important:** Data structures & algorithms [JD 26.0%] · Reinforcement learning [JD 17.1%] · Post-training (SFT, preference, RL) [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Statistics (inference, hypothesis tests, regression) [P] · LLM fundamentals (tokens, context windows, sampling, hallucination) [JD 24.4%]<br>**Should:** Distributed training (FSDP2, TP/PP, MoE) [P] · Scaling laws & compute-optimal training [P] · RLHF (reward models, PPO) [P] · Preference optimisation (DPO and variants) [P] · RL with verifiable rewards (GRPO) [P] · Reward modelling [P]<br>**Optional:** LLM APIs & tool calling [S · T0-55] · Interpretability [P] · Alignment methods [P] · Pre-training at scale [P] · Mixed-precision training (BF16, FP8) [P] · Multimodal AI (vision, documents, audio) [P] · Natural language processing (NLP) [P] · Computer vision & robot perception [P] · Diffusion & image/video generation models [P] |
 | Technical: knowledge | **Method / practice** | **Must:** Research methods & re-implementation [P]<br>**Should:** Eval statistics (CIs, power, pass^k) [P] · Experiment tracking & reproducibility [P] · Ablations & controlled experiments [P]<br>**Optional:** Training-data curation (filtering, dedup, mixtures) [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 42.3%]<br>**Should:** C++ [JD 17.4%] |
-| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 25.4%]<br>**Should:** JAX [P] |
+| Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 25.4%]<br>**Important:** JAX [S · T0-55] |
 | Technical: concrete | **Library / package** | **Should:** Hugging Face Transformers [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [P] · Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Platform / cloud service** | **Should:** Hugging Face Hub [P] |
@@ -41,7 +41,7 @@ generated_by: scripts/build_skills.py
 | Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [JD 41.3%] · Clear writing & presenting [P]<br>**Should:** Presenting & live demos [P] |
 | Non-technical | **Behavioural competency** | **Important:** Creativity [JD 23.0%] · Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Technical leadership [P] · Mentoring [P] |
-| Non-technical | **Research craft** | **Important:** Novel research & publications [S · T0-06] · Research taste & problem selection [S · T0-06] · Scientific writing [P]<br>**Should:** Peer review [P] |
+| Non-technical | **Research craft** | **Must:** Novel research & publications [S · T0-55]<br>**Important:** Research taste & problem selection [S · T0-06] · Scientific writing [P]<br>**Should:** Peer review [P] |
 
 ## 2. Avoid
 
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`ML fundamentals` · `machine learning` · `AI/ML` · `Python` · `Python 3` · `production Python` · `PyTorch` · `PyTorch 2.x` · `torch` · `Deep learning & transformers` · `neural networks` · `transformers` · `Research methods & re-implementation` · `paper reproduction` · `re-implementation` · `Linear algebra` · `matrix calculus` · `maths for ML` · `Communication` · `communication skills` · `verbal communication` · `Creativity` · `innovation` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Data structures & algorithms` · `data structures` · `algorithms` · `Novel research & publications` · `publications` · `first-author papers` · `Clear writing & presenting` · `clear writing` · `presentations` · `Reinforcement learning` · `RL` · `Post-training` · `preference optimisation` · `LLM evaluation` · `evals` · `Research taste & problem selection` · `problem selection` · `Scientific writing` · `paper writing` · `technical reports` · `Statistics` · `statistical analysis` · `probability` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `C++` · `modern C++` · `C++17` · `Distributed training` · `tensor parallelism` · `pipeline parallelism` · `Eval statistics` · `confidence intervals` · `statistical power` · `JAX`
+`ML fundamentals` · `machine learning` · `AI/ML` · `Python` · `Python 3` · `production Python` · `PyTorch` · `PyTorch 2.x` · `torch` · `Deep learning & transformers` · `neural networks` · `transformers` · `Research methods & re-implementation` · `paper reproduction` · `re-implementation` · `Linear algebra` · `matrix calculus` · `maths for ML` · `Novel research & publications` · `publications` · `first-author papers` · `Communication` · `communication skills` · `verbal communication` · `Creativity` · `innovation` · `Data structures & algorithms` · `data structures` · `algorithms` · `Clear writing & presenting` · `clear writing` · `presentations` · `Reinforcement learning` · `RL` · `Post-training` · `preference optimisation` · `LLM evaluation` · `evals` · `Research taste & problem selection` · `problem selection` · `Scientific writing` · `paper writing` · `technical reports` · `Statistics` · `statistical analysis` · `probability` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `JAX` · `Flax` · `LLM fundamentals` · `how LLMs work` · `tokenisation` · `C++` · `modern C++` · `C++17` · `Distributed training` · `tensor parallelism` · `pipeline parallelism` · `Eval statistics` · `confidence intervals`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -83,11 +83,10 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Deep learning & transformers | Concept / knowledge area | M | 3 | | |
 | Research methods & re-implementation | Method / practice | M | 3 | | |
 | Linear algebra | Concept / knowledge area | M | 3 | | |
+| Novel research & publications | Research craft | M | 3 | | |
 | Communication (written & verbal) | Communication & collaboration | I | 2 | | |
 | Creativity | Behavioural competency | I | 2 | | |
-| LLM APIs & tool calling | Concept / knowledge area | I | 2 | | |
 | Data structures & algorithms | Concept / knowledge area | I | 2 | | |
-| Novel research & publications | Research craft | I | 2 | | |
 | Clear writing & presenting | Communication & collaboration | I | 2 | | |
 | Reinforcement learning | Concept / knowledge area | I | 2 | | |
 | Post-training (SFT, preference, RL) | Concept / knowledge area | I | 2 | | |
@@ -99,6 +98,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| JAX | Framework / SDK | I | 2 | | |
+| LLM fundamentals (tokens, context windows, sampling, hallucination) | Concept / knowledge area | I | 2 | | |
 
 ## 8. Evidence and notes
 
@@ -110,11 +111,10 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Deep learning & transformers | M | JD (B) 18.6% | JobsPipe: Research Scientist | role-defining in AI/ML research; 18.6% is the all-field share |
 | Research methods & re-implementation | M | P (D) | — | experiment design and re-implementation; role-defining |
 | Linear algebra | M | P (D) | — | optimisation, probability and linear algebra |
+| Novel research & publications | M | S (B) | T0-55:L205, T0-55:L332 | 91.7% (11/12) JDs; NBER WP 34964 top-firm move predictor |
 | Communication (written & verbal) | I | JD (B) 41.3% | JobsPipe: Research Scientist | — |
 | Creativity | I | JD (B) 23.0% | JobsPipe: Research Scientist | — |
-| LLM APIs & tool calling | I | JD (B) 24.4% | JobsPipe: Research Scientist | named as "LLM": LLM research |
 | Data structures & algorithms | I | JD (B) 26.0% | JobsPipe: Research Scientist | — |
-| Novel research & publications | I | S (C) | T0-06:L689 | a publication record |
 | Clear writing & presenting | I | P (D) | — | scientific writing and talks |
 | Reinforcement learning | I | JD (B) 17.1% | JobsPipe: Research Scientist | central to post-training research despite the 17.1% all-field share |
 | Post-training (SFT, preference, RL) | I | P (D) | — | — |
@@ -126,10 +126,11 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| JAX | I | S (C) | T0-55:L218 | 41.7% (5/12); Must at Google DeepMind and xAI |
+| LLM fundamentals (tokens, context windows, sampling, hallucination) | I | JD (B) 24.4% | JobsPipe: Research Scientist | Remapped from llm_apis: JobsPipe 'LLM' measures LLM research, not API wrappers |
 | C++ | S | JD (B) 17.4% | JobsPipe: Research Scientist | — |
 | Distributed training (FSDP2, TP/PP, MoE) | S | P (D) | — | — |
 | Eval statistics (CIs, power, pass^k) | S | P (D) | — | — |
-| JAX | S | P (D) | — | JAX in TPU-centric labs |
 | Experiment tracking & reproducibility | S | P (D) | — | — |
 | Weights & Biases (incl. Weave) | S | P (D) | — | — |
 | Hugging Face Hub | S | P (D) | — | — |
@@ -142,6 +143,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Preference optimisation (DPO and variants) | S | P (D) | — | — |
 | RL with verifiable rewards (GRPO) | S | P (D) | — | — |
 | Reward modelling | S | P (D) | — | — |
+| LLM APIs & tool calling | O | S (C) | T0-55:L209 | Only 1/12 AI RS JDs names API/tool calling |
 | Interpretability | O | P (D) | — | — |
 | Alignment methods | O | P (D) | — | — |
 | Pre-training at scale | O | P (D) | — | — |
@@ -152,7 +154,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) | O | P (D) | — | — |
 | Multimodal AI (vision, documents, audio) | O | P (D) | — | — |
 | Natural language processing (NLP) | O | P (D) | — | — |
-| Computer vision | O | P (D) | — | — |
+| Computer vision & robot perception | O | P (D) | — | — |
 | Diffusion & image/video generation models | O | P (D) | — | — |
 | Technical leadership | O | P (D) | — | leading research agendas at senior levels |
 | Mentoring | O | P (D) | — | — |

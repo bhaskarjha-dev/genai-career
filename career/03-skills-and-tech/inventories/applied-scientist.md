@@ -4,8 +4,8 @@ title: "Applied Scientist (GenAI/LLM teams): Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Every skill an Applied Scientist (GenAI/LLM teams) needs: 64 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [applied-scientist]
 generated_by: scripts/build_skills.py
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Applied Scientist (GenAI/LLM teams): Complete Skill Inventory
 
-> **GenAI target rank:** #5 · **Resume variant:** B2 (ML & Applied Science: Scientist) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #3 · **Resume variant:** B2 (ML & Applied Science: Scientist) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-scientist) · [role hub](../../02-roles/hubs/applied-scientist.md) · [narrative skill map](../role-skill-maps.md#skills-applied-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**64 skills:** Must 6 · Important 17 · Should 25 · Optional 16. **Evidence:** JD 13 · S09 1 · S 15 · P 35 (55% practice-curated). **Non-technical:** 13.
+**64 skills:** Must 7 · Important 16 · Should 25 · Optional 16. **Evidence:** JD 13 · S09 1 · S 15 · P 35 (55% practice-curated). **Non-technical:** 13.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,7 +29,7 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 69.3% (feeder)] · Statistics (inference, hypothesis tests, regression) [JD 52.7% (feeder)] · Data structures & algorithms [S · T0-06]<br>**Important:** Data science [JD 90.1% (feeder)] · LLM APIs & tool calling [JD 30.1% (feeder)] · Generative AI [JD 22.0% (feeder)] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Causal inference [P] · Deep learning & transformers [JD 32.6% (adjacent)]<br>**Should:** LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Data pipelines & quality [P] · Search & ranking (learning to rank) [P] · Recommender systems [P] · Natural language processing (NLP) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Distributed training (FSDP2, TP/PP, MoE) [P] · Preference optimisation (DPO and variants) [P] |
-| Technical: knowledge | **Method / practice** | **Must:** Experiment design & A/B testing [S · T0-06]<br>**Important:** Data analysis [JD 33.1% (feeder)] · Research-to-production [S · T0-06] · Eval statistics (CIs, power, pass^k) [S · T0-06] · Research methods & re-implementation [P] · Ablations & controlled experiments [S · T0-06]<br>**Should:** Testing (pytest) [S · T0-06] · Git & CI/CD [P] · LLM-as-judge design & calibration [S · T0-06] · Model & data drift monitoring [S · T0-06] · Experiment tracking & reproducibility [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Experiment design & A/B testing [S · T0-06] · Research-to-production [S · T0-52]<br>**Important:** Data analysis [JD 33.1% (feeder)] · Eval statistics (CIs, power, pass^k) [S · T0-06] · Research methods & re-implementation [P] · Ablations & controlled experiments [S · T0-06]<br>**Should:** Testing (pytest) [S · T0-06] · Git & CI/CD [P] · LLM-as-judge design & calibration [S · T0-06] · Model & data drift monitoring [S · T0-06] · Experiment tracking & reproducibility [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 86.0% (feeder)]<br>**Important:** SQL [JD 63.8% (feeder)]<br>**Should:** R [P] |
 | Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2% (adjacent)]<br>**Optional:** Apache Spark [P] |
 | Technical: concrete | **Library / package** | **Should:** scikit-learn [P] · pandas [P] · NumPy [P] · SciPy [P] · Hugging Face Transformers [P]<br>**Optional:** XGBoost [P] · Polars [P] · spaCy [P] |
@@ -46,7 +46,7 @@ generated_by: scripts/build_skills.py
 
 ## 2. Avoid
 
-- **Also avoid:** A publication list with no shipped systems; claims of "state of the art" without baselines
+- **Also avoid:** A publication list uncoupled from shipped production impact (publications/patents appear in 11/23 JDs, so pair them with production code); claims of 'state of the art' without baselines
 
 ## 3. Types that do not apply
 
@@ -57,11 +57,11 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- None recommended.
+- **Optional:** PyTorch Certified Associate (PTCA) [T0-32]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Often a PhD (T2-01 names Applied Scientist as the main high-volume PhD corridor); coding/DSA is the usual gap for PhDs.
+- **Prerequisites:** Amazon US uses PhD or Master's+4 (7/9), while Microsoft (BS+2/MS+1), Uber (BS+3–4/MS+2), Zalando (MS+2) and Mistral offer broader routes; coding/DSA is the usual gap for PhDs [A/C · T0-52].
 - **Proof to show:** Your own method turned into a service with tests and CI; at least three code reviews via OSS PRs; an eval-statistics write-up.
 - **Posting terms (measured or cited):** applied scientist, machine learning, statistics, experimentation, A/B testing, LLM, PyTorch.
 
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`ML fundamentals` · `machine learning` · `AI/ML` · `Python` · `Python 3` · `production Python` · `Statistics` · `statistical analysis` · `probability` · `PyTorch` · `PyTorch 2.x` · `torch` · `Experiment design & A/B testing` · `A/B testing` · `experimentation` · `Data structures & algorithms` · `data structures` · `algorithms` · `SQL` · `SQL queries` · `analytical SQL` · `Data science` · `Data analysis` · `exploratory data analysis` · `EDA` · `Communication` · `communication skills` · `verbal communication` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Generative AI` · `GenAI` · `Research-to-production` · `productionising research` · `tech transfer` · `Eval statistics` · `confidence intervals` · `statistical power` · `Fine-tuning` · `SFT` · `Causal inference` · `uplift modelling` · `Research methods & re-implementation` · `paper reproduction` · `re-implementation` · `Deep learning & transformers` · `neural networks` · `transformers` · `Ablations & controlled experiments` · `ablation studies` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `LLM evaluation` · `evals` · `Data pipelines & quality` · `ETL` · `data engineering` · `Stakeholder communication` · `stakeholder management` · `Amazon Web Services`
+`ML fundamentals` · `machine learning` · `AI/ML` · `Python` · `Python 3` · `production Python` · `Statistics` · `statistical analysis` · `probability` · `PyTorch` · `PyTorch 2.x` · `torch` · `Experiment design & A/B testing` · `A/B testing` · `experimentation` · `Data structures & algorithms` · `data structures` · `algorithms` · `Research-to-production` · `productionising research` · `tech transfer` · `SQL` · `SQL queries` · `analytical SQL` · `Data science` · `Data analysis` · `exploratory data analysis` · `EDA` · `Communication` · `communication skills` · `verbal communication` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Generative AI` · `GenAI` · `Eval statistics` · `confidence intervals` · `statistical power` · `Fine-tuning` · `SFT` · `Causal inference` · `uplift modelling` · `Research methods & re-implementation` · `paper reproduction` · `re-implementation` · `Deep learning & transformers` · `neural networks` · `transformers` · `Ablations & controlled experiments` · `ablation studies` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `LLM evaluation` · `evals` · `Data pipelines & quality` · `ETL` · `data engineering` · `Stakeholder communication` · `stakeholder management` · `Amazon Web Services`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -83,13 +83,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | PyTorch | Framework / SDK | M | 3 | | |
 | Experiment design & A/B testing | Method / practice | M | 3 | | |
 | Data structures & algorithms | Concept / knowledge area | M | 3 | | |
+| Research-to-production | Method / practice | M | 3 | | |
 | SQL | Programming language | I | 2 | | |
 | Data science | Concept / knowledge area | I | 2 | | |
 | Data analysis | Method / practice | I | 2 | | |
 | Communication (written & verbal) | Communication & collaboration | I | 2 | | |
 | LLM APIs & tool calling | Concept / knowledge area | I | 2 | | |
 | Generative AI | Concept / knowledge area | I | 2 | | |
-| Research-to-production | Method / practice | I | 2 | | |
 | Eval statistics (CIs, power, pass^k) | Method / practice | I | 2 | | |
 | Fine-tuning (SFT, LoRA) | Concept / knowledge area | I | 2 | | |
 | Causal inference | Concept / knowledge area | I | 2 | | |
@@ -111,13 +111,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | PyTorch | M | JD (B) 48.2% | JobsPipe: Machine Learning Engineer (adjacent) | — |
 | Experiment design & A/B testing | M | S (C) | T0-06:L152 | — |
 | Data structures & algorithms | M | S (C) | T0-06:L487 | coding and DSA for big-company loops |
+| Research-to-production | M | S (A) | T0-52:L131, T0-52:L236 | 75%–78% of JDs + Amazon Science official guidance |
 | SQL | I | JD (B) 63.8% | JobsPipe: Data Scientist (feeder) | Important rather than Must: the share comes from a feeder title |
 | Data science | I | JD (B) 90.1% | JobsPipe: Data Scientist (feeder) | Important rather than Must: feeder title |
 | Data analysis | I | JD (B) 33.1% | JobsPipe: Data Scientist (feeder) | — |
 | Communication (written & verbal) | I | JD (B) 42.3% | JobsPipe: Data Scientist (feeder) | — |
 | LLM APIs & tool calling | I | JD (B) 30.1% | JobsPipe: Data Scientist (feeder) | named as "LLM" |
 | Generative AI | I | JD (B) 22.0% | JobsPipe: Data Scientist (feeder) | — |
-| Research-to-production | I | S (C) | T0-06:L471 | turning a method into a tested service |
 | Eval statistics (CIs, power, pass^k) | I | S (B) | T0-06:L703 | confidence intervals, power analysis, judge-bias tests, drift detection |
 | Fine-tuning (SFT, LoRA) | I | S09 (B) 13.0% | T0-03:L96 | LLM fine-tuning and alignment basics; a differentiator |
 | Causal inference | I | P (D) | — | causal inference and A/B testing |

@@ -4,9 +4,9 @@ title: "AI Enablement Engineer: Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "Every skill an AI Enablement Engineer needs: 51 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "Every skill an AI Enablement Engineer needs: 55 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-enablement-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Enablement Engineer: Complete Skill Inventory
 
-> **GenAI target rank:** #20 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #23 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-enablement-engineer) · [role hub](../../02-roles/hubs/ai-enablement-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-enablement-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-enablement-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**51 skills:** Must 4 · Important 14 · Should 22 · Optional 11. **Evidence:** JD 2 · S 16 · P 33 (65% practice-curated). **Non-technical:** 13.
+**55 skills:** Must 3 · Important 16 · Should 24 · Optional 12. **Evidence:** S 26 · P 29 (53% practice-curated). **Non-technical:** 13.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -28,18 +28,18 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (adjacent)] · Internal tooling & DevEx [P] · OAuth/OIDC, RBAC, SSO [P]<br>**Important:** Agents & tool use [P] · Guardrails [S · T0-14] · LLM gateways [S · T0-14]<br>**Should:** RAG [P] · Observability (OpenTelemetry traces, metrics) [P] · PII detection & redaction [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Change management & adoption [P] · Coding-agent rollout [S · T0-16] · Pilots & adoption measurement [S · T0-06]<br>**Should:** AI inventory & risk register [S · T0-06] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (adjacent)]<br>**Should:** TypeScript / JavaScript [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Internal tooling & DevEx [S · T0-62]<br>**Important:** LLM APIs & tool calling [S · T0-62] · Agents & tool use [P] · Guardrails [S · T0-14]<br>**Should:** OAuth/OIDC, RBAC, SSO [S · T0-62] · RAG [P] · Observability (OpenTelemetry traces, metrics) [P] · PII detection & redaction [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-62]<br>**Optional:** LLM gateways [S · T0-62] |
+| Technical: knowledge | **Method / practice** | **Must:** Change management & adoption [S · T0-62]<br>**Important:** Coding agents & AI-assisted engineering [S · T0-16] · Pilots & adoption measurement [S · T0-06] · Prompt engineering [S · T0-62] · GRC & risk assessment [S · T0-62]<br>**Should:** AI inventory & risk register [S · T0-06] |
+| Technical: concrete | **Programming language** | **Important:** Python (production) [S · T0-62]<br>**Should:** TypeScript / JavaScript [P] |
 | Technical: concrete | **Framework / SDK** | **Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [P] |
 | Technical: concrete | **Library / package** | **Should:** LiteLLM [S · T0-16] · FastMCP [S · T0-16] · langchain-mcp-adapters [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
-| Technical: concrete | **Platform / cloud service** | **Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [P]<br>**Optional:** LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [P] |
+| Technical: concrete | **Platform / cloud service** | **Important:** Low-code workflow automation [S · T0-62]<br>**Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [P]<br>**Optional:** LLM API providers (choose 2: OpenAI API platform \| Anthropic API \| Gemini API) [P] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Optional:** Kubernetes [P] · Docker [P] |
 | Technical: concrete | **Specialised product** | **Important:** Claude Code [S · T0-16]<br>**Should:** GitHub Copilot [P] · Cursor [P] · OpenAI Codex [P] · Coding-agent tools (choose 1: GitHub Copilot \| Cursor \| Claude Code \| OpenAI Codex) [S · T0-16] · agentgateway [S · T0-16] · Azure API Management (AI gateway) [P]<br>**Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [P] |
 | Technical: concrete | **Protocol / standard** | **Important:** MCP (Model Context Protocol) [S · T0-16]<br>**Should:** OAuth 2.x [P] · OpenID Connect (OIDC) [P]<br>**Optional:** OpenAPI [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] · EU AI Act [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Teaching & workshop delivery [P] · Communication (written & verbal) [P]<br>**Should:** Technical writing [P] · Stakeholder communication [P] · Cross-functional collaboration [P] |
+| Non-technical | **Communication & collaboration** | **Must:** Teaching & workshop delivery [S · T0-62]<br>**Important:** Communication (written & verbal) [P]<br>**Should:** Technical writing [P] · Stakeholder communication [P] · Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Should:** Token & unit economics [P] · Metrics for non-deterministic systems [S · T0-06] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
@@ -57,11 +57,11 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- None recommended.
+- **Optional:** Salesforce Certified Agentforce Specialist [T0-31]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Backend/DevEx engineers; a non-technical ops lane exists (~7 months) [D · T0-06].
+- **Prerequisites:** Splits into builder/platform (DevEx/backend) and ops/adoption (internal ops, L&D, RevOps) lanes; 26.7%–33.3% require Python [B/C · T0-62].
 - **Proof to show:** An internal pilot with 5–10 colleagues measuring adoption and time saved, with a runbook and a risk register.
 - **Posting terms (measured or cited):** AI enablement, MCP, internal tools, copilot, developer productivity, adoption.
 
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Python` · `Python 3` · `production Python` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Internal tooling & DevEx` · `developer experience` · `DevEx` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `MCP` · `Model Context Protocol` · `Agents & tool use` · `agentic AI` · `AI agents` · `Guardrails` · `content filtering` · `safety filters` · `Change management & adoption` · `change management` · `adoption programmes` · `LLM gateways` · `AI gateway` · `LLM proxy` · `Coding-agent rollout` · `coding agents` · `AI coding assistants` · `Pilots & adoption measurement` · `pilots` · `POCs` · `Claude Code` · `Teaching & workshop delivery` · `training delivery` · `workshops` · `Communication` · `communication skills` · `verbal communication` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `RAG` · `retrieval-augmented generation` · `Observability` · `LLM observability` · `monitoring` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `TypeScript / JavaScript` · `TypeScript` · `JavaScript` · `GitHub Copilot` · `Copilot` · `Cursor` · `OpenAI Codex` · `Codex`
+`Internal tooling & DevEx` · `developer experience` · `DevEx` · `Change management & adoption` · `change management` · `adoption programmes` · `Teaching & workshop delivery` · `training delivery` · `workshops` · `Python` · `Python 3` · `production Python` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `MCP` · `Model Context Protocol` · `Agents & tool use` · `agentic AI` · `AI agents` · `Guardrails` · `content filtering` · `safety filters` · `Coding agents & AI-assisted engineering` · `coding agents` · `AI coding assistants` · `Pilots & adoption measurement` · `pilots` · `POCs` · `Claude Code` · `Communication` · `communication skills` · `verbal communication` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Low-code workflow automation` · `n8n` · `Make` · `Prompt engineering` · `prompt design` · `prompting` · `GRC & risk assessment` · `GRC` · `risk assessment` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `RAG` · `retrieval-augmented generation` · `Observability` · `LLM observability` · `monitoring` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `TypeScript / JavaScript` · `TypeScript`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -77,47 +77,50 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 
 | Skill | Type | Tier | Target | You (0-3) | Best evidence (V0-V3) |
 |---|---|:---:|:---:|:---:|:---:|
-| Python (production) | Programming language | M | 3 | | |
-| LLM APIs & tool calling | Concept / knowledge area | M | 3 | | |
 | Internal tooling & DevEx | Concept / knowledge area | M | 3 | | |
-| OAuth/OIDC, RBAC, SSO | Concept / knowledge area | M | 3 | | |
+| Change management & adoption | Method / practice | M | 3 | | |
+| Teaching & workshop delivery | Communication & collaboration | M | 3 | | |
+| Python (production) | Programming language | I | 2 | | |
+| LLM APIs & tool calling | Concept / knowledge area | I | 2 | | |
 | MCP (Model Context Protocol) | Protocol / standard | I | 2 | | |
 | Agents & tool use | Concept / knowledge area | I | 2 | | |
 | Guardrails | Concept / knowledge area | I | 2 | | |
-| Change management & adoption | Method / practice | I | 2 | | |
-| LLM gateways | Concept / knowledge area | I | 2 | | |
-| Coding-agent rollout | Method / practice | I | 2 | | |
+| Coding agents & AI-assisted engineering | Method / practice | I | 2 | | |
 | Pilots & adoption measurement | Method / practice | I | 2 | | |
 | Claude Code | Specialised product | I | 2 | | |
-| Teaching & workshop delivery | Communication & collaboration | I | 2 | | |
 | Communication (written & verbal) | Communication & collaboration | I | 2 | | |
 | Pragmatism under ambiguity (C1) | Behavioural competency | I | 2 | | |
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| Low-code workflow automation | Platform / cloud service | I | 2 | | |
+| Prompt engineering | Method / practice | I | 2 | | |
+| GRC & risk assessment | Method / practice | I | 2 | | |
 
 ## 8. Evidence and notes
 
 | Skill | Tier | Evidence | Source | Note |
 |---|:---:|---|---|---|
-| Python (production) | M | JD (B) 78.4% | JobsPipe: AI Engineer (adjacent) | internal tooling in Python or TypeScript |
-| LLM APIs & tool calling | M | JD (B) 76.7% | JobsPipe: AI Engineer (adjacent) | — |
-| Internal tooling & DevEx | M | P (D) | — | internal copilots and agent platforms |
-| OAuth/OIDC, RBAC, SSO | M | P (D) | — | SSO and identity basics |
+| Internal tooling & DevEx | M | S (B) | T0-62:L259-L281 | Core enablement work (46.7% sample) |
+| Change management & adoption | M | S (B) | T0-62:L259-L281 | Org rollout & adoption (46.7% sample) |
+| Teaching & workshop delivery | M | S (B) | T0-62:L259-L281 | Training, workshops & enablement (60.0% sample) |
+| Python (production) | I | S (B) | T0-62:L259-L281 | 26.7% sample / 33.3% Skillenai (Must for builder variant only) |
+| LLM APIs & tool calling | I | S (B) | T0-62:L259-L281 | 26.7% sample / 16.7% Skillenai (Must for builder variant only) |
 | MCP (Model Context Protocol) | I | S (C) | T0-16:L393 | MCP servers for internal systems; 30.2% of AI Enablement Engineer postings, the highest share |
 | Agents & tool use | I | P (D) | — | — |
 | Guardrails | I | S (B) | T0-14:L317 | PII redaction and access controls (A6) |
-| Change management & adoption | I | P (D) | — | change management and training |
-| LLM gateways | I | S (B) | T0-14:L317 | per-team budgets through a gateway |
-| Coding-agent rollout | I | S (C) | T0-16:L394 | Claude Code: 258 co-mentions in MCP postings |
+| Coding agents & AI-assisted engineering | I | S (C) | T0-16:L394 | Claude Code: 258 co-mentions in MCP postings |
 | Pilots & adoption measurement | I | S (C) | T0-06:L605 | pilot with 5-10 colleagues; adoption and time saved |
 | Claude Code | I | S (C) | T0-16:L394 | — |
-| Teaching & workshop delivery | I | P (D) | — | workshops and training |
 | Communication (written & verbal) | I | P (D) | — | — |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| Low-code workflow automation | I | S (C) | T0-62:L272 | 26.7% sample (n8n, Make, Zapier, Power Automate) |
+| Prompt engineering | I | S (B) | T0-62:L259-L281 | 33.3% sample / 35.7% Skillenai |
+| GRC & risk assessment | I | S (C) | T0-62:L259-L281 | 26.7% sample; internal policy & safe-use rollout |
+| OAuth/OIDC, RBAC, SSO | S | S (B) | T0-62:L259-L281 | 20.0% sample / 11.9% SSO Skillenai (Must for platform variant) |
 | RAG | S | P (D) | — | — |
 | Observability (OpenTelemetry traces, metrics) | S | P (D) | — | — |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S | P (D) | — | — |
@@ -140,6 +143,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Stakeholder communication | S | P (D) | — | — |
 | Cross-functional collaboration | S | P (D) | — | — |
 | AI inventory & risk register | S | S (C) | T0-06:L605 | a runbook and a risk register |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | S | S (C) | T0-62:L259-L281 | — |
+| LLM gateways | O | S (C) | T0-62:L259-L281 | 6.7% sample; platform variant only |
 | Kubernetes | O | P (D) | — | — |
 | Docker | O | P (D) | — | — |
 | Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) | O | P (D) | — | — |

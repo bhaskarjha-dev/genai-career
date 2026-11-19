@@ -4,9 +4,9 @@ title: "AI Product Engineer (AI Frontend): Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "Every skill an AI Product Engineer (AI Frontend) needs: 53 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "Every skill an AI Product Engineer (AI Frontend) needs: 54 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-product-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # AI Product Engineer (AI Frontend): Complete Skill Inventory
 
-> **GenAI target rank:** #21 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #20 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-product-engineer) · [role hub](../../02-roles/hubs/ai-product-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-product-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-product-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**53 skills:** Must 5 · Important 17 · Should 17 · Optional 14. **Evidence:** JD 8 · S 20 · P 25 (47% practice-curated). **Non-technical:** 8.
+**54 skills:** Must 6 · Important 17 · Should 17 · Optional 14. **Evidence:** JD 8 · S 21 · P 25 (46% practice-curated). **Non-technical:** 8.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,7 +29,7 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** APIs & integrations [JD 27.6% (feeder)] · LLM APIs & tool calling [S · T0-06] · Frontend engineering [S · T0-06]<br>**Important:** Streaming & agent UX [S · T0-06] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Generative UI [S · T0-06]<br>**Should:** RAG [P] · Agents & tool use [P] · Grounding & citations (hallucination control) [S · T0-06]<br>**Optional:** On-device / WebGPU inference [S · T0-06] · Serverless deployment [P] · Speech & voice AI (ASR, TTS, realtime voice agents) [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 37.8% (feeder)] · Agent-UX telemetry [S · T0-06] · Human-in-the-loop design [S · T0-06]<br>**Should:** Prompt engineering [P] · Rapid prototyping [P] |
+| Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 37.8% (feeder)] · Agent-UX telemetry [S · T0-06] · Human-in-the-loop design [S · T0-06] · Design craft & visual interaction systems [S · T0-62]<br>**Should:** Prompt engineering [P] · Rapid prototyping [P] |
 | Technical: concrete | **Programming language** | **Must:** TypeScript / JavaScript [JD 52.7% (feeder)]<br>**Important:** Python (production) [JD 41.8% (feeder)] |
 | Technical: concrete | **Framework / SDK** | **Must:** React [JD 69.4% (feeder)]<br>**Important:** Node.js [JD 32.3% (feeder)] · Vercel AI SDK [S · T0-06] · Next.js [P]<br>**Should:** CopilotKit [P] |
 | Technical: concrete | **Library / package** | **Optional:** Transformers.js [S · T0-06] |
@@ -42,7 +42,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] |
 | Non-technical | **Communication & collaboration** | **Should:** Communication (written & verbal) [P] · Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
-| Non-technical | **Business & product** | **Important:** Product sense [S · T0-06] |
+| Non-technical | **Business & product** | **Must:** Product sense [S · T0-62] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
 
 ## 2. Avoid
@@ -61,15 +61,15 @@ generated_by: scripts/build_skills.py
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Visible AI-frontend roles are Staff-level asking 5–6+ years [C/D · T0-06]; apply as "full-stack AI engineer".
-- **Proof to show:** A full-stack app (frontend → API → LLM → eval) with 50 eval cases and UX metrics; an on-device module benchmarked on 3+ device/browser combinations.
+- **Prerequisites:** Median 2 years stated experience (n=6 in T0-62) for AI Product Engineer, rising to 6+ years for Staff AI Frontend; also search 'full-stack AI engineer' [C · T0-62].
+- **Proof to show:** A deployed streaming chat or agent UI with cancel/retry/error states, accessibility and clean frontend–API–LLM integration (evals are a differentiator; on-device WebGPU optional).
 - **Posting terms (measured or cited):** React (69.4%), TypeScript (52.7%), Python (41.8%), AWS (41.3%), CI/CD (37.8%), Node.js (32.3%), REST API (27.6%), streaming, LLM.
 
 ## 6. Keywords to mirror (only when true)
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`React` · `React.js` · `ReactJS` · `TypeScript / JavaScript` · `TypeScript` · `JavaScript` · `APIs & integrations` · `REST APIs` · `API design` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Frontend engineering` · `frontend development` · `web development` · `Python` · `Python 3` · `production Python` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Node.js` · `Node` · `NodeJS` · `Streaming & agent UX` · `streaming UI` · `agent UX` · `Agent-UX telemetry` · `UX telemetry` · `feedback capture` · `LLM evaluation` · `evals` · `Human-in-the-loop design` · `human-in-the-loop` · `human review` · `Generative UI` · `Vercel AI SDK` · `AI SDK` · `Next.js` · `NextJS` · `Server-Sent Events` · `SSE` · `streaming HTTP` · `Product sense` · `product thinking` · `user empathy` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `RAG` · `retrieval-augmented generation` · `Agents & tool use` · `agentic AI` · `AI agents` · `WebSockets`
+`React` · `React.js` · `ReactJS` · `TypeScript / JavaScript` · `TypeScript` · `JavaScript` · `APIs & integrations` · `REST APIs` · `API design` · `LLM APIs & tool calling` · `LLM` · `LLM APIs` · `Frontend engineering` · `frontend development` · `web development` · `Product sense` · `product thinking` · `user empathy` · `Python` · `Python 3` · `production Python` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Node.js` · `Node` · `NodeJS` · `Streaming & agent UX` · `streaming UI` · `agent UX` · `Agent-UX telemetry` · `UX telemetry` · `feedback capture` · `LLM evaluation` · `evals` · `Human-in-the-loop design` · `human-in-the-loop` · `human review` · `Generative UI` · `Vercel AI SDK` · `AI SDK` · `Next.js` · `NextJS` · `Server-Sent Events` · `SSE` · `streaming HTTP` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Design craft & visual interaction systems` · `design systems` · `UI craft` · `RAG` · `retrieval-augmented generation` · `Agents & tool use`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -82,6 +82,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | APIs & integrations | Concept / knowledge area | M | 3 | | |
 | LLM APIs & tool calling | Concept / knowledge area | M | 3 | | |
 | Frontend engineering | Concept / knowledge area | M | 3 | | |
+| Product sense | Business & product | M | 3 | | |
 | Python (production) | Programming language | I | 2 | | |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | Platform / cloud service | I | 2 | | |
 | Git & CI/CD | Method / practice | I | 2 | | |
@@ -94,11 +95,11 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Vercel AI SDK | Framework / SDK | I | 2 | | |
 | Next.js | Framework / SDK | I | 2 | | |
 | Server-Sent Events (SSE) | Protocol / standard | I | 2 | | |
-| Product sense | Business & product | I | 2 | | |
 | Pragmatism under ambiguity (C1) | Behavioural competency | I | 2 | | |
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| Design craft & visual interaction systems | Method / practice | I | 2 | | |
 
 ## 8. Evidence and notes
 
@@ -109,6 +110,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | APIs & integrations | M | JD (B) 27.6% | JobsPipe: Full-Stack Engineer (feeder) | REST service layer; role-defining |
 | LLM APIs & tool calling | M | S (C) | T0-06:L69 | streaming LLM APIs |
 | Frontend engineering | M | S (C) | T0-06:L542 | state management, streaming, design systems, accessibility |
+| Product sense | M | S (C) | T0-62:L349 | 50.0% of T0-62 AI Product Engineer postings |
 | Python (production) | I | JD (B) 41.8% | JobsPipe: Full-Stack Engineer (feeder) | — |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | JD (B) 41.3% | JobsPipe: Full-Stack Engineer (feeder) | AWS 41.3% |
 | Git & CI/CD | I | JD (B) 37.8% | JobsPipe: Full-Stack Engineer (feeder) | — |
@@ -121,11 +123,11 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Vercel AI SDK | I | S (C) | T0-06:L768 | AI SDK 6 |
 | Next.js | I | P (D) | — | — |
 | Server-Sent Events (SSE) | I | S (C) | T0-16:L234 | REST/SSE/WebSocket |
-| Product sense | I | S (C) | T0-06:L542 | — |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| Design craft & visual interaction systems | I | S (C) | T0-62:L351 | 37.5% (6/16) of T0-62 postings |
 | RAG | S | P (D) | — | — |
 | Agents & tool use | S | P (D) | — | — |
 | WebSockets | S | P (D) | — | — |

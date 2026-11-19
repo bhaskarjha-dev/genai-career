@@ -4,9 +4,9 @@ title: "Forward Deployed Engineer (AI): Complete Skill Inventory"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
-review_by: 2027-01-21
-summary: "Every skill a Forward Deployed Engineer (AI) needs: 57 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+last_verified: 2026-11-19
+review_by: 2027-02-17
+summary: "Every skill a Forward Deployed Engineer (AI) needs: 58 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [forward-deployed-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -15,12 +15,12 @@ generated_by: scripts/build_skills.py
 
 # Forward Deployed Engineer (AI): Complete Skill Inventory
 
-> **GenAI target rank:** #4 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-04
+> **GenAI target rank:** #4 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-forward-deployed-engineer) · [role hub](../../02-roles/hubs/forward-deployed-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-forward-deployed-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-forward-deployed-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**57 skills:** Must 5 · Important 15 · Should 17 · Optional 20. **Evidence:** JD 2 · S 28 · P 27 (47% practice-curated). **Non-technical:** 18.
+**58 skills:** Must 5 · Important 15 · Should 18 · Optional 20. **Evidence:** JD 2 · S 29 · P 27 (47% practice-curated). **Non-technical:** 18.
 
-**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-10-23; re-verify by 2027-01-21.
+**How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
 **Tags:** [JD x%] share of live postings (JobsPipe, B; (feeder), (adjacent) or (closest) means the share was measured on a related title, named in the evidence table, not on this role) · [S09 x%] share of the S09 corpus (B) · [S · T0-xx] named in a research session (A-C) · [P] practice-curated (D).
 
@@ -29,7 +29,7 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Must:** APIs & integrations [P] · LLM APIs & tool calling [S · T0-06] · RAG [S · T0-14]<br>**Important:** Retrieval quality (hybrid, reranking, recall@k) [S · T1-03] · Permission-aware retrieval (ACLs, tenancy) [S · T1-03] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Agents & tool use [S · T0-14] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14]<br>**Should:** Data pipelines & quality [P] · Agent reliability (durable state, budgets, approvals) [P] · Tool and function calling [P] · System design [P]<br>**Optional:** Self-hosting open models [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Rapid prototyping [S · T2-01]<br>**Should:** Prompt engineering [P]<br>**Optional:** Change management & adoption [P] · AppSec & threat modelling [P] |
+| Technical: knowledge | **Method / practice** | **Important:** Rapid prototyping [S · T2-01]<br>**Should:** Prompt engineering [P] · Coding agents & AI-assisted engineering [S · T0-57, T0-69]<br>**Optional:** Change management & adoption [P] · AppSec & threat modelling [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 44.4% (adjacent)]<br>**Should:** TypeScript / JavaScript [P] · SQL [P] |
 | Technical: concrete | **Framework / SDK** | **Should:** FastAPI [P]<br>**Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] |
 | Technical: concrete | **Library / package** | **Optional:** Pydantic [P] |
@@ -58,7 +58,9 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): services channels [T0-11]
-- **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure customers; beta [T0-11]
+- **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure customers; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28 [T0-11, T0-62]
+- **Optional:** Salesforce Certified Agentforce Specialist [T0-31]
+- **Optional:** Palantir AI Engineer Specialist [T0-31]
 
 ## 5. Prerequisites and proof
 
@@ -140,6 +142,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | System design | S | P (D) | — | — |
 | Communication (written & verbal) | S | JD (B) 42.9% | JobsPipe: Solutions Architect (adjacent) | — |
 | Design docs & RFCs | S | P (D) | — | deployment write-up that covers failure modes |
+| Coding agents & AI-assisted engineering | S | S (B) | T0-57:L64, T0-57:L268, T0-69:L57 | AI coding-tool fluency tested in live Build rounds (5/14 agentic JDs + Sierra) |
 | Self-hosting open models | O | P (D) | — | on-prem or hybrid model deployment |
 | Product management | O | P (D) | — | turning field patterns into product requirements |
 | MCP (Model Context Protocol) | O | S (C) | T0-16:L41 | — |

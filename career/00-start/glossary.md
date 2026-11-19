@@ -4,10 +4,10 @@ title: "Glossary: Terms, Codes and Acronyms Used in This Repository"
 content_type: reference
 stage: 0
 status: published
-last_verified: 2026-11-06
-review_by: 2026-11-21
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "Plain one-line definitions of the evidence codes, role and skill terms, and the hiring, pay, India, visa and governance vocabulary used across the repository, each linked to a page that uses it, so a newcomer or an AI agent can read any page."
-sources: [T1-02, T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-03, T2-01]
+sources: [T1-02, T0-01, T0-02, T0-03, T0-04, T0-05, T0-06, T0-07, T0-08, T0-09, T0-10, T0-13, T0-14, T0-15, T0-16, T0-17, T0-18, T1-03, T2-01, T0-37, T0-39, T0-43, T0-46, T0-47, T0-61]
 roles: [all]
 geos: [global, us, india, uk, eu]
 tags: [glossary, acronyms, definitions, evidence-grades, disambiguation]
@@ -19,7 +19,7 @@ tags: [glossary, acronyms, definitions, evidence-grades, disambiguation]
 
 **How it is organised.** By domain, in eight sections, followed by a list of abbreviations that need only an expansion. Within each section, terms are in alphabetical order with numbers and symbols first; section 1 opens with the evidence grades in grade order. Each row gives the term, a plain definition and a page that uses it. A fact inside a definition keeps its grade and source in the repository's citation style: [B · T0-04.F10] means grade B, finding F10 of research session T0-04; "L94" adds the line.
 
-**Dates and advice.** Definitions follow the research sessions of 21–25 October 2026 and the career pages as of 5 November 2026. Legal, tax and visa entries restate T0-07, T0-08 and T0-15 as of 21–23 October 2026 and are due for re-checking by 2026-11-21. They are pointers, not legal or tax advice.
+**Dates and advice.** Definitions follow the Phase 0 research sessions (21–25 October 2026), Research Pipeline 2 sessions (November 2026) and the career pages as of 19 November 2026. Legal, tax and visa entries are short pointers re-checked against the November 2026 stage guides; verify V0 live statuses directly in [visa and relocation](../11-tracks/visa-and-relocation.md), [ATS mechanics](../06-job-search/ats-mechanics.md), [India remote tax](../09-compensation/india-remote-tax.md) and [governance careers](../11-tracks/governance-careers.md). They are pointers, not legal or tax advice.
 
 ## The short answer
 
@@ -237,7 +237,7 @@ These entries restate T0-15 as of 23 October 2026.
 |---|---|---|
 | AIGP | The IAPP Artificial Intelligence Governance Professional certification. Named in 8.9% of Axial's US AI-governance postings, with no demonstrated hiring gate or pay premium [C · T0-15.F9]. | [Skills vocabulary §4](../03-skills-and-tech/skills-vocabulary.md#4-credentials) |
 | DPDP Act | India's Digital Personal Data Protection Act. Its Rules were notified on 13 November 2025, and the main obligations apply from 13 May 2027 [B · T0-15.F12]. | [AI Governance Lead hub](../02-roles/hubs/ai-governance-lead.md) |
-| EU AI Act | The EU's risk-based AI regulation, phased in from 2025 to 2028: duties for general-purpose AI models first, then most rules, then high-risk systems [A · T0-15.F1]. For most high-risk uses, conformity assessment is the provider's own internal control, not a third-party audit [A · T0-15.F3]. | [AI Governance Lead hub](../02-roles/hubs/ai-governance-lead.md) |
+| EU AI Act | The EU's risk-based AI regulation, phased in from 2025 to 2028 (with Regulation (EU) 2026/1744 extending high-risk Annex III application to December 2027 [A · T0-61; T0-47]): duties for general-purpose AI models first, then most rules, then high-risk systems [A · T0-15.F1]. For most high-risk uses, conformity assessment is the provider's own internal control, not a third-party audit [A · T0-15.F3]. | [AI Governance Lead hub](../02-roles/hubs/ai-governance-lead.md) |
 | GPAI | General-purpose AI model: the AI Act's category for broadly capable models. Every provider must keep technical documentation, inform downstream providers, have an EU copyright policy and publish a training-content summary; models with systemic risk (presumed above 10^25 FLOP) add evaluation with adversarial testing, incident reporting and cybersecurity [A · T0-15.F2, F8]. | [Responsible AI Engineer hub](../02-roles/hubs/responsible-ai-engineer.md) |
 | GRC | Governance, risk and compliance: the corporate function, and background, from which AI-governance programme roles usually hire, alongside privacy, audit and security, with about five years' experience [C · T0-15 L162]. | [AI Governance Lead hub](../02-roles/hubs/ai-governance-lead.md) |
 | ISO/IEC 42001 | The international standard for an AI management system; certification is voluntary. It sits outside the EU harmonisation process, so it gives no presumption of conformity with the AI Act [B · T0-15.F3]. | [AI Risk & Assurance hub](../02-roles/hubs/ai-risk-assurance-specialist.md) |
@@ -303,7 +303,7 @@ Expansions only; the skills vocabulary defines the tools, and the sections above
 - [ ] Before reading a letter code (A–E, C1, L1, P1, S, T0, U, V0 or "Tier"), check the [codes table](#codes-that-mean-different-things).
 - [ ] Before relying on FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03 or T2-01, check [ERRATA](../../research/ERRATA.md).
 - [ ] Treat [P] items and D-graded scores as hypotheses, and check them against 10–20 live postings.
-- [ ] Before acting on a tax, visa or regulatory term, check this page's review date (2026-11-21) and the stage guide, and confirm with a qualified professional.
+- [ ] Before acting on a tax, visa or regulatory term, check this page's review date (2027-02-17) and the stage guide's live V0 table, and confirm with a qualified professional.
 - [ ] When adding a term, confirm it appears in career/ or the findings registry, cite the line that defines it, keep the definition to one line, and add any new clash to the codes table.
 
 ## Evidence and limits
@@ -318,7 +318,7 @@ Expansions only; the skills vocabulary defines the tools, and the sections above
   - T2-01 L706 gives the India "dead zone" as $75K–$94K. At T2-01's own ₹96 to the dollar, T0-07's band of ₹75 lakh to ₹92–98 lakh is about $78K to $96–102K (M). Use the rupee band.
   - The findings registry shows one grade per finding, parsed from the session heading. T0-18.F5 appears as A, but the session grades only one published package A and the $8–13K monthly retainer band C (T0-18 L100). Read the line before quoting a registry grade.
 - **Not defined, because the repository does not use them:** CTC (cost to company), ISO and NSO stock options, and the acronym PTEW (the sessions write "post-termination exercise window"). LPA appears once, in a T0-18 source note.
-- **Freshness.** Legal, tax, visa and regulatory entries restate sessions dated 21–23 October 2026, and this page asks for them to be re-checked by 2026-11-21. Tool and protocol statuses (MCP, A2A, AG-UI, the Triton naming, credentials) are due by 2027-01-21. The expiry classes behind such dates are listed in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief) (decision D-018). Dated posting counts are not copied here: follow the links to the pages that hold them. Repository rules change only by decision.
+- **Freshness.** Legal, tax, visa and regulatory entries were re-checked on 2026-11-19 against the RP2 stage guides (`T0-37`–`T0-43`, `T0-47`, `T0-61`), and this page sets `review_by: 2027-02-17` (90 days; check the stage guides' own 14-day V0 tables before acting on contested rules). Tool and protocol statuses are due by 2027-02-17. The expiry classes behind such dates are listed in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief) (decision D-018). Dated posting counts are not copied here: follow the links to the pages that hold them. Repository rules change only by decision.
 - **What would change an entry:** a new session or erratum, a renamed or retired tool, a regulatory or tax change, or a change to the catalogs' rules.
 
 ## Next steps

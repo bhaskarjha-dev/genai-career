@@ -1,262 +1,203 @@
 ---
 id: networking.communities-guide
-title: "Communities Guide: Which AI-Engineering Communities Are Worth Your Time"
+title: "Communities Guide: AI Communities, X Strategy, Events, Competitions and Safety"
 content_type: guide
 stage: 7
 status: published
-last_verified: 2026-11-06
+last_verified: 2026-11-19
 review_by: 2027-01-19
-summary: "Which AI-engineering communities are worth a standing weekly budget, how to take part so that it builds a reputation, and when to quit one, with a tiered directory of global and India venues as of 21 October 2026."
-sources: [T0-12, T0-05]
+summary: "Which AI communities, social platforms, events and competitions are worth weekly hours, how to participate without triggering spam or malware risks, and how India-based engineers gain global visibility."
+sources: [T0-21, T0-12, T0-05]
 roles: [all]
 geos: [global, india]
-tags: [communities, networking, discord, slack, open-source, meetups, reputation, india, bengaluru]
+tags: [communities, x-twitter, bluesky, discord, slack, open-source, events, competitions, india, bengaluru, scams]
 ---
 
-# Communities Guide: Which AI-Engineering Communities Are Worth Your Time
+# Communities Guide: AI Communities, X Strategy, Events, Competitions and Safety
 
-> Which AI-engineering communities are worth a standing weekly budget, how to take part so that it builds a reputation, and when to quit one, with a tiered directory of global and India venues as of 21 October 2026.
+> Which AI communities, social platforms, events and competitions are worth weekly hours, how to participate without triggering spam or malware risks, and how India-based engineers gain global visibility.
 
-**Dates and grades.** Community facts come from [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md), audited on 21 October 2026 and read mostly as search-result excerpts, so the session's confidence is medium [T0-12 L18, L303]. Member counts are snapshots taken at different times and are not comparable [T0-12 L204]. Join paths, rules and event dates drift: re-verify them by 2027-01-19, and re-check each join path once a quarter [T0-12 L180]. No entry in [ERRATA.md](../../research/ERRATA.md) affects the sessions used here. **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement; P practice-curated and unmeasured.
+**Dates, grades and caveats.** This guide synthesises [T0-21](../../research/sessions/T0-21-x-frontier-communities-fellowships-events.md) (retrieved 2026-11-13 to 2026-11-14 via fetch extracts for web pages and raw text for git repository policies [T0-21 L22, L378]) alongside non-overlapping community coverage from [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md) (2026-10-21) and [T0-05](../../research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md) (2026-10-21 to 2026-10-23). Fellowships and residencies moved to their own dedicated guide: [Fellowships and residencies](fellowships-and-residencies.md). **COI disclosure:** Anthropic built the model that authored T0-21; Anthropic's public performance take-home carries a `(COI)` flag and was independently live-verified on 2026-11-19. **Review trigger:** `review_by: 2027-01-19` reflects class V2 (90 days from the earliest unrefreshed T0-12 community rows dated 2026-10-21; T0-21 rows were checked 2026-11-13/14). **Grades** (EGP-1.0): A primary opened (policy text or issuer page); B transparent secondary or large dataset; C vendor, company claim (COI), practitioner or single source; D judgement; E untraceable (reported as absence); M calculation; P practice-curated.
 
 ## The short answer
 
-1. **Communities raise visibility and conversion; they are not a door to hidden jobs.** In Ashby's data on nearly 250K hires (January 2021 to June 2025), referrals are about 18% of hires (steady near 17%) and inbound 43–52% [A · T0-12.F4]; a secondary summary puts referrals at 15% at venture-backed startups [B/C · T0-12 L287]. The "hidden job market" figures, quoted at anywhere from 70% to 90% of jobs, could not be traced to a measurement [A · T0-12.F4]. Being known helps at the screen: referred candidates passed screens at 52% versus 35% in one secondary summary [B/C · T0-12 L288].
-2. **Budget four or five communities and about six hours a week, all of it public output.** One conversational core, one depth community matched to your target role, one local venue, and writing; X and LinkedIn only distribute what you make. The hours are illustrative and the weighting is the session author's judgement [C · T0-12 L141–143]. T0-12 rejects joining 20 or more servers lightly: the weak-tie result is an inverted U, and activity concentrates in a small live core [C · T0-12 L193].
-3. **Expect to be approached; do not ask.** The documented hiring mechanism is company-initiated: teams that run a community (Cursor, Zed, Appwrite) watch who contributes consistently and reach out. No conversion rate exists for any community in scope [A · T0-12.F3]. Across channels, the measurable lever is who initiates [A/B · T0-05.F2].
-4. **Follow the etiquette that every community converges on.** Self-promotion and job asks go only in designated channels, and mass-DMed CVs count as spam [A · T0-12.F9]. Open a discussion before a pull request, keep pull requests small and disclose AI help: AI-generated "slop" has turned the drive-by pull request into a liability [B · T0-12.F10].
-5. **Treat the tiers as a starting allocation, and quit fast.** The tiers below are judgement built on four proxies, not measurements [C · T0-12.F5]. Re-rank after 4–6 weeks of your own participation [C · T0-12 L95], and drop a community after 4–6 weeks with no two-way exchange [D · T0-12 L175].
-6. **From India, apply with a demo and work in public remotely.** The best-evidenced offline venues are screened or approval-gated, and the largest events are vendor- or enterprise-heavy [B/C · T0-12.F7]. The deep routes open to anyone are remote and public-output: GPU MODE competitions, EleutherAI, the vLLM developer Slack and Cohere Labs [A/B · T0-12.F8].
+1. **Communities build visibility and checkable proof; they are not a door to a "hidden job market".** In Ashby's dataset of nearly 250K hires (2021-01 to 2025-06), referrals accounted for ~18% of hires, inbound 43–52% and sourced ~16% (15% referrals across ~32K startup hires, mostly 2025), while referred applications reached interview at 40% versus 3% for inbound across 38M+ applications [B · T0-21 L78, L264–L266]. The "70–90% hidden job market" claim is untraceable [E · T0-21 L79, L244]. Keep public applications running beside community work [B · T0-21 L102].
+2. **No community, event or competition publishes a conversion rate to hire.** The one evidenced product-community hiring account is Cursor's CEO stating in a June 2026 keynote (reported by *Fortune* and *eFinancialCareers*, with *Fortune* also naming Notion and Figma) that Cursor hired many members of its 37,000+ user Discord — a company claim with no hire count (**Grade C**, updating earlier Grade A text; Zed and Appwrite contribution files contain no hiring statement) [C · T0-21 L80, L321].
+3. **Treat X, Bluesky and LinkedIn as distribution layers for artefacts, not as the work itself.** *Axios* (2026-09-10) describes X as the AI sector's group chat, but no verified first-person hire starting from posts or replies on X was found [B/E · T0-21 L84, L341]. A convenience survey of 813 general scientists (no ML breakdown) found 11% still active on X and >94% using Bluesky, while Similarweb put January 2026 all-user mobile DAU at 141.5M for Threads vs 125M for X [B · T0-21 L84, L262, L267]. Ship a verifiable artefact weekly, then distribute it [C/P · T0-21 L101].
+4. **Follow strict open-source contribution rules or stay out.** Maintainers enforce high bars and anti-slop policies: vLLM's merit-based committership typically reflects ~30+ substantial PRs and ~10+ external reviews across releases; PyTorch requires an actionable issue before a PR; llama.cpp mandates AI disclosure (permanent ban risk) and bars AI-written communications; Zed and Ghostty reject agent code the author cannot explain [A · T0-21 L85, L242–L246, L300]. Outliers such as the OpenClaw creator joining OpenAI (February 2026) are not base rates [B · T0-21 L86, L245].
+5. **Do not rely on conferences for recruiting, and treat fellowships by work-authorisation fit.** None of the NeurIPS 2026, AI Engineer World's Fair/NYC 2026 or PyTorch Conference North America 2026 pages read state a career fair (though silence on marketing pages is not proof of zero recruiting) [A · T0-21 L89, L362]. Among competitions, only Anthropic's public performance take-home (COI) states a direct recruiting threshold (<1,487 cycles) [A, COI · T0-21 L87, L247]. For structured research/safety programmes, see [Fellowships and residencies](fellowships-and-residencies.md) — Astra (>80% AI safety, C/COI) joins Anthropic Fellows (>40% offers / >35% joined, C/COI) in publishing owner-reported figures, and visa rules differ sharply [A/C · T0-21 L77, L81, L325].
+6. **Never pay for referrals or run unknown recruiter coding tests bare-metal.** Paid cohorts (e.g. Maven AI Evals at US$4,500) and mentoring marketplaces (MentorCruise US$120–$450/mo, ADPList free-to-start) have no independent job-outcome evidence [C/E · T0-21 L91, L349]. Worse, a US DC3 advisory (2026-09-18) documented fake-recruiter coding tests compromising **30,000+ devices** and stealing ~US$10.71M in crypto (Dec 2025–Jul 2026) [A · T0-21 L91, L240]. Sandbox every coding test from an unverified contact, and avoid fee-demanding Telegram/WhatsApp referral groups [A/C · T0-21 L104].
 
 ## At a glance
 
 ```mermaid
 flowchart TD
-    A["Target role and location"] --> B["Pick 4-5 communities: core, depth, local, writing"]
-    B --> C["Weeks 1-4: read the rules, observe, answer questions in public"]
-    C --> D{"Two-way exchange with a named practitioner by week 4-6?"}
-    D -->|"No"| E["Drop it and swap in the next candidate"]
+    A["Target role & location"] --> B["Pick 1 core + 1 depth community/OSS project + 1 local/remote output venue"]
+    B --> C["Weeks 1–4: read rules & AI policy, answer in public, open issue before PR"]
+    C --> D{"Visible signal by week 4–6? (merged PR, maintainer reply, leaderboard rank, or 2-way exchange)"}
+    D -->|"No"| E["Drop or change issue scope / venue (judgement, D)"]
     E --> C
-    D -->|"Yes"| F["Take a named role: facilitate, lead or demo"]
-    F --> G["Ship artefacts and share them in designated channels"]
-    G --> H{"Day 90: 6 or more artefacts and 10 or more exchanges?"}
-    H -->|"Met, inbound arriving"| I["Keep going and deepen"]
-    H -->|"Met, no inbound"| J["Change the artefact type or channel before adding communities"]
-    H -->|"Not met"| K["Cut back and fix the routine"]
+    D -->|"Yes"| F["Deepen: named role, sustained PR series, or competition write-up"]
+    F --> G["Distribute natively in designated channels + X / LinkedIn"]
+    G --> H["Day 90 review: keep what yields artefacts & loops; pair with direct applications"]
 ```
 
-The week 4–6 and day-90 thresholds are T0-12's heuristics [D · T0-12 L170–175]; the "not met" branch is practice [P].
+The ~6-hour weekly budget and 4–6 week stop-loss remain unmeasured heuristics [D · T0-21 L95, L320, L323], updated to tie stop decisions to visible signals (merged PR, maintainer reply, leaderboard rank or named two-way exchange) [D · T0-21 L101, L113].
 
-## The weekly routine: about six hours, eight slots
+## Social platforms: X, Bluesky and Threads
 
-T0-12's plan assumes an India-based engineer seeking AI-engineering roles at product or AI companies, with about six hours a week to spare; adjust both to your situation [C · T0-12 L143]. The session gives a cadence for each slot, not an hour split, so none is given here.
-
-| Slot | What to do | Cadence | Why | Grade |
+| Platform | Evidence as of November 2026 | Hiring signal | Verdict | Grade · source |
 |---|---|---|---|---|
-| Conversational core | Latent Space Discord plus the LLM Paper Club; after 4–6 weeks of attending, volunteer to facilitate a paper | Weekly | Open join. Paper Club has run weekly with rotating volunteer facilitators; its attendee list fell from 1,000 to over 450 after a cull of inactive members, so the live core is smaller than the headline count [T0-12 L149] | B |
-| Depth community (pick one) | GPU MODE for kernels and performance; EleutherAI for research, evaluation and infrastructure; vLLM for inference serving | Weekly | Public, structured output: posted competition problems and leaderboards, public-by-default research projects, a developer Slack for coordinating contributions [T0-12 L150] | B |
-| Production operations (optional) | MLOps Community Slack, in its designated channels | Weekly | Written norms and a jobs surface; one marketing testimonial is the only hiring evidence [T0-12 L151] | C |
-| Writing | One substantive technical post every two to three weeks, shared with context in each community's designated channel; see [Online presence](online-presence.md) | Every 2–3 weeks | Anecdotal support only; the cadence is the session author's judgement [T0-12 L152] | C |
-| Local | Apply to AI Tinkerers in your city with a working demo; join The Fifth Elephant meetups where they run | Monthly | Screened, demo-first, builder-dense; some Fifth Elephant meetups are members-only [T0-12 L153] | B / C |
-| Vendor community | One event from Claude Community, OpenAI's community events or a vLLM Bangalore meetup | Quarterly | Staff access and credits, but vendor-run and approval-gated [T0-12 L154] | C |
-| Passive monitoring | smol.ai AINews for Discord summaries; the Hacker News "Who is hiring?" and "Who wants to be hired?" threads | Monthly threads | AINews summarises AI Discords; the Hacker News threads have written posting rules [T0-12 L155] | B / C |
-| Information feeds only | Hugging Face Discord and r/LocalLLaMA, for news and troubleshooting | As needed | Very large (about 226k and about 750k members); no hiring evidence found [T0-12 L156] | C |
+| **X (formerly Twitter)** | *Axios* (2026-09-10) calls X the AI community's group chat (*Il Foglio* secondary); Similarweb Jan 2026: 125M daily active mobile users (all users, not AI researchers) | Announcements and job moves spread on X; **zero verified first-person hires** initiated by posts or replies found; cold replies and DMs untested [E/D · T0-21 L250–L251, L341] | **Use-with-care** (distribute artefacts; do not chase follower count) | B (reporting), E (hiring) · T0-21 L84, L192 |
+| **Bluesky** | Shiffman & Wester convenience survey of 813 scientists: >94% use Bluesky to stay informed, ~88% for networking, only 11% still active on X (~40% deleted X). **No ML-researcher breakdown** | None found | **Watch** | B (survey), E (ML split) · T0-21 L84, L193, L342 |
+| **Threads** | Similarweb Jan 2026: 141.5M daily active mobile users (above X's 125M, all users) | None found for AI researchers or hiring | **Watch** | B · T0-21 L84, L194 |
 
-**Paper Club timing from India.** The November 2024 Paper Club post gives Wednesdays at 12:00 Pacific. If that slot still holds, it falls at 01:30 IST on Thursday after the US clock change on 1 November 2026 (00:30 IST before it). Check the live Luma schedule; the facilitation is recorded but the Q&A is not [B · T0-12 L158].
+For LinkedIn strategy, see the [LinkedIn guide](linkedin-guide.md).
 
-### Pick the depth community by target role
+## Communities, open-source hubs and mentorship directory
 
-| If you target | Depth community | What you produce there |
-|---|---|---|
-| [GPU Kernel Engineer](../02-roles/hubs/gpu-kernel-engineer.md) | GPU MODE | Competition submissions on public leaderboards, then a write-up [T0-12 L370–372] |
-| [Inference Engineer](../02-roles/hubs/inference-engineer.md), [AI Infrastructure Engineer](../02-roles/hubs/ai-infrastructure-engineer.md) | vLLM; GPU MODE for kernel work | Discussion-first contributions, coordinated in the developer Slack [T0-12 L224] |
-| [ML Platform Engineer](../02-roles/hubs/ml-platform-engineer.md), [ML Engineer](../02-roles/hubs/ml-engineer.md) | MLOps Community | Answers and write-ups in its designated channels [T0-12 L211] |
-| [Research Engineer](../02-roles/hubs/research-engineer.md), [Research Scientist](../02-roles/hubs/research-scientist.md), [AI Evaluation Engineer](../02-roles/hubs/ai-evaluation-engineer.md) | EleutherAI; Cohere Labs | Volunteer work on proposed experiments; member-led programmes and co-authored papers [T0-12 L383–384] |
-| [AI Engineer](../02-roles/hubs/ai-engineer.md), [Agentic AI Engineer](../02-roles/hubs/agentic-ai-engineer.md), [Applied AI Engineer](../02-roles/hubs/applied-ai-engineer.md) | Latent Space as the core, plus an open-source product you use, such as Open WebUI | Paper Club facilitation; issues with reproductions, then small pull requests [T0-12 L225, L365] |
+Member counts are self-published snapshots and are not comparable or predictive of hiring [T0-12 L204; T0-21 L177]; third-party aggregator counts in T0-12 were 4.5× to 33× off first-party numbers [B · T0-12 L240]. Rows audited in November 2026 (`T0-21`) reflect refreshed access and status; older rows (`T0-12`, 2026-10-21) were not re-audited in T0-21 and remain due for re-verification by 2027-01-19.
 
-The role-to-community mapping is practice [P]; what each community offers is graded in the directory below. T0-12 audited AI-engineering communities only: the corpus has no evidence on communities for product, governance or security roles (for the governance track, see [Governance careers](../11-tracks/governance-careers.md)).
+### Tier 1 & active technical depth hubs
 
-## The directory (audit of 21 October 2026)
-
-Sources: T0-12 D1 (L206–214), D2 (L220–236) and D3 (L244–252). Tiers are the session's judgement [C · T0-12.F5]: Tier 1 is depth plus visible contribution, Tier 2 is useful with caveats, Tier 3 is an information feed rather than a networking venue [T0-12 L93]. "Hiring signal" means evidence of employment outcomes, and none was found for most rows [A · T0-12.F3].
-
-| Community | Focus | Tier | How to take part | India / global | Grade | As of |
+| Community | Focus | Access | Activity & rules (dated) | Hiring evidence | Verdict | Grade · source |
 |---|---|---|---|---|---|---|
-| Latent Space Discord, with the LLM Paper Club | AI-engineering conversation; weekly paper reading | 1 | Open invite; read the Paper Club essay first; attend with the pre-read; volunteer to facilitate | Global, remote | A (self-description), B (counts) | About 11.5k–12k members (directory snapshots); Paper Club details from November 2024 |
-| GPU MODE Discord | Kernels and GPU performance; competitions | 1 | Public join link; submit a working baseline early through the Popcorn CLI, then iterate; teams of up to three | Global, remote | B | 29,352 members (snapshot); AMD speedrun qualifiers from 6 March 2026 |
-| EleutherAI Discord | Open research, evaluation and infrastructure | 1 | Public; "primarily observe" at first; individuals propose experiments and recruit volunteers; talk to the project leader before starting | Global, remote | A | About two dozen staff plus a dozen or so regular volunteers, per its about page |
-| vLLM developer Slack, forum and meetups | Inference serving | 1 | Slack created in October 2024 to coordinate contributions; follow the project's contribution rules | Global; one Bangalore meetup listed | B- | Evidence is the README as copied into forks; Bangalore meetup date not shown |
-| Cohere Labs Open Science Community | Research; member-led programmes | 1 (gated) | Apply; the join link arrives by email within about a week; introduce yourself in #intros; join or start a programme | Global, remote; members from 150 countries | A (self-reported) | 4,500 members, audit 2026-10-21 |
-| MLOps Community Slack | Production ML operations | 2 | Self-promotion only in #be-shameless; bring links in "native", with context | Global | A (rules), C (size, hiring) | Join path not retrieved |
-| DataTalks.Club Slack | Data and ML learning; free zoomcamps | 2 | Public sign-up; #jobs, #career-questions and #shameless-promotion | Global | A (rules), B (size) | "Almost 100,000" Slack members in a July 2026 sponsor post |
-| Open WebUI (GitHub Discussions, Discord) | Open-source product community | 2 | Report issues with reproduction steps; "Open a discussion first"; zero tolerance for hostile behaviour | Global | A | Team page banner "We're Actively Hiring!", audit 2026-10-21 |
-| Unsloth Discord | Unsloth users and contributors | 2 | Public directory listing | Global | B | 38,674 members (snapshot); no hiring evidence found |
-| Nous Research Discord | Nous projects, including Hermes Agent | 2 (provisional) | Public Discord | Global | C | Every source is Grade C |
-| ML Collective | Open mentorship; weekly "Deep Learning: Classics and Trends" reading group | 2 | Open | Global, remote | B | Running since 2018 per two interviews; activity not re-verified |
-| AI Engineer events (World's Fair, Summit, regional) | Conferences; recorded talks on YouTube | 2 | Paid or invited tickets; go if an employer pays or you are presenting, otherwise watch the recordings | San Francisco, London, New York, Paris, Miami, Singapore | A / C | World's Fair 2026 reported at "more than 6,000" attendees; Paris 23–24 September 2026 |
-| AI Tinkerers (Bengaluru, Hyderabad, Pune, Delhi and others) | Builder meetups, demo-first | 2 | Apply early ("RSVP REQUIRED"); bring a working demo; no pitching or recruiting | India and global | A | Network of 247 cities and 120,000+ members on the Pune chapter page (earlier pages: 231 and 245 cities); Bengaluru 2026 cadence not retrieved |
-| The Fifth Elephant (HasGeek) | Conference since 2012; meetups; papers-reading community | 2 | One-year paid membership gives priority access; some meetups are members-only | Bengaluru, Hyderabad | A / B | 2026 conference started 17 July at NIMHANS; prices not retrieved |
-| PyData (Bangalore, Indore, Global) | Python data community | 2 | Open | India; PyData Global is virtual | B | PyData Global 8–10 December 2026; the Bangalore chapter's own cadence is unestablished |
-| Hugging Face Discord | News and troubleshooting | 3 | Open; link a Hub account through the verification step | Global | B | 226,018 members (snapshot); no hiring evidence found |
-| r/LocalLLaMA | News and troubleshooting | 3 | Public; 10 karma to comment, 5 subreddit karma to post; 1/10th self-promotion rule with disclosure | Global | B (size), C (rules, via a mirror) | 768k members on 30 June 2026 |
-| smol.ai AINews | Newsletter summarising AI Discords | Monitor | Subscribe | Global | B | Coverage known from 2023–24 archives; 2026 list not retrieved |
-| Hacker News "Who is hiring?" and "Who wants to be hired?" | Posted jobs | Monitor | Read the hiring thread (hiring companies only, no recruiters or job boards); post in the "wants to be hired" thread | Global | B / C | A "Who wants to be hired? (October 2026)" thread exists; read through mirrors |
-| Vendor-run: Anthropic, OpenAI, Claude Community Bengaluru | Vendor community events | Conditional | Approval-based Luma events; apply with a link to something you built | Bengaluru, Pune and other cities | A (Anthropic), B (Claude Community), B / C (OpenAI) | Events dated February to October 2026; see the India section |
-| AI Engineer Foundation | Unknown | Unrated | 2023 evidence only; easily confused with the AI Engineer conference brand | Unknown | D / Gap | No 2026 evidence |
+| **vLLM** (GitHub, Slack, forum) | Inference serving | Open (`slack.vllm.ai`, `discuss.vllm.ai`); RFCs in `#contributors`; good first issues | Active (2026-11-14). Merit-based committership (~30+ substantial PRs, ~10+ external reviews across releases; no hard number; 2 of 4 accomplishment patterns) | None stated; committer status belongs to individuals | **Use** | A · T0-21 L185, L300 |
+| **GPU MODE** (Discord & kernelbot) | GPU kernels & performance | Open; submit Python/CUDA kernels via Discord bot on **free cloud compute** (no personal GPU needed) | Active (2026-11-14); 29,352 members (T0-12 snapshot); 30,000+ submissions in one AMD contest [B · T0-12 L254] | Not stated in docs or AMD contest page | **Use** | A · T0-21 L189 |
+| **llama.cpp** (`ggml-org`) | Edge / local inference | Open via GitHub; Collaborators (Triage) tier | Active (2026-11-14). Strict AI policy: disclose AI code (ban risk); AI-written issues/PRs/replies prohibited | `ggml.ai` joined Hugging Face (2026-02-20); no contributor-hire count | **Use** | A (policy), B (news) · T0-21 L186 |
+| **EleutherAI** | Open AI research, eval & infra | General membership route unstated on page read; yearly 5-week online **SOAR** research internship (open to little prior research experience) | Undated page: 200+ monthly active, 150+ community researchers, 30+ countries, US$1M+ distributed [C · T0-21 L184] | Not stated | **Use** | A (page), C (counts) · T0-21 L184, L324 |
+| **Cohere Labs Open Science Community** | Open research & member-led programmes | **Application-based** (reviewed weekly per page — not open to anyone) | 5,000+ researchers cited overall, 100+ countries; open as of 2026-11-13 | Not stated on page read | **Use** | A · T0-21 L183, L324 |
+| **Latent Space Discord & LLM Paper Club** | AI-engineering conversation & weekly paper reading | Open invite; read Paper Club essay first; volunteer to facilitate | ~11.5k–12k members (T0-12 snapshot); Paper Club >450 active after cull (Nov 2024 post; Wed 12:00 PT = Thu 01:30 IST after Nov clock change) | None documented | **Use** | A/B (2026-10-21) · T0-12 L149, L158, L206 |
 
-**What the numbers do not tell you.** Online-to-member ratios at one snapshot (about 9–12% for Latent Space, 11.6% for GPU MODE, 12.4% for Unsloth, 5.8–5.9% for Hugging Face) say nothing about message quality [C · T0-12.F5]. Third-party aggregator member counts were about 4.5× to 33× off first-party numbers [B · T0-12 L240]. Structured output is a better activity signal: Paper Club's unbroken weekly run of more than 100 papers over 18 months (as of November 2024), and GPU MODE's 30,000+ submissions in one AMD competition [B · T0-12 L254].
+### Tier 2, local, vendor and mentorship platforms
 
-### India: where to go first
+| Community / platform | Focus | Access & cost | Activity & caveats | Hiring evidence | Verdict | Grade · source |
+|---|---|---|---|---|---|---|
+| **AI Tinkerers** (Bengaluru & 277 cities) | Screened demo-first builder meetups | RSVP + screened for hands-on AI work ("builder-only room"); bring a demo; no pitching/recruiting | 277 cities, 144,000+ members network-wide (self-published, 2026-11-14); Bengaluru cadence unstated (stretched to 184-day gap by late 2025 per T0-12 L330) | Promotes talent hiring waitlist & jobs board; **no hires documented** | **Use** | A · T0-21 L187; T0-12 L167 |
+| **MLOps Community** (Slack, chapters) | Production ML & agentic ops | Open Slack & local chapters; self-promo only in `#be-shameless` with native context [A · T0-12 L168] | Self-published: 31k Slack, 600+ events in 45 cities, 60k newsletter; named official user group of Agentic AI Foundation (Linux Foundation, 2026-05-13) | None stated on 2026-05-13 page; one marketing testimonial in T0-12 | **Use-with-care** | A (page), C (counts) · T0-21 L190; T0-12 L211 |
+| **Cursor Discord** (example of product community) | Cursor users & builders | Open Discord (37,000+ users) | Active (2026-06-23 reporting) | CEO keynote: hired "many" Discord members (*Fortune* also names Notion, Figma); no hire count, company claim | **Use-with-care** | C · T0-21 L80, L241 |
+| **DataTalks.Club Slack** | Data & ML learning; free zoomcamps | Public sign-up; `#jobs`, `#career-questions`, `#shameless-promotion`; mass CV DMs banned | "Almost 100,000" Slack members (Jul 2026 sponsor post, T0-12) | None documented | **Use-with-care** | A/B (2026-10-21) · T0-12 L163, L212 |
+| **Open WebUI** (GitHub Discussions, Discord) | OSS product community | Discussion first before PR; zero tolerance for hostility | Active (2026-10-21 audit) | Team page banner "We're Actively Hiring!" (2026-10-21) | **Use-with-care** | A (2026-10-21) · T0-12 L225 |
+| **The Fifth Elephant (HasGeek)** | India data/AI conference, meetups, paper club | Annual paid membership for priority; some meetups members-only | Bengaluru & Hyderabad; 2026 conf started 2026-07-17 (prices unretrieved) | None documented | **Use-with-care** | A/B (2026-10-21) · T0-12 L245 |
+| **PyData** (Bangalore, Global) | Python data community | Open; PyData Global virtual (2026-12-08 to 10) | Bangalore cadence unestablished (T0-12) | None documented | **Use-with-care** | B (2026-10-21) · T0-12 L248 |
+| **ADPList** | Free-to-start mentorship | Open; median session 30 min | Stats page (2026-11-12): 39K+ mentors, 593K+ members vs undated About page: 32K+ / 300K+ (counts conflict) | None published; State of Mentorship reports topics, not job outcomes | **Use-with-care** (feedback only) | C · T0-21 L181, L328 |
+| **MentorCruise** | Paid 1:1 mentorship | US$120–$450/mo plans (7-day trial), US$100–$500/call, US$100–$250/hr | Same undated page lists "6k+" and "6,700+" mentors; conflicting promo attributions | None independent (self-published 97% satisfaction, COI) | **Use-with-care** (learning only) | C · T0-21 L182, L329 |
+| **AI Evals for Engineers & PMs** (Maven cohort) | Paid evaluation course + private Discord | **US$4,500** live cohort (33 sessions, 11 lessons, 3–5 h/wk) | Cohorts 2026-10 to 2026-11 and 2027-01 to 2027-03; mentions job leads without placement claims | No independent job-outcome evidence | **Use-with-care** (pay only for learning) | A (price), E (outcomes) · T0-21 L191, L349 |
+| **Build Fast with AI** (India) | Paid AI workshops & training | Paid (e.g. Claude Mastery US$399) + occasional free webinars | Self-published 50,000+ learners, 400+ workshops (COI, 2026-11-14) | No placement claims on page read | **Use-with-care** | A (price), C (counts) · T0-21 L188 |
 
-The evidence differs for India, so it gets its own rules. Signal quality is the session's judgement from each venue's stated format, not an outcome measure [C · T0-12 L303].
+### Tier 3 & passive monitoring feeds (information only — do not budget networking hours)
 
-| City | Start with | Then | Grade |
-|---|---|---|---|
-| Bengaluru | AI Tinkerers Bengaluru with a demo (screened; address given only on acceptance); The Fifth Elephant meetups | vLLM or Python-community events for topic fit (import_ bengaluru listed 339+ registrations for 6 September 2026); vendor events, with a link to your work | A (format), B (cadence) |
-| Hyderabad | AI Tinkerers Hyderabad ("curated", "screened"); The Fifth Elephant's Open Source AI meetup, Hyderabad edition | eChai AI Builders meetups (21 August and 25 September 2026 listed) | B |
-| Pune | AI Tinkerers Pune | Practitioner-led meetups such as Oaisys (6 June 2026, with two 15-minute community demo slots) | B / C |
-| Delhi NCR | AI Tinkerers Delhi ("We screen attendance to active builders") | Most other listings lean to student and hackathon formats (the session's reading) | C |
+- **Hugging Face Discord** (~226k members) and **r/LocalLLaMA** (~768k members, 2026-06-30; 1/10th self-promo rule, LLM copy restricted via mirror): useful for news and troubleshooting; zero hiring evidence [B/C · T0-12 L156, L233–L234].
+- **Unsloth Discord** (~38.7k), **Nous Research Discord** (provisional), **ML Collective** (open reading group since 2018; activity unverified): monitor only [B/C · T0-12 L226–L229].
+- **smol.ai AINews** (Discord summaries) and **Hacker News** monthly "Who is hiring?" / "Who wants to be hired?" threads: low-effort passive monitoring [B/C · T0-12 L155, L235–L236].
 
-- **Expo-format conferences** (Cypher, World AI Summit, Open Source India, Bengaluru Tech Summit) give breadth and employer visibility but, in T0-12's judgement, poor conversation quality: go to the talks you care about and skip the floor [C · T0-12 L336].
-- **Vendor-run events** (Anthropic, OpenAI, Claude Community) are approval-based and come with staff access and credits; apply with a link to something you built [B · T0-12 L335]. Staff access is useful, but it is not a neutral signal [D · T0-12 L478].
-- **Outside Bengaluru**, join the AI Tinkerers chapter and one practitioner-led local group, and do the rest online [C · T0-12 L337]. Meetup frequency for Hyderabad, Pune and Delhi NCR is not established; the Bengaluru AI Tinkerers series ran about monthly in late 2024 and stretched to a 184-day gap by late 2025 [B · T0-12 L309, L330].
-- **Fellowships.** Anthropic Fellows is the one route with a documented offer rate (over 40% of fellows in previous cohorts received a full-time offer), but it requires work authorisation in the US, UK or Canada and presence there during the programme [A · T0-12 L111]. Apply only if you are eligible.
-- **Services firms and global capability centres** may hire mainly through employee-referral programmes and LinkedIn. T0-12 gathered no evidence on how they hire, so treat this guide as weak guidance for those targets [D · T0-12 L452] and see [Referrals and outreach](referrals-and-outreach.md).
+## Conferences, events and competitions
+
+None of the event or competition pages read below state a career fair or hiring conversion rate — except Anthropic's public performance take-home [A · T0-21 L87–L89]. Silence on marketing pages does not prove zero sponsor recruiting, but travel and visa costs (especially from India) make paid conferences a poor default unless you are presenting or an employer pays [A/D · T0-21 L123, L165, L362].
+
+| Event or competition | Dates, scale & prizes | Access & cost | Recruiting evidence & visa notes | Verdict | Grade · source |
+|---|---|---|---|---|---|
+| **Anthropic original performance take-home** **(COI)** | Simulated VLIW SIMD kernel (starts at 18,532 cycles; model scores 2,164 down to 1,363) | Public GitHub repo (`anthropics/original_performance_takehome`), free | **Only competition with a stated recruiting door:** beat **1,487 cycles** without editing tests and email performance recruiting with code and résumé; outcomes unpublished; AI-use rules for public submissions unstated | **Use-with-care** (systems/kernel roles) | A (COI) · T0-21 L87, L247, L284 |
+| **GPU MODE kernelbot leaderboards** | Ongoing, split by device (Python & CUDA) | Free cloud compute via Discord bot | No hiring stated; verifiable V2 public benchmark artefact | **Use** (kernel/infra roles) | A · T0-21 L88, L189 |
+| **ARC Prize 2026** | US$2M prize pool (ARC-AGI-2/3 + Paper Prize); submissions closed 2026-11-02, results 2026-12-04 | Open on Kaggle; no internet or commercial APIs; leaders must open-source | No hiring stated; open-sourcing yields a public artefact | **Use-with-care** (watch 2027) | A · T0-21 L227 |
+| **AMD × GPU MODE E2E speedrun** | US$1.1M pool; qualifiers Mar–Apr 2026, finals Apr–May 2026 | Open (individuals or teams of up to 3) | No hiring stated; closed May 2026, next edition unannounced | **Watch** | A · T0-21 L228 |
+| **NeurIPS 2026** | Main site Sydney 2026-12-06 to 12; satellites Atlanta & Paris 2026-12-09 to 13 (tutorials: 19/62 = 30.6% [M]) | Paid registration; financial aid/volunteers opened 2026-09-16 | No career fair stated on pages read. Invitation letters on site (Australia/US) or on request (France); apply 6–8 weeks early for Australian visas | **Use-with-care** (go to present) | A/M · T0-21 L225, L274 |
+| **AI Engineer World's Fair & NYC** | World's Fair SF Jun–Jul 2026 (7,500 attendees); NYC Oct 2026 (Eng & Leadership sold out) | Paid tickets (prices not on pages read); recorded talks on YouTube [T0-12 L244] | No career fair or sponsor job board described on pages read | **Use-with-care** (watch recordings unless presenting/sponsored) | A · T0-21 L226 |
+| **PyTorch Conference North America 2026** | Passed (San Jose inferred); attendee US$499–$999, **academic US$249** with ID | Paid registration (closed as of 2026-11-14); no scholarship stated | No job fair stated on registration page | **Watch** (next edition) | A · T0-21 L230 |
+| **KubeCon + CloudNativeCon India** | Listed for Bengaluru 2027-09-09 to 10 (2026 Mumbai edition unread) | Paid registration (prices unstated) | Not stated; mentions AGNTSummit and PyTorch Conference | **Watch** | A · T0-21 L229 |
+
+## Fellowships and residencies (summary)
+
+Structured research fellowships and residencies are the only route in scope that publishes hiring outcomes — though every figure is an uncorroborated programme-owner claim (Grade C, COI) without applicant denominators (Anthropic Fellows states >40% full-time offers on its posting vs >35% joined on its blog; Astra claims >80% of its first cohort work full-time in AI safety) [C · T0-21 L77, L325]. Work-authorisation gates vary sharply: Anthropic Fellows and Claude Corps require local work authorisation without sponsorship, whereas MATS (Berkeley J-1), ERA, ARENA, LASR Labs and Astra support visas and SPAR is fully virtual [A · T0-21 L81]. For the full 16-programme directory, stipends, deadlines and preparation rules, see **[Fellowships and residencies](fellowships-and-residencies.md)**.
+
+### Geography note: India
+
+- **Work authorisation is the binding constraint for global roles; communities do not remove it.** Prioritise global remote public-output hubs (vLLM Slack/forum, GPU MODE kernelbot on free cloud compute, EleutherAI SOAR, Cohere Labs Open Science by application) plus virtual or visa-sponsored fellowships ([Fellowships and residencies](fellowships-and-residencies.md)) [A · T0-21 L109, L113–L116, L291].
+- **Local screened venues:** AI Tinkerers Bengaluru (screened, bring a demo; Hyderabad, Pune and Delhi NCR chapters exist in T0-12 but were not re-audited in T0-21 [A/B · T0-21 L288, L347; T0-12 L309–L330]) and The Fifth Elephant meetups [A/B · T0-12 L245].
+- **Vendor training and pay gaps:** Build Fast with AI sells workshops (e.g. US$399) with no placement claims [A · T0-21 L289]. LFX Mentorship pays US$1,300 in India vs US$6,000 in the US (~22%) [A/M · T0-21 L292].
+- **Scams on Indian chat groups:** Unsolicited Telegram or WhatsApp "referral" groups demanding registration, deposit or task fees (often with rotating UPI IDs and refusal of video calls) are scam signals; report to helpline **1930** or the National Cyber Crime Reporting Portal [C · T0-21 L104, L248, L309].
+- **Services firms and GCCs:** Neither T0-12 nor T0-21 found community-hiring evidence for Indian IT-services firms or GCCs; rely on [Referrals and outreach](referrals-and-outreach.md) and the [LinkedIn guide](linkedin-guide.md).
 
 ## How to do it
 
-1. **Choose the set (week 0).** One core, one depth community from the role table, one local venue, plus writing. Check that each join path is still open [T0-12 L180]. *Done when:* four or five communities are in your tracker with verified join paths [P].
-2. **Spend the first 30 days giving.** Read the rules and pinned material before posting. Introduce yourself where there is an intros channel. Answer questions you can answer completely, with reproducible detail, and put code longer than five lines in a thread rather than a screenshot. Bring links in natively, with context [A · T0-12 L347–350]. Hold your first promotional post until you have made several non-promotional ones [D · T0-12 L351]. *Done when:* each community has seen several complete answers from you and at least one two-way technical exchange [P].
-3. **Contribute where a team might hire.** Use the product and report issues with clear reproduction steps. Open a discussion before you write code. Keep pull requests small and consistent in quality across several contributions. Disclose AI assistance and review every AI-produced line yourself. Stay engaged after a merge [A · T0-12 L355–358], and never ask for a job inside an issue or pull request, a norm inferred rather than written [D · T0-05 L468]. When the team posts an opening, apply through its own page [A · T0-12 L359]. *Done when:* one agreed approach has led to small merged pull requests in one area [P]. A single merged contribution is the modal outcome in every repository T0-05 examined, so one alone is a weak signal [A · T0-05.F3].
-4. **Or take the competition route (kernels).** Read the competition rules in GPU MODE's Discord, submit a working baseline early through the command-line tool, iterate, and write up your approach after the leaderboard closes; the write-up step is judgement [B · T0-12 L370–372]. *Done when:* you have a leaderboard entry and a public write-up [P].
-5. **Take a named role (weeks 4–8).** Facilitate a Paper Club session: volunteers choose their own paper within the theme, and a session runs about 45 minutes plus 15 minutes of discussion. The organisers write that they have "not yet cracked" how to keep new volunteers coming, so a reliable facilitator is scarce [A · T0-12 L365]. Do the pre-read when attending: the essay's co-author estimates that skipping it cuts a session's value by about 80% or more (an estimate) [C · T0-12 L363]. Alternatives: a Community Lead role in a Cohere Labs programme [A · T0-12 L383], or a demo slot at AI Tinkerers. *Done when:* you have led one session or demo [P].
-6. **Distribute what you make.** Share each post or demo in the designated channel, with context; use X and LinkedIn as a distribution layer [B · T0-12.F2]. *Done when:* each artefact has been shared once, in the right channel of each relevant community [P].
-7. **Review at day 90 and apply the stop-loss.** Use the template below. *Done when:* each community is marked keep, change or drop [P].
-
-## The seven operating rules
-
-| # | Do | Don't | Evidence | Grade |
-|---|---|---|---|---|
-| 1 | Give far more than you ask: at least nine non-promotional contributions for each promotional one | Promote in most posts, or promote without disclosing an affiliation | r/LocalLLaMA's 1/10th rule (read through a mirror); the same norm in the MLOps Community and DataTalks.Club rules [T0-12 L162] | C |
-| 2 | Put job asks in the community's jobs channel | DM your CV to members | DataTalks.Club: "mass-sending your CVs in DMs is also considered unsolicited promotion" [T0-12 L163] | A |
-| 3 | Let hiring people start the DM; make your first direct contact with one only after 4–6 weeks of visible contribution in their space | Message a hiring manager in your first week asking for a job or a referral | The session's heuristic, consistent with how Zed approaches contributors [T0-12 L164] | D |
-| 4 | Open an issue or discussion with a reproduction first; keep pull requests small; say when AI helped | Send a drive-by or unreviewed AI-generated pull request | Open WebUI's contributing guide; Godot's policy; Ghostty's and tldraw's January 2026 moves [T0-12 L165, L123] | A (rules) / B (reporting) |
-| 5 | Take a named role: Paper Club facilitator, Cohere Labs Community Lead | Stay a silent member indefinitely | Paper Club essay; Cohere Labs programme pages [T0-12 L166] | A (roles exist) / D (effect) |
-| 6 | At meetups, show something running | Pitch a product or recruit from the floor | AI Tinkerers: the room is not for "vendor presentations, recruiting events, or general AI lectures" [T0-12 L167] | A |
-| 7 | Post in the designated promotion channel, with context; make links native | Paste bare LinkedIn or X links | MLOps Community calls context-free link drops "lazy" [T0-12 L168] | A |
-
-These are rules as written. T0-12 found no post-mortems of job-DM incidents in AI Discords, so how strictly they are enforced is unmeasured [T0-12 L403].
+1. **Pick a small, role-matched set (week 0).** Choose 1 conversational core (e.g. Latent Space), 1 depth hub matched to your target role (GPU MODE for kernels; vLLM/llama.cpp for inference; EleutherAI or Cohere Labs for research/evals; MLOps Community or a product community you actually use for applied AI), plus 1 local screened meetup if in a hub city [P; A · T0-21 L113–L115, L131]. *Done when:* 3–5 venues are logged with verified rules and AI policies [P].
+2. **Adopt the seven operating rules from day one.**
+   - Read pinned rules and `CONTRIBUTING.md` / `AGENTS.md` before posting [A · T0-12 L347; T0-21 L186].
+   - Keep self-promotion strictly in designated channels (ratio ~9 helpful contributions per promo post; native summary, never bare link drops) [A/C · T0-12 L162, L168].
+   - Never mass-DM CVs or job asks — use `#jobs` channels and let hiring teams initiate or wait until after visible contribution [A/D · T0-12 L163–L164].
+   - Open an actionable issue or RFC before writing PR code; keep PRs small [A · T0-21 L103, L246].
+   - Disclose AI-assisted code, review every line so you can explain it, and write issues/PR descriptions/replies in your own words [A · T0-21 L242–L243].
+   - Bring a running demo to screened meetups; never pitch or recruit from the floor [A · T0-12 L167; T0-21 L187].
+   - Sandbox every coding test from an unknown recruiter and verify identity via the employer's official site [A · T0-21 L104, L240].
+   *Done when:* you have checked every target community's written rules [P].
+3. **Ship one checkable public artefact per week (~6-hour heuristic [D · T0-21 L95]).** Split time across open-source/leaderboard work (2–3 h), one short results write-up or reproduction (1 h), active discussion in 1–2 communities (1 h) and direct applications/referrals (1 h) [D · T0-21 L111–L146]. Distribute each artefact natively in designated channels and on X/LinkedIn [B/C · T0-21 L101, L114]. *Done when:* a stranger can inspect a merged PR, leaderboard entry, facilitated Paper Club session or V1 write-up [P].
+4. **Apply the week 4–6 stop rule and day-90 review.** If a project or community yields zero merged PRs, maintainer replies, leaderboard movement or two-way practitioner exchanges after 4–6 weeks, shrink issue scope, ask once in the designated channel or swap venues [D · T0-21 L101, L103, L113, L115]. At day 90, audit artefacts, exchanges and resulting loops using the review template below [D · T0-12 L170–L175]. *Done when:* every venue is marked keep, pivot or drop [P].
 
 ## Templates and examples
 
-### 90-day review
+All templates and contrast pairs are practice-curated [P], built on documented community norms [T0-12 L162–L168; T0-21 L101–L104, L242–L246].
 
-The targets are T0-12's heuristics [D · T0-12 L170–175]; the layout is practice [P].
+### 90-day community & visibility review [P; D · T0-12 L170–L175; T0-21 L101]
 
 ```text
-90-DAY COMMUNITY REVIEW                 Period: [start date] to [end date]
-Average hours per week: [h]             (plan: about 6)
+90-DAY COMMUNITY REVIEW                 Period: [start] to [end]
+Weekly hours logged: [h]                (heuristic baseline: ~6 h)
 
-Community: [name]                       Tier at start: [1 / 2 / 3]
-  Join path still open:                 [yes / no]
-  Public artefacts shared here:         [n]  (posts, demos, substantive issues or PRs, facilitated sessions)
-  Two-way exchanges, named people:      [n]
-  Week of first two-way exchange:       [n]  (none by week 4-6 -> drop)
-  Named role held:                      [none / facilitator / lead / demo]
-  Inbound citing my public work:        [invitations n] [intros n] [recruiter messages n]
-  Interviews that resulted:             [n]
-  Decision:                             [keep / change artefact or channel / drop]
-(repeat for each community)
+Venue: [name]                           Type: [OSS / Discord / local / competition]
+  Public artefacts shipped here:        [n] (merged PRs, leaderboard runs, demos, facilitated talks)
+  First visible signal (week):          [n] (none by week 4–6 -> pivot or drop)
+  Two-way practitioner exchanges:       [n]
+  Inbound / interviews citing work:     [n] / [n]
+  Decision:                             [keep / change scope / drop]
 
-TOTALS
-  Public artefacts (target: 6 or more):         [n]
-  Two-way exchanges (target: 10 or more):       [n]
-  Inbound / interviews:                         [n] / [n]
-
-RULE  Output met but no inbound after 90 days -> change the artefact type
-      or the channel before adding communities.
-NEXT  Keep: [ ]   Drop: [ ]   Try next: [ ]
+RULE: Output met but zero inbound -> change artefact type or direct outreach before adding servers.
 ```
 
-### Weak → strong
+### Weak → strong community participation [P]
 
-All pairs are practice [P], built on the operating rules above.
-
-**Sharing your post (rule 7)**
-
-| Weak | Strong |
-|---|---|
-| "New blog post! [link]", pasted into the general channel | In the designated channel: "I measured [metric] for [system] on [setup]. Result: [one line]. The method and the command to reproduce it are in the post. The part I am least sure of is [X]; a second pair of eyes would help. [link]" |
-
-**Asking about jobs (rules 2 and 3)**
-
-| Weak | Strong |
-|---|---|
-| The same DM to many members: "Hi, I'm looking for AI roles. Can you refer me? CV attached." | In #jobs: "Looking for [role] roles, [location or remote]. Public work: [artefact, one line, link]. Happy to talk it through." Then reply in the thread to whoever responds. |
-
-**First contribution (rule 4)**
-
-| Weak | Strong |
-|---|---|
-| A large pull request with no prior discussion, generated with an assistant and not disclosed | A discussion: "[Problem] on [version]. Reproduction: [steps]. Proposed approach: [one paragraph]. If the maintainers agree with this direction, I can send a small PR. AI assistance: [none / used for X; I reviewed every line]." |
-
-**After a meetup** (follow up within a few days, which is judgement [D · T0-12 L379])
-
-| Weak | Strong |
-|---|---|
-| A connection request with no note | "Thanks for the question about [specific point] after my demo. Here is the [benchmark or repo] I mentioned: [link]." |
-
-**First direct message to a hiring person, after 4–6 weeks of visible work (rule 3)**
-
-| Weak | Strong |
-|---|---|
-| "Are you hiring? Can I send my CV?" | "[Name], on [issue or discussion link]: I tried [approach] and measured [result]. Would a PR covering [scope] help, or do you prefer [alternative]?" Keep it technical; if a role comes up, apply through the team's own page [A · T0-12 L359]. |
+| Scenario | Weak | Strong |
+|---|---|---|
+| **Sharing an artefact** | Bare link in `#general`: "Check out my new blog post! [URL]" | In `#be-shameless` / designated channel: "Measured [metric] on [engine/setup]: [1-line result]. Repro command and raw traces in the post; unsure about [specific trade-off] — feedback welcome. [URL]" |
+| **Opening an OSS contribution** | Surprise 1,200-line AI-generated PR with boilerplate description and no prior issue | Issue/RFC first: "Reproduced [bug] on [commit]. Proposed minimal fix: [2 bullets]. Test plan: [1 line]. AI disclosure: [none / assisted on X, every line verified by me]. Is this in scope?" |
+| **Approaching a hiring person** | Cold DM in week 1: "Hi, are you hiring AI engineers? CV attached." | Post in `#jobs` with one verifiable link, or build 4–6 weeks of visible technical exchanges first and keep project threads strictly technical [A/D · T0-12 L163–L164; T0-05 L468] |
+| **Unknown recruiter take-home** | `git clone` and `npm install` / `python setup.py` on primary workstation | Verify recruiter through the official company domain/careers page; run any downloaded code only inside a disposable VM/container with no credentials or wallets [A · T0-21 L104, L240] |
 
 ## Checklist
 
-- [ ] Four or five communities chosen: core, depth (matched to your target role), local, writing [C · T0-12 L141–143]
-- [ ] Each join path verified, and re-checked once a quarter [T0-12 L180]
-- [ ] Rules and pinned material read before the first post in each [A · T0-12 L347]
-- [ ] Jobs and promotion channels identified in each community [A · T0-12.F9]
-- [ ] At least nine non-promotional contributions for each promotional one [C · T0-12 L162]
-- [ ] No CVs or job asks sent by DM [A · T0-12 L163]
-- [ ] Every pull request preceded by a discussion with a reproduction; AI assistance disclosed [B · T0-12.F10]
-- [ ] A working demo ready before applying to a screened meetup [A · T0-12 L377]
-- [ ] A named role taken by week 8 [P]
-- [ ] Stop-loss applied: no two-way exchange after 4–6 weeks means drop [D · T0-12 L175]
-- [ ] Day-90 review done: artefacts, exchanges, inbound and interviews counted [D · T0-12 L172–174]
+- [ ] 3–5 venues chosen (core, role-matched depth/OSS hub, local or remote output channel) rather than 20+ idle servers [C/D · T0-12 L193; T0-21 L113–L115]
+- [ ] Written rules, designated `#jobs`/`#promo` channels and AI-use policies read before posting [A · T0-12 L347; T0-21 L242]
+- [ ] Public applications and referral outreach running in parallel — no reliance on "hidden job market" myths [B/E · T0-21 L78–L79, L102]
+- [ ] Every PR preceded by an actionable issue/RFC, kept small, AI use disclosed and descriptions written in your own words [A · T0-21 L242–L246]
+- [ ] X, Bluesky and LinkedIn used strictly to distribute artefacts already built [C/P · T0-21 L101, L192]
+- [ ] Working demo prepared before RSVPing to screened builder meetups (e.g. AI Tinkerers) [A · T0-21 L187]
+- [ ] Any coding test from an unverified recruiter run inside an isolated sandbox after confirming the role on official company channels [A · T0-21 L104, L240]
+- [ ] Zero fees paid for "referrals" or job-group access; paid cohorts/mentors evaluated strictly on learning value [C · T0-21 L104–L105]
+- [ ] Week 4–6 stop-loss and day-90 review scheduled in calendar [D · T0-21 L101, L115]
 
 ## Pitfalls
 
 | Red flag | Why it hurts | Fix |
 |---|---|---|
-| Mass-DMing your CV or job requests | Counted as unsolicited promotion [A · T0-12 L390] | Use the jobs channel; let hiring people start the DM |
-| Hunting for "secret" gated servers | Open servers have public join paths; the hard gates sit at programmes and events [A · T0-12.F1] | Apply to the gated programmes (Cohere Labs, AI Tinkerers) with work to show |
-| Choosing communities by size | No hiring evidence in the 226k-member Hugging Face server or the roughly 750k-member r/LocalLLaMA; aggregator counts were 4.5× to 33× off [B · T0-12 L432] | Allocate by tier and by your own exchange rate; re-rank at 4–6 weeks |
-| Drive-by or unreviewed AI-generated pull requests | Maintainers ban, auto-close or suspend programmes: Ghostty, tldraw, curl, Godot [B/C · T0-12 L397] | Discussion first; small pull requests; review and disclose AI help |
-| Headlining a single merged pull request | One merged contribution is the modal outcome [A · T0-05.F3]; vLLM bars pure code-agent PRs and one-off typo PRs, and breaches can lead to automatic banning [A · T0-05.F4; T0-05 L157] | Build a pattern in one area first |
-| Expecting to be recruited at a booth | The hiring signal at conferences is mostly sponsor marketing, or disclaimed by organisers; badge scans share your contact details with sponsors [B · T0-12.F6; T0-12 L479] | Go with a demo or a talk; skip the expo floor |
-| Entitled or hostile replies to maintainers | Zero tolerance, with "immediate action without prior warning" at Open WebUI [A · T0-12 L399] | Keep requests small, specific and polite |
-| LLM-generated posts passed off as your own | Banned by r/LocalLLaMA's rules (read through a mirror) [C · T0-12 L396] | Write it yourself; disclose translation or assistance |
-| Spreading across 20 or more servers | The weak-tie result is an inverted U, and activity concentrates in a small live core [C · T0-12 L193] | Four or five communities |
-| Cold DMs to founders with a CV or pitch | Written norms reject it everywhere T0-12 looked [A · T0-12 L192] | Wait until after visible contribution |
-| Relying on vendor-run events | Useful staff access, but vendor-run and not a neutral signal [D · T0-12 L478] | About one vendor event a quarter, as in T0-12's plan [C · T0-12 L154], beside independent communities |
+| Running an unverified recruiter's take-home repo on your host machine | US DC3 advisory (2026-09-18) linked fake-recruiter coding tests ("Contagious Interview") to 30,000+ compromised devices and US$10.71M stolen [A · T0-21 L91, L240] | Verify the recruiter via official channels and execute unknown code only in an isolated VM/sandbox |
+| Submitting undisclosed or ununderstood AI-generated PRs | llama.cpp threatens permanent bans; PyTorch, Zed and Ghostty reject ununderstood agent PRs [A · T0-21 L85, L242–L243] | Issue first, small diffs, explicit AI disclosure, human-written prose |
+| Chasing X follower count or "AI influencer" threads instead of shipping | Zero verified hires from X posts found; 11% of surveyed scientists remain active on X [B/E · T0-21 L84, L341] | Treat X purely as distribution for checkable repos, benchmarks and reproductions |
+| Paying US$4,500 cohorts or Telegram groups expecting job placement | Zero independent placement data for Maven, MentorCruise, Build Fast with AI or ADPList; fee-charging chat groups are a scam signal [C/E · T0-21 L91, L104, L349] | Pay only when the curriculum itself is worth the price; report fee scams to 1930 (India) |
+| Flying internationally to a conference expecting a job fair | NeurIPS 2026, AI Engineer 2026 and PyTorch Conf 2026 pages read list no career fair; travel and visa lead times are steep [A · T0-21 L89, L225–L230] | Attend to present a paper/demo or when employer-funded; otherwise watch talks online |
+| Mass-DMing CVs or pasting bare links across 20 servers | Counts as unsolicited promotion [A · T0-12 L163, L168]; weak-tie mobility follows an inverted U [C · T0-12 L193] | Focus on 3–5 venues; use `#jobs` and native summaries |
+| Planning around "70–90% hidden jobs" or assuming one PR gets noticed | Hidden-market share is untraceable [E · T0-21 L79]; vLLM committership reflects ~30+ PRs across releases [A · T0-21 L85] | Keep direct applications running and build a sustained contribution pattern |
 
 ## Evidence and limits
 
-- **Measured or primary.** Ashby's source-of-hire shares (nearly 250K hires) [A · T0-12.F4]; community rules as written [A · T0-12.F9]; first-party hiring accounts from Cursor, Zed and Appwrite [A · T0-12.F3]; a randomised experiment on LinkedIn's "People You May Know" covering more than 20 million people over five years, which found that moderately weak ties produced the most job mobility (*Science*, 15 September 2022) [A · T0-12.F12].
-- **Judgement.** The tiers [C · T0-12.F5]; the six-hour plan and its weighting [C · T0-12 L143]; the 4–6-week DM heuristic [D · T0-12 L164]; the 90-day targets and the stop-loss [D · T0-12 L170]. The weak-tie study concerns algorithm-suggested LinkedIn ties and job mobility, so read it as support for showing up regularly, not as proof that a given server pays off [C · T0-12 L135–137].
-- **Not measured.** No conversion rate exists for any community in scope; the only quantified route, Anthropic Fellows, is geography-gated [A · T0-12.F3; A/B · T0-12.F8]. No enforcement evidence exists for the etiquette rules [T0-12 L403]. No AI-lab hiring manager has described sourcing from Discord in the first person [T0-12 L460]. Paid cohorts, "career masterminds", and Telegram or WhatsApp referral groups were out of scope, with no evidence either way [T0-12 L195–196].
-- **Biases.** Every hiring case comes from a company that runs its own community and tells a selected success story; survivorship and selection cannot be separated [T0-12 L448]. Applicant-tracking systems have no "community" source category, so the 15–18% referral share may understate community influence by an unknown amount [T0-12 L449].
-- **Staleness.** Paper Club details date from November 2024, r/LocalLLaMA's rules were read through a mirror, and ML Collective's activity was not re-verified [T0-12 L480, L229]. Re-verify statuses by 2027-01-19.
-- **What would change this advice.** A community publishing hire counts or conversion rates; an applicant-tracking vendor reporting a large "community" source share; evidence that AI-lab hiring teams systematically watch specific Discords or leaderboards; open servers moving to application-only joins; a fellowship like Anthropic's opening to applicants without US, UK or Canadian work authorisation [T0-12 L179–182, L484–486].
+- **Primary sources read.** Repository contribution and governance files read as raw git text (vLLM, PyTorch, llama.cpp, Zed, Ghostty, Appwrite, Anthropic take-home [COI]) [A · T0-21 L437–L443, L473]; US DC3 fake-recruiter advisory [A · T0-21 L461]; community, event and competition official pages read via fetch extracts (a summarising tool, not raw full-page text — extract risk noted in T0-21 L378) [A · T0-21 L22].
+- **Large datasets & reporting.** Ashby ~250K hires, 38M+ applications and ~32K startup hires (vendor data, not AI-specific, descriptive) [B · T0-21 L264–L266]; *Science* 2022 weak-ties RCT (>20M LinkedIn members) [A · T0-12.F12]; *Fortune* / *eFinancialCareers* Cursor keynote coverage (one keynote, company claim = Grade C) [C · T0-21 L68, L80]; *Axios* X coverage and Shiffman & Wester 813-scientist convenience survey (no ML breakdown) [B · T0-21 L84, L262].
+- **Searched, not found (Absences A1–A13).** Any frontier-lab hiring manager describing sourcing from Discord in the first person [E · T0-21 L337]; any community-to-hire conversion rate [E · T0-21 L338]; career-fair evidence on NeurIPS, AI Engineer, ARC Prize or AMD speedrun pages [E · T0-21 L340]; first-person frontier-lab hires starting from X posts/replies [E · T0-21 L341]; ML-specific X-to-Bluesky/Threads migration [E · T0-21 L342]; independent job-outcome data for paid cohorts or mentoring platforms [E · T0-21 L349]; response rates for cold DMs on X/Bluesky [E · T0-21 L345]. **Usage-cap gaps in T0-21:** Kaggle/AIMO/NeurIPS competition tracks, Ray Summit, PyCon India 2026 and non-Bengaluru Indian cities were not re-audited in T0-21 [T0-21 L55, L346–L347].
+- **What would change this advice.** Published hire counts with denominators from any community or conference; first-person lab hiring-manager sourcing accounts; ML-specific social-platform migration data; or new 2027 event/competition editions adding explicit hiring tracks [T0-21 L152–L155].
 
 ## Next steps
 
-- **Turn presence into a referral or a direct ask:** [Referrals and outreach](referrals-and-outreach.md).
-- **Make what people find about you consistent and checkable:** [Online presence](online-presence.md).
-- **Choose artefacts worth sharing:** [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and [Project archetypes](../05-portfolio/project-archetypes.md).
-- **Fit communities into the search plan:** [Job-search strategy](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings); posted-job channels are in [Channels and boards](../06-job-search/channels-and-boards.md).
-- **Working from India for remote roles:** [India remote playbook](../11-tracks/india-remote-playbook.md).
-- **Next stage:** [Interview loops](../08-interviewing/interview-loops.md).
-- **Stage overview and evidence:** [Networking README](README.md), [findings for stage 07](../../research/findings.md#stage-07), [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md), [T0-05](../../research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md) and the [glossary](../00-start/glossary.md).
+- **Structured research programmes, visas and stipends:** [Fellowships and residencies](fellowships-and-residencies.md).
+- **Turn relationships into referrals and compliant outreach:** [Referrals and outreach](referrals-and-outreach.md).
+- **Make your profiles and repos checkable:** [Online presence](online-presence.md) and [LinkedIn guide](linkedin-guide.md).
+- **Build artefacts worth sharing:** [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md) and [Project archetypes](../05-portfolio/project-archetypes.md).
+- **Fit community hours into your job search:** [Job-search strategy](../06-job-search/job-search-strategy.md#27-recommended-sequencing-expanding-rings) and [India remote playbook](../11-tracks/india-remote-playbook.md).
+- **Stage overview and evidence:** [Networking README](README.md), [T0-21](../../research/sessions/T0-21-x-frontier-communities-fellowships-events.md) and [T0-12](../../research/sessions/T0-12-high-signal-communities-technical-visibility.md).

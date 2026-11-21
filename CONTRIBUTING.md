@@ -6,14 +6,14 @@ This repository aims to be the most accurate, best-organised source on GenAI car
 
 | You are adding… | Put it in | And |
 |---|---|---|
-| A guide, reference or tool for one lifecycle stage | `career/NN-stage/` (kebab-case file name) | List it in that folder's `README.md`; move its row out of "Planned" |
+| A guide, reference or tool for one lifecycle stage | `career/NN-stage/` (kebab-case file name, ideally ≤50 characters per T1-01) | List it in that folder's `README.md`; move its row out of "Planned" |
 | A tool used across stages (workbook, tracker, catalog, glossary) | `career/00-start/` with `content_type: tool` (or `reference`) | Link it from [Start Here](career/README.md) |
 | A cross-cutting playbook for a background, location or working model | `career/11-tracks/` | Same |
 | A fact about a role (definition, work footprint, interview track, pillar score) | `data/role_scores.json` | Run `python3 -B scripts/build_all.py`; the role hubs and the role map are rebuilt from it |
 | A fact that several pages need (a pay figure, a funnel rate, a timeline, a status) | Its owner only (the owners table in [AGENTS.md](AGENTS.md) §2, decision D-019) | Other pages state the point in one line and link the owner's section |
 | Structured data that documents are built from | `data/` (snake_case), with a schema in `data/schemas/` | Add a generator in `scripts/` and register it in `GENERATORS` in `scripts/build_all.py`, rather than hand-copying values into documents; never keep facts inside a script |
 | New research | `research/sessions/` as a new session; planned sessions, their briefs and the protocol are in [research pipeline 2](research/pipeline-2/README.md) | Check the report with `scripts/research_pipeline.py --appendix` before saving; verify and integrate it ([INTEGRATE.md](research/pipeline-2/INTEGRATE.md)); run `python3 -B scripts/build_all.py` |
-| A correction to a Phase 0 record | `research/ERRATA.md` | Fix the affected career documents |
+| A correction to an immutable research session (Phase 0, Phase 3 or RP2) | `research/ERRATA.md` | Fix the affected career documents and `data/` files |
 | An architectural decision | Append to `research/DECISIONS.md`, using the fields in [research/templates/DECISIONS.template.md](research/templates/DECISIONS.template.md) | Reference it in [CHANGELOG.md](CHANGELOG.md) |
 
 The lifecycle stages are: 00 start-here tools, 01 landscape, 02 roles, 03 skills and technology, 04 certifications, 05 portfolio, 06 job search, 07 networking, 08 interviewing, 09 compensation, 10 onboarding, 11 tracks. Reference material sits in the stage where it is used. The folder numbers differ from the 12-stage funnel numbers in D-001; [AGENTS.md](AGENTS.md) maps the two.
@@ -62,19 +62,27 @@ The full protocol is [T1-02](research/sessions/T1-02-evidence-grounding-protocol
 
 Compound grades in the findings registry (for example B/C) mean the finding rests on sources of both grades; quote the weaker grade when you rely on the whole finding.
 
+**Grading mechanics, flags and ceilings (T1-02 §10.3.2–§10.3.6):**
+- **Attribution versus assertion:** an *attribution claim* ("Report X states…") is graded by access depth (A if opened directly, B via reliable secondary, C via practitioner summary, D otherwise). An *assertion claim* is graded by source tier minus flags, capped by ceilings. **Any claim with assertion grade below B MUST use attribution form.** Repetition never raises a grade; "widely reported" and "many sources say" are prohibited as support (T1-02 L441; the validator rejects them outside quotes and code), and "widely cited" is allowed only with a count of outlets and dates (`H8`).
+- **Seven downgrade flags (each lowers the grade by one notch):** `−M` no usable methodology/instrument; `−I` interested party (`COI`) without independent corroboration; `−V` past TTL or superseded vintage; `−S` single study/source supporting a general or causal claim; `−D` scope or definition mismatch between claim and evidence; `−R` correction, retraction or expression of concern pending (resolve within 14 days; if retracted, E and delete); `−P` paywalled, unreachable or archive missing.
+- **Six absolute ceilings:** `MEM` (recalled from memory/model weights or unread source) → **D**; `PROMO` (vendor marketing supporting a performance claim) → **E**; `DEAD` (unreachable and unarchived >14 days) → **D**; `UNDATED` (no `as_of` date) → **D**; `HALLUC` (fabricated/non-resolving citation) → **E and delete**; `BAN` (banned archive host) → **invalid, remove**.
+- **Corroboration rule:** `grade = min(base_tier − flags + corroboration, ceilings)` floored at E. Corroboration adds at most one notch **only when zero flags and zero ceilings apply**, requires two independent opened sources from distinct organisations, and never lifts a claim above A.
+- **Forbidden zones (`C4`), symmetric burden (`C11`/`H9`) and quote cap (`C10`):** titles, summaries/TL;DRs, recommendations and tables of figures MUST NOT contain Grade D, Grade E, unverified, stale or contested claims. Boom claims and doom claims carry identical verification bars. Verbatim quotations MUST NOT exceed 15 words (paraphrase with a locator otherwise).
+
 **Other rules:**
-- **Dates, not relative time.** Write "as of October 2026"; never "currently", "recently", "nowadays" or "latest" without a date. The validator enforces this outside quotes and code.
-- **Volatile facts expire.** EGP-1.0 gives each class of fact a time-to-live, counted from the date the fact was last verified ([T1-02](research/sessions/T1-02-evidence-grounding-protocol.md) §10.6):
+- **Dates, not relative time.** Write "as of November 2026"; never "currently", "recently", "nowadays" or "latest" without a date. The validator enforces this outside quotes and code.
+- **Volatile facts expire (`T1`, `T4`, `T6` in T1-02 §10.6).** EGP-1.0 gives each class of fact a time-to-live, counted from the date the fact was last verified:
   - V0, live status of contested policies and pending rules (visa litigation, enforcement): 14 days;
   - V1, monthly series such as live posting counts and posting indices: 31 days;
   - V2, platform and product facts such as tool and credential statuses, prices and model names: 90 days;
   - V3, market estimates such as pay medians and skill-demand shares: 180 days (this repository re-verifies pay after 90 days);
   - V4, statute and rule text and annual datasets: 365 days; V5, foundations: 1,095 days; V6, dated history: no expiry.
-  A page may count from a dataset's own, older date to be conservative; it says so when it does (decision D-018).
+  Effective TTL is `min(class TTL, source cadence, days to instrument sunset)` (`T1`). **`T4`:** `last_verified` may ONLY be updated after reopening and rechecking the source; prose or formatting edits MUST NOT bump `last_verified`. **`T6`:** past `1.0×` TTL a claim is stale (excluded from summaries and recommendations); past `1.5×` TTL it is hard-expired and must be refreshed, archived or removed. A page may count from a dataset's own, older date to be conservative; it says so when it does (decision D-018).
+- **Canonical URLs and archive hygiene (`U1–U8`, `AC5` in T1-02 §10.7):** use `https` only, strip tracking/session parameters (`utm_*`, `fbclid`, `gclid`, `authuser`, `lang`), prefer persistent identifiers (DOI, versioned arXiv ID, Federal Register/docket citation, commit-SHA permalinks), and capture Wayback Machine (plus Perma.cc for decision-critical A/B sources). **Banned (`AC5`):** never cite or link the `archive.today` family (`archive.today`, `.is`, `.ph`, `.fo`, `.li`, `.md`, `.vn`), because snapshot alteration is documented (`T1-02 L655`); the validator rejects links to these hosts.
+- **Contradiction Adjudication Protocol (`CAP-1`, T1-02 §10.8):** when live claims on the same measurand diverge by >5% or categorically, run the 10-dimension same-measurand test (`K1`), trace origin independence (`K3`), grade both sides (`K4–K6`), and classify into one of six outcomes: **`R0`** false conflict (typo/circular citation), **`R1`** superseded vintage, **`R2`** definitional split (present both constructs; never merge), **`R3`** method dominance (≥2-grade unflagged gap; requires two reviewers), **`R4`** irreducible conflict (publish range with reasons; never average), or **`R5`** rejected/retracted (remove and log). Decision-critical conflicts carry a 14-day SLA (30 days otherwise; unresolved conflicts auto-publish as `R4`).
+- **Claim archaeology and the Hype Register (`H0–H9`, T1-02 §10.9; Decision D-012):** trace widely repeated statistics to their originating instrument before citing them. Origin-untraceable or vendor-spun claims (boom and doom equally) are quarantined as Grade E in [career/01-landscape/hype-register.md](career/01-landscape/hype-register.md) with their distortion mechanism and decision rule.
 - **Cite precisely.** Name the session and, where you can, the line, section or finding ID ([T0-04.F10], T0-13 §4.1, T0-14 L576), or an external source with its date.
 - **Grade platform data B.** Levels.fyi, JobsPipe and Fast AI Jobs figures are Grade B (a platform aggregate whose method is taken on trust), even where a session graded them A ([T1-02](research/sessions/T1-02-evidence-grounding-protocol.md) L164; [role catalog §1.3](career/02-roles/role-catalog.md#13-evidence-grades-and-conventions)). Visa wage filings (LCA) are A for what was filed, never for what people earn (decision D-018).
-- **Use ranges with reasons** when sources conflict, rather than picking one number.
-- **Treat viral statistics sceptically.** Trace them to the original measurement before repeating them.
 - **Never invent numbers.** Prefer [P] or "not measured" to a weak citation.
 - **Show the decision rule.** Guides say what to do, when, and why, with the evidence one click away.
 - **Plain register.** No "definitive", "ultimate", "guarantee" or "top 1%". Say what the evidence supports and stop.
@@ -129,6 +137,7 @@ Some documents, or blocks within them, are generated from `data/` by `scripts/`.
 | `build_employers.py` | Target employers directory (`career/01-landscape/target-employers.md`, D-024) |
 | `rank_countries.py` | Country and city rankings (`career/11-tracks/country-rankings.md`, D-025) |
 | `build_skills_views.py` | The skills radar and credentials by role |
+| `build_learning_resources.py` | Rated learning resources catalog (`career/03-skills-and-tech/learning-resources.md`, D-027) |
 | `rank_credentials.py` | Ranked credential catalog (`career/04-certifications/credential-catalog.md`, D-026) |
 | `build_archetypes.py` | Project archetypes (`career/05-portfolio/project-archetypes.md`) |
 | `build_prompts.py` | Interview prep packs (`career/08-interviewing/prep-packs.md`) |
@@ -145,7 +154,8 @@ Every generator supports `--check`. **`python3 -B scripts/build_all.py` runs the
 2. Run `python3 -B scripts/build_all.py` (it ends with the manifest and the validator). If you changed a script, also run the tests: `python3 -B -m unittest discover -s scripts/tests`.
 3. Run `python3 -B scripts/validate_docs.py`. It checks links, anchors, tables, front matter, writing rules, dead ends, the guide pattern, every generated output, the stack model, cross-file ranks and corpus coverage, and must print `PROBLEMS: 0`. It also lists documents due for re-verification. CI runs the tests and the same check on every push and pull request; a weekly scheduled run fails while any page is past its `review_by` date (decision D-020). While drafting, `python3 -B scripts/validate_docs.py --files <path>` checks one document.
 4. For a new or substantially revised guide, have someone other than the author check every figure against the line it cites, and fix or relabel what no source supports (decision D-018). Record open problems in [ROADMAP.md](ROADMAP.md) §7.
-5. Add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md).
+5. **Quarterly statistical audit (T1-02 §10.13.3):** each quarter, draw a stratified random sample of **n = 59** live claims (by TTL class and grade) and re-verify source existence, scope, grade, currency and archive (0 defects in 59 bounds the defect rate at ≤4.95% at 95% confidence; any defect widens the affected stratum to n = 299 and triggers a root-cause review), plus **n = 20** rejected or demoted claims to check false rejections.
+6. Add an entry under `## [Unreleased]` in [CHANGELOG.md](CHANGELOG.md).
 
 **Scripts:** standard library only; run them with `python3 -B` so that no `__pycache__` is left behind.
 

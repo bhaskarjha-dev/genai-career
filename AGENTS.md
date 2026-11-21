@@ -50,6 +50,7 @@ This repository is an evidence-graded knowledge base for GenAI careers. These ru
 | Target employers and sponsor registers (D-024) | `data/target_employers.json` | `build_employers.py --update` | `career/01-landscape/target-employers.md` |
 | Country and city rankings (D-025) | `data/countries.json` | `rank_countries.py --update` | `career/11-tracks/country-rankings.md` |
 | Ranked credential catalog (D-026) | `data/credentials.json` | `rank_credentials.py --update` | `career/04-certifications/credential-catalog.md` |
+| Rated learning resources (D-027) | `data/learning_resources.json` | `build_learning_resources.py --update` | `career/03-skills-and-tech/learning-resources.md` |
 | Research findings | `research/sessions/*.md` (new sessions only) | `build_findings.py --update` | `data/findings.json`, `research/findings.md` |
 | Planned research sessions and reduce steps | `research/pipeline-2/catalogue.json`; briefs in `research/pipeline-2/briefs/` | `research_pipeline.py --update` | The tracker in `research/pipeline-2/README.md`; `--prompt <id>` assembles a session's prompt |
 | Document index | front matter of any document | `build_manifest.py --update` | `llms.txt`, `data/manifest.json` |
@@ -70,9 +71,10 @@ All scripts live in `scripts/`; run them with `python3 -B`. **`python3 -B script
 | Proof-of-work standards | `career/05-portfolio/proof-of-work-standards.md` |
 | India market; India tax; visa rules | `career/01-landscape/market-overview.md`; `career/09-compensation/india-remote-tax.md`; `career/11-tracks/visa-and-relocation.md` |
 | Title statuses, quarantine and not-a-role registers | `career/02-roles/role-catalog.md` |
+| AI career claims checked against evidence (D-012) | `career/01-landscape/hype-register.md` |
 | Grade definitions | `CONTRIBUTING.md` §3 (authority: T1-02 §10) |
 
-**Never hand-edit** anything between `BEGIN GENERATED` and `END GENERATED` markers, or any file whose front matter has `generated_by` without "(generated blocks)". Those files are generated in full: the role map, the role hubs index (`career/02-roles/hubs/README.md`), the inventories and their folder page, the skills radar, credentials by role, the ranked credential catalog, project archetypes, target employers, country rankings, prep packs, the tool catalog, the findings registry, `llms.txt`, `data/findings.json` and `data/manifest.json`. The 29 individual role hubs (`career/02-roles/hubs/*.md`) use `(generated blocks)` for their top summary card while preserving the hand-written dossier narrative below `<!-- END GENERATED -->` (D-023).
+**Never hand-edit** anything between `BEGIN GENERATED` and `END GENERATED` markers, or any file whose front matter has `generated_by` without "(generated blocks)". Those files are generated in full: the role map, the role hubs index (`career/02-roles/hubs/README.md`), the inventories and their folder page, the skills radar, credentials by role, the ranked credential catalog, the rated learning resources catalog, project archetypes, target employers, country rankings, prep packs, the tool catalog, the findings registry, `llms.txt`, `data/findings.json` and `data/manifest.json`. The 29 individual role hubs (`career/02-roles/hubs/*.md`) use `(generated blocks)` for their top summary card while preserving the hand-written dossier narrative below `<!-- END GENERATED -->` (D-023).
 
 ## 3. Answering questions from this repository
 
@@ -81,9 +83,9 @@ All scripts live in `scripts/`; run them with `python3 -B`. **`python3 -B script
 3. **Check freshness:**
    - Figures are as of their stated dates.
    - A document whose `review_by` date has passed is due for re-verification: say so when you quote it. `python3 -B scripts/validate_docs.py` lists these documents.
-   - Tool and credential statuses must be re-verified by 2027-01-21.
-   - Check [research/ERRATA.md](research/ERRATA.md) before quoting FAD, DECISIONS, T0-03, T0-06, T0-17, T1-01, T1-03 or T2-01; unconfirmed candidate errata are in ROADMAP §7.
-   - When a synthesis (FAD, DECISIONS, T1-01, T1-03, T2-01) and a Layer 0 session (T0-xx) disagree, prefer the Layer 0 session and say so: 29 of the 33 record locations in ERRATA are in syntheses. Log a new disagreement as a candidate erratum in ROADMAP §7.
+   - Tool and credential statuses follow EGP-1.0's 90-day V2 cadence (check each page's `review_by`, for example `career/00-start/tool-catalog.md` due `2026-12-22`).
+   - Check [research/ERRATA.md](research/ERRATA.md) (`U1`–`U60+`) before quoting Phase 0 syntheses/sessions (FAD, DECISIONS, T0-01–T0-18, T1-01, T1-03, T2-01), Phase 3 (`T3-02`), or RP2 sessions (`T0-19`–`T0-71`); unconfirmed candidate conflicts are in ROADMAP §7.
+   - When a synthesis (FAD, DECISIONS, T1-01, T1-03, T2-01) and a Layer 0 session (T0-xx) disagree, prefer the Layer 0 session and say so: 29 of the 33 Phase 0 record locations in ERRATA are in syntheses. Log a new disagreement as a candidate erratum in ROADMAP §7.
 4. **Respect the evidence class:**
    - [P] means practice-curated, not measured.
    - M is a model output.

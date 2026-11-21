@@ -42,7 +42,7 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 |---|---|---|
 | [career/](career/README.md) | Reference and guidance | User-facing content: start-here tools in `00-start` and the lifecycle stages `01-landscape` … `11-tracks`; each folder has a README index |
 | [research/](research/README.md) | Evidence and knowledge | 75 dated research sessions (immutable: 22 Phase 0, 2 Phase 3, 51 RP2), the findings registry, errata, the decision registry, the Founding Architecture Document, the Phase 0 pipeline specification and [research pipeline 2](research/pipeline-2/README.md) (53 sessions: 51 saved, 2 deferred past 2026-12-05) |
-| [data/](data/README.md) | Sources of truth | Role facts and scores, role titles, the skills ontology, posting-term snapshots, the stack model, project archetypes, interview prompts, tools, findings, the document manifest, and JSON Schemas |
+| [data/](data/README.md) | Sources of truth | Role facts and scores, role titles, the skills ontology, posting-term snapshots, the stack model, project archetypes, interview prompts, tools, target employers, countries, credentials, rated learning resources, findings, the document manifest, and JSON Schemas |
 | [scripts/](scripts/README.md) | Machinery | Generators (`--update` / `--check`) run by `build_all.py`, `validate_docs.py`, tests, and a personal gap-analysis tool |
 | [ROADMAP.md](ROADMAP.md) · [CHANGELOG.md](CHANGELOG.md) | Meta | Coverage, plans and open decisions; history of changes |
 | [AGENTS.md](AGENTS.md) · [llms.txt](llms.txt) | For AI | Rules for agents; an LLM index of every document |
@@ -50,12 +50,12 @@ It is written to be equally usable by **people** (readable Markdown on GitHub) a
 
 ## Status
 
-- **Phase 0 (research)** is complete: 22 sessions, the Founding Architecture Document, and 12 locked decisions. Two additional sessions (T3-01 and T3-02, November 2026) deepen the certification evidence with independent cross-check analyses.
-- **Phase 1 (content)** has:
-  - delivered the role catalogs, rankings, target order, skills ontology and role inventories, and the job-search and resume strategy;
-  - put the architecture-v2 foundation in place: the stage spine, front matter, data layer, AI indexes, findings registry and CI;
-  - added the role map and one hub per role, and the core guides for every lifecycle stage, from the market overview to growth after the first 90 days, with track playbooks.
-- **What remains:** research the corpus does not yet hold, planned as the 53 sessions of [research pipeline 2](research/pipeline-2/README.md) (networking, résumés, job search, certifications, countries and visas, pay, interviews and every role), an independent fact-check of the v0.1.0 reference documents and a human expert review of the guides, and the known issues listed in [ROADMAP.md](ROADMAP.md) §7.
+- **Phase 0 & Phase 3 (research)** are complete: 22 Phase 0 sessions (October 2026), the Founding Architecture Document, and 2 Phase 3 certification cross-check sessions (`T3-01` and `T3-02`, November 2026).
+- **Research Pipeline 2 (D-021)** has integrated **51 of 53 sessions** (November 2026; 8 of 9 reduce steps done; `T0-28` hyperscalers and `T0-33` developer tools deferred past 2026-12-05), delivering:
+  - 29 hybrid role hubs combining generated scorecards with full RP2 dossiers (D-023);
+  - four computed databases and generators: target employers (D-024, 95 employers), country/city rankings (D-025, 33 countries / 51 cities / 7 lenses), credentials (D-026, 194 credentials), and rated learning resources (D-027, 60 resources);
+  - the D-012 Hype Register (`career/01-landscape/hype-register.md`), 6 regional visa dossiers, a 61-employer interview loop reference, 161 practice prompts across 12 tracks, a 291-item tool catalog with 4-Tier Data Hygiene policy, and errata `U1–U60`.
+- **What remains:** deferred sessions `T0-28` and `T0-33` (after 2026-12-05), an independent fact-check of the v0.1.0 reference documents, human domain-expert review of the guides, and the measurement instruments and known issues listed in [ROADMAP.md](ROADMAP.md) §4–§7.
 
 ## Evidence standard
 
@@ -86,4 +86,4 @@ This work is licensed under [CC-BY-SA-4.0](LICENSE). See the [CHARTER.md](CHARTE
 
 ---
 
-*Temporal anchor: October 2026 (research). Maintained under the Vivechak research-governance framework.*
+*Temporal anchor: October–November 2026 (75 sessions). Maintained under the Vivechak research-governance framework.*

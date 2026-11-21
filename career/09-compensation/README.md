@@ -6,13 +6,13 @@ stage: 9
 status: published
 last_verified: 2026-11-19
 summary: "Index of stage 09 (compensation and negotiation): Is this offer good, and how do I negotiate it?"
-sources: [T0-02, T0-17, T1-03, T0-07, T0-18, T0-44, T0-45]
+sources: [T0-02, T0-17, T1-03, T0-07, T0-18, T0-43, T0-44, T0-45, T0-65, T0-66, T0-67]
 ---
 
 # Stage 09: Compensation and negotiation
 
 > **The question this stage answers:** Is this offer good, and how do I negotiate it?
-> **Status:** Covered and refreshed to November 2026 (RP2 sessions T0-44 and T0-45 integrated): global pay benchmarks across 11+ markets, India city/employer-type/CTC/ESOP mechanics, offer valuation including post-IPO lock-ups and Labour Codes, regional negotiation playbooks and India remote tax pointers. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered and refreshed to November 2026 (RP2 sessions T0-44, T0-45 and role dossiers T0-48–T0-67 integrated): global pay benchmarks across 11+ markets and all 29 roles (including AI leadership in T0-65), India city/employer-type/CTC/ESOP mechanics, offer valuation including dilution/senior-claims/83(b)/post-IPO lock-ups and Labour Codes, regional negotiation playbooks and India remote tax pointers (including the September 2026 ₹25K EPFO ceiling). Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 

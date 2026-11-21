@@ -7,7 +7,7 @@ status: published
 last_verified: 2026-11-19
 review_by: 2027-02-17
 summary: "For India-based engineers paid directly by US, EU or UK clients: which structure fits which billing level, the ₹75 lakh presumptive-tax cliff (Income-tax Act 2025 s.58), GST and LUT, FEMA 2026 EDF reporting, PA-CB rails, client forms and the EOR trade-off, as dated pointers rather than tax advice."
-sources: [T0-07, T0-43, T2-01]
+sources: [T0-07, T0-17, T0-43, T2-01]
 roles: [all]
 geos: [india, us, europe, uk]
 tags: [india, tax, presumptive-tax, section-58, section-44ada, gst, lut, fema, edf, firc, w-8ben, eor, contractor, msa]
@@ -102,8 +102,10 @@ Source: [T0-07 L173–183; T0-43 L247, L668] plus live primary-source verificati
 | Deemed profit | 50% of gross receipts, or more if declared | No further losses, allowances or expense deductions on top (s.58(4)) | A/B · T0-07 L190; T0-43 L247 |
 | Declaring below 50% | While income exceeds the basic exemption limit | Books of account (s.62) and a CA tax audit (s.63) | A/B · T0-07 L193 |
 | Professional tax-audit threshold | ₹50L | The general threshold outside the presumptive scheme | B · T0-07 L193 |
+| LLP statutory audit trigger | Turnover **> ₹40L** OR capital contribution **> ₹25L** | Triggers mandatory statutory audit under the LLP Act regardless of tax-audit limits | B · T0-07 L156 |
 | Tax regime | The new regime is the default (rebate to ₹12L taxable) | For presumptive incomes the old regime wins only with deductions of about ₹5.4L (₹30L billing) to ₹7.75L (₹50–75L billing); typical 80C, 80CCD(1B) and 80D totals are about ₹2.25–2.5L | B · T0-07 L108; M · T0-07 L282 |
-| GST registration | ₹20L of aggregate turnover, exports included (₹10L in special-category states) | Compulsory at ₹30L and above | B · T0-07 L96 |
+| GST registration & IGST s.2(6) export test | ₹20L of aggregate turnover, exports included (₹10L in special-category states); **all five cumulative IGST s.2(6) conditions** must hold | Compulsory at ₹30L+; zero-rating requires: (1) supplier in India, (2) recipient outside India, (3) place of supply outside India, (4) payment in convertible FX (or RBI-permitted INR), (5) supplier and recipient are not merely establishments of a distinct person | A/B · T0-07 L96, L308 |
+| RBI purpose codes & e-FIRC vs FIRA | **P0802** (software consultancy/implementation), **P0803** (database/data-processing — AI data/eval work; distinct from P0801 hardware), **P1006** (business/management consultancy — Fractional CAIO/advisory) | Match code to the MSA scope; fintech **FIRA** vs AD-bank **e-FIRC** can trigger GST input-tax-credit refund objections if local GST officers insist on a bank e-FIRC/BRC | A (codes) / C (refund risk) · T0-07 L351–358, L365 |
 | LUT (Form GST RFD-11) | Each financial year, before its first export (Rule 96A) | Lapses at year-end; without it the supply is treated as taxable at 18% IGST, refundable later (practitioner guides) | A/B · T0-07 L131; C · T0-07 L324 |
 | GST realisation | One year from the invoice, or longer if the Commissioner allows | Otherwise IGST plus interest falls due within 15 days of expiry | B · T0-07 L311 |
 | FEMA realisation (Reg. 5) | **9 months** from the invoice date (**12 months** for INR-settled invoices) | Confirmed in RBI Notification No. `FEMA 23(R)/(1)/2026-RB` (22 September 2026) amending `FEMA 23(R)/2026-RB` before commencement on 1 October 2026; older "15–18 month" articles are outdated | A/B · T0-07 L99, L511; T0-43 L243 |
@@ -126,7 +128,7 @@ T0-07 asked: if a client's all-in annual spend is ₹30 lakh, ₹50 lakh, ₹75 
 - USD/INR at ₹96 (about 95.5 on 25 August and 96.8 on 10 October 2026); an EOR at $599 a month with a 1% FX margin, and the client supplying equipment.
 - The same all-in client spend under every structure.
 
-**Net cash in hand, ₹ lakh (share of billing)** [M · T0-07 L221–230]
+**Net cash in hand, ₹ lakh (share of billing)** [M · T0-07 L221–235]
 
 | Structure | ₹30L | ₹50L | ₹75L | ₹1.2Cr |
 |---|---|---|---|---|
@@ -134,10 +136,13 @@ T0-07 asked: if a client's all-in annual spend is ₹30 lakh, ₹50 lakh, ₹75 
 | Sole proprietor, actual books and audit | 21.95 (73.2%) | 35.43 (70.9%) | 50.55 (67.4%) | 77.96 (65.0%) |
 | LLP, two partners, one working | 21.40 (71.3%) | 35.40 (70.8%) | 52.25 (69.7%) | 80.85 (67.4%) |
 | Pvt Ltd, all profit extracted | 21.94 (73.1%) | 35.42 (70.8%) | 50.58 (67.4%) | 78.00 (65.0%) |
+| Pvt Ltd, extracted + 14% company NPS (cash / cash + locked NPS) | 20.39 / 23.48 (78.3%) | 33.36 / 38.86 (77.7%) | 47.97 / 56.48 (75.3%) | 75.18 / **89.10 (74.3%)** |
+| Pvt Ltd, retain-optimised (cash + illiquid retained profit, before dividend tax) | 12.75 + 9.32 | 12.75 + 23.98 | 12.75 + 42.32 | 12.75 + 75.32 |
 | EOR, cash take-home | 19.42 (64.7%) | 32.86 (65.7%) | 47.90 (63.9%) | 75.01 (62.5%) |
 | EOR, cash plus employer-funded PF and gratuity (locked) | 20.38 (67.9%) | 34.29 (68.6%) | 49.91 (66.6%) | 78.06 (65.1%) |
+| EOR + 14% employer NPS (cash / cash + locked PF, gratuity & NPS) | 18.67 / 21.05 (70.2%) | 31.88 / 35.96 (71.9%) | 46.62 / 52.83 (70.4%) | 74.35 / **84.39 (70.3%)** |
 
-Employer NPS is open only to salaried structures, an EOR employee or a Pvt Ltd director. NPS money is locked until retirement, so T0-07 counts it separately [M · T0-07 L235].
+Employer NPS (s.124 under the 2025 Act, up to 14% of salary under the new regime) is open only to salaried structures — an EOR employee or a Pvt Ltd director — making **Pvt Ltd + 14% NPS (₹89.10L total wealth at ₹1.2Cr)** the highest combined cash-plus-retirement outcome above ₹1Cr, while NPS remains locked until retirement [M · T0-07 L227–235].
 
 **The cliff for a sole proprietor** [M, inputs B · T0-07 L250–259]
 
@@ -178,7 +183,7 @@ Billing needed to get back to the ₹62.77 lakh take-home: ₹94.0 lakh with sol
 | Remote | **$599/mo** paid annually; **$699/mo** month to month (contractor $29; Plus $99; CoR $325) | Owned-entity model across supported markets | A/B · T0-07 L409; T0-43 L219, L340 |
 | Oyster | **$699/mo** ($599 in some third-party tables; contractor $29) | Statutory India pass-throughs billed on top | B/C · T0-07 L411; T0-43 L219, L342 |
 
-At $599 a month the fee is ₹6.90 lakh a year: 23.0%, 13.8%, 9.2% and 5.8% of client spend at ₹30 lakh, ₹50 lakh, ₹75 lakh and ₹1.2 crore, before about 1% FX margin and about 2.4% employer statutory load [M · T0-07 L261–268]. The four Labour Codes, in force from **21 November 2025**, enlarge the PF and gratuity base (including fixed-term gratuity after one year), so employer statutory load may be understated where an EOR contributes PF on full wages [B/C · T0-07.F12; T0-43 L248].
+At $599 a month the fee is ₹6.90 lakh a year: 23.0%, 13.8%, 9.2% and 5.8% of client spend at ₹30 lakh, ₹50 lakh, ₹75 lakh and ₹1.2 crore, before about 1% FX margin and about 2.4% employer statutory load [M · T0-07 L261–268]. **Statutory update (ERRATA U51):** the four Labour Codes took effect on **21 November 2025** (enlarging the wage base and adding fixed-term gratuity after one year), and Ministry of Labour Notification **S.O. 5109(E)** raised the statutory **EPFO wage ceiling from ₹15,000 to ₹25,000/month effective 17 September 2026** (lifting the 12% statutory monthly PF cap from ₹1,800 to ₹3,000/month — ₹14,400/year higher employer floor where capped) [A · ERRATA U51; B/C · T0-07.F12; T0-43 L248]. T0-07's 2.4% statutory load used the pre-September ₹15,000 cap and may understate EOR pass-throughs where an EOR contributes PF on the higher ceiling or full basic salary.
 
 **Platforms in between.** Contractor-management and Contractor-of-Record platforms ($199–$325/mo; Remote Plus $99/mo with $100k indemnity) are payment and compliance overlays; they do not change your income-tax position. For GST, what matters is who the contractual recipient of your service is, because zero-rating needs a recipient outside India. Read the counterparty clause before you invoice without GST [C · T0-07 L417; T0-43 L219].
 
@@ -200,6 +205,7 @@ Under the RBI Master Directions on Regulation of Payment Aggregators (15 Septemb
 - **An LLP or company signing US forms** [A · T0-07 L398]. Entities use W-8BEN-E. Vendor guides call an Indian LLP a partnership, but under Treas. Reg. §301.7701-3(b)(2) a foreign entity whose members all have limited liability is a corporation by default, and the W-8BEN-E itself routes foreign partnerships to W-8IMY unless they claim treaty benefits. Get US tax counsel to sign off first.
 - **EU and UK business clients** [C · T0-07 L400]. In Solidgate and ACCA summaries, for business-to-business services the place of supply is the customer's country, so the customer accounts for VAT: the EU reverse charge under Articles 44 and 196; in the UK, the supply is outside the scope of UK VAT for the supplier. Invoice without VAT, show both parties' VAT IDs where available, and add a short reverse-charge note. On the Indian side the same invoice is a zero-rated export under the LUT.
 - **A client that withholds tax anyway.** Withholding by country was not researched. T0-07's recalled route to relief is India's foreign-tax-credit claim (Form 67 before the return due date, on ITR-3), with a Tax Residency Certificate and Form 10F to reduce withholding at source [D · T0-07 L400].
+- **Foreign client equity (options or RSUs).** If a foreign client grants stock options or RSUs to an India-resident contractor or EOR employee, check perquisite tax at vest/exercise, **Schedule FA** disclosure (requiring ITR-3), **Form 67** for foreign tax credits and **RBI LRS** remittance caps when wiring exercise funds abroad [C · T0-17 L494; A · T0-07 L194]; see [offer evaluation](offer-evaluation.md#dilution-senior-claims-and-tax-mechanics-pointers-not-tax-advice).
 - **Intermediary-type services.** Section 157 of the Finance Act 2026 omitted IGST s.13(8)(b), effective **30 March 2026** (verified 2026-11-19), placing outbound intermediary services under default s.13(2) (recipient's location) so qualifying services can export zero-rated under Rule 96A LUT. The definition of "intermediary" (s.2(13)) is unchanged, inbound foreign intermediary services now attract Indian RCM, and pre-30 March 2026 disputes remain prospective [A/B · T0-07 L336; T0-43 L246].
 
 ## How to do it
@@ -271,6 +277,11 @@ Only the IP rule is source-checked [B · T0-07.F11]; the other rows are T0-07's 
 | Liability | An uncapped indemnity | Indemnity limited to third-party IP infringement by your deliverables and breach of confidentiality; a cap at fees paid in the prior 12 months; consequential damages excluded |
 | Payment | Open-ended terms | 30–45-day terms, payer bears charges, no set-off, late fees, so that realisation stays inside the 9-month FEMA limit |
 | Restraints | A broad non-compete | Confidentiality and a narrow non-solicit; Indian Contract Act 1872 s.27 generally voids post-termination restraints of trade [B · T0-43 L258] |
+| Moral rights | Silent | Explicit waiver or non-assertion covenant to the extent permitted under Indian Copyright Act s.57 [D · T0-07 L427] |
+| Data protection | Generic confidentiality only | Data Processing Addendum aligned to India DPDP and GDPR (sub-processors, breach notification, cross-border transfers) [D · T0-07 L430] |
+| Termination & acceptance | Termination for convenience with unpaid work | Clear milestone acceptance window (e.g. 10–15 business days, deemed accepted if silent) and payment for all work performed through termination [D · T0-07 L431–433] |
+| Dispute resolution | Foreign-court litigation only | Neutral international arbitration under a New York Convention seat (enforceable cross-border) [D · T0-07 L435] |
+| Client PE protection | Silent on contracting authority | Explicit negation of any authority to negotiate, bind or conclude contracts in India on the client's behalf [D · T0-07 L437] |
 
 ### Asking a client to fund EOR parity [P; figures M · T0-07 L265–267]
 
@@ -348,7 +359,7 @@ budget of ₹ amount]?
 - **Not researched:** GAAR or sham-arrangement exposure; misclassification under Indian labour and social-security law; foreign withholding by country; exit taxes for a Pvt Ltd; state-level items (professional tax, shops-and-establishments, Udyam); GST on foreign-platform fees [T0-07 L125, L338, L480–485]. Whether platform fees netted before payout count as gross receipts is unverified [D · T0-07 L190].
 - **Unsettled readings:** whether SWIFT or TT credits count as "prescribed electronic modes" for the cash test is an inference [D · T0-07 L191].
 - **Sources that differ.** T2-01's decision table times GST registration and the LUT "before receipts exceed ₹20L" [T2-01 L175]. This page follows T0-07: register once turnover passes ₹20 lakh, and furnish an LUT before each financial year's first export [T0-07 L131].
-- **Errata and decisions.** No entry in [ERRATA](../../research/ERRATA.md) (U1–U26, as of 2026-11-06) corrects T0-07 or T2-01's decision table at L168–180; U19 corrects T2-01's dollar version of the dead zone (L706) to T0-07's rupee band, which this page uses. Decision D-006 (accepted 2026-10-21, a one-way door, confidence high) cites T0-07 KF1 and KF7 among its evidence [DECISIONS L359–365].
+- **Errata and decisions.** In [ERRATA](../../research/ERRATA.md) (U1–U60, as of 2026-11-19), **U19** corrects T2-01's dollar version of the dead zone (L706) to T0-07's rupee band, and **U51** records the statutory EPFO wage-ceiling rise from ₹15,000 to ₹25,000/month effective 17 September 2026 (Notification S.O. 5109(E)), both applied on this page. Decision D-006 (accepted 2026-10-21, a one-way door, confidence high) cites T0-07 KF1 and KF7 among its evidence [DECISIONS L359–365].
 - **What would change this advice** [T0-07 L140–147]: a tribunal or High Court excluding software development from s.62(4); AD-bank EDF workflows heavy enough to favour an EOR; old-regime deductions above about ₹5.4–7.75 lakh; foreign assets or foreign withholding (a move to ITR-3, not a change of structure); plans to scale into an agency, which strengthen the Pvt Ltd case; a client that refuses individual contractors.
 
 ## Next steps

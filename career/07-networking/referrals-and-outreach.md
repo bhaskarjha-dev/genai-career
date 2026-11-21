@@ -7,7 +7,7 @@ status: published
 last_verified: 2026-11-19
 review_by: 2027-01-19
 summary: "How to earn vouched referrals, run double opt-in introductions, write compliant artefact-led cold notes across seven jurisdictions, avoid recruiter scams and decide when open source pays off."
-sources: [T0-22, T0-05, T0-04, T0-12, T0-20, T0-21]
+sources: [T0-22, T0-05, T0-04, T0-12, T0-20, T0-21, T0-27]
 roles: [all]
 geos: [global, india, us, uk, eu, canada, singapore, australia]
 tags: [referrals, outreach, cold-email, outreach-law, gdpr, can-spam, casl, dpdp, contact-finders, open-source, scams, india]
@@ -59,10 +59,11 @@ flowchart TD
 
 **Separating selection, information and incentives (peer-reviewed literature):**
 
-- **Information effect is real:** Three field experiments (Pallais & Sands, *JPE* 2016) showed referrals reveal productivity and persistence absent from observable credentials and perform especially well when working alongside their referrer [A · T0-22 L74, L142].
+- **Household contact surveys measure a different construct:** Household surveys reporting that one-third to two-thirds of jobs involve personal contacts measure any informal help (family, friends, tips), not the ~18% formal ATS employee-referral share [B/C · T0-22 L73].
+- **Information effect and high-tech output are real:** Three field experiments (Pallais & Sands, *JPE* 2016) showed referrals reveal productivity and persistence absent from observable credentials and perform especially well when working alongside their referrer [A · T0-22 L74, L142]. Burks et al. (*QJE* 2015, nine large firms including high-tech) found referred applicants are more likely to be hired and to accept offers, produce **more patents in high-tech** (and fewer accidents in trucking), and drive profit gains primarily through lower turnover and recruiting costs [B · T0-22 L140].
 - **Turnover drops; wage effects are mixed:** Lower quit rates recur across Burks et al. (*QJE* 2015), Brown et al. (*JOLE* 2016), Dustmann et al. (*REStud* 2016) and Friebel et al. (*JPE* 2023 RCT, −15% attrition) [B · T0-22 L140–L144]. Initial wage premia fade with tenure, and jobs found through family and friends carried a 5–7% wage discount in US/EU panels [B · T0-22 L147].
 - **Bonus distortion:** In Beaman & Magruder's Kolkata lab-in-field experiment (562 participants, 407 referrals), flat pay shifted referrals toward closer, lower-ability ties while performance pay surfaced higher ability; in Friebel et al.'s RCT, larger bonuses raised volume while lowering quality [B · T0-22 L75, L144–L145]. Bonus-driven stranger referrals carry weak signal [D · T0-22 L75].
-- **Weak ties work causally:** Randomised experiments across ~20M LinkedIn users (*Science* 2022, LinkedIn-coauthored) found moderately weak ties (~10 mutual connections) drove the most job mobility, strongest in digital industries [B · T0-22 L76, L148].
+- **Weak ties work causally; alumni networks are narrower:** Randomised experiments across ~20M LinkedIn users (*Science* 2022, LinkedIn-coauthored) found moderately weak ties (~10 mutual connections) drove the most job mobility, strongest in digital industries [B · T0-22 L76, L148]. Alumni and former-employer groups remain acceptable secondary routes, but homophily narrows reach beyond similar backgrounds and no GenAI alumni yield rate exists [B/D/E · T0-22 L130, L185–L186].
 
 ### How ATS systems and employers handle referrals
 
@@ -70,20 +71,22 @@ flowchart TD
 |---|---|---|---|
 | **GitLab** (only public handbook found) | Referral = someone you worked with or know closely (reviewed within 5 business days; lasts 6 months in job family). **Endorsement** = recommendation after TA progressed an application (no bonus). Staff told to **decline cold stranger asks** | Ask before applying; if already applied, ask for an endorsement; never cold-ask strangers | A · T0-22 L77–L78, L153, L164, L175 |
 | **Greenhouse** | "Who gets credit" field names the referrer; recruiters can edit source; referrals tracked via system or unique link | Ask the referrer for their referral link before submitting | B · T0-22 L162 |
-| **Lever** | "Referral" source tag attaches a referral form and referred-by field; first-ranked source drives reporting; duplicate referrals to one posting can be blocked | Ask before submitting so the first source tag is clean | B · T0-22 L161 |
+| **Lever** | "Referral" source tag attaches a referral form and referred-by field; first-ranked source drives reporting; duplicate referrals to one posting can be blocked, and **internal-only postings cannot receive external referrals** | Ask before submitting so the first source tag is clean and confirm the requisition is external | B · T0-22 L161 |
 | **Ashby** | Secondary docs summary states admins can block referrals for existing candidates | Check with the referrer before submitting | C · T0-22 L163 |
 | **Frontier labs & Big Tech** | No public referral-policy pages found; separate-queue claims unverified | Ask your contact directly before applying | E · T0-22 L165, L342 |
 
 ### Yield-per-hour break-even (model)
 
-Using Ashby's per-application offer rates [B · T0-22 L72] and an assumed 3 cold applications per hour [D · T0-22 L248]:
+Using Ashby's per-application offer rates [B · T0-22 L72] and an assumed 3 cold applications per hour [D · T0-22 L248], paired with T0-05's 100-hour channel model [M/D · T0-05 L66, L515–L519]:
 
 | Route | Modelled offers per hour (M) | Decision threshold |
 |---|---|---|
-| Cold applying (3 apps/hour) | `0.0018 × 3 = 0.0054` (~1 offer per 185 hours) | Population baseline [M · T0-22 L252] |
+| Cold applying (3 apps/hour) | `0.0018 × 3 = 0.0054` (~1 offer per 185 hours) | Population baseline; cheap pool (~300 roles) saturates in ~15–30 h [M/D · T0-22 L252; T0-05 L509, L516] |
 | Vouched referral (`H` hours to secure) | `0.064 ÷ H` | Beats cold applying when `H < 11.9 hours` [M · T0-22 L253] |
 | Vouched referral (half lift is selection) | `0.032 ÷ H` | Beats cold applying when `H < 5.9 hours` [M · T0-22 L254] |
-| Artefact cold outreach, community, writing | Unmeasured | Earn hours once cheap relevant postings saturate [D · T0-05.F11; E · T0-22 L255] |
+| Artefact cold outreach vs tailored apps | Base: 0.27 vs 0.45 offers/100 h (no scenario reaches 10×) | Beats tailored apps per hour only if tailored inbound `P(offer)` falls below **~0.089%** (<~45% of Ashby's 0.2% anchor) [M/D · T0-05 L66, L515–L517] |
+| 100-hour OSS sprint (inside 400-hour search) | Direct yield unmeasured (assumed ~0.013/100 h) | Must raise effectiveness of remaining 300 outreach hours by **≥32%** to break even [M/D · T0-05 L66, L518] |
+| 12-hour micro-audit (bespoke vs reusable) | Unmeasured | Single-company bespoke audit needs **~17×** offer-probability lift (0.20% → 3.4%); category-level artefact reused across 20 targets needs **~1.8×** (0.20% → 0.36%) [M/D · T0-05 L66, L519] |
 
 ## Outreach law pointers across seven jurisdictions
 
@@ -111,21 +114,21 @@ In Pin's vendor-run audit of 1.3M+ lookups (March–May 2026, COI; measures **hi
 |---|---|---|---|---|
 | **Pattern guessing + manual verification** | Free | Common baseline; accuracy unmeasured [E · T0-22 L212, L348] | **Use-with-care** (primary default) | C/P · T0-22 L106, L212 |
 | **Hunter.io** | **50 free credits/month**; Starter US$49/mo (US$34/mo annual) | Covers only **~1/3** of a 30-sends/week cadence (~130 new contacts/mo); combine with manual pattern guessing [B/M · T0-22 L308, L331] | **Use-with-care** | B/M · T0-22 L308, L331 |
-| **Apollo.io** | **900 credits/year (75/month)** in Sep–Nov 2026 captures (down from 1,200/yr; conflicting pages) | Not in Pin audit; LinkedIn removed Apollo's page in Mar 2025 [C · T0-22 L309, L481] | **Use-with-care** | C · T0-22 L309, L330 |
+| **Apollo.io** | **900 credits/year (75/month)** in Sep–Nov 2026 captures (down from 1,200/yr; conflicting pages) | Not in Pin audit; LinkedIn removed Apollo's (and Seamless.ai's) company pages in Mar 2025, and **Apollo's page was restored by 2026-07-28** [C · T0-22 L309; T0-27 L240, L529] | **Use-with-care** | C · T0-22 L309, L330; T0-27 L240, L529 |
 | **RocketReach** | **US$396–$399/year annual-only** (up from US$329) | Lowest hit rate in Pin audit: **29.8%** [C · T0-22 L310, L332] | **Avoid** | C · T0-22 L310, L332 |
 | **Clay** | Launch **US$185/month monthly** (**US$167/month annual**) | Built for GTM sales teams; overkill at ≤30 sends/week [C · T0-22 L311, L333] | **Avoid** | C · T0-22 L311, L333 |
 | **Wiza, ContactOut, Forager** | Paid tiers | Pin audit hit rates: 55.2%, 48.2%, 45.9% (hit ≠ deliverable) [C · T0-22 L213, L312] | **Avoid** | C · T0-22 L312, L334 |
-| **LinkedIn automation bots / scrapers** | Paid | Prohibited by LinkedIn Help; account restriction; LinkedIn sued Proxycurl (resolved Jul 2025) and ProAPIs (filed Oct 2025) [B · T0-22 L214, L313] | **Avoid** | B · T0-22 L214, L313 |
+| **LinkedIn automation bots / scrapers** | Paid | Prohibited by LinkedIn Help; account restriction; Proxycurl shut in Jul 2025, and **LinkedIn v. ProAPIs & Netswift reached a final consent judgment on 2026-09-16** barring scraping and selling LinkedIn data [A/B · T0-22 L214; T0-27 L65, L239, L528] | **Avoid** | A/B · T0-22 L214; T0-27 L65, L528 |
 
 ### Sending hygiene and artefact standards
 
-- **Deliverability basics:** Configure SPF, DKIM and DMARC on a custom domain (cheap hygiene even though Google's 5,000/day bulk threshold does not bind job seekers [B/C/D · T0-05 L372]). Prefer an established mailbox (if warming a new domain, Instantly's sales ramp is 5–10/day for 4–6 weeks [B · T0-05 L373]). Keep bounces under 2% [D · T0-05 L378].
+- **Deliverability basics and stop-condition maths:** Configure SPF, DKIM and DMARC on a custom domain (cheap hygiene even though Google's and Microsoft's 5,000/day bulk sender rules — Microsoft active from **2025-05-05**, routing non-compliant mail to Junk then rejecting — do not formally bind job seekers [B/D · T0-05 L372]). Prefer an established mailbox (if warming a new domain, Instantly's sales ramp is 5–10/day for 4–6 weeks [B · T0-05 L373]). **Stop conditions:** pause and clean the list if bounces exceed **>2% over ≥50 sends**; remember that at **30 sends/week**, a single spam complaint equals **~3.3%** (over 10× Google/Yahoo's 0.30% bulk ceiling), so stop contacting that domain immediately on any complaint or hostile reply [B/D · T0-05 L372–L378].
 - **Platform bans:** Never harvest addresses from GitHub — its Acceptable Use Policy ("Services Usage Limits", section 6 in T0-20's extract, previously cited as §7 in T0-05) bars unsolicited email and selling personal data to recruiters/job boards [B · T0-20 L152, L392; A · T0-05 L368]. Run LinkedIn strictly manually [B · T0-22 L214].
-- **Message format & artefact rule:** Plain text, ≤ ~80–90 words (proxy: Instantly <80 words [B · T0-22 L191]), one link to a reproducible V1/V2 artefact, one specific ask, no attachments (interviewing.io also advises against attaching a résumé [C · T0-05 L327]), calibrated wording ("In my setup, X was observed; this may reflect a configuration I cannot see" [B/D · T0-05 L242, L311]), and an easy exit. Build one reusable category-level benchmark/teardown (~10–15 h across ~20 targets) rather than 12-hour bespoke audits outside your top 5 targets [D · T0-05 L79, L519]. Stay in the green zone (documented APIs on your own account at normal rates, or own-instance OSS audits; OpenAI prohibits unsolicited safety testing [A · T0-05.F8]); disclose vulnerabilities privately first [A/D · T0-05 L316–L318, L480].
+- **Message format & artefact rule:** Plain text, ≤ ~80–90 words (proxy: Instantly <80 words [B · T0-22 L191]), one link to a reproducible V1/V2 artefact, one specific ask, no attachments (interviewing.io also advises against attaching a résumé [C · T0-05 L327]), calibrated wording ("In my setup, X was observed; this may reflect a configuration I cannot see" [B/D · T0-05 L242, L311]), and an easy exit. Build one reusable category-level benchmark/teardown (~10–15 h across ~20 targets) rather than 12-hour bespoke audits outside your top 5 targets [D · T0-05 L79, L519].
 
 ### Agency recruiters, India market and scam protection
 
-- **Recruiter incentives:** Employers pay contingency agencies 15–25% of first-year base (only on placement) and retained executive search 25–35% of first-year total compensation [C · T0-22 L83, L232]. Use legitimate employer-paid agencies strictly as a secondary channel [C · T0-22 L110].
+- **Recruiter incentives:** Employers pay contingency agencies 15–25% of first-year base (only on placement) and retained executive search 25–35% of first-year total compensation; for leadership roles, **retained search firms work by invitation** [C · T0-22 L83, L232–L233]. Use legitimate employer-paid agencies strictly as a secondary channel [C · T0-22 L110].
 - **Never pay a fee — global and India scam alerts:** US FTC-reported job-scam losses jumped from US$90M (2020) to US$501M (2024) [B · T0-22 L83, L235]. In India, official advisories warn explicitly:
   - **Ministry of Labour & Employment (2026-11-09):** All National Career Service (NCS) services are free; never pay for registration, applications or interviews; report to **NCS 1514** or **cybercrime helpline 1930** [B · T0-22 L241].
   - **Ministry of External Affairs (Dec 2023):** Registered overseas recruitment agents face a statutory service-charge cap of ₹30,000 + 18% GST; unregistered agents overcharge ₹2–5 lakh [B · T0-22 L242].
@@ -133,17 +136,57 @@ In Pin's vendor-run audit of 1.3M+ lookups (March–May 2026, COI; measures **hi
   - **Malware via coding tests:** Sandbox every take-home repo from an unknown recruiter (DC3 advisory: 30,000+ compromised devices; see [Communities guide](communities-guide.md#pitfalls)) [A · T0-21 L91, L240].
 - **India referral context:** Services firms pay explicit referral bonuses (TCS Bring Your Buddy ₹40,000 mid-level; Infosys ₹10,000–50,000 by level [C · T0-22 L84, L166]), and India GCC hiring is projected at 510,452 jobs in 2026 with 64% needing AI or data skills (foundit Insights Tracker [B · T0-22 L84, L535]), though no measured Indian referral share of hires exists [E · T0-22 L347]. Avoid paid Telegram/WhatsApp "referral groups" and bought HR spreadsheets [C · T0-22 L110, L244].
 
+## Public micro-audits: rubric, recipes and legal envelope
+
+> **Pointers, not legal advice.** Policy texts, DOJ guidance and disclosure norms below come from T0-05 (retrieved 2026-10-21) [A/B · T0-05 L249–L257, L478–L484]. Jurisdiction, the target's terms of service and your exact method all affect legal exposure; stay strictly inside the green zone unless you hold written scope.
+
+### Legal and ToS envelope (green / amber / red)
+
+| Zone | Permitted / barred examples | Policy and legal basis [A/B · T0-05 L249–L257, L478–L484] |
+|---|---|---|
+| **Green (default)** | Measure *public, documented* behaviour on your own account via documented APIs at normal rates (latency, throughput, cost, rate-limit behaviour); audit **open-source components on your own hardware** (vLLM, SGLang, Ollama, LiteLLM, Langfuse — performance, default-config security, docs accuracy); review public docs, changelogs, model cards and repos | No access beyond granted permissions; no circumvention. Check `/.well-known/security.txt` (RFC 9116) for `Contact`, `Policy` and **`Hiring:`** fields [A · T0-05 L257, L315] |
+| **Amber (explicit written scope only — otherwise stop)** | Jailbreak, prompt-injection or system-prompt-leak probing of *production* AI endpoints; automated/high-volume extraction; testing unpublished hosts; anything touching other users' data | **OpenAI Usage Policies** (effective 2025-10-29) prohibit "unsolicited safety testing" and circumventing safeguards; **OpenAI EU Terms** (2026-01-16) bar reverse engineering and programmatic extraction [A · T0-05 L254, L478–L479]. **Anthropic safe harbor** excludes model red-teaming and bars public disclosure without prior written notice; its Model Safety Bug Bounty is invite-only under NDA (2026-09-08) [A · T0-05 L254, L480]. OpenAI sent warning emails over o1 probing in September 2024 [B · T0-05 L245] |
+| **Red (never)** | Using or validating found credentials/keys; accessing non-public systems; bypassing auth, rate limits or safeguards; service-degrading load; publishing a vulnerability before vendor notice; implying disclosure unless rewarded | **US DOJ May 2022 CFAA policy** covers only conduct "solely" for good-faith security research and excludes extortion; law firm **WSGR** cautions it offers "no concrete legal protections" and civil/contract exposure remains [A/B · T0-05 L255, L481]. **India:** IT Act s.43 does not distinguish ethical from malicious access, CERT-In's Disclosure Policy (2021-09-03) Clause 7 requires complying with all extant laws, and the 2021 Mobikwik legal threat is a cautionary tale (advocacy source, C) [B/C · T0-05 L257, L484]. For vulnerabilities, follow private notice first — Google Project Zero uses **90+30 days** (releasing limited details within 1 week since 2025-07-29) as a norm, not a legal right [B · T0-05 L257, L316] |
+
+### Five reproducible measurement recipes [B/P · T0-05 L259–L278]
+
+1. **Latency, throughput and goodput profile (`vllm bench serve` / Anyscale method):** Fix an input/output token grid (for example 128/128, 1,024/256, 4,096/512), warm up and discard early requests, run ≥200 requests per concurrency level (1, 4, 16, 32), document prefix caching and autoscaling, repeat at two times of day, and report mean/median/P99 for **TTFT, TPOT, ITL and E2EL** plus goodput and raw CSV [B/P · T0-05 L263–L270].
+2. **Passive secret/leak and own-instance default-config check:** Passively inspect public repos/packages for committed secrets — **never use or validate any found credential** (report privately) — and check your own client traffic or self-hosted OSS defaults (unauthenticated admin APIs, default binds, permissive CORS) [P · T0-05 L272].
+3. **Prompt-injection and system-prompt audit (own app, self-hosted OSS or in-scope asset ONLY):** Map tests to **OWASP LLM Top 10 (2025)** (`LLM01` Prompt Injection, `LLM02` Sensitive Info Disclosure, `LLM05` Improper Output Handling, `LLM06` Excessive Agency, `LLM07` System Prompt Leakage, `LLM10` Unbounded Consumption): cover direct/indirect injection and Markdown-image or allow-listed-domain exfiltration with full logs and mitigations [B/P · T0-05 L274].
+4. **Cost/quality frontier audit:** Compare counted vs provider-billed tokens, cache-hit behaviour, structured-output failure rates on a public eval set or RAG retrieval hit rates on a documented corpus [P · T0-05 L276].
+5. **Own-instance gateway/observability parity audit (cleanest OSS-to-audit bridge):** Run LiteLLM or Langfuse locally, compare traced token/cost accounting against provider usage on a fixed prompt set, document mismatches and offer the fix as an upstream PR [D/P · T0-05 L278].
+
+### 100-point execution rubric and nine dismissal triggers [D · T0-05 L297–L309]
+
+Pass threshold: **≥75 / 100 AND clean safety gate** (send company-specific notes privately to the engineering lead first; publish only category-level benchmarks publicly [D · T0-05 L317–L318]):
+
+| Criterion | Weight | Full-marks bar |
+|---|---|---|
+| Relevance to team problem | 20 | Ties directly to a public roadmap item, issue or posting — not a generic critique |
+| Measurement validity & reproducibility | 20 | Fixed inputs, warm-up, percentiles, stated `N`, confounders noted, one-command repro + raw CSV |
+| Claim calibration | 15 | "Observed / in my setup / could not verify"; zero claims about hidden internals; explicit limits |
+| Actionability | 15 | 2–3 ranked fixes with effort/impact and an offer to send a patch |
+| **Safety & legal (mandatory gate)** | 15 | Green zone only, explicit scope statement, zero PII/credentials, private notice first (**any red-zone item = automatic fail**) |
+| Concision | 10 | ≤2 pages, TL;DR first |
+| Credibility | 5 | Two-line bio, consistent identity, no hype |
+
+**Nine automatic dismissal triggers (any one fails the audit):** (1) factual error about the target, (2) unreproducible numbers, (3) ToS-violating method, (4) "gotcha" or shaming tone (cf. curl shutting its bounty over low-quality AI reports [B · T0-05 L244, L482–L483]), (5) publishing a vulnerability before vendor notice, (6) unverified AI-generated claims, (7) exceeding 3 pages, (8) no concrete next step, or (9) missing disclosure statement [B/D · T0-05 L309].
+
 ## The open-source route (when it earns hours)
 
 Use open source as an outreach feeder **only** when a target employer stewards or staffs the repository and you can sustain ~8–10 hours/week for 8–12 weeks; otherwise put those hours into artefact-led outreach [D · T0-05 L80, L143].
 
-- **Single PRs are noise; anti-slop rules are enforced:** 49–82% of contributor identities across eight audited AI repos have one commit, and only 1.8–17.4% of newcomers reached 10+ commits within a year [A · T0-05.F3]. vLLM bans pure-agent and typo PRs (committership reflects ~30+ substantial PRs and ~10+ external reviews across releases [A · T0-21 L85, L300]); PyTorch requires an actionable issue before a PR [A · T0-21 L246]; transformers closes agent PRs without review [A · T0-05.F4]; llama.cpp mandates AI disclosure (permanent ban risk) and caps newcomers at 1 open PR [A · T0-05.F4; T0-21 L242]; Zed and Ghostty reject ununderstood agent code [A · T0-21 L243]; GitHub added PR-restrict settings in 2026 [A/B · T0-05.F4; T0-20 L66].
+- **Debunking "10× recruiter inbound per merged PR vs 500 Easy Applies":** No measurement backs this claim and the ratio is ill-posed — Easy Apply produces ~0 recruiter inbound (denominator ≈ 0), and 10× Ashby's ~15 interviews per 500 apps would imply ~150 contacts from one PR, confounded by contributors already employed at hardware/AI firms [C · T0-05 L46, L147]. Peer-reviewed evidence reinforces the crowding: an **ifo 2024** study (`n ≈ 22,900` GitHub devs) found job movers raise OSS activity ~16% during search, while **Hann, Roberts & Slaughter (*ISR* 2013)** found earned meritocracy **rank** — not raw commit count — associated with up to an **18% wage lift** [B · T0-05 L232].
+- **Single PRs are noise; repo gates and anti-slop rules are strictly enforced:** Across eight audited AI repos (commits pinned 2026-10-21), 49–82% of contributor identities stopped at one commit and only 1.8–17.4% of newcomers reached 10+ commits within a year [A · T0-05 L50, L170–L177]. Specific hard gates include: **vLLM** bans pure-agent and typo PRs (committership reflects ~30+ substantial PRs and ~10+ external reviews [A · T0-21 L85, L300]); **SGLang** restricts CI triggering to trusted contributors (`CI_PERMISSIONS.json` / `run-ci`) [A · T0-05 L158, L465]; **PyTorch** requires an actionable issue first [A · T0-21 L246]; **transformers** closes agent PRs without review [A · T0-05 L159]; **llama.cpp** caps newcomers at 1 open PR and bans undisclosed AI use [A · T0-05 L160; T0-21 L242]; **LiteLLM** requires a signed CLA plus ≥1 test [A · T0-05 L161, L466]; **Axolotl** explicitly rejects contribution farming in `AGENTS.md` [A · T0-05 L164, L461]; **Zed** and **Ghostty** reject ununderstood agent code [A · T0-21 L243]. Platform-wide, **GitHub added non-write open-PR caps on 2026-06-17** (AI-agent PRs counted; drafts exempt) and **Hacktoberfest 2026 dropped PR-count rewards** [A · T0-05 L52, L464, L469].
+- **Repo-by-repo 12-month corporate-domain commit & retention map (2026-10-21 git history — lower bounds) [A/C · T0-05 L56, L170–L179]:**
+  - *Corporate-staffed vendor/startup targets (strongest OSS → employer overlap):* **vLLM** (`amd.com` 149/1,225, `nvidia.com` 81/336, `intel.com` 65/586, `redhat.com` 38/628, `ibm.com` 30/200, `meta.com` 25/186, `inferact.ai` 11/273; 11.5% newcomer ≥10 commits); **SGLang** (`amd.com` 79/760, `nvidia.com` 47/273, `intel.com` 45/292, `thinkingmachines.ai` 14/100, `radixark.ai` 4/202; 17.4% ≥10 commits); **llama.cpp** (`qualcomm.com` 20/262, `nvidia.com` 15/257, `intel.com` 12/60, `redhat.com` 6/77; 7.4% ≥10 commits); **transformers** (`intel.com` 12/274, `huggingface.co` 8/422 lower bound; 2.5% ≥10 commits; HF explicitly requires merged PRs [A/B · T0-05 L159]).
+  - *Core-team-dominated / low-retention repos (better for own-instance audits or direct outreach than OSS pipelines):* **Ollama** (81.2% 1-commit; top-10 hold **83.4%** of 12-month commits), **Axolotl** (67.7% 1-commit; top-10 **86.6%**), **Langfuse** (67.5% 1-commit; top-10 **79.2%**) and **LiteLLM** (57.4% 1-commit; top-10 **63.5%**) [A/C · T0-05 L174–L177, L186].
 - **Employer fit beats repo fame:** Hugging Face, Inferact, RadixArk and Red Hat postings explicitly ask for or prefer OSS records [A/B · T0-05.F5; T0-20 L58]. Use **OSS Insight** or `git log` on a **blobless clone** (`--filter=blob:none`, which GitHub recommends over treeless clones for path-filtered history queries [B · T0-20 L334, L391]) to inspect which employers commit — never to harvest emails [B · T0-20 L392].
-- **Stop-loss:** Aim for 3+ merged or in-review PRs plus 5+ substantive reviews/triage actions in one area; reallocate hours at **week 8** if you have zero merges and zero substantive maintainer exchanges [D · T0-05 L83, L209]. Keep hiring asks strictly out of issue/PR threads [D · T0-05 L468].
+- **Stop-losses:** If **two PRs receive no response in 4 weeks**, ask once in the project's designated channel and move on [A/D · T0-21 L103]; aim for 3+ merged or in-review PRs plus 5+ substantive reviews/triage actions in one area, and reallocate hours at **week 8** if you have zero merges and zero substantive maintainer exchanges [D · T0-05 L83, L209]. Keep hiring asks strictly out of issue/PR threads [D · T0-05 L468].
 
 ## How to do it
 
-1. **Map vouchable ties and build a 30–40 target list.** Start from your [targeting workbook](../00-start/targeting-workbook.md) and [employer landscape](../01-landscape/employer-landscape.md). List people who have worked with you or seen your work first (preferring contacts in the **same function** [B · T0-22 L77]), then second-degree contacts (~10 mutuals [B · T0-22 L76]), then named engineering managers or founders (≤ ~50-person startups; managers rather than VPs, especially <2 years in role per interviewing.io [C · T0-05 L327]). *Done when:* every row in log T0 lists a named human, a public problem, a route and a verified work contact [P].
+1. **Map vouchable ties and build a 30–40 target list.** Start from your [targeting workbook](../00-start/targeting-workbook.md) and [employer landscape](../01-landscape/employer-landscape.md). List people who have worked with you or seen your work first (preferring contacts in the **same function** [B · T0-22 L77]), then second-degree contacts (~10 mutuals [B · T0-22 L76]), then named engineering managers or founders (≤ ~50-person startups; managers rather than VPs, especially <2 years in role [C · T0-05 L327]). In a self-selected survey (`n ≈ 500`, mean 8 YOE), cold outreach to **hiring managers** was rated net positive at FAANG-type firms and neutral elsewhere, whereas cold outreach to **recruiters** was rated net negative at FAANG-type firms and small startups [C · T0-22 L192]. *Done when:* every row in log T0 lists a named human, a public problem, a route and a verified work contact [P].
 2. **Prepare one reusable category-level artefact.** Spend ~10–15 hours building a reproducible V1 benchmark or own-instance OSS teardown reusable across ~20 targets; reserve bespoke 1–2 page notes for your top 5 targets only [D · T0-05 L79, L519]. *Done when:* raw data, scope/limits and a one-command repro live behind one public link [P].
 3. **Execute warm routes first.** For vouchable ties (T1), **ask how their ATS handles prior applicants before applying** [B · T0-22 L93]. For moderate ties (T6), request a **double opt-in** introduction with a paste-ready blurb [P · T0-22 L95]. *Done when:* every warm target has been asked without burning credibility on strangers [P].
 4. **Run compliant cold outreach where no tie exists.** Set up SPF/DKIM/DMARC, pattern-guess plus verify addresses (free Hunter/Apollo tiers plus manual checks), apply via the employer's normal portal, and send a ≤90-word plain-text artefact note (T2/T3) [B/C/P · T0-22 L97, L106; T0-05 L372–L376]. Ramp 10 → 15 → 20 → ≤30 sends/week counting follow-ups [D · T0-05 L377]. *Done when:* every send, source and opt-out is logged on the day [P].
@@ -257,6 +300,23 @@ SOR/2013-221 s.4.)
 Thanks either way, [Name]
 ```
 
+### T7. Micro-audit note (≤2 pages) and claim-hygiene phrasebook [P/B · T0-05 L282–L295, L311]
+
+```markdown
+# [Target] — [aspect] micro-audit, v1 (YYYY-MM-DD)
+**Scope and ethics.** What I tested / did not test; own account; documented endpoints; request volume; no PII; no circumvention; nothing non-public.
+**TL;DR** (<= 3 bullets, each with a confidence word: observed / likely / unknown).
+**Setup.** Model/version, region, client, concurrency levels, input/output lengths, warm-up, repetitions, date/time window, caching/autoscaling notes.
+**Results.** One table + one chart: mean / median / P99 (TTFT, TPOT, ITL, E2EL), N per cell.
+**Interpretation and limits.** What this does not show; what I cannot see from outside.
+**Suggested fixes.** 2–3 ranked by effort and impact; "I can send a patch for #1."
+**Reproduce.** Repo link, commit hash, one command, raw CSV.
+**Disclosure status.** Private notice date; response; planned public date (category-level only).
+**About me.** Two lines and three links (PRs, write-ups, profile).
+```
+
+**Claim-hygiene phrasebook** (adapted from Artificial Analysis's Reflection 70B benchmark [B · T0-05 L242, L311]): *"In my setup, X was observed"*; *"I could not verify what I tested"*; *"This may reflect a configuration I cannot see"*; *"I will re-run when [version] is available."*
+
 ### Weak → strong cold note [P]
 
 | Element | Weak | Strong |
@@ -283,7 +343,7 @@ Thanks either way, [Name]
 |---|---|---|
 | Cold-asking strangers or paying for referrals (e.g. paid Telegram/Topmate groups) | Zero vouching information; GitLab instructs staff to decline; survey rates stranger referrals net negative; employer-policy and scam risk [A/C · T0-22 L78, L178–L180] | Ask only people who know your work; use double opt-in intros for moderate ties |
 | Submitting a cold application before checking the referrer's ATS policy | Can downgrade a referral to a non-bonus endorsement (GitLab) or lock source attribution (Lever/Ashby) [A/B/C · T0-22 L161–L164] | Ask the referrer how their ATS treats prior applicants first |
-| Scraping LinkedIn or buying "HR contact" spreadsheets | LinkedIn bans scrapers and sued Proxycurl & ProAPIs; CNIL fined Kaspr €240,000; UK PECR fines reach £17.5M/4%; India DPDP core duties start May 2027 [B · T0-22 L82, L214–L216, L223] | Manual LinkedIn use; pattern-guess and verify published work emails on free tiers |
+| Scraping LinkedIn or buying "HR contact" spreadsheets | LinkedIn bans scrapers; Proxycurl shut (Jul 2025), **LinkedIn v. ProAPIs & Netswift ended in a 2026-09-16 final consent judgment**, CNIL fined Kaspr €240,000, UK PECR fines reach £17.5M/4%, and India DPDP core duties start May 2027 [A/B · T0-22 L82, L215–L216, L223; T0-27 L65, L528] | Manual LinkedIn use; pattern-guess and verify published work emails on free tiers |
 | Harvesting email addresses from GitHub commit logs | Breaches GitHub AUP ("Services Usage Limits") against unsolicited email and recruiter lead harvesting [B · T0-20 L152, L392; A · T0-05 L368] | Use contact channels people publish explicitly |
 | Treating 15–50% reply claims or Pin's 17.08% LinkedIn rate as your baseline | Vendor claims are untraced; Pin's 17.08% is recruiter-to-candidate and does not transfer [B/E · T0-22 L79, L193] | Plan on single-digit proxies; evaluate at 60 sends |
 | Paying for RocketReach, Clay or Wiza at ≤30 sends/week | Find rates 29.8–55.2% (not deliverability); RocketReach is US$396–$399 annual-only; Clay Launch is US$185/mo monthly (US$167 annual) [C · T0-22 L82, L310–L312] | Pattern-guess + free Hunter (50/mo) / Apollo (75/mo) tiers + manual checks |
@@ -307,4 +367,4 @@ Thanks either way, [Name]
 - **Track applications and outreach conversion:** [Application operating system](../06-job-search/application-operating-system.md), [Channels and boards](../06-job-search/channels-and-boards.md) and [Job-search strategy](../06-job-search/job-search-strategy.md#26-the-constraints-that-bind-first).
 - **Prepare when a reply opens a loop:** [Interview loops](../08-interviewing/interview-loops.md) and [Prep packs](../08-interviewing/prep-packs.md).
 - **Tool verdicts:** [Tool catalog](../00-start/tool-catalog.md).
-- **Stage overview and evidence:** [Networking README](README.md), [T0-22](../../research/sessions/T0-22-referrals-warm-intros-cold-outreach-law.md) and [T0-05](../../research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md).
+- **Stage overview and evidence:** [Networking README](README.md), [T0-22](../../research/sessions/T0-22-referrals-warm-intros-cold-outreach-law.md), [T0-05](../../research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md) and [T0-27](../../research/sessions/T0-27-target-employers-sponsor-registers-data.md).

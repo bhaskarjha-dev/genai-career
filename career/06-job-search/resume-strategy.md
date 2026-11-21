@@ -7,7 +7,7 @@ status: published
 last_verified: 2026-11-19
 review_by: 2026-12-03
 summary: "How to run résumés for many GenAI roles: one private master inventory, one universal résumé, two or three variants from a catalogue of 15, light tailoring per posting, seniority and regional norms, and the computed role-résumé decisions."
-sources: [T0-04, T0-10, T0-11, T0-13, T0-01, T0-06, T0-23, T1-03]
+sources: [T0-04, T0-10, T0-11, T0-13, T0-01, T0-06, T0-23, T0-24, T0-26, T0-46, T1-03]
 roles: [all]
 tags: [resume, resume-variants, universal-resume, master-inventory, tailoring, regional-norms]
 generated_by: "scripts/resume_layers.py (generated blocks)"
@@ -69,7 +69,7 @@ Content flows down from the master inventory, so no version invents a fact. One 
 |---|---|---|
 | One résumé for all target roles | **Reject across role families; acceptable within one** | Screening layers score title similarity, skill overlap weighted towards recent roles, and must-have vs preferred criteria [A · T0-04]. Hiring managers in different families want different proof: eval suites, serving benchmarks, PRDs, papers. Within a family, roles share the anchor role's stack and differ by a handful of swap-in skills ([matrix blueprints](resume-skills-matrix.md#blueprints)) |
 | A master résumé with everything | **Adopt, as a private inventory you never send** | It keeps facts identical across every version: ATS systems keep your history, and Ashby identifies repeat applicants by email [A · T0-10]. Sending "everything" makes readers hunt for fit, and adding mildly relevant material can lower the impression (a contested "dilution" finding) [B/C · T0-13] |
-| A separate résumé for each of tens of roles | **Reject as the default** | Sibling roles would give you near-duplicate documents to maintain. You shouldn't send many applications to one company anyway: in Huntr's vendor data, interview rates fell from 6.07% (one application at a company) to 1.91% (eight or more), a correlational result [C · T0-10]. Apply once per company per cycle unless the roles are genuinely distinct [T0-10]. Exception: a bespoke version for a dream employer |
+| A separate résumé for each of tens of roles | **Reject as the default** | Sibling roles would give you near-duplicate documents to maintain. Speculative multi-applying to one company also lowers per-application yield: in Huntr's Q3 2026 data, per-application interview rates fell from 5.9% (one application at a company) to 2.4% (eight or more), though the chance of at least one interview at that company rose from 5.9% to 17.7% (correlational) [B · T0-24 L70, L218, L706]. Apply only to roles you genuinely fit and respect employer-configured repeat limits on Lever and Ashby [A · T0-10.F1; A · T0-26 L52]. Exception: a bespoke version for a priority employer |
 | A few variants, each covering several roles | **Adopt: this is the core design** | The catalogue's 15 variants cover all 24 individual-contributor roles and the three employed leadership tracks. One person runs two or three of them beside the universal résumé |
 | "Hard" elements vs positioned elements | **Adopt, as three kinds of content** | **Facts** never change. The **match layer** (title line, skills, keywords) mirrors the posting but stays truthful. The **evidence layer** (summary, projects, bullets, metrics) carries the persuasion. Matching only works when evidence backs it: criteria-based AI review cites evidence for each requirement [A · T0-04] |
 | Must / Important / Should / Optional per role | **Adopt, aligned with how screening works** | Postings and screening tools split basic from preferred qualifications. Workday HiredScore lets basic qualifications decide A/B vs C/D [A]; Phenom grades must-have vs preferred skills [B] (both T0-04). The [matrix](resume-skills-matrix.md) also adds Avoid and Prerequisites; prerequisites are facts, not skills |
@@ -84,8 +84,8 @@ Knockout questions on the application form are the only documented automatic rej
 Read the second number as the size of the whole catalogue across every role, not as one person's set: one person needs one universal résumé plus two or three variants.
 
 <!-- BEGIN GENERATED: scripts/resume_layers.py (key numbers) -->
-- **Universal résumé:** 19 headline skills. It holds at least 75% of the Must skills of 8 of the 24 roles and none of the Must skills of 6 roles ([coverage](#what-the-universal-résumé-can-and-cannot-cover-computed)).
-- **The whole catalogue across every role:** 1 universal + 15 family + 9 dedicated role résumés = **25**; 2 roles are served by their family résumé plus tailoring ([decisions](#which-roles-need-their-own-résumé-computed)). One person needs one universal résumé plus two or three variants.
+- **Universal résumé:** 20 headline skills. It holds at least 75% of the Must skills of 8 of the 24 roles and none of the Must skills of 6 roles ([coverage](#what-the-universal-résumé-can-and-cannot-cover-computed)).
+- **The whole catalogue across every role:** 1 universal + 18 family + 9 dedicated role résumés = **28**; 2 roles are served by their family résumé plus tailoring ([decisions](#which-roles-need-their-own-résumé-computed)). One person needs one universal résumé plus two or three variants.
 - **Proof of work:** 13 project archetypes bring 24 of the 24 roles to at least 60% coverage of their Must and Important skills; 6 cover the top 8 targets ([job-search strategy](job-search-strategy.md#the-constraints-that-bind-first)).
 <!-- END GENERATED -->
 
@@ -94,13 +94,13 @@ Read the second number as the size of the whole catalogue across every role, not
 The universal résumé holds AI Engineer's Must and Important skills, plus ML Engineer's Must skills and its top three Important skills. Coverage is the share of each role's Must skills it holds:
 
 <!-- BEGIN GENERATED: scripts/resume_layers.py (universal coverage) -->
-The universal resume holds these 19 headline skills: Python, LLM APIs & tool calling, Agents & tool use, RAG, LLM evaluation, Retrieval quality, Agent reliability, Cost & latency engineering, Observability, LLM security, Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search, PyTorch, Deep learning & transformers, Data structures & algorithms, TensorFlow / JAX.
+The universal resume holds these 20 headline skills: Python, LLM APIs & tool calling, Agents & tool use, RAG, LLM evaluation, Retrieval quality, Agent reliability, Cost & latency engineering, Observability, LLM security, Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search, Product sense, PyTorch, Deep learning & transformers, Data structures & algorithms, TensorFlow / JAX.
 
 | Coverage | Roles (share of their Must skills the universal resume holds) |
 |---|---|
 | **Strong (≥75%)** | AI Engineer 100%, Machine Learning Engineer 100%, Agentic AI Engineer 100%, Research Engineer / Member of Technical Staff 83%, Applied AI Engineer 83%, AI Evaluation Engineer 75%, Frontier AI Safety / Alignment Researcher 75%, Responsible AI / AI Governance Engineer 75% |
 | **Partial (50–74%)** | Applied Scientist 67%, Forward Deployed Engineer 60%, Research Scientist 57%, ML Platform / MLOps 50% |
-| **Weak (<50%)** | AI Security Engineer / AI Red Teamer 29%, Physical AI / Robotics AI Engineer 29%, AI Infrastructure / GPU Platform Engineer 25%, AI / GenAI Solutions Architect 25%, AI Product Engineer 25%, Inference / LLM Serving Engineer 12%, AI Product Manager 0%, GPU Kernel / ML Compiler Engineer 0%, AI Governance Programme Lead / Manager 0%, AI Risk, Audit & Compliance Specialist 0%, AI Enablement Engineer 0%, Domain Evaluation Specialist / AI Trainer 0% |
+| **Weak (<50%)** | AI Product Engineer 40%, AI Security Engineer / AI Red Teamer 29%, AI Infrastructure / GPU Platform Engineer 25%, AI / GenAI Solutions Architect 25%, Physical AI / Robotics AI Engineer 25%, Inference / LLM Serving Engineer 12%, AI Product Manager 0%, GPU Kernel / ML Compiler Engineer 0%, AI Governance Programme Lead / Manager 0%, AI Risk, Audit & Compliance Specialist 0%, AI Enablement Engineer 0%, Domain Evaluation Specialist / AI Trainer 0% |
 <!-- END GENERATED -->
 
 **Takeaway:**
@@ -115,7 +115,7 @@ The universal resume holds these 19 headline skills: Python, LLM APIs & tool cal
 <!-- BEGIN GENERATED: scripts/resume_layers.py (role-resume decisions) -->
 | Variant | Anchor (role resume = family resume) | Family resume + tailoring is enough | Needs a dedicated role resume (share of its Must + Important the family resume holds) |
 |---|---|---|---|
-| A1 | AI Engineer | Agentic AI Engineer (64%) | AI Evaluation Engineer (45%), AI Product Engineer (45%), AI Enablement Engineer (30%) |
+| A1 | AI Engineer | Agentic AI Engineer (64%) | AI Evaluation Engineer (42%), AI Product Engineer (50%), AI Enablement Engineer (27%) |
 | B1 | Machine Learning Engineer | — | — |
 | B2 | Applied Scientist | — | — |
 | A2 | Forward Deployed Engineer | — | Applied AI Engineer (50%), AI / GenAI Solutions Architect (38%) |
@@ -123,13 +123,16 @@ The universal resume holds these 19 headline skills: Python, LLM APIs & tool cal
 | D2 | AI Infrastructure / GPU Platform Engineer | ML Platform / MLOps (60%) | — |
 | C2 | Research Scientist | — | Frontier AI Safety / Alignment Researcher (56%) |
 | D3 | AI Security Engineer / AI Red Teamer | — | — |
-| D1 | Inference / LLM Serving Engineer | — | GPU Kernel / ML Compiler Engineer (40%) |
+| D1 | Inference / LLM Serving Engineer | — | GPU Kernel / ML Compiler Engineer (33%) |
 | E1 | AI Product Manager | — | — |
 | B3 | Physical AI / Robotics AI Engineer | — | — |
 | E2 | AI Governance Programme Lead / Manager | — | AI Risk, Audit & Compliance Specialist (44%), Responsible AI / AI Governance Engineer (25%) |
 | E3 | Domain Evaluation Specialist / AI Trainer | — | — |
 | L1 | AI Engineering Manager / Director | — | — |
-| L2 | VP / Head of AI / CAIO | — | — |
+| L2 | VP / Head of AI | — | — |
+| L3 | Chief AI Officer | — | — |
+| L4 | Independent AI Consultant / Contract Builder | — | — |
+| L5 | Fractional AI Leader | — | — |
 <!-- END GENERATED -->
 
 The similarity data agrees with these families. The most similar role pairs (weighted overlap of their tiered headline skills):
@@ -137,16 +140,16 @@ The similarity data agrees with these families. The most similar role pairs (wei
 <!-- BEGIN GENERATED: scripts/resume_layers.py (similar roles) -->
 | Pair | Similarity |
 |---|:---:|
-| AI Engineer – Applied AI Engineer | 0.62 |
+| AI Engineer – Applied AI Engineer | 0.59 |
 | AI Engineer – Agentic AI Engineer | 0.50 |
 | Machine Learning Engineer – Applied Scientist | 0.49 |
 | Research Engineer / Member of Technical Staff – Research Scientist | 0.46 |
 | AI Infrastructure / GPU Platform Engineer – ML Platform / MLOps | 0.45 |
 | Research Scientist – Frontier AI Safety / Alignment Researcher | 0.43 |
 | Forward Deployed Engineer – Applied AI Engineer | 0.43 |
-| AI Engineer – Forward Deployed Engineer | 0.40 |
+| AI Engineer – Forward Deployed Engineer | 0.38 |
 
-The most isolated role is Physical AI / Robotics AI Engineer: its closest neighbour scores 0.18.
+The most isolated role is Physical AI / Robotics AI Engineer: its closest neighbour scores 0.17.
 <!-- END GENERATED -->
 
 ### The variant catalogue
@@ -186,7 +189,7 @@ Target numbers are positions in the [GenAI target order](../02-roles/genai-targe
 
 **Why not more than three:**
 - Each family needs different proof.
-- You should send each company one application per cycle [C · T0-10].
+- Speculative multi-applying to one company cuts per-application yield (5.9% → 2.4% in Q3 2026, though ≥1 interview chance rose 5.9% → 17.7%) and can hit Ashby or Lever repeat limits; apply only to genuinely distinct fits [B · T0-24 L70; A · T0-26 L52].
 - Every extra variant takes time from the evidence that makes any of them credible.
 
 <a id="23-what-changes-and-what-never-changes"></a>
@@ -200,16 +203,16 @@ Target numbers are positions in the [GenAI target order](../02-roles/genai-targe
 | Skills section | Match | The [blueprint](resume-skills-matrix.md#blueprints) | Reorder from basic to preferred qualifications, using the posting's exact wording ("LLM evaluation" vs "evals") | Use canonical names. Back every Must and Important skill with a bullet [A mechanics / D advice · T0-04]. Workday does not auto-fill Skills, so enter them by hand [A] |
 | Experience | Facts + evidence | Bullet selection and order | Swap one or two bullets | Employers, titles and dates never change. Keep dates on the same line as title and employer [A]. Give one verifiable evidence line per posting requirement, in a recent role where possible: what, where, when, scale, tools [T0-04] |
 | Projects | Evidence | Selection, with the variant's flagship first | Pick the closest project | Every headline claim should be reproducible: V1 or higher on the verifiability ladder [T0-13] |
-| Education | Facts | Never | Never | About 72% of US AI-engineering postings state a degree [C · T0-06 L108] and 75% of 903 Glassdoor US postings mention one (24% bachelor's, 24% master's, 28% PhD; "mention", not "require") [C · T0-23 L89]; nearly 25% of AI postings in Atlanta Fed Lightcast data list no education requirement [A · T0-23 L89] |
+| Education | Facts | Never | Never | About 72% of US AI-engineering postings state a degree [C · T0-06 L108] and 75% of 903 Glassdoor US postings mention one (24% bachelor's, 24% master's, 28% PhD; "mention", not "require") [C · T0-23 L89]; nearly 25% of AI postings in Atlanta Fed Lightcast data list no education requirement, and 2024 AI-skill demand is nearly flat across degree tiers (5.3% PhD/professional, 5.0% master's, 4.7% bachelor's) [A · T0-23 L89, L321] |
 | Certifications | Facts | Order only | Only when the posting names one | For AI/ML roles, list them after projects, with full name, exam code, dates and Credly link [C · T0-11]. Certificates added little over self-declared AI skills in a 1,725-professional conjoint study [B · T0-23 L308]; they matter mainly in IT-services, staffing and partner channels [B/C · T0-11] |
 | Publications | Facts | Research variants only | — | C2 uses a CV format; research-scientist postings list peer-reviewed publications as a minimum qualification [A · T0-23 L89, L209] |
 
 **Years-of-experience, dates, gaps and cover letters:**
 - **Keep month-and-year dates on portal résumés.** Screening layers compute years from dated roles [A · T0-23 L112, L268] and year-only dates drew warnings in a vendor test [C · T0-23 L112]. A UK trial (9,022 applications) did find replacing dates with years of experience raised human callbacks by 4.8 points on a 32.9% baseline [B · T0-23 L86, L304], so a candidate emailing a human directly could weigh that differently, but dropping dates risks breaking automated extraction on portals [D · T0-23 L129, L511].
-- **Employment gaps:** Audit studies show small or no penalties for short gaps (in one US audit of 8,488 résumés, only a 52-week spell differed: 9.1% vs 11.0% [B · T0-23 L302]; another of 12,054 found ~7% at 1 month vs ~4% at 8 months [B · T0-23 L301]; underemployment cost 4.1 points [B · T0-23 L303]). Explaining a gap (for example childcare) added nothing (+0.1 points, not significant [B · T0-23 L86, L304]). For gaps over a year, show what you built, studied or contracted instead of spending space apologising [B/D · T0-23 L112].
+- **Employment gaps, name bias and AI-interview screening:** Audit studies show small or no penalties for short gaps (in one US audit of 8,488 résumés, only a 52-week spell differed: 9.1% vs 11.0% [B · T0-23 L302]; another of 12,054 found ~7% at 1 month vs ~4% at 8 months [B · T0-23 L301]; underemployment cost 4.1 points [B · T0-23 L303]). Explaining a gap (for example childcare) added nothing (+0.1 points, not significant [B · T0-23 L86, L304]). For gaps over a year, show what you built, studied or contracted instead of spending space apologising [B/D · T0-23 L112]. Structural bias also shapes raw callbacks: Bertrand & Mullainathan's Boston/Chicago audit (~5,000 résumés) found +50% callbacks for white-sounding names with résumé-quality gains (+30%) accruing to white-sounding names only [B · T0-23 L300], while a Dutch staffing-agency before-and-after study of anonymised CVs (Hulsegge/TNO, ~1,650 candidates/period) saw invitations shift ~35% to ~50% with low statistical power [B · T0-23 L305]. In a large randomised field trial (Aka et al., ~36,900 applicants, 70 finalists), adding an AI-led interview before human review lifted final-interview pass rates to 54% vs 34% while flagging 21% of 720 audited candidates as unfamiliar with claimed skills [B · T0-23 L309].
 - **Most practitioners have only a few years of AI/ML experience:** one survey's median is ~8 years writing code and ~3 in AI/ML [C · T0-06]. Present total engineering years plus GenAI years honestly. If a knockout demands more GenAI years than you have, seek a referral rather than applying cold.
 - **Cover letters:** Skip optional cover letters unless adding context the résumé cannot hold. After LLMs arrived on Freelancer.com, the hiring premium for customised applications disappeared [B · T0-23 L83, L299], and sampled frontier-lab postings list cover letters as optional [A · T0-23 L106]. When required, write a short, specific draft yourself.
-- **AI-assisted writing:** Non-generative writing help raised 28-day hires by ~8% and wages by ~10% in a 194,700-person marketplace RCT [A · T0-23 L83, L298]. Yet human and machine reviewers pull in opposite directions: LLM evaluators preferred LLM-written résumés in 67–82% of comparisons [B · T0-23 L84], while 19.6% of 600 US hiring managers in a vendor-sponsored survey said they would reject AI-generated applications [C · T0-23 L84]. Write the first draft and concrete metrics yourself, use AI to tighten and proofread, and obey employer policies (Anthropic's 2025-07-10 guidance permits refining a human first draft and requires openness [A, COI · T0-23 L108]).
+- **AI-assisted writing:** Non-generative writing help raised 28-day hires by ~8% and wages by ~10% in a 194,700-person marketplace RCT [A · T0-23 L83, L298]. Yet human and machine reviewers pull in opposite directions: LLM evaluators preferred LLM-written résumés in 67–82% of comparisons [B · T0-23 L84], while in a vendor-sponsored survey of 600 US hiring managers (TopResume) 52% accepted AI for proofreading or drafting if the result sounded human, ~20% saw heavy reliance as a red flag, 19.6% would reject an AI-generated résumé or cover letter and 14.5% said AI has no place at any stage [C · T0-23 L84, L325]. In Greenhouse's 4,136-respondent survey (US, UK, Ireland and Germany, COI), 34% of US recruiters spent up to half their week filtering spam and junk applications, 91% had spotted candidate deception and 74% of US job seekers used AI [C, COI · T0-23 L313, L325]. Write the first draft and concrete metrics yourself, use AI to tighten and proofread, and obey employer policies (Anthropic's 2025-07-10 guidance permits refining a human first draft and requires openness [A, COI · T0-23 L108]).
 
 ## What the evidence actually tests (2026)
 
@@ -221,7 +224,7 @@ Most résumé advice online is unmeasured folklore. Keep behavioural evidence (e
 | **Reading time ("6 seconds")** | TheLadders 2018 study reported 7.4 seconds (up from 6 seconds earlier) with participant count undisclosed [C · T0-23 L85, L313]. | Do not cite "6 seconds" as fact; still front-load your top third for a fast skim [P]. | C |
 | **Bullet structure (X-Y-Z) & quantification** | X-Y-Z traces to a 2014 LinkedIn post by a former Google HR head with no outcome data [P · T0-23 L103, L319]. Adding metrics lifted 6 of 8 checker scores by ~6 points [C, COI · T0-23 L153], which measures checkers, not callbacks. | State outcome, baseline, eval set and what you did; treat X-Y-Z as an optional format, not a law. | P / C |
 | **Chronological vs functional format** | Zero experiments found [E · T0-23 L143]. Australia recommends reverse-chronological [A], and ranking layers compute years from dated roles [A · T0-23 L127]. | Default to reverse-chronological. | A advice; D choice |
-| **GenAI-specific proof & skill inflation** | Adding AI skills lifted stated interview probability +8–15pp across 1,725 hiring professionals [B · T0-23 L84]. In an AI-interview audit of 720 candidates, 21% claimed a required skill rated "not familiar" [B · T0-23 L84]. Practitioners ask for evals, shipped systems and public repos [C, COI · T0-23 L90]. Stand-alone "Prompt Engineer" search interest peaked April 2023 [C · T0-23 L90]. | Pair every claimed GenAI tool with a shipped system, eval metric or public repo; never use "Prompt Engineer" as a standalone title. | B / C |
+| **GenAI-specific proof & skill inflation** | Adding AI skills lifted stated interview probability +8–15pp across 1,725 hiring professionals [B · T0-23 L84]. In an AI-interview audit of 720 candidates, 21% claimed a required skill rated "not familiar" [B · T0-23 L84]. Practitioners ask for evals, shipped systems and public repos [C, COI · T0-23 L90]. Stand-alone "Prompt Engineer" search interest peaked April 2023, Indeed reports GenAI terms in ~3 of 1,000 postings, and a Microsoft survey of 31,000 workers ranked Prompt Engineer second from bottom among roles firms planned to add [C · T0-23 L90, L321, L801]. | Pair every claimed GenAI tool with a shipped system, eval metric or public repo; never use "Prompt Engineer" as a standalone title. | B / C |
 | **URLs and links** | In T0-23 M1, `pdftotext` dropped hyperlink targets and kept only visible anchor text; only `PyMuPDF` extracted URIs [M · T0-23 L113, L346]. | Write short visible URLs (`github.com/handle`) and fill portal GitHub/portfolio fields. | M / A |
 
 ## Section-order skeletons by seniority and role family
@@ -267,11 +270,14 @@ Official guidance (Grade A) governs what employers should ask; for candidates it
 | **Germany & DACH** | Optional since 2006 equal-treatment law; follow ad if it says no photo | Not established in opened sources | Not established | Not established | Not established | C (practitioner; official FAQ unreachable) · T0-23 L249 |
 | **France & Netherlands** | Not addressed on pages read | Prohibited hiring criterion | Prohibited hiring criterion | Not established | Not established | A (France 2014) / B–C (NL) · T0-23 L250–251 |
 | **Nordics (SE / DK)** | Sweden: optional; Denmark: no fixed rule, some prefer none | Denmark: birth year optional | Not established | Not established | Sweden: 1–2 pages | A (SE/DK agencies) / C · T0-23 L252 |
+| **EU-level (Europass)** | Not on page read | Not on page read | Not on page read | Not on page read | Official free EU CV builder producing profiles and CVs in **31 languages** | A (service scope) · T0-23 L253, L807 |
 | **India** | Practitioner sources conflict ("often expected" vs "skip outside hospitality") — omit for tech/MNC roles [D] | Leave off with marital status, father's name and full postal address unless biodata requested | Not on pages read | Notice period commonly placed in profile; keep CTC off résumé; formal declaration only for legacy/govt firms | 1 page (<5 yrs) or 2 pages | C (Resume Genius vs Naukri; official pages unreachable) · T0-23 L254 |
 | **Gulf (UAE / KSA)** | Often expected (passport-style) | Optional or used for visa age rules (2018 source) | Customary: state nationality and visa status (for example transferable) | Notice period up front; salary on form, not CV | 2 pages (3–4 senior/exec) | C (practitioners, incl. 2018 source) · T0-23 L255 |
 | **Singapore** | Omit (collect at offer stage only) | Omit (Workplace Fairness Act expected end-2027) | Not on page read | Not established | Not established | A (TAFEP 2026-05-18) · T0-23 L256 |
 | **Japan** | Required on *rirekisho* (履歴書: recent 4×3 cm upper-body shot) | Included on model *rirekisho* (gender optional since 2021) | Not on pages read | Not established | *Shokumu-keirekisho* (職務経歴書): 1–2 A4 pages, typed for IT/foreign firms | A (MHLW 2018/2021/2026) · T0-23 L257 |
 | **Australia** | Omit (also address, gender, marital status) | Omit | Not on page read | List ≥2 referees or "available on request" | Max 2 pages; optional profile ≤5 points | A (AHRC) · T0-23 L258 |
+
+*Portal-form caveat:* even in regions where age-related fields stay off the résumé, live ATS forms occasionally request them — for example, a Palantir Forward Deployed Software Engineer form on Lever made **high school name and graduation year** required fields [A · T0-23 L327, L789].
 
 ## How to do it
 
@@ -373,10 +379,10 @@ The first five rows are the rules that protect you.
 
 | Red flag | Why it hurts | Fix |
 |---|---|---|
-| A skill or claim you cannot defend in a technical deep-dive | A behavioural "No Hire" is usually an automatic veto at Anthropic; at Google it sinks the packet at the target level, though the hiring committee may downlevel when technical scores are exceptional [B/C · T1-03 L210–211] | Truth only: list only what you can defend, and keep a keyword only when it is true and a bullet proves it |
+| A skill or claim you cannot defend in a technical deep-dive | A behavioural "No Hire" is a hard veto in Anthropic's values round and Amazon's Bar Raiser process; at Google the hiring committee weighs variance and can downlevel when technical scores are strong [B/C · T1-03 L210–211; T0-46] | Truth only: list only what you can defend, and keep a keyword only when it is true and a bullet proves it |
 | Dates, titles or employers that differ between variants or LinkedIn | Inconsistent identity risks fraud flags [D · T0-04] | One set of facts across all variants and LinkedIn, copied from the master inventory; never rename a past job title |
 | Hidden text or keyword blocks | Detectors exist, and their effect in production is unmeasured [A/B · T0-04] | Prove each skill in a bullet ([ATS mechanics](ats-mechanics.md)) |
-| Mass auto-apply | Volume goes with lower interview rates [C · T0-10], and LinkedIn prohibits automation tools [A · T0-10] | Apply by hand, once per company per cycle |
+| Mass auto-apply or spraying one employer | Per-application interview rates fall with volume (8.0% at 11–20 apps to 2.4% at 100+, though ≥1 interview rises 47.8% → 72.0%) and at one company (5.9% → 2.4% per app; 5.9% → 17.7% ≥1 interview) in Huntr Q3 2026; LinkedIn and Indeed prohibit automation bots [B · T0-24 L70; B · T0-26 L49, L51, L440] | Apply by hand only to genuinely distinct fits; respect company repeat-application limits |
 | Undifferentiated AI-written prose | Generic AI-written text is discounted [A/B · T0-10] | Use AI to structure your material and find gaps; write in your own voice |
 | Stretching the universal résumé to cover every family | It holds none of the Must skills of the product, governance and kernel roles [M], and a résumé that claims everything reads as unfocused [B/C · T0-13] | Anchor it on your primary family; reach the others through family and role résumés |
 | Choosing the résumé by the posting's title | Titles are noisy: an "AI Engineer" posting can be a robotics, Power Platform or MLOps job [B · T0-01] | Classify by basic qualifications (step 5) |
@@ -386,7 +392,7 @@ The first five rows are the rules that protect you.
 ## Evidence and limits
 
 - **What is documented (A).** Screening mechanics come from vendor documentation retrieved for T0-04 (2026-10-23) and re-verified in T0-23 (2026-11-13 to 2026-11-14); [ATS mechanics](ats-mechanics.md) owns them. Regional rules for the US, Canada, UK, France, Sweden, Denmark, Singapore, Japan and Australia come from government/agency guidance [A · T0-23 L244–258]. Repeat-applicant identification and LinkedIn's automation ban come from T0-10 [A · T0-10]. The non-generative writing-help lift (+8% hires, +10% wage) is a 194,700-person marketplace RCT [A · T0-23 L298].
-- **What is behavioural / observational (B) or correlational COI (C).** Audit studies of gaps, names, AI skills (+8–15pp stated), AI interview skill-inflation (21%), LLM self-preference (67–82%) and cover-letter premium collapse are preprints/audits mostly outside GenAI [B · T0-23 L296–309]. Huntr's tailoring pairs (4.23% vs 2.07% Q1 2026; 5.71% vs 3.09% Oct 2024–Jun 2026; AI-tailor users only), same-company drop, volume drop and ResumeGo's two-page simulation are vendor COI datasets [C · T0-10; C · T0-23 L82, L85, L425]. Regional rows for Germany, India and the Gulf rely on practitioner pages that disagree (official India/German/Gulf pages could not be fetched in T0-23) [C · T0-23 L249, L254–255, L459, L463–464].
+- **What is behavioural / observational (B) or correlational COI (C).** Audit studies of gaps, names (Bertrand & Mullainathan; Hulsegge/TNO), AI skills (+8–15pp stated), AI-interview screening lift (Aka et al., 54% vs 34%, and 21% skill inflation), LLM self-preference (67–82%) and cover-letter premium collapse are preprints/audits mostly outside GenAI [B · T0-23 L296–309]. Huntr's tailoring pairs (4.23% vs 2.07% Q1 2026; 5.71% vs 3.09% Oct 2024–Jun 2026; AI-tailor users only), Q3 2026 same-company (5.9% → 2.4% per app; 5.9% → 17.7% ≥1 interview) and volume splits (8.0% → 2.4%; 47.8% → 72.0% ≥1 interview), Greenhouse's 4,136-respondent survey and ResumeGo's two-page simulation are vendor COI datasets [B/C · T0-23 L82, L85, L313, L325, L425; T0-24 L70; T0-26 L51, L440]. Regional rows for Germany, India and the Gulf rely on practitioner pages that disagree (official India/German/Gulf pages could not be fetched in T0-23) [C · T0-23 L249, L254–255, L459, L463–464].
 - **What is computed (M) and judgement (D, P).** Coverage percentages, role-résumé decisions, similarity scores and catalogue counts are model outputs from judgement-graded skill tiers. The variant count, summary formula, 10–20 minute tailoring budget, X-Y-Z format, one-page junior rule, seven un-evidenced role-family rows and templates are judgement/practice-curated (`D`/`P`) [T0-23 L424–427, L468].
 - **What nobody has tested (Absences, T0-23 L448–472).** No randomised study tests: one page vs two pages holding content fixed; reverse-chronological vs functional formats; bullet quantification or X-Y-Z on callbacks; hand-tailoring vs untailored; family variants vs per-role résumés; GenAI portfolio signals on real callback rates; or employer AI-use policies outside Anthropic's (COI).
 - **Errata and tensions.** [Erratum U16](../../research/ERRATA.md) applies: write parse-safe documents, do not game parsers, and use checker scores only as a gap list. T1-03's summary finding groups Google with Anthropic as a near-automatic behavioural veto [T1-03 L73], while its firm table adds that Google's hiring committee may downlevel instead [T1-03 L211]; this page follows the table. T0-23 K11 compared Glassdoor/365 Data Science (75% *mention* a degree) against T0-06's Axial Search figure (72% *state* a degree); both converge with Atlanta Fed Lightcast data (~25% listing no education requirement).
@@ -413,4 +419,4 @@ The first five rows are the rules that protect you.
 - **Profiles that match the universal résumé:** [online presence](../07-networking/online-presence.md).
 - **Which roles to target:** [GenAI target roles](../02-roles/genai-target-roles.md), the [role catalog](../02-roles/role-catalog.md) and the role hubs, for example [AI Engineer](../02-roles/hubs/ai-engineer.md), [ML Engineer](../02-roles/hubs/ml-engineer.md), [Forward Deployed Engineer](../02-roles/hubs/forward-deployed-engineer.md) and [AI Product Manager](../02-roles/hubs/ai-product-manager.md).
 - **Next stage:** [interview loops](../08-interviewing/interview-loops.md), once a résumé opens a loop.
-- **Evidence:** [stage 6 findings](../../research/findings.md#stage-06), [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md), [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md), [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md), [T0-23](../../research/sessions/T0-23-resume-format-content-screening-2026.md), [errata](../../research/ERRATA.md).
+- **Evidence:** [stage 6 findings](../../research/findings.md#stage-06), [T0-04](../../research/sessions/T0-04-ats-filtering-funnel-conversion-math.md), [T0-10](../../research/sessions/T0-10-career-tooling-ecosystem-12-stage-funnel.md), [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md), [T0-23](../../research/sessions/T0-23-resume-format-content-screening-2026.md), [T0-24](../../research/sessions/T0-24-job-boards-global-ai-startup-remote.md), [T0-26](../../research/sessions/T0-26-job-search-tools-agents-oss-mcp.md), [errata](../../research/ERRATA.md).

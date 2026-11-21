@@ -6,24 +6,24 @@ stage: 6
 status: published
 last_verified: 2026-11-19
 summary: "Index of stage 06 (job search and applications): How do I find postings, apply well and get past the screens?"
-sources: [T0-04, T0-05, T0-10, T0-23, T0-24, T0-25, T0-26, T0-27, T0-47]
+sources: [T0-04, T0-05, T0-10, T0-19, T0-21, T0-22, T0-23, T0-24, T0-25, T0-26, T0-27, T0-46, T0-47]
 ---
 
 # Stage 06: Job search and applications
 
 > **The question this stage answers:** How do I find postings, apply well and get past the screens?
-> **Status:** Covered and refreshed through November 2026 (RP2 sessions T0-23 through T0-27 and T0-47 integrated): résumé strategy, ATS mechanics and AI-mediated hiring, global and India boards, target-employer sourcing, job-search automation and the application operating system. Résumés are built in your own career repository (decision D-022). Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered and refreshed through November 2026 (RP2 sessions T0-23 through T0-27, T0-46 and T0-47 integrated alongside T0-04, T0-10, T0-19, T0-21 and T0-22): résumé strategy, ATS mechanics, anti-bot/data-hygiene controls and AI-mediated hiring, global, regional and India boards (94 audited boards plus 10-language queries), target-employer sourcing, job-search automation and the application operating system. Résumés are built in your own career repository (decision D-022). Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
 | Document | What it gives you |
 |---|---|
 | [job-search-strategy.md](job-search-strategy.md) | First-principles strategy: the four hiring levers, the constraints that bind first (with the computed proof-of-work sets) and sequencing in expanding rings |
-| [resume-strategy.md](resume-strategy.md) | The résumé guide: one master inventory, a universal résumé, two or three variants from the 15-variant catalogue, the computed decisions on which roles need their own résumé, tailoring steps, open-source builders and the inventory tagging rule |
+| [resume-strategy.md](resume-strategy.md) | The résumé guide: one master inventory, a universal résumé, two or three variants from the 15-variant catalogue, the computed decisions on which roles need their own résumé, tailoring steps, regional norms (including Europass), open-source builders and the inventory tagging rule |
 | [resume-skills-matrix.md](resume-skills-matrix.md) | The concise skills section per role (Must / Important / Should / Optional) and a blueprint per résumé variant |
-| [ats-mechanics.md](ats-mechanics.md) | How applicant tracking, AI screening, employer-run AI interviewers, proctoring and identity checks work, plus dated legal pointers (V0), myths to ignore and rules for parse-safe applications |
-| [channels-and-boards.md](channels-and-boards.md) | Global, regional and India GenAI job boards, direct ATS discovery, sponsor registers, measured channel conversion multipliers, job-search automation/MCP APIs, and scam and ghost-job checks |
-| [application-operating-system.md](application-operating-system.md) | A weekly operating system for a search: the tracker, the rhythm, funnel metrics with diagnostic thresholds, automation hygiene and when to change course |
+| [ats-mechanics.md](ats-mechanics.md) | How applicant tracking, anti-bot/spam controls (Greenhouse IPQS, Ashby spam tiers, Recruitee alias stripping), AI screening, employer-run AI interviewers, proctoring, 4-tier data hygiene and identity checks work, plus dated legal pointers (V0), myths to ignore and rules for parse-safe applications |
+| [channels-and-boards.md](channels-and-boards.md) | Global, regional and India GenAI job boards, 10-language search queries, direct ATS discovery, sponsor registers, measured channel conversion multipliers (including Ashby startup size-gradient and Gem engineering channels), scam and ghost-job checks |
+| [application-operating-system.md](application-operating-system.md) | A weekly operating system for a search: the tracker, the rhythm, funnel metrics with diagnostic thresholds, deliverability and OSS stop rules, safe tooling/MCP stack, security hygiene and when to change course |
 
 ## Planned
 

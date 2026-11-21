@@ -1,8 +1,8 @@
 {
  "schema": "target-employers/1.0",
  "as_of": "2026-11-19",
- "description": "Vetted directory of 47 target GenAI employers across seven employer-type categories plus seven official visa sponsor registers, built for both candidate target lists and future automated job-description collection (decision D-024).",
- "basis": "Compiled from research session T0-27 (retrieved 2026-11-13; 46 employers and seven sponsor-register pointers) plus UK AI Security Institute from T0-24 (retrieved 2026-11-11). Only Anthropic's Greenhouse board (COI), UK AISI's Greenhouse posting, US DOL OFLC performance data, DOL FY2026 Q3 Selected Statistics and the UK sponsor-register page were opened directly as Grade A primary sources; all Extract-only Grade A rows from T0-27 (IND Netherlands, Canada LMIA, Denmark SIRI, Anthropic Bengaluru announcement) were downgraded to Grade B during R6 verification on 2026-11-19. ATS board URLs for Anthropic, OpenAI, Google DeepMind, Hugging Face, Mistral AI, ElevenLabs, LangChain, Sarvam AI and Sakana AI were live-verified via web search on 2026-11-19. Historical TrueUp counts from July 2026 are preserved as dated prior snapshots, not live counts; re-check live openings on each employer's own board.",
+ "description": "Evidence-graded directory of 95 target GenAI employers across seven employer types (frontier labs, Big Tech, GPU/inference neoclouds, Physical AI/robotics startups, safety/eval organisations, remote-first product employers, enterprises/GCCs, IT services and public sector), with ATS routing, sponsorship evidence, remote and India presence, plus seven official sponsor registers.",
+ "basis": "Compiled from T0-27 (46 baseline employers and 7 sponsor registers), T0-24 (UK AISI), and expanded on 2026-11-19 with 48 verified employers and hiring/funding/restructuring signals from T0-43 (remote-first and India-remote employers), T0-50 (Thinking Machines Lab), T0-52 (Applied Scientist boards), T0-53/T0-54/T0-56/T0-63 (GPU/inference neoclouds and AI silicon), T0-60 (frontier safety and evaluation organisations), T0-64 (Physical AI and robotics), T0-65 (leadership boards) and T0-70 (November 2026 market pulse). Extract-only Grade A rows from T0-27 were downgraded to Grade B per ERRATA U49. Anthropic reflects ERRATA U52 (priced $83.00/share on 2026-11-18 and debuted on Nasdaq under ticker ANT on 2026-11-19). Historical open-role snapshots are dated; verify live requisitions on each employer's own board.",
  "employer_types": {
   "frontier-lab": {
    "label": "Frontier labs",
@@ -30,7 +30,7 @@
   },
   "other": {
    "label": "Other technology and sovereign AI employers",
-   "description": "Employers spanning multiple categories or sovereign-linked AI platforms tracked for regional coverage."
+   "description": "Independent AI safety/evaluation research organisations, sovereign-linked AI platforms and cross-category technology employers."
   }
  },
  "sponsor_registers": [
@@ -132,7 +132,15 @@
    "name": "Anthropic",
    "employer_type": "frontier-lab",
    "hq": "San Francisco, US",
-   "regions": ["US", "UK", "FR", "DE", "JP", "KR", "IN"],
+   "regions": [
+    "US",
+    "UK",
+    "FR",
+    "DE",
+    "JP",
+    "KR",
+    "IN"
+   ],
    "ats": "Greenhouse",
    "ats_slug": "anthropic",
    "board_url": "https://job-boards.greenhouse.io/anthropic",
@@ -142,20 +150,23 @@
     "filter": "all departments on own Greenhouse board (14 pages; Applied AI listed 28 roles on page 3)"
    },
    "sponsorship": "H-1B filings reported (median filed base about USD 315,000 in 2025 filings; C); no sponsor-register lookup run",
-   "remote_policy": "Some roles marked Remote-Friendly (United States); most roles hub-based",
+   "remote_policy": "Hybrid: >=25% in-office expected on SF/London/Paris postings (T0-65 L575); remote rare outside Fellowships.",
    "india_presence": "Bengaluru office opened 2026-02-16; hiring sales, partnerships and applied AI (downgraded to B: Extract-only, corroborated 2026-11-19)",
    "grade": "A",
-   "source": "T0-27 L112, L454",
-   "as_of": "2026-11-13",
+   "source": "T0-27 L112, L454; T0-50 L65, L67; T0-65 L575; T0-70 L78, L80, L496",
+   "as_of": "2026-11-19",
    "ttl": "V1",
-   "note": "COI: developer of Claude models used to author T0-27. Own Greenhouse board opened directly (A); board URL verified 2026-11-19. Other readings: 400 (2026-07), 622 (2026-09-25), 603 (2026-10-08), 675 (2026-11-01)."
+   "note": "ERRATA U52: priced IPO at $83.00/share (2026-11-18) and debuted on Nasdaq (ANT) on 2026-11-19 with staggered lock-up; junior technical hire share fell 27% to 9% (COI, T0-70 L80). COI: developer of Claude models used in research sessions. Own Greenhouse board opened directly (A); 675 open roles on 2026-11-01."
   },
   {
    "id": "openai",
    "name": "OpenAI",
    "employer_type": "frontier-lab",
    "hq": "San Francisco, US",
-   "regions": ["US", "IN"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": "Ashby",
    "ats_slug": "openai",
    "board_url": "https://jobs.ashbyhq.com/openai",
@@ -178,7 +189,10 @@
    "name": "Google DeepMind",
    "employer_type": "frontier-lab",
    "hq": "London, UK",
-   "regions": ["UK", "US"],
+   "regions": [
+    "UK",
+    "US"
+   ],
    "ats": "Greenhouse",
    "ats_slug": "deepmind",
    "board_url": "https://job-boards.greenhouse.io/deepmind",
@@ -197,7 +211,9 @@
    "name": "xAI",
    "employer_type": "frontier-lab",
    "hq": "San Francisco Bay Area, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -220,7 +236,14 @@
    "name": "Mistral AI",
    "employer_type": "frontier-lab",
    "hq": "Paris, FR",
-   "regions": ["FR"],
+   "regions": [
+    "FR",
+    "US",
+    "UK",
+    "SG",
+    "CH",
+    "PL"
+   ],
    "ats": "Lever",
    "ats_slug": "mistral",
    "board_url": "https://jobs.lever.co/mistral",
@@ -233,17 +256,19 @@
    "remote_policy": null,
    "india_presence": null,
    "grade": "C",
-   "source": "T0-27 L116, L458",
+   "source": "T0-27 L116, L458; T0-52 L738",
    "as_of": "2026-11-19",
    "ttl": "V2",
-   "note": "Lever slug 'mistral' from T0-27 and board URL corroborated via web search 2026-11-19; HQ recalled (D); re-check live count."
+   "note": "ATS routing varies across snapshots: Lever slug 'mistral' (T0-27) and Ashby listings for Applied Scientist roles across US/FR/UK/SG/CH/PL (T0-52 L738); check mistral.ai/careers directly."
   },
   {
    "id": "cohere",
    "name": "Cohere",
    "employer_type": "frontier-lab",
    "hq": "Toronto, CA",
-   "regions": ["CA"],
+   "regions": [
+    "CA"
+   ],
    "ats": null,
    "ats_slug": "cohere",
    "board_url": null,
@@ -266,7 +291,10 @@
    "name": "Perplexity",
    "employer_type": "frontier-lab",
    "hq": "San Francisco, US",
-   "regions": ["US", "IN"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": null,
    "ats_slug": "perplexity",
    "board_url": null,
@@ -285,7 +313,9 @@
    "name": "Sakana AI",
    "employer_type": "frontier-lab",
    "hq": "Tokyo, JP",
-   "regions": ["JP"],
+   "regions": [
+    "JP"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": "https://sakana.ai/careers",
@@ -304,7 +334,9 @@
    "name": "Google",
    "employer_type": "big-tech",
    "hq": "Mountain View, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Custom",
    "ats_slug": null,
    "board_url": null,
@@ -328,7 +360,14 @@
    "name": "Amazon",
    "employer_type": "big-tech",
    "hq": "Seattle, US",
-   "regions": ["US"],
+   "regions": [
+    "US",
+    "IN",
+    "DE",
+    "LU",
+    "UK",
+    "ES"
+   ],
    "ats": "Custom",
    "ats_slug": null,
    "board_url": null,
@@ -340,38 +379,46 @@
    },
    "sponsorship": "DOL FY2026 YTD to 2026-06-30: 45,025 positions certified (A); FY2025 certified LCAs 21,585 (B) vs about 15,500 (C)",
    "remote_policy": null,
-   "india_presence": null,
+   "india_presence": "90 India Applied Science openings visible on 2026-11-13 out of 451 global Applied Scientist listings (T0-52 L733).",
    "grade": "B",
-   "source": "T0-27 L123, L465",
-   "as_of": "2026-11-11",
+   "source": "T0-27 L123, L465; T0-52 L733",
+   "as_of": "2026-11-13",
    "ttl": "V1",
-   "note": "16,000 layoffs announced January 2026 plus other events (B); own careers site recalled (D). Legal entities fragment across Amazon.com Services LLC, AWS and Amazon Development Center US."
+   "note": "451 global Applied Scientist openings (90 India) on amazon.jobs on 2026-11-13 plus 312 AS II LCAs (T0-52 L733). 16,000 layoffs announced January 2026 (B). Legal entities split across Amazon.com Services LLC, AWS and Amazon Development Center US."
   },
   {
    "id": "microsoft",
    "name": "Microsoft",
    "employer_type": "big-tech",
    "hq": "Redmond, US",
-   "regions": ["US"],
+   "regions": [
+    "US",
+    "IN",
+    "CN",
+    "UK",
+    "CA"
+   ],
    "ats": "Custom",
    "ats_slug": null,
    "board_url": null,
    "open_roles": null,
    "sponsorship": "8,065 certified US LCAs in FY2025, all titles (B); 1,989 AI/ML keyword-set LCAs across FY2021-FY2026 partial (B)",
-   "remote_policy": null,
-   "india_presence": null,
+   "remote_policy": "Microsoft AI requires >=4 days/week in-office on sampled Applied Scientist roles (T0-52 L734).",
+   "india_presence": "Hyderabad and Bengaluru Applied Scientist and AI hubs (T0-52 L734); voluntary exit offer announced 2026-10-26 across US/UK/CA/IN.",
    "grade": "C",
-   "source": "T0-27 L124, L466",
+   "source": "T0-27 L124, L466; T0-52 L734; T0-70 L76, L495",
    "as_of": "2026-11-13",
    "ttl": "V2",
-   "note": "Open-role count not read; own careers site recalled (D)."
+   "note": "Offered voluntary exits to ~60,000 staff on 2026-10-26 (US/UK/CA/IN; excluded from Oct Challenger count, T0-70 L76) while continuing Microsoft AI hiring on microsoft.ai."
   },
   {
    "id": "meta",
    "name": "Meta",
    "employer_type": "big-tech",
    "hq": "Menlo Park, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Custom",
    "ats_slug": null,
    "board_url": null,
@@ -395,7 +442,9 @@
    "name": "Apple",
    "employer_type": "big-tech",
    "hq": "Cupertino, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Custom",
    "ats_slug": null,
    "board_url": null,
@@ -419,7 +468,9 @@
    "name": "NVIDIA",
    "employer_type": "big-tech",
    "hq": "Santa Clara, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Workday",
    "ats_slug": null,
    "board_url": null,
@@ -443,7 +494,9 @@
    "name": "Cisco",
    "employer_type": "big-tech",
    "hq": "San Jose, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -462,7 +515,10 @@
    "name": "Databricks",
    "employer_type": "ai-startup",
    "hq": "San Francisco, US",
-   "regions": ["US"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": "Greenhouse",
    "ats_slug": "databricks",
    "board_url": null,
@@ -473,20 +529,22 @@
     "filter": "all roles (FourWeekMBA 904 on 2026-11-01; TrueUp 787 in 2026-07; Fast AI Jobs 734 undated)"
    },
    "sponsorship": null,
-   "remote_policy": null,
-   "india_presence": null,
+   "remote_policy": "Lists Remote (India) AI FDE and Senior ML Engineer postings alongside hybrid US hubs (T0-43 L604).",
+   "india_presence": "Active India remote and hub hiring for AI FDE and Senior ML Engineer (T0-43 L604).",
    "grade": "B",
-   "source": "T0-27 L138, L480",
-   "as_of": "2026-11-01",
+   "source": "T0-27 L138, L480; T0-43 L604; T0-70 L82, L501",
+   "as_of": "2026-11-13",
    "ttl": "V1",
-   "note": "Greenhouse token 'databricks' appears in an Apify actor example (C); HQ recalled (D); other regions not established."
+   "note": "Major FDE employer: 94 FDE openings out of 870 total roles on 2026-09-08 (~11%; T0-70 L82); closed $5B Q3 2026 funding round (T0-70 L501). Greenhouse slug 'databricks' (C)."
   },
   {
    "id": "sarvam-ai",
    "name": "Sarvam AI",
    "employer_type": "ai-startup",
    "hq": "Bengaluru, IN",
-   "regions": ["IN"],
+   "regions": [
+    "IN"
+   ],
    "ats": "Ashby",
    "ats_slug": null,
    "board_url": "https://sarvam.ai/careers",
@@ -499,17 +557,19 @@
    "remote_policy": null,
    "india_presence": "Headquartered in Bengaluru; raised USD 346M of USD 399M Indic-AI funding in 2026 per Tracxn (B)",
    "grade": "C",
-   "source": "T0-27 L120, L462",
-   "as_of": "2026-11-02",
+   "source": "T0-27 L120, L164, L462; T0-54 L64, L85; T0-56 L116, L275; T0-63 L78, L94",
+   "as_of": "2026-11-13",
    "ttl": "V1",
-   "note": "Careers URL verified 2026-11-19; count and Ashby routing from secondary source (C)."
+   "note": "Raised $346M of $399M 2026 Indic-AI funding (87% share, B, T0-27 L164); 46 open roles on 2026-11-02 (37 Bengaluru, Ashby, C). Hires vertically across AI Infra/HPC SRE, Inference (TTFT/TPOT scoreboard) and GPU Kernels (T0-54/56/63)."
   },
   {
    "id": "harvey",
    "name": "Harvey",
    "employer_type": "ai-startup",
    "hq": "San Francisco, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Ashby",
    "ats_slug": null,
    "board_url": null,
@@ -555,7 +615,9 @@
    "name": "Sierra",
    "employer_type": "ai-startup",
    "hq": "San Francisco, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Ashby",
    "ats_slug": null,
    "board_url": null,
@@ -578,7 +640,9 @@
    "name": "Glean",
    "employer_type": "ai-startup",
    "hq": "Palo Alto, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -601,7 +665,9 @@
    "name": "Cursor (Anysphere)",
    "employer_type": "ai-startup",
    "hq": "San Francisco, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": "cursor",
    "board_url": null,
@@ -624,7 +690,9 @@
    "name": "Anduril",
    "employer_type": "ai-startup",
    "hq": "Costa Mesa, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -648,7 +716,9 @@
    "name": "Prolific",
    "employer_type": "ai-startup",
    "hq": "London, UK",
-   "regions": ["UK"],
+   "regions": [
+    "UK"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -671,7 +741,9 @@
    "name": "LangChain",
    "employer_type": "ai-startup",
    "hq": "San Francisco, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Ashby",
    "ats_slug": "langchain",
    "board_url": "https://jobs.ashbyhq.com/langchain",
@@ -694,7 +766,9 @@
    "name": "Etched",
    "employer_type": "ai-startup",
    "hq": "Cupertino, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -717,7 +791,10 @@
    "name": "Hugging Face",
    "employer_type": "ai-startup",
    "hq": "New York, US",
-   "regions": ["US", "FR"],
+   "regions": [
+    "US",
+    "FR"
+   ],
    "ats": "Workable",
    "ats_slug": "huggingface",
    "board_url": "https://apply.workable.com/huggingface",
@@ -736,7 +813,10 @@
    "name": "JPMorgan Chase",
    "employer_type": "enterprise",
    "hq": "New York, US",
-   "regions": ["US", "IN"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": "Custom",
    "ats_slug": null,
    "board_url": null,
@@ -759,7 +839,10 @@
    "name": "Goldman Sachs",
    "employer_type": "enterprise",
    "hq": "New York, US",
-   "regions": ["US", "IN"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -778,7 +861,9 @@
    "name": "Capital One",
    "employer_type": "enterprise",
    "hq": "McLean, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Workday",
    "ats_slug": null,
    "board_url": null,
@@ -792,17 +877,19 @@
    "remote_policy": null,
    "india_presence": null,
    "grade": "B",
-   "source": "T0-27 L131, L473",
-   "as_of": "2026-11-11",
+   "source": "T0-27 L131, L473; T0-70 L82, L506",
+   "as_of": "2026-11-13",
    "ttl": "V1",
-   "note": "Workday recalled (D)."
+   "note": "Second-largest global AI Engineer poster on JobsPipe (34 postings; T0-70 L82). Workday ATS recalled (D)."
   },
   {
    "id": "walmart",
    "name": "Walmart",
    "employer_type": "enterprise",
    "hq": "Bentonville, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -821,7 +908,9 @@
    "name": "Booz Allen Hamilton",
    "employer_type": "enterprise",
    "hq": "McLean, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -845,7 +934,9 @@
    "name": "General Motors",
    "employer_type": "enterprise",
    "hq": "Detroit, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -868,26 +959,32 @@
    "name": "Qualcomm",
    "employer_type": "enterprise",
    "hq": "San Diego, US",
-   "regions": ["US"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
    "open_roles": null,
    "sponsorship": "DOL FY2026 YTD to 2026-06-30: 71,203 positions certified (A; unusually large, likely multi-position LCAs)",
    "remote_policy": null,
-   "india_presence": null,
+   "india_presence": "Bengaluru and Hyderabad R&D hubs; began India cuts reported on 2026-11-11 with ~1,000 roles at risk (T0-70 L76, L498).",
    "grade": "A",
-   "source": "T0-27 L135, L477",
-   "as_of": "2026-06-30",
-   "ttl": "V4",
-   "note": "Grade A reflects DOL FY2026 Q3 Selected Statistics PDF (Read, single transcription); open-role count not read."
+   "source": "T0-27 L135, L477; T0-70 L76, L498",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "DOL FY2026 Q3 Selected Statistics PDF confirms US H-1B filings (Grade A, T0-27); check specific team headcount before applying given Nov 2026 India restructuring (~1,000 roles reported at risk, T0-70 L498)."
   },
   {
    "id": "cgi",
    "name": "CGI",
    "employer_type": "it-services",
    "hq": "Montreal, CA",
-   "regions": ["CA", "US"],
+   "regions": [
+    "CA",
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -906,7 +1003,9 @@
    "name": "Deloitte",
    "employer_type": "it-services",
    "hq": "London, UK",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -925,7 +1024,9 @@
    "name": "TCS",
    "employer_type": "it-services",
    "hq": "Mumbai, IN",
-   "regions": ["IN"],
+   "regions": [
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -934,17 +1035,19 @@
    "remote_policy": null,
    "india_presence": "Headcount 598,056 at 2026-09-30 (+4,258 in Q2 FY27); annualised AI revenue above USD 3 billion (COI); FY27 opened with 25,000 fresher offers",
    "grade": "B",
-   "source": "T0-27 L151, L493",
-   "as_of": "2026-09-30",
+   "source": "T0-27 L151, L493; T0-70 L82, L183, L504",
+   "as_of": "2026-11-13",
    "ttl": "V2",
-   "note": "GenAI role counts not published; global delivery recalled (D)."
+   "note": "31 global AI Engineer postings (5 India) on JobsPipe snapshot (T0-70 L82, L183); services/bench volume mixes client-facing delivery with pure engineering."
   },
   {
    "id": "infosys",
    "name": "Infosys",
    "employer_type": "it-services",
    "hq": "Bengaluru, IN",
-   "regions": ["IN"],
+   "regions": [
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -953,17 +1056,19 @@
    "remote_policy": null,
    "india_presence": "Net +4,480 headcount in Q2 FY27; AI reported at 8.2% of revenue in Q1 FY27 (COI)",
    "grade": "B",
-   "source": "T0-27 L152, L494",
-   "as_of": "2026-09-30",
+   "source": "T0-27 L152, L494; T0-70 L183, L505",
+   "as_of": "2026-11-13",
    "ttl": "V2",
-   "note": "GenAI role counts not published."
+   "note": "6 India AI Engineer postings on JobsPipe snapshot (T0-70 L183); also tracked in inference deployment/MLOps sample (T0-56 L124)."
   },
   {
    "id": "hcltech",
    "name": "HCLTech",
    "employer_type": "it-services",
    "hq": "Noida, IN",
-   "regions": ["IN"],
+   "regions": [
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -982,7 +1087,9 @@
    "name": "Wipro",
    "employer_type": "it-services",
    "hq": "Bengaluru, IN",
-   "regions": ["IN"],
+   "regions": [
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -1001,7 +1108,9 @@
    "name": "Tech Mahindra",
    "employer_type": "it-services",
    "hq": "Pune, IN",
-   "regions": ["IN"],
+   "regions": [
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -1020,7 +1129,10 @@
    "name": "Cognizant",
    "employer_type": "it-services",
    "hq": "Teaneck, US",
-   "regions": ["US", "IN"],
+   "regions": [
+    "US",
+    "IN"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -1039,7 +1151,9 @@
    "name": "US Tech Force (OPM)",
    "employer_type": "public-sector",
    "hq": "Washington DC, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -1062,7 +1176,9 @@
    "name": "UK AI Security Institute (AISI)",
    "employer_type": "public-sector",
    "hq": "London, UK",
-   "regions": ["UK"],
+   "regions": [
+    "UK"
+   ],
    "ats": "Greenhouse",
    "ats_slug": "aisi",
    "board_url": "https://job-boards.greenhouse.io/aisi",
@@ -1081,7 +1197,9 @@
    "name": "G42",
    "employer_type": "other",
    "hq": "Abu Dhabi, AE",
-   "regions": ["AE"],
+   "regions": [
+    "AE"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": "https://jobs.g42.ai",
@@ -1100,7 +1218,9 @@
    "name": "Palantir",
    "employer_type": "other",
    "hq": "Denver, US",
-   "regions": ["US"],
+   "regions": [
+    "US"
+   ],
    "ats": "Lever",
    "ats_slug": "palantir",
    "board_url": null,
@@ -1109,17 +1229,19 @@
    "remote_policy": null,
    "india_presence": null,
    "grade": "C",
-   "source": "T0-27 L149, L491",
+   "source": "T0-27 L149, L491; T0-70 L82, L502",
    "as_of": "2026-11-13",
    "ttl": "V2",
-   "note": "Lever slug 'palantir' (302 jobs in an undated DEV snapshot); HQ recalled (D)."
+   "note": "Highest FDE concentration tracked: 77 FDE roles out of 310 total open roles on 2026-09-08 (~25%; T0-70 L82). Lever slug 'palantir' (302 jobs in prior DEV snapshot)."
   },
   {
    "id": "grab",
    "name": "Grab",
    "employer_type": "other",
    "hq": "Singapore, SG",
-   "regions": ["SG"],
+   "regions": [
+    "SG"
+   ],
    "ats": null,
    "ats_slug": null,
    "board_url": null,
@@ -1132,6 +1254,1011 @@
    "as_of": "2026-11-13",
    "ttl": "V2",
    "note": "Named among employers of AI engineers in Singapore (2026-07-28 list); no open-role count or ATS established."
+  },
+  {
+   "id": "thinking-machines-lab",
+   "name": "Thinking Machines Lab",
+   "employer_type": "frontier-lab",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": "States 'We sponsor visas.' on sampled Research Engineer postings (T0-50 L67).",
+   "remote_policy": "In-person San Francisco lab focus; evergreen infrastructure EOI asks not to reapply within 6 months (T0-50 L71).",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-50 L65, L67, L71",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Frontier lab with posted Research Engineer base bands of $350K-$475K (T0-50 L65). Keeps evergreen expression-of-interest roles open."
+  },
+  {
+   "id": "amd",
+   "name": "AMD",
+   "employer_type": "big-tech",
+   "hq": "Santa Clara, CA, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hub-based semiconductor R&D centres (US, Hyderabad, Bengaluru).",
+   "india_presence": "Active GPU kernel and ROCm/Triton R&D hiring in Hyderabad and Bengaluru from 2+ years experience (T0-63 L78, L94, L375).",
+   "grade": "B",
+   "source": "T0-63 L78, L94, L204, L271, L375",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Key employer for GPU Kernel / ML Compiler roles (ROCm/HIP, upstream Triton, LLVM/MLIR contributions valued; T0-63 L204, L271)."
+  },
+  {
+   "id": "uber",
+   "name": "Uber",
+   "employer_type": "big-tech",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US",
+    "NL"
+   ],
+   "ats": "Custom",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hub-based (San Francisco, Amsterdam sampled in T0-52 L735).",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-52 L735",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Active Applied Scientist employer verified directly on uber.com careers (US and Netherlands hubs; T0-52 L735)."
+  },
+  {
+   "id": "waymo",
+   "name": "Waymo",
+   "employer_type": "big-tech",
+   "hq": "Mountain View, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": {
+    "count": 53,
+    "date": "2026-11-13",
+    "filter": "ML Engineer postings on JobsPipe (T0-70 L82)"
+   },
+   "sponsorship": null,
+   "remote_policy": "In-office / hybrid US hubs.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-70 L82, L507; T0-63 L235",
+   "as_of": "2026-11-13",
+   "ttl": "V1",
+   "note": "Second-largest US ML Engineer poster on JobsPipe (53 MLE postings; T0-70 L82); GPU kernel posted range $213K-$263K base (T0-63 L235)."
+  },
+  {
+   "id": "zoom",
+   "name": "Zoom",
+   "employer_type": "big-tech",
+   "hq": "San Jose, CA, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Lists full-time remote AI security/engineering roles including India among eligible countries (T0-43 L619).",
+   "india_presence": "India listed among eligible countries on remote Senior Security Engineer (AI) postings (T0-43 L619).",
+   "grade": "B",
+   "source": "T0-43 L619",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Tracked in T0-43 cross-border remote audit for India-eligible full-time remote AI security hiring."
+  },
+  {
+   "id": "twilio",
+   "name": "Twilio",
+   "employer_type": "big-tech",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Lists remote-India engineering roles restricted to five Indian states (Karnataka, Tamil Nadu, Telangana, Maharashtra, New Delhi; T0-43 L605).",
+   "india_presence": "Entity-backed remote India hiring across five states (T0-43 L605).",
+   "grade": "B",
+   "source": "T0-43 L605",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Demonstrates entity-bound state-restricted remote hiring in India (not worldwide work-from-anywhere)."
+  },
+  {
+   "id": "coreweave",
+   "name": "CoreWeave",
+   "employer_type": "ai-startup",
+   "hq": "Livingston, NJ, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": "Secondary LCA filings documented in T0-54 L63.",
+   "remote_policy": "US hubs: Livingston NJ, New York, Sunnyvale, Seattle/Bellevue (T0-54 L294).",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-54 L58, L60, L63, L114, L153, L294; T0-56 L123, L135; T0-63 L208, L234",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Leading GPU neocloud across AI Infrastructure (platform bands $185K-$210K, T0-54 L60; Compute Services roles open to non-GPU backend/K8s engineers), Inference fleet and GPU Kernels ($182K-$242K, T0-63 L234)."
+  },
+  {
+   "id": "nebius",
+   "name": "Nebius",
+   "employer_type": "ai-startup",
+   "hq": "Amsterdam, NL",
+   "regions": [
+    "NL",
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "European and US infrastructure hubs.",
+   "india_presence": null,
+   "grade": "C",
+   "source": "T0-54 L116, L339, L504",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "European GPU neocloud tracked in T0-54 HPC/Slurm cluster engineering sample (inferred from Senior HPC Engineer GPU Compute listing, C)."
+  },
+  {
+   "id": "crusoe",
+   "name": "Crusoe",
+   "employer_type": "ai-startup",
+   "hq": "Denver, CO, US",
+   "regions": [
+    "US"
+   ],
+   "ats": "Ashby",
+   "ats_slug": "Crusoe",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "US-based roles.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-53 L121, L144, L518; T0-56 L640",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "AI cloud and energy-aligned GPU infrastructure employer hiring Applied AI and inference roles via Ashby (T0-53 L518)."
+  },
+  {
+   "id": "together-ai",
+   "name": "Together AI",
+   "employer_type": "ai-startup",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": {
+    "count": 78,
+    "date": "2026-11-13",
+    "filter": "All roles on board; >=10 inference-titled (T0-56 L154)"
+   },
+   "sponsorship": null,
+   "remote_policy": "Hub-based US plus India compute infrastructure roles (T0-56 L187).",
+   "india_presence": "Lists Inference/Compute Infrastructure roles in India (Kubernetes provisioning control plane; T0-56 L187).",
+   "grade": "A",
+   "source": "T0-56 L62, L116, L118, L123, L154, L187",
+   "as_of": "2026-11-13",
+   "ttl": "V1",
+   "note": "Major inference cloud (78 open roles on 2026-11-13): separates kernel, engine, platform/fleet and Inference Reliability SRE families (only 1 of 10 inference-titled postings was pure engine performance)."
+  },
+  {
+   "id": "baseten",
+   "name": "Baseten",
+   "employer_type": "ai-startup",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": {
+    "count": 93,
+    "date": "2026-11-13",
+    "filter": "All roles on platform mirror (T0-56 L155)"
+   },
+   "sponsorship": "Listed as sponsoring on Jobright mirror (B, T0-65 L576).",
+   "remote_policy": "US-focused postings.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-56 L73, L116, L122, L137, L155; T0-65 L576",
+   "as_of": "2026-11-13",
+   "ttl": "V1",
+   "note": "Fast-growing inference platform (93 roles on mirror, 2026-11-13) hiring Model Performance Engineers, separate GPU kernel roles and AI engineering leadership (T0-56/T0-65)."
+  },
+  {
+   "id": "fireworks-ai",
+   "name": "Fireworks AI",
+   "employer_type": "ai-startup",
+   "hq": "Redwood City, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "US Bay Area focus.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-56 L188, L683",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Inference API and serving-engine startup tracked in T0-56 (LLM Infrastructure posting snapshot dated 2026-07-15; verify live board directly)."
+  },
+  {
+   "id": "fluidstack",
+   "name": "Fluidstack",
+   "employer_type": "ai-startup",
+   "hq": "London, UK",
+   "regions": [
+    "UK",
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "UK and US infrastructure teams.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-56 L123, L130, L539",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "GPU neocloud hiring Inference Platform and fleet-scheduling engineers (Kubernetes, Rust, distributed routing; T0-56 L123, L539)."
+  },
+  {
+   "id": "radixark",
+   "name": "RadixArk",
+   "employer_type": "ai-startup",
+   "hq": "US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Not established.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-63 L164, L209, L271; T0-56 L374",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "SGLang-aligned inference and kernel employer hiring MTS Developer Technology roles; explicitly values upstream SGLang open-source contributions (T0-63 L209, L271)."
+  },
+  {
+   "id": "inferact",
+   "name": "Inferact",
+   "employer_type": "ai-startup",
+   "hq": "US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Not established.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-56 L132, L275; T0-63 L234",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "vLLM-aligned inference and kernel startup with posted base range $200K-$400K (T0-63 L234); explicitly seeks public vLLM write-ups or side projects (T0-56 L275)."
+  },
+  {
+   "id": "cerebras",
+   "name": "Cerebras Systems",
+   "employer_type": "ai-startup",
+   "hq": "Sunnyvale, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hub-based US hardware/compiler engineering.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-63 L134, L146, L303",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Custom AI accelerator employer hiring wafer-scale kernel library, runtime and compiler engineering roles (T0-63 L146, L303)."
+  },
+  {
+   "id": "sambanova",
+   "name": "SambaNova Systems",
+   "employer_type": "ai-startup",
+   "hq": "Palo Alto, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hub-based US.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-63 L235",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Custom AI silicon and inference systems company tracked in T0-63 (Principal kernel/compiler posted band $180K-$255K base)."
+  },
+  {
+   "id": "figure-ai",
+   "name": "Figure AI",
+   "employer_type": "ai-startup",
+   "hq": "San Jose, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": "Greenhouse",
+   "board_url": null,
+   "open_roles": {
+    "count": 103,
+    "date": "2026-11-13",
+    "filter": "All roles on Greenhouse board (7 under AI - Helix Team; T0-64 L56, L139)"
+   },
+   "sponsorship": "Routine visa sponsorship documented; offered base LCAs ~$200K-$225K (T0-64 L60).",
+   "remote_policy": "On-site hardware/robotics lab focus.",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-64 L43, L56, L60, L69, L106, L139",
+   "as_of": "2026-11-13",
+   "ttl": "V1",
+   "note": "Humanoid robotics lab (103 open roles on 2026-11-13; company Levels.fyi median $380.7K). ERRATA U38: 'Helix AI Engineer' is a department prefix spanning Android/Backend/Infra, not pure robot learning. Discloses Greenhouse AI Talent Matching."
+  },
+  {
+   "id": "skild-ai",
+   "name": "Skild AI",
+   "employer_type": "ai-startup",
+   "hq": "Pittsburgh, PA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": "Greenhouse",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": "Routine visa sponsorship observed on sampled postings (T0-64 L60).",
+   "remote_policy": "On-site / lab-centred.",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-64 L43, L60, L62, L106, L108",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Foundation-model robotics startup hiring model-centric robot learning/VLA and deployment roles directly on Greenhouse (T0-64 L43, L106)."
+  },
+  {
+   "id": "physical-intelligence",
+   "name": "Physical Intelligence (pi)",
+   "employer_type": "ai-startup",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "In-person San Francisco lab.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-64 L28, L43, L106, L112",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Frontier VLA and robot-foundation-model lab; board separates model/VLA roles from controls, runtime software, ML infrastructure and fleet roles (T0-64 L112)."
+  },
+  {
+   "id": "apptronik",
+   "name": "Apptronik",
+   "employer_type": "ai-startup",
+   "hq": "Austin, TX, US",
+   "regions": [
+    "US"
+   ],
+   "ats": "Greenhouse",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": "Sponsorship tighter than Figure/Skild on sampled postings (T0-64 L60).",
+   "remote_policy": "On-site robotics hardware lab.",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-64 L43, L60, L69, L107, L171, L183",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Humanoid OEM hiring RL locomotion, whole-body control and hard-real-time C++ engineers on Greenhouse; uses explicit knock-out application questions on years of RL and legged-robot deployment (T0-64 L69)."
+  },
+  {
+   "id": "1x-technologies",
+   "name": "1X Technologies",
+   "employer_type": "ai-startup",
+   "hq": "Moss, NO",
+   "regions": [
+    "NO",
+    "US"
+   ],
+   "ats": "Custom",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "On-site robotics centres (Norway and US).",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-64 L43, L64, L106, L171",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Humanoid robotics employer hiring VLA/robot-learning and hard-real-time C++ engineers; publishes a transparent three-step interview loop on its careers page (T0-64 L64)."
+  },
+  {
+   "id": "boston-dynamics",
+   "name": "Boston Dynamics",
+   "employer_type": "enterprise",
+   "hq": "Waltham, MA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "On-site robotics labs.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-64 L44, L108, L110, L152, L197",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Established robotics OEM hiring applied deployment (Stretch) and behaviour-cloning / simulation tooling engineers (3 postings sampled via mirrors in T0-64 L152)."
+  },
+  {
+   "id": "agile-robots",
+   "name": "Agile Robots",
+   "employer_type": "enterprise",
+   "hq": "Munich, DE",
+   "regions": [
+    "DE"
+   ],
+   "ats": "Greenhouse",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "On-site / hybrid Germany robotics hubs.",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-64 L43, L108, L152, L179",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "European industrial robotics OEM hiring applied robotics and safety-validated deployment roles on Greenhouse (T0-64 L43, L179)."
+  },
+  {
+   "id": "addverb",
+   "name": "Addverb Technologies",
+   "employer_type": "enterprise",
+   "hq": "Noida, IN",
+   "regions": [
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "On-site India robotics manufacturing and R&D.",
+   "india_presence": "India-headquartered warehouse and industrial robotics OEM hiring Physical AI roles (T0-64 L81, L152).",
+   "grade": "B",
+   "source": "T0-64 L81, L152",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "One of the few domestic India OEM employers appearing in T0-64's Physical AI sample alongside IT-services labs and Siemens Energy India."
+  },
+  {
+   "id": "siemens-energy-india",
+   "name": "Siemens Energy India",
+   "employer_type": "enterprise",
+   "hq": "Mumbai, IN",
+   "regions": [
+    "IN"
+   ],
+   "ats": "Custom",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hub-based India captive R&D.",
+   "india_presence": "Captive-style India industrial R&D unit hiring industrial Physical AI, digital-twin and MLOps roles (T0-64 L81, L109, L152).",
+   "grade": "A",
+   "source": "T0-64 L43, L81, L109, L152, L197",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Verified directly on Siemens careers site (T0-64 L43); represents industrial physical AI combining digital twins, safety validation and MLOps in India."
+  },
+  {
+   "id": "metr",
+   "name": "METR",
+   "employer_type": "other",
+   "hq": "Berkeley, CA, US",
+   "regions": [
+    "US",
+    "UK"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hub-based (Bay Area / UK) with select flexibility.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-60 L59, L76, L301, L302, L315",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Independent frontier-model evaluation and safety research organisation; pay bands overlap frontier-lab bands (T0-60 L59)."
+  },
+  {
+   "id": "far-ai",
+   "name": "FAR.AI",
+   "employer_type": "other",
+   "hq": "Berkeley, CA, US",
+   "regions": [
+    "US",
+    "UK"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Multi-country US/UK research hubs (T0-60 L303).",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-60 L76, L301, L302, L303",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Independent AI safety research institute hiring research engineers and scientists across US and UK hubs (T0-60 L302-L303)."
+  },
+  {
+   "id": "goodfire",
+   "name": "Goodfire",
+   "employer_type": "ai-startup",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "In-person San Francisco research lab.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-60 L76, L302",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Mechanistic interpretability and AI safety research lab (3 sampled safety postings in T0-60 L302)."
+  },
+  {
+   "id": "apollo-research",
+   "name": "Apollo Research",
+   "employer_type": "other",
+   "hq": "London, UK",
+   "regions": [
+    "UK"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "London-based safety evaluation lab.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-60 L302, L346, L516, L628",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Independent UK AI safety evaluation organisation focusing on scheming and deceptive alignment; posted Research Scientist/Engineer base £100K-£200K (T0-60 L346)."
+  },
+  {
+   "id": "transluce",
+   "name": "Transluce",
+   "employer_type": "other",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "US hub-based.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-60 L59, L194",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Independent AI evaluation and observability research lab building evaluation methods including government contracts; posted US bands reach $310K-$500K overlapping labs (T0-60 L59, L194)."
+  },
+  {
+   "id": "soket-ai-labs",
+   "name": "Soket AI Labs",
+   "employer_type": "ai-startup",
+   "hq": "India",
+   "regions": [
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "India hub-based.",
+   "india_presence": "Indian foundation-model lab hiring HPC/Slurm cluster and AI infrastructure engineers in India (T0-54 L64, L85, L116).",
+   "grade": "B",
+   "source": "T0-27 L164; T0-54 L64, L85, L116, L153",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "One of India's few domestic foundation-model labs appearing in T0-54's active HPC/GPU infrastructure sample (0/10 India postings disclose pay)."
+  },
+  {
+   "id": "gnani-ai",
+   "name": "Gnani.ai",
+   "employer_type": "ai-startup",
+   "hq": "Bengaluru, IN",
+   "regions": [
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "India hub-based.",
+   "india_presence": "Bengaluru voice and Indic-AI startup hiring inference/LLMOps engineers (2 postings in T0-56 L124, L135, L362).",
+   "grade": "B",
+   "source": "T0-27 L164; T0-56 L124, L135, L275, L362",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Indian voice/Indic AI startup; treats upstream open-source inference contributions as near-required experience on sampled roles (T0-56 L275)."
+  },
+  {
+   "id": "krutrim",
+   "name": "Krutrim",
+   "employer_type": "ai-startup",
+   "hq": "Bengaluru, IN",
+   "regions": [
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "India hub-based.",
+   "india_presence": "Bengaluru Indic-AI model and cloud builder listed among India's core domestic AI startups (T0-27 L164).",
+   "grade": "C",
+   "source": "T0-27 L164; T0-45 L180",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Named domestic Indian AI model builder in T0-27 L164; no Levels.fyi employer pay page was retrieved in T0-45 L180, so verify bands directly."
+  },
+  {
+   "id": "hippocratic-ai",
+   "name": "Hippocratic AI",
+   "employer_type": "ai-startup",
+   "hq": "Palo Alto, CA, US",
+   "regions": [
+    "US"
+   ],
+   "ats": "Ashby",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "US-focused postings.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-52 L737",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Safety-focused healthcare GenAI startup tracked in T0-52 Applied Scientist audit (Ashby routing)."
+  },
+  {
+   "id": "patronus-ai",
+   "name": "Patronus AI",
+   "employer_type": "ai-startup",
+   "hq": "New York, NY, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Remote-eligible postings including India among listed countries (T0-43 L616).",
+   "india_presence": "India listed among eligible remote countries on AI evaluation engineering postings (T0-43 L616).",
+   "grade": "B",
+   "source": "T0-43 L616",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "AI evaluation startup tracked in T0-43 cross-border remote sample."
+  },
+  {
+   "id": "h2o-ai",
+   "name": "H2O.ai",
+   "employer_type": "ai-startup",
+   "hq": "Mountain View, CA, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Full-time remote postings including India among eligible countries (T0-43 L618).",
+   "india_presence": "Lists India among eligible countries for full-time remote senior AI engineering roles (T0-43 L618).",
+   "grade": "B",
+   "source": "T0-43 L618",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Enterprise AI and open-source ML platform tracked in T0-43 India-eligible remote sample."
+  },
+  {
+   "id": "speechify",
+   "name": "Speechify",
+   "employer_type": "ai-startup",
+   "hq": "US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "City-listed remote roles across eleven Indian cities (T0-43 L623).",
+   "india_presence": "Hires across eleven Indian cities on city-listed remote postings (T0-43 L623).",
+   "grade": "B",
+   "source": "T0-43 L623",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Voice AI product startup tracked in T0-43 remote-India sample."
+  },
+  {
+   "id": "skyflow",
+   "name": "Skyflow",
+   "employer_type": "ai-startup",
+   "hq": "Palo Alto, CA, US",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Lists Remote - India ML Engineer roles (employment structure not stated in T0-43 L607).",
+   "india_presence": "Remote-India ML Engineer hiring observed (T0-43 L607).",
+   "grade": "B",
+   "source": "T0-43 L607",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Data-privacy vault startup tracked in T0-43 for Remote-India ML engineering listings."
+  },
+  {
+   "id": "gitlab",
+   "name": "GitLab",
+   "employer_type": "enterprise",
+   "hq": "San Francisco, CA, US (all-remote)",
+   "regions": [
+    "US",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Remote-first across countries with a GitLab entity or PEO; certain roles open in India (T0-43 L601).",
+   "india_presence": "Selective entity/PEO-backed remote hiring in India (check country-eligibility list per posting; T0-43 L601).",
+   "grade": "B",
+   "source": "T0-43 L601",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Benchmark remote-first software employer demonstrating entity/PEO-gated country lists rather than unrestricted worldwide hiring."
+  },
+  {
+   "id": "posthog",
+   "name": "PostHog",
+   "employer_type": "ai-startup",
+   "hq": "San Francisco / London (remote-only)",
+   "regions": [
+    "US",
+    "UK"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Remote-only strictly within GMT+2 to GMT-8; explicitly excludes India (T0-43 L602).",
+   "india_presence": "Explicitly excluded: candidates must reside physically within GMT+2 to GMT-8 (T0-43 L602).",
+   "grade": "A",
+   "source": "T0-43 L602",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Primary calibration example (Grade A handbook read): even famous remote-only tech employers enforce hard timezone windows that exclude India."
+  },
+  {
+   "id": "grafana-labs",
+   "name": "Grafana Labs",
+   "employer_type": "enterprise",
+   "hq": "New York, NY, US (remote-first)",
+   "regions": [
+    "US",
+    "CA"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Remote-first via separate country-specific postings (US and Canada sampled in T0-43 L631).",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-43 L631",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Remote-first observability employer hiring Senior/Staff AI/ML engineers via country-segmented postings (T0-43 L631)."
+  },
+  {
+   "id": "grammarly-superhuman",
+   "name": "Grammarly / Superhuman",
+   "employer_type": "enterprise",
+   "hq": "San Francisco, CA, US",
+   "regions": [
+    "US",
+    "CA"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Separate country postings across US, Canada and Latin America (T0-43 L632).",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-43 L632",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Applied NLP/GenAI product company tracked in T0-43 for country-segmented remote hiring."
+  },
+  {
+   "id": "zalando",
+   "name": "Zalando",
+   "employer_type": "enterprise",
+   "hq": "Berlin, DE",
+   "regions": [
+    "DE"
+   ],
+   "ats": "Custom",
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Berlin hub-based (T0-52 L736).",
+   "india_presence": null,
+   "grade": "A",
+   "source": "T0-52 L736",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "European e-commerce leader verified directly on jobs.zalando.com for Berlin Applied Scientist roles (T0-52 L736)."
+  },
+  {
+   "id": "canva",
+   "name": "Canva",
+   "employer_type": "enterprise",
+   "hq": "Sydney, AU",
+   "regions": [
+    "AU",
+    "US",
+    "UK"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hybrid hub-centric model.",
+   "india_presence": null,
+   "grade": "B",
+   "source": "T0-70 L76, L196, L497",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Major AI-integrated design platform; announced a 22% workforce reduction (1,271 roles) on 2026-11-04 (T0-70 L76, L497). Verify team-specific open requisitions before investing outreach."
+  },
+  {
+   "id": "barclays",
+   "name": "Barclays",
+   "employer_type": "enterprise",
+   "hq": "London, UK",
+   "regions": [
+    "UK",
+    "IN",
+    "US"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "Hybrid bank/GCC policy.",
+   "india_presence": "Large India GCC footprint (4 India AI Engineer postings on JobsPipe snapshot; T0-70 L183, L500).",
+   "grade": "B",
+   "source": "T0-70 L183, L193, L500",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Global banking GCC employer tracked in T0-70 for both active India AI Engineer hiring and broader corporate restructuring headlines."
+  },
+  {
+   "id": "pwc",
+   "name": "PwC",
+   "employer_type": "it-services",
+   "hq": "London, UK",
+   "regions": [
+    "US",
+    "UK",
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": {
+    "count": 67,
+    "date": "2026-11-13",
+    "filter": "Global AI Engineer postings on JobsPipe (19 India; T0-70 L82, L183)"
+   },
+   "sponsorship": null,
+   "remote_policy": "Hybrid / client-site consulting.",
+   "india_presence": "Top India AI Engineer poster on JobsPipe snapshot (19 postings; T0-70 L183, L503).",
+   "grade": "B",
+   "source": "T0-70 L82, L183, L503",
+   "as_of": "2026-11-13",
+   "ttl": "V1",
+   "note": "#1 global (67) and #1 India (19) AI Engineer poster on JobsPipe (T0-70 L82, L183). Consulting/implementation focus; distinguish from product-engineering roles."
+  },
+  {
+   "id": "zomato",
+   "name": "Zomato (Eternal)",
+   "employer_type": "enterprise",
+   "hq": "Gurugram, IN",
+   "regions": [
+    "IN"
+   ],
+   "ats": null,
+   "board_url": null,
+   "open_roles": null,
+   "sponsorship": null,
+   "remote_policy": "On-site / hybrid India offices.",
+   "india_presence": "Indian consumer-tech employer (reported ~250 cuts and Hyderabad support centre closure on 2026-11-12; T0-70 L199, L499).",
+   "grade": "C",
+   "source": "T0-70 L199, L274, L499",
+   "as_of": "2026-11-13",
+   "ttl": "V2",
+   "note": "Tracked in T0-70 market pulse: reported ~250 role cuts and Hyderabad support centre closure (2026-11-12); check engineering-team stability directly."
   }
  ]
 }

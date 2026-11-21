@@ -55,6 +55,12 @@ def posting_date():
     return max(s["retrieved"] for s in snaps)
 
 
+def catalog_size():
+    """Number of credentials in the ranked catalog (data/credentials.json, decision D-026)."""
+    import json
+    return len(json.loads((ROOT / "data" / "credentials.json").read_text(encoding="utf-8"))["credentials"])
+
+
 def type_label(o, sid):
     if sid in o["skills"]:
         t = o["skills"][sid]["type"]
@@ -355,10 +361,18 @@ def credentials(o):
             return "not assessed in the research corpus (practice-curated)"
         return f"{st['state']} ({st['as_of']}): {st.get('note', '')}".rstrip(": ")
 
+    cred_sources = sorted({
+        m for src_list in (
+            [c.get("src", []) for c in cr.values()]
+            + [cl.get("src", []) for r in o["roles"].values() for cl in r.get("credentials", [])]
+        )
+        for s in src_list
+        for m in re.findall(r"T\d-\d\d", s)
+    })
     out = front("certifications.by-role", "Credentials by Role", 4, meta["as_of"], review_by,
                 "Which certifications the evidence lists for each GenAI role, at which tier, and each credential's dated status, "
                 "generated from the skills ontology.",
-                ["T0-11", "T0-15", "T0-29", "T0-30", "T0-31", "T0-32", "T0-34", "T0-54", "T0-59", "T0-60", "T0-61", "T0-62", "T3-01", "T3-02"],
+                cred_sources,
                 ["certifications", "credentials"])
     n_ret = sum(1 for c in cr.values() if c.get("status", {}).get("state") == "retired")
     n_beta = sum(1 for c in cr.values() if c.get("status", {}).get("state") == "beta")
@@ -368,7 +382,7 @@ def credentials(o):
             f"as of {dates[-1] if dates else meta['as_of']}.", "",
             "## How to read this page", "",
             "- **Credentials are tie-breakers, not skills.** Their signal depends on the hiring channel [B/C · T0-11, T0-31, T0-34]. "
-            "Decide whether to sit one with the [credential ROI guide](credential-roi.md) and compare all 150 evaluated credentials "
+            f"Decide whether to sit one with the [credential ROI guide](credential-roi.md) and compare all {catalog_size()} evaluated credentials "
             "in the [credential catalog](credential-catalog.md) before using this role map.",
             "- **Tiers:** *Important* means the evidence treats it as a differentiator for the role; *Optional* means it helps only "
             "where the channel or the posting rewards it; *Avoid* means retired, so new candidates should not pursue it "
@@ -407,12 +421,12 @@ def credentials(o):
             "[T0-32](../../research/sessions/T0-32-certifications-gpu-infrastructure-open-source.md), "
             "[T0-34](../../research/sessions/T0-34-certifications-governance-security-privacy-audit.md)). "
             "Hyperscaler cloud exams (T0-28) and vendor learning paths (T0-33) are deferred past 2026-12-05.",
-            "- For the full 150-credential scored database (fees, proctoring, channel weights and pass/skip verdicts), see the "
+            f"- For the full {catalog_size()}-credential scored database (fees, proctoring, channel weights and pass/skip verdicts), see the "
             "[credential catalog](credential-catalog.md).",
             "- Credentials without a status are not assessed in the research corpus; their tiers are practice-curated (Grade D).",
             "- No session measures a credential's effect on pay or offers. The evidence is about screening signal by channel.", "",
             "## Next steps", "",
-            "- [Credential catalog](credential-catalog.md): full 150-credential scored database and channel tables.",
+            f"- [Credential catalog](credential-catalog.md): full {catalog_size()}-credential scored database and channel tables.",
             "- [Credential ROI](credential-roi.md): whether to get one, which one, and how to show it.",
             "- [Skills radar](../03-skills-and-tech/skills-radar.md): the skills that matter more than any credential.",
             "- [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md): what to build instead.", ""]

@@ -25,6 +25,7 @@ python3 -B -m unittest discover -s scripts/tests -v   # tests for the machinery
 | [build_resume_matrix.py](build_resume_matrix.py) | `data/skills_ontology.json` | Generated blocks in `career/06-job-search/resume-skills-matrix.md` |
 | [resume_layers.py](resume_layers.py) | `data/skills_ontology.json`, `data/project_archetypes.json` | The computed résumé-layer blocks in the job-search guides |
 | [build_skills_views.py](build_skills_views.py) | `data/skills_ontology.json`, `data/posting_skill_shares.json` | `career/03-skills-and-tech/skills-radar.md`, `career/04-certifications/credentials-by-role.md` |
+| [build_learning_resources.py](build_learning_resources.py) | `data/learning_resources.json` + schema, `data/role_scores.json`, session line counts | `career/03-skills-and-tech/learning-resources.md` (D-027) |
 | [rank_credentials.py](rank_credentials.py) | `data/credentials.json` + schema, `data/skills_ontology.json` (ID resolution), session line counts | `career/04-certifications/credential-catalog.md` (D-026) |
 | [build_archetypes.py](build_archetypes.py) | `data/project_archetypes.json` + schema, the ontology, the stack model, `data/interview_prompts.json` | `career/05-portfolio/project-archetypes.md` |
 | [build_role_map.py](build_role_map.py) | `data/stack_model.json`, `data/role_scores.json`, the ontology, the project archetypes | `career/02-roles/role-map.md` |

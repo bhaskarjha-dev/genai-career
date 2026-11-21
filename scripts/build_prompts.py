@@ -68,7 +68,8 @@ def validate(data, scores, onto):
         if not 1 <= len(p["red_flags"]) <= 3:
             errs.append(f"interview_prompts.json: {pid} has {len(p['red_flags'])} red flags; the schema requires 1-3")
         errs += ref_errors(p["source"], lines, f"interview_prompts.json: {pid} source")
-        errs += ref_errors(p["answer_source"], lines, f"interview_prompts.json: {pid} answer_source")
+        if p["answer_source"]:  # null: the answer criteria are practice-curated [P], not from a session
+            errs += ref_errors(p["answer_source"], lines, f"interview_prompts.json: {pid} answer_source")
     used_tracks = {p["track"] for p in data["prompts"]}
     used_arch = {p.get("archetype") for p in data["prompts"]}
     errs += [f"interview_prompts.json: track {t} has no prompt" for t in tracks if t not in used_tracks]
@@ -85,7 +86,7 @@ def render(data, scores, onto):
     by_arch = OrderedDict((a, [p["id"] for p in prompts if p.get("archetype") == a]) for a in archetypes)
     grades = sorted({p["grade"] for p in prompts})
     src_ids = sorted({m for p in prompts for field in ("source", "answer_source")
-                      for m in re.findall(r"T[0-3]-\d\d", p.get(field, ""))}) or ["T0-14", "T1-03"]
+                      for m in re.findall(r"T[0-3]-\d\d", p.get(field) or "")}) or ["T0-14", "T1-03"]
 
     out = ["---", "id: interviewing.prep-packs", 'title: "Interview Prep Packs: Practice Prompts by Track"', "content_type: reference",
            "stage: 8", "status: published", f"last_verified: {data['as_of']}",
@@ -106,7 +107,8 @@ def render(data, scores, onto):
            "3. **Score yourself** against \"a strong answer covers\", then check the red flags. Re-run the prompt a week later.",
            "4. **Expect variation.** These are prompts the research reports or synthesises; real loops differ by company and level.", "",
            "The packs give practice prompts and answer criteria, not model answers. Each prompt carries its source and grade"
-           + (f" ({', '.join(grades)})" if grades else "") + "; prompts the research does not report directly are labelled.", "",
+           + (f" ({', '.join(grades)})" if grades else "") + "; prompts the research does not report directly are labelled, and answer criteria that no session "
+           "reports are marked practice-curated [P].", "",
            "## Tracks at a glance", "",
            "| Track | What it tests | Roles on this track | Prompts |", "|---|---|---|:---:|"]
     for tid, t in tracks.items():
@@ -138,7 +140,8 @@ def render(data, scores, onto):
             arch = f" · {p['archetype']} {archetypes[p['archetype']]['name']}" if p.get("archetype") else ""
             out += [f"#### {p['id']}{arch}", "", f"> {p['prompt']}", "",
                     f"- **Source:** {p['reported_by']} [{p['grade']} · {p['source']}]"]
-            out.append("- **A strong answer covers**" + (f" (from {p['answer_source']}):" if p.get("answer_source") else ":"))
+            out.append("- **A strong answer covers**" + (f" (from {p['answer_source']}):" if p.get("answer_source")
+                                                         else " (practice-curated [P]; no session reports answer criteria for this prompt):"))
             out += [f"  - {c}" for c in p["covers"]]
             if p.get("red_flags"):
                 out.append("- **Red flags:**")

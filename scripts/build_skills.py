@@ -548,7 +548,7 @@ def index_blocks(o):
         rows.append(f"| {rank_tag(r)} | {r['name']} | {r['flavour']} | {n} | {tiers['M']} | {tiers['I']} | {tiers['S']} | {tiers['O']} | {tiers['X']} | "
                     f"{evs['JD']} · {evs['S09']} · {evs['S']} | {evs['P']} ({round(100 * evs['P'] / n)}%) | {nontech} | [open](inventories/{rid}.md) |")
     out["index"] = "\n".join(rows)
-    ic = [r for r in o["roles"].values() if r["variant"] != "L"]
+    ic = [r for r in o["roles"].values() if isinstance(r["target"], int)]
     eng = [r for r in ic if r["variant"] in ("A", "B", "C", "D")]
     parts = []
     for title, pool, kinds in (

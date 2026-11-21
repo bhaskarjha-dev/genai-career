@@ -6,8 +6,10 @@ Implements Reduce Step R1 (decision D-026) over data/credentials.json:
     session line reference via common.ref_errors, checks score-triple ordering (lo <= mid <= hi),
     and confirms every credential ID in data/skills_ontology.json resolves.
   * Computes deterministic Monte Carlo value rankings (triangular draws across [lo, mid, hi]
-    scores) for three channel lenses and eight role families, omitting unmeasured (null)
-    hiring_signal and re-normalising the remaining five weights to sum to 1.0.
+    scores) for three channel lenses and eight role families, applying an explicit conservative
+    prior UNMEASURED_HIRING_SIGNAL_PRIOR = (2.5, 4.0, 5.5) whenever hiring_signal is null so
+    all credentials are evaluated on the full 1.0 weight vector and empirically measured
+    credentials are never penalised relative to unmeasured peers (D-026 calibration, 2026-11-19).
   * Renders a cost- and hour-ordered collector's list (active, open-access exams) beside the
     stop-rule warning, followed by the full deduplicated census by issuer group.
 
@@ -47,6 +49,11 @@ CRITERIA = ("hiring_signal", "channel_value", "rigour", "skill_alignment", "curr
 TTL_DAYS = {"V0": 14, "V1": 30, "V2": 90, "V3": 180, "V4": 365}
 MC_SEED = 20261119
 MC_ITER = 4000
+# Conservative prior for unmeasured (null) hiring_signal (D-026 calibration, 2026-11-19).
+# Keeps hiring_signal: null in data/credentials.json (never inventing empirical measurements)
+# while evaluating all credentials on the same 100% weight vector with wide ±1.5 uncertainty
+# so empirically measured credentials are never penalised relative to zero-posting unmeasured peers.
+UNMEASURED_HIRING_SIGNAL_PRIOR = (2.5, 4.0, 5.5)
 
 GROUP_LABELS = OrderedDict([
     ("hyperscalers", "Hyperscalers (AWS, Google Cloud, Microsoft — provisional pending T0-28)"),
@@ -126,12 +133,20 @@ def validate(data, schema, onto):
     return errs
 
 
+def effective_triple(cred, criterion):
+    """Return [lo, mid, hi] for criterion, using UNMEASURED_HIRING_SIGNAL_PRIOR for null hiring_signal."""
+    val = cred["scores"][criterion]
+    if val is None and criterion == "hiring_signal":
+        return UNMEASURED_HIRING_SIGNAL_PRIOR
+    return val
+
+
 def point_score(cred, weights):
-    """Weighted mid-point score on 0–10 scale; omits null hiring_signal and re-normalises weights."""
+    """Weighted mid-point score on 0–10 scale using the full weight vector and unmeasured hiring_signal prior."""
     total = 0.0
     wsum = 0.0
     for k in CRITERIA:
-        val = cred["scores"][k]
+        val = effective_triple(cred, k)
         if val is None:
             continue
         w = weights[k]
@@ -146,13 +161,13 @@ def rank_subset(creds, weights, seed, n_iter=MC_ITER):
         return []
     rng = random.Random(seed)
     n = len(creds)
-    # Precompute active criteria and re-normalised weights per credential
+    # Precompute active criteria and weights per credential (null hiring_signal uses conservative prior)
     specs = []
     for c in creds:
         active = []
         wsum = 0.0
         for k in CRITERIA:
-            triple = c["scores"][k]
+            triple = effective_triple(c, k)
             if triple is not None and weights[k] > 0:
                 active.append((triple[0], triple[1], triple[2], weights[k]))
                 wsum += weights[k]
@@ -273,7 +288,7 @@ def compute_all(data):
 
 
 def fmt_fee(c):
-    if c["fee_local"] and c["fee_usd"] is not None:
+    if c["fee_local"] and c["fee_usd"] is not None and c["fee_usd"] > 0:
         return f"{esc(c['fee_local'])} (~${int(c['fee_usd']):,})"
     if c["fee_local"]:
         return esc(c["fee_local"])
@@ -356,7 +371,7 @@ def render(data, lenses_out, families_out, collector_rows):
             f"{sum(1 for c in creds if c['state'] == 'beta')} beta, "
             f"{sum(1 for c in creds if c['state'] == 'announced')} announced, "
             f"{sum(1 for c in creds if c['state'] == 'retired')} retired) reconciled across "
-            "T0-29, T0-30, T0-31, T0-32, T0-34, T3-01, T3-02 and T0-11."
+            "T0-29, T0-30, T0-31, T0-32, T0-34, T0-58, T3-01, T3-02 and T0-11."
         ),
         "",
         "> [!IMPORTANT]",
@@ -388,12 +403,19 @@ def render(data, lenses_out, families_out, collector_rows):
     out += [
         "",
         (
-            f"- **Transparent re-normalisation:** Only **{n_measured} of {n_total}** credentials have a systematic "
-            "large-sample posting measurement (seven governance/security credentials from Axial Search's n = 1,997 US "
-            "AI-governance dataset [C · T0-34 L51], plus CKA and CKAD from LinuxCareers' n = 1,675 Linux posting audit "
-            "[B · T0-32 L395]). For the remaining "
-            f"**{n_unmeasured} credentials**, `hiring_signal` is `null` and the script re-normalises the other five "
-            "weights to sum to 1.0 rather than inventing numbers from ten-posting convenience samples."
+            f"- **Conservative unmeasured hiring-signal prior (`[{UNMEASURED_HIRING_SIGNAL_PRIOR[0]:.1f}, "
+            f"{UNMEASURED_HIRING_SIGNAL_PRIOR[1]:.1f}, {UNMEASURED_HIRING_SIGNAL_PRIOR[2]:.1f}]`):** Only "
+            f"**{n_measured} of {n_total}** credentials have a systematic large-sample posting measurement "
+            "(seven governance/security credentials from Axial Search's n = 1,997 US AI-governance dataset "
+            "[C · T0-34 L51] corroborated with GRC Careers n = 76 [B COI · T0-34 L52], plus CKA and CKAD from "
+            "LinuxCareers' n = 1,675 Linux posting audit [B · T0-32 L395]). For the remaining "
+            f"**{n_unmeasured} credentials**, `hiring_signal` remains `null` in `data/credentials.json` and the "
+            f"ranking model draws from the conservative triangular prior `[{UNMEASURED_HIRING_SIGNAL_PRIOR[0]:.1f}, "
+            f"{UNMEASURED_HIRING_SIGNAL_PRIOR[1]:.1f}, {UNMEASURED_HIRING_SIGNAL_PRIOR[2]:.1f}]` on the full 100% "
+            "weight vector (D-026 calibration, 2026-11-19). Keeping the full weight vector avoids the anti-measurement "
+            "bias of five-criterion re-normalisation (which previously imputed each unmeasured credential's five-criterion "
+            "mean as a phantom hiring signal and penalised empirically measured workhorses such as CKA, CISA and CISM) "
+            "while widening `P10–P90` intervals to show epistemic uncertainty."
         ),
         (
             "- **Decision rule first:** Rankings show relative quality *conditional on deciding to certify*. "
@@ -401,9 +423,13 @@ def render(data, lenses_out, families_out, collector_rows):
             "[credential-roi.md](credential-roi.md)."
         ),
         (
-            "- **Conflict-of-interest (COI) tags:** Entries tagged *(COI)* draw facts from vendor-primary pages or "
-            "(for Anthropic in T0-29) an issuer-affiliated research run; key Anthropic exam logistics and the US "
-            "Department of War supply-chain litigation (T0-29 L83) were independently live-verified on 2026-11-19."
+            "- **Conflict-of-interest (COI) tags (uniform EGP-1.0 rule):** Entries tagged *(COI)* either carry "
+            "authoring-model issuer COI (Anthropic/Claude in T0-29 and Claude-branded Udacity in T0-30; Anthropic exam "
+            "logistics and US Department of War FASCSA litigation at T0-29 L83 were independently live-verified on "
+            "2026-11-19) or rely on commercial seller/reseller/owner-survey value or pricing claims (unverified private "
+            "bodies, commercial MOOC/ed-tech/EU AI Act course sellers, self-certifying audit schemes, and IAPP AIGP's "
+            "owner salary survey / GRC Careers board). Standard factual exam logistics from primary issuer pages are "
+            "not tagged COI individually; all issuers have commercial stakes in value claims."
         ),
         "",
         "## Channel lenses",
@@ -426,14 +452,16 @@ def render(data, lenses_out, families_out, collector_rows):
         out += [
             f"### {lens['name']}",
             "",
-            f"{lens['description']} Weights: {w_str} (re-normalised when `hiring_signal` is unmeasured).",
+            f"{lens['description']} Weights: {w_str} (conservative `[{UNMEASURED_HIRING_SIGNAL_PRIOR[0]:.1f}, "
+            f"{UNMEASURED_HIRING_SIGNAL_PRIOR[1]:.1f}, {UNMEASURED_HIRING_SIGNAL_PRIOR[2]:.1f}]` prior where "
+            "`hiring_signal` is unmeasured).",
             "",
             "| Rank | P10–P90 | Score | Credential | Issuer | Access | Fee | Validity | Signal measured? | Grade & source |",
             "|:---:|:---:|:---:|---|---|---|---|---|:---:|---|",
         ]
         for r in rows[:limit]:
             c = r["cred"]
-            sig = "Yes" if r["measured_signal"] else "No (5-crit)"
+            sig = "Yes" if r["measured_signal"] else "Prior (2.5–5.5)"
             out.append(
                 f"| {r['rank']} | {r['rank_p10']}–{r['rank_p90']} | {r['point']:.2f} | "
                 f"{fmt_name(c)} | {esc(c['issuer'])} | {ACCESS_LABELS[c['access']]} | "
@@ -449,9 +477,10 @@ def render(data, lenses_out, families_out, collector_rows):
         "## Role-family views",
         "",
         (
-            "Top active exams and assessed credentials per role family using the base R1 weights (re-normalised where "
-            "`hiring_signal` is unmeasured). Completion-only MOOCs and recognition programmes are excluded from exam "
-            "rankings and listed in the full census below."
+            "Top active exams and assessed credentials per role family using the base R1 weights (conservative "
+            f"`[{UNMEASURED_HIRING_SIGNAL_PRIOR[0]:.1f}, {UNMEASURED_HIRING_SIGNAL_PRIOR[1]:.1f}, "
+            f"{UNMEASURED_HIRING_SIGNAL_PRIOR[2]:.1f}]` prior where `hiring_signal` is unmeasured). Completion-only "
+            "MOOCs and recognition programmes are excluded from exam rankings and listed in the full census below."
         ),
         "",
     ]
@@ -556,12 +585,14 @@ def render(data, lenses_out, families_out, collector_rows):
             "RP2 sessions T0-28 and T0-33 run after 2026-12-05."
         ),
         (
-            "- **Sparse hiring-signal denominators:** Only 9 of 150 credentials have systematic large-sample posting "
-            "rates (Axial Search US AI-governance n = 1,997, unstable snapshots across 2026 [C · T0-34 L51, L61]; "
-            "LinuxCareers n = 1,675 Linux-focused postings [B · T0-32 L395]). Every other credential is ranked via "
-            "five-criterion re-normalisation; convenience-sample counts (such as Salesforce 7/17 US, 12/17 India "
-            "or Palantir 8/14 US in T0-31) are documented in notes rather than converted into synthetic hiring-signal "
-            "scores."
+            f"- **Sparse hiring-signal denominators:** Only {n_measured} of {n_total} credentials have systematic "
+            "large-sample posting rates (Axial Search US AI-governance n = 1,997, unstable snapshots across 2026 "
+            "[C · T0-34 L51, L61], corroborated with GRC Careers n = 76 [B COI · T0-34 L52]; LinuxCareers n = 1,675 "
+            "Linux-focused postings [B · T0-32 L395]). Every other credential keeps `hiring_signal: null` in "
+            f"`data/credentials.json` and uses the conservative `[{UNMEASURED_HIRING_SIGNAL_PRIOR[0]:.1f}, "
+            f"{UNMEASURED_HIRING_SIGNAL_PRIOR[1]:.1f}, {UNMEASURED_HIRING_SIGNAL_PRIOR[2]:.1f}]` Monte Carlo prior in "
+            "ranking; convenience-sample counts (such as Salesforce 7/17 US, 12/17 India or Palantir 8/14 US in T0-31) "
+            "are documented in notes rather than converted into synthetic hiring-signal scores."
         ),
         (
             "- **NVIDIA `NCP-GENL` and `NCP-AAI` registration conflict:** Recorded as `announced` (V0) following "

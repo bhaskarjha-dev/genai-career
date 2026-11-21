@@ -116,12 +116,21 @@ class DocumentRules(unittest.TestCase):
         vd.check_doc(path, problems)
         self.assertTrue(any("file://" in p for p in problems), problems)
 
+    def test_banned_archive_url_and_weasel_attribution(self):
+        path = self.page("f.md", "See https://archive.today/abc and claims widely reported online.\n"
+                                 'Quoting "widely reported" when stating the rule is allowed.\n')
+        problems = []
+        vd.check_writing(path, problems)
+        self.assertTrue(any("archive.today" in p for p in problems), problems)
+        self.assertEqual(sum("widely reported" in p for p in problems), 1, problems)
+
 
 class DataFiles(unittest.TestCase):
     """Every data file with a schema validates against it."""
 
     PAIRS = ["role_scores", "role_titles", "posting_skill_shares", "skills_ontology", "stack_model",
-             "project_archetypes", "interview_prompts", "tools", "target_employers", "countries", "credentials"]
+             "project_archetypes", "interview_prompts", "tools", "target_employers", "countries",
+             "credentials", "learning_resources"]
 
     def test_schemas(self):
         for name in self.PAIRS:
@@ -171,14 +180,46 @@ class RoleHubsHybrid(unittest.TestCase):
 
 
 class RP2Generators(unittest.TestCase):
-    """Decisions D-024, D-025, D-026: new generators validate cleanly and pass --check."""
+    """Decisions D-024 to D-027: computed generators validate cleanly, pass --check, and satisfy calibration invariants."""
 
     def test_new_generators_check_clean(self):
-        for script in ("build_employers.py", "rank_countries.py", "rank_credentials.py"):
+        for script in ("build_employers.py", "rank_countries.py", "rank_credentials.py", "build_learning_resources.py"):
             with self.subTest(script=script):
                 res = subprocess.run([sys.executable, "-B", str(SCRIPTS / script), "--check"],
                                      capture_output=True, text=True, cwd=ROOT)
                 self.assertEqual(res.returncode, 0, res.stdout + res.stderr)
+
+    def test_credential_scores_use_a_stated_prior_for_unmeasured_hiring_signal(self):
+        """D-026 calibration: a missing hiring signal takes a stated prior on the full weight vector, so a credential
+        whose measured signal is at or above the prior never scores below the same credential with the signal removed."""
+        import copy
+        import rank_credentials as rc
+        data, schema, onto = rc.load_inputs()
+        self.assertEqual(rc.validate(data, schema, onto), [])
+        lo, mid, hi = rc.UNMEASURED_HIRING_SIGNAL_PRIOR
+        self.assertTrue(0 <= lo <= mid <= hi <= 10)
+        weights = {k: data["criteria"][k]["weight"] for k in rc.CRITERIA}
+        measured = [c for c in data["credentials"] if c["scores"]["hiring_signal"] is not None]
+        self.assertTrue(measured)
+        for cred in measured:
+            blank = copy.deepcopy(cred)
+            blank["scores"]["hiring_signal"] = None
+            self.assertEqual(tuple(rc.effective_triple(blank, "hiring_signal")), tuple(rc.UNMEASURED_HIRING_SIGNAL_PRIOR))
+            if cred["scores"]["hiring_signal"][1] >= mid:
+                self.assertGreaterEqual(rc.point_score(cred, weights), rc.point_score(blank, weights), cred["id"])
+
+    def test_countries_validate_and_carry_the_early_career_lens(self):
+        import rank_countries as rco
+        data = json.loads((ROOT / "data" / "countries.json").read_text(encoding="utf-8"))
+        schema = json.loads((ROOT / "data" / "schemas" / "countries.schema.json").read_text(encoding="utf-8"))
+        self.assertEqual(rco.validate(data, schema), [])
+        self.assertIn("early_career", rco.PILLARS)
+        self.assertIn("early_career", [lens["id"] for lens in data["lenses"]])
+
+    def test_role_hubs_have_no_empty_credential_notes(self):
+        import build_role_hubs as brh
+        for rel, text in brh.outputs().items():
+            self.assertNotIn("(Optional: )", text, f"empty credential note rendered in {rel}")
 
 
 class ResearchPipeline(unittest.TestCase):

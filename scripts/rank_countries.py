@@ -3,7 +3,7 @@
 
 Reads data/countries.json, validates it against data/schemas/countries.schema.json
 and research-session line counts, runs deterministic triangular Monte Carlo
-sampling over each country's [lo, mid, hi] pillar intervals across six lenses,
+sampling over each country's [lo, mid, hi] pillar intervals across all configured lenses,
 and generates career/11-tracks/country-rankings.md in full.
 
 Usage:
@@ -48,6 +48,7 @@ PILLARS = [
     "remote_reach",
     "ecosystem",
     "stability",
+    "early_career",
 ]
 MC_ITER = 20000
 MC_SEED = 20261119
@@ -89,6 +90,9 @@ def validate(data, schema):
     errs += ref_errors(data.get("fx_note", ""), counts, "fx_note")
     errs += ref_errors(data.get("description", ""), counts, "description")
     errs += ref_errors(data.get("scoring_method", ""), counts, "scoring_method")
+    for idx, note in enumerate(data.get("analytical_notes", [])):
+        errs += ref_errors(note.get("source", ""), counts, f"analytical_notes[{idx}].source")
+        errs += ref_errors(note.get("body", ""), counts, f"analytical_notes[{idx}].body")
 
     seen_lenses = set()
     for lens in data.get("lenses", []):
@@ -96,6 +100,7 @@ def validate(data, schema):
         if lid in seen_lenses:
             errs.append(f"duplicate lens id {lid!r}")
         seen_lenses.add(lid)
+        errs += ref_errors(lens.get("description", ""), counts, f"lenses[{lid}].description")
         wsum = sum(lens.get("weights", {}).values())
         if abs(wsum - 1.0) > 1e-6:
             errs.append(f"lens {lid!r}: weights sum to {wsum:.6f}, expected 1.0")
@@ -114,6 +119,11 @@ def validate(data, schema):
         tr = c.get("incoming_tax_regime", {})
         errs += ref_errors(tr.get("source", ""), counts, f"{cid}.incoming_tax_regime.source")
         errs += ref_errors(tr.get("summary", ""), counts, f"{cid}.incoming_tax_regime.summary")
+        ut = c.get("uniform_gross_tax")
+        if ut:
+            errs += ref_errors(ut.get("source", ""), counts, f"{cid}.uniform_gross_tax.source")
+        errs += ref_errors(c.get("access_summary", ""), counts, f"{cid}.access_summary")
+        errs += ref_errors(c.get("caveat", ""), counts, f"{cid}.caveat")
 
         for city in c.get("cities", []):
             cname = city.get("name", "?")
@@ -230,17 +240,17 @@ def render_markdown(data, results):
         "status: published",
         f"last_verified: {data['as_of']}",
         f"review_by: {data['review_by']}",
-        "sources: [T0-35, T0-36, T0-43]",
+        "sources: [T0-35, T0-36, T0-37, T0-38, T0-39, T0-40, T0-41, T0-42, T0-43, T0-67]",
         "roles: []",
         "geos: [global, india, us, eu, uk, sg, uae]",
         "tags: [geography, relocation, country-rankings, cities, remote]",
         "generated_by: scripts/rank_countries.py",
-        f'summary: "Monte Carlo rankings of {n_c} GenAI destination countries and {n_cities} city snapshots across six decision lenses, generated from data/countries.json (T0-35, T0-36, T0-43)."',
+        f'summary: "Monte Carlo rankings of {n_c} GenAI destination countries and {n_cities} city snapshots across {len(lenses)} decision lenses, generated from data/countries.json (T0-35, T0-36, T0-37–T0-43, T0-67)."',
         "---",
         "",
         "# GenAI Country and City Rankings",
         "",
-        f"Evidence-graded country and city comparisons across {n_c} jurisdictions and {n_cities} cities from `T0-35` (Americas, Europe and Israel), `T0-36` (Gulf, India and Asia-Pacific) and `T0-43` (cross-border remote hiring), computed by `scripts/rank_countries.py` from `data/countries.json` (decision D-025). Do not hand-edit this file.",
+        f"Evidence-graded country and city comparisons across {n_c} jurisdictions and {n_cities} cities from `T0-35` (Americas, Europe and Israel), `T0-36` (Gulf, India and Asia-Pacific), `T0-37`–`T0-42` (regional visa dossiers), `T0-43` (cross-border remote hiring) and `T0-67` (post-study/graduate routes), computed by `scripts/rank_countries.py` from `data/countries.json` (decision D-025). Do not hand-edit this file.",
         "",
         "> [!WARNING]",
         "> **Dated pointers, not legal, immigration or tax advice.** Visa thresholds, tax brackets, incoming-worker regimes and geopolitical conditions shift fast. Verify every statutory figure on the destination government's official portal on the day you act. All composite rankings and modelled net-pay figures on this page are **Grade M** (model outputs inheriting the weakest input, often Grade C Numbeo rents or Grade D recalled tax schedules).",
@@ -248,11 +258,11 @@ def render_markdown(data, results):
         "> [!IMPORTANT]",
         "> **Audit and volatility disclosures (as of 2026-11-19).**",
         "> - **Extract-only audit downgrade (`T0-36`):** `T0-36` had a 9% full-page Read rate; every Extract-only Grade A claim in `T0-36` was downgraded to Grade B in `data/countries.json` unless verified directly at primary official sources on 2026-11-19.",
-        "> - **Active 2026 shocks:** Indian nationals face an approximately 13-year US EB-2/EB-3 green-card backlog (`T0-35 L55, L459`) plus H-1B litigation (`T0-35 L578-L579`); Gulf hubs (`AE`, `SA`, `QA`, `BH`) carry 2026 US-Iran regional conflict risk, November 2026 UAE flight disruptions and IMF growth downgrades (`T0-36 L627-L632, L1144`); the Netherlands 30% ruling steps down to 27% on 2027-01-01 (`T0-35 L589`); UK Earned Settlement shifts the baseline ILR track from 5 to 10 years outside high-earner and Global Talent tiers (`T0-35 L582`).",
+        "> - **Active 2026 shocks:** Indian nationals face an approximately 13-year US EB-2/EB-3 green-card backlog (`T0-35 L55, L459`) plus H-1B litigation (`T0-35 L578-L579`); Gulf hubs (`AE`, `SA`, `QA`, `BH`) carry 2026 US-Iran regional conflict risk, November 2026 UAE flight disruptions and IMF growth downgrades (`T0-36 L627-L632, L1144`); the Netherlands 30% ruling steps down to 27% on 2027-01-01 with an unresolved V0 2026 floor conflict (`T0-35 L268, L589; T0-39 L665-L666`); UK Earned Settlement shifts the baseline ILR track from 5 to 10 years outside high-earner and Global Talent tiers (`T0-35 L582`).",
         "",
         "## Method and pillars",
         "",
-        f"Each country is scored across eight anchored 0–10 pillars as a triangular interval `[lo, mid, hi]`. Wide intervals encode thin samples, conflicting data, Grade C/D inputs or policy shocks. `scripts/rank_countries.py` draws **{MC_ITER:,} deterministic Monte Carlo samples** (seed `{MC_SEED}`) from each pillar's triangular distribution and computes composite 0–100 scores (`sum(weight * score * 10)`) across six lenses (all rankings **Grade M**).",
+        f"Each country is scored across {len(PILLARS)} anchored 0–10 pillars as a triangular interval `[lo, mid, hi]`. Wide intervals encode thin samples, conflicting data, Grade C/D inputs or policy shocks. `scripts/rank_countries.py` draws **{MC_ITER:,} deterministic Monte Carlo samples** (seed `{MC_SEED}`) from each pillar's triangular distribution and computes composite 0–100 scores (`sum(weight * score * 10)`) across {len(lenses)} lenses (all rankings **Grade M**).",
         "",
         f"**FX basis:** {data['fx_note']}",
         "",
@@ -268,9 +278,9 @@ def render_markdown(data, results):
         "",
         "**How to read the columns:** `Score` is the Monte Carlo mean composite (0–100) with the point estimate at `mid` in brackets where useful; `P10–P90` is the 80% Monte Carlo rank interval (narrow bands mean robust rank separation, wide bands mean overlapping tiers); `P(Top 5)` is the share of draws in which the country lands in the top five. In Indian-national lenses, **India** is included as the visa-free home baseline so foreign options can be judged against staying local.",
         "",
-        "## Lens comparison overview (all 33 countries)",
+        f"## Lens comparison overview (all {n_c} countries)",
         "",
-        "Table of deterministic lens rank (`#`) and Monte Carlo 80% rank band (`P10–P90`) across all six lenses (**Grade M**). Countries are ordered by **Overall (Indian national)** rank.",
+        f"Table of deterministic lens rank (`#`) and Monte Carlo 80% rank band (`P10–P90`) across all {len(lenses)} lenses (**Grade M**). Countries are ordered by **Overall (Indian national)** rank.",
         "",
     ]
 
@@ -282,6 +292,7 @@ def render_markdown(data, results):
         "fast_access_india": "Fast access (IN)",
         "remote_from_india": "Remote from IN",
         "long_term_settlement": "Settlement (IN)",
+        "early_career": "Early-career",
     }
     lookup = {lid: {r["id"]: r for r in results[lid]} for lid in lens_ids}
 
@@ -328,19 +339,73 @@ def render_markdown(data, results):
     lines += [
         "## City pay, rent and disposable income snapshots",
         "",
-        "All city rows use reference total compensation from `T0-35` (converted from EUR at 1 EUR = 1.1052 USD) or `T0-36` (USD cross-rates), less modelled single-person income tax and employee social contributions, less 12 months of Numbeo 1-bedroom city-centre rent (**Grade M**; Numbeo rents are Grade C crowd-sourced averages; health insurance excluded for US, Switzerland and the Netherlands). For deeper pay negotiation and role-level bands, see [pay-benchmarks.md](../09-compensation/pay-benchmarks.md).",
+        "All city rows use reference total compensation from `T0-35` (converted from EUR at 1 EUR = 1.1052 USD) or `T0-36` (USD cross-rates), less modelled single-person income tax and employee social contributions, less 12 months of Numbeo 1-bedroom city-centre rent (**Grade M**; Numbeo rents and non-rent single-person living costs are Grade C crowd-sourced averages; health insurance excluded for US, Switzerland and the Netherlands). Where an incoming-worker tax regime was modelled in `T0-35`, `Regime net` shows the uplifted annual net pay. For deeper pay negotiation and role-level bands, see [pay-benchmarks.md](../09-compensation/pay-benchmarks.md).",
         "",
-        "| Country | City | Reference gross (local) | Net pay (USD/yr) | 1-BR centre rent (USD/mo) | Disposable after rent (USD/yr) | Basis and caveats | Grade | Source |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "| Country | City | Reference gross (local) | Net pay (USD/yr) | Regime net (USD/yr) | 1-BR centre / outside rent (USD/mo) | Living excl. rent (USD/mo) | Disposable after centre rent (USD/yr) | Basis and caveats | Grade | Source |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for c in countries:
         for ct in c["cities"]:
+            c_rent = fmt_usd_mo(ct["rent_1br_centre_usd_mo"])
+            o_rent_val = ct.get("rent_1br_outside_usd_mo")
+            rent_cell = f"{c_rent} / {fmt_usd_mo(o_rent_val)}" if o_rent_val is not None else c_rent
             lines.append(
                 f"| {esc(c['name'])} (`{c['iso2']}`) | **{esc(ct['name'])}** | {esc(ct['ref_gross_local'])} | "
-                f"{fmt_usd_k(ct['net_annual_usd_k'])} | {fmt_usd_mo(ct['rent_1br_centre_usd_mo'])} | "
+                f"{fmt_usd_k(ct['net_annual_usd_k'])} | {fmt_usd_k(ct.get('regime_net_annual_usd_k'))} | "
+                f"{rent_cell} | {fmt_usd_mo(ct.get('living_excl_rent_usd_mo'))} | "
                 f"{fmt_usd_k(ct['disposable_annual_usd_k'])} | {esc(ct['basis_note'])} | "
                 f"{ct['grade']} | {esc(ct['source'])} |"
             )
+
+    # Uniform-gross tax wedge tables (EUR 100k from T0-35; USD 100k from T0-36)
+    eur_tax = [c for c in countries if c.get("uniform_gross_tax", {}).get("gross_basis") == "EUR 100,000"]
+    usd_tax = [c for c in countries if c.get("uniform_gross_tax", {}).get("gross_basis") == "USD 100,000"]
+    if eur_tax or usd_tax:
+        lines += [
+            "",
+            "## Uniform-gross tax wedge comparison (EUR 100,000 and USD 100,000)",
+            "",
+            "Isolates single-person income tax and mandatory employee social contributions from local salary levels (**Grade M**; standard regimes, excluding incoming-worker breaks). Ordered from lowest to highest effective deduction share within each source basis.",
+            "",
+        ]
+    if eur_tax:
+        lines += [
+            "### Americas, Europe and Israel at EUR 100,000 gross (`T0-35`)",
+            "",
+            "| Country | Effective deductions (%) | Modelled net pay | Grade | Source |",
+            "|---|---|---|---|---|",
+        ]
+        for c in sorted(eur_tax, key=lambda x: (x["uniform_gross_tax"]["deduction_pct"], x["id"])):
+            ut = c["uniform_gross_tax"]
+            lines.append(
+                f"| **{esc(c['name'])}** (`{c['iso2']}`) | {r1(ut['deduction_pct'])}% | "
+                f"{esc(ut['net_display'])} | {ut['grade']} | {esc(ut['source'])} |"
+            )
+        lines.append("")
+    if usd_tax:
+        lines += [
+            "### Gulf, India and Asia-Pacific at USD 100,000 gross (`T0-36`)",
+            "",
+            "| Country | Effective deductions (%) | Modelled net pay | Grade | Source |",
+            "|---|---|---|---|---|",
+        ]
+        for c in sorted(usd_tax, key=lambda x: (x["uniform_gross_tax"]["deduction_pct"], x["id"])):
+            ut = c["uniform_gross_tax"]
+            lines.append(
+                f"| **{esc(c['name'])}** (`{c['iso2']}`) | {r1(ut['deduction_pct'])}% | "
+                f"{esc(ut['net_display'])} | {ut['grade']} | {esc(ut['source'])} |"
+            )
+        lines.append("")
+
+    # Analytical notes rendered from data/countries.json
+    if data.get("analytical_notes"):
+        lines += [
+            "## Key comparative insights and source conflicts",
+            "",
+        ]
+        for note in data["analytical_notes"]:
+            lines.append(f"- **{esc(note['title'])} [{note['grade']} · {esc(note['source'])}]:** {esc(note['body'])}")
+        lines.append("")
 
     # Incoming-worker tax, language, TZ overlap, access summary
     lines += [

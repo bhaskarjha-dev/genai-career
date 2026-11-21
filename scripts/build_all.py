@@ -29,6 +29,7 @@ GENERATORS = [
     "build_resume_matrix.py",  # skills ontology -> résumé skills matrix
     "resume_layers.py",        # ontology, archetypes -> computed résumé-layer blocks
     "build_skills_views.py",   # ontology -> skills radar, credentials by role
+    "build_learning_resources.py",  # learning resources -> rated learning resources catalog (D-027)
     "rank_credentials.py",     # credentials, ontology -> ranked credential catalog (D-026)
     "build_archetypes.py",     # project archetypes -> project-archetypes page
     "build_role_map.py",       # stack model, scores, ontology -> role map

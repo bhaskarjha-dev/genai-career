@@ -91,7 +91,7 @@ def render(data):
         target = "README.md" if folder == "00-start" else f"../{folder}/README.md"
         return f"[{stage_title(folder)}]({target})"
 
-    sources = sorted({m for t in tools for m in re.findall(r"T[0-2]-\d\d", t["source"])})
+    sources = sorted({m for t in tools for m in re.findall(r"T[0-3]-\d\d", t["source"])})
     out = ["---", "id: start.tool-catalog", 'title: "Career Tool Catalog: What to Use, Use With Care, Avoid or Watch"',
            "content_type: reference", "stage: 0", "status: published", f"last_verified: {data['as_of']}", f"review_by: {review_by}",
            f'summary: "{len(tools)} external career tools and platforms across the lifecycle, each with a verdict (use, use with care, '
@@ -110,6 +110,18 @@ def render(data):
             f"re-verification by {review_by}.",
             "- **No endorsement.** A verdict describes what the research found about a tool's fitness for a job-search task. "
             "It is not a recommendation to buy, and it does not rank vendors that were not assessed.", "",
+            "## Data hygiene and security policy (T0-10)", "",
+            "Before uploading a résumé, connecting an account or installing a browser extension, classify the data you are sharing [P · T0-10 L165-L171, L343]:", "",
+            "| Data tier | Examples | Where it may go |",
+            "|---|---|---|",
+            "| **Tier 1** | Résumé stripped of home address, date of birth and ID numbers | Acceptable for reputable external career tools [P · T0-10 L166] |",
+            "| **Tier 2** | Offer letters, compensation history and equity documents | Only tools whose retention and training terms you have read, or redact company names and personal fields first [P · T0-10 L167, L343] |",
+            "| **Tier 3** | Government ID or liveness selfie | Employer-initiated verification only, via a link reached through a known channel [A/B · T0-10 L168] |",
+            "| **Tier 4** | Interview audio or screen capture, and any LinkedIn credentials or session cookies | **Do not give** to third-party tools, live overlays or scraping extensions [P · T0-10 L169] |", "",
+            "- **Compartmentalisation and terms:** use a dedicated email and phone number for job-search tooling (for compartmentalisation, not repeat-application evasion), check retention periods, training clauses (for example Kickresume's anonymised-document clause), subprocessors and export/delete paths, and remove unused browser extensions [P/C · T0-10 L163, L170-L171, L339, L343].",
+            "- **Documented threat cases (T0-10):**",
+            "  - **LayerX \"AiFrame\" extension campaign (Feb 2026):** researchers documented 30+ fake \"AI assistant\" Chrome extensions totalling roughly 260,000-300,000 installs that loaded remote content so behaviour could change without a store update [B · T0-10 L95, L338]. Treat extension permissions like credentials.",
+            "  - **McHire / Paradox.ai breach (disclosed Jul 2025):** a test admin account with a trivial default password plus an IDOR flaw exposed up to 64 million applicant records on an employer recruiting chatbot (Paradox stated five records were accessed, by the researchers, and fixed it) [B · T0-10 L80, L334]. Keep voluntary answers in employer chat widgets minimal.", "",
             "## At a glance", "",
             "| Stage | " + " | ".join(VERDICTS.values()) + " |", "|---|" + ":---:|" * len(VERDICTS)]
     for s, ts in by_stage.items():

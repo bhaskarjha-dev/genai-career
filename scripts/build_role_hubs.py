@@ -212,7 +212,11 @@ def hub_card(ctx, r):
                 f"- **Prerequisites:** {orole.get('prereq') or '—'}"]
         creds = orole.get("credentials", [])
         if creds:
-            cred_txt = "; ".join(f"{onto['credentials'][c['id']]['name']} ({sl.TIER_LABEL[c['tier']]}: {c.get('note', '')})" for c in creds)
+            cred_txt = "; ".join(
+                f"{onto['credentials'][c['id']]['name']} ({sl.TIER_LABEL[c['tier']]}"
+                + (f": {c['note'].strip()}" if c.get("note", "").strip() else "") + ")"
+                for c in creds
+            )
             out.append(f"- **Credentials (tie-breakers, not skills):** {cred_txt}. Whether one is worth it: "
                        "[credential ROI](../../04-certifications/credential-roi.md).")
         if oid != rid:
@@ -280,7 +284,7 @@ def hub_card(ctx, r):
             (f"- [Role rankings](../role-rankings.md#{slugs['board']}): leaderboard, lenses and dossiers; scoring inputs in [Appendix A](../role-rankings.md#{slugs['appendix']})."
              if ic else f"- [Role rankings, leadership tracks](../role-rankings.md#{slugs['lead']})."),
             f"- [GenAI target roles](../genai-target-roles.md#{slugs['order']}): where this role sits in the GenAI target order and why.",
-            f"- [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-{rid if (orole and orole['variant'] != 'L' and oid == rid) else 'leadership'}): narrative skills, tools, interview and typical gaps."]
+            f"- [Skill map](../../03-skills-and-tech/role-skill-maps.md#skills-{rid if (orole and ic and oid == rid) else 'leadership'}): narrative skills, tools, interview and typical gaps."]
     out += [f"- [{label}](../../11-tracks/{f}): the track playbook for this role." for f, (label, ids) in ctx["playbooks"].items() if rid in ids]
     out += ["", "## Evidence and dates", "",
             f"- Pillar scores as of {ctx['scores']['as_of']}; skills ontology as of {onto['meta']['as_of']}; tool and credential statuses are due for re-verification by {onto['meta']['ttl']['tool_status_reverify_by']}.",

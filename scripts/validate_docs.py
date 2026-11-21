@@ -20,6 +20,8 @@ Checks, across every career/*.md file, the top-level documents, the research ind
     "recently", "nowadays", "these days", "as of now", "right now", "at present", "at the moment", or
     "latest" without a date nearby); no references to the legacy handbook (once kept in the git-ignored temp/
     folder), and none of its signature phrases outside quotes and code, in the documents and in data/*.json
+  * citation guards (T1-02): no links to the archive.today family of mirrors (AC5), and no "widely reported" or
+    "many sources say" as support outside quotes and code (L441)
   * no dead ends: every document under career/ links to at least one other document
   * the guide pattern (D-016): every guide has "The short answer", "Checklist", "Evidence and limits" and
     "Next steps", in that order (any guide that predates the pattern is listed in LEGACY_GUIDES)
@@ -67,6 +69,9 @@ LEGACY = re.compile(r"old-genai-career|temp/old")
 # check running after the handbook is deleted.
 LEGACY_PHRASES = re.compile(r"\b54 roles\b|\b(?:7|seven) (?:macro )?clusters\b|\b6-layer AI stack\b|\bTier-1 projects?\b|"
                             r"\bTalent Bridge Matrix\b|300% year-over-year", re.I)
+# T1-02 writing and citation guards (EGP-1.0): AC5 bans the archive.today family (L655); L441 bans these phrases as support.
+BANNED_ARCHIVE = re.compile(r"https?://(?:www\.)?archive\.(?:today|is|ph|fo|li|md|vn)\b", re.I)
+WEASEL_ATTR = re.compile(r"\b(?:widely reported|many sources say)\b", re.I)
 LEGACY_EXEMPT = {"AGENTS.md", "CONTRIBUTING.md", "CHANGELOG.md"}  # they state the rules, so they may name what is banned
 LEGACY_PHRASES_SKIP = {"research/findings.md"}  # generated from the sealed sessions, so it cannot be edited to comply
 FRONT_MATTER_PAGES = ["research/README.md", "research/findings.md", "research/ERRATA.md", "research/pipeline-2/README.md"]
@@ -172,6 +177,10 @@ def check_writing(path, problems):
             for m in LEGACY_PHRASES.finditer(body):  # prose only: a phrase in quotes or code may be discussed
                 problems.append(f"{name}: '{m.group(0)}' is a signature phrase of the legacy handbook (decision D-016); "
                                 "use the repository's own evidence")
+            for m in BANNED_ARCHIVE.finditer(text):
+                problems.append(f"{name}: banned archive mirror '{m.group(0)}' (EGP-1.0 AC5 / T1-02); use canonical URL or Wayback Machine")
+            for m in WEASEL_ATTR.finditer(body):
+                problems.append(f"{name}: phrase '{m.group(0)}' is not accepted as support (EGP-1.0, T1-02 L441); name the source and grade it")
 
 
 def check_legacy_data(problems):

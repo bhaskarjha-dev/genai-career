@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #6 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-ai-engineer) · [role hub](../../02-roles/hubs/applied-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-applied-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**46 skills:** Must 6 · Important 14 · Should 14 · Optional 12. **Evidence:** JD 11 · S 11 · P 24 (52% practice-curated). **Non-technical:** 12.
+**46 skills:** Must 6 · Important 14 · Should 14 · Optional 12. **Evidence:** JD 11 · S 13 · P 22 (48% practice-curated). **Non-technical:** 12.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,7 +28,7 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · RAG [JD 54.0% (closest)] · Agents & tool use [JD 59.3% (closest)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-53]<br>**Important:** Guardrails [S · T0-01] · Prompt & context design [P] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-01] · ML fundamentals [JD 39.8% (closest)] · Generative AI [JD 37.6% (closest)] · Embeddings & vector search [JD 32.6% (closest)]<br>**Should:** APIs & integrations [P] · Observability (OpenTelemetry traces, metrics) [P] · Cost & latency engineering [P]<br>**Optional:** Fine-tuning (SFT, LoRA) [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · RAG [JD 54.0% (closest)] · Agents & tool use [JD 59.3% (closest)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-53]<br>**Important:** Guardrails [S · T0-01] · Prompt & context design [S · T0-53] · Retrieval quality (hybrid, reranking, recall@k) [S · T0-01] · ML fundamentals [JD 39.8% (closest)] · Generative AI [JD 37.6% (closest)] · Embeddings & vector search [JD 32.6% (closest)]<br>**Should:** APIs & integrations [P] · Observability (OpenTelemetry traces, metrics) [P] · Cost & latency engineering [P]<br>**Optional:** Fine-tuning (SFT, LoRA) [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 34.4% (closest)] · Prompt engineering [JD 31.1% (closest)] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (closest)]<br>**Should:** TypeScript / JavaScript [P] |
 | Technical: concrete | **Framework / SDK** | **Should:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] · FastAPI [P] |
@@ -40,7 +40,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Specialised product** | **Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [P] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [P] |
 | Technical: concrete | **Protocol / standard** | **Should:** JSON Schema [P]<br>**Optional:** MCP (Model Context Protocol) [S · T0-16] · OAuth 2.x [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] · EU AI Act [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Technical writing [P]<br>**Should:** Customer-facing communication [P] · Presenting & live demos [P] · Communication (written & verbal) [JD 44.2% (feeder)] · Stakeholder communication [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Technical writing [S · T0-53]<br>**Should:** Customer-facing communication [P] · Presenting & live demos [P] · Communication (written & verbal) [JD 44.2% (feeder)] · Stakeholder communication [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Must:** Customer scoping & demos [S · T0-53] |
 | Non-technical | **Leadership & people** | **Optional:** Influence without authority [P] |
@@ -58,7 +58,8 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): services channels [T0-11]
-- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
+- **Optional:** LangChain Certified Agent Engineer (LCAE): Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76) [T0-29]
+- **Optional:** Claude Certified Developer – Foundations (CCDV-F): Partner-gated ($125; Claude Partner Network staff only; counts for partner tiers; FASCSA risk V0) [A COI · T0-29, T3-01] [T0-29]
 
 ## 5. Prerequisites and proof
 
@@ -110,8 +111,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Customer scoping & demos | M | S (C) | T0-53:L193, T0-53:L361 | 9/10 (90%) full-read Applied AI JDs |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | M | S (C) | T0-53:L194, T0-53:L361 | 8/10 (80%) full-read Applied AI JDs |
 | Guardrails | I | S (C) | T0-01:L147 | safety in regulated settings (Anthropic Beneficial Deployments) |
-| Prompt & context design | I | P (D) | — | model-behaviour knowledge and prompting at scale |
-| Technical writing | I | P (D) | — | partner enablement and technical writing |
+| Prompt & context design | I | S (C) 40% | T0-53:L537 | 4/10 in T0-53; Context engineering at Anthropic x3; prompt design at Siemens |
+| Technical writing | I | S (C) 40% | T0-53:L539 | 4/10 in T0-53; Content, documentation and white-paper duties at Anthropic x3 and Siemens |
 | Retrieval quality (hybrid, reranking, recall@k) | I | S (C) | T0-01:L184 | context-retrieval specialisation (a Databricks posting) |
 | ML fundamentals | I | JD (B) 39.8% | JobsPipe: AI Engineer (closest measured title) | — |
 | Generative AI | I | JD (B) 37.6% | JobsPipe: AI Engineer (closest measured title) | — |

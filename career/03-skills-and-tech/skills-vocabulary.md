@@ -4,16 +4,16 @@ title: "GenAI Skills Vocabulary"
 content_type: reference
 stage: 3
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-19
 review_by: 2027-01-21
 summary: "Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions."
-sources: [T0-03, T0-11, T0-15, T0-16]
+sources: [T0-03, T0-11, T0-15, T0-16, T0-29, T0-31, T0-32, T0-34, T0-68, T0-69]
 generated_by: "scripts/build_skills.py (generated blocks)"
 ---
 # GenAI Skills Vocabulary
 ## Every Skill in the Ontology: Typed, With Posting Wording, Relations, Status and Corpus Evidence
 
-> **Updated:** 2026-11-04 · **Scope:** Controlled vocabulary of 523 typed skills across 19 categories.
+> **Updated:** 2026-11-19 · **Scope:** Controlled vocabulary of 540 typed skills across 19 types.
 > **Source of truth:** [data/skills_ontology.json](../../data/skills_ontology.json), with its schema in [data/skills_ontology.schema.json](../../data/schemas/skills_ontology.schema.json).
 > - Every table between the `BEGIN/END GENERATED` markers is produced by `python3 -B scripts/build_skills.py --update`, which validates the ontology first.
 > - To add or change a skill, edit the ontology, never these tables ([AGENTS.md §2](../../AGENTS.md#2-sources-of-truth) lists the generators to run).
@@ -52,9 +52,9 @@ Credentials, prerequisites and proof artefacts are kept apart. They are facts an
 - **Posting wording:** aliases that postings use for the same skill. Mirror them only when they are true for you.
 - **Status:** the date-stamped state of a volatile tool:
   - the states are active, beta, development, acquired, renamed, dormant, archived and retired;
-  - each status is recorded, with its date and a note, on the skill's or credential's entry in the ontology (credential entries also name their source session); the status facts come from T0-03, T0-11 and T0-16 and must be re-verified by 2027-01-21;
+  - each status is recorded, with its date and a note, on the skill's or credential's entry in the ontology (credential entries also name their source session); status facts come from T0-03, T0-11, T0-16, T0-29, T0-31, T0-32, T0-34, T0-68 and T0-69 and must be re-verified by 2027-01-21;
   - archived, dormant and retired items are always tiered Avoid.
-- **Corpus mentions:** how often the 22 research sessions name a concrete technology, by name and alias matching.
+- **Corpus mentions:** how often the 75 research sessions name a concrete technology, by name and alias matching.
   - A few ambiguous names (for example "R") are not counted.
   - Zero means practice-curated: standard in the field, but unmeasured in the research.
 - **Roles listing it:** how many role inventories list the skill directly (the number at Must or Important in brackets), plus the roles that cover it only through a choose-one class link.
@@ -68,16 +68,16 @@ Credentials, prerequisites and proof artefacts are kept apart. They are facts an
 <!-- BEGIN GENERATED: scripts/build_skills.py (summary) -->
 | Group | Type | Entries | Named in the research corpus | Linked by at least one role | Where it goes on a resume |
 |---|---|:---:|:---:|:---:|---|
-| Technical: knowledge | [Concept / knowledge area](#type-concept) | 132 | n/a | 132 | Name it in the summary or a core-competencies line; prove it with a bullet that shows the system and a measured outcome |
-| Technical: knowledge | [Method / practice](#type-method) | 65 | n/a | 65 | Use it as the verb of a bullet: what you did, on what, with what measured result |
-| Technical: concrete | [Programming language](#type-language) | 16 | 14 | 16 | Skills section (Languages); back it with shipped or public code |
-| Technical: concrete | [Framework / SDK](#type-framework) | 54 | 53 | 52 | Skills section (Frameworks) in the posting's wording; one bullet showing what you built with it |
+| Technical: knowledge | [Concept / knowledge area](#type-concept) | 134 | n/a | 134 | Name it in the summary or a core-competencies line; prove it with a bullet that shows the system and a measured outcome |
+| Technical: knowledge | [Method / practice](#type-method) | 69 | n/a | 69 | Use it as the verb of a bullet: what you did, on what, with what measured result |
+| Technical: concrete | [Programming language](#type-language) | 17 | 15 | 17 | Skills section (Languages); back it with shipped or public code |
+| Technical: concrete | [Framework / SDK](#type-framework) | 55 | 54 | 52 | Skills section (Frameworks) in the posting's wording; one bullet showing what you built with it |
 | Technical: concrete | [Library / package](#type-library) | 46 | 36 | 45 | Skills section when the posting names it; otherwise inside a bullet |
 | Technical: concrete | [Model / model family](#type-model) | 11 | 8 | 11 | Bullets (compared, fine-tuned, served); never a version number |
-| Technical: concrete | [Platform / cloud service](#type-platform) | 32 | 29 | 32 | Skills section (Cloud & platforms); match the posting's cloud |
+| Technical: concrete | [Platform / cloud service](#type-platform) | 33 | 29 | 32 | Skills section (Cloud & platforms); match the posting's cloud |
 | Technical: concrete | [Data store](#type-data-store) | 14 | 12 | 14 | Skills section (Data); show scale or design choice in a bullet |
-| Technical: concrete | [Infrastructure / DevOps tool](#type-infra-tool) | 18 | 18 | 18 | Skills section (Infrastructure); show what you ran and at what scale |
-| Technical: concrete | [Specialised product](#type-product) | 39 | 37 | 38 | Skills section (Evaluation, observability, security or governance tools); show the practice, not just the tool |
+| Technical: concrete | [Infrastructure / DevOps tool](#type-infra-tool) | 19 | 18 | 18 | Skills section (Infrastructure); show what you ran and at what scale |
+| Technical: concrete | [Specialised product](#type-product) | 43 | 40 | 38 | Skills section (Evaluation, observability, security or governance tools); show the practice, not just the tool |
 | Technical: concrete | [Hardware / accelerator](#type-hardware) | 9 | 8 | 9 | Bullets with scale (for example "on 8×H100"), disclosed honestly |
 | Technical: concrete | [Protocol / standard](#type-protocol) | 20 | 19 | 20 | Skills section or a bullet showing an integration (for example "MCP server with OAuth") |
 | Technical: concrete | [Regulation / framework](#type-regulation) | 18 | 17 | 18 | Skills section for governance, risk and security roles; show an assessment, control or document you produced |
@@ -85,9 +85,9 @@ Credentials, prerequisites and proof artefacts are kept apart. They are facts an
 | Non-technical | [Behavioural competency](#type-behavioural) | 9 | n/a | 9 | Show in bullets; prepare a STAR-AI story for the interview loop |
 | Non-technical | [Business & product](#type-business) | 13 | n/a | 13 | Summary and bullets with business outcomes (cost, revenue, adoption) |
 | Non-technical | [Leadership & people](#type-leadership) | 8 | n/a | 8 | Bullets with scope: team size, hires, mentees, decisions owned |
-| Non-technical | [Domain knowledge](#type-domain) | 6 | n/a | 6 | Summary line plus bullets with domain outcomes |
+| Non-technical | [Domain knowledge](#type-domain) | 7 | n/a | 7 | Summary line plus bullets with domain outcomes |
 | Non-technical | [Research craft](#type-research-craft) | 4 | n/a | 4 | Publications section and bullets (venues, citations, reproductions) |
-| **Total** | | **525** | **251 of 277 concrete** | **521** | |
+| **Total** | | **540** | **256 of 285 concrete** | **529** | |
 <!-- END GENERATED -->
 
 ---
@@ -142,7 +142,7 @@ Within each type, rows are sorted by category, then name.
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (vocabulary) -->
 <a id="type-concept"></a>
-#### Concept / knowledge area (132)
+#### Concept / knowledge area (134)
 
 *Technical: knowledge. On a resume: Name it in the summary or a core-competencies line; prove it with a bullet that shows the system and a measured outcome.*
 
@@ -151,15 +151,15 @@ Within each type, rows are sorted by category, then name.
 | **Agent interoperability (tool and agent protocols)** (`agent_interop`) | Agents | agent protocols | part of Agents & tool use | 1 (0 M/I) |
 | **Agent memory & state** (`agent_memory`) | Agents | long-term memory; conversation state | part of Agents & tool use | 1 (0 M/I) |
 | **Agent reliability (durable state, budgets, approvals)** (`agent_reliability`) | Agents | reliable agents; agent budgets; human approval | part of Agents & tool use | 3 (2 M/I) |
-| **Agents & tool use** (`agents`) | Agents | agentic AI; AI agents; tool use; agentic workflows | — | 10 (6 M/I) |
+| **Agents & tool use** (`agents`) | Agents | agentic AI; AI agents; tool use; agentic workflows | — | 12 (8 M/I) |
 | **Computer-use & browser agents** (`computer_use`) | Agents | browser agents; GUI agents | part of Agents & tool use | 2 (0 M/I) |
 | **Durable execution & workflow state** (`durable_execution`) | Agents | checkpointing; resumable workflows | part of Agent reliability (durable state, budgets, approvals) | 2 (1 M/I) |
 | **Multi-agent orchestration** (`multi_agent`) | Agents | multi-agent systems; agent orchestration | part of Agents & tool use | 1 (1 M/I) |
 | **GenAI reference architectures** (`ref_architecture`) | Cloud & platforms | reference architectures; solution architecture | part of System design | 1 (1 M/I) |
 | **Serverless deployment** (`serverless`) | Cloud & platforms | serverless functions; FaaS | — | 2 (0 M/I) |
 | **Data governance & lineage** (`data_governance`) | Data engineering | data lineage; data catalogue | — | 3 (0 M/I) |
-| **Data pipelines & quality** (`data_pipelines`) | Data engineering | ETL; data engineering; data quality | — | 5 (2 M/I) |
-| **LLM evaluation (golden sets, calibrated judges, CI gates)** (`evals`) | Evaluation | LLM evaluation; evals; evaluation harness; golden sets | — | 18 (11 M/I) |
+| **Data pipelines & quality** (`data_pipelines`) | Data engineering | ETL; data engineering; data quality | — | 6 (2 M/I) |
+| **LLM evaluation (golden sets, calibrated judges, CI gates)** (`evals`) | Evaluation | LLM evaluation; evals; evaluation harness; golden sets | — | 21 (12 M/I) |
 | **Frontend engineering** (`frontend_engineering`) | Frontend & UX | frontend development; web development | — | 1 (1 M/I) |
 | **Generative UI** (`generative_ui`) | Frontend & UX | — | part of Streaming & agent UX | 1 (1 M/I) |
 | **On-device / WebGPU inference** (`on_device`) | Frontend & UX | on-device AI; in-browser inference | — | 1 (0 M/I) |
@@ -171,11 +171,11 @@ Within each type, rows are sorted by category, then name.
 | **ML compilers (XLA, TorchInductor)** (`compilers`) | GPU & kernels | ML compilers; graph compilers; kernel fusion | — | 1 (1 M/I) |
 | **PTX / SASS-level optimisation** (`ptx_sass`) | GPU & kernels | PTX; SASS | part of Attention, GEMM & quantised kernels | 1 (0 M/I) |
 | **Content provenance (EU AI Act Art. 50)** (`provenance`) | Governance, risk & compliance | content provenance; watermarking; AI labelling | — | 3 (1 M/I) |
-| **EU AI Act / NIST AI RMF / ISO 42001** (`regulation`) | Governance, risk & compliance | AI regulation; AI standards; AI governance frameworks | — | 5 (4 M/I) |
+| **EU AI Act / NIST AI RMF / ISO 42001** (`regulation`) | Governance, risk & compliance | AI regulation; AI standards; AI governance frameworks | — | 6 (4 M/I) |
 | **Explainability (XAI)** (`explainability`) | Governance, risk & compliance | XAI; feature attribution | — | 3 (1 M/I) |
 | **Fairness & bias assessment** (`bias_fairness`) | Governance, risk & compliance | algorithmic fairness; bias testing | — | 3 (2 M/I) |
 | **Model risk management** (`model_risk_mgmt`) | Governance, risk & compliance | MRM; model risk | — | 2 (1 M/I) |
-| **Privacy law & DPO duties** (`privacy`) | Governance, risk & compliance | privacy law; data protection; DPIA; DPO | — | 2 (2 M/I) |
+| **Privacy law & DPO duties** (`privacy`) | Governance, risk & compliance | privacy law; data protection; DPIA; DPO | — | 5 (2 M/I) |
 | **Sector rules (SR 26-2, LL144, DPDP)** (`sector_rules`) | Governance, risk & compliance | sector AI rules; financial-services AI rules; hiring-AI rules | — | 3 (2 M/I) |
 | **Constrained decoding** (`structured_generation`) | Inference & serving | constrained decoding; grammar-constrained generation; guided decoding | — | 3 (0 M/I) |
 | **Continuous batching & KV cache** (`batching_kv`) | Inference & serving | continuous batching; KV cache; PagedAttention | part of Serving literacy (vLLM, batching, quantisation) | 2 (1 M/I) |
@@ -185,22 +185,23 @@ Within each type, rows are sorted by category, then name.
 | **KV-cache offload & tiering** (`kv_offload`) | Inference & serving | KV-cache offloading | part of Continuous batching & KV cache | 1 (0 M/I) |
 | **Prefill/decode disaggregation** (`pd_disagg`) | Inference & serving | disaggregated serving; prefill/decode disaggregation | part of Serving literacy (vLLM, batching, quantisation) | 3 (0 M/I) |
 | **Prefix caching & KV reuse** (`prefix_caching`) | Inference & serving | KV-cache reuse; RadixAttention | part of Continuous batching & KV cache | 1 (1 M/I) |
-| **Quantisation (FP8/FP4, AWQ, GPTQ)** (`quantization`) | Inference & serving | quantisation; quantization; FP8; INT4; AWQ; GPTQ | — | 4 (2 M/I) |
+| **Quantisation (FP8/FP4, AWQ, GPTQ)** (`quantization`) | Inference & serving | quantisation; quantization; FP8; INT4; AWQ; GPTQ | — | 4 (1 M/I) |
 | **Self-hosting open models** (`self_hosting`) | Inference & serving | open-weight models; self-hosted LLMs; local models | — | 3 (0 M/I) |
 | **Serving literacy (vLLM, batching, quantisation)** (`serving_literacy`) | Inference & serving | LLM serving; LLM inference; inference optimisation | — | 1 (1 M/I) |
 | **Speculative decoding** (`spec_decoding`) | Inference & serving | speculative decoding; EAGLE; draft models | part of Serving literacy (vLLM, batching, quantisation) | 1 (1 M/I) |
 | **TP/PP & MoE serving** (`parallel_serving`) | Inference & serving | tensor-parallel serving; expert parallelism; MoE serving | part of Serving literacy (vLLM, batching, quantisation) | 1 (1 M/I) |
 | **DevOps** (`devops`) | Infrastructure & DevOps | DevOps practices | — | 3 (2 M/I) |
-| **Capacity & GPU/API cost governance** (`capacity_cost`) | Infrastructure & HPC | capacity planning; FinOps; GPU cost governance | — | 4 (3 M/I) |
+| **Capacity & GPU/API cost governance** (`capacity_cost`) | Infrastructure & HPC | capacity planning; FinOps; GPU cost governance | — | 4 (1 M/I) |
 | **Checkpointing & storage throughput** (`storage_checkpoint`) | Infrastructure & HPC | checkpointing; distributed storage; I/O throughput | — | 1 (1 M/I) |
 | **GPU fleet ops & scheduling** (`gpu_fleet`) | Infrastructure & HPC | GPU cluster operations; cluster scheduling; GPU scheduling | — | 2 (1 M/I) |
 | **Hardware-fault reliability** (`hw_reliability`) | Infrastructure & HPC | hardware failures; GPU fault tolerance; silent data corruption | — | 1 (1 M/I) |
 | **NCCL / RDMA / InfiniBand** (`interconnect`) | Infrastructure & HPC | collective communication; interconnects | — | 3 (1 M/I) |
 | **Networking** (`networking`) | Infrastructure & HPC | TCP/IP; load balancing; VPC; DNS | — | 2 (1 M/I) |
+| **AI platform & systems technical depth** (`ai_system_technical_depth`) | LLM applications | — | — | 1 (1 M/I) |
 | **Choosing RAG vs long context vs fine-tuning** (`adaptation_choice`) | LLM applications | — | part of LLM fundamentals (tokens, context windows, sampling, hallucination) | 2 (1 M/I) |
 | **Context engineering** (`context_engineering`) | LLM applications | context management; context-window management | part of Prompt & context design | 2 (1 M/I) |
 | **Generative AI** (`generative_ai`) | LLM applications | GenAI; generative AI | — | 4 (3 M/I) |
-| **LLM APIs & tool calling** (`llm_apis`) | LLM applications | LLM; LLM APIs; LLM integration; large language models | — | 10 (9 M/I) |
+| **LLM APIs & tool calling** (`llm_apis`) | LLM applications | LLM; LLM APIs; LLM integration; large language models | — | 11 (10 M/I) |
 | **LLM fundamentals (tokens, context windows, sampling, hallucination)** (`llm_fundamentals`) | LLM applications | how LLMs work; tokenisation; sampling | — | 6 (1 M/I) |
 | **Model selection & routing** (`model_selection`) | LLM applications | model routing; LLM routing | part of Cost & latency engineering | 2 (1 M/I) |
 | **Multimodal AI (vision, documents, audio)** (`multimodal`) | LLM applications | vision-language models; VLMs | — | 3 (0 M/I) |
@@ -214,9 +215,9 @@ Within each type, rows are sorted by category, then name.
 | **Data science** (`data_science`) | ML & deep learning | — | — | 1 (1 M/I) |
 | **Deep learning & transformers** (`deep_learning`) | ML & deep learning | neural networks; transformers; transformer architecture | — | 6 (4 M/I) |
 | **Diffusion & image/video generation models** (`diffusion_models`) | ML & deep learning | diffusion models | part of Deep learning & transformers | 1 (0 M/I) |
-| **Linear algebra** (`linear_algebra`) | ML & deep learning | matrix calculus; maths for ML | — | 3 (2 M/I) |
+| **Linear algebra** (`linear_algebra`) | ML & deep learning | matrix calculus; maths for ML | — | 3 (1 M/I) |
 | **Mixture of Experts (MoE)** (`moe`) | ML & deep learning | MoE | part of Deep learning & transformers | 1 (0 M/I) |
-| **ML fundamentals** (`ml_fundamentals`) | ML & deep learning | machine learning; AI/ML; artificial intelligence; supervised learning | — | 8 (8 M/I) |
+| **ML fundamentals** (`ml_fundamentals`) | ML & deep learning | machine learning; AI/ML; artificial intelligence; supervised learning | — | 9 (9 M/I) |
 | **Natural language processing (NLP)** (`nlp`) | ML & deep learning | NLP | — | 3 (1 M/I) |
 | **PyTorch internals** (`pytorch_internals`) | ML & deep learning | autograd internals; PyTorch dispatcher | — | 3 (2 M/I) |
 | **Recommender systems** (`recsys`) | ML & deep learning | recommender systems; recommendations; personalisation | — | 2 (0 M/I) |
@@ -224,14 +225,14 @@ Within each type, rows are sorted by category, then name.
 | **Search & ranking (learning to rank)** (`ranking_search`) | ML & deep learning | learning to rank; search relevance | — | 1 (0 M/I) |
 | **Statistics (inference, hypothesis tests, regression)** (`statistics`) | ML & deep learning | statistical analysis; probability | — | 7 (3 M/I) |
 | **Feature stores** (`feature_store`) | MLOps & platform | feature store | part of MLOps lifecycle (model & prompt CI/CD) | 2 (0 M/I) |
-| **MLOps lifecycle (model & prompt CI/CD)** (`mlops_lifecycle`) | MLOps & platform | MLOps; LLMOps; model CI/CD; model registry; prompt CI/CD | — | 4 (1 M/I) |
+| **MLOps lifecycle (model & prompt CI/CD)** (`mlops_lifecycle`) | MLOps & platform | MLOps; LLMOps; model CI/CD; model registry; prompt CI/CD | — | 6 (1 M/I) |
 | **Cost & latency engineering** (`cost_latency`) | Observability & LLMOps | cost optimisation; latency optimisation; token budgets | — | 4 (3 M/I) |
 | **LLM gateways** (`llm_gateways`) | Observability & LLMOps | AI gateway; LLM proxy; model gateway | — | 3 (1 M/I) |
 | **Observability (OpenTelemetry traces, metrics)** (`observability`) | Observability & LLMOps | LLM observability; monitoring; telemetry | — | 13 (6 M/I) |
 | **Semantic & prompt caching** (`semantic_caching`) | Observability & LLMOps | prompt caching; response caching | part of Cost & latency engineering | 1 (0 M/I) |
 | **AI literacy (tokens, RAG vs fine-tune, cost)** (`ai_literacy`) | Product & business | AI fluency; LLM literacy | — | 5 (1 M/I) |
 | **Internal tooling & DevEx** (`internal_tooling`) | Product & business | developer experience; DevEx; internal platforms | — | 1 (1 M/I) |
-| **APIs & integrations** (`apis`) | Programming | REST APIs; API design; integrations; backend services | — | 5 (2 M/I) |
+| **APIs & integrations** (`apis`) | Programming | REST APIs; API design; integrations; backend services | — | 6 (3 M/I) |
 | **Data structures & algorithms** (`dsa`) | Programming | data structures; algorithms; coding interviews | — | 4 (4 M/I) |
 | **System design** (`system_design`) | Programming | distributed systems design; system design for LLM applications | — | 6 (3 M/I) |
 | **Alignment methods** (`alignment`) | Research | AI alignment; scalable oversight | — | 2 (1 M/I) |
@@ -245,10 +246,11 @@ Within each type, rows are sorted by category, then name.
 | **Grounding & citations (hallucination control)** (`grounding_citations`) | Retrieval & RAG | hallucination mitigation; attribution | part of RAG | 2 (0 M/I) |
 | **Hybrid search (BM25 + dense)** (`hybrid_search`) | Retrieval & RAG | BM25; lexical search; keyword search | part of Retrieval quality (hybrid, reranking, recall@k) | 1 (0 M/I) |
 | **Permission-aware retrieval (ACLs, tenancy)** (`access_controlled_retrieval`) | Retrieval & RAG | document-level security; multi-tenant retrieval | part of Retrieval quality (hybrid, reranking, recall@k) | 2 (1 M/I) |
-| **RAG** (`rag`) | Retrieval & RAG | RAG; retrieval-augmented generation; RAG pipelines | — | 9 (4 M/I) |
+| **RAG** (`rag`) | Retrieval & RAG | RAG; retrieval-augmented generation; RAG pipelines | — | 10 (5 M/I) |
 | **Reranking** (`reranking`) | Retrieval & RAG | cross-encoder reranking | part of Retrieval quality (hybrid, reranking, recall@k) | 1 (0 M/I) |
 | **Retrieval quality (hybrid, reranking, recall@k)** (`retrieval_quality`) | Retrieval & RAG | retrieval evaluation; search relevance | part of RAG | 5 (4 M/I) |
 | **Control systems** (`control_systems`) | Robotics & physical AI | control theory; MPC; PID | part of Robotics fundamentals | 1 (1 M/I) |
+| **Diffusion & action-chunking policies** (`diffusion_action_chunking`) | Robotics & physical AI | — | part of Robot learning & VLA models | 1 (0 M/I) |
 | **Edge inference** (`edge_inference`) | Robotics & physical AI | edge deployment; embedded inference | — | 1 (1 M/I) |
 | **Imitation learning** (`imitation_learning`) | Robotics & physical AI | behaviour cloning; diffusion policy | part of Robot learning & VLA models | 1 (1 M/I) |
 | **Motion planning** (`motion_planning`) | Robotics & physical AI | trajectory planning | part of Robotics fundamentals | 1 (1 M/I) |
@@ -262,7 +264,7 @@ Within each type, rows are sorted by category, then name.
 | **Containment (DLP, sandboxing, egress)** (`containment`) | Security & safety | sandboxing; DLP; egress control | part of LLM security (prompt injection, OWASP) | 2 (2 M/I) |
 | **Cybersecurity fundamentals** (`cybersecurity`) | Security & safety | security; information security; infosec | — | 2 (1 M/I) |
 | **Data & model poisoning** (`data_poisoning`) | Security & safety | backdoors; poisoning attacks | part of LLM security (prompt injection, OWASP) | 2 (0 M/I) |
-| **Guardrails** (`guardrails`) | Security & safety | content filtering; safety filters; input and output validation | part of LLM security (prompt injection, OWASP) | 5 (4 M/I) |
+| **Guardrails** (`guardrails`) | Security & safety | content filtering; safety filters; input and output validation | part of LLM security (prompt injection, OWASP) | 5 (3 M/I) |
 | **LLM security (prompt injection, OWASP)** (`llm_security`) | Security & safety | AI security; LLM security; GenAI security | — | 3 (3 M/I) |
 | **Model supply chain & CVEs** (`supply_chain`) | Security & safety | model supply chain; SBOM; model provenance; CVE patching | part of LLM security (prompt injection, OWASP) | 3 (2 M/I) |
 | **OAuth/OIDC, RBAC, SSO** (`iam`) | Security & safety | identity and access management; RBAC; SSO | — | 5 (4 M/I) |
@@ -282,7 +284,7 @@ Within each type, rows are sorted by category, then name.
 | **Scaling laws & compute-optimal training** (`scaling_laws`) | Training & post-training | compute-optimal scaling | part of Pre-training at scale | 2 (0 M/I) |
 
 <a id="type-method"></a>
-#### Method / practice (65)
+#### Method / practice (69)
 
 *Technical: knowledge. On a resume: Use it as the verb of a bullet: what you did, on what, with what measured result.*
 
@@ -314,7 +316,7 @@ Within each type, rows are sorted by category, then name.
 | **AI policy & standards writing** (`policy_writing`) | Governance, risk & compliance | AI policies; acceptable-use policy | — | 1 (1 M/I) |
 | **Audit methodology** (`audit_method`) | Governance, risk & compliance | internal audit; audit methodology | — | 2 (1 M/I) |
 | **Controls design & testing** (`controls_testing`) | Governance, risk & compliance | control testing | part of Audit methodology | 1 (1 M/I) |
-| **GRC & risk assessment** (`grc`) | Governance, risk & compliance | GRC; risk assessment; risk management | — | 9 (6 M/I) |
+| **GRC & risk assessment** (`grc`) | Governance, risk & compliance | GRC; risk assessment; risk management | — | 12 (7 M/I) |
 | **Model validation** (`model_validation`) | Governance, risk & compliance | model validation; effective challenge | — | 1 (1 M/I) |
 | **Risk & compliance docs (Annex IV, model cards)** (`compliance_docs`) | Governance, risk & compliance | technical documentation; Annex IV; model cards; system cards | — | 4 (2 M/I) |
 | **Third-party and vendor AI risk** (`third_party_risk`) | Governance, risk & compliance | vendor risk; TPRM | part of GRC & risk assessment | 3 (2 M/I) |
@@ -323,10 +325,11 @@ Within each type, rows are sorted by category, then name.
 | **Fact-checking & output verification** (`output_verification`) | Human data & annotation | fact-checking; response grading | — | 1 (1 M/I) |
 | **Preference & comparison data collection** (`preference_data`) | Human data & annotation | pairwise comparisons; RLHF data | part of Annotation workflows | 1 (0 M/I) |
 | **Load testing & latency SLOs** (`load_testing`) | Inference & serving | latency SLOs; TTFT; throughput benchmarking | — | 2 (1 M/I) |
-| **Git & CI/CD** (`git_ci`) | Infrastructure & DevOps | CI/CD; continuous integration; version control | — | 9 (6 M/I) |
+| **Git & CI/CD** (`git_ci`) | Infrastructure & DevOps | CI/CD; continuous integration; version control | — | 10 (7 M/I) |
 | **SRE (SLOs, on-call, incidents)** (`sre`) | Infrastructure & DevOps | SLOs; on-call; site reliability engineering | — | 3 (2 M/I) |
 | **Terraform / IaC** (`iac`) | Infrastructure & DevOps | infrastructure as code; IaC | — | 3 (2 M/I) |
-| **Prompt engineering** (`prompt_engineering`) | LLM applications | prompt design; prompting | part of Prompt & context design | 7 (3 M/I) |
+| **Hands-on production AI delivery** (`hands_on_production_ai`) | LLM applications | — | — | 3 (3 M/I) |
+| **Prompt engineering** (`prompt_engineering`) | LLM applications | prompt design; prompting | part of Prompt & context design | 8 (3 M/I) |
 | **Experiment tracking & reproducibility** (`experiment_tracking`) | MLOps & platform | experiment management | part of MLOps lifecycle (model & prompt CI/CD) | 5 (0 M/I) |
 | **Model & data drift monitoring** (`drift_monitoring`) | MLOps & platform | drift detection; model monitoring | part of Observability (OpenTelemetry traces, metrics) | 1 (0 M/I) |
 | **Incident postmortems** (`postmortems`) | Observability & LLMOps | blameless postmortems; root-cause analysis | part of SRE (SLOs, on-call, incidents) | 3 (1 M/I) |
@@ -335,16 +338,19 @@ Within each type, rows are sorted by category, then name.
 | **Progressive delivery (canary, shadow, feature flags)** (`progressive_delivery`) | Observability & LLMOps | canary releases; shadow deployment; feature flags | part of MLOps lifecycle (model & prompt CI/CD) | 2 (1 M/I) |
 | **Prompt & model versioning** (`prompt_versioning`) | Observability & LLMOps | prompt management; prompt registry | part of MLOps lifecycle (model & prompt CI/CD) | 2 (0 M/I) |
 | **Agile delivery (Scrum, Kanban)** (`agile`) | Product & business | agile; Scrum; Kanban | — | 1 (1 M/I) |
-| **Change management & adoption** (`change_mgmt`) | Product & business | change management; adoption programmes | — | 3 (1 M/I) |
+| **AI-assisted prototyping** (`ai_assisted_prototyping`) | Product & business | — | — | 1 (1 M/I) |
+| **Change management & adoption** (`change_mgmt`) | Product & business | change management; adoption programmes | — | 5 (3 M/I) |
 | **Pilots & adoption measurement** (`pilots`) | Product & business | pilots; POCs; proofs of concept; adoption metrics | — | 2 (2 M/I) |
 | **Product analytics** (`product_analytics`) | Product & business | funnel analysis; cohort analysis | — | 1 (0 M/I) |
 | **Rapid prototyping** (`rapid_prototyping`) | Product & business | prototyping; proofs of concept | — | 3 (2 M/I) |
 | **User research & discovery** (`user_research`) | Product & business | customer interviews; user interviews | — | 1 (0 M/I) |
 | **Testing (pytest)** (`testing`) | Programming | unit testing; integration testing; test automation | — | 2 (1 M/I) |
+| **Upstream open-source contributions** (`open_source_contributions`) | Programming | — | — | 1 (1 M/I) |
 | **Ablations & controlled experiments** (`ablations`) | Research | ablation studies | part of Research methods & re-implementation | 2 (1 M/I) |
 | **Research methods & re-implementation** (`research_methods`) | Research | paper reproduction; re-implementation | — | 4 (3 M/I) |
 | **Research-to-production** (`research_to_prod`) | Research | productionising research; tech transfer | — | 1 (1 M/I) |
 | **Retrieval metrics (recall@k, MRR, nDCG)** (`retrieval_evaluation`) | Retrieval & RAG | recall@k; MRR; nDCG | part of Retrieval quality (hybrid, reranking, recall@k) | 2 (0 M/I) |
+| **Real-robot deployment & hardware bring-up** (`real_robot_deployment`) | Robotics & physical AI | — | — | 1 (1 M/I) |
 | **Safety cases** (`safety_cases`) | Robotics & physical AI | safety cases; hazard analysis | — | 1 (1 M/I) |
 | **Teleoperation data pipelines** (`teleop_data`) | Robotics & physical AI | teleoperation; robot data collection | — | 1 (1 M/I) |
 | **AppSec & threat modelling** (`appsec`) | Security & safety | application security; secure design review | — | 2 (1 M/I) |
@@ -355,13 +361,14 @@ Within each type, rows are sorted by category, then name.
 | **Training-run debugging** (`training_debug`) | Training & post-training | loss spikes; training instability; divergence debugging | — | 1 (1 M/I) |
 
 <a id="type-language"></a>
-#### Programming language (16)
+#### Programming language (17)
 
 *Technical: concrete. On a resume: Skills section (Languages); back it with shipped or public code.*
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
 | **CUDA C++** (`cuda_cpp`) | GPU & kernels | CUDA; CUDA programming | → CUDA / Triton / CUTLASS | 225 in 19: T0-63 ×119, T0-03 ×36, T0-32 ×18 … | 1 (1 M/I) |
+| **CUDA Tile (Tile IR)** (`cuda_tile`) · *active 2026-10-18* | GPU & kernels | — | → CUDA / Triton / CUTLASS | 25 in 2: T0-63 ×19, T0-03 ×6 | 1 (0 M/I) |
 | **CuTe DSL** (`cutedsl`) | GPU & kernels | CuteDSL | → CUDA / Triton / CUTLASS; in: Tile DSLs | 6 in 2: T0-03 ×3, T0-63 ×3 | 1 (0 M/I) + 1 via class |
 | **Helion** (`helion`) | GPU & kernels | Helion DSL | → CUDA / Triton / CUTLASS; in: Tile DSLs | 2 in 1: T0-03 ×2 | 1 (0 M/I) + 1 via class |
 | **HIP** (`hip`) | GPU & kernels | AMD HIP | → CUDA / Triton / CUTLASS | 16 in 4: T0-63 ×10, T3-01 ×3, T0-32 ×2 … | 1 (0 M/I) |
@@ -371,15 +378,15 @@ Within each type, rows are sorted by category, then name.
 | **C++** (`cpp`) | Programming | modern C++; C++17; C++20 | — | 113 in 15: T0-64 ×30, T0-56 ×22, T0-63 ×20 … | 6 (4 M/I) |
 | **Go** (`go`) | Programming | Golang | in: Go / Java | 52 in 12: T0-54 ×16, T0-56 ×13, T0-06 ×7 … | 2 via class |
 | **Java** (`java`) | Programming | JVM | in: Go / Java | 29 in 14: T0-52 ×8, T0-06 ×7, T0-49 ×2 … | 2 via class |
-| **Python (production)** (`python`) | Programming | Python 3; production Python; asyncio | — | 552 in 50: T0-55 ×40, T0-48 ×39, T0-50 ×28 … | 21 (19 M/I) |
+| **Python (production)** (`python`) | Programming | Python 3; production Python; asyncio | — | 552 in 50: T0-55 ×40, T0-48 ×39, T0-50 ×28 … | 23 (20 M/I) |
 | **Python/SQL (notebook level)** (`python_basic`) | Programming | notebook Python; Jupyter; Python for analysis | — | 2 in 2: T0-06 ×1, T0-61 ×1 | 4 (1 M/I) |
 | **Rust** (`rust`) | Programming | — | — | 48 in 12: T0-56 ×16, T0-16 ×7, T0-54 ×7 … | 1 (0 M/I) |
 | **Scala** (`scala`) | Programming | — | — | 0 (practice-curated) | 1 (0 M/I) |
-| **SQL** (`sql`) | Programming | SQL queries; analytical SQL | — | 52 in 15: T0-52 ×12, T0-06 ×9, T0-59 ×6 … | 6 (1 M/I) |
+| **SQL** (`sql`) | Programming | SQL queries; analytical SQL | — | 52 in 15: T0-52 ×12, T0-06 ×9, T0-59 ×6 … | 7 (1 M/I) |
 | **TypeScript / JavaScript** (`typescript`) | Programming | TypeScript; JavaScript; TS; JS | — | 108 in 20: T0-62 ×27, T0-48 ×23, T0-69 ×13 … | 6 (1 M/I) |
 
 <a id="type-framework"></a>
-#### Framework / SDK (54)
+#### Framework / SDK (55)
 
 *Technical: concrete. On a resume: Skills section (Frameworks) in the posting's wording; one bullet showing what you built with it.*
 
@@ -390,12 +397,12 @@ Within each type, rows are sorted by category, then name.
 | **CrewAI** (`crewai`) | Agents | — | → Agents & tool use; in: Agent frameworks | 23 in 7: T0-57 ×9, T0-69 ×4, T0-03 ×3 … | 1 (0 M/I) + 6 via class |
 | **Google Agent Development Kit (ADK)** (`google_adk`) | Agents | ADK; Agent Development Kit | → Agents & tool use; in: Agent frameworks | 10 in 6: T0-03 ×3, T0-69 ×2, T3-02 ×2 … | 2 (0 M/I) + 5 via class |
 | **LangChain** (`langchain`) · *active 2025-10-17* | Agents | LangChain 1.x | → Agents & tool use, RAG | 183 in 19: T0-29 ×39, T0-69 ×35, T0-03 ×33 … | 2 (1 M/I) |
-| **LangGraph** (`langgraph`) · *active 2025-10-17* | Agents | LangGraph 1.x | → Agents & tool use, Agent reliability; in: Agent frameworks | 107 in 13: T0-69 ×25, T0-03 ×20, T0-57 ×16 … | 2 (1 M/I) + 5 via class |
+| **LangGraph** (`langgraph`) · *active 2025-10-17* | Agents | LangGraph 1.x | → Agents & tool use, Agent reliability; in: Agent frameworks | 107 in 13: T0-69 ×25, T0-03 ×20, T0-57 ×16 … | 3 (2 M/I) + 5 via class |
 | **Mastra** (`mastra`) | Agents | — | → Agents & tool use; in: Agent frameworks | 1 in 1: T0-16 ×1 | 1 (0 M/I) + 6 via class |
 | **Microsoft Agent Framework** (`ms_agent_framework`) · *active 2026-11-19* | Agents | MAF | → Agents & tool use; in: Agent frameworks | 28 in 4: T0-69 ×14, T0-03 ×8, T0-57 ×5 … | 2 (0 M/I) + 5 via class |
 | **OpenAI Agents SDK** (`openai_agents_sdk`) · *active 2026-03-23* | Agents | Agents SDK | → Agents & tool use, Durable execution & workflow state; in: Agent frameworks | 14 in 4: T0-57 ×8, T0-03 ×3, T0-69 ×2 … | 2 (0 M/I) + 5 via class |
 | **Pydantic AI** (`pydantic_ai`) | Agents | PydanticAI | → Agents & tool use, Structured output & tool schemas; in: Agent frameworks | 9 in 5: T0-03 ×4, T0-57 ×2, T0-16 ×1 … | 2 (0 M/I) + 5 via class |
-| **Semantic Kernel** (`semantic_kernel`) | Agents | — | → Agents & tool use | 16 in 4: T0-69 ×6, T0-57 ×5, T0-53 ×3 … | 1 (0 M/I) |
+| **Semantic Kernel** (`semantic_kernel`) · *active 2026-04-03* | Agents | — | → Agents & tool use | 16 in 4: T0-69 ×6, T0-57 ×5, T0-53 ×3 … | 1 (0 M/I) |
 | **smolagents** (`smolagents`) | Agents | — | → Agents & tool use | 1 in 1: T0-29 ×1 | 2 (0 M/I) |
 | **Apache Spark** (`spark`) | Data engineering | Spark; PySpark | → Data pipelines & quality | 15 in 7: T0-58 ×5, T0-52 ×3, T0-49 ×2 … | 2 (0 M/I) |
 | **CopilotKit** (`copilotkit`) | Frontend & UX | — | → Streaming & agent UX, Generative UI | 14 in 1: T0-16 ×14 | 1 (0 M/I) |
@@ -403,7 +410,7 @@ Within each type, rows are sorted by category, then name.
 | **Next.js** (`nextjs`) | Frontend & UX | NextJS | → Frontend engineering | 12 in 3: T0-62 ×10, T0-16 ×1, T0-48 ×1 | 1 (1 M/I) |
 | **React** (`react`) | Frontend & UX | React.js; ReactJS | → Frontend engineering | 45 in 7: T0-62 ×28, T0-06 ×6, T1-01 ×4 … | 1 (1 M/I) |
 | **Streamlit** (`streamlit`) | Frontend & UX | — | → Rapid prototyping; in: Demo UI frameworks | 3 in 1: T0-13 ×3 | 1 (0 M/I) |
-| **Vercel AI SDK** (`vercel_ai_sdk`) | Frontend & UX | AI SDK | → Streaming & agent UX, LLM APIs & tool calling | 54 in 4: T0-68 ×37, T0-06 ×12, T0-62 ×4 … | 2 (1 M/I) |
+| **Vercel AI SDK** (`vercel_ai_sdk`) · *active 2026-06-25* | Frontend & UX | AI SDK | → Streaming & agent UX, LLM APIs & tool calling | 54 in 4: T0-68 ×37, T0-06 ×12, T0-62 ×4 … | 2 (1 M/I) |
 | **MLIR** (`mlir`) | GPU & kernels | — | → ML compilers | 16 in 1: T0-63 ×16 | 1 (0 M/I) |
 | **TorchInductor (torch.compile)** (`torchinductor`) | GPU & kernels | torch.compile; Inductor | → ML compilers | 3 in 2: T0-03 ×2, T0-63 ×1 | 1 (0 M/I) |
 | **XLA** (`xla`) | GPU & kernels | OpenXLA | → ML compilers | 18 in 3: T0-63 ×12, T0-03 ×3, T0-50 ×3 | 1 (0 M/I) |
@@ -420,9 +427,10 @@ Within each type, rows are sorted by category, then name.
 | **TensorRT-LLM** (`trt_llm`) · *active 2026-11-19* | Inference & serving | TRT-LLM | → Serving literacy; in: vLLM / SGLang / TensorRT-LLM | 117 in 9: T0-69 ×40, T0-56 ×33, T0-03 ×30 … | 2 (1 M/I) + 3 via class |
 | **vLLM** (`vllm`) · *active 2026-10-18* | Inference & serving | — | → Serving literacy, Continuous batching & KV cache; in: vLLM / SGLang / TensorRT-LLM | 340 in 21: T0-05 ×69, T0-56 ×56, T0-03 ×53 … | 4 (1 M/I) + 2 via class |
 | **DSPy** (`dspy`) | LLM applications | — | → Prompt & context design | 1 in 1: T0-03 ×1 | 1 (0 M/I) |
+| **LiveKit** (`livekit`) · *active 2026-01-22* | LLM applications | — | → Agents & tool use | 5 in 1: T0-69 ×5 | — |
 | **JAX** (`jax`) | ML & deep learning | Flax | → Deep learning & transformers; in: TensorFlow / JAX | 47 in 9: T0-55 ×21, T0-50 ×8, T0-64 ×5 … | 3 (1 M/I) + 1 via class |
 | **Keras** (`keras`) | ML & deep learning | — | → Deep learning & transformers | 0 (practice-curated) | 1 (0 M/I) |
-| **PyTorch** (`pytorch`) | ML & deep learning | PyTorch 2.x; torch | → Deep learning & transformers | 255 in 27: T0-32 ×40, T0-55 ×30, T0-21 ×27 … | 6 (6 M/I) |
+| **PyTorch** (`pytorch`) | ML & deep learning | PyTorch 2.x; torch | → Deep learning & transformers | 255 in 27: T0-32 ×40, T0-55 ×30, T0-21 ×27 … | 7 (6 M/I) |
 | **TensorFlow** (`tensorflow`) | ML & deep learning | TF | → Deep learning & transformers; in: TensorFlow / JAX | 47 in 14: T0-55 ×11, T0-49 ×8, T0-52 ×5 … | 1 via class |
 | **Ray** (`ray`) | MLOps & platform | Ray Train; Ray Data; Ray Core | → Distributed training, Data pipelines & quality | 93 in 8: T0-32 ×66, T0-03 ×10, T0-58 ×6 … | 4 (0 M/I) |
 | **Django** (`django`) | Programming | — | → APIs & integrations; in: Python web frameworks | 6 in 2: T1-01 ×5, T0-12 ×1 | 1 via class |
@@ -454,8 +462,8 @@ Within each type, rows are sorted by category, then name.
 | **Polars** (`polars`) | Data engineering | — | → Data analysis | 0 (practice-curated) | 2 (0 M/I) |
 | **lm-evaluation-harness** (`lm_eval_harness`) | Evaluation | lm-eval | → Benchmark construction | 2 in 2: T0-01 ×1, T0-13 ×1 | 1 (0 M/I) |
 | **Transformers.js** (`transformers_js`) | Frontend & UX | — | → On-device / WebGPU inference | 11 in 2: T0-06 ×8, T2-01 ×3 | 1 (0 M/I) |
-| **CuTe** (`cute`) | GPU & kernels | — | → CUDA / Triton / CUTLASS | 15 in 1: T0-63 ×15 | 1 (1 M/I) |
-| **CUTLASS** (`cutlass`) | GPU & kernels | — | → CUDA / Triton / CUTLASS, Attention, GEMM & quantised kernels | 30 in 3: T0-63 ×25, T0-03 ×4, T0-68 ×1 | 2 (1 M/I) |
+| **CuTe** (`cute`) | GPU & kernels | — | → CUDA / Triton / CUTLASS | 15 in 1: T0-63 ×15 | 1 (0 M/I) |
+| **CUTLASS** (`cutlass`) | GPU & kernels | — | → CUDA / Triton / CUTLASS, Attention, GEMM & quantised kernels | 30 in 3: T0-63 ×25, T0-03 ×4, T0-68 ×1 | 2 (0 M/I) |
 | **FlashAttention** (`flash_attention`) | GPU & kernels | — | → Attention, GEMM & quantised kernels | 4 in 3: T0-68 ×2, T0-56 ×1, T0-63 ×1 | 1 (0 M/I) |
 | **FlashInfer** (`flashinfer`) | GPU & kernels | — | → Attention, GEMM & quantised kernels | 15 in 3: T0-63 ×9, T0-03 ×3, T0-56 ×3 | 2 (0 M/I) |
 | **AI Fairness 360** (`aif360`) | Governance, risk & compliance | AIF360 | → Fairness & bias assessment; in: Fairness & explainability tools | 12 in 1: T0-15 ×12 | 2 (0 M/I) |
@@ -491,7 +499,7 @@ Within each type, rows are sorted by category, then name.
 | **PEFT** (`peft`) | Training & post-training | — | → Parameter-efficient fine-tuning | 2 in 2: T0-56 ×1, T0-58 ×1 | 1 (0 M/I) |
 | **PyTorch FSDP2** (`fsdp`) | Training & post-training | FSDP; FSDP2; Fully Sharded Data Parallel | → Distributed training; in: Distributed-training frameworks | 8 in 4: T0-13 ×4, T0-50 ×2, T0-04 ×1 … | 2 (1 M/I) |
 | **torchtune** (`torchtune`) · *dormant 2026-11-19* | Training & post-training | — | → Fine-tuning | 13 in 1: T0-69 ×13 | — |
-| **TRL** (`trl`) | Training & post-training | — | → Post-training, Fine-tuning; in: Post-training frameworks | 8 in 1: T0-69 ×8 | 1 (0 M/I) |
+| **TRL** (`trl`) · *active 2026-03-31* | Training & post-training | — | → Post-training, Fine-tuning; in: Post-training frameworks | 8 in 1: T0-69 ×8 | 1 (0 M/I) |
 | **Unsloth** (`unsloth`) | Training & post-training | — | → Fine-tuning, Parameter-efficient fine-tuning; in: Post-training frameworks | 19 in 4: T0-12 ×16, T0-03 ×1, T0-05 ×1 … | 1 (0 M/I) |
 
 <a id="type-model"></a>
@@ -501,12 +509,12 @@ Within each type, rows are sorted by category, then name.
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
-| **Claude (Anthropic)** (`claude`) | Models | Claude models | → LLM APIs & tool calling; in: Frontier model families | 810 in 62: T0-46 ×307, T0-29 ×123, T3-01 ×73 … | 15 via class |
+| **Claude (Anthropic)** (`claude`) | Models | Claude models | → LLM APIs & tool calling; in: Frontier model families | 810 in 62: T0-46 ×307, T0-29 ×123, T3-01 ×73 … | 18 via class |
 | **CLIP / SigLIP** (`clip`) | Models | SigLIP | → Multimodal AI | 0 (practice-curated) | 1 (0 M/I) |
 | **Cohere Command, Embed and Rerank** (`cohere_models`) | Models | Cohere Rerank; Cohere Embed | → Embedding & reranker models, Reranking | 0 (practice-curated) | 1 (0 M/I) |
 | **DeepSeek** (`deepseek`) | Models | DeepSeek models | → Self-hosting open models; in: Open-weight model families | 31 in 5: T0-46 ×16, T0-50 ×8, T0-14 ×5 … | 8 via class |
-| **Gemini (Google)** (`gemini`) | Models | Gemini models | → LLM APIs & tool calling; in: Frontier model families | 149 in 13: T3-01 ×57, T0-46 ×28, T3-02 ×28 … | 15 via class |
-| **GPT and o-series (OpenAI)** (`gpt`) | Models | GPT; OpenAI models | → LLM APIs & tool calling; in: Frontier model families | 20 in 10: T0-46 ×9, T0-13 ×2, T0-14 ×2 … | 15 via class |
+| **Gemini (Google)** (`gemini`) | Models | Gemini models | → LLM APIs & tool calling; in: Frontier model families | 149 in 13: T3-01 ×57, T0-46 ×28, T3-02 ×28 … | 18 via class |
+| **GPT and o-series (OpenAI)** (`gpt`) | Models | GPT; OpenAI models | → LLM APIs & tool calling; in: Frontier model families | 20 in 10: T0-46 ×9, T0-13 ×2, T0-14 ×2 … | 18 via class |
 | **Llama (Meta)** (`llama`) | Models | Llama models | → Self-hosting open models; in: Open-weight model families | 12 in 4: T0-14 ×7, T0-03 ×2, T0-05 ×2 … | 8 via class |
 | **Mistral and Mixtral** (`mistral_models`) | Models | Mistral AI models | → Self-hosting open models; in: Open-weight model families | 259 in 19: T0-53 ×67, T0-59 ×34, T0-52 ×29 … | 8 via class |
 | **Qwen** (`qwen`) | Models | Qwen models | → Self-hosting open models; in: Open-weight model families | 2 in 2: T0-14 ×1, T0-56 ×1 | 8 via class |
@@ -514,23 +522,24 @@ Within each type, rows are sorted by category, then name.
 | **Llama Guard** (`llama_guard`) | Security & safety | — | → Guardrails; in: Guardrail tools | 3 in 1: T0-15 ×3 | 2 (0 M/I) + 1 via class |
 
 <a id="type-platform"></a>
-#### Platform / cloud service (32)
+#### Platform / cloud service (33)
 
 *Technical: concrete. On a resume: Skills section (Cloud & platforms); match the posting's cloud.*
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
 | **Amazon Bedrock AgentCore** (`bedrock_agentcore`) | Agents | AgentCore | → Agents & tool use, LLM gateways; in: LLM gateway tools | 19 in 3: T0-16 ×15, T0-57 ×2, T0-69 ×2 | 2 (0 M/I) |
+| **Cloudflare MCP Server Portals** (`cloudflare_mcp_portals`) · *active 2026-03-26* | Agents | — | → OAuth/OIDC, RBAC, SSO, LLM gateways | 0 (practice-curated) | — |
 | **Low-code workflow automation** (`low_code_automation`) | Agents | n8n; Make; Zapier; Power Automate; Power Platform | → Internal tooling & DevEx | 70 in 19: T0-48 ×18, T0-62 ×14, T0-25 ×8 … | 1 (1 M/I) |
 | **Amazon Bedrock** (`aws_bedrock`) | Cloud & platforms | AWS Bedrock; Bedrock | → LLM APIs & tool calling; in: Managed AI | 22 in 9: T0-09 ×6, T0-62 ×4, T0-11 ×3 … | 5 via class |
-| **Amazon Web Services (AWS)** (`aws`) | Cloud & platforms | AWS; Amazon Web Services | in: AWS / Azure / GCP | 796 in 35: T0-11 ×130, T3-01 ×128, T3-02 ×120 … | 7 (2 M/I) + 7 via class |
+| **Amazon Web Services (AWS)** (`aws`) | Cloud & platforms | AWS; Amazon Web Services | in: AWS / Azure / GCP | 796 in 35: T0-11 ×130, T3-01 ×128, T3-02 ×120 … | 8 (3 M/I) + 9 via class |
 | **AWS Lambda** (`aws_lambda`) | Cloud & platforms | — | → Serverless deployment | 0 (practice-curated) | 2 (0 M/I) |
 | **Azure AI Foundry / Azure OpenAI** (`azure_ai_foundry`) | Cloud & platforms | Azure OpenAI; AI Foundry; Microsoft Foundry | → LLM APIs & tool calling; in: Managed AI | 19 in 10: T0-09 ×4, T0-15 ×3, T0-48 ×2 … | 1 (0 M/I) + 4 via class |
 | **Fireworks AI** (`fireworks`) | Cloud & platforms | Fireworks | → Self-hosting open models; in: Serverless GPU and inference clouds | 8 in 3: T0-69 ×4, T0-56 ×2, T0-63 ×2 | 2 via class |
-| **Google Cloud (GCP)** (`gcp`) | Cloud & platforms | GCP; Google Cloud Platform | in: AWS / Azure / GCP | 154 in 27: T0-30 ×29, T0-11 ×20, T0-53 ×17 … | 2 (1 M/I) + 12 via class |
+| **Google Cloud (GCP)** (`gcp`) | Cloud & platforms | GCP; Google Cloud Platform | in: AWS / Azure / GCP | 154 in 27: T0-30 ×29, T0-11 ×20, T0-53 ×17 … | 2 (1 M/I) + 15 via class |
 | **Google Cloud Run** (`cloud_run`) | Cloud & platforms | Cloud Run | → Serverless deployment | 0 (practice-curated) | 2 (0 M/I) |
 | **Google Vertex AI** (`vertex_ai`) | Cloud & platforms | Vertex AI; Vertex AI Agent Builder | → LLM APIs & tool calling; in: Managed AI | 14 in 5: T0-58 ×5, T0-62 ×5, T0-48 ×2 … | 1 (0 M/I) + 5 via class |
-| **Microsoft Azure** (`azure`) | Cloud & platforms | Azure | in: AWS / Azure / GCP | 162 in 24: T0-11 ×30, T0-30 ×19, T0-48 ×14 … | 4 (1 M/I) + 12 via class |
+| **Microsoft Azure** (`azure`) | Cloud & platforms | Azure | in: AWS / Azure / GCP | 162 in 24: T0-11 ×30, T0-30 ×19, T0-48 ×14 … | 5 (2 M/I) + 14 via class |
 | **Modal** (`modal`) | Cloud & platforms | Modal Labs | → Self-hosting open models; in: Serverless GPU and inference clouds | 24 in 4: T0-06 ×9, T0-68 ×8, T0-13 ×5 … | 1 (0 M/I) + 1 via class |
 | **Replicate** (`replicate`) | Cloud & platforms | — | → Self-hosting open models; in: Serverless GPU and inference clouds | 11 in 2: T0-20 ×7, T0-13 ×4 | 2 via class |
 | **Together AI** (`together_ai`) | Cloud & platforms | — | → Self-hosting open models; in: Serverless GPU and inference clouds | 64 in 7: T0-58 ×27, T0-56 ×18, T0-49 ×9 … | 2 via class |
@@ -547,11 +556,11 @@ Within each type, rows are sorted by category, then name.
 | **OpenAI API platform** (`openai_platform`) | LLM applications | OpenAI API | → LLM APIs & tool calling; in: LLM API providers | 12 in 7: T0-57 ×4, T0-09 ×2, T0-53 ×2 … | 6 via class |
 | **Hugging Face Hub** (`hugging_face`) | ML & deep learning | Hugging Face; HF Hub; Inference Endpoints | — | 248 in 25: T0-20 ×44, T0-29 ×44, T0-68 ×32 … | 7 (0 M/I) |
 | **Amazon SageMaker** (`sagemaker`) | MLOps & platform | SageMaker | → MLOps lifecycle | 14 in 6: T0-56 ×4, T0-58 ×4, T0-68 ×3 … | 2 (0 M/I) |
-| **Anyscale** (`anyscale`) | MLOps & platform | — | — | 40 in 5: T0-32 ×35, T0-05 ×2, T0-03 ×1 … | 2 (0 M/I) |
+| **Anyscale** (`anyscale`) · *acquired 2026-07-30* | MLOps & platform | — | — | 40 in 5: T0-32 ×35, T0-05 ×2, T0-03 ×1 … | 2 (0 M/I) |
 | **Azure Machine Learning** (`azure_ml`) | MLOps & platform | Azure ML | → MLOps lifecycle | 10 in 4: T0-58 ×6, T0-32 ×2, T0-15 ×1 … | 2 (0 M/I) |
-| **Kubeflow** (`kubeflow`) | MLOps & platform | Kubeflow Pipelines | → MLOps lifecycle | 46 in 3: T0-58 ×40, T0-67 ×4, T0-32 ×2 | 1 (0 M/I) |
+| **Kubeflow** (`kubeflow`) | MLOps & platform | Kubeflow Pipelines | → MLOps lifecycle | 46 in 3: T0-58 ×40, T0-67 ×4, T0-32 ×2 | 1 (1 M/I) |
 | **Gazebo** (`gazebo`) | Robotics & physical AI | — | → Simulation & sim-to-real; in: Robot simulators | 4 in 1: T0-64 ×4 | 1 via class |
-| **NVIDIA Isaac Sim / Isaac Lab** (`isaac`) | Robotics & physical AI | Isaac Sim; Isaac Lab | → Simulation & sim-to-real; in: Robot simulators | 20 in 2: T0-64 ×14, T0-68 ×6 | 1 via class |
+| **NVIDIA Isaac Sim / Isaac Lab** (`isaac`) | Robotics & physical AI | Isaac Sim; Isaac Lab | → Simulation & sim-to-real; in: Robot simulators | 20 in 2: T0-64 ×14, T0-68 ×6 | 1 (0 M/I) |
 
 <a id="type-data-store"></a>
 #### Data store (14)
@@ -565,30 +574,31 @@ Within each type, rows are sorted by category, then name.
 | **Redis** (`redis`) | Data engineering | — | → Semantic & prompt caching | 2 in 2: T0-03 ×1, T0-69 ×1 | 2 (0 M/I) |
 | **Object storage (S3, GCS, Azure Blob)** (`object_storage`) | Infrastructure & HPC | Amazon S3; GCS; Blob Storage | → Checkpointing & storage throughput | 0 (practice-curated) | 1 (0 M/I) |
 | **Feast** (`feast`) | MLOps & platform | — | → Feature stores | 8 in 1: T0-58 ×8 | 2 (0 M/I) |
-| **Chroma** (`chroma`) | Retrieval & RAG | ChromaDB | → Embeddings & vector search; in: Vector stores | 0 (practice-curated) | 4 via class |
-| **Elasticsearch** (`elasticsearch`) | Retrieval & RAG | Elastic | → Hybrid search, Embeddings & vector search; in: Vector stores | 3 in 2: T0-69 ×2, T0-31 ×1 | 4 via class |
-| **Milvus / Zilliz** (`milvus`) | Retrieval & RAG | Zilliz | → Embeddings & vector search; in: Vector stores | 6 in 2: T0-29 ×4, T0-69 ×2 | 4 via class |
+| **Chroma** (`chroma`) | Retrieval & RAG | ChromaDB | → Embeddings & vector search; in: Vector stores | 0 (practice-curated) | 5 via class |
+| **Elasticsearch** (`elasticsearch`) | Retrieval & RAG | Elastic | → Hybrid search, Embeddings & vector search; in: Vector stores | 3 in 2: T0-69 ×2, T0-31 ×1 | 5 via class |
+| **Milvus / Zilliz** (`milvus`) | Retrieval & RAG | Zilliz | → Embeddings & vector search; in: Vector stores | 6 in 2: T0-29 ×4, T0-69 ×2 | 5 via class |
 | **Neo4j** (`neo4j`) | Retrieval & RAG | — | → GraphRAG & knowledge graphs | 62 in 2: T0-29 ×61, T0-48 ×1 | 1 (0 M/I) |
-| **OpenSearch** (`opensearch`) | Retrieval & RAG | — | → Hybrid search, Embeddings & vector search; in: Vector stores | 3 in 3: T0-12 ×1, T0-48 ×1, T0-69 ×1 | 4 via class |
-| **pgvector** (`pgvector`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 7 in 4: T0-69 ×4, T0-03 ×1, T0-06 ×1 … | 1 (0 M/I) + 3 via class |
-| **Pinecone** (`pinecone`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 22 in 3: T0-29 ×14, T0-69 ×6, T0-03 ×2 | 1 (0 M/I) + 3 via class |
-| **Qdrant** (`qdrant`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 7 in 3: T0-29 ×4, T0-69 ×2, T0-48 ×1 | 4 via class |
-| **Weaviate** (`weaviate`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 33 in 2: T0-29 ×31, T0-69 ×2 | 4 via class |
+| **OpenSearch** (`opensearch`) | Retrieval & RAG | — | → Hybrid search, Embeddings & vector search; in: Vector stores | 3 in 3: T0-12 ×1, T0-48 ×1, T0-69 ×1 | 5 via class |
+| **pgvector** (`pgvector`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 7 in 4: T0-69 ×4, T0-03 ×1, T0-06 ×1 … | 1 (0 M/I) + 4 via class |
+| **Pinecone** (`pinecone`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 22 in 3: T0-29 ×14, T0-69 ×6, T0-03 ×2 | 1 (0 M/I) + 4 via class |
+| **Qdrant** (`qdrant`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 7 in 3: T0-29 ×4, T0-69 ×2, T0-48 ×1 | 5 via class |
+| **Weaviate** (`weaviate`) | Retrieval & RAG | — | → Embeddings & vector search; in: Vector stores | 33 in 2: T0-29 ×31, T0-69 ×2 | 5 via class |
 
 <a id="type-infra-tool"></a>
-#### Infrastructure / DevOps tool (18)
+#### Infrastructure / DevOps tool (19)
 
 *Technical: concrete. On a resume: Skills section (Infrastructure); show what you ran and at what scale.*
 
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
+| **AAIF Agent Router** (`agent_router`) · *active 2026-06-04* | Agents | — | → LLM gateways | 0 (practice-curated) | — |
 | **Temporal** (`temporal`) | Agents | Temporal.io | → Durable execution & workflow state | 33 in 16: T0-03 ×13, T0-69 ×4, T0-12 ×2 … | 1 (0 M/I) |
 | **Apache Airflow** (`airflow`) | Data engineering | Airflow | → Data pipelines & quality | 12 in 4: T0-58 ×9, T0-03 ×1, T0-12 ×1 … | 2 (0 M/I) |
 | **Apache Kafka** (`kafka`) | Data engineering | Kafka | → Data pipelines & quality | 3 in 2: T0-14 ×2, T0-49 ×1 | 2 (0 M/I) |
 | **NVIDIA Nsight (Systems / Compute)** (`nsight`) | GPU & kernels | Nsight Compute; Nsight Systems; ncu; nsys | → Profiling & roofline | 7 in 4: T0-63 ×3, T0-03 ×2, T0-32 ×1 … | 2 (1 M/I) |
 | **k6** (`k6`) | Inference & serving | Grafana k6 | → Load testing & latency SLOs; in: General load-testing tools | 8 in 1: T0-13 ×8 | 3 via class |
 | **Locust** (`locust`) | Inference & serving | — | → Load testing & latency SLOs; in: General load-testing tools | 4 in 1: T0-13 ×4 | 3 via class |
-| **Docker** (`docker`) | Infrastructure & DevOps | containers; containerisation; Dockerfile | — | 61 in 15: T0-58 ×19, T0-13 ×10, T0-20 ×7 … | 12 (2 M/I) |
+| **Docker** (`docker`) | Infrastructure & DevOps | containers; containerisation; Dockerfile | — | 61 in 15: T0-58 ×19, T0-13 ×10, T0-20 ×7 … | 13 (2 M/I) |
 | **Git** (`git`) | Infrastructure & DevOps | — | → Git & CI/CD | 14 in 7: T0-54 ×5, T0-58 ×3, T1-01 ×2 … | 2 (0 M/I) |
 | **GitHub Actions** (`github_actions`) | Infrastructure & DevOps | — | → Git & CI/CD | 19 in 6: T0-13 ×6, T0-20 ×5, T0-58 ×4 … | 3 (0 M/I) |
 | **Helm** (`helm`) | Infrastructure & DevOps | Helm charts | → Terraform / IaC | 4 in 2: T0-58 ×3, T0-56 ×1 | 2 (0 M/I) |
@@ -602,7 +612,7 @@ Within each type, rows are sorted by category, then name.
 | **Prometheus** (`prometheus`) | Observability & LLMOps | — | → Observability | 10 in 3: T0-58 ×6, T0-03 ×2, T0-54 ×2 | 3 (0 M/I) |
 
 <a id="type-product"></a>
-#### Specialised product (39)
+#### Specialised product (43)
 
 *Technical: concrete. On a resume: Skills section (Evaluation, observability, security or governance tools); show the practice, not just the tool.*
 
@@ -614,7 +624,9 @@ Within each type, rows are sorted by category, then name.
 | **OpenAI Codex** (`openai_codex`) | Agents | Codex | → Coding agents & AI-assisted engineering; in: Coding-agent tools | 23 in 11: T0-53 ×6, T0-12 ×3, T0-29 ×3 … | 1 (0 M/I) |
 | **Braintrust** (`braintrust`) · *active 2026-05-04* | Evaluation | — | → LLM evaluation, LLM tracing; in: LLM tracing and observability products, Evaluation runners and platforms | 52 in 6: T0-03 ×18, T0-18 ×14, T0-60 ×9 … | 2 (0 M/I) + 7 via class |
 | **DeepEval** (`deepeval`) · *active 2026-10-23* | Evaluation | Confident AI | → LLM evaluation, Eval regression gates in CI; in: Evaluation runners and platforms | 20 in 6: T0-03 ×10, T0-48 ×3, T0-60 ×3 … | 2 (0 M/I) + 4 via class |
-| **Giskard** (`giskard`) | Evaluation | — | → LLM evaluation, Red-teaming; in: Evaluation runners and platforms, AI red-teaming tools | 17 in 2: T0-15 ×13, T0-61 ×4 | 2 (1 M/I) + 7 via class |
+| **Galileo** (`galileo`) · *acquired 2026-05-22* | Evaluation | — | → LLM evaluation | 4 in 1: T0-69 ×4 | — |
+| **Giskard** (`giskard`) | Evaluation | — | → LLM evaluation, Red-teaming; in: Evaluation runners and platforms, AI red-teaming tools | 17 in 2: T0-15 ×13, T0-61 ×4 | 2 (0 M/I) + 7 via class |
+| **Humanloop** (`humanloop`) · *retired 2025-09-08* | Evaluation | — | → LLM evaluation | 7 in 1: T0-69 ×7 | — |
 | **Inspect (UK AISI)** (`inspect_ai`) | Evaluation | Inspect AI; inspect_ai | → Safety & capability evals, LLM evaluation; in: Evaluation runners and platforms | 15 in 4: T0-20 ×5, T0-68 ×5, T0-15 ×3 … | 3 (0 M/I) + 5 via class |
 | **Promptfoo** (`promptfoo`) · *acquired 2026-03-09* | Evaluation | — | → LLM evaluation, Red-teaming; in: Evaluation runners and platforms, AI red-teaming tools | 56 in 8: T0-03 ×18, T0-69 ×12, T0-09 ×8 … | 4 (0 M/I) + 5 via class |
 | **RAGAS** (`ragas`) · *active 2026-11-19* | Evaluation | Ragas | → LLM evaluation | 50 in 7: T0-69 ×16, T0-03 ×14, T0-68 ×8 … | 3 (0 M/I) |
@@ -633,19 +645,21 @@ Within each type, rows are sorted by category, then name.
 | **inference-perf** (`inference_perf`) | Inference & serving | — | → Load testing & latency SLOs; in: Inference benchmarking tools | 8 in 1: T0-13 ×8 | 1 (0 M/I) |
 | **NVIDIA NIM** (`nim`) | Inference & serving | NIM microservices | → Serving literacy; in: KServe / Ray Serve | 2 in 2: T0-14 ×1, T0-56 ×1 | 2 via class |
 | **OpenAI Assistants API** (`openai_assistants_api`) · *retired 2026-08-26* | LLM applications | — | → LLM APIs & tool calling | 18 in 2: T0-69 ×11, T0-68 ×7 | — |
-| **MLflow** (`mlflow`) | MLOps & platform | — | → Experiment tracking & reproducibility, MLOps lifecycle; in: Experiment trackers | 55 in 8: T0-58 ×36, T0-15 ×4, T0-67 ×4 … | 3 (0 M/I) |
-| **Weights & Biases (incl. Weave)** (`wandb`) | MLOps & platform | W&B; Weave; wandb | → Experiment tracking & reproducibility, LLM tracing; in: Experiment trackers | 11 in 4: T0-69 ×5, T0-29 ×4, T0-03 ×1 … | 5 (0 M/I) |
+| **OpenAI Responses API** (`openai_responses_api`) · *active 2026-08-26* | LLM applications | — | → LLM APIs & tool calling | 0 (practice-curated) | — |
+| **MLflow** (`mlflow`) | MLOps & platform | — | → Experiment tracking & reproducibility, MLOps lifecycle; in: Experiment trackers | 55 in 8: T0-58 ×36, T0-15 ×4, T0-67 ×4 … | 3 (1 M/I) |
+| **Weights & Biases (incl. Weave)** (`wandb`) · *acquired 2025-05-05* | MLOps & platform | W&B; Weave; wandb | → Experiment tracking & reproducibility, LLM tracing; in: Experiment trackers | 11 in 4: T0-69 ×5, T0-29 ×4, T0-03 ×1 … | 5 (0 M/I) |
 | **agentgateway** (`agentgateway`) | Observability & LLMOps | — | → LLM gateways, Agent interoperability; in: LLM gateway tools | 18 in 1: T0-16 ×18 | 3 (0 M/I) |
 | **Arize AX** (`arize`) | Observability & LLMOps | Arize | → Observability, Online evaluation & production monitoring; in: LLM tracing and observability products | 22 in 5: T0-06 ×12, T0-15 ×5, T0-61 ×3 … | 2 (0 M/I) + 8 via class |
 | **Arize Phoenix** (`phoenix`) · *active 2026-10-23* | Observability & LLMOps | Phoenix | → LLM tracing, LLM evaluation; in: LLM tracing and observability products | 24 in 6: T0-03 ×11, T0-13 ×9, T0-14 ×1 … | 3 (0 M/I) + 7 via class |
 | **Azure API Management (AI gateway)** (`azure_apim`) | Observability & LLMOps | APIM | → LLM gateways; in: LLM gateway tools | 8 in 1: T0-16 ×8 | 2 (0 M/I) |
 | **Datadog (incl. LLM Observability)** (`datadog`) | Observability & LLMOps | — | → Observability; in: LLM tracing and observability products | 49 in 5: T0-69 ×20, T0-03 ×19, T0-48 ×5 … | 2 (0 M/I) + 9 via class |
-| **Helicone** (`helicone`) | Observability & LLMOps | — | → LLM tracing, LLM gateways; in: LLM tracing and observability products, LLM gateway tools | 6 in 2: T0-69 ×4, T0-03 ×2 | 9 via class |
+| **Helicone** (`helicone`) · *acquired 2026-03-03* | Observability & LLMOps | — | → LLM tracing, LLM gateways; in: LLM tracing and observability products, LLM gateway tools | 6 in 2: T0-69 ×4, T0-03 ×2 | 9 via class |
 | **Langfuse** (`langfuse`) · *acquired 2026-01-16* | Observability & LLMOps | — | → LLM tracing, LLM evaluation; in: LLM tracing and observability products | 95 in 10: T0-05 ×28, T0-69 ×24, T0-03 ×14 … | 3 (0 M/I) + 7 via class |
 | **LangSmith** (`langsmith`) | Observability & LLMOps | — | → LLM tracing, LLM evaluation; in: LLM tracing and observability products | 23 in 8: T0-03 ×7, T0-13 ×6, T0-60 ×3 … | 2 (0 M/I) + 7 via class |
+| **Traceloop (OpenLLMetry)** (`traceloop`) · *acquired 2026-05-05* | Observability & LLMOps | — | → Observability | 4 in 1: T0-69 ×4 | — |
 | **Jira** (`jira`) | Product & business | — | → Agile delivery | 3 in 1: T0-09 ×3 | 1 (0 M/I) |
 | **garak** (`garak`) | Security & safety | — | → Red-teaming; in: AI red-teaming tools | 3 in 1: T0-15 ×3 | 3 (0 M/I) + 2 via class |
-| **NeMo Guardrails** (`nemo_guardrails`) | Security & safety | — | → Guardrails; in: Guardrail tools | 11 in 2: T0-15 ×8, T0-61 ×3 | 2 (1 M/I) + 1 via class |
+| **NeMo Guardrails** (`nemo_guardrails`) | Security & safety | — | → Guardrails; in: Guardrail tools | 11 in 2: T0-15 ×8, T0-61 ×3 | 2 (0 M/I) + 1 via class |
 | **PyRIT** (`pyrit`) | Security & safety | — | → Red-teaming; in: AI red-teaming tools | 3 in 1: T0-15 ×3 | 3 (0 M/I) + 2 via class |
 
 <a id="type-hardware"></a>
@@ -659,8 +673,8 @@ Within each type, rows are sorted by category, then name.
 | **AWS Trainium / Inferentia** (`trainium`) | GPU & kernels | Trainium; Inferentia; Neuron SDK | in: TPU / Trainium / ROCm | 11 in 4: T0-56 ×6, T0-63 ×3, T0-03 ×1 … | 3 (0 M/I) |
 | **Google TPU** (`tpu`) | GPU & kernels | TPU; TPUs | in: TPU / Trainium / ROCm | 47 in 8: T0-63 ×23, T0-03 ×8, T0-56 ×6 … | 5 (0 M/I) |
 | **NVIDIA Ampere (A100)** (`nvidia_ampere`) | GPU & kernels | A100 | → GPU fundamentals | 12 in 5: T0-68 ×5, T0-13 ×3, T0-06 ×2 … | 2 (0 M/I) |
-| **NVIDIA Blackwell (B200 / GB200 / GB300)** (`nvidia_blackwell`) | GPU & kernels | B200; GB200; GB300; Blackwell | → GPU fundamentals | 47 in 8: T0-63 ×21, T0-46 ×8, T0-12 ×5 … | 3 (1 M/I) |
-| **NVIDIA Hopper (H100 / H200)** (`nvidia_hopper`) | GPU & kernels | H100; H200 | → GPU fundamentals | 82 in 10: T0-68 ×21, T0-46 ×16, T0-63 ×15 … | 7 (1 M/I) |
+| **NVIDIA Blackwell (B200 / GB200 / GB300)** (`nvidia_blackwell`) | GPU & kernels | B200; GB200; GB300; Blackwell | → GPU fundamentals | 47 in 8: T0-63 ×21, T0-46 ×8, T0-12 ×5 … | 3 (0 M/I) |
+| **NVIDIA Hopper (H100 / H200)** (`nvidia_hopper`) | GPU & kernels | H100; H200 | → GPU fundamentals | 82 in 10: T0-68 ×21, T0-46 ×16, T0-63 ×15 … | 7 (0 M/I) |
 | **InfiniBand** (`infiniband`) | Infrastructure & HPC | IB | → NCCL / RDMA / InfiniBand | 31 in 4: T0-54 ×24, T0-32 ×4, T0-56 ×2 … | 1 (0 M/I) |
 | **NVLink / NVSwitch** (`nvlink`) | Infrastructure & HPC | NVSwitch | → NCCL / RDMA / InfiniBand | 5 in 2: T0-54 ×3, T0-56 ×2 | 1 (0 M/I) |
 | **NVIDIA Jetson** (`jetson`) | Robotics & physical AI | Jetson Orin; Jetson Thor | → Edge inference | 0 (practice-curated) | 1 (0 M/I) |
@@ -673,12 +687,12 @@ Within each type, rows are sorted by category, then name.
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
 | **A2A (Agent2Agent)** (`a2a`) · *active 2026-03-12* | Agents | Agent2Agent | → Agent interoperability | 106 in 7: T0-16 ×66, T0-69 ×14, T3-01 ×14 … | 3 (0 M/I) |
-| **MCP (Model Context Protocol)** (`mcp`) · *active 2026-11-19* | Agents | MCP; Model Context Protocol; MCP servers | → Agent interoperability | 592 in 28: T0-16 ×252, T0-69 ×91, T0-26 ×65 … | 10 (2 M/I) |
+| **MCP (Model Context Protocol)** (`mcp`) · *active 2026-11-19* | Agents | MCP; Model Context Protocol; MCP servers | → Agent interoperability | 592 in 28: T0-16 ×252, T0-69 ×91, T0-26 ×65 … | 11 (3 M/I) |
 | **OpenLineage** (`openlineage`) | Data engineering | — | → Data governance & lineage | 3 in 1: T0-15 ×3 | 2 (0 M/I) |
 | **AG-UI** (`ag_ui`) · *active 2026-09-18* | Frontend & UX | Agent-User Interaction protocol | → Streaming & agent UX, Agent interoperability | 30 in 2: T0-16 ×24, T0-69 ×6 | 2 (0 M/I) |
 | **Server-Sent Events (SSE)** (`sse`) | Frontend & UX | SSE; streaming HTTP | → Streaming & agent UX | 26 in 3: T0-16 ×17, T0-69 ×6, T0-14 ×3 | 2 (1 M/I) |
 | **WebGPU** (`webgpu`) | Frontend & UX | — | → On-device / WebGPU inference | 15 in 2: T0-06 ×12, T2-01 ×3 | 1 (0 M/I) |
-| **WebMCP** (`webmcp`) | Frontend & UX | — | → Agent interoperability | 15 in 2: T0-06 ×10, T0-68 ×5 | 2 (0 M/I) |
+| **WebMCP** (`webmcp`) · *development 2026-11-13* | Frontend & UX | — | → Agent interoperability | 15 in 2: T0-06 ×10, T0-68 ×5 | 2 (0 M/I) |
 | **WebSockets** (`websockets`) | Frontend & UX | WebSocket | → Streaming & agent UX | 7 in 2: T0-16 ×5, T0-14 ×2 | 1 (0 M/I) |
 | **C2PA** (`c2pa`) | Governance, risk & compliance | Content Credentials | → Content provenance | 48 in 2: T0-15 ×43, T0-61 ×5 | 3 (0 M/I) |
 | **GGUF** (`gguf`) | Inference & serving | — | → Self-hosting open models | 2 in 1: T0-03 ×2 | 1 (0 M/I) |
@@ -701,15 +715,15 @@ Within each type, rows are sorted by category, then name.
 | Skill | Category | Posting wording (aliases) | Relations | Corpus mentions | Roles listing it |
 |---|---|---|---|---|:---:|
 | **California SB 53** (`ca_sb53`) | Governance, risk & compliance | SB 53 | → EU AI Act / NIST AI RMF / ISO 42001 | 2 in 1: T0-15 ×2 | 2 (0 M/I) |
-| **Colorado ADMT law (SB 26-189; replaced SB 24-205)** (`colorado_ai_act`) · *renamed 2026-11-19* | Governance, risk & compliance | — | → EU AI Act / NIST AI RMF / ISO 42001 | 64 in 8: T0-47 ×17, T0-15 ×14, T0-18 ×13 … | 2 (0 M/I) |
-| **EU AI Act** (`eu_ai_act`) | Governance, risk & compliance | AI Act | → EU AI Act / NIST AI RMF / ISO 42001 | 156 in 14: T0-15 ×63, T0-61 ×24, T0-34 ×19 … | 14 (3 M/I) |
+| **Colorado ADMT law (SB 26-189; replaced SB 24-205)** (`colorado_ai_act`) · *renamed 2026-05-14* | Governance, risk & compliance | — | → EU AI Act / NIST AI RMF / ISO 42001 | 64 in 8: T0-47 ×17, T0-15 ×14, T0-18 ×13 … | 2 (0 M/I) |
+| **EU AI Act** (`eu_ai_act`) | Governance, risk & compliance | AI Act | → EU AI Act / NIST AI RMF / ISO 42001 | 156 in 14: T0-15 ×63, T0-61 ×24, T0-34 ×19 … | 16 (3 M/I) |
 | **EU GPAI Code of Practice** (`eu_gpai_code`) | Governance, risk & compliance | GPAI Code of Practice | → EU AI Act / NIST AI RMF / ISO 42001 | 8 in 1: T0-15 ×8 | 2 (0 M/I) |
 | **GDPR** (`gdpr`) | Governance, risk & compliance | — | → Privacy law & DPO duties | 36 in 9: T0-15 ×8, T0-61 ×8, T0-22 ×6 … | 3 (0 M/I) |
 | **HIPAA** (`hipaa`) | Governance, risk & compliance | — | → Privacy law & DPO duties | 6 in 4: T0-65 ×3, T0-15 ×1, T0-51 ×1 … | 2 (0 M/I) |
 | **India DPDP Act** (`dpdp`) | Governance, risk & compliance | DPDP; Digital Personal Data Protection Act | → Sector rules, Privacy law & DPO duties | 91 in 10: T0-15 ×31, T0-22 ×13, T0-47 ×12 … | 2 (2 M/I) |
-| **ISO/IEC 42001** (`iso_42001`) | Governance, risk & compliance | ISO 42001; AIMS | → EU AI Act / NIST AI RMF / ISO 42001 | 166 in 8: T0-34 ×77, T0-61 ×36, T0-15 ×25 … | 4 (3 M/I) |
+| **ISO/IEC 42001** (`iso_42001`) | Governance, risk & compliance | ISO 42001; AIMS | → EU AI Act / NIST AI RMF / ISO 42001 | 166 in 8: T0-34 ×77, T0-61 ×36, T0-15 ×25 … | 5 (3 M/I) |
 | **NAIC AI model bulletin (insurance)** (`naic_bulletin`) | Governance, risk & compliance | NAIC bulletin | → Sector rules | 13 in 2: T0-15 ×12, T0-61 ×1 | 2 (1 M/I) |
-| **NIST AI RMF** (`nist_ai_rmf`) | Governance, risk & compliance | AI Risk Management Framework; NIST AI 600-1 | → EU AI Act / NIST AI RMF / ISO 42001 | 60 in 9: T0-61 ×18, T0-15 ×15, T0-68 ×12 … | 8 (2 M/I) |
+| **NIST AI RMF** (`nist_ai_rmf`) | Governance, risk & compliance | AI Risk Management Framework; NIST AI 600-1 | → EU AI Act / NIST AI RMF / ISO 42001 | 60 in 9: T0-61 ×18, T0-15 ×15, T0-68 ×12 … | 9 (2 M/I) |
 | **NYC Local Law 144** (`nyc_ll144`) | Governance, risk & compliance | LL144; AEDT law | → Sector rules | 33 in 4: T0-61 ×14, T0-47 ×12, T0-15 ×6 … | 2 (2 M/I) |
 | **SR 26-2 (US banking model-risk guidance)** (`sr_26_2`) | Governance, risk & compliance | — | → Sector rules, Model risk management | 40 in 3: T0-15 ×17, T0-61 ×14, T0-09 ×9 | 2 (2 M/I) |
 | **Functional-safety standards (IEC 61508, ISO 26262, ISO 10218)** (`functional_safety`) | Robotics & physical AI | ISO 26262; IEC 61508; ISO 10218 | → Safety cases | 0 (practice-curated) | 1 (0 M/I) |
@@ -727,15 +741,15 @@ Within each type, rows are sorted by category, then name.
 | Skill | Category | Posting wording (aliases) | Relations | Roles listing it |
 |---|---|---|---|:---:|
 | **Clear writing & presenting** (`writing`) | Communication & collaboration | clear writing; presentations | — | 2 (2 M/I) |
-| **Communication (written & verbal)** (`communication`) | Communication & collaboration | communication skills; verbal communication; written communication | — | 26 (15 M/I) |
+| **Communication (written & verbal)** (`communication`) | Communication & collaboration | communication skills; verbal communication; written communication | — | 27 (16 M/I) |
 | **Cross-functional collaboration** (`cross_functional`) | Communication & collaboration | collaboration; teamwork | — | 9 (1 M/I) |
-| **Customer-facing communication** (`customer_communication`) | Communication & collaboration | client communication; customer workshops | — | 3 (1 M/I) |
+| **Customer-facing communication** (`customer_communication`) | Communication & collaboration | client communication; customer workshops | — | 4 (2 M/I) |
 | **Design docs & RFCs** (`design_docs`) | Communication & collaboration | design documents; RFCs; technical specs | — | 11 (0 M/I) |
-| **Executive & board communication** (`executive_communication`) | Communication & collaboration | executive briefings; board reporting | — | 6 (4 M/I) |
+| **Executive & board communication** (`executive_communication`) | Communication & collaboration | executive briefings; board reporting | — | 8 (6 M/I) |
 | **PRDs & product specs** (`prd_writing`) | Communication & collaboration | product requirements documents; specs | — | 1 (1 M/I) |
 | **Presenting & live demos** (`presenting`) | Communication & collaboration | presentations; public speaking; demos | — | 7 (1 M/I) |
-| **Stakeholder communication** (`stakeholder`) | Communication & collaboration | stakeholder management; stakeholder communication | — | 12 (6 M/I) |
-| **Teaching & workshop delivery** (`teaching`) | Communication & collaboration | training delivery; workshops | — | 1 (1 M/I) |
+| **Stakeholder communication** (`stakeholder`) | Communication & collaboration | stakeholder management; stakeholder communication | — | 15 (9 M/I) |
+| **Teaching & workshop delivery** (`teaching`) | Communication & collaboration | training delivery; workshops | — | 2 (2 M/I) |
 | **Technical writing** (`tech_writing`) | Communication & collaboration | technical writing; documentation | — | 7 (2 M/I) |
 
 <a id="type-behavioural"></a>
@@ -749,10 +763,10 @@ Within each type, rows are sorted by category, then name.
 | **Attention to detail** (`attention_to_detail`) | Behavioural | rigour; precision | — | 1 (1 M/I) |
 | **Creativity** (`creativity`) | Behavioural | innovation | — | 1 (1 M/I) |
 | **Explaining probabilistic trade-offs (C2)** (`c2_tradeoffs`) | Behavioural | trade-off communication | — | 25 (25 M/I) |
-| **Ownership & incident response (C3)** (`c3_ownership`) | Behavioural | ownership; accountability | — | 25 (25 M/I) |
-| **Pragmatism under ambiguity (C1)** (`c1_pragmatism`) | Behavioural | ambiguity; bias for action | — | 26 (25 M/I) |
+| **Ownership & incident response (C3)** (`c3_ownership`) | Behavioural | ownership; accountability | — | 28 (28 M/I) |
+| **Pragmatism under ambiguity (C1)** (`c1_pragmatism`) | Behavioural | ambiguity; bias for action | — | 29 (28 M/I) |
 | **Problem solving** (`problem_solving`) | Behavioural | analytical thinking; critical thinking | — | 1 (0 M/I) |
-| **Responsible-AI judgement (C4)** (`c4_responsible_ai`) | Behavioural | responsible AI; AI ethics | — | 26 (25 M/I) |
+| **Responsible-AI judgement (C4)** (`c4_responsible_ai`) | Behavioural | responsible AI; AI ethics | — | 29 (27 M/I) |
 | **Time management & prioritisation** (`time_management`) | Behavioural | prioritisation; organisation | — | 2 (1 M/I) |
 
 <a id="type-business"></a>
@@ -762,9 +776,9 @@ Within each type, rows are sorted by category, then name.
 
 | Skill | Category | Posting wording (aliases) | Relations | Roles listing it |
 |---|---|---|---|:---:|
-| **AI operating model & governance boards** (`operating_model`) | Governance, risk & compliance | AI operating model; AI governance board; AI CoE | — | 2 (2 M/I) |
-| **AI strategy & portfolio** (`strategy`) | Product & business | AI strategy; portfolio management | — | 4 (2 M/I) |
-| **Build-vs-buy & vendor evaluation** (`build_vs_buy`) | Product & business | vendor selection; procurement | — | 4 (1 M/I) |
+| **AI operating model & governance boards** (`operating_model`) | Governance, risk & compliance | AI operating model; AI governance board; AI CoE | — | 4 (4 M/I) |
+| **AI strategy & portfolio** (`strategy`) | Product & business | AI strategy; portfolio management | — | 7 (4 M/I) |
+| **Build-vs-buy & vendor evaluation** (`build_vs_buy`) | Product & business | vendor selection; procurement | — | 6 (2 M/I) |
 | **Customer scoping & demos** (`customer_scoping`) | Product & business | discovery; requirements gathering; solution scoping; demos | — | 3 (2 M/I) |
 | **Go-to-market & pricing** (`go_to_market`) | Product & business | GTM; packaging | — | 2 (0 M/I) |
 | **Metrics for non-deterministic systems** (`success_metrics`) | Product & business | KPIs; north-star metrics; product metrics for AI | — | 3 (1 M/I) |
@@ -772,9 +786,9 @@ Within each type, rows are sorted by category, then name.
 | **Product management** (`product_mgmt`) | Product & business | product management; product strategy | — | 3 (1 M/I) |
 | **Product sense** (`product_sense`) | Product & business | product thinking; user empathy | — | 5 (3 M/I) |
 | **Programme & project management** (`program_management`) | Product & business | project management; programme management; delivery management | — | 3 (0 M/I) |
-| **Roadmapping & prioritisation** (`roadmapping`) | Product & business | roadmaps; product roadmap | — | 2 (1 M/I) |
-| **ROI & business cases** (`business_case`) | Product & business | ROI; business value; value realisation | — | 6 (1 M/I) |
-| **Token & unit economics** (`unit_economics`) | Product & business | token economics; cost per task; AI pricing | — | 8 (3 M/I) |
+| **Roadmapping & prioritisation** (`roadmapping`) | Product & business | roadmaps; product roadmap | — | 3 (1 M/I) |
+| **ROI & business cases** (`business_case`) | Product & business | ROI; business value; value realisation | — | 8 (2 M/I) |
+| **Token & unit economics** (`unit_economics`) | Product & business | token economics; cost per task; AI pricing | — | 8 (2 M/I) |
 
 <a id="type-leadership"></a>
 #### Leadership & people (8)
@@ -784,27 +798,28 @@ Within each type, rows are sorted by category, then name.
 | Skill | Category | Posting wording (aliases) | Relations | Roles listing it |
 |---|---|---|---|:---:|
 | **Budget & P&L ownership** (`budget_ownership`) | Leadership | budget; P&L | — | 2 (1 M/I) |
-| **Hiring & interviewing** (`hiring`) | Leadership | recruiting; interviewing; hiring bar | — | 3 (2 M/I) |
+| **Hiring & interviewing** (`hiring`) | Leadership | recruiting; interviewing; hiring bar | — | 5 (4 M/I) |
 | **Influence without authority** (`influence`) | Leadership | leading without authority | — | 4 (0 M/I) |
-| **Leadership & mentoring** (`leadership`) | Leadership | leadership; technical leadership | — | 5 (4 M/I) |
+| **Leadership & mentoring** (`leadership`) | Leadership | leadership; technical leadership | — | 8 (6 M/I) |
 | **Mentoring** (`mentoring`) | Leadership | mentorship; coaching | — | 23 (2 M/I) |
-| **Organisation design** (`org_design`) | Leadership | org design; team topology | — | 2 (1 M/I) |
+| **Organisation design** (`org_design`) | Leadership | org design; team topology | — | 3 (2 M/I) |
 | **People management** (`people_management`) | Leadership | line management; performance management | — | 2 (1 M/I) |
 | **Technical leadership** (`technical_leadership`) | Leadership | tech lead; technical direction | — | 3 (1 M/I) |
 
 <a id="type-domain"></a>
-#### Domain knowledge (6)
+#### Domain knowledge (7)
 
 *Non-technical. On a resume: Summary line plus bullets with domain outcomes.*
 
 | Skill | Category | Posting wording (aliases) | Relations | Roles listing it |
 |---|---|---|---|:---:|
-| **Domain expertise** (`domain_depth`) | Domain | domain expertise; subject-matter expertise; SME | — | 13 (2 M/I) |
+| **Domain expertise** (`domain_depth`) | Domain | domain expertise; subject-matter expertise; SME | — | 16 (5 M/I) |
 | **Financial services** (`domain_finance`) | Domain | banking; insurance; fintech | — | 5 (0 M/I) |
 | **Healthcare & life sciences** (`domain_healthcare`) | Domain | healthcare; pharma; clinical | — | 1 (0 M/I) |
 | **Legal** (`domain_legal`) | Domain | legal tech | — | 1 (0 M/I) |
 | **Manufacturing & industrial** (`domain_industrial`) | Domain | manufacturing; automotive; industrial | — | 2 (0 M/I) |
 | **Public sector & government** (`domain_public_sector`) | Domain | government | — | 3 (0 M/I) |
+| **Offensive security & penetration testing** (`offensive_security_experience`) | Security & safety | — | — | 1 (1 M/I) |
 
 <a id="type-research-craft"></a>
 #### Research craft (4)
@@ -826,7 +841,7 @@ Within each type, rows are sorted by category, then name.
 Credentials are tie-breakers, not skills. Their signal depends on the hiring channel [B/C · T0-11]. Retired credentials are tiered Avoid for new candidates; holders may still list them with the date.
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (credentials) -->
-The 56 credentials, their statuses and the roles that list each one are in a single generated table: [credentials by role](../04-certifications/credentials-by-role.md). Whether a credential is worth it: [credential ROI](../04-certifications/credential-roi.md).
+The 58 credentials, their statuses and the roles that list each one are in a single generated table: [credentials by role](../04-certifications/credentials-by-role.md). Whether a credential is worth it: [credential ROI](../04-certifications/credential-roi.md).
 <!-- END GENERATED -->
 
 ---
@@ -839,26 +854,41 @@ The 56 credentials, their statuses and the roles that list each one are in a sin
 | **Hugging Face TGI** | Framework / SDK | archived | 2026-11-19 | Hugging Face docs carry maintenance-mode notice recommending vLLM, SGLang, llama.cpp/MLX (A); 2026-03-21 archive date rests on secondary source (C) |
 | **AutoGen** | Framework / SDK | dormant | 2026-11-19 | last PyPI release 0.7.5 on 2025-09-30 (410 days to 2026-11-14); superseded by Microsoft Agent Framework 1.0 |
 | **torchtune** | Library / package | dormant | 2026-11-19 | GitHub README states no longer actively maintained; development wound down in 2025 |
+| **Humanloop** | Specialised product | retired | 2025-09-08 | platform sunset 2025-09-08; billing stopped 2025-07-30 (T0-69:L371) |
 | **OpenAI Assistants API** | Specialised product | retired | 2026-08-26 | sunset 2026-08-26; replaced by OpenAI Responses API and Conversations API |
-| **Colorado ADMT law (SB 26-189; replaced SB 24-205)** | Regulation / framework | renamed | 2026-11-19 | SB 24-205 repealed May 2026; narrower ADMT notice law SB 26-189 enacted (effective 2027-02-01) and enjoined under xAI v. Weiser (V0) |
+| **Colorado ADMT law (SB 26-189; replaced SB 24-205)** | Regulation / framework | renamed | 2026-05-14 | SB 24-205 repealed and replaced by Colorado SB 26-189 (signed 2026-05-14, effective 2027-01-01; T0-61:L374) |
 | **NVIDIA Dynamo Triton** | Framework / SDK | renamed | 2026-10-23 | formerly Triton Inference Server |
+| **Anyscale** | Platform / cloud service | acquired | 2026-07-30 | acquired by Nscale on 2026-07-30 (T0-03:L340) |
+| **Galileo** | Specialised product | acquired | 2026-05-22 | acquired by Cisco / Splunk 2026-05-22; commercial licence (T0-69:L376) |
+| **Helicone** | Specialised product | acquired | 2026-03-03 | acquired by Mintlify (announced 2026-03-03); maintenance mode, Apache 2.0 self-hostable (T0-69:L373) |
 | **Langfuse** | Specialised product | acquired | 2026-01-16 | acquired by ClickHouse; MIT core, still viable |
 | **Promptfoo** | Specialised product | acquired | 2026-03-09 | acquired by OpenAI — watch roadmap alignment |
+| **Traceloop (OpenLLMetry)** | Specialised product | acquired | 2026-05-05 | acquired by ServiceNow 2026-05-05; OpenLLMetry stays Apache 2.0 (T0-69:L375) |
+| **Weights & Biases (incl. Weave)** | Specialised product | acquired | 2025-05-05 | acquired by CoreWeave (completed 2025-05-05); Weave stays Apache 2.0 and accepts OTLP (T0-69:L370) |
 | **OTel GenAI semantic conventions** | Protocol / standard | development | 2026-10-23 | still in Development — isolate behind adapters |
+| **WebMCP** | Protocol / standard | development | 2026-11-13 | W3C community-group draft; API moved from navigator.modelContext to document.modelContext (Chrome 149 origin trial; T0-68:L365) |
 | **A2A (Agent2Agent)** | Protocol / standard | active | 2026-03-12 | v1.0; joining the Linux Foundation AAIF (announced 2026-08-27) |
+| **AAIF Agent Router** | Infrastructure / DevOps tool | active | 2026-06-04 | AAIF-hosted Envoy-based gateway project (T0-16:L157) |
 | **AG-UI** | Protocol / standard | active | 2026-09-18 | 1.0 (CopilotKit); not in AAIF |
 | **Arize Phoenix** | Specialised product | active | 2026-10-23 | Elastic License 2.0 (source-available, not OSI) — check licence fit |
 | **Braintrust** | Specialised product | active | 2026-05-04 | breach on 2026-05-04 forced provider-key rotation — keep master keys out of SaaS eval tools |
+| **Cloudflare MCP Server Portals** | Platform / cloud service | active | 2026-03-26 | Code Mode default shipped 2026-03-26 with shadow-MCP detection (T0-16:L286, L589) |
+| **CUDA Tile (Tile IR)** | Programming language | active | 2026-10-18 | CUDA 13.1 Tile IR / cuda-tile 1.7.0; Blackwell-focused tile DSL (T0-03:L101, L542) |
 | **DeepEval** | Specialised product | active | 2026-10-23 | active (64 releases a year); safe default CI eval runner |
 | **LangChain** | Framework / SDK | active | 2025-10-17 | 1.0; legacy chains moved to a classic package |
 | **LangGraph** | Framework / SDK | active | 2025-10-17 | 1.0 released; learn graph concepts, not chain syntax |
+| **LiveKit** | Framework / SDK | active | 2026-01-22 | active voice-agent stack; $100M funding at $1B valuation 2026-01-22 (T0-69:L62) |
 | **MCP (Model Context Protocol)** | Protocol / standard | active | 2026-11-19 | AAIF/Linux Foundation (247 members Aug 2026); 2026-07-28 spec removes sessions and deprecates HTTP+SSE, Roots, Sampling and Logging (12-month window) |
 | **Microsoft Agent Framework** | Framework / SDK | active | 2026-11-19 | 1.0 GA shipped 2026-04-03; named Microsoft successor to AutoGen and Semantic Kernel |
 | **NVIDIA Dynamo** | Framework / SDK | active | 2026-10-22 | 1.6.0 (1.0 GA 2026-03-16); fronts vLLM, SGLang and TRT-LLM |
 | **OpenAI Agents SDK** | Framework / SDK | active | 2026-03-23 | GA, native Temporal integration |
+| **OpenAI Responses API** | Specialised product | active | 2026-08-26 | replaced OpenAI Assistants API on 2026-08-26 (T0-69:L362) |
 | **RAGAS** | Specialised product | active | 2026-11-19 | v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai (304 days after v0.4.3); dormancy lifted, avoid eval-brand lock-in |
+| **Semantic Kernel** | Framework / SDK | active | 2026-04-03 | active; folded into Microsoft Agent Framework 1.0 (GA 2026-04-03; T0-69:L364) |
 | **SGLang** | Framework / SDK | active | 2026-10-16 | 0.5.22; three critical CVEs in H1 2026 — sandbox template parsing |
 | **TensorRT-LLM** | Framework / SDK | active | 2026-11-19 | PyTorch is the sole backend (NVIDIA migration guide updated 2026-11-03); static TensorRT backend and trtllm-build removed |
+| **TRL** | Library / package | active | 2026-03-31 | v1.0 shipped 2026-03-31 with 75+ post-training methods (SFT, DPO, reward modelling, RLOO, GRPO; T0-69:L190) |
+| **Vercel AI SDK** | Framework / SDK | active | 2026-06-25 | AI SDK 7 shipped 2026-06-25 (ESM-only, Node.js 22+; replaces AI SDK 6; T0-68:L364) |
 | **vLLM** | Framework / SDK | active | 2026-10-18 | 0.32.0, pre-1.0; CVE-2026-22778 and CVE-2026-27893 — pin and patch |
 <!-- END GENERATED -->
 
@@ -871,4 +901,4 @@ The 56 credentials, their statuses and the roles that list each one are in a sin
   - a dated sample of 30 or more postings per role;
   - it will give tools measured shares;
   - it will test completeness at 95% or more recall.
-- **Statuses expire.** Tool statuses are class V2 facts under EGP-1.0 and must be re-verified within 90 days of 2026-10-23.
+- **Statuses expire.** Tool statuses are class V2 facts under EGP-1.0 and must be re-verified within 90 days of 2026-10-23, the oldest status date (next by 2027-01-21).

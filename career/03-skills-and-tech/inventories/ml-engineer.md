@@ -6,7 +6,7 @@ stage: 3
 status: published
 last_verified: 2026-11-19
 review_by: 2027-02-17
-summary: "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 84 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 85 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ml-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #2 · **Resume variant:** B1 (ML & Applied Science: Engineer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-engineer) · [role hub](../../02-roles/hubs/ml-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ml-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**84 skills:** Must 4 · Important 18 · Should 28 · Optional 34. **Evidence:** JD 11 · S09 2 · S 24 · P 47 (56% practice-curated). **Non-technical:** 9.
+**85 skills:** Must 4 · Important 18 · Should 28 · Optional 34 · Avoid 1. **Evidence:** JD 11 · S09 2 · S 26 · P 46 (54% practice-curated). **Non-technical:** 9.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,11 +28,11 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 98.6%] · Deep learning & transformers [JD 32.6%]<br>**Important:** LLM APIs & tool calling [JD 45.0%] · Data structures & algorithms [JD 33.7%] · Natural language processing (NLP) [JD 23.3%] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Choosing RAG vs long context vs fine-tuning [S · T0-03] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-03] · Serving literacy (vLLM, batching, quantisation) [S · T0-03] · Embedding & reranker models [S · T0-14] · Data pipelines & quality [P]<br>**Should:** RAG [S · T0-14] · APIs & integrations [P] · Statistics (inference, hypothesis tests, regression) [P] · Linear algebra [P] · System design [S · T0-14] · Parameter-efficient fine-tuning (LoRA, QLoRA) [S · T0-03] · Quantisation (FP8/FP4, AWQ, GPTQ) [P]<br>**Optional:** Distributed training (FSDP2, TP/PP, MoE) [S · T0-13] · Post-training (SFT, preference, RL) [P] · CUDA / Triton / CUTLASS [S · T0-03] · Recommender systems [S · T0-14] · MLOps lifecycle (model & prompt CI/CD) [P] · Mixed-precision training (BF16, FP8) [P] · Distillation [P] · Feature stores [P] · ANN indexes (HNSW, IVF, PQ) [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 98.6%] · Deep learning & transformers [JD 32.6%]<br>**Important:** LLM APIs & tool calling [JD 45.0%] · Data structures & algorithms [JD 33.7%] · Natural language processing (NLP) [JD 23.3%] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Choosing RAG vs long context vs fine-tuning [S · T0-03] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-03] · Serving literacy (vLLM, batching, quantisation) [S · T0-03] · Embedding & reranker models [S · T0-14] · Data pipelines & quality [S · T0-49]<br>**Should:** RAG [S · T0-14] · APIs & integrations [P] · Statistics (inference, hypothesis tests, regression) [P] · Linear algebra [P] · System design [S · T0-14] · Parameter-efficient fine-tuning (LoRA, QLoRA) [S · T0-03] · Quantisation (FP8/FP4, AWQ, GPTQ) [P]<br>**Optional:** Distributed training (FSDP2, TP/PP, MoE) [S · T0-13] · Post-training (SFT, preference, RL) [P] · CUDA / Triton / CUTLASS [S · T0-03] · Recommender systems [S · T0-14] · MLOps lifecycle (model & prompt CI/CD) [P] · Mixed-precision training (BF16, FP8) [P] · Distillation [P] · Feature stores [P] · ANN indexes (HNSW, IVF, PQ) [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Experiment design & A/B testing [JD 23.5%] · Eval statistics (CIs, power, pass^k) [S · T0-14]<br>**Should:** Git & CI/CD [P] · Error analysis [S · T0-06] · Experiment tracking & reproducibility [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 71.3%]<br>**Important:** C++ [JD 23.3%]<br>**Should:** SQL [P]<br>**Optional:** Scala [P] |
 | Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2%]<br>**Important:** TensorFlow / JAX (choose 1: TensorFlow \| JAX) [JD 31.8%]<br>**Should:** vLLM [S · T0-03] · SGLang [S · T0-03] · Ray [S09 3.0%]<br>**Optional:** Megatron-LM / Megatron Core [S · T0-05] · verl [S · T0-03] · OpenRLHF [S · T0-03] · TensorRT-LLM [S · T0-03] · DeepSpeed [P] · Keras [P] · Axolotl [P] · Apache Spark [P] |
-| Technical: concrete | **Library / package** | **Should:** Hugging Face Transformers [P] · PEFT [P] · TRL [P] · scikit-learn [P] · NumPy [P] · pandas [P]<br>**Optional:** PyTorch FSDP2 [S · T0-13] · XGBoost [P] · spaCy [P] · Polars [P] · Hugging Face Accelerate [P] · ONNX Runtime [P] |
+| Technical: concrete | **Library / package** | **Should:** Hugging Face Transformers [P] · PEFT [P] · TRL [P] · scikit-learn [P] · NumPy [P] · pandas [P]<br>**Optional:** PyTorch FSDP2 [S · T0-13] · XGBoost [P] · spaCy [P] · Polars [P] · Hugging Face Accelerate [P] · ONNX Runtime [P]<br>**Avoid:** torchtune [S · T0-69] |
 | Technical: concrete | **Model / model family** | **Should:** Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [P] |
 | Technical: concrete | **Platform / cloud service** | **Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [P] · Hugging Face Hub [P]<br>**Optional:** Data platforms and warehouses (choose 1: Databricks \| Snowflake \| Google BigQuery) [P] |
 | Technical: concrete | **Data store** | **Optional:** Feast [P] |
@@ -48,7 +48,8 @@ generated_by: scripts/build_skills.py
 
 ## 2. Avoid
 
-- **Also avoid:** Fine-tuning as the default answer (70% of 20 studied production systems used off-the-shelf models); tools you have only read about
+- **torchtune** [S · T0-69]: dormant (no longer actively maintained; move to TRL v1.0, Axolotl or Unsloth)
+- **Also avoid:** Fine-tuning as the default answer (70%, 14/20 interviewed production agent teams in arXiv 2512.04123v2 used off-the-shelf models, B · T0-03); dormant torchtune workflows; tools you have only read about
 
 ## 3. Types that do not apply
 
@@ -58,10 +59,13 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** Google Cloud Professional Machine Learning Engineer (PMLE): tie-breaker in GCP shops; refreshed for GenAI [T0-11]
-- **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): only for LLM training or inference-infrastructure roles [T0-11]
+- **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): announced (verify live Certiverse booking before prep); LLM training/serving roles only [T0-11, T0-32]
 - **Optional:** AWS Certified ML Engineer – Associate (MLA-C02): replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads
-- **Optional:** PyTorch Certified Associate (PTCA) [T0-32]
-- **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by aws_mla_c02 [T0-11]
+- **Optional:** PyTorch Certified Associate (PTCA): Linux Foundation PyTorch Certified Associate ($250, 15-17h prep pathway); optional PyTorch baseline (T0-32:L499) [T0-32]
+- **Optional:** Databricks Certified Machine Learning Associate: $200, 48 Q, 90 min, 2-yr validity; associate baseline for Databricks ML shops (T3-01)
+- **Optional:** Databricks Certified Machine Learning Professional: $200, 59 Q, 120 min, 2-yr validity; hardest Databricks ML exam for production ML/MLOps shops (T3-01)
+- **Optional:** NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL): $125 associate exam; cheap structured LLM syllabus only, low senior hiring lift (T0-11, T0-32:L489) [T0-11, T0-32]
+- **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by AWS MLA-C02 [T0-11]
 - **Avoid:** AWS Certified Machine Learning – Specialty: retired 2026-03-31 [T0-11]
 
 ## 5. Prerequisites and proof
@@ -121,11 +125,11 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | C++ | I | JD (B) 23.3% | JobsPipe: Machine Learning Engineer | — |
 | Communication (written & verbal) | I | JD (B) 30.3% | JobsPipe: Machine Learning Engineer | — |
 | Fine-tuning (SFT, LoRA) | I | S09 (B) 13.0% | T0-03:L96 | SFT and LoRA; a differentiator, and know when not to fine-tune |
-| Choosing RAG vs long context vs fine-tuning | I | S (A) | T0-03:L178 | 70% of production LLM apps use off-the-shelf models |
+| Choosing RAG vs long context vs fine-tuning | I | S (B) | T0-03:L178 | 70% (14/20) interviewed production agent teams use off-the-shelf models (arXiv 2512.04123v2) |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | I | S (B) | T0-03:L97 | offline and online metrics with confidence intervals |
 | Serving literacy (vLLM, batching, quantisation) | I | S (B) | T0-03:L100 | vLLM/SGLang, batching, quantisation |
 | Embedding & reranker models | I | S (C) | T0-14:L83 | — |
-| Data pipelines & quality | I | P (D) | — | labelling and data quality |
+| Data pipelines & quality | I | S (B) 13.9% | T0-49:L554 | 5/36 in T0-49 |
 | Eval statistics (CIs, power, pass^k) | I | S (B) | T0-14:L718 | gate releases on regression with confidence intervals |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
@@ -193,3 +197,4 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | NVIDIA Ampere (A100) | O | P (D) | — | — |
 | Feature stores | O | P (D) | — | — |
 | ANN indexes (HNSW, IVF, PQ) | O | P (D) | — | — |
+| torchtune | X | S (A) | T0-69:L367 | dormant (no longer actively maintained; move to TRL v1.0, Axolotl or Unsloth) |

@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #23 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-enablement-engineer) · [role hub](../../02-roles/hubs/ai-enablement-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-enablement-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-enablement-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**55 skills:** Must 3 · Important 16 · Should 24 · Optional 12. **Evidence:** S 26 · P 29 (53% practice-curated). **Non-technical:** 13.
+**55 skills:** Must 3 · Important 16 · Should 24 · Optional 12. **Evidence:** S 29 · P 26 (47% practice-curated). **Non-technical:** 13.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,9 +28,9 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** Internal tooling & DevEx [S · T0-62]<br>**Important:** LLM APIs & tool calling [S · T0-62] · Agents & tool use [P] · Guardrails [S · T0-14]<br>**Should:** OAuth/OIDC, RBAC, SSO [S · T0-62] · RAG [P] · Observability (OpenTelemetry traces, metrics) [P] · PII detection & redaction [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-62]<br>**Optional:** LLM gateways [S · T0-62] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Internal tooling & DevEx [S · T0-62]<br>**Important:** LLM APIs & tool calling [S · T0-62] · Agents & tool use [S · T0-62] · Guardrails [S · T0-14]<br>**Should:** OAuth/OIDC, RBAC, SSO [S · T0-62] · RAG [S · T0-62] · Observability (OpenTelemetry traces, metrics) [P] · PII detection & redaction [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-62]<br>**Optional:** LLM gateways [S · T0-62] |
 | Technical: knowledge | **Method / practice** | **Must:** Change management & adoption [S · T0-62]<br>**Important:** Coding agents & AI-assisted engineering [S · T0-16] · Pilots & adoption measurement [S · T0-06] · Prompt engineering [S · T0-62] · GRC & risk assessment [S · T0-62]<br>**Should:** AI inventory & risk register [S · T0-06] |
-| Technical: concrete | **Programming language** | **Important:** Python (production) [S · T0-62]<br>**Should:** TypeScript / JavaScript [P] |
+| Technical: concrete | **Programming language** | **Important:** Python (production) [S · T0-62]<br>**Should:** TypeScript / JavaScript [S · T0-62] |
 | Technical: concrete | **Framework / SDK** | **Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [P] |
 | Technical: concrete | **Library / package** | **Should:** LiteLLM [S · T0-16] · FastMCP [S · T0-16] · langchain-mcp-adapters [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
@@ -57,7 +57,9 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** Salesforce Certified Agentforce Specialist [T0-31]
+- **Optional:** Salesforce Certified Agentforce Specialist: Free/proctored Salesforce Agentforce credential; useful only for Salesforce-partner FDE, SA or enablement shops (T0-31) [T0-31]
+- **Optional:** Claude Certified Associate – Foundations (CCAO-F): Partner-gated ($99; Claude Partner Network staff only; does NOT count toward partner tiers; FASCSA risk V0) [A COI · T0-29, T3-02] [T0-29]
+- **Optional:** GitHub Certified Copilot (GH-300): GitHub Certified Copilot ($99-$165; Microsoft FTE LevelUp prerequisite); fits Copilot rollout & DevEx enablement (T3-01)
 
 ## 5. Prerequisites and proof
 
@@ -101,13 +103,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 
 | Skill | Tier | Evidence | Source | Note |
 |---|:---:|---|---|---|
-| Internal tooling & DevEx | M | S (B) | T0-62:L259-L281 | Core enablement work (46.7% sample) |
-| Change management & adoption | M | S (B) | T0-62:L259-L281 | Org rollout & adoption (46.7% sample) |
-| Teaching & workshop delivery | M | S (B) | T0-62:L259-L281 | Training, workshops & enablement (60.0% sample) |
-| Python (production) | I | S (B) | T0-62:L259-L281 | 26.7% sample / 33.3% Skillenai (Must for builder variant only) |
-| LLM APIs & tool calling | I | S (B) | T0-62:L259-L281 | 26.7% sample / 16.7% Skillenai (Must for builder variant only) |
+| Internal tooling & DevEx | M | S (B) | T0-62:L262 | 46.7% (7/15) in T0-62 builder and platform variants |
+| Change management & adoption | M | S (B) | T0-62:L263 | 46.7% (7/15) adoption and rollout language in T0-62 |
+| Teaching & workshop delivery | M | S (B) | T0-62:L261 | 60.0% (9/15) training, workshops and enablement sessions in T0-62 |
+| Python (production) | I | S (B) | T0-62:L268, T0-62:L713 | 26.7% (4/15) T0-62; 33.3% Skillenai (n=42); removed inherited AI Eng share |
+| LLM APIs & tool calling | I | S (B) | T0-62:L269 | 26.7% (4/15) T0-62; 16.7% Skillenai LLMs (n=42) |
 | MCP (Model Context Protocol) | I | S (C) | T0-16:L393 | MCP servers for internal systems; 30.2% of AI Enablement Engineer postings, the highest share |
-| Agents & tool use | I | P (D) | — | — |
+| Agents & tool use | I | S (C) 33.3% | T0-62:L695, T0-62:L717 | 5/15 in T0-62; Platform share 16.7% (n = 42).; platform 16.7% (n=42) |
 | Guardrails | I | S (B) | T0-14:L317 | PII redaction and access controls (A6) |
 | Coding agents & AI-assisted engineering | I | S (C) | T0-16:L394 | Claude Code: 258 co-mentions in MCP postings |
 | Pilots & adoption measurement | I | S (C) | T0-06:L605 | pilot with 5-10 colleagues; adoption and time saved |
@@ -118,13 +120,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
 | Low-code workflow automation | I | S (C) | T0-62:L272 | 26.7% sample (n8n, Make, Zapier, Power Automate) |
-| Prompt engineering | I | S (B) | T0-62:L259-L281 | 33.3% sample / 35.7% Skillenai |
-| GRC & risk assessment | I | S (C) | T0-62:L259-L281 | 26.7% sample; internal policy & safe-use rollout |
-| OAuth/OIDC, RBAC, SSO | S | S (B) | T0-62:L259-L281 | 20.0% sample / 11.9% SSO Skillenai (Must for platform variant) |
-| RAG | S | P (D) | — | — |
+| Prompt engineering | I | S (B) | T0-62:L267, T0-62:L712 | 33.3% (5/15) T0-62; 35.7% Skillenai (n=42) |
+| GRC & risk assessment | I | S (C) | T0-62:L271 | 26.7% (4/15) governance, audit and compliance in T0-62 |
+| OAuth/OIDC, RBAC, SSO | S | S (B) | T0-62:L275, T0-62:L720 | 20.0% (3/15) T0-62; Skillenai SSO 11.9%, OAuth 9.5%; Must for platform variant |
+| RAG | S | S (C) 20% | T0-62:L704, T0-62:L716 | 3/15 in T0-62; Platform share 19.0%.; platform 19% (n=42) |
 | Observability (OpenTelemetry traces, metrics) | S | P (D) | — | — |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S | P (D) | — | — |
-| TypeScript / JavaScript | S | P (D) | — | — |
+| TypeScript / JavaScript | S | S (C) 13.3% | T0-62:L709, T0-62:L714 | 2/15 in T0-62; Platform share 28.6%.; platform 28.6% (n=42) |
 | GitHub Copilot | S | P (D) | — | — |
 | Cursor | S | P (D) | — | — |
 | OpenAI Codex | S | P (D) | — | — |
@@ -143,8 +145,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Stakeholder communication | S | P (D) | — | — |
 | Cross-functional collaboration | S | P (D) | — | — |
 | AI inventory & risk register | S | S (C) | T0-06:L605 | a runbook and a risk register |
-| LLM evaluation (golden sets, calibrated judges, CI gates) | S | S (C) | T0-62:L259-L281 | — |
-| LLM gateways | O | S (C) | T0-62:L259-L281 | 6.7% sample; platform variant only |
+| LLM evaluation (golden sets, calibrated judges, CI gates) | S | S (C) | T0-62:L274 | 20.0% (3/15) in T0-62 (Revalize, Fabletics, Ather) |
+| LLM gateways | O | S (C) | T0-62:L279 | 6.7% (1/15, Sofi) in T0-62 |
 | Kubernetes | O | P (D) | — | — |
 | Docker | O | P (D) | — | — |
 | Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) | O | P (D) | — | — |

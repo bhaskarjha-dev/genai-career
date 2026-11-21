@@ -49,7 +49,7 @@ generated_by: scripts/build_skills.py
 ## 2. Avoid
 
 - **AutoGen** [S · T0-03]: dormant; superseded by Microsoft Agent Framework 1.0
-- **Also avoid:** Wrapper-only demos; framework-syntax mastery as a headline; new RAGAS dependencies; "Prompt Engineer" as your title
+- **Also avoid:** Wrapper-only demos; framework-syntax mastery as a headline; OpenAI Assistants API (retired 2026-08-26); "Prompt Engineer" as your title
 
 ## 3. Types that do not apply
 
@@ -61,8 +61,12 @@ generated_by: scripts/build_skills.py
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): tie-breaker, mostly in services and GCC channels [T0-11]
 - **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure shops; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28 [T0-11, T0-62]
 - **Optional:** Databricks Certified Generative AI Engineer Associate: only if the team runs Databricks [T0-11]
-- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
-- **Optional:** Model Context Protocol Associate (MCPA) [T0-32]
+- **Optional:** LangChain Certified Agent Engineer (LCAE): Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76) [T0-29]
+- **Optional:** Model Context Protocol Associate (MCPA): Linux Foundation / AAIF MCP Associate ($250, 90 min); protocol specialist signal, hiring lift unmeasured (T0-32) [T0-32]
+- **Optional:** Google Professional Agentic Architect (PAA): GCP agentic architecture exam (GA mid-Nov 2026; hybrid MCQ + 2 labs; MCP & A2A in scope); target GCP shops (T3-01)
+- **Optional:** Claude Certified Developer – Foundations (CCDV-F): Partner-gated ($125; $0 Global Premier through 2026-12-31; refresh 2026-12-07; FASCSA risk V0) [A COI · T0-29, T3-01] [T0-29]
+- **Optional:** Databricks Certified Context Engineer Associate: $200, 45 Q, 90 min; ~60% overlap with Databricks GenAI Engineer; target Databricks shops only (T3-01, T3-02:L69)
+- **Optional:** GitHub Certified Agentic AI Developer (GH-600): GA Jul 2026 ($165, 120 min); GitHub/Microsoft agentic developer exam covering MCP (T3-01)
 - **Avoid:** AWS Certified Machine Learning – Specialty: retired 2026-03-31 [T0-11]
 - **Avoid:** Microsoft Azure AI Engineer Associate (AI-102): retired 2026-06-30 [T0-11]
 

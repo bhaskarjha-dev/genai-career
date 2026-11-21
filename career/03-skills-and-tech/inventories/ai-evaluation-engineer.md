@@ -58,7 +58,7 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): weak signal; services channels only [T0-11]
-- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
+- **Optional:** LangChain Certified Agent Engineer (LCAE): Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76) [T0-29]
 
 ## 5. Prerequisites and proof
 

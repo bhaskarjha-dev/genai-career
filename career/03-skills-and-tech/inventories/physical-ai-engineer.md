@@ -6,7 +6,7 @@ stage: 3
 status: published
 last_verified: 2026-11-19
 review_by: 2027-02-17
-summary: "Every skill a Physical AI / Robotics AI Engineer needs: 40 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill a Physical AI / Robotics AI Engineer needs: 43 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [physical-ai-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #17 · **Resume variant:** B3 (ML & Applied Science: Robotics) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-physical-ai-engineer) · [role hub](../../02-roles/hubs/physical-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-physical-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-physical-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**40 skills:** Must 7 · Important 13 · Should 16 · Optional 4. **Evidence:** JD 1 · S 7 · P 32 (80% practice-curated). **Non-technical:** 8.
+**43 skills:** Must 8 · Important 13 · Should 17 · Optional 5. **Evidence:** JD 1 · S 22 · P 20 (47% practice-curated). **Non-technical:** 8.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,18 +28,18 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** Robotics fundamentals [P] · Simulation & sim-to-real [P] · Robot learning & VLA models [S · T0-64]<br>**Important:** Edge inference [P] · Imitation learning [P] · Computer vision & robot perception [S · T0-64] · Control systems [P] · Motion planning [P] · Reinforcement learning [S · T0-64]<br>**Should:** Deep learning & transformers [P] · Quantisation (FP8/FP4, AWQ, GPTQ) [P] · Sensor fusion [P] · SLAM & state estimation [P] · World models [P] · Data pipelines & quality [P]<br>**Optional:** CUDA / Triton / CUTLASS [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Teleoperation data pipelines [P] · Safety cases [P] |
-| Technical: concrete | **Programming language** | **Must:** C++ [P] · Python (production) [P] |
-| Technical: concrete | **Framework / SDK** | **Must:** ROS [P] · PyTorch [JD 48.2% (adjacent)]<br>**Should:** LeRobot [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Robotics fundamentals [S · T0-64] · Simulation & sim-to-real [S · T0-64] · Robot learning & VLA models [S · T0-64]<br>**Important:** Edge inference [S · T0-64] · Imitation learning [S · T0-64] · Computer vision & robot perception [S · T0-64] · Control systems [S · T0-64] · Motion planning [S · T0-64] · Reinforcement learning [S · T0-64]<br>**Should:** Deep learning & transformers [P] · Quantisation (FP8/FP4, AWQ, GPTQ) [P] · Sensor fusion [P] · SLAM & state estimation [P] · World models [P] · Data pipelines & quality [P]<br>**Optional:** CUDA / Triton / CUTLASS [P] · Diffusion & action-chunking policies [S · T0-64] |
+| Technical: knowledge | **Method / practice** | **Must:** Real-robot deployment & hardware bring-up [S · T0-64]<br>**Important:** Teleoperation data pipelines [S · T0-64] · Safety cases [S · T0-64] |
+| Technical: concrete | **Programming language** | **Must:** C++ [S · T0-64] · Python (production) [S · T0-64] |
+| Technical: concrete | **Framework / SDK** | **Must:** ROS [S · T0-64] · PyTorch [JD 48.2% (adjacent)]<br>**Should:** LeRobot [P] |
 | Technical: concrete | **Library / package** | **Should:** OpenCV [P] · TensorRT [P] |
 | Technical: concrete | **Model / model family** | **Optional:** CLIP / SigLIP [P] |
-| Technical: concrete | **Platform / cloud service** | **Should:** Robot simulators (choose 1: NVIDIA Isaac Sim / Isaac Lab \| MuJoCo \| Gazebo) [P] |
+| Technical: concrete | **Platform / cloud service** | **Should:** Robot simulators (choose 1: NVIDIA Isaac Sim / Isaac Lab \| MuJoCo \| Gazebo) [P] · NVIDIA Isaac Sim / Isaac Lab [S · T0-64, T0-68] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Should:** Linux [P] · Docker [P] |
 | Technical: concrete | **Hardware / accelerator** | **Should:** NVIDIA Jetson [P] |
 | Technical: concrete | **Protocol / standard** | **Should:** ONNX [P] |
 | Technical: concrete | **Regulation / framework** | **Should:** Functional-safety standards (IEC 61508, ISO 26262, ISO 10218) [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [P]<br>**Should:** Cross-functional collaboration [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Communication (written & verbal) [S · T0-64]<br>**Should:** Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
 | Non-technical | **Domain knowledge** | **Optional:** Manufacturing & industrial [P] |
@@ -57,7 +57,7 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- None recommended.
+- **Optional:** NVIDIA-Certified Professional: OpenUSD Development (NCP-OUSD): $200 (120 min, 60-70 Q, 24-mo validity); sole catalogued Physical AI/Isaac OpenUSD exam; 0/47 T0-32 JD mentions (T0-32:L197, L449, L848) [T0-32]
 
 ## 5. Prerequisites and proof
 
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Robotics fundamentals` · `kinematics` · `dynamics` · `C++` · `modern C++` · `C++17` · `Python` · `Python 3` · `production Python` · `Simulation & sim-to-real` · `sim-to-real` · `simulation` · `ROS` · `ROS 2` · `Robot Operating System` · `Robot learning & VLA models` · `robot foundation models` · `robot policy learning` · `PyTorch` · `PyTorch 2.x` · `torch` · `Edge inference` · `edge deployment` · `embedded inference` · `Teleoperation data pipelines` · `teleoperation` · `robot data collection` · `Safety cases` · `hazard analysis` · `Imitation learning` · `behaviour cloning` · `diffusion policy` · `Computer vision & robot perception` · `CV` · `image models` · `Control systems` · `control theory` · `MPC` · `Motion planning` · `trajectory planning` · `Communication` · `communication skills` · `verbal communication` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Reinforcement learning` · `RL` · `Deep learning & transformers` · `neural networks` · `transformers` · `Quantisation` · `quantization` · `Sensor fusion` · `Kalman filters` · `SLAM & state estimation` · `localisation` · `mapping` · `World models` · `NVIDIA Isaac Sim / Isaac Lab` · `Isaac Sim` · `Isaac Lab`
+`Robotics fundamentals` · `kinematics` · `dynamics` · `C++` · `modern C++` · `C++17` · `Python` · `Python 3` · `production Python` · `Simulation & sim-to-real` · `sim-to-real` · `simulation` · `ROS` · `ROS 2` · `Robot Operating System` · `Robot learning & VLA models` · `robot foundation models` · `robot policy learning` · `PyTorch` · `PyTorch 2.x` · `torch` · `Real-robot deployment & hardware bring-up` · `Edge inference` · `edge deployment` · `embedded inference` · `Teleoperation data pipelines` · `teleoperation` · `robot data collection` · `Safety cases` · `hazard analysis` · `Imitation learning` · `behaviour cloning` · `diffusion policy` · `Computer vision & robot perception` · `CV` · `image models` · `Control systems` · `control theory` · `MPC` · `Motion planning` · `trajectory planning` · `Communication` · `communication skills` · `verbal communication` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Reinforcement learning` · `RL` · `Deep learning & transformers` · `neural networks` · `transformers` · `Quantisation` · `quantization` · `Sensor fusion` · `Kalman filters` · `SLAM & state estimation` · `localisation` · `mapping` · `World models` · `NVIDIA Isaac Sim / Isaac Lab` · `Isaac Sim`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -84,6 +84,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | ROS | Framework / SDK | M | 3 | | |
 | Robot learning & VLA models | Concept / knowledge area | M | 3 | | |
 | PyTorch | Framework / SDK | M | 3 | | |
+| Real-robot deployment & hardware bring-up | Method / practice | M | 3 | | |
 | Edge inference | Concept / knowledge area | I | 2 | | |
 | Teleoperation data pipelines | Method / practice | I | 2 | | |
 | Safety cases | Method / practice | I | 2 | | |
@@ -102,26 +103,27 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 
 | Skill | Tier | Evidence | Source | Note |
 |---|:---:|---|---|---|
-| Robotics fundamentals | M | P (D) | — | kinematics, dynamics, control |
-| C++ | M | P (D) | — | — |
-| Python (production) | M | P (D) | — | — |
-| Simulation & sim-to-real | M | P (D) | — | — |
-| ROS | M | P (D) | — | ROS 2 middleware |
-| Robot learning & VLA models | M | S (C) | T0-64:L171 | Merged VLA + robot learning (38/48 = 79% all, 11/12 full-text) |
+| Robotics fundamentals | M | S (B) 15% | T0-64:L561 | 7/48 in T0-64; Kinematics, dynamics, control or manipulation named; 6/12 full-text; reword to robot learning plus real-robot experience |
+| C++ | M | S (B) 19% | T0-64:L560 | 9/48 in T0-64; 5/12 in the full-text set; hard-real-time C++ at 1X and Apptronik; Must for runtime and humanoid-OEM variants |
+| Python (production) | M | S (B) 38% | T0-64:L559 | 18/48 in T0-64; All 48 jd records; 10/12 in the full-text set; snippets under-count |
+| Simulation & sim-to-real | M | S (B) 46% | T0-64:L563, T0-64:L588 | 22/48 in T0-64; Named simulator in 11/48; 10/12 full-text; platform 42% (n=4875) |
+| ROS | M | S (B) 15% | T0-64:L564, T0-64:L587 | 7/48 in T0-64; 3/12 full-text; absent at Figure, Skild, Apptronik, 1X and Siemens; Important for integration, deployment and services variants; platform 10% (n= |
+| Robot learning & VLA models | M | S (C) | T0-64:L176 | 79% (38/48) all / 92% (11/12) full-text in T0-64; dominant role core |
 | PyTorch | M | JD (B) 48.2% | JobsPipe: Machine Learning Engineer (adjacent) | 67% full-text Physical AI JDs (T0-64); JobsPipe MLE adjacent share 48.2% |
-| Edge inference | I | P (D) | — | real-time inference on edge hardware |
-| Teleoperation data pipelines | I | P (D) | — | — |
-| Safety cases | I | P (D) | — | — |
-| Imitation learning | I | P (D) | — | — |
+| Real-robot deployment & hardware bring-up | M | S (B) 54% | T0-64:L192 | 26/48 all / 11/12 full-text; core employer emphasis on physical hardware |
+| Edge inference | I | S (B) 21% | T0-64:L566 | 10/48 in T0-64; 4/12 full-text; mainly deployment variants |
+| Teleoperation data pipelines | I | S (B) 27% | T0-64:L567 | 13/48 in T0-64; 6/12 full-text; demonstration and mocap data work |
+| Safety cases | I | S (B) | T0-64:L568 | 0/48 in T0-64 (No formal safety case; generic safety-minded validation wording in 3 postings (Samsung, Agile Robots, Siemens)) |
+| Imitation learning | I | S (B) 42% | T0-64:L570 | 20/48 in T0-64; 10/12 full-text; Must for manipulation-policy variants |
 | Computer vision & robot perception | I | S (C) | T0-64:L173, T0-64:L182 | Merged perception + CV (17/48 = 35% all, 6/12 full-text; variant-dependent) |
-| Control systems | I | P (D) | — | — |
-| Motion planning | I | P (D) | — | — |
-| Communication (written & verbal) | I | P (D) | — | — |
+| Control systems | I | S (B) 13% | T0-64:L572, T0-64:L590 | 6/48 in T0-64; 5/12 full-text; Must for RL and whole-body-control variants (Figure, Apptronik); platform 27% (n=4875) |
+| Motion planning | I | S (B) 4% | T0-64:L573, T0-64:L591 | 2/48 in T0-64; MoveIt and OMPL named once; platform 12% (n=4875) |
+| Communication (written & verbal) | I | S (C) 75% | T0-64:L574 | 9/12 in T0-64; Collaboration wording in the full-text set; explicit communication in 2/12 |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
-| Reinforcement learning | I | S (C) | T0-64:L174 | 42% all, 75% full-text; Must for locomotion/WBC |
+| Reinforcement learning | I | S (C) | T0-64:L191 | 42% (20/48) all / 75% (9/12) full-text in T0-64; Must for locomotion/RL |
 | Deep learning & transformers | S | P (D) | — | — |
 | Quantisation (FP8/FP4, AWQ, GPTQ) | S | P (D) | — | — |
 | Sensor fusion | S | P (D) | — | — |
@@ -138,7 +140,9 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Docker | S | P (D) | — | — |
 | Data pipelines & quality | S | P (D) | — | teleoperation and sensor data |
 | Cross-functional collaboration | S | P (D) | — | hardware, controls and ML teams |
+| NVIDIA Isaac Sim / Isaac Lab | S | S (B) | T0-64:L174, T0-68:L603 | leading robotics simulation stack (simulation 46% all / 10/12 full-text) |
 | CUDA / Triton / CUTLASS | O | P (D) | — | — |
 | CLIP / SigLIP | O | P (D) | — | vision-language features |
 | Manufacturing & industrial | O | P (D) | — | manufacturing and logistics deployments |
 | Mentoring | O | P (D) | — | — |
+| Diffusion & action-chunking policies | O | S (B) 10% | T0-64:L194 | 5/48 all / 3/12 full-text; rising manipulation policy class |

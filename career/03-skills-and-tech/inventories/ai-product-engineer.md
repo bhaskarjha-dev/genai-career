@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #20 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-product-engineer) · [role hub](../../02-roles/hubs/ai-product-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-product-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-product-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**54 skills:** Must 6 · Important 17 · Should 17 · Optional 14. **Evidence:** JD 8 · S 21 · P 25 (46% practice-curated). **Non-technical:** 8.
+**54 skills:** Must 6 · Important 17 · Should 17 · Optional 14. **Evidence:** JD 8 · S 22 · P 24 (44% practice-curated). **Non-technical:** 8.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -31,7 +31,7 @@ generated_by: scripts/build_skills.py
 | Technical: knowledge | **Concept / knowledge area** | **Must:** APIs & integrations [JD 27.6% (feeder)] · LLM APIs & tool calling [S · T0-06] · Frontend engineering [S · T0-06]<br>**Important:** Streaming & agent UX [S · T0-06] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Generative UI [S · T0-06]<br>**Should:** RAG [P] · Agents & tool use [P] · Grounding & citations (hallucination control) [S · T0-06]<br>**Optional:** On-device / WebGPU inference [S · T0-06] · Serverless deployment [P] · Speech & voice AI (ASR, TTS, realtime voice agents) [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Git & CI/CD [JD 37.8% (feeder)] · Agent-UX telemetry [S · T0-06] · Human-in-the-loop design [S · T0-06] · Design craft & visual interaction systems [S · T0-62]<br>**Should:** Prompt engineering [P] · Rapid prototyping [P] |
 | Technical: concrete | **Programming language** | **Must:** TypeScript / JavaScript [JD 52.7% (feeder)]<br>**Important:** Python (production) [JD 41.8% (feeder)] |
-| Technical: concrete | **Framework / SDK** | **Must:** React [JD 69.4% (feeder)]<br>**Important:** Node.js [JD 32.3% (feeder)] · Vercel AI SDK [S · T0-06] · Next.js [P]<br>**Should:** CopilotKit [P] |
+| Technical: concrete | **Framework / SDK** | **Must:** React [JD 69.4% (feeder)]<br>**Important:** Node.js [JD 32.3% (feeder)] · Vercel AI SDK [S · T0-06] · Next.js [S · T0-62]<br>**Should:** CopilotKit [P] |
 | Technical: concrete | **Library / package** | **Optional:** Transformers.js [S · T0-06] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P]<br>**Optional:** Whisper [P] |
 | Technical: concrete | **Platform / cloud service** | **Important:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 41.3% (feeder)]<br>**Should:** Amazon Web Services (AWS) [JD 41.3% (feeder)] · LLM API providers (choose 1: OpenAI API platform \| Anthropic API \| Gemini API) [P]<br>**Optional:** AWS Lambda [P] · Google Cloud Run [P] |
@@ -57,7 +57,7 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- None recommended.
+- **Optional:** GitHub Certified Copilot (GH-300): Optional Copilot developer signal for Microsoft/GitHub-centric product engineering teams (T3-01)
 
 ## 5. Prerequisites and proof
 
@@ -121,7 +121,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Human-in-the-loop design | I | S (C) | T0-06:L564 | human-in-the-loop approval UX |
 | Generative UI | I | S (C) | T0-06:L167 | tool-use visualisation; generative UI components |
 | Vercel AI SDK | I | S (C) | T0-06:L768 | AI SDK 6 |
-| Next.js | I | P (D) | — | — |
+| Next.js | I | S (C) 43.8% | T0-62:L725 | 7/16 in T0-62; Within, humans&, OpenAI, Lucid, Clera, eventfirst, myDataValue. |
 | Server-Sent Events (SSE) | I | S (C) | T0-16:L234 | REST/SSE/WebSocket |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |

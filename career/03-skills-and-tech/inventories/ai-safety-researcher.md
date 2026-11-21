@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #19 · **Resume variant:** C2 (Frontier Research: Science) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-safety-researcher) · [role hub](../../02-roles/hubs/ai-safety-researcher.md) · [narrative skill map](../role-skill-maps.md#skills-ai-safety-researcher) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-safety-researcher) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**41 skills:** Must 4 · Important 13 · Should 20 · Optional 4. **Evidence:** JD 5 · S 12 · P 24 (59% practice-curated). **Non-technical:** 11.
+**41 skills:** Must 4 · Important 13 · Should 20 · Optional 4. **Evidence:** JD 5 · S 15 · P 21 (51% practice-curated). **Non-technical:** 11.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,7 +28,7 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [P]<br>**Important:** Alignment methods [P] · Interpretability [P]<br>**Should:** Deep learning & transformers [JD 18.6% (adjacent)] · LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Reinforcement learning [JD 17.1% (adjacent)] · Statistics (inference, hypothesis tests, regression) [P] · RLHF (reward models, PPO) [P] · Reward modelling [P] · Preference optimisation (DPO and variants) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Data & model poisoning [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [S · T0-60]<br>**Important:** Alignment methods [S · T0-60] · Interpretability [S · T0-60]<br>**Should:** Deep learning & transformers [JD 18.6% (adjacent)] · LLM evaluation (golden sets, calibrated judges, CI gates) [P] · Reinforcement learning [JD 17.1% (adjacent)] · Statistics (inference, hypothesis tests, regression) [P] · RLHF (reward models, PPO) [P] · Reward modelling [P] · Preference optimisation (DPO and variants) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Data & model poisoning [P] |
 | Technical: knowledge | **Method / practice** | **Must:** Research methods & re-implementation [P]<br>**Important:** Safety & capability evals [S · T0-15] · Red-teaming [S · T0-15] · AI incident management & reporting [S · T0-15]<br>**Should:** Eval statistics (CIs, power, pass^k) [P] · LLM-as-judge design & calibration [P] · Agent evaluation (trajectories, task success) [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 42.3% (adjacent)] |
 | Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 25.4% (adjacent)]<br>**Should:** JAX [P] |
@@ -99,13 +99,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 
 | Skill | Tier | Evidence | Source | Note |
 |---|:---:|---|---|---|
-| ML fundamentals | M | P (D) | — | strong ML research foundations |
+| ML fundamentals | M | S (C) 27% | T0-60:L682 | 4/15 in T0-60; SFT, RLHF, RL. |
 | Python (production) | M | JD (B) 42.3% | JobsPipe: Research Scientist (adjacent) | universal in ML research |
 | PyTorch | M | JD (B) 25.4% | JobsPipe: Research Scientist (adjacent) | role-defining in ML research |
 | Research methods & re-implementation | M | P (D) | — | experiment design |
 | Safety & capability evals | I | S (B) | T0-15:L152 | dangerous-capability and safety evals (EU AI Act Art. 55 duties) |
-| Alignment methods | I | P (D) | — | preference learning, scalable oversight |
-| Interpretability | I | P (D) | — | probing, circuits, sparse dictionary methods; no headcount evidence |
+| Alignment methods | I | S (C) 53% | T0-60:L684 | 8/15 in T0-60 |
+| Interpretability | I | S (C) 27% | T0-60:L686 | 4/15 in T0-60; Must for the interpretability variant. |
 | Red-teaming | I | S (B) | T0-15:L221 | adversarial testing |
 | AI incident management & reporting | I | S (C) | T0-15:L221 | incident analysis |
 | Novel research & publications | I | S (B) | T0-06:L706 | fellowship projects; published safety research |

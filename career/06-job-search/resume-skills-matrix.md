@@ -4,21 +4,22 @@ title: "GenAI Resume Skills Matrix"
 content_type: reference
 stage: 6
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-19
+review_by: 2027-02-17
 summary: "The concise skills section for every role (Must / Important / Should / Optional headline skills), shared skills across roles, and a skills-section blueprint per resume variant."
-sources: [T0-03, T0-04, T0-10, T0-11, T0-13]
+sources: [T0-03, T0-04, T0-10, T0-11, T0-13, T0-48, T0-49, T0-50, T0-51, T0-52, T0-53, T0-54, T0-55, T0-56, T0-57, T0-58, T0-59, T0-60, T0-61, T0-62, T0-63, T0-64, T0-65, T0-66, T0-69]
 generated_by: "scripts/build_resume_matrix.py (generated blocks)"
 ---
 # GenAI Resume Skills Matrix
 ## Must / Important / Should / Optional Skills for Every GenAI Role, With Resume-Variant Blueprints
 
-> **Updated:** 2026-11-04 · **Scope:** Programmatic headline resume skills matrix generated from the typed skills ontology.
+> **Updated:** 2026-11-19 · **Scope:** Programmatic headline resume skills matrix generated from the typed skills ontology.
 > **How to use it:** [resume-strategy.md](resume-strategy.md) explains the master → variant → per-posting system that these lists feed.
-> **Role universe:** the individual-contributor roles of the [role catalog](../02-roles/role-catalog.md), in the order of the [GenAI target roles](../02-roles/genai-target-roles.md), plus the employed leadership tracks.
+> **Role universe:** all 29 canonical roles of the [role catalog](../02-roles/role-catalog.md): the 24 individual-contributor roles in the order of the [GenAI target roles](../02-roles/genai-target-roles.md), plus the 5 leadership and independent tracks.
 > **Sources:**
 > - Tiers and evidence tags: [data/skills_ontology.json](../../data/skills_ontology.json), shown in full in the [role skill inventories](../03-skills-and-tech/role-skill-inventories.md).
-> - JobsPipe job-description measurements, retrieved 2026-11-02 [B] ([data/posting_skill_shares.json](../../data/posting_skill_shares.json)).
-> - Skill shares from T0-03, T0-15 and T0-16.
+> - JobsPipe job-description measurements (count date 2026-09-10, retrieved 2026-11-02, unchanged 2026-11-14 [B · T0-69 KF7]; [data/posting_skill_shares.json](../../data/posting_skill_shares.json)).
+> - Skill shares and role dossiers from T0-03, T0-15, T0-16, RP2 dossiers T0-48 to T0-66 and T0-69.
 >
 > **Concise layer of one ontology:** this file shows only the *headline* skills, the resume phrases that fit a skills section. The complete typed inventory for each role (every concept, method, tool, framework, platform and non-technical skill, with evidence) is in [role-skill-inventories.md](../03-skills-and-tech/role-skill-inventories.md); each role block below links to it.
 >
@@ -87,21 +88,24 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 <!-- BEGIN GENERATED: scripts/build_resume_matrix.py (variant blueprints) -->
 | Variant | Anchor role (base skills section = its Must + Important skills) | Swap in for sibling roles (their Must/Important skills the anchor lacks) | Hygiene: list if true |
 |---|---|---|---|
-| **A1** Builder | **[AI Engineer](#resume-ai-engineer):** Python (production), LLM APIs & tool calling, Agents & tool use, RAG, LLM evaluation (golden sets, calibrated judges, CI gates), Retrieval quality (hybrid, reranking, recall@k), Agent reliability (durable state, budgets, approvals), Cost & latency engineering, Observability (OpenTelemetry traces, metrics), LLM security (prompt injection, OWASP), Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search | **[Agentic AI Engineer](#resume-agentic-ai-engineer):** MCP (Model Context Protocol), Containment (DLP, sandboxing, egress), Agent frameworks (LangGraph, Agents SDKs), Human-in-the-loop design; **[AI Evaluation Engineer](#resume-ai-evaluation-engineer):** Testing (pytest), Eval statistics (CIs, power, pass^k), Error analysis, Experiment design & A/B testing, Benchmark construction, Rubrics & inter-rater agreement; **[AI Product Engineer](#resume-ai-product-engineer):** React, TypeScript / JavaScript, APIs & integrations, Streaming & agent UX, Agent-UX telemetry, Human-in-the-loop design; **[AI Enablement Engineer](#resume-ai-enablement-engineer):** Internal tooling & DevEx, Change management & adoption, MCP (Model Context Protocol), Guardrails, Coding agents & AI-assisted engineering, Pilots & adoption measurement, GRC & risk assessment | Docker, SQL, TypeScript / JavaScript, Token & unit economics |
-| **A2** Deployer | **[Forward Deployed Engineer (AI)](#resume-forward-deployed-engineer):** Python (production), APIs & integrations, LLM APIs & tool calling, RAG, Customer scoping & demos, Retrieval quality (hybrid, reranking, recall@k), OAuth/OIDC, RBAC, SSO, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Domain expertise, Stakeholder communication | **[Applied AI Engineer](#resume-applied-ai-engineer):** Guardrails, Prompt & context design, Technical writing, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search; **[AI / GenAI Solutions Architect](#resume-ai-solutions-architect):** AWS / Azure / GCP, GenAI reference architectures, Pre-sales, Leadership & mentoring, GRC & risk assessment, Managed AI (Bedrock, Azure OpenAI, Vertex), Cost & latency engineering, Token & unit economics | TypeScript / JavaScript, Docker, Observability (OpenTelemetry traces, metrics) |
+| **A1** Builder | **[AI Engineer](#resume-ai-engineer):** Python (production), LLM APIs & tool calling, Agents & tool use, RAG, LLM evaluation (golden sets, calibrated judges, CI gates), Retrieval quality (hybrid, reranking, recall@k), Agent reliability (durable state, budgets, approvals), Cost & latency engineering, Observability (OpenTelemetry traces, metrics), LLM security (prompt injection, OWASP), Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search, Product sense | **[Agentic AI Engineer](#resume-agentic-ai-engineer):** MCP (Model Context Protocol), Containment (DLP, sandboxing, egress), Agent frameworks (LangGraph, Agents SDKs), Human-in-the-loop design; **[AI Evaluation Engineer](#resume-ai-evaluation-engineer):** Testing (pytest), Eval statistics (CIs, power, pass^k), Error analysis, Experiment design & A/B testing, Benchmark construction, Human evaluation programmes, Rubrics & inter-rater agreement; **[AI Product Engineer](#resume-ai-product-engineer):** React, TypeScript / JavaScript, APIs & integrations, Streaming & agent UX, Agent-UX telemetry, Human-in-the-loop design; **[AI Enablement Engineer](#resume-ai-enablement-engineer):** Internal tooling & DevEx, Change management & adoption, Teaching & workshop delivery, MCP (Model Context Protocol), Guardrails, Coding agents & AI-assisted engineering, Pilots & adoption measurement, GRC & risk assessment | Docker, SQL, TypeScript / JavaScript, Token & unit economics |
+| **A2** Deployer | **[Forward Deployed Engineer (AI)](#resume-forward-deployed-engineer):** Python (production), APIs & integrations, LLM APIs & tool calling, RAG, Customer scoping & demos, Retrieval quality (hybrid, reranking, recall@k), OAuth/OIDC, RBAC, SSO, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Domain expertise, Stakeholder communication, Customer-facing communication | **[Applied AI Engineer](#resume-applied-ai-engineer):** Guardrails, Prompt & context design, Technical writing, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search; **[AI / GenAI Solutions Architect](#resume-ai-solutions-architect):** AWS / Azure / GCP, GenAI reference architectures, Pre-sales, Leadership & mentoring, GRC & risk assessment, Managed AI (Bedrock, Azure OpenAI, Vertex), Cost & latency engineering, Token & unit economics | TypeScript / JavaScript, Docker, Observability (OpenTelemetry traces, metrics) |
 | **B1** Engineer | **[Machine Learning Engineer (GenAI/LLM track)](#resume-ml-engineer):** ML fundamentals, Python (production), PyTorch, Deep learning & transformers, LLM APIs & tool calling, Data structures & algorithms, TensorFlow / JAX, Experiment design & A/B testing, C++, Fine-tuning (SFT, LoRA), LLM evaluation (golden sets, calibrated judges, CI gates), Serving literacy (vLLM, batching, quantisation), Embedding & reranker models, Data pipelines & quality, Eval statistics (CIs, power, pass^k) | — | SQL, Git & CI/CD, Docker, AWS / Azure / GCP, RAG, Stakeholder communication, APIs & integrations, Linear algebra, System design, Error analysis, Quantisation (FP8/FP4, AWQ, GPTQ) |
 | **B2** Scientist | **[Applied Scientist (GenAI/LLM teams)](#resume-applied-scientist):** ML fundamentals, Python (production), PyTorch, Experiment design & A/B testing, Data structures & algorithms, Research-to-production, SQL, LLM APIs & tool calling, Eval statistics (CIs, power, pass^k), Fine-tuning (SFT, LoRA), Causal inference, Research methods & re-implementation, Deep learning & transformers | — | LLM evaluation (golden sets, calibrated judges, CI gates), Data pipelines & quality, Stakeholder communication, AWS / Azure / GCP, Testing (pytest), Git & CI/CD, Docker, Recommender systems |
-| **B3** Robotics | **[Physical AI / Robotics AI Engineer](#resume-physical-ai-engineer):** Robotics fundamentals, C++, Python (production), Simulation & sim-to-real, ROS, Robot learning & VLA models, PyTorch, Edge inference, Teleoperation data pipelines, Safety cases, Computer vision & robot perception, Reinforcement learning | — | Deep learning & transformers, Quantisation (FP8/FP4, AWQ, GPTQ), Linux, Docker, Data pipelines & quality |
+| **B3** Robotics | **[Physical AI / Robotics AI Engineer](#resume-physical-ai-engineer):** Robotics fundamentals, C++, Python (production), Simulation & sim-to-real, ROS, Robot learning & VLA models, PyTorch, Real-robot deployment & hardware bring-up, Edge inference, Teleoperation data pipelines, Safety cases, Imitation learning, Computer vision & robot perception, Reinforcement learning | — | Deep learning & transformers, Quantisation (FP8/FP4, AWQ, GPTQ), Linux, Docker, Data pipelines & quality |
 | **C1** Engineering | **[Research Engineer / Member of Technical Staff](#resume-research-engineer):** Python (production), PyTorch, PyTorch internals, ML fundamentals, Deep learning & transformers, Data structures & algorithms, Distributed training (FSDP2, TP/PP, MoE), Post-training (SFT, preference, RL), Training-run debugging, LLM evaluation (golden sets, calibrated judges, CI gates), Profiling & roofline (Nsight), Data pipelines & quality | — | Linux, C++, Continuous batching & KV cache, vLLM / SGLang / TensorRT-LLM, Reinforcement learning, Research methods & re-implementation |
 | **C2** Science | **[Research Scientist (LLM research)](#resume-research-scientist):** ML fundamentals, Python (production), PyTorch, Deep learning & transformers, Research methods & re-implementation, Linear algebra, Novel research & publications, Data structures & algorithms, Clear writing & presenting, Reinforcement learning, Post-training (SFT, preference, RL), LLM evaluation (golden sets, calibrated judges, CI gates) | **[Frontier AI Safety / Alignment Researcher](#resume-ai-safety-researcher):** Safety & capability evals, Alignment methods, Interpretability, Red-teaming | Eval statistics (CIs, power, pass^k), C++, Distributed training (FSDP2, TP/PP, MoE) |
-| **D1** Serving & kernels | **[Inference / LLM Serving Engineer](#resume-inference-engineer):** Python (production), C++, GPU fundamentals (HBM, prefill vs decode), PyTorch internals, System design, vLLM / SGLang / TensorRT-LLM, Kubernetes, Continuous batching & KV cache, Speculative decoding, Quantisation (FP8/FP4, AWQ, GPTQ), TP/PP & MoE serving, Load testing & latency SLOs, Profiling & roofline (Nsight), Cost & latency engineering | **[GPU Kernel / ML Compiler Engineer](#resume-gpu-kernel-engineer):** CUDA / Triton / CUTLASS, Linear algebra, Attention, GEMM & quantised kernels, GPU memory performance, Numerics validation, ML compilers (XLA, TorchInductor) | Linux, Model supply chain & CVEs, Observability (OpenTelemetry traces, metrics), Constrained decoding, Token & unit economics |
+| **D1** Serving & kernels | **[Inference / LLM Serving Engineer](#resume-inference-engineer):** Python (production), C++, GPU fundamentals (HBM, prefill vs decode), PyTorch internals, System design, vLLM / SGLang / TensorRT-LLM, Kubernetes, Continuous batching & KV cache, Speculative decoding, Quantisation (FP8/FP4, AWQ, GPTQ), TP/PP & MoE serving, Load testing & latency SLOs, Profiling & roofline (Nsight), Cost & latency engineering | **[GPU Kernel / ML Compiler Engineer](#resume-gpu-kernel-engineer):** CUDA / Triton / CUTLASS, Attention, GEMM & quantised kernels, GPU memory performance, Numerics validation, ML compilers (XLA, TorchInductor), Upstream open-source contributions | Linux, Model supply chain & CVEs, Observability (OpenTelemetry traces, metrics), Constrained decoding, Token & unit economics, Linear algebra |
 | **D2** Platform & infrastructure | **[AI Infrastructure / GPU Platform Engineer](#resume-ai-infrastructure-engineer):** Linux, Kubernetes, Networking, Terraform / IaC, Python (production), SRE (SLOs, on-call, incidents), Observability (OpenTelemetry traces, metrics), GPU fleet ops & scheduling, Git & CI/CD, Docker, AWS / Azure / GCP, System design, NCCL / RDMA / InfiniBand, Checkpointing & storage throughput, Hardware-fault reliability, Capacity & GPU/API cost governance | **[ML Platform / MLOps](#resume-ml-platform-engineer):** MLOps lifecycle (model & prompt CI/CD), KServe / Ray Serve, LLM gateways, OAuth/OIDC, RBAC, SSO, Model supply chain & CVEs, vLLM / SGLang / TensorRT-LLM | Go / Java, KServe / Ray Serve, vLLM / SGLang / TensorRT-LLM, MCP (Model Context Protocol) |
 | **D3** Security | **[AI Security Engineer / AI Red Teamer](#resume-ai-security-engineer):** AppSec & threat modelling, Python (production), OAuth/OIDC, RBAC, SSO, Incident response & SIEM, LLM security (prompt injection, OWASP), Prompt-injection attack & defence, Red-teaming, Agent abuse & MCP authorisation, Model supply chain & CVEs, Containment (DLP, sandboxing, egress), AWS / Azure / GCP | — | MCP (Model Context Protocol), Observability (OpenTelemetry traces, metrics), Docker, Kubernetes |
-| **E1** Product | **[AI Product Manager](#resume-ai-product-manager):** Product management, Stakeholder communication, AI literacy (tokens, RAG vs fine-tune, cost), Rubrics & inter-rater agreement, Leadership & mentoring, GRC & risk assessment, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement | — | Python/SQL (notebook level), Agents & tool use, Human-in-the-loop design, Domain expertise, Technical writing, LLM evaluation (golden sets, calibrated judges, CI gates) |
+| **E1** Product | **[AI Product Manager](#resume-ai-product-manager):** Product management, Stakeholder communication, AI literacy (tokens, RAG vs fine-tune, cost), Rubrics & inter-rater agreement, Leadership & mentoring, GRC & risk assessment, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement, Product sense | — | Python/SQL (notebook level), Agents & tool use, Human-in-the-loop design, Domain expertise, Technical writing, LLM evaluation (golden sets, calibrated judges, CI gates) |
 | **E2** Governance & assurance | **[AI Governance Programme Lead / Manager](#resume-ai-governance-lead):** GRC & risk assessment, EU AI Act / NIST AI RMF / ISO 42001, Stakeholder communication, AI inventory & risk register, Sector rules (SR 26-2, LL144, DPDP), Content provenance (EU AI Act Art. 50), Privacy law & DPO duties, Observability (OpenTelemetry traces, metrics), Python/SQL (notebook level), AI operating model & governance boards | **[AI Risk, Audit & Compliance Specialist](#resume-ai-risk-assurance-specialist):** Audit methodology, Model validation, Fairness & explainability tools, Risk & compliance docs (Annex IV, model cards), Technical writing; **[Responsible AI / AI Governance Engineer](#resume-responsible-ai-engineer):** Python (production), ML fundamentals, Risk & compliance docs (Annex IV, model cards), LLM evaluation (golden sets, calibrated judges, CI gates), Guardrails, Fairness & explainability tools | Technical writing |
-| **E3** Domain evaluation | **[Domain Evaluation Specialist / AI Trainer](#resume-domain-evaluation-specialist):** Domain expertise, Clear writing & presenting, Rubrics & inter-rater agreement, Error analysis, Annotation workflows, Benchmark construction | — | AI literacy (tokens, RAG vs fine-tune, cost), Red-teaming, Eval statistics (CIs, power, pass^k), Technical writing, LLM evaluation (golden sets, calibrated judges, CI gates) |
-| **L1** AI Engineering Manager / Director | **[AI Engineering Manager / Director](#resume-ai-engineering-manager):** Leadership & mentoring, Stakeholder communication, GRC & risk assessment, System design, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics), Capacity & GPU/API cost governance, Guardrails, AI strategy & portfolio | — | Agents & tool use, Token & unit economics, AI literacy (tokens, RAG vs fine-tune, cost), MLOps lifecycle (model & prompt CI/CD), SRE (SLOs, on-call, incidents), Python (production) |
-| **L2** VP / Head of AI / CAIO | **[VP / Head of AI / CAIO](#resume-vp-head-of-ai):** AI strategy & portfolio, Leadership & mentoring, Stakeholder communication, AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001, Token & unit economics, Capacity & GPU/API cost governance | — | GRC & risk assessment, Product management, AI literacy (tokens, RAG vs fine-tune, cost), LLM evaluation (golden sets, calibrated judges, CI gates), Change management & adoption, AI inventory & risk register |
+| **E3** Domain evaluation | **[Domain Evaluation Specialist / AI Trainer](#resume-domain-evaluation-specialist):** Domain expertise, Clear writing & presenting, Rubrics & inter-rater agreement, Human evaluation programmes, Error analysis, Annotation workflows, Benchmark construction | — | AI literacy (tokens, RAG vs fine-tune, cost), Red-teaming, Eval statistics (CIs, power, pass^k), Technical writing, LLM evaluation (golden sets, calibrated judges, CI gates) |
+| **L1** AI Engineering Manager / Director | **[AI Engineering Manager / Director](#resume-ai-engineering-manager):** Leadership & mentoring, Stakeholder communication, Technical leadership, System design, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics), AI strategy & portfolio | — | Capacity & GPU/API cost governance, Agents & tool use, Token & unit economics, AI literacy (tokens, RAG vs fine-tune, cost), MLOps lifecycle (model & prompt CI/CD), SRE (SLOs, on-call, incidents), Python (production) |
+| **L2** VP / Head of AI | **[VP / Head of AI](#resume-vp-head-of-ai):** AI strategy & portfolio, Leadership & mentoring, Stakeholder communication, AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001 | — | GRC & risk assessment, Product management, AI literacy (tokens, RAG vs fine-tune, cost), LLM evaluation (golden sets, calibrated judges, CI gates), Technical leadership, Change management & adoption, AI inventory & risk register |
+| **L3** Chief AI Officer (CAIO) | **[Chief AI Officer](#resume-chief-ai-officer):** AI strategy & portfolio, GRC & risk assessment, Leadership & mentoring, Stakeholder communication, AI operating model & governance boards, Change management & adoption, Domain expertise | — | EU AI Act / NIST AI RMF / ISO 42001, LLM evaluation (golden sets, calibrated judges, CI gates), Privacy law & DPO duties |
+| **L4** Independent AI Consultant / Contract Builder | **[Independent AI Consultant / Contract Builder](#resume-independent-ai-consultant):** Python (production), LLM APIs & tool calling, Agents & tool use, AWS / Azure / GCP, RAG, ML fundamentals, Stakeholder communication, Git & CI/CD, LLM evaluation (golden sets, calibrated judges, CI gates), APIs & integrations, Domain expertise, Customer-facing communication, MCP (Model Context Protocol) | — | Docker, SQL, MLOps lifecycle (model & prompt CI/CD), AI strategy & portfolio, GRC & risk assessment, Data pipelines & quality, Leadership & mentoring, Privacy law & DPO duties |
+| **L5** Fractional AI Leader | **[Fractional AI Leader](#resume-fractional-ai-leader):** AI strategy & portfolio, GRC & risk assessment, Change management & adoption, Leadership & mentoring, Stakeholder communication, Agents & tool use, Domain expertise, Teaching & workshop delivery, AI operating model & governance boards | — | MLOps lifecycle (model & prompt CI/CD), LLM evaluation (golden sets, calibrated judges, CI gates), AWS / Azure / GCP, Privacy law & DPO duties |
 <!-- END GENERATED -->
 
 ---
@@ -117,10 +121,10 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 | Tier | Skills, in priority order |
 |---|---|
 | **Must** | Python (production), LLM APIs & tool calling, Agents & tool use, RAG |
-| **Important** | LLM evaluation (golden sets, calibrated judges, CI gates), Retrieval quality (hybrid, reranking, recall@k), Agent reliability (durable state, budgets, approvals), Cost & latency engineering, Observability (OpenTelemetry traces, metrics), LLM security (prompt injection, OWASP), Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search |
+| **Important** | LLM evaluation (golden sets, calibrated judges, CI gates), Retrieval quality (hybrid, reranking, recall@k), Agent reliability (durable state, budgets, approvals), Cost & latency engineering, Observability (OpenTelemetry traces, metrics), LLM security (prompt injection, OWASP), Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search, Product sense |
 | **Should** | APIs & integrations, Docker, SQL, Agent frameworks (LangGraph, Agents SDKs), TypeScript / JavaScript, System design, Guardrails, Embedding & reranker models, Error analysis, Human-in-the-loop design, Load testing & latency SLOs, Stakeholder communication, Token & unit economics, Coding agents & AI-assisted engineering |
 | **Optional** | MCP (Model Context Protocol), Self-hosting open models, Fine-tuning (SFT, LoRA), Constrained decoding, Managed AI (Bedrock, Azure OpenAI, Vertex), Kubernetes, Domain expertise |
-| **Avoid** | Wrapper-only demos; framework-syntax mastery as a headline; new RAGAS dependencies; "Prompt Engineer" as your title |
+| **Avoid** | Wrapper-only demos; framework-syntax mastery as a headline; OpenAI Assistants API (retired 2026-08-26); "Prompt Engineer" as your title |
 
 - **Prerequisites:** No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 "Senior AI Engineer" cut assumes 5+ years [B]. About 72% of US AI-engineering postings state a degree [C · T0-06] and 75% of 903 Glassdoor US postings mention one (24% bachelor's, 24% master's, 28% PhD; "mention", not "require") [C · T0-23], while nearly 25% of AI postings in Atlanta Fed Lightcast data list no education requirement [A · T0-23].
 - **Proof to show:** An evaluated end-to-end system over a real corpus (metrics table, cost/latency budget, reproducible README); for T2–T3, a second system with a different failure surface plus CI-gated evals, traces, a load test and a postmortem.
@@ -137,7 +141,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 | **Important** | LLM APIs & tool calling, Data structures & algorithms, TensorFlow / JAX, Experiment design & A/B testing, C++, Fine-tuning (SFT, LoRA), LLM evaluation (golden sets, calibrated judges, CI gates), Serving literacy (vLLM, batching, quantisation), Embedding & reranker models, Data pipelines & quality, Eval statistics (CIs, power, pass^k) |
 | **Should** | SQL, Git & CI/CD, Docker, AWS / Azure / GCP, RAG, Stakeholder communication, APIs & integrations, Linear algebra, System design, Error analysis, Quantisation (FP8/FP4, AWQ, GPTQ) |
 | **Optional** | Distributed training (FSDP2, TP/PP, MoE), Post-training (SFT, preference, RL), CUDA / Triton / CUTLASS, Recommender systems, MLOps lifecycle (model & prompt CI/CD), Kubernetes, Domain expertise |
-| **Avoid** | Fine-tuning as the default answer (70% of 20 studied production systems used off-the-shelf models); tools you have only read about |
+| **Avoid** | Fine-tuning as the default answer (70%, 14/20 interviewed production agent teams in arXiv 2512.04123v2 used off-the-shelf models, B · T0-03); dormant torchtune workflows; tools you have only read about |
 
 - **Prerequisites:** Degree common (72% in Axial Search [C · T0-06]; 75% of 903 Glassdoor US postings mention a degree [C · T0-23]; nearly 25% in Atlanta Fed Lightcast data list none [A · T0-23]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06].
 - **Proof to show:** A baseline-first model with measured lift and error analysis; a prompt vs RAG vs fine-tune comparison with cost and quality; a serving benchmark (tokens/s, p95, $/M tokens); small-budget training evidence (FSDP2 smoke tests, MFU).
@@ -163,12 +167,12 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 <a id="resume-forward-deployed-engineer"></a>
 #### #4 · Forward Deployed Engineer (AI) · variant A2
-*Basis: Catalog tiers ([S]/[P]); no JD measurement.*
+*Basis: RP2 T0-51 (n=28 FDE postings; excerpt-based lower bounds) + catalog tiers ([S]/[P]).*
 
 | Tier | Skills, in priority order |
 |---|---|
 | **Must** | Python (production), APIs & integrations, LLM APIs & tool calling, RAG, Customer scoping & demos |
-| **Important** | Retrieval quality (hybrid, reranking, recall@k), OAuth/OIDC, RBAC, SSO, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Domain expertise, Stakeholder communication |
+| **Important** | Retrieval quality (hybrid, reranking, recall@k), OAuth/OIDC, RBAC, SSO, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Domain expertise, Stakeholder communication, Customer-facing communication |
 | **Should** | TypeScript / JavaScript, AWS / Azure / GCP, Docker, SQL, Data pipelines & quality, Managed AI (Bedrock, Azure OpenAI, Vertex), Agent reliability (durable state, budgets, approvals), System design, Coding agents & AI-assisted engineering |
 | **Optional** | Self-hosting open models, Product management, MCP (Model Context Protocol), Change management & adoption, AppSec & threat modelling, Pre-sales, Agent frameworks (LangGraph, Agents SDKs) |
 | **Avoid** | A pre-sales-only story with no production code; vague "AI solutions" claims without customer outcomes |
@@ -203,7 +207,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 |---|---|
 | **Must** | Python (production), LLM APIs & tool calling, RAG, Agents & tool use, Customer scoping & demos, LLM evaluation (golden sets, calibrated judges, CI gates) |
 | **Important** | Guardrails, Prompt & context design, Technical writing, Retrieval quality (hybrid, reranking, recall@k), ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search |
-| **Should** | APIs & integrations, Docker, Agent frameworks (LangGraph, Agents SDKs), Observability (OpenTelemetry traces, metrics), Cost & latency engineering, Stakeholder communication, TypeScript / JavaScript |
+| **Should** | APIs & integrations, Docker, Agent frameworks (LangGraph, Agents SDKs), Observability (OpenTelemetry traces, metrics), Cost & latency engineering, Customer-facing communication, Stakeholder communication, TypeScript / JavaScript |
 | **Optional** | Fine-tuning (SFT, LoRA), MCP (Model Context Protocol), Managed AI (Bedrock, Azure OpenAI, Vertex), Domain expertise |
 | **Avoid** | Generic chatbot demos; no evidence of working with external users |
 
@@ -238,7 +242,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 | **Must** | ML fundamentals, Python (production), PyTorch, Deep learning & transformers, Research methods & re-implementation, Linear algebra, Novel research & publications |
 | **Important** | Data structures & algorithms, Clear writing & presenting, Reinforcement learning, Post-training (SFT, preference, RL), LLM evaluation (golden sets, calibrated judges, CI gates) |
 | **Should** | C++, Distributed training (FSDP2, TP/PP, MoE), Eval statistics (CIs, power, pass^k) |
-| **Optional** | LLM APIs & tool calling, Interpretability, Alignment methods, Pre-training at scale, Computer vision & robot perception |
+| **Optional** | LLM APIs & tool calling, Interpretability, Alignment methods, Pre-training at scale, Computer vision & robot perception, Technical leadership |
 | **Avoid** | Unpublished claims of novelty; burying the publication list |
 
 - **Prerequisites:** PhD plus publications; frontier offers are "not plannable" [D · T0-06].
@@ -305,7 +309,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 |---|---|
 | **Must** | AWS / Azure / GCP, GenAI reference architectures, Stakeholder communication, Pre-sales |
 | **Important** | Leadership & mentoring, GRC & risk assessment, Python (production), Managed AI (Bedrock, Azure OpenAI, Vertex), Cost & latency engineering, Token & unit economics, OAuth/OIDC, RBAC, SSO, RAG, Agents & tool use |
-| **Should** | Terraform / IaC, Networking, Kubernetes, Customer scoping & demos, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics) |
+| **Should** | Terraform / IaC, Networking, Kubernetes, Customer scoping & demos, Customer-facing communication, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics) |
 | **Optional** | LLM gateways, Self-hosting open models, AI strategy & portfolio, Agent frameworks (LangGraph, Agents SDKs), MCP (Model Context Protocol), Domain expertise |
 | **Avoid** | Certification lists in place of delivered architectures |
 
@@ -321,7 +325,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 | Tier | Skills, in priority order |
 |---|---|
 | **Must** | Product management, Stakeholder communication, AI literacy (tokens, RAG vs fine-tune, cost), Rubrics & inter-rater agreement |
-| **Important** | Leadership & mentoring, GRC & risk assessment, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement |
+| **Important** | Leadership & mentoring, GRC & risk assessment, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement, Product sense |
 | **Should** | Python/SQL (notebook level), Agents & tool use, Human-in-the-loop design, Domain expertise, Technical writing, LLM evaluation (golden sets, calibrated judges, CI gates) |
 | **Optional** | Risk & compliance docs (Annex IV, model cards), MCP (Model Context Protocol), AI strategy & portfolio |
 | **Avoid** | "AI-powered" buzzwords without a shipped model feature or metrics |
@@ -339,11 +343,11 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 |---|---|
 | **Must** | Python (production), LLM APIs & tool calling, Agents & tool use, Prompt & context design |
 | **Important** | Agent reliability (durable state, budgets, approvals), MCP (Model Context Protocol), Containment (DLP, sandboxing, egress), LLM evaluation (golden sets, calibrated judges, CI gates), LLM security (prompt injection, OWASP), Agent frameworks (LangGraph, Agents SDKs), Human-in-the-loop design |
-| **Should** | RAG, Observability (OpenTelemetry traces, metrics), AWS / Azure / GCP, TypeScript / JavaScript, Git & CI/CD, Kubernetes, SQL, Docker, Token & unit economics, Coding agents & AI-assisted engineering |
+| **Should** | RAG, Observability (OpenTelemetry traces, metrics), AWS / Azure / GCP, TypeScript / JavaScript, Git & CI/CD, Kubernetes, SQL, Docker, Product sense, Token & unit economics, Coding agents & AI-assisted engineering |
 | **Optional** | Constrained decoding, Retrieval quality (hybrid, reranking, recall@k), Domain expertise |
 | **Avoid** | AutoGen (dormant); CrewAI as a headline (absent from tier-1 lab postings); demo agents with no failure handling |
 
-- **Prerequisites:** Usually an AI Engineer title in practice; the standalone title is small (~66 + 28 postings in 90 days).
+- **Prerequisites:** Usually an AI Engineer title in practice; standalone 'agentic' titles are a niche (Skilark: 107 of 28,771 AI listings = 0.37%, Feb 2026 [C · T0-57 L118]; IT Jobs Watch ~7 UK permanent in 6 mo).
 - **Proof to show:** An agent with human approval, sandboxed tools, deterministic trace replay and failure-injection tests (timeouts, malformed arguments, prompt injection), reporting cost per task.
 - **Posting terms to mirror:** agentic AI, agents, multi-agent, LangGraph (35.8% of Agentic AI Engineer postings), LangChain, MCP, tool calling.
 - **Links:** [Role profile](../02-roles/role-catalog.md#profile-agentic-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/agentic-ai-engineer.md)
@@ -355,7 +359,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 | Tier | Skills, in priority order |
 |---|---|
 | **Must** | Python (production), LLM evaluation (golden sets, calibrated judges, CI gates), Testing (pytest), LLM APIs & tool calling |
-| **Important** | Eval statistics (CIs, power, pass^k), Error analysis, Experiment design & A/B testing, Retrieval quality (hybrid, reranking, recall@k), Benchmark construction, Git & CI/CD, Rubrics & inter-rater agreement |
+| **Important** | Eval statistics (CIs, power, pass^k), Error analysis, Experiment design & A/B testing, Retrieval quality (hybrid, reranking, recall@k), Benchmark construction, Git & CI/CD, Human evaluation programmes, Rubrics & inter-rater agreement |
 | **Should** | Observability (OpenTelemetry traces, metrics), SQL, RAG, Agents & tool use, Metrics for non-deterministic systems |
 | **Optional** | Safety & capability evals, Red-teaming, Annotation workflows, Domain expertise |
 | **Avoid** | Eval-platform brand lock-in (7 acquisitions/closures in 13 months; OpenAI hosted Evals shutdown 2026-11-30); storing master API keys in SaaS eval platforms; 'accuracy' claims without CIs |
@@ -371,9 +375,9 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 | Tier | Skills, in priority order |
 |---|---|
-| **Must** | C++, CUDA / Triton / CUTLASS, GPU fundamentals (HBM, prefill vs decode), Linear algebra, Profiling & roofline (Nsight) |
-| **Important** | Attention, GEMM & quantised kernels, GPU memory performance, Numerics validation, ML compilers (XLA, TorchInductor), Quantisation (FP8/FP4, AWQ, GPTQ) |
-| **Should** | Python (production), PyTorch internals |
+| **Must** | C++, CUDA / Triton / CUTLASS, GPU fundamentals (HBM, prefill vs decode), Profiling & roofline (Nsight) |
+| **Important** | Attention, GEMM & quantised kernels, GPU memory performance, Numerics validation, ML compilers (XLA, TorchInductor), Upstream open-source contributions |
+| **Should** | Linear algebra, Quantisation (FP8/FP4, AWQ, GPTQ), Python (production), PyTorch internals |
 | **Optional** | Tile DSLs (Helion, CuteDSL), TPU / Trainium / ROCm, NCCL / RDMA / InfiniBand |
 | **Avoid** | Raw-kernel claims without benchmarks and correctness tests |
 
@@ -384,12 +388,12 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 <a id="resume-physical-ai-engineer"></a>
 #### #17 · Physical AI / Robotics AI Engineer · variant B3
-*Basis: Practice-curated ([P]); no skill measurements in the corpus.*
+*Basis: RP2 T0-64 (n=48 Physical AI postings, 12 full-text; lower bounds) + platform cross-check (n=4,875, Grade B) + catalog tiers.*
 
 | Tier | Skills, in priority order |
 |---|---|
-| **Must** | Robotics fundamentals, C++, Python (production), Simulation & sim-to-real, ROS, Robot learning & VLA models, PyTorch |
-| **Important** | Edge inference, Teleoperation data pipelines, Safety cases, Computer vision & robot perception, Reinforcement learning |
+| **Must** | Robotics fundamentals, C++, Python (production), Simulation & sim-to-real, ROS, Robot learning & VLA models, PyTorch, Real-robot deployment & hardware bring-up |
+| **Important** | Edge inference, Teleoperation data pipelines, Safety cases, Imitation learning, Computer vision & robot perception, Reinforcement learning |
 | **Should** | Deep learning & transformers, Quantisation (FP8/FP4, AWQ, GPTQ), Linux, Docker, Data pipelines & quality |
 | **Optional** | CUDA / Triton / CUTLASS |
 | **Avoid** | Simulation-only results presented as real-world performance |
@@ -439,7 +443,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 | Tier | Skills, in priority order |
 |---|---|
-| **Must** | React, TypeScript / JavaScript, APIs & integrations, LLM APIs & tool calling |
+| **Must** | React, TypeScript / JavaScript, APIs & integrations, LLM APIs & tool calling, Product sense |
 | **Important** | Python (production), AWS / Azure / GCP, Git & CI/CD, Streaming & agent UX, Agent-UX telemetry, LLM evaluation (golden sets, calibrated judges, CI gates), Human-in-the-loop design |
 | **Should** | RAG, Agents & tool use, Docker |
 | **Optional** | On-device / WebGPU inference, MCP (Model Context Protocol) |
@@ -480,7 +484,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 | **Avoid** | Pre-1.0 tools (Guardrails AI, Giskard v3, c2pa-python) presented as production-hardened |
 
 - **Prerequisites:** MLOps or security engineering background in a regulated firm.
-- **Proof to show:** A compliance packet mapped to NIST AI 600-1 and the OWASP LLM Top 10, with runtime guardrails, subgroup evals and a calibrated judge on ~100 traces.
+- **Proof to show:** A compliance packet mapped to NIST AI 600-1 and OWASP GenAI LLM Top 10 2026, with runtime guardrails, subgroup evals and a calibrated judge on 100-200 human labels per failure mode (T0-20 L63, L196).
 - **Posting terms to mirror:** responsible AI, AI governance, guardrails, fairness, explainability, EU AI Act, model cards.
 - **Links:** [Role profile](../02-roles/role-catalog.md#profile-responsible-ai-engineer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer) · [Complete typed inventory](../03-skills-and-tech/inventories/responsible-ai-engineer.md)
 
@@ -490,7 +494,7 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 | Tier | Skills, in priority order |
 |---|---|
-| **Must** | Internal tooling & DevEx, Change management & adoption |
+| **Must** | Internal tooling & DevEx, Change management & adoption, Teaching & workshop delivery |
 | **Important** | Python (production), LLM APIs & tool calling, MCP (Model Context Protocol), Agents & tool use, Guardrails, Coding agents & AI-assisted engineering, Pilots & adoption measurement, GRC & risk assessment |
 | **Should** | OAuth/OIDC, RBAC, SSO, RAG, Observability (OpenTelemetry traces, metrics), AWS / Azure / GCP, TypeScript / JavaScript, Token & unit economics, Metrics for non-deterministic systems, Technical writing, Stakeholder communication, AI inventory & risk register, LLM evaluation (golden sets, calibrated judges, CI gates) |
 | **Optional** | LLM gateways, Kubernetes, Docker, Agent frameworks (LangGraph, Agents SDKs), Domain expertise |
@@ -507,10 +511,10 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 | Tier | Skills, in priority order |
 |---|---|
-| **Must** | Domain expertise, Clear writing & presenting, Rubrics & inter-rater agreement |
+| **Must** | Domain expertise, Clear writing & presenting, Rubrics & inter-rater agreement, Human evaluation programmes |
 | **Important** | Error analysis, Annotation workflows, Benchmark construction |
 | **Should** | AI literacy (tokens, RAG vs fine-tune, cost), Red-teaming, Eval statistics (CIs, power, pass^k), Technical writing, LLM evaluation (golden sets, calibrated judges, CI gates) |
-| **Optional** | Python/SQL (notebook level), GRC & risk assessment |
+| **Optional** | Python/SQL (notebook level), Product sense, GRC & risk assessment |
 | **Avoid** | Generic "AI trainer" claims without domain credentials |
 
 - **Prerequisites:** 4+ years in the domain; MA/JD/MD/PhD for premium rates [C · T0-06].
@@ -524,34 +528,85 @@ Each variant is **anchored on its highest-ranked target role**: that role's Must
 
 | Tier | Skills, in priority order |
 |---|---|
-| **Must** | Leadership & mentoring, Stakeholder communication |
-| **Important** | GRC & risk assessment, System design, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics), Capacity & GPU/API cost governance, Guardrails, AI strategy & portfolio |
-| **Should** | Agents & tool use, Token & unit economics, AI literacy (tokens, RAG vs fine-tune, cost), MLOps lifecycle (model & prompt CI/CD), SRE (SLOs, on-call, incidents), Python (production) |
-| **Optional** | EU AI Act / NIST AI RMF / ISO 42001, Agent frameworks (LangGraph, Agents SDKs), AWS / Azure / GCP, Domain expertise |
+| **Must** | Leadership & mentoring, Stakeholder communication, Technical leadership |
+| **Important** | System design, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics), AI strategy & portfolio |
+| **Should** | Capacity & GPU/API cost governance, Agents & tool use, Token & unit economics, AI literacy (tokens, RAG vs fine-tune, cost), MLOps lifecycle (model & prompt CI/CD), SRE (SLOs, on-call, incidents), Python (production) |
+| **Optional** | GRC & risk assessment, Guardrails, EU AI Act / NIST AI RMF / ISO 42001, Agent frameworks (LangGraph, Agents SDKs), AWS / Azure / GCP, Domain expertise |
 | **Avoid** | Team-size bragging without delivery or quality metrics |
 
-- **Prerequisites:** Senior/Staff IC first; AI engineers move into management in under 3 years on average (SignalFire, C).
+- **Prerequisites:** 8+ years engineering plus 2-6 years managing (Anthropic accepts technical leadership for the 2+ years); backend, SRE and devtools managers can cross; PhD not required [A/M · T0-65 L202].
 - **Proof to show:** Delivery record: AI systems shipped, eval/observability practices adopted across teams, cost governance results.
 - **Posting terms to mirror:** leadership (72.7%), communication (51.4%), mentoring (47.1%), compliance (30.9%), system design (25.3%), observability (18.0%), agentic AI (14.8%).
 - **Links:** [Role profile](../02-roles/role-catalog.md#profile-ai-engineering-manager) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/ai-engineering-manager.md)
 
 <a id="resume-vp-head-of-ai"></a>
-#### L2–L3 · VP / Head of AI / CAIO · variant L2
-*Basis: Catalog ([P]/[B]); no JD measurement.*
+#### L2 · VP / Head of AI · variant L2
+*Basis: RP2 T0-65 (n=11 text-visible Head/VP of AI postings, lower bounds) + catalog tiers ([S]/[P]).*
 
 | Tier | Skills, in priority order |
 |---|---|
 | **Must** | AI strategy & portfolio, Leadership & mentoring, Stakeholder communication |
-| **Important** | AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001, Token & unit economics, Capacity & GPU/API cost governance |
-| **Should** | GRC & risk assessment, Product management, AI literacy (tokens, RAG vs fine-tune, cost), LLM evaluation (golden sets, calibrated judges, CI gates), Change management & adoption, AI inventory & risk register |
-| **Optional** | Sector rules (SR 26-2, LL144, DPDP), AWS / Azure / GCP |
+| **Important** | AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001 |
+| **Should** | GRC & risk assessment, Product management, AI literacy (tokens, RAG vs fine-tune, cost), LLM evaluation (golden sets, calibrated judges, CI gates), Technical leadership, Change management & adoption, AI inventory & risk register |
+| **Optional** | Token & unit economics, Capacity & GPU/API cost governance, Sector rules (SR 26-2, LL144, DPDP), AWS / Azure / GCP |
 | **Avoid** | Technology lists in place of business outcomes |
 
-- **Prerequisites:** EM/Director track record; US federal CAIOs are required by OMB M-25-21 [B · T0-15].
+- **Prerequisites:** 5-15+ years (median 10, n=7 in T0-65; 12-18+ in India); player-coach seats accept senior AI engineer or AI PM step-ups while enterprise seats ask for prior EM/Director delivery [B · T0-65 L250, L273, L279].
 - **Proof to show:** Portfolio outcomes: revenue or cost impact, governance boards stood up, vendor decisions.
 - **Posting terms to mirror:** AI strategy, roadmap, governance, operating model, budget, build vs buy.
-- **Links:** [Role profile: vp-head-of-ai](../02-roles/role-catalog.md#profile-vp-head-of-ai) · [Role profile: chief-ai-officer](../02-roles/role-catalog.md#profile-chief-ai-officer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/vp-head-of-ai.md)
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-vp-head-of-ai) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/vp-head-of-ai.md)
+
+<a id="resume-chief-ai-officer"></a>
+#### L3 · Chief AI Officer · variant L3
+*Basis: RP2 T0-65 (n=7 text-visible CAIO postings, including SBI GM & CAIO and Axial full reads; lower bounds) + federal mandate OMB M-25-21 (A).*
+
+| Tier | Skills, in priority order |
+|---|---|
+| **Must** | AI strategy & portfolio, GRC & risk assessment, Leadership & mentoring, Stakeholder communication |
+| **Important** | AI operating model & governance boards, Change management & adoption, Domain expertise |
+| **Should** | EU AI Act / NIST AI RMF / ISO 42001, LLM evaluation (golden sets, calibrated judges, CI gates), Privacy law & DPO duties |
+| **Optional** | AWS / Azure / GCP |
+| **Avoid** | Treating vendor-awarded 'Certified CAIO' titles as executive credentials (no independent assessment, T0-68 G4); applying to junior 'Director, CAIO' posts expecting C-suite scope |
+
+- **Prerequisites:** 12-15+ years total experience with 3-5+ years in director/VP/C-level AI or data leadership (Axial/SBI, T0-65 L323); US federal agency CAIOs are mandated by OMB M-25-21 (2025-04-03, Grade A, T0-65 L292) — private-sector CAIOs are voluntary and often dual-hatted.
+- **Proof to show:** Enterprise AI delivery at scale (e.g. 100,000+ users in SBI), governance forums and independent model-validation oversight stood up, board-level vendor/build-vs-buy decisions and regulatory alignment (RBI/DPDP, GDPR, HIPAA, EU AI Act).
+- **Posting terms to mirror:** AI strategy, AI governance, responsible AI, executive leadership, model validation, regulatory compliance, board reporting, build vs buy, enterprise transformation.
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-chief-ai-officer) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/chief-ai-officer.md)
+
+<a id="resume-independent-ai-consultant"></a>
+#### L4 · Independent AI Consultant / Contract Builder · variant L4
+*Basis: RP2 T0-66: UK IT Jobs Watch GenAI contract benchmark (n=1,466, Grade B) + global direct sample (n=17, lower bounds); delivery-heavy builder role.*
+
+| Tier | Skills, in priority order |
+|---|---|
+| **Must** | Python (production), LLM APIs & tool calling, Agents & tool use, AWS / Azure / GCP, RAG |
+| **Important** | ML fundamentals, Stakeholder communication, Git & CI/CD, LLM evaluation (golden sets, calibrated judges, CI gates), APIs & integrations, Domain expertise, Customer-facing communication, MCP (Model Context Protocol) |
+| **Should** | Docker, SQL, MLOps lifecycle (model & prompt CI/CD), AI strategy & portfolio, GRC & risk assessment, Data pipelines & quality, Leadership & mentoring, Privacy law & DPO duties |
+| **Optional** | PyTorch |
+| **Avoid** | Buying vendor-awarded 'Certified AI Consultant' certificates (avoid per T0-68 G4); competing solely on generic marketplace race-to-the-bottom hourly rates without a vertical case study |
+
+- **Prerequisites:** Proven production shipping record (typically 5+ years engineering/ML) plus client acquisition channel (warm network, specialist staffing or referral; avoid relying on unverified 92% referral claims — independent surveys show 53-75%, T0-66).
+- **Proof to show:** Two to three anonymised client case studies with before/after latency, cost or workflow-time metrics, clean handover docs, and one public category-level evaluation or agent blueprint.
+- **Posting terms to mirror:** Python, LLM, RAG, AI agents, Azure, AWS, GCP, LangGraph, MCP, MLOps, CI/CD, evaluations, stakeholder management, production delivery.
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-independent-ai-consultant) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/independent-ai-consultant.md)
+
+<a id="resume-fractional-ai-leader"></a>
+#### L5 · Fractional AI Leader · variant L5
+*Basis: RP2 T0-66 (n=13 fractional AI leadership postings/briefs; lower bounds; 4 Axial template pages noted).*
+
+| Tier | Skills, in priority order |
+|---|---|
+| **Must** | AI strategy & portfolio, GRC & risk assessment, Change management & adoption, Leadership & mentoring, Stakeholder communication |
+| **Important** | Agents & tool use, Domain expertise, Teaching & workshop delivery, AI operating model & governance boards |
+| **Should** | MLOps lifecycle (model & prompt CI/CD), LLM evaluation (golden sets, calibrated judges, CI gates), AWS / Azure / GCP, Privacy law & DPO duties |
+| **Optional** | Python (production) |
+| **Avoid** | Vendor-awarded 'Fractional CAIO' certificates (avoid per T0-68 G4; 0 independent employer standing); over-promising full-time build output on a 1-day/week retainer |
+
+- **Prerequisites:** Prior Head of AI, VP, CTO or C-suite leadership seat (explicit in 9/13 T0-66 postings, L588); client pipeline via executive network or PE/VC operating-partner referrals (53-75% referral share in independent surveys vs 92% Go Fractional vendor claim, T0-66).
+- **Proof to show:** 2-3 anonymised executive case studies showing AI strategy -> shipped pilot -> measurable ROI, governance policy templates deployed, and permanent hires or vendor contracts structured.
+- **Posting terms to mirror:** Fractional CAIO, Fractional Head of AI, AI strategy, AI governance, ROI, executive communication, change management, vendor selection, PE/SMB AI transformation.
+- **Links:** [Role profile](../02-roles/role-catalog.md#profile-fractional-ai-leader) · [Narrative skill map](../03-skills-and-tech/role-skill-maps.md#skills-leadership) · [Complete typed inventory](../03-skills-and-tech/inventories/fractional-ai-leader.md)
 <!-- END GENERATED -->
 
 ---
-*Posting shares are JobsPipe measurements retrieved 2026-11-02 [B]. Practice-curated items are Grade D. Re-check against live postings at each recount; the next is due by 2026-12-01.*
+*Posting shares are JobsPipe measurements (count date 2026-09-10, retrieved 2026-11-02, unchanged 2026-11-14 [B · T0-69 KF7]) supplemented by RP2 role dossiers (`T0-48` to `T0-66`, verified 2026-11-19). Practice-curated items are Grade D. Next scheduled review by 2027-02-17.*

@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #9 · **Resume variant:** D2 (AI Systems & Infrastructure: Platform & infrastructure) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ml-platform-engineer) · [role hub](../../02-roles/hubs/ml-platform-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ml-platform-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ml-platform-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**77 skills:** Must 8 · Important 14 · Should 34 · Optional 21. **Evidence:** JD 12 · S09 5 · S 34 · P 26 (34% practice-curated). **Non-technical:** 6.
+**77 skills:** Must 8 · Important 16 · Should 34 · Optional 19. **Evidence:** JD 12 · S09 5 · S 38 · P 22 (29% practice-curated). **Non-technical:** 6.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,15 +28,15 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** Observability (OpenTelemetry traces, metrics) [S · T0-03] · MLOps lifecycle (model & prompt CI/CD) [S · T0-58]<br>**Important:** DevOps [JD 99.0% (feeder)] · LLM gateways [S · T0-14] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Model supply chain & CVEs [S · T0-16]<br>**Should:** Capacity & GPU/API cost governance [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Engine internals & multi-LoRA [S · T0-03] · Prefill/decode disaggregation [S · T0-03] · GPU fleet ops & scheduling [S · T0-03] · Inference autoscaling [S · T0-03] · Feature stores [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Observability (OpenTelemetry traces, metrics) [S · T0-03] · MLOps lifecycle (model & prompt CI/CD) [S · T0-58]<br>**Important:** DevOps [JD 99.0% (feeder)] · LLM gateways [S · T0-14] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Model supply chain & CVEs [S · T0-16]<br>**Should:** Capacity & GPU/API cost governance [S · T0-14] · PII detection & redaction [S · T0-14]<br>**Optional:** Engine internals & multi-LoRA [S · T0-03] · Prefill/decode disaggregation [S · T0-03] · GPU fleet ops & scheduling [S · T0-03] · Inference autoscaling [S · T0-03] · Feature stores [S · T0-58] |
 | Technical: knowledge | **Method / practice** | **Must:** Terraform / IaC [JD 59.1% (feeder)] · Git & CI/CD [JD 81.2% (feeder)]<br>**Important:** SRE (SLOs, on-call, incidents) [S · T0-14]<br>**Should:** Prompt & model versioning [S · T0-03] · Progressive delivery (canary, shadow, feature flags) [P] · Experiment tracking & reproducibility [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 55.7% (feeder)]<br>**Should:** Go / Java (choose 1: Go \| Java) [P] · Bash / shell scripting [P] |
 | Technical: concrete | **Framework / SDK** | **Important:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03]<br>**Should:** Ray [S09 3.0%] · NVIDIA Dynamo [S · T0-03] · NVIDIA Dynamo Triton [S · T0-03] · vLLM [S09 3.9%] · SGLang [S09 2.6%] |
 | Technical: concrete | **Library / package** | **Should:** LiteLLM [S · T0-16] |
-| Technical: concrete | **Platform / cloud service** | **Must:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 52.9% (feeder)]<br>**Important:** Amazon Web Services (AWS) [JD 52.9% (feeder)] · KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) [S · T0-03]<br>**Should:** Amazon Bedrock AgentCore [S · T0-16] · KServe [S · T0-03]<br>**Optional:** Kubeflow [P] · Amazon SageMaker [P] · Google Vertex AI [P] · Azure Machine Learning [P] · Databricks (incl. Mosaic AI) [P] · Anyscale [P] |
+| Technical: concrete | **Platform / cloud service** | **Must:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [JD 52.9% (feeder)]<br>**Important:** Amazon Web Services (AWS) [JD 52.9% (feeder)] · KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) [S · T0-03] · Kubeflow [S · T0-58]<br>**Should:** Amazon Bedrock AgentCore [S · T0-16] · KServe [S · T0-03]<br>**Optional:** Amazon SageMaker [P] · Google Vertex AI [P] · Azure Machine Learning [P] · Databricks (incl. Mosaic AI) [P] · Anyscale [P] |
 | Technical: concrete | **Data store** | **Should:** PostgreSQL [JD 30.7% (feeder)]<br>**Optional:** Feast [P] |
-| Technical: concrete | **Infrastructure / DevOps tool** | **Must:** Kubernetes [JD 69.4% (feeder)] · Docker [JD 53.4% (feeder)]<br>**Important:** Terraform [JD 59.1% (feeder)] · Linux [JD 45.1% (feeder)]<br>**Should:** Prometheus [S · T0-03] · Grafana [S09 2.9%] · Helm [P] · GitHub Actions [P] · Git [P]<br>**Optional:** Apache Airflow [P] · Apache Kafka [P] · General load-testing tools (choose 1: Locust \| k6) [P] |
-| Technical: concrete | **Specialised product** | **Should:** Datadog (incl. LLM Observability) [S09 2.4%] · Azure API Management (AI gateway) [S · T0-16] · agentgateway [S · T0-16] · Langfuse [S · T0-03] · Arize Phoenix [S · T0-03] · MLflow [P] · Weights & Biases (incl. Weave) [P] |
+| Technical: concrete | **Infrastructure / DevOps tool** | **Must:** Kubernetes [JD 69.4% (feeder)] · Docker [JD 53.4% (feeder)]<br>**Important:** Terraform [JD 59.1% (feeder)] · Linux [JD 45.1% (feeder)]<br>**Should:** Prometheus [S · T0-03] · Grafana [S09 2.9%] · Helm [P] · GitHub Actions [P] · Git [P] · Apache Airflow [S · T0-58]<br>**Optional:** Apache Kafka [P] · General load-testing tools (choose 1: Locust \| k6) [P] |
+| Technical: concrete | **Specialised product** | **Important:** MLflow [S · T0-58]<br>**Should:** Datadog (incl. LLM Observability) [S09 2.4%] · Azure API Management (AI gateway) [S · T0-16] · agentgateway [S · T0-16] · Langfuse [S · T0-03] · Arize Phoenix [S · T0-03] · Weights & Biases (incl. Weave) [P] |
 | Technical: concrete | **Hardware / accelerator** | **Optional:** NVIDIA Hopper (H100 / H200) [P] |
 | Technical: concrete | **Protocol / standard** | **Should:** MCP (Model Context Protocol) [S · T0-16] · OpenTelemetry [S · T0-03] · OTel GenAI semantic conventions [S · T0-03] · OAuth 2.x [S · T0-16] · OpenID Connect (OIDC) [S · T0-16]<br>**Optional:** safetensors [P] · OpenLineage [P] · gRPC [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** OWASP Top 10 for LLM Applications [P] |
@@ -57,11 +57,12 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** Certified Kubernetes Administrator (CKA): not in the corpus; common in platform hiring
+- **Optional:** Certified Kubernetes Administrator (CKA): intermediate live CLI exam ($445); 1/47 T0-32 infra postings, common in K8s platform hiring (K8s 61.3% in T0-58) [T0-32, T0-58]
 - **Optional:** AWS Certified ML Engineer – Associate (MLA-C02): replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads
-- **Optional:** Certified Kubernetes Application Developer (CKAD) [T0-32]
-- **Optional:** SnowPro Core Certification (COF-C03) [T0-31]
-- **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by aws_mla_c02 [T0-11]
+- **Optional:** Certified Kubernetes Application Developer (CKAD): CNCF Certified Kubernetes Application Developer (live CLI exam); complements CKA for GPU/ML workload deployment (T0-32) [T0-32]
+- **Optional:** SnowPro Core Certification (COF-C03): Snowflake platform baseline; relevant only where target ML platform or SA accounts run Snowflake Cortex/Snowpark (T0-31) [T0-31]
+- **Optional:** Databricks Certified Machine Learning Professional: $200, 59 Q, 120 min; production ML platform engineering on Databricks Lakehouse (T3-01)
+- **Avoid:** AWS Certified Machine Learning Engineer – Associate (MLA-C01): retired in English 2026-09-28; replaced by AWS MLA-C02 [T0-11]
 
 ## 5. Prerequisites and proof
 
@@ -73,7 +74,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Kubernetes` · `K8s` · `EKS` · `Terraform / IaC` · `infrastructure as code` · `IaC` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Docker` · `containers` · `containerisation` · `Python` · `Python 3` · `production Python` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `Observability` · `LLM observability` · `monitoring` · `MLOps lifecycle` · `MLOps` · `LLMOps` · `DevOps` · `DevOps practices` · `Terraform` · `OpenTofu` · `Linux` · `Unix` · `shell` · `KServe` · `Ray Serve` · `BentoML` · `NVIDIA Dynamo Triton` · `Triton Inference Server` · `NVIDIA NIM` · `NIM microservices` · `LLM gateways` · `AI gateway` · `LLM proxy` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Model supply chain & CVEs` · `model supply chain` · `SBOM` · `SRE` · `SLOs` · `on-call` · `vLLM` · `SGLang` · `TensorRT-LLM` · `TRT-LLM` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MCP`
+`Kubernetes` · `K8s` · `EKS` · `Terraform / IaC` · `infrastructure as code` · `IaC` · `Git & CI/CD` · `CI/CD` · `continuous integration` · `Docker` · `containers` · `containerisation` · `Python` · `Python 3` · `production Python` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `Observability` · `LLM observability` · `monitoring` · `MLOps lifecycle` · `MLOps` · `LLMOps` · `DevOps` · `DevOps practices` · `Terraform` · `OpenTofu` · `Linux` · `Unix` · `shell` · `KServe` · `Ray Serve` · `BentoML` · `NVIDIA Dynamo Triton` · `Triton Inference Server` · `NVIDIA NIM` · `NIM microservices` · `LLM gateways` · `AI gateway` · `LLM proxy` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Model supply chain & CVEs` · `model supply chain` · `SBOM` · `SRE` · `SLOs` · `on-call` · `vLLM` · `SGLang` · `TensorRT-LLM` · `TRT-LLM` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MLflow`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -103,6 +104,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| MLflow | Specialised product | I | 2 | | |
+| Kubeflow | Platform / cloud service | I | 2 | | |
 
 ## 8. Evidence and notes
 
@@ -115,7 +118,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Python (production) | M | JD (B) 55.7% | JobsPipe: DevOps Engineer (feeder) | — |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | M | JD (B) 52.9% | JobsPipe: DevOps Engineer (feeder) | AWS 52.9% |
 | Observability (OpenTelemetry traces, metrics) | M | S (B) | T0-03:L136 | Prometheus/Grafana for TTFT, TPOT and KV saturation; per-tenant cost |
-| MLOps lifecycle (model & prompt CI/CD) | M | S (C) | T0-58:L175 | 67.7% of ML Platform / MLOps postings in T0-58 |
+| MLOps lifecycle (model & prompt CI/CD) | M | S (C) | T0-58:L177 | 67.7% (21/31) — top skill in T0-58 (MLflow/Kubeflow/registry/tracking) |
 | DevOps | I | JD (B) 99.0% | JobsPipe: DevOps Engineer (feeder) | keyword in nearly every feeder posting |
 | Terraform | I | JD (B) 59.1% | JobsPipe: DevOps Engineer (feeder) | Important rather than Must: the share comes from a feeder title |
 | Amazon Web Services (AWS) | I | JD (B) 52.9% | JobsPipe: DevOps Engineer (feeder) | the cloud class (Must) carries the requirement; AWS is the most-named |
@@ -130,6 +133,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| MLflow | I | S (B) 45.2% | T0-58:L184 | 14/31 coded T0-58 postings; MLflow/Kubeflow union 51.6% |
+| Kubeflow | I | S (B) 41.9% | T0-58:L185 | 13/31 coded T0-58 postings; MLflow/Kubeflow union 51.6% |
 | MCP (Model Context Protocol) | S | S (C) | T0-16:L401 | MCP gateways and tool registries |
 | Capacity & GPU/API cost governance | S | S (C) | T0-14:L199 | — |
 | OpenTelemetry | S | S (B) | T0-03:L61 | GenAI conventions in Development: keep them behind adapters |
@@ -152,7 +157,6 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Prompt & model versioning | S | S (C) | T0-03:L59 | — |
 | Progressive delivery (canary, shadow, feature flags) | S | P (D) | — | — |
 | Experiment tracking & reproducibility | S | P (D) | — | — |
-| MLflow | S | P (D) | — | — |
 | Weights & Biases (incl. Weave) | S | P (D) | — | — |
 | OAuth 2.x | S | S (C) | T0-16:L401 | — |
 | OpenID Connect (OIDC) | S | S (C) | T0-16:L401 | — |
@@ -164,22 +168,21 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | PostgreSQL | S | JD (B) 30.7% | JobsPipe: Backend Engineer (feeder) | supporting skill from a feeder title |
 | Bash / shell scripting | S | P (D) | — | — |
 | Git | S | P (D) | — | — |
+| Apache Airflow | S | S (B) 16.1% | T0-58:L190 | 5/31 coded T0-58 postings |
 | Engine internals & multi-LoRA | O | S (C) | T0-03:L136 | multi-LoRA serving |
 | Prefill/decode disaggregation | O | S (C) | T0-03:L136 | — |
 | GPU fleet ops & scheduling | O | S (C) | T0-03:L136 | — |
 | Inference autoscaling | O | S (C) | T0-03:L136 | — |
-| Kubeflow | O | P (D) | — | — |
 | Amazon SageMaker | O | P (D) | — | — |
 | Google Vertex AI | O | P (D) | — | — |
 | Azure Machine Learning | O | P (D) | — | — |
 | Databricks (incl. Mosaic AI) | O | P (D) | — | — |
-| Feature stores | O | P (D) | — | — |
+| Feature stores | O | S (B) 16.1% | T0-58:L192 | 5/31 coded T0-58 postings |
 | Feast | O | P (D) | — | — |
 | safetensors | O | P (D) | — | — |
 | NVIDIA Hopper (H100 / H200) | O | P (D) | — | GPU node pools |
 | OWASP Top 10 for LLM Applications | O | P (D) | — | gateway threat model |
 | Mentoring | O | P (D) | — | — |
-| Apache Airflow | O | P (D) | — | — |
 | Apache Kafka | O | P (D) | — | — |
 | OpenLineage | O | P (D) | — | lineage for models and data |
 | Anyscale | O | P (D) | — | — |

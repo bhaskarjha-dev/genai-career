@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #3 · **Resume variant:** B2 (ML & Applied Science: Scientist) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-applied-scientist) · [role hub](../../02-roles/hubs/applied-scientist.md) · [narrative skill map](../role-skill-maps.md#skills-applied-scientist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-applied-scientist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**64 skills:** Must 7 · Important 16 · Should 25 · Optional 16. **Evidence:** JD 13 · S09 1 · S 15 · P 35 (55% practice-curated). **Non-technical:** 13.
+**64 skills:** Must 7 · Important 16 · Should 25 · Optional 16. **Evidence:** JD 13 · S09 1 · S 17 · P 33 (52% practice-curated). **Non-technical:** 13.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,8 +28,8 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 69.3% (feeder)] · Statistics (inference, hypothesis tests, regression) [JD 52.7% (feeder)] · Data structures & algorithms [S · T0-06]<br>**Important:** Data science [JD 90.1% (feeder)] · LLM APIs & tool calling [JD 30.1% (feeder)] · Generative AI [JD 22.0% (feeder)] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Causal inference [P] · Deep learning & transformers [JD 32.6% (adjacent)]<br>**Should:** LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Data pipelines & quality [P] · Search & ranking (learning to rank) [P] · Recommender systems [P] · Natural language processing (NLP) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Distributed training (FSDP2, TP/PP, MoE) [P] · Preference optimisation (DPO and variants) [P] |
-| Technical: knowledge | **Method / practice** | **Must:** Experiment design & A/B testing [S · T0-06] · Research-to-production [S · T0-52]<br>**Important:** Data analysis [JD 33.1% (feeder)] · Eval statistics (CIs, power, pass^k) [S · T0-06] · Research methods & re-implementation [P] · Ablations & controlled experiments [S · T0-06]<br>**Should:** Testing (pytest) [S · T0-06] · Git & CI/CD [P] · LLM-as-judge design & calibration [S · T0-06] · Model & data drift monitoring [S · T0-06] · Experiment tracking & reproducibility [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** ML fundamentals [JD 69.3% (feeder)] · Statistics (inference, hypothesis tests, regression) [JD 52.7% (feeder)] · Data structures & algorithms [S · T0-06]<br>**Important:** Data science [JD 90.1% (feeder)] · LLM APIs & tool calling [JD 30.1% (feeder)] · Generative AI [JD 22.0% (feeder)] · Fine-tuning (SFT, LoRA) [S09 13.0%] · Causal inference [S · T0-52] · Deep learning & transformers [JD 32.6% (adjacent)]<br>**Should:** LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-06] · Data pipelines & quality [P] · Search & ranking (learning to rank) [P] · Recommender systems [P] · Natural language processing (NLP) [P]<br>**Optional:** Post-training (SFT, preference, RL) [P] · Distributed training (FSDP2, TP/PP, MoE) [P] · Preference optimisation (DPO and variants) [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Experiment design & A/B testing [S · T0-06] · Research-to-production [S · T0-52]<br>**Important:** Data analysis [JD 33.1% (feeder)] · Eval statistics (CIs, power, pass^k) [S · T0-06] · Research methods & re-implementation [S · T0-52] · Ablations & controlled experiments [S · T0-06]<br>**Should:** Testing (pytest) [S · T0-06] · Git & CI/CD [P] · LLM-as-judge design & calibration [S · T0-06] · Model & data drift monitoring [S · T0-06] · Experiment tracking & reproducibility [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 86.0% (feeder)]<br>**Important:** SQL [JD 63.8% (feeder)]<br>**Should:** R [P] |
 | Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2% (adjacent)]<br>**Optional:** Apache Spark [P] |
 | Technical: concrete | **Library / package** | **Should:** scikit-learn [P] · pandas [P] · NumPy [P] · SciPy [P] · Hugging Face Transformers [P]<br>**Optional:** XGBoost [P] · Polars [P] · spaCy [P] |
@@ -57,7 +57,7 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** PyTorch Certified Associate (PTCA) [T0-32]
+- **Optional:** PyTorch Certified Associate (PTCA): Linux Foundation PyTorch Certified Associate ($250, 15-17h prep pathway); optional PyTorch baseline (T0-32:L499) [T0-32]
 
 ## 5. Prerequisites and proof
 
@@ -120,8 +120,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Generative AI | I | JD (B) 22.0% | JobsPipe: Data Scientist (feeder) | — |
 | Eval statistics (CIs, power, pass^k) | I | S (B) | T0-06:L703 | confidence intervals, power analysis, judge-bias tests, drift detection |
 | Fine-tuning (SFT, LoRA) | I | S09 (B) 13.0% | T0-03:L96 | LLM fine-tuning and alignment basics; a differentiator |
-| Causal inference | I | P (D) | — | causal inference and A/B testing |
-| Research methods & re-implementation | I | P (D) | — | reading papers and adapting them to product constraints |
+| Causal inference | I | S (C) 13% | T0-52:L685 | 3/23 in T0-52; Full-text n=16: 0.063; Must for measurement variants |
+| Research methods & re-implementation | I | S (C) 56.5% | T0-52:L686 | 13/23 in T0-52; Research or novel-algorithm wording; full-text n=16: 0.625 |
 | Deep learning & transformers | I | JD (B) 32.6% | JobsPipe: Machine Learning Engineer (adjacent) | — |
 | Ablations & controlled experiments | I | S (C) | T0-06:L701 | baseline-first discipline |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |

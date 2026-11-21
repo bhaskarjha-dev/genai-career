@@ -4,17 +4,17 @@ title: "GenAI Role Skill Inventories"
 content_type: index
 stage: 3
 status: published
-last_verified: 2026-11-04
+last_verified: 2026-11-19
 review_by: 2027-01-21
 summary: "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions, verification, and the requirements and tier rule behind the skills ontology."
-sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T1-03]
+sources: [T0-03, T0-06, T0-13, T0-14, T0-15, T0-16, T0-48, T0-49, T0-50, T0-51, T0-52, T0-53, T0-54, T0-55, T0-56, T0-57, T0-58, T0-59, T0-60, T0-61, T0-62, T0-63, T0-64, T0-65, T0-66, T0-69, T1-03]
 generated_by: "scripts/build_skills.py (generated blocks)"
 ---
 # GenAI Role Skill Inventories
 ## Every Skill for Every Role: Typed, Tiered and Evidence-Tagged, From One Ontology
 
-> **Updated:** 2026-11-04 · **Scope:** Comprehensive typed skill inventories across 24 IC roles and 2 leadership tracks.
-> **What this is:** the complete skill inventory for each of the 24 individual-contributor GenAI roles and the 2 employed leadership tracks. Each inventory covers:
+> **Updated:** 2026-11-19 · **Scope:** Comprehensive typed skill inventories across all 29 canonical roles (24 IC roles and 5 leadership and independent tracks).
+> **What this is:** the complete skill inventory for each of the 24 individual-contributor GenAI roles and the 5 leadership and independent tracks (`ai-engineering-manager`, `vp-head-of-ai`, `chief-ai-officer`, `independent-ai-consultant`, `fractional-ai-leader`). Each inventory covers:
 > - technical knowledge: concepts and methods;
 > - concrete technologies: languages, frameworks, libraries, models, platforms, data stores, infrastructure tools, specialised products, hardware, protocols and regulations;
 > - non-technical skills: communication, behavioural competencies, business, leadership, domain knowledge and research craft.
@@ -58,23 +58,23 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 
 | Tag | Evidence | Grade |
 |---|---|:---:|
-| [JD x%] | Share of live postings for the title, or for a labelled feeder or adjacent title, that name the skill (JobsPipe, retrieved 2026-11-02) | B |
+| [JD x%] | Share of live postings for the title, or for a labelled feeder or adjacent title, that name the skill (JobsPipe count date 2026-09-10, retrieved 2026-11-02, unchanged 2026-11-14; [T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md) KF7) | B |
 | [S09 x%] | Share of the 3,647-posting S09 corpus ([T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) §6.3; skews senior and infra) | B |
 | [S · T0-xx] | Named for the role in a research session or in a job description cited there; the ontology stores the exact session lines | A–C |
 | [P] | Practice-curated: standard for the role but not evidenced in the corpus; check it against 10–20 live postings before investing heavily | D |
 
-**How the inventories were built** (2026-11-04):
+**How the inventories were built** (2026-11-04; RP2 forensic upgrade 2026-11-19):
 1. **Vocabulary.** The 138 skills of the initial headline matrix were typed and their bundles split: interchangeable tools became choose-one classes, and complementary tools became concepts implemented by individual tools. Added to them:
    - every technology named in the research sessions and the role skill maps;
    - the JobsPipe skill terms that had no match;
    - the T1-03 behavioural competencies C1–C4;
    - common practice-curated tools;
-   - the skills the role agents proposed.
-2. **Assignment.** One agent per role family drafted each inventory from the catalogs (including the role's skill map in [role-skill-maps.md](role-skill-maps.md) §3, as it stood on 2026-11-04), the initial headline tiers and the sessions, citing exact session lines for every [S] link. Tiers follow measured shares where they exist. A checker enforced:
+   - the skills the role agents proposed and the RP2 role dossiers (`T0-48` to `T0-66`, `T0-69`) surfaced.
+2. **Assignment.** One agent per role family drafted each inventory from the catalogs (including the role's skill map in [role-skill-maps.md](role-skill-maps.md) §3), the initial headline tiers and the sessions, citing exact session lines for every [S] link. Tiers follow measured shares where they exist. On 2026-11-19, dedicated inventories were added for `chief-ai-officer`, `independent-ai-consultant` and `fractional-ai-leader` (`T0-65`, `T0-66`), bringing coverage to all 29 canonical roles. A checker enforces:
    - coverage of all 19 types, or a stated reason why a type does not apply;
    - the evidence formats;
    - the status rules.
-3. **Verification.** A scripted check matched every posting share to its source and every [S] link to a session line that names the item, and low-relevance lines plus a random sample were read by hand (§4). The planned independent agent fact-check of every link was blocked by the model quota on 2026-11-04 and has not been run ([ROADMAP](../../ROADMAP.md) P1-5).
+3. **Verification.** A scripted check matches every posting share to its source and every [S] link to a session line that names the item. On 2026-11-19, 75 `[P]` links were upgraded to RP2 session-evidenced `[S]` citations and all RP2 role-link and `changes[]` line citations across `T0-48` to `T0-66` and `T0-69` were programmatically verified against session text (§4).
 
 ---
 
@@ -84,31 +84,34 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 | Rank | Role | Variant | Skills | Must | Important | Should | Optional | Avoid | Evidenced (JD · S09 · S) | Practice-curated | Non-technical | Inventory |
 |:---:|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | #1 | AI Engineer | A1 | 149 | 4 | 20 | 60 | 64 | 1 | 14 · 7 · 89 | 39 (26%) | 12 | [open](inventories/ai-engineer.md) |
-| #2 | Machine Learning Engineer (GenAI/LLM track) | B1 | 84 | 4 | 18 | 28 | 34 | 0 | 11 · 2 · 24 | 47 (56%) | 9 | [open](inventories/ml-engineer.md) |
-| #3 | Applied Scientist (GenAI/LLM teams) | B2 | 64 | 7 | 16 | 25 | 16 | 0 | 13 · 1 · 15 | 35 (55%) | 13 | [open](inventories/applied-scientist.md) |
-| #4 | Forward Deployed Engineer (AI) | A2 | 58 | 5 | 15 | 18 | 20 | 0 | 2 · 0 · 29 | 27 (47%) | 18 | [open](inventories/forward-deployed-engineer.md) |
-| #5 | Research Engineer / Member of Technical Staff | C1 | 59 | 6 | 14 | 18 | 21 | 0 | 6 · 1 · 26 | 26 (44%) | 11 | [open](inventories/research-engineer.md) |
-| #6 | Applied AI Engineer | A2 | 46 | 6 | 14 | 14 | 12 | 0 | 11 · 0 · 11 | 24 (52%) | 12 | [open](inventories/applied-ai-engineer.md) |
-| #7 | AI Infrastructure / GPU Platform Engineer | D2 | 59 | 8 | 17 | 21 | 13 | 0 | 12 · 3 · 27 | 17 (29%) | 7 | [open](inventories/ai-infrastructure-engineer.md) |
+| #2 | Machine Learning Engineer (GenAI/LLM track) | B1 | 85 | 4 | 18 | 28 | 34 | 1 | 11 · 2 · 26 | 46 (54%) | 9 | [open](inventories/ml-engineer.md) |
+| #3 | Applied Scientist (GenAI/LLM teams) | B2 | 64 | 7 | 16 | 25 | 16 | 0 | 13 · 1 · 17 | 33 (52%) | 13 | [open](inventories/applied-scientist.md) |
+| #4 | Forward Deployed Engineer (AI) | A2 | 58 | 5 | 15 | 18 | 20 | 0 | 2 · 0 · 34 | 22 (38%) | 18 | [open](inventories/forward-deployed-engineer.md) |
+| #5 | Research Engineer / Member of Technical Staff | C1 | 59 | 6 | 14 | 18 | 21 | 0 | 6 · 1 · 33 | 19 (32%) | 11 | [open](inventories/research-engineer.md) |
+| #6 | Applied AI Engineer | A2 | 46 | 6 | 14 | 14 | 12 | 0 | 11 · 0 · 13 | 22 (48%) | 12 | [open](inventories/applied-ai-engineer.md) |
+| #7 | AI Infrastructure / GPU Platform Engineer | D2 | 59 | 8 | 17 | 21 | 13 | 0 | 12 · 3 · 30 | 14 (24%) | 7 | [open](inventories/ai-infrastructure-engineer.md) |
 | #8 | Research Scientist (LLM research) | C2 | 55 | 7 | 16 | 15 | 17 | 0 | 10 · 0 · 8 | 37 (67%) | 14 | [open](inventories/research-scientist.md) |
-| #9 | ML Platform / MLOps (LLMOps) Engineer | D2 | 77 | 8 | 14 | 34 | 21 | 0 | 12 · 5 · 34 | 26 (34%) | 6 | [open](inventories/ml-platform-engineer.md) |
-| #10 | AI Security Engineer / AI Red Teamer | D3 | 49 | 9 | 12 | 18 | 10 | 0 | 7 · 0 · 28 | 14 (29%) | 7 | [open](inventories/ai-security-engineer.md) |
-| #11 | Inference / LLM Serving Engineer | D1 | 71 | 9 | 15 | 26 | 20 | 1 | 0 · 5 · 50 | 16 (23%) | 8 | [open](inventories/inference-engineer.md) |
+| #9 | ML Platform / MLOps (LLMOps) Engineer | D2 | 77 | 8 | 16 | 34 | 19 | 0 | 12 · 5 · 38 | 22 (29%) | 6 | [open](inventories/ml-platform-engineer.md) |
+| #10 | AI Security Engineer / AI Red Teamer | D3 | 50 | 10 | 12 | 18 | 10 | 0 | 7 · 0 · 29 | 14 (28%) | 8 | [open](inventories/ai-security-engineer.md) |
+| #11 | Inference / LLM Serving Engineer | D1 | 71 | 9 | 15 | 26 | 20 | 1 | 0 · 3 · 52 | 16 (23%) | 8 | [open](inventories/inference-engineer.md) |
 | #12 | AI / GenAI Solutions Architect | A2 | 58 | 5 | 19 | 25 | 9 | 0 | 12 · 0 · 17 | 29 (50%) | 20 | [open](inventories/ai-solutions-architect.md) |
-| #13 | AI Product Manager | E1 | 47 | 5 | 14 | 20 | 8 | 0 | 9 · 0 · 17 | 21 (45%) | 24 | [open](inventories/ai-product-manager.md) |
-| #14 | Agentic AI Engineer | A1 | 73 | 5 | 18 | 32 | 17 | 1 | 4 · 1 · 55 | 13 (18%) | 10 | [open](inventories/agentic-ai-engineer.md) |
+| #13 | AI Product Manager | E1 | 48 | 5 | 15 | 20 | 8 | 0 | 9 · 0 · 19 | 20 (42%) | 24 | [open](inventories/ai-product-manager.md) |
+| #14 | Agentic AI Engineer | A1 | 73 | 5 | 18 | 32 | 17 | 1 | 4 · 1 · 56 | 12 (16%) | 10 | [open](inventories/agentic-ai-engineer.md) |
 | #15 | AI Evaluation Engineer | A1 | 65 | 7 | 17 | 28 | 13 | 0 | 5 · 3 · 42 | 15 (23%) | 10 | [open](inventories/ai-evaluation-engineer.md) |
-| #16 | GPU Kernel / ML Compiler Engineer | D1 | 45 | 7 | 14 | 11 | 13 | 0 | 0 · 1 · 31 | 13 (29%) | 7 | [open](inventories/gpu-kernel-engineer.md) |
-| #17 | Physical AI / Robotics AI Engineer | B3 | 40 | 7 | 13 | 16 | 4 | 0 | 1 · 0 · 7 | 32 (80%) | 8 | [open](inventories/physical-ai-engineer.md) |
-| #18 | AI Governance Programme Lead / Manager | E2 | 58 | 6 | 20 | 19 | 13 | 0 | 0 · 0 · 38 | 20 (34%) | 16 | [open](inventories/ai-governance-lead.md) |
-| #19 | Frontier AI Safety / Alignment Researcher | C2 | 41 | 4 | 13 | 20 | 4 | 0 | 5 · 0 · 12 | 24 (59%) | 11 | [open](inventories/ai-safety-researcher.md) |
-| #20 | AI Product Engineer (AI Frontend) | A1 | 54 | 6 | 17 | 17 | 14 | 0 | 8 · 0 · 21 | 25 (46%) | 8 | [open](inventories/ai-product-engineer.md) |
-| #21 | AI Risk, Audit & Compliance Specialist | E2 | 47 | 5 | 19 | 13 | 10 | 0 | 0 · 0 · 31 | 16 (34%) | 9 | [open](inventories/ai-risk-assurance-specialist.md) |
-| #22 | Responsible AI / AI Governance Engineer | E2 | 56 | 4 | 15 | 26 | 11 | 0 | 0 · 0 · 45 | 11 (20%) | 9 | [open](inventories/responsible-ai-engineer.md) |
-| #23 | AI Enablement Engineer | A1 | 55 | 3 | 16 | 24 | 12 | 0 | 0 · 0 · 26 | 29 (53%) | 13 | [open](inventories/ai-enablement-engineer.md) |
-| #24 | Domain Evaluation Specialist / AI Trainer | E3 | 42 | 4 | 7 | 19 | 12 | 0 | 0 · 0 · 14 | 28 (67%) | 16 | [open](inventories/domain-evaluation-specialist.md) |
-| L1 | AI Engineering Manager / Director | L1 | 44 | 4 | 16 | 17 | 7 | 0 | 7 · 0 · 5 | 32 (73%) | 24 | [open](inventories/ai-engineering-manager.md) |
-| L2–L3 | VP / Head of AI / CAIO | L2 | 41 | 4 | 14 | 17 | 6 | 0 | 2 · 0 · 9 | 30 (73%) | 25 | [open](inventories/vp-head-of-ai.md) |
+| #16 | GPU Kernel / ML Compiler Engineer | D1 | 47 | 6 | 10 | 18 | 13 | 0 | 0 · 1 · 37 | 9 (19%) | 7 | [open](inventories/gpu-kernel-engineer.md) |
+| #17 | Physical AI / Robotics AI Engineer | B3 | 43 | 8 | 13 | 17 | 5 | 0 | 1 · 0 · 22 | 20 (47%) | 8 | [open](inventories/physical-ai-engineer.md) |
+| #18 | AI Governance Programme Lead / Manager | E2 | 58 | 6 | 20 | 19 | 13 | 0 | 0 · 0 · 41 | 17 (29%) | 16 | [open](inventories/ai-governance-lead.md) |
+| #19 | Frontier AI Safety / Alignment Researcher | C2 | 41 | 4 | 13 | 20 | 4 | 0 | 5 · 0 · 15 | 21 (51%) | 11 | [open](inventories/ai-safety-researcher.md) |
+| #20 | AI Product Engineer (AI Frontend) | A1 | 54 | 6 | 17 | 17 | 14 | 0 | 8 · 0 · 22 | 24 (44%) | 8 | [open](inventories/ai-product-engineer.md) |
+| #21 | AI Risk, Audit & Compliance Specialist | E2 | 47 | 5 | 19 | 13 | 10 | 0 | 0 · 0 · 34 | 13 (28%) | 9 | [open](inventories/ai-risk-assurance-specialist.md) |
+| #22 | Responsible AI / AI Governance Engineer | E2 | 56 | 4 | 13 | 26 | 13 | 0 | 0 · 0 · 45 | 11 (20%) | 9 | [open](inventories/responsible-ai-engineer.md) |
+| #23 | AI Enablement Engineer | A1 | 55 | 3 | 16 | 24 | 12 | 0 | 0 · 0 · 29 | 26 (47%) | 13 | [open](inventories/ai-enablement-engineer.md) |
+| #24 | Domain Evaluation Specialist / AI Trainer | E3 | 42 | 5 | 6 | 19 | 12 | 0 | 0 · 0 · 17 | 25 (60%) | 16 | [open](inventories/domain-evaluation-specialist.md) |
+| L1 | AI Engineering Manager / Director | L1 | 44 | 5 | 12 | 18 | 9 | 0 | 7 · 0 · 13 | 24 (55%) | 24 | [open](inventories/ai-engineering-manager.md) |
+| L2 | VP / Head of AI | L2 | 42 | 4 | 13 | 17 | 8 | 0 | 2 · 0 · 19 | 21 (50%) | 25 | [open](inventories/vp-head-of-ai.md) |
+| L3 | Chief AI Officer | L3 | 25 | 7 | 8 | 8 | 2 | 0 | 0 · 0 · 15 | 10 (40%) | 14 | [open](inventories/chief-ai-officer.md) |
+| L4 | Independent AI Consultant / Contract Builder | L4 | 33 | 7 | 12 | 13 | 1 | 0 | 0 · 0 · 27 | 6 (18%) | 9 | [open](inventories/independent-ai-consultant.md) |
+| L5 | Fractional AI Leader | L5 | 24 | 8 | 9 | 6 | 1 | 0 | 0 · 0 · 17 | 7 (29%) | 13 | [open](inventories/fractional-ai-leader.md) |
 <!-- END GENERATED -->
 
 ---
@@ -132,7 +135,6 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 | Terraform | Infrastructure / DevOps tool | 2 (11%) | 4 (21%) |
 | vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) | Framework / SDK | 2 (11%) | 4 (21%) |
 | OAuth 2.x | Protocol / standard | 1 (5%) | 9 (47%) |
-| NVIDIA Hopper (H100 / H200) | Hardware / accelerator | 1 (5%) | 7 (37%) |
 | OWASP Top 10 for LLM Applications | Regulation / framework | 1 (5%) | 7 (37%) |
 | Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) | Framework / SDK | 1 (5%) | 6 (32%) |
 | SQL | Programming language | 1 (5%) | 6 (32%) |
@@ -140,6 +142,7 @@ generated_by: "scripts/build_skills.py (generated blocks)"
 | LLM API providers (choose 1: OpenAI API platform \| Anthropic API \| Gemini API) | Platform / cloud service | 1 (5%) | 5 (26%) |
 | Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) | Platform / cloud service | 1 (5%) | 4 (21%) |
 | SGLang | Framework / SDK | 1 (5%) | 4 (21%) |
+| Slurm | Infrastructure / DevOps tool | 1 (5%) | 4 (21%) |
 
 **Knowledge skills (concepts and methods) most often at Must or Important across the 19 engineering and research roles:**
 
@@ -251,8 +254,15 @@ Where a measured share of postings decided a skill's tier, the decision and its 
 | AI Evaluation Engineer | Golden datasets & test-set curation | M | 7/13 non-lab eval postings in T0-60 | verification |
 | AI Evaluation Engineer | LLM-as-judge design & calibration | M | 8/13 non-lab eval postings in T0-60 | verification |
 | AI Evaluation Engineer | RAGAS | O | Dormancy lifted after v0.4.4rc1 shipped 2026-11-13 under vibrantlabsai | verification |
+| GPU Kernel / ML Compiler Engineer | CuTe | S | 12.2% (5/41) in T0-63; tile-language union 14.6% | verification |
+| GPU Kernel / ML Compiler Engineer | CUTLASS | S | 14.6% (6/41) concentrated in NVIDIA-style roles in T0-63 | verification |
+| GPU Kernel / ML Compiler Engineer | Linear algebra | S | 4.9% (2/41) explicit in T0-63; implicit in GEMM work | verification |
+| GPU Kernel / ML Compiler Engineer | NVIDIA Blackwell (B200 / GB200 / GB300) | S | 4.9% (2/41) explicit in T0-63 (Sarvam, RadixArk) | verification |
+| GPU Kernel / ML Compiler Engineer | NVIDIA Hopper (H100 / H200) | S | 4.9% (2/41) explicit in T0-63 (Sarvam, RadixArk) | verification |
+| GPU Kernel / ML Compiler Engineer | Quantisation (FP8/FP4, AWQ, GPTQ) | S | 9.8% (4/41) explicit in T0-63 | verification |
 | GPU Kernel / ML Compiler Engineer | Triton (kernel language) | M | 56.1% overall / 69% of kernel-led postings in T0-63 | verification |
 | Physical AI / Robotics AI Engineer | PyTorch | M | 67% of full-text Physical AI JDs in T0-64 | verification |
+| Physical AI / Robotics AI Engineer | Real-robot deployment & hardware bring-up | M | 54% all (26/48) and 92% full-text (11/12) in T0-64 | verification |
 | Physical AI / Robotics AI Engineer | Robot learning & VLA models | M | Merged vla_models into robot_learning (ROADMAP P2); 79% all / 92% full-text in T0-64 | verification |
 | AI Governance Programme Lead / Manager | Colorado ADMT law (SB 26-189; replaced SB 24-205) | O | SB 24-205 repealed May 2026 and replaced by narrower SB 26-189 (0/11 JDs) | verification |
 | AI Product Engineer (AI Frontend) | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | I | AWS is named in 41.3% of Full-Stack Engineer postings (feeder title) | assignment |
@@ -261,11 +271,20 @@ Where a measured share of postings decided a skill's tier, the decision and its 
 | AI Product Engineer (AI Frontend) | Product sense | M | 50.0% of T0-62 postings and core differentiator from pure frontend | verification |
 | AI Risk, Audit & Compliance Specialist | Third-party and vendor AI risk | I | Named in 3/8 (38%) T0-61 assurance postings | verification |
 | Responsible AI / AI Governance Engineer | LLM evaluation (golden sets, calibrated judges, CI gates) | M | 75% (6/8) of T0-61 postings | verification |
+| Responsible AI / AI Governance Engineer | Giskard | O | 1/8 (Cognizant nice-to-have only) in T0-61 | verification |
+| Responsible AI / AI Governance Engineer | NeMo Guardrails | O | 1/8 (Cognizant nice-to-have only) in T0-61 | verification |
 | AI Enablement Engineer | Change management & adoption | M | Core enablement requirement in T0-62 (46.7%) | verification |
 | AI Enablement Engineer | LLM APIs & tool calling | I | Removed inherited AI Engineer JobsPipe share; T0-62 + Skillenai (n=42) show 16.7%–26.7% | verification |
 | AI Enablement Engineer | Python (production) | I | Removed inherited AI Engineer JobsPipe share; T0-62 + Skillenai (n=42) show 26.7%–33.3% | verification |
 | AI Enablement Engineer | Teaching & workshop delivery | M | Top required skill in T0-62 enablement postings (60.0%) | verification |
+| Domain Evaluation Specialist / AI Trainer | Human evaluation programmes | M | 67% (12/18; 12/14 expert-grader postings) in T0-66 | verification |
 | AI Engineering Manager / Director | GRC & risk assessment | I | "compliance" is named in 30.9% of Engineering Manager postings (feeder title) | assignment |
+| AI Engineering Manager / Director | Capacity & GPU/API cost governance | S | 13% (1/8, inference team only) in T0-65 | verification |
+| AI Engineering Manager / Director | GRC & risk assessment | O | 0/8 in T0-65; generic EM feeder share 30.9% not matched | verification |
+| AI Engineering Manager / Director | Guardrails | O | 13% (1/8, SandboxAQ security team only) in T0-65 | verification |
+| AI Engineering Manager / Director | Technical leadership | M | 75% (6/8: direction, standards or design review) in T0-65 | verification |
+| VP / Head of AI | Capacity & GPU/API cost governance | O | 0/11 explicit in T0-65 extracts | verification |
+| VP / Head of AI | Token & unit economics | O | 0/11 explicit in T0-65 extracts | verification |
 <!-- END GENERATED -->
 
 <a id="posting-evidence"></a>
@@ -297,12 +316,12 @@ Every `[JD x%]` tag in the inventories is one of these shares. A tag marked (fee
 ## 4. Verification
 
 <!-- BEGIN GENERATED: scripts/build_skills.py (verification) -->
-- **Links:** 1537 role links across 26 roles; evidence JD 151 · S09 29 · S 711 · P 646 (computed by scripts/build_skills.py)
-- **Date:** 2026-11-04
-- **Posting shares:** all 154 JD shares match their title's row in data/posting_skill_shares.json (scripts/build_skills.py checks this on every run); all 31 S09 shares matched to the cited T0-03 §6.3 line
-- **Session citations:** all 679 S citations point at an existing session line that names the item; candidate lines were scored for role relevance (role keyword on or near the line, terms from the note, table or bullet rows), weak knowledge-skill citations at Should or Optional were downgraded to P (11), and the remaining low-relevance lines plus a random sample of 40 were read and 40 were replaced with exact lines or downgraded
-- **Rules:** every role covers all 19 types or states why a type does not apply; archived, dormant and retired tools and retired credentials are tiered Avoid; every change to a headline tier carries a reason
-- **Limits:** the planned independent agent fact-check of every link was blocked by the model quota on 2026-11-04, so citations matched by keyword can still be weaker than a close reading; tool tiers outside the measured titles rest on session mentions and practice curation until job-description mining (30+ dated postings per role) measures them
+- **Links:** 1628 role links across 29 roles; evidence JD 151 · S09 27 · S 856 · P 594 (computed by scripts/build_skills.py)
+- **Date:** 2026-11-19
+- **Posting shares:** every JD share matches its title's row in data/posting_skill_shares.json (verified by scripts/build_skills.py on every run); every S09 share matches its cited T0-03 §6.3 line
+- **Session citations:** every S citation points at an existing session line that names the item; all RP2 role-link and changes[] line references across T0-48 to T0-66 and T0-69 were programmatically verified against session text on 2026-11-19
+- **Rules:** every role covers all 19 types or states why a type does not apply; archived, dormant and retired tools and retired credentials are tiered Avoid; every change to a headline tier carries a reason; all 29 canonical roles (24 IC + 5 leadership/independent) carry dedicated inventories
+- **Limits:** small-sample RP2 role dossiers (n=7 to 48) are excerpt-heavy lower bounds graded B/C; tool tiers without large-n JD corpora remain corroborated by session mentions or practice-curated ([P]) until broad dated posting samples measure them
 <!-- END GENERATED -->
 
 ---
@@ -322,7 +341,7 @@ A résumé can only be as good as its skills input. The ontology was designed ag
 | R3 | Tool ↔ concept links and groups of alternatives | Turns "used Qdrant" into "vector search"; handles "LangGraph or similar" | D | `implements` links; choose-one classes such as vector stores and tracing products |
 | R4 | Aliases and posting wording | "evals" vs "LLM evaluation"; "GenAI" vs "generative AI" | B · JobsPipe terms | `aliases` on every entry; each role file lists keywords to mirror |
 | R5 | Priority per role, Must → Optional | Fills a limited skills section | — | Five tiers: Must, Important, Should, Optional, Avoid |
-| R6 | Status and freshness of each tool | Don't list archived or dormant tools such as TGI, RAGAS or AutoGen | A/B · [T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md) | Dated `status`; archived, dormant and retired items are always tiered Avoid |
+| R6 | Status and freshness of each tool | Don't list archived, dormant or retired tools such as TGI, torchtune, AutoGen or the OpenAI Assistants API | A/B · [T0-03](../../research/sessions/T0-03-skills-compute-infra-eval-stack.md); [T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md) | Dated `status`; archived, dormant and retired items are always tiered Avoid |
 | R7 | Non-technical skills, shown rather than listed | Postings measure them, interviews probe them, and a behavioural "No Hire" is a near-veto | B · JobsPipe; B/C · [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) | Six non-technical types, present in every role inventory |
 | R8 | How to evidence each skill | Unbacked skills are discounted; AI review cites evidence per requirement | A · T0-04; [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md) | A résumé pattern per type; the V0–V3 verifiability ladder |
 | R9 | A proficiency scale | Gap analysis and honest claims | [T0-06](../../research/sessions/T0-06-career-transition-timelines-5-backgrounds.md) D9 | The 0–3 scale; self-assessment tables in every role file |
@@ -348,10 +367,10 @@ A résumé can only be as good as its skills input. The ontology was designed ag
 <a id="5-limits-and-next-steps"></a>
 ## 6. Limits and Next Steps
 
-- **Practice-curated items are hypotheses.** Each [P] tag marks a skill that is standard for the role but unmeasured in the research. Physical AI rests almost entirely on [P].
-- **Shares come from adjacent titles for many roles.** JobsPipe measures a dozen titles, and several inventories cite a feeder title (for example Security Engineer for AI Security). The inventories say so where they do.
-- **Next: job-description mining.**
-  - Sample 30 or more dated postings per role from public ATS boards (Greenhouse, Lever, Ashby) and career pages.
+- **Practice-curated items are hypotheses.** Each [P] tag marks a skill that is standard for the role but unmeasured in the research. RP2 role dossiers (`T0-48` to `T0-66`) upgraded 75 previously `[P]` links onto session-evidenced `[S]` citations and added `[S]`-evidenced inventories for `chief-ai-officer` (`T0-65`), `fractional-ai-leader` and `independent-ai-consultant` (`T0-66`), though small-sample excerpt counts remain lower bounds.
+- **Shares come from adjacent titles for many roles.** JobsPipe measures a dozen titles (count date 2026-09-10, unchanged 2026-11-14 [B · T0-69 KF7]), and several inventories cite a feeder title (for example Security Engineer for AI Security). The inventories say so where they do.
+- **Next: broader job-description mining.**
+  - Sample 30 or more dated full-text postings per role from public ATS boards (Greenhouse, Lever, Ashby) and career pages to replace small-sample excerpt lower bounds.
   - Extract skills with model assistance and human checks.
   - Accept an inventory as complete only when at least 95% of the skills those postings name are in it, under a canonical name or an alias.
   - Promote measured tools from [S] or [P] to [JD].

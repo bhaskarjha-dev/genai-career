@@ -6,7 +6,7 @@ stage: 3
 status: published
 last_verified: 2026-11-19
 review_by: 2027-02-17
-summary: "Every skill an AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill an AI Security Engineer / AI Red Teamer needs: 50 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [ai-security-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #10 · **Resume variant:** D3 (AI Systems & Infrastructure: Security) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-security-engineer) · [role hub](../../02-roles/hubs/ai-security-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-security-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-security-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**49 skills:** Must 9 · Important 12 · Should 18 · Optional 10. **Evidence:** JD 7 · S 28 · P 14 (29% practice-curated). **Non-technical:** 7.
+**50 skills:** Must 10 · Important 12 · Should 18 · Optional 10. **Evidence:** JD 7 · S 29 · P 14 (28% practice-curated). **Non-technical:** 8.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -41,6 +41,7 @@ generated_by: scripts/build_skills.py
 | Non-technical | **Communication & collaboration** | **Should:** Communication (written & verbal) [P] · Design docs & RFCs [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
+| Non-technical | **Domain knowledge** | **Must:** Offensive security & penetration testing [S · T0-60] |
 
 ## 2. Avoid
 
@@ -52,20 +53,20 @@ generated_by: scripts/build_skills.py
 - **Data store:** not screened
 - **Hardware / accelerator:** not screened
 - **Business & product:** risk framing is covered by GRC
-- **Domain knowledge:** domain-agnostic
 - **Research craft:** jailbreak research is frontier and optional
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** ISC2 CISSP: established security credential [T0-15]
-- **Optional:** Model Context Protocol Associate (MCPA) [T0-32]
-- **Optional:** Certified Kubernetes Security Specialist (CKS) [T0-32]
-- **Optional:** ISACA Certified Information Security Manager (CISM) [T0-34]
-- **Optional:** ISACA Advanced in AI Security Management (AAISM) [T0-34]
-- **Optional:** CompTIA SecAI+ (CY0-001) [T0-34]
-- **Optional:** OffSec AI Red Teamer (OSAI / AI-300) [T0-34]
-- **Optional:** Hack The Box Certified Offensive AI Expert (HTB COAE) [T0-34]
-- **Optional:** GIAC AI Platform Security (GAIPS) [T0-34]
+- **Optional:** ISC2 CISSP: #1 Axial US AI-gov at 10.4% (C), 7.9% GRC Careers (B [COI]), 5/9 India (B); senior security baseline [T0-15, T0-34]
+- **Optional:** Model Context Protocol Associate (MCPA): Linux Foundation / AAIF MCP Associate ($250, 90 min); protocol specialist signal, hiring lift unmeasured (T0-32) [T0-32]
+- **Optional:** Certified Kubernetes Security Specialist (CKS): CNCF Certified Kubernetes Security Specialist (requires active CKA); relevant for multi-tenant GPU cluster security (T0-32) [T0-32]
+- **Optional:** ISACA Certified Information Security Manager (CISM): #2 on GRC Careers AI-gov at 13.2% (10/76, B [COI]), 8.1% Axial (C), 3/9 India (B); prerequisite for AAISM/AAIR [T0-34]
+- **Optional:** ISACA Advanced in AI Security Management (AAISM): ISACA Advanced in AI Security Management (launched 2025-08; $459/$599 + $50); requires CISM or CISSP (T0-34:L56, T0-60:L79) [T0-34]
+- **Optional:** CompTIA SecAI+ (CY0-001): CompTIA SecAI+ (launched 2026-02; 19% governance weight); vendor-neutral AI security practitioner exam (T0-34:L288, T3-01) [T0-34]
+- **Optional:** OffSec AI Red Teamer (OSAI / AI-300): OffSec hands-on offensive AI security certification; fits offensive red-team tracks (T0-34) [T0-34]
+- **Optional:** Hack The Box Certified Offensive AI Expert (HTB COAE): Hack The Box Certified Offensive AI Expert; lab-based offensive AI red-team credential (T0-34) [T0-34]
+- **Optional:** GIAC AI Platform Security (GAIPS): GIAC AI Platform Security (ANAB ISO 17024 accredited, CyberLive labs; high SANS cost; T0-34:L273, L588) [T0-34]
+- **Optional:** IAPP CIPT (privacy technologist): Privacy-technologist credential for AI data-protection and privacy-by-design security roles (T0-15, T0-34:L269) [T0-15, T0-34]
 
 ## 5. Prerequisites and proof
 
@@ -77,7 +78,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`AppSec & threat modelling` · `application security` · `secure design review` · `Python` · `Python 3` · `production Python` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Incident response & SIEM` · `SIEM` · `SOC` · `LLM security` · `AI security` · `Cybersecurity fundamentals` · `security` · `information security` · `Threat modelling for AI systems` · `threat modelling` · `STRIDE` · `Prompt-injection attack & defence` · `prompt injection` · `indirect prompt injection` · `Red-teaming` · `AI red teaming` · `adversarial testing` · `Agent abuse & MCP authorisation` · `excessive agency` · `tool abuse` · `Model supply chain & CVEs` · `model supply chain` · `SBOM` · `Containment` · `sandboxing` · `DLP` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `OWASP Top 10 for LLM Applications` · `OWASP LLM Top 10` · `OWASP agentic AI threat guidance` · `OWASP Top 10 for Agentic Applications` · `OAuth 2.x` · `OAuth` · `OAuth 2.1` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MITRE ATLAS` · `ATLAS` · `MCP` · `Model Context Protocol` · `Observability` · `LLM observability` · `monitoring` · `PII detection & redaction` · `PII redaction` · `data masking`
+`AppSec & threat modelling` · `application security` · `secure design review` · `Python` · `Python 3` · `production Python` · `OAuth/OIDC, RBAC, SSO` · `identity and access management` · `RBAC` · `Incident response & SIEM` · `SIEM` · `SOC` · `LLM security` · `AI security` · `Cybersecurity fundamentals` · `security` · `information security` · `Threat modelling for AI systems` · `threat modelling` · `STRIDE` · `Prompt-injection attack & defence` · `prompt injection` · `indirect prompt injection` · `Red-teaming` · `AI red teaming` · `adversarial testing` · `Offensive security & penetration testing` · `Agent abuse & MCP authorisation` · `excessive agency` · `tool abuse` · `Model supply chain & CVEs` · `model supply chain` · `SBOM` · `Containment` · `sandboxing` · `DLP` · `Amazon Web Services` · `AWS` · `Microsoft Azure` · `Azure` · `Google Cloud` · `GCP` · `Google Cloud Platform` · `OWASP Top 10 for LLM Applications` · `OWASP LLM Top 10` · `OWASP agentic AI threat guidance` · `OWASP Top 10 for Agentic Applications` · `OAuth 2.x` · `OAuth` · `OAuth 2.1` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `MITRE ATLAS` · `ATLAS` · `MCP` · `Model Context Protocol` · `Observability` · `LLM observability` · `monitoring` · `PII detection & redaction` · `PII redaction`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -94,6 +95,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Threat modelling for AI systems | Method / practice | M | 3 | | |
 | Prompt-injection attack & defence | Concept / knowledge area | M | 3 | | |
 | Red-teaming | Method / practice | M | 3 | | |
+| Offensive security & penetration testing | Domain knowledge | M | 3 | | |
 | Agent abuse & MCP authorisation | Concept / knowledge area | I | 2 | | |
 | Model supply chain & CVEs | Concept / knowledge area | I | 2 | | |
 | Containment (DLP, sandboxing, egress) | Concept / knowledge area | I | 2 | | |
@@ -118,8 +120,9 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | LLM security (prompt injection, OWASP) | M | S (A) | T0-14:L728 | role-defining |
 | Cybersecurity fundamentals | M | JD (B) 42.3% | JobsPipe: Security Engineer (feeder) | — |
 | Threat modelling for AI systems | M | S (B) | T0-14:L728 | — |
-| Prompt-injection attack & defence | M | S (C) | T0-60:L241 | Core AI attack surface across AI security loops |
-| Red-teaming | M | S (C) | T0-60:L240 | Core offensive AI testing in T0-60 security postings |
+| Prompt-injection attack & defence | M | S (C) | T0-60:L238 | 44% (8/18) explicit mentions across vendors, labs and India |
+| Red-teaming | M | S (C) | T0-60:L237 | 78% (14/18) in T0-60; Must for AI red-team variants |
+| Offensive security & penetration testing | M | S (C) 39% | T0-60:L239 | 7/18 (Amazon 5+ yr offensive security, OSCP-type, VAPT); Must for red-team variants |
 | Agent abuse & MCP authorisation | I | S (B) | T0-16:L356 | confused deputy, rug pulls, SSRF/RCE/path traversal in MCP servers |
 | Model supply chain & CVEs | I | S (A) | T0-03:L441 | provenance, trust_remote_code hygiene, serving-engine CVEs |
 | Containment (DLP, sandboxing, egress) | I | S (B) | T0-14:L766 | output DLP, sandboxing, egress allowlists, kill switches |
@@ -131,7 +134,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | incident ownership |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
-| MITRE ATLAS | I | S (C) | T0-60:L246 | Named alongside OWASP LLM Top 10 in AI security JDs |
+| MITRE ATLAS | I | S (C) | T0-60:L250 | 11% (2/18: Wipro, o9) in T0-60; core AI threat taxonomy |
 | MCP (Model Context Protocol) | S | S (C) | T0-16:L393 | 13.0% of AI Security Specialist postings (small sample); MCP estate hygiene |
 | Observability (OpenTelemetry traces, metrics) | S | S (C) | T0-14:L333 | logging and SIEM export |
 | Amazon Web Services (AWS) | S | JD (B) 38.8% | JobsPipe: Security Engineer (feeder) | — |

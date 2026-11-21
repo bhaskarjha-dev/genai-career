@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #14 · **Resume variant:** A1 (Applied GenAI Engineering: Builder) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-agentic-ai-engineer) · [role hub](../../02-roles/hubs/agentic-ai-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-agentic-ai-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-agentic-ai-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**73 skills:** Must 5 · Important 18 · Should 32 · Optional 17 · Avoid 1. **Evidence:** JD 4 · S09 1 · S 55 · P 13 (18% practice-curated). **Non-technical:** 10.
+**73 skills:** Must 5 · Important 18 · Should 32 · Optional 17 · Avoid 1. **Evidence:** JD 4 · S09 1 · S 56 · P 12 (16% practice-curated). **Non-technical:** 10.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -31,7 +31,7 @@ generated_by: scripts/build_skills.py
 | Technical: knowledge | **Concept / knowledge area** | **Must:** LLM APIs & tool calling [JD 76.7% (closest)] · Agents & tool use [JD 59.3% (closest)] · Prompt & context design [S · T0-14] · Tool and function calling [S · T0-03]<br>**Important:** Agent reliability (durable state, budgets, approvals) [S · T0-14] · Containment (DLP, sandboxing, egress) [S · T0-14] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14] · LLM security (prompt injection, OWASP) [S · T0-14] · Durable execution & workflow state [S · T0-03] · Multi-agent orchestration [S · T0-14] · Context engineering [S · T0-14]<br>**Should:** RAG [S · T0-16] · Observability (OpenTelemetry traces, metrics) [P] · Agent memory & state [S · T0-14] · Agent interoperability (tool and agent protocols) [S · T0-16]<br>**Optional:** Constrained decoding [P] · Retrieval quality (hybrid, reranking, recall@k) [P] · Computer-use & browser agents [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Human-in-the-loop design [S · T0-14] · Agent evaluation (trajectories, task success) [S · T0-14]<br>**Should:** Git & CI/CD [S · T0-16] · Coding agents & AI-assisted engineering [S · T0-57, T0-69] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 78.4% (closest)]<br>**Should:** TypeScript / JavaScript [S · T0-16] · SQL [S · T0-16] |
-| Technical: concrete | **Framework / SDK** | **Important:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-16] · LangGraph [S · T0-16] · LangChain [S · T0-16]<br>**Should:** OpenAI Agents SDK [S · T0-03] · Claude Agent SDK [S · T0-03] · Pydantic AI [S · T0-03] · Microsoft Agent Framework [S · T0-03] · Google Agent Development Kit (ADK) [S · T0-03] · LlamaIndex [S · T0-03]<br>**Optional:** Mastra [S · T0-16] · CrewAI [P] · smolagents [P]<br>**Avoid:** AutoGen [S · T0-03] |
+| Technical: concrete | **Framework / SDK** | **Important:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-16] · LangGraph [S · T0-16] · LangChain [S · T0-16]<br>**Should:** OpenAI Agents SDK [S · T0-03] · Claude Agent SDK [S · T0-03] · Pydantic AI [S · T0-03] · Microsoft Agent Framework [S · T0-03] · Google Agent Development Kit (ADK) [S · T0-03] · LlamaIndex [S · T0-03]<br>**Optional:** Mastra [S · T0-16] · CrewAI [S · T0-57] · smolagents [P]<br>**Avoid:** AutoGen [S · T0-03] |
 | Technical: concrete | **Library / package** | **Should:** Pydantic [S · T0-03] · LiteLLM [S · T0-16]<br>**Optional:** FastMCP [S · T0-16] · langchain-mcp-adapters [S · T0-16] · Celery [P] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [S · T0-14] |
 | Technical: concrete | **Platform / cloud service** | **Should:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [S · T0-16]<br>**Optional:** Amazon Bedrock AgentCore [S · T0-16] |
@@ -59,12 +59,16 @@ generated_by: scripts/build_skills.py
 ## 4. Credentials (tie-breakers, not skills)
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): tie-breaker in services channels [T0-11]
-- **Optional:** LangChain Certified Agent Engineer (LCAE) [T0-29]
-- **Optional:** Model Context Protocol Associate (MCPA) [T0-32]
+- **Optional:** LangChain Certified Agent Engineer (LCAE): Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76) [T0-29]
+- **Optional:** Model Context Protocol Associate (MCPA): Linux Foundation / AAIF MCP Associate ($250, 90 min); protocol specialist signal, hiring lift unmeasured (T0-32) [T0-32]
+- **Optional:** Google Professional Agentic Architect (PAA): Hybrid MCQ + 2 hands-on labs covering MCP and A2A (GA mid-Nov 2026); strongest GCP agentic signal, 1-yr validity (T3-01)
+- **Optional:** Databricks Certified Context Engineer Associate: $200, 45 Q, 90 min; context engineering & MCP/tool patterns on Databricks stack (T3-01, T3-02:L69)
+- **Optional:** GitHub Certified Agentic AI Developer (GH-600): GA Jul 2026 ($165, 120 min, pass 700); covers MCP (not A2A) for GitHub/Microsoft agentic shops (T3-01)
+- **Optional:** NVIDIA NCP Agentic AI (NCP-AAI): Announced ($200; verify live Certiverse booking before prep — en-us/en-eu pages showed 'Coming soon' in T0-32 L74; blueprint sums to 98%) [T0-32]
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Usually an AI Engineer title in practice; the standalone title is small (~66 + 28 postings in 90 days).
+- **Prerequisites:** Usually an AI Engineer title in practice; standalone 'agentic' titles are a niche (Skilark: 107 of 28,771 AI listings = 0.37%, Feb 2026 [C · T0-57 L118]; IT Jobs Watch ~7 UK permanent in 6 mo).
 - **Proof to show:** An agent with human approval, sandboxed tools, deterministic trace replay and failure-injection tests (timeouts, malformed arguments, prompt injection), reporting cost per task.
 - **Posting terms (measured or cited):** agentic AI, agents, multi-agent, LangGraph (35.8% of Agentic AI Engineer postings), LangChain, MCP, tool calling.
 
@@ -172,7 +176,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | agentgateway | O | S (C) | T0-16:L124 | — |
 | Amazon Bedrock AgentCore | O | S (C) | T0-16:L124 | — |
 | Mastra | O | S (C) | T0-16:L83 | — |
-| CrewAI | O | P (D) | — | — |
+| CrewAI | O | S (C) 7% | T0-57:L550 | 1/14 in T0-57; Capgemini Pune. |
 | PostgreSQL | O | P (D) | — | event logs and checkpoints |
 | Mentoring | O | P (D) | — | — |
 | Domain expertise | O | P (D) | — | — |

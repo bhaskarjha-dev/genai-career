@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #5 · **Resume variant:** C1 (Frontier Research: Engineering) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-research-engineer) · [role hub](../../02-roles/hubs/research-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-research-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-research-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**59 skills:** Must 6 · Important 14 · Should 18 · Optional 21. **Evidence:** JD 6 · S09 1 · S 26 · P 26 (44% practice-curated). **Non-technical:** 11.
+**59 skills:** Must 6 · Important 14 · Should 18 · Optional 21. **Evidence:** JD 6 · S09 1 · S 33 · P 19 (32% practice-curated). **Non-technical:** 11.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,8 +28,8 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** PyTorch internals [S · T0-03] · ML fundamentals [P] · Deep learning & transformers [JD 32.6% (adjacent)] · Data structures & algorithms [JD 33.7% (adjacent)]<br>**Important:** Distributed training (FSDP2, TP/PP, MoE) [S · T0-13] · Post-training (SFT, preference, RL) [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-03] · Data pipelines & quality [P]<br>**Should:** Continuous batching & KV cache [S · T0-13] · Reinforcement learning [JD 17.1% (adjacent)] · Mixed-precision training (BF16, FP8) [P]<br>**Optional:** Pre-training at scale [P] · CUDA / Triton / CUTLASS [S · T0-03] · RL with verifiable rewards (GRPO) [P] · Preference optimisation (DPO and variants) [P] · Scaling laws & compute-optimal training [P] |
-| Technical: knowledge | **Method / practice** | **Important:** Training-run debugging [P] · Profiling & roofline (Nsight) [P]<br>**Should:** Research methods & re-implementation [P] · Experiment tracking & reproducibility [P] · Training-data curation (filtering, dedup, mixtures) [P]<br>**Optional:** Numerics validation [S · T0-03] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** PyTorch internals [S · T0-03] · ML fundamentals [S · T0-50] · Deep learning & transformers [JD 32.6% (adjacent)] · Data structures & algorithms [JD 33.7% (adjacent)]<br>**Important:** Distributed training (FSDP2, TP/PP, MoE) [S · T0-13] · Post-training (SFT, preference, RL) [S · T0-50] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-03] · Data pipelines & quality [S · T0-50]<br>**Should:** Continuous batching & KV cache [S · T0-13] · Reinforcement learning [JD 17.1% (adjacent)] · Mixed-precision training (BF16, FP8) [P]<br>**Optional:** Pre-training at scale [P] · CUDA / Triton / CUTLASS [S · T0-03] · RL with verifiable rewards (GRPO) [P] · Preference optimisation (DPO and variants) [P] · Scaling laws & compute-optimal training [S · T0-50] |
+| Technical: knowledge | **Method / practice** | **Important:** Training-run debugging [S · T0-50] · Profiling & roofline (Nsight) [S · T0-50]<br>**Should:** Research methods & re-implementation [P] · Experiment tracking & reproducibility [P] · Training-data curation (filtering, dedup, mixtures) [P]<br>**Optional:** Numerics validation [S · T0-03] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [S · T0-03]<br>**Should:** C++ [JD 23.3% (adjacent)]<br>**Optional:** Triton (kernel language) [S · T0-03] |
 | Technical: concrete | **Framework / SDK** | **Must:** PyTorch [JD 48.2% (adjacent)]<br>**Important:** Megatron-LM / Megatron Core [S · T0-05]<br>**Should:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03] · verl [S · T0-03] · OpenRLHF [S · T0-03] · LLaMA-Factory [S · T0-03]<br>**Optional:** JAX [P] · DeepSpeed [P] · Ray [S09 3.0%] · Axolotl [P] |
 | Technical: concrete | **Library / package** | **Important:** PyTorch FSDP2 [S · T0-13]<br>**Should:** Unsloth [S · T0-03]<br>**Optional:** Hugging Face Transformers [P] · Hugging Face Accelerate [P] |
@@ -41,7 +41,7 @@ generated_by: scripts/build_skills.py
 | Non-technical | **Communication & collaboration** | **Important:** Cross-functional collaboration [S · T0-06]<br>**Should:** Presenting & live demos [S · T2-01] · Communication (written & verbal) [JD 41.3% (adjacent)] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
-| Non-technical | **Research craft** | **Important:** Research taste & problem selection [P]<br>**Should:** Scientific writing [P]<br>**Optional:** Novel research & publications [S · T0-06] |
+| Non-technical | **Research craft** | **Important:** Research taste & problem selection [S · T0-50]<br>**Should:** Scientific writing [P]<br>**Optional:** Novel research & publications [S · T0-06] |
 
 ## 2. Avoid
 
@@ -105,19 +105,19 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Python (production) | M | S (C) | T0-03:L246 | Python and PyTorch, including internals (Inferact JD) |
 | PyTorch | M | JD (B) 48.2% | JobsPipe: Machine Learning Engineer (adjacent) | — |
 | PyTorch internals | M | S (C) | T0-03:L246 | autograd, dispatcher, torch.compile |
-| ML fundamentals | M | P (D) | — | — |
+| ML fundamentals | M | S (C) 27.8% | T0-50:L522 | 5/18 in T0-50; required text 4/18; preferred-only 1/18; 95% CI 12-51%; distinct in-scope postings, duplicates excluded |
 | Deep learning & transformers | M | JD (B) 32.6% | JobsPipe: Machine Learning Engineer (adjacent) | role-defining |
 | Data structures & algorithms | M | JD (B) 33.7% | JobsPipe: Machine Learning Engineer (adjacent) | — |
 | Distributed training (FSDP2, TP/PP, MoE) | I | S (B) | T0-13:L548 | DDP/FSDP2, tensor/pipeline parallelism, MoE; checkpoint and resume |
-| Post-training (SFT, preference, RL) | I | P (D) | — | SFT, preference and RL methods |
-| Training-run debugging | I | P (D) | — | loss spikes and numerics |
+| Post-training (SFT, preference, RL) | I | S (C) 33.3% | T0-50:L520 | 6/18 in T0-50; required text 4/18; preferred-only 2/18; 95% CI 16-56%; distinct in-scope postings, duplicates excluded |
+| Training-run debugging | I | S (C) 5.6% | T0-50:L543 | 1/18 in T0-50; required text 1/18; preferred-only 0/18; 95% CI 1-26%; distinct in-scope postings, duplicates excluded |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | I | S (C) | T0-03:L248 | evals at scale |
-| Profiling & roofline (Nsight) | I | P (D) | — | — |
-| Data pipelines & quality | I | P (D) | — | research data pipelines |
+| Profiling & roofline (Nsight) | I | S (C) 11.1% | T0-50:L535 | 2/18 in T0-50; required text 1/18; preferred-only 1/18; 95% CI 3-33%; distinct in-scope postings, duplicates excluded |
+| Data pipelines & quality | I | S (C) 16.7% | T0-50:L528 | 3/18 in T0-50; required text 2/18; preferred-only 1/18; 95% CI 6-39%; distinct in-scope postings, duplicates excluded |
 | PyTorch FSDP2 | I | S (B) | T0-13:L501 | — |
 | Megatron-LM / Megatron Core | I | S (C) | T0-05:L158 | — |
 | Cross-functional collaboration | I | S (C) | T0-06:L667 | close collaboration with researchers |
-| Research taste & problem selection | I | P (D) | — | — |
+| Research taste & problem selection | I | S (C) 5.6% | T0-50:L541 | 1/18 in T0-50; required text 1/18; preferred-only 0/18; 95% CI 1-26%; distinct in-scope postings, duplicates excluded |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
@@ -156,7 +156,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Hugging Face Transformers | O | P (D) | — | — |
 | RL with verifiable rewards (GRPO) | O | P (D) | — | — |
 | Preference optimisation (DPO and variants) | O | P (D) | — | — |
-| Scaling laws & compute-optimal training | O | P (D) | — | — |
+| Scaling laws & compute-optimal training | O | S (C) 5.6% | T0-50:L550 | 1/18 in T0-50; required text 0/18; preferred-only 1/18; 95% CI 1-26%; distinct in-scope postings, duplicates excluded |
 | Novel research & publications | O | S (B) | T0-06:L706 | papers optional; Anthropic Fellows does not require a PhD |
 | Mentoring | O | P (D) | — | — |
 | Hugging Face Accelerate | O | P (D) | — | — |

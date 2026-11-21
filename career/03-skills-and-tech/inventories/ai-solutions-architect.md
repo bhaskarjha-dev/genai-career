@@ -60,8 +60,12 @@ generated_by: scripts/build_skills.py
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): tie-breaker in IT services, staffing and partner firms [T0-11]
 - **Optional:** Google Cloud Professional Machine Learning Engineer (PMLE): GCP shops [T0-11]
 - **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure partners; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28 [T0-11, T0-62]
-- **Optional:** Salesforce Certified Agentforce Specialist [T0-31]
-- **Optional:** SnowPro Core Certification (COF-C03) [T0-31]
+- **Optional:** Salesforce Certified Agentforce Specialist: Free/proctored Salesforce Agentforce credential; useful only for Salesforce-partner FDE, SA or enablement shops (T0-31) [T0-31]
+- **Optional:** SnowPro Core Certification (COF-C03): Snowflake platform baseline; relevant only where target ML platform or SA accounts run Snowflake Cortex/Snowpark (T0-31) [T0-31]
+- **Optional:** Google Professional Agentic Architect (PAA): Top-ranked #1 cloud agentic credential (GA mid-Nov 2026); hybrid MCQ + 2 hands-on labs covering MCP and A2A; 1-yr validity (T3-01)
+- **Optional:** Claude Certified Architect – Professional (CCAR-P): Partner-gated ($175; 14% governance; counts for partner tiers; refresh 2026-12-07; US DoW FASCSA risk V0) [A COI · T0-29, T3-01] [T0-29]
+- **Optional:** Claude Certified Architect – Foundations (CCAR-F): Partner-gated ($125; counts for partner tiers; 4 India partner postings in T0-29 L81; FASCSA risk V0) [A COI · T0-29, T3-01] [T0-29]
+- **Optional:** Gemini Enterprise Certified Partner Specialist – Deployment: Partner-only GCP Gemini Enterprise deployment badge (6-mo validity) for GSI/cloud-partner channels (T3-01)
 
 ## 5. Prerequisites and proof
 
@@ -114,7 +118,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | GenAI reference architectures | M | P (D) | — | RAG and agent reference architectures on managed services |
 | Stakeholder communication | M | P (D) | — | role-defining |
 | Communication (written & verbal) | M | JD (B) 42.9% | JobsPipe: Solutions Architect | role-defining for client-facing architecture |
-| Pre-sales | M | S (C) | T0-62:L146 | 60.9% explicit pre-sales / 95.7% customer-facing technical gate in T0-62 |
+| Pre-sales | M | S (C) | T0-62:L147 | 60.9% (14/23) explicit pre-sales alongside 95.7% customer-facing gate (T0-62:L146) |
 | Amazon Web Services (AWS) | I | JD (B) 53.6% | JobsPipe: Solutions Architect | JobsPipe SA is 53.6% AWS; T0-62 AI SA splits evenly (Azure 30.4%, GCP 30.4%, AWS 26.1%) — cloud stays Must |
 | Leadership & mentoring | I | JD (B) 43.0% | JobsPipe: Solutions Architect | — |
 | Mentoring | I | JD (B) 35.1% | JobsPipe: Solutions Architect | — |
@@ -132,8 +136,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
-| RAG | I | S (C) | T0-62:L150 | 26.1% of T0-62 AI SA postings |
-| Agents & tool use | I | S (C) | T0-62:L151 | 56.5% in T0-62 (capped Important for query bias) |
+| RAG | I | S (C) | T0-62:L153 | 26.1% (6/23) in T0-62 SA postings |
+| Agents & tool use | I | S (C) | T0-62:L149 | 56.5% (13/23) in T0-62 (held at Important due to query inflation) |
 | Generative AI | S | JD (B) 17.1% | JobsPipe: Solutions Architect | — |
 | DevOps | S | JD (B) 17.2% | JobsPipe: Solutions Architect | — |
 | Terraform / IaC | S | P (D) | — | IaC deployment of the reference architecture |
@@ -158,7 +162,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | EU AI Act | S | P (D) | — | — |
 | NIST AI RMF | S | P (D) | — | — |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | S | S (C) | T0-62:L155 | 17.4% of T0-62 AI SA postings |
-| Observability (OpenTelemetry traces, metrics) | S | S (C) | T0-62:L203 | 39% Axial AI SA benchmark |
+| Observability (OpenTelemetry traces, metrics) | S | S (C) | T0-62:L690 | 39% of 16,927 Axial US AI-architecture postings (Grade B) |
 | LLM gateways | O | S (C) | T0-16:L54 | — |
 | Self-hosting open models | O | P (D) | — | — |
 | AI strategy & portfolio | O | P (D) | — | enterprise AI platform strategy |

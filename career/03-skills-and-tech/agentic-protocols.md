@@ -7,7 +7,7 @@ status: published
 last_verified: 2026-11-19
 review_by: 2026-12-06
 summary: "What MCP, A2A and AG-UI are and their dated status through November 2026, what to know at each depth (awareness, build, operate) for your role, how employers ask for protocol skills, the security essentials, and how to prove the skill."
-sources: [T0-16, T0-03, T0-14, T0-05, T0-13, T0-06, T0-11, T0-62, T0-69]
+sources: [T0-16, T0-03, T0-14, T0-05, T0-13, T0-06, T0-11, T0-32, T0-62, T0-69, T3-01]
 roles: [agentic-ai-engineer, ai-enablement-engineer, ml-platform-engineer, ai-security-engineer, ai-engineer, forward-deployed-engineer, ai-product-engineer, applied-ai-engineer, ai-solutions-architect, ai-product-manager]
 geos: [global]
 tags: [mcp, a2a, ag-ui, agent-protocols, agent-gateway, agent-security, proof-of-work]
@@ -15,9 +15,9 @@ tags: [mcp, a2a, ag-ui, agent-protocols, agent-gateway, agent-security, proof-of
 
 # Agentic Protocols: MCP, A2A and AG-UI
 
-> What MCP, A2A and AG-UI are as of October 2026, how deep your target role needs you to go (awareness, build or operate), how employers ask for protocol skills, the security essentials, and how to prove the skill with work a reviewer can check.
+> What MCP, A2A and AG-UI are as of November 2026, how deep your target role needs you to go (awareness, build or operate), how employers ask for protocol skills, the security essentials, and how to prove the skill with work a reviewer can check.
 
-Statuses on this page are as of 21 October 2026 ([T0-16](../../research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md)), refreshed through 14 November 2026 for MCP governance, registry supply and Skillenai counts ([T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md); [T0-62](../../research/sessions/T0-62-role-group-solutions-enablement-product-engineering.md)); re-check tool/protocol statuses by 2027-02-17. The Skillenai posting window refreshed to 2026-11-05 (class V1, 31 days), so this page's `review_by` is 2026-12-06. Grades follow EGP-1.0 ([CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)). Terms are defined in the [glossary](../00-start/glossary.md).
+Statuses on this page combine the October 2026 primary audit ([T0-16](../../research/sessions/T0-16-agentic-protocol-stack-enterprise-demand.md)) with November 2026 refreshes for MCP governance, changelog deprecations, registry supply and Skillenai counts ([T0-69](../../research/sessions/T0-69-skill-tool-momentum-dated-series.md); [T0-62](../../research/sessions/T0-62-role-group-solutions-enablement-product-engineering.md)); re-verify tool and protocol statuses by 2027-02-17 and posting counts by 2026-12-06 (this page's `review_by`: the Skillenai posting window is dated 2026-11-05, class V1, 31 days). Grades follow EGP-1.0 ([CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)). Terms are defined in the [glossary](../00-start/glossary.md).
 
 ## The short answer
 
@@ -63,8 +63,8 @@ Depth uses the repository's 0–3 proficiency scale from T0-06 D9 [T0-06 L718]. 
 
 **Awareness:**
 - **Who controls it.** AAIF hosts MCP, but the project's contributor ladder reserves the Lead Maintainer role, with a veto, for its founders. Foundation hosting settles intellectual-property neutrality, not who steers the spec [A · T0-16.F1].
-- **Revisions are named by date; SDKs carry version numbers.** The 2026-07-28 revision brought a stateless core, routing headers (`Mcp-Method`, `Mcp-Name`), cacheable tool lists with an explicit TTL and scope, multi-round-trip requests, authorisation hardening, formal extensions and OpenTelemetry trace-context conventions. It deprecated Roots, Sampling, Logging and the legacy HTTP+SSE transport [A · T0-16.F2]. The roadmap of 22 August 2026 lists agent identity (DPoP, workload identity federation) and progressive discovery among its five priorities [A · T0-16 L187].
-- **Adoption figures are mostly self-reported.** The maintainers report close to half a billion monthly downloads across the Tier 1 SDKs [B]. The reference-servers repository has about 90,000 stars, which measure attention, not deployment [A]. In a vendor survey fielded in December 2025 (Stacklok, 100 software-company leaders), nearly half reported MCP in some production use and 19% in broad production [B/C]. The widely repeated "78% in production" figure has no traceable source [X · T0-16.F5].
+- **Revisions are named by date; SDKs carry version numbers.** The 2026-07-28 revision removed protocol-level sessions and the `initialize` handshake (stateless core), added `server/discover`, `subscriptions/listen`, routing headers (`Mcp-Method`, `Mcp-Name`), cacheable results (`ttlMs`, `cacheScope`), multi-round-trip requests, authorisation hardening, formal extensions (`io.modelcontextprotocol/tasks`) and OpenTelemetry trace-context in `_meta`. It established a **12-month minimum deprecation window** and deprecated Roots, Sampling, Logging, the legacy HTTP+SSE transport, OAuth Dynamic Client Registration (RFC 7591, replaced by Client ID Metadata Documents) and the `includeContext` values `thisServer` and `allServers` [A, COI · T0-16.F2; T0-69 L107, L369, L394–L398]. The roadmap of 22 August 2026 lists agent identity (DPoP, workload identity federation) and progressive discovery among its five priorities [A · T0-16 L187].
+- **Adoption figures are mostly self-reported.** The maintainers report close to half a billion monthly downloads across the Tier 1 SDKs [B]. Official MCP Registry submissions accelerated from 407 to 6,265 servers/month (reaching 30,375 unique servers on 2026-09-10), with 1.1% (332) marked deprecated, 62% carrying one version and ~36% un-updated for 3+ months [C, COI · T0-69 L109–L110]. The reference-servers repository has about 90,000 stars, which measure attention, not deployment [A]. In a vendor survey fielded in December 2025 (Stacklok, 100 software-company leaders), nearly half reported MCP in some production use and 19% in broad production [B/C]. The widely repeated "78% in production" figure has no traceable source [X · T0-16.F5].
 - **The context-cost debate.** Loading every tool schema is expensive. In one illustrative Anthropic example, presenting tools as code APIs cut a task from about 150,000 to about 2,000 tokens; it is an example, not a benchmark [A · T0-16.F11]. Cloudflare enables Code Mode by default in its MCP server portals, and Uber makes a code-mode CLI the default for its coding agents; both keep MCP gateways underneath [A · T0-16.F11, L140].
 
 **Build:**
@@ -77,11 +77,11 @@ Depth uses the repository's 0–3 proficiency scale from T0-06 D9 [T0-06 L718]. 
 
 **Operate:**
 - **The converged architecture.** Production gateways split a control plane (registry, approvals, policy authoring, drift detection, shadow-server discovery) from a stateless data plane that authenticates, authorises per tool, rate-limits, routes, filters, redacts, brokers credentials and audits [A per vendor; B as a synthesis · T0-16.F6].
-- **Reference deployments.** Uber runs 800+ MCP servers exposing 5,000+ tools; servers are disabled by default, configuration changes need diff approval, and authorisation is per tool (self-reported, 1 October 2026) [A · T0-16.F6]. AWS AgentCore Gateway (Cedar-based policy, generally available March 2026), Cloudflare MCP server portals, Microsoft's API Management AI gateway (preview), Databricks managed MCP servers and the AAIF-hosted agentgateway implement the same functions [A; agentgateway B · T0-16.F6]. Pinterest published "Building an MCP Ecosystem at Pinterest" on 2026-03-19, which T0-03 cites as a production registry case [A · T0-03 L413, L647].
+- **Reference deployments.** Uber runs 800+ MCP servers exposing 5,000+ tools; servers are disabled by default, configuration changes need diff approval, and authorisation is per tool (self-reported, 1 October 2026) [A · T0-16.F6]. AWS AgentCore Gateway (Cedar-based policy, generally available March 2026), Cloudflare MCP server portals (24-hour resync, shadow-MCP detection and Code Mode default from 2026-03-26 [A · T0-16 L286, L299, L353]), Microsoft's API Management AI gateway (preview), Databricks managed MCP servers and the AAIF-hosted `agentgateway` and Envoy-based **`Agent Router`** implement the same functions [A (roster) / B (details) · T0-16.F6, L157, L199]. Pinterest published "Building an MCP Ecosystem at Pinterest" on 2026-03-19, which T0-03 cites as a production registry case [A · T0-03 L413, L647].
 - **Identity modes.** User-delegated (on-behalf-of or token exchange), service identity, third-party SaaS consent, and IdP-governed access through the Enterprise-Managed Authorization extension [A/B · T0-16 L306–313]. The extension's flow details are not verified in the corpus [D].
 - **Authorisation depth.** Server-level allow or deny is the floor; tool level is what Uber and AgentCore Policy provide; argument level is possible with Cedar or CEL, with no verified production report [B · T0-16 L315].
 - **Audit.** NSA recommends logging every tool and model invocation with identities and parameters [A · T0-16 L317]. T0-16's minimum record: timestamp, trace ID, principal and delegating principal, server and tool, argument hash plus redacted arguments, policy decision and rule ID, DLP actions, response size or hash, latency, outcome [D, synthesis · T0-16 L317].
-- **Coverage.** A gateway governs only the traffic that passes through it. Microsoft documents a server-side path that can bypass a customer's gateway, and Cloudflare publishes shadow-MCP detection rules [A/B · T0-16 L299].
+- **Coverage.** A gateway governs only the traffic that passes through it. Microsoft's own Agent Governance Toolkit **`ADR 0026`** documents a Microsoft Foundry server-side path that can bypass a customer's AI gateway, and Cloudflare publishes shadow-MCP detection rules with 24-hour portal resyncs to catch drift [A docs / B ADR · T0-16 L107, L286–L287, L299, L590].
 - **Buy before build.** T0-16 advises adopting a cloud or open-source gateway before building one, unless regulatory or scale needs resemble Uber's. Its thresholds are judgement, and no rate-limit or throughput numbers were verified for any platform [D · T0-16 L124, L296].
 
 ```mermaid
@@ -95,7 +95,7 @@ flowchart LR
 
 ### A2A at each depth
 
-- **Awareness.** Agents collaborate without exposing their memory or tools, so a handoff is a task, its artifacts and a `contextId`, not shared memory [A · T0-16 L222]. v1.0 defines task states (submitted, working, completed, failed, canceled, rejected) and two interrupt states, input-required and auth-required [A · T0-16.F3]. It has no bid, price or auction negotiation [A · T0-16.F3]. T0-16's rule: MCP first for tools; A2A only when crossing team or vendor boundaries with opaque agents [D · T0-16 L144].
+- **Awareness.** Agents collaborate without exposing their memory or tools, so a handoff is a task, its artifacts and a `contextId`, not shared memory [A · T0-16 L222]. v1.0 defines task states (submitted, working, completed, failed, canceled, rejected) and two interrupt states, input-required and auth-required [A · T0-16.F3]. It has no bid, price or auction negotiation [A · T0-16.F3]. Platform support is asymmetric: Azure AI Foundry, Copilot Studio and AWS Bedrock AgentCore Runtime support A2A, while Microsoft Agent Framework 1.0 shipped MCP support GA on 2026-04-03 with A2A still listed as "coming soon" [B · T0-69 L115, L364, L387]. T0-16's rule: MCP first for tools; A2A only when crossing team or vendor boundaries with opaque agents [D · T0-16 L144].
 - **Build.** Discover peers through the Agent Card; handle both interrupt states; stream, poll or use push notifications. Re-fetch task state after reconnecting: messages are not a reliable-delivery mechanism, and send idempotency is permitted, not required [A · T0-16 L224]. Set the `A2A-Version` header explicitly, because an empty header is treated as version 0.3 [A · T0-16 L223].
 - **Operate.** Allowlist peers, constrain multi-turn follow-ups and require human approval for sensitive actions. Unit 42's agent-session-smuggling proof of concept abused trust in stateful sessions; Unit 42 says it is not a protocol flaw, and no in-the-wild exploitation was reported [B · T0-16 L226]. Signed Agent Cards are specified, but whether clients must verify them is unresolved; one security vendor, grith.ai, claims verification is optional [C · T0-16 L225]. Gateways that federate A2A exist: agentgateway, and AgentCore's HTTP targets [A/B · T0-16 L227].
 
@@ -149,7 +149,7 @@ Every figure in this list comes from the Skillenai index (90-day windows to mid-
 - **Agentic AI Engineer postings** name LangGraph in 35.8% and MCP in 13.8%. **Agent Engineer postings** (28 in 90 days) name LangChain in 42.9% and LangGraph in 39.3%, with MCP outside the top 15 skills [C · T0-16.F10].
 - **MCP demand sits mostly outside the LangGraph audience:** only 14.9% of MCP postings (261 of 1,747) also mention LangGraph [C · T0-16 L391].
 - **MCP postings by role:** software engineer 21.0%, AI engineer 9.2%, product manager 8.0% [C · T0-16 L392].
-- **Title-level MCP shares** (small samples; the count is postings that mention MCP): AI Enablement Engineer 30.2% (16), Frontier Agents Engineer 27.3% (6), AI Application Engineer 20.0% (6), Agentic AI Engineer 13.8% (9), AI Security Specialist 13.0% (3) [C · T0-16 L389, L393].
+- **Title-level MCP shares** (small samples; the count is postings that mention MCP): AI Enablement Engineer 30.2% (16, 2026-10-14 window [C · T0-16 L393]) and **19.0% (n=42, 2026-11-05 Skillenai window [B · T0-62 L270, L281])**, Frontier Agents Engineer 27.3% (6), AI Application Engineer 20.0% (6), Agentic AI Engineer 13.8% (9), AI Security Specialist 13.0% (3) [C · T0-16 L389, L393].
 - **Skills that co-occur with MCP:** Python 849, TypeScript 476, RAG 378, CI/CD 362, AWS 312, LLMs 282, SQL 273, LangGraph 261, Claude Code 258 and Kubernetes 254 of the 1,747 postings [C · T0-16 L394].
 - **Who posts most:** MintMCP 40, ServiceNow 24, Cisco 23, Ping Identity 22, Anthropic 17, NVIDIA 17, Parloa 17; T0-16 reads this as a skew to gateway, identity and platform vendors [C · T0-16 L395].
 
@@ -222,7 +222,7 @@ Interviewers and reviewers look for controls placed by layer, not a promise to "
 
 ## How to prove it
 
-The certification research (T0-11) lists no MCP, A2A or AG-UI credential, so these skills are proved with artefacts ([credential ROI](../04-certifications/credential-roi.md)).
+Proctored exams touching these protocols arrived in 2026 — Linux Foundation / AAIF MCP Associate (`MCPA`, $250 [T0-32]), Google Cloud Professional Agentic Architect (`PAA`, covering MCP and A2A with two hands-on labs, GA mid-November 2026 [T3-01]) and GitHub `GH-600` (covering MCP, not A2A [T3-01]) — but none yet carries measured employer-demand lift, so protocol depth is still proved primarily through artefacts ([credential ROI](../04-certifications/credential-roi.md); [credential catalog](../04-certifications/credential-catalog.md)).
 
 ### Projects, by depth
 
@@ -294,7 +294,7 @@ T0-05 measured contribution dynamics in eight AI repositories (vLLM, SGLang, tra
 - [ ] For A2A: an explicit `A2A-Version` header, task-state re-fetch after reconnecting, and idempotent sends.
 - [ ] For operate targets: a gateway with a default-deny registry, per-tool policy, drift detection and audit export.
 - [ ] My proof project (P2, P15 or P10) has every headline claim at V1 or better, and my résumé names client, server or gateway work.
-- [ ] I will re-check protocol statuses after 2027-01-19.
+- [ ] I will re-check protocol statuses after 2027-02-17.
 
 ## Pitfalls
 
@@ -326,7 +326,7 @@ T0-05 measured contribution dynamics in eight AI repositories (vLLM, SGLang, tra
 - **What would change the advice** (T0-16's heuristics, judgement) [T0-16 L130–131]:
   - *Towards verified demand:* a Fortune-1000 posting share above about 1% for two consecutive quarters (about 15× the Q3 2026 level); a census-grade source reporting MCP above about 2% of all tech postings; the gateway-engineer title in dozens of postings; the MCP Registry reaching general availability. The registry was in preview, with no evidence of general availability, as of October 2026 [A · T0-16 L458].
   - *Towards overstated:* the share flat or falling for two quarters; a major MCP-attributed breach at a large enterprise; hyperscalers deprecating MCP gateways in favour of CLI- or skills-first patterns; AAIF membership shrinking or protocol governance fracturing.
-- **Re-check.** Protocol and tool statuses expire 90 days after 2026-10-21, on 2027-01-19; the posting indices expire 31 days after their window, on 2026-11-14 (this page's `review_by`). The archetype data the projects table draws on is dated 2026-11-05.
+- **Re-check.** Protocol and tool statuses expire 90 days after the November 2026 refresh, on 2027-02-17; posting indices carry a 31-day window (re-verify by 2026-12-06, this page's `review_by`). The archetype data the projects table draws on were refreshed on 2026-11-19.
 
 ## Next steps
 

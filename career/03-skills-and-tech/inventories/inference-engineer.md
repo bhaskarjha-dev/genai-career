@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #11 · **Resume variant:** D1 (AI Systems & Infrastructure: Serving & kernels) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-inference-engineer) · [role hub](../../02-roles/hubs/inference-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-inference-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-inference-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**71 skills:** Must 9 · Important 15 · Should 26 · Optional 20 · Avoid 1. **Evidence:** S09 5 · S 50 · P 16 (23% practice-curated). **Non-technical:** 8.
+**71 skills:** Must 9 · Important 15 · Should 26 · Optional 20 · Avoid 1. **Evidence:** S09 3 · S 52 · P 16 (23% practice-curated). **Non-technical:** 8.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,10 +28,10 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** GPU fundamentals (HBM, prefill vs decode) [S · T0-03] · PyTorch internals [S · T0-03] · System design [S · T0-03] · Continuous batching & KV cache [S · T0-56]<br>**Important:** Speculative decoding [S · T0-14] · Quantisation (FP8/FP4, AWQ, GPTQ) [S · T0-03] · TP/PP & MoE serving [S · T0-03] · Cost & latency engineering [S · T0-03] · Prefix caching & KV reuse [S · T0-03] · Inference autoscaling [S · T0-03] · KV-aware routing & load balancing [S · T0-14]<br>**Should:** Model supply chain & CVEs [S · T0-03] · Observability (OpenTelemetry traces, metrics) [P] · KV-cache offload & tiering [S · T0-03] · Constrained decoding [S · T0-03] · Mixture of Experts (MoE) [P]<br>**Optional:** Prefill/decode disaggregation [S · T0-03] · CUDA / Triton / CUTLASS [S · T0-03] · NCCL / RDMA / InfiniBand [S · T0-03] · Engine internals & multi-LoRA [S · T0-03] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** GPU fundamentals (HBM, prefill vs decode) [S · T0-03] · PyTorch internals [S · T0-03] · System design [S · T0-03] · Continuous batching & KV cache [S · T0-56]<br>**Important:** Speculative decoding [S · T0-14] · Quantisation (FP8/FP4, AWQ, GPTQ) [S · T0-56] · TP/PP & MoE serving [S · T0-03] · Cost & latency engineering [S · T0-03] · Prefix caching & KV reuse [S · T0-03] · Inference autoscaling [S · T0-03] · KV-aware routing & load balancing [S · T0-14]<br>**Should:** Model supply chain & CVEs [S · T0-03] · Observability (OpenTelemetry traces, metrics) [P] · KV-cache offload & tiering [S · T0-03] · Constrained decoding [S · T0-03] · Mixture of Experts (MoE) [P]<br>**Optional:** Prefill/decode disaggregation [S · T0-03] · CUDA / Triton / CUTLASS [S · T0-03] · NCCL / RDMA / InfiniBand [S · T0-03] · Engine internals & multi-LoRA [S · T0-03] |
 | Technical: knowledge | **Method / practice** | **Important:** Load testing & latency SLOs [S · T0-13] · Profiling & roofline (Nsight) [S · T0-03]<br>**Optional:** Numerics validation [S · T0-03] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [S · T0-03] · C++ [S · T0-03]<br>**Should:** Rust [S · T0-03]<br>**Optional:** Triton (kernel language) [S09 2.8%] · Tile DSLs (choose 1: Helion \| CuTe DSL) [S · T0-03] · Bash / shell scripting [P] |
-| Technical: concrete | **Framework / SDK** | **Must:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03] · vLLM [S · T0-56]<br>**Important:** SGLang [S09 2.6%] · TensorRT-LLM [S09 2.0%]<br>**Should:** Mooncake [S · T0-03] · NVIDIA Dynamo [S · T0-03] · NVIDIA Dynamo Triton [S · T0-03] · llm-d [S · T0-03]<br>**Optional:** Local inference runtimes (choose 1: llama.cpp \| Ollama) [P]<br>**Avoid:** Hugging Face TGI [S · T0-03] |
+| Technical: concrete | **Framework / SDK** | **Must:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03] · vLLM [S · T0-56]<br>**Important:** SGLang [S · T0-56] · TensorRT-LLM [S · T0-56]<br>**Should:** Mooncake [S · T0-03] · NVIDIA Dynamo [S · T0-03] · NVIDIA Dynamo Triton [S · T0-03] · llm-d [S · T0-03]<br>**Optional:** Local inference runtimes (choose 1: llama.cpp \| Ollama) [P]<br>**Avoid:** Hugging Face TGI [S · T0-03] |
 | Technical: concrete | **Library / package** | **Should:** FlashInfer [S · T0-03] · LMCache [S · T0-03]<br>**Optional:** CUTLASS [S · T0-03] · TensorRT [S09 3.9%] |
 | Technical: concrete | **Model / model family** | **Optional:** Open-weight model families (choose 1: Llama \| Qwen \| Mistral and Mixtral \| DeepSeek) [S · T0-14] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** AMD ROCm [P] · KServe [P] · Serverless GPU and inference clouds (choose 1: Modal \| Replicate \| Together AI \| Fireworks AI \| Baseten) [P] · Baseten [P] |
@@ -58,8 +58,9 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): LLM inference-infrastructure roles [T0-11]
-- **Optional:** NVIDIA-Certified Professional: AI Operations (NCP-AIO) [T0-32]
+- **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): announced (verify live Certiverse booking before prep); NCP-AIO targets live GPU serving/ops more directly [T0-11, T0-32]
+- **Optional:** NVIDIA-Certified Professional: AI Operations (NCP-AIO): $500, 30 MCQ + 3 live VM labs (only NVIDIA exam with confirmed live lab split); targets GPU cluster operations (T0-32:L599, T0-54:L259) [T0-32]
+- **Optional:** AMD ROCm Certified Associate: Free AMD ROCm GPU labs + exam; optional signal for AMD MI300X/ROCm inference teams (T0-32:L243, L857) [T0-32]
 
 ## 5. Prerequisites and proof
 
@@ -115,10 +116,10 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | System design | M | S (B) | T0-03:L58 | distributed-systems fundamentals |
 | vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) | M | S (B) | T0-03:L143 | vLLM default; SGLang for prefix-heavy and agentic; TRT-LLM NVIDIA-only |
 | Kubernetes | M | S (C) | T0-03:L100 | — |
-| vLLM | M | S (C) | T0-56:L182 | 76% overall and 100% of engine-naming JDs in T0-56 |
-| Continuous batching & KV cache | M | S (C) | T0-56:L184 | 49% overall — top inference optimisation technique in T0-56 |
+| vLLM | M | S (C) | T0-56:L197 | 76% (28/37) overall and 100% of engine-naming postings in T0-56 |
+| Continuous batching & KV cache | M | S (C) | T0-56:L210 | 49% (18/37) — top inference optimisation technique in T0-56 |
 | Speculative decoding | I | S (A) | T0-14:L564 | lossless; measure acceptance rate and goodput before enabling |
-| Quantisation (FP8/FP4, AWQ, GPTQ) | I | S (B) | T0-03:L137 | FP8/FP4, AWQ, GPTQ, INT4/W4A16 |
+| Quantisation (FP8/FP4, AWQ, GPTQ) | I | S (B) 29.7% | T0-56:L212 | 11/37 T0-56 postings (FP8, AWQ, GPTQ, low-precision numerics) |
 | TP/PP & MoE serving | I | S (B) | T0-03:L243 | tensor and pipeline parallelism; MoE serving |
 | Load testing & latency SLOs | I | S (B) | T0-13:L370 | multi-process generators with Poisson arrivals |
 | Profiling & roofline (Nsight) | I | S (C) | T0-03:L137 | roofline analysis with Nsight Systems and the PyTorch Profiler |
@@ -126,8 +127,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Prefix caching & KV reuse | I | S (B) | T0-03:L107 | — |
 | Inference autoscaling | I | S (C) | T0-03:L136 | autoscaling on queue depth and KV utilisation |
 | KV-aware routing & load balancing | I | S (C) | T0-14:L227 | prefix-aware routing and admission control |
-| SGLang | I | S09 (B) 2.6% | T0-03:L269 | prefix-heavy and agentic workloads; patch CVEs quickly |
-| TensorRT-LLM | I | S09 (B) 2.0% | T0-03:L58 | NVIDIA-only; static engine build removed from v1.3 |
+| SGLang | I | S (B) 56.8% | T0-56:L198 | 21/37 T0-56 inference postings; usually paired with vLLM or TensorRT-LLM |
+| TensorRT-LLM | I | S (B) 40.5% | T0-56:L199 | 15/37 T0-56 inference postings; PyTorch backend only (static trtllm-build removed) |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |

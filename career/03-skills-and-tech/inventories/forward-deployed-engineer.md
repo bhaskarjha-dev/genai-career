@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #4 · **Resume variant:** A2 (Applied GenAI Engineering: Deployer) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-forward-deployed-engineer) · [role hub](../../02-roles/hubs/forward-deployed-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-forward-deployed-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-forward-deployed-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**58 skills:** Must 5 · Important 15 · Should 18 · Optional 20. **Evidence:** JD 2 · S 29 · P 27 (47% practice-curated). **Non-technical:** 18.
+**58 skills:** Must 5 · Important 15 · Should 18 · Optional 20. **Evidence:** JD 2 · S 34 · P 22 (38% practice-curated). **Non-technical:** 18.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,9 +28,9 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** APIs & integrations [P] · LLM APIs & tool calling [S · T0-06] · RAG [S · T0-14]<br>**Important:** Retrieval quality (hybrid, reranking, recall@k) [S · T1-03] · Permission-aware retrieval (ACLs, tenancy) [S · T1-03] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Agents & tool use [S · T0-14] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14]<br>**Should:** Data pipelines & quality [P] · Agent reliability (durable state, budgets, approvals) [P] · Tool and function calling [P] · System design [P]<br>**Optional:** Self-hosting open models [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** APIs & integrations [S · T0-51] · LLM APIs & tool calling [S · T0-06] · RAG [S · T0-51]<br>**Important:** Retrieval quality (hybrid, reranking, recall@k) [S · T1-03] · Permission-aware retrieval (ACLs, tenancy) [S · T1-03] · OAuth/OIDC, RBAC, SSO [S · T0-16] · Agents & tool use [S · T0-51] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14]<br>**Should:** Data pipelines & quality [S · T0-51] · Agent reliability (durable state, budgets, approvals) [P] · Tool and function calling [P] · System design [P]<br>**Optional:** Self-hosting open models [P] |
 | Technical: knowledge | **Method / practice** | **Important:** Rapid prototyping [S · T2-01]<br>**Should:** Prompt engineering [P] · Coding agents & AI-assisted engineering [S · T0-57, T0-69]<br>**Optional:** Change management & adoption [P] · AppSec & threat modelling [P] |
-| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 44.4% (adjacent)]<br>**Should:** TypeScript / JavaScript [P] · SQL [P] |
+| Technical: concrete | **Programming language** | **Must:** Python (production) [JD 44.4% (adjacent)]<br>**Should:** TypeScript / JavaScript [P] · SQL [S · T0-51] |
 | Technical: concrete | **Framework / SDK** | **Should:** FastAPI [P]<br>**Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [S · T0-03] |
 | Technical: concrete | **Library / package** | **Optional:** Pydantic [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
@@ -40,7 +40,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Specialised product** | **Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [S · T0-03] · Evaluation runners and platforms (choose 1: DeepEval \| Promptfoo \| Inspect \| TruLens \| Giskard \| Braintrust) [S · T0-03] |
 | Technical: concrete | **Protocol / standard** | **Should:** OAuth 2.x [S · T0-16] · OpenID Connect (OIDC) [S · T0-16]<br>**Optional:** MCP (Model Context Protocol) [S · T0-16] · OpenAPI [P] |
 | Technical: concrete | **Regulation / framework** | **Optional:** GDPR [P] · EU AI Act [P] |
-| Non-technical | **Communication & collaboration** | **Important:** Stakeholder communication [P] · Customer-facing communication [S · T2-01] · Executive & board communication [P] · Presenting & live demos [S · T2-01]<br>**Should:** Communication (written & verbal) [JD 42.9% (adjacent)] · Design docs & RFCs [P] |
+| Non-technical | **Communication & collaboration** | **Important:** Stakeholder communication [S · T0-51] · Customer-facing communication [S · T2-01] · Executive & board communication [S · T0-51] · Presenting & live demos [S · T2-01]<br>**Should:** Communication (written & verbal) [JD 42.9% (adjacent)] · Design docs & RFCs [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Must:** Customer scoping & demos [S · T0-06]<br>**Optional:** Product management [P] · Pre-sales [P] |
 | Non-technical | **Leadership & people** | **Optional:** Influence without authority [P] |
@@ -59,8 +59,11 @@ generated_by: scripts/build_skills.py
 
 - **Optional:** AWS Certified Generative AI Developer – Professional (AIP-C01): services channels [T0-11]
 - **Optional:** Microsoft AI-103 (Azure AI apps and agents): Azure customers; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28 [T0-11, T0-62]
-- **Optional:** Salesforce Certified Agentforce Specialist [T0-31]
-- **Optional:** Palantir AI Engineer Specialist [T0-31]
+- **Optional:** Salesforce Certified Agentforce Specialist: Free/proctored Salesforce Agentforce credential; useful only for Salesforce-partner FDE, SA or enablement shops (T0-31) [T0-31]
+- **Optional:** Palantir AI Engineer Specialist: Palantir Foundry/AIP specialist exam; relevant only for Palantir ecosystem or customer-delivery partners (T0-31) [T0-31]
+- **Optional:** Claude Certified Architect – Professional (CCAR-P): Partner-gated ($175; counts for partner tiers; useful only at Claude Partner Network SI/consulting firms; FASCSA risk V0) [A COI · T0-29] [T0-29]
+- **Optional:** Gemini Enterprise Certified Partner Specialist – Deployment: Partner-only lab-based badge (3 skill badges, 6-mo validity); Google Cloud FDE partner prerequisite (T3-01)
+- **Optional:** Gemini Enterprise Certified Partner Specialist – Agent Development: Partner-only lab-based agent development badge (6-mo validity); Google Cloud FDE partner prerequisite (T3-01)
 
 ## 5. Prerequisites and proof
 
@@ -106,19 +109,19 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Skill | Tier | Evidence | Source | Note |
 |---|:---:|---|---|---|
 | Python (production) | M | JD (B) 44.4% | JobsPipe: Software Engineer (adjacent) | role-defining coding requirement; Python and/or TypeScript |
-| APIs & integrations | M | P (D) | — | REST, webhooks, auth |
+| APIs & integrations | M | S (C) 32.1% | T0-51:L783 | 9/28 in T0-51; required in 9 of 28; preferred-only 0; weighted 0.321; KB tier Must; lower bound (excerpt-based) |
 | LLM APIs & tool calling | M | S (C) | T0-06:L175 | FDE postings need coding, GenAI and infrastructure skills |
-| RAG | M | S (C) | T0-14:L175 | RAG over sensitive, fast-changing documents (Databricks AI-FDE loop) |
+| RAG | M | S (C) 7.1% | T0-51:L785 | 2/28 required + 1 preferred in T0-51 FDE excerpts (lower bound); customer data retrieval |
 | Customer scoping & demos | M | S (C) | T0-06:L296 | discovery, demos and POCs under time pressure |
 | Retrieval quality (hybrid, reranking, recall@k) | I | S (C) | T1-03:L105 | ACL-enforced retrieval |
 | Permission-aware retrieval (ACLs, tenancy) | I | S (C) | T1-03:L105 | — |
 | OAuth/OIDC, RBAC, SSO | I | S (C) | T0-16:L401 | OAuth/OIDC and RBAC (PTC JD) |
-| Agents & tool use | I | S (C) | T0-14:L175 | agent design for customer workflows; multi-agent evaluation |
+| Agents & tool use | I | S (C) 35.7% | T0-51:L790 | 10/28 required in T0-51 FDE postings; customer agent workflows and integration |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | I | S (C) | T0-14:L174 | evals tied to customer KPIs |
 | Domain expertise | I | S (B) | T0-01:L146 | Databricks splits FDE work by manufacturing, public sector, FS, retail |
-| Stakeholder communication | I | P (D) | — | — |
+| Stakeholder communication | I | S (C) 25% | T0-51:L793 | 7/28 in T0-51; required in 7 of 28; preferred-only 0; weighted 0.250; KB tier Important; lower bound (excerpt-based) |
 | Customer-facing communication | I | S (C) | T2-01:L483 | coding + customer-facing + GenAI |
-| Executive & board communication | I | P (D) | — | executive communication with customer sponsors |
+| Executive & board communication | I | S (C) 3.6% | T0-51:L795 | 1/28 in T0-51; required in 1 of 28; preferred-only 0; weighted 0.036; KB tier Important; lower bound (excerpt-based) |
 | Rapid prototyping | I | S (C) | T2-01:L504 | demos and proofs of concept under time pressure |
 | Presenting & live demos | I | S (C) | T2-01:L516 | a demo shown to two or more potential users |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | comfort with ambiguity |
@@ -128,8 +131,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | TypeScript / JavaScript | S | P (D) | — | — |
 | AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) | S | S (C) | T0-06:L175 | cloud deployment |
 | Docker | S | P (D) | — | containerised deployment |
-| SQL | S | P (D) | — | — |
-| Data pipelines & quality | S | P (D) | — | — |
+| SQL | S | S (C) 7.1% | T0-51:L805 | 2/28 in T0-51; required in 2 of 28; preferred-only 1; weighted 0.089; KB tier not in role card; lower bound (excerpt-based) |
+| Data pipelines & quality | S | S (C) 17.9% | T0-51:L802 | 5/28 in T0-51; required in 5 of 28; preferred-only 0; weighted 0.179; KB tier not in role card; lower bound (excerpt-based) |
 | Managed AI (choose 1: Amazon Bedrock \| Azure AI Foundry / Azure OpenAI \| Google Vertex AI) | S | P (D) | — | Bedrock, Azure OpenAI, Vertex |
 | Databricks (incl. Mosaic AI) | S | S (C) | T0-01:L146 | customer data platforms |
 | Data platforms and warehouses (choose 1: Databricks \| Snowflake \| Google BigQuery) | S | P (D) | — | whatever the customer runs |

@@ -15,10 +15,10 @@ generated_by: scripts/build_skills.py
 
 # AI Engineering Manager / Director: Complete Skill Inventory
 
-> **GenAI target rank:** L1 · **Resume variant:** L1 (Leadership: AI Engineering Manager / Director) · **Ontology as of:** 2026-11-19
+> **GenAI target rank:** L1 · **Resume variant:** L1 (Leadership & Independent: AI Engineering Manager / Director) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-engineering-manager) · [role hub](../../02-roles/hubs/ai-engineering-manager.md) · [narrative skill map](../role-skill-maps.md#skills-leadership) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-engineering-manager) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**44 skills:** Must 4 · Important 16 · Should 17 · Optional 7. **Evidence:** JD 7 · S 5 · P 32 (73% practice-curated). **Non-technical:** 24.
+**44 skills:** Must 5 · Important 12 · Should 18 · Optional 9. **Evidence:** JD 7 · S 13 · P 24 (55% practice-curated). **Non-technical:** 24.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,18 +28,18 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Important:** System design [JD 25.3% (feeder)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14] · Observability (OpenTelemetry traces, metrics) [JD 18.0% (feeder)] · Capacity & GPU/API cost governance [P] · Guardrails [P]<br>**Should:** Agents & tool use [JD 14.8% (feeder)] · AI literacy (tokens, RAG vs fine-tune, cost) [P] · LLM fundamentals (tokens, context windows, sampling, hallucination) [P] · MLOps lifecycle (model & prompt CI/CD) [P]<br>**Optional:** EU AI Act / NIST AI RMF / ISO 42001 [P] |
-| Technical: knowledge | **Method / practice** | **Important:** GRC & risk assessment [JD 30.9% (feeder)]<br>**Should:** SRE (SLOs, on-call, incidents) [P] · Incident postmortems [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Important:** System design [JD 25.3% (feeder)] · LLM evaluation (golden sets, calibrated judges, CI gates) [S · T0-14] · Observability (OpenTelemetry traces, metrics) [JD 18.0% (feeder)]<br>**Should:** Capacity & GPU/API cost governance [S · T0-65] · Agents & tool use [JD 14.8% (feeder)] · AI literacy (tokens, RAG vs fine-tune, cost) [P] · LLM fundamentals (tokens, context windows, sampling, hallucination) [P] · MLOps lifecycle (model & prompt CI/CD) [P]<br>**Optional:** Guardrails [S · T0-65] · EU AI Act / NIST AI RMF / ISO 42001 [P] |
+| Technical: knowledge | **Method / practice** | **Should:** SRE (SLOs, on-call, incidents) [P] · Incident postmortems [P]<br>**Optional:** GRC & risk assessment [JD 30.9% (feeder)] |
 | Technical: concrete | **Programming language** | **Should:** Python (production) [P] |
 | Technical: concrete | **Framework / SDK** | **Optional:** Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) [P] |
 | Technical: concrete | **Model / model family** | **Optional:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** AWS / Azure / GCP (choose 1: Amazon Web Services \| Microsoft Azure \| Google Cloud) [P] |
 | Technical: concrete | **Specialised product** | **Optional:** LLM tracing and observability products (choose 1: Langfuse \| Arize Phoenix \| LangSmith \| Braintrust \| Helicone \| Arize AX \| Datadog) [P] |
 | Technical: concrete | **Regulation / framework** | **Should:** EU AI Act [P] · NIST AI RMF [P] |
-| Non-technical | **Communication & collaboration** | **Must:** Communication (written & verbal) [JD 51.4% (feeder)] · Stakeholder communication [P]<br>**Important:** Executive & board communication [P]<br>**Should:** Design docs & RFCs [P] · Cross-functional collaboration [P] |
+| Non-technical | **Communication & collaboration** | **Must:** Communication (written & verbal) [JD 51.4% (feeder)] · Stakeholder communication [S · T0-65]<br>**Important:** Executive & board communication [P]<br>**Should:** Design docs & RFCs [P] · Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
-| Non-technical | **Business & product** | **Important:** AI strategy & portfolio [P] · Roadmapping & prioritisation [P]<br>**Should:** Token & unit economics [P] · Build-vs-buy & vendor evaluation [P] · Programme & project management [P] · ROI & business cases [P] |
-| Non-technical | **Leadership & people** | **Must:** Leadership & mentoring [JD 72.7% (feeder)] · People management [P]<br>**Important:** Mentoring [JD 47.1% (feeder)] · Hiring & interviewing [P] · Technical leadership [P]<br>**Should:** Organisation design [P] · Influence without authority [P]<br>**Optional:** Budget & P&L ownership [P] |
+| Non-technical | **Business & product** | **Important:** AI strategy & portfolio [S · T0-65] · Roadmapping & prioritisation [S · T0-65]<br>**Should:** Token & unit economics [P] · Build-vs-buy & vendor evaluation [P] · Programme & project management [P] · ROI & business cases [P] |
+| Non-technical | **Leadership & people** | **Must:** Leadership & mentoring [JD 72.7% (feeder)] · People management [S · T0-65] · Technical leadership [S · T0-65]<br>**Important:** Mentoring [JD 47.1% (feeder)] · Hiring & interviewing [S · T0-65]<br>**Should:** Organisation design [P] · Influence without authority [P]<br>**Optional:** Budget & P&L ownership [P] |
 | Non-technical | **Domain knowledge** | **Optional:** Domain expertise [P] |
 
 ## 2. Avoid
@@ -61,7 +61,7 @@ generated_by: scripts/build_skills.py
 
 ## 5. Prerequisites and proof
 
-- **Prerequisites:** Senior/Staff IC first; AI engineers move into management in under 3 years on average (SignalFire, C).
+- **Prerequisites:** 8+ years engineering plus 2-6 years managing (Anthropic accepts technical leadership for the 2+ years); backend, SRE and devtools managers can cross; PhD not required [A/M · T0-65 L202].
 - **Proof to show:** Delivery record: AI systems shipped, eval/observability practices adopted across teams, cost governance results.
 - **Posting terms (measured or cited):** leadership (72.7%), communication (51.4%), mentoring (47.1%), compliance (30.9%), system design (25.3%), observability (18.0%), agentic AI (14.8%).
 
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Leadership & mentoring` · `leadership` · `technical leadership` · `Communication` · `communication skills` · `verbal communication` · `People management` · `line management` · `performance management` · `Stakeholder communication` · `stakeholder management` · `Mentoring` · `mentorship` · `coaching` · `GRC & risk assessment` · `GRC` · `risk assessment` · `System design` · `distributed systems design` · `system design for LLM applications` · `LLM evaluation` · `evals` · `Observability` · `LLM observability` · `monitoring` · `Capacity & GPU/API cost governance` · `capacity planning` · `FinOps` · `Guardrails` · `content filtering` · `safety filters` · `AI strategy & portfolio` · `AI strategy` · `portfolio management` · `Hiring & interviewing` · `recruiting` · `interviewing` · `tech lead` · `technical direction` · `Roadmapping & prioritisation` · `roadmaps` · `product roadmap` · `Executive & board communication` · `executive briefings` · `board reporting` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Agents & tool use` · `agentic AI` · `AI agents` · `Token & unit economics` · `token economics` · `cost per task` · `Build-vs-buy & vendor evaluation` · `vendor selection` · `procurement` · `Programme & project management` · `project management` · `programme management` · `ROI & business cases` · `ROI`
+`Leadership & mentoring` · `leadership` · `technical leadership` · `Communication` · `communication skills` · `verbal communication` · `People management` · `line management` · `performance management` · `Stakeholder communication` · `stakeholder management` · `tech lead` · `technical direction` · `Mentoring` · `mentorship` · `coaching` · `System design` · `distributed systems design` · `system design for LLM applications` · `LLM evaluation` · `evals` · `Observability` · `LLM observability` · `monitoring` · `AI strategy & portfolio` · `AI strategy` · `portfolio management` · `Hiring & interviewing` · `recruiting` · `interviewing` · `Roadmapping & prioritisation` · `roadmaps` · `product roadmap` · `Executive & board communication` · `executive briefings` · `board reporting` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Capacity & GPU/API cost governance` · `capacity planning` · `FinOps` · `Agents & tool use` · `agentic AI` · `AI agents` · `Token & unit economics` · `token economics` · `cost per task` · `Build-vs-buy & vendor evaluation` · `vendor selection` · `procurement` · `Programme & project management` · `project management` · `programme management` · `ROI & business cases` · `ROI` · `business value` · `Organisation design` · `org design` · `team topology` · `Influence without authority` · `leading without authority`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -81,16 +81,13 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Communication (written & verbal) | Communication & collaboration | M | 3 | | |
 | People management | Leadership & people | M | 3 | | |
 | Stakeholder communication | Communication & collaboration | M | 3 | | |
+| Technical leadership | Leadership & people | M | 3 | | |
 | Mentoring | Leadership & people | I | 2 | | |
-| GRC & risk assessment | Method / practice | I | 2 | | |
 | System design | Concept / knowledge area | I | 2 | | |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | Concept / knowledge area | I | 2 | | |
 | Observability (OpenTelemetry traces, metrics) | Concept / knowledge area | I | 2 | | |
-| Capacity & GPU/API cost governance | Concept / knowledge area | I | 2 | | |
-| Guardrails | Concept / knowledge area | I | 2 | | |
 | AI strategy & portfolio | Business & product | I | 2 | | |
 | Hiring & interviewing | Leadership & people | I | 2 | | |
-| Technical leadership | Leadership & people | I | 2 | | |
 | Roadmapping & prioritisation | Business & product | I | 2 | | |
 | Executive & board communication | Communication & collaboration | I | 2 | | |
 | Pragmatism under ambiguity (C1) | Behavioural competency | I | 2 | | |
@@ -104,24 +101,22 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 |---|:---:|---|---|---|
 | Leadership & mentoring | M | JD (B) 72.7% | JobsPipe: Engineering Manager (feeder) | — |
 | Communication (written & verbal) | M | JD (B) 51.4% | JobsPipe: Engineering Manager (feeder) | — |
-| People management | M | P (D) | — | role-defining |
-| Stakeholder communication | M | P (D) | — | — |
+| People management | M | S (C) 100% | T0-65:L581 | 8/8 in T0-65; management years named in 5 postings, 2 to 6, median 3 |
+| Stakeholder communication | M | S (C) 75% | T0-65:L582 | 6/8 in T0-65; research, product, hardware and platform partners |
+| Technical leadership | M | S (C) 75% | T0-65:L583 | 6/8 in T0-65; direction, standards or design review |
 | Mentoring | I | JD (B) 47.1% | JobsPipe: Engineering Manager (feeder) | — |
-| GRC & risk assessment | I | JD (B) 30.9% | JobsPipe: Engineering Manager (feeder) | named as "compliance" |
 | System design | I | JD (B) 25.3% | JobsPipe: Engineering Manager (feeder) | — |
 | LLM evaluation (golden sets, calibrated judges, CI gates) | I | S (B) | T0-14:L774 | eval and observability as a shared practice other teams consume (Staff scope) |
 | Observability (OpenTelemetry traces, metrics) | I | JD (B) 18.0% | JobsPipe: Engineering Manager (feeder) | Important: part of the shared eval and observability practice |
-| Capacity & GPU/API cost governance | I | P (D) | — | GPU and API cost governance |
-| Guardrails | I | P (D) | — | responsible-AI processes |
-| AI strategy & portfolio | I | P (D) | — | AI roadmaps |
-| Hiring & interviewing | I | P (D) | — | hiring for AI roles |
-| Technical leadership | I | P (D) | — | — |
-| Roadmapping & prioritisation | I | P (D) | — | — |
+| AI strategy & portfolio | I | S (C) | T0-65:L593 | 0/8 in T0-65 (not seen below director level) |
+| Hiring & interviewing | I | S (C) 25% | T0-65:L587 | 2/8 in T0-65; Must at labs |
+| Roadmapping & prioritisation | I | S (C) 37.5% | T0-65:L584 | 3/8 in T0-65; Anthropic, NVIDIA DevTech, Google |
 | Executive & board communication | I | P (D) | — | — |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| Capacity & GPU/API cost governance | S | S (C) 12.5% | T0-65:L590 | 1/8 in T0-65; one inference team |
 | Agents & tool use | S | JD (B) 14.8% | JobsPipe: Engineering Manager (feeder) | named as "agentic AI" |
 | Token & unit economics | S | P (D) | — | — |
 | Build-vs-buy & vendor evaluation | S | P (D) | — | — |
@@ -139,6 +134,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Design docs & RFCs | S | P (D) | — | — |
 | Cross-functional collaboration | S | P (D) | — | — |
 | Python (production) | S | P (D) | — | hands-on credibility |
+| GRC & risk assessment | O | JD (B) 30.9% | JobsPipe: Engineering Manager (feeder) | named as "compliance" |
+| Guardrails | O | S (C) 12.5% | T0-65:L591 | 1/8 in T0-65 |
 | EU AI Act / NIST AI RMF / ISO 42001 | O | P (D) | — | — |
 | Agent frameworks (choose 1: LangGraph \| OpenAI Agents SDK \| Claude Agent SDK \| Pydantic AI \| Microsoft Agent Framework \| Google Agent Development Kit \| LlamaIndex \| CrewAI \| Mastra) | O | P (D) | — | — |
 | Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) | O | P (D) | — | — |

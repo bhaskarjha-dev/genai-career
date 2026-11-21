@@ -6,7 +6,7 @@ stage: 3
 status: published
 last_verified: 2026-11-19
 review_by: 2027-02-17
-summary: "Every skill a GPU Kernel / ML Compiler Engineer needs: 45 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
+summary: "Every skill a GPU Kernel / ML Compiler Engineer needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment."
 roles: [gpu-kernel-engineer]
 generated_by: scripts/build_skills.py
 ---
@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #16 · **Resume variant:** D1 (AI Systems & Infrastructure: Serving & kernels) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-gpu-kernel-engineer) · [role hub](../../02-roles/hubs/gpu-kernel-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-gpu-kernel-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-gpu-kernel-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**45 skills:** Must 7 · Important 14 · Should 11 · Optional 13. **Evidence:** S09 1 · S 31 · P 13 (29% practice-curated). **Non-technical:** 7.
+**47 skills:** Must 6 · Important 10 · Should 18 · Optional 13. **Evidence:** S09 1 · S 37 · P 9 (19% practice-curated). **Non-technical:** 7.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,14 +28,14 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** CUDA / Triton / CUTLASS [S09 6.6%] · GPU fundamentals (HBM, prefill vs decode) [S · T0-03] · Linear algebra [P]<br>**Important:** Attention, GEMM & quantised kernels [S · T0-03] · GPU memory performance [P] · ML compilers (XLA, TorchInductor) [S · T0-03] · Quantisation (FP8/FP4, AWQ, GPTQ) [S · T0-03]<br>**Should:** PyTorch internals [S · T0-03] · PTX / SASS-level optimisation [P]<br>**Optional:** NCCL / RDMA / InfiniBand [P] |
-| Technical: knowledge | **Method / practice** | **Must:** Profiling & roofline (Nsight) [S · T0-03]<br>**Important:** Numerics validation [S · T0-03] |
-| Technical: concrete | **Programming language** | **Must:** C++ [S · T0-03] · CUDA C++ [S · T0-03] · Triton (kernel language) [S · T0-63]<br>**Should:** Python (production) [S · T0-03]<br>**Optional:** Tile DSLs (choose 1: Helion \| CuTe DSL) [S · T0-03] · Helion [S · T0-03] · CuTe DSL [S · T0-03] · HIP [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** CUDA / Triton / CUTLASS [S09 6.6%] · GPU fundamentals (HBM, prefill vs decode) [S · T0-03]<br>**Important:** Attention, GEMM & quantised kernels [S · T0-03] · GPU memory performance [S · T0-63] · ML compilers (XLA, TorchInductor) [S · T0-03]<br>**Should:** Linear algebra [S · T0-63] · Quantisation (FP8/FP4, AWQ, GPTQ) [S · T0-03] · PyTorch internals [S · T0-03] · PTX / SASS-level optimisation [P]<br>**Optional:** NCCL / RDMA / InfiniBand [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Profiling & roofline (Nsight) [S · T0-03]<br>**Important:** Numerics validation [S · T0-03] · Upstream open-source contributions [S · T0-63] |
+| Technical: concrete | **Programming language** | **Must:** C++ [S · T0-03] · CUDA C++ [S · T0-03] · Triton (kernel language) [S · T0-63]<br>**Should:** Python (production) [S · T0-03]<br>**Optional:** Tile DSLs (choose 1: Helion \| CuTe DSL) [S · T0-03] · Helion [S · T0-03] · CuTe DSL [S · T0-03] · HIP [P] · CUDA Tile (Tile IR) [S · T0-03, T0-63] |
 | Technical: concrete | **Framework / SDK** | **Should:** XLA [S · T0-03] · TorchInductor (torch.compile) [S · T0-03] · vLLM [S · T0-05] · SGLang [S · T0-05]<br>**Optional:** MLIR [P] |
-| Technical: concrete | **Library / package** | **Important:** CUTLASS [S · T0-03] · CuTe [P]<br>**Should:** FlashAttention [P] · FlashInfer [S · T0-03]<br>**Optional:** NCCL [P] |
+| Technical: concrete | **Library / package** | **Should:** CUTLASS [S · T0-03] · CuTe [S · T0-63] · FlashAttention [P] · FlashInfer [S · T0-03] · NCCL [S · T0-63] |
 | Technical: concrete | **Platform / cloud service** | **Optional:** AMD ROCm [S · T0-05] |
 | Technical: concrete | **Infrastructure / DevOps tool** | **Important:** NVIDIA Nsight (Systems / Compute) [S · T0-03] |
-| Technical: concrete | **Hardware / accelerator** | **Important:** NVIDIA Hopper (H100 / H200) [S · T0-14] · NVIDIA Blackwell (B200 / GB200 / GB300) [S · T0-03]<br>**Optional:** TPU / Trainium / ROCm (choose 1: Google TPU \| AWS Trainium / Inferentia \| AMD ROCm) [S · T0-05] · AMD Instinct (MI300 series) [S · T0-13] · AWS Trainium / Inferentia [S · T0-03] · Google TPU [P] |
+| Technical: concrete | **Hardware / accelerator** | **Should:** NVIDIA Hopper (H100 / H200) [S · T0-14] · NVIDIA Blackwell (B200 / GB200 / GB300) [S · T0-03]<br>**Optional:** TPU / Trainium / ROCm (choose 1: Google TPU \| AWS Trainium / Inferentia \| AMD ROCm) [S · T0-05] · AMD Instinct (MI300 series) [S · T0-13] · AWS Trainium / Inferentia [S · T0-03] · Google TPU [P] |
 | Non-technical | **Communication & collaboration** | **Should:** Communication (written & verbal) [P] · Design docs & RFCs [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Leadership & people** | **Optional:** Mentoring [P] |
@@ -57,7 +57,7 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- None recommended.
+- **Optional:** AMD ROCm Certified Associate: Free (5 modules + Docker AMD GPU labs + exam, 24-mo validity); useful for AMD/ROCm kernel tracks (17.1% T0-63 name ROCm; 0/47 cert JDs; T0-32:L243, L857) [T0-32, T0-63]
 
 ## 5. Prerequisites and proof
 
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`C++` · `modern C++` · `C++17` · `CUDA / Triton / CUTLASS` · `GPU kernel programming` · `CUDA kernels` · `CUDA C++` · `CUDA` · `CUDA programming` · `GPU fundamentals` · `GPU architecture` · `HBM` · `Linear algebra` · `matrix calculus` · `maths for ML` · `Profiling & roofline` · `roofline analysis` · `performance profiling` · `Triton` · `OpenAI Triton` · `Triton kernels` · `Attention, GEMM & quantised kernels` · `attention kernels` · `GEMM` · `GPU memory performance` · `memory coalescing` · `shared memory` · `Numerics validation` · `numerical accuracy` · `low-precision numerics validation` · `ML compilers` · `graph compilers` · `Quantisation` · `quantization` · `CUTLASS` · `CuTe` · `NVIDIA Nsight` · `Nsight Compute` · `Nsight Systems` · `NVIDIA Hopper` · `H100` · `H200` · `NVIDIA Blackwell` · `B200` · `GB200` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Python` · `Python 3` · `production Python` · `PyTorch internals` · `autograd internals` · `PyTorch dispatcher` · `XLA` · `OpenXLA` · `TorchInductor` · `torch.compile` · `Inductor` · `FlashAttention` · `FlashInfer` · `vLLM`
+`C++` · `modern C++` · `C++17` · `CUDA / Triton / CUTLASS` · `GPU kernel programming` · `CUDA kernels` · `CUDA C++` · `CUDA` · `CUDA programming` · `GPU fundamentals` · `GPU architecture` · `HBM` · `Profiling & roofline` · `roofline analysis` · `performance profiling` · `Triton` · `OpenAI Triton` · `Triton kernels` · `Attention, GEMM & quantised kernels` · `attention kernels` · `GEMM` · `GPU memory performance` · `memory coalescing` · `shared memory` · `Numerics validation` · `numerical accuracy` · `low-precision numerics validation` · `ML compilers` · `graph compilers` · `NVIDIA Nsight` · `Nsight Compute` · `Nsight Systems` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Explaining probabilistic trade-offs` · `trade-off communication` · `Ownership & incident response` · `ownership` · `accountability` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Upstream open-source contributions` · `Linear algebra` · `matrix calculus` · `maths for ML` · `Quantisation` · `quantization` · `CUTLASS` · `CuTe` · `NVIDIA Hopper` · `H100` · `H200` · `NVIDIA Blackwell` · `B200` · `GB200` · `Python` · `Python 3` · `production Python` · `PyTorch internals` · `autograd internals` · `PyTorch dispatcher` · `XLA` · `OpenXLA` · `TorchInductor` · `torch.compile` · `Inductor` · `FlashAttention` · `FlashInfer`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -81,23 +81,18 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | CUDA / Triton / CUTLASS | Concept / knowledge area | M | 3 | | |
 | CUDA C++ | Programming language | M | 3 | | |
 | GPU fundamentals (HBM, prefill vs decode) | Concept / knowledge area | M | 3 | | |
-| Linear algebra | Concept / knowledge area | M | 3 | | |
 | Profiling & roofline (Nsight) | Method / practice | M | 3 | | |
 | Triton (kernel language) | Programming language | M | 3 | | |
 | Attention, GEMM & quantised kernels | Concept / knowledge area | I | 2 | | |
 | GPU memory performance | Concept / knowledge area | I | 2 | | |
 | Numerics validation | Method / practice | I | 2 | | |
 | ML compilers (XLA, TorchInductor) | Concept / knowledge area | I | 2 | | |
-| Quantisation (FP8/FP4, AWQ, GPTQ) | Concept / knowledge area | I | 2 | | |
-| CUTLASS | Library / package | I | 2 | | |
-| CuTe | Library / package | I | 2 | | |
 | NVIDIA Nsight (Systems / Compute) | Infrastructure / DevOps tool | I | 2 | | |
-| NVIDIA Hopper (H100 / H200) | Hardware / accelerator | I | 2 | | |
-| NVIDIA Blackwell (B200 / GB200 / GB300) | Hardware / accelerator | I | 2 | | |
 | Pragmatism under ambiguity (C1) | Behavioural competency | I | 2 | | |
 | Explaining probabilistic trade-offs (C2) | Behavioural competency | I | 2 | | |
 | Ownership & incident response (C3) | Behavioural competency | I | 2 | | |
 | Responsible-AI judgement (C4) | Behavioural competency | I | 2 | | |
+| Upstream open-source contributions | Method / practice | I | 2 | | |
 
 ## 8. Evidence and notes
 
@@ -107,23 +102,24 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | CUDA / Triton / CUTLASS | M | S09 (B) 6.6% | T0-03:L60 | CUDA/GPU kernels; role-defining (named at 29.3% of S09 companies) |
 | CUDA C++ | M | S (B) | T0-03:L241 | the CUDA programming model |
 | GPU fundamentals (HBM, prefill vs decode) | M | S (C) | T0-03:L242 | GPU programming (NVIDIA JD); SMs, warps, memory hierarchy, tensor cores |
-| Linear algebra | M | P (D) | — | — |
 | Profiling & roofline (Nsight) | M | S (B) | T0-03:L137 | Nsight Systems; roofline |
 | Triton (kernel language) | M | S (C) | T0-63:L170 | 56.1% overall, 69% of kernel-led postings in T0-63 |
 | Attention, GEMM & quantised kernels | I | S (C) | T0-03:L101 | fused attention; GEMM tuning; FP8/FP4/INT4 kernels |
-| GPU memory performance | I | P (D) | — | coalescing, bank conflicts, occupancy |
+| GPU memory performance | I | S (B) 19.5% | T0-63:L594 | 8/41 in T0-63; Memory bandwidth, layout or hierarchy named |
 | Numerics validation | I | S (C) | T0-03:L137 | — |
 | ML compilers (XLA, TorchInductor) | I | S (C) | T0-03:L240 | XLA, the Triton compiler, TorchInductor, NeuronX (T0-03 J2) |
-| Quantisation (FP8/FP4, AWQ, GPTQ) | I | S (B) | T0-03:L137 | — |
-| CUTLASS | I | S (C) | T0-03:L137 | — |
-| CuTe | I | P (D) | — | — |
 | NVIDIA Nsight (Systems / Compute) | I | S (C) | T0-03:L137 | Nsight Compute itself is practice-curated |
-| NVIDIA Hopper (H100 / H200) | I | S (B) | T0-14:L551 | roofline ridge ≈300 FLOP/byte at BF16 dense (calculated) |
-| NVIDIA Blackwell (B200 / GB200 / GB300) | I | S (C) | T0-03:L101 | fused attention in ~60 lines of Python on B200 with tile DSLs |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
+| Upstream open-source contributions | I | S (B) 17.1% | T0-63:L209 | 7/41 postings name OSS PRs as proof (NVIDIA, AMD, Sarvam, RadixArk) |
+| Linear algebra | S | S (B) 4.9% | T0-63:L591 | 2/41 in T0-63; Named only in two NVIDIA postings; implicit in GEMM work; downgrade from Must |
+| Quantisation (FP8/FP4, AWQ, GPTQ) | S | S (B) | T0-03:L137 | — |
+| CUTLASS | S | S (C) | T0-03:L137 | — |
+| CuTe | S | S (B) 12.2% | T0-63:L600 | 5/41 in T0-63; xAI, River AI, CoreWeave, Inferact, Sarvam |
+| NVIDIA Hopper (H100 / H200) | S | S (B) | T0-14:L551 | roofline ridge ≈300 FLOP/byte at BF16 dense (calculated) |
+| NVIDIA Blackwell (B200 / GB200 / GB300) | S | S (C) | T0-03:L101 | fused attention in ~60 lines of Python on B200 with tile DSLs |
 | Python (production) | S | S (C) | T0-03:L100 | — |
 | PyTorch internals | S | S (C) | T0-03:L137 | — |
 | XLA | S | S (C) | T0-03:L240 | — |
@@ -135,6 +131,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | PTX / SASS-level optimisation | S | P (D) | — | — |
 | Communication (written & verbal) | S | P (D) | — | — |
 | Design docs & RFCs | S | P (D) | — | — |
+| NCCL | S | S (B) 17.1% | T0-63:L208 | 7/41 postings (Anthropic, Sarvam, CoreWeave, OpenAI) |
 | Tile DSLs (choose 1: Helion \| CuTe DSL) | O | S (C) | T0-03:L542 | CUDA Tile IR, Helion, CuteDSL |
 | Helion | O | S (C) | T0-03:L101 | — |
 | CuTe DSL | O | S (C) | T0-03:L180 | — |
@@ -146,5 +143,5 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | MLIR | O | P (D) | — | — |
 | Google TPU | O | P (D) | — | — |
 | NCCL / RDMA / InfiniBand | O | P (D) | — | custom collectives |
-| NCCL | O | P (D) | — | — |
 | Mentoring | O | P (D) | — | — |
+| CUDA Tile (Tile IR) | O | S (B) 14.6% | T0-03:L180, T0-63:L212 | tile-language union (CuTe, CUDA Tile, TileLang) 6/41; CUDA 13.1 Tile IR |

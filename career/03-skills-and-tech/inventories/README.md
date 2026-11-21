@@ -42,4 +42,7 @@ Files, in GenAI target order:
 - [AI Enablement Engineer](ai-enablement-engineer.md)
 - [Domain Evaluation Specialist / AI Trainer](domain-evaluation-specialist.md)
 - [AI Engineering Manager / Director](ai-engineering-manager.md)
-- [VP / Head of AI / CAIO](vp-head-of-ai.md)
+- [VP / Head of AI](vp-head-of-ai.md)
+- [Chief AI Officer](chief-ai-officer.md)
+- [Independent AI Consultant / Contract Builder](independent-ai-consultant.md)
+- [Fractional AI Leader](fractional-ai-leader.md)

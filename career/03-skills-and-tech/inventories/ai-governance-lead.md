@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #18 · **Resume variant:** E2 (AI Product, Governance & Assurance: Governance & assurance) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-governance-lead) · [role hub](../../02-roles/hubs/ai-governance-lead.md) · [narrative skill map](../role-skill-maps.md#skills-ai-governance-lead) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-governance-lead) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**58 skills:** Must 6 · Important 20 · Should 19 · Optional 13. **Evidence:** S 38 · P 20 (34% practice-curated). **Non-technical:** 16.
+**58 skills:** Must 6 · Important 20 · Should 19 · Optional 13. **Evidence:** S 41 · P 17 (29% practice-curated). **Non-technical:** 16.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -35,7 +35,7 @@ generated_by: scripts/build_skills.py
 | Technical: concrete | **Specialised product** | **Should:** OneTrust (AI governance) [S · T0-15] · IBM OpenPages / watsonx.governance [S · T0-15] · AI governance platforms (choose 1: OneTrust \| Credo AI \| Holistic AI \| IBM OpenPages / watsonx.governance) [S · T0-15]<br>**Optional:** Credo AI [S · T0-15] · Holistic AI [S · T0-15] |
 | Technical: concrete | **Protocol / standard** | **Should:** C2PA [S · T0-15] |
 | Technical: concrete | **Regulation / framework** | **Must:** EU AI Act [S · T0-15]<br>**Important:** NIST AI RMF [S · T0-15] · ISO/IEC 42001 [S · T0-15] · SR 26-2 (US banking model-risk guidance) [S · T0-15] · NYC Local Law 144 [S · T0-15] · India DPDP Act [S · T0-15] · NAIC AI model bulletin (insurance) [S · T0-15]<br>**Should:** EU GPAI Code of Practice [S · T0-15] · California SB 53 [S · T0-15] · GDPR [S · T0-15]<br>**Optional:** Colorado ADMT law (SB 26-189; replaced SB 24-205) [S · T0-61] · OWASP Top 10 for LLM Applications [P] · MITRE ATLAS [P] · ISO/IEC 27001 [P] · SOC 2 [P] · HIPAA [P] |
-| Non-technical | **Communication & collaboration** | **Must:** Stakeholder communication [P]<br>**Important:** Communication (written & verbal) [P] · Executive & board communication [P]<br>**Should:** Technical writing [P] · Cross-functional collaboration [P] |
+| Non-technical | **Communication & collaboration** | **Must:** Stakeholder communication [S · T0-61]<br>**Important:** Communication (written & verbal) [S · T0-61] · Executive & board communication [S · T0-61]<br>**Should:** Technical writing [P] · Cross-functional collaboration [P] |
 | Non-technical | **Behavioural competency** | **Important:** Pragmatism under ambiguity (C1) [S · T1-03] · Explaining probabilistic trade-offs (C2) [S · T1-03] · Ownership & incident response (C3) [S · T1-03] · Responsible-AI judgement (C4) [S · T1-03] |
 | Non-technical | **Business & product** | **Important:** AI operating model & governance boards [S · T0-15]<br>**Should:** Programme & project management [P] |
 | Non-technical | **Leadership & people** | **Should:** Leadership & mentoring [P]<br>**Optional:** Mentoring [P] · Hiring & interviewing [P] |
@@ -57,17 +57,17 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** IAPP Artificial Intelligence Governance Professional (AIGP): optional; domain certifications come first [T0-15]
-- **Optional:** IAPP CIPP (privacy law, regional variants): privacy-law route [T0-15]
-- **Optional:** IAPP CIPM (privacy programme management): privacy-programme route [T0-15]
-- **Optional:** ISC2 CISSP: security route [T0-15]
-- **Optional:** ISACA CISA: audit route [T0-15]
-- **Optional:** ISACA CRISC: IT-risk route [T0-15]
-- **Optional:** ISACA Certified Information Security Manager (CISM) [T0-34]
-- **Optional:** ISACA Advanced in AI Security Management (AAISM) [T0-34]
-- **Optional:** ISACA Advanced in AI Risk (AAIR) [T0-34]
-- **Optional:** PECB Certified ISO/IEC 42001 Lead Auditor [T0-34]
-- **Optional:** DSCI Certified Privacy Professional (DCPP) [T0-34]
+- **Optional:** IAPP Artificial Intelligence Governance Professional (AIGP): 6.6% (5/76; 7.5% merged) GRC Careers (B [COI]), 8.9% Axial US AI-gov (C), 3/9 India (B); BoK v2.1 Feb 2026; tie-breaker behind domain certs [T0-15, T0-34]
+- **Optional:** IAPP CIPP (privacy law, regional variants): 9.2% (7/76) GRC Careers (B [COI]), 8.2% Axial (C), 3/9 India CIPP/CIPM (B); privacy-law route (ANAB ISO 17024) [T0-15, T0-34]
+- **Optional:** IAPP CIPM (privacy programme management): 6.6% (5/76) GRC Careers (B [COI]), 6.8% Axial (C), 3/9 India CIPP/CIPM (B); privacy programme management [T0-15, T0-34]
+- **Optional:** ISC2 CISSP: #1 Axial US AI-gov at 10.4% (C), 7.9% GRC Careers (B [COI]), 5/9 India (B); senior security baseline [T0-15, T0-34]
+- **Optional:** ISACA CISA: #1 on GRC Careers AI-gov at 17.1% (13/76, B [COI]), 5.9% Axial (C), 6/9 India (B); prerequisite route for AAIA [T0-15, T0-34]
+- **Optional:** ISACA CRISC: #3 on GRC Careers AI-gov at 11.8% (9/76, B [COI]), 6.4% Axial (C), 5/9 India (B); IT-risk governance baseline [T0-15, T0-34]
+- **Optional:** ISACA Certified Information Security Manager (CISM): #2 on GRC Careers AI-gov at 13.2% (10/76, B [COI]), 8.1% Axial (C), 3/9 India (B); prerequisite for AAISM/AAIR [T0-34]
+- **Optional:** ISACA Advanced in AI Security Management (AAISM): ISACA Advanced in AI Security Management (launched 2025-08; $459/$599 + $50); requires CISM or CISSP (T0-34:L56, T0-60:L79) [T0-34]
+- **Optional:** ISACA Advanced in AI Risk (AAIR): ISACA Advanced in AI Risk; requires CRISC/CISM/CISA/CGEIT; complements governance and model-risk roles (T0-34:L56) [T0-34]
+- **Optional:** PECB Certified ISO/IEC 42001 Lead Auditor: ISO/IEC 42001 audit/readiness ($599-$659 resellers or ~$2-3K bundled; 5/9 India; check 17024 vs ASTM E2659 scope; T0-34:L58, L310) [T0-34]
+- **Optional:** DSCI Certified Privacy Professional (DCPP): India DPDP/privacy baseline (INR 15,000 + 18% GST = INR 17,700 via Pearson VUE; 0/9 in T0-34 India sample; T0-34:L155, L228) [T0-34]
 
 ## 5. Prerequisites and proof
 
@@ -120,7 +120,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 |---|:---:|---|---|---|
 | GRC & risk assessment | M | S (B) | T0-15:L162 | about 5 years in GRC, privacy, audit or security |
 | EU AI Act / NIST AI RMF / ISO 42001 | M | S (A) | T0-15:L162 | EU AI Act, NIST AI RMF, ISO/IEC 42001 |
-| Stakeholder communication | M | P (D) | — | running committees; stakeholder management |
+| Stakeholder communication | M | S (C) 100% | T0-61:L654 | 11/11 in T0-61; cross-functional or executive stakeholder work in every read posting |
 | AI inventory & risk register | M | S (C) | T0-15:L337 | AI inventory and registry; approvals before go-live |
 | EU AI Act | M | S (A) | T0-15:L349 | GPAI duties since 2 Aug 2025; Annex III from 2 Dec 2027; Annex I from 2 Aug 2028 |
 | AI policy & standards writing | M | S (C) | T0-15:L58 | — |
@@ -138,8 +138,8 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Third-party and vendor AI risk | I | S (C) | T0-15:L262 | vendor risk |
 | AI impact & risk assessment | I | S (C) | T0-15:L58 | risk-assessment methods |
 | AI operating model & governance boards | I | S (C) | T0-15:L58 | governance committees and approval boards |
-| Communication (written & verbal) | I | P (D) | — | — |
-| Executive & board communication | I | P (D) | — | — |
+| Communication (written & verbal) | I | S (C) 36% | T0-61:L658 | 4/11 in T0-61; written and verbal communication stated explicitly |
+| Executive & board communication | I | S (C) 36% | T0-61:L657 | 4/11 in T0-61; director-plus and senior-manager postings |
 | Pragmatism under ambiguity (C1) | I | S (C) | T1-03:L74 | — |
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | — |

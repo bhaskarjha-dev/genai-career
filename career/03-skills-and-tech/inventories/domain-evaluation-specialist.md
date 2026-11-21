@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #24 · **Resume variant:** E3 (AI Product, Governance & Assurance: Domain evaluation) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-domain-evaluation-specialist) · [role hub](../../02-roles/hubs/domain-evaluation-specialist.md) · [narrative skill map](../role-skill-maps.md#skills-domain-evaluation-specialist) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-domain-evaluation-specialist) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**42 skills:** Must 4 · Important 7 · Should 19 · Optional 12. **Evidence:** S 14 · P 28 (67% practice-curated). **Non-technical:** 16.
+**42 skills:** Must 5 · Important 6 · Should 19 · Optional 12. **Evidence:** S 17 · P 25 (60% practice-curated). **Non-technical:** 16.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -29,12 +29,12 @@ generated_by: scripts/build_skills.py
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
 | Technical: knowledge | **Concept / knowledge area** | **Should:** AI literacy (tokens, RAG vs fine-tune, cost) [S · T0-06] · LLM fundamentals (tokens, context windows, sampling, hallucination) [P] · Grounding & citations (hallucination control) [P] · LLM evaluation (golden sets, calibrated judges, CI gates) [P]<br>**Optional:** Statistics (inference, hypothesis tests, regression) [P] · Multimodal AI (vision, documents, audio) [P] |
-| Technical: knowledge | **Method / practice** | **Must:** Rubrics & inter-rater agreement [S · T0-06]<br>**Important:** Error analysis [S · T0-06] · Annotation workflows [S · T0-06] · Golden datasets & test-set curation [S · T0-06] · Annotation guidelines & task design [S · T0-06] · Human evaluation programmes [S · T0-06] · Benchmark construction [S · T0-06] · Fact-checking & output verification [P]<br>**Should:** Prompt engineering [S · T2-01] · Preference & comparison data collection [P] · Red-teaming [P] · LLM-as-judge design & calibration [P] · Eval statistics (CIs, power, pass^k) [P] · Data analysis [P]<br>**Optional:** Synthetic data generation [P] · Agent evaluation (trajectories, task success) [P] · GRC & risk assessment [P] |
+| Technical: knowledge | **Method / practice** | **Must:** Rubrics & inter-rater agreement [S · T0-06] · Human evaluation programmes [S · T0-66]<br>**Important:** Error analysis [S · T0-06] · Annotation workflows [S · T0-06] · Golden datasets & test-set curation [S · T0-06] · Annotation guidelines & task design [S · T0-06] · Benchmark construction [S · T0-06] · Fact-checking & output verification [S · T0-66]<br>**Should:** Prompt engineering [S · T2-01] · Preference & comparison data collection [P] · Red-teaming [S · T0-66] · LLM-as-judge design & calibration [P] · Eval statistics (CIs, power, pass^k) [P] · Data analysis [P]<br>**Optional:** Synthetic data generation [P] · Agent evaluation (trajectories, task success) [P] · GRC & risk assessment [P] |
 | Technical: concrete | **Programming language** | **Optional:** Python/SQL (notebook level) [S · T2-01] |
 | Technical: concrete | **Model / model family** | **Should:** Frontier model families (choose 1: Claude \| GPT and o-series \| Gemini) [P] |
 | Technical: concrete | **Specialised product** | **Optional:** Annotation platforms (choose 1: Label Studio \| Labelbox \| Argilla) [P] |
 | Non-technical | **Communication & collaboration** | **Must:** Clear writing & presenting [S · T0-06]<br>**Should:** Communication (written & verbal) [P] · Technical writing [P] · Cross-functional collaboration [P] |
-| Non-technical | **Behavioural competency** | **Must:** Attention to detail [P]<br>**Should:** Time management & prioritisation [P] · Responsible-AI judgement (C4) [S · T1-03] · Pragmatism under ambiguity (C1) [S · T1-03] · Adaptability & learning agility [P] · Problem solving [P] |
+| Non-technical | **Behavioural competency** | **Must:** Attention to detail [S · T0-66]<br>**Should:** Time management & prioritisation [P] · Responsible-AI judgement (C4) [S · T1-03] · Pragmatism under ambiguity (C1) [S · T1-03] · Adaptability & learning agility [P] · Problem solving [P] |
 | Non-technical | **Business & product** | **Optional:** Product sense [P] |
 | Non-technical | **Domain knowledge** | **Must:** Domain expertise [S · T0-06]<br>**Optional:** Financial services [P] · Healthcare & life sciences [P] · Legal [P] |
 | Non-technical | **Research craft** | **Optional:** Scientific writing [P] |
@@ -69,7 +69,7 @@ generated_by: scripts/build_skills.py
 
 Canonical names plus common posting wording for the Must, Important and Should skills, in that order:
 
-`Domain expertise` · `subject-matter expertise` · `Clear writing & presenting` · `clear writing` · `presentations` · `Rubrics & inter-rater agreement` · `rubric design` · `inter-rater agreement` · `Attention to detail` · `rigour` · `precision` · `Error analysis` · `failure analysis` · `trace review` · `Annotation workflows` · `data annotation` · `data labelling` · `Golden datasets & test-set curation` · `test sets` · `eval datasets` · `Annotation guidelines & task design` · `labelling guidelines` · `Human evaluation programmes` · `human raters` · `side-by-side evaluation` · `Benchmark construction` · `dataset curation` · `Fact-checking & output verification` · `fact-checking` · `response grading` · `AI literacy` · `AI fluency` · `LLM literacy` · `Prompt engineering` · `prompt design` · `prompting` · `Preference & comparison data collection` · `pairwise comparisons` · `RLHF data` · `Red-teaming` · `AI red teaming` · `adversarial testing` · `LLM-as-judge design & calibration` · `LLM-as-a-judge` · `judge calibration` · `Communication` · `communication skills` · `verbal communication` · `Time management & prioritisation` · `prioritisation` · `organisation` · `Claude` · `Claude models` · `GPT and o-series` · `GPT` · `OpenAI models` · `Gemini` · `Gemini models` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Adaptability & learning agility` · `adaptability` · `continuous learning` · `LLM fundamentals` · `how LLMs work` · `tokenisation`
+`Domain expertise` · `subject-matter expertise` · `Clear writing & presenting` · `clear writing` · `presentations` · `Rubrics & inter-rater agreement` · `rubric design` · `inter-rater agreement` · `Attention to detail` · `rigour` · `precision` · `Human evaluation programmes` · `human raters` · `side-by-side evaluation` · `Error analysis` · `failure analysis` · `trace review` · `Annotation workflows` · `data annotation` · `data labelling` · `Golden datasets & test-set curation` · `test sets` · `eval datasets` · `Annotation guidelines & task design` · `labelling guidelines` · `Benchmark construction` · `dataset curation` · `Fact-checking & output verification` · `fact-checking` · `response grading` · `AI literacy` · `AI fluency` · `LLM literacy` · `Prompt engineering` · `prompt design` · `prompting` · `Preference & comparison data collection` · `pairwise comparisons` · `RLHF data` · `Red-teaming` · `AI red teaming` · `adversarial testing` · `LLM-as-judge design & calibration` · `LLM-as-a-judge` · `judge calibration` · `Communication` · `communication skills` · `verbal communication` · `Time management & prioritisation` · `prioritisation` · `organisation` · `Claude` · `Claude models` · `GPT and o-series` · `GPT` · `OpenAI models` · `Gemini` · `Gemini models` · `Responsible-AI judgement` · `responsible AI` · `AI ethics` · `Pragmatism under ambiguity` · `ambiguity` · `bias for action` · `Adaptability & learning agility` · `adaptability` · `continuous learning` · `LLM fundamentals` · `how LLMs work` · `tokenisation`
 
 ## 7. Self-assessment (Must and Important)
 
@@ -81,11 +81,11 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Clear writing & presenting | Communication & collaboration | M | 3 | | |
 | Rubrics & inter-rater agreement | Method / practice | M | 3 | | |
 | Attention to detail | Behavioural competency | M | 3 | | |
+| Human evaluation programmes | Method / practice | M | 3 | | |
 | Error analysis | Method / practice | I | 2 | | |
 | Annotation workflows | Method / practice | I | 2 | | |
 | Golden datasets & test-set curation | Method / practice | I | 2 | | |
 | Annotation guidelines & task design | Method / practice | I | 2 | | |
-| Human evaluation programmes | Method / practice | I | 2 | | |
 | Benchmark construction | Method / practice | I | 2 | | |
 | Fact-checking & output verification | Method / practice | I | 2 | | |
 
@@ -96,18 +96,18 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Domain expertise | M | S (C) | T0-06:L177 | 4+ years; MA/JD/MD/PhD for premium rates |
 | Clear writing & presenting | M | S (C) | T0-06:L129 | clear writing |
 | Rubrics & inter-rater agreement | M | S (B) | T0-06:L606 | — |
-| Attention to detail | M | P (D) | — | table-stakes for rubric and labelling work |
+| Attention to detail | M | S (C) 22% | T0-66:L636 | n=18 in T0-66; 4 of 18 |
+| Human evaluation programmes | M | S (C) 67% | T0-66:L630 | 12/18 overall (12/14 expert-grader postings) in T0-66 |
 | Error analysis | I | S (C) | T0-06:L77 | failure taxonomies |
 | Annotation workflows | I | S (C) | T0-06:L152 | labelling with adjudication rules |
 | Golden datasets & test-set curation | I | S (B) | T0-06:L636 | 100+ real tasks with adjudication rules and two-reviewer agreement |
 | Annotation guidelines & task design | I | S (C) | T0-06:L636 | — |
-| Human evaluation programmes | I | S (C) | T0-06:L606 | inter-rater agreement (Cohen's kappa) |
 | Benchmark construction | I | S (C) | T0-06:L636 | compare 2-3 models against today's human baseline |
-| Fact-checking & output verification | I | P (D) | — | fact-checking and grading model responses |
+| Fact-checking & output verification | I | S (C) 17% | T0-66:L639 | n=18 in T0-66; 3 of 18 |
 | AI literacy (tokens, RAG vs fine-tune, cost) | S | S (C) | T0-06:L613 | — |
 | Prompt engineering | S | S (C) | T2-01:L496 | hands-on prompting |
 | Preference & comparison data collection | S | P (D) | — | pairwise comparisons for preference data |
-| Red-teaming | S | P (D) | — | adversarial prompting tasks |
+| Red-teaming | S | S (C) 11% | T0-66:L642 | n=18 in T0-66; 2 of 18 |
 | LLM-as-judge design & calibration | S | P (D) | — | — |
 | Communication (written & verbal) | S | P (D) | — | — |
 | Time management & prioritisation | S | P (D) | — | throughput on task platforms |

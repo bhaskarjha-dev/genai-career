@@ -18,7 +18,7 @@ generated_by: scripts/build_skills.py
 > **GenAI target rank:** #7 · **Resume variant:** D2 (AI Systems & Infrastructure: Platform & infrastructure) · **Ontology as of:** 2026-11-19
 > **Links:** [role profile](../../02-roles/role-catalog.md#profile-ai-infrastructure-engineer) · [role hub](../../02-roles/hubs/ai-infrastructure-engineer.md) · [narrative skill map](../role-skill-maps.md#skills-ai-infrastructure-engineer) · [concise resume block](../../06-job-search/resume-skills-matrix.md#resume-ai-infrastructure-engineer) · [all inventories](../role-skill-inventories.md) · [vocabulary](../skills-vocabulary.md)
 
-**59 skills:** Must 8 · Important 17 · Should 21 · Optional 13. **Evidence:** JD 12 · S09 3 · S 27 · P 17 (29% practice-curated). **Non-technical:** 7.
+**59 skills:** Must 8 · Important 17 · Should 21 · Optional 13. **Evidence:** JD 12 · S09 3 · S 30 · P 14 (24% practice-curated). **Non-technical:** 7.
 
 **How to use it:** Must and Important skills that are true for you go in the skills section, in the posting's wording; concrete technologies go under their resume headings, while concepts and methods are proven in bullets with a measured result. Practice-curated items [P] are standard for the role but unmeasured: check them against 10-20 live postings before investing. Choose-one groups are satisfied by any member. Tool statuses are as of 2026-11-19; re-verify by 2027-02-17.
 
@@ -28,8 +28,8 @@ generated_by: scripts/build_skills.py
 
 | Group | Type | Skills by tier, in priority order |
 |---|---|---|
-| Technical: knowledge | **Concept / knowledge area** | **Must:** Networking [P] · Observability (OpenTelemetry traces, metrics) [JD 25.0% (feeder)] · GPU fleet ops & scheduling [S · T0-54]<br>**Important:** DevOps [JD 99.0% (feeder)] · System design [S · T0-03] · NCCL / RDMA / InfiniBand [S · T0-03] · Checkpointing & storage throughput [P] · Hardware-fault reliability [S · T0-03] · Capacity & GPU/API cost governance [S · T0-14]<br>**Should:** Inference autoscaling [S · T0-14]<br>**Optional:** Prefill/decode disaggregation [S · T0-03] |
-| Technical: knowledge | **Method / practice** | **Must:** Terraform / IaC [JD 59.1% (feeder)] · SRE (SLOs, on-call, incidents) [P]<br>**Important:** Git & CI/CD [JD 81.2% (feeder)] · Progressive delivery (canary, shadow, feature flags) [S · T0-14] · Incident postmortems [S · T0-03]<br>**Optional:** Profiling & roofline (Nsight) [P] |
+| Technical: knowledge | **Concept / knowledge area** | **Must:** Networking [S · T0-54] · Observability (OpenTelemetry traces, metrics) [JD 25.0% (feeder)] · GPU fleet ops & scheduling [S · T0-54]<br>**Important:** DevOps [JD 99.0% (feeder)] · System design [S · T0-03] · NCCL / RDMA / InfiniBand [S · T0-03] · Checkpointing & storage throughput [S · T0-54] · Hardware-fault reliability [S · T0-03] · Capacity & GPU/API cost governance [S · T0-14]<br>**Should:** Inference autoscaling [S · T0-14]<br>**Optional:** Prefill/decode disaggregation [S · T0-03] |
+| Technical: knowledge | **Method / practice** | **Must:** Terraform / IaC [JD 59.1% (feeder)] · SRE (SLOs, on-call, incidents) [S · T0-54]<br>**Important:** Git & CI/CD [JD 81.2% (feeder)] · Progressive delivery (canary, shadow, feature flags) [S · T0-14] · Incident postmortems [S · T0-03]<br>**Optional:** Profiling & roofline (Nsight) [P] |
 | Technical: concrete | **Programming language** | **Must:** Python (production) [JD 55.7% (feeder)]<br>**Should:** Go / Java (choose 1: Go \| Java) [S · T0-03] · Bash / shell scripting [P] |
 | Technical: concrete | **Framework / SDK** | **Should:** vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) [S · T0-03] · Ray [S09 3.0%] · NVIDIA Dynamo [S · T0-03] |
 | Technical: concrete | **Library / package** | **Should:** NCCL [S · T0-03] |
@@ -57,12 +57,13 @@ generated_by: scripts/build_skills.py
 
 ## 4. Credentials (tie-breakers, not skills)
 
-- **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): announced (verify live Certiverse booking); NCP-AII and NCP-AIO target GPU infra more directly [T0-11, T0-32, T0-54]
 - **Optional:** Certified Kubernetes Administrator (CKA): intermediate live CLI exam ($445); CNCF KCSP requires 3+ CKA; 0/35 direct AI infra JD mentions [T0-32, T0-54]
-- **Optional:** Certified Kubernetes Application Developer (CKAD) [T0-32]
-- **Optional:** Certified Kubernetes Security Specialist (CKS) [T0-32]
-- **Optional:** NVIDIA-Certified Professional: AI Operations (NCP-AIO) [T0-32]
-- **Optional:** NVIDIA-Certified Professional: AI Infrastructure (NCP-AII) [T0-32]
+- **Optional:** NVIDIA-Certified Professional: AI Infrastructure (NCP-AII): $400, 70-75 Q + hands-on lab included (76% cluster bring-up/test/troubleshooting); top GPU infra exam (T0-32:L585, T0-54:L258) [T0-32]
+- **Optional:** NVIDIA-Certified Professional: AI Operations (NCP-AIO): $500, 30 MCQ + 3 live VM labs (only NVIDIA exam with confirmed live lab split); targets GPU cluster operations (T0-32:L599, T0-54:L259) [T0-32]
+- **Optional:** NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO): $125 (50 Q, 60 min; 40% AI infra, ~7h prep); entry-level stepping stone ahead of NCP-AII/NCP-AIO (T0-32:L459, L588; T0-54:L260) [T0-32, T0-54]
+- **Optional:** Certified Kubernetes Application Developer (CKAD): CNCF Certified Kubernetes Application Developer (live CLI exam); complements CKA for GPU/ML workload deployment (T0-32) [T0-32]
+- **Optional:** Certified Kubernetes Security Specialist (CKS): CNCF Certified Kubernetes Security Specialist (requires active CKA); relevant for multi-tenant GPU cluster security (T0-32) [T0-32]
+- **Optional:** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL): announced (verify live Certiverse booking); NCP-AII and NCP-AIO target GPU infra more directly [T0-11, T0-32, T0-54]
 
 ## 5. Prerequisites and proof
 
@@ -114,12 +115,12 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 |---|:---:|---|---|---|
 | Linux | M | JD (B) 45.1% | JobsPipe: DevOps Engineer (feeder) | role-defining for GPU infrastructure |
 | Kubernetes | M | JD (B) 69.4% | JobsPipe: DevOps Engineer (feeder) | including GPU scheduling |
-| Networking | M | P (D) | — | role-defining |
+| Networking | M | S (B) 51.4% | T0-54:L522 | 18/35 in T0-54; full-read 10/12 = 0.833; midpoint 0.674; 8/11 variant C |
 | Terraform / IaC | M | JD (B) 59.1% | JobsPipe: DevOps Engineer (feeder) | Terraform |
 | Python (production) | M | JD (B) 55.7% | JobsPipe: DevOps Engineer (feeder) | Python or Go |
-| SRE (SLOs, on-call, incidents) | M | P (D) | — | SRE and on-call practice; role-defining |
+| SRE (SLOs, on-call, incidents) | M | S (B) 37.1% | T0-54:L526 | 13/35 in T0-54; full-read 8/12 = 0.667; midpoint 0.519; explicit SRE, on-call or incident work |
 | Observability (OpenTelemetry traces, metrics) | M | JD (B) 25.0% | JobsPipe: Backend Engineer (feeder) | role-defining for fleet monitoring |
-| GPU fleet ops & scheduling | M | S (C) | T0-54:L187 | 94.3% all, 83.3% full-read in T0-54 |
+| GPU fleet ops & scheduling | M | S (C) | T0-54:L172 | 94.3% all (33/35), 83.3% full-read (10/12); core role gate |
 | DevOps | I | JD (B) 99.0% | JobsPipe: DevOps Engineer (feeder) | keyword in nearly every feeder posting |
 | Git & CI/CD | I | JD (B) 81.2% | JobsPipe: DevOps Engineer (feeder) | Important rather than Must: feeder title |
 | Docker | I | JD (B) 53.4% | JobsPipe: DevOps Engineer (feeder) | Important rather than Must: feeder title |
@@ -127,7 +128,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Terraform | I | JD (B) 59.1% | JobsPipe: DevOps Engineer (feeder) | Important rather than Must: the share comes from a feeder title |
 | System design | I | S (B) | T0-03:L239 | distributed-systems depth (T0-03 J1) |
 | NCCL / RDMA / InfiniBand | I | S (C) | T0-03:L242 | — |
-| Checkpointing & storage throughput | I | P (D) | — | — |
+| Checkpointing & storage throughput | I | S (B) 22.9% | T0-54:L536 | 8/35 in T0-54; full-read 4/12 = 0.333; midpoint 0.281 |
 | Hardware-fault reliability | I | S (B) | T0-03:L104 | silent data corruption (Anthropic's TPU postmortem) |
 | Capacity & GPU/API cost governance | I | S (C) | T0-14:L228 | — |
 | Progressive delivery (canary, shadow, feature flags) | I | S (B) | T0-14:L228 | weight distribution and canary rollouts (A5) |
@@ -136,7 +137,7 @@ Scale (T0-06 D9): 0 none · 1 tutorial-level awareness · 2 built and shipped so
 | Explaining probabilistic trade-offs (C2) | I | S (C) | T1-03:L74 | — |
 | Ownership & incident response (C3) | I | S (C) | T1-03:L74 | on-call and incident ownership |
 | Responsible-AI judgement (C4) | I | S (C) | T1-03:L74 | — |
-| Slurm | I | S (C) | T0-54:L190 | 42.9% all, 50.0% full-read, 62.5% cluster variants B–D |
+| Slurm | I | S (C) | T0-54:L181 | 42.9% all (15/35), 50.0% full-read; 62.5% in HPC/platform/neocloud variants |
 | Go / Java (choose 1: Go \| Java) | S | S (C) | T0-03:L191 | Python or Go |
 | KServe / Ray Serve (choose 1: KServe \| Ray Serve \| BentoML \| NVIDIA Dynamo Triton \| NVIDIA NIM) | S | S (B) | T0-03:L136 | Ray Serve, KServe, Dynamo on Kubernetes |
 | vLLM / SGLang / TensorRT-LLM (choose 1: vLLM \| SGLang \| TensorRT-LLM) | S | S (B) | T0-03:L58 | — |

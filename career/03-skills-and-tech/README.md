@@ -12,7 +12,7 @@ sources: [T0-03, T0-16, T0-06, T0-68, T0-69]
 # Stage 03: Skills and technology
 
 > **The question this stage answers:** What exactly does each role need me to know and use, and how much does each skill matter?
-> **Status:** Covered: reference documents, the skills radar (including multi-signal momentum tracking from T0-68), learning roadmaps and agentic protocols exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: reference documents, the skills radar (including multi-signal momentum tracking from T0-69), learning roadmaps, the rated learning-resources catalogue (T0-68, D-027) and agentic protocols exist. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 
@@ -20,6 +20,7 @@ sources: [T0-03, T0-16, T0-06, T0-68, T0-69]
 |---|---|
 | [skills-radar.md](skills-radar.md) | What to learn first, what sets each résumé family apart, multi-signal surging skills (adoption, telemetry and governance — not two-date JD series), which skills only one or two roles demand, and what to stop investing in (generated) |
 | [learning-roadmaps.md](learning-roadmaps.md) | How to learn what a target role needs, in what order and how long it takes, by role family and starting background, with gates, university/programme trade-offs and durable-versus-fast-moving skills |
+| [learning-resources.md](learning-resources.md) | Sceptically rated catalogue of 60 GenAI learning resources (52 rated in T0-68 plus 8 primary technical specifications), mapped to all 12 role families with rubric scores, refund checks, COI flags and hard gates G1–G5 (generated, D-027) |
 | [agentic-protocols.md](agentic-protocols.md) | MCP, A2A and AG-UI: dated status, what to know at each depth (awareness, build, operate), security essentials and how to prove it |
 | [role-skill-inventories.md](role-skill-inventories.md) | Complete typed inventory per role (concepts, methods, tools, frameworks, platforms, non-technical skills), with tiers, evidence, keywords and a self-assessment; one file per role in [inventories/](inventories/README.md). Also the cross-role views, the tier decisions, the verification record and how the skills ontology is designed (its ten requirements and the tier rule) |
 | [role-skill-maps.md](role-skill-maps.md) | Narrative skill map per role: practice notes from the evidence, tools in use with their dated status, proof of work, interview track, typical gaps and entry routes; each map links the role's inventory for its skills and tiers |
@@ -29,7 +30,7 @@ sources: [T0-03, T0-16, T0-06, T0-68, T0-69]
 
 | Item | Scope | Depends on |
 |---|---|---|
-| Second dated JD-share snapshot | JobsPipe remained frozen at its `2026-09-10` count date as of `2026-11-14` (`T0-68`); a second dated posting-share snapshot awaits an updated JobsPipe or equivalent reproducible JD corpus | Fresh public JD dataset |
+| Second dated JD-share snapshot | JobsPipe remained frozen at its `2026-09-10` count date as of `2026-11-14` (`T0-69`); a second dated posting-share snapshot awaits an updated JobsPipe or equivalent reproducible JD corpus | Fresh public JD dataset |
 
 ## Evidence to read
 

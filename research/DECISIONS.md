@@ -810,7 +810,7 @@ The protocol also establishes 7 TTL classes (14 / 31 / 90 / 180 / 365 / 1095 day
 
 ## Calibration Record (Post-Review)
 
-> Fill this section ONLY during scheduled review or when the review_trigger fires.
+- **2026-11-19 (75-session utilization audit):** Implemented the D-012 Hype Register at `career/01-landscape/hype-register.md` (19 boom and doom claims `HR-001`–`HR-019`, each marked as traced, untraceable or a correction to this repository's own records, plus Prediction Register seed `PR-2025-03-10-01` under the `H0–H9` claim-archaeology rules), and codified the full T1-02 governance rubric in `CONTRIBUTING.md` §3 and §6 (CAP-1 conflict adjudication `R0–R5`/`K0–K10`, attribution-vs-assertion split, 7 downgrade flags & 6 hard ceilings, `T4`/`T6` freshness enforcement, `AC5` `archive.today` ban, and quarterly `n=59` statistical audit).
 <!-- /DECISION: D-012 -->
 
 ---
@@ -1530,7 +1530,7 @@ ROADMAP §6.9 left open where the generated country-ranking page should live (`c
 
 ## Calibration Record (Post-Review)
 
-> Fill this section ONLY during scheduled review or when the review_trigger fires.
+- **2026-11-19 (75-session utilization audit):** Added a 7th Early-Career lens and `Shanghai` (under `cn`) city entry, harvested previously omitted `T0-36` Pass 1 JSONL rents and pay records (Greater Sydney ML `A$169,370`; Numbeo rents for Abu Dhabi, Auckland, Melbourne and Manama; ERRATA U58), and flagged the Netherlands 2026 30% ruling taxable-salary floor conflict (`€48,013` vs `€46,107`, ERRATA U57).
 <!-- /DECISION: D-025 -->
 
 ---
@@ -1582,7 +1582,63 @@ ROADMAP §6.9 left open whether RP2's seven-part certification census should mov
 
 ## Calibration Record (Post-Review)
 
-> Fill this section ONLY during scheduled review or when the review_trigger fires.
+- **2026-11-19 (75-session utilization audit):** Expanded `data/credentials.json` from 150 to **194 credentials** (+44 verified additions across `T0-29`–`T0-34`, `T3-01`/`T3-02` and `T0-11`, including `nvidia_ncp_ousd`), remediated downstream `T0-34` Axial/GRC hiring-signal corruption (`AIGP` `6.6%` GRC / `8.9%` Axial vs `CISA 17.1%`, `CISM 13.2%`, `CISSP 10.4%`), and replaced anti-measurement 5-criterion re-normalisation in `scripts/rank_credentials.py` with **`UNMEASURED_HIRING_SIGNAL_PRIOR = (2.5, 4.0, 5.5)`** (`MC_SEED = 20261119`, `MC_ITER = 4000`) on the full 100% weight vector (keeping `hiring_signal: null` in JSON). Rank changes against the previous data and method (the lenses also grew: governance 29 → 53 credentials, product-frontier 17 → 20): in Governance, `CISSP` moves `#2 → #1`, `AIGP` `#1 → #2`, `CISM` `#17 → #3`, `CISA` `#20 → #5`, `CRISC` `#19 → #6`; in Product-frontier, `CKA` moves `#6 → #1` and `CKAD` `#13 → #3`. The prior replaces decision 1's re-normalisation of unmeasured hiring-signal weights; its values are a modelling judgement (Grade D) awaiting human review.
 <!-- /DECISION: D-026 -->
+
+---
+
+<!-- DECISION: D-027 -->
+---
+id: D-027
+title: "Rated Learning Resources Data File and Generated Catalog (T0-68)"
+status: accepted
+door_type: two-way
+date: 2026-11-19
+confidence: high
+evidence_refs: [T0-68-KF1, T0-68-KF2, T0-68-KF3]
+informed_by_sessions: [T0-68, T0-06, T0-10, T0-13, T0-16, T0-21, T0-69]
+supersedes: null
+superseded_by: null
+amends: D-018
+review_trigger: "Deferred sessions T0-28/T0-33 add vendor learning paths; or >25% of resource prices/URLs change at the 90-day V2 refresh"
+review_date: 2027-02-17
+prediction: "Moving T0-68's 52 rated courses, books, tutorials and documentation resources into data/learning_resources.json with a deterministic rubric generator preserves full T0-68 evidence inside career/ while keeping learning-roadmaps.md concise and compute/API tools cleanly separated in data/tools.json"
+tags: [skills, learning-resources, data-layer, generator, rp2, d-019]
+authored_by: "Jetski (LLM assistant), at the owner's request"
+human_reviewed: false
+schema_version: "0.1.0"
+---
+
+# D-027: Rated Learning Resources Data File and Generated Catalog (T0-68)
+
+## Context
+
+Decision D-018 rule 5 deferred `learning_resources.json` until a rating method was stated, because no GenAI course or bootcamp had outcome data that was not vendor-reported (T0-06 L203). Research Pipeline 2 session `T0-68` (*Learning Resources Rated*, 2026-11-13) rated **52 courses, books, tutorials, documentation hubs and bootcamps** across the GenAI stack with a transparent five-criterion rubric (`T = 4A + 4C + 4H + 5R + 3$`, out of 100; 44 resources carry a score and 8 carry a gated verdict without one) plus five quality gates (`G1`–`G5`; for example `G2` withholds a `use` verdict from a paid course without a confirmed refund window and traceable outcome claims), and found no independent outcome study of any GenAI-specific course or bootcamp (T0-68 KF1). Embedding all 52 rated items inside `career/03-skills-and-tech/learning-roadmaps.md` would overload the sequencing guide, while omitting them would strand most of `T0-68` inside `research/sessions/`.
+
+## Decision
+
+1. **Create `data/learning_resources.json`** with schema `data/schemas/learning_resources.schema.json`, storing each resource's name, provider, kind, cost, hours, level, role families, rubric total (null where T0-68 gives a gated verdict without a score), applied gates (`G1–G5`), verdict (`use`, `use-with-care`, `watch`, `avoid`), COI flag, read depth, refund terms, outcome evidence, evidence grade, session line reference and `as_of` date. The file holds T0-68's 52 rated resources plus 8 unscored primary technical references from T0-13, T0-16 and T0-69 (60 entries).
+2. **Create `scripts/build_learning_resources.py`** (registered in `GENERATORS` in `scripts/build_all.py`) to validate the data and generate **`career/03-skills-and-tech/learning-resources.md`** deterministically, sorted by verdict and rubric score, with `review_by` taken from the data file (90-day V2 cadence).
+3. **One owner per fact (D-019 boundary):**
+   - `data/learning_resources.json` → `career/03-skills-and-tech/learning-resources.md` owns rated courses, books, tutorials and documentation resources.
+   - `data/tools.json` → `career/00-start/tool-catalog.md` continues to own GPU compute platforms, free LLM API tiers, cloud/student/startup credit programmes and commercial career tools.
+   - `career/03-skills-and-tech/learning-roadmaps.md` remains the owner of learning *order* and links `learning-resources.md` for full resource ratings.
+4. **Amends D-018:** supersedes D-018 rule 5's deferral of a dedicated learning-resources catalog while preserving D-018's evidence grades, COI disclosures and no-outcome-hype standards.
+
+## Rejected Alternatives & Tradeoffs
+
+- **Keep only a 10–15 item prose shortlist inside `learning-roadmaps.md`:** rejected. Leaves about 70% of `T0-68`'s rated resources (including its `avoid` and `watch` verdicts on ISA bootcamps and seller-awarded titles) invisible to career-layer readers and unvalidated by schema.
+- **Merge courses into `data/tools.json`:** rejected. Mixes learning curricula with career-workflow software and bloats `tool-catalog.md` past scannability.
+- **Tradeoff:** Adds one data file, schema and generator (19th generator in `scripts/build_all.py`) with a 90-day V2 price/URL re-verification cadence.
+
+## Failure Modes & Reversal Triggers
+
+- If a resource appears in both `data/tools.json` and `data/learning_resources.json` (for example the Maven AI Evals cohort), pricing and verdicts must stay synchronised (reconciled on 2026-11-19: Maven AI Evals `$4,200` Oct 2026 → `$4,500` Jan–Mar 2027 per ERRATA U59).
+- If course URLs or prices churn faster than 90 days, shorten the V2 review window on paid cohorts.
+
+## Calibration Record (Post-Review)
+
+> Fill this section ONLY during scheduled review or when the review_trigger fires.
+<!-- /DECISION: D-027 -->
 
 ---

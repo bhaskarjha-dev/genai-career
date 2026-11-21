@@ -17,7 +17,7 @@ tags: [system-design, interviewing, llm-serving, batching, rag, agents, evals, g
 
 > How to prepare for and run a GenAI system-design round: classify the loop, drill the right archetypes out of 15, run the 45-minute blueprint, compute the numbers with dated multi-vendor API prices, and meet the evaluation, safety and Staff-level rubrics.
 
-**Dates and grades.** Archetype cards, blueprint and formulas come from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) (dated 2026-10-21) and [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (2026-10-25), updated with multi-vendor API prices, GPU specs, rate limits, 2026 employer design prompts and tool checks from [T0-46](../../research/sessions/T0-46-interview-loops-genai-employers-2026.md) (retrieved 2026-11-13 to 2026-11-14). Re-verify older October 2026 anchors (such as H100 rental pricing) by 2027-01-19 and November 2026 model prices before every interview estimate (freshness class V2; prices move within a quarter) [A · T0-46 L105]. Anthropic pricing and policy rows carry a **COI** tag because the T0-46 author model is Anthropic's; primary pricing pages were re-verified on 2026-11-19. **Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary; C vendor, coach or single source; D judgement; E searched, nothing found; M model output (re-executed arithmetic); P practice-curated. "Synthesis" marks T0-14's own frameworks, which no firm publishes; they are graded D. T0-14 §6.3 has a reference component diagram for each of the 15 archetypes, in Mermaid.
+**Dates and grades.** Archetype cards, blueprint and formulas come from [T0-14](../../research/sessions/T0-14-ai-system-design-interview-patterns.md) (dated 2026-10-21) and [T1-03](../../research/sessions/T1-03-interview-execution-offer-negotiation.md) (2026-10-25), updated with multi-vendor API prices, GPU specs, rate limits, 2026 employer design prompts and tool checks from [T0-46](../../research/sessions/T0-46-interview-loops-genai-employers-2026.md) (retrieved 2026-11-13 to 2026-11-14). Re-verify older October 2026 anchors (such as H100 rental pricing) by 2027-01-19 and November 2026 model prices before every interview estimate (freshness class V2; prices move within a quarter) [A · T0-46 L105]. Anthropic pricing and policy rows carry a **COI** tag because the T0-46 author model is Anthropic's; primary pricing pages were re-verified on 2026-11-19. **Grades** (EGP-1.0, defined in [CONTRIBUTING §3](../../CONTRIBUTING.md#3-writing-standard-egp-10-in-brief)): A primary or measured; B transparent secondary; C vendor, coach or single source; D judgement; E searched, nothing found; M model output (re-executed arithmetic); P practice-curated. "Synthesis" marks T0-14's own frameworks, which no firm publishes; they are graded D. The five highest-frequency architectures (A1, A8, A11, A14, A15) are reproduced as Mermaid diagrams below alongside T0-14's Python capacity/latency estimators; T0-14 §6.3 holds all 15 diagrams.
 
 ## The short answer
 
@@ -251,6 +251,104 @@ For product-focused Applied-AI teams, Aced warns that 15 minutes on GPU allocati
 - **Compute:** F8, because guardrails sit inside TTFT; per-tenant token budgets against unbounded consumption.
 - **Staff tell:** designs for compromise: blast-radius analysis, kill switches, audit trail and incident response [T0-14 L544]. Use the [safety rubric](#safety-trust-boundaries-and-controls-by-layer).
 
+### Core reference diagrams (A1, A8, A11, A14, A15)
+
+The five highest-frequency architectures below reproduce the whiteboard reference flows from T0-14 (`A1` serving, `A8` permission-aware RAG, `A11` bounded tool-using agent, `A14` evaluation platform, `A15` safety and prompt-injection containment) [D/A · T0-14 L209–225, L362–383, L437–450, L507–519, L529–541].
+
+**A1. High-throughput LLM inference serving** [T0-14 L209–225]:
+
+```mermaid
+flowchart LR
+  C["Clients (SSE streams)"] --> G["API gateway: auth, token quotas, admission control"]
+  G --> R["Router: model, version, region, prefix-aware"]
+  R --> Q["Priority queues per model pool"]
+  Q --> P["Prefill pool"]
+  P -->|"KV handoff"| D["Decode pool: continuous batching, paged KV"]
+  D --> S["Token streamer"]
+  S --> C
+  G --> M["Usage metering and billing events"]
+  A["Autoscaler: queue depth, KV utilisation"] -.-> Q
+  A -.-> P
+  A -.-> D
+  W["Weights store and model registry"] --> P
+  W --> D
+  O["Metrics: TTFT, TPOT, goodput, KV usage"] -.-> A
+```
+
+**A8. Enterprise permission-aware RAG** [T0-14 L362–383]:
+
+```mermaid
+flowchart LR
+  subgraph Ingest
+    S["Sources"] --> CDC["Connectors and change capture"]
+    CDC --> PA["Parse and OCR"]
+    PA --> CH["Chunk with context prefix"]
+    CH --> EM["Embed"]
+    EM --> VI["Vector index with ACL metadata"]
+    CH --> BM["BM25 index with ACL metadata"]
+  end
+  subgraph Query
+    Q["Query"] --> RW["Rewrite and intent"]
+    RW --> HR["Hybrid retrieval with ACL pre-filter"]
+    HR --> RF["Rank fusion"]
+    RF --> RR["Reranker"]
+    RR --> CB["Context builder: token budget, ordering"]
+    CB --> LM["LLM"]
+    LM --> CV["Citation and faithfulness check"]
+  end
+  VI --> HR
+  BM --> HR
+```
+
+**A11. Production tool-using agent** [T0-14 L437–450]:
+
+```mermaid
+flowchart LR
+  U["User task"] --> API["Agent API"]
+  API --> ORC["Orchestrator: loop controller with step, cost and time budgets"]
+  ORC <--> LM["LLM planning"]
+  ORC --> TR["Tool router: schema validation, authZ, idempotency keys"]
+  TR --> SB["Sandboxes: containers or microVMs, egress policy"]
+  TR --> EXT["External APIs"]
+  ORC --> EL["Append-only event log"]
+  EL --> CP["Checkpoint store for resume"]
+  TR --> HA["Human approval queue for irreversible actions"]
+  PE["Policy engine: rule of two"] -.-> TR
+  EL --> TC["Tracing and eval harness"]
+```
+
+**A14. LLM and agent evaluation platform** [T0-14 L507–519]:
+
+```mermaid
+flowchart LR
+  DS["Dataset registry: versioned tasks"] --> OR["Run orchestrator: model x prompt x task x k trials"]
+  OR --> RN["Sandboxed runners: clean env per trial"]
+  RN --> TS["Transcript and outcome store"]
+  TS --> GR["Graders: code, LLM judge, human queue"]
+  GR --> AG["Aggregator: pass at k, pass hat k, confidence intervals"]
+  AG --> GT["CI gate and dashboards"]
+  PT["Production traces"] --> SM["Sampler"]
+  SM --> GR
+  HC["Human calibration set"] --> GR
+  GT -->|"new failures"| DS
+```
+
+**A15. Safety, abuse and prompt-injection containment** [T0-14 L529–541]:
+
+```mermaid
+flowchart LR
+  UN["Untrusted sources: web, email, docs, tool output"] --> SN["Sanitise: strip active content, tag provenance"]
+  SN --> CB["Context builder: delimit and label trust"]
+  CB --> LM["Model"]
+  LM --> PE["Policy engine: untrusted input AND sensitive data AND state change?"]
+  PE -->|"allowed"| TG["Tool gateway: least privilege, allowlists, schema checks"]
+  PE -->|"needs approval"| HA["Human approval"]
+  TG --> EG["Egress proxy: domain allowlist, no auto-rendered URLs"]
+  LM --> OF["Output filters: PII, secrets, markdown and URL stripping"]
+  MON["Monitoring: tool-call anomalies, token spikes"] -.-> PE
+  RT["Red-team and adaptive-attack evals"] -.-> MON
+```
+
 ### Decisions that recur across archetypes
 
 | Decision | Rule | Evidence |
@@ -351,6 +449,34 @@ Per-million-token prices in USD from each vendor's pricing page in T0-46 §7 [A 
 
 **Caveats an expert will raise** [T0-14 L692]: sliding-window (hybrid-attention) layers make F4 an overestimate [B]. DeepSeek-V3's latent attention needs about 70 KB per token, against 327 KB for Qwen-2.5 72B and 516 KB for Llama-3.1 405B [A]. FP8 KV quantization halves KV bytes [B]. Engines lose capacity to fragmentation and activation workspace [D]. Prefill and decode do not share one throughput number [A/B · T0-14.F4]. State your assumptions (dense GQA, BF16, no paging loss) [D · T0-14 L923]. Per [ERRATA U11](../../research/ERRATA.md), use T0-14's KV figures: 327,680 B/token (320 KiB) for Llama-3.1-70B is the BF16 value, not FP8 [M · T0-14 L646].
 
+### Reference capacity, latency and cost equations
+
+First-order Python estimators verified in T0-14 (`ai_sd_calc.py`; decimal GB, prices per million tokens) for rapid drill verification [M · T0-14 L667–690]:
+
+```python
+def kv_bytes_per_token(layers, kv_heads, head_dim, bytes_per_el=2):
+    return 2 * layers * kv_heads * head_dim * bytes_per_el
+
+def concurrency(hbm_gb, weights_gb, overhead_gb, kv_per_token, ctx):
+    return int((hbm_gb - weights_gb - overhead_gb) * 1e9 // (kv_per_token * ctx))
+
+def decode_tpot_ms(weights_gb, kv_gb, bw_tb_s_total):
+    return (weights_gb + kv_gb) * 1e9 / (bw_tb_s_total * 1e12) * 1e3
+
+def monthly_cost(n_req, t_in, t_out, p_in, p_out):
+    return n_req * (t_in * p_in + t_out * p_out) / 1e6
+
+def cached_input_cost(t_static, t_dyn, p_in, hit, read_mult=0.1, write_mult=1.25):
+    return (t_dyn * p_in + t_static * p_in * (hit * read_mult + (1 - hit) * write_mult)) / 1e6
+
+# Verified anchors (Llama-3.1-70B BF16 on 8xH100):
+# kv_bytes_per_token(80, 8, 128) == 327_680 B (320.0 KiB)
+# concurrency(640, 140, 20, 327_680, ctx) -> 178 @ 8K, 44 @ 32K, 11 @ 128K
+# decode_tpot_ms(140, 0, 8 * 3.35) -> 5.2 ms ideal decode step (weights only)
+# monthly_cost(200e6, 3000, 400, 3, 15) -> $3,000,000/month (illustrative)
+# cached_input_cost(2500, 500, 2.0, 1.0, 0.05) -> $0.00125/req (all-hit, Sonnet 5.5)
+```
+
 **How the estimate is graded** (coach synthesis; no firm rubric) [D · T0-14 L696–703]:
 - **0:** no numbers.
 - **1:** wrong units or order of magnitude.
@@ -375,8 +501,10 @@ The primary sources are Anthropic's January 2026 engineering guide on agent eval
 - [ ] **L5 Component evals:** retrieval (recall@k, MRR) apart from generation (faithfulness, groundedness); tool selection and argument accuracy; router accuracy; semantic-cache false-hit rate; guardrail precision and recall [D · T0-14 L716].
 - [ ] **L6 Trials:** several trials per task; pass@k (at least one success in k) vs pass^k (all k succeed; use it for user-facing reliability); a clean, isolated environment per trial [A · T0-14 L717].
 - [ ] **L7 Gating:** run the suite on every prompt, model, retrieval or tool change; gate on regressions with confidence intervals; ship through shadow or canary; use the batch API for large offline runs [A and D · T0-14 L718].
-- [ ] **L8 Online:** sample production traffic through the same graders; track regenerate, edit, abandonment and escalation signals plus explicit feedback; A/B for business outcomes; alert on drift; turn every incident into a golden-set task [A · T0-14 L719].
+- [ ] **L8 Online:** sample production traffic through the same graders; track regenerate, edit, abandonment and escalation signals plus explicit feedback; A/B for business outcomes; alert on drift; turn every incident into a golden-set task. Anthropic frames this as layered "Swiss-cheese" coverage: automated evals, production monitoring, A/B tests, user feedback, transcript review and periodic human studies [A · T0-14 L719].
 - [ ] **L9 Governance:** version datasets, guard against contamination, read transcripts. Grader bugs moved one reported benchmark score from 42% to 95%, so the eval needs tests. The platform owns infrastructure; product teams contribute tasks [A · T0-14 L720].
+
+**Sixty-second Staff-level evaluation framing** [D · T0-14 L722]: *"Define success from the cost of a wrong answer, build a 30-task golden set from real failures, split regression from capability suites, use code graders where outcomes are checkable and a calibrated LLM judge elsewhere, measure retrieval separately from generation, run several trials per task and report pass^k, gate CI on regressions, sample production traffic through the same graders, and turn every incident into a new task."*
 
 Penalised answers: "we'd test it with some prompts"; one uncalibrated LLM judge; a model judging its own outputs; grading only an agent's final answer; no regression gate; no production feedback loop [D · T0-14 L724].
 
@@ -404,6 +532,8 @@ Controls a complete answer places [D · T0-14 L739–747]:
 | Below bar | "Add guardrails"; "tell the model to ignore malicious instructions"; permissions enforced in the prompt |
 | Senior | Controls by layer; least-privilege tools; ACL in retrieval; output validation; approval for irreversible actions; red-team tests |
 | Staff or Principal | Starts from the trust-boundary analysis (Rule of Two); assumes injection will succeed and bounds the blast radius; egress control; provenance-based policy; incident response and kill switches; a policy for onboarding new tools; measures with adaptive attacks rather than static prompt sets |
+
+**Thirty-second safety framing** [D · T0-14 L757]: *"Anything the model reads from outside our trust boundary is untrusted. For any agent, check the three properties: untrusted input, sensitive access, ability to act externally. If all three are present, split the agent or add human approval. Enforce permissions in the tool gateway and retrieval layer rather than the prompt, restrict egress, and treat classifiers as one defence layer because adaptive attacks beat them."*
 
 ### Observability and operations
 

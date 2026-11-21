@@ -7,7 +7,7 @@ status: published
 last_verified: 2026-11-19
 review_by: 2027-02-11
 summary: "How behavioural rounds are scored across GenAI employers, the four competencies C1–C4, employer committee and veto/downlevel calibration, and how to build a STAR-AI story bank."
-sources: [T0-46, T1-03, T0-14, T0-09, T0-04]
+sources: [T0-46, T1-03, T0-14, T0-09, T0-04, T0-60, T0-65, T0-66]
 roles: [all]
 geos: [global, india]
 tags: [interviewing, behavioural, star-ai, story-bank, competencies, hiring-committee, veto, debrief, anthropic, amazon, google, meta, databricks, nvidia, xai, india]
@@ -76,7 +76,7 @@ T0-46 expands behavioural and committee coverage beyond T1-03's initial three fi
 | Firm | What is assessed | Scoring, committee and consequence | Triggers and calibration notes | Grade and sources |
 |---|---|---|---|---|
 | **Amazon** | Leadership Principles stories, an external **Bar Raiser**, and a **graded 2026 question on how you use AI tools** | Debrief uses Hire/No-Hire votes backed by LP evidence; **Bar Raiser's No-Hire veto is explicit and final**; mixed votes can yield a lower-level offer | Only explicit final veto found in T0-46; verify AI-tool judgement rather than blind adoption | C (Dataford, dglearning) · T0-46 L145, L325, L450 |
-| **Anthropic** | 200–400 word "why Anthropic" essay in application; values and safety discussion round (e.g. a concrete AI safety problem); project ownership and conflict | Secondary report calls the culture interview the **top late-stage hiring gate** (Bloomberg Businessweek summary, 2026-05-29; no primary veto statement); team matching depends on open headcount | T1-03 triggers: lack of epistemic humility; posturing about AI safety; evasiveness on trade-offs; inability to admit mistakes | C (techinterview.org, Implicator.ai, DesignGurus) · T0-46 L324, L450; B/C · T1-03 L210 |
+| **Anthropic** | Employer-published 200–400 word "why Anthropic" application essay [A, COI · T0-60 L769]; values and safety discussion round (e.g. a concrete AI safety problem); project ownership and conflict (EM loops add people leadership, cross-functional delivery under pressure and strategy/execution [C · T0-65 L705–706]) | Secondary report calls the culture interview the **top late-stage hiring gate** (Bloomberg Businessweek summary, 2026-05-29; no primary veto statement); team matching depends on open headcount | T1-03 triggers: lack of epistemic humility; posturing about AI safety; evasiveness on trade-offs; inability to admit mistakes | A (essay prompt, COI) / C (techinterview.org, Implicator.ai, DesignGurus, Exponent) · T0-46 L324, L450; T0-60 L769; T0-65 L705–706; B/C · T1-03 L210 |
 | **Google** | 45-minute Googleyness and Leadership (G&L) round | Hiring committee reads written packets, **weighs variance heavily**, and can override panel votes in either direction including downlevelling ("automatic packet sink" is unsupported) | T1-03 triggers: failing accountability; blaming PMs; poor data-privacy or ethics judgement | C (dglearning) · T0-46 L326, L333, L450; B/C · T1-03 L211 |
 | **Meta** | Behavioural round at every level; pre-onsite leadership assessment before E6 onsite | **Behavioural round alone can downlevel E5 to E4** (partly paywalled source); downlevel or rejection on mismatch | T1-03 triggers: academic framing ("I researched…") instead of shipped impact ("I shipped/scaled…"); bypassing cross-functional partners | C (dglearning) · T0-46 L327, L450; B/C · T1-03 L212 |
 | **Microsoft** | About 1 hour mapped to seven competencies and cross-team delivery | Committee detail not stated | Prepare cross-team alignment and delivery stories | C (PracHub, Dataford) · T0-46 L328 |
@@ -86,6 +86,8 @@ T0-46 expands behavioural and committee coverage beyond T1-03's initial three fi
 | **Scale AI** | Working values in a fast-moving environment | Not stated | High-velocity execution and collaboration | C (techinterview.org) · T0-46 L331 |
 | **Goldman Sachs** | STAR-style behavioural questions in back-to-back Superday sessions | Not stated | Prepare governance, risk sign-off and stakeholder stories | C (Interview Query) · T0-46 L331 |
 | **Infosys (India)** | Project experience deep dive plus separate managerial and HR rounds (including compensation) | Not stated | Explain end-to-end project architecture, RAG guardrails and deployment clearly | C (Interview Query, Glassdoor) · T0-46 L165, L331 |
+| **AI Engineering Managers & CAIOs** *(Anthropic EM, Databricks EM, Dataford EM, SBI CAIO)* | EM loops weight people management (47% topic weight in Dataford aggregate), stakeholder management (28%), cross-functional work (26%) and LLM-serving design (20%) [C · T0-65 L705–708]; **State Bank of India (GM & CAIO)** scores a 100-mark executive interview plus a 10-minute presentation [B · T0-65 L709] | Databricks EM requires approval at each stage; SBI ranks merit strictly on interview marks before sequential CTC negotiation | Separate team-level delivery from individual IC credit; bring an executive AI governance and ROI scorecard for CAIO rounds [P] | B (SBI notice) / C (Dataford, IGotAnOffer, Exponent) · T0-65 L705–709 |
+| **Expert & trainer platforms** *(Mercor, micro1)* | **Mercor:** ~20-min AI-conducted screening interview [A · T0-66 L716]. **micro1:** AI video recruiter screen [C · T0-66 L717] | Standing-pool entry followed by project-level matching (1 week to several months at Mercor; median 51 days at micro1) | State concrete, verifiable project evidence clearly for automated scoring | A (Mercor) / C (micro1) · T0-66 L716–717 |
 
 Committee and level-calibration details remain missing for OpenAI, Microsoft, and most IT-services employers [E · T0-46 L491]. Full employer loops: [employer interview loops](employer-interview-loops.md).
 
@@ -256,8 +258,8 @@ For behavioural rounds, also note which competency each question probed, which s
 
 ## Next steps
 
-- [Employer interview loops](employer-interview-loops.md) and [interview loops](interview-loops.md): where the behavioural round sits in each loop across 27 employers.
-- [Prep packs: behavioural pack](prep-packs.md#behavioural-pack): practice prompts (including new employer-specific prompts from T0-46).
+- [Employer interview loops](employer-interview-loops.md) and [interview loops](interview-loops.md): where the behavioural round sits in each loop across 61 employers.
+- [Prep packs: behavioural pack](prep-packs.md#behavioural-pack): 22 practice prompts (including employer-specific prompts from T0-46 and executive CAIO prompts from T0-65).
 - [Coding rounds](coding-rounds.md) and [system design archetypes](system-design-archetypes.md): the technical rounds in the same loop.
 - [Role skill maps](../03-skills-and-tech/role-skill-maps.md): each role's interview track, practice notes and typical gaps, to aim your stories at the role.
 - [Proof-of-work standards](../05-portfolio/proof-of-work-standards.md): artefacts that make a story checkable.

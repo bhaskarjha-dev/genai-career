@@ -104,7 +104,7 @@ Fractional leadership skews heavily senior: 87% of Fractional Jobs survey respon
 | US senior AI-engineer contractor rate cards | **$130–$235/hr** (A.Team $130 / $165 / $200; Second Talent $155–$235); architect/CTO $200 / $220 / $240+ (untested on open boards in T0-66) | Vendor rate cards | C · T0-18.F2; T0-66 L56 | 2026-10-24 |
 | US staffing-agency contract postings | **$50–$80/hr** across 4 postings (Dice $60–$70, $65–$80; Voyage Advisory $70–$80 [downgraded from A-on-Extract]; Twine up to $50); AJAIA $30–$300 uninformative | Agency job-board postings | B · T0-66 L56, L226, L671–675 | 2026-11-13 |
 | UK GenAI & LLM contract adverts (IT Jobs Watch) | Median **£550/day** (P25 £460, P75 £675, P90 £788; n = 933 rates across **1,466 ads**, London £575, ex-London £530; flat vs 2025 £550, down from 2024 £625). Live LLM ads (n = 49): median **£550**, P90 **£800**. 8 live senior picks: **£500–£1,000/day**. UK fractional agency OTE **£250K+** scaled to days | Transparent job-advert series & live sample | B · T0-66 L55, L152, L221–225, L661–670, L695–697 | 6 months to 2026-11-12; live 2026-11-14 |
-| Germany (DACH) & France | Germany **€103/hr** avg (€108 data/analytics, n = 5,412); France **€600–€900/day** (€1,000–€1,500 gen-AI/agents) | Survey / secondary blog | C · T0-18.F3 | Nov 2025–Oct 2026 |
+| Germany (DACH), France & Netherlands | Germany **€103/hr** avg (€108 data/analytics, n = 5,412); France **€600–€900/day** (€1,000–€1,500 gen-AI/agents); Netherlands **€83/hr** | Survey / secondary blog | C · T0-18.F3, L216 | Nov 2025–Oct 2026 |
 | India-based senior, export clients | **$50–$100/hr** quoted (Second Talent 2026-09-14 card $50–$75/hr contract, $63–$94/hr freelance; lead $70–$110 / $88–$138; Navtechy $60–$100; Prakash $50–$90 gen-AI); Bengaluru Senior SWE P50/P90 break-even **$39.4–$75.8/h** at 1,500 h before overheads; domestic India independent rates **not found** | Vendor cards (Second Talent downgraded to **Grade D** — no sample/method, vendor COI [T0-45 L90, L335]); zero platform-native USD distributions found [E · T0-45 L424] | D (Second Talent) / C (other quotes) / M (break-even) · T0-18.F4; T0-43 L186, L200–204; T0-45 L90, L424 | Sep–Nov 2026 |
 | India-based mid-level AI/ML engineer | **$35–$50/hr** export contract, **$44–$63/hr** freelance ($28–$72/hr overall); comparison markets: LatAm sr AI/ML ~$103K, Poland B2B **$74K–$92K** (62.1% of Just Join IT offers are B2B vs 32% UoP [C · T0-44 L239, L318]), Lemon.io sr SWE $39–$42/h outside NA | Vendor cards (COI) & Poland board split | D (Second Talent) / C · T0-02.F11; T0-43 L305–311; T0-44 L239 | Sep–Nov 2026 |
 
@@ -130,11 +130,31 @@ Sources: [D · T0-18 L580–582, L593–599, L145].
 - **Stalling sets the downside.** Low billing is common across freelancing (24% of DACH respondents bill under 50 days/year and 38% under 100 [C · T0-18 L571]); all-freelancer proxies sit near $84K–$85K P50 (Upwork / Consulting Success [C · T0-18.F10]), making the path strongly bimodal [D · T2-01 L683].
 - **India-resident base case** ($70/hr median): $38K / $53K / $64K / $85K at P25 / P50 / P75 / P90 [D · T0-18.F10].
 
+**W-2 break-even hourly rates** (US, base overhead, health insurance and federal tax; modelled [D/M · T0-18 L674–680]):
+
+| Comparable W-2 salary | W-2 take-home | Rate needed at 900 paid h | Rate needed at 1,100 paid h | Rate needed at 1,300 paid h |
+|---|---|---|---|---|
+| $120,000 | $93,250 | **$166/h** | $136/h | $115/h |
+| $150,000 | $113,791 | **$200/h** | $163/h | $138/h |
+| $200,000 | $148,927 | **$256/h** | $210/h | $177/h |
+
+**Retainer portfolios and key Monte Carlo sensitivities** (US net after overhead, health insurance and federal tax; modelled [D · T0-18 L636–655, L682–691]):
+
+| Scenario / retainer portfolio | Revenue | Net after tax (P50 / deterministic) | Key takeaway |
+|---|---|---|---|
+| **1 retainer** (10 h/wk @ $8k × 12 mo) | $96,000 | **$55,628** (equiv. $66.5K W-2) | Below full-time break-even; treat as bridge only |
+| **2 retainers** (10 h/wk @ $8k × 12 mo) | $192,000 | **$122,019** (equiv. $162.0K W-2) | Core 960 paid h/yr target |
+| **2 retainers, one 3-month gap** | $168,000 | **$105,748** (equiv. $138.2K W-2) | A single 3-month gap costs **~$16K** net |
+| **2 CAIO retainers** (@ $10.8k × 12 mo) | $259,200 | **$170,664** (equiv. $230.9K W-2) | Upper-tier fractional benchmark |
+| **S5: AI fee compression (×0.87)** | $145K (P50) | **$90K** (P25 $71K / P75 $113K) | Trims **~$15K** off $105K base P50 |
+| **S6: Agency-dependent (×0.51)** | $85K (P50) | **$47K** (P25 $35K / P75 $62K) | **More than halves** median net ($105K → $47K) |
+| **S13: 30% overhead (vs ~11% base)** | $167K (P50) | **$81K** (P25 $66K / P75 $99K) | Trims **~$24K** if margins run closer to 68% |
+
 ### 3. Clients and marketplaces: networks first, benches second
 
 - **Networks lead for high-rate work, though magnitudes vary across surveys.** Go Fractional's sponsor survey (n = 213, April 2026) reports 92% finding clients via networks, 54% via LinkedIn and 29% via platforms, and Fractional Jobs (n = 1,733) reports 94% winning work via referrals [C · T0-18 L385–386]. However, T0-66 could not trace the 92% figure outside that sponsor survey: independent freelancer surveys put network/referral sourcing at **53–75%**, and a 2026 Ruul freelance-economy report places platforms first at **33%** [C · T0-66 L46, L346, L521]. Trust the strategic direction (direct referrals command the highest rates—$223/hr direct vs $113/hr fully agency-sourced in Antenna's 2019 n = 80 sample [C · T0-18 L400–404]), not a single survey percentage.
 - **Fractional job boards are mostly benches, not vacancies.** Only **1 of 13** qualifying fractional AI postings in T0-66 sat on an employer's own page (OneSeven Tech, bench-building since March 2026); the rest were advisor networks (Arootah: no live engagement), search-firm templates (Axial: "for future opportunities") or marketplaces where **3 of 7** distinct AI-fractional postings were already closed and Go Fractional's home page showed `"0 open roles"` [A/B/E · T0-66 L52, L113–114, L701–702].
-- **Business development is the primary pain:** named by 90% of Go Fractional respondents and 78% of Antenna's $100K+ consultants [C · T0-18 L385, L387]. AI-specific channel conversion rates remain unmeasured [E · T0-18 L440].
+- **Business development is the primary pain — and inbound websites rarely carry year one:** acquisition is named the top pain by 90% of Go Fractional respondents and 78% of Antenna's $100K+ consultants [C · T0-18 L385, L387]. Treat content and personal sites as referral support rather than a primary lead engine: **70%** of Consulting Success respondents get **zero website leads** (88% do not list fees), and only **14%** of Antenna's website owners get meaningful inquiries [C · T0-18 L387–388, L424]. AI-specific channel conversion rates remain unmeasured [E · T0-18 L440].
 
 | Channel / platform | Role in your funnel | Fees & terms (dated Oct–Nov 2026) | Watch for |
 |---|---|---|---|
@@ -149,7 +169,7 @@ Sources: [D · T0-18 L580–582, L593–599, L145].
 | **Contra** | Portfolio & direct invoicing | **0% commission**; per-payment fees on free tier; Pro ~**$29/month** [C · T0-66 L64, L368, L737] | Annual Pro rate ($199) untested in T0-66 |
 | **Upwork** | Utilisation filler only | Variable **0–15% freelancer fee** per contract since 2025-05-01 (effective ~20% total platform take rate; Connects costs apply); AI GSV ~$450M run-rate (+55% YoY Q3 2026) vs total GSV down ~10% [B/C · T0-66 L64, L369; T0-43 L70, L561; live-verified 2026-11-19] | Per-contract gen-AI/creative earnings fell 13% while starts rose 90% [C · T0-18.F11] |
 | **Fiverr** | **Avoid** for senior AI | Flat **20% seller fee** (plus buyer fee); commodity pricing ceiling ($10–$125/hr AI strategy listed in T0-18) [B/C · T0-18 L1233; T0-66 L370, L738; live-verified 2026-11-19] | Rate compression; `L738` downgraded from T0-66 A-on-Extract to B |
-| **Staffing agencies / boutiques** | Market floor | US posted $50–$80/hr [B · T0-66 L56]; UK £500–£1,000/day [B · T0-66 L225]; ~49% haircut vs direct in Antenna's sample [C · T0-18 L400–404] | Check W2 vs 1099 (US), inside vs outside IR35 (UK), and right to cite work |
+| **Staffing agencies / boutiques** | Market floor | US posted $50–$80/hr [B · T0-66 L56]; UK £500–£1,000/day [B · T0-66 L225]; ~49% haircut vs direct in Antenna's sample (**×0.51** multiplier halves modelled net [C/D · T0-18 L400–404, L646]); 2–5 person boutiques self-report **20–40% gross margin** [C · T0-18 L166] | Check W2 vs 1099 (US), inside vs outside IR35 (UK), and right to cite work |
 
 ### 4. Pricing and engagement shape
 
@@ -181,18 +201,19 @@ Start from **Common Paper's Professional Services Agreement v1.1** (CC BY 4.0, c
 | Consequential damages | Keep the mutual waiver | A · T0-18 L452 |
 | Provider Materials | Explicitly schedule reusable agent harnesses, orchestration code, prompt templates, eval suites and tooling as Provider Materials | A (mechanism), D (list) · T0-18 L457 |
 | Deliverables & IP assignment | Assign on payment, excluding Provider and third-party materials. Avoid "work made for hire" (in California it can trigger statutory employer status). **India:** explicitly state **duration** (e.g., perpetual) and **territory** (e.g., worldwide) in every signed written assignment—silence defaults to **5 years and India only** under Copyright Act 1957 s.17, s.19(2), s.19(5)–(6), applied by the Delhi High Court in *Pine Labs v. Gemalto* | A · T0-18 L456; B · T0-18 L458; B · T0-66 L65, L374, L741–742 (live-verified 2026-11-19) |
-| AI output | No accuracy warranty; qualified human reviews output before consequential decisions; assign whatever rights exist without warranting copyright; exclude AI output from non-infringement indemnity | B · T0-18 L460–461; D · T0-18 L462 |
+| AI output & copyright posture | No accuracy warranty; qualified human reviews output before consequential decisions; assign whatever rights exist without warranting copyright (**US copyright:** Supreme Court denied cert in ***Thaler v. Perlmutter*** on **2026-03-02**, leaving the human-authorship requirement standing; prompts alone are generally insufficient; *Allen v. Perlmutter* pending); exclude AI output and open-source components from **Common Paper §6.3(b)/(d)** non-infringement and rights-to-convey warranties and from indemnity | A/B · T0-18 L460–462, L541; D · T0-18 L462 |
 | Client data & third-party models | No training/fine-tuning on client data except a model delivered to the client; model providers only under no-training terms; provider terms flow down with no availability warranty | B · T0-18 L463–464 |
+| Subcontractors & insurance trap | **Common Paper §1.5** requires Customer's prior written permission before using subcontractors — name any collaborators in the SOW. **Common Paper §10.1 E&O trap:** the template requires `"date of occurrence form"` insurance, whereas tech E&O is normally written **claims-made** — edit §10.1 to match your actual policy before signing | A (template), D (claims-made check) · T0-18 L466, L471 |
 | Scope & retainer term | Written change orders; hours cap, overage rate, 3-month minimum and 30-day notice inside the SOW (template allows termination for convenience only when no SOW is active) | A · T0-18 L468–469 |
-| Regulated deployments & references | Assign EU/Colorado deployer obligations in writing; request explicit SOW permission to cite the client (template includes "No Publicity") | D · T0-18 L136, L472 |
+| Regulated deployments & references | Assign EU/Colorado deployer obligations in writing; under **Colorado SB 26-189** (signed 2026-05-14, eff. 2027-01-01), include developer documentation deliverables and **do not draft an indemnity for one's own discriminatory acts (statutorily void)**; request explicit SOW permission to cite the client (template §12.7 "No Publicity") | B · T0-18 L543; D · T0-18 L136, L472 |
 
 **Alternative templates & kit:**
 - **Bonterms PSA v1.2:** Cover page offers licensed or assigned deliverables and is listed as CC0-1.0 on OpenAgreements, while other Bonterms standards use CC BY-ND; full PSA standard terms were not retrieved—verify the licence and standard terms with counsel before adopting [B · T0-66 L65, L372].
 - **OpenAgreements:** Free comparison library preserving each template's source licence ("legal research, not legal advice") [C · T0-18 L1242; T0-66 L373].
 - **Avoid Freelancers Union Contract Creator** for AI consulting: its 2024 launch post lists no IP clauses (downgraded from T0-66 A-on-Extract `S85` to B) [B · T0-18 L1241; T0-66 L374, L520], and skip Docracy (offline/legacy) [C · T0-18 L1270].
-- **Invoicing & rails:** Stripe Invoicing (0.4–0.5% + processing) or Bonsai ($9–$49/user/mo annual) [A · T0-18.F12]; foreign receipts via Wise Business or Payoneer rather than PayPal [A/C/D · T0-18 L151, F4]. See the [tool catalog](../00-start/tool-catalog.md).
+- **Invoicing & rails:** Stripe Invoicing (0.4–0.5% + processing) or Bonsai ($9–$49/user/mo annual) [A · T0-18.F12]; foreign receipts via Wise Business or Payoneer (note RBI ₹25L PA-CB per-tx cap and Payoneer's in-principle PA-CB status [A/B · T0-43 L245, L270]) rather than PayPal [A/C/D · T0-18 L151, F4]. See the [tool catalog](../00-start/tool-catalog.md).
 
-**Insurance and regulation.** Small IT-consultant median broker quotes run ~$899/yr for tech E&O and ~$1,540/yr for cyber ($1M/$1M limits, not AI-specific) [C · T0-18.F9]. Fenwick (2026-06-15) reports an ISO GenAI exclusion on commercial general liability from January 2026 and some E&O carriers declining AI-output liability [B · T0-18.F9]—get your broker's answer in writing and never accept an uninsured AI-output supercap [D · T0-18 L139]. Because EU AI Act, US state rules and India DPDP Rules (notified 2025-11-13) move rapidly, re-check compliance status before signing and see [Governance careers](governance-careers.md) [B · T0-18.F8].
+**Insurance and regulation.** Small IT-consultant median broker quotes run ~$899/yr for tech E&O and ~$1,540/yr for cyber ($1M/$1M limits, not AI-specific) [C · T0-18.F9]. Fenwick (2026-06-15) reports an ISO GenAI exclusion on commercial general liability from January 2026, some E&O carriers declining AI-output liability, and **absolute AI exclusions on D&O and employment-practices (EPL) policies**, while cyber remains the most stable line [B · T0-18.F9, L533]—get your broker's answer in writing, verify Common Paper §10.1's occurrence-vs-claims-made wording, and never accept an uninsured AI-output supercap [D · T0-18 L139, L466]. Because EU AI Act, US state rules and India DPDP Rules (notified 2025-11-13) move rapidly, re-check compliance status before signing and see [Governance careers](governance-careers.md) [B · T0-18.F8].
 
 ### 6. Expert-data and AI-training platforms: bridge vs full-time trap
 
@@ -221,7 +242,7 @@ Expert-data platforms (Mercor, Scale AI / Outlier, Surge AI / DataAnnotation, mi
 ## How to do it: the network-first launch plan
 
 1. **Run the gate while employed.** Score every row in Part 1. *Done when:* every row passes, or you have a dated plan to close gaps via part-time work [D · T0-18 L145].
-2. **Set up to invoice (week 1).** US: LLC or sole proprietorship. India: sole proprietorship under §44ADA if receipts stay at or below ₹75 lakh, GST registration with Letter of Undertaking for exports, and an authorised-dealer bank account [D · T2-01 L652]. *Done when:* you can invoice and receive foreign wire/rail payments and a CA/CPA has confirmed the structure.
+2. **Set up to invoice (week 1).** US: LLC or sole proprietorship. India: sole proprietorship under Income-tax Act 2025 **s.58(2) (legacy §44ADA)** if receipts stay at or below ₹75 lakh, GST registration with Letter of Undertaking for exports, and an authorised-dealer (AD-I) bank account for invoices exceeding the ₹25 lakh fintech PA-CB per-transaction cap (see [India remote tax](../09-compensation/india-remote-tax.md)) [A/B/D · T2-01 L652; T0-43 L245]. *Done when:* you can invoice and receive foreign wire/rail payments and a CA/CPA has confirmed the structure.
 3. **Assemble the contract kit (week 2).** Common Paper PSA v1.1 with Part 5 positions (plus explicit duration and worldwide territory if under Indian law), sprint and retainer SOWs (Templates A & B), and written broker answers on tech E&O/cyber AI exclusions [A/B/D · T2-01 L653; T0-18 L135–139; T0-66 L727]. *Done when:* legal counsel has reviewed the kit.
 4. **Build the ring list (weeks 1–2).** ~100 contacts across four rings: former managers/colleagues at Director+, founders/investors, adjacent consultancy peers, past clients [D · T0-18 L411]. *Done when:* 50+ names sit in a tracker with last-contact dates and problem hypotheses [C/P · T2-01 L633].
 5. **Activate the network (weeks 1–4, then weekly).** Update LinkedIn positioning (mandatory on fractional benches [A · T0-66 L175]) and send two personal outreaches a week offering a 45-minute AI-readiness teardown with a one-page readout [D · T0-18 L412; T2-01 L654]. *Done when:* every contact has heard from you once and the weekly habit is logged.
@@ -294,6 +315,20 @@ References: Provider may name Customer as a reference [yes | with approved wordi
 | Days 61–90: delivery and hand-off | Pilot readout with KPIs and cost model; 12-month roadmap and budget; team enablement sessions; renewal decision memo |
 | Standing | Weekly update; monthly hours statement; decision log; quarterly roadmap refresh |
 
+### C2. Fractional Head of AI decision rights matrix
+
+Clarify these seven boundaries in the SOW before kickoff (distinguishing an operating fractional leader from an advisor or a full-time VP/CAIO [D · T0-18 L362–373]):
+
+| Decision area | Fractional Head of AI | Client executive | Client project owner |
+|---|---|---|---|
+| Use-case priority and AI strategy | Recommends | Approves | Consulted |
+| Architecture and evaluation standards within budget | **Decides** | Informed | Consulted |
+| Vendor and model selection | Recommends and shortlists | Approves and signs | Consulted |
+| Budget and headcount | Advises | **Decides** | Informed |
+| Risk acceptance and regulatory classification | Advises | **Decides** (the deployer) | Informed |
+| Technical hiring | Runs the technical interview loop | **Decides** | Consulted |
+| Production access and credentials | **Not held by default** | Grants | Administers |
+
 ### D. Day-75 renewal check
 
 ```text
@@ -307,7 +342,34 @@ If (a) to (c) fail: offer an advisory block of [8–16] hours a month, or end th
 
 Underuse of hours signals churn; early exits typically stem from scope, compensation and measurement mismatches [C/D · T0-18 L376].
 
-### E. Weak and strong
+### E. Illustrative AI MSA clause language [D · T0-18 L475–529]
+
+> [!CAUTION]
+> **Illustrative drafting starting point only — NOT legal advice** and not tested in any jurisdiction. Have qualified counsel review every clause (especially supercaps, work-made-for-hire rules, Common Paper §10.1 claims-made wording, Colorado SB 26-189, and Indian Copyright Act duration/territory terms) before use.
+
+```text
+Liability cap & supercap. Each party's aggregate liability under an SOW will not exceed the fees
+  paid or payable under that SOW in the 12 months before the event giving rise to liability.
+  Provider's liability for Confidentiality or Data Security breach will not exceed the lesser of
+  (i) 5× prior-12-month SOW fees and (ii) Provider's active tech E&O and cyber insurance limits;
+  this supercap does not apply to AI Output accuracy. Neither party is liable for consequential damages.
+Provider Materials. "Provider Materials" means agent frameworks, orchestration code, prompt
+  templates, evaluation suites, tooling and know-how owned or developed independently by Provider
+  (Schedule B). Provider retains all rights; Customer receives a non-exclusive, perpetual, irrevocable
+  licence to embedded Provider Materials solely as needed to use the Deliverable.
+Assignment. On receipt of all fees due, Provider assigns to Customer all right, title and interest
+  in the Deliverable (excluding Provider Materials and Third-Party Materials) [for India: perpetually
+  and worldwide]. No Deliverable is a work made for hire.
+AI Output. Deliverables may include AI-generated output ("AI Output"), which may be inaccurate or
+  incomplete. Provider gives no accuracy or fitness warranty; Customer will have a qualified human
+  review AI Output before relying on it for any consequential decision. Provider assigns whatever
+  rights it holds in AI Output without warranting copyright subsistence, and excludes AI Output and
+  open-source components from infringement warranties and indemnities (Common Paper §6.3(b),(d)).
+Data & models. Provider will not train or fine-tune any model on Customer Data except a model
+  delivered to Customer, and will use third-party model APIs only under no-training terms.
+```
+
+### F. Weak and strong
 
 | | Weak | Strong |
 |---|---|---|
@@ -325,7 +387,7 @@ Underuse of hours signals churn; early exits typically stem from scope, compensa
 - **Export rates.** Quote USD at **$70–$100/hr** until you hold realised proof to test $120+ [D · T0-18 L151]. No realised dataset covers US/EU startup payments to India-based AI consultants or domestic India independent rates [E · T0-18 L228; T0-66 L227]. Global-remote expert-data rates sit much lower than US pools: micro1's global evaluation listing pays **$20–$35/hr** [B · T0-66 L300, L688] and Outlier's India coding tiers reportedly run ~$13–$27+/hr [C · live-verified 2026-11-19].
 - **Against a salary.** At 160 billable hours/month, the mid-level card's $35–$63/hr is $5.6K–$10.1K/month, or ₹64–115 lakh/year at ₹95.25/USD—roughly P70 to >P90 of Levels.fyi Bengaluru full-time ML pay before benefits, tax and bench time, straddling the ₹75 lakh §44ADA cliff [C/M · T0-02.F11].
 - **Mandatory IP & non-compete rules (India).** Under Indian law, an independent contractor (contract *for* service) is the **first owner** of software copyright; any written assignment that omits duration or territory defaults to **five years** and **India only** (Copyright Act 1957 s.17, s.19(2), s.19(5)–(6), applied by the Delhi High Court in *Pine Labs v. Gemalto*), while post-termination non-compete clauses are generally void under Indian Contract Act 1872 s.27 [B · T0-66 L65, L741–742; T0-43 L67, L256–258; live-verified 2026-11-19]. State duration (e.g., perpetual) and worldwide territory explicitly in export contracts, reviewed by Indian counsel.
-- **Receipts, FEMA 2026, PA-CB cap, §44ADA / s.58(2) cliff and GST.** Watch the RBI **₹25 lakh per-transaction** PA-CB cap on fintech rails (2025-09-15 Master Directions), FEMA 2026's 9-month (12-month INR) realisation and unified monthly EDF replacing standalone SOFTEX, and Finance Act 2026 s.157 omitting IGST s.13(8)(b) [A/B · T0-43 L245, L276]. Use Wise Business or Payoneer (1.2–5% friction) over PayPal (8–9%) [C · T0-18.F4]. Under §44ADA (Income-tax Act 2025 s.58(2)), drifting past ₹75 lakh triggers a ~₹11.8 lakh tax cliff [D · T0-18.F4]. Consult a chartered accountant before approaching ₹75 lakh and read [India remote tax](../09-compensation/india-remote-tax.md#the-structure-ladder-four-billing-bands-and-one-override), [Cross-border remote work](remote-cross-border.md) and the [India remote playbook](india-remote-playbook.md).
+- **Receipts, FEMA 2026, PA-CB cap, s.58(2) (legacy §44ADA) cliff and GST.** Watch the RBI **₹25 lakh per-transaction** PA-CB cap on fintech rails (2025-09-15 Master Directions — larger invoices require direct AD-I bank SWIFT wires), FEMA 2026's 9-month (12-month INR) realisation and unified monthly EDF replacing standalone SOFTEX, and Finance Act 2026 s.157 omitting IGST s.13(8)(b) [A/B · T0-43 L245, L276]. Use Wise Business or Payoneer (note Payoneer holds **in-principle** RBI PA-CB authorisation as of November 2026 [B · T0-43 L270]; 1.2–5% friction) over PayPal (8–9%) [C · T0-18.F4]. Under Income-tax Act 2025 **s.58(2) (legacy §44ADA)**, drifting past ₹75 lakh triggers a ~₹11.8 lakh tax cliff [D · T0-18.F4]. Consult a chartered accountant before approaching ₹75 lakh and read [India remote tax](../09-compensation/india-remote-tax.md#the-structure-ladder-four-billing-bands-and-one-override), [Cross-border remote work](remote-cross-border.md) and the [India remote playbook](india-remote-playbook.md).
 
 ### Europe and the UK
 
@@ -339,12 +401,12 @@ Underuse of hours signals churn; early exits typically stem from scope, compensa
 - [ ] I budgeted on the lower half of my channel's corridor (not agency marketing or >5× templated bands).
 - [ ] My retainer uses `hours/week × 52/12 × rate` with an hours cap, overage rate and no rollover, and I have a fixed-fee sprint offer (`hours × rate × 1.2–1.25`).
 - [ ] My ring list holds 50+ contacts, I send two personal teardown offers a week, and every qualifying call receives a proposal within 48 hours.
-- [ ] My contract kit starts from Common Paper PSA v1.1 (1× 12-month cap, Provider Materials schedule, AI-output/no-training clauses, SOW minimum/notice), reviewed by a lawyer.
-- [ ] Tech E&O and cyber insurance are active, with AI-output coverage confirmed in writing.
+- [ ] My contract kit starts from Common Paper PSA v1.1 (1× 12-month cap, Provider Materials schedule, AI-output/no-training clauses, §1.5 subcontractor permission, §6.3(b)/(d) carve-outs, §10.1 claims-made edit, SOW minimum/notice), reviewed by a lawyer.
+- [ ] Tech E&O and cyber insurance are active, with AI-output coverage and D&O/EPL exclusions checked in writing.
 - [ ] Before joining any marketplace or fractional bench, I checked talent splits (e.g., Fractionus 20%), non-circumvention windows (e.g., Toptal 24 months) and whether a live funded mandate exists.
 - [ ] If using expert-data platforms, I confirmed independent-contractor work authorisation (no H-1B/STEM OPT violation), reviewed PII/biometric risk, and treated payouts as bridge income only.
 - [ ] My day-90 stop rule is written down with a date, and every engagement schedules a day-60 referral ask and day-75 renewal check.
-- [ ] India: a CA advised me before ₹75 lakh, receipts use Wise/Payoneer, and every IP assignment explicitly states duration and worldwide territory.
+- [ ] India: a CA advised me before ₹75 lakh under s.58(2) (legacy §44ADA), receipts use Wise/Payoneer (or AD-I SWIFT above the ₹25 lakh PA-CB per-transaction cap), and every IP assignment explicitly states perpetual duration and worldwide territory.
 
 ## Pitfalls
 
@@ -359,8 +421,8 @@ Underuse of hours signals churn; early exits typically stem from scope, compensa
 | Ignoring marketplace non-circumvention & splits | Toptal's reported 24-month non-circumvention blocks direct client work; Fractionus's blog cites an 80/20 split [C · T0-66 L730, L732] | Read terms before joining; keep direct clients off-platform |
 | Silent IP assignment under Indian law | Copyright Act 1957 s.19(5)–(6) defaults silent assignments to 5 years and India only (*Pine Labs v. Gemalto*) [B · T0-66 L65, L742] | State duration (perpetual) and territory (worldwide) in signed assignments with counsel |
 | Inside-IR35 or W2/1099 ambiguity | Tax treatment and take-home change materially [B · T0-66 L248] | Verify HMRC IR35 status (UK) or W2/1099 classification (US) before quoting |
-| Uninsured supercaps or unreviewed AI output | Carriers decline AI-output liability [B · T0-18.F9]; Deloitte refunded >A$97K of a ~A$440K contract over AI errors [C · T0-18.F11] | 1× AI-output cap; human-review clause; broker confirmation in writing |
-| India: drifting just past ₹75 lakh | Crossing ₹75 lakh adds ~₹11.8 lakh tax immediately [M · T0-07 L87; T2-01 L667] | Plan with a CA: stay <=₹75L or bill past ~₹94L |
+| Uninsured supercaps, §10.1 E&O mismatch, or unreviewed AI output | Carriers decline AI-output liability and apply absolute D&O/EPL AI exclusions [B · T0-18.F9, L533]; Common Paper §10.1 asks for occurrence-form insurance while E&O is claims-made [A/D · T0-18 L466]; Deloitte refunded >A$97K of a ~A$440K contract over AI errors [C · T0-18.F11] | 1× AI-output cap; human-review clause; edit §10.1 to match claims-made E&O; broker confirmation in writing |
+| India: drifting just past ₹75 lakh | Crossing ₹75 lakh under s.58(2) (legacy §44ADA) adds ~₹11.8 lakh tax immediately [M · T0-07 L87; T2-01 L667] | Plan with a CA: stay <=₹75L or bill past ~₹94L (see [India remote tax](../09-compensation/india-remote-tax.md)) |
 
 ## Evidence and limits
 
@@ -375,7 +437,7 @@ Underuse of hours signals churn; early exits typically stem from scope, compensa
 - **Live-verified 2026-11-19 risk additions.** Mercor's March 2026 LiteLLM data breach and federal class-action lawsuits, Scale AI's mid-2025 Meta 49% stake / Outlier dashboard volatility, and Surge AI's California misclassification litigation rest on Grade B/C secondary press and legal reporting.
 - **Named absences (Grade E).** Audited Go Fractional / Fractional Jobs volumes and verified Fractional Jobs fees; direct US senior independent consulting rates ($130–$235/hr untested on boards); India domestic independent, fractional and expert-grader pay/volume; direct client-side consulting selection loops and India in-house evaluation loops; European fractional retainer data; behavioural return-to-employment rates [E · T0-18.F11; T0-66 L380–394, L743–757].
 - **Corrections applied.** [ERRATA U8](../../research/ERRATA.md) (8.2-year median belongs to AI consultants/strategists [C · T0-06 L109], not AI PMs); [ERRATA U23](../../research/ERRATA.md) (UK £58–£99/hr mixes P25–P75 with P90—this page cites day rates directly).
-- **What would change this advice** [T0-18 L156; T0-66 L85]: invoice-level realised AI consulting/retainer rates well below $150/hr US; employer-board fractional postings in volume; audited Mercor/Outlier placement and earnings distributions; evidence that AI-output claims are uninsurable for solo providers; formal Indian tax rulings excluding AI consultancy from §44ADA.
+- **What would change this advice** [T0-18 L156; T0-66 L85]: invoice-level realised AI consulting/retainer rates well below $150/hr US; employer-board fractional postings in volume; audited Mercor/Outlier placement and earnings distributions; evidence that AI-output claims are uninsurable for solo providers; formal Indian tax rulings excluding AI consultancy from Income-tax Act 2025 s.58(2) (legacy §44ADA).
 
 ## Next steps
 

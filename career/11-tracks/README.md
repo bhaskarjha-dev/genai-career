@@ -6,7 +6,7 @@ stage: 11
 status: published
 last_verified: 2026-11-19
 summary: "Index of stage 11 (tracks and transitions): What changes for my background, location or way of working?"
-sources: [T0-06, T2-01, T0-07, T0-08, T0-18, T0-15, T0-35, T0-36, T0-37, T0-38, T0-39, T0-40, T0-41, T0-42, T0-43, T0-67]
+sources: [T0-06, T2-01, T0-07, T0-08, T0-18, T0-15, T0-34, T0-35, T0-36, T0-37, T0-38, T0-39, T0-40, T0-41, T0-42, T0-43, T0-47, T0-61, T0-65, T0-66, T0-67, T0-69]
 ---
 
 # Stage 11: Tracks and transitions
@@ -20,7 +20,7 @@ sources: [T0-06, T2-01, T0-07, T0-08, T0-18, T0-15, T0-35, T0-36, T0-37, T0-38, 
 |---|---|
 | [career-transitions.md](career-transitions.md) | Researched roadmaps into GenAI from nine starting backgrounds (backend/systems, data science/BI, frontend/full-stack, non-technical, PhD, DevOps/SRE, product management, Indian IT services and student/new grad), with modelled timelines and gates G1–G4 (owner of transition timelines and gates) |
 | [phd-to-industry.md](phd-to-industry.md) | The PhD-to-industry track: research versus applied roles, Big Tech versus frontier-lab bars, fellowships, timelines and the O-1A angle |
-| [country-rankings.md](country-rankings.md) | Ranked global geography guide across 33 countries and 50 cities under six Monte Carlo lenses (Global, Indian Applicant, Non-EU Global, High-Pay/Net-Savings, Remote Base, Early-Career Access), generated from `data/countries.json` (D-025) |
+| [country-rankings.md](country-rankings.md) | Ranked global geography guide across 33 countries and 51 cities under seven Monte Carlo lenses (Overall India, Overall non-EU, Net Pay, Fast Access India, Remote from India, Long-Term Settlement India, and Early-Career Access), generated from `data/countries.json` (D-025) |
 | [remote-cross-border.md](remote-cross-border.md) | Working remotely across borders: geo-tier pay bands, EOR vs contractor vs subsidiary trade-offs, timezone overlap reality, remote-first employers and compliance traps |
 | [india-remote-playbook.md](india-remote-playbook.md) | Choosing a route from India to US or EU work (GCC, remote employee via EOR, direct contractor or relocation), India-friendly boards, billing corridors and what to set up; pay and tax detail link to their owner pages |
 | [visa-and-relocation.md](visa-and-relocation.md) | Talent-visa corridors and relocation hub: routes, evidence bars, timelines, the central dated V0 status table of contested/pending rules, and pointers across 31 countries (pointers, not legal advice) |
@@ -36,7 +36,7 @@ Nothing planned for this stage beyond scheduled maintenance (especially 14-day V
 
 - **Findings:** the [findings registry](../../research/findings.md#stage-11) lists the 234 key findings for this stage, each with its grade and line.
 - **Research sessions (November 2026 — RP2):**
-  - [T0-35](../../research/sessions/T0-35-countries-cities-americas-europe-israel.md) and [T0-36](../../research/sessions/T0-36-countries-cities-gulf-india-asia-pacific.md): Global GenAI geography — 33 countries and 50 cities
+  - [T0-35](../../research/sessions/T0-35-countries-cities-americas-europe-israel.md) and [T0-36](../../research/sessions/T0-36-countries-cities-gulf-india-asia-pacific.md): Global GenAI geography — 33 countries and 51 cities
   - [T0-37](../../research/sessions/T0-37-visa-dossier-united-states.md), [T0-38](../../research/sessions/T0-38-visa-dossier-canada.md), [T0-39](../../research/sessions/T0-39-visa-dossier-uk-ireland-western-europe.md), [T0-40](../../research/sessions/T0-40-visa-dossier-nordics-southern-central-europe.md), [T0-41](../../research/sessions/T0-41-visa-dossier-gulf-israel.md), [T0-42](../../research/sessions/T0-42-visa-dossier-asia-pacific.md): Six regional visa dossiers (31 countries)
   - [T0-43](../../research/sessions/T0-43-remote-cross-border-work-eor-platforms.md): Remote cross-border work, EOR platforms and India billing refresh
   - [T0-67](../../research/sessions/T0-67-transitions-devops-pm-it-services-students.md): Career transitions — DevOps/SRE, PM, Indian IT services and students/new graduates

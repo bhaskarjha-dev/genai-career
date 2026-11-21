@@ -3,8 +3,8 @@
  "as_of": "2026-11-19",
  "review_by": "2027-02-17",
  "fx_note": "Americas, Europe and Israel net pay and rents are converted from T0-35 EUR figures to USD using T0-35's ECB reference rate of 2026-11-13 (1 EUR = 1.1052 USD; T0-35 L190). Gulf, India and Asia-Pacific figures use T0-36's USD figures derived from ECB cross rates around 2026-11-11 (INR 93.92, SGD 1.2816, JPY 158.33, KRW 1,358.7, AUD 1.4554, NZD 1.8039, CNY 6.6713, HKD 7.8374, MYR 4.059, TWD 31.522, AED 3.6725, SAR 3.75; treated as +/-2% error band; T0-36 L198).",
- "description": "Evidence-graded country and city scoring model for GenAI careers across 33 jurisdictions covered by T0-35 (Americas, Europe and Israel) and T0-36 (Gulf, India and Asia-Pacific), combined with cross-border remote-hiring evidence from T0-43 (D-025). All tax, visa and residency summaries are dated pointers, not legal or tax advice.",
- "scoring_method": "Each country carries eight 0-10 pillars scored as triangular intervals [lo, mid, hi]. Wider intervals encode thin samples, conflicting sources, Grade C/D inputs or active policy/geopolitical shocks. scripts/rank_countries.py runs deterministic Monte Carlo sampling (20,000 draws, seeded RNG) across six weighted lenses to produce mean scores, median ranks and P10-P90 rank bands (all composite rankings are Grade M). Extract-only Grade A claims in T0-36 were downgraded to Grade B unless verified directly at primary official sources on 2026-11-19.",
+ "description": "Evidence-graded country and city scoring model for GenAI careers across 33 jurisdictions and 51 cities covered by T0-35 (Americas, Europe and Israel) and T0-36 (Gulf, India and Asia-Pacific), combined with regional visa dossiers (T0-37 to T0-42) and cross-border remote-hiring evidence (T0-43) (D-025). All tax, visa and residency summaries are dated pointers, not legal or tax advice.",
+ "scoring_method": "Each country carries nine 0-10 pillars scored as triangular intervals [lo, mid, hi]. Wider intervals encode thin samples, conflicting sources, Grade C/D inputs or active policy/geopolitical shocks. scripts/rank_countries.py runs deterministic Monte Carlo sampling (20,000 draws, seeded RNG) across seven weighted lenses (including Early-Career Access from T0-35 and T0-36) to produce mean scores, median ranks and P10-P90 rank bands (all composite rankings are Grade M). Extract-only Grade A claims in T0-36 were downgraded to Grade B unless verified directly at primary official sources on 2026-11-19.",
  "pillars": {
   "demand": {
    "label": "Demand",
@@ -45,6 +45,11 @@
    "label": "Policy and macro stability",
    "description": "Predictability of immigration, tax, AI regulation and regional geopolitical/security conditions as of November 2026.",
    "scale": "0 = severe active conflict or abrupt closure; 5 = material policy churn or regional risk; 10 = highly predictable legal and macro regime."
+  },
+  "early_career": {
+   "label": "Early-career access",
+   "description": "Feasibility for 0-3 year and recent-graduate candidates: graduate-specific visa floors, post-study/search routes, entry-level AI posting share and entry pay samples.",
+   "scale": "0 = blocked by quotas, wage-weighted lotteries or senior-only floors; 5 = moderate employer-sponsored entry; 10 = home market or low graduate floor with open search/post-study access."
   }
  },
  "lenses": [
@@ -60,7 +65,8 @@
     "access_non_eu": 0.0,
     "remote_reach": 0.06,
     "ecosystem": 0.16,
-    "stability": 0.14
+    "stability": 0.14,
+    "early_career": 0.0
    }
   },
   {
@@ -75,7 +81,8 @@
     "access_non_eu": 0.18,
     "remote_reach": 0.0,
     "ecosystem": 0.18,
-    "stability": 0.16
+    "stability": 0.16,
+    "early_career": 0.0
    }
   },
   {
@@ -90,7 +97,8 @@
     "access_non_eu": 0.0,
     "remote_reach": 0.0,
     "ecosystem": 0.05,
-    "stability": 0.1
+    "stability": 0.1,
+    "early_career": 0.0
    }
   },
   {
@@ -105,7 +113,8 @@
     "access_non_eu": 0.0,
     "remote_reach": 0.0,
     "ecosystem": 0.1,
-    "stability": 0.15
+    "stability": 0.15,
+    "early_career": 0.0
    }
   },
   {
@@ -120,7 +129,8 @@
     "access_non_eu": 0.0,
     "remote_reach": 0.4,
     "ecosystem": 0.1,
-    "stability": 0.1
+    "stability": 0.1,
+    "early_career": 0.0
    }
   },
   {
@@ -135,7 +145,24 @@
     "access_non_eu": 0.0,
     "remote_reach": 0.0,
     "ecosystem": 0.12,
-    "stability": 0.28
+    "stability": 0.28,
+    "early_career": 0.0
+   }
+  },
+  {
+   "id": "early_career",
+   "name": "Early-career access and launch (0–3 years / graduates)",
+   "description": "Ranks destinations for 0–3 year and recent-graduate candidates weighing graduate-specific visa floors, post-study/search routes, entry-level AI posting share, local purchasing power and stability (T0-35 L674–L685; T0-36 L441–L449).",
+   "weights": {
+    "demand": 0.2,
+    "pay_ppp": 0.1,
+    "net_pay": 0.0,
+    "access_india": 0.15,
+    "access_non_eu": 0.0,
+    "remote_reach": 0.0,
+    "ecosystem": 0.0,
+    "stability": 0.1,
+    "early_career": 0.45
    }
   }
  ],
@@ -166,7 +193,9 @@
      "disposable_annual_usd_k": 118.1,
      "basis_note": "US sr SWE ref; CA tax; Numbeo rent",
      "grade": "M",
-     "source": "T0-35 L143-L144, L197, L319"
+     "source": "T0-35 L143-L144, L197, L319",
+     "rent_1br_outside_usd_mo": 2735,
+     "living_excl_rent_usd_mo": 1594
     },
     {
      "name": "Seattle",
@@ -176,7 +205,9 @@
      "disposable_annual_usd_k": 154.3,
      "basis_note": "US sr SWE ref; 0% WA income tax",
      "grade": "M",
-     "source": "T0-35 L145, L195, L317"
+     "source": "T0-35 L145, L195, L317",
+     "rent_1br_outside_usd_mo": 1974,
+     "living_excl_rent_usd_mo": 1535
     },
     {
      "name": "New York",
@@ -186,7 +217,9 @@
      "disposable_annual_usd_k": 107.5,
      "basis_note": "US sr SWE ref; NY+NYC tax; highest rent",
      "grade": "M",
-     "source": "T0-35 L146, L198, L320"
+     "source": "T0-35 L146, L198, L320",
+     "rent_1br_outside_usd_mo": 2993,
+     "living_excl_rent_usd_mo": 1746
     },
     {
      "name": "Austin",
@@ -196,7 +229,9 @@
      "disposable_annual_usd_k": 160.0,
      "basis_note": "US sr SWE ref; 0% TX tax; #1 disp. surplus",
      "grade": "M",
-     "source": "T0-35 L148, L194, L316"
+     "source": "T0-35 L148, L194, L316",
+     "rent_1br_outside_usd_mo": 1427,
+     "living_excl_rent_usd_mo": 1110
     },
     {
      "name": "Boston",
@@ -281,7 +316,23 @@
      ],
      "grade": "B",
      "basis": "Active immigration-policy volatility: weighted H-1B rule (Feb 2026) and $100k proclamation appeals pending (T0-35 L61, L578-L579)."
+    },
+    "early_career": {
+     "range": [
+      2.4,
+      3.3,
+      4.4
+     ],
+     "grade": "A",
+     "basis": "Highest entry median (USD 140k, n=6,347) but left out of T0-35 early-career top 5: FY2027 wage-weighted H-1B gives Level I only 1x entry vs 4x at Level IV, plus litigated $100k fee, ~13-yr India EB-2/EB-3 wait and OPT fee NPRM (T0-35 L55, L684, L776; T0-37 L74)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 71,317 (USD 78,819, CA; TX/WA higher)",
+    "deduction_pct": 28.7,
+    "grade": "M",
+    "source": "T0-35 L51, L232"
    }
   },
   {
@@ -310,7 +361,9 @@
      "disposable_annual_usd_k": 75.8,
      "basis_note": "Sr SWE ref; BC tax low-conf; Apr 2025 rent",
      "grade": "M",
-     "source": "T0-35 L151, L201, L322"
+     "source": "T0-35 L151, L201, L322",
+     "rent_1br_outside_usd_mo": 1669,
+     "living_excl_rent_usd_mo": null
     },
     {
      "name": "Toronto",
@@ -320,7 +373,9 @@
      "disposable_annual_usd_k": 65.0,
      "basis_note": "Sr SWE ref; Ontario tax; Nov 2026 rent",
      "grade": "M",
-     "source": "T0-35 L149, L204, L323"
+     "source": "T0-35 L149, L204, L323",
+     "rent_1br_outside_usd_mo": 1411,
+     "living_excl_rent_usd_mo": 999
     },
     {
      "name": "Montreal",
@@ -330,7 +385,9 @@
      "disposable_annual_usd_k": 49.9,
      "basis_note": "Sr SWE ref; QC tax low-conf; French factor",
      "grade": "M",
-     "source": "T0-35 L150, L209, L328"
+     "source": "T0-35 L150, L209, L328",
+     "rent_1br_outside_usd_mo": 974,
+     "living_excl_rent_usd_mo": 925
     }
    ],
    "pillars": {
@@ -405,7 +462,23 @@
      ],
      "grade": "B",
      "basis": "Stable rule of law, but immigration levers actively tightened in 2026 (GTS partners, Express Entry categories; T0-35 L580-L581)."
+    },
+    "early_career": {
+     "range": [
+      7.2,
+      8.0,
+      8.6
+     ],
+     "grade": "B",
+     "basis": "Ranked #2 in T0-35 early-career lens: Toronto entry median CAD 100,992 (n=352), Vancouver CAD 133,247 (n=130), PGWP 2026 freeze (1,107 programmes) and Master's/PhD study-permit cap exemption; narrowed by GTS partner cut (58 to 41) (T0-35 L679; T0-67 L289)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 67,881 (CAD 106,967, Toronto)",
+    "deduction_pct": 32.1,
+    "grade": "M",
+    "source": "T0-35 L51, L236"
    }
   },
   {
@@ -434,7 +507,9 @@
      "disposable_annual_usd_k": 57.9,
      "basis_note": "All-lvl ref (conservative vs sr); high rent",
      "grade": "M",
-     "source": "T0-35 L152, L183, L202, L324"
+     "source": "T0-35 L152, L183, L202, L324",
+     "rent_1br_outside_usd_mo": 2254,
+     "living_excl_rent_usd_mo": 1465
     },
     {
      "name": "Cambridge",
@@ -444,7 +519,9 @@
      "disposable_annual_usd_k": 57.0,
      "basis_note": "All-lvl ref; Apr 2025 rent",
      "grade": "M",
-     "source": "T0-35 L153, L205, L325"
+     "source": "T0-35 L153, L205, L325",
+     "rent_1br_outside_usd_mo": 1460,
+     "living_excl_rent_usd_mo": null
     }
    ],
    "pillars": {
@@ -519,7 +596,23 @@
      ],
      "grade": "B",
      "basis": "Strong institutions, but Earned Settlement reform and recent non-dom/threshold churn raise immigration-rule risk (T0-35 L582)."
+    },
+    "early_career": {
+     "range": [
+      6.2,
+      7.0,
+      7.7
+     ],
+     "grade": "A",
+     "basis": "New-entrant / under-26 / student / ISL discounted Skilled Worker floor GBP 33,400 (70% going rate, 4-yr cap) and India YPS 3,000 ballot places/yr (GBP 1,552 IHS); weakened by Graduate Route cut from 24 to 18 months from 2027-01-01 (PhD stays 3 yrs) (T0-39 L1304, L1313, L1331; T0-67 L288)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 70,635 (GBP 59,022, London)",
+    "deduction_pct": 29.4,
+    "grade": "M",
+    "source": "T0-35 L51, L233"
    }
   },
   {
@@ -548,7 +641,9 @@
      "disposable_annual_usd_k": 121.8,
      "basis_note": "Sr SWE ref; #1 EU net & disp; health ins excl.",
      "grade": "M",
-     "source": "T0-35 L159, L199, L318"
+     "source": "T0-35 L159, L199, L318",
+     "rent_1br_outside_usd_mo": 2062,
+     "living_excl_rent_usd_mo": 1828
     }
    ],
    "pillars": {
@@ -623,7 +718,23 @@
      ],
      "grade": "B",
      "basis": "2026 quota held steady at 8,500; 10m population-cap referendum rejected 54.8% in June 2026 (T0-35 L593)."
+    },
+    "early_career": {
+     "range": [
+      2.2,
+      3.0,
+      4.0
+     ],
+     "grade": "A",
+     "basis": "High Zurich entry median (CHF 92,947, n=35) but left out of T0-35 early-career top 5: strict 8,500 third-country quota (4,500 B / 4,000 L) and Swiss/EU priority test (narrow exemption for Swiss-university MSc/PhD graduates only) (T0-35 L684; T0-39 L84, L1717)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 77,623 (CHF 71,926, Zurich)",
+    "deduction_pct": 22.4,
+    "grade": "M",
+    "source": "T0-35 L51, L230"
    }
   },
   {
@@ -652,7 +763,9 @@
      "disposable_annual_usd_k": 46.7,
      "basis_note": "Sr SWE ref; 41.8% tax+social; Nov 2026 rent",
      "grade": "M",
-     "source": "T0-35 L155, L210, L331"
+     "source": "T0-35 L155, L210, L331",
+     "rent_1br_outside_usd_mo": 1104,
+     "living_excl_rent_usd_mo": 1158
     },
     {
      "name": "Munich",
@@ -662,7 +775,9 @@
      "disposable_annual_usd_k": 43.5,
      "basis_note": "Sr SWE ref; Anthropic Munich; Jan 2026 rent",
      "grade": "M",
-     "source": "T0-35 L156, L211, L334"
+     "source": "T0-35 L156, L211, L334",
+     "rent_1br_outside_usd_mo": 1299,
+     "living_excl_rent_usd_mo": 1147
     }
    ],
    "pillars": {
@@ -737,7 +852,23 @@
      ],
      "grade": "B",
      "basis": "Predictable statutory Blue Card indexing and strong rule of law; EU Digital Omnibus clarifies AI Act timelines (T0-35 L417, L594)."
+    },
+    "early_career": {
+     "range": [
+      7.8,
+      8.5,
+      9.0
+     ],
+     "grade": "A",
+     "basis": "Ranked #1 in T0-35 early-career lens: EU Blue Card graduate/shortage floor EUR 45,934.20, Opportunity Card (Option 1 degree route without points/language; Option 2 6 pts, EUR 1,091/mo blocked), Munich entry median EUR 65,712 (n=51) (T0-35 L73, L678; T0-39 L75–L76, L1506)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 58,202 (Berlin)",
+    "deduction_pct": 41.8,
+    "grade": "M",
+    "source": "T0-35 L51, L246"
    }
   },
   {
@@ -751,11 +882,11 @@
    "tz_overlap_india_dst_h": 5.5,
    "incoming_tax_regime": {
     "name": "30% ruling (drops to 27% in 2027)",
-    "summary": "30% of salary tax-free up to EUR 262k cap in 2026 (adds +EUR 18,501/yr at Amsterdam sr ref); drops to flat 27% from 2027-01-01 with higher salary floor.",
+    "summary": "30% of salary tax-free up to EUR 262k cap in 2026 (adds +EUR 18,501/yr at Amsterdam sr ref); 2026 salary floor conflict (V0): EUR 48,013 (EUR 36,497 <30 MSc; T0-35 L268, C) vs EUR 46,107 (EUR 38,388 <30 MSc; T0-39 L666, B); drops to 27% (EUR 50,436 floor) from 2027-01-01 (verify belastingdienst.nl).",
     "grade": "B",
-    "source": "T0-35 L60, L254, L268, L589"
+    "source": "T0-35 L60, L254, L268, L589; T0-39 L665–L666, L1582–L1584"
    },
-   "access_summary": "HSM 2026 (excl 8% holiday, recognised sponsor): EUR 5,942/mo (>=30), EUR 4,357 (<30), EUR 3,122 (zoekjaar), 2-week IND target; EU Blue Card EUR 5,942 / 4,754 (no sponsor recognition); 30%->27% ruling confirmed via Belastingplan 2027 (passed Tweede Kamer 2026-11-12, eff 2027-01-01); PR 5y.",
+   "access_summary": "HSM 2026 (excl 8% holiday, recognised sponsor): EUR 5,942/mo (>=30), EUR 4,357 (<30), EUR 3,122 (zoekjaar), 2-week IND target; EU Blue Card EUR 5,942 / 4,754 (no sponsor recognition); 30%->27% ruling status V0 (2026 floor EUR 48,013 vs EUR 46,107 conflict); PR 5y.",
    "caveat": "30% ruling steps down to 27% on 2027-01-01; Amsterdam housing shortage pushes 1-bed centre rent to ~$2,635/mo; mandatory private health insurance excluded.",
    "cities": [
     {
@@ -766,7 +897,10 @@
      "disposable_annual_usd_k": 55.4,
      "basis_note": "Sr SWE std net ($107.4k w/ 30% ruling)",
      "grade": "M",
-     "source": "T0-35 L157, L203, L254, L326"
+     "source": "T0-35 L157, L203, L254, L326",
+     "rent_1br_outside_usd_mo": 2006,
+     "living_excl_rent_usd_mo": null,
+     "regime_net_annual_usd_k": 107.4
     }
    ],
    "pillars": {
@@ -841,7 +975,23 @@
      ],
      "grade": "B",
      "basis": "Strong institutions, tempered by 30%->27% expat-ruling reduction effective 2027-01-01 (T0-35 L589)."
+    },
+    "early_career": {
+     "range": [
+      7.3,
+      8.0,
+      8.6
+     ],
+     "grade": "B",
+     "basis": "Ranked #3 in T0-35 early-career lens: zoekjaar 1-year open permit for top-200 graduates (2 of 3 rankings), reduced HSM EUR 3,122/mo (within 3 yrs of graduation) and EUR 4,357/mo (<30), plus under-30 MSc 30%-ruling floor (EUR 36,497 vs EUR 38,388 conflict) (T0-35 L680; T0-39 L78, L80, L666)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 66,280 (Amsterdam, std; higher w/ 30% ruling)",
+    "deduction_pct": 33.7,
+    "grade": "M",
+    "source": "T0-35 L51, L238"
    }
   },
   {
@@ -859,7 +1009,7 @@
     "grade": "B",
     "source": "T0-35 L206, L239, L291"
    },
-   "access_summary": "Critical Skills Employment Permit from EUR 40,904 (from 2026-03-01, phased rises to 2030), ~3-week backlog, 5 years to long-term residency/citizenship.",
+   "access_summary": "Critical Skills Employment Permit (eff. 2026-03-01): EUR 40,904 CSOL + degree, EUR 68,911 without, EUR 36,848 recent graduate; ~3-week backlog; Stamp 4 after 21 months (T0-39 L82); CSOL S.I. 213/2026 lists Software Dev (SOC 2136) but omits AI/ML/DS titles; GEP EUR 36,605 (Stamp 4 57m vs 5y conflict).",
    "caveat": "Acute Dublin housing shortage pushes 1-bed centre rent to ~$2,425/mo; small domestic market heavily reliant on US MNC EMEA headquarters.",
    "cities": [
     {
@@ -870,7 +1020,9 @@
      "disposable_annual_usd_k": 47.7,
      "basis_note": "All-lvl ref (conservative vs sr); high rent",
      "grade": "M",
-     "source": "T0-35 L154, L206, L330"
+     "source": "T0-35 L154, L206, L330",
+     "rent_1br_outside_usd_mo": 2155,
+     "living_excl_rent_usd_mo": 1197
     }
    ],
    "pillars": {
@@ -945,7 +1097,23 @@
      ],
      "grade": "B",
      "basis": "Published phased Critical Skills salary schedule to 2030 gives transparent predictability (T0-35 L584)."
+    },
+    "early_career": {
+     "range": [
+      7.0,
+      7.7,
+      8.3
+     ],
+     "grade": "A",
+     "basis": "Ranked #4 in T0-35 early-career lens: graduate CSEP floor EUR 36,848 (within 12 months of graduation), standard CSEP EUR 40,904, 21-month Stamp 4; high Dublin rent and CSOL omits AI/ML titles (T0-35 L681; T0-39 L81–L82)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 64,532 (Dublin)",
+    "deduction_pct": 35.5,
+    "grade": "M",
+    "source": "T0-35 L51, L239"
    }
   },
   {
@@ -963,7 +1131,7 @@
     "grade": "M",
     "source": "T0-35 L60, L255, L274"
    },
-   "access_summary": "Talent Passport (qualified employee ~EUR 39.6k / 2x SMIC) or EU Blue Card (EUR 59,373); French language matters outside frontier startups.",
+   "access_summary": "EU Blue Card (carte bleue europeenne) EUR 59,373/yr (1.5x reference EUR 39,582, diploma >=3y or 5y exp) and Talent qualified-employee / ICT EUR 39,582; Decree 2026-1001 (eff. 2026-10-30) cuts job-change lock from 12 to 6 months with 90-day decision limit (T0-39 L83); permit fee EUR 350.",
    "caveat": "Lower headline tech pay than UK/DE/NL/CH; French tax/social model in T0-35 used recalled 2025 parameters (Grade D inputs); French language required for many firms.",
    "cities": [
     {
@@ -974,7 +1142,10 @@
      "disposable_annual_usd_k": 37.4,
      "basis_note": "Sr SWE std net ($63.8k w/ impatriate); Nov 2026 rent",
      "grade": "M",
-     "source": "T0-35 L158, L215, L255, L339"
+     "source": "T0-35 L158, L215, L255, L339",
+     "rent_1br_outside_usd_mo": 1241,
+     "living_excl_rent_usd_mo": 1156,
+     "regime_net_annual_usd_k": 63.8
     }
    ],
    "pillars": {
@@ -1049,7 +1220,23 @@
      ],
      "grade": "B",
      "basis": "Stable Talent Passport and impatriate framework; EU AI Act Digital Omnibus eases near-term compliance (T0-35 L419, L594)."
+    },
+    "early_career": {
+     "range": [
+      5.2,
+      6.0,
+      6.8
+     ],
+     "grade": "B",
+     "basis": "Talent qualified-employee floor EUR 39,582 and Paris AI startup ecosystem; French language and lower junior net pay constrain non-Francophone graduates (T0-39 L83; T0-35 L215)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 61,477 (Paris, std; higher w/ impatriate)",
+    "deduction_pct": 38.5,
+    "grade": "M",
+    "source": "T0-35 L51, L243"
    }
   },
   {
@@ -1078,7 +1265,9 @@
      "disposable_annual_usd_k": 83.9,
      "basis_note": "Sr SWE ref; #3 pay outside US; Nov 2026 rent",
      "grade": "M",
-     "source": "T0-35 L172, L200, L321"
+     "source": "T0-35 L172, L200, L321",
+     "rent_1br_outside_usd_mo": 1635,
+     "living_excl_rent_usd_mo": 1498
     }
    ],
    "pillars": {
@@ -1153,7 +1342,23 @@
      ],
      "grade": "C",
      "basis": "Ongoing regional security and geopolitical conflict risk plus 63-month stay cap (T0-35 L477, L767)."
+    },
+    "early_career": {
+     "range": [
+      3.8,
+      4.6,
+      5.4
+     ],
+     "grade": "B",
+     "basis": "B/1 Expert requires 2x average wage (steep for juniors; Israeli hi-tech grad quota capped at 500) plus active regional security risk (T0-41 L64, L985)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 70,182 (ILS 249,040, Tel Aviv)",
+    "deduction_pct": 29.8,
+    "grade": "M",
+    "source": "T0-35 L51, L234"
    }
   },
   {
@@ -1167,9 +1372,9 @@
    "tz_overlap_india_dst_h": 5.5,
    "incoming_tax_regime": {
     "name": "Expert tax relief (25% exempt)",
-    "summary": "75% of pay taxed for qualifying experts/high earners (threshold SEK 88,200/mo or specialist); not modelled in T0-35 baseline.",
+    "summary": "75% of pay taxed for qualifying experts/high earners (monthly pay above 1.5x SEK 59,200 = SEK 88,800/mo in 2026, or R&D specialist; duration 3 vs 7 yrs conflicts across sources); not modelled in T0-35 baseline.",
     "grade": "B",
-    "source": "T0-35 L275"
+    "source": "T0-35 L60, L275, L308"
    },
    "access_summary": "Work permit floor SEK 34,470/mo (90% median, eff 2026-06-16; extensions >=2026-12-02) and EU Blue Card SEK 53,625/mo; 30-day service promise (>80% met); 4-year work-permit PR (asylum PR repeal excludes work permits); 8y citizenship (2026-06-06).",
    "caveat": "Work-permit salary threshold rose to 90% median in 2026; Swedish tax model in T0-35 is low confidence.",
@@ -1182,7 +1387,9 @@
      "disposable_annual_usd_k": 42.6,
      "basis_note": "Sr SWE ref; SE tax low-conf; Nov 2026 rent",
      "grade": "M",
-     "source": "T0-35 L160, L213, L335"
+     "source": "T0-35 L160, L213, L335",
+     "rent_1br_outside_usd_mo": 1040,
+     "living_excl_rent_usd_mo": 1240
     }
    ],
    "pillars": {
@@ -1257,7 +1464,23 @@
      ],
      "grade": "B",
      "basis": "Strong institutions; work-permit threshold rose from 80% to 90% of median salary in 2026 (T0-35 L585)."
+    },
+    "early_career": {
+     "range": [
+      5.4,
+      6.2,
+      7.0
+     ],
+     "grade": "A",
+     "basis": "Students and researchers switching to a first work permit are exempt from the 90% median floor (SEK 34,470/mo); complete highly-qualified permits averaged 21 days (T0-40 L51, L910, L987)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 66,317 (SEK 736,611, Stockholm; low conf)",
+    "deduction_pct": 33.7,
+    "grade": "M",
+    "source": "T0-35 L51, L237"
    }
   },
   {
@@ -1286,7 +1509,10 @@
      "disposable_annual_usd_k": 51.0,
      "basis_note": "Sr SWE (small n=52); $79.5k net w/ 27% scheme",
      "grade": "M",
-     "source": "T0-35 L161, L207, L256, L327"
+     "source": "T0-35 L161, L207, L256, L327",
+     "rent_1br_outside_usd_mo": 1347,
+     "living_excl_rent_usd_mo": 1281,
+     "regime_net_annual_usd_k": 79.5
     }
    ],
    "pillars": {
@@ -1361,7 +1587,23 @@
      ],
      "grade": "B",
      "basis": "High institutional stability and clear Pay Limit indexing (T0-35 L422)."
+    },
+    "early_career": {
+     "range": [
+      5.2,
+      6.0,
+      6.8
+     ],
+     "grade": "A",
+     "basis": "Positive List IT bachelor's route and 2027-01-01 collective-agreement scheme (DKK 322,000) ease the DKK 552,000 Pay Limit barrier for juniors; small market (T0-40 L53, L965)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 63,567 (DKK 475,199, Copenhagen)",
+    "deduction_pct": 36.4,
+    "grade": "M",
+    "source": "T0-35 L51, L241"
    }
   },
   {
@@ -1390,7 +1632,10 @@
      "disposable_annual_usd_k": 38.0,
      "basis_note": "All-lvl ref; low-conf tax; 25% regime $55.7k net",
      "grade": "M",
-     "source": "T0-35 L162, L218, L257, L336"
+     "source": "T0-35 L162, L218, L257, L336",
+     "rent_1br_outside_usd_mo": 871,
+     "living_excl_rent_usd_mo": 1080,
+     "regime_net_annual_usd_k": 55.7
     }
    ],
    "pillars": {
@@ -1465,7 +1710,23 @@
      ],
      "grade": "B",
      "basis": "Key-employee tax improved (32%->25%) and stable fast-track permit regime (T0-35 L587)."
+    },
+    "early_career": {
+     "range": [
+      6.6,
+      7.3,
+      8.0
+     ],
+     "grade": "A",
+     "basis": "Ranked #5 in T0-35 early-career lens: Specialist floor EUR 3,937/mo, 2-week fast track, Finnish Master's/university Bachelor's graduates exempt from PR minimum residence wait; small market (T0-35 L682; T0-40 L54, L917–L918)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 60,262 (Helsinki; low conf)",
+    "deduction_pct": 39.7,
+    "grade": "M",
+    "source": "T0-35 L51, L244"
    }
   },
   {
@@ -1494,7 +1755,9 @@
      "disposable_annual_usd_k": 49.1,
      "basis_note": "All-lvl ref (small n=82); Apr 2025 rent",
      "grade": "M",
-     "source": "T0-35 L163, L208, L329"
+     "source": "T0-35 L163, L208, L329",
+     "rent_1br_outside_usd_mo": 1262,
+     "living_excl_rent_usd_mo": null
     }
    ],
    "pillars": {
@@ -1569,7 +1832,23 @@
      ],
      "grade": "B",
      "basis": "Very high macro and institutional stability; minor PR verification tightening in Sep 2025 (T0-35 L586)."
+    },
+    "early_career": {
+     "range": [
+      4.8,
+      5.6,
+      6.4
+     ],
+     "grade": "A",
+     "basis": "Skilled-worker bachelor floor NOK 522,600 (master's NOK 599,200) and 3-yr PR; small AI market (0.8–0.9% PwC share) and Norwegian preference (T0-35 L129; T0-40 L55)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 68,561 (NOK 724,656, Oslo)",
+    "deduction_pct": 31.4,
+    "grade": "M",
+    "source": "T0-35 L51, L235"
    }
   },
   {
@@ -1587,7 +1866,7 @@
     "grade": "M",
     "source": "T0-35 L258, L271"
    },
-   "access_summary": "Highly Qualified Professional authorisation (20-working-day decision target) or EU Blue Card (1.4x average wage); digital-nomad visa also available.",
+   "access_summary": "Order PJC/44/2026 (updated 2026-06-01): EU Blue Card EUR 41,356.36 general / EUR 33,085.09 reduced (shortage or <=3y grad); national Highly Qualified EUR 41,356.36 (20-business-day resolution target); Teleworker/DNV 200% monthly minimum wage (non-Spanish employers only) (T0-40 L56).",
    "caveat": "Lower headline tech pay than Northern Europe; Madrid Numbeo rent page dated June 2024 (possibly stale); Spanish language needed outside international hubs.",
    "cities": [
     {
@@ -1598,7 +1877,9 @@
      "disposable_annual_usd_k": 38.0,
      "basis_note": "Sr SWE ref; Feb 2026 rent",
      "grade": "M",
-     "source": "T0-35 L165, L214, L337"
+     "source": "T0-35 L165, L214, L337",
+     "rent_1br_outside_usd_mo": 1193,
+     "living_excl_rent_usd_mo": 893
     },
     {
      "name": "Madrid",
@@ -1608,7 +1889,10 @@
      "disposable_annual_usd_k": 37.7,
      "basis_note": "Sr SWE ref; Jun 2024 rent (stale)",
      "grade": "M",
-     "source": "T0-35 L164, L217, L338"
+     "source": "T0-35 L164, L217, L338",
+     "rent_1br_outside_usd_mo": 1037,
+     "living_excl_rent_usd_mo": null,
+     "regime_net_annual_usd_k": 58.2
     }
    ],
    "pillars": {
@@ -1683,7 +1967,23 @@
      ],
      "grade": "B",
      "basis": "Stable Beckham Law and HQA framework; Blue Card indexed at 1.4x avg wage (T0-35 L592)."
+    },
+    "early_career": {
+     "range": [
+      5.5,
+      6.3,
+      7.0
+     ],
+     "grade": "A",
+     "basis": "Order PJC/44/2026 reduced EU Blue Card floor EUR 33,085.09 for recent graduates (within 3 yrs) and hard-to-fill occupations, 20-day decision target; lower junior pay (T0-40 L56)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 63,865 (Madrid, std; higher w/ Beckham)",
+    "deduction_pct": 36.1,
+    "grade": "M",
+    "source": "T0-35 L51, L240"
    }
   },
   {
@@ -1712,7 +2012,9 @@
      "disposable_annual_usd_k": 30.5,
      "basis_note": "All-lvl employee ref; Nov 2026 rent",
      "grade": "M",
-     "source": "T0-35 L168, L219, L340"
+     "source": "T0-35 L168, L219, L340",
+     "rent_1br_outside_usd_mo": 910,
+     "living_excl_rent_usd_mo": 871
     },
     {
      "name": "Krakow",
@@ -1722,7 +2024,9 @@
      "disposable_annual_usd_k": 29.5,
      "basis_note": "All-lvl employee ref; low rent; Nov 2026",
      "grade": "M",
-     "source": "T0-35 L169, L220, L341"
+     "source": "T0-35 L169, L220, L341",
+     "rent_1br_outside_usd_mo": 705,
+     "living_excl_rent_usd_mo": 838
     }
    ],
    "pillars": {
@@ -1797,7 +2101,23 @@
      ],
      "grade": "B",
      "basis": "EU/Schengen framework with streamlined 6-month Blue Card contract rule (T0-35 L590)."
+    },
+    "early_career": {
+     "range": [
+      4.8,
+      5.6,
+      6.4
+     ],
+     "grade": "B",
+     "basis": "Strong EU AI-skill share (3.5% PwC) and low living cost with accessible standard work permits; lower USD pay and Blue Card PLN 13,355.34/mo steep for juniors (T0-35 L119; T0-40 L58)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 59,773 (PLN 263,676, Warsaw)",
+    "deduction_pct": 40.2,
+    "grade": "M",
+    "source": "T0-35 L51, L245"
    }
   },
   {
@@ -1815,7 +2135,7 @@
     "grade": "B",
     "source": "T0-35 L212, L242, L305"
    },
-   "access_summary": "Red-White-Red Card (70 points + job offer); Red-White-Red Card plus (unrestricted labour-market access) after 21 of 24 months.",
+   "access_summary": "EU Blue Card EUR 55,678/yr + special payments (24m, fee EUR 218); Red-White-Red Key Worker EUR 3,465/mo + 55/90 pts or Very Highly Qualified >=70 pts (8 wks, EUR 218) or 64 shortage occupations (no statutory floor beyond collective agreement); RWR Plus (unrestricted access) after 21 of 24 months (T0-40 L59, L929–L931).",
    "caveat": "Small senior Levels.fyi sample (n=45 in Vienna); smaller AI job volume than Germany.",
    "cities": [
     {
@@ -1826,7 +2146,9 @@
      "disposable_annual_usd_k": 46.3,
      "basis_note": "Sr SWE (small n=45); moderate rent; Nov 2026",
      "grade": "M",
-     "source": "T0-35 L171, L212, L332"
+     "source": "T0-35 L171, L212, L332",
+     "rent_1br_outside_usd_mo": 934,
+     "living_excl_rent_usd_mo": 1133
     }
    ],
    "pillars": {
@@ -1901,7 +2223,23 @@
      ],
      "grade": "B",
      "basis": "High institutional stability and clear RWR points rules (T0-35 L430, L476)."
+    },
+    "early_career": {
+     "range": [
+      5.0,
+      5.8,
+      6.6
+     ],
+     "grade": "B",
+     "basis": "Red-White-Red Key Worker EUR 3,465/mo and 64 shortage occupations (no general statutory floor beyond collective agreement); smaller market (T0-40 L59, L930)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 62,729 (Vienna)",
+    "deduction_pct": 37.3,
+    "grade": "M",
+    "source": "T0-35 L51, L242"
    }
   },
   {
@@ -1930,7 +2268,9 @@
      "disposable_annual_usd_k": 45.7,
      "basis_note": "All-lvl ref; 21.9% tax; low rent (Dec 2025)",
      "grade": "M",
-     "source": "T0-35 L170, L216, L333"
+     "source": "T0-35 L170, L216, L333",
+     "rent_1br_outside_usd_mo": 591,
+     "living_excl_rent_usd_mo": 1055
     }
    ],
    "pillars": {
@@ -2005,7 +2345,23 @@
      ],
      "grade": "B",
      "basis": "Digital-government predictability; 22% flat income tax retained for 2026 (T0-35 L588)."
+    },
+    "early_career": {
+     "range": [
+      5.5,
+      6.3,
+      7.0
+     ],
+     "grade": "B",
+     "basis": "Low 1.0x average-wage floor (EUR 2,092/mo; 0.8x EUR 1,674/mo) and startup ecosystem; small volume and quota cap below 1.5x (T0-40 L61)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 77,040 (Tallinn)",
+    "deduction_pct": 23.0,
+    "grade": "M",
+    "source": "T0-35 L51, L231"
    }
   },
   {
@@ -2023,7 +2379,7 @@
     "grade": "M",
     "source": "T0-35 L259, L272"
    },
-   "access_summary": "EU Blue Card (reported around EUR 21,030/yr via secondary source) and D3 highly qualified visa; AIMA immigration backlogs.",
+   "access_summary": "Law 61/2025 (eff. 2025-10-23) repealed expression-of-interest and restricted job-seeker visa (1-yr re-apply bar); Law 62/2026 (eff. 2026-09-11) allows employer change by notification; Tech Visa (company accreditation, bachelor's + 5y) and D8 digital-nomad visa active; AIMA backlogs persist (T0-40 L57, L925; T0-35 L783).",
    "caveat": "Low local pay relative to Lisbon rent (Numbeo LPP 65.3, lowest in T0-35); Lisbon rent page dated June 2023 (stale).",
    "cities": [
     {
@@ -2034,7 +2390,10 @@
      "disposable_annual_usd_k": 21.3,
      "basis_note": "All-lvl ref; Jun 2023 rent (stale); IFICI $39.0k net",
      "grade": "M",
-     "source": "T0-35 L166, L221, L259, L342"
+     "source": "T0-35 L166, L221, L259, L342",
+     "rent_1br_outside_usd_mo": 852,
+     "living_excl_rent_usd_mo": null,
+     "regime_net_annual_usd_k": 39.0
     }
    ],
    "pillars": {
@@ -2109,7 +2468,23 @@
      ],
      "grade": "C",
      "basis": "Stable EU framework, tempered by NHR->IFICI transition and AIMA administrative delays (T0-35 L272, L426)."
+    },
+    "early_career": {
+     "range": [
+      4.0,
+      4.8,
+      5.6
+     ],
+     "grade": "B",
+     "basis": "Law 61/2025 repealed expression-of-interest and restricted job-seeker visa (1-yr re-apply bar); AIMA backlogs and lowest purchasing power in T0-35 (T0-40 L57, L925; T0-35 L342)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 57,442 (Lisbon, std)",
+    "deduction_pct": 42.6,
+    "grade": "M",
+    "source": "T0-35 L51, L247"
    }
   },
   {
@@ -2138,7 +2513,10 @@
      "disposable_annual_usd_k": 7.1,
      "basis_note": "Very thin n=18; inpatriate $34.4k net",
      "grade": "M",
-     "source": "T0-35 L167, L222, L260, L343"
+     "source": "T0-35 L167, L222, L260, L343",
+     "rent_1br_outside_usd_mo": 1143,
+     "living_excl_rent_usd_mo": 1154,
+     "regime_net_annual_usd_k": 34.4
     }
    ],
    "pillars": {
@@ -2213,7 +2591,23 @@
      ],
      "grade": "B",
      "basis": "EU framework; Blue Card floor raised and inpatriate rules tightened in 2024-2026 (T0-35 L273, L591)."
+    },
+    "early_career": {
+     "range": [
+      3.6,
+      4.4,
+      5.2
+     ],
+     "grade": "B",
+     "basis": "Low EU Blue Card utilisation (633 in 2024 vs 56,300 DE), low Milan reference pay (EUR 35.4k, n=18) and Italian language barrier (T0-35 L222, L781; T0-40 L60)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "EUR 100,000",
+    "net_display": "EUR 57,264 (Milan, std)",
+    "deduction_pct": 42.7,
+    "grade": "M",
+    "source": "T0-35 L51, L248"
    }
   },
   {
@@ -2240,9 +2634,10 @@
      "net_annual_usd_k": 115.7,
      "rent_1br_centre_usd_mo": 2668,
      "disposable_annual_usd_k": 83.7,
-     "basis_note": "R1 ML p50 (R2 disp $107.8k; Nov rent disp $77.0k)",
+     "basis_note": "R1 ML p50 (R2 disp $107.8k; Nov rent disp $77.0k; after living $63.0k)",
      "grade": "M",
-     "source": "T0-36 L160-L161, L208-L209, L276, L1168"
+     "source": "T0-36 L160–L161, L208–L209, L276, L1168, L1210, L1220",
+     "living_excl_rent_usd_mo": 1174
     }
    ],
    "pillars": {
@@ -2317,7 +2712,23 @@
      ],
      "grade": "B",
      "basis": "High institutional predictability; 2027 EP and ONE Pass AI/Tech changes announced well in advance (T0-36 L360-L361)."
+    },
+    "early_career": {
+     "range": [
+      6.0,
+      6.8,
+      7.5
+     ],
+     "grade": "B",
+     "basis": "Ranked #3 APAC in T0-36 early-career lens: 25.7% JobsPipe entry-level AI share and COMPASS small-firm (<25 PMETs) automatic 10 pts on C3/C4; constrained by S$5,600 EP floor rising to S$6,000 on 2027-01-01 (T0-36 L128, L447; T0-08 L343; T0-42 L63)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 92,959 (no CPF for EP)",
+    "deduction_pct": 7.0,
+    "grade": "M",
+    "source": "T0-36 L238"
    }
   },
   {
@@ -2326,9 +2737,9 @@
    "name": "India",
    "region": "India & Asia-Pacific",
    "currency": "INR",
-   "working_language": "English in tech/GCCs (EF EPI 484 national)",
-   "tz_overlap_india_std_h": 8.0,
-   "tz_overlap_india_dst_h": 8.0,
+   "working_language": "English in tech/GCCs (EF EPI 484 national, rank 74)",
+   "tz_overlap_india_std_h": 9.0,
+   "tz_overlap_india_dst_h": 9.0,
    "incoming_tax_regime": {
     "name": "FY 2026-27 new regime (default)",
     "summary": "Income-tax Act 2025 effective 2026-04-01; slabs 0-30% (rebate to INR 12L, INR 75k std ded); contractors <=INR 75L may use s.58(2) presumptive 50% (see india-remote-tax.md).",
@@ -2344,9 +2755,10 @@
      "net_annual_usd_k": 37.2,
      "rent_1br_centre_usd_mo": 335,
      "disposable_annual_usd_k": 33.2,
-     "basis_note": "Levels.fyi R1 ML (R2 disp $47.1k; broad mkt 11-20L)",
+     "basis_note": "Levels.fyi R1 ML (R2 disp $47.1k; after living $29.0k; broad mkt 10–21L)",
      "grade": "M",
-     "source": "T0-36 L153-L155, L204-L205, L293; T0-43 L179"
+     "source": "T0-36 L153–L155, L204–L205, L293, L1209, L1221; T0-43 L179",
+     "living_excl_rent_usd_mo": 369
     },
     {
      "name": "Hyderabad",
@@ -2364,9 +2776,9 @@
      "net_annual_usd_k": 19.5,
      "rent_1br_centre_usd_mo": null,
      "disposable_annual_usd_k": null,
-     "basis_note": "Levels.fyi R1 ML; rent absent in T0-36",
+     "basis_note": "Levels.fyi R1 ML; fresh rent absent (stale 2024-07-26 Numbeo $252/mo)",
      "grade": "M",
-     "source": "T0-36 L158-L159, L207, L297"
+     "source": "T0-36 L158–L159, L207, L1216"
     },
     {
      "name": "Delhi NCR",
@@ -2374,9 +2786,9 @@
      "net_annual_usd_k": null,
      "rent_1br_centre_usd_mo": null,
      "disposable_annual_usd_k": null,
-     "basis_note": "Strong GCC/startup hub; T0-36 pay/rent absent",
+     "basis_note": "91 aimlroles; fresh rent absent (stale 2024-07-26 Delhi $257 / Gurgaon $308 / Noida $189)",
      "grade": "C",
-     "source": "T0-36 L106, L297"
+     "source": "T0-36 L106, L1217"
     },
     {
      "name": "Mumbai",
@@ -2394,9 +2806,9 @@
      "net_annual_usd_k": null,
      "rent_1br_centre_usd_mo": null,
      "disposable_annual_usd_k": null,
-     "basis_note": "SaaS/GCC hub; T0-36 pay/rent absent",
+     "basis_note": "65 aimlroles; fresh rent absent (stale 2024-07-26 Numbeo $220/mo)",
      "grade": "C",
-     "source": "T0-36 L107, L297"
+     "source": "T0-36 L107, L1218"
     }
    ],
    "pillars": {
@@ -2471,7 +2883,23 @@
      ],
      "grade": "B",
      "basis": "Income-tax Act 2025 took effect smoothly with unchanged slabs; Four Labour Codes (Nov 2025) and FEMA 2026 regs settling in (T0-36 L374; T0-43 L243-L248)."
+    },
+    "early_career": {
+     "range": [
+      9.2,
+      9.6,
+      10.0
+     ],
+     "grade": "B",
+     "basis": "Home market (zero visa friction), 1,558 aimlroles postings and 21.2% JobsPipe entry-level AI share (5-country subset; broad LinkedIn/Naukri junior share 4.3%) (T0-36 L102, L128, L134, L445)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 70,813 (new regime w/ 10% surcharge)",
+    "deduction_pct": 29.2,
+    "grade": "M",
+    "source": "T0-36 L245"
    }
   },
   {
@@ -2490,27 +2918,27 @@
     "source": "T0-36 L226, L243, L257, L268"
    },
    "access_summary": "SID 482 (2026-07-01 to 2027-06-30, confirmed homeaffairs.gov.au): Specialist Skills AUD 146,576 (no occupation list, 37-78d) / Core Skills AUD 79,423 (CSOL, 4-9m); ENS 186 TRT PR after 2y; National Innovation Visa 858 (invitation-only); India-exclusive MATES 403 ballot (3,000/yr, 18-30).",
-   "caveat": "Core Skills 482 processing spans 7-10 months; Sydney 2025 Numbeo rent (~$2,159/mo) is one year old; no city-level Levels.fyi ML pages in T0-36.",
+   "caveat": "Core Skills 482 processing spans 4–9 months (Specialist 37–78 days, Home Affairs 2026-09-29; T0-42 L70, L601); Sydney Numbeo rent differs between 2025 ($2,159/mo) and Nov 2026 ($2,544/mo) captures; Greater Sydney Levels.fyi ML median A$169,370 sits in T0-36 Pass 1 JSONL (L1151, L1184).",
    "cities": [
     {
      "name": "Sydney",
-     "ref_gross_local": "A$177,892 (AU ML p50; Indeed base A$135.1k)",
-     "net_annual_usd_k": 87.6,
-     "rent_1br_centre_usd_mo": 2159,
-     "disposable_annual_usd_k": 61.7,
-     "basis_note": "National ML R1 + Sydney 2025 rent; 43 aimlroles",
+     "ref_gross_local": "A$169,370 Greater Sydney ML p50 (AU p50 A$177.9k; Indeed Sydney A$147.1k)",
+     "net_annual_usd_k": 83.8,
+     "rent_1br_centre_usd_mo": 2544,
+     "disposable_annual_usd_k": 53.2,
+     "basis_note": "Levels.fyi Greater Sydney ML p50 (Pass 1) + Nov 2026 rent ($61.7k natl R1/2025 rent); 43 aimlroles",
      "grade": "M",
-     "source": "T0-36 L115, L182-L184, L226, L289"
+     "source": "T0-36 L115, L571, L1151–L1152, L1180–L1184"
     },
     {
      "name": "Melbourne",
-     "ref_gross_local": "A$177,892 (AU ML p50 national proxy)",
+     "ref_gross_local": "A$177,892 AU ML p50 proxy (Indeed Melbourne base A$163.1k)",
      "net_annual_usd_k": 87.6,
-     "rent_1br_centre_usd_mo": null,
-     "disposable_annual_usd_k": null,
-     "basis_note": "23 aimlroles postings; city rent absent in T0-36",
+     "rent_1br_centre_usd_mo": 1718,
+     "disposable_annual_usd_k": 67.0,
+     "basis_note": "National ML R1 proxy + Pass 1 Numbeo rent (date n/s); 23 aimlroles",
      "grade": "M",
-     "source": "T0-36 L115, L182, L297"
+     "source": "T0-36 L115, L182, L226, L1152, L1219"
     }
    ],
    "pillars": {
@@ -2585,7 +3013,23 @@
      ],
      "grade": "B",
      "basis": "Predictable annual threshold indexing, mandatory AI guardrails dropped, stable PR institutions (T0-36 L364-L365)."
+    },
+    "early_career": {
+     "range": [
+      7.2,
+      7.9,
+      8.5
+     ],
+     "grade": "B",
+     "basis": "Ranked #4 APAC in T0-36 early-career lens: India-exclusive MATES 403 ballot (3,000 places/yr, ages 18–30, 2-yr open work), 14.6% JobsPipe entry-level AI share, Core Skills 482 floor A$79,423 (T0-36 L128, L448; T0-42 L70)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 74,006 (incl. 2% Medicare)",
+    "deduction_pct": 26.0,
+    "grade": "M",
+    "source": "T0-36 L243"
    }
   },
   {
@@ -2618,13 +3062,13 @@
     },
     {
      "name": "Abu Dhabi",
-     "ref_gross_local": "US$100.5k modelled (ZeroTaxJobs; G42 AED 369.6k)",
-     "net_annual_usd_k": 100.5,
-     "rent_1br_centre_usd_mo": null,
-     "disposable_annual_usd_k": null,
-     "basis_note": "C-grade modelled pay; rent absent; sovereign hub",
-     "grade": "C",
-     "source": "T0-36 L165, L297"
+     "ref_gross_local": "AED 369,606 G42 ML p50 (ZeroTaxJobs US$100.5k)",
+     "net_annual_usd_k": 100.6,
+     "rent_1br_centre_usd_mo": 1975,
+     "disposable_annual_usd_k": 76.9,
+     "basis_note": "Single-employer G42 ML p50 (not city median) + Nov 2026 Numbeo rent; 0% PIT",
+     "grade": "M",
+     "source": "T0-36 L165, L1153, L1174–L1179"
     }
    ],
    "pillars": {
@@ -2699,7 +3143,23 @@
      ],
      "grade": "C",
      "basis": "0% PIT stable, but 2026 US-Iran conflict brought EASA conflict bulletins, Nov 2026 flight disruptions and threats to Gulf data centres (T0-36 L627-L632, L1144)."
+    },
+    "early_career": {
+     "range": [
+      5.3,
+      6.1,
+      6.9
+     ],
+     "grade": "B",
+     "basis": "Top-100 global university graduates (GPA >=3.5, within 2 yrs) qualify for a 10-year UAE Golden Visa without a job offer (T0-41 L872); thin junior Dubai pay and Gulf conflict risk (T0-36 L164, L627)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 100,000 (0% PIT)",
+    "deduction_pct": 0.0,
+    "grade": "M",
+    "source": "T0-36 L236"
    }
   },
   {
@@ -2803,7 +3263,23 @@
      ],
      "grade": "C",
      "basis": "0% PIT intact, but 2026 US-Iran regional conflict risk plus Saudization/Qiwa labour-rule changes (T0-36 L375, L586-L588, L627-L632)."
+    },
+    "early_career": {
+     "range": [
+      3.2,
+      4.0,
+      4.8
+     ],
+     "grade": "B",
+     "basis": "30% engineering Saudization (eff. 2026-06-30) and Evolved Nitaqat (<6-staff exemption removed) squeeze foreign junior hiring; Qiwa work-permit rule added June 2026 (T0-36 L586–L588; T0-41 L879)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 100,000 (0% PIT)",
+    "deduction_pct": 0.0,
+    "grade": "M",
+    "source": "T0-36 L236"
    }
   },
   {
@@ -2812,7 +3288,7 @@
    "name": "Japan",
    "region": "India & Asia-Pacific",
    "currency": "JPY",
-   "working_language": "Japanese; English roles exist at foreign firms and select AI labs",
+   "working_language": "Japanese; English roles at foreign firms and select AI labs (EF EPI rank 96, very low proficiency)",
    "tz_overlap_india_std_h": 5.5,
    "tz_overlap_india_dst_h": 5.5,
    "incoming_tax_regime": {
@@ -2826,13 +3302,13 @@
    "cities": [
     {
      "name": "Tokyo",
-     "ref_gross_local": "JPY 8.12M ML p50 (p75 JPY 14.66M; SWE 8.37M)",
+     "ref_gross_local": "JPY 8.12M ML p50 (JP natl ML JPY 9.97M; p75 JPY 14.66M)",
      "net_annual_usd_k": 38.0,
      "rent_1br_centre_usd_mo": 1249,
      "disposable_annual_usd_k": 23.0,
      "basis_note": "R1 ML ($48.5k disp at R2); JPY weakness hurts USD",
      "grade": "M",
-     "source": "T0-36 L173-L175, L215-L216, L283"
+     "source": "T0-36 L173–L175, L215–L216, L283, L1149"
     }
    ],
    "pillars": {
@@ -2907,7 +3383,23 @@
      ],
      "grade": "B",
      "basis": "Very safe macro environment; light-touch AI law; PR rules tightening in 2027 (T0-36 L368-L369, L599)."
+    },
+    "early_career": {
+     "range": [
+      5.8,
+      6.6,
+      7.4
+     ],
+     "grade": "B",
+     "basis": "Ranked #2 APAC in T0-36 early-career lens: 27.2% JobsPipe entry-level AI share, J-Find 2-yr search visa for top-100 university graduates (2 of 3 rankings), low HSP floor (JPY 3M, rising FY2026); Japanese language limits most junior roles (T0-36 L128, L446; T0-42 L66, L572)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 67,410 (national + resident + social)",
+    "deduction_pct": 32.6,
+    "grade": "M",
+    "source": "T0-36 L247"
    }
   },
   {
@@ -2916,7 +3408,7 @@
    "name": "South Korea",
    "region": "India & Asia-Pacific",
    "currency": "KRW",
-   "working_language": "Korean; English roles mainly at foreign firms and select AI labs",
+   "working_language": "Korean; English roles mainly at foreign firms and select AI labs (EF EPI 522, rank 48)",
    "tz_overlap_india_std_h": 5.5,
    "tz_overlap_india_dst_h": 5.5,
    "incoming_tax_regime": {
@@ -3011,7 +3503,23 @@
      ],
      "grade": "C",
      "basis": "AI Basic Act live Jan 2026 (1-yr grace) and 19% flat tax sunsetting Dec 2026; K-Tech Pass expanded (T0-36 L370-L371)."
+    },
+    "early_career": {
+     "range": [
+      4.4,
+      5.2,
+      6.0
+     ],
+     "grade": "B",
+     "basis": "Low E-7-1 floor (KRW 31.12M) and Seoul AI labs, but Top-Tier F-2 requires 8 yrs experience plus 3x GNI and Korean language restricts entry roles (T0-42 L67; T0-36 L1235)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 74,376 (std progressive)",
+    "deduction_pct": 25.6,
+    "grade": "M",
+    "source": "T0-36 L242"
    }
   },
   {
@@ -3020,7 +3528,7 @@
    "name": "Hong Kong",
    "region": "India & Asia-Pacific",
    "currency": "HKD",
-   "working_language": "Cantonese/English (English standard at international & finance firms)",
+   "working_language": "Cantonese/English (English standard at international & finance firms; EF EPI 538, rank 39)",
    "tz_overlap_india_std_h": 6.5,
    "tz_overlap_india_dst_h": 6.5,
    "incoming_tax_regime": {
@@ -3034,13 +3542,13 @@
    "cities": [
     {
      "name": "Hong Kong",
-     "ref_gross_local": "HK$569,854 SWE p50 (SWE p75 HK$800k; ML page degenerate)",
+     "ref_gross_local": "HK$569,854 SWE p50 (ML/AI SWE HK$605.9k; AI Eng HK$382.7k)",
      "net_annual_usd_k": 63.9,
      "rent_1br_centre_usd_mo": 2200,
      "disposable_annual_usd_k": 37.6,
-     "basis_note": "SWE R1 baseline (R2 disp $62.0k); 12.1% tax",
+     "basis_note": "SWE R1 baseline (R2 disp $62.0k; Pass 1 ML/AI SWE & AI Eng shown); 12.1% tax",
      "grade": "M",
-     "source": "T0-36 L179-L181, L221-L223, L281"
+     "source": "T0-36 L179–L181, L221–L223, L281, L1156–L1157"
     }
    ],
    "pillars": {
@@ -3115,7 +3623,23 @@
      ],
      "grade": "C",
      "basis": "Stable tax and expanded TTPS rules, weighed against broader political/regulatory alignment risk (T0-36 L372)."
+    },
+    "early_career": {
+     "range": [
+      5.8,
+      6.6,
+      7.3
+     ],
+     "grade": "B",
+     "basis": "Ranked #5 APAC in T0-36 early-career lens: TTPS Cat B/C open 24-month entry for listed-university graduates (Cat C 10,000/yr quota) and IANG 24-month post-study stay (student years count toward 7-yr PR); high rent and thin non-finance AI demand (T0-36 L449; T0-42 L69, L584)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 86,536 (incl. MPF cap)",
+    "deduction_pct": 13.5,
+    "grade": "M",
+    "source": "T0-36 L239"
    }
   },
   {
@@ -3134,17 +3658,17 @@
     "source": "T0-36 L227, L244, L258, L268"
    },
    "access_summary": "AEWV (median-wage floor removed, 5.5-7w, NZ$1,540); Green List Tier 1 Software Engineer Straight to Residence at NZ$72.80/h (~NZ$151,424/yr, confirmed immigration.govt.nz); India-NZ FTA (eff 2026-10-20) adds 5,000-holder 3y cap with NO direct PR (prefer Green List Tier 1).",
-   "caveat": "Very small AI job market; Levels.fyi NZ ML page is degenerate/very thin; Auckland rent not retrieved in T0-36; NZ tax schedule recalled (Grade D).",
+   "caveat": "Very small AI job market (13 aimlroles postings); Levels.fyi NZ ML page is degenerate/very thin (using Pass 1 Auckland sr SWE n=48 proxy + undated Numbeo rent); NZ tax schedule recalled (Grade D).",
    "cities": [
     {
      "name": "Auckland",
-     "ref_gross_local": "NZ$147,566 ML p50 (thin; Glassdoor base NZ$95k)",
-     "net_annual_usd_k": 59.4,
-     "rent_1br_centre_usd_mo": null,
-     "disposable_annual_usd_k": null,
-     "basis_note": "Very thin Levels.fyi ML R1; rent absent in T0-36",
+     "ref_gross_local": "NZ$156,225 sr SWE p50 (n=48; thin ML NZ$147.6k; Glassdoor base NZ$95k)",
+     "net_annual_usd_k": 62.6,
+     "rent_1br_centre_usd_mo": 1274,
+     "disposable_annual_usd_k": 47.3,
+     "basis_note": "Pass 1 Auckland sr SWE proxy (n=48) + Numbeo rent (date n/s); schedule D",
      "grade": "M",
-     "source": "T0-36 L185-L187, L227, L297"
+     "source": "T0-36 L185–L187, L1159, L1203–L1208"
     }
    ],
    "pillars": {
@@ -3219,7 +3743,23 @@
      ],
      "grade": "B",
      "basis": "Very high institutional stability and welcoming skilled-migration reforms in 2026 (T0-36 L366-L367, L621-L622)."
+    },
+    "early_career": {
+     "range": [
+      5.0,
+      5.8,
+      6.6
+     ],
+     "grade": "B",
+     "basis": "AEWV median-wage test dropped and India-NZ FTA adds a 5,000-cap TEE pathway (launch unconfirmed); very small AI market (13 aimlroles) (T0-36 L116; T0-42 L71)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 71,184 (incl. ACC; schedule D)",
+    "deduction_pct": 28.8,
+    "grade": "M",
+    "source": "T0-36 L244"
    }
   },
   {
@@ -3242,13 +3782,13 @@
    "cities": [
     {
      "name": "Taipei",
-     "ref_gross_local": "NT$1.37M ML p50 (p75 NT$1.97M; SWE NT$1.56M)",
+     "ref_gross_local": "NT$1.37M ML p50 (p75 NT$1.97M; Pass 1 sr SWE NT$1.81M)",
      "net_annual_usd_k": 40.2,
      "rent_1br_centre_usd_mo": 816,
      "disposable_annual_usd_k": 30.4,
      "basis_note": "R1 ML (R2 disp $46.3k); low tax/rent; schedule D",
      "grade": "M",
-     "source": "T0-36 L177-L178, L219-L220, L287"
+     "source": "T0-36 L177–L178, L219–L220, L287, L1160"
     }
    ],
    "pillars": {
@@ -3323,7 +3863,23 @@
      ],
      "grade": "C",
      "basis": "Stable domestic visa/tax framework offset by cross-strait geopolitical tail risk (T0-36 L376)."
+    },
+    "early_career": {
+     "range": [
+      5.2,
+      6.0,
+      6.8
+     ],
+     "grade": "B",
+     "basis": "2025 Foreign Professionals Act adds an open work permit for top-200 global graduates and waives the 2-yr work-experience rule for top-1,500 graduates; Mandarin limits local roles (T0-42 L578)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 85,383 (recalled schedule D)",
+    "deduction_pct": 14.6,
+    "grade": "M",
+    "source": "T0-36 L240"
    }
   },
   {
@@ -3332,7 +3888,7 @@
    "name": "Malaysia",
    "region": "India & Asia-Pacific",
    "currency": "MYR",
-   "working_language": "Malay/English (English widespread at international employers)",
+   "working_language": "Malay/English (English widespread at international employers; EF EPI 581, rank 24)",
    "tz_overlap_india_std_h": 6.5,
    "tz_overlap_india_dst_h": 6.5,
    "incoming_tax_regime": {
@@ -3346,13 +3902,13 @@
    "cities": [
     {
      "name": "Kuala Lumpur",
-     "ref_gross_local": "MYR 81,204 ML p50 (p75 MYR 141.5k)",
+     "ref_gross_local": "MYR 81,204 ML p50 (p75 MYR 141.5k; Pass 1 sr SWE MYR 164.7k)",
      "net_annual_usd_k": 19.0,
      "rent_1br_centre_usd_mo": 688,
      "disposable_annual_usd_k": 10.7,
-     "basis_note": "R1 ML (R2 disp $22.3k); low USD pay; schedule D",
+     "basis_note": "R1 ML (R2 disp $22.3k; Pass 1 sr SWE $40.4k / disp $27.2k clears Cat II EP); schedule D",
      "grade": "M",
-     "source": "T0-36 L170-L172, L224-L225, L290"
+     "source": "T0-36 L170–L172, L224–L225, L290, L1158, L1197–L1202"
     }
    ],
    "pillars": {
@@ -3427,7 +3983,23 @@
      ],
      "grade": "B",
      "basis": "Abrupt June 2026 doubling of EP salary minimums increases expatriate-hiring policy risk (T0-36 L363)."
+    },
+    "early_career": {
+     "range": [
+      3.5,
+      4.3,
+      5.1
+     ],
+     "grade": "B",
+     "basis": "EP basic-salary floors doubled 2026-06-01 (Cat III MYR 5k–9,999, Cat II MYR 10k+) while KL ML median sits at MYR 81.2k/yr (~MYR 6.8k/mo) (T0-36 L170, L1227; T0-42 L72)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 79,398 (income tax only; schedule D)",
+    "deduction_pct": 20.6,
+    "grade": "M",
+    "source": "T0-36 L241"
    }
   },
   {
@@ -3436,7 +4008,7 @@
    "name": "China",
    "region": "India & Asia-Pacific",
    "currency": "CNY",
-   "working_language": "Mandarin (English at select multinationals only)",
+   "working_language": "Mandarin (English at select multinationals only; EF EPI 464, rank 86)",
    "tz_overlap_india_std_h": 6.5,
    "tz_overlap_india_dst_h": 6.5,
    "incoming_tax_regime": {
@@ -3446,7 +4018,7 @@
     "source": "T0-36 L229, L246, L258, L268"
    },
    "access_summary": "Z visa with Foreigner Work Permit (Cat A/B/C) and new K visa created for STEM talent, but language, regulatory and geopolitical barriers keep practical access tight.",
-   "caveat": "Practically closed to foreign remote hiring (T0-36 L33, L91); Beijing rent absent (Shanghai 2025 rent used as proxy); tax schedule recalled (Grade D).",
+   "caveat": "Practically closed to foreign remote hiring (T0-36 L33, L91); Beijing fresh rent absent (Shanghai 2025 $924/mo proxy; stale 2024-07-26 Beijing $971/mo); tax schedule recalled (Grade D).",
    "cities": [
     {
      "name": "Beijing",
@@ -3454,9 +4026,19 @@
      "net_annual_usd_k": 69.7,
      "rent_1br_centre_usd_mo": 924,
      "disposable_annual_usd_k": 58.6,
-     "basis_note": "R1 ML + Shanghai 2025 rent proxy (R2 disp $95.8k)",
+     "basis_note": "R1 ML + Shanghai 2025 rent proxy (R2 disp $95.8k; stale 2024-07-26 Beijing $971/mo)",
      "grade": "M",
-     "source": "T0-36 L188-L189, L229-L230, L296"
+     "source": "T0-36 L188–L189, L229–L230, L296, L1213"
+    },
+    {
+     "name": "Shanghai",
+     "ref_gross_local": "CNY 505,000 Glassdoor base median (~US$75.7k)",
+     "net_annual_usd_k": null,
+     "rent_1br_centre_usd_mo": 924,
+     "disposable_annual_usd_k": null,
+     "basis_note": "Glassdoor base median (Grade C); 2025 Numbeo rent; 18 aimlroles postings",
+     "grade": "C",
+     "source": "T0-36 L117, L189, L296"
     }
    ],
    "pillars": {
@@ -3531,7 +4113,23 @@
      ],
      "grade": "C",
      "basis": "High geopolitical, export-control and regulatory uncertainty for foreign AI engineers (T0-36 L91, L373)."
+    },
+    "early_career": {
+     "range": [
+      2.5,
+      3.3,
+      4.2
+     ],
+     "grade": "C",
+     "basis": "K visa launched 2025-10-01 for STEM graduates, but work rights remain unsettled, Mandarin dominates and cross-border friction is high (T0-36 L525, L1258)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 70,715 (incl. social/housing; schedule D)",
+    "deduction_pct": 29.3,
+    "grade": "M",
+    "source": "T0-36 L246"
    }
   },
   {
@@ -3635,7 +4233,23 @@
      ],
      "grade": "C",
      "basis": "IMF projected -8.6% 2026 contraction amid 2026 US-Iran conflict and regional security shock (T0-36 L627-L630, L1144)."
+    },
+    "early_career": {
+     "range": [
+      2.8,
+      3.6,
+      4.4
+     ],
+     "grade": "C",
+     "basis": "Small unmeasured AI market (absent on aimlroles), employer-tied residency and 100/yr PR cap after 20 years (T0-36 L120, L1238; T0-41 L921)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 100,000 (0% PIT)",
+    "deduction_pct": 0.0,
+    "grade": "M",
+    "source": "T0-36 L236"
    }
   },
   {
@@ -3654,17 +4268,17 @@
     "source": "T0-36 L237, L253, L264"
    },
    "access_summary": "Employer-sponsored LMRA work permit; 10-year renewable Golden Residency for residents with 5 yrs work history and BHD 2,000/mo basic salary (verified 2026-11-19).",
-   "caveat": "No measured AI pay or Manama rent retrieved in T0-36 (very wide uncertainty bands); IMF projected -0.5% 2026 GDP amid Gulf conflict.",
+   "caveat": "No measured AI pay in T0-36 (Pass 1 Manama Numbeo rent BHD 331.2/mo is undated, low confidence; wide uncertainty bands); IMF projected -0.5% 2026 GDP amid Gulf conflict.",
    "cities": [
     {
      "name": "Manama",
      "ref_gross_local": "Not measured in T0-36",
      "net_annual_usd_k": null,
-     "rent_1br_centre_usd_mo": null,
+     "rent_1br_centre_usd_mo": 881,
      "disposable_annual_usd_k": null,
-     "basis_note": "Pay and rent absent in T0-36; 0% PIT + 1% UI",
+     "basis_note": "Pay absent in T0-36; Pass 1 Numbeo rent BHD 331.2/mo (date n/s, low conf); 0% PIT + 1% UI",
      "grade": "D",
-     "source": "T0-36 L169, L214, L297"
+     "source": "T0-36 L169, L214, L1212"
     }
    ],
    "pillars": {
@@ -3739,8 +4353,62 @@
      ],
      "grade": "C",
      "basis": "IMF projected -0.5% 2026 growth amid 2026 US-Iran regional conflict (T0-36 L627-L630, L1144)."
+    },
+    "early_career": {
+     "range": [
+      2.5,
+      3.3,
+      4.2
+     ],
+     "grade": "D",
+     "basis": "Unmeasured AI market/pay, rising LMRA 2026–2029 permit fees and Golden Residency requiring 5 yrs residence plus BHD 2,000/mo (T0-36 L120, L169, L1226; T0-41 L63)."
     }
+   },
+   "uniform_gross_tax": {
+    "gross_basis": "USD 100,000",
+    "net_display": "USD 99,000 (0% PIT, 1% UI; C input)",
+    "deduction_pct": 1.0,
+    "grade": "M",
+    "source": "T0-36 L237"
    }
+  }
+ ],
+ "analytical_notes": [
+  {
+   "title": "Top-tier visa floors vs local ML pay percentiles (SG & UAE)",
+   "body": "Singapore's standard ONE Pass threshold (S$360,000/yr fixed) exceeds Singapore's Levels.fyi ML Engineer P90 (SGD 279,389), making it an executive/staff-plus outlier; the UAE Golden Visa threshold (AED 360,000/yr) sits at the UAE ML Engineer P75 (AED 360,049). Most mid-to-senior applicants rely on Singapore EP/COMPASS or standard employer permits instead.",
+   "grade": "M",
+   "source": "T0-36 L160, L162, L493, L507"
+  },
+  {
+   "title": "Title stratification: AI Engineer vs ML Engineer on Levels.fyi (APAC)",
+   "body": "Within Levels.fyi, the 'AI Engineer' title median sits at 55% of the 'ML Engineer' median in Singapore (SGD 89,810 vs SGD 162,502) and 46–48% in Bengaluru (INR 20.4–21.4L vs INR 44.4L), reflecting junior skew and broader title usage in APAC 'AI Engineer' postings.",
+   "grade": "B",
+   "source": "T0-36 L153, L155, L160–L161, L508"
+  },
+  {
+   "title": "Bengaluru vs Singapore savings after tax, rent and non-rent living costs",
+   "body": "Subtracting Numbeo single-person non-rent monthly living costs (INR 34,672/mo in Bengaluru; SGD 1,504/mo in Singapore) leaves a modelled annual surplus of US$28,950 in Bengaluru vs US$62,957 in Singapore at reference Levels.fyi ML medians (using Nov 2026 Numbeo rent S$4,094/mo for Singapore).",
+   "grade": "M",
+   "source": "T0-36 L1209–L1210, L1220–L1221"
+  },
+  {
+   "title": "Outside-centre rent arbitrage in high-cost hubs",
+   "body": "Living outside city centre reduces annual 1-bedroom rent materially across top-paying hubs: New York saves ~$18,400/yr ($4,529 to $2,993/mo), San Francisco Bay Area ~$12,700/yr ($3,792 to $2,735/mo), Zurich ~$9,400/yr ($2,845 to $2,062/mo), Austin ~$9,100/yr ($2,188 to $1,427/mo) and London ~$7,800/yr ($2,906 to $2,254/mo) (Numbeo Grade C crowd-sourced averages).",
+   "grade": "M",
+   "source": "T0-35 L316–L324"
+  },
+  {
+   "title": "AI-demand concentration indicators (PwC 2026, Indeed 2026, Stanford AI Index 2026)",
+   "body": "PwC 2026 AI Jobs Barometer (2025 Lightcast share of postings requiring AI skills): Spain 4.0%, Ireland 3.7%, Canada 3.5%, Poland 3.5%, Denmark 3.2%, Sweden 3.1%, US 2.8% (1.12M postings), UK 2.2%, Netherlands 2.1%, Germany 1.3%, France 1.3%. Indeed Hiring Lab AI-keyword share (2026-09-30): CA 18.97%, IE 15.02%, GB 9.92%, US 7.34%, DE 5.74% (Spearman rho 0.83 with PwC across 8 shared countries). Stanford AI Index 2026 (2025 Lightcast share, APAC/Gulf): SG 4.69%, HK 3.48%, AE 2.87%, AU 1.78%, NZ 0.81%; LinkedIn net AI-talent migration per 10,000 members led by AE (4.40), AU (1.79), SA (1.77), SG (1.36) and HK (1.14).",
+   "grade": "B",
+   "source": "T0-35 L58, L101–L133; T0-36 L141–L145"
+  },
+  {
+   "title": "Unresolved V0 source conflict: Netherlands 30%-ruling 2026 salary floor",
+   "body": "Two secondary sources in this corpus conflict on the 2026 Dutch 30%-ruling taxable-salary floor: T0-35 (law-firm page, Grade C) reports EUR 48,013 (EUR 36,497 for under-30 master's holders), whereas T0-39 (comparison summary, Grade B) reports EUR 46,107 for 2026 (EUR 38,388 under-30 master's) rising to EUR 50,436 in 2027. Verify directly on belastingdienst.nl before signing an offer.",
+   "grade": "B",
+   "source": "T0-35 L268; T0-39 L665–L666, L1582–L1584"
   }
  ]
 }

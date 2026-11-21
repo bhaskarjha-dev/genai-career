@@ -34,13 +34,13 @@ Start with the [Visa and Relocation hub](../visa-and-relocation.md) for the cros
 ## How these dossiers work with the hub
 
 - **One owner for contested V0 statuses (D-025):** Pending court cases, proposed rules, and unconfirmed effective dates live in the [central status table](../visa-and-relocation.md#status-table) and are re-verified every 14 days. Regional dossiers link back there rather than duplicating volatile status flags.
-- **Evidence grades are applied sceptically:** Several national portals block automated retrieval (notably `uscis.gov`, `travel.state.gov`, `legifrance.gouv.fr`, and several Gulf/APAC ministries). Claims backed only by extracts, fetch summaries, or law-firm alerts are capped at Grade `[B]` (or `[C]` for single vendors with commercial conflicts), with live web checks on `2026-11-19` noted explicitly.
+- **Evidence grades are applied sceptically:** Several national portals block automated retrieval (notably `uscis.gov`, `travel.state.gov`, `legifrance.gouv.fr`, and several Gulf/APAC ministries). Claims backed only by extracts, fetch summaries, or law-firm alerts are capped at Grade `[B]` (or `[C]` for single vendors with commercial conflicts), with live web checks on `2026-11-19` noted explicitly. Because `uscis.gov` HTML and `travel.state.gov` block automated fetches, scheduled 14-day D-007 checks for US routes must be verified in a real browser (`T0-37 L340, L515, L537`, `[B]`).
 - **Pay and tax stay with their owners:** For market compensation, see [pay-benchmarks.md](../../09-compensation/pay-benchmarks.md). For working remotely from India rather than relocating, see [india-remote-playbook.md](../india-remote-playbook.md) and [india-remote-tax.md](../../09-compensation/india-remote-tax.md).
 
 ## Related documents
 
 - [Visa and Relocation hub](../visa-and-relocation.md) — cross-corridor comparison, V0 status table, and O-1A / Global Talent evidence playbook.
-- [Country and City Rankings](../country-rankings.md) — 33 countries and 50 cities ranked across six lenses including Indian-applicant access.
+- [Country and City Rankings](../country-rankings.md) — 33 countries and 51 cities ranked across seven lenses including Indian-applicant access and Early-Career launch.
 - [Remote Cross-Border AI Employment](../remote-cross-border.md) — EOR, contractor and geo-tier trade-offs when working abroad without relocating.
 - [PhD to Industry](../phd-to-industry.md) — O-1A and EB-1A timing for research candidates.
 - [India Remote Playbook](../india-remote-playbook.md) — when remote USD billing outperforms relocation.

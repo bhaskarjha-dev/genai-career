@@ -6,18 +6,18 @@ stage: 5
 status: published
 last_verified: 2026-11-19
 review_by: 2027-01-19
-summary: "What a GenAI portfolio must show to be believed at your target level: the verifiability ladder (V0–V3), the 15 artefacts by tier, the nine anti-portfolio patterns and their fixes, how many projects to keep, and how to harden a public demo."
-sources: [T0-13, T0-20, T2-01, T0-06, T0-05]
+summary: "What a GenAI portfolio must show to be believed at your target level: the verifiability ladder (V0–V3), the 15 artefacts by tier, nine anti-portfolio patterns, open-source employer-domain commit map, the public micro-audit operating system with legal guardrails and break-even effort math, and demo hardening."
+sources: [T0-13, T0-20, T2-01, T0-06, T0-05, T0-68]
 roles: [all]
-geos: [global]
-tags: [portfolio, proof-of-work, verifiability, evaluation, benchmarks, observability, demo-hardening, anti-portfolio, open-source, github]
+geos: [global, india]
+tags: [portfolio, proof-of-work, verifiability, evaluation, benchmarks, observability, demo-hardening, anti-portfolio, open-source, github, micro-audit]
 ---
 
 # Proof-of-Work Standards: What a GenAI Portfolio Must Show to Be Believed
 
-> What a GenAI portfolio must show to be believed at your target level: the verifiability ladder (V0–V3), the 15 artefacts by tier, the nine anti-portfolio patterns and their fixes, how many projects to keep, and how to harden a public demo.
+> What a GenAI portfolio must show to be believed at your target level: the verifiability ladder (V0–V3), the 15 artefacts by tier, nine anti-portfolio patterns, the open-source employer-domain commit map, the public micro-audit operating system with legal guardrails and break-even effort maths, and demo hardening.
 
-**Dates.** Tool, platform and price facts come from [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md) (retrieved 2026-10-21) and [T0-20](../../research/sessions/T0-20-github-readme-portfolio-site-writing.md) (retrieved 2026-11-13; key hosting, evaluation and policy facts live-verified on 2026-11-19); re-verify all tool and price facts by 2027-01-19 (90 days from the earliest unrefreshed T0-13 prices). **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement or synthesis; E searched, not found; M model output; P practice-curated and unmeasured. **Confidence.** T0-13 rates its hiring-effect claims low to medium (practitioner testimony, no controlled study) and its tool facts medium to high; its level model, artefact list, rubric and hardening checklist are its own synthesis, and the rubric is untested [T0-13 L24, L246, L260, L510]. T0-20 opened only 3 of its 66 sources in full (5%), so its remaining rows rest on search extracts capped at Grade B or lower [T0-20 L22].
+**Dates.** Tool, platform and price facts combine [T0-13](../../research/sessions/T0-13-production-portfolio-proof-of-work-standards.md) (retrieved 2026-10-21), [T0-05](../../research/sessions/T0-05-unconventional-hiring-tactics-oss-audits.md) (retrieved 2026-10-21), [T0-20](../../research/sessions/T0-20-github-readme-portfolio-site-writing.md) and [T0-68](../../research/sessions/T0-68-learning-resources-rated.md) (retrieved 2026-11-13; hosting, GPU rental and policy facts re-checked 2026-11-19); re-verify tool and price facts by 2027-01-19 (90 days from the earliest unrefreshed T0-13 prices; re-check marketplace GPU rates monthly). **Grades** (EGP-1.0): A primary or measured; B transparent secondary; C vendor, practitioner or single source; D judgement or synthesis; E searched, not found; M model output; P practice-curated and unmeasured. **Confidence.** T0-13 rates its hiring-effect claims low to medium (practitioner testimony, no controlled study) and its tool facts medium to high; its level model, artefact list, rubric and hardening checklist are its own synthesis, and the rubric is untested [T0-13 L24, L246, L260, L510]. T0-20 opened only 3 of its 66 sources in full (5%), so its remaining rows rest on search extracts capped at Grade B or lower [T0-20 L22]. **Disclaimer:** legal, terms-of-service and vulnerability-disclosure material below is an evidence pointer, **not legal advice**.
 
 ## The short answer
 
@@ -188,14 +188,14 @@ The advance marks are arbitrary starting values: 60 for T0–T1, 65 for T2, 70 f
 
 **Rule.** Replay-first, capped and dated; a live path is an optional extra, never the only proof [D · T0-13 L508]. Employers inspect activity traces that are cheap to verify, and a working demo is one [A · T0-13.F6], but that mechanism comes from a 2013, pre-GenAI interview study [T0-13 L605], no source measures a demo's effect on callbacks or offers [E · T0-13 L621], and a demo with no repo leaves the method uninspectable [D · T0-13 L162].
 
-**Hosting by budget, as of 2026-10-21.** Re-verify prices before spending; tool verdicts are in the [tool catalog](../00-start/tool-catalog.md).
+**Hosting by budget, refreshed November 2026.** Re-verify prices monthly before spending; tool verdicts are in the [tool catalog](../00-start/tool-catalog.md).
 
 | Budget | Option | Grade · source |
 |---|---|---|
-| None | A static Space or static site serving replays, plus a recorded walkthrough | A · T0-13 L527 |
-| Up to about US$10 a month | Railway Hobby (US$5 a month, including US$5 of usage) or a Hugging Face Docker Space on PRO (US$9 a month) | A · T0-13 L478, L528 |
-| Intermittent GPU | Modal Starter (US$0 a month with US$30 monthly credit, per-second billing; read from a non-canonical mirror), or ZeroGPU after checking quotas, which sources disagree on | B · T0-13 L477, L529 |
-| Persistent GPU | Rarely justified for a portfolio; if used, set auto-shutdown | D · T0-13 L530 |
+| None | A static Space or static site (GitHub Pages: free up to 1 GB, 100 GB/mo soft cap) serving replays, plus a recorded walkthrough | A/B · T0-13 L527; T0-20 L207 |
+| Up to about US$10 a month | Railway Hobby (US$5/month, incl. US$5 usage) or Hugging Face PRO (US$9/month: Gradio/Docker compute Spaces plus 40 min/day ZeroGPU; free ZeroGPU is 5 min/day) | A/B · T0-13 L478, L528; T0-68 L385 |
+| Intermittent GPU | Modal Starter (US$0/month with US$30 monthly credit ≈ 7.6 H100-hours at US$3.95/h; T4 US$0.59/h, L4 US$0.80/h, A100 40GB US$2.10/h; academic grants up to US$10,000 by application) or in-stock marketplace GPUs (RTX 3090 US$0.29/h, RTX 4090 US$0.41/h, A100 US$0.68/h, L4 US$0.93/h as of 2026-11-11) | B/C · T0-68 L388–L391 |
+| Persistent GPU | Rarely justified for a portfolio; if used, set auto-shutdown (H100 rentals ran US$2.89–4.59/h across RunPod/Lambda in Sept–Nov 2026) | B/D · T0-13 L530; T0-68 L389–L390 |
 
 **Stale advice is itself a tell** [A/B · T0-13.F11; T0-20 L65]:
 - Older tutorials say Gradio and Docker Spaces are free. Verified directly from Hugging Face Spaces docs [A · T0-20 L65, L200] (and re-checked 2026-11-19): Gradio and Docker Spaces running on compute need PRO (US$9/month on HF's pages, which also bundles HF profile blog publishing) or Team/Enterprise; static Spaces stay free; free accounts in good standing can host up to 2 ZeroGPU Spaces (Gradio SDK); free CPU hardware sleeps after idle periods [A · T0-13 L476; T0-20 L200]. Static replay sites on GitHub Pages are free for public repos up to 1 GB (soft 100 GB/month, no commercial/SaaS use [B · T0-20 L207]). Replicate completed joining Cloudflare on 2025-12-01 [B · T0-20 L327]. A paid T4 small Space left on for 30 days costs about US$288 (derived) [D · T0-13 L476].
@@ -218,12 +218,81 @@ Buy verifiability, not hardware: measured small-scale results with disclosed har
 | M7 | Upstream contributions | Tests, benchmarks, bug fixes or docs to vLLM, SGLang, Triton or similar | V2 | Authorship of core design |
 | M8 | One short rented multi-GPU session | A single measured 2- to 4-GPU tensor-parallel experiment with a cost log: 4 GPUs for 3 hours at about US$3.95 an hour is about US$47 (derived) | V1 | Sustained operations |
 
-Source: [T0-13 L545–554]. **GPU arithmetic for spec R3**, derived from Modal's list rates as of 2026-10-21 [D · T0-13 L379]: an H100 at US$0.001097 a second is about US$3.95 an hour, so 40 GPU-hours cost about US$158; an A100 80 GB at US$0.000694 a second is about US$2.50 an hour, so 60 GPU-hours cost about US$150.
+Source: [T0-13 L545–554]. **GPU arithmetic for spec R3** (reconciled with November 2026 rates [B/C · T0-68 L388–L391]): Modal H100 at US$3.95/h (40 GPU-hours ≈ US$158; A100 40 GB US$2.10/h; T4 US$0.59/h); RunPod Secure Cloud H100 PCIe US$2.89/h / SXM US$3.99/h / A100 PCIe US$1.79/h (2026-10-15); Lambda H100 SXM US$3.99–4.59/h (Sept–Nov 2026); cheapest in-stock marketplace consumer GPUs RTX 3090 US$0.29/h, RTX 4090 US$0.41/h and A100 US$0.68/h (2026-11-11).
 
 **Claim language** [D · T0-13 L556–559]:
 - "Measured on 1x [GPU] ([VRAM]): [metric]. Modelled for 8x [GPU] under assumptions A, B, C: [metric] (not measured)."
 - "Simulated with the llm-d inference simulator: validates the load harness only."
 - "Educational reimplementation; one configuration; not a production claim."
+
+## Open-source contribution economics and employer-domain repo map (T0-05)
+
+**Debunking "10× recruiter inbound per merged PR vs 500 Easy Applies" (`T0-05.F1`):** no measurement supports this claim, and the ratio is ill-posed [C · T0-05 L46, L147]. Recruiter *inbound contacts* are not an output of Easy Apply (making the denominator ≈ 0); against Ashby's all-role baseline (3% application→interview, 0.2% application→offer), 10× would imply ~150 inbound contacts from one PR; authors merging into vLLM-class repos are heavily confounded (many already work at AMD/NVIDIA/Intel/Red Hat); and GitHub's Acceptable Use Policy §7 bars scraping GitHub metadata for unsolicited recruiter emails [A · T0-05 L147]. What *is* supported: sustained, non-trivial contributions build discoverability and move you from cold inbound toward sourced or referred status [B/C · T0-05 L48, L147].
+
+**Academic signalling context (`T0-05 D2.6`):** an ifo 2024 working paper (~22,900 GitHub developers) finds job movers raise OSS activity by ~16% during job search (so casual PR signalling is crowded), while Hann, Roberts & Slaughter (*ISR*, 2013; Apache six-year cohort) find up to an 18% wage lift attaching to **earned meritocracy rank**, not raw commit volume [B · T0-05 L232].
+
+**Employer-domain commit map and hard gates across eight AI repos (12-month default-branch commits, retrieved 2026-10-21 [A/C · T0-05 L50–L56, L157–L186]):**
+
+| Repository | Top 12-month corporate domains (distinct authors / commits; lower bounds) | Personal→corp transitions | 1-commit share / top-10 share | Hard gates & hiring reality |
+|---|---|---|---|---|
+| **vLLM** (`vllm-project`) | `amd.com` 149/1,225 · `nvidia.com` 81/336 · `intel.com` 65/586 · `redhat.com` 38/628 · `ibm.com` 30/200 · `meta.com` 25/186 · `inferact.ai` 11/273 | 30 (15 in 2026; median 216 d) | 58.9% / 19.0% | DCO + AI disclosure; pure code-agent PRs banned (auto-ban risk); no typo PRs; committers ~30+ PRs & ~10+ reviews; Inferact MTS lists vLLM contributions as preferred/bonus [A/B] |
+| **SGLang** (`sgl-project`) | `amd.com` 79/760 · `nvidia.com` 47/273 · `intel.com` 45/292 · `thinkingmachines.ai` 14/100 · `radixark.ai` 4/202 | 12 (median 180 d) | 50.2% / 32.3% | Only trusted contributors trigger CI (`CI_PERMISSIONS.json`, `run-ci`); RadixArk AI Infra Resident ($200K listed on Accel, undated on Greenhouse) and DevTech MTS reference SGLang [A/B] |
+| **llama.cpp** (`ggml-org`) | `qualcomm.com` 20/262 · `nvidia.com` 15/257 · `intel.com` 12/60 · `huggingface.co` 5/619 · `redhat.com` 6/77 | 8 (median 349 d) | 64.0% / 42.1% | Max 1 open PR for newcomers; issue-first for features; undisclosed AI = permanent ban; Red Hat llama.cpp role required major OSS record [A/B] |
+| **transformers** (Hugging Face) | `intel.com` 12/274 · `huggingface.co` 8/422 (lower bound; noreply common) · `nvidia.com` 8/9 | 19 (2020–26) | 68.2% / 42.6% | First-timers asked not to use code agents (closed without review); only 2.5% of newcomers reach 10 commits; HF Open-Source MLE requires public merged PRs [A/B] |
+| **LiteLLM** (`BerriAI`) | `berri.ai` 29/8,698 (core-dominated); 1–4 each at Stripe, Amazon, Anthropic, CoreWeave | 4 | 57.4% / 63.5% | CLA mandatory + **≥1 test hard gate**; onsite includes live repo issue fix; PyPI 1.82.7/1.82.8 compromised 2026-03-24 (pin & verify) [A/B] |
+| **Langfuse** (ClickHouse) | `langfuse.com` 6/853 · `clickhouse.com` 7/427 (core-dominated) | 1 | 67.5% / 79.2% | Issue-first for major changes; low external retention — pair with direct outreach or own-instance parity audit [A/C] |
+| **Axolotl** (`axolotl-ai-cloud`) | `axolotl.ai` 2/401 (core-dominated) | 2 | 67.7% / 86.6% | Explicit anti-farming policy (`AGENTS.md` tells agents to refuse profile-padding PRs) [A] |
+| **Ollama** (`ollama`) | `ollama.com` 6/260 (core-dominated) | 0 | **81.2% / 83.4%** | Lowest newcomer retention (0.9% active at 6 mo); use for an own-instance audit artefact rather than a contributor pipeline [A/C] |
+
+**Platform anti-slop controls and stop rules:** GitHub added open-PR caps for non-write users on `2026-06-17` alongside PR/issue restriction settings, and Hacktoberfest 2026 dropped PR-count rewards [A · T0-05 L52]. Target work agents cannot do alone (bisected regressions, minimal reproducers, regression tests, hardware comparisons), aim for **3+ merged/in-review PRs and 5+ reviews/triage actions in one area** before headlining OSS, and apply a hard stop-loss at **Week 8** (no merged PR and no substantive maintainer exchange → reallocate) [A/D · T0-05 L191–L209].
+
+## Public technical micro-audit operating system (T0-05)
+
+A micro-audit is a ≤2-page, reproducible technical measurement note sent privately to an engineering owner — or published as a vendor-neutral **category-level benchmark** (archetype [P21](project-archetypes.md)).
+
+### Break-even effort economics (Grade D, modelled [T0-05 L66, L515–L520])
+
+No unconventional tactic shows a 10× per-hour edge over standard applications across pessimistic, base or optimistic scenarios; the case rests on **channel saturation** (mass Easy Apply exhausts a ~300-opening pool in ~15–30 hours) and **reusability** [D · T0-05 L506–L519]:
+
+- **Outreach vs tailored applications:** artifact-carrying outreach (~0.27 base offers/100 h) beats tailored applications (~0.45 base offers/100 h) only where inbound `P(offer)` falls below **~0.089%** (<45% of Ashby's 0.2% all-role baseline) [D · T0-05 L517].
+- **100-hour OSS sprint:** inside a 400-hour search year, a 100-hour OSS sprint must lift the effectiveness of the remaining 300 outreach hours by **≥32%** (e.g. reply rate 5% → 6.6%) to break even, with ~8–16 weeks calendar merge lag [D · T0-05 L518].
+- **12-hour company-specific vs category-level micro-audit:** a 12-hour single-company audit needs a **~17×** lift on that company's offer probability (0.20% → 3.4%) to pay back at base, whereas a **12-hour category-level audit amortised across 20 target employers** needs only **~1.8×** (0.20% → 0.36%) [D · T0-05 L519]. **Rule:** publish category-level benchmarks openly; reserve private company-specific notes strictly for top-priority targets.
+
+### Legal and terms-of-service envelope (pointer, NOT legal advice [A/B/C · T0-05 L249–L257])
+
+> **Not legal advice.** Jurisdiction, contract terms and exact testing methods govern liability; consult qualified counsel before testing any third-party system outside explicit scope.
+
+| Zone | Allowed / prohibited actions | Documented legal & policy basis |
+|---|---|---|
+| **Green (default)** | Measure *public, documented* API behaviour on your own account at normal rates within usage policies (latency, cost, rate-limit behaviour); audit open-source components on **your own hardware** (`vLLM`, `SGLang`, `Ollama`, `LiteLLM`, `Langfuse`); review public docs, changelogs, model cards and public repos | No unauthorised access; no safeguard circumvention [A/D · T0-05 L253] |
+| **Amber (explicit written scope only — otherwise stop)** | Jailbreak, prompt-injection or system-prompt-leak probing of *production* AI endpoints; high-volume automated extraction; undocumented host discovery; touching other users' data | OpenAI Usage Policies (`2025-10-29`) bar unsolicited safety testing and safeguard circumvention; OpenAI EU Terms (`2026-01-16`) bar reverse engineering and automated extraction; Anthropic's disclosure safe harbour **excludes** "red-teaming or adversarial testing of models" and its Model Safety Bug Bounty (`2026-09-08`) is invite-only under NDA with no explicit safe harbour [A · T0-05 L254] |
+| **Red (never)** | Using discovered credentials/keys ("even to verify they work"); accessing non-public systems; bypassing authentication or rate limits; exfiltrating data; service-degrading load; publishing a vulnerability before vendor notice; extortionate disclosure leverage | US DOJ May 2022 CFAA policy covers *only* "solely good-faith" research (and WSGR notes it gives no concrete civil protection); post-*Van Buren* civil/contract exposure remains [A/B · T0-05 L255]. **India:** IT Act s.43 penalises unauthorised access without distinguishing ethical researchers; CERT-In disclosure policy (`2021-09-03`) Clause 7 requires compliance with all extant laws; the 2021 Mobikwik legal-threat case is a documented cautionary tale (advocacy source, 2021; may be dated) [B/C · T0-05 L257] |
+
+**Disclosure hygiene:** fetch `/.well-known/security.txt` (RFC 9116: check `Contact`, `Policy` and the `Hiring` field for security roles [A · T0-05 L257]); report vulnerabilities privately first and treat Google Project Zero's **90 days (+30 if patched)** as an industry reference norm, not a legal right (Anthropic forbids public disclosure without prior written notice) [A/B · T0-05 L257, L316].
+
+### Five reproducible measurement recipes (`T0-05 L263–L278`)
+
+1. **Serving latency & goodput profile (`vllm bench serve`):** fix an `(input, output)` length grid (e.g. `128/128`, `1024/256`, `4096/512`), warm up and discard initial calls, run ≥200 requests per concurrency (`1, 4, 16, 32`) across two times of day, control prefix caching/autoscaling, and report mean/median/P99 for TTFT, TPOT, ITL, E2EL and SLO goodput with raw CSV [B/D · T0-05 L263–L270].
+2. **Passive leak & default-config audit:** scan public repos/packages for committed secrets (if a live-looking key appears, **never test or validate it** — report privately); on own-instance OSS builds check unauthenticated admin ports, default binds and permissive CORS [D · T0-05 L272].
+3. **Own-instance OWASP prompt-injection audit:** run strictly on your own app, self-hosted OSS or explicitly in-scope targets, mapping direct/indirect injection, Markdown-image/allow-listed exfiltration and excessive agency against OWASP GenAI LLM Top 10 2026 (`T0-68 L606`) and Agentic Top 10 [B/D · T0-05 L274].
+4. **Public cost/quality audit:** compare measured token counts against provider billing, cache-hit rates, structured-output failure rates and retrieval recall on a public documented corpus [D · T0-05 L276].
+5. **Own-instance gateway/observability parity audit (cleanest OSS bridge):** run `LiteLLM` or `Langfuse` locally, compare traced token/cost accounting against provider usage responses on a fixed prompt set, document mismatches and open a PR with tests [D · T0-05 L278].
+
+### 100-point micro-audit execution rubric and 9 auto-dismissal triggers (`D · T0-05 L297–L311`)
+
+Pass requires **≥75 / 100 AND clearing the Safety & legal gate** (any Red-zone action is an automatic fail):
+
+| Criterion | Points | Full marks |
+|---|:---:|---|
+| Relevance to the team's public roadmap, issues or JD | 20 | Solves a named team bottleneck, not a generic critique |
+| Measurement validity & reproducibility | 20 | Fixed inputs, warm-up, percentiles, N stated, confounders controlled, one-command repro, raw CSV |
+| Claim calibration | 15 | Uses claim-hygiene phrasing ("In my setup, X was observed"; "I could not verify…"; "This may reflect a configuration I cannot see"; "I will re-run on [version]") |
+| Actionability | 15 | 2–3 ranked fixes with effort/impact and patch offer |
+| **Safety & legal (hard gate)** | **15** | Green zone only; explicit scope statement; zero PII/credentials; private disclosure for vulnerabilities |
+| Concision | 10 | ≤2 pages, TL;DR first |
+| Credibility | 5 | Two-line bio, consistent handle, zero hype |
+
+**Nine automatic dismissal triggers (any one fails the note [D · T0-05 L309]):** (1) a factual error about the target; (2) unreproducible numbers; (3) any method violating target terms; (4) a "gotcha" or shaming tone; (5) publishing a vulnerability before vendor notice; (6) unverified AI-generated claims; (7) exceeding three pages; (8) no concrete next step; (9) missing disclosure/scope statement.
 
 ## How to do it
 
@@ -336,6 +405,23 @@ PA-12 asks what was AI-assisted, what was verified by hand, an iterative history
 - Verified by hand: [what you checked and how: tests run, traces read, labels audited]
 - History: iterative commits; decisions in docs/decisions/
 - Licence: [licence]
+```
+
+### Two-page micro-audit template (`D · T0-05 L282–L295`)
+
+Keep company-specific notes private for engineering-lead outreach; publish only vendor-neutral category benchmarks openly:
+
+```markdown
+# [Target or Category] — [aspect] micro-audit, v1 ([YYYY-MM-DD])
+**Scope and ethics.** What I tested / did not test; own account or own-instance OSS; documented endpoints; request volume; zero PII; zero circumvention; nothing non-public.
+**TL;DR** (<=3 bullets, each tagged observed / likely / unknown).
+**Setup.** Model/version, region, client, concurrency levels, input/output lengths, warm-up, repeats, date/time window, caching/autoscaling notes.
+**Results.** One table + one chart: mean / median / P99 (TTFT, TPOT, ITL, E2EL), N per cell.
+**Interpretation and limits.** What this does NOT show; internals not observable from outside.
+**Suggested fixes.** 2–3 ranked by effort and impact; "I can send a patch for #1."
+**Reproduce.** Repo link, commit SHA, one command, raw CSV.
+**Disclosure status.** Private notice date; response; planned public date (category-level only).
+**About me.** Two lines and three links (PRs, write-ups, profile).
 ```
 
 ## Checklist

@@ -2,8 +2,8 @@
  "schema": "project-archetypes/1.1",
  "as_of": "2026-11-19",
  "review_by": "2027-02-17",
- "description": "Proof-of-work project archetypes, one per kind of flagship project named in career/06-job-search/resume-strategy.md (the variant catalogue) and in the proof-of-work lines of career/03-skills-and-tech/role-skill-maps.md. scripts/resume_layers.py reads only name and skills (headline-skill IDs from skills_ontology.json) to compute which projects cover which roles in career/06-job-search/job-search-strategy.md, so change those two only together with a regenerated strategy. Other fields: problem, the real problem the project solves and why it is a credible signal, with an inline grade on each empirical claim; build, 4–7 stack-neutral steps in which named tools are examples only; evidence, 3–5 items to measure and publish, each mapped to the T0-13 D2 artefacts PA-01 to PA-15 where one fits; verifiability, the highest level of the T0-13 §4.1 ladder the evidence should reach (V1 reproducible, V2 externally attested, V3 operationally evidenced), with every headline claim at V1 or above; under spec R2, V3 means T0-13's V3-lite, a 30+ day demo log without real users; for the document-type archetypes P12, P13, P17 and P19, V1 is applied by analogy [P]: every claim traces to committed data or a dated source that a reviewer can check in minutes; effort, S, M or L in part-time working time against T0-13's reference time boxes (S about R1's 4–6 weeks, M about the 6–10 weeks of R2 and R3, L about R4's 3–6 months), not counting the calendar time that V2 and V3 evidence spends waiting on others (maintainer review, users, 30+ day logs); spec, present only where a T0-13 D3 reference specification (R1–R4) sets the time box and compute cap; compute, quoted from that cap or from a T0-13 D8 modest-budget rung, otherwise prefixed [P]; dollar caps are T0-13 prices retrieved 2026-10-21, so re-verify them by 2027-01-19; interview_archetypes, the T0-14 §6.3 system-design archetypes A1–A15 whose rounds the project rehearses, empty where none applies, because T0-14 covers AI-engineering design rounds only; pitfalls, the T0-13 D1 anti-portfolio failure modes AP-1 to AP-9 the project must avoid; sources, session references with a finding, section or line (sessions are immutable) and career documents by path with an anchor or section.",
- "basis": "No field is a measurement. No source links any project type to hiring outcomes, and the claim that tutorial repositories screen candidates out faster than no GitHub at all is unverified (T0-13.F1, T0-13 D10 L604, §7.1 NF1 and NF5). Grades by field (EGP-1.0): name and skills are judgement (D) drawn from the proof-of-work lines in role-skill-maps.md and resume-strategy.md (the variant catalogue); problem carries an inline grade on each empirical claim; build, evidence, spec and compute apply T0-13's reference specifications (D3), artefacts (D2) and modest-budget rungs (D8), which are that session's own synthesis anchored to A and B sources, so grade D as standards, and their numeric defaults are starting points to change with a stated reason (T0-13 L270); steps for archetypes without a spec follow the cited proof lines and are practice-curated [P]; verifiability applies the T0-13 §4.1 ladder, taking the target from the specification where spec is set (R1 V1; R2 V1 plus V3-lite, a 30+ day demo log without real users; R3 V1 plus one V2 item) and from judgement (D) elsewhere, and applies V1 by analogy [P] to the document-type archetypes P12, P13, P17 and P19 (every claim traces to committed data or a dated source); effort is [P] unless spec is set, sized against T0-13's part-time time boxes (S about 4–6 weeks, M about 6–10 weeks, L about 3–6 months; T0-13 D3 L272-277); interview_archetypes uses the T0-14 §6.3 catalog, a synthesis whose per-archetype evidence runs from B to C (T0-14.F3), and each project-to-archetype mapping is judgement (D); pitfalls use T0-13 D1, which grades each failure mode B or C, mapped by judgement (D). T0-13 discloses that three of its A-grade sources are first-party Anthropic material (T0-13 §2, K8). A project counts as proof only when its headline claims reach V1 (T0-13 L138). Dollar caps in compute are T0-13 prices retrieved 2026-10-21; re-verify them by 2027-01-19.",
+ "description": "Proof-of-work project archetypes, one per kind of flagship project named in career/06-job-search/resume-strategy.md (the variant catalogue) and in the proof-of-work lines of career/03-skills-and-tech/role-skill-maps.md. scripts/resume_layers.py reads only name and skills (headline-skill IDs from skills_ontology.json) to compute which projects cover which roles in career/06-job-search/job-search-strategy.md, so change those two only together with a regenerated strategy. Other fields: problem, the real problem the project solves and why it is a credible signal, with an inline grade on each empirical claim; build, 4–7 stack-neutral steps in which named tools are examples only; evidence, 3–5 items to measure and publish, each mapped to the T0-13 D2 artefacts PA-01 to PA-15 where one fits; verifiability, the highest level of the T0-13 §4.1 ladder the evidence should reach (V1 reproducible, V2 externally attested, V3 operationally evidenced), with every headline claim at V1 or above; under spec R2, V3 means T0-13's V3-lite, a 30+ day demo log without real users; for the document-type archetypes P12, P13, P17 and P19, V1 is applied by analogy [P]: every claim traces to committed data or a dated source that a reviewer can check in minutes; effort, S, M or L in part-time working time against T0-13's reference time boxes (S about R1's 4–6 weeks, M about the 6–10 weeks of R2 and R3, L about R4's 3–6 months), not counting the calendar time that V2 and V3 evidence spends waiting on others (maintainer review, users, 30+ day logs); spec, present only where a T0-13 D3 reference specification (R1–R4) sets the time box and compute cap; compute, quoted from that cap or from a T0-13 D8 modest-budget rung, otherwise prefixed [P]; dollar caps reflect T0-13 (2026-10-21) reconciled with T0-68 November 2026 GPU rental rates, so re-verify them by 2027-02-17; interview_archetypes, the T0-14 §6.3 system-design archetypes A1–A15 whose rounds the project rehearses, empty where none applies, because T0-14 covers AI-engineering design rounds only; pitfalls, the T0-13 D1 anti-portfolio failure modes AP-1 to AP-9 the project must avoid; sources, session references with a finding, section or line (sessions are immutable) and career documents by path with an anchor or section.",
+ "basis": "No field is a measurement. No source links any project type to hiring outcomes, and the claim that tutorial repositories screen candidates out faster than no GitHub at all is unverified (T0-13.F1, T0-13 D10 L604, §7.1 NF1 and NF5). Grades by field (EGP-1.0): name and skills are judgement (D) drawn from the proof-of-work lines in role-skill-maps.md and resume-strategy.md (the variant catalogue); problem carries an inline grade on each empirical claim; build, evidence, spec and compute apply T0-13's reference specifications (D3), artefacts (D2) and modest-budget rungs (D8), which are that session's own synthesis anchored to A and B sources, so grade D as standards, and their numeric defaults are starting points to change with a stated reason (T0-13 L270); steps for archetypes without a spec follow the cited proof lines and are practice-curated [P]; verifiability applies the T0-13 §4.1 ladder, taking the target from the specification where spec is set (R1 V1; R2 V1 plus V3-lite, a 30+ day demo log without real users; R3 V1 plus one V2 item) and from judgement (D) elsewhere, and applies V1 by analogy [P] to the document-type archetypes P12, P13, P17 and P19 (every claim traces to committed data or a dated source); effort is [P] unless spec is set, sized against T0-13's part-time time boxes (S about 4–6 weeks, M about 6–10 weeks, L about 3–6 months; T0-13 D3 L272-277); interview_archetypes uses the T0-14 §6.3 catalog, a synthesis whose per-archetype evidence runs from B to C (T0-14.F3), and each project-to-archetype mapping is judgement (D); pitfalls use T0-13 D1, which grades each failure mode B or C, mapped by judgement (D). T0-13 discloses that three of its A-grade sources are first-party Anthropic material (T0-13 §2, K8). A project counts as proof only when its headline claims reach V1 (T0-13 L138). Dollar caps in compute reflect T0-13 (2026-10-21) reconciled with T0-68 November 2026 GPU rental rates (RTX 3090 US$0.29/h, RTX 4090 US$0.41/h, H100 US$2.89-4.59/h); re-verify them by 2027-02-17.",
  "archetypes": {
   "P1": {
    "name": "Evaluated RAG system over a real corpus",
@@ -82,7 +82,7 @@
     "evals",
     "observability"
    ],
-   "problem": "Tool-using agents fail in compounding ways, so a demo without outcome graders, repeated trials and failure-mode discussion shows nothing reproducible [B · T0-13 AP-4]. An agent whose side effects are gated, sandboxed and replayable, reported as pass^k under injected faults with cost per task, shows the production judgment T0-13's tier model asks of Mid-level portfolios [D · T0-13 D3].",
+   "problem": "Tool-using agents fail in compounding ways, so a demo without outcome graders, repeated trials and failure-mode discussion shows nothing reproducible [B · T0-13 AP-4]. An agent whose side effects are gated, sandboxed and replayable, reported as pass^k under injected faults with cost per task, shows the production judgement T0-13's tier model asks of Mid-level portfolios [D · T0-13 D3]; note that deterministic trace replay and fault injection are practice-curated differentiators ([P] · T0-57 L233), not explicitly named in every agentic posting.",
    "build": [
     "Build a simulated backend with a policy document and least-privilege tools (for example order lookup, policy check, a capped refund and escalation, served over MCP or plain function calls), and define each task as an initial state, a scripted or simulated-user conversation and an expected end state.",
     "Write at least 50 tasks split into capability and regression sets, grade end states in code, and run at least 5 trials per task in clean environments, reporting pass@1 and pass^k with intervals plus cost and latency per task.",
@@ -125,7 +125,8 @@
     "T0-03 L135",
     "career/03-skills-and-tech/role-skill-maps.md#skills-agentic-ai-engineer",
     "career/06-job-search/resume-strategy.md#the-variant-catalogue",
-    "T0-20 L64-L65, L200"
+    "T0-20 L64-L65, L200",
+    "T0-57 L233"
    ]
   },
   "P3": {
@@ -251,12 +252,13 @@
     "load_testing",
     "cost_latency",
     "gpu_fundamentals",
-    "serving_literacy"
+    "serving_literacy",
+    "pd_disagg"
    ],
-   "problem": "Inference teams hire for serving models within latency SLOs at a known cost, and infrastructure postings ask for upstream PRs and shipped performance features [B · T0-13.F9]. A single-GPU study that maps the throughput, latency, quality and cost frontier with a sound load method, plus one upstream contribution, is the Senior-tier (R3) evidence T0-13 judges feasible on modest hardware [B · T0-13.F10].",
+   "problem": "Inference teams hire for serving models within latency SLOs at a known cost, and infrastructure postings ask for upstream PRs and shipped performance features [B · T0-13.F9]. In T0-56 (n=37), vLLM appears in 76%, SGLang in 57% and TensorRT-LLM (PyTorch backend only) in 41% of inference postings, with continuous batching/KV cache (49%), speculative decoding (35%) and quantisation (30%) leading techniques [B · T0-56 L68-L69]. A single-GPU study mapping throughput, latency, quality and cost with one upstream contribution is the Senior-tier (R3) evidence feasible on modest hardware [B · T0-13.F10].",
    "build": [
     "Serve one 7B to 8B-class open model on one rented GPU behind an OpenAI-compatible server (for example vLLM or SGLang), and capture GPU, driver, CUDA, engine version, flags and checkpoint hash in env.json.",
-    "Choose 3 to 5 configurations: a BF16 baseline, FP8 or 4-bit weights, prefix caching on and off, chunked prefill, and speculative decoding where supported.",
+    "Choose 3 to 5 configurations: a BF16 baseline, FP8 or 4-bit weights, prefix caching on and off, chunked prefill, speculative decoding, and (where hardware allows) prefill/decode disaggregation modelling.",
     "Drive load with a multi-process generator (for example inference-perf or GuideLLM) using Poisson arrivals and concurrency sweeps; discard warm-up, repeat at least three times and record client CPU headroom.",
     "Gate quality per configuration with perplexity, two or three task metrics and a domain set, with intervals, and report quantisation regressions rather than hiding them.",
     "Attribute time with profiler timelines (prefill, decode, attention, GEMM) and a roofline or bandwidth-bound argument.",
@@ -295,7 +297,10 @@
     "T0-03 L137",
     "career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer",
     "career/06-job-search/resume-strategy.md#the-variant-catalogue",
-    "T0-20 L64"
+    "T0-20 L64",
+    "T0-56 L68-L69",
+    "T0-56 L197-L212",
+    "T0-68 L391"
    ]
   },
   "P6": {
@@ -317,9 +322,9 @@
     "python",
     "capacity_cost"
    ],
-   "problem": "Platform teams need self-hosted serving that survives load, fails over and stays within budget. T0-03 names a self-hosted cluster under continuous synthetic load, with automated failover and dashboards, as the highest-signal proof for ML platform engineers [D · T0-03 L136], and building one rehearses the serving, GPU-allocation and model-distribution prompts that dominate reported AI-lab infrastructure rounds [B · T0-14.F1].",
+   "problem": "Platform teams need self-hosted serving and lifecycle automation that survives load, fails over and stays within budget. In T0-58 (n=31 coded ML Platform postings), lifecycle tooling (67.7%, led by MLflow 45.2% and Kubeflow 41.9%), Kubernetes (61.3%), cloud (51.6%) and IaC (41.9%) dominate, while LLM gateways and supply-chain hardening were 0/31 and remain practice-curated differentiators [B/P · T0-58 L177-L200]. Building a cluster under synthetic load with automated failover rehearses the serving and GPU-allocation rounds reported at AI labs [B · T0-14.F1].",
    "build": [
-    "Provision a small Kubernetes cluster from infrastructure as code (for example Terraform) with pinned images and least-privilege identities, so that one command recreates it.",
+    "Provision a small Kubernetes cluster from infrastructure as code (for example Terraform) with pinned images, least-privilege identities and a versioned model registry/tracking layer (for example MLflow or Kubeflow), so that one command recreates it.",
     "Deploy a serving engine behind a gateway with per-team token budgets, routing and a usage ledger (for example vLLM on KServe or Ray Serve, fronted by LiteLLM).",
     "Develop and test GPU-free against an inference simulator, then measure in short rented GPU sessions with a cost log.",
     "Run continuous synthetic load with thresholds in CI, autoscale on queue depth and KV-cache use rather than CPU, and keep a warm pool because model loads take minutes.",
@@ -360,7 +365,8 @@
     "T0-14 A6 L314-334",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-58 L177-L200"
    ]
   },
   "P7": {
@@ -382,7 +388,7 @@
     "Predict per-GPU memory and throughput for a target configuration with the Ultra-Scale Playbook's parallelism arithmetic, then validate the prediction against single-GPU measurements.",
     "Launch several CPU processes (for example with PyTorch's gloo backend) to test DDP or FSDP2 sharding, checkpointing and resume logic in CI.",
     "Run scaled-down single-GPU training (for example at nanochat's small-model scale), report MFU and tokens per second, and write up any loss spike or numerics issue you debug.",
-    "For post-training (for example SFT, preference optimisation or RL on a small model), compare base with tuned on a held-out set with intervals, fixed seeds, loss curves, a cost table and one ablation.",
+    "For post-training (for example SFT, preference optimisation or RL on a small model using TRL v1.0 rather than dormant torchtune), compare base with tuned on a held-out set with intervals, fixed seeds, loss curves, a cost table and one ablation.",
     "Optionally run one short rented 2- to 4-GPU tensor-parallel experiment with a cost log.",
     "Label every result as measured or modelled: measured on one GPU, modelled for larger configurations under stated assumptions."
    ],
@@ -411,7 +417,9 @@
     "T0-14 A4 L274-292",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ml-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-50 L520",
+    "T0-69 L190, L367"
    ]
   },
   "P8": {
@@ -426,7 +434,7 @@
     "writing",
     "python"
    ],
-   "problem": "Research teams need engineers who turn papers into correct, measured code; T2-01's frontier-lab playbook lists open-source implementations of recent papers with rigorous eval as a research contribution [D · T2-01 L594]. Matching a published result, or explaining the gap with seeds, intervals and ablations, shows research method and PyTorch depth.",
+   "problem": "Research teams need engineers and scientists who turn papers into correct, measured code; T0-55 confirms novel research and publications in 91.7% (11/12) of Research Scientist postings [B · T0-55 L205], and T2-01 lists open-source implementations with rigorous eval as a research contribution [D · T2-01 L594]. Matching a published result, or explaining the gap with seeds, intervals and ablations, shows research method and PyTorch depth.",
    "build": [
     "Choose a paper with public data and a headline result reachable on your hardware, and state the target metric, setting and tolerance before you start.",
     "Implement the core method yourself with unit tests per component; if official code exists, use it only as a reference check and say so.",
@@ -460,7 +468,8 @@
     "T0-13 D1 AP-7 L209-212",
     "career/03-skills-and-tech/role-skill-maps.md#skills-research-engineer",
     "career/06-job-search/resume-strategy.md#the-variant-catalogue",
-    "T0-20 L64"
+    "T0-20 L64",
+    "T0-55 L205"
    ]
   },
   "P9": {
@@ -473,12 +482,13 @@
     "numerics",
     "memory_perf",
     "linear_algebra",
-    "quantization"
+    "quantization",
+    "open_source_contributions"
    ],
-   "problem": "Kernel and inference teams hire for speed-ups that are measured and provably correct, and their postings ask for upstream PRs and shipped performance features [B · T0-13.F9]. A kernel with correctness tests against a reference, microbenchmarks and a roofline argument, entered in an open competition or upstreamed, earns externally attested (V2) evidence and rehearses the roofline-analysis prompts reported at Anthropic [B · T0-14 §6.3b].",
+   "problem": "Kernel and inference teams hire for speed-ups that are measured and provably correct: T0-63 (n=41 core postings) finds CUDA in 63.4%, Triton in 56.1% (69% of kernel-led postings), PTX/SASS in 22.0% and upstream open-source contributions named as a plus in 17.1% [B · T0-63 L186-L209]. A kernel with correctness tests against a reference, microbenchmarks and a roofline argument, entered in an open competition or upstreamed, earns externally attested (V2) evidence and rehearses Anthropic's roofline-analysis prompts [B · T0-14 §6.3b].",
    "build": [
     "Pick one operation that dominates a real workload (for example a fused attention variant or a quantised GEMM) and write the PyTorch reference first.",
-    "Write the kernel in Triton (or CUDA), with correctness tests against the reference that also run on CPU, across shapes, dtypes and edge cases.",
+    "Write the kernel in Triton or CUDA C++ (optionally benchmarking against CUDA 13.1 Tile IR or inspecting PTX/SASS), with correctness tests against the reference that also run on CPU, across shapes, dtypes and edge cases.",
     "Microbenchmark against the reference and the engine's default kernel across shapes, discarding warm-up and recording repeats and a hardware fingerprint.",
     "Explain the result with a roofline or bandwidth-bound argument and profiler timelines (for example Nsight).",
     "Seek external attestation: enter an open kernel competition on organiser hardware, or open a PR to an engine with benchmarks on the target hardware after reading its contribution rules."
@@ -511,7 +521,9 @@
     "career/03-skills-and-tech/role-skill-maps.md#skills-gpu-kernel-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-inference-engineer",
     "career/06-job-search/resume-strategy.md#the-variant-catalogue",
-    "T0-20 L64"
+    "T0-20 L64",
+    "T0-63 L186-L212",
+    "T0-03 L180"
    ]
   },
   "P10": {
@@ -530,8 +542,8 @@
    "problem": "Agents that read untrusted content can be hijacked: adaptive attacks bypassed 12 published prompt-injection and jailbreak defences with over 90% success in most cases, so a static benchmark score is weak evidence [A · T0-14 L731]. A red-team suite that runs in CI against a working agent and reports attack-success rates before and after mitigation shows the contain-first behaviour AI security rounds score [A/B · T0-14.F6].",
    "build": [
     "Take a working agent with real tools in a sandbox (for example P2) and write its threat model: trust boundaries, sensitive assets and actions that change state.",
-    "Build an attack set mapped to the OWASP LLM Top 10: direct and indirect injection (through documents and tool output), exfiltration through rendered links or images, and excessive agency.",
-    "Run the suite in CI on every change (custom, or with a tool such as Promptfoo), with repeated trials per attack, and report attack-success rates.",
+    "Build an attack set mapped to the OWASP GenAI LLM Top 10 2026, OWASP Top 10 for Agentic Applications and MITRE ATLAS: direct and indirect injection (through documents and tool output), exfiltration through rendered links or images, and excessive agency.",
+    "Run the suite in CI on every change (custom, or with Promptfoo or UK AISI Inspect AI), with repeated trials per attack, and report attack-success rates.",
     "Mitigate architecturally first: least-privilege tools, approval for irreversible actions, egress allowlists and output validation, with classifiers as one layer only.",
     "Re-run after each mitigation, add adaptive attacks rather than only a static prompt set, and publish before and after rates with intervals.",
     "Document residual risks, a kill switch and an abuse contact in SECURITY.md."
@@ -563,7 +575,9 @@
     "T0-13 D6 L511-524",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer",
     "career/06-job-search/resume-strategy.md#the-variant-catalogue",
-    "T0-20 L82, L149, L353"
+    "T0-20 L82, L149, L353",
+    "T0-68 L606",
+    "T0-60 L237-L250"
    ]
   },
   "P11": {
@@ -579,16 +593,21 @@
     "tech_writing",
     "presales",
     "iam",
-    "cloud"
+    "cloud",
+    "evals",
+    "agents",
+    "rag",
+    "apis",
+    "customer_communication"
    ],
-   "problem": "Forward-deployed and solutions roles are judged on whether a system works on a customer's real data at a cost the customer accepts. A pilot on a real data source, deployed for at least two potential users [D · T2-01 L516], with a reference architecture and a cost model, rehearses the RAG-over-sensitive-documents and multi-agent evaluation prompts reported in AI-FDE loops [C · T0-14 §6.2].",
+   "problem": "Forward-deployed and solutions roles are judged on whether a system works on a customer's real data at a cost the customer accepts: T0-51 (n=28 FDE postings) finds customer scoping in 50.0%, LLM APIs in 39.3%, agents in 35.7% and evals in 21.4% [C · T0-51 L782-L791], while T0-62 (n=23 SA postings) finds customer-facing technical experience in 95.7%, pre-sales in 60.9% and cloud in 52.2% [B · T0-62 L146-L153]. A pilot on a real data source deployed for at least two potential users [D · T2-01 L516], backed by an eval set, reference architecture and cost/latency walkthrough, directly evidences customer-application delivery.",
    "build": [
     "Scope a real or realistic customer problem: one success metric, constraints (data access, privacy, latency, budget) and an explicit list of non-goals.",
     "Build the smallest system that meets the metric on a real data source, enforcing document permissions at retrieval time, fail-closed, if access is restricted.",
     "Evaluate against the customer metric with a small golden set and a non-AI baseline, and deploy it for at least two potential users, recording their use and feedback.",
     "Draw the reference architecture with ADRs that name rejected alternatives, including managed API against self-hosting.",
     "Build the cost model: tokens times a dated price table per request and per successful task, infrastructure dollars per hour as dollars per 1k requests, and monthly cost at the expected volume.",
-    "Deploy with infrastructure as code and write a deployment note covering failure modes and the security review."
+    "Write a concise deployment and customer-walkthrough note covering integration APIs, latency/cost trade-offs, failure modes and the security review (infrastructure-as-code scripts are optional unless targeting cloud-partner delivery; 0/23 in T0-62)."
    ],
    "evidence": [
     "Case-study table: baseline against pilot on the customer metric, with method and date (PA-01)",
@@ -622,7 +641,9 @@
     "T0-14 A8 L386",
     "career/03-skills-and-tech/role-skill-maps.md#skills-forward-deployed-engineer",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-solutions-architect",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-51 L782-L791",
+    "T0-62 L146-L155"
    ]
   },
   "P12": {
@@ -637,11 +658,11 @@
     "hitl_design",
     "stakeholder"
    ],
-   "problem": "AI product managers must define success for non-deterministic features and decide whether a pilot worked. A PRD with an eval rubric and pilot metrics [D · T0-06 L604], a domain rubric with 50+ labelled cases and the 10 failure modes ranked by business impact [D · T2-01 L509-510] show eval fluency and product judgment that a reviewer can check.",
+   "problem": "AI product managers must define success for non-deterministic features and decide whether a pilot worked: T0-59 (n=41 AI PM postings) finds eval rubrics in at least 27% (5 of 9 opened pages) and AI-assisted prototyping in at least 15% across AI-native employers [B · T0-59 L178, L181]. A PRD paired with a working AI-coded prototype, a domain eval rubric with 50+ labelled cases and 10 business-ranked failure modes [D · T2-01 L509-510] shows eval fluency and product judgement a reviewer can check.",
    "build": [
     "Choose a real workflow and write a PRD: user, job to be done, the cost of a wrong answer, success metrics, guardrails and non-goals.",
     "Turn the quality bar into an eval rubric, label 50+ real cases with it, and have a second person label a subset to report agreement.",
-    "Prototype in a console or playground, run the labelled cases through the model or prompt options you are weighing, and record cost per task.",
+    "Ship a small working prototype (built directly or with coding agents), run the labelled cases through the model or prompt options you are weighing, and record cost per task.",
     "Rank 10 failure modes by business impact, with a mitigation and a human-in-the-loop path for each high-impact one.",
     "Define pilot metrics (adoption, task success, cost per successful task) with a baseline from the existing process and a decision rule set before the pilot.",
     "Publish the packet with results, limitations and what you would change, and disclose AI assistance."
@@ -670,7 +691,8 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-6 L204-207",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-manager",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-59 L178, L181"
    ]
   },
   "P13": {
@@ -685,10 +707,10 @@
     "privacy",
     "fairness_tools"
    ],
-   "problem": "Organisations deploying AI must know which systems they run, which rules apply and who owns each risk. T0-15 tells programme-lead candidates to build an AI inventory (systems, owners, use cases and risk tiers), a risk-assessment method and literacy in the EU AI Act, NIST AI RMF and ISO/IEC 42001 [D · T0-15 L162, L337]; a packet that applies them to one organisation shows that work directly.",
+   "problem": "Organisations deploying AI must know which systems they run, which rules apply and who owns each risk. T0-15 and T0-61 point governance-lead candidates to an AI inventory, use-case intake workflow, risk register and literacy in the EU AI Act as amended by the July 2026 Digital Omnibus (Regulation (EU) 2026/1744: Annex III high-risk moved to 2027-12-02, Annex I to 2028-08-02 [A/B · T0-61 L89, L369]), NIST AI RMF and ISO/IEC 42001 [D · T0-15 L162, L337]; a packet applying them to one organisation shows that work directly.",
    "build": [
     "Pick a real or realistic organisation and build its AI inventory: each system's purpose, owner, model, data sources and personal data, affected users, risk tier and deployment status.",
-    "Classify each system against the EU AI Act and any sector rules, citing the article or clause and the date you checked it.",
+    "Classify each system against the EU AI Act as amended by Regulation (EU) 2026/1744 (Annex III 2027-12-02; Annex I 2028-08-02; Art. 50 transparency 2026-08-02) and applicable sector rules, citing each article and the date checked.",
     "Write a risk register with a stated scoring method: risk, likelihood, impact, controls, owner and review date.",
     "Map each control to NIST AI RMF functions and ISO/IEC 42001 clauses, and mark the gaps.",
     "Specify the evidence each control needs and who produces it (for example subgroup test results, provenance marking, a privacy assessment).",
@@ -717,7 +739,9 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-6 L204-207",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-governance-lead",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-61 L89, L369",
+    "T0-68 L367"
    ]
   },
   "P14": {
@@ -734,7 +758,7 @@
    ],
    "problem": "Users judge an LLM feature by how it streams, shows its work and recovers from errors, so AI product engineers need evidence beyond a chat box. A full-stack app with streaming states, visible tool use, human approval, 50 eval cases and UX metrics such as TTFT p50 and p95 follows T0-06's roadmap for frontend engineers [D · T0-06 L583]; a thin Streamlit or Gradio wrapper over an API is a listed anti-pattern [C · T0-13 AP-2].",
    "build": [
-    "Build frontend, API and model layers for one real task (for example React and TypeScript over SSE), streaming tokens with partial, cancelled and error states.",
+    "Build frontend, API and model layers for one real task (for example React, Next.js and TypeScript with pinned AI SDK 7 over SSE), streaming tokens with accessible partial, cancel, retry and error-recovery states.",
     "Show the agent's work: tool calls, citations and provenance, and a human approval step before any irreversible action.",
     "Write 50 eval cases with task-success scoring and run them in CI alongside UI tests.",
     "Instrument UX telemetry (TTFT p50 and p95, acceptance rate, edit distance, abandonment), with content capture off in public mode.",
@@ -767,7 +791,9 @@
     "T0-14 A9 L388-410",
     "T0-14 A11 L432-454",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-product-engineer",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-62 L349-L350",
+    "T0-68 L364"
    ]
   },
   "P15": {
@@ -783,10 +809,10 @@
     "llm_apis",
     "python"
    ],
-   "problem": "Enablement engineers are hired to make colleagues productive with AI safely, which shows in adoption and time saved more than in a demo. A pilot with 5–10 colleagues that measures adoption, time saved and error rate, with a runbook and a risk register [D · T0-06 L637], also exercises MCP servers, named in 30.2% of AI Enablement Engineer postings (16 postings, a small sample) [C · T0-16 L393].",
+   "problem": "Enablement engineers are hired to make colleagues productive with AI safely, which shows in adoption and time saved more than in a demo. A pilot with 5–10 colleagues measuring adoption, time saved and error rate with a runbook and risk register [D · T0-06 L637] also exercises MCP servers, named in 26.7% of T0-62 postings (4/15), 19.0% on Skillenai as of 2026-11-05 (n=42) [B · T0-62 L270, L281] and 30.2% in an earlier October 2026 snapshot (n=16) [C · T0-16 L393].",
    "build": [
     "Recruit 5–10 colleagues who share one repetitive task, and measure a baseline (time per task, error rate) before the pilot starts.",
-    "Build one or two MCP servers for internal systems with least privilege, per-user identity and read-only defaults.",
+    "Build one or two sanitised MCP servers for internal systems with least privilege, per-user SSO/OAuth identity (essential for the platform variant [B · T0-62 L275]) and read-only defaults.",
     "Route model access through a gateway with per-team budgets, PII redaction and logging (for example LiteLLM).",
     "Roll out the tools, including any coding agent, with training and a support channel, and track adoption, retention, time saved and error rate.",
     "Write a runbook and a risk register covering data exposure, tool permissions and coding-agent use.",
@@ -819,7 +845,8 @@
     "T0-13 D1 AP-9 L219-222",
     "T0-14 A6 L314-334",
     "T0-14 §6.8 L743",
-    "career/03-skills-and-tech/role-skill-maps.md#skills-ai-enablement-engineer"
+    "career/03-skills-and-tech/role-skill-maps.md#skills-ai-enablement-engineer",
+    "T0-62 L261-L281"
    ]
   },
   "P16": {
@@ -832,13 +859,18 @@
     "robot_learning",
     "edge_inference",
     "cpp",
-    "python"
+    "python",
+    "pytorch",
+    "imitation_learning",
+    "rl",
+    "teleop_data",
+    "real_robot_deployment"
    ],
-   "problem": "Physical AI teams need policies that work on real hardware, not only in simulation. A sim-to-real or manipulation project with measured success rates and failure analysis is the proof the role map suggests, but the corpus has no skill measurements for this role, so this archetype is practice-curated [P].",
+   "problem": "Physical AI teams need learned policies that work on real hardware, not only in simulation: T0-64 (n=48 postings, 12 full-text) finds robot learning in 79% (11/12 full-text), real-robot deployment in 54% (11/12), simulation in 46% (10/12), imitation learning in 42% (10/12), RL in 42% (9/12) and PyTorch in 31% (8/12), while C++ (19%) and ROS (15%) are variant-dependent [B · T0-64 L170-L192], and all 6 embodied-AI postings in T0-20 ask for publications or public OSS code [B · T0-20 L70, L174].",
    "build": [
     "Pick one manipulation or navigation task and define success, the trial protocol and stop conditions before training.",
-    "Train a policy in simulation (for example MuJoCo or Isaac) with domain randomisation, logging seeds and configurations.",
-    "Transfer it to a real robot or a low-cost arm through ROS-style middleware (for example with a C++ control node), within a measured edge-inference latency budget.",
+    "Train a PyTorch policy (imitation learning, RL or VLA/diffusion action-chunking) in simulation (for example MuJoCo or NVIDIA Isaac Sim/Isaac Lab) with domain randomisation and teleoperation/demo data, logging seeds and configurations.",
+    "Transfer it to a real robot or low-cost arm (using C++ or ROS middleware where targeting runtime/OEM or industrial-integration variants) within a measured edge-inference latency budget.",
     "Run repeated trials and report success rates with intervals, separately for simulation and hardware.",
     "Classify every failure (perception, control, timing, sim-to-real gap) with counts and linked trial videos.",
     "Publish code, configurations and a one-command simulation reproduction."
@@ -863,7 +895,10 @@
     "T0-13 §4.1 L129-138",
     "T0-13 D2 L228-244",
     "T0-13 D1 AP-5 L199-202",
-    "T0-13 D1 AP-6 L204-207"
+    "T0-13 D1 AP-6 L204-207",
+    "T0-64 L170-L194",
+    "T0-20 L70, L174",
+    "T0-68 L603"
    ]
   },
   "P17": {
@@ -876,7 +911,7 @@
     "annotation",
     "ai_literacy"
    ],
-   "problem": "Labs and enterprises need expert-graded tasks to judge whether a model is good enough for a domain, and an eval task is only usable when two domain experts reach the same verdict independently [A · T0-14 L712]. A gold standard of 100+ real tasks with rubrics, adjudication rules and two-reviewer agreement, comparing 2–3 models with the existing human process, is the artefact T0-06 says engineers cannot produce without domain experts [D · T0-06 L636, L643].",
+   "problem": "Labs and enterprises need expert-graded tasks to judge whether a model is good enough for a domain, and an eval task is only usable when two domain experts reach the same verdict independently [A · T0-14 L712]. T0-66 (n=18) confirms human evaluation (67%), domain depth (61%), writing (44%), error analysis (39%) and eval rubrics (33%) as the core hiring screen [C · T0-66 L630-L635]; a gold standard of 100+ real tasks with rubrics, adjudication rules and two-reviewer agreement directly proves that work sample.",
    "build": [
     "Collect 100+ real tasks from your domain, de-identified or synthetic with permission, and write a dataset card.",
     "Write rubrics and adjudication rules for each task type; pilot them on a small batch and revise.",
@@ -911,7 +946,8 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-6 L204-207",
     "career/03-skills-and-tech/role-skill-maps.md#skills-domain-evaluation-specialist",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-66 L630-L635"
    ]
   },
   "P18": {
@@ -926,7 +962,7 @@
     "python",
     "writing"
    ],
-   "problem": "Safety teams hire people who run careful experiments on model behaviour and report them honestly. Fellowship projects, published safety research and open eval contributions are the routes the role map names, and Anthropic reports that over 40% of its first Fellows cohort later joined it full-time, a self-reported figure [B · T0-06 L706].",
+   "problem": "Safety teams hire researchers who run careful empirical experiments on model behaviour and report them honestly. T0-60 confirms alignment (53%), ML fundamentals (27%) and interpretability (27%) alongside published empirical results and open eval contributions [C · T0-60 L682-L686]; Anthropic reports that over 40% of its first Fellows cohort later joined full-time, a vendor-reported figure with COI [C · T0-06 L706].",
    "build": [
     "State one question about model behaviour (for example a dangerous-capability eval, a jailbreak-robustness test or an interpretability probe) and fix the metric and success criterion in advance.",
     "Build or adapt an open eval or probing setup on open-weight models, with controls and baselines.",
@@ -961,7 +997,8 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-7 L209-212",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-safety-researcher",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-60 L682-L686"
    ]
   },
   "P19": {
@@ -976,7 +1013,7 @@
     "writing",
     "python_basic"
    ],
-   "problem": "Auditors and model-risk teams must show independently that a model performs as claimed and treats groups fairly. A validation or bias-audit report on a public model, using documented methodology, is the proof the role map suggests [P]; T0-15 points assurance candidates to AI-specific scope on top of audit, model-risk or validation work [D · T0-15 L164].",
+   "problem": "Auditors and model-risk teams must show independently that a model performs as claimed and treats groups fairly. T0-61 (n=8 assurance postings) confirms compliance documentation (38%), third-party AI risk (38%), controls testing (25%) and AI registries (25%) [C · T0-61 L684-L687]; a reproducible validation or bias-audit harness on a public model directly proves AI-specific audit scope [D · T0-15 L164].",
    "build": [
     "Choose a public model and a dataset with plausible use and identifiable groups (for example a hiring- or credit-style classifier), and state the intended use.",
     "Fix the method before testing: performance and fairness metrics (for example impact ratios), data splits and acceptance thresholds.",
@@ -1007,7 +1044,8 @@
     "T0-13 D1 AP-3 L189-192",
     "T0-13 D1 AP-5 L199-202",
     "career/03-skills-and-tech/role-skill-maps.md#skills-ai-risk-assurance-specialist",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-61 L684-L687"
    ]
   },
   "P20": {
@@ -1026,17 +1064,17 @@
    "problem": "Responsible-AI engineers turn regulation into running controls, so they need evidence that documentation and measured behaviour agree. T0-15 tells engineers on this path to build Annex IV-style documentation, Art. 12-style logging, subgroup evaluation and an LLM red-team or evaluation harness [D · T0-15 L163]; a packet with runtime guardrails and a calibrated judge covers both halves.",
    "build": [
     "Take a working LLM application (for example P1 or P2) and write Annex IV-style documentation: purpose, users, data, known risks and the controls you will test.",
-    "Map each risk to NIST AI 600-1 and the OWASP LLM Top 10, and each control to a test.",
+    "Map each risk to NIST AI 600-1, OWASP GenAI LLM Top 10 2026 and the OWASP Agentic Top 10, and map each control to an automated test.",
     "Add runtime guardrails in layers (input checks, tool permissions, output validation, PII filters) and measure their precision and recall on labelled cases.",
     "Run subgroup evaluations of quality and refusal rates, with intervals.",
-    "Calibrate an LLM judge on about 100 human-labelled traces and use it to monitor sampled traffic.",
+    "Calibrate a binary LLM judge per failure mode on 100–200 human-labelled examples (starting from ~100 traces / 30+ manual labels [C · T0-20 L63, L196]) and wire it into CI alongside guardrail regression checks.",
     "Log decisions and guardrail triggers in Art. 12-style structured logs, and publish the packet with dated framework versions and limitations."
    ],
    "evidence": [
-    "Control-to-test mapping (NIST AI 600-1, OWASP LLM Top 10) with results (PA-01)",
+    "Control-to-test mapping (NIST AI 600-1, OWASP GenAI LLM Top 10 2026, Agentic Top 10) with results (PA-01)",
     "Guardrail precision and recall on labelled cases, with false-positive examples (PA-04)",
     "Subgroup evaluation table with intervals (PA-04)",
-    "Judge calibration report: TPR and TNR on about 100 human-labelled traces (PA-04)",
+    "Judge calibration report: TPR and TNR on 100–200 human-labelled examples per failure mode (PA-04; [C · T0-20 L63, L196])",
     "Structured audit-log design and sanitized trace exports (PA-08)"
    ],
    "verifiability": "V1",
@@ -1061,7 +1099,57 @@
     "T0-13 D1 AP-5 L199-202",
     "T0-13 D1 AP-8 L214-217",
     "career/03-skills-and-tech/role-skill-maps.md#skills-responsible-ai-engineer",
-    "career/06-job-search/resume-strategy.md#the-variant-catalogue"
+    "career/06-job-search/resume-strategy.md#the-variant-catalogue",
+    "T0-68 L606",
+    "T0-20 L63, L196",
+    "T0-61 L309-L320"
+   ]
+  },
+  "P21": {
+   "name": "Category-level public technical micro-audit or benchmark",
+   "skills": [
+    "python",
+    "evals",
+    "error_analysis",
+    "profiling",
+    "load_testing",
+    "cost_latency",
+    "llm_security",
+    "writing"
+   ],
+   "problem": "Single-company cold micro-audits carry poor return on time (a 12-hour audit requires roughly a 17x offer-probability lift to break even), whereas a 12-hour category-level technical audit reused across 20 target employers needs only about a 1.8x lift [D · T0-05 L517-L519]. Running a reproducible measurement recipe strictly on your own infrastructure or public documented endpoints avoids CFAA, India IT Act s.43 and vendor-ToS exposure while giving hiring managers a two-page V1 engineering artefact [A/D · T0-05 L249-L315].",
+   "build": [
+    "Pick one category-level question relevant to 15–20 target employers (for example serving TTFT/TPOT/goodput via vllm bench serve, own-instance OWASP prompt-injection resilience, cost/quality Pareto across three model tiers, or own-instance LiteLLM/Langfuse overhead parity).",
+    "Confirm Green-zone legal and ToS boundaries first: test only your own local/cloud instances, open-source builds or explicitly authorised public endpoints; never probe third-party authentication, rate limits or private tenants (not legal advice [A/B · T0-05 L251-L257]).",
+    "Fix the measurement harness, dataset/prompt seed, hardware fingerprint and repeat count before running so a third party can reproduce every chart with one command.",
+    "Distil findings into a two-page Markdown report (<=1,200 words) following strict claim hygiene: state exact versions, sample sizes, confidence intervals and what the test does not prove.",
+    "Score the draft against the T0-05 100-point rubric (pass >=75 plus mandatory safety/ToS gate) and eliminate all 9 auto-dismissal triggers before sharing with engineering leads."
+   ],
+   "evidence": [
+    "Two-page Markdown micro-audit report with summary table, methodology, hardware/version fingerprint and explicit non-claims (PA-01, PA-11)",
+    "One-command reproducible benchmark or evaluation script with committed config and raw CSV/JSON logs (PA-02, PA-06)",
+    "Cost and latency or failure-rate comparison table with repeat intervals and dated pricing (PA-04, PA-07)",
+    "Written scope-and-ethics note documenting Green-zone test boundaries and zero third-party disruption (PA-09)"
+   ],
+   "verifiability": "V1",
+   "effort": "S",
+   "compute": "[P] Under US$25 in API or short rented-GPU spend (~12 hours total build and write-up effort; T0-05 D3, D6)",
+   "interview_archetypes": [
+    "A1",
+    "A14",
+    "A15"
+   ],
+   "pitfalls": [
+    "AP-5 single-run numbers without hardware fingerprint, versions or variance",
+    "AP-9 unauthorised probing of third-party endpoints or customer tenants",
+    "AP-6 generic blog commentary without reproducible harness or raw logs"
+   ],
+   "sources": [
+    "T0-05 D3 L249-320",
+    "T0-05 D6 L517-519",
+    "T0-13 §4.1 L129-138",
+    "T0-13 D2 L228-244",
+    "career/05-portfolio/proof-of-work-standards.md"
    ]
   }
  }

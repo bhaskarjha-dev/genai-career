@@ -18,8 +18,9 @@ sources: [T0-13, T0-05, T0-12, T0-20]
 
 | Document | What it gives you |
 |---|---|
-| [proof-of-work-standards.md](proof-of-work-standards.md) | What a portfolio must show to be believed: the verifiability ladder (V0–V3), the artefacts by tier, the anti-portfolio, demo hardening, templates and how many projects |
-| [project-archetypes.md](project-archetypes.md) | The proof-of-work project archetypes as build cards: problem, steps, evidence to publish, verifiability target, effort, interview archetypes, pitfalls, the roles each covers and the minimal sets (generated) |
+| [proof-of-work-standards.md](proof-of-work-standards.md) | What a portfolio must show to be believed: the verifiability ladder (V0–V3), the 15 artefacts by tier, nine anti-portfolio patterns, the OSS employer-domain commit map, the public micro-audit operating system (100-pt rubric, legal guardrails, break-even effort maths), demo hardening and templates |
+| [project-archetypes.md](project-archetypes.md) | The 21 proof-of-work project archetypes as build cards (including P21 category-level micro-audits): problem, steps, evidence to publish, verifiability target, effort, interview archetypes, pitfalls, the roles each covers and the minimal sets (generated) |
+| [online-presence.md](../07-networking/online-presence.md) | Cross-stage companion (Stage 07): when reviewers open GitHub by employer type and role family, 13-element README & role-family GitHub skeletons, Hugging Face/Kaggle hygiene and technical writing (`T0-20`) |
 
 [The constraints that bind first](../06-job-search/job-search-strategy.md#the-constraints-that-bind-first), in the job-search strategy, compute which projects cover which roles.
 

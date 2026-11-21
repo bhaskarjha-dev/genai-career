@@ -28,9 +28,9 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | Demand | 3 (2–4) | C | McAleese ~600 technical FTEs (+21%/yr, C); June 2026 snapshot of 69 open roles across 8 non-lab safety orgs (6% early-career); AI Pulse 89 category count (may include trust-and-safety) [T0-60, T0-70]. |
-| Pay | 7.5 (5.5–10) | B | Lab-vs-independent bifurcation: Anthropic Alignment $350K–$500K (A, COI), OpenAI Safety Systems $380K–$500K (B), DeepMind AGI Safety $174K–$300K+ vs non-profit/independent orgs $120K–$240K [T0-60]. |
-| Durability | 8 (6.5–9.5) | D | Judgement. Growing research field. |
-| Leverage | 7 (6–8) | D | Judgement. |
+| Pay | 7.5 (5.5–10) | B | Wide dispersion across labs and independents: Anthropic Alignment $350K–$500K (A, COI), OpenAI Safety Systems $380K–$500K (B), DeepMind AGI Safety $174K–$300K+; independents span non-profit to near-lab bands — METR $250K–$503.1K (B) and Goodfire $200K–$400K SF / GBP 150K–300K London (B) overlap labs; UK AISI GBP 65K–145K + 28.97% pension (B); Apollo GBP 100K–200K (B); FAR.AI $100K–$250K (C) [T0-60 KF12]. |
+| Durability | 8 (6.5–9.5) | D | Judgement. Growing specialist research field (McAleese estimates ~600 technical FTEs growing +21%/yr, C) [T0-60 K34]. |
+| Leverage | 7 (6–8) | D | Judgement. Dangerous-capability evaluations, alignment and release-safety research at frontier labs and safety institutes [T0-60]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 1 (1–2) | C | Confirmed 0 of 23 safety postings in India; Anthropic Fellows requires US/UK/Canada work authorisation with no visa sponsorship [T0-60]. |
-| India pay | 5 (3–8) | D | No India evidence. |
+| India pay | 5 (3–8) | D | No India evidence: 0 of 23 safety postings in India [T0-45, T0-60 K33]. |
 
 India rank (CCI with India inputs): #23 of 24. One input (India comp) is a Grade D placeholder.
 
@@ -67,7 +67,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Research.** It tests a research talk plus coding; the full research loop at frontier labs. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Research.** It tests coding-led loops and paid work trials for Research Engineer and AI Safety roles (Anthropic Python-only coding with AI-partnership rules [A, COI], xAI 1-week loop [A], FAR.AI 72-min coding plus work trial [B]; research talk not confirmed for RE or safety), versus quiz, coding and research/past-work talk for Research Scientist (DeepMind [A], xAI [A]). Source: T0-14, T0-46, T0-50, T0-55, T0-60, T1-03.
 - **Practise:** the [research prep pack](../../08-interviewing/prep-packs.md#research-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -142,7 +142,7 @@ Frontier AI Safety / Alignment Researcher is empirical safety research across al
 
 ## Interview themes and preparation notes
 
-Employer-stated hiring processes partly revise scorecard K36 ("research talk plus coding"): documented loops emphasise **Python coding, empirical work-sample review, research discussions and paid work trials**, with no formal research talk stated [A/B · T0-60 L80, L362, L420].
+Employer-stated hiring processes partly revise Phase 0's narrower "research talk plus coding" summary (`K36`): documented loops emphasise **Python coding, empirical work-sample review, research discussions and paid work trials**, with no formal research talk stated [A/B · T0-60 L80, L362, L420].
 
 | Employer | Documented stages and format | Grade |
 |---|---|---|

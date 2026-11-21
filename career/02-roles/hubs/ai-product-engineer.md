@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 3.5 (2.5–5.5) | C | No exact AI Product Engineer or AI Frontend Engineer title count; median stated experience is 2 years (n=6 in T0-62, dropping Phase 0 'senior-skewed' claim) [T0-62]. |
 | Pay | 6.5 (4.5–8.5) | B | Wide dispersion across startup and lab tiers: Within mid $140K–$205K (B) and Staff AI Frontend $235K–$315K base (A); OpenAI ChatGPT frontend/product bands higher [T0-62]. |
-| Durability | 5.5 (4–7) | D | Judgement. Agent UX is differentiated; generic UI work is exposed to code generation. |
-| Leverage | 6.5 (5.5–7.5) | D | Judgement. |
+| Durability | 5.5 (4–7) | D | Judgement. Agent UX and design craft plus AI tooling stay differentiated while generic UI work faces code-generation exposure; no labour-market displacement series exists (D) [T0-62 K36]. |
+| Leverage | 6.5 (5.5–7.5) | D | Judgement. Direct user-facing product adoption and AI UX conversion [T0-62]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,9 +39,9 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 2.5 (1.5–4) | C | 2 of 16 sampled postings in India (CirrusLabs Bengaluru, Alpha remote India); no title count [T0-62]. |
-| India pay | 5 (4–6.5) | D | No India evidence. |
+| India pay | 5 (4–6.5) | D | Small-sample India pay only (n=2): CirrusLabs Bengaluru Rs10–18 LPA (2–4 yrs, B/C) and Alpha remote India Rs4–8 LPA + ESOPs (0.5–3 yrs, B/C); no India platform series [T0-45, T0-62 K35]. |
 
-India rank (CCI with India inputs): #20 of 24. One input (India comp) is a Grade D placeholder.
+India rank (CCI with India inputs): #20 of 24.
 
 ## Who it suits
 
@@ -53,16 +53,17 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What you need
 
-- **Must (headline):** React, TypeScript / JavaScript, APIs & integrations, LLM APIs & tool calling.
+- **Must (headline):** React, TypeScript / JavaScript, APIs & integrations, LLM APIs & tool calling, Product sense.
 - **Important (headline):** Python (production), AWS / Azure / GCP, Git & CI/CD, Streaming & agent UX, Agent-UX telemetry, LLM evaluation (golden sets, calibrated judges, CI gates), Human-in-the-loop design.
 - **Full inventory:** 54 skills (Must 6 · Important 17 · Should 17 · Optional 14), each with its evidence and posting keywords: [ai-product-engineer.md](../../03-skills-and-tech/inventories/ai-product-engineer.md).
 - **Prerequisites:** Median 2 years stated experience (n=6 in T0-62) for AI Product Engineer, rising to 6+ years for Staff AI Frontend; also search 'full-stack AI engineer' [C · T0-62]
+- **Credentials (tie-breakers, not skills):** GitHub Certified Copilot (GH-300) (Optional: Optional Copilot developer signal for Microsoft/GitHub-centric product engineering teams (T3-01)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A deployed streaming chat or agent UI with cancel/retry/error states, accessibility and clean frontend–API–LLM integration (evals are a differentiator; on-device WebGPU optional)
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P14 Full-stack AI app with streaming agent UX and UX metrics](../../05-portfolio/project-archetypes.md#p14) (77%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (35%); [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (35%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P14 Full-stack AI app with streaming agent UX and UX metrics](../../05-portfolio/project-archetypes.md#p14) (69%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (31%); [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (31%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -80,13 +81,13 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Specialisations inside this role
 
-- **Voice and conversational agents** (L6 Applications and deployment): Candidate title: Conversational & Voice AI Engineer, role catalog §5.3.
-- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device & Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself).
+- **Voice and conversational agents** (L6 Applications and deployment): Candidate title: Conversational & Voice AI Engineer, role catalog §5.3 (0/16 in AI Product Engineer sample [T0-62]; provisional gateway share rose 4% to 11% [T0-69]).
+- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device & Edge SLM Engineer, role catalog §5.3 (at least 9 live Edge AI Engineer aggregator listings plus Deepgram in Nov 2026 [C · T0-69 K13; ERRATA U38]; 0/16 in AI Product Engineer sample [T0-62]).
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Forward Deployed Engineer](forward-deployed-engineer.md) (0.30); [Agentic AI Engineer](agentic-ai-engineer.md) (0.30); [Applied AI Engineer](applied-ai-engineer.md) (0.30).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Agentic AI Engineer](agentic-ai-engineer.md) (0.30); [AI Engineer](ai-engineer.md) (0.30); [Applied AI Engineer](applied-ai-engineer.md) (0.28).
 - **Same family (Applied AI Engineering):** [AI Engineer](ai-engineer.md), [Applied AI Engineer](applied-ai-engineer.md), [Agentic AI Engineer](agentic-ai-engineer.md), [AI Enablement Engineer](ai-enablement-engineer.md).
 
 ## Go deeper
@@ -116,10 +117,10 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 - **Skill-tier reality check against the scorecard above (n = 16 extracts; floors, ±25 pp):**
   - **Core stack holds and strengthens:** `React` (including Next.js) appears in **93.8%** (15/16), `TypeScript` in **81.3%** (13/16) and `LLM APIs` in **68.8%** (11/16) [M · T0-62 L346–L348, L467].
-  - **Product ownership and design craft rise:** `product_sense` (product ownership language) appears in **50.0%** (8/16), `Next.js` in **43.8%** (7/16), `design_craft` in **37.5%** (6/16 — missing from the scorecard) and `streaming_ux` in **25.0%** (4/16) [M · T0-62 L349–L352, L468].
+  - **Product ownership and design craft rise:** `product_sense` (product ownership language) appears in **50.0%** (8/16), `Next.js` in **43.8%** (7/16), `design_craft` in **37.5%** (6/16, included in the scorecard above) and `streaming_ux` in **25.0%** (4/16) [M · T0-62 L349–L352, L468].
   - **Backend and scorecard-specific AI-eval items are rarer in extracts:** `Python` sits at 18.8% (3/16), `cloud` 12.5% (2/16), `Node.js` 12.5% (2/16), `hitl_design` / `generative_ui` / `vercel_ai_sdk` 6.3% each (1/16), while **`evals`, `ux_telemetry` and explicit `sse` appeared in 0 of 16 extracts** [M · T0-62 L353–L361, L468]. (Note the interview nuance below: postings describe "streaming responses" rather than naming the `SSE` wire protocol, whereas live frontend interviews explicitly test SSE streaming mechanics.)
   - **Specialisations listed on the scorecard are largely absent:** conversational/chat UI appeared in 25.0% (4/16), whereas **voice agents (0/16)** and **edge / on-device models (0/16)** did not appear in any sampled posting [M · T0-62 L327, L479].
-- **Proof of work:** Within's opened posting asks for a portfolio or GitHub of shipped work, design sensibility and accessibility (WCAG); Anthropic's Product Engineer asks for zero-to-one ownership and product design instincts; Taktile and Pebl ask for conversational or agentic interfaces [A/B · T0-62 L397–L399]. The scorecard's "50 eval cases" and "on-device module" were not echoed in postings — prioritise a deployed streaming chat/agent UI with cancel, retry, error states and accessibility checks ([P14](../../05-portfolio/project-archetypes.md#p14)), adding evals only as a differentiator [A/M/P · T0-62 L400, L470, L871].
+- **Proof of work:** Within's opened posting asks for a portfolio or GitHub of shipped work, design sensibility and accessibility (WCAG); Anthropic's Product Engineer asks for zero-to-one ownership and product design instincts; Taktile and Pebl ask for conversational or agentic interfaces [A/B · T0-62 L397–L399]. Phase 0's "50 eval cases" and "on-device module" targets (replaced on the scorecard above) were not echoed in postings — prioritise a deployed streaming chat/agent UI with cancel, retry, error states and accessibility checks ([P14](../../05-portfolio/project-archetypes.md#p14)), adding evals only as a differentiator [A/M/P · T0-62 L400, L470, L871].
 
 ## Employer landscape and title confusion
 
@@ -133,7 +134,7 @@ Hiring is concentrated in **AI-native startups and scale-ups** (11 of 16 sampled
 
 ## Career path, India demand and market signals
 
-- **Not senior-only — drop the scorecard's "senior-skewed" assumption (`K32`, `K41`):** while exact AI-frontend titles such as Within's Staff role do gate at **6+ years**, broader Product Engineer and full-stack AI-product roles open far earlier: **median stated minimum is 2 years** (n = 6, range 0.5–10), and only 5 of 16 postings (31.3%) carried Senior or Staff titles [A/M · T0-62 L77, L338, L460, L469]. Prime Video, Clera and CirrusLabs ask for 2+ years, and Alpha (India) opens at 0.5–3 years [B · T0-62 L402, L656–L663]. Within explicitly waives a CS degree and no sampled posting required one [A/M · T0-62 L402].
+- **Not senior-only — Phase 0's "senior-skewed" assumption dropped (`K32`, `K41`):** while exact AI-frontend titles such as Within's Staff role do gate at **6+ years**, broader Product Engineer and full-stack AI-product roles open far earlier: **median stated minimum is 2 years** (n = 6, range 0.5–10), and only 5 of 16 postings (31.3%) carried Senior or Staff titles [A/M · T0-62 L77, L338, L460, L469]. Prime Video, Clera and CirrusLabs ask for 2+ years, and Alpha (India) opens at 0.5–3 years [B · T0-62 L402, L656–L663]. Within explicitly waives a CS degree and no sampled posting required one [A/M · T0-62 L402].
 - **Entry corridors and positioning:** frontend and full-stack engineers (React/TypeScript + backend APIs or Python/FastAPI) transition directly; no data-scientist, PhD, SRE, PM or non-technical corridors appeared in the sample [M · T0-62 L402]. Headline your résumé as **"Product Engineer"** or **"Full-Stack AI Engineer"** rather than "AI Frontend Engineer" alone, putting deployed AI-interface work first (avoid pure UI portfolios with no model-facing evidence) [C/P · T0-62 L91, L471, L872–L873].
 - **Demand signals:** no title-level posting count exists for `AI Product Engineer` or `AI Frontend Engineer` [E · T0-62 L335, L475]. Surrounding context counts include Skillenai's 4,139 `AI Engineer` postings (90 days), JobsPipe's 3,944 live `AI Engineer` postings, Fast AI Jobs' 497 open full-stack roles across 313 AI startups and TealHQ's 1,187 `Product Engineer` listings (all undated context proxies, not role counts) [B/C · T0-62 L336].
 - **Pay structure (owner: [pay benchmarks](../../09-compensation/pay-benchmarks.md)):** pay dispersion across geographies and employer tiers is extreme — US Staff AI Frontend and frontier-lab product-engineering bands sit near senior/staff AI-engineer levels, London early-stage founding roles pair lower cash with equity, and early-career India postings sit dramatically lower; Levels.fyi tracks no dedicated `AI Product Engineer` page [A/B/C/E · T0-62 L77, L369–L378, L461, L476]. Full regional bands sit in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
@@ -142,7 +143,7 @@ Hiring is concentrated in **AI-native startups and scale-ups** (11 of 16 sampled
 
 ## Interview themes and preparation notes
 
-**Important scorecard discrepancy (contradicted claim `K38`):** the generated scorecard above places `AI Product Engineer` on the generic `Application` track ("RAG with access control, agent loop control, evaluation architecture, context management"). Prep-vendor and candidate reports in `T0-62` — corroborated by live 2026 interview reports checked on 2026-11-19 (Educative, DesignGurus, FrontendLead, GitHub/Medium) — **contradict** that track for AI-product and AI-frontend roles [C · T0-62 L79, L380–L387, L466].
+**Why this role uses the dedicated `AI product & frontend engineering` track (`K38`):** Phase 0 placed `AI Product Engineer` on the generic `Application` track ("RAG with access control, agent loop control, evaluation architecture, context management"). Prep-vendor and candidate reports in `T0-62` — corroborated by live 2026 interview reports checked on 2026-11-19 (Educative, DesignGurus, FrontendLead, GitHub/Medium) — **contradicted** that assignment, leading to the dedicated `product-frontend` track on the scorecard above [C · T0-62 L79, L380–L387, L466].
 
 | Employer type | Reported rounds (Grade C, prep vendors) | What is actually assessed | Fit with generic Application track |
 |---|---|---|---|
@@ -151,7 +152,7 @@ Hiring is concentrated in **AI-native startups and scale-ups** (11 of 16 sampled
 | **Cursor (Software Engineer)** | Recruiter → phone → **take-home / work trial on a real codebase** → onsite coding, system design, ML/AI deep-dive, product and craft, behavioural | Product intuition, real-codebase execution, autonomy | Partly [C · T0-62 L386] |
 | **AI-wrapper Series A startups** | Founder screen → product-flavoured coding (TypeScript or Python) → take-home or paired build of a small AI feature | Shipping a working end-to-end AI feature rapidly | Partly [C · T0-62 L387] |
 
-- **Preparation notes (no model answers):** do **not** prepare solely for backend RAG/agent-loop whiteboarding. Alongside [interview loops](../../08-interviewing/interview-loops.md) and the [application prep pack](../../08-interviewing/prep-packs.md#application-pack), practise four frontend/product drills corroborated across 2026 reports [C/P · T0-62 L384–L387, L871]:
+- **Preparation notes (no model answers):** do **not** prepare solely for backend RAG/agent-loop whiteboarding. Alongside [interview loops](../../08-interviewing/interview-loops.md), the [AI product & frontend engineering prep pack](../../08-interviewing/prep-packs.md#ai-product--frontend-engineering-pack) and the [application prep pack](../../08-interviewing/prep-packs.md#application-pack), practise four frontend/product drills corroborated across 2026 reports [C/P · T0-62 L384–L387, L871]:
   1. **Streaming UI live build:** ingesting chunked tokens (SSE), preventing full-tree React re-renders, rendering incremental Markdown/code blocks, and handling mid-stream cancel, retry, scroll-lock and error boundaries.
   2. **Frontend system design:** designing a ChatGPT-style or canvas/editor-sidebar interface, including client-side persistence, long-thread virtualisation and the streaming API contract behind the UI.
   3. **Codebase refactoring and real take-homes:** cleaning up stateful async UI code and shipping a scoped, accessible AI feature cleanly in TypeScript/React.

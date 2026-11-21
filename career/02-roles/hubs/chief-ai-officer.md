@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Leadership & Executive | Leadership and independent practice (plane); planes: Security, safety and governance | Verified (V) | Leadership #3 (ranked separately) | Leadership #3 of 5 (ranked separately) | L2 VP / Head of AI / CAIO |
+| Leadership & Executive | Leadership and independent practice (plane); planes: Security, safety and governance | Verified (V) | Leadership #3 (ranked separately) | Leadership #3 of 5 (ranked separately) | L3 Chief AI Officer (CAIO) |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -29,11 +29,11 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| Demand | 2.5 (1.5–3.5) | B | Rarely advertised (2 dated in-window employer postings: SBI India, UCSF Health); OMB M-25-21 (2025-04-03, A) mandates US federal agency CAIO designation but permits dual-hatted CIO/CDO/CTO; counted Fortune 500 + S&P 500 prevalence 10.7% (71/665, C) [T0-65]. |
-| Pay | 8 (5–10) | B | Bifurcated pay: US public-sector/higher-ed posted base $117.7K–$200K (B) and SBI India GM & CAIO negotiable CTC up to Rs160L fixed term (B, live-verified 2026-11-19) vs private corporate executive packages $400K–$1M+ [T0-65]. |
+| Demand | 2.5 (1.5–3.5) | B | Rarely advertised (2 dated in-window employer postings: SBI India, UCSF Health); OMB M-25-21 (2025-04-03, A) mandates US federal agency CAIO designation but permits dual-hatted CIO/CDO/CTO; counted Fortune 500 + S&P 500 prevalence 10.7% (71/665, Crist Kolder, B, live-verified 2026-11-19; vs IBM 76% vendor survey COI) [T0-65]. |
+| Pay | 8 (5–10) | B | Bifurcated pay: US public-sector/higher-ed posted base $117.7K–$200K (B) and SBI India GM & CAIO negotiable CTC up to Rs160L fixed term (B, live-verified 2026-11-19; private India CAIO vendor bands remain Grade E [T0-45]) vs private corporate executive packages $400K–$1M+ [T0-45, T0-65]. |
 | Durability | 5.5 (4–7) | C | Avasant reports ~2.2-year average Fortune 500 CAIO tenure (C); >=4 of 10 Oct 2026 appointments were internal/dual-hatted; IBM IBV reports only 18% hold full direct AI budget [T0-65]. |
-| Leverage | 9 (8–10) | D | Judgement. |
-| Access (experience gate) | 1.5 (0.5–2.5) | D | Executive track record. |
+| Leverage | 9 (8–10) | D | Judgement. Enterprise AI strategy and governance accountability, moderated by limited budget control (IBM IBV: 18% hold full direct AI budget, C) [T0-65]. |
+| Access (experience gate) | 1.5 (0.5–2.5) | D | Executive track record: 12–15+ years senior leadership (Axial 12+ with 5+ director+; SBI 15+ with 3+ senior AI leadership); Fortune 500 + S&P 500 prevalence 10.7% (B) [T0-65]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -43,16 +43,16 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## What you need
 
-- **Must (headline):** AI strategy & portfolio, Leadership & mentoring, Stakeholder communication.
-- **Important (headline):** AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001, Token & unit economics, Capacity & GPU/API cost governance.
-- **Full inventory:** 41 skills (Must 4 · Important 14 · Should 17 · Optional 6), each with its evidence and posting keywords: [vp-head-of-ai.md](../../03-skills-and-tech/inventories/vp-head-of-ai.md).
-- **Prerequisites:** EM/Director track record; US federal CAIOs are required by OMB M-25-21 [B · T0-15]
-- These skills come from the shared inventory for VP / Head of AI / CAIO, which covers this role.
+- **Must (headline):** AI strategy & portfolio, GRC & risk assessment, Leadership & mentoring, Stakeholder communication.
+- **Important (headline):** AI operating model & governance boards, Change management & adoption, Domain expertise.
+- **Full inventory:** 25 skills (Must 7 · Important 8 · Should 8 · Optional 2), each with its evidence and posting keywords: [chief-ai-officer.md](../../03-skills-and-tech/inventories/chief-ai-officer.md).
+- **Prerequisites:** 12-15+ years total experience with 3-5+ years in director/VP/C-level AI or data leadership (Axial/SBI, T0-65 L323); US federal agency CAIOs are mandated by OMB M-25-21 (2025-04-03, Grade A, T0-65 L292) — private-sector CAIOs are voluntary and often dual-hatted
+- **Credentials (tie-breakers, not skills):** IAPP Artificial Intelligence Governance Professional (AIGP) (Optional: Preferred tie-breaker only (1/7 CAIO postings named any cert; SBI lists ML/AI/NLP cert as preferred); 6.6% GRC Careers, 8.9% Axial [B/C · T0-34, T0-65 L323]); PECB Certified ISO/IEC 42001 Lead Auditor (Optional: Optional governance credibility in EU/India regulated enterprises (5/9 India governance postings; check 17024 vs ASTM E2659 scope) [B · T0-34 L58, L274]); ISACA Certified Information Security Manager (CISM) (Optional: Optional security-governance background for CISO-to-CAIO transitions (13.2% GRC Careers, 8.1% Axial) [B/C · T0-34 L51-L52]). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
-- **What the evidence asks for:** Portfolio outcomes: revenue or cost impact, governance boards stood up, vendor decisions
+- **What the evidence asks for:** Enterprise AI delivery at scale (e.g. 100,000+ users in SBI), governance forums and independent model-validation oversight stood up, board-level vendor/build-vs-buy decisions and regulatory alignment (RBI/DPDP, GDPR, HIPAA, EU AI Act)
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -62,10 +62,10 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## Résumé
 
-- **Variant:** L2 VP / Head of AI / CAIO (Leadership); headline: outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
-- **Keywords to mirror, only when true:** AI strategy, roadmap, governance, operating model, budget, build vs buy
-- **Leave out or reframe:** Technology lists in place of business outcomes
-- The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-vp-head-of-ai).
+- **Variant:** L3 Chief AI Officer (CAIO) (Leadership & Independent); headline: governance & enterprise-outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
+- **Keywords to mirror, only when true:** AI strategy, AI governance, responsible AI, executive leadership, model validation, regulatory compliance, board reporting, build vs buy, enterprise transformation
+- **Leave out or reframe:** Treating vendor-awarded 'Certified CAIO' titles as executive credentials (no independent assessment, T0-68 G4); applying to junior 'Director, CAIO' posts expecting C-suite scope
+- The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-chief-ai-officer).
 
 ## Related roles
 

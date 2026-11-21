@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Product & Program | Product and strategy (plane); also L6 Applications and deployment | Verified (V) | #13 of 24 | #13 of 24 · band B · Monte Carlo rank 12 (P10–P90 7–16) | E1 Product |
+| Product & Program | Product and strategy (plane); also L6 Applications and deployment, L4 Post-training and adaptation; planes: Evaluation and quality | Verified (V) | #13 of 24 | #13 of 24 · band B · Monte Carlo rank 12 (P10–P90 7–16) | E1 Product |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 6 (4.5–8) | C | JobsPipe global PM 12,166 live (2026-11-13, B); AI Pulse 570 AI PM category postings (C; flagged for 2026-12-01 recount); 41 in-window AI PM postings read across frontier labs, Big Tech and startups [T0-59, T0-70]. |
 | Pay | 6.5 (5–8.5) | C | Broad PM market anchors mid-6s while frontier-lab senior bands ($240K–$490K base + equity [A]) lift the ceiling [T0-59]. |
-| Durability | 6 (4.5–7.5) | D | Judgement. Product judgement for probabilistic systems. |
-| Leverage | 8 (7–9) | D | Judgement. Decides what gets built and how it is measured. |
+| Durability | 6 (4.5–7.5) | D | Judgement. Product judgement for probabilistic systems: AI-native PM scope expands into prototyping and evals while routine spec boilerplate compresses [T0-59 K7]. |
+| Leverage | 8 (7–9) | D | Judgement. Decides what gets built, how model behaviour is shaped and how it is measured (OpenAI Core Models, Anthropic Model Behaviors, enterprise AI products [T0-59]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -38,7 +38,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 5.5 (4–7) | C | JobsPipe India share 5.3% of 12,166 global PM (~645 live PM postings, M); verified India AI PM hiring at Microsoft AI, Sarvam, Uber and product startups [T0-59]. |
+| India demand | 5.5 (4–7) | C | JobsPipe India share 5.3% of 12,166 global PM (~645 live PM postings, M); 12 of 41 sampled postings in India (Uber Bengaluru, Sarvam x2, KPMG India, Target GCC, HCLTech, RagaAI, Ringg AI, Ctruh, Tredence, Creuto, Weekday client; 0 Microsoft India postings in sample) [T0-59 L358]. |
 | India pay | 8 (6.5–9) | C | Upgraded from Grade D placeholder via adjacent Levels.fyi India PM (n=1,518) and Greater Bengaluru Senior PM (n=578, P50 ~Rs55–65L+) benchmarks [T0-45]. |
 
 India rank (CCI with India inputs): #4 of 24.
@@ -54,16 +54,16 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## What you need
 
 - **Must (headline):** Product management, Stakeholder communication, AI literacy (tokens, RAG vs fine-tune, cost), Rubrics & inter-rater agreement.
-- **Important (headline):** Leadership & mentoring, GRC & risk assessment, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement.
-- **Full inventory:** 47 skills (Must 5 · Important 14 · Should 20 · Optional 8), each with its evidence and posting keywords: [ai-product-manager.md](../../03-skills-and-tech/inventories/ai-product-manager.md).
+- **Important (headline):** Leadership & mentoring, GRC & risk assessment, Metrics for non-deterministic systems, Token & unit economics, Pilots & adoption measurement, Product sense.
+- **Full inventory:** 48 skills (Must 5 · Important 15 · Should 20 · Optional 8), each with its evidence and posting keywords: [ai-product-manager.md](../../03-skills-and-tech/inventories/ai-product-manager.md).
 - **Prerequisites:** 4+ years as a PM plus at least one shipped model-powered feature [D · T0-06]; T2-01 asks for 5+ years in product/ops plus notebook-level Python
-- **Credentials (tie-breakers, not skills):** Google Cloud Generative AI Leader (Optional: non-technical literacy credential); AWS Certified AI Practitioner (AIF-C01) (Optional: literacy credential for people who work with AI); AWS Certified AI Business Strategist (AIB-C01) (Optional: beta ($50); business AI strategist closer to PM brief than AIF-C01; 0/41 JD mentions). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** Google Cloud Generative AI Leader (Optional: non-technical literacy credential); AWS Certified AI Practitioner (AIF-C01) (Optional: literacy credential for people who work with AI); AWS Certified AI Business Strategist (AIB-C01) (Optional: beta ($50); business AI strategist closer to PM brief than AIF-C01; 0/41 JD mentions); GitHub Agentic AI Business Professional (GH-700) (Optional: Beta (GA expected Dec 2026); business-audience agentic AI exam for Microsoft/GitHub enterprise PMs (T3-01)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A shipped model/agent prototype with PRD, eval rubric (50+ labelled cases) and failure-mode ranking by business impact
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P12 AI PM case: PRD, eval rubric, pilot metrics](../../05-portfolio/project-archetypes.md#p12) (82%); [P17 Domain gold standard with inter-rater agreement](../../05-portfolio/project-archetypes.md#p17) (27%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (23%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P12 AI PM case: PRD, eval rubric, pilot metrics](../../05-portfolio/project-archetypes.md#p12) (75%); [P17 Domain gold standard with inter-rater agreement](../../05-portfolio/project-archetypes.md#p17) (25%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (21%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -81,7 +81,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI / GenAI Solutions Architect](ai-solutions-architect.md) (0.21); [AI Enablement Engineer](ai-enablement-engineer.md) (0.20); [AI Governance Programme Lead / Manager](ai-governance-lead.md) (0.19).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI / GenAI Solutions Architect](ai-solutions-architect.md) (0.20); [AI Governance Programme Lead / Manager](ai-governance-lead.md) (0.18); [AI Enablement Engineer](ai-enablement-engineer.md) (0.18).
 
 ## Go deeper
 
@@ -108,7 +108,7 @@ A November 2026 audit of 41 AI-product PM postings (8 primary employer pages ope
 
 - **Where the work sits on the stack:** across all 41 postings, 68% sit in application and deployment (assistants, agents, vertical apps, internal platforms), 12% in models and post-training (Model Behaviors, Core Models, Model APIs), 10% in evaluation and assurance (AI quality and agent-evaluation platforms), 5% in orchestration and context (connectors, context layers) and 5% in data products [M · T0-59 L66, L318–L325].
 - **Coding is not a universal gate, but prototyping is rising:** direct programming or SQL appears in only 2 of 9 opened postings (Lovable, Sarvam), whereas AI-assisted prototyping or coding-agent fluency (Cursor, Claude Code) appears in 5 of 9 opened postings as required, preferred or bonus [A/M · T0-59 L58, L158–L168].
-- **Skill-tier nuances against the scorecard above:** across the 41 extracts (lower bounds, roughly ±15 percentage points), `eval_rubrics` appears in at least 27% (11/41; 5/9 opened) and functions as a Must skill for model-facing, agent and quality-platform variants even where the scorecard still lists it under Important [M · T0-59 L57, L178, L389]. Conversely, `token economics` / cost appears in only 2 of 41 extracts (OpenAI Core Models, Sarvam) and `pilots` in 0 of 41, though both can be omitted from truncated search extracts [M · T0-59 L187–L189, L380].
+- **Skill-tier nuances against the scorecard above:** across the 41 extracts (lower bounds, roughly ±15 percentage points), `eval_rubrics` appears in at least 27% (11/41; 5/9 opened), confirming its placement as a Must skill on the scorecard above for model-facing, agent and quality-platform variants [M · T0-59 L57, L178, L389]. Conversely, `token economics` / cost appears in only 2 of 41 extracts (OpenAI Core Models, Sarvam) and `pilots` in 0 of 41, though both can be omitted from truncated search extracts [M · T0-59 L187–L189, L380].
 - **Proof of work over vocabulary:** opened builder-archetype postings ask for a working AI agent built end to end (Sarvam), eval infrastructure and trace inspection (Lovable) or a note on a hard AI product problem (Ctruh) [A/C · T0-59 L62, L270–L275]. Named practitioners and hiring guides (Aaron Kesler, Bart Jaworski, Paraform) ask for shipped features with named evaluation methods and failure modes, noting that "I vibe coded a solution" is not treated as an evidence story [C · T0-59 L277–L280]. The scorecard's specific thresholds ("50+ labelled cases", "10 failure modes") remain practice-curated rather than empirically tested [P · T0-59 L282, L392].
 
 ## Employer landscape and title confusion
@@ -139,7 +139,7 @@ Title naming splits cleanly by employer type. Searching only for the literal phr
 
 ## Interview themes and preparation notes
 
-The scorecard's generic `Product` track ("scoping or product round") captures only the baseline. Prep-vendor reports and practitioner guides indicate that AI PM loops add three AI-specific gates on top of classic product sense and execution [C · T0-59 L61, L250–L266]:
+Expanding on the scorecard's `Product` track above, prep-vendor reports and practitioner guides detail four AI-specific gates on top of classic product sense and execution [C · T0-59 L61, L250–L266]:
 
 | Round theme | What interviewers test | Where reported | Source grade |
 |---|---|---|---|

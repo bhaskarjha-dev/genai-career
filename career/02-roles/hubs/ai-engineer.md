@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 10 (9–10) | B | JobsPipe 3,944 global / 1,697 US / 398 India (re-checked 2026-11-13; static vs 2026-10-19 refresh caveat); Fast AI Jobs 352 open roles at 188 AI startups (2026-11-12, up from 326; 64% of newest 50 rows customer-facing); LinkedIn Jobs on the Rise 2026 #1 [T0-01, T0-24, T0-48, T0-70]. |
 | Pay | 6.5 (5.75–7.25) | B | Levels.fyi US AI Engineer TC P25 $110K / P50 $155K / P75 $212K / P90 $280K (0.54–0.56x US ML; SF Bay P50 $225K / P90 $460K; 2026-11-11); Axial US AI engineering posted base ceilings $170K–$270K (senior $213K, n=43,480; 5–12% below ML); AI/ML LCA floor $169K (n=4,459); Google within-employer check shows 62–69% of log gap is employer/level mix [T0-44, T0-48]. |
-| Durability | 6 (4.5–7.5) | D | Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; evals, agent reliability and cost engineering keep value [T0-03 Tier 2]. |
-| Leverage | 7.5 (6.5–8.5) | D | Judgement. Ships the revenue-facing AI features; enterprise and services employer mix [T0-01 F2]. |
+| Durability | 6 (4.5–7.5) | D | Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; T0-48 confirms evals, tracing, cost control and guardrails outpace prompt-writing while AI-assisted coding raises baseline output [T0-03 Tier 2, T0-48]. |
+| Leverage | 7.5 (6.5–8.5) | D | Judgement. Ships revenue-adjacent AI features (Grade A employer scope at Mistral, OfferUp, Spektr [T0-48:L352]); broad enterprise and services employer mix [T0-01 F2, T0-48]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -54,16 +54,16 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## What you need
 
 - **Must (headline):** Python (production), LLM APIs & tool calling, Agents & tool use, RAG.
-- **Important (headline):** LLM evaluation (golden sets, calibrated judges, CI gates), Retrieval quality (hybrid, reranking, recall@k), Agent reliability (durable state, budgets, approvals), Cost & latency engineering, Observability (OpenTelemetry traces, metrics), LLM security (prompt injection, OWASP), Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search.
+- **Important (headline):** LLM evaluation (golden sets, calibrated judges, CI gates), Retrieval quality (hybrid, reranking, recall@k), Agent reliability (durable state, budgets, approvals), Cost & latency engineering, Observability (OpenTelemetry traces, metrics), LLM security (prompt injection, OWASP), Prompt & context design, ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search, Product sense.
 - **Full inventory:** 149 skills (Must 4 · Important 20 · Should 60 · Optional 64 · Avoid 1), each with its evidence and posting keywords: [ai-engineer.md](../../03-skills-and-tech/inventories/ai-engineer.md).
 - **Prerequisites:** No formal gate. JD labels: senior 24.6%, entry 7.0%; T0-03 "Senior AI Engineer" cut assumes 5+ years [B]. About 72% of US AI-engineering postings state a degree [C · T0-06] and 75% of 903 Glassdoor US postings mention one (24% bachelor's, 24% master's, 28% PhD; "mention", not "require") [C · T0-23], while nearly 25% of AI postings in Atlanta Fed Lightcast data list no education requirement [A · T0-23]
-- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: tie-breaker, mostly in services and GCC channels); Microsoft AI-103 (Azure AI apps and agents) (Optional: Azure shops; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28); Databricks Certified Generative AI Engineer Associate (Optional: only if the team runs Databricks); AWS Certified Machine Learning – Specialty (Avoid: retired 2026-03-31); Microsoft Azure AI Engineer Associate (AI-102) (Avoid: retired 2026-06-30); LangChain Certified Agent Engineer (LCAE) (Optional: ); Model Context Protocol Associate (MCPA) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: tie-breaker, mostly in services and GCC channels); Microsoft AI-103 (Azure AI apps and agents) (Optional: Azure shops; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28); Databricks Certified Generative AI Engineer Associate (Optional: only if the team runs Databricks); AWS Certified Machine Learning – Specialty (Avoid: retired 2026-03-31); Microsoft Azure AI Engineer Associate (AI-102) (Avoid: retired 2026-06-30); LangChain Certified Agent Engineer (LCAE) (Optional: Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76)); Model Context Protocol Associate (MCPA) (Optional: Linux Foundation / AAIF MCP Associate ($250, 90 min); protocol specialist signal, hiring lift unmeasured (T0-32)); Google Professional Agentic Architect (PAA) (Optional: GCP agentic architecture exam (GA mid-Nov 2026; hybrid MCQ + 2 labs; MCP & A2A in scope); target GCP shops (T3-01)); Claude Certified Developer – Foundations (CCDV-F) (Optional: Partner-gated ($125; $0 Global Premier through 2026-12-31; refresh 2026-12-07; FASCSA risk V0) [A COI · T0-29, T3-01]); Databricks Certified Context Engineer Associate (Optional: $200, 45 Q, 90 min; ~60% overlap with Databricks GenAI Engineer; target Databricks shops only (T3-01, T3-02:L69)); GitHub Certified Agentic AI Developer (GH-600) (Optional: GA Jul 2026 ($165, 120 min); GitHub/Microsoft agentic developer exam covering MCP (T3-01)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** An evaluated end-to-end system over a real corpus (metrics table, cost/latency budget, reproducible README); for T2–T3, a second system with a different failure surface plus CI-gated evals, traces, a load test and a postmortem
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (68%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (50%); [P20 Responsible-AI compliance packet with runtime guardrails](../../05-portfolio/project-archetypes.md#p20) (32%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (64%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (47%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (33%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -76,7 +76,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 - **Variant:** A1 Builder (Applied GenAI Engineering); headline pattern: "AI Engineer: LLM systems, RAG, agents, evaluation". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** Python (78.4%), LLM (76.7%), agentic AI (59.3%), RAG (54.0%), machine learning (39.8%), generative AI (37.6%), AWS / Azure (35.1% each), CI/CD (34.4%), vector databases (32.6%), prompt engineering (31.1%)
-- **Leave out or reframe:** Wrapper-only demos; framework-syntax mastery as a headline; new RAGAS dependencies; "Prompt Engineer" as your title
+- **Leave out or reframe:** Wrapper-only demos; framework-syntax mastery as a headline; OpenAI Assistants API (retired 2026-08-26); "Prompt Engineer" as your title
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ai-engineer).
 
 ## Specialisations inside this role
@@ -87,12 +87,12 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Vector search infrastructure** (L5 Orchestration and context): Candidate title: Vector Search & Retrieval Systems Engineer, role catalog §5.3.
 - **Context engineering** (L5 Orchestration and context): Quarantined title on the watchlist (Context Engineer), role catalog §5.1 and §5.4.
 - **Coding agents** (L5 Orchestration and context): No title of its own in the catalog.
-- **Voice and conversational agents** (L6 Applications and deployment): Candidate title: Conversational & Voice AI Engineer, role catalog §5.3.
+- **Voice and conversational agents** (L6 Applications and deployment): Candidate title: Conversational & Voice AI Engineer, role catalog §5.3 (0/16 in AI Product Engineer sample [T0-62]; provisional gateway share rose 4% to 11% [T0-69]).
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Applied AI Engineer](applied-ai-engineer.md) (0.62); [Agentic AI Engineer](agentic-ai-engineer.md) (0.50); [Forward Deployed Engineer](forward-deployed-engineer.md) (0.40).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Applied AI Engineer](applied-ai-engineer.md) (0.59); [Agentic AI Engineer](agentic-ai-engineer.md) (0.50); [Forward Deployed Engineer](forward-deployed-engineer.md) (0.38).
 - **Same family (Applied AI Engineering):** [Applied AI Engineer](applied-ai-engineer.md), [Agentic AI Engineer](agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](ai-product-engineer.md), [AI Enablement Engineer](ai-enablement-engineer.md).
 
 ## Go deeper

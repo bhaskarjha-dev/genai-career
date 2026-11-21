@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Independent & Fractional | Leadership and independent practice (plane) | Verified (V) | Leadership #5 (ranked separately) | Leadership #5 of 5 (ranked separately) | — (no résumé variant: case studies and referrals instead) |
+| Independent & Fractional | Leadership and independent practice (plane) | Verified (V) | Leadership #5 (ranked separately) | Leadership #5 of 5 (ranked separately) | L5 Fractional AI Leader |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -32,7 +32,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 2.5 (1.5–3.5) | B | Mostly bench/network/marketplace pages: only 1 of 13 qualifying postings on an employer's own page; Go Fractional CAIO logged 10 posts in rolling 90 days (4 open; checked 2026-11-12) [T0-18, T0-66, T0-70]. |
 | Pay | 4 (3–5.5) | B | Reconciled across T0-18, T0-65 and T0-66: employer-side postings $75–$150/hr (B); asking corridor $150–$250/hr (Go Fractional $205/hr & from $5K/mo C COI; Upwork $150–$195/hr C; retainers $3K–$20K/mo, T0-18 $8K–$13K/mo for 10–13 h/wk); ZipRecruiter annualised $151,203 (B noisy, hours unstated) [T0-66]. |
 | Durability | 4.5 (3–6) | D | Judgement. UK GenAI contract median held flat at GBP 550/day across 2025–2026 vs GBP 625 in 2024 (B); fractional seats often convert or transition out once execution scales (C, COI) [T0-66]. |
-| Leverage | 7 (6–8) | D | Judgement. |
+| Leverage | 7 (6–8) | D | Judgement. Part-time executive strategy, governance and change-management retainers; often transitions out as execution scales [T0-66]. |
 | Access (experience gate) | 2 (1–3) | B | Postings stating experience ask 10+ years or 5+ years as fractional C-suite; 9 of 13 expect prior Head/VP/CTO seat; Go Fractional asks 7+ yrs and 5+ leadership/fractional (B); Fractional Jobs survey 87% 11+ yrs, 83% Director+ (C) [T0-18, T0-66]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
@@ -43,11 +43,17 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## What you need
 
-- No skill inventory of its own: the catalog maps independent and fractional practice to the [leadership skill map](../../03-skills-and-tech/role-skill-maps.md#skills-leadership).
+- **Must (headline):** AI strategy & portfolio, GRC & risk assessment, Change management & adoption, Leadership & mentoring, Stakeholder communication.
+- **Important (headline):** Agents & tool use, Domain expertise, Teaching & workshop delivery, AI operating model & governance boards.
+- **Full inventory:** 24 skills (Must 8 · Important 9 · Should 6 · Optional 1), each with its evidence and posting keywords: [fractional-ai-leader.md](../../03-skills-and-tech/inventories/fractional-ai-leader.md).
+- **Prerequisites:** Prior Head of AI, VP, CTO or C-suite leadership seat (explicit in 9/13 T0-66 postings, L588); client pipeline via executive network or PE/VC operating-partner referrals (53-75% referral share in independent surveys vs 92% Go Fractional vendor claim, T0-66)
+- **Credentials (tie-breakers, not skills):** IAPP Artificial Intelligence Governance Professional (AIGP) (Optional: Optional governance signal for regulated mid-market retainers (CAIO cert nice-to-have in 1/13 T0-66; 6.6% GRC Careers, 8.9% Axial) [B/C · T0-34, T0-66 L600]). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
-- Case studies, client outcomes and referrals carry this track, not portfolio projects; see the [catalog profile](../role-catalog.md#profile-fractional-ai-leader).
+- **What the evidence asks for:** 2-3 anonymised executive case studies showing AI strategy -> shipped pilot -> measurable ROI, governance policy templates deployed, and permanent hires or vendor contracts structured
+- How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
@@ -56,7 +62,10 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## Résumé
 
-- Independent and fractional work runs on case studies and referrals rather than portal résumés, so it has no variant.
+- **Variant:** L5 Fractional AI Leader (Leadership & Independent); headline: advisory & transformation-outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
+- **Keywords to mirror, only when true:** Fractional CAIO, Fractional Head of AI, AI strategy, AI governance, ROI, executive communication, change management, vendor selection, PE/SMB AI transformation
+- **Leave out or reframe:** Vendor-awarded 'Fractional CAIO' certificates (avoid per T0-68 G4; 0 independent employer standing); over-promising full-time build output on a 1-day/week retainer
+- The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-fractional-ai-leader).
 
 ## Related roles
 

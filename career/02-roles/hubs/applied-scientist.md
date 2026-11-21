@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| ML Engineering & Applied Science | L4 Post-training and adaptation; also L2 Foundation models and research; planes: Evaluation and quality | Verified (V) | #3 of 24 | #5 of 24 · band A · Monte Carlo rank 5 (P10–P90 3–7) | B2 Scientist |
+| ML Engineering & Applied Science | L6 Applications and deployment; also L4 Post-training and adaptation, L2 Foundation models and research; planes: Evaluation and quality | Verified (V) | #3 of 24 | #5 of 24 · band A · Monte Carlo rank 5 (P10–P90 3–7) | B2 Scientist |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -30,7 +30,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 6.5 (5.5–8) | B | Amazon Science listed 451 Applied Science category openings on 2026-11-13 (central estimate ~270 literally AS-titled, Wilson range 141–375); Fast AI Jobs 23 AI-startup roles (confirming Big Tech concentration); active hiring at Microsoft, Uber, Zalando, Mistral [T0-52, T0-70]. |
 | Pay | 7.75 (6.75–8.75) | B | Levels.fyi Amazon Applied Scientist US TC (2026-08-18): L4 $245K, L5 $324K, L6 $407K, L7 $653K (median $306K–$335K); corroborated by Microsoft/Uber posted US bands [T0-44, T0-52]. |
 | Durability | 7.5 (6–9) | C | Amazon retained 451 Applied Science openings on 2026-11-13 despite corporate headcount reductions across Oct 2025–Jul 2026; subject to Big Tech employer-cycle risk [T0-52]. |
-| Leverage | 7.5 (6.5–8.5) | D | Judgement. |
+| Leverage | 7.5 (6.5–8.5) | D | Judgement. Ships research-to-production modelling systems at scale (Amazon, Uber, Hippocratic AI, Microsoft [T0-52]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 5 (4–6.5) | B | Amazon Science listed 90 India science roles (14% of 642 global) on 2026-11-13; verified postings across Amazon India and Microsoft IDC (Hyderabad/Bengaluru) [T0-52]. |
-| India pay | 7.5 (6–9) | D | Proxy: Google MLE Bengaluru L4 Rs65.2L, L5 Rs168.3L (small n) [T0-02:254]. |
+| India pay | 7.5 (6–9) | D | 0 of 6 India AS postings disclose pay [T0-52 K6]; adjacent proxies: Levels.fyi India Data Scientist P50 Rs30.1L (n=1,024, B [T0-45]), Amazon Bengaluru SWE P50 Rs60.3L (Apr 2026, B [T0-52]), Google MLE Bengaluru L4 Rs65.2L / L5 Rs168.3L (small n [T0-02:254]) [T0-45, T0-52]. |
 
 India rank (CCI with India inputs): #3 of 24.
 
@@ -57,7 +57,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Important (headline):** SQL, LLM APIs & tool calling, Eval statistics (CIs, power, pass^k), Fine-tuning (SFT, LoRA), Causal inference, Research methods & re-implementation, Deep learning & transformers.
 - **Full inventory:** 64 skills (Must 7 · Important 16 · Should 25 · Optional 16), each with its evidence and posting keywords: [applied-scientist.md](../../03-skills-and-tech/inventories/applied-scientist.md).
 - **Prerequisites:** Amazon US uses PhD or Master's+4 (7/9), while Microsoft (BS+2/MS+1), Uber (BS+3–4/MS+2), Zalando (MS+2) and Mistral offer broader routes; coding/DSA is the usual gap for PhDs [A/C · T0-52]
-- **Credentials (tie-breakers, not skills):** PyTorch Certified Associate (PTCA) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** PyTorch Certified Associate (PTCA) (Optional: Linux Foundation PyTorch Certified Associate ($250, 15-17h prep pathway); optional PyTorch baseline (T0-32:L499)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -68,7 +68,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Classic ML system design.** It tests recommendation, fraud or ETA system design, plus where an LLM would help. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Classic ML system design.** It tests ML depth and breadth, coding (including ML-from-scratch or AI-assisted coding at AI-native firms), behavioural and leadership rounds, plus at most one classic ML system design round (recommendation, ranking, fraud or ETA; absent in some Microsoft loops). Source: T0-14, T0-46, T0-49, T0-52, T1-03.
 - **Practise:** the [classic ml system design prep pack](../../08-interviewing/prep-packs.md#classic-ml-system-design-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -106,7 +106,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What the role actually looks like
 
-In technology-employer postings as of November 2026, an Applied Scientist builds, evaluates and ships models or measurement systems directly into production products — writing production code is core, not optional [A · T0-52 L131]. T0-52's sample of 23 read postings (16 full requirement text, 7 Amazon Science description-only) revises the scorecard's L4-primary work footprint: **application and deployment is the primary layer in 74% (17/23)**, orchestration and context in 13% (3/23), models and research in 9% (2/23), and post-training in only 4% (1/23) — although fine-tuning or post-training is named anywhere in 26% (6/23; 95% CI 13%–46%) and evaluation or quality work in 43% (10/23) [M · T0-52 L77, L90, L368–L378].
+In technology-employer postings as of November 2026, an Applied Scientist builds, evaluates and ships models or measurement systems directly into production products — writing production code is core, not optional [A · T0-52 L131]. T0-52's sample of 23 read postings (16 full requirement text, 7 Amazon Science description-only) revises Phase 0's L4-primary work footprint (reflected in the L6-primary scorecard above): **application and deployment is the primary layer in 74% (17/23)**, orchestration and context in 13% (3/23), models and research in 9% (2/23), and post-training in only 4% (1/23) — although fine-tuning or post-training is named anywhere in 26% (6/23; 95% CI 13%–46%) and evaluation or quality work in 43% (10/23) [M · T0-52 L77, L90, L368–L378].
 
 Four distinct role variants sit under the same title; tailor your positioning to one before applying [A/B · T0-52 L77, L96, L133–L139]:
 
@@ -142,7 +142,7 @@ Four distinct role variants sit under the same title; tailor your positioning to
 
 ## Interview themes and preparation notes
 
-T0-52 revises the scorecard's "classic ML system design" summary: across 2026 candidate reports, system design occupies **at most one round** at Amazon, is sometimes omitted at Microsoft and is not named at Zalando, while **ML breadth, ML depth, live coding (including ML algorithms from scratch) and behavioural or product-scope rounds** carry most of the loop [C · T0-52 L84, L306, L444].
+T0-52 revises Phase 0's narrower "classic ML system design" summary (updated on the scorecard track): across 2026 candidate reports, system design occupies **at most one round** at Amazon, is sometimes omitted at Microsoft and is not named at Zalando, while **ML breadth, ML depth, live coding (including ML algorithms from scratch) and behavioural or product-scope rounds** carry most of the loop [C · T0-52 L84, L306, L444].
 
 | Employer | Reported loop structure (2025–2026 reports) | Key assessment themes and caveats | Grade |
 |---|---|---|---|

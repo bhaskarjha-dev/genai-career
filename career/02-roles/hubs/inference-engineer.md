@@ -30,7 +30,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 4.5 (3.5–5.5) | C | Inference Jobs 341 'Inference Engineer' listings on 2026-11-13 (upper bound; page 1 ~40% aged <=3 months); 37 verified active postings across labs, inference clouds and hardware vendors [T0-56]. |
 | Pay | 7.5 (6.5–8.5) | B | Date-clean US sample (n=14) posted base median midpoint $288K (IQR $261K–$344K, bounds $165K–$500K) plus equity at labs and inference platforms [T0-56]. |
 | Durability | 7 (5.5–8.5) | D | Judgement. Strong latency/cost demand balances rapid engine churn (TGI archived, TensorRT-LLM static backend removed) and emerging automated kernel-optimisation tooling [T0-56, T0-69]. |
-| Leverage | 8.5 (7.5–9.5) | D | Judgement. Direct GPU-cost and latency leverage. |
+| Leverage | 8.5 (7.5–9.5) | D | Judgement. Direct GPU-cost and latency-SLO leverage (Anthropic Cloud Inference and Sarvam serving-efficiency scope [T0-56 L312]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -38,7 +38,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 4 (3–5.5) | B | 9 of 37 sampled postings (24.3%) in India across Bengaluru, Hyderabad and Gurugram (inference clouds, silicon vendors, GCCs) [T0-56]. |
+| India demand | 4 (3–5.5) | B | 9 of 37 core postings (24.3%) in India across Bengaluru, Hyderabad and Gurugram: AI startups (Sarvam, Gnani x2, PrimaLabs, AION), cloud hosts (DigitalOcean x2, Rackspace) and 1 Weekday recruiter client; 0 GCCs and 0 India silicon vendors found [T0-56]. |
 | India pay | 6 (4.5–7.5) | C | 1 of 9 India postings discloses pay: Rs24–36L (5+ yrs, Weekday client, 2026, B) plus adjacent senior infra/ML Bengaluru bands [T0-56]. |
 
 India rank (CCI with India inputs): #12 of 24.
@@ -57,18 +57,18 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Important (headline):** Speculative decoding, Quantisation (FP8/FP4, AWQ, GPTQ), TP/PP & MoE serving, Load testing & latency SLOs, Profiling & roofline (Nsight), Cost & latency engineering.
 - **Full inventory:** 71 skills (Must 9 · Important 15 · Should 26 · Optional 20 · Avoid 1), each with its evidence and posting keywords: [inference-engineer.md](../../03-skills-and-tech/inventories/inference-engineer.md).
 - **Prerequisites:** Backend → Staff-level inference takes ~10–14 months with infrastructure depth [D · T2-01]
-- **Credentials (tie-breakers, not skills):** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (Optional: LLM inference-infrastructure roles); NVIDIA-Certified Professional: AI Operations (NCP-AIO) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (Optional: announced (verify live Certiverse booking before prep); NCP-AIO targets live GPU serving/ops more directly); NVIDIA-Certified Professional: AI Operations (NCP-AIO) (Optional: $500, 30 MCQ + 3 live VM labs (only NVIDIA exam with confirmed live lab split); targets GPU cluster operations (T0-32:L599, T0-54:L259)); AMD ROCm Certified Associate (Optional: Free AMD ROCm GPU labs + exam; optional signal for AMD MI300X/ROCm inference teams (T0-32:L243, L857)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A single-GPU serving study (BF16 vs FP8/4-bit, prefix caching, chunked prefill, speculative decoding) with a roofline and $/M tokens at the SLO; a custom Triton kernel tested against a reference; an upstream PR to vLLM, SGLang or FlashInfer
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P5 Single-GPU serving and quantisation study](../../05-portfolio/project-archetypes.md#p5) (61%); [P6 Self-hosted LLM platform on Kubernetes](../../05-portfolio/project-archetypes.md#p6) (25%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (22%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P5 Single-GPU serving and quantisation study](../../05-portfolio/project-archetypes.md#p5) (61%); [P6 Self-hosted LLM platform on Kubernetes](../../05-portfolio/project-archetypes.md#p6) (25%); [P21 Category-level public technical micro-audit or benchmark](../../05-portfolio/project-archetypes.md#p21) (25%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Infrastructure.** It tests KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Infrastructure.** It tests sub-discipline specific: serving and inference (systems coding, distributed-systems design; KV-cache maths, decode roofline, continuous batching and prefill/decode disaggregation appear in prep guides [C]), GPU cluster ops (Slurm, InfiniBand/RDMA, NCCL debugging, bare-metal failure recovery, Kubernetes at scale), MLOps/ML platform (IaC, CI/CD, drift monitoring, feature stores, ML job schedulers) and GPU kernels (simulated-accelerator take-home [A, COI], profiler walkthrough, roofline analysis, numerics/dtype tolerances). Source: T0-14, T0-46, T0-54, T0-56, T0-58, T0-63, T1-03.
 - **Practise:** the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -81,14 +81,14 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Specialisations inside this role
 
-- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device & Edge SLM Engineer, role catalog §5.3 (a differentiator, not a job by itself).
+- **Edge and on-device models** (L3 Inference and ML platforms): Candidate title: On-Device & Edge SLM Engineer, role catalog §5.3 (at least 9 live Edge AI Engineer aggregator listings plus Deepgram in Nov 2026 [C · T0-69 K13; ERRATA U38]; 0/16 in AI Product Engineer sample [T0-62]).
 - **Quantisation and distillation** (L3 Inference and ML platforms): No title of its own in the catalog.
 - **Disaggregated serving (prefill and decode)** (L3 Inference and ML platforms): No title of its own in the catalog.
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md) (0.21); [Research Engineer / Member of Technical Staff](research-engineer.md) (0.18); [ML Platform / MLOps Engineer](ml-platform-engineer.md) (0.15).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md) (0.20); [Research Engineer / Member of Technical Staff](research-engineer.md) (0.18); [ML Platform / MLOps Engineer](ml-platform-engineer.md) (0.15).
 - **Same family (AI Infrastructure & Platform):** [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md), [AI Infrastructure / GPU Platform Engineer](ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](ml-platform-engineer.md).
 
 ## Go deeper
@@ -146,7 +146,7 @@ A November 2026 sample of 37 in-scope postings (from 56 examined; 8 opened in fu
 
 The generated card's **Infrastructure** track fits at Grade C with important additions by variant [C · T0-56 L271]:
 - **Employer-reported stages and AI-tool rules:** Anthropic's live posting states that coding rounds mirror on-the-job work in the candidate's chosen language rather than LeetCode puzzles and requires acknowledging candidate AI-use guidance at application [A, COI · T0-56 L265]; one candidate recap describes a 4-round virtual onsite covering coding/optimisation, batching/KV-cache/scheduling design, and mission/safety [D · T0-56 L266]. Together AI prep guides report 4–5 rounds (algorithms coding, applied ML-systems coding, a 60-minute multi-model serving design round, and domain depth on batching, KV cache, speculative decoding and quantisation — note the guide states it is partly reasoned from postings) [C · T0-56 L267]. Baseten guides highlight designing a low-latency LLM API under bursty traffic with explicit batching, KV-cache and queueing trade-offs [C · T0-56 L268]. An older xAI copy notes technical-staff review without recruiters targeting a one-week process over Google Meet [B · T0-56 L269].
-- **Gaps in the generated track card:** Evidence corroborates continuous batching, KV cache, disaggregated serving and request scheduling (including one AMD onsite report tracing a request through a paged-KV engine [D]), but no source directly named "decode roofline" or "KV-cache maths" as standalone prompts [C/D · T0-56 L271, L405]. Add **systems-language coding** (C++/Rust/Go and concurrency) for runtime roles and **distributed-systems design** (routing, autoscaling, multi-tenant traffic shaping) for platform roles [M/C · T0-56 L271]. Practise with the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack) and [interview loops](../../08-interviewing/interview-loops.md) (no model answers, per D-018). No India-specific interview evidence was found [E · T0-56 L365, L408].
+- **Track nuance by variant:** Evidence corroborates continuous batching, KV cache, disaggregated serving and request scheduling (including one AMD onsite report tracing a request through a paged-KV engine [D]), while no source directly named "decode roofline" or "KV-cache maths" as standalone prompts [C/D · T0-56 L271, L405]. Add **systems-language coding** (C++/Rust/Go and concurrency) for runtime roles and **distributed-systems design** (routing, autoscaling, multi-tenant traffic shaping) for platform roles [M/C · T0-56 L271]. Practise with the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack) and [interview loops](../../08-interviewing/interview-loops.md) (no model answers, per D-018). No India-specific interview evidence was found [E · T0-56 L365, L408].
 
 ## Dossier evidence and limits
 

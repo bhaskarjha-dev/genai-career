@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| ML Engineering & Applied Science | L4 Post-training and adaptation; also L2 Foundation models and research, L3 Inference and ML platforms | Established (E) | #2 of 24 | #1 of 24 · band S · Monte Carlo rank 1 (P10–P90 1–2) | B1 Engineer |
+| ML Engineering & Applied Science | L4 Post-training and adaptation; also L2 Foundation models and research, L3 Inference and ML platforms; planes: Evaluation and quality | Established (E) | #2 of 24 | #1 of 24 · band S · Monte Carlo rank 1 (P10–P90 1–2) | B1 Engineer |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -30,7 +30,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 9 (8–9.5) | B | JobsPipe 2,157 global / 1,084 US / 108 UK / 90 India (re-checked 2026-11-13; static refresh caveat); Fast AI Jobs 298 at AI startups (2026-11-12, up from 227); Axial H1 2026 US 13,776 (~490/wk, C); FY2025 DOL exact-title LCAs 1,053–1,071 [T0-24, T0-27, T0-49, T0-70]. |
 | Pay | 8.5 (7.5–9) | B | Levels.fyi US ML Engineer TC P25 $200K / P50 $286,958 / P75 $389,850 / P90 $497,500 (n=1,027, 2026-11-11; 1.44x US SWE); Axial posted base ceilings $180K–$300K (senior $241K, n=13,776); Meta E5 $472–497K / E6 $660–790K, Amazon L6 $401K; FY2025 LCA floor $179,982 (n=3,745) [T0-44, T0-49]. |
 | Durability | 7 (5.5–8.5) | D | Judgement. Broad ML engineering spans recommendation, ranking, forecasting and LLM training/serving; API-first adoption shifts routine application work toward AI Engineer while leaving model-training, fine-tuning and scale optimisation intact [T0-49]. |
-| Leverage | 7.5 (6.5–8.5) | D | Judgement. Owns models behind ranking, recsys, fraud and fine-tuned systems. |
+| Leverage | 7.5 (6.5–8.5) | D | Judgement. Owns revenue-adjacent models behind ranking, recsys, pricing, ads and risk (OpenAI paid marketing, Roblox pricing/ranking, Pinterest/TikTok ads, Capital One risk [T0-49:L305]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -38,7 +38,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 7 (6–7.5) | B | JobsPipe India 90 live of 2,157 global (4.2% M; static 2026-11-13 check); heavy GCC and big-tech presence in Bengaluru and Hyderabad [T0-49]. |
+| India demand | 7 (6–7.5) | B | JobsPipe India 90 live of 2,157 global (4.2% live vs 7.7% JD-page share, 4–8% range; static 2026-11-13 check); heavy GCC and big-tech presence in Bengaluru and Hyderabad [T0-49, T0-69]. |
 | India pay | 8 (6.75–8.5) | B | Levels.fyi Greater Bengaluru ML Engineer TC (2026-11-12, n=97): P25 Rs30.3L / P50 Rs44.4L–Rs44.7L / P75 Rs65.7L / P90 Rs80.7L (down from Oct Rs94.6L); India ML/AI-focus SWE P50 Rs28.7L; Flexiple Bengaluru CTC P50 Rs19.9L (n=422, C) [T0-45]. |
 
 India rank (CCI with India inputs): #2 of 24.
@@ -55,9 +55,9 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 - **Must (headline):** ML fundamentals, Python (production), PyTorch, Deep learning & transformers.
 - **Important (headline):** LLM APIs & tool calling, Data structures & algorithms, TensorFlow / JAX, Experiment design & A/B testing, C++, Fine-tuning (SFT, LoRA), LLM evaluation (golden sets, calibrated judges, CI gates), Serving literacy (vLLM, batching, quantisation), Embedding & reranker models, Data pipelines & quality, Eval statistics (CIs, power, pass^k).
-- **Full inventory:** 84 skills (Must 4 · Important 18 · Should 28 · Optional 34), each with its evidence and posting keywords: [ml-engineer.md](../../03-skills-and-tech/inventories/ml-engineer.md).
+- **Full inventory:** 85 skills (Must 4 · Important 18 · Should 28 · Optional 34 · Avoid 1), each with its evidence and posting keywords: [ml-engineer.md](../../03-skills-and-tech/inventories/ml-engineer.md).
 - **Prerequisites:** Degree common (72% in Axial Search [C · T0-06]; 75% of 903 Glassdoor US postings mention a degree [C · T0-23]; nearly 25% in Atlanta Fed Lightcast data list none [A · T0-23]). JD labels: entry 13.7%, senior 23.2%. DS → MLE 6–18 months; PhD → applied roles ~8 months [D · T0-06]
-- **Credentials (tie-breakers, not skills):** Google Cloud Professional Machine Learning Engineer (PMLE) (Optional: tie-breaker in GCP shops; refreshed for GenAI); AWS Certified Machine Learning Engineer – Associate (MLA-C01) (Avoid: retired in English 2026-09-28; replaced by aws_mla_c02); NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (Optional: only for LLM training or inference-infrastructure roles); AWS Certified Machine Learning – Specialty (Avoid: retired 2026-03-31); AWS Certified ML Engineer – Associate (MLA-C02) (Optional: replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads); PyTorch Certified Associate (PTCA) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** Google Cloud Professional Machine Learning Engineer (PMLE) (Optional: tie-breaker in GCP shops; refreshed for GenAI); AWS Certified Machine Learning Engineer – Associate (MLA-C01) (Avoid: retired in English 2026-09-28; replaced by AWS MLA-C02); NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (Optional: announced (verify live Certiverse booking before prep); LLM training/serving roles only); AWS Certified Machine Learning – Specialty (Avoid: retired 2026-03-31); AWS Certified ML Engineer – Associate (MLA-C02) (Optional: replaces MLA-C01; beta, GA 2027-01-14; adds GenAI and agentic workloads); PyTorch Certified Associate (PTCA) (Optional: Linux Foundation PyTorch Certified Associate ($250, 15-17h prep pathway); optional PyTorch baseline (T0-32:L499)); Databricks Certified Machine Learning Associate (Optional: $200, 48 Q, 90 min, 2-yr validity; associate baseline for Databricks ML shops (T3-01)); Databricks Certified Machine Learning Professional (Optional: $200, 59 Q, 120 min, 2-yr validity; hardest Databricks ML exam for production ML/MLOps shops (T3-01)); NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL) (Optional: $125 associate exam; cheap structured LLM syllabus only, low senior hiring lift (T0-11, T0-32:L489)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -68,7 +68,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Classic ML system design.** It tests recommendation, fraud or ETA system design, plus where an LLM would help. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Classic ML system design.** It tests ML depth and breadth, coding (including ML-from-scratch or AI-assisted coding at AI-native firms), behavioural and leadership rounds, plus at most one classic ML system design round (recommendation, ranking, fraud or ETA; absent in some Microsoft loops). Source: T0-14, T0-46, T0-49, T0-52, T1-03.
 - **Practise:** the [classic ml system design prep pack](../../08-interviewing/prep-packs.md#classic-ml-system-design-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -76,7 +76,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 - **Variant:** B1 Engineer (ML & Applied Science); headline pattern: "Machine Learning Engineer: LLM fine-tuning, evaluation, serving". How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** machine learning (98.6%), Python (71.3%), PyTorch (48.2%), LLM (45.0%), data structures (33.7%), deep learning (32.6%), TensorFlow (31.8%), A/B testing (23.5%), NLP (23.3%), C++ (23.3%)
-- **Leave out or reframe:** Fine-tuning as the default answer (70% of 20 studied production systems used off-the-shelf models); tools you have only read about
+- **Leave out or reframe:** Fine-tuning as the default answer (70%, 14/20 interviewed production agent teams in arXiv 2512.04123v2 used off-the-shelf models, B · T0-03); dormant torchtune workflows; tools you have only read about
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ml-engineer).
 
 ## Specialisations inside this role

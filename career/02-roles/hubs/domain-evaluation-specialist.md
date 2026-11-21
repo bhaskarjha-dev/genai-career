@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 5.5 (3.5–7.5) | B | LinkedIn Jobs on the Rise 2026 US #4 data annotators (growth not volume, B); Mercor 3/3 full-read listings are standing pools not vacancies (A; stale 30,000 replaced by COI claim); 4/4 India postings are salaried evaluation-engineering employee roles (B) [T0-66]. |
 | Pay | 3.5 (2–5) | B | Domain-segmented hourly contracts: generalist $20–$70/hr (micro1 $20–$35, Mercor $35–$70, Outlier up to $50, xAI $35–$75), professional/tech $60–$120/hr, legal/medical/finance/specialised SWE $100–$300/hr (Mercor $100–$200, Scale HFC $300); Mercor headline average unstable ($80–$141) [T0-44, T0-66]. |
-| Durability | 3.5 (2–5) | D | Judgement. 'A bridge, not a destination' [T0-06:273, 650]. |
-| Leverage | 5 (4–6) | D | Judgement. |
+| Durability | 3.5 (2–5) | D | Judgement. Bifurcates into credentialed domain-expert work vs volatile standing pools with early project endings and vendor risk (Mercor Mar 2026 LiteLLM incident); 'a bridge, not a destination' [T0-06:273, 650, T0-66]. |
+| Leverage | 5 (4–6) | D | Judgement. Post-training RLHF and rubric data quality; mostly individual contractor piecework [T0-66]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -53,16 +53,16 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What you need
 
-- **Must (headline):** Domain expertise, Clear writing & presenting, Rubrics & inter-rater agreement.
+- **Must (headline):** Domain expertise, Clear writing & presenting, Rubrics & inter-rater agreement, Human evaluation programmes.
 - **Important (headline):** Error analysis, Annotation workflows, Benchmark construction.
-- **Full inventory:** 42 skills (Must 4 · Important 7 · Should 19 · Optional 12), each with its evidence and posting keywords: [domain-evaluation-specialist.md](../../03-skills-and-tech/inventories/domain-evaluation-specialist.md).
+- **Full inventory:** 42 skills (Must 5 · Important 6 · Should 19 · Optional 12), each with its evidence and posting keywords: [domain-evaluation-specialist.md](../../03-skills-and-tech/inventories/domain-evaluation-specialist.md).
 - **Prerequisites:** 4+ years in the domain; MA/JD/MD/PhD for premium rates [C · T0-06]
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A domain gold standard: 100+ real tasks with rubrics, adjudication rules and two-reviewer agreement, comparing 2–3 models with the human baseline
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P17 Domain gold standard with inter-rater agreement](../../05-portfolio/project-archetypes.md#p17) (87%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (27%); [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (20%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P17 Domain gold standard with inter-rater agreement](../../05-portfolio/project-archetypes.md#p17) (72%); [P21 Category-level public technical micro-audit or benchmark](../../05-portfolio/project-archetypes.md#p21) (28%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (22%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -79,7 +79,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Evaluation Engineer](ai-evaluation-engineer.md) (0.19); [AI Product Manager](ai-product-manager.md) (0.17); [Research Scientist (AI/ML)](research-scientist.md) (0.08).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Evaluation Engineer](ai-evaluation-engineer.md) (0.22); [AI Product Manager](ai-product-manager.md) (0.15); [Research Scientist (AI/ML)](research-scientist.md) (0.08).
 
 ## Go deeper
 
@@ -139,7 +139,7 @@ T0-66 reveals that the single canonical title **Domain Evaluation Specialist / A
 
 ## Interview themes and preparation notes
 
-**CRITICAL CORRECTION (K19 CONTRADICTED, Grade A, live-verified 2026-11-19):** The generated card above lists `Track: Product` (scoping/product round) from Phase 0 (`T1-03`/`T0-14`). T0-66 **contradicts K19** with primary employer evidence: **no expert-data platform uses a Product scoping loop** [A · T0-66 L66, L318, L357, L716–719]. Entry across every verified platform is an **AI-conducted screen, a domain assessment or a research-team interview, followed by standing-pool matching** [A/B/C · T0-66 L309–318; live-verified 2026-11-19]:
+**No standard interview track applies (`K19`, Grade A, live-verified 2026-11-19):** Phase 0 (`T1-03`/`T0-14`) placed this role on `Track: Product`, which `T0-66` **contradicted** with primary employer evidence (reflected by `No interview-track evidence` on the card above): **no expert-data platform uses a Product scoping loop** [A · T0-66 L66, L318, L357, L716–719]. Entry across every verified platform is an **AI-conducted screen, a domain assessment or a research-team interview, followed by standing-pool matching** [A/B/C · T0-66 L309–318; live-verified 2026-11-19]:
 
 | Platform | Documented entry & screening stages | AI-interview policy & wait time | Grade |
 |---|---|---|---|

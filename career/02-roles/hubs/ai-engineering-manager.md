@@ -30,9 +30,9 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | Demand | 5.5 (4–7) | B | Fast AI Jobs 608 EM roles at 239 AI startups on 2026-11-12 (+54% vs 394 in late Jul), of which 20–24% (~122–146) are AI-system EM roles; Anthropic 8/15 EM titles AI-system teams (COI); AI Pulse 68 category count (C) [T0-65, T0-70]. |
-| Pay | 7.5 (6.25–9) | B | Posted US base bands: SandboxAQ $163K–$306K, NVIDIA $200K–$356.5K, Scale AI Director $285.2K–$356.5K, Anthropic $320K–$405K (A, COI; Growth EM $405K–$485K) plus equity; Levels.fyi EM anchors [T0-44, T0-65]. |
+| Pay | 7.5 (6.25–9) | B | Posted US base bands: SandboxAQ $163K–$306K, NVIDIA $200K–$356.5K, Scale AI Director $285.2K–$356.5K, Anthropic $320K–$405K (A, COI; Growth EM $405K–$485K) plus equity; India proxy: Levels.fyi India SWE Manager TC P25 Rs57.4L / P50 Rs85.6L / P75 Rs1.25Cr / P90 Rs1.62Cr (n=975, B) and Amazon Bengaluru Director Rs5.54Cr (B) [T0-44, T0-45, T0-65]. |
 | Durability | 7 (5.5–8.5) | D | Judgement. AI-startup EM volume rose +54% (Jul–Nov 2026), offset by SignalFire 2026 management thinning and wider spans of control (~12 at tech majors, ~15 at startups) [T0-65, T0-70]. |
-| Leverage | 8 (7–9) | D | Judgement. |
+| Leverage | 8 (7–9) | D | Judgement. Team hiring, cross-team AI platform adoption and engineering delivery velocity [T0-65]. |
 | Access (experience gate) | 4 (3–5) | M | Text-visible postings (n=8) ask 8+ years engineering and 2–6 (median 3) years managing; 0/8 name certifications; backend/SRE/devtools EMs can cross without a research background [T0-65]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
@@ -43,10 +43,10 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## What you need
 
-- **Must (headline):** Leadership & mentoring, Stakeholder communication.
-- **Important (headline):** GRC & risk assessment, System design, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics), Capacity & GPU/API cost governance, Guardrails, AI strategy & portfolio.
-- **Full inventory:** 44 skills (Must 4 · Important 16 · Should 17 · Optional 7), each with its evidence and posting keywords: [ai-engineering-manager.md](../../03-skills-and-tech/inventories/ai-engineering-manager.md).
-- **Prerequisites:** Senior/Staff IC first; AI engineers move into management in under 3 years on average (SignalFire, C)
+- **Must (headline):** Leadership & mentoring, Stakeholder communication, Technical leadership.
+- **Important (headline):** System design, LLM evaluation (golden sets, calibrated judges, CI gates), Observability (OpenTelemetry traces, metrics), AI strategy & portfolio.
+- **Full inventory:** 44 skills (Must 5 · Important 12 · Should 18 · Optional 9), each with its evidence and posting keywords: [ai-engineering-manager.md](../../03-skills-and-tech/inventories/ai-engineering-manager.md).
+- **Prerequisites:** 8+ years engineering plus 2-6 years managing (Anthropic accepts technical leadership for the 2+ years); backend, SRE and devtools managers can cross; PhD not required [A/M · T0-65 L202]
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -61,7 +61,7 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## Résumé
 
-- **Variant:** L1 AI Engineering Manager / Director (Leadership); headline: outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
+- **Variant:** L1 AI Engineering Manager / Director (Leadership & Independent); headline: outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** leadership (72.7%), communication (51.4%), mentoring (47.1%), compliance (30.9%), system design (25.3%), observability (18.0%), agentic AI (14.8%)
 - **Leave out or reframe:** Team-size bragging without delivery or quality metrics
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-ai-engineering-manager).

@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Leadership & Executive | Leadership and independent practice (plane) | Verified (V) | Leadership #2 (ranked separately) | Leadership #2 of 5 (ranked separately) | L2 VP / Head of AI / CAIO |
+| Leadership & Executive | Leadership and independent practice (plane); also L6 Applications and deployment | Verified (V) | Leadership #2 (ranked separately) | Leadership #2 of 5 (ranked separately) | L2 VP / Head of AI |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -30,10 +30,10 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | Demand | 3 (2–4) | C | Noisy board counts (Indeed US ~2,000, Glassdoor US 505, Indeed India 300); Axial Search tracked 65 US executive AI-engineering postings over 6 months [T0-65]. |
-| Pay | 8 (6.5–9.5) | B | Posted US base bands sit below vendor studies: Accela $240K–$280K + bonus (A), SimplePractice $250K–$315K (B), Synchrony VP $170K–$290K (B); UK GBP 120K–150K (B); equity/bonus lifts late-stage/enterprise TC [T0-65]. |
-| Durability | 7 (5.5–8.5) | D | Judgement. |
-| Leverage | 9 (8–10) | D | Judgement. |
-| Access (experience gate) | 2 (1–3) | D | Multi-year leadership track record. |
+| Pay | 8 (6.5–9.5) | B | Posted US base bands sit below vendor studies: Accela $240K–$280K + bonus (A), SimplePractice $250K–$315K (B), Synchrony VP $170K–$290K (B); UK GBP 120K–150K (B); equity/bonus lifts late-stage/enterprise TC; India: adjacent Amazon Bengaluru Director Rs5.54Cr (B), no all-employer India VP/Head of AI series [T0-45, T0-65]. |
+| Durability | 7 (5.5–8.5) | D | Judgement. Splits between durable hands-on player-coach seats and enterprise transformation/governance seats, with title-inflation risk at small firms [T0-65]. |
+| Leverage | 9 (8–10) | D | Judgement. Enterprise AI portfolio and operating model; 55% (6/11) of text-visible postings report directly to CEO or CTO [T0-65]. |
+| Access (experience gate) | 2 (1–3) | D | Multi-year leadership track record: text-visible postings (n=11) ask 5–15+ (median 10, n=7) years engineering or product leadership; 45% hands-on, 55% CEO/CTO report [T0-65]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -44,9 +44,9 @@ A leadership or independent track: people reach it after years of experience. Wh
 ## What you need
 
 - **Must (headline):** AI strategy & portfolio, Leadership & mentoring, Stakeholder communication.
-- **Important (headline):** AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001, Token & unit economics, Capacity & GPU/API cost governance.
-- **Full inventory:** 41 skills (Must 4 · Important 14 · Should 17 · Optional 6), each with its evidence and posting keywords: [vp-head-of-ai.md](../../03-skills-and-tech/inventories/vp-head-of-ai.md).
-- **Prerequisites:** EM/Director track record; US federal CAIOs are required by OMB M-25-21 [B · T0-15]
+- **Important (headline):** AI operating model & governance boards, EU AI Act / NIST AI RMF / ISO 42001.
+- **Full inventory:** 42 skills (Must 4 · Important 13 · Should 17 · Optional 8), each with its evidence and posting keywords: [vp-head-of-ai.md](../../03-skills-and-tech/inventories/vp-head-of-ai.md).
+- **Prerequisites:** 5-15+ years (median 10, n=7 in T0-65; 12-18+ in India); player-coach seats accept senior AI engineer or AI PM step-ups while enterprise seats ask for prior EM/Director delivery [B · T0-65 L250, L273, L279]
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -61,7 +61,7 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## Résumé
 
-- **Variant:** L2 VP / Head of AI / CAIO (Leadership); headline: outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
+- **Variant:** L2 VP / Head of AI (Leadership & Independent); headline: outcome-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
 - **Keywords to mirror, only when true:** AI strategy, roadmap, governance, operating model, budget, build vs buy
 - **Leave out or reframe:** Technology lists in place of business outcomes
 - The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-vp-head-of-ai).

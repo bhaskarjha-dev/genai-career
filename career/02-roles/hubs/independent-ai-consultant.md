@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Independent & Fractional | Leadership and independent practice (plane) | Verified (V) | Leadership #4 (ranked separately) | Leadership #4 of 5 (ranked separately) | — (no résumé variant: case studies and referrals instead) |
+| Independent & Fractional | L6 Applications and deployment; also L5 Orchestration and context; planes: Leadership and independent practice | Verified (V) | Leadership #4 (ranked separately) | Leadership #4 of 5 (ranked separately) | L4 Independent AI Consultant / Contract Builder |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -31,9 +31,9 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 4.5 (3–6) | B | UK GenAI contract adverts tripled to 1,466 in 6 months to 2026-11-12 (vs 472 in 2025, 176 in 2024; 49 live LLM contracts on 2026-11-14; IT Jobs Watch, B); LinkedIn Jobs on the Rise 2026 US #2 AI consultants/strategists (growth not volume, B) [T0-66]. |
 | Pay | 4 (3–5.5) | B | UK GenAI median flat at GBP 550/day (P25 GBP 460, P75 GBP 675, P90 GBP 788, n=933; live senior picks GBP 500–1,000/day, B); US agency contract postings $50–$80/hr (B); direct independent senior engagements higher [T0-66]. |
-| Durability | 5 (3.5–6.5) | D | Judgement. |
-| Leverage | 6.5 (5.5–7.5) | D | Judgement. |
-| Access (experience gate) | 3 (2–4) | C | 5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]. |
+| Durability | 5 (3.5–6.5) | D | Judgement. UK GenAI contract ad volume tripled (176 to 472 to 1,466 across 2024–2026, B) while median day rate stayed flat at GBP 550/day vs GBP 625 in 2024, pointing to price competition as supply grows [T0-66 KF4]. |
+| Leverage | 6.5 (5.5–7.5) | D | Judgement. Client project delivery and direct advisory; agency channel rates ($50–$80/hr US) compress leverage vs direct senior engagements [T0-66]. |
+| Access (experience gate) | 3 (2–4) | C | 5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]; Toptal <3% screen + 2-wk paid test project (C), IT Jobs Watch senior build bar (B) and 53–75% network sourcing in independent surveys (C, U47) [T0-66]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -43,11 +43,17 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## What you need
 
-- No skill inventory of its own: the catalog maps independent and fractional practice to the [leadership skill map](../../03-skills-and-tech/role-skill-maps.md#skills-leadership).
+- **Must (headline):** Python (production), LLM APIs & tool calling, Agents & tool use, AWS / Azure / GCP, RAG.
+- **Important (headline):** ML fundamentals, Stakeholder communication, Git & CI/CD, LLM evaluation (golden sets, calibrated judges, CI gates), APIs & integrations, Domain expertise, Customer-facing communication, MCP (Model Context Protocol).
+- **Full inventory:** 33 skills (Must 7 · Important 12 · Should 13 · Optional 1), each with its evidence and posting keywords: [independent-ai-consultant.md](../../03-skills-and-tech/inventories/independent-ai-consultant.md).
+- **Prerequisites:** Proven production shipping record (typically 5+ years engineering/ML) plus client acquisition channel (warm network, specialist staffing or referral; avoid relying on unverified 92% referral claims — independent surveys show 53-75%, T0-66)
+- **Credentials (tie-breakers, not skills):** Google Professional Agentic Architect (PAA) (Optional: Optional cloud-partner credibility for GCP agentic client deliveries (MCP + A2A + 2 labs; GA mid-Nov 2026) [A · T3-01, T0-66]); AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: Optional signal for AWS enterprise contract bids (23.2% UK GenAI contracts name AWS) [B · T0-66 L625, T3-01]); Microsoft AI-103 (Azure AI apps and agents) (Optional: Optional signal for Azure enterprise contract bids (29.7% UK GenAI contracts name Azure; status provisional pending T0-28) [B · T0-66 L620]). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
-- Case studies, client outcomes and referrals carry this track, not portfolio projects; see the [catalog profile](../role-catalog.md#profile-independent-ai-consultant).
+- **What the evidence asks for:** Two to three anonymised client case studies with before/after latency, cost or workflow-time metrics, clean handover docs, and one public category-level evaluation or agent blueprint
+- How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
@@ -56,7 +62,10 @@ A leadership or independent track: people reach it after years of experience. Wh
 
 ## Résumé
 
-- Independent and fractional work runs on case studies and referrals rather than portal résumés, so it has no variant.
+- **Variant:** L4 Independent AI Consultant / Contract Builder (Leadership & Independent); headline: delivered-system & client-ROI-led. How to tailor it: [résumé strategy](../../06-job-search/resume-strategy.md).
+- **Keywords to mirror, only when true:** Python, LLM, RAG, AI agents, Azure, AWS, GCP, LangGraph, MCP, MLOps, CI/CD, evaluations, stakeholder management, production delivery
+- **Leave out or reframe:** Buying vendor-awarded 'Certified AI Consultant' certificates (avoid per T0-68 G4); competing solely on generic marketplace race-to-the-bottom hourly rates without a vertical case study
+- The concise skills section for this role: [résumé skills matrix](../../06-job-search/resume-skills-matrix.md#resume-independent-ai-consultant).
 
 ## Related roles
 

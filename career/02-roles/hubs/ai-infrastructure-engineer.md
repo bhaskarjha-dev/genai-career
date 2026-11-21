@@ -28,9 +28,9 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | Demand | 5.5 (4–7) | C | 52 base-disclosing postings in S09 [T0-03]; Inference Jobs 446 GPU Infrastructure Engineering listings (undeduplicated upper bound); active hyperscaler, neocloud and frontier-lab hiring [T0-54]. |
-| Pay | 7 (6–8) | B | US posted-base median midpoint $261K (n=12): frontier labs/AI-native ~$360K (OpenAI $230K–$490K + equity [A], Anthropic $315K–$485K [A]) vs cloud/neocloud/enterprise $180K–$270K [T0-44, T0-54]. |
-| Durability | 7.5 (6–9) | D | Judgement. Physical fleets, networking and reliability; distributed-systems minimum in top-band JDs [T0-03 J1]. |
-| Leverage | 8.5 (7.5–9.5) | D | Judgement. Capacity, uptime and cost of the GPU estate (8.5-9 anchor: large cost line). |
+| Pay | 7 (6–8) | B | US posted-base median midpoint $261K (n=12): frontier labs/AI-native ~$360K (OpenAI $230K–$490K + equity [A], Anthropic $320K–$485K [A, COI]) vs cloud/neocloud/enterprise $180K–$270K [T0-44, T0-54]. |
+| Durability | 7.5 (6–9) | D | Judgement. Physical fleets, networking and reliability (distributed-systems minimum in top-band JDs [T0-03 J1]); agent-driven fleet automation/self-healing appears in 4 postings (OpenAI, Anthropic x2, fal) while capacity, topology and failure ownership stays with engineers [T0-54 KF12]. |
+| Leverage | 8.5 (7.5–9.5) | D | Judgement. Multi-thousand-GPU cluster uptime, capacity and estate cost (8.5–9 anchor: large cost line) [T0-54]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -38,8 +38,8 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 4.5 (3.5–6) | B | 10 of 35 sampled postings (28.6%) in India: NVIDIA x4 (DGX Cloud, SRE research clusters), Microsoft, Oracle, CoreWeave/neocloud and GCCs [T0-54]. |
-| India pay | 6.5 (5–8) | D | No India evidence. |
+| India demand | 4.5 (3.5–6) | B | 10 of 35 core postings (28.6%) in India: NVIDIA x4 (DGX Cloud, SRE research clusters, NCX, EngOps), Deloitte USI x2, Sarvam AI x2, AION and Soket AI Labs; 0 GCC postings found in window [T0-54]. |
+| India pay | 6.5 (5–8) | D | No India evidence: 0 of 10 India postings disclose pay [T0-45, T0-54 K6]. |
 
 India rank (CCI with India inputs): #5 of 24. One input (India comp) is a Grade D placeholder.
 
@@ -57,7 +57,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Important (headline):** Git & CI/CD, Docker, AWS / Azure / GCP, System design, NCCL / RDMA / InfiniBand, Checkpointing & storage throughput, Hardware-fault reliability, Capacity & GPU/API cost governance.
 - **Full inventory:** 59 skills (Must 8 · Important 17 · Should 21 · Optional 13), each with its evidence and posting keywords: [ai-infrastructure-engineer.md](../../03-skills-and-tech/inventories/ai-infrastructure-engineer.md).
 - **Prerequisites:** Infrastructure depth; best feeders are SRE, DevOps and backend infrastructure engineers
-- **Credentials (tie-breakers, not skills):** NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (Optional: announced (verify live Certiverse booking); NCP-AII and NCP-AIO target GPU infra more directly); Certified Kubernetes Administrator (CKA) (Optional: intermediate live CLI exam ($445); CNCF KCSP requires 3+ CKA; 0/35 direct AI infra JD mentions); Certified Kubernetes Application Developer (CKAD) (Optional: ); Certified Kubernetes Security Specialist (CKS) (Optional: ); NVIDIA-Certified Professional: AI Operations (NCP-AIO) (Optional: ); NVIDIA-Certified Professional: AI Infrastructure (NCP-AII) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** Certified Kubernetes Administrator (CKA) (Optional: intermediate live CLI exam ($445); CNCF KCSP requires 3+ CKA; 0/35 direct AI infra JD mentions); NVIDIA-Certified Professional: AI Infrastructure (NCP-AII) (Optional: $400, 70-75 Q + hands-on lab included (76% cluster bring-up/test/troubleshooting); top GPU infra exam (T0-32:L585, T0-54:L258)); NVIDIA-Certified Professional: AI Operations (NCP-AIO) (Optional: $500, 30 MCQ + 3 live VM labs (only NVIDIA exam with confirmed live lab split); targets GPU cluster operations (T0-32:L599, T0-54:L259)); NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO) (Optional: $125 (50 Q, 60 min; 40% AI infra, ~7h prep); entry-level stepping stone ahead of NCP-AII/NCP-AIO (T0-32:L459, L588; T0-54:L260)); Certified Kubernetes Application Developer (CKAD) (Optional: CNCF Certified Kubernetes Application Developer (live CLI exam); complements CKA for GPU/ML workload deployment (T0-32)); Certified Kubernetes Security Specialist (CKS) (Optional: CNCF Certified Kubernetes Security Specialist (requires active CKA); relevant for multi-tenant GPU cluster security (T0-32)); NVIDIA-Certified Professional: Generative AI LLMs (NCP-GENL) (Optional: announced (verify live Certiverse booking); NCP-AII and NCP-AIO target GPU infra more directly). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -68,7 +68,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Infrastructure.** It tests KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Infrastructure.** It tests sub-discipline specific: serving and inference (systems coding, distributed-systems design; KV-cache maths, decode roofline, continuous batching and prefill/decode disaggregation appear in prep guides [C]), GPU cluster ops (Slurm, InfiniBand/RDMA, NCCL debugging, bare-metal failure recovery, Kubernetes at scale), MLOps/ML platform (IaC, CI/CD, drift monitoring, feature stores, ML job schedulers) and GPU kernels (simulated-accelerator take-home [A, COI], profiler walkthrough, roofline analysis, numerics/dtype tolerances). Source: T0-14, T0-46, T0-54, T0-56, T0-58, T0-63, T1-03.
 - **Practise:** the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -81,12 +81,12 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Specialisations inside this role
 
-- **Pre-training at scale** (L2 Foundation models and research): Unmeasured buzzword: Foundation Model Pre-Training Engineer, role catalog §5.2.
+- **Pre-training at scale** (L2 Foundation models and research): Candidate title (ungraduated): live pre-training postings at 4 employers and Distributed Training Engineer at OpenAI/Periodic Labs in Nov 2026 [C · T0-69 K17–K18; ERRATA U38], role catalog §5.2.
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [ML Platform / MLOps Engineer](ml-platform-engineer.md) (0.45); [Inference / LLM Serving Engineer](inference-engineer.md) (0.15); [AI Engineer](ai-engineer.md) (0.14).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [ML Platform / MLOps Engineer](ml-platform-engineer.md) (0.45); [Inference / LLM Serving Engineer](inference-engineer.md) (0.15); [AI Engineer](ai-engineer.md) (0.13).
 - **Same family (AI Infrastructure & Platform):** [Inference / LLM Serving Engineer](inference-engineer.md), [GPU Kernel / ML Compiler Engineer](gpu-kernel-engineer.md), [ML Platform / MLOps Engineer](ml-platform-engineer.md).
 
 ## Go deeper
@@ -130,7 +130,7 @@ A November 2026 sample of 35 job descriptions (`n = 35`, 12 opened in full on em
 - **Titles to search instead:** *Software Engineer, GPU Infrastructure / Compute Foundations / Frontier Clusters* (OpenAI); *Staff+ Infrastructure / Node Infra / Kubernetes Platform Engineer* (Anthropic); *HPC Engineer / HPC Infrastructure Engineer*; *Principal Software Engineer, AI Infrastructure / CoreAI / Supercomputing Operations* (Microsoft); *Production Engineer, AI/HPC Systems* (Meta); *Member of Technical Staff, GPU Infrastructure* (Prime Intellect); *Cloud Integrated Infrastructure Engineer (AI Infra/HPC)* (Deloitte USI); *SRE, AI Research Clusters / Infrastructure SRE – HPC / EngOps Cluster Operations / NCX Senior Engineer* (NVIDIA, Sarvam); and *Platform Engineer, AI Infrastructure* (Sarvam) [M · T0-54 L120–127].
 - **Boundaries with adjacent roles:** SRE and HPC systems administration sit inside variants C and D, whereas GPU kernel/performance engineering, network-only engineering, runtime/sandbox engineering, generic Kubernetes platform roles without a GPU core, and application-side "AI production engineer" postings sit outside the role (22 of 73 screened candidates were excluded on scope) [M · T0-54 L44, L131].
 - **Mirror staleness and operational caveats:** In 16 conclusive employer-board liveness checks on 2026-11-13, 3 postings (18.8%) had already closed while mirrors still listed them (Anthropic London Kubernetes/Accelerator, E2E Networks, Deloitte India LLP) [M · T0-54 L68, L162, L400]. Always confirm openings on the employer's own ATS board. Also check operational terms before applying: several neocloud, vendor and consultancy postings carry customer-facing pre-sales/field duties (Prime Intellect, NVIDIA NCX, Deloitte) or explicit 24/7 or rotating on-call (Prime Intellect, CoreWeave, NexGen) [A/B · T0-54 L323].
-- **Credentials:** Certifications are named in only 2 of 35 postings (5.7%: Prime Intellect and Office Beacon, both preferred), and CKA in 0 of 35 [M · T0-54 L65, L256]. **Correction to the generated card:** `NCP-GENL` is an LLM training/fine-tuning exam, not an infrastructure credential; NVIDIA's actual infrastructure credentials (verified 2026-10-16 and live-checked 2026-11-19) are **NCP-AII** ($400, 120 min, 70–75 questions: 31% server bring-up, 33% cluster test) and **NCP-AIO** ($500, 120 min, 30 questions plus 3 live hands-on labs on Slurm, Kubernetes and Base Command Manager), plus associate **NCA-AIIO** (~$125–135) [A/B · T0-54 L65, L257–263]. Both professional exams suit variants C and D (data-centre, partner and consultancy routes), not lab software roles; see [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials:** Certifications are named in only 2 of 35 postings (5.7%: Prime Intellect and Office Beacon, both preferred), and CKA in 0 of 35 [M · T0-54 L65, L256]. **Credential focus:** `NCP-GENL` is an LLM training/fine-tuning exam rather than a GPU-infrastructure credential; NVIDIA's dedicated infrastructure credentials (verified 2026-10-16 and live-checked 2026-11-19) are **NCP-AII** ($400, 120 min, 70–75 questions: 31% server bring-up, 33% cluster test) and **NCP-AIO** ($500, 120 min, 30 questions plus 3 live hands-on labs on Slurm, Kubernetes and Base Command Manager), plus associate **NCA-AIIO** (~$125–135) [A/B · T0-54 L65, L257–263]. Both professional exams suit variants C and D (data-centre, partner and consultancy routes), not lab software roles; see [credential ROI](../../04-certifications/credential-roi.md).
 
 ## Career path, India demand and market signals
 
@@ -147,9 +147,9 @@ A November 2026 sample of 35 job descriptions (`n = 35`, 12 opened in full on em
 
 ## Interview themes and preparation notes
 
-The generated card assigns the **Infrastructure** track (KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging). T0-54 shows that this list only partly fits `ai-infrastructure-engineer` [C · T0-54 L66, L242]:
+The generated card assigns the **Infrastructure** track; T0-54 shows that Phase 0's inference-serving topic list (KV-cache maths, decode roofline, continuous batching) only partly fits `ai-infrastructure-engineer` and adds cluster-operations depth [C · T0-54 L66, L242]:
 - **What is corroborated:** Anthropic's application form states that its coding rounds mirror on-the-job work rather than LeetCode-style puzzles, lets candidates pick a language, and requires agreement to AI partnership guidelines (secondary reports say AI is permitted for drafting/preparation and restricted in live rounds and take-homes unless stated) [A for form, COI; C for details · T0-54 L66, L235]. Prep sites report an inference-API design round (batching, KV cache, GPU utilisation) at Anthropic [C · T0-54 L236].
-- **Cluster-operations themes missing from the scorecard track:** Prep reports for xAI, CoreWeave and OpenAI (backend-adjacent) and job-posting requirements point to **GPU cluster architecture, Kubernetes at scale (apiserver, etcd, custom controllers, device plugins), Slurm and topology-aware gang scheduling, InfiniBand/RDMA/NCCL throughput and debugging, parallel storage bottlenecks, bare-metal Linux/kernel/firmware debugging, automated node health and failure recovery, and capacity planning** [C · T0-54 L238–242].
+- **Cluster-operations themes (added from T0-54 to the Infrastructure track):** Prep reports for xAI, CoreWeave and OpenAI (backend-adjacent) and job-posting requirements point to **GPU cluster architecture, Kubernetes at scale (apiserver, etcd, custom controllers, device plugins), Slurm and topology-aware gang scheduling, InfiniBand/RDMA/NCCL throughput and debugging, parallel storage bottlenecks, bare-metal Linux/kernel/firmware debugging, automated node health and failure recovery, and capacity planning** [C · T0-54 L238–242].
 - **Preparation focus (no model answers, per D-018):** Classify which of the four variants the loop targets before revising; pair the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack) with distributed-systems and cluster-operations drills, and prepare concrete production incident post-mortems covering hardware, fabric or scheduler failures [P · T0-54 L242, L309]. See [interview loops](../../08-interviewing/interview-loops.md) for cross-employer loop structure. No India-specific loop evidence or neocloud AI-tool policy was found [E · T0-54 L242, L374].
 
 ## Dossier evidence and limits

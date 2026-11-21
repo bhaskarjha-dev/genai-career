@@ -36,7 +36,7 @@ Choose between them on preference:
 - **Research Engineer / MTS (#4)** remains the highest-paying engineering ladder (lab US base $205K–$850K; SWE/MTS TC medians ~$875–882.5K [B · T0-02, T0-50]) and a quorum-crossing candidate (`223` on Fast AI Jobs, 2026-11-12 [B · T0-70]), offset by narrow access and semi-liquid equity.
 - **Applied Scientist (#5)** rose two places once Research Pipeline 2 replaced its Grade D placeholders with direct Big Tech evidence: Amazon Science listed `451` Applied Science openings on 2026-11-13 (~270 literally AS-titled, 90 in India [B · T0-52]) and Levels.fyi Amazon AS TC spans $245K (L4) to $653K (L7) [B · T0-52].
 
-**#6–#10: Applied AI Engineer (68.6), Research Scientist (67.8), AI Infrastructure (66.7), ML Platform / MLOps (65.2) and AI Security Engineer (65.1).** Two roles broke into Band A in November 2026 on newly measured Grade B volume: **ML Platform / MLOps Engineer** graduated from Verified to Established (`E`: Axial 1,959 US MLOps postings + ITJobsWatch 184 UK permanent jobs + Fast AI Jobs 1,099 [B · T0-58]) and **AI Security Engineer** jumped from #19 to #10 after SANS's live tracker recorded >850 AI/ML security-engineer postings (~100 red-team, 93 supply-chain) alongside dated US bands of $178K–$356.5K [B · T0-60, T0-69].
+**#6–#10: Applied AI Engineer (68.6), Research Scientist (67.8), AI Infrastructure (66.7), ML Platform / MLOps (65.2) and AI Security Engineer (65.1).** Two roles broke into Band A in November 2026 on newly measured Grade B volume: **ML Platform / MLOps Engineer** graduated from Verified to Established (`E`: Axial 1,959 US MLOps postings + ITJobsWatch 184 UK permanent jobs + Fast AI Jobs 1,099 [B · T0-58]) and **AI Security Engineer** jumped from #19 to #10 after SANS's live tracker recorded >850 AI/ML security-engineer postings (~100 red-team, 93 supply-chain) alongside dated US bands of $178K–$431.25K [B · T0-60, T0-69].
 
 **The most important finding still holds: the best skills are often broader than their standalone titles.** Agentic AI (59.3% of AI Engineer JDs) and evaluation (19.0% of S09 JDs) remain stronger as force multipliers inside Tier 1–2 titles than as standalone titles (Agentic AI Engineer #14, AI Evaluation Engineer #15).
 
@@ -46,16 +46,16 @@ Choose between them on preference:
 |---|:---:|---|
 | Machine Learning Engineer | 1 (77.9) | Second-largest measured demand and highest broad-market pay distribution ($287K P50 / $497.5K P90 [B · T0-44]) |
 | AI Engineer | 2 (76.3) | Largest measured demand (3,944 global / 1,697 US / 398 India, static 2026-11-13) and best accessibility; comp trimmed -0.25 to 6.5 per Nov 2026 Levels.fyi ($155K P50) and Axial (-5% to -12% vs ML ceilings) [B · T0-44, T0-48] |
-| *Forward Deployed Engineer* | **3 (71.8)** | New Levels.fyi US TC ($205K P50 / $350K P90) sits above US AI Engineer [B · T0-44]; Fast AI Jobs cluster reached 1,007 roles at 353 AI startups (23/50 newest IC FDE titles) [B/M · T0-51, T0-70] |
+| *Forward Deployed Engineer* | **3 (71.8)** | Levels.fyi US TC ($205K P50 / $350K P90) sits above US AI Engineer [B · T0-44]; Fast AI Jobs cluster reached 1,007 roles at 353 AI startups (23/50 newest IC FDE titles) [B/M · T0-51, T0-70] |
 | *Research Engineer / Member of Technical Staff* | **4 (71.4)** | Highest engineering pay (lab base $205–850K; SWE/MTS TC $875–882.5K [B · T0-02, T0-50]); Fast AI Jobs 223 (quorum candidate for 2026-12-01 recount [B · T0-70]) |
 | *Applied Scientist* | **5 (70.7)** | Direct Big Tech demand (Amazon Science 451 Applied Science openings, 90 India [B · T0-52]) and Amazon AS TC ($245K–$653K [B · T0-52]) replaced Phase 0 Grade D placeholders |
-| *Applied AI Engineer* | **6 (68.6)** | Live Levels.fyi US TC (P50 $232K / P75 $340K / P90 $505–605K [B · T0-44, T0-53]) and 21 of newest 50 Fast AI Jobs AI rows (42%) |
+| *Applied AI Engineer* | **6 (68.6)** | Live Levels.fyi US TC (P25 $200K / P50 $250K / P75 $475K / P90 $505–605K [B · T0-44, T0-53]) and 21 of newest 50 Fast AI Jobs AI rows (42%) |
 | Research Scientist (AI/ML) | 7 (67.8) | Highest Pay score (9.5; Pave $4.1–4.7M equity downgraded A→B [B · T0-55]), but Access is 2.9 (PhD + publications; falls to #15 for switchers) |
-| AI Infrastructure / GPU Platform Engineer | 8 (66.7) | US posted base median midpoint $261K (labs ~$360K; OpenAI $230–490K [A/B · T0-54]); 10/35 sampled postings in India |
+| AI Infrastructure / GPU Platform Engineer | 8 (66.7) | US posted base median midpoint $261K (labs ~$360K; OpenAI $230–490K [A], Anthropic $320–485K [A, COI · T0-54]); 10/35 core postings in India |
 | *ML Platform / MLOps Engineer* | **9 (65.2)** | Graduated V→E on Axial 1,959 US MLOps postings, ITJobsWatch 184 UK perm and Fast AI Jobs 1,099 [B · T0-58] |
-| *AI Security Engineer / AI Red Teamer* | **10 (65.1)** | Jumped from #19 on SANS's >850 AI/ML security postings (~100 red-team, 93 supply-chain [B · T0-60, T0-69]), US bands $178–356.5K and 9 India roles |
+| *AI Security Engineer / AI Red Teamer* | **10 (65.1)** | Jumped from #19 on SANS's >850 AI/ML security postings (~100 red-team, 93 supply-chain [B · T0-60, T0-69]), US bands $178–431.25K and 9 India roles |
 | Inference / LLM Serving Engineer | 11 (64.6) | Strong US posted base ($288K median midpoint, n=14 [B · T0-56]), but smaller title volume (Inference Jobs 341 upper bound; 37 verified active) |
-| AI / GenAI Solutions Architect | 12 (64.1) | Strong proxies (Axial 16,927 US 'AI architecture', JobsPipe SA) and US base $152–248K+ plus Bengaluru SA proxy [B/C · T0-45, T0-62] |
+| AI / GenAI Solutions Architect | 12 (64.1) | Strong proxies (Axial 16,927 US 'AI architecture', JobsPipe SA) and US base $152–247.5K plus Bengaluru SA proxy [B/C · T0-45, T0-62] |
 | AI Product Manager | 13 (63.5) | Top non-engineering option (#1 non-technical, #4 India on upgraded Bengaluru Sr PM proxy [C · T0-45, T0-59]); lab senior bands reach $240–490K base |
 | Agentic AI Engineer | 14 (63.3) | Kept Watch (W): Skilark 107/28,771 (0.37%), failed 3 graduation tests; US product firms hire under AI Engineer while India services/GCCs use the title [C · T0-57] |
 | AI Evaluation Engineer | 15 (62.6) | 22 named postings globally (5+ India) and bimodal US base ($120–304K Microsoft to $310–500K Transluce [A/B · T0-60]); still smaller than broad builder roles |
@@ -79,7 +79,7 @@ Choose between them on preference:
 5. **Uncertainty is visible.** Each score has a [lo–hi] range, and the Monte Carlo turns those ranges into rank intervals.
 6. **Weights are stress-tested.** Six weight profiles are run; a role counts as robust only if it stays near the top across them.
 7. **Titles are not skills.** A skill's or keyword's share of postings never counts as demand for a title. At most it caps the upper end of a range.
-8. **One pay instrument where possible.** Posted base from the same S09 corpus compares app, infra, platform and FDE roles. Levels.fyi TC is used where a title has it, and frontier-lab ladders mark the ceiling. Roles with no pay data get the same default prior (6.5), with a wide range, unless a documented proxy applies (Applied Scientist, Applied AI Engineer, AI Safety Researcher, Agentic AI Engineer). The leadership pay scores (VP / Head of AI 9, CAIO 8.5) are unanchored judgements.
+8. **One pay instrument where possible.** Posted base from the same S09 corpus compares app, infra, platform and FDE roles. Levels.fyi TC is used where a title has it, and frontier-lab ladders mark the ceiling. Roles with no pay data get the same default prior (6.5), with a wide range, unless a documented proxy applies. In November 2026, Research Pipeline 2 (`T0-44`–`T0-66`) replaced Phase 0 unanchored pay priors with posted bands or TC distributions across IC and leadership tracks (including VP / Head of AI and CAIO at 8.0, Grade B [T0-65]).
 9. **Reproducible.** One data file, one script, a fixed seed.
 
 ### 1.2 Pillars and weights
@@ -227,8 +227,8 @@ After each recount, edit `data/role_scores.json` (scores, ranges, grades, basis 
 
 **How to read the board:**
 - **CCI** is a decision aid built from graded evidence plus explicit judgement. It is not a measured fact.
-- **The P10–P90 interval is the honest rank.** "6 (3–10)" for Applied Scientist means it could reasonably land anywhere from #3 to #10 once it is measured.
-- **Pay 6.75 (AI Engineer) vs 8.5 (MLE)** reflects each title's market pay distribution. Like-for-like posted base differs much less ($200–275K vs $213–288K); about half the total-comp gap is employer mix.
+- **The P10–P90 interval is the honest rank.** "5 (3–7)" for Applied Scientist and "6 (4–10)" for Applied AI Engineer show how uncertainty widens or narrows as empirical coverage improves.
+- **Pay 6.5 (AI Engineer) vs 8.5 (MLE)** reflects each title's market pay distribution. Like-for-like posted base differs much less ($200–275K vs $213–288K); within Google, employer and level mix explain 62–69% of the log title gap [B/M · T0-48].
 
 | Band | Roles |
 |---|---|
@@ -270,13 +270,13 @@ After each recount, edit `data/role_scores.json` (scores, ranges, grades, basis 
 | Domain Evaluation Specialist / AI Trainer | 24 | 24 | 24 | 22 | 24 | 21 | 21–24 |
 <!-- END GENERATED -->
 
-- **Robust top three:**
-  - MLE and AI Engineer stay between #1 and #3 under every profile.
-  - Research Engineer/MTS stays between #2 and #5.
-- **Near the top under every profile:** FDE (#3–#7), Applied AI Engineer (#4–#8), Applied Scientist (#5–#7) and AI Infrastructure (#7–#9).
-- **The most weight-sensitive top-ten role is Research Scientist.** It is #4 when pay or moat dominates, but #15 for career switchers. On the full board only Frontier AI Safety Researcher swings more (#12 moat-first to #24 switcher).
-- **The switcher profile lifts the easy-entry roles:** Agentic (#6), Evals (#8) and AI Enablement (#14). They are easier to enter but have smaller measured demand.
-- **The #5–#8 band is a tie.** The Monte Carlo P10–P90 intervals overlap almost completely: Applied AI 4–9, Research Scientist 4–9, Applied Scientist 3–10, AI Infrastructure 5–11.
+- **Robust top tier:**
+  - MLE stays #1–#2 and AI Engineer stays #1–#4 under every profile.
+  - Applied Scientist (#3–#5) and Research Engineer/MTS (#2–#6) stay inside the top six under every profile.
+- **Near the top under every profile:** FDE (#3–#7), Applied AI Engineer (#4–#8) and AI Infrastructure (#7–#10).
+- **The most weight-sensitive top-ten role is Research Scientist.** It is #3 when pay dominates and #5 on Moat-first, but #15 for career switchers. On the full board only Frontier AI Safety Researcher swings as widely (#14 Moat-first to #24 Switcher).
+- **The switcher profile lifts the easy-entry roles:** Agentic (#7), Evals (#9) and AI Enablement (#20). They are easier to enter but have smaller measured demand.
+- **The #3–#5 and #6–#10 bands overlap inside Monte Carlo intervals:** FDE `4 (3–6)`, Research Engineer `4 (2–6)` and Applied Scientist `5 (3–7)` sit together, followed by Applied AI `6 (4–10)`, Research Scientist `8 (5–12)` and AI Infrastructure `8 (6–13)`.
 
 ---
 
@@ -292,13 +292,12 @@ After each recount, edit `data/role_scores.json` (scores, ranges, grades, basis 
 | L5 | Fractional Head of AI / Fractional CAIO | **38.8** | 2.5 | 4 | 4.5 | 7 | 2 | High |
 <!-- END GENERATED -->
 
-- **AI Engineering Manager / Director leads, but on thin evidence.** Its demand proxy ("lead or manager" labels on 5.6% of AI Engineer and 9.2% of MLE postings) mixes IC leads with managers. Its pay rests on one top-of-market data point: the median LCA base of $405K for Anthropic's MTS (Manager) positions. T0-02 rejects LCA wages as a pay anchor because they are floors.
-- **VP / Head of AI and CAIO score high on pay and leverage**, but the corpus has no count or pay data for them. Their Pay scores (9 and 8.5) are unanchored judgements rather than the 6.5 default prior of §1.3 (low confidence), and the paths into them are long.
-- **Independent consulting and fractional leadership are late-career, high-variance options, not entry routes.** The evidence:
-  - Asks run $150–250/hr, but offers come in at 0.59–0.91× of asks.
-  - Go Fractional labels CAIO demand "falling sharply", although its own CAIO post count rose from 6 to 10 in 90 days across two reads (326 profiles on the first read). T0-18 rates the demand evidence "conflicting" (C).
-  - Modelled US net income has a median of $105K for practitioners who get traction; if 30–60% of entrants stall, the median falls to $39–87K (a model output, D · T0-18).
-  - The UK GenAI contract day-rate median fell from £613–625/day (2024) to £550/day (2025, and the six months to 2026-10-20).
+- **AI Engineering Manager / Director leads on high-confidence RP2 data (`T0-65`).** Fast AI Jobs listed 608 EM roles at 239 AI startups on 2026-11-12 (+54% vs late July 394; 20–24% are AI-system EM roles [B · T0-65, T0-70]), and dated US posted base bands span $163K–$405K (SandboxAQ, NVIDIA, Scale AI, Anthropic [A/B · T0-65]) plus equity; India proxy SWE Manager P50 is ₹85.6L (n=975 [B · T0-45]). Demand growth is balanced by SignalFire 2026 management thinning (~12 reports at tech majors, ~15 at startups [B · T0-65]).
+- **VP / Head of AI and CAIO carry high pay (8.0, Grade B) and leverage (9, Grade D), with narrow access and bifurcated pay (`T0-65`).** Axial tracked 65 US executive AI-engineering postings over 6 months (C); posted US VP base runs $170K–$315K (UK £120K–£150K [A/B]). CAIO prevalence across Fortune 500 + S&P 500 is 10.7% (71/665, Crist Kolder, live-verified 2026-11-19 [B · U47]), and pay splits sharply between US public/higher-ed ($118K–$200K [B]) / SBI India (up to ₹160L [B]) and private corporate packages ($400K–$1M+ [C]).
+- **Independent consulting and fractional leadership are late-career, high-variance options, not entry routes (`T0-18`, `T0-66`).** The evidence:
+  - UK GenAI contract adverts tripled to 1,466 in the 6 months to 2026-11-12 (vs 472 in 2025 and 176 in 2024), while median day rate stayed flat at £550/day (vs £625 in 2024, n=933 [B · T0-66]).
+  - For fractional roles, only 1 of 13 qualifying postings sat on an employer's own page; employer-side offers run $75–$150/hr [B] against a $150–$250/hr asking corridor [C · T0-66]. Go Fractional logged 10 CAIO posts in 90 days (4 open, 2026-11-12 [B · T0-70]).
+  - Modelled US net income has a median of $105K for practitioners who get traction; if 30–60% of entrants stall, the median falls to $39–87K (a model output [D · T0-18]). Independent freelancer surveys report 53–75% network sourcing (vs Go Fractional's 92% sponsor survey [C · U47]).
 
 ---
 
@@ -316,19 +315,19 @@ After each recount, edit `data/role_scores.json` (scores, ranges, grades, basis 
 | Equal | Machine Learning Engineer (76) | AI Engineer (76) | Forward Deployed Engineer (72) | Research Engineer / Member of Technical Staff (71) | Applied Scientist (70) |
 <!-- END GENERATED -->
 
-**Pay pillar alone (senior-typical pay and reachable ceiling), highest score first.** The Applied Scientist, Applied AI Engineer and AI Safety Researcher scores are proxies, not evidenced ceilings:
+**Pay pillar alone (senior-typical pay and reachable ceiling), highest score first.** Research Pipeline 2 replaced Phase 0 proxies for Applied Scientist and Applied AI Engineer with direct US TC distributions:
 
 | Score | Role | Evidence |
 |---|---|---|
-| 9.5 | Research Scientist | Lab RS TC medians ~$1.25M (OpenAI, B) and $0.75–0.83M (Anthropic, C); Pave senior new-hire equity $4.1–4.7M (A) |
-| 9 | Research Engineer / MTS | Lab TC medians ~$875–882.5K |
-| 8.5 | Machine Learning Engineer | US P90 $497.5K; Meta E6 $782K |
-| 8 | Applied Scientist | Proxy |
-| 7.5 | Applied AI Engineer · AI Safety Researcher · GPU Kernel Engineer · Inference Engineer | Inference: typical posted base ~$270K, up to $485K at labs |
+| 9.5 | Research Scientist | Lab RS TC medians ~$1.25M (OpenAI, B) and $0.75–0.83M (Anthropic, C); Pave senior new-hire equity $4.1–4.7M (B, vendor intended grant value, U32) |
+| 9 | Research Engineer / MTS | Lab US base $205–850K; SWE/MTS TC medians ~$875–882.5K [A/B · T0-02, T0-50] |
+| 8.5 | Machine Learning Engineer | US P50 $287K / P90 $497.5K; Meta E6 $660–790K [B · T0-44] |
+| 7.75 | Applied Scientist · Applied AI Engineer | Amazon AS TC L4 $245K–L7 $653K (median $306–335K [B · T0-52]); Applied AI Levels.fyi US TC P25 $200K / P50 $250K / P75 $475K / P90 $505–605K [B · T0-44, T0-53] |
+| 7.5 | AI Safety Researcher · GPU Kernel Engineer · Inference Engineer | Inference US posted base median midpoint $288K (n=14 [B · T0-56]); GPU Kernel $235.8K (n=17 [B · T0-63]); Safety labs $350–500K vs independents $100K–$503K [A/B · T0-60] |
 
 Two caveats apply:
-- 49–72% of senior frontier-lab packages is semi-liquid stock. T0-17 models a 0.5–0.8× risk adjustment (T0-02's own discount model gives 0.64–0.88 for tender-backed lab stock); both are model outputs, and tenders are gated by tenure.
-- AI/ML attrition of ~28% a year implies an expected vested fraction of 0.56 on a 4-year grant (0.71 at 17%) [B inputs; model output · T0-17].
+- 49–72% of senior frontier-lab packages is stock [B · T0-02]. Private-lab stock (OpenAI, xAI) is semi-liquid (T0-17 models 0.5–0.8×; T0-02 models 0.64–0.88× for tender-backed grants, both model outputs, with tenure-gated tenders), while Anthropic's newly public `ANT` shares (2026-11-19) carry staggered lock-ups [A · U52].
+- AI/ML attrition of ~28% a year (2025) implies an expected vested fraction of 0.56 on a 4-year grant (0.71 at 17%) [B inputs; model output · T0-17]; Pave's 2026 refresh reports 21.8% AI/ML vs 16.8% non-AI attrition [B · T0-44].
 - The systems/infra pay premium is "not validated" (T0-02).
 
 ### 5.2 Persona lenses (switcher weights; roles not plausible within 12 months are excluded)
@@ -345,14 +344,14 @@ Two caveats apply:
 
 - **Backend / Systems SWE:** AI Engineer is the fastest corridor (~6 months; high-volume at T1–T2). FDE, MLE and Applied AI Engineer come next. AI Infrastructure enters the top five on an inferred backend Access score (7, Grade D). T2-01's backend playbook targets Senior/Staff AI Inference Engineer or Applied AI Engineer roles; its Staff (T3) tier takes ~10–14 months with infrastructure depth (12–18 months in T2-01's own matrix).
 - **Data Scientist / BI:** AI Engineer with an evals edge (~8 months from DS; ~11 from BI), or MLE. Evals is the natural specialisation, because error analysis and judge validation are data-science strengths.
-- **Frontend / Full-Stack:** AI Engineer (full-stack) in ~7 months. T0-06 finds "AI Frontend" demand thin and Staff-skewed (C/D; the four postings it examined were all Staff-level), so apply as a "full-stack AI engineer".
+- **Frontend / Full-Stack:** AI Engineer (full-stack) in ~7 months. T0-62 dropped Phase 0's "Staff-skewed" AI Frontend claim (median stated experience is 2 years across n=6 postings [C · T0-62]), though AI Product Engineer remains an alias family without a title-level count — apply across both "full-stack AI engineer" and "AI product/frontend engineer".
 - **Non-technical (5+ years in a domain):**
   - AI PM: ◐ (plausible but extended), ~7 months. One recruiter template asks for 4+ years as a PM plus a shipped model-powered feature; T2-01 asks for 5+ years in product/ops plus notebook-level Python.
   - "FDE" here means FDE-*adjacent* roles: ◐, ~10 months, and coding is required.
   - Governance: if you come from GRC, privacy or audit.
   - Domain evaluation: "weeks, if credentialed", but "a bridge, not a destination".
   - Engineering from zero code takes ~22 months.
-- **PhD:** MLE and AI Engineer top the lens on demand. Research Engineer and Applied Scientist follow; they are T2-01's high-volume PhD corridors (~8 months). Research Engineer pays more at the top (Pay 9 vs MLE 8.5); Applied Scientist has no corpus pay data, and its proxy score (8) is below MLE's. Frontier research *science* is "not plannable".
+- **PhD:** MLE and AI Engineer top the lens on demand. Applied Scientist and Research Engineer follow; they are T2-01's high-volume PhD corridors (~8 months). Research Engineer pays more at the top (Pay 9 vs MLE 8.5); Applied Scientist has direct Amazon AS TC benchmarks (Pay 7.75, L4 $245K–L7 $653K [B · T0-52]). Frontier research *science* is "not plannable".
 
 ### 5.3 India lens (India demand and pay replace the US inputs)
 
@@ -367,29 +366,29 @@ Two caveats apply:
 | 6 | Applied AI Engineer | 61.7 | 4 | 6 | 6 | 8 (4–14) |
 | 7 | AI / GenAI Solutions Architect | 61.6 | 4 | 7.5 | 12 | 8 (5–13) |
 | 8 | ML Platform / MLOps Engineer | 61.5 | 6 | 5.5 | 9 | 8 (5–12) |
-| 9 | Forward Deployed Engineer | 60.6 | 4.5 | 5.5 | 3 | 10 (5–14) |
+| 9 | Forward Deployed Engineer | 60.6 | 4.5 | 5.5 | 3 | 9 (5–14) |
 | 10 | Research Engineer / Member of Technical Staff | 60.1 | 2 | 8 | 4 | 11 (7–15) |
 | 11 | AI Security Engineer / AI Red Teamer | 60.1 | 4.5 | 6 | 10 | 10 (6–14) |
 | 12 | Inference / LLM Serving Engineer | 59.6 | 4 | 6 | 11 | 11 (6–15) |
 <!-- END GENERATED -->
 
-- **AI Engineer leads in India** (#1 in 78% of Monte Carlo draws; MLE in 22%).
-  - It has 398 live postings, and its aliases GenAI Engineer and GenAI Developer are the top GCC AI label according to Taggd (C · T0-01 D8); title-level GCC counts were not obtained.
-  - JobsPipe's live counts put India at 0.23× the US (398 vs 1,697), but its September JD page implies 0.49× (13.6% vs 27.9% of postings). T0-01 flags this disagreement without reconciling it.
-- **MLE pays more in India too, but has far fewer live postings (90).** Bengaluru TC: MLE P50 ₹44.5L, P90 ₹94.6L; AI Engineer P50 ₹21.4–24.5L, P90 ₹62.6L.
-- **Applied Scientist ranks #3 in India on proxies alone** (low confidence): the corpus has no India count, and the pay proxy is Google Bengaluru MLE (L4 ₹65.2L, L5 ₹168.3L; small n). Expect this rank to move at the first India recount.
-- **ML Platform/MLOps rises to #4:** MLOps Engineer is a common GCC title according to Taggd (C), and T0-01 relays a Quess estimate of 18–43% supply gaps in GCC AI/MLOps/platform clusters (C).
-- **FDE drops to #10:** there is little India-based FDE demand evidence, and the US cluster was mostly non-remote in the August snapshot.
-- **Research roles drop:** India accounts for 3.7% of all-field Research Scientist postings.
-- **India pay is two populations.** The broad market centres on ₹10–15L (Glassdoor, Indeed, Payscale and AIM Research figures relayed by T0-02, mostly C); MNC, GCC and product firms pay far more. For Bengaluru senior SWEs on Levels.fyi (not AI-specific; n=4,836, a large-employer-skewed sample), the median is ₹56.0L and the five best-paying employers' senior medians are ₹1.06–1.22Cr (≈ the P90 of ₹1.07Cr) [B · T0-17].
-- **AI titles are rarely remote.** JobsPipe JD measurements (2026-11-02) show remote shares of AI Engineer 11.0% and MLE 14.0%, against 31.6% for generic backend postings.
+- **AI Engineer leads in India** (CCI 73.2; #1 in 89% of GenAI Monte Carlo draws [M]).
+  - It has 398 live postings (10.1% of 3,944 global, correcting Phase 0's 13.6% erratum [M · U33]), and its aliases GenAI Engineer and GenAI Developer are the top GCC AI label according to Taggd [C · T0-01 D8]; title-level GCC counts were not obtained.
+  - JobsPipe's live counts put India at 0.23× the US (398 vs 1,697), whereas its September JD page implied 0.49× (13.6% vs 27.9% of postings [B · T0-01 F10]).
+- **MLE pays more in India too, but has far fewer live postings (90).** Greater Bengaluru TC (2026-11-12 [B · T0-45]): MLE P50 ₹44.4–44.7L, P90 ₹80.7L (n=97, down from Oct ₹94.6L); AI Engineer P50 ₹20.0L, P90 ₹60.6L.
+- **Applied Scientist (#3) and AI Product Manager (#4) hold top-four India spots on RP2 evidence:** Amazon Science listed 90 India science openings (14% of 642 global, 2026-11-13 [B · T0-52]; India pay remains Grade D proxies only), while AI PM rose on Levels.fyi India PM (n=1,518) and Bengaluru Senior PM (n=578, P50 ~₹55–65L+) proxies [C · T0-45, T0-59].
+- **AI Infrastructure (#5) and ML Platform / MLOps (#8):** AI Infrastructure logged 10/35 core postings in India (NVIDIA ×4, Deloitte USI ×2, Sarvam ×2, AION, Soket; 0 GCCs [B · T0-54]); ML Platform / MLOps logged 13/37 postings in India GCCs and IT services [C · T0-58], and Quess estimates 18–43% GCC supply gaps [C · T0-01 F10].
+- **FDE sits at #9 in India:** Indeed India / IANS reported ~19× YoY growth from a low base [C · T0-25, T0-51], and Levels.fyi India FDE TC P50 is ₹16.75L–17.7L (P75 ₹42L) alongside Weekday ₹25–40 LPA for 5–7 yrs [B · T0-51], though the role remains mostly non-remote.
+- **Research roles trail on local volume:** India accounts for 3.7% of all-field Research Scientist postings [B · T0-55] and only 2 verified live Research Engineer postings (DeepMind Bangalore, Sarvam Bengaluru [C · T0-50]).
+- **India pay is two populations.** The broad market centres on ₹10–15L (Glassdoor, Indeed, Payscale and AIM Research figures relayed by T0-02, mostly C); MNC, GCC and product firms pay far more. For Bengaluru senior SWEs on Levels.fyi (not AI-specific; a large-employer-skewed sample), the median is ₹56.1L (n=4,752, Nov 2026 [B · T0-45]; Oct 2026 ₹56.0L, n=4,836 [B · T0-17]), Bengaluru Staff SWE is ₹1.02Cr (n=366 [B · U47]), and the five best-paying employers' senior medians reach ₹1.06–1.22Cr (≈ the P90 of ₹1.07Cr [B · T0-17]).
+- **AI titles are rarely remote.** JobsPipe JD measurements (underlying count date 2026-09-10, re-checked 2026-11-13 [B · T0-69]) show remote shares of AI Engineer 11.0% and MLE 14.0%, against 31.6% for generic backend postings.
 - **Independent contracting from India:**
   - Up to ₹75L (≈$79K), s.58 (old §44ADA) presumptive tax keeps ~83–84% of billing (67–73% under actual books), provided cash receipts are ≤5% of gross receipts; otherwise the ceiling is ₹50L.
   - Above the ceiling presumptive tax is not available: one rupee over ₹75L adds ~₹11.8L of tax, and it takes ~₹92–98L of billing to match the ₹75L take-home (the "dead zone"). At ₹1.2Cr about 65% is kept under actual books or a company.
   - India-based seniors are quoted $50–100/hr.
   - Not legal or tax advice.
 - **GCC demand carries execution risk:** "nearly 70%" of India GCCs are stuck at AI pilots [B · T0-09 L77].
-- **Most India-lens inputs are Grade C/D; treat this ranking as directional** (Appendix A.3).
+- **12 of 24 IC India pay inputs remain Grade D (0 of 24 India demand inputs are Grade D); treat this ranking as directional** (Appendix A.3).
 
 ---
 
@@ -451,14 +450,14 @@ Two caveats apply:
 `Demand 6.5 · Pay 7.75 · Durability 7.5 · Leverage 7.5 · Access 5.9 · Monte Carlo 5 (3–7)`
 - **Why #5:**
   - Direct Big Tech demand replaced Phase 0 placeholders: Amazon Science listed 451 Applied Science category openings on 2026-11-13 (~270 literally AS-titled; 90 India science openings = 14% of global [B · T0-52]), alongside Microsoft, Uber, Zalando and Mistral.
-  - Direct US TC benchmarks now exist: Levels.fyi Amazon Applied Scientist mean TC runs L4 $245K, L5 $324K, L6 $407K, L7 $653K (median $306–335K [B · T0-52]).
+  - Direct US TC benchmarks: Levels.fyi Amazon Applied Scientist mean TC runs L4 $245K, L5 $324K, L6 $407K, L7 $653K (median $306–335K [B · T0-52]).
   - Strongest PhD corridor (#1 for PhDs in the GenAI persona lens), while Microsoft (BS+2/MS+1) and Uber (BS+3–4/MS+2) open non-PhD routes [A/C · T0-52].
 - **Watch:** employer concentration in Big Tech exposes hiring to corporate headcount cycles, and India pay remains unmeasured (Grade D). → [Hub](hubs/applied-scientist.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-applied-scientist) · [Profile](role-catalog.md#profile-applied-scientist)
 
 <a id="rank-6-applied-ai-engineer"></a>
 ### #6 Applied AI Engineer: CCI 68.6 · Band A · Medium confidence
 `Demand 5 · Pay 7.75 · Durability 6.5 · Leverage 8.5 · Access 7.3 · Monte Carlo 6 (4–10)`
-Customer- and solutions-facing LLM engineering at labs and AI vendors (OpenAI, Anthropic, Mistral, Scale, Snorkel); 21 of the newest 50 Fast AI Jobs AI-Engineer rows (42%, 2026-11-11) carry this title [C · T0-53]. Live Levels.fyi US TC now measures P25 $165K / P50 $232K / P75 $340K / P90 $505–605K (reconciling T0-53 $505K vs T0-44 $605K [B · T0-44, T0-53]). Suits backend engineers and PhDs as the bridge between AI Engineer and FDE. → [Hub](hubs/applied-ai-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-applied-ai-engineer) · [Profile](role-catalog.md#profile-applied-ai-engineer)
+Customer- and solutions-facing LLM engineering at labs and AI vendors (OpenAI, Anthropic, Mistral, Scale, Snorkel); 21 of the newest 50 Fast AI Jobs AI-Engineer rows (42%, 2026-11-11) carry this title [C · T0-53]. Live Levels.fyi US TC measures **P25 $200K / P50 $250K / P75 $475K / P90 $505–605K** (both T0-44 and T0-53 agree on P25–P75; P90 shifted from $605K on 2026-10-04 to $505K on 2026-11-11 [B · T0-44, T0-53]), alongside US lab posted bands of $197–320K [A/B · T0-53]. Suits backend engineers and PhDs as the bridge between AI Engineer and FDE. → [Hub](hubs/applied-ai-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-applied-ai-engineer) · [Profile](role-catalog.md#profile-applied-ai-engineer)
 
 <a id="rank-7-research-scientist"></a>
 ### #7 Research Scientist (AI/ML): CCI 67.8 · Band A · High confidence
@@ -468,17 +467,17 @@ Highest Pay score (9.5): lab RS TC medians reach ~$1.25M at OpenAI (B) and $0.75
 <a id="rank-8-ai-infrastructure-engineer"></a>
 ### #8 AI Infrastructure / GPU Platform Engineer: CCI 66.7 · Band A · Medium confidence
 `Demand 5.5 · Pay 7 · Durability 7.5 · Leverage 8.5 · Access 5.2 · Monte Carlo 8 (6–13)`
-Runs GPU clusters, high-speed fabrics and storage. US posted base median midpoint is $261K (n=12), rising to ~$360K at frontier labs (OpenAI $230–490K [A], Anthropic $315–485K [A · T0-54]); 10 of 35 sampled postings (28.6%) are in India (NVIDIA, Microsoft, Oracle, neoclouds [B · T0-54]). Durable physical-systems work for SRE, DevOps and backend infrastructure engineers. → [Hub](hubs/ai-infrastructure-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer) · [Profile](role-catalog.md#profile-ai-infrastructure-engineer)
+Runs GPU clusters, high-speed fabrics and storage. US posted base median midpoint is $261K (n=12), rising to ~$360K at frontier labs (OpenAI $230–490K [A], Anthropic $320–485K [A, COI · T0-54]); 10 of 35 core postings (28.6%) are in India (NVIDIA ×4, Deloitte USI ×2, Sarvam ×2, AION, Soket; 0 GCCs [B · T0-54]). Durable physical-systems work for SRE, DevOps and backend infrastructure engineers. → [Hub](hubs/ai-infrastructure-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-infrastructure-engineer) · [Profile](role-catalog.md#profile-ai-infrastructure-engineer)
 
 <a id="rank-9-ml-platform-engineer"></a>
 ### #9 ML Platform / MLOps Engineer: CCI 65.2 · Band A · High confidence
 `Demand 6.5 · Pay 6.5 · Durability 6.5 · Leverage 7.5 · Access 5.7 · Monte Carlo 10 (7–14)`
-Graduated from Verified to Established (`E`) in November 2026 on Axial's 1,959 US MLOps postings (~70/wk steady [B]), ITJobsWatch's 184 UK permanent jobs citing MLOps in 6 months [B] and Fast AI Jobs' 1,099 broad platform listings [B · T0-58]. US posted base runs $150–357K (median midpoint $245K for senior/Big Tech roles [B · T0-58]), and 13/37 sampled postings sit in India GCCs and services firms under the MLOps Engineer title. → [Hub](hubs/ml-platform-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer) · [Profile](role-catalog.md#profile-ml-platform-engineer)
+Graduated from Verified to Established (`E`) in November 2026 on Axial's 1,959 US MLOps postings (~70/wk steady [B]), ITJobsWatch's 184 UK permanent jobs citing MLOps in 6 months [B] and Fast AI Jobs' 1,099 broad platform listings [B · T0-58]. Pay splits between generalist MLOps (Levels.fyi US TC median $145.2K, Fast AI Jobs $179.25K [B]) and senior/Big Tech ML Platform ($150–357K, median midpoint $245K [B/M · T0-58]); 13/37 sampled postings sit in India GCCs and services firms under the MLOps Engineer title. → [Hub](hubs/ml-platform-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ml-platform-engineer) · [Profile](role-catalog.md#profile-ml-platform-engineer)
 
 <a id="rank-10-ai-security-engineer"></a>
 ### #10 AI Security Engineer / AI Red Teamer: CCI 65.1 · Band A · High confidence
 `Demand 5.5 · Pay 7 · Durability 7.5 · Leverage 8 · Access 4.6 · Monte Carlo 11 (7–15)`
-Jumped from #19 to #10 after SANS's live tracker recorded >850 AI/ML security-engineer postings (~100 AI red-team, +13% WoW; 93 supply-chain security [B · T0-60, T0-69]) and RP2 replaced its Grade D pay placeholder with dated US bands (Amazon Senior AI Red Team $178.4–226.7K + RSUs [A], Microsoft MTS $119.8–234.7K [B], NVIDIA $224–356.5K [A]) plus 9 India postings (₹25–50L [B · T0-60]). Queued for exact-title deduplicated recount on 2026-12-01. → [Hub](hubs/ai-security-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer) · [Profile](role-catalog.md#profile-ai-security-engineer)
+Jumped from #19 to #10 after SANS's live tracker recorded >850 AI/ML security-engineer postings (~100 AI red-team, +13% WoW; 93 supply-chain security [B · T0-60, T0-69]) and RP2 replaced its Grade D pay placeholder with dated US bands (Amazon Senior AI Red Team $178.4–226.7K + RSUs [A], Microsoft MTS $119.8–234.7K [B], NVIDIA Senior AI Security Researcher $224–431.25K + equity [B, mirror · T0-60 L262]) plus 9 India postings (₹25–50L [B · T0-60]). Queued for exact-title deduplicated recount on 2026-12-01. → [Hub](hubs/ai-security-engineer.md) · [Skills](../03-skills-and-tech/role-skill-maps.md#skills-ai-security-engineer) · [Profile](role-catalog.md#profile-ai-security-engineer)
 
 ---
 
@@ -492,8 +491,8 @@ Jumped from #19 to #10 after SANS's live tracker recorded >850 AI/ML security-en
 | 14 | Agentic AI Engineer | 63.3 | Kept Watch (W): Skilark 107/28,771 (0.37%), failed 3 graduation tests; US product firms hire under AI Engineer [C · T0-57] | Passing graduation tests 1–4 in US product market | Backend and distributed-systems engineers; India GCC/services titles |
 | 15 | AI Evaluation Engineer | 62.6 | Smaller title (22 named postings globally, 5+ India [B · T0-60]) despite strong bimodal pay ($120–500K) | Dedicated eval-engineering ladders outside labs/Big Tech | Backend/DS/PhD engineers; *every* AI Engineer as a core skill |
 | 16 | GPU Kernel / ML Compiler Engineer | 59.8 | Narrow access (3.6); tile DSLs and agentic kernel tools abstract routine kernel writing [B/C · T0-63] | Broad custom-silicon and inference-compiler expansion | Systems/C++/CUDA/Triton engineers, PhDs |
-| 17 | Physical AI / Robotics AI Engineer | 58.2 | Graduated W→V (48 postings across 38 employer entries; US median base ~$242.5K [B/C · T0-64]), but capital-intensive hardware risk | Industrial/humanoid deployment scale beyond pilots | Robotics/controls/ML engineers |
-| 18 | Frontier AI Safety Researcher | 57.9 | ~600 technical FTEs (+21%/yr [C · T0-60]); 0/23 India postings; wide pay split (labs $350–500K vs non-profits $120–240K) | Continued lab and institute safety headcount growth | PhDs, fellowship alumni (US/UK/CA work auth) |
+| 17 | Physical AI / Robotics AI Engineer | 58.2 | Graduated W→V (48 postings across 38 employer entries; US median base ~$242.5K [B/C · T0-64]), but capital-intensive hardware risk | Industrial/humanoid deployment scale beyond pilots | Real-robot learning, VLA and PyTorch engineers (controls 13%) |
+| 18 | Frontier AI Safety Researcher | 57.9 | ~600 technical FTEs (+21%/yr [C · T0-60]); 0/23 India postings; wide pay split (labs $350–500K vs independents $100K–$503K: METR/Goodfire overlap labs, FAR.AI $100–250K) | Continued lab and institute safety headcount growth | PhDs, fellowship alumni (US/UK/CA work auth) |
 | 19 | AI Governance Programme Lead | 57.0 | EU Reg. (EU) 2026/1744 delayed Annex III 16 months to Dec 2027; Colorado repealed SB 24-205; mid pay ($152–170K IAPP medians) [A/B · T0-61] | Approaching Dec 2027 EU Annex III & May 2027 India DPDP deadlines | GRC, privacy and audit professionals |
 | 20 | AI Product Engineer (AI Frontend) | 54.5 | Alias family with no exact title count; dispersion from $140K startup to $315K Staff AI Frontend [A/B · T0-62] | Standardised AI-frontend ladders across product firms | Frontend/full-stack engineers (median 2 yrs exp in T0-62) |
 | 21 | AI Risk, Audit & Compliance Specialist | 54.1 | Absorbed inside audit/MRM/banking; SR 26-2 Footnote 3 still excludes GenAI [A/B · T0-61] | GenAI MRM guidance and ISO 42001 audit uptake | Auditors and model-risk professionals |
@@ -511,7 +510,7 @@ Jumped from #19 to #10 after SANS's live tracker recorded >850 AI/ML security-en
 | Cognitive Architect, Prompt Wizard, Agent Architect (exact), Context Harness Engineer, Principal Agentic Context Engineer, Vibe Engineer | Quarantined (T0-01 D4; Vibe Engineer was never searched) | — |
 | Prompt Engineer | Legacy: 0.35% of LinkedIn AI postings (2025 arXiv study) | AI Engineer |
 | AI Whisperer, Neural Network Designer, Transformer Specialist, Foundation Model Engineer, Reasoning Engineer | Never searched (unmeasured) | — |
-| Voice AI Engineer, On-Device/Edge AI Engineer, Retrieval/Vector Search Engineer, AI DevRel, AI TPM | Candidate roles with no title-level count | Measure at the next recount |
+| Voice AI Engineer, On-Device/Edge AI Engineer, Distributed Training Engineer, Retrieval/Vector Search Engineer, AI DevRel, AI TPM | Candidate roles with no quorum-grade count (Edge and Distributed Training had live postings in Nov 2026 [C · T0-69, U38]) | Measure at the next recount |
 | Foundation Model Pre-Training Engineer; Data Ops & RLHF Lead; Mechanistic Interpretability Researcher; AI Data Governance & Privacy Architect | Unsourced labels [P] with no posting evidence | Research Engineer / AI Infrastructure; Domain Evaluation Specialist; AI Safety Researcher; AI Risk & Audit |
 
 > [!CAUTION]
@@ -528,9 +527,9 @@ Each claim carries its evidence grade. EGP-1.0 (T1-02 §10.3–10.4, rule C4) ad
    - **AI Engineer** for the most live postings and the fastest entry.
    - If you have a PhD or can win a fellowship, **Research Engineer/MTS** is the highest-paying robust alternative.
 2. **Make evaluation your edge in any role.** Evals appear in 19% of S09 postings and at 68% of companies [B · T0-03]. In a vendor-run LangChain survey (n=1,340), only 52.4% of agent teams ran offline evals [B/C · T0-03]. That adoption gap is the opportunity.
-3. **Employer tier drives pay more than the app-vs-infra split.** Median posted base ranges are nearly identical across the AI Engineer, infrastructure/platform and ML Engineer families ($200–288K), with FDE lower at $180–248K; top-of-band pay concentrates at labs and specialist vendors [B · T0-03 KF1, §6.1.2]. Choose employers deliberately.
-4. **Discount frontier-lab paper wealth.** 49–72% of senior lab packages is stock [B · T0-02]. T0-17 models a 0.5–0.8× risk adjustment for frontier-lab equity, and tenders are tenure-gated and capped [C/D · T0-17].
-5. **FDE is a large cluster that grew fast from a small base, but it is not the pay leader.** Postings rose >1,000% Jan–Aug 2026 vs 2025 [B · T0-06], then ~20% from early August to 2026-10-20, in line with AI and ML Engineer [B · T0-01 F3]. It has the lowest posted-base median among the measured families [B · T0-03] and was mostly non-remote in the August snapshot [B · T0-01].
+3. **Employer tier drives pay more than the app-vs-infra split.** Median posted base ranges are nearly identical across the AI Engineer, infrastructure/platform and ML Engineer families ($200–288K), with FDE lower in S09 posted base at $180–248K; top-of-band pay concentrates at labs and specialist vendors [B · T0-03 KF1, §6.1.2]. Choose employers deliberately.
+4. **Discount frontier-lab paper wealth.** 49–72% of senior lab packages is stock [B · T0-02]. T0-17 models a 0.5–0.8× risk adjustment for private frontier-lab equity (tenders are tenure-gated and capped [C/D · T0-17]), while Anthropic's newly public `ANT` shares (2026-11-19) carry staggered lock-ups [A · U52].
+5. **FDE is a large cluster whose US total comp beats AI Engineer, with non-engineering drift and travel caveats.** Postings rose >1,000% Jan–Aug 2026 vs 2025 [B · T0-06], reaching 1,007 at 353 AI startups on 2026-11-12 (+29% vs early August [B · T0-51, T0-70]). While S09 posted base ($180–248K [B · T0-03]) was lowest among measured families, Levels.fyi US FDE TC ($205K P50 / $350K P90 [B · T0-44]) sits above US AI Engineer ($155K P50); only 46% of newest rows are IC FDE titles and roles remain mostly non-remote [B/M · T0-51].
 6. **Levelling up pays more than hopping sideways.**
    - On Levels.fyi, each level step from Entry to Staff is worth ×1.38–1.46 in median TC (Staff to Principal ×1.21), and the AI premium rises from +6.2% at Entry to +18.7% at Staff [B · T0-17].
    - T0-17 estimates a same-tier hop at about +15–25% [C].
@@ -596,7 +595,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 9 [8–9.5] · B | JobsPipe 2,157 global / 1,084 US / 108 UK / 90 India (re-checked 2026-11-13; static refresh caveat); Fast AI Jobs 298 at AI startups (2026-11-12, up from 227); Axial H1 2026 US 13,776 (~490/wk, C); FY2025 DOL exact-title LCAs 1,053–1,071 [T0-24, T0-27, T0-49, T0-70]. |
 | Pay | 8.5 [7.5–9] · B | Levels.fyi US ML Engineer TC P25 $200K / P50 $286,958 / P75 $389,850 / P90 $497,500 (n=1,027, 2026-11-11; 1.44x US SWE); Axial posted base ceilings $180K–$300K (senior $241K, n=13,776); Meta E5 $472–497K / E6 $660–790K, Amazon L6 $401K; FY2025 LCA floor $179,982 (n=3,745) [T0-44, T0-49]. |
 | Durability | 7 [5.5–8.5] · D | Judgement. Broad ML engineering spans recommendation, ranking, forecasting and LLM training/serving; API-first adoption shifts routine application work toward AI Engineer while leaving model-training, fine-tuning and scale optimisation intact [T0-49]. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. Owns models behind ranking, recsys, fraud and fine-tuned systems. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. Owns revenue-adjacent models behind ranking, recsys, pricing, ads and risk (OpenAI paid marketing, Roblox pricing/ranking, Pinterest/TikTok ads, Capital One risk [T0-49:L305]). |
 | Access | 6.0 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-engineer"></a>
@@ -606,8 +605,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 10 [9–10] · B | JobsPipe 3,944 global / 1,697 US / 398 India (re-checked 2026-11-13; static vs 2026-10-19 refresh caveat); Fast AI Jobs 352 open roles at 188 AI startups (2026-11-12, up from 326; 64% of newest 50 rows customer-facing); LinkedIn Jobs on the Rise 2026 #1 [T0-01, T0-24, T0-48, T0-70]. |
 | Pay | 6.5 [5.75–7.25] · B | Levels.fyi US AI Engineer TC P25 $110K / P50 $155K / P75 $212K / P90 $280K (0.54–0.56x US ML; SF Bay P50 $225K / P90 $460K; 2026-11-11); Axial US AI engineering posted base ceilings $170K–$270K (senior $213K, n=43,480; 5–12% below ML); AI/ML LCA floor $169K (n=4,459); Google within-employer check shows 62–69% of log gap is employer/level mix [T0-44, T0-48]. |
-| Durability | 6 [4.5–7.5] · D | Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; evals, agent reliability and cost engineering keep value [T0-03 Tier 2]. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. Ships the revenue-facing AI features; enterprise and services employer mix [T0-01 F2]. |
+| Durability | 6 [4.5–7.5] · D | Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; T0-48 confirms evals, tracing, cost control and guardrails outpace prompt-writing while AI-assisted coding raises baseline output [T0-03 Tier 2, T0-48]. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. Ships revenue-adjacent AI features (Grade A employer scope at Mistral, OfferUp, Spektr [T0-48:L352]); broad enterprise and services employer mix [T0-01 F2, T0-48]. |
 | Access | 7.9 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-forward-deployed-engineer"></a>
@@ -617,8 +616,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 7.5 [6.5–8.5] · M | Fast AI Jobs FDE cluster 1,007 open roles at 353 AI startups (2026-11-12, +29% vs late Jul 779); 260–1,276 across six boards (Plank 1,276, fdejobslist 391); caveat: 23/50 newest Fast AI Jobs rows are IC FDE titles, 22 adjacent strategist/GTM roles [T0-51, T0-70]. |
 | Pay | 7 [6–7.75] · B | Levels.fyi US FDE TC (2026-09-08): P25 $172K / P50 $205K / P75 $277K / P90 $350K (above US AI Engineer); Google FDE median $292K; Fast AI Jobs startup posted base median $180,656 (n=164, range $75K–$375K); international FDE beats SWE (UK GBP 139.6K, CA CA$186.3K, NL EUR 135.5K) [T0-44, T0-51]. |
-| Durability | 6.5 [5–8] · D | Judgement. Customer embedding and integration judgement; risk of drift into non-coding roles (about half the cluster is non-engineering) [T0-01 F3]. |
-| Leverage | 8.5 [7.5–9.5] · D | Judgement. Converts deployments directly into revenue and retention. |
+| Durability | 6.5 [5–8] · D | Judgement. Customer embedding and integration judgement; services-drift risk confirmed in T0-51 K7 (28% clearly non-engineering / 46% non-FDE-eng+leader; Prodapt/SnapLogic pre-sales exclusions) [T0-01 F3, T0-51]. |
+| Leverage | 8.5 [7.5–9.5] · D | Judgement. Customer-embedded deployment at OpenAI, Anthropic and Palantir converts pilots directly into enterprise revenue and retention [T0-51]. |
 | Access | 6.6 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-research-engineer"></a>
@@ -628,8 +627,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 5.5 [4.5–7] · B | Fast AI Jobs 223 Research Engineer roles (2026-11-12, up from 171; quorum-crossing candidate flagged for 2026-12-01 recount); AI Pulse 569 category count (C); Anthropic 670–674 total listings (>=30 RE page 1), OpenAI 822 via Epoch AI (2026-11-06) [T0-50, T0-70]. |
 | Pay | 9 [8–10] · B | Frontier US posted base bands (Nov 2026): Anthropic $315K–$850K, OpenAI $205K–$555K, xAI $180K–$600K, Thinking Machines $350K–$475K, DeepMind $166K–$244K, Microsoft AI IC4–IC5; equity lifts lab TC well above $500K–$1M+ [T0-44, T0-50]. |
-| Durability | 7.5 [6–9] · D | Judgement. Frontier skills (distributed training, post-training/RL infra) [T0-03 6.4 Tier 3]. |
-| Leverage | 8 [7–9] · D | Judgement. |
+| Durability | 7.5 [6–9] · D | Judgement. Frontier distributed-training and post-training infra scarcity [T0-03 Tier 3] and strong lab 2-yr retention (SignalFire: Anthropic 80%, DeepMind 78%, OpenAI 67%, B) balanced against task-automation signals (Anthropic Opus 4/4.5 take-home; METR 320-min 50% horizon, B) [T0-50 K7]. |
+| Leverage | 8 [7–9] · D | Judgement. Frontier training-run reliability, post-training recipes and research velocity at AI labs [T0-50]. |
 | Access | 5.4 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-applied-scientist"></a>
@@ -640,7 +639,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 6.5 [5.5–8] · B | Amazon Science listed 451 Applied Science category openings on 2026-11-13 (central estimate ~270 literally AS-titled, Wilson range 141–375); Fast AI Jobs 23 AI-startup roles (confirming Big Tech concentration); active hiring at Microsoft, Uber, Zalando, Mistral [T0-52, T0-70]. |
 | Pay | 7.75 [6.75–8.75] · B | Levels.fyi Amazon Applied Scientist US TC (2026-08-18): L4 $245K, L5 $324K, L6 $407K, L7 $653K (median $306K–$335K); corroborated by Microsoft/Uber posted US bands [T0-44, T0-52]. |
 | Durability | 7.5 [6–9] · C | Amazon retained 451 Applied Science openings on 2026-11-13 despite corporate headcount reductions across Oct 2025–Jul 2026; subject to Big Tech employer-cycle risk [T0-52]. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. Ships research-to-production modelling systems at scale (Amazon, Uber, Hippocratic AI, Microsoft [T0-52]). |
 | Access | 5.9 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-applied-ai-engineer"></a>
@@ -649,9 +648,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 5 [4–6.5] · C | 21 of newest 50 Fast AI Jobs AI-Engineer rows (42%) on 2026-11-11 carry 'Applied AI' titles; JobsPipe has no standalone Applied AI Engineer page; strong lab/scale-up cluster (Anthropic, OpenAI, Mistral, Snorkel, Scale) [T0-53]. |
-| Pay | 7.75 [6.5–8.75] · B | Levels.fyi US Applied AI Engineer TC (Nov 2026): P25 $165K / P50 $232K / P75 $340K / P90 $505K–$605K (reconciling T0-53 2026-11-11 $505K vs T0-44 2026-11-13 extract $605K); lab posted base bands $210K–$440K+ [T0-44, T0-53]. |
-| Durability | 6.5 [5–8] · D | Judgement. Customer-facing technical delivery at labs and vendors. |
-| Leverage | 8.5 [7.5–9.5] · D | Judgement. Customer deployment and go-to-market at labs and vendors (8.5-9 anchor: directly moves revenue). |
+| Pay | 7.75 [6.5–8.75] · B | Levels.fyi US Applied AI Engineer TC (Nov 2026): P25 $200K / P50 $250K / P75 $475K / P90 $505K–$605K (both T0-44 and T0-53 agree on P25–P75; P90 shifted from $605K on 2026-10-04 to $505K on 2026-11-11, reflecting upper-tail volatility); US lab posted bands $197K–$320K (OpenAI $197K–$278K + equity [B], Anthropic $200K–$320K [A, COI]; median midpoint $264.5K, n=5, base/OTE mix) [T0-44, T0-53]. |
+| Durability | 6.5 [5–8] · D | Judgement. Family-level customer-delivery demand stays active despite title churn (Scale AI rename, OpenAI AI Deployment Engineer [T0-53 K7]). |
+| Leverage | 8.5 [7.5–9.5] · D | Judgement. Grade A customer-deployment adoption and revenue scope at frontier labs and AI vendors (8.5–9 anchor: directly moves revenue) [T0-53]. |
 | Access | 7.3 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-research-scientist"></a>
@@ -661,8 +660,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 5 [4–6.5] · B | JobsPipe all-fields count date 2026-09-10; Fast AI Jobs 333 open RS roles at 171 AI startups (54% Pre-Seed–Series B); ellis.com 188 OpenAI MTS/research listings; BLS 2025–35 projects +21.8% US computer & information research scientist growth [T0-27, T0-55]. |
 | Pay | 9.5 [8–10] · B | Frontier posted base bands $210K–$650K+ plus major equity; Pave P6 $4.09M / M6 $4.72M equity downgraded from Grade A to Grade B (vendor intended grant value); Big Tech RS (Google/Meta/Microsoft/NVIDIA) spans $300K–$1M+ TC [T0-44, T0-55]. |
-| Durability | 8 [6.5–9.5] · D | Judgement. Research taste and novel methods. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. Long-horizon capability gains. |
+| Durability | 8 [6.5–9.5] · D | Judgement. Research taste and novel methods (OpenAI LCA filings grew 28 in 2023 to 165 in 2025–2026, B) balanced against research-automation goals (OpenAI RSI posting) and RS/RE convergence [T0-55 K7]. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. Long-horizon capability gains: architecture and training-recipe ownership at Sarvam and xAI; Pave P6 $4.09M intended equity grant reflects scarcity (B) [T0-55 L342]. |
 | Access | 2.9 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-infrastructure-engineer"></a>
@@ -671,9 +670,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 5.5 [4–7] · C | 52 base-disclosing postings in S09 [T0-03]; Inference Jobs 446 GPU Infrastructure Engineering listings (undeduplicated upper bound); active hyperscaler, neocloud and frontier-lab hiring [T0-54]. |
-| Pay | 7 [6–8] · B | US posted-base median midpoint $261K (n=12): frontier labs/AI-native ~$360K (OpenAI $230K–$490K + equity [A], Anthropic $315K–$485K [A]) vs cloud/neocloud/enterprise $180K–$270K [T0-44, T0-54]. |
-| Durability | 7.5 [6–9] · D | Judgement. Physical fleets, networking and reliability; distributed-systems minimum in top-band JDs [T0-03 J1]. |
-| Leverage | 8.5 [7.5–9.5] · D | Judgement. Capacity, uptime and cost of the GPU estate (8.5-9 anchor: large cost line). |
+| Pay | 7 [6–8] · B | US posted-base median midpoint $261K (n=12): frontier labs/AI-native ~$360K (OpenAI $230K–$490K + equity [A], Anthropic $320K–$485K [A, COI]) vs cloud/neocloud/enterprise $180K–$270K [T0-44, T0-54]. |
+| Durability | 7.5 [6–9] · D | Judgement. Physical fleets, networking and reliability (distributed-systems minimum in top-band JDs [T0-03 J1]); agent-driven fleet automation/self-healing appears in 4 postings (OpenAI, Anthropic x2, fal) while capacity, topology and failure ownership stays with engineers [T0-54 KF12]. |
+| Leverage | 8.5 [7.5–9.5] · D | Judgement. Multi-thousand-GPU cluster uptime, capacity and estate cost (8.5–9 anchor: large cost line) [T0-54]. |
 | Access | 5.2 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ml-platform-engineer"></a>
@@ -682,9 +681,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 6.5 [5.5–7.5] · B | Graduated V -> E: Axial 1,959 US MLOps postings Jan to 2026-07-13 (~70/wk steady, B); ITJobsWatch 184 UK permanent jobs citing MLOps in 6 mo (B); Fast AI Jobs 1,099 broad ML-platform/infra listings [T0-58]. |
-| Pay | 6.5 [5.5–7.5] · B | Sample US posted base $150K–$357K, median midpoint $245K (n=8 senior/Big Tech, M); broader MLOps market tracks senior DevOps/SWE ($180K–$280K TC) [T0-44, T0-58]. |
-| Durability | 6.5 [5–8] · D | Judgement. Platform need persists; LLMOps absorbed; fast tool churn (TGI archived, Triton renamed Dynamo Triton) [T0-03 KF6]. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. |
+| Pay | 6.5 [5.5–7.5] · B | Generalist-vs-Big-Tech split: Levels.fyi US MLOps Engineer TC median $145,200 (P25 $120K / P75 $200K / P90 $295K, 2026-10-11, B) and Fast AI Jobs posted-base median $179,250 (n=430, 2026-11-12, B) vs senior/Big Tech ML Platform posted base $150K–$357K (median midpoint $245K, n=8, M) [T0-44, T0-58 K4]. |
+| Durability | 6.5 [5–8] · D | Judgement. Platform need persists (DORA 2025: 90% internal platforms, 76% dedicated teams, C) and 32% of postings add LLMOps; fast serving-tool churn (TGI archived, NVIDIA Triton renamed Dynamo-Triton 2025-03-18) [T0-03 KF6, T0-58 KF12/KF14]. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. Platform-as-a-product multiplies DS and MLE velocity (Uber Michelangelo architecture for thousands of models; Wellhub internal platform product [T0-58 L276]). |
 | Access | 5.7 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-security-engineer"></a>
@@ -693,9 +692,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 5.5 [4.5–6.5] · B | SANS AI security job tracker (mid-Sep 2026, corroborated live 2026-11-19): >850 AI/ML security engineer postings, ~100 AI red-team (+13% WoW), 93 AI supply-chain security; queued for 2026-12-01 exact-title recount [T0-60, T0-69]. |
-| Pay | 7 [5.5–8.5] · B | Dated US posted base bands: Amazon Senior AI Red Team $178.4K–$226.7K + RSUs (A), Microsoft MTS $119.8K–$234.7K (B), NVIDIA Senior AI Security Researcher $224K–$356.5K (A) [T0-60]. |
-| Durability | 7.5 [6–9] · D | Judgement. Adversarial and growing surface: CVSS 9.8 serving-engine CVEs, MCP CVEs, Braintrust key breach, OWASP LLM/Agentic Top 10 [T0-03 KF12, T0-16 8, T0-14 6.8]. |
-| Leverage | 8 [7–9] · D | Judgement. |
+| Pay | 7 [5.5–8.5] · B | Dated US posted base bands: Amazon Senior AI Red Team $178.4K–$226.7K + RSUs (A), Microsoft MTS $119.8K–$234.7K (B), NVIDIA Senior AI Security Researcher $224K–$431.25K + equity (B, mirror) [T0-60 L262]. |
+| Durability | 7.5 [6–9] · D | Judgement. Adversarial and expanding surface: prompt-injection and agent-security hiring (SANS >850 AI/ML sec, ~100 red-team +13% WoW [T0-60 K20]), CVSS 9.8 serving-engine CVEs, MCP CVEs, Braintrust key breach and OWASP LLM/Agentic Top 10 [T0-03 KF12, T0-16 8, T0-14 6.8, T0-60]. |
+| Leverage | 8 [7–9] · D | Judgement. Offensive red-teaming and agent-guardrail risk reduction across production AI systems [T0-60]. |
 | Access | 4.6 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-inference-engineer"></a>
@@ -706,7 +705,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 4.5 [3.5–5.5] · C | Inference Jobs 341 'Inference Engineer' listings on 2026-11-13 (upper bound; page 1 ~40% aged <=3 months); 37 verified active postings across labs, inference clouds and hardware vendors [T0-56]. |
 | Pay | 7.5 [6.5–8.5] · B | Date-clean US sample (n=14) posted base median midpoint $288K (IQR $261K–$344K, bounds $165K–$500K) plus equity at labs and inference platforms [T0-56]. |
 | Durability | 7 [5.5–8.5] · D | Judgement. Strong latency/cost demand balances rapid engine churn (TGI archived, TensorRT-LLM static backend removed) and emerging automated kernel-optimisation tooling [T0-56, T0-69]. |
-| Leverage | 8.5 [7.5–9.5] · D | Judgement. Direct GPU-cost and latency leverage. |
+| Leverage | 8.5 [7.5–9.5] · D | Judgement. Direct GPU-cost and latency-SLO leverage (Anthropic Cloud Inference and Sarvam serving-efficiency scope [T0-56 L312]). |
 | Access | 5.3 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-solutions-architect"></a>
@@ -715,9 +714,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 5.5 [4–7] · C | No exact AI-SA title count yet, but strong proxies: Axial 16,927 US 'AI architecture' postings (C), JobsPipe Solutions Architect live volume and active hiring at OpenAI, Anthropic, Databricks, AWS, Microsoft, Google [T0-62]. |
-| Pay | 7 [5.5–8.5] · B | Posted US base $152K–$248K+ (Google CE III $152K–$221K + bonus + equity; Databricks $180K–$248K+ OTE; lab SAs higher) [T0-62]. |
-| Durability | 6 [4.5–7.5] · D | Judgement. Enterprise integration and vendor ecosystems. |
-| Leverage | 8.5 [7.5–9.5] · D | Judgement. Pre-sales and enterprise architecture (8.5-9 anchor: directly moves revenue). |
+| Pay | 7 [5.5–8.5] · B | US posted base $152K–$247.5K: Google CE III $152K–$221K + 42.86% bonus target + equity (A), Databricks $180K–$247.5K ('Local Pay Range', OTE not stated, B), AWS $153.6K–$239K (B); Anthropic London GBP 165K–190K OTE (A, COI); Levels.fyi US SA TC P50 $220K (n=1,200, B) [T0-62]. |
+| Durability | 6 [4.5–7.5] · D | Judgement. Enterprise integration, pre-sales discovery (65.2%) and delivery architecture (34.8%) across cloud and AI-vendor ecosystems [T0-62]. |
+| Leverage | 8.5 [7.5–9.5] · D | Judgement. Pre-sales and enterprise architecture (OpenAI 'CTO of customer book' discovery-to-production path; Anthropic enterprise deal evaluations; 8.5–9 anchor: directly moves revenue) [T0-62]. |
 | Access | 5.4 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-product-manager"></a>
@@ -727,8 +726,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 6 [4.5–8] · C | JobsPipe global PM 12,166 live (2026-11-13, B); AI Pulse 570 AI PM category postings (C; flagged for 2026-12-01 recount); 41 in-window AI PM postings read across frontier labs, Big Tech and startups [T0-59, T0-70]. |
 | Pay | 6.5 [5–8.5] · C | Broad PM market anchors mid-6s while frontier-lab senior bands ($240K–$490K base + equity [A]) lift the ceiling [T0-59]. |
-| Durability | 6 [4.5–7.5] · D | Judgement. Product judgement for probabilistic systems. |
-| Leverage | 8 [7–9] · D | Judgement. Decides what gets built and how it is measured. |
+| Durability | 6 [4.5–7.5] · D | Judgement. Product judgement for probabilistic systems: AI-native PM scope expands into prototyping and evals while routine spec boilerplate compresses [T0-59 K7]. |
+| Leverage | 8 [7–9] · D | Judgement. Decides what gets built, how model behaviour is shaped and how it is measured (OpenAI Core Models, Anthropic Model Behaviors, enterprise AI products [T0-59]). |
 | Access | 5.5 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-agentic-ai-engineer"></a>
@@ -739,7 +738,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 4.5 [3.5–5.5] · C | Exact standalone title stays Watch (W): Skilark 107 'agentic'-titled listings of 28,771 (0.37%); JobsPipe agentic skill appears in 59.3% of AI Engineer postings (2026-09-10) while US product firms hire under AI Engineer [T0-57, T0-69]. |
 | Pay | 6.75 [6–7.5] · C | US senior-skewed posted base midpoint median ~$197K (n=8 in-window postings in T0-57); tracks AI Engineer band rather than a separate premium [T0-57]. |
 | Durability | 6.5 [5–8] · D | Judgement. Multi-step agent capabilities are rising while framework brands churn (Microsoft Agent Framework 1.0 GA 2026-04-03; AutoGen dormant); title likely merges into AI Engineer [T0-57, T0-69]. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. Workflow automation value. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. High-leverage workflow automation scope (OpenAI API Agents, Salesforce Agentforce Reasoning, Amazon Agentic AI [T0-57 D10]). |
 | Access | 7.3 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-evaluation-engineer"></a>
@@ -749,8 +748,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 4 [3–5.5] · B | No platform title count yet, but T0-60 documented 22 named postings across frontier labs (5), Big Tech (Microsoft >=4), eval vendors/scale-ups (7) and enterprise/services [T0-60]. |
 | Pay | 7 [5.5–9] · B | Bimodal US posted base bands: Microsoft AI IC4–IC5 $119.8K–$274.8K (NYC/SF to $304.2K, A), Scale AI $179.4K–$270K (B), Transluce $310K–$500K (B) and frontier labs above $300K base + equity [T0-60]. |
-| Durability | 6.5 [5–8] · D | Judgement. Adoption gap (52.4% offline / 37.3% online evals among agent teams) [T0-03 KF4] vs risk that evals stay a skill inside AI Engineer. |
-| Leverage | 7.5 [6.5–8.5] · D | Judgement. Release gating and quality. |
+| Durability | 6.5 [5–8] · D | Judgement. Adoption gap (52.4% offline / 37.3% online evals among agent teams [T0-03 KF4]) and shift toward benchmark-saturation and agent evaluation [T0-60 K6] vs risk that evals stay a skill inside AI Engineer. |
+| Leverage | 7.5 [6.5–8.5] · D | Judgement. Release-gating and model-quality ownership (Anthropic, Microsoft and Backbase evaluation teams [T0-60]). |
 | Access | 7.2 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-gpu-kernel-engineer"></a>
@@ -758,10 +757,10 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 
 | Pillar | Score | Basis |
 |---|---|---|
-| Demand | 4 [3–5.5] · C | CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3]; River AI (GPU kernels) and AMD (Triton kernels) among T0-13's inference/kernel postings [T0-13:112, 737]. |
+| Demand | 4 [3–5.5] · C | 41 core postings across 30 employers (16 W1; NVIDIA 6/41 core, 11/59 retained); Inference Jobs 'GPU Kernel Development' tag lists 79 jobs (page 1 is 45% OS/driver, 30% stale, 15% fresh) [T0-63]; CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3, T0-13, T0-63]. |
 | Pay | 7.5 [6.5–8.5] · B | US core sample (n=17) median posted base band $190K–$287.5K (median midpoint $235.8K, IQR $217.5K–$275K); frontier labs and NVIDIA/AMD Staff/Principal reach $400K–$700K+ TC [T0-63]. |
-| Durability | 6.5 [5–8] · D | Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile) and automated kernel agents abstract kernel writing [T0-03:L542, L101]; no labour data either way [T0-03:L571]. |
-| Leverage | 8.5 [7.5–9.5] · D | Judgement. GPU efficiency moves a large cost line (8.5-9 anchor). |
+| Durability | 6.5 [5–8] · D | Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile 13.1 compiler hiring) and automated kernel agents (Cursor + NVIDIA SOL-ExecBench 235 kernels 1.38x vs single-agent PyTorch / 86% cuBLAS; Anthropic Opus 4.5 take-home redesigns) abstract routine kernel writing while agentic duties enter JDs; no labour-market displacement series [T0-03, T0-63 K7]. |
+| Leverage | 8.5 [7.5–9.5] · D | Judgement. GPU efficiency moves a large cost line (8.5–9 anchor; Sarvam and Anthropic baseline-beating serving-cost claims [C · T0-63 L315]). |
 | Access | 3.6 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-physical-ai-engineer"></a>
@@ -772,7 +771,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 4.5 [3–5.5] · C | Graduated W -> V: 48 in-scope postings across 38 distinct employer entries (33 named: startups, OEMs, Big Tech, frontier labs, IT services); Phase 0 Figure 'Helix' share corrected (Helix is a Figure department, not standalone volume) [T0-64]. |
 | Pay | 7 [6–8.5] · B | US posted base sample (n=18) median midpoint ~$242.5K (~$235K per employer) plus equity at robotics labs and AV/humanoid firms [T0-64]. |
 | Durability | 6.5 [4.5–8.5] · C | Industrial/warehouse deployments and funding growth provide upside, balanced by robotics hardware startup shutdowns and capital-intensity cycles [T0-64]. |
-| Leverage | 7 [6–8] · D | Judgement. |
+| Leverage | 7 [6–8] · D | Judgement. Close to customer and industrial hardware deployments (Skild, Applied Intuition, Wipro PoV, Samsung manufacturing, Siemens Energy India [T0-64 L280]). |
 | Access | 4.0 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-safety-researcher"></a>
@@ -781,9 +780,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 3 [2–4] · C | McAleese ~600 technical FTEs (+21%/yr, C); June 2026 snapshot of 69 open roles across 8 non-lab safety orgs (6% early-career); AI Pulse 89 category count (may include trust-and-safety) [T0-60, T0-70]. |
-| Pay | 7.5 [5.5–10] · B | Lab-vs-independent bifurcation: Anthropic Alignment $350K–$500K (A, COI), OpenAI Safety Systems $380K–$500K (B), DeepMind AGI Safety $174K–$300K+ vs non-profit/independent orgs $120K–$240K [T0-60]. |
-| Durability | 8 [6.5–9.5] · D | Judgement. Growing research field. |
-| Leverage | 7 [6–8] · D | Judgement. |
+| Pay | 7.5 [5.5–10] · B | Wide dispersion across labs and independents: Anthropic Alignment $350K–$500K (A, COI), OpenAI Safety Systems $380K–$500K (B), DeepMind AGI Safety $174K–$300K+; independents span non-profit to near-lab bands — METR $250K–$503.1K (B) and Goodfire $200K–$400K SF / GBP 150K–300K London (B) overlap labs; UK AISI GBP 65K–145K + 28.97% pension (B); Apollo GBP 100K–200K (B); FAR.AI $100K–$250K (C) [T0-60 KF12]. |
+| Durability | 8 [6.5–9.5] · D | Judgement. Growing specialist research field (McAleese estimates ~600 technical FTEs growing +21%/yr, C) [T0-60 K34]. |
+| Leverage | 7 [6–8] · D | Judgement. Dangerous-capability evaluations, alignment and release-safety research at frontier labs and safety institutes [T0-60]. |
 | Access | 3.4 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-governance-lead"></a>
@@ -792,7 +791,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 5.5 [4.5–6.5] · C | Axial 1,997–3,700 US AI-governance postings (K3 arithmetic fixed: 1,997 at ~71/wk implies ~28.1 wks, C); SANS ~430 AI GRC leads (mid-Sep 2026, B); GRC Careers 67 deduplicated [T0-61, T0-69]. |
-| Pay | 5.5 [4.5–6.5] · B | Axial median $169K; Axial reports top-of-range figures, so typical offers are lower (C) [T0-15:162]; IAPP medians $151.8K (AI governance only), $169.7K (with privacy) (B) [T0-15:130]; manager $244K, director $268K (tops of ranges) [T0-15:417]. |
+| Pay | 5.5 [4.5–6.5] · B | Deloitte US AI Governance Manager posted $134.5K–$265.1K ('not typically near top', A [T0-61]); GRC Careers US median midpoint $191K (n=34, B [T0-61]); Axial tops-of-range median $169K, Manager $244K, Director $268K (C [T0-15, T0-61]); IAPP medians $151.8K / $169.7K (B [T0-15, T0-61]); UK GBP 75K–100K and Singapore SGD 120K–150K (C [T0-61]). |
 | Durability | 6 [4.5–7.5] · D | Judgement. EU Digital Omnibus (Regulation (EU) 2026/1744, in force 2026-07-27) defers Annex III high-risk duties 16 months to 2027-12-02 (Annex I to 2028-08-02), and Colorado repealed SB 24-205, moderating near-term regulatory urgency; India DPDP Phase 2/3 (2026-11-13 / 2027-05-13) sustains APAC compliance hiring [T0-61, T0-70]. |
 | Leverage | 7 [6–8] · D | Judgement. Regulatory exposure (e.g., EU AI Act Art. 101 fines for GPAI providers of up to EUR 15m or 3%) [T0-15:233]. |
 | Access | 4.7 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
@@ -804,8 +803,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 3.5 [2.5–5.5] · C | No exact AI Product Engineer or AI Frontend Engineer title count; median stated experience is 2 years (n=6 in T0-62, dropping Phase 0 'senior-skewed' claim) [T0-62]. |
 | Pay | 6.5 [4.5–8.5] · B | Wide dispersion across startup and lab tiers: Within mid $140K–$205K (B) and Staff AI Frontend $235K–$315K base (A); OpenAI ChatGPT frontend/product bands higher [T0-62]. |
-| Durability | 5.5 [4–7] · D | Judgement. Agent UX is differentiated; generic UI work is exposed to code generation. |
-| Leverage | 6.5 [5.5–7.5] · D | Judgement. |
+| Durability | 5.5 [4–7] · D | Judgement. Agent UX and design craft plus AI tooling stay differentiated while generic UI work faces code-generation exposure; no labour-market displacement series exists (D) [T0-62 K36]. |
+| Leverage | 6.5 [5.5–7.5] · D | Judgement. Direct user-facing product adoption and AI UX conversion [T0-62]. |
 | Access | 5.8 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-risk-assurance-specialist"></a>
@@ -814,9 +813,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 4.5 [3.5–5.5] · B | Deloitte >=10 AI governance/risk/assurance requisitions globally, U.S. Bank >=4 AI-risk postings, plus Big 4 and banking model-risk teams [T0-61]. |
-| Pay | 6 [5–7] · B | GRC Careers US AI-risk posted midpoints ~$150K–$215K (replacing unretrieved Phase 0 Deloitte $171.6K–$338.3K figure) [T0-61]. |
-| Durability | 6 [4.5–7.5] · D | Judgement. Enforcement-dependent; SR 26-2 excludes generative and agentic AI [T0-15:355]. |
-| Leverage | 6.5 [5.5–7.5] · D | Judgement. |
+| Pay | 6 [5–7] · B | GRC Careers US AI-risk posted midpoints ~$150K–$215K (median $175K, middle half $149K–$250K, n=18; replacing unretrieved Phase 0 Deloitte $171.6K–$338.3K figure) [T0-61]. |
+| Durability | 6 [4.5–7.5] · D | Judgement. Enforcement-dependent: Federal Reserve SR 26-2 (issued 2026-04-17) excludes generative and agentic AI, and the NY State Comptroller (Dec 2025, B) found NYC LL144 audit enforcement ineffective [T0-15:355, T0-61 K21]. |
+| Leverage | 6.5 [5.5–7.5] · D | Judgement. Second-line model validation, technology risk and regulatory assurance at banks and Big 4 firms [T0-61]. |
 | Access | 4.1 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-responsible-ai-engineer"></a>
@@ -826,8 +825,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 2.5 [1.5–3.5] · B | Thin niche confirmed: 6 core live/in-window titles globally (Cognizant [A], SnowHeap, Experian, Accenture, Workday, Salesforce); remains Watch (W) [T0-61]. |
 | Pay | 6.5 [5.5–7.5] · B | Updated US posted bands: Workday Sr RAI Systems Eng $169K–$253K (C), Salesforce Sr/Lead Applied Scientist RAI and enterprise AI engineering bands [T0-61]. |
-| Durability | 6 [4.5–7.5] · D | Judgement. Regulation-driven (EU AI Act Annex III from 2 Dec 2027) with reversal risk [T0-15:72, 232]. |
-| Leverage | 6.5 [5.5–7.5] · D | Judgement. |
+| Durability | 6 [4.5–7.5] · D | Judgement. Regulation-driven with timeline and reversal risk: EU Reg. (EU) 2026/1744 defers Annex III to 2027-12-02 and Annex I to 2028-08-02, while US EO 14365 pushes federal pre-emption of state AI rules [T0-15:72, 232, T0-61 K35]. |
+| Leverage | 6.5 [5.5–7.5] · D | Judgement. Release-gate guardrail controls and audit-ready compliance engineering (Cognizant, SnowHeap, Workday [T0-61]). |
 | Access | 5.4 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-enablement-engineer"></a>
@@ -838,7 +837,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 2.5 [1.5–3.5] · B | Skillenai direct 90-day count fell from 57 (to 2026-09-03) to 42 (to 2026-11-05); small and contracting standalone title [T0-62]. |
 | Pay | 5.5 [4–7.5] · C | Bimodal pay across builder vs adoption variants: Fabletics builder $160.4K–$180K base (A) vs Scotiabank adoption $120K–$140K [T0-62]. |
 | Durability | 4.5 [3–6] · D | Judgement. Exact-title count fell 57 to 42; adoption/training variant tracks temporary rollout waves while platform-enablement roles fold into DevEx/IT [T0-62]. |
-| Leverage | 6.5 [5.5–7.5] · D | Judgement. Internal productivity. |
+| Leverage | 6.5 [5.5–7.5] · D | Judgement. Internal productivity and measured workflow adoption (LocalStack, Sofi, Mentor Collective; 'highest-leverage' claims are COI/anecdote) [T0-62]. |
 | Access | 6.8 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-domain-evaluation-specialist"></a>
@@ -848,8 +847,8 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 5.5 [3.5–7.5] · B | LinkedIn Jobs on the Rise 2026 US #4 data annotators (growth not volume, B); Mercor 3/3 full-read listings are standing pools not vacancies (A; stale 30,000 replaced by COI claim); 4/4 India postings are salaried evaluation-engineering employee roles (B) [T0-66]. |
 | Pay | 3.5 [2–5] · B | Domain-segmented hourly contracts: generalist $20–$70/hr (micro1 $20–$35, Mercor $35–$70, Outlier up to $50, xAI $35–$75), professional/tech $60–$120/hr, legal/medical/finance/specialised SWE $100–$300/hr (Mercor $100–$200, Scale HFC $300); Mercor headline average unstable ($80–$141) [T0-44, T0-66]. |
-| Durability | 3.5 [2–5] · D | Judgement. 'A bridge, not a destination' [T0-06:273, 650]. |
-| Leverage | 5 [4–6] · D | Judgement. |
+| Durability | 3.5 [2–5] · D | Judgement. Bifurcates into credentialed domain-expert work vs volatile standing pools with early project endings and vendor risk (Mercor Mar 2026 LiteLLM incident); 'a bridge, not a destination' [T0-06:273, 650, T0-66]. |
+| Leverage | 5 [4–6] · D | Judgement. Post-training RLHF and rubric data quality; mostly individual contractor piecework [T0-66]. |
 | Access | 6.1 [±1] · D | 0.5 × max + 0.5 × mean of persona scores (A.2) |
 
 <a id="ledger-ai-engineering-manager"></a>
@@ -858,9 +857,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 5.5 [4–7] · B | Fast AI Jobs 608 EM roles at 239 AI startups on 2026-11-12 (+54% vs 394 in late Jul), of which 20–24% (~122–146) are AI-system EM roles; Anthropic 8/15 EM titles AI-system teams (COI); AI Pulse 68 category count (C) [T0-65, T0-70]. |
-| Pay | 7.5 [6.25–9] · B | Posted US base bands: SandboxAQ $163K–$306K, NVIDIA $200K–$356.5K, Scale AI Director $285.2K–$356.5K, Anthropic $320K–$405K (A, COI; Growth EM $405K–$485K) plus equity; Levels.fyi EM anchors [T0-44, T0-65]. |
+| Pay | 7.5 [6.25–9] · B | Posted US base bands: SandboxAQ $163K–$306K, NVIDIA $200K–$356.5K, Scale AI Director $285.2K–$356.5K, Anthropic $320K–$405K (A, COI; Growth EM $405K–$485K) plus equity; India proxy: Levels.fyi India SWE Manager TC P25 Rs57.4L / P50 Rs85.6L / P75 Rs1.25Cr / P90 Rs1.62Cr (n=975, B) and Amazon Bengaluru Director Rs5.54Cr (B) [T0-44, T0-45, T0-65]. |
 | Durability | 7 [5.5–8.5] · D | Judgement. AI-startup EM volume rose +54% (Jul–Nov 2026), offset by SignalFire 2026 management thinning and wider spans of control (~12 at tech majors, ~15 at startups) [T0-65, T0-70]. |
-| Leverage | 8 [7–9] · D | Judgement. |
+| Leverage | 8 [7–9] · D | Judgement. Team hiring, cross-team AI platform adoption and engineering delivery velocity [T0-65]. |
 | Access | 4 [3–5] · M | Text-visible postings (n=8) ask 8+ years engineering and 2–6 (median 3) years managing; 0/8 name certifications; backend/SRE/devtools EMs can cross without a research background [T0-65]. |
 
 <a id="ledger-vp-head-of-ai"></a>
@@ -869,21 +868,21 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Pillar | Score | Basis |
 |---|---|---|
 | Demand | 3 [2–4] · C | Noisy board counts (Indeed US ~2,000, Glassdoor US 505, Indeed India 300); Axial Search tracked 65 US executive AI-engineering postings over 6 months [T0-65]. |
-| Pay | 8 [6.5–9.5] · B | Posted US base bands sit below vendor studies: Accela $240K–$280K + bonus (A), SimplePractice $250K–$315K (B), Synchrony VP $170K–$290K (B); UK GBP 120K–150K (B); equity/bonus lifts late-stage/enterprise TC [T0-65]. |
-| Durability | 7 [5.5–8.5] · D | Judgement. |
-| Leverage | 9 [8–10] · D | Judgement. |
-| Access | 2 [1–3] · D | Multi-year leadership track record. |
+| Pay | 8 [6.5–9.5] · B | Posted US base bands sit below vendor studies: Accela $240K–$280K + bonus (A), SimplePractice $250K–$315K (B), Synchrony VP $170K–$290K (B); UK GBP 120K–150K (B); equity/bonus lifts late-stage/enterprise TC; India: adjacent Amazon Bengaluru Director Rs5.54Cr (B), no all-employer India VP/Head of AI series [T0-45, T0-65]. |
+| Durability | 7 [5.5–8.5] · D | Judgement. Splits between durable hands-on player-coach seats and enterprise transformation/governance seats, with title-inflation risk at small firms [T0-65]. |
+| Leverage | 9 [8–10] · D | Judgement. Enterprise AI portfolio and operating model; 55% (6/11) of text-visible postings report directly to CEO or CTO [T0-65]. |
+| Access | 2 [1–3] · D | Multi-year leadership track record: text-visible postings (n=11) ask 5–15+ (median 10, n=7) years engineering or product leadership; 45% hands-on, 55% CEO/CTO report [T0-65]. |
 
 <a id="ledger-chief-ai-officer"></a>
 **L3 · Chief AI Officer (CAIO)** (`chief-ai-officer`)
 
 | Pillar | Score | Basis |
 |---|---|---|
-| Demand | 2.5 [1.5–3.5] · B | Rarely advertised (2 dated in-window employer postings: SBI India, UCSF Health); OMB M-25-21 (2025-04-03, A) mandates US federal agency CAIO designation but permits dual-hatted CIO/CDO/CTO; counted Fortune 500 + S&P 500 prevalence 10.7% (71/665, C) [T0-65]. |
-| Pay | 8 [5–10] · B | Bifurcated pay: US public-sector/higher-ed posted base $117.7K–$200K (B) and SBI India GM & CAIO negotiable CTC up to Rs160L fixed term (B, live-verified 2026-11-19) vs private corporate executive packages $400K–$1M+ [T0-65]. |
+| Demand | 2.5 [1.5–3.5] · B | Rarely advertised (2 dated in-window employer postings: SBI India, UCSF Health); OMB M-25-21 (2025-04-03, A) mandates US federal agency CAIO designation but permits dual-hatted CIO/CDO/CTO; counted Fortune 500 + S&P 500 prevalence 10.7% (71/665, Crist Kolder, B, live-verified 2026-11-19; vs IBM 76% vendor survey COI) [T0-65]. |
+| Pay | 8 [5–10] · B | Bifurcated pay: US public-sector/higher-ed posted base $117.7K–$200K (B) and SBI India GM & CAIO negotiable CTC up to Rs160L fixed term (B, live-verified 2026-11-19; private India CAIO vendor bands remain Grade E [T0-45]) vs private corporate executive packages $400K–$1M+ [T0-45, T0-65]. |
 | Durability | 5.5 [4–7] · C | Avasant reports ~2.2-year average Fortune 500 CAIO tenure (C); >=4 of 10 Oct 2026 appointments were internal/dual-hatted; IBM IBV reports only 18% hold full direct AI budget [T0-65]. |
-| Leverage | 9 [8–10] · D | Judgement. |
-| Access | 1.5 [0.5–2.5] · D | Executive track record. |
+| Leverage | 9 [8–10] · D | Judgement. Enterprise AI strategy and governance accountability, moderated by limited budget control (IBM IBV: 18% hold full direct AI budget, C) [T0-65]. |
+| Access | 1.5 [0.5–2.5] · D | Executive track record: 12–15+ years senior leadership (Axial 12+ with 5+ director+; SBI 15+ with 3+ senior AI leadership); Fortune 500 + S&P 500 prevalence 10.7% (B) [T0-65]. |
 
 <a id="ledger-independent-ai-consultant"></a>
 **L4 · Independent AI Consultant / Contractor** (`independent-ai-consultant`)
@@ -892,9 +891,9 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 |---|---|---|
 | Demand | 4.5 [3–6] · B | UK GenAI contract adverts tripled to 1,466 in 6 months to 2026-11-12 (vs 472 in 2025, 176 in 2024; 49 live LLM contracts on 2026-11-14; IT Jobs Watch, B); LinkedIn Jobs on the Rise 2026 US #2 AI consultants/strategists (growth not volume, B) [T0-66]. |
 | Pay | 4 [3–5.5] · B | UK GenAI median flat at GBP 550/day (P25 GBP 460, P75 GBP 675, P90 GBP 788, n=933; live senior picks GBP 500–1,000/day, B); US agency contract postings $50–$80/hr (B); direct independent senior engagements higher [T0-66]. |
-| Durability | 5 [3.5–6.5] · D | Judgement. |
-| Leverage | 6.5 [5.5–7.5] · D | Judgement. |
-| Access | 3 [2–4] · C | 5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]. |
+| Durability | 5 [3.5–6.5] · D | Judgement. UK GenAI contract ad volume tripled (176 to 472 to 1,466 across 2024–2026, B) while median day rate stayed flat at GBP 550/day vs GBP 625 in 2024, pointing to price competition as supply grows [T0-66 KF4]. |
+| Leverage | 6.5 [5.5–7.5] · D | Judgement. Client project delivery and direct advisory; agency channel rates ($50–$80/hr US) compress leverage vs direct senior engagements [T0-66]. |
+| Access | 3 [2–4] · C | 5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]; Toptal <3% screen + 2-wk paid test project (C), IT Jobs Watch senior build bar (B) and 53–75% network sourcing in independent surveys (C, U47) [T0-66]. |
 
 <a id="ledger-fractional-ai-leader"></a>
 **L5 · Fractional Head of AI / Fractional CAIO** (`fractional-ai-leader`)
@@ -904,7 +903,7 @@ Format: `mid [lo–hi] · grade`. Durability and Leverage are labelled judgement
 | Demand | 2.5 [1.5–3.5] · B | Mostly bench/network/marketplace pages: only 1 of 13 qualifying postings on an employer's own page; Go Fractional CAIO logged 10 posts in rolling 90 days (4 open; checked 2026-11-12) [T0-18, T0-66, T0-70]. |
 | Pay | 4 [3–5.5] · B | Reconciled across T0-18, T0-65 and T0-66: employer-side postings $75–$150/hr (B); asking corridor $150–$250/hr (Go Fractional $205/hr & from $5K/mo C COI; Upwork $150–$195/hr C; retainers $3K–$20K/mo, T0-18 $8K–$13K/mo for 10–13 h/wk); ZipRecruiter annualised $151,203 (B noisy, hours unstated) [T0-66]. |
 | Durability | 4.5 [3–6] · D | Judgement. UK GenAI contract median held flat at GBP 550/day across 2025–2026 vs GBP 625 in 2024 (B); fractional seats often convert or transition out once execution scales (C, COI) [T0-66]. |
-| Leverage | 7 [6–8] · D | Judgement. |
+| Leverage | 7 [6–8] · D | Judgement. Part-time executive strategy, governance and change-management retainers; often transitions out as execution scales [T0-66]. |
 | Access | 2 [1–3] · B | Postings stating experience ask 10+ years or 5+ years as fractional C-suite; 9 of 13 expect prior Head/VP/CTO seat; Go Fractional asks 7+ yrs and 5+ leadership/fractional (B); Fractional Jobs survey 87% 11+ yrs, 83% Director+ (C) [T0-18, T0-66]. |
 
 ### A.2 Persona access scores (inputs to the Access pillar and the persona lenses)
@@ -944,29 +943,29 @@ India Demand bands (live India postings): ≥300 → 10 · 150–299 → 8.5 · 
 
 | Role | India Demand | India Pay | Basis |
 |---|---|---|---|
-| Machine Learning Engineer | 7 [6–7.5] · B | 8 [6.75–8.5] · B | JobsPipe India 90 live of 2,157 global (4.2% M; static 2026-11-13 check); heavy GCC and big-tech presence in Bengaluru and Hyderabad [T0-49]. / Levels.fyi Greater Bengaluru ML Engineer TC (2026-11-12, n=97): P25 Rs30.3L / P50 Rs44.4L–Rs44.7L / P75 Rs65.7L / P90 Rs80.7L (down from Oct Rs94.6L); India ML/AI-focus SWE P50 Rs28.7L; Flexiple Bengaluru CTC P50 Rs19.9L (n=422, C) [T0-45]. |
+| Machine Learning Engineer | 7 [6–7.5] · B | 8 [6.75–8.5] · B | JobsPipe India 90 live of 2,157 global (4.2% live vs 7.7% JD-page share, 4–8% range; static 2026-11-13 check); heavy GCC and big-tech presence in Bengaluru and Hyderabad [T0-49, T0-69]. / Levels.fyi Greater Bengaluru ML Engineer TC (2026-11-12, n=97): P25 Rs30.3L / P50 Rs44.4L–Rs44.7L / P75 Rs65.7L / P90 Rs80.7L (down from Oct Rs94.6L); India ML/AI-focus SWE P50 Rs28.7L; Flexiple Bengaluru CTC P50 Rs19.9L (n=422, C) [T0-45]. |
 | AI Engineer | 10 [9–10] · B | 5.25 [4.5–6.25] · B | JobsPipe India 398 of 3,944 global (10.1% M — correcting Phase 0 13.6% erratum; static 2026-11-13 check; consulting-heavy coverage artefact); Indian boards show 10,953–55,203 GenAI/AI keyword listings; Naukri JobSpeak AI/ML YoY +20% to +49% across 2026 [T0-25, T0-48, T0-69]. / Levels.fyi Greater Bengaluru AI Engineer TC (2026-11-12): P25 Rs13.8L / P50 Rs20.0L (variants Rs18.3L–Rs20.5L) / P75 Rs39.7L / P90 Rs60.6L; GCC 0–2 yr fixed Rs13.2L, senior Rs58–60L (C) [T0-45]. |
-| Forward Deployed Engineer | 4.5 [3–6] · C | 5.5 [4–7.25] · D | Indeed India / IANS (2026-10-14) reported ~19x (1,807% YoY) growth in India FDE postings from a low base; verified Bengaluru/Hyderabad hiring at Palantir-style AI vendors and labs [T0-25, T0-51]. / No India FDE Levels.fyi title page; kept Grade D placeholder pending role-specific India TC data (top-end widened slightly to reflect Bengaluru product/lab offers) [T0-45, T0-51]. |
-| Research Engineer / Member of Technical Staff | 2 [1–3] · C | 8 [6–9.5] · D | Two verified live India RE postings (Google DeepMind Bangalore, Sarvam Bengaluru); 0 RE titles on Anthropic page 1 and Microsoft AI Bengaluru (77 listings) [T0-50]. / No India evidence. |
-| Applied Scientist | 5 [4–6.5] · B | 7.5 [6–9] · D | Amazon Science listed 90 India science roles (14% of 642 global) on 2026-11-13; verified postings across Amazon India and Microsoft IDC (Hyderabad/Bengaluru) [T0-52]. / Proxy: Google MLE Bengaluru L4 Rs65.2L, L5 Rs168.3L (small n) [T0-02:254]. |
-| Applied AI Engineer | 4 [2.5–5.5] · C | 6 [4–8] · D | Verified active India hiring at OpenAI (Bengaluru Applied AI Engineer/Architect), Anthropic India partner/field roles and funded AI startups; no platform title count [T0-53]. / No India evidence. |
+| Forward Deployed Engineer | 4.5 [3–6] · C | 5.5 [4.5–7] · B | Indeed India / IANS (2026-10-14) reported ~19x (1,807% YoY) growth in India FDE postings from a low base; verified Bengaluru/Hyderabad hiring at Palantir-style AI vendors and labs [T0-25, T0-51]. / Levels.fyi India FDE TC median Rs16.75L (live-verified ~Rs17.5–17.7L, P25 ~Rs16L, P75 Rs42L, B; page header US-label quirk noted), Glassdoor Bengaluru Rs17.0L mean (C) and Weekday/Bayt posted Rs25–40 LPA for 5–7 yrs (B); adjacent Bengaluru Solution Architect P50 Rs49.3L (n=179, B) [T0-45, T0-51]. |
+| Research Engineer / Member of Technical Staff | 2 [1–3] · C | 8 [6–9.5] · D | Two verified live India RE postings (Google DeepMind Bangalore, Sarvam Bengaluru); 0 RE titles on Anthropic page 1 and Microsoft AI Bengaluru (77 listings) [T0-50]. / No India evidence: 0 of 2 live India RE postings disclose pay [T0-50 K6]; adjacent Bengaluru Principal MTS outlier $192.5K USD on Levels.fyi (n=1, B adjacent) [T0-45, T0-50]. |
+| Applied Scientist | 5 [4–6.5] · B | 7.5 [6–9] · D | Amazon Science listed 90 India science roles (14% of 642 global) on 2026-11-13; verified postings across Amazon India and Microsoft IDC (Hyderabad/Bengaluru) [T0-52]. / 0 of 6 India AS postings disclose pay [T0-52 K6]; adjacent proxies: Levels.fyi India Data Scientist P50 Rs30.1L (n=1,024, B [T0-45]), Amazon Bengaluru SWE P50 Rs60.3L (Apr 2026, B [T0-52]), Google MLE Bengaluru L4 Rs65.2L / L5 Rs168.3L (small n [T0-02:254]) [T0-45, T0-52]. |
+| Applied AI Engineer | 4 [2.5–5.5] · C | 6 [4–8] · D | Verified active India hiring at OpenAI (Bengaluru Applied AI Engineer/Architect), Anthropic India partner/field roles and funded AI startups; no platform title count [T0-53]. / No India title distribution or lab INR bands (0 lab postings disclose pay [T0-53 K6]); 4 partial Cutshort postings span Rs3–55L (Hello Edge Rs20–30L, Metadome Principal Rs45–55L, VY Systems Rs3–23L, Gravity Rs8–40L; A per posting, n=1 each) [T0-45, T0-53]. |
 | Research Scientist (AI/ML) | 2.5 [1.5–3.5] · B | 7.5 [5.5–9] · C | JobsPipe India 3.7% (all fields, counted 2026-09-10); 9 verified India postings across DeepMind India, IBM Research India, GE Vernova, Sarvam AI and Accenture [T0-55]. / Levels.fyi Google RS India L3 Rs30.5L (2026-07-20, B; n hidden); 0 of 9 India postings disclose pay; senior/staff lab claims Rs80L–Rs1.5Cr lack methodology (C/D) [T0-55]. |
-| AI Infrastructure / GPU Platform Engineer | 4.5 [3.5–6] · B | 6.5 [5–8] · D | 10 of 35 sampled postings (28.6%) in India: NVIDIA x4 (DGX Cloud, SRE research clusters), Microsoft, Oracle, CoreWeave/neocloud and GCCs [T0-54]. / No India evidence. |
-| ML Platform / MLOps Engineer | 6 [5–7.5] · C | 5.5 [4.5–6.5] · C | 13 of 37 postings in India across GCCs (Walmart Global Tech, Rakuten Symphony, Aptiv) and IT services (HCLTech, Quantiphi), predominantly titled MLOps Engineer [T0-58]. / Bengaluru MLOps P50 Rs23.6L, P75 Rs41.1L, P90 Rs63.5L [T0-02:147]. |
+| AI Infrastructure / GPU Platform Engineer | 4.5 [3.5–6] · B | 6.5 [5–8] · D | 10 of 35 core postings (28.6%) in India: NVIDIA x4 (DGX Cloud, SRE research clusters, NCX, EngOps), Deloitte USI x2, Sarvam AI x2, AION and Soket AI Labs; 0 GCC postings found in window [T0-54]. / No India evidence: 0 of 10 India postings disclose pay [T0-45, T0-54 K6]. |
+| ML Platform / MLOps Engineer | 6 [5–7.5] · C | 5.5 [4.5–6.5] · C | 13 of 37 postings in India across GCCs (Walmart Global Tech, Rakuten Symphony, Aptiv) and IT services (HCLTech, Quantiphi), predominantly titled MLOps Engineer [T0-58]. / Bengaluru MLOps P50 Rs23.6L, P75 Rs41.1L, P90 Rs63.5L [T0-02:147]; 0/13 India postings in T0-58 disclose pay (conflicting secondary bands: edtech/aggregator Rs8–20 LPA vs OwnYourCareer entry Rs8–15L / mid Rs20–35L / senior Rs38–65L, C) [T0-58 K6]. |
 | AI Security Engineer / AI Red Teamer | 4.5 [3.5–6] · B | 6 [4.5–7.5] · B | 9 India AI-security postings (36% of n=25 sample) across Wipro, GlobalLogic, Teamware, Backbase, Ekfrazo, Razorpay, o9 Solutions (Bengaluru/Hyderabad) [T0-60]. / Posted India pay bands found: Rs25–35L (2–5 yrs) and up to Rs50L (founding AI/ML security engineer) [T0-60]. |
-| Inference / LLM Serving Engineer | 4 [3–5.5] · B | 6 [4.5–7.5] · C | 9 of 37 sampled postings (24.3%) in India across Bengaluru, Hyderabad and Gurugram (inference clouds, silicon vendors, GCCs) [T0-56]. / 1 of 9 India postings discloses pay: Rs24–36L (5+ yrs, Weekday client, 2026, B) plus adjacent senior infra/ML Bengaluru bands [T0-56]. |
+| Inference / LLM Serving Engineer | 4 [3–5.5] · B | 6 [4.5–7.5] · C | 9 of 37 core postings (24.3%) in India across Bengaluru, Hyderabad and Gurugram: AI startups (Sarvam, Gnani x2, PrimaLabs, AION), cloud hosts (DigitalOcean x2, Rackspace) and 1 Weekday recruiter client; 0 GCCs and 0 India silicon vendors found [T0-56]. / 1 of 9 India postings discloses pay: Rs24–36L (5+ yrs, Weekday client, 2026, B) plus adjacent senior infra/ML Bengaluru bands [T0-56]. |
 | AI / GenAI Solutions Architect | 4 [3–5.5] · C | 7.5 [6–8.5] · C | JobsPipe India SA 64 live (~4% of US, B) vs Corvi 761 snapshot (C, coverage caveat); strong hyperscaler and SI hiring in Bengaluru/Hyderabad/Mumbai [T0-62]. / Upgraded from Grade D placeholder via adjacent Levels.fyi Greater Bengaluru Solution Architect (n=179) benchmark [T0-45]. |
-| AI Product Manager | 5.5 [4–7] · C | 8 [6.5–9] · C | JobsPipe India share 5.3% of 12,166 global PM (~645 live PM postings, M); verified India AI PM hiring at Microsoft AI, Sarvam, Uber and product startups [T0-59]. / Upgraded from Grade D placeholder via adjacent Levels.fyi India PM (n=1,518) and Greater Bengaluru Senior PM (n=578, P50 ~Rs55–65L+) benchmarks [T0-45]. |
-| Agentic AI Engineer | 4.5 [3.5–5.5] · C | 5.25 [4.5–6.25] · D | Exact 'Agentic AI Engineer' title is actively used by Indian IT services, GCCs and consultancies (6/10 India sample in T0-57) [T0-57]. / Single Cutshort India posting insufficient to upgrade; tracks Greater Bengaluru AI Engineer Levels.fyi benchmark (Rs20.0L P50) [T0-45, T0-57]. |
+| AI Product Manager | 5.5 [4–7] · C | 8 [6.5–9] · C | JobsPipe India share 5.3% of 12,166 global PM (~645 live PM postings, M); 12 of 41 sampled postings in India (Uber Bengaluru, Sarvam x2, KPMG India, Target GCC, HCLTech, RagaAI, Ringg AI, Ctruh, Tredence, Creuto, Weekday client; 0 Microsoft India postings in sample) [T0-59 L358]. / Upgraded from Grade D placeholder via adjacent Levels.fyi India PM (n=1,518) and Greater Bengaluru Senior PM (n=578, P50 ~Rs55–65L+) benchmarks [T0-45]. |
+| Agentic AI Engineer | 4.5 [3.5–5.5] · C | 5.25 [4.5–6.25] · D | Exact 'Agentic AI Engineer' title is actively used by Indian IT services, GCCs and consultancies (6/10 India sample in T0-57) [T0-57]. / Single Weekday India posting (Epitria Consulting, Rs43–44 LPA senior/lead, C [T0-57]) plus Hello Edge Rs20–30L (A [T0-45]) and Glassdoor Rs6.4L mean (n~13, C [T0-57]) insufficient to upgrade; tracks Greater Bengaluru AI Engineer Levels.fyi benchmark (Rs20.0L P50, B) [T0-45, T0-57]. |
 | AI Evaluation Engineer | 4 [3–5] · B | 5.5 [4–7] · C | Expanded beyond Backbase alone: 5 verified India postings (Glean, LogicMonitor, GlobalLogic Bengaluru; Backbase, HCLTech Hyderabad) plus 5 mirrored listings [T0-60]. / One startup posted band Rs12–36L (Ressl AI founding role, B) plus C-grade adjacent AI/LLM engineer benchmarks [T0-60]. |
-| GPU Kernel / ML Compiler Engineer | 4 [3–5] · B | 6.5 [5–8] · C | 8 of 41 core postings (19.5%) in India across Bengaluru and Hyderabad: NVIDIA, AMD, Qualcomm, Sarvam AI and silicon GCCs [T0-63]. / No employer-posted India kernel band; one Bengaluru recruiter band Rs70–90L base (C) plus NVIDIA/AMD Bengaluru staff engineering bands [T0-63]. |
-| Physical AI / Robotics AI Engineer | 3 [2–4] · B | 5 [3.5–6.5] · D | physicalai.jobs tracks 35 India roles (0.7% of 4,875, 2026-11-11, B); 8 India postings sampled across robotics startups, auto OEMs and IT services [T0-64]. / No India evidence. |
-| Frontier AI Safety / Alignment Researcher | 1 [1–2] · C | 5 [3–8] · D | Confirmed 0 of 23 safety postings in India; Anthropic Fellows requires US/UK/Canada work authorisation with no visa sponsorship [T0-60]. / No India evidence. |
-| AI Governance Programme Lead / Manager | 3.5 [2.5–5] · C | 5 [3.5–6.5] · D | Alstom (Bangalore), Eaton (Pune), EXL JDs; no India count [T0-15:95, 300-302]. / T0-15 did not use unsourced INR ranges [T0-15:469]. |
-| AI Product Engineer (AI Frontend) | 2.5 [1.5–4] · C | 5 [4–6.5] · D | 2 of 16 sampled postings in India (CirrusLabs Bengaluru, Alpha remote India); no title count [T0-62]. / No India evidence. |
-| AI Risk, Audit & Compliance Specialist | 3 [2–4] · C | 5 [3.5–6.5] · D | DPO/privacy demand expected to lead in India; DPDP main obligations 13 May 2027 [T0-15:142]. / No India evidence. |
-| Responsible AI / AI Governance Engineer | 3.5 [2.5–4.5] · B | 4.5 [3.5–6] · D | 5 of 12 sampled postings in India across Cognizant (Chennai/Bengaluru/Hyderabad, A) and Accenture Bengaluru [T0-61]. / T0-15 deliberately did not use unsourced INR ranges [T0-15:469]. |
-| AI Enablement Engineer | 2.5 [1.5–3.5] · C | 5 [4–6] · D | 2 of 15 sampled postings in India (Ather Energy Bengaluru, Siemens GCC Bengaluru); no India title count [T0-62]. / No India evidence. |
+| GPU Kernel / ML Compiler Engineer | 4 [3–5] · B | 6.5 [5–8] · C | 8 of 41 core postings (19.5%) in India across Bengaluru and Hyderabad: AMD x2, Sarvam AI (live), Intel, Google (TPU compilers), EPAM, Taglynk (Indian startup) and 1 recruiter client; 0 NVIDIA India ML-kernel postings found in window (driver/assembler only) and Qualcomm India classed adjacent [T0-63]. / No employer-posted India kernel band; one Bengaluru recruiter band Rs70–90L base (C) plus NVIDIA/AMD Bengaluru staff engineering bands [T0-63]. |
+| Physical AI / Robotics AI Engineer | 3 [2–4] · B | 5 [3.5–6.5] · D | physicalai.jobs tracks 35 India roles (0.7% of 4,875, 2026-11-11, B); 8 India postings sampled across IT services (Wipro, TELUS Digital), industrial GCC-style R&D (Siemens Energy India), robotics OEM (Addverb) and startups (Origin, Upsurge Labs, Weekday client) [T0-64 L325–330]. / No India evidence: 0 of 8 India postings disclose pay; generic ML proxies only (viral Rs22.4 LPA / 1,240 Bangalore claim is untraceable Grade E) [T0-45, T0-64 K6]. |
+| Frontier AI Safety / Alignment Researcher | 1 [1–2] · C | 5 [3–8] · D | Confirmed 0 of 23 safety postings in India; Anthropic Fellows requires US/UK/Canada work authorisation with no visa sponsorship [T0-60]. / No India evidence: 0 of 23 safety postings in India [T0-45, T0-60 K33]. |
+| AI Governance Programme Lead / Manager | 3.5 [2.5–5] · C | 5 [3.5–6.5] · D | 4 of 21 core postings in India: Alstom Bengaluru (confirmed 2026-10-30), EY GDS, Tech Mahindra, Capco, AlphaSense and Novartis (Phase 0 Eaton/EXL not re-seen); no valid India role count [T0-61 K5]. / 0 employer-posted INR bands; aggregator/press estimates only (EY GDS manager Rs20–27.5L, Tech Mahindra lead Rs30–45L, press Rs10–28L specialist / Rs55–95L lead, C) [T0-15:469, T0-45, T0-61 K6]. |
+| AI Product Engineer (AI Frontend) | 2.5 [1.5–4] · C | 5 [4–6.5] · D | 2 of 16 sampled postings in India (CirrusLabs Bengaluru, Alpha remote India); no title count [T0-62]. / Small-sample India pay only (n=2): CirrusLabs Bengaluru Rs10–18 LPA (2–4 yrs, B/C) and Alpha remote India Rs4–8 LPA + ESOPs (0.5–3 yrs, B/C); no India platform series [T0-45, T0-62 K35]. |
+| AI Risk, Audit & Compliance Specialist | 3 [2–4] · C | 5 [3.5–6.5] · D | DPDP Rules 2025 consent-manager rules took effect 2026-11-13 with main obligations on 2027-05-13 (A); 1 core India posting in T0-61 (Deutsche Bank DWS Pune model validation, B); Phase 0 DPO-demand forecast unverified [T0-15:142, T0-61 K19]. / No India evidence: 0 employer-posted INR bands [T0-45, T0-61 K20]. |
+| Responsible AI / AI Governance Engineer | 3.5 [2.5–4.5] · B | 4.5 [3.5–6] · D | 5 of 12 sampled postings in India across Cognizant (Chennai/Bengaluru/Hyderabad, A) and Accenture Bengaluru [T0-61]. / 0 employer-posted INR bands; aggregator estimate Accenture Rs22–35L and press responsible-AI lead estimates Rs55–95L lack disclosed method (C) [T0-15:469, T0-45, T0-61 K34]. |
+| AI Enablement Engineer | 2.5 [1.5–3.5] · C | 5 [4–6] · D | 2 of 15 sampled postings in India (Ather Energy Bengaluru, Siemens GCC Bengaluru); no India title count [T0-62]. / Single India junior posting only: Ather Energy Bengaluru Rs8–14 LPA (0–2 yrs, aggregator, C); no senior India pay series [T0-45, T0-62 K21]. |
 | Domain Evaluation Specialist / AI Trainer | 5 [3.5–6.5] · B | 3.5 [2–5.5] · B | 4/4 India evaluation postings in T0-66 are salaried office/hybrid evaluation-engineering roles in Hyderabad and Bengaluru (Kore.ai, BT, Backbase, HCLTech, B); remote expert-grader India volume unmeasured [T0-66]. / Global-remote micro1 $20–$35/hr (B); Outlier India coding tiers ~$13–$27+/hr (C); Alignerr states non-US rates vary (B); India salaried eval-eng postings disclose no pay [T0-66]. |
 
 ### A.4 Single-pillar leaders (IC roles, mid scores; ties shown)

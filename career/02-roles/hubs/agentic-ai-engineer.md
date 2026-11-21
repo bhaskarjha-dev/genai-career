@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Applied AI Engineering | L5 Orchestration and context; also L6 Applications and deployment | Watch (W) | #14 of 24 | #14 of 24 · band B · Monte Carlo rank 13 (P10–P90 10–16) | A1 Builder |
+| Applied AI Engineering | L5 Orchestration and context; also L6 Applications and deployment; planes: Evaluation and quality | Watch (W) | #14 of 24 | #14 of 24 · band B · Monte Carlo rank 13 (P10–P90 10–16) | A1 Builder |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -30,7 +30,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 4.5 (3.5–5.5) | C | Exact standalone title stays Watch (W): Skilark 107 'agentic'-titled listings of 28,771 (0.37%); JobsPipe agentic skill appears in 59.3% of AI Engineer postings (2026-09-10) while US product firms hire under AI Engineer [T0-57, T0-69]. |
 | Pay | 6.75 (6–7.5) | C | US senior-skewed posted base midpoint median ~$197K (n=8 in-window postings in T0-57); tracks AI Engineer band rather than a separate premium [T0-57]. |
 | Durability | 6.5 (5–8) | D | Judgement. Multi-step agent capabilities are rising while framework brands churn (Microsoft Agent Framework 1.0 GA 2026-04-03; AutoGen dormant); title likely merges into AI Engineer [T0-57, T0-69]. |
-| Leverage | 7.5 (6.5–8.5) | D | Judgement. Workflow automation value. |
+| Leverage | 7.5 (6.5–8.5) | D | Judgement. High-leverage workflow automation scope (OpenAI API Agents, Salesforce Agentforce Reasoning, Amazon Agentic AI [T0-57 D10]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 4.5 (3.5–5.5) | C | Exact 'Agentic AI Engineer' title is actively used by Indian IT services, GCCs and consultancies (6/10 India sample in T0-57) [T0-57]. |
-| India pay | 5.25 (4.5–6.25) | D | Single Cutshort India posting insufficient to upgrade; tracks Greater Bengaluru AI Engineer Levels.fyi benchmark (Rs20.0L P50) [T0-45, T0-57]. |
+| India pay | 5.25 (4.5–6.25) | D | Single Weekday India posting (Epitria Consulting, Rs43–44 LPA senior/lead, C [T0-57]) plus Hello Edge Rs20–30L (A [T0-45]) and Glassdoor Rs6.4L mean (n~13, C [T0-57]) insufficient to upgrade; tracks Greater Bengaluru AI Engineer Levels.fyi benchmark (Rs20.0L P50, B) [T0-45, T0-57]. |
 
 India rank (CCI with India inputs): #13 of 24.
 
@@ -56,8 +56,8 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Must (headline):** Python (production), LLM APIs & tool calling, Agents & tool use, Prompt & context design.
 - **Important (headline):** Agent reliability (durable state, budgets, approvals), MCP (Model Context Protocol), Containment (DLP, sandboxing, egress), LLM evaluation (golden sets, calibrated judges, CI gates), LLM security (prompt injection, OWASP), Agent frameworks (LangGraph, Agents SDKs), Human-in-the-loop design.
 - **Full inventory:** 73 skills (Must 5 · Important 18 · Should 32 · Optional 17 · Avoid 1), each with its evidence and posting keywords: [agentic-ai-engineer.md](../../03-skills-and-tech/inventories/agentic-ai-engineer.md).
-- **Prerequisites:** Usually an AI Engineer title in practice; the standalone title is small (~66 + 28 postings in 90 days)
-- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: tie-breaker in services channels); LangChain Certified Agent Engineer (LCAE) (Optional: ); Model Context Protocol Associate (MCPA) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Prerequisites:** Usually an AI Engineer title in practice; standalone 'agentic' titles are a niche (Skilark: 107 of 28,771 AI listings = 0.37%, Feb 2026 [C · T0-57 L118]; IT Jobs Watch ~7 UK permanent in 6 mo)
+- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: tie-breaker in services channels); LangChain Certified Agent Engineer (LCAE) (Optional: Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76)); Model Context Protocol Associate (MCPA) (Optional: Linux Foundation / AAIF MCP Associate ($250, 90 min); protocol specialist signal, hiring lift unmeasured (T0-32)); Google Professional Agentic Architect (PAA) (Optional: Hybrid MCQ + 2 hands-on labs covering MCP and A2A (GA mid-Nov 2026); strongest GCP agentic signal, 1-yr validity (T3-01)); Databricks Certified Context Engineer Associate (Optional: $200, 45 Q, 90 min; context engineering & MCP/tool patterns on Databricks stack (T3-01, T3-02:L69)); GitHub Certified Agentic AI Developer (GH-600) (Optional: GA Jul 2026 ($165, 120 min, pass 700); covers MCP (not A2A) for GitHub/Microsoft agentic shops (T3-01)); NVIDIA NCP Agentic AI (NCP-AAI) (Optional: Announced ($200; verify live Certiverse booking before prep — en-us/en-eu pages showed 'Coming soon' in T0-32 L74; blueprint sums to 98%)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -85,12 +85,12 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Agent memory** (L5 Orchestration and context): No title of its own in the catalog.
 - **Multi-agent orchestration** (L5 Orchestration and context): Alias of Agentic AI Engineer in the A–Z index.
 - **Coding agents** (L5 Orchestration and context): No title of its own in the catalog.
-- **MCP and agent protocols** (L5 Orchestration and context): Specialisation label MCP Control Plane Engineer in the A–Z index; no literal title.
+- **MCP and agent protocols** (L5 Orchestration and context): Specialisation label MCP Control Plane Engineer in the A–Z index; no literal title (MCP named in 19.0% of Skillenai / 26.7% of sampled AI Enablement postings [T0-62]).
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Engineer](ai-engineer.md) (0.50); [Applied AI Engineer](applied-ai-engineer.md) (0.35); [Forward Deployed Engineer](forward-deployed-engineer.md) (0.31).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Engineer](ai-engineer.md) (0.50); [Applied AI Engineer](applied-ai-engineer.md) (0.34); [AI Product Engineer (AI Frontend)](ai-product-engineer.md) (0.30).
 - **Same family (Applied AI Engineering):** [AI Engineer](ai-engineer.md), [Applied AI Engineer](applied-ai-engineer.md), [AI Product Engineer (AI Frontend)](ai-product-engineer.md), [AI Enablement Engineer](ai-enablement-engineer.md).
 
 ## Go deeper

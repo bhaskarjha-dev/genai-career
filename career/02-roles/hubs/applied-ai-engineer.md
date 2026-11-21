@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Applied AI Engineering | L6 Applications and deployment; also L5 Orchestration and context; planes: Evaluation and quality | Verified (V) | #6 of 24 | #6 of 24 · band A · Monte Carlo rank 6 (P10–P90 4–10) | A2 Deployer |
+| Applied AI Engineering | L6 Applications and deployment; also L5 Orchestration and context; planes: Evaluation and quality, Security, safety and governance | Verified (V) | #6 of 24 | #6 of 24 · band A · Monte Carlo rank 6 (P10–P90 4–10) | A2 Deployer |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -28,9 +28,9 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | Demand | 5 (4–6.5) | C | 21 of newest 50 Fast AI Jobs AI-Engineer rows (42%) on 2026-11-11 carry 'Applied AI' titles; JobsPipe has no standalone Applied AI Engineer page; strong lab/scale-up cluster (Anthropic, OpenAI, Mistral, Snorkel, Scale) [T0-53]. |
-| Pay | 7.75 (6.5–8.75) | B | Levels.fyi US Applied AI Engineer TC (Nov 2026): P25 $165K / P50 $232K / P75 $340K / P90 $505K–$605K (reconciling T0-53 2026-11-11 $505K vs T0-44 2026-11-13 extract $605K); lab posted base bands $210K–$440K+ [T0-44, T0-53]. |
-| Durability | 6.5 (5–8) | D | Judgement. Customer-facing technical delivery at labs and vendors. |
-| Leverage | 8.5 (7.5–9.5) | D | Judgement. Customer deployment and go-to-market at labs and vendors (8.5-9 anchor: directly moves revenue). |
+| Pay | 7.75 (6.5–8.75) | B | Levels.fyi US Applied AI Engineer TC (Nov 2026): P25 $200K / P50 $250K / P75 $475K / P90 $505K–$605K (both T0-44 and T0-53 agree on P25–P75; P90 shifted from $605K on 2026-10-04 to $505K on 2026-11-11, reflecting upper-tail volatility); US lab posted bands $197K–$320K (OpenAI $197K–$278K + equity [B], Anthropic $200K–$320K [A, COI]; median midpoint $264.5K, n=5, base/OTE mix) [T0-44, T0-53]. |
+| Durability | 6.5 (5–8) | D | Judgement. Family-level customer-delivery demand stays active despite title churn (Scale AI rename, OpenAI AI Deployment Engineer [T0-53 K7]). |
+| Leverage | 8.5 (7.5–9.5) | D | Judgement. Grade A customer-deployment adoption and revenue scope at frontier labs and AI vendors (8.5–9 anchor: directly moves revenue) [T0-53]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,9 +39,9 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 4 (2.5–5.5) | C | Verified active India hiring at OpenAI (Bengaluru Applied AI Engineer/Architect), Anthropic India partner/field roles and funded AI startups; no platform title count [T0-53]. |
-| India pay | 6 (4–8) | D | No India evidence. |
+| India pay | 6 (4–8) | D | No India title distribution or lab INR bands (0 lab postings disclose pay [T0-53 K6]); 4 partial Cutshort postings span Rs3–55L (Hello Edge Rs20–30L, Metadome Principal Rs45–55L, VY Systems Rs3–23L, Gravity Rs8–40L; A per posting, n=1 each) [T0-45, T0-53]. |
 
-India rank (CCI with India inputs): #6 of 24. One input (India comp) is a Grade D placeholder.
+India rank (CCI with India inputs): #6 of 24.
 
 ## Who it suits
 
@@ -57,19 +57,19 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Important (headline):** Guardrails, Prompt & context design, Technical writing, Retrieval quality (hybrid, reranking, recall@k), ML fundamentals, AWS / Azure / GCP, Git & CI/CD, Embeddings & vector search.
 - **Full inventory:** 46 skills (Must 6 · Important 14 · Should 14 · Optional 12), each with its evidence and posting keywords: [applied-ai-engineer.md](../../03-skills-and-tech/inventories/applied-ai-engineer.md).
 - **Prerequisites:** Lab-tier hiring bar on top of the AI Engineer stack; backend (~6 months) and PhD (~8 months) routes [D · T0-06]
-- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: services channels); LangChain Certified Agent Engineer (LCAE) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: services channels); LangChain Certified Agent Engineer (LCAE) (Optional: Open-access $99 (1 free resit), 40 MCQ in 120 min (pass 28/40), Talview proctored, 24-mo validity; hiring signal unmeasured (T0-29:L76)); Claude Certified Developer – Foundations (CCDV-F) (Optional: Partner-gated ($125; Claude Partner Network staff only; counts for partner tiers; FASCSA risk V0) [A COI · T0-29, T3-01]). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A customer-facing reference implementation with evals and a published write-up; the AI Engineer T2–T3 portfolio
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (59%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (35%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (32%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (59%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (47%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (35%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Application.** It tests Coding, RAG or agent system design, and evaluation (plus an emerging AI-assisted build variant at AI-native firms such as Sierra, OpenAI and Anthropic). Source: T0-14, T0-46, T0-53, T0-57.
-- **Practise:** the [application prep pack](../../08-interviewing/prep-packs.md#application-pack), plus the behavioural and coding packs.
+- **Track: Application plus customer scoping.** It tests Coding and debugging (often practical or production-adjacent), system architecture or decomposition (RAG, agents, enterprise integration, evals), and customer scoping, discovery or technical-presentation rounds. Source: T0-14, T0-46, T0-51, T0-53, T0-62.
+- **Practise:** the [application plus customer scoping prep pack](../../08-interviewing/prep-packs.md#application-plus-customer-scoping-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
@@ -81,7 +81,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Engineer](ai-engineer.md) (0.62); [Forward Deployed Engineer](forward-deployed-engineer.md) (0.43); [Agentic AI Engineer](agentic-ai-engineer.md) (0.35).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Engineer](ai-engineer.md) (0.59); [Forward Deployed Engineer](forward-deployed-engineer.md) (0.43); [Agentic AI Engineer](agentic-ai-engineer.md) (0.34).
 - **Same family (Applied AI Engineering):** [AI Engineer](ai-engineer.md), [Agentic AI Engineer](agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](ai-product-engineer.md), [AI Enablement Engineer](ai-enablement-engineer.md).
 
 ## Go deeper
@@ -122,7 +122,7 @@ Exact-title demand is measurable only in the AI-startup and lab segment because 
 | **Organisation-name collision** | OpenAI's "Applied AI Engineering" *organisation* (e.g., `Applied AI Engineer, Codex Core Agent`, excluded) | Standard product/model-improvement engineering housed inside a division named Applied AI [B · T0-53 L43, L133, L321] |
 | **Classic ML title collision** | JPMorgan `Applied AI ML Associate / Lead` (excluded) | Traditional ML engineering and data science; not customer-facing LLM delivery [B · T0-53 L43, L133, L323] |
 
-**Title churn and stale listings:** Search the entire sibling family — `AI Deployment Engineer` (OpenAI uses near-identical team text to Applied AI Engineer), `Forward Deployed Engineer` / `Forward Deployed ML Engineer` (Mistral, Anthropic, Databricks), `Deployed AI Engineer` (Helsing), `Frontier Agents Engineer` (Scale AI's "Applied AI Engineer, Enterprise" posting now carries this headline), `Partner Applied AI Engineer`, and `Applied AI Architect` [A/B · T0-53 L73, L125–L132]. Always check live status on the employer's ATS board: **4 of 14 (29%)** fetched search-indexed postings were closed (including Google Cloud `FDE IV, Applied AI` and EY London) [A/M · T0-53 L56, L73, L174].
+**Title churn and stale listings:** Search the entire sibling family — `AI Deployment Engineer` (OpenAI uses near-identical team text to Applied AI Engineer), `Forward Deployed Engineer` / `Forward Deployed ML Engineer` (Mistral, Anthropic, Databricks), `Deployed AI Engineer` (Helsing), `Frontier Agents Engineer` (Scale AI's "Applied AI Engineer, Enterprise" posting carries this headline), `Partner Applied AI Engineer`, and `Applied AI Architect` [A/B · T0-53 L73, L125–L132]. Always check live status on the employer's ATS board: **4 of 14 (29%)** fetched search-indexed postings were closed (including Google Cloud `FDE IV, Applied AI` and EY London) [A/M · T0-53 L56, L73, L174].
 
 ## Career path, India demand and market signals
 
@@ -151,7 +151,7 @@ Role-specific employer loop specifications remain unpublished outside AI-usage p
 ## Dossier evidence and limits
 
 - **Primary dossier:** [T0-53](../../../research/sessions/T0-53-role-dossier-applied-ai-engineer.md) (retrieved 2026-11-13; 52 sources: 17 Read, 35 Extract-only; 36 included JD records: 10 read in full, 8 body extracts, 18 listing-level rows) [T0-53 L51, L166, L427–L480].
-- **Sampling and statistical limits:** Skill shares rest on **n = 10 full reads (±31 percentage points)**, heavily skewed towards frontier labs and AI startups (32 of 36 records; only 4 from Big Tech, enterprise, GCC, and IT services), with **4 of 10 full reads from Anthropic alone** [T0-53 L68, L178–L181, L392]. Accordingly, T0-53's suggested demotions of `rag`, `guardrails`, `cloud`, `git_ci`, and `vector_search` are **not** generalised to the full role without a broader enterprise/GCC full-text sample (n ≥ 30); `customer_scoping` and `evals` are flagged as strong promotion candidates corroborated across T0-48 and T0-51. OpenAI and AssemblyAI pages blocked automated fetches; no non-English searches were run; three OpenAI extract rows lacked retained posting-specific URLs [T0-53 L373–L384].
+- **Sampling and statistical limits:** Skill shares rest on **n = 10 full reads (±31 percentage points)**, heavily skewed towards frontier labs and AI startups (32 of 36 records; only 4 from Big Tech, enterprise, GCC, and IT services), with **4 of 10 full reads from Anthropic alone** [T0-53 L68, L178–L181, L392]. Accordingly, T0-53's suggested demotions of `rag`, `guardrails`, `cloud`, `git_ci`, and `vector_search` are **not** generalised to the full role without a broader enterprise/GCC full-text sample (n ≥ 30); `customer_scoping` and `evals` (corroborated across T0-48 and T0-51) sit in Must on the scorecard above. OpenAI and AssemblyAI pages blocked automated fetches; no non-English searches were run; three OpenAI extract rows lacked retained posting-specific URLs [T0-53 L373–L384].
 - **COI and provenance transparency:** Ten ledger entries (`S1`–`S6`, `S34`–`S36`, `S38`) carry COI flags (Anthropic pages authored by Claude Sonnet 5.5, plus interview-prep vendors) [T0-53 L13, L410, L425]. One vendor's untraceable claim that customer rounds "filter out about 60%" and an untraceable India ₹6–80 LPA range are excluded as Grade E [T0-53 L238, L249].
 - **What would change this view:** A larger enterprise, consultancy, and GCC full-text sample; posted INR ranges for India lab roles; role-specific interview evidence at Scale AI, Google Cloud, and Indian GCCs; and tracking whether OpenAI and Scale consolidate parallel titles [T0-53 L93–L96, L376–L377].
 

@@ -27,10 +27,10 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| Demand | 4 (3–5.5) | C | CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3]; River AI (GPU kernels) and AMD (Triton kernels) among T0-13's inference/kernel postings [T0-13:112, 737]. |
+| Demand | 4 (3–5.5) | C | 41 core postings across 30 employers (16 W1; NVIDIA 6/41 core, 11/59 retained); Inference Jobs 'GPU Kernel Development' tag lists 79 jobs (page 1 is 45% OS/driver, 30% stale, 15% fresh) [T0-63]; CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3, T0-13, T0-63]. |
 | Pay | 7.5 (6.5–8.5) | B | US core sample (n=17) median posted base band $190K–$287.5K (median midpoint $235.8K, IQR $217.5K–$275K); frontier labs and NVIDIA/AMD Staff/Principal reach $400K–$700K+ TC [T0-63]. |
-| Durability | 6.5 (5–8) | D | Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile) and automated kernel agents abstract kernel writing [T0-03:L542, L101]; no labour data either way [T0-03:L571]. |
-| Leverage | 8.5 (7.5–9.5) | D | Judgement. GPU efficiency moves a large cost line (8.5-9 anchor). |
+| Durability | 6.5 (5–8) | D | Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile 13.1 compiler hiring) and automated kernel agents (Cursor + NVIDIA SOL-ExecBench 235 kernels 1.38x vs single-agent PyTorch / 86% cuBLAS; Anthropic Opus 4.5 take-home redesigns) abstract routine kernel writing while agentic duties enter JDs; no labour-market displacement series [T0-03, T0-63 K7]. |
+| Leverage | 8.5 (7.5–9.5) | D | Judgement. GPU efficiency moves a large cost line (8.5–9 anchor; Sarvam and Anthropic baseline-beating serving-cost claims [C · T0-63 L315]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -38,7 +38,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 4 (3–5) | B | 8 of 41 core postings (19.5%) in India across Bengaluru and Hyderabad: NVIDIA, AMD, Qualcomm, Sarvam AI and silicon GCCs [T0-63]. |
+| India demand | 4 (3–5) | B | 8 of 41 core postings (19.5%) in India across Bengaluru and Hyderabad: AMD x2, Sarvam AI (live), Intel, Google (TPU compilers), EPAM, Taglynk (Indian startup) and 1 recruiter client; 0 NVIDIA India ML-kernel postings found in window (driver/assembler only) and Qualcomm India classed adjacent [T0-63]. |
 | India pay | 6.5 (5–8) | C | No employer-posted India kernel band; one Bengaluru recruiter band Rs70–90L base (C) plus NVIDIA/AMD Bengaluru staff engineering bands [T0-63]. |
 
 India rank (CCI with India inputs): #15 of 24.
@@ -53,21 +53,22 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What you need
 
-- **Must (headline):** C++, CUDA / Triton / CUTLASS, GPU fundamentals (HBM, prefill vs decode), Linear algebra, Profiling & roofline (Nsight).
-- **Important (headline):** Attention, GEMM & quantised kernels, GPU memory performance, Numerics validation, ML compilers (XLA, TorchInductor), Quantisation (FP8/FP4, AWQ, GPTQ).
-- **Full inventory:** 45 skills (Must 7 · Important 14 · Should 11 · Optional 13), each with its evidence and posting keywords: [gpu-kernel-engineer.md](../../03-skills-and-tech/inventories/gpu-kernel-engineer.md).
+- **Must (headline):** C++, CUDA / Triton / CUTLASS, GPU fundamentals (HBM, prefill vs decode), Profiling & roofline (Nsight).
+- **Important (headline):** Attention, GEMM & quantised kernels, GPU memory performance, Numerics validation, ML compilers (XLA, TorchInductor), Upstream open-source contributions.
+- **Full inventory:** 47 skills (Must 6 · Important 10 · Should 18 · Optional 13), each with its evidence and posting keywords: [gpu-kernel-engineer.md](../../03-skills-and-tech/inventories/gpu-kernel-engineer.md).
 - **Prerequisites:** Systems / C++ / CUDA background or a PhD
+- **Credentials (tie-breakers, not skills):** AMD ROCm Certified Associate (Optional: Free (5 modules + Docker AMD GPU labs + exam, 24-mo validity); useful for AMD/ROCm kernel tracks (17.1% T0-63 name ROCm; 0/47 cert JDs; T0-32:L243, L857)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** GPU MODE leaderboard submissions; kernel PRs to vLLM, SGLang, FlashInfer or Triton, benchmarked on the target hardware with correctness tests
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P9 Custom Triton kernel with benchmarks and correctness tests](../../05-portfolio/project-archetypes.md#p9) (80%); [P5 Single-GPU serving and quantisation study](../../05-portfolio/project-archetypes.md#p5) (32%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (12%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P9 Custom Triton kernel with benchmarks and correctness tests](../../05-portfolio/project-archetypes.md#p9) (77%); [P5 Single-GPU serving and quantisation study](../../05-portfolio/project-archetypes.md#p5) (27%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (14%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Infrastructure.** It tests KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Infrastructure.** It tests sub-discipline specific: serving and inference (systems coding, distributed-systems design; KV-cache maths, decode roofline, continuous batching and prefill/decode disaggregation appear in prep guides [C]), GPU cluster ops (Slurm, InfiniBand/RDMA, NCCL debugging, bare-metal failure recovery, Kubernetes at scale), MLOps/ML platform (IaC, CI/CD, drift monitoring, feature stores, ML job schedulers) and GPU kernels (simulated-accelerator take-home [A, COI], profiler walkthrough, roofline analysis, numerics/dtype tolerances). Source: T0-14, T0-46, T0-54, T0-56, T0-58, T0-63, T1-03.
 - **Practise:** the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -80,7 +81,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Inference / LLM Serving Engineer](inference-engineer.md) (0.21); [Research Scientist (AI/ML)](research-scientist.md) (0.09); [Research Engineer / Member of Technical Staff](research-engineer.md) (0.09).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Inference / LLM Serving Engineer](inference-engineer.md) (0.20); [Research Engineer / Member of Technical Staff](research-engineer.md) (0.09); [Physical AI / Robotics AI Engineer](physical-ai-engineer.md) (0.08).
 - **Same family (AI Infrastructure & Platform):** [Inference / LLM Serving Engineer](inference-engineer.md), [AI Infrastructure / GPU Platform Engineer](ai-infrastructure-engineer.md), [ML Platform / MLOps Engineer](ml-platform-engineer.md).
 
 ## Go deeper
@@ -135,7 +136,7 @@ Workload focus confirms the L1 + L3 footprint: 43.9% (18/41) explicitly name inf
 
 **Pay signals, geography and sponsorship:** Full pay tables live in [pay benchmarks](../../09-compensation/pay-benchmarks.md) (D-019). Across 17 US core postings with disclosed bands, the median base band is **$190K–$287.5K** (median midpoint **$235.8K**, IQR $217.5K–$275K; W1-only `n = 8` midpoint $244.6K) [M · T0-63 L77, L226–227]. Frontier labs sit well above: Anthropic posts **$280K–$850K** across levels for `Performance Engineer, GPU` [A, COI] (separate from its $405K–$485K adjacent Staff+ Inference Runtime role [B, COI]) and OpenAI posts $325K–$490K for AMD GPU Enablement [B]; NVIDIA posts $152K–$356.5K across L3–L5, consistent with Levels.fyi NVIDIA US IC4 average base ($244K) and all-level median TC ($315K, `n = 2,369`) [B · T0-63 L77, L228–237]. Europe: Graphcore Gdańsk posts PLN 196.4K–474.4K (mid to staff) [B · T0-63 L244]. Geographically, **70.7% (29/41) are in the US**, 19.5% (8) India, 7.3% (3) Europe and 2.4% (1) China; only **12.2% (5/41)** offer a remote option [M · T0-63 L82, L325–329]. On US sponsorship (pointers, not legal advice; verify in [visa and relocation](../../11-tracks/visa-and-relocation.md)): Anthropic explicitly sponsors [A, COI], NVIDIA had 2,380 certified H-1B LCAs across all titles in FY2026 through Q3 (filings are not pay) [B], one aggregator lists Fireworks AI as not offering H-1B sponsorship [C], and the US $100,000 H-1B entry-fee proclamation remained actively contested in federal courts as of November 2026 (V0) [B · T0-63 L82, L330–337].
 
-**India demand — Phase 0 "No India evidence" contradicted (`K5`, live-verified 2026-11-19):** Contrary to the Grade D placeholder in the generated scorecard above, T0-63 documents **8 of 41 core postings (19.5%) in India** (Bengaluru and Hyderabad), corroborated by live web checks on 2026-11-19 [A/B · T0-63 L78, L373–388, L399]:
+**India demand — Phase 0 "No India evidence" contradicted (`K5`, live-verified 2026-11-19):** Replacing Phase 0's Grade D India placeholder (updated on the scorecard above), T0-63 documents **8 of 41 core postings (19.5%) in India** (Bengaluru and Hyderabad), corroborated by live web checks on 2026-11-19 [A/B · T0-63 L78, L373–388, L399]:
 - **Indian AI lab:** **Sarvam AI** (`Performance Engineer, Kernels`, Bengaluru, on-site, opened live and live-verified 2026-11-19) — 5+ years ML systems, 2+ years authoring production CUDA kernels, CUTLASS/CuTe/PTX, Hopper/Blackwell (`TMA`, `tcgen05`, FP4), paired with a companion Inference role [A · T0-63 L78, L380–383, L562].
 - **Chip-vendor R&D centres:** **AMD** (Hyderabad and Bengaluru — `ML GPU Kernel Development Engineer` from 2+ years, ROCm/HIP/Composable Kernel, Triton and AI/ML compilers; live-verified 2026-11-19) and **Intel** (Bengaluru — `AI Software Solutions Engineer, Kernel Dev`) [B · T0-63 L375, L535–537]. NVIDIA India postings in T0-63's window were GPU assembler, CUDA driver and system-software roles rather than ML-kernel roles; Qualcomm Bengaluru posted an adjacent Lead AI Compiler/Vulkan role [B · T0-63 L384–385].
 - **Big Tech, services and startups:** **Google** (Bengaluru — `ML Compiler Engineer, TPU Performance Optimizations`; live-verified 2026-11-19), **EPAM** (Hyderabad and five other cities — GPU/TPU Pallas kernel optimisation), a **recruiter-listed senior kernel/inference role** (Bengaluru, 8–15 years, posted 2026-09-30) and an **Indian startup client** (Taglynk, Bengaluru, 2–5 years) [B/C · T0-63 L375–378].
@@ -143,7 +144,7 @@ Workload focus confirms the L1 + L3 footprint: 43.9% (18/41) explicitly name inf
 
 ## Interview themes and preparation notes
 
-The generated card's **Infrastructure** track label fits, but its topic list misses core kernel-loop exercises (`K9` updated) [C · T0-63 L264–265, L403]:
+Expanding on the GPU-kernel exercises added to the **Infrastructure** track (`K9` updated) [C · T0-63 L264–265, L403]:
 - **Employer loops and AI policies:** **Anthropic** uses a performance-engineering take-home on a simulated accelerator (originally 4 hours, then 2 hours, then redesigned into a constrained-ISA puzzle after Opus 4.5 matched top human 2-hour results; over 1,000 candidates completed since early 2024; AI tools allowed by design on the take-home, while general live-interview rules bar AI unless stated; the historical take-home is open-sourced) alongside recruiter, coding and ~5-session virtual onsite rounds [A for take-home, COI; C for stages · T0-63 L79, L259]. **NVIDIA** guides report 4–6 rounds over 4–8 weeks covering CUDA/systems coding, GPU performance reasoning, team-sized design and behavioural rounds (one guide states unapproved outside tools disqualify candidates, unverified on NVIDIA's page) [C · T0-63 L260]. **xAI** screens with CV plus a "statement of exceptional work" [B · T0-63 L261]; **Sarvam AI** screens heavily on GitHub/open-source kernel history [A · T0-63 L262].
 - **Kernel-specific themes to add to prep (no model answers, per D-018):** Time-boxed kernel optimisation, roofline diagnosis (compute-bound vs memory-bandwidth-bound), Nsight Compute / Nsight Systems profiler walkthroughs, floating-point numerics and dtype tolerances (FP8/FP4/BF16), and hardware architecture mechanics (warps, SMs, shared memory, tensor cores, async copies) [C · T0-63 L93, L265]. Practise on Anthropic's open-sourced performance take-home alongside the [infrastructure prep pack](../../08-interviewing/prep-packs.md#infrastructure-pack) and [interview loops](../../08-interviewing/interview-loops.md). Confirm AI-tool permissions in writing before each stage [P · T0-63 L93].
 

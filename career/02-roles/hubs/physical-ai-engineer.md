@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Embodied & Physical AI | L2 Foundation models and research; also L4 Post-training and adaptation, L6 Applications and deployment | Verified (V) | #17 of 24 | #17 of 24 · band B · Monte Carlo rank 18 (P10–P90 15–20) | B3 Robotics |
+| Embodied & Physical AI | L2 Foundation models and research; also L4 Post-training and adaptation, L6 Applications and deployment; planes: Evaluation and quality | Verified (V) | #17 of 24 | #17 of 24 · band B · Monte Carlo rank 18 (P10–P90 15–20) | B3 Robotics |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -30,7 +30,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 4.5 (3–5.5) | C | Graduated W -> V: 48 in-scope postings across 38 distinct employer entries (33 named: startups, OEMs, Big Tech, frontier labs, IT services); Phase 0 Figure 'Helix' share corrected (Helix is a Figure department, not standalone volume) [T0-64]. |
 | Pay | 7 (6–8.5) | B | US posted base sample (n=18) median midpoint ~$242.5K (~$235K per employer) plus equity at robotics labs and AV/humanoid firms [T0-64]. |
 | Durability | 6.5 (4.5–8.5) | C | Industrial/warehouse deployments and funding growth provide upside, balanced by robotics hardware startup shutdowns and capital-intensity cycles [T0-64]. |
-| Leverage | 7 (6–8) | D | Judgement. |
+| Leverage | 7 (6–8) | D | Judgement. Close to customer and industrial hardware deployments (Skild, Applied Intuition, Wipro PoV, Samsung manufacturing, Siemens Energy India [T0-64 L280]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -38,8 +38,8 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 3 (2–4) | B | physicalai.jobs tracks 35 India roles (0.7% of 4,875, 2026-11-11, B); 8 India postings sampled across robotics startups, auto OEMs and IT services [T0-64]. |
-| India pay | 5 (3.5–6.5) | D | No India evidence. |
+| India demand | 3 (2–4) | B | physicalai.jobs tracks 35 India roles (0.7% of 4,875, 2026-11-11, B); 8 India postings sampled across IT services (Wipro, TELUS Digital), industrial GCC-style R&D (Siemens Energy India), robotics OEM (Addverb) and startups (Origin, Upsurge Labs, Weekday client) [T0-64 L325–330]. |
+| India pay | 5 (3.5–6.5) | D | No India evidence: 0 of 8 India postings disclose pay; generic ML proxies only (viral Rs22.4 LPA / 1,240 Bangalore claim is untraceable Grade E) [T0-45, T0-64 K6]. |
 
 India rank (CCI with India inputs): #19 of 24. One input (India comp) is a Grade D placeholder.
 
@@ -53,21 +53,23 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What you need
 
-- **Must (headline):** Robotics fundamentals, C++, Python (production), Simulation & sim-to-real, ROS, Robot learning & VLA models, PyTorch.
-- **Important (headline):** Edge inference, Teleoperation data pipelines, Safety cases, Computer vision & robot perception, Reinforcement learning.
-- **Full inventory:** 40 skills (Must 7 · Important 13 · Should 16 · Optional 4), each with its evidence and posting keywords: [physical-ai-engineer.md](../../03-skills-and-tech/inventories/physical-ai-engineer.md).
+- **Must (headline):** Robotics fundamentals, C++, Python (production), Simulation & sim-to-real, ROS, Robot learning & VLA models, PyTorch, Real-robot deployment & hardware bring-up.
+- **Important (headline):** Edge inference, Teleoperation data pipelines, Safety cases, Imitation learning, Computer vision & robot perception, Reinforcement learning.
+- **Full inventory:** 43 skills (Must 8 · Important 13 · Should 17 · Optional 5), each with its evidence and posting keywords: [physical-ai-engineer.md](../../03-skills-and-tech/inventories/physical-ai-engineer.md).
 - **Prerequisites:** Robotics or controls background with ML
+- **Credentials (tie-breakers, not skills):** NVIDIA-Certified Professional: OpenUSD Development (NCP-OUSD) (Optional: $200 (120 min, 60-70 Q, 24-mo validity); sole catalogued Physical AI/Isaac OpenUSD exam; 0/47 T0-32 JD mentions (T0-32:L197, L449, L848)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A sim-to-real or manipulation project with measured success rates and failure analysis
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P16 Sim-to-real robotics project](../../05-portfolio/project-archetypes.md#p16) (71%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (26%); [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (19%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P16 Sim-to-real robotics project](../../05-portfolio/project-archetypes.md#p16) (94%); [P7 Small-scale distributed training / post-training study](../../05-portfolio/project-archetypes.md#p7) (22%); [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (17%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- No interview-track evidence in the corpus for this role. Practise with the closest track's [prep pack](../../08-interviewing/prep-packs.md) and the behavioural pack.
+- **Track: Robot learning.** It tests real-hardware failure questions, demonstration curation, sim-to-real gaps, evaluation of rare but dangerous failures, practical coding rather than puzzles, and a presentation of past work or a design round on the employer's own robots (prep guides, C; Apptronik's knock-out application questions are employer-published, A). Source: T0-64.
+- **Practise:** the [robot learning prep pack](../../08-interviewing/prep-packs.md#robot-learning-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
 ## Résumé
@@ -84,7 +86,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Research Engineer / Member of Technical Staff](research-engineer.md) (0.18); [Machine Learning Engineer](ml-engineer.md) (0.17); [Research Scientist (AI/ML)](research-scientist.md) (0.17).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Research Engineer / Member of Technical Staff](research-engineer.md) (0.17); [Machine Learning Engineer](ml-engineer.md) (0.16); [Research Scientist (AI/ML)](research-scientist.md) (0.15).
 
 ## Go deeper
 
@@ -113,10 +115,10 @@ A November 2026 sample of 48 postings across 38 employer entries (12 full-text r
 | **5. Simulation, synthetic data and eval tooling** | UnitX, NVIDIA (Simulation), Boston Dynamics (Behaviour-Cloning Tools) | Simulation/data/eval plane (4/48): physics simulation (Isaac Sim/Lab, MuJoCo, Drake, ManiSkill) and collect-train-evaluate pipelines |
 | **6. World models and generative physical AI** | Hedra, Laplacian Robotics | L2: action-conditioned video and world models for physical control |
 
-By primary work layer (`n = 48`), 15 sit in L2 models/research, 16 in L4 post-training/adaptation, 13 in L6 applications/deployment, and 4 in a simulation, data and evaluation plane not yet modelled in the Phase 0 card [M · T0-64 L68, L125].
+By primary work layer (`n = 48`), 15 sit in L2 models/research, 16 in L4 post-training/adaptation, 13 in L6 applications/deployment, and 4 in a simulation, data and evaluation plane (reflected by the added evaluation plane on the updated card) [M · T0-64 L68, L125].
 
 **Skill shifts revising the Phase 0 scorecard (`K9`, `K10`):**
-- **Real-robot learning, Python, PyTorch and simulation are the true universal core:** Across 48 postings (`full-text n = 12` in brackets), the dominant skills are **robot learning** (`38/48`, `11/12` — promote from Important to Must, noting query inflation), **real-robot deployment experience** (`26/48`, `11/12` — absent from Phase 0), **simulation & sim-to-real** (`22/48`, `10/12`, led by Isaac Sim/Lab and MuJoCo — including emerging GPU-accelerated bridges such as `mjlab` / MuJoCo Warp, live-verified 2026-11-19), **Python** (`18/48`, `10/12`) and **PyTorch / DL frameworks** (`15/48`, `8/12` — Should in the Phase 0 ontology, promote to Must), backed by **imitation learning** (`20/48`, `10/12`), **reinforcement learning** (`20/48`, `9/12`), **VLA models** (`24/48`, `6/12`) and **teleoperation data pipelines** (`13/48`, `6/12`) [M · T0-64 L61, L170–192].
+- **Real-robot learning, Python, PyTorch and simulation are the true universal core:** Across 48 postings (`full-text n = 12` in brackets), the dominant skills are **robot learning** (`38/48`, `11/12` — promoted from Phase 0 Important to Must, noting query inflation), **real-robot deployment experience** (`26/48`, `11/12` — absent from Phase 0 and added to Must), **simulation & sim-to-real** (`22/48`, `10/12`, led by Isaac Sim/Lab and MuJoCo — including emerging GPU-accelerated bridges such as `mjlab` / MuJoCo Warp, live-verified 2026-11-19), **Python** (`18/48`, `10/12`) and **PyTorch / DL frameworks** (`15/48`, `8/12` — promoted from Phase 0 Should to Must), backed by **imitation learning** (`20/48`, `10/12`), **reinforcement learning** (`20/48`, `9/12`), **VLA models** (`24/48`, `6/12`) and **teleoperation data pipelines** (`13/48`, `6/12`) [M · T0-64 L61, L170–192].
 - **C++ and ROS are variant-dependent, NOT universal Musts:** **C++** appears in only `9/48` (`19%`; `5/12` full-text; platform C++:Python ratio is 0.85 across the wider physical-AI market) and **ROS / ROS 2** in only `7/48` (`15%`; `3/12` full-text; `10%` platform-wide) [M/B · T0-64 L61, L171, L175, L201]. ROS is absent from sampled postings at Figure, Skild, Apptronik, 1X and Siemens, while hard-real-time C++ is Must for humanoid-OEM and runtime roles (1X, Apptronik) and ROS 2 stays Important for integration, deployment and IT-services variants (Wipro, Samsung, Agile Robots) [A/M · T0-64 L78, L171, L175]. Formal `safety_cases` (0/48 formal; generic safety-minded validation in 3/48), `control_systems` (13%, Must only for RL/WBC variants) and `motion_planning` (4%) sit lower than Phase 0 tiered them [M · T0-64 L179, L183–184].
 - **Proof of work and ATS screens:** Employers sharply distinguish physical transfer from simulation: Figure ("real-world performance and transfer"), Samsung ("not just simulation"), Agile Robots ("beyond notebook-level prototypes") and Apptronik (deploying learned policies on legged robots or manipulators) all screen for real-robot evidence [A · T0-64 L252]. Report the exact policy family (ACT, diffusion, VLA), robot platform, simulator, trial count, measured success rate and failure taxonomy — and explicitly label any simulation-only project as simulation [P · T0-64 L77, L299–306]. Watch application forms carefully: Skild asks for 2–3 concrete projects/open-source launches, Apptronik runs knock-out questions on years of RL (5+) and legged-robot deployment (2+), and Figure discloses Greenhouse AI-powered Talent Matching on some postings [A · T0-64 L69, L251, L301].
 
@@ -142,9 +144,9 @@ By primary work layer (`n = 48`), 15 sit in L2 models/research, 16 in L4 post-tr
 
 ## Interview themes and preparation notes
 
-T0-64 closes the generated card's "No interview-track evidence" gap with a distinct **robot-learning interview pattern** rather than a generic LLM-engineer loop [A/B/C · T0-64 L64, L237–247]:
+T0-64 closed Phase 0's "No interview-track evidence" gap, grounding the dedicated **Robot learning** interview pattern rather than a generic LLM-engineer loop [A/B/C · T0-64 L64, L237–247]:
 - **Employer formats:** **1X Technologies** lists a three-step loop (introductory → talent acquisition → hiring manager/senior technical) [B · T0-64 L242]. Secondary guides (partly reconstructed, C) describe **Skild AI** splitting research (past-work presentation plus RL/IL generalisation) from engineering (real-hardware failure debugging); **Figure AI** running fast loops (~2 weeks) with take-homes or presentation case studies and design rounds tied to Figure's own robots; **Physical Intelligence** prioritising practical coding over algorithmic puzzles plus hands-on robot/teleop depth; **Apptronik** pairing application knock-out questions [A] with live discussions of demonstration curation, evaluating policies that rarely fail but fail dangerously, and sim-to-real gaps [C]; and **Nimble Robotics** running 4 rounds with a take-home [C · T0-64 L239–245].
-- **Preparation focus (no model answers, per D-018):** Be ready to dissect real-hardware failure modes, demonstration-data quality bugs, sim-to-real discrepancies, safety/recovery boundaries and practical Python/C++ systems code rather than LeetCode-only drills [C · T0-64 L247]. Pair this with [interview loops](../../08-interviewing/interview-loops.md) and the closest [prep pack](../../08-interviewing/prep-packs.md). No employer AI-tool interview policy or India-specific robotics loop evidence was found [E · T0-64 L333, L364].
+- **Preparation focus (no model answers, per D-018):** Be ready to dissect real-hardware failure modes, demonstration-data quality bugs, sim-to-real discrepancies, safety/recovery boundaries and practical Python/C++ systems code rather than LeetCode-only drills [C · T0-64 L247]. Pair this with [interview loops](../../08-interviewing/interview-loops.md) and the [robot learning prep pack](../../08-interviewing/prep-packs.md#robot-learning-pack). No employer AI-tool interview policy or India-specific robotics loop evidence was found [E · T0-64 L333, L364].
 
 ## Dossier evidence and limits
 

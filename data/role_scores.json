@@ -29,28 +29,28 @@
   },
   "ml-system-design": {
    "name": "Classic ML system design",
-   "tests": "recommendation, fraud or ETA system design, plus where an LLM would help",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
+   "tests": "ML depth and breadth, coding (including ML-from-scratch or AI-assisted coding at AI-native firms), behavioural and leadership rounds, plus at most one classic ML system design round (recommendation, ranking, fraud or ETA; absent in some Microsoft loops)",
+   "source": "T0-14, T0-46, T0-49, T0-52, T1-03"
   },
   "infrastructure": {
    "name": "Infrastructure",
-   "tests": "KV-cache maths, decode roofline, continuous batching, prefill/decode disaggregation, GPU scheduling, p95 debugging",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
+   "tests": "sub-discipline specific: serving and inference (systems coding, distributed-systems design; KV-cache maths, decode roofline, continuous batching and prefill/decode disaggregation appear in prep guides [C]), GPU cluster ops (Slurm, InfiniBand/RDMA, NCCL debugging, bare-metal failure recovery, Kubernetes at scale), MLOps/ML platform (IaC, CI/CD, drift monitoring, feature stores, ML job schedulers) and GPU kernels (simulated-accelerator take-home [A, COI], profiler walkthrough, roofline analysis, numerics/dtype tolerances)",
+   "source": "T0-14, T0-46, T0-54, T0-56, T0-58, T0-63, T1-03"
   },
   "evaluation": {
    "name": "Evaluation design",
-   "tests": "golden sets, judge calibration, online sampling, A/B tests",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
+   "tests": "golden sets, judge calibration, online sampling, A/B tests, plus 2–4 hour eval-harness take-homes and eval-system or eval-data design rounds (practitioner guides, C)",
+   "source": "T0-14, T0-46, T0-60, T1-03"
   },
   "research": {
    "name": "Research",
-   "tests": "a research talk plus coding; the full research loop at frontier labs",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
+   "tests": "coding-led loops and paid work trials for Research Engineer and AI Safety roles (Anthropic Python-only coding with AI-partnership rules [A, COI], xAI 1-week loop [A], FAR.AI 72-min coding plus work trial [B]; research talk not confirmed for RE or safety), versus quiz, coding and research/past-work talk for Research Scientist (DeepMind [A], xAI [A])",
+   "source": "T0-14, T0-46, T0-50, T0-55, T0-60, T1-03"
   },
   "governance": {
    "name": "Governance",
-   "tests": "a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001",
-   "source": "T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner)"
+   "tests": "scoping or solutions rounds, EU AI Act, NIST AI RMF and ISO 42001 fluency, and 45–90 minute risk-assessment work samples (vendor prep guides C/D; employer-confirmed loops absent E); Responsible AI Engineer adds hybrid coding and guardrail-engineering rounds",
+   "source": "T0-14, T0-61, T1-03"
   },
   "product": {
    "name": "Product",
@@ -61,6 +61,11 @@
    "name": "AI product & frontend engineering",
    "tests": "Live streaming-UI and React/TypeScript build (token streaming, cancel/retry, state, accessibility), frontend system design including backing API, real-codebase take-home and product/design craft",
    "source": "T0-46, T0-62"
+  },
+  "robot-learning": {
+   "name": "Robot learning",
+   "tests": "real-hardware failure questions, demonstration curation, sim-to-real gaps, evaluation of rare but dangerous failures, practical coding rather than puzzles, and a presentation of past work or a design round on the employer's own robots (prep guides, C; Apptronik's knock-out application questions are employer-published, A)",
+   "source": "T0-64"
   }
  },
  "track_playbooks": {
@@ -106,7 +111,7 @@
     "planes": [
      "evaluation"
     ],
-    "basis": "Catalog §3: API orchestration, RAG, agents, evals and deployment; AI Engineer postings name agentic work 59.3% and RAG 54.0% [A/B · T0-01 F4]",
+    "basis": "Catalog §3 & T0-48 K8: API orchestration, RAG (54.0%), agents (59.3%), evals/monitoring (12/14 full-read postings) and deployment [A/B · T0-01 F4, T0-48]",
     "grade": "D"
    },
    "interview_track": "application",
@@ -129,14 +134,14 @@
     "mid": 6,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; evals, agent reliability and cost engineering keep value [T0-03 Tier 2]."
+    "basis": "Judgement. Title persists and leads growth, but the table-stakes layer (SDK calls, naive RAG, prompting) is commoditised [T0-03 6.4 Tier 1]; T0-48 confirms evals, tracing, cost control and guardrails outpace prompt-writing while AI-assisted coding raises baseline output [T0-03 Tier 2, T0-48]."
    },
    "leverage": {
     "lo": 6.5,
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement. Ships the revenue-facing AI features; enterprise and services employer mix [T0-01 F2]."
+    "basis": "Judgement. Ships revenue-adjacent AI features (Grade A employer scope at Mistral, OfferUp, Spektr [T0-48:L352]); broad enterprise and services employer mix [T0-01 F2, T0-48]."
    },
    "persona_access": {
     "backend": 9,
@@ -173,7 +178,7 @@
     "mid": 10,
     "hi": 10,
     "grade": "M",
-    "basis": "India 398 x 76.7% = about 305 -> India band 10 (used only for the GenAI target order)"
+    "basis": "India 398 (10.1% share, U33) x 76.7% (JobsPipe underlying count date 2026-09-10, unchanged 2026-11-14) = about 305 -> India band 10 (used only for the GenAI target order) [T0-48, T0-69]."
    }
   },
   {
@@ -189,8 +194,10 @@
      "L2",
      "L3"
     ],
-    "planes": [],
-    "basis": "Catalog §3: builds, trains, adapts and serves models; LLM named in 45.0% of postings [B · JobsPipe JD]",
+    "planes": [
+     "evaluation"
+    ],
+    "basis": "Catalog §3 & T0-49 K8: builds, trains, adapts and serves models; LLM named in 45.0% [B · JobsPipe JD]; T0-49 sample (n=36) shows evals 30.6% (#1 GenAI cluster), fine-tuning/RL 22%, serving 14% [T0-49]",
     "grade": "D"
    },
    "interview_track": "ml-system-design",
@@ -220,7 +227,7 @@
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement. Owns models behind ranking, recsys, fraud and fine-tuned systems."
+    "basis": "Judgement. Owns revenue-adjacent models behind ranking, recsys, pricing, ads and risk (OpenAI paid marketing, Roblox pricing/ranking, Pinterest/TikTok ads, Capital One risk [T0-49:L305])."
    },
    "persona_access": {
     "backend": 5.5,
@@ -235,7 +242,7 @@
      "mid": 7,
      "hi": 7.5,
      "grade": "B",
-     "basis": "JobsPipe India 90 live of 2,157 global (4.2% M; static 2026-11-13 check); heavy GCC and big-tech presence in Bengaluru and Hyderabad [T0-49]."
+     "basis": "JobsPipe India 90 live of 2,157 global (4.2% live vs 7.7% JD-page share, 4–8% range; static 2026-11-13 check); heavy GCC and big-tech presence in Bengaluru and Hyderabad [T0-49, T0-69]."
     },
     "comp": {
      "lo": 6.75,
@@ -257,7 +264,7 @@
     "mid": 5.5,
     "hi": 7,
     "grade": "M",
-    "basis": "India 90 x 45.0% = about 41 -> India band 5.5 (used only for the GenAI target order)"
+    "basis": "India 90 (4.2% live vs 7.7% JD-page share) x 45.0% (JobsPipe underlying count date 2026-09-10) = about 41 -> India band 5.5 (used only for the GenAI target order) [T0-49, T0-69]."
    }
   },
   {
@@ -273,7 +280,7 @@
      "L5"
     ],
     "planes": [],
-    "basis": "Catalog §3: deploy, integrate and adapt AI products end to end, embedded with customers",
+    "basis": "Catalog §3 & T0-51: deploy, integrate and adapt AI products end to end embedded with customers (customer scoping 50.0%, evals 21.4% [T0-51])",
     "grade": "D"
    },
    "interview_track": "customer-application",
@@ -296,14 +303,14 @@
     "mid": 6.5,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement. Customer embedding and integration judgement; risk of drift into non-coding roles (about half the cluster is non-engineering) [T0-01 F3]."
+    "basis": "Judgement. Customer embedding and integration judgement; services-drift risk confirmed in T0-51 K7 (28% clearly non-engineering / 46% non-FDE-eng+leader; Prodapt/SnapLogic pre-sales exclusions) [T0-01 F3, T0-51]."
    },
    "leverage": {
     "lo": 7.5,
     "mid": 8.5,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Converts deployments directly into revenue and retention."
+    "basis": "Judgement. Customer-embedded deployment at OpenAI, Anthropic and Palantir converts pilots directly into enterprise revenue and retention [T0-51]."
    },
    "persona_access": {
     "backend": 7.5,
@@ -321,11 +328,11 @@
      "basis": "Indeed India / IANS (2026-10-14) reported ~19x (1,807% YoY) growth in India FDE postings from a low base; verified Bengaluru/Hyderabad hiring at Palantir-style AI vendors and labs [T0-25, T0-51]."
     },
     "comp": {
-     "lo": 4.0,
+     "lo": 4.5,
      "mid": 5.5,
-     "hi": 7.25,
-     "grade": "D",
-     "basis": "No India FDE Levels.fyi title page; kept Grade D placeholder pending role-specific India TC data (top-end widened slightly to reflect Bengaluru product/lab offers) [T0-45, T0-51]."
+     "hi": 7.0,
+     "grade": "B",
+     "basis": "Levels.fyi India FDE TC median Rs16.75L (live-verified ~Rs17.5–17.7L, P25 ~Rs16L, P75 Rs42L, B; page header US-label quirk noted), Glassdoor Bengaluru Rs17.0L mean (C) and Weekday/Bayt posted Rs25–40 LPA for 5–7 yrs (B); adjacent Bengaluru Solution Architect P50 Rs49.3L (n=179, B) [T0-45, T0-51]."
     }
    }
   },
@@ -342,12 +349,13 @@
      "L5"
     ],
     "planes": [
-     "evaluation"
+     "evaluation",
+     "assurance"
     ],
-    "basis": "Catalog §3: customer delivery, evals and safety at labs and AI vendors",
+    "basis": "Catalog §3 & T0-53 K8: customer delivery (10/10 L6, 10/10 L5), evals (8/10) and safety/responsible-AI assurance (4/10) at labs and AI vendors [T0-53]",
     "grade": "D"
    },
-   "interview_track": "application",
+   "interview_track": "customer-application",
    "demand": {
     "lo": 4,
     "mid": 5,
@@ -360,21 +368,21 @@
     "mid": 7.75,
     "hi": 8.75,
     "grade": "B",
-    "basis": "Levels.fyi US Applied AI Engineer TC (Nov 2026): P25 $165K / P50 $232K / P75 $340K / P90 $505K–$605K (reconciling T0-53 2026-11-11 $505K vs T0-44 2026-11-13 extract $605K); lab posted base bands $210K–$440K+ [T0-44, T0-53]."
+    "basis": "Levels.fyi US Applied AI Engineer TC (Nov 2026): P25 $200K / P50 $250K / P75 $475K / P90 $505K–$605K (both T0-44 and T0-53 agree on P25–P75; P90 shifted from $605K on 2026-10-04 to $505K on 2026-11-11, reflecting upper-tail volatility); US lab posted bands $197K–$320K (OpenAI $197K–$278K + equity [B], Anthropic $200K–$320K [A, COI]; median midpoint $264.5K, n=5, base/OTE mix) [T0-44, T0-53]."
    },
    "durability": {
     "lo": 5.0,
     "mid": 6.5,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement. Customer-facing technical delivery at labs and vendors."
+    "basis": "Judgement. Family-level customer-delivery demand stays active despite title churn (Scale AI rename, OpenAI AI Deployment Engineer [T0-53 K7])."
    },
    "leverage": {
     "lo": 7.5,
     "mid": 8.5,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Customer deployment and go-to-market at labs and vendors (8.5-9 anchor: directly moves revenue)."
+    "basis": "Judgement. Grade A customer-deployment adoption and revenue scope at frontier labs and AI vendors (8.5–9 anchor: directly moves revenue) [T0-53]."
    },
    "persona_access": {
     "backend": 8.5,
@@ -396,7 +404,7 @@
      "mid": 6,
      "hi": 8,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "No India title distribution or lab INR bands (0 lab postings disclose pay [T0-53 K6]); 4 partial Cutshort postings span Rs3–55L (Hello Edge Rs20–30L, Metadome Principal Rs45–55L, VY Systems Rs3–23L, Gravity Rs8–40L; A per posting, n=1 each) [T0-45, T0-53]."
     }
    }
   },
@@ -412,8 +420,10 @@
     "secondary": [
      "L6"
     ],
-    "planes": [],
-    "basis": "Catalog §3: tool-using, multi-step agent systems with durable execution and tool gateways",
+    "planes": [
+     "evaluation"
+    ],
+    "basis": "Catalog §3 & T0-57 D11: tool-using multi-step agent systems with durable execution, tool gateways, evals (7/14) and guardrails/security (3/14) [T0-57]",
     "grade": "D"
    },
    "interview_track": "application",
@@ -443,7 +453,7 @@
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement. Workflow automation value."
+    "basis": "Judgement. High-leverage workflow automation scope (OpenAI API Agents, Salesforce Agentforce Reasoning, Amazon Agentic AI [T0-57 D10])."
    },
    "persona_access": {
     "backend": 8.5,
@@ -465,7 +475,7 @@
      "mid": 5.25,
      "hi": 6.25,
      "grade": "D",
-     "basis": "Single Cutshort India posting insufficient to upgrade; tracks Greater Bengaluru AI Engineer Levels.fyi benchmark (Rs20.0L P50) [T0-45, T0-57]."
+     "basis": "Single Weekday India posting (Epitria Consulting, Rs43–44 LPA senior/lead, C [T0-57]) plus Hello Edge Rs20–30L (A [T0-45]) and Glassdoor Rs6.4L mean (n~13, C [T0-57]) insufficient to upgrade; tracks Greater Bengaluru AI Engineer Levels.fyi benchmark (Rs20.0L P50, B) [T0-45, T0-57]."
     }
    }
   },
@@ -482,7 +492,7 @@
      "L5"
     ],
     "planes": [],
-    "basis": "Catalog §3: AI-native UX (streaming, tool-use visualisation, HITL checkpoints)",
+    "basis": "Catalog §3 & T0-62 K37: 16/16 L6 AI-native UX (streaming, tool-use visualisation, HITL checkpoints) plus L5 agent runtime/orchestration at Anthropic, Taktile and Dash0 [T0-62]",
     "grade": "D"
    },
    "interview_track": "product-frontend",
@@ -505,14 +515,14 @@
     "mid": 5.5,
     "hi": 7.0,
     "grade": "D",
-    "basis": "Judgement. Agent UX is differentiated; generic UI work is exposed to code generation."
+    "basis": "Judgement. Agent UX and design craft plus AI tooling stay differentiated while generic UI work faces code-generation exposure; no labour-market displacement series exists (D) [T0-62 K36]."
    },
    "leverage": {
     "lo": 5.5,
     "mid": 6.5,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Direct user-facing product adoption and AI UX conversion [T0-62]."
    },
    "persona_access": {
     "backend": 6,
@@ -534,7 +544,7 @@
      "mid": 5,
      "hi": 6.5,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "Small-sample India pay only (n=2): CirrusLabs Bengaluru Rs10–18 LPA (2–4 yrs, B/C) and Alpha remote India Rs4–8 LPA + ESOPs (0.5–3 yrs, B/C); no India platform series [T0-45, T0-62 K35]."
     }
    }
   },
@@ -550,8 +560,10 @@
     "secondary": [
      "L5"
     ],
-    "planes": [],
-    "basis": "Catalog §3: internal copilots and agents, MCP integrations, developer-productivity tooling",
+    "planes": [
+     "assurance"
+    ],
+    "basis": "Catalog §3 & T0-62 K23/L313: internal copilots and agents (33.3%), MCP (26.7% sample / 19.0% Skillenai), developer-productivity tooling and platform/IAM assurance plane [T0-62]",
     "grade": "D"
    },
    "interview_track": "application",
@@ -581,7 +593,7 @@
     "mid": 6.5,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement. Internal productivity."
+    "basis": "Judgement. Internal productivity and measured workflow adoption (LocalStack, Sofi, Mentor Collective; 'highest-leverage' claims are COI/anecdote) [T0-62]."
    },
    "persona_access": {
     "backend": 7.5,
@@ -603,7 +615,7 @@
      "mid": 5,
      "hi": 6,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "Single India junior posting only: Ather Energy Bengaluru Rs8–14 LPA (0–2 yrs, aggregator, C); no senior India pay series [T0-45, T0-62 K21]."
     }
    }
   },
@@ -621,7 +633,7 @@
      "L3"
     ],
     "planes": [],
-    "basis": "Catalog §3: enterprise AI solutions on cloud and vendor stacks; pre-sales and delivery",
+    "basis": "Catalog §3 & T0-62: L6 enterprise AI delivery, L5 RAG (56.5%) and agents (52.2%), L3 cloud and vendor stacks (52.2%) across pre-sales and delivery [T0-62]",
     "grade": "D"
    },
    "interview_track": "customer-application",
@@ -637,21 +649,21 @@
     "mid": 7.0,
     "hi": 8.5,
     "grade": "B",
-    "basis": "Posted US base $152K–$248K+ (Google CE III $152K–$221K + bonus + equity; Databricks $180K–$248K+ OTE; lab SAs higher) [T0-62]."
+    "basis": "US posted base $152K–$247.5K: Google CE III $152K–$221K + 42.86% bonus target + equity (A), Databricks $180K–$247.5K ('Local Pay Range', OTE not stated, B), AWS $153.6K–$239K (B); Anthropic London GBP 165K–190K OTE (A, COI); Levels.fyi US SA TC P50 $220K (n=1,200, B) [T0-62]."
    },
    "durability": {
     "lo": 4.5,
     "mid": 6,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement. Enterprise integration and vendor ecosystems."
+    "basis": "Judgement. Enterprise integration, pre-sales discovery (65.2%) and delivery architecture (34.8%) across cloud and AI-vendor ecosystems [T0-62]."
    },
    "leverage": {
     "lo": 7.5,
     "mid": 8.5,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Pre-sales and enterprise architecture (8.5-9 anchor: directly moves revenue)."
+    "basis": "Judgement. Pre-sales and enterprise architecture (OpenAI 'CTO of customer book' discovery-to-production path; Anthropic enterprise deal evaluations; 8.5–9 anchor: directly moves revenue) [T0-62]."
    },
    "persona_access": {
     "backend": 6,
@@ -685,14 +697,15 @@
    "status": "V",
    "definition": "Research-to-production scientist at large technology firms: modelling, experimentation and shipping models.",
    "stack": {
-    "primary": "L4",
+    "primary": "L6",
     "secondary": [
+     "L4",
      "L2"
     ],
     "planes": [
      "evaluation"
     ],
-    "basis": "Catalog §3: modelling, experimentation and shipping models; target card edge skills are eval statistics and fine-tuning",
+    "basis": "Catalog §3 & T0-52 K8: application and deployment (L6) is primary in 74% (17/23), post-training (L4) primary in 4% (1/23) and named in 26% (AI-native/post-training variants), LLM evaluation in 43.5% [T0-52]",
     "grade": "D"
    },
    "interview_track": "ml-system-design",
@@ -722,7 +735,7 @@
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Ships research-to-production modelling systems at scale (Amazon, Uber, Hippocratic AI, Microsoft [T0-52])."
    },
    "persona_access": {
     "backend": 3,
@@ -744,7 +757,7 @@
      "mid": 7.5,
      "hi": 9,
      "grade": "D",
-     "basis": "Proxy: Google MLE Bengaluru L4 Rs65.2L, L5 Rs168.3L (small n) [T0-02:254]."
+     "basis": "0 of 6 India AS postings disclose pay [T0-52 K6]; adjacent proxies: Levels.fyi India Data Scientist P50 Rs30.1L (n=1,024, B [T0-45]), Amazon Bengaluru SWE P50 Rs60.3L (Apr 2026, B [T0-52]), Google MLE Bengaluru L4 Rs65.2L / L5 Rs168.3L (small n [T0-02:254]) [T0-45, T0-52]."
     }
    }
   },
@@ -761,7 +774,7 @@
      "L1"
     ],
     "planes": [],
-    "basis": "Catalog §3: the inference data path (batching, KV cache, quantisation, speculative decoding)",
+    "basis": "Catalog §3 & T0-56 §11: L3 serving/inference data path (37/37 postings: batching, KV cache, quantisation, speculative decoding) plus L1 non-NVIDIA accelerators (8/37 = 22%) [T0-56]",
     "grade": "D"
    },
    "interview_track": "infrastructure",
@@ -791,7 +804,7 @@
     "mid": 8.5,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Direct GPU-cost and latency leverage."
+    "basis": "Judgement. Direct GPU-cost and latency-SLO leverage (Anthropic Cloud Inference and Sarvam serving-efficiency scope [T0-56 L312])."
    },
    "persona_access": {
     "backend": 7,
@@ -806,7 +819,7 @@
      "mid": 4.0,
      "hi": 5.5,
      "grade": "B",
-     "basis": "9 of 37 sampled postings (24.3%) in India across Bengaluru, Hyderabad and Gurugram (inference clouds, silicon vendors, GCCs) [T0-56]."
+     "basis": "9 of 37 core postings (24.3%) in India across Bengaluru, Hyderabad and Gurugram: AI startups (Sarvam, Gnani x2, PrimaLabs, AION), cloud hosts (DigitalOcean x2, Rackspace) and 1 Weekday recruiter client; 0 GCCs and 0 India silicon vendors found [T0-56]."
     },
     "comp": {
      "lo": 4.5,
@@ -830,7 +843,7 @@
      "L3"
     ],
     "planes": [],
-    "basis": "Catalog §3: GPU kernels and compiler paths (CUDA, Triton, CUTLASS, XLA/NeuronX)",
+    "basis": "Catalog §3 & T0-63 K8: 41/41 L1/L3 hardware and serving/compiler paths (CUDA, Triton, CUTLASS, XLA/NeuronX; 43.9% inference, 14.6% training, 0% training-only) [T0-63]",
     "grade": "D"
    },
    "interview_track": "infrastructure",
@@ -839,7 +852,7 @@
     "mid": 4,
     "hi": 5.5,
     "grade": "C",
-    "basis": "CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3]; River AI (GPU kernels) and AMD (Triton kernels) among T0-13's inference/kernel postings [T0-13:112, 737]."
+    "basis": "41 core postings across 30 employers (16 W1; NVIDIA 6/41 core, 11/59 retained); Inference Jobs 'GPU Kernel Development' tag lists 79 jobs (page 1 is 45% OS/driver, 30% stale, 15% fresh) [T0-63]; CUDA/GPU kernels named in 6.6% of S09 postings (29.3% of companies) [T0-03 6.3, T0-13, T0-63]."
    },
    "comp": {
     "lo": 6.5,
@@ -853,14 +866,14 @@
     "mid": 6.5,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile) and automated kernel agents abstract kernel writing [T0-03:L542, L101]; no labour data either way [T0-03:L571]."
+    "basis": "Judgement. Frontier scarcity vs counter-evidence: tile DSLs (Helion, CuteDSL, CUDA Tile 13.1 compiler hiring) and automated kernel agents (Cursor + NVIDIA SOL-ExecBench 235 kernels 1.38x vs single-agent PyTorch / 86% cuBLAS; Anthropic Opus 4.5 take-home redesigns) abstract routine kernel writing while agentic duties enter JDs; no labour-market displacement series [T0-03, T0-63 K7]."
    },
    "leverage": {
     "lo": 7.5,
     "mid": 8.5,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. GPU efficiency moves a large cost line (8.5-9 anchor)."
+    "basis": "Judgement. GPU efficiency moves a large cost line (8.5–9 anchor; Sarvam and Anthropic baseline-beating serving-cost claims [C · T0-63 L315])."
    },
    "persona_access": {
     "backend": 4,
@@ -875,7 +888,7 @@
      "mid": 4.0,
      "hi": 5.0,
      "grade": "B",
-     "basis": "8 of 41 core postings (19.5%) in India across Bengaluru and Hyderabad: NVIDIA, AMD, Qualcomm, Sarvam AI and silicon GCCs [T0-63]."
+     "basis": "8 of 41 core postings (19.5%) in India across Bengaluru and Hyderabad: AMD x2, Sarvam AI (live), Intel, Google (TPU compilers), EPAM, Taglynk (Indian startup) and 1 recruiter client; 0 NVIDIA India ML-kernel postings found in window (driver/assembler only) and Qualcomm India classed adjacent [T0-63]."
     },
     "comp": {
      "lo": 5.0,
@@ -899,7 +912,7 @@
      "L3"
     ],
     "planes": [],
-    "basis": "Catalog §3: GPU clusters, scheduling, NCCL/RDMA/InfiniBand networking, storage",
+    "basis": "Catalog §3 & T0-54 KF2: GPU/accelerator clusters (94.3%), Kubernetes (80.0%), IB/RDMA networking (51.4%), Slurm (42.9%) and storage [T0-54]",
     "grade": "D"
    },
    "interview_track": "infrastructure",
@@ -915,21 +928,21 @@
     "mid": 7.0,
     "hi": 8.0,
     "grade": "B",
-    "basis": "US posted-base median midpoint $261K (n=12): frontier labs/AI-native ~$360K (OpenAI $230K–$490K + equity [A], Anthropic $315K–$485K [A]) vs cloud/neocloud/enterprise $180K–$270K [T0-44, T0-54]."
+    "basis": "US posted-base median midpoint $261K (n=12): frontier labs/AI-native ~$360K (OpenAI $230K–$490K + equity [A], Anthropic $320K–$485K [A, COI]) vs cloud/neocloud/enterprise $180K–$270K [T0-44, T0-54]."
    },
    "durability": {
     "lo": 6.0,
     "mid": 7.5,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement. Physical fleets, networking and reliability; distributed-systems minimum in top-band JDs [T0-03 J1]."
+    "basis": "Judgement. Physical fleets, networking and reliability (distributed-systems minimum in top-band JDs [T0-03 J1]); agent-driven fleet automation/self-healing appears in 4 postings (OpenAI, Anthropic x2, fal) while capacity, topology and failure ownership stays with engineers [T0-54 KF12]."
    },
    "leverage": {
     "lo": 7.5,
     "mid": 8.5,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Capacity, uptime and cost of the GPU estate (8.5-9 anchor: large cost line)."
+    "basis": "Judgement. Multi-thousand-GPU cluster uptime, capacity and estate cost (8.5–9 anchor: large cost line) [T0-54]."
    },
    "persona_access": {
     "backend": 7,
@@ -944,14 +957,14 @@
      "mid": 4.5,
      "hi": 6.0,
      "grade": "B",
-     "basis": "10 of 35 sampled postings (28.6%) in India: NVIDIA x4 (DGX Cloud, SRE research clusters), Microsoft, Oracle, CoreWeave/neocloud and GCCs [T0-54]."
+     "basis": "10 of 35 core postings (28.6%) in India: NVIDIA x4 (DGX Cloud, SRE research clusters, NCX, EngOps), Deloitte USI x2, Sarvam AI x2, AION and Soket AI Labs; 0 GCC postings found in window [T0-54]."
     },
     "comp": {
      "lo": 5,
      "mid": 6.5,
      "hi": 8,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "No India evidence: 0 of 10 India postings disclose pay [T0-45, T0-54 K6]."
     }
    }
   },
@@ -961,15 +974,14 @@
    "family": "AI Infrastructure & Platform",
    "track": "ic",
    "status": "E",
-   "definition": "Builds the internal platform for the model lifecycle and LLM serving: Kubernetes serving, LLM and MCP gateways, observability, CI/CD for models and prompts, and cost attribution.",
+   "definition": "Builds the internal platform for the ML model lifecycle and serving: Kubernetes, IaC, CI/CD, experiment tracking and registries (MLflow/Kubeflow), observability, feature stores and emerging LLMOps.",
    "stack": {
     "primary": "L3",
     "secondary": [
-     "L5",
      "L1"
     ],
     "planes": [],
-    "basis": "Catalog §3: Kubernetes serving, LLM/MCP gateways, observability, CI/CD for models and prompts",
+    "basis": "Catalog §3 & T0-58 K1/K8: L3 ML/serving platform primary (K8s, IaC, CI/CD, MLflow/Kubeflow, LLMOps 32.3%), L1 GPU scheduling in 5/31; L5 LLM/MCP gateways and prompt CI/CD appeared in 0/37 postings [T0-58]",
     "grade": "D"
    },
    "interview_track": "infrastructure",
@@ -985,21 +997,21 @@
     "mid": 6.5,
     "hi": 7.5,
     "grade": "B",
-    "basis": "Sample US posted base $150K–$357K, median midpoint $245K (n=8 senior/Big Tech, M); broader MLOps market tracks senior DevOps/SWE ($180K–$280K TC) [T0-44, T0-58]."
+    "basis": "Generalist-vs-Big-Tech split: Levels.fyi US MLOps Engineer TC median $145,200 (P25 $120K / P75 $200K / P90 $295K, 2026-10-11, B) and Fast AI Jobs posted-base median $179,250 (n=430, 2026-11-12, B) vs senior/Big Tech ML Platform posted base $150K–$357K (median midpoint $245K, n=8, M) [T0-44, T0-58 K4]."
    },
    "durability": {
     "lo": 5.0,
     "mid": 6.5,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement. Platform need persists; LLMOps absorbed; fast tool churn (TGI archived, Triton renamed Dynamo Triton) [T0-03 KF6]."
+    "basis": "Judgement. Platform need persists (DORA 2025: 90% internal platforms, 76% dedicated teams, C) and 32% of postings add LLMOps; fast serving-tool churn (TGI archived, NVIDIA Triton renamed Dynamo-Triton 2025-03-18) [T0-03 KF6, T0-58 KF12/KF14]."
    },
    "leverage": {
     "lo": 6.5,
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Platform-as-a-product multiplies DS and MLE velocity (Uber Michelangelo architecture for thousands of models; Wellhub internal platform product [T0-58 L276])."
    },
    "persona_access": {
     "backend": 7,
@@ -1021,7 +1033,7 @@
      "mid": 5.5,
      "hi": 6.5,
      "grade": "C",
-     "basis": "Bengaluru MLOps P50 Rs23.6L, P75 Rs41.1L, P90 Rs63.5L [T0-02:147]."
+     "basis": "Bengaluru MLOps P50 Rs23.6L, P75 Rs41.1L, P90 Rs63.5L [T0-02:147]; 0/13 India postings in T0-58 disclose pay (conflicting secondary bands: edtech/aggregator Rs8–20 LPA vs OwnYourCareer entry Rs8–15L / mid Rs20–35L / senior Rs38–65L, C) [T0-58 K6]."
     }
    }
   },
@@ -1041,7 +1053,7 @@
     "planes": [
      "evaluation"
     ],
-    "basis": "Catalog §3: eval harnesses, golden sets, judge calibration, regression gates; mostly application-level evals",
+    "basis": "Catalog §3 & T0-60: evaluation plane primary across L5/L6 application and L4 post-training layers (eval harnesses, golden sets, judge calibration, regression gates) [T0-60]",
     "grade": "D"
    },
    "interview_track": "evaluation",
@@ -1064,14 +1076,14 @@
     "mid": 6.5,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement. Adoption gap (52.4% offline / 37.3% online evals among agent teams) [T0-03 KF4] vs risk that evals stay a skill inside AI Engineer."
+    "basis": "Judgement. Adoption gap (52.4% offline / 37.3% online evals among agent teams [T0-03 KF4]) and shift toward benchmark-saturation and agent evaluation [T0-60 K6] vs risk that evals stay a skill inside AI Engineer."
    },
    "leverage": {
     "lo": 6.5,
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement. Release gating and quality."
+    "basis": "Judgement. Release-gating and model-quality ownership (Anthropic, Microsoft and Backbase evaluation teams [T0-60])."
    },
    "persona_access": {
     "backend": 7,
@@ -1114,7 +1126,7 @@
     "planes": [
      "assurance"
     ],
-    "basis": "Catalog §3: prompt injection, agent abuse, supply chain, MCP authorisation; threats span serving engines to applications",
+    "basis": "Catalog §3 & T0-60: assurance plane primary across L6/L5/L3 (prompt injection, agent abuse, supply chain, MCP authorisation and red-teaming) [T0-60]",
     "grade": "D"
    },
    "interview_track": null,
@@ -1130,21 +1142,21 @@
     "mid": 7.0,
     "hi": 8.5,
     "grade": "B",
-    "basis": "Dated US posted base bands: Amazon Senior AI Red Team $178.4K–$226.7K + RSUs (A), Microsoft MTS $119.8K–$234.7K (B), NVIDIA Senior AI Security Researcher $224K–$356.5K (A) [T0-60]."
+    "basis": "Dated US posted base bands: Amazon Senior AI Red Team $178.4K–$226.7K + RSUs (A), Microsoft MTS $119.8K–$234.7K (B), NVIDIA Senior AI Security Researcher $224K–$431.25K + equity (B, mirror) [T0-60 L262]."
    },
    "durability": {
     "lo": 6.0,
     "mid": 7.5,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement. Adversarial and growing surface: CVSS 9.8 serving-engine CVEs, MCP CVEs, Braintrust key breach, OWASP LLM/Agentic Top 10 [T0-03 KF12, T0-16 8, T0-14 6.8]."
+    "basis": "Judgement. Adversarial and expanding surface: prompt-injection and agent-security hiring (SANS >850 AI/ML sec, ~100 red-team +13% WoW [T0-60 K20]), CVSS 9.8 serving-engine CVEs, MCP CVEs, Braintrust key breach and OWASP LLM/Agentic Top 10 [T0-03 KF12, T0-16 8, T0-14 6.8, T0-60]."
    },
    "leverage": {
     "lo": 7.0,
     "mid": 8,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Offensive red-teaming and agent-guardrail risk reduction across production AI systems [T0-60]."
    },
    "persona_access": {
     "backend": 5.5,
@@ -1178,15 +1190,15 @@
    "status": "W",
    "definition": "Technical compliance engineering: guardrails; fairness, hallucination and subgroup evaluations; logging and documentation for the EU AI Act, NIST AI RMF and ISO 42001.",
    "stack": {
-    "primary": null,
+    "primary": "L6",
     "secondary": [
-     "L4",
-     "L3"
+     "L5"
     ],
     "planes": [
-     "assurance"
+     "assurance",
+     "evaluation"
     ],
-    "basis": "Catalog §3: guardrails, fairness and hallucination evals, compliance logging; an extension of ML-platform, MLOps and security engineering",
+    "basis": "Catalog §3 & T0-61 L359: L6 application/deployment guardrails, evaluation plane (6/8 postings) and L5 orchestration frameworks (2/8); L4/L3 appeared in 0/8 read postings [T0-61]",
     "grade": "D"
    },
    "interview_track": "governance",
@@ -1209,14 +1221,14 @@
     "mid": 6,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement. Regulation-driven (EU AI Act Annex III from 2 Dec 2027) with reversal risk [T0-15:72, 232]."
+    "basis": "Judgement. Regulation-driven with timeline and reversal risk: EU Reg. (EU) 2026/1744 defers Annex III to 2027-12-02 and Annex I to 2028-08-02, while US EO 14365 pushes federal pre-emption of state AI rules [T0-15:72, 232, T0-61 K35]."
    },
    "leverage": {
     "lo": 5.5,
     "mid": 6.5,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Release-gate guardrail controls and audit-ready compliance engineering (Cognizant, SnowHeap, Workday [T0-61])."
    },
    "persona_access": {
     "backend": 5.5,
@@ -1238,7 +1250,7 @@
      "mid": 4.5,
      "hi": 6,
      "grade": "D",
-     "basis": "T0-15 deliberately did not use unsourced INR ranges [T0-15:469]."
+     "basis": "0 employer-posted INR bands; aggregator estimate Accenture Rs22–35L and press responsible-AI lead estimates Rs55–95L lack disclosed method (C) [T0-15:469, T0-45, T0-61 K34]."
     }
    }
   },
@@ -1253,10 +1265,13 @@
     "primary": "L2",
     "secondary": [
      "L4",
+     "L3",
      "L1"
     ],
-    "planes": [],
-    "basis": "Catalog §3: training runs, post-training/RL, evals and research infrastructure; absorbs post-training work",
+    "planes": [
+     "evaluation"
+    ],
+    "basis": "Catalog §3 & T0-50 K8: L2 training/research primary, L4 post-training/RL (55.6%), L3 serving/infra (50% named, 22% primary), L1 compute and evaluation plane (33% named, 11% primary) [T0-50]",
     "grade": "D"
    },
    "interview_track": "research",
@@ -1279,14 +1294,14 @@
     "mid": 7.5,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement. Frontier skills (distributed training, post-training/RL infra) [T0-03 6.4 Tier 3]."
+    "basis": "Judgement. Frontier distributed-training and post-training infra scarcity [T0-03 Tier 3] and strong lab 2-yr retention (SignalFire: Anthropic 80%, DeepMind 78%, OpenAI 67%, B) balanced against task-automation signals (Anthropic Opus 4/4.5 take-home; METR 320-min 50% horizon, B) [T0-50 K7]."
    },
    "leverage": {
     "lo": 7.0,
     "mid": 8,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Frontier training-run reliability, post-training recipes and research velocity at AI labs [T0-50]."
    },
    "persona_access": {
     "backend": 3,
@@ -1308,7 +1323,7 @@
      "mid": 8,
      "hi": 9.5,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "No India evidence: 0 of 2 live India RE postings disclose pay [T0-50 K6]; adjacent Bengaluru Principal MTS outlier $192.5K USD on Levels.fyi (n=1, B adjacent) [T0-45, T0-50]."
     }
    }
   },
@@ -1324,8 +1339,10 @@
     "secondary": [
      "L4"
     ],
-    "planes": [],
-    "basis": "Catalog §3: originates new methods, publishes, leads research agendas",
+    "planes": [
+     "evaluation"
+    ],
+    "basis": "Catalog §3 & T0-55 §11: L2 models/research (60.0%), L4 post-training (13.3% primary / 41.7% in n=12 full reads) and evaluation plane (41.7% in n=12 full reads) [T0-55]",
     "grade": "D"
    },
    "interview_track": "research",
@@ -1348,14 +1365,14 @@
     "mid": 8,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Research taste and novel methods."
+    "basis": "Judgement. Research taste and novel methods (OpenAI LCA filings grew 28 in 2023 to 165 in 2025–2026, B) balanced against research-automation goals (OpenAI RSI posting) and RS/RE convergence [T0-55 K7]."
    },
    "leverage": {
     "lo": 6.5,
     "mid": 7.5,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement. Long-horizon capability gains."
+    "basis": "Judgement. Long-horizon capability gains: architecture and training-recipe ownership at Sarvam and xAI; Pave P6 $4.09M intended equity grant reflects scarcity (B) [T0-55 L342]."
    },
    "persona_access": {
     "backend": 1,
@@ -1397,7 +1414,7 @@
      "assurance",
      "evaluation"
     ],
-    "basis": "Catalog §3: alignment (post-training), interpretability (model internals) and dangerous-capability evals",
+    "basis": "Catalog §3 & T0-60: alignment (post-training L4), interpretability (model internals L2), assurance and dangerous-capability evaluations [T0-60]",
     "grade": "D"
    },
    "interview_track": "research",
@@ -1413,21 +1430,21 @@
     "mid": 7.5,
     "hi": 10.0,
     "grade": "B",
-    "basis": "Lab-vs-independent bifurcation: Anthropic Alignment $350K–$500K (A, COI), OpenAI Safety Systems $380K–$500K (B), DeepMind AGI Safety $174K–$300K+ vs non-profit/independent orgs $120K–$240K [T0-60]."
+    "basis": "Wide dispersion across labs and independents: Anthropic Alignment $350K–$500K (A, COI), OpenAI Safety Systems $380K–$500K (B), DeepMind AGI Safety $174K–$300K+; independents span non-profit to near-lab bands — METR $250K–$503.1K (B) and Goodfire $200K–$400K SF / GBP 150K–300K London (B) overlap labs; UK AISI GBP 65K–145K + 28.97% pension (B); Apollo GBP 100K–200K (B); FAR.AI $100K–$250K (C) [T0-60 KF12]."
    },
    "durability": {
     "lo": 6.5,
     "mid": 8,
     "hi": 9.5,
     "grade": "D",
-    "basis": "Judgement. Growing research field."
+    "basis": "Judgement. Growing specialist research field (McAleese estimates ~600 technical FTEs growing +21%/yr, C) [T0-60 K34]."
    },
    "leverage": {
     "lo": 6.0,
     "mid": 7,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Dangerous-capability evaluations, alignment and release-safety research at frontier labs and safety institutes [T0-60]."
    },
    "persona_access": {
     "backend": 2,
@@ -1449,7 +1466,7 @@
      "mid": 5,
      "hi": 8,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "No India evidence: 0 of 23 safety postings in India [T0-45, T0-60 K33]."
     }
    }
   },
@@ -1464,9 +1481,10 @@
     "primary": null,
     "secondary": [],
     "planes": [
-     "assurance"
+     "assurance",
+     "product"
     ],
-    "basis": "Catalog §3: AI inventory, risk method, committees and regulatory conformity",
+    "basis": "Catalog §3 & T0-61 L359: assurance and product planes (AI inventory, risk method, committees and regulatory conformity; no stack engineering) [T0-61]",
     "grade": "D"
    },
    "interview_track": "governance",
@@ -1482,7 +1500,7 @@
     "mid": 5.5,
     "hi": 6.5,
     "grade": "B",
-    "basis": "Axial median $169K; Axial reports top-of-range figures, so typical offers are lower (C) [T0-15:162]; IAPP medians $151.8K (AI governance only), $169.7K (with privacy) (B) [T0-15:130]; manager $244K, director $268K (tops of ranges) [T0-15:417]."
+    "basis": "Deloitte US AI Governance Manager posted $134.5K–$265.1K ('not typically near top', A [T0-61]); GRC Careers US median midpoint $191K (n=34, B [T0-61]); Axial tops-of-range median $169K, Manager $244K, Director $268K (C [T0-15, T0-61]); IAPP medians $151.8K / $169.7K (B [T0-15, T0-61]); UK GBP 75K–100K and Singapore SGD 120K–150K (C [T0-61])."
    },
    "durability": {
     "lo": 4.5,
@@ -1511,14 +1529,14 @@
      "mid": 3.5,
      "hi": 5,
      "grade": "C",
-     "basis": "Alstom (Bangalore), Eaton (Pune), EXL JDs; no India count [T0-15:95, 300-302]."
+     "basis": "4 of 21 core postings in India: Alstom Bengaluru (confirmed 2026-10-30), EY GDS, Tech Mahindra, Capco, AlphaSense and Novartis (Phase 0 Eaton/EXL not re-seen); no valid India role count [T0-61 K5]."
     },
     "comp": {
      "lo": 3.5,
      "mid": 5,
      "hi": 6.5,
      "grade": "D",
-     "basis": "T0-15 did not use unsourced INR ranges [T0-15:469]."
+     "basis": "0 employer-posted INR bands; aggregator/press estimates only (EY GDS manager Rs20–27.5L, Tech Mahindra lead Rs30–45L, press Rs10–28L specialist / Rs55–95L lead, C) [T0-15:469, T0-45, T0-61 K6]."
     }
    }
   },
@@ -1535,7 +1553,7 @@
     "planes": [
      "assurance"
     ],
-    "basis": "Catalog §3: risk, audit and compliance work inside existing professions",
+    "basis": "Catalog §3 & T0-61: assurance plane (risk, audit and compliance work inside existing professions) [T0-61]",
     "grade": "D"
    },
    "interview_track": "governance",
@@ -1551,21 +1569,21 @@
     "mid": 6.0,
     "hi": 7.0,
     "grade": "B",
-    "basis": "GRC Careers US AI-risk posted midpoints ~$150K–$215K (replacing unretrieved Phase 0 Deloitte $171.6K–$338.3K figure) [T0-61]."
+    "basis": "GRC Careers US AI-risk posted midpoints ~$150K–$215K (median $175K, middle half $149K–$250K, n=18; replacing unretrieved Phase 0 Deloitte $171.6K–$338.3K figure) [T0-61]."
    },
    "durability": {
     "lo": 4.5,
     "mid": 6,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement. Enforcement-dependent; SR 26-2 excludes generative and agentic AI [T0-15:355]."
+    "basis": "Judgement. Enforcement-dependent: Federal Reserve SR 26-2 (issued 2026-04-17) excludes generative and agentic AI, and the NY State Comptroller (Dec 2025, B) found NYC LL144 audit enforcement ineffective [T0-15:355, T0-61 K21]."
    },
    "leverage": {
     "lo": 5.5,
     "mid": 6.5,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Second-line model validation, technology risk and regulatory assurance at banks and Big 4 firms [T0-61]."
    },
    "persona_access": {
     "backend": 2,
@@ -1580,14 +1598,14 @@
      "mid": 3,
      "hi": 4,
      "grade": "C",
-     "basis": "DPO/privacy demand expected to lead in India; DPDP main obligations 13 May 2027 [T0-15:142]."
+     "basis": "DPDP Rules 2025 consent-manager rules took effect 2026-11-13 with main obligations on 2027-05-13 (A); 1 core India posting in T0-61 (Deutsche Bank DWS Pune model validation, B); Phase 0 DPO-demand forecast unverified [T0-15:142, T0-61 K19]."
     },
     "comp": {
      "lo": 3.5,
      "mid": 5,
      "hi": 6.5,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "No India evidence: 0 employer-posted INR bands [T0-45, T0-61 K20]."
     }
    }
   },
@@ -1601,12 +1619,14 @@
    "stack": {
     "primary": null,
     "secondary": [
-     "L6"
+     "L6",
+     "L4"
     ],
     "planes": [
-     "product"
+     "product",
+     "evaluation"
     ],
-    "basis": "Catalog §3: product outcomes, eval rubrics, success metrics and token economics; product work spans layers",
+    "basis": "Catalog §3 & T0-59 L318–325: product plane primary across L6 apps (68%), L2/L4 models and post-training (12%) and evaluation/assurance plane (10%) [T0-59]",
     "grade": "D"
    },
    "interview_track": "product",
@@ -1629,14 +1649,14 @@
     "mid": 6,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement. Product judgement for probabilistic systems."
+    "basis": "Judgement. Product judgement for probabilistic systems: AI-native PM scope expands into prototyping and evals while routine spec boilerplate compresses [T0-59 K7]."
    },
    "leverage": {
     "lo": 7.0,
     "mid": 8,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement. Decides what gets built and how it is measured."
+    "basis": "Judgement. Decides what gets built, how model behaviour is shaped and how it is measured (OpenAI Core Models, Anthropic Model Behaviors, enterprise AI products [T0-59])."
    },
    "persona_access": {
     "backend": 4,
@@ -1651,7 +1671,7 @@
      "mid": 5.5,
      "hi": 7.0,
      "grade": "C",
-     "basis": "JobsPipe India share 5.3% of 12,166 global PM (~645 live PM postings, M); verified India AI PM hiring at Microsoft AI, Sarvam, Uber and product startups [T0-59]."
+     "basis": "JobsPipe India share 5.3% of 12,166 global PM (~645 live PM postings, M); 12 of 41 sampled postings in India (Uber Bengaluru, Sarvam x2, KPMG India, Target GCC, HCLTech, RagaAI, Ringg AI, Ctruh, Tredence, Creuto, Weekday client; 0 Microsoft India postings in sample) [T0-59 L358]."
     },
     "comp": {
      "lo": 6.5,
@@ -1675,7 +1695,7 @@
     "planes": [
      "evaluation"
     ],
-    "basis": "Catalog §3: rubrics, golden sets and grading of model outputs (human data for post-training and evaluation)",
+    "basis": "Catalog §3 & T0-66: rubrics, golden sets and grading of model outputs (human data for post-training and evaluation) [T0-66]",
     "grade": "D"
    },
    "interview_track": null,
@@ -1698,14 +1718,14 @@
     "mid": 3.5,
     "hi": 5.0,
     "grade": "D",
-    "basis": "Judgement. 'A bridge, not a destination' [T0-06:273, 650]."
+    "basis": "Judgement. Bifurcates into credentialed domain-expert work vs volatile standing pools with early project endings and vendor risk (Mercor Mar 2026 LiteLLM incident); 'a bridge, not a destination' [T0-06:273, 650, T0-66]."
    },
    "leverage": {
     "lo": 4.0,
     "mid": 5,
     "hi": 6.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Post-training RLHF and rubric data quality; mostly individual contractor piecework [T0-66]."
    },
    "persona_access": {
     "backend": 4,
@@ -1744,11 +1764,13 @@
      "L4",
      "L6"
     ],
-    "planes": [],
-    "basis": "Catalog §3: robot foundation and VLA models, sim-to-real; embodied AI sits partly outside an LLM stack, so the footprint is approximate",
+    "planes": [
+     "evaluation"
+    ],
+    "basis": "Catalog §3 & T0-64 K8: L2 models/research (15/48), L4 post-training (16/48), L6 deployment (13/48) plus simulation/data/evaluation plane (4/48); embodied AI sits partly outside an LLM stack [T0-64]",
     "grade": "D"
    },
-   "interview_track": null,
+   "interview_track": "robot-learning",
    "demand": {
     "lo": 3.0,
     "mid": 4.5,
@@ -1775,7 +1797,7 @@
     "mid": 7,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Close to customer and industrial hardware deployments (Skild, Applied Intuition, Wipro PoV, Samsung manufacturing, Siemens Energy India [T0-64 L280])."
    },
    "persona_access": {
     "backend": 3.5,
@@ -1790,14 +1812,14 @@
      "mid": 3.0,
      "hi": 4.0,
      "grade": "B",
-     "basis": "physicalai.jobs tracks 35 India roles (0.7% of 4,875, 2026-11-11, B); 8 India postings sampled across robotics startups, auto OEMs and IT services [T0-64]."
+     "basis": "physicalai.jobs tracks 35 India roles (0.7% of 4,875, 2026-11-11, B); 8 India postings sampled across IT services (Wipro, TELUS Digital), industrial GCC-style R&D (Siemens Energy India), robotics OEM (Addverb) and startups (Origin, Upsurge Labs, Weekday client) [T0-64 L325–330]."
     },
     "comp": {
      "lo": 3.5,
      "mid": 5,
      "hi": 6.5,
      "grade": "D",
-     "basis": "No India evidence."
+     "basis": "No India evidence: 0 of 8 India postings disclose pay; generic ML proxies only (viral Rs22.4 LPA / 1,240 Bangalore claim is untraceable Grade E) [T0-45, T0-64 K6]."
     }
    }
   },
@@ -1814,7 +1836,7 @@
     "planes": [
      "leadership"
     ],
-    "basis": "Catalog §3.9: Head / Director / Manager of AI Engineering postings; the team's layers vary",
+    "basis": "Catalog §3.9 & T0-65: leadership plane across AI-system teams (20–24% of Fast AI Jobs EM rows; 8/15 Anthropic EM titles); team layers vary [T0-65]",
     "grade": "D"
    },
    "interview_track": null,
@@ -1830,7 +1852,7 @@
     "mid": 7.5,
     "hi": 9.0,
     "grade": "B",
-    "basis": "Posted US base bands: SandboxAQ $163K–$306K, NVIDIA $200K–$356.5K, Scale AI Director $285.2K–$356.5K, Anthropic $320K–$405K (A, COI; Growth EM $405K–$485K) plus equity; Levels.fyi EM anchors [T0-44, T0-65]."
+    "basis": "Posted US base bands: SandboxAQ $163K–$306K, NVIDIA $200K–$356.5K, Scale AI Director $285.2K–$356.5K, Anthropic $320K–$405K (A, COI; Growth EM $405K–$485K) plus equity; India proxy: Levels.fyi India SWE Manager TC P25 Rs57.4L / P50 Rs85.6L / P75 Rs1.25Cr / P90 Rs1.62Cr (n=975, B) and Amazon Bengaluru Director Rs5.54Cr (B) [T0-44, T0-45, T0-65]."
    },
    "durability": {
     "lo": 5.5,
@@ -1844,7 +1866,7 @@
     "mid": 8,
     "hi": 9.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Team hiring, cross-team AI platform adoption and engineering delivery velocity [T0-65]."
    },
    "access": {
     "lo": 3.0,
@@ -1863,11 +1885,13 @@
    "definition": "Owns an organisation's AI function in one of two variants: a hands-on player-coach shipping production systems for a CEO/CTO, or an enterprise strategy, governance and operations lead.",
    "stack": {
     "primary": null,
-    "secondary": [],
+    "secondary": [
+     "L6"
+    ],
     "planes": [
      "leadership"
     ],
-    "basis": "Catalog §3.9: Head of AI survey job family; no posting count in the corpus",
+    "basis": "Catalog §3.9 & T0-65 KF8: leadership plane primary; 45% of text-visible postings (n=11) are hands-on player-coach seats shipping L6 production systems [T0-65]",
     "grade": "D"
    },
    "interview_track": null,
@@ -1883,28 +1907,28 @@
     "mid": 8.0,
     "hi": 9.5,
     "grade": "B",
-    "basis": "Posted US base bands sit below vendor studies: Accela $240K–$280K + bonus (A), SimplePractice $250K–$315K (B), Synchrony VP $170K–$290K (B); UK GBP 120K–150K (B); equity/bonus lifts late-stage/enterprise TC [T0-65]."
+    "basis": "Posted US base bands sit below vendor studies: Accela $240K–$280K + bonus (A), SimplePractice $250K–$315K (B), Synchrony VP $170K–$290K (B); UK GBP 120K–150K (B); equity/bonus lifts late-stage/enterprise TC; India: adjacent Amazon Bengaluru Director Rs5.54Cr (B), no all-employer India VP/Head of AI series [T0-45, T0-65]."
    },
    "durability": {
     "lo": 5.5,
     "mid": 7,
     "hi": 8.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Splits between durable hands-on player-coach seats and enterprise transformation/governance seats, with title-inflation risk at small firms [T0-65]."
    },
    "leverage": {
     "lo": 8.0,
     "mid": 9,
     "hi": 10,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Enterprise AI portfolio and operating model; 55% (6/11) of text-visible postings report directly to CEO or CTO [T0-65]."
    },
    "access": {
     "lo": 1,
     "mid": 2,
     "hi": 3,
     "grade": "D",
-    "basis": "Multi-year leadership track record."
+    "basis": "Multi-year leadership track record: text-visible postings (n=11) ask 5–15+ (median 10, n=7) years engineering or product leadership; 45% hands-on, 55% CEO/CTO report [T0-65]."
    }
   },
   {
@@ -1921,7 +1945,7 @@
      "leadership",
      "assurance"
     ],
-    "basis": "Catalog §3.9: CAIO mandates and governance accountability",
+    "basis": "Catalog §3.9 & T0-65: leadership and assurance planes (strategy 100%, governance 86%, AI system technical depth 43%, n=7) [T0-65]",
     "grade": "D"
    },
    "interview_track": null,
@@ -1930,14 +1954,14 @@
     "mid": 2.5,
     "hi": 3.5,
     "grade": "B",
-    "basis": "Rarely advertised (2 dated in-window employer postings: SBI India, UCSF Health); OMB M-25-21 (2025-04-03, A) mandates US federal agency CAIO designation but permits dual-hatted CIO/CDO/CTO; counted Fortune 500 + S&P 500 prevalence 10.7% (71/665, C) [T0-65]."
+    "basis": "Rarely advertised (2 dated in-window employer postings: SBI India, UCSF Health); OMB M-25-21 (2025-04-03, A) mandates US federal agency CAIO designation but permits dual-hatted CIO/CDO/CTO; counted Fortune 500 + S&P 500 prevalence 10.7% (71/665, Crist Kolder, B, live-verified 2026-11-19; vs IBM 76% vendor survey COI) [T0-65]."
    },
    "comp": {
     "lo": 5.0,
     "mid": 8.0,
     "hi": 10.0,
     "grade": "B",
-    "basis": "Bifurcated pay: US public-sector/higher-ed posted base $117.7K–$200K (B) and SBI India GM & CAIO negotiable CTC up to Rs160L fixed term (B, live-verified 2026-11-19) vs private corporate executive packages $400K–$1M+ [T0-65]."
+    "basis": "Bifurcated pay: US public-sector/higher-ed posted base $117.7K–$200K (B) and SBI India GM & CAIO negotiable CTC up to Rs160L fixed term (B, live-verified 2026-11-19; private India CAIO vendor bands remain Grade E [T0-45]) vs private corporate executive packages $400K–$1M+ [T0-45, T0-65]."
    },
    "durability": {
     "lo": 4.0,
@@ -1951,14 +1975,14 @@
     "mid": 9,
     "hi": 10,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Enterprise AI strategy and governance accountability, moderated by limited budget control (IBM IBV: 18% hold full direct AI budget, C) [T0-65]."
    },
    "access": {
     "lo": 0.5,
     "mid": 1.5,
     "hi": 2.5,
     "grade": "D",
-    "basis": "Executive track record."
+    "basis": "Executive track record: 12–15+ years senior leadership (Axial 12+ with 5+ director+; SBI 15+ with 3+ senior AI leadership); Fortune 500 + S&P 500 prevalence 10.7% (B) [T0-65]."
    }
   },
   {
@@ -1974,7 +1998,7 @@
     "planes": [
      "leadership"
     ],
-    "basis": "Catalog §3.9: fractional Head of AI / CAIO retainers",
+    "basis": "Catalog §3.9 & T0-66: leadership plane (strategy 85%, governance/exec comm/change management 77% each; hands-on LLM depth 46%, n=13) [T0-66]",
     "grade": "D"
    },
    "interview_track": null,
@@ -2004,7 +2028,7 @@
     "mid": 7,
     "hi": 8.0,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Part-time executive strategy, governance and change-management retainers; often transitions out as execution scales [T0-66]."
    },
    "access": {
     "lo": 1.0,
@@ -2022,12 +2046,14 @@
    "status": "V",
    "definition": "Self-employed practitioner who delivers AI projects or advice to clients on hourly, daily or project terms.",
    "stack": {
-    "primary": null,
-    "secondary": [],
+    "primary": "L6",
+    "secondary": [
+     "L5"
+    ],
     "planes": [
      "leadership"
     ],
-    "basis": "Catalog §3.9: independent practice found mostly through networks",
+    "basis": "Catalog §3.9 & T0-66: 10/17 sampled postings and n=1,466 UK GenAI contract ads (IT Jobs Watch, B) are hands-on L6/L5 GenAI build/delivery, with advisory sitting on the leadership plane [T0-66]",
     "grade": "D"
    },
    "interview_track": null,
@@ -2050,21 +2076,21 @@
     "mid": 5,
     "hi": 6.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. UK GenAI contract ad volume tripled (176 to 472 to 1,466 across 2024–2026, B) while median day rate stayed flat at GBP 550/day vs GBP 625 in 2024, pointing to price competition as supply grows [T0-66 KF4]."
    },
    "leverage": {
     "lo": 5.5,
     "mid": 6.5,
     "hi": 7.5,
     "grade": "D",
-    "basis": "Judgement."
+    "basis": "Judgement. Client project delivery and direct advisory; agency channel rates ($50–$80/hr US) compress leverage vs direct senior engagements [T0-66]."
    },
    "access": {
     "lo": 2,
     "mid": 3,
     "hi": 4,
     "grade": "C",
-    "basis": "5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]."
+    "basis": "5+ years, >=50 referral sources, 6 months of reserves [T2-01:631-635]; Toptal <3% screen + 2-wk paid test project (C), IT Jobs Watch senior build bar (B) and 53–75% network sourcing in independent surveys (C, U47) [T0-66]."
    }
   }
  ]

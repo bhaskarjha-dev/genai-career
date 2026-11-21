@@ -22,7 +22,7 @@ generated_by: scripts/build_role_hubs.py
 |:---:|---|---|---|:---:|:---:|
 | #1 | [AI Engineer](ai-engineer.md) | Applied AI Engineering | L5 Orchestration and context | E | #2 |
 | #2 | [Machine Learning Engineer](ml-engineer.md) | ML Engineering & Applied Science | L4 Post-training and adaptation | E | #1 |
-| #3 | [Applied Scientist](applied-scientist.md) | ML Engineering & Applied Science | L4 Post-training and adaptation | V | #5 |
+| #3 | [Applied Scientist](applied-scientist.md) | ML Engineering & Applied Science | L6 Applications and deployment | V | #5 |
 | #4 | [Forward Deployed Engineer](forward-deployed-engineer.md) | Forward Deployment & Solutions | L6 Applications and deployment | E | #3 |
 | #5 | [Research Engineer / Member of Technical Staff](research-engineer.md) | Research | L2 Foundation models and research | V | #4 |
 | #6 | [Applied AI Engineer](applied-ai-engineer.md) | Applied AI Engineering | L6 Applications and deployment | V | #6 |
@@ -41,13 +41,13 @@ generated_by: scripts/build_role_hubs.py
 | #19 | [Frontier AI Safety / Alignment Researcher](ai-safety-researcher.md) | Research | L4 Post-training and adaptation | V | #18 |
 | #20 | [AI Product Engineer (AI Frontend)](ai-product-engineer.md) | Applied AI Engineering | L6 Applications and deployment | W | #20 |
 | #21 | [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) | Governance, Risk & Assurance | Security, safety and governance | A | #21 |
-| #22 | [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) | Evaluation, Safety & Security | Security, safety and governance | W | #22 |
+| #22 | [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) | Evaluation, Safety & Security | L6 Applications and deployment | W | #22 |
 | #23 | [AI Enablement Engineer](ai-enablement-engineer.md) | Applied AI Engineering | L6 Applications and deployment | W | #23 |
 | #24 | [Domain Evaluation Specialist / AI Trainer](domain-evaluation-specialist.md) | Human Data & Evaluation Operations | L4 Post-training and adaptation | W | #24 |
 | Leadership #1 | [AI Engineering Manager / Director of AI Engineering](ai-engineering-manager.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #1 |
 | Leadership #2 | [VP / Head of AI](vp-head-of-ai.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #2 |
 | Leadership #3 | [Chief AI Officer (CAIO)](chief-ai-officer.md) | Leadership & Executive | Leadership and independent practice | V | Leadership #3 |
-| Leadership #4 | [Independent AI Consultant / Contractor](independent-ai-consultant.md) | Independent & Fractional | Leadership and independent practice | V | Leadership #4 |
+| Leadership #4 | [Independent AI Consultant / Contractor](independent-ai-consultant.md) | Independent & Fractional | L6 Applications and deployment | V | Leadership #4 |
 | Leadership #5 | [Fractional Head of AI / Fractional CAIO](fractional-ai-leader.md) | Independent & Fractional | Leadership and independent practice | V | Leadership #5 |
 
 Status: E established, V verified, W watch, A absorbed (see the [catalog's status classes](../role-catalog.md#12-status-classes-for-canonical-roles)). Leadership and independent tracks are ranked separately (Leadership #1–#5). Codes L1–L6 elsewhere on the role map are work layers, not ranks.

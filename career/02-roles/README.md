@@ -12,7 +12,7 @@ sources: [T0-01, T0-15, T0-16, T0-48, T0-49, T0-50, T0-51, T0-52, T0-53, T0-54, 
 # Stage 02: Roles
 
 > **The question this stage answers:** Which GenAI roles exist, which are the best, and which should I target?
-> **Status:** Covered: all 29 role hubs now combine generated summary cards with full RP2 dossiers (D-023), alongside the role map, emerging-roles guide, role catalog and role rankings. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
+> **Status:** Covered: all 29 role hubs combine generated summary cards with full RP2 dossiers (D-023), alongside the role map, emerging-roles guide, role catalog and role rankings. Overall progress is tracked in [ROADMAP.md](../../ROADMAP.md).
 
 ## In this folder
 

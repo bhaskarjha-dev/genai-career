@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Research | L2 Foundation models and research; also L4 Post-training and adaptation | Verified (V) | #8 of 24 | #7 of 24 · band A · Monte Carlo rank 8 (P10–P90 5–12) | C2 Science |
+| Research | L2 Foundation models and research; also L4 Post-training and adaptation; planes: Evaluation and quality | Verified (V) | #8 of 24 | #7 of 24 · band A · Monte Carlo rank 8 (P10–P90 5–12) | C2 Science |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 5 (4–6.5) | B | JobsPipe all-fields count date 2026-09-10; Fast AI Jobs 333 open RS roles at 171 AI startups (54% Pre-Seed–Series B); ellis.com 188 OpenAI MTS/research listings; BLS 2025–35 projects +21.8% US computer & information research scientist growth [T0-27, T0-55]. |
 | Pay | 9.5 (8–10) | B | Frontier posted base bands $210K–$650K+ plus major equity; Pave P6 $4.09M / M6 $4.72M equity downgraded from Grade A to Grade B (vendor intended grant value); Big Tech RS (Google/Meta/Microsoft/NVIDIA) spans $300K–$1M+ TC [T0-44, T0-55]. |
-| Durability | 8 (6.5–9.5) | D | Judgement. Research taste and novel methods. |
-| Leverage | 7.5 (6.5–8.5) | D | Judgement. Long-horizon capability gains. |
+| Durability | 8 (6.5–9.5) | D | Judgement. Research taste and novel methods (OpenAI LCA filings grew 28 in 2023 to 165 in 2025–2026, B) balanced against research-automation goals (OpenAI RSI posting) and RS/RE convergence [T0-55 K7]. |
+| Leverage | 7.5 (6.5–8.5) | D | Judgement. Long-horizon capability gains: architecture and training-recipe ownership at Sarvam and xAI; Pave P6 $4.09M intended equity grant reflects scarcity (B) [T0-55 L342]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -67,7 +67,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Research.** It tests a research talk plus coding; the full research loop at frontier labs. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Research.** It tests coding-led loops and paid work trials for Research Engineer and AI Safety roles (Anthropic Python-only coding with AI-partnership rules [A, COI], xAI 1-week loop [A], FAR.AI 72-min coding plus work trial [B]; research talk not confirmed for RE or safety), versus quiz, coding and research/past-work talk for Research Scientist (DeepMind [A], xAI [A]). Source: T0-14, T0-46, T0-50, T0-55, T0-60, T1-03.
 - **Practise:** the [research prep pack](../../08-interviewing/prep-packs.md#research-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 

@@ -22,175 +22,175 @@
    "title": "AI Engineer",
    "type": "Canonical",
    "maps_to": "ai-engineer",
-   "note": "E · US 1,697 / India 398 live (JobsPipe) · T0-01 F1"
+   "note": "E · US 1,697 / India 398 (10.1%, U33) / global 3,944 live (JobsPipe); Fast AI Jobs 352 · T0-01 F1, T0-48, T0-70"
   },
   {
    "title": "Applied AI Engineer",
    "type": "Canonical",
    "maps_to": "applied-ai-engineer",
-   "note": "V · 16 of newest 50 AI rows (Fast AI Jobs) · T0-01 D2"
+   "note": "V · 21 of newest 50 AI rows (42%, Fast AI Jobs 2026-11-11); labs & AI vendors · T0-53"
   },
   {
    "title": "Agentic AI Engineer",
    "type": "Canonical",
    "maps_to": "agentic-ai-engineer",
-   "note": "W · ~66 postings/90 days (Skillenai, derived) · T0-16"
+   "note": "W · Skilark 107/28,771 (0.37%); failed 3 graduation tests; active in India IT/GCCs · T0-57"
   },
   {
    "title": "AI Product Engineer",
    "type": "Canonical",
    "maps_to": "ai-product-engineer",
-   "note": "W · thin, senior-skewed AI-frontend demand · T0-06 KF-6"
+   "note": "W · alias family (16 postings, median 2 yrs exp; drops senior-skewed claim) · T0-62"
   },
   {
    "title": "AI Enablement Engineer",
    "type": "Canonical",
    "maps_to": "ai-enablement-engineer",
-   "note": "W · ~53 postings/90 days (Skillenai, derived) · T0-16"
+   "note": "W · Skillenai 42 postings/90 days to 2026-11-05 (down from 57) · T0-62"
   },
   {
    "title": "Machine Learning Engineer",
    "type": "Canonical",
    "maps_to": "ml-engineer",
-   "note": "E · US 1,084 / global 2,157 live (JobsPipe) · T0-01 F1"
+   "note": "E · US 1,084 / global 2,157 live (JobsPipe); Fast AI Jobs 298; Axial H1 2026 US 13,776 · T0-01 F1, T0-49, T0-70"
   },
   {
    "title": "Applied Scientist",
    "type": "Canonical",
    "maps_to": "applied-scientist",
-   "note": "V · 14 at 12 AI startups (Jun 2026); Big Tech unmeasured · T0-01 D2"
+   "note": "V · Amazon Science 451 Applied Science openings (90 India, 2026-11-13); Fast AI Jobs 23 · T0-52, T0-70"
   },
   {
    "title": "Forward Deployed Engineer (FDE)",
    "type": "Canonical",
    "maps_to": "forward-deployed-engineer",
-   "note": "E · 933-role cluster at 343 AI startups · T0-01 F3"
+   "note": "E · 1,007-role cluster at 353 AI startups (2026-11-12; ~46% IC FDE) · T0-51, T0-70"
   },
   {
    "title": "AI / GenAI Solutions Architect",
    "type": "Canonical",
    "maps_to": "ai-solutions-architect",
-   "note": "V · no AI-architect title count; ≥~350 US SA postings mention AI (upper bound, model) · JobsPipe 2026-11-02"
+   "note": "V · Axial 16,927 US 'AI architecture' postings (C); active at labs and hyperscalers · T0-62"
   },
   {
    "title": "Inference / LLM Serving Engineer",
    "type": "Canonical",
    "maps_to": "inference-engineer",
-   "note": "V · Rise 28; ≥8 named JDs · T0-01 D2, T0-03 §6.2"
+   "note": "V · Inference Jobs 341 upper bound (2026-11-13); 37 verified active postings · T0-56"
   },
   {
    "title": "GPU Kernel / ML Compiler Engineer",
    "type": "Canonical",
    "maps_to": "gpu-kernel-engineer",
-   "note": "V · CUDA/kernels in 6.6% of S09 postings · T0-03 §6.3"
+   "note": "V · 41 core postings across 30 employers (8 India); CUDA/kernels in 6.6% of S09 · T0-03 §6.3, T0-63"
   },
   {
    "title": "AI Infrastructure / GPU Platform Engineer",
    "type": "Canonical",
    "maps_to": "ai-infrastructure-engineer",
-   "note": "V · 52 base-disclosing infra postings (S09) · T0-03 §6.1.2"
+   "note": "V · 35 core postings (10 India); 52 base-disclosing S09; Inference Jobs 446 upper bound · T0-03, T0-54"
   },
   {
    "title": "ML Platform / MLOps Engineer",
    "type": "Canonical",
    "maps_to": "ml-platform-engineer",
-   "note": "V · probable; GCC supply gap 18–43% · T0-01 D2, F10"
+   "note": "E · graduated Nov 2026: Axial 1,959 US MLOps, ITJobsWatch 184 UK perm, Fast AI Jobs 1,099 · T0-58"
   },
   {
    "title": "AI Evaluation Engineer",
    "type": "Canonical",
    "maps_to": "ai-evaluation-engineer",
-   "note": "W · Rise 'LLM evaluation' 26; named JDs · T0-01 D2, T0-03 J12"
+   "note": "W · 22 named postings (labs, Big Tech, eval vendors, enterprise); 5 verified India · T0-60"
   },
   {
    "title": "AI Security Engineer / AI Red Teamer",
    "type": "Canonical",
    "maps_to": "ai-security-engineer",
-   "note": "W · ~23 'AI Security Specialist' postings/90 days · T0-16"
+   "note": "W · SANS mid-Sep 2026 >850 AI/ML security, ~100 red-team (+13% WoW), 93 supply-chain · T0-60, T0-69"
   },
   {
    "title": "Responsible AI / AI Governance Engineer",
    "type": "Canonical",
    "maps_to": "responsible-ai-engineer",
-   "note": "W · thin technical niche · T0-15 F6"
+   "note": "W · thin niche confirmed (6 core live/in-window postings globally) · T0-61"
   },
   {
    "title": "Research Engineer / Member of Technical Staff",
    "type": "Canonical",
    "maps_to": "research-engineer",
-   "note": "V · OpenAI MTS-RE 84, Anthropic RE 63 LCA positions (2025) · T0-02"
+   "note": "V · Fast AI Jobs 223 (2026-11-12); AI Pulse 569 (C); Anthropic/OpenAI lab volume · T0-50, T0-70"
   },
   {
    "title": "Research Scientist (AI/ML)",
    "type": "Canonical",
    "maps_to": "research-scientist",
-   "note": "V · OpenAI MTS-RS 68 LCA positions (2025) · T0-02"
+   "note": "V · Fast AI Jobs 333 RS at 171 startups; OpenAI 188 LCA MTS-RS; BLS +21.8% 2025–35 · T0-27, T0-55"
   },
   {
    "title": "Frontier AI Safety / Alignment Researcher",
    "type": "Canonical",
    "maps_to": "ai-safety-researcher",
-   "note": "V · ~600 technical FTEs across 67 orgs (C) · T0-15 F8"
+   "note": "V · ~600 technical FTEs (+21%/yr, C); 69 open across 8 non-lab orgs (Jun 2026) · T0-60, T0-70"
   },
   {
    "title": "AI Governance Programme Lead / Manager",
    "type": "Canonical",
    "maps_to": "ai-governance-lead",
-   "note": "V · 1,997 US AI-governance postings Jan–Sep 2026 (C) · T0-15"
+   "note": "V · Axial 1,997–3,700 US AI-governance postings (C); SANS ~430 AI GRC leads (B) · T0-61, T0-69"
   },
   {
    "title": "AI Risk, Audit & Compliance Specialist",
    "type": "Canonical",
    "maps_to": "ai-risk-assurance-specialist",
-   "note": "A · specialisation inside audit/model-risk/privacy · T0-15"
+   "note": "A · Deloitte >=10, U.S. Bank >=4, Big 4/banking model risk; GRC Careers US p50 $175K · T0-61"
   },
   {
    "title": "AI Product Manager",
    "type": "Canonical",
    "maps_to": "ai-product-manager",
-   "note": "V · no AI-PM title count; ≥~970 US PM postings mention AI (upper bound, model) · JobsPipe 2026-11-02"
+   "note": "V · JobsPipe 12,166 global PM (B); AI Pulse 570 AI PM category (C); 41 sampled postings · T0-59, T0-70"
   },
   {
    "title": "Domain Evaluation Specialist / AI Trainer",
    "type": "Canonical",
    "maps_to": "domain-evaluation-specialist",
-   "note": "W · expert-contract marketplaces (Mercor >30,000 experts) · T0-06"
+   "note": "W · standing contract pools (Mercor 3/3 read); domain-segmented $20–300/hr (U47) · T0-66"
   },
   {
    "title": "Physical AI / Robotics AI Engineer",
    "type": "Canonical",
    "maps_to": "physical-ai-engineer",
-   "note": "W · 8 of newest 50 AI rows were Figure AI · T0-01 F2"
+   "note": "V · graduated Nov 2026: 48 postings across 38 employer entries; Figure Helix corrected as department prefix (U38) · T0-64"
   },
   {
    "title": "AI Engineering Manager / Director of AI Engineering",
    "type": "Canonical",
    "maps_to": "ai-engineering-manager",
-   "note": "V · lead/manager label on 5.6% of AI Eng postings · JobsPipe JD"
+   "note": "V · Fast AI Jobs 608 EM (20–24% AI-system, +54% vs Jul); US posted base $163–405K · T0-65, T0-70"
   },
   {
    "title": "VP / Head of AI",
    "type": "Canonical",
    "maps_to": "vp-head-of-ai",
-   "note": "V · Radford 'Head of AI' survey job family (data paywalled); no count or pay in corpus · T0-02"
+   "note": "V · Axial 65 US exec postings (6 mo); US posted base $170–315K, UK GBP 120–150K · T0-65"
   },
   {
    "title": "Chief AI Officer (CAIO)",
    "type": "Canonical",
    "maps_to": "chief-ai-officer",
-   "note": "V · OMB M-25-21 federal mandate (B) · T0-15"
+   "note": "V · OMB M-25-21 (2025-04-03, A, U43); Crist Kolder 10.7% (71/665, B, U47); SBI up to Rs160L · T0-65"
   },
   {
    "title": "Fractional Head of AI / Fractional CAIO",
    "type": "Canonical",
    "maps_to": "fractional-ai-leader",
-   "note": "V · Go Fractional rates and post counts · T0-18"
+   "note": "V · 1/13 direct employer JD; Go Fractional 10 posts/90d; employer $75–150/hr vs $150–250/hr asks · T0-66, T0-70"
   },
   {
    "title": "Independent AI Consultant / Contractor",
    "type": "Canonical",
    "maps_to": "independent-ai-consultant",
-   "note": "V · asking corridor $150–$250/hr (US) · T0-18"
+   "note": "V · UK GenAI contract ads tripled to 1,466 (6 mo to 2026-11-12, median GBP 550/day, B) · T0-66"
   },
   {
    "title": "AI Application Engineer",
@@ -394,7 +394,7 @@
    "title": "Agent Interface Architect",
    "type": "Brief label",
    "maps_to": "ai-product-engineer",
-   "note": "Pipeline-brief target; no posting count · T2-01"
+   "note": "Pipeline-brief target; no posting count (0 sightings in Nov 2026 RP2 sample) · T2-01, T0-62"
   },
   {
    "title": "Client-Side AI Specialist",
@@ -406,7 +406,7 @@
    "title": "On-Device / Edge AI Engineer",
    "type": "Candidate (unmeasured)",
    "maps_to": "ai-product-engineer",
-   "note": "No posting evidence; differentiator only · T2-01, T0-06"
+   "note": "Live postings exist (at least 9 Edge AI Engineer aggregator listings + Deepgram in Nov 2026, C, U38); 0/16 in AI Product Engineer sample; remains ungraduated candidate · T2-01, T0-62, T0-69"
   },
   {
    "title": "On-Device & Edge SLM Engineer",
@@ -430,7 +430,7 @@
    "title": "AI Product Ops",
    "type": "Brief label",
    "maps_to": "ai-enablement-engineer",
-   "note": "Pipeline-brief target; no posting count · T2-01"
+   "note": "Pipeline-brief target; no posting count (0 sightings in Nov 2026 RP2 sample) · T2-01, T0-62"
   },
   {
    "title": "Conversational & Voice AI Engineer",
@@ -752,9 +752,9 @@
   },
   {
    "title": "Distributed Training Engineer",
-   "type": "Unmeasured buzzword",
+   "type": "Candidate (unmeasured)",
    "maps_to": "ai-infrastructure-engineer",
-   "note": "Title not found; function carried under MTS/RE or infra titles · T0-03 Tier 3"
+   "note": "Live postings verified at OpenAI and Periodic Labs in Nov 2026 (C, U38); also carried under MTS/RE or infra titles; remains ungraduated candidate · T0-03 Tier 3, T0-69 K17"
   },
   {
    "title": "Foundation Model Pre-Training Engineer",
@@ -994,7 +994,7 @@
    "title": "Apex / Named Frontier Researcher",
    "type": "Level variant",
    "maps_to": "research-scientist",
-   "note": "T5 bespoke packages; 'not observable in medians' · T0-17"
+   "note": "T5 bespoke packages; 'not observable in medians' (0 sightings in Nov 2026 RP2 sample) · T0-17, T0-55 K2"
   },
   {
    "title": "AI Safety Engineer (Frontier Alignment)",
@@ -1078,7 +1078,7 @@
    "title": "Algorithmic Auditor",
    "type": "Specialisation",
    "maps_to": "ai-risk-assurance-specialist",
-   "note": "Inside assurance firms; AAIA needs CISA/CIA/CPA · T0-15"
+   "note": "Inside assurance firms; ISACA AAIA requires active CISA or qualifying international accounting credential (excluding Indian CA, U43) · T0-15, T0-61"
   },
   {
    "title": "AI Risk Manager / Model Risk Validator",
@@ -1090,7 +1090,7 @@
    "title": "Manager / Senior Manager, AI Risk & Validation",
    "type": "Level variant",
    "maps_to": "ai-risk-assurance-specialist",
-   "note": "Deloitte, $171.6–338.3K (seen 16 times) · T0-15"
+   "note": "Deloitte Phase 0 $171.6–338.3K figure unretrieved in T0-61; GRC Careers US AI-risk p50 $175K (n=18, B) · T0-15, T0-61"
   },
   {
    "title": "Senior AI Risk Analyst",
@@ -1108,7 +1108,7 @@
    "title": "Data Protection Officer (DPO, AI)",
    "type": "Specialisation",
    "maps_to": "ai-risk-assurance-specialist",
-   "note": "Adjacent statutory role; India DPDP duties from 13 May 2027 · T0-15"
+   "note": "Adjacent statutory role; India DPDP consent-manager rules 2026-11-13, main obligations 2027-05-13 · T0-15, T0-61"
   },
   {
    "title": "ISO/IEC 42001 Auditor",
@@ -1132,7 +1132,7 @@
    "title": "Non-Technical AI Product Manager",
    "type": "Alias",
    "maps_to": "ai-product-manager",
-   "note": "Non-technical lane ~7 months (model) · T0-06"
+   "note": "Non-technical lane ~7 months (model; 0 sightings as a literal title in Nov 2026 RP2 sample) · T0-06, T0-59 K2"
   },
   {
    "title": "AI PM",
@@ -1168,7 +1168,7 @@
    "title": "Expert Contractor (AI Training)",
    "type": "Alias",
    "maps_to": "domain-evaluation-specialist",
-   "note": "Mercor ~$85–110/hr average (C/D) · T0-06"
+   "note": "Mercor domain-segmented $35–200/hr; headline average unstable ($80–141/hr, U47) · T0-66"
   },
   {
    "title": "Data Operations & RLHF Lead",
@@ -2453,6 +2453,78 @@
    "type": "Alias",
    "maps_to": "domain-evaluation-specialist",
    "note": "24 Mag ($40–60/hr remote) · T0-66 L578"
+  },
+  {
+   "title": "ML Systems Engineer",
+   "type": "Alias",
+   "maps_to": "ml-engineer",
+   "note": "Observed alias in RP2 MLE sample (alongside ML Software Engineer and SWE-ML) · T0-49 L377"
+  },
+  {
+   "title": "Applied AI Engineer, Frontier",
+   "type": "Alias",
+   "maps_to": "applied-ai-engineer",
+   "note": "Frontier-lab customer-facing variant in RP2 Applied AI sample · T0-53 L85"
+  },
+  {
+   "title": "GPU Infrastructure Engineer",
+   "type": "Alias",
+   "maps_to": "ai-infrastructure-engineer",
+   "note": "Inference Jobs category label (446 undeduplicated listings) and employer title · T0-54 L61"
+  },
+  {
+   "title": "LLM Inference Engineer",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "Hippocratic AI and LLM serving postings · T0-56 L497"
+  },
+  {
+   "title": "Inference Performance Engineer",
+   "type": "Alias",
+   "maps_to": "inference-engineer",
+   "note": "US serving-optimisation posting ($124K–$241.5K posted range, B) · T0-56 L652"
+  },
+  {
+   "title": "AI/ML Platform Engineer",
+   "type": "Alias",
+   "maps_to": "ml-platform-engineer",
+   "note": "Veralto Bengaluru and enterprise ML-platform postings · T0-58 L450"
+  },
+  {
+   "title": "GPU Kernel Developer",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Observed alias ('GPU Kernel Developer - AI Models') in RP2 kernel sample · T0-63 L386"
+  },
+  {
+   "title": "GPU Optimization Engineer",
+   "type": "Alias",
+   "maps_to": "gpu-kernel-engineer",
+   "note": "Performance/optimisation title family (31.7% of core kernel sample) · T0-63 L161, L386"
+  },
+  {
+   "title": "AI Robotics Engineer",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "Figure AI LCA title alongside Helix department prefix · T0-64 L290"
+  },
+  {
+   "title": "World Model Engineer",
+   "type": "Alias",
+   "maps_to": "physical-ai-engineer",
+   "note": "Laplacian Robotics and embodied world-model postings · T0-64 L424"
+  },
+  {
+   "title": "AI Enablement Specialist",
+   "type": "Alias",
+   "maps_to": "ai-enablement-engineer",
+   "note": "Allspring and enterprise internal-adoption postings · T0-62 L238"
+  },
+  {
+   "title": "GM & Chief AI Officer",
+   "type": "Alias",
+   "maps_to": "chief-ai-officer",
+   "note": "Exact State Bank of India CRPD/SCO/2026-27/30 posting title (up to Rs160L fixed term, B) · T0-65 L24, L290"
   }
  ]
 }

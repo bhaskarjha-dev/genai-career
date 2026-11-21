@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Applied AI Engineering | L6 Applications and deployment; also L5 Orchestration and context | Watch (W) | #23 of 24 | #23 of 24 · band C · Monte Carlo rank 23 (P10–P90 22–24) | A1 Builder |
+| Applied AI Engineering | L6 Applications and deployment; also L5 Orchestration and context; planes: Security, safety and governance | Watch (W) | #23 of 24 | #23 of 24 · band C · Monte Carlo rank 23 (P10–P90 22–24) | A1 Builder |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -30,7 +30,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Demand | 2.5 (1.5–3.5) | B | Skillenai direct 90-day count fell from 57 (to 2026-09-03) to 42 (to 2026-11-05); small and contracting standalone title [T0-62]. |
 | Pay | 5.5 (4–7.5) | C | Bimodal pay across builder vs adoption variants: Fabletics builder $160.4K–$180K base (A) vs Scotiabank adoption $120K–$140K [T0-62]. |
 | Durability | 4.5 (3–6) | D | Judgement. Exact-title count fell 57 to 42; adoption/training variant tracks temporary rollout waves while platform-enablement roles fold into DevEx/IT [T0-62]. |
-| Leverage | 6.5 (5.5–7.5) | D | Judgement. Internal productivity. |
+| Leverage | 6.5 (5.5–7.5) | D | Judgement. Internal productivity and measured workflow adoption (LocalStack, Sofi, Mentor Collective; 'highest-leverage' claims are COI/anecdote) [T0-62]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,9 +39,9 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 2.5 (1.5–3.5) | C | 2 of 15 sampled postings in India (Ather Energy Bengaluru, Siemens GCC Bengaluru); no India title count [T0-62]. |
-| India pay | 5 (4–6) | D | No India evidence. |
+| India pay | 5 (4–6) | D | Single India junior posting only: Ather Energy Bengaluru Rs8–14 LPA (0–2 yrs, aggregator, C); no senior India pay series [T0-45, T0-62 K21]. |
 
-India rank (CCI with India inputs): #22 of 24. One input (India comp) is a Grade D placeholder.
+India rank (CCI with India inputs): #22 of 24.
 
 ## Who it suits
 
@@ -53,17 +53,17 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What you need
 
-- **Must (headline):** Internal tooling & DevEx, Change management & adoption.
+- **Must (headline):** Internal tooling & DevEx, Change management & adoption, Teaching & workshop delivery.
 - **Important (headline):** Python (production), LLM APIs & tool calling, MCP (Model Context Protocol), Agents & tool use, Guardrails, Coding agents & AI-assisted engineering, Pilots & adoption measurement, GRC & risk assessment.
 - **Full inventory:** 55 skills (Must 3 · Important 16 · Should 24 · Optional 12), each with its evidence and posting keywords: [ai-enablement-engineer.md](../../03-skills-and-tech/inventories/ai-enablement-engineer.md).
 - **Prerequisites:** Splits into builder/platform (DevEx/backend) and ops/adoption (internal ops, L&D, RevOps) lanes; 26.7%–33.3% require Python [B/C · T0-62]
-- **Credentials (tie-breakers, not skills):** Salesforce Certified Agentforce Specialist (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** Salesforce Certified Agentforce Specialist (Optional: Free/proctored Salesforce Agentforce credential; useful only for Salesforce-partner FDE, SA or enablement shops (T0-31)); Claude Certified Associate – Foundations (CCAO-F) (Optional: Partner-gated ($99; Claude Partner Network staff only; does NOT count toward partner tiers; FASCSA risk V0) [A COI · T0-29, T3-02]); GitHub Certified Copilot (GH-300) (Optional: GitHub Certified Copilot ($99-$165; Microsoft FTE LevelUp prerequisite); fits Copilot rollout & DevEx enablement (T3-01)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** An internal pilot with 5–10 colleagues measuring adoption and time saved, with a runbook and a risk register
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P15 Internal AI-enablement pilot (MCP servers, adoption metrics)](../../05-portfolio/project-archetypes.md#p15) (73%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (36%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (18%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P15 Internal AI-enablement pilot (MCP servers, adoption metrics)](../../05-portfolio/project-archetypes.md#p15) (64%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (32%); [P3 Eval harness with a calibrated judge and statistics](../../05-portfolio/project-archetypes.md#p3) (16%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -81,12 +81,12 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Specialisations inside this role
 
-- **MCP and agent protocols** (L5 Orchestration and context): Specialisation label MCP Control Plane Engineer in the A–Z index; no literal title.
+- **MCP and agent protocols** (L5 Orchestration and context): Specialisation label MCP Control Plane Engineer in the A–Z index; no literal title (MCP named in 19.0% of Skillenai / 26.7% of sampled AI Enablement postings [T0-62]).
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Agentic AI Engineer](agentic-ai-engineer.md) (0.28); [Applied AI Engineer](applied-ai-engineer.md) (0.25); [Forward Deployed Engineer](forward-deployed-engineer.md) (0.23).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Agentic AI Engineer](agentic-ai-engineer.md) (0.26); [Applied AI Engineer](applied-ai-engineer.md) (0.24); [AI / GenAI Solutions Architect](ai-solutions-architect.md) (0.22).
 - **Same family (Applied AI Engineering):** [AI Engineer](ai-engineer.md), [Applied AI Engineer](applied-ai-engineer.md), [Agentic AI Engineer](agentic-ai-engineer.md), [AI Product Engineer (AI Frontend)](ai-product-engineer.md).
 
 ## Go deeper
@@ -105,7 +105,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## What the role actually looks like
 
-**Important scorecard discrepancy (contradicted claim `K25`):** the generated scorecard above inherited `Python (78.4%)` and `LLM APIs (76.7%)` as Must skills from adjacent `AI Engineer` postings. November 2026 evidence (`T0-62`, corroborated by live 2026 postings on 2026-11-19) **contradicts** that inheritance: across both sampled postings (n = 15) and Skillenai's direct platform index (n = 42, 2026-11-05), `Python` sits at **26.7%–33.3%** and `LLM APIs` / `LLMs` at **16.7%–26.7%**, while **teaching/workshops (60.0%)**, **internal tooling (46.7%)** and **change management/adoption (46.7%)** lead the role [M/B · T0-62 L259–L281, L453].
+**Why this role's Must skills diverge from adjacent AI Engineer postings (`K25`):** Phase 0 inherited `Python (78.4%)` and `LLM APIs (76.7%)` as Must skills from adjacent `AI Engineer` postings. November 2026 evidence (`T0-62`, corroborated by live 2026 postings on 2026-11-19 and reflected in the updated scorecard above) **contradicted** that inheritance: across both sampled postings (n = 15) and Skillenai's direct platform index (n = 42, 2026-11-05), `Python` sits at **26.7%–33.3%** and `LLM APIs` / `LLMs` at **16.7%–26.7%**, while **teaching/workshops (60.0%)**, **internal tooling (46.7%)** and **change management/adoption (46.7%)** lead the role [M/B · T0-62 L259–L281, L453].
 
 Instead of one uniform engineering job, "AI Enablement Engineer" splits into **three distinct variants** — only two of which fit an engineering family [M · T0-62 L74, L233–L237, L444]:
 
@@ -115,7 +115,7 @@ Instead of one uniform engineering job, "AI Enablement Engineer" splits into **t
 | **2. Adoption / training lead** | 20% (3 of 15) | Mostly non-coding or low-code rollout of Microsoft Copilot, Power Platform, AI champion networks, training playbooks and productivity measurement | Scotiabank (Dallas), Liquidity Services, Jorie AI [B · T0-62 L234, L628, L636–L637] |
 | **3. Platform, MCP and context engineering** | 20% (3 of 15) | Builds governed enterprise AI infrastructure: MCP gateways/servers, SSO/SAML/OAuth/OIDC/SCIM/RBAC access controls, API gateways, compliance/audit controls (NIST AI RMF, OWASP LLM Top 10) and low-latency context packers (<200 ms at Siemens) | Sofi (Senior Staff, mirror read [B]), Siemens (Bengaluru GCC [B]), London fintech platform lead [B · T0-62 L236, L635, L639–L640] |
 
-- **Skill-tier reality check against the scorecard:** Skillenai's direct `AI Enablement Engineer` dataset (n = 42, 2026-11-05) shows prompt engineering 35.7%, Python 33.3%, TypeScript 28.6%, MCP 19.0% (lower than the scorecard's derived 30.2%), RAG 19.0%, LLMs 16.7%, agents 16.7%, CI/CD 14.3%, AWS 14.3%, Claude Code 14.3%, SSO 11.9%, Azure 11.9% and OAuth 9.5% [B · T0-62 L281, L446]. In the sample (n = 15; floors, ±25 pp), `iam` appears in 20.0% (Must **only** inside the platform variant), `grc` (governance/audit) and `low_code_automation` each appear in 26.7% (both missing from the scorecard), and `llm_gateways` appears in just 6.7% (Sofi only) [M · T0-62 L268–L279, L454].
+- **Skill-tier reality check against the scorecard:** Skillenai's direct `AI Enablement Engineer` dataset (n = 42, 2026-11-05) shows prompt engineering 35.7%, Python 33.3%, TypeScript 28.6%, MCP 19.0% (lower than Phase 0's derived 30.2%), RAG 19.0%, LLMs 16.7%, agents 16.7%, CI/CD 14.3%, AWS 14.3%, Claude Code 14.3%, SSO 11.9%, Azure 11.9% and OAuth 9.5% [B · T0-62 L281, L446]. In the sample (n = 15; floors, ±25 pp), `iam` appears in 20.0% (Must **only** inside the platform variant), `grc` (governance/audit) and `low_code_automation` each appear in 26.7% (both added to the scorecard above), and `llm_gateways` appears in just 6.7% (Sofi only) [M · T0-62 L268–L279, L454].
 - **Proof of work:** postings directly echo [P15](../../05-portfolio/project-archetypes.md#p15): LocalStack asks for before-and-after evidence of a workflow rebuilt around AI, Mentor Collective asks for internal agents and MCP servers, Sofi asks for adoption metrics and runbooks in regulated environments, and Ather and Xensam ask for portfolios of AI experiments [A/B · T0-62 L305, L456]. Never cite adoption claims without active-user counts or measured time saved [B/P · T0-62 L457, L867].
 
 ## Employer landscape and title confusion
@@ -129,8 +129,8 @@ Instead of one uniform engineering job, "AI Enablement Engineer" splits into **t
 
 ## Career path, India demand and market signals
 
-- **Small and falling exact-title demand:** Skillenai's direct 90-day count for `AI Enablement Engineer` fell from **57** (to 2026-09-03, already down 35% on the prior four weeks) to **42** (to 2026-11-05) — roughly **1.0%** of Skillenai's 4,139 `AI Engineer` postings [B/M · T0-62 L73, L247–L255]. Treat the exact title as a small niche rather than a primary search filter; pair applications with DevEx, internal platform engineering and [Applied AI Engineer](applied-ai-engineer.md) searches [M/P · T0-62 L89].
-- **Entry routes and seniority span wider than the scorecard suggests:** stated minimum years across 8 postings range from **0 to 10** (median 4.5 years), with junior entry at Ather (0–2 years) and Revalize (1+ years, though misleadingly tagged "Fresher" on an aggregator), mid/senior builder roles at 3–7 years (Xensam 3+, Fabletics 5+, LocalStack and Mentor Collective 7+) and Staff/Senior Staff seats (Sofi, Phorest) [A/B/M · T0-62 L253, L308–L310, L455]. The non-technical adoption lane is real (3 of 15 postings), while technical variants draw from backend, DevEx, IAM/API-gateway engineering, consulting/PM/ops (LocalStack) and low-code automation (Liquidity Services) [B/M · T0-62 L309–L310].
+- **Small and falling exact-title demand (earliest hub re-verification date: `2026-12-06`):** Skillenai's direct 90-day count for `AI Enablement Engineer` fell from **57** (to 2026-09-03, already down 35% on the prior four weeks) to **42** (to 2026-11-05, setting this hub's EGP-1.0 class V1 expiry to `2026-12-06`, the earliest among the 29 hubs) — roughly **1.0%** of Skillenai's 4,139 `AI Engineer` postings [B/M · T0-62 L73, L247–L255]. Treat the exact title as a small niche rather than a primary search filter; pair applications with DevEx, internal platform engineering and [Applied AI Engineer](applied-ai-engineer.md) searches [M/P · T0-62 L89].
+- **Entry routes and seniority span wider than Phase 0 assumed:** stated minimum years across 8 postings range from **0 to 10** (median 4.5 years), with junior entry at Ather (0–2 years) and Revalize (1+ years, though misleadingly tagged "Fresher" on an aggregator), mid/senior builder roles at 3–7 years (Xensam 3+, Fabletics 5+, LocalStack and Mentor Collective 7+) and Staff/Senior Staff seats (Sofi, Phorest) [A/B/M · T0-62 L253, L308–L310, L455]. The non-technical adoption lane is real (3 of 15 postings), while technical variants draw from backend, DevEx, IAM/API-gateway engineering, consulting/PM/ops (LocalStack) and low-code automation (Liquidity Services) [B/M · T0-62 L309–L310].
 - **Durability splits by variant:** the adoption/training variant closely tracks vendor copilot rollouts (Microsoft 365 Copilot, ChatGPT Enterprise) and looks **transitional**, consistent with the 57 → 42 decline; by contrast, the **platform and governance variant** (MCP gateways, SSO/OAuth scoping, audit controls, context engineering) sits on durable enterprise infrastructure problems [B/C · T0-62 L89–L90, L312, L450].
 - **Pay structure (owner: [pay benchmarks](../../09-compensation/pay-benchmarks.md)):** posted pay is **bimodal**, separating technical builder/platform roles from non-coding adoption leads — Fabletics' opened US builder role (5 years, Grade A) sits meaningfully above Scotiabank's adoption mirror, and a London platform-lead fintech role carries senior engineering cash plus bonus, while Levels.fyi does not track the title [A/B/E · T0-62 L75, L287–L292, L447]. Full figures sit in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 - **India and global geography:** US accounts for 10 of 15 sampled postings and Europe 3 (London, Ireland/UK remote, Stockholm); Skillenai's top nine metros (San Francisco 4, Boston 3, Barcelona/Dallas/New York/Singapore 2 each) include **no Indian metro** [B/M · T0-62 L251, L300]. India still produced 2 of 15 sampled postings: **Ather Energy** (Bengaluru, 0–2 years, portfolio of AI experiments, aggregator pay range) and **Siemens** (Bengaluru GCC, Architect/platform variant building sub-200 ms context packers for developer tools, closing 2027-01-27), with no senior India pay data found [B/C/E · T0-62 L317, L448–L449, L638–L639].

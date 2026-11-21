@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 7.5 (6.5–8.5) | M | Fast AI Jobs FDE cluster 1,007 open roles at 353 AI startups (2026-11-12, +29% vs late Jul 779); 260–1,276 across six boards (Plank 1,276, fdejobslist 391); caveat: 23/50 newest Fast AI Jobs rows are IC FDE titles, 22 adjacent strategist/GTM roles [T0-51, T0-70]. |
 | Pay | 7 (6–7.75) | B | Levels.fyi US FDE TC (2026-09-08): P25 $172K / P50 $205K / P75 $277K / P90 $350K (above US AI Engineer); Google FDE median $292K; Fast AI Jobs startup posted base median $180,656 (n=164, range $75K–$375K); international FDE beats SWE (UK GBP 139.6K, CA CA$186.3K, NL EUR 135.5K) [T0-44, T0-51]. |
-| Durability | 6.5 (5–8) | D | Judgement. Customer embedding and integration judgement; risk of drift into non-coding roles (about half the cluster is non-engineering) [T0-01 F3]. |
-| Leverage | 8.5 (7.5–9.5) | D | Judgement. Converts deployments directly into revenue and retention. |
+| Durability | 6.5 (5–8) | D | Judgement. Customer embedding and integration judgement; services-drift risk confirmed in T0-51 K7 (28% clearly non-engineering / 46% non-FDE-eng+leader; Prodapt/SnapLogic pre-sales exclusions) [T0-01 F3, T0-51]. |
+| Leverage | 8.5 (7.5–9.5) | D | Judgement. Customer-embedded deployment at OpenAI, Anthropic and Palantir converts pilots directly into enterprise revenue and retention [T0-51]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 4.5 (3–6) | C | Indeed India / IANS (2026-10-14) reported ~19x (1,807% YoY) growth in India FDE postings from a low base; verified Bengaluru/Hyderabad hiring at Palantir-style AI vendors and labs [T0-25, T0-51]. |
-| India pay | 5.5 (4–7.25) | D | No India FDE Levels.fyi title page; kept Grade D placeholder pending role-specific India TC data (top-end widened slightly to reflect Bengaluru product/lab offers) [T0-45, T0-51]. |
+| India pay | 5.5 (4.5–7) | B | Levels.fyi India FDE TC median Rs16.75L (live-verified ~Rs17.5–17.7L, P25 ~Rs16L, P75 Rs42L, B; page header US-label quirk noted), Glassdoor Bengaluru Rs17.0L mean (C) and Weekday/Bayt posted Rs25–40 LPA for 5–7 yrs (B); adjacent Bengaluru Solution Architect P50 Rs49.3L (n=179, B) [T0-45, T0-51]. |
 
 India rank (CCI with India inputs): #9 of 24.
 
@@ -54,16 +54,16 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 ## What you need
 
 - **Must (headline):** Python (production), APIs & integrations, LLM APIs & tool calling, RAG, Customer scoping & demos.
-- **Important (headline):** Retrieval quality (hybrid, reranking, recall@k), OAuth/OIDC, RBAC, SSO, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Domain expertise, Stakeholder communication.
+- **Important (headline):** Retrieval quality (hybrid, reranking, recall@k), OAuth/OIDC, RBAC, SSO, Agents & tool use, LLM evaluation (golden sets, calibrated judges, CI gates), Domain expertise, Stakeholder communication, Customer-facing communication.
 - **Full inventory:** 58 skills (Must 5 · Important 15 · Should 18 · Optional 20), each with its evidence and posting keywords: [forward-deployed-engineer.md](../../03-skills-and-tech/inventories/forward-deployed-engineer.md).
 - **Prerequisites:** One JD: 2–6 years and up to 50% travel [B · T0-01]. Only ~48% of the cluster is engineer-titled, so target those titles
-- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: services channels); Microsoft AI-103 (Azure AI apps and agents) (Optional: Azure customers; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28); Salesforce Certified Agentforce Specialist (Optional: ); Palantir AI Engineer Specialist (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** AWS Certified Generative AI Developer – Professional (AIP-C01) (Optional: services channels); Microsoft AI-103 (Azure AI apps and agents) (Optional: Azure customers; replaces AI-102 (retired 2026-06-30); status provisional pending T0-28); Salesforce Certified Agentforce Specialist (Optional: Free/proctored Salesforce Agentforce credential; useful only for Salesforce-partner FDE, SA or enablement shops (T0-31)); Palantir AI Engineer Specialist (Optional: Palantir Foundry/AIP specialist exam; relevant only for Palantir ecosystem or customer-delivery partners (T0-31)); Claude Certified Architect – Professional (CCAR-P) (Optional: Partner-gated ($175; counts for partner tiers; useful only at Claude Partner Network SI/consulting firms; FASCSA risk V0) [A COI · T0-29]); Gemini Enterprise Certified Partner Specialist – Deployment (Optional: Partner-only lab-based badge (3 skill badges, 6-mo validity); Google Cloud FDE partner prerequisite (T3-01)); Gemini Enterprise Certified Partner Specialist – Agent Development (Optional: Partner-only lab-based agent development badge (6-mo validity); Google Cloud FDE partner prerequisite (T3-01)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
 - **What the evidence asks for:** A customer pilot case study with numbers; a demo on real data shown to at least two potential users; a deployment write-up that covers failure modes
-- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (48%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (37%); [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (33%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
+- **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P11 Customer pilot / reference architecture with a cost model](../../05-portfolio/project-archetypes.md#p11) (72%); [P1 Evaluated RAG system over a real corpus](../../05-portfolio/project-archetypes.md#p1) (45%); [P2 Reliable agent: approvals, sandboxed tools, replay, failure injection](../../05-portfolio/project-archetypes.md#p2) (34%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
@@ -81,7 +81,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Applied AI Engineer](applied-ai-engineer.md) (0.43); [AI Engineer](ai-engineer.md) (0.40); [Agentic AI Engineer](agentic-ai-engineer.md) (0.31).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Applied AI Engineer](applied-ai-engineer.md) (0.43); [AI Engineer](ai-engineer.md) (0.38); [Agentic AI Engineer](agentic-ai-engineer.md) (0.29).
 - **Same family (Forward Deployment & Solutions):** [AI / GenAI Solutions Architect](ai-solutions-architect.md).
 
 ## Go deeper
@@ -155,7 +155,7 @@ Employer-published FDE interview documentation is thin: Palantir's getting-hired
 3. **AI system design and productionisation:** Evaluation, governance, trust boundaries, prompt-versus-RAG-versus-fine-tuning trade-offs, and taking a prototype into production [C · T0-51 L391, L393].
 4. **Past-project walkthrough and client judgement:** Defending an end-to-end shipped system, handling deployment delays, blocked customer security access, and stakeholder disagreement [C · T0-51 L391, L393, L395].
 
-**Correction to the Databricks loop description.** Phase 0's card notes that the Databricks AI-FDE loop tests "RAG over sensitive, fast-changing documents and evaluating a multi-agent system". Falsification searching in T0-51 found no candidate report confirming those two specific prompts: sensitive-document RAG appeared only as a prep vendor's own practice exercises, and multi-agent evaluation appeared only in job-posting preferences [C · T0-51 L76, L400, L597].
+**Correction to the Databricks loop description.** Phase 0's card noted that the Databricks AI-FDE loop tests "RAG over sensitive, fast-changing documents and evaluating a multi-agent system". Falsification searching in T0-51 found no candidate report confirming those two specific prompts: sensitive-document RAG appeared only as a prep vendor's own practice exercises, and multi-agent evaluation appeared only in job-posting preferences (ERRATA U48) [C · T0-51 L76, L400, L597].
 
 **AI-usage rules and proof of work.** Anthropic's candidate AI guidance (live-verified 2026-11-19; read in T0-53 L464) encourages refining self-written application drafts and interview prep with AI, restricts take-homes to no AI unless stated, and prohibits AI in live interviews unless explicitly permitted [A · T0-53 L244; B · T0-51 L396]. On proof of work, employers and founders ask for shipped production builds and end-to-end walkthroughs of past customer problems; Phase 0's three specific portfolio artefacts (pilot case study with numbers, demo to ≥2 users, deployment failure-mode write-up) remain untested practice guidance (`[P]`) rather than employer-named prerequisites [C/D · T0-51 L402–L409]. Practise with the [application plus customer scoping prep pack](../../08-interviewing/prep-packs.md#application-plus-customer-scoping-pack) (no model answers).
 

@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Governance, Risk & Assurance | Security, safety and governance (plane) | Verified (V) | #18 of 24 | #19 of 24 · band B · Monte Carlo rank 19 (P10–P90 17–20) | E2 Governance & assurance |
+| Governance, Risk & Assurance | Security, safety and governance (plane); planes: Product and strategy | Verified (V) | #18 of 24 | #19 of 24 · band B · Monte Carlo rank 19 (P10–P90 17–20) | E2 Governance & assurance |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -28,7 +28,7 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | Demand | 5.5 (4.5–6.5) | C | Axial 1,997–3,700 US AI-governance postings (K3 arithmetic fixed: 1,997 at ~71/wk implies ~28.1 wks, C); SANS ~430 AI GRC leads (mid-Sep 2026, B); GRC Careers 67 deduplicated [T0-61, T0-69]. |
-| Pay | 5.5 (4.5–6.5) | B | Axial median $169K; Axial reports top-of-range figures, so typical offers are lower (C) [T0-15:162]; IAPP medians $151.8K (AI governance only), $169.7K (with privacy) (B) [T0-15:130]; manager $244K, director $268K (tops of ranges) [T0-15:417]. |
+| Pay | 5.5 (4.5–6.5) | B | Deloitte US AI Governance Manager posted $134.5K–$265.1K ('not typically near top', A [T0-61]); GRC Careers US median midpoint $191K (n=34, B [T0-61]); Axial tops-of-range median $169K, Manager $244K, Director $268K (C [T0-15, T0-61]); IAPP medians $151.8K / $169.7K (B [T0-15, T0-61]); UK GBP 75K–100K and Singapore SGD 120K–150K (C [T0-61]). |
 | Durability | 6 (4.5–7.5) | D | Judgement. EU Digital Omnibus (Regulation (EU) 2026/1744, in force 2026-07-27) defers Annex III high-risk duties 16 months to 2027-12-02 (Annex I to 2028-08-02), and Colorado repealed SB 24-205, moderating near-term regulatory urgency; India DPDP Phase 2/3 (2026-11-13 / 2027-05-13) sustains APAC compliance hiring [T0-61, T0-70]. |
 | Leverage | 7 (6–8) | D | Judgement. Regulatory exposure (e.g., EU AI Act Art. 101 fines for GPAI providers of up to EUR 15m or 3%) [T0-15:233]. |
 
@@ -38,8 +38,8 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
-| India demand | 3.5 (2.5–5) | C | Alstom (Bangalore), Eaton (Pune), EXL JDs; no India count [T0-15:95, 300-302]. |
-| India pay | 5 (3.5–6.5) | D | T0-15 did not use unsourced INR ranges [T0-15:469]. |
+| India demand | 3.5 (2.5–5) | C | 4 of 21 core postings in India: Alstom Bengaluru (confirmed 2026-10-30), EY GDS, Tech Mahindra, Capco, AlphaSense and Novartis (Phase 0 Eaton/EXL not re-seen); no valid India role count [T0-61 K5]. |
+| India pay | 5 (3.5–6.5) | D | 0 employer-posted INR bands; aggregator/press estimates only (EY GDS manager Rs20–27.5L, Tech Mahindra lead Rs30–45L, press Rs10–28L specialist / Rs55–95L lead, C) [T0-15:469, T0-45, T0-61 K6]. |
 
 India rank (CCI with India inputs): #17 of 24.
 
@@ -57,7 +57,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 - **Important (headline):** Sector rules (SR 26-2, LL144, DPDP), Content provenance (EU AI Act Art. 50), Privacy law & DPO duties, Observability (OpenTelemetry traces, metrics), Python/SQL (notebook level), AI operating model & governance boards.
 - **Full inventory:** 58 skills (Must 6 · Important 20 · Should 19 · Optional 13), each with its evidence and posting keywords: [ai-governance-lead.md](../../03-skills-and-tech/inventories/ai-governance-lead.md).
 - **Prerequisites:** About 5 years all-level (median 10 years stated minimum for manager/lead/director postings in T0-61) in GRC, privacy, audit or security; domain certs first, AIGP optional [B/C · T0-15, T0-61]
-- **Credentials (tie-breakers, not skills):** IAPP Artificial Intelligence Governance Professional (AIGP) (Optional: optional; domain certifications come first); IAPP CIPP (privacy law, regional variants) (Optional: privacy-law route); IAPP CIPM (privacy programme management) (Optional: privacy-programme route); ISC2 CISSP (Optional: security route); ISACA CISA (Optional: audit route); ISACA CRISC (Optional: IT-risk route); ISACA Certified Information Security Manager (CISM) (Optional: ); ISACA Advanced in AI Security Management (AAISM) (Optional: ); ISACA Advanced in AI Risk (AAIR) (Optional: ); PECB Certified ISO/IEC 42001 Lead Auditor (Optional: ); DSCI Certified Privacy Professional (DCPP) (Optional: ). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** IAPP Artificial Intelligence Governance Professional (AIGP) (Optional: 6.6% (5/76; 7.5% merged) GRC Careers (B [COI]), 8.9% Axial US AI-gov (C), 3/9 India (B); BoK v2.1 Feb 2026; tie-breaker behind domain certs); IAPP CIPP (privacy law, regional variants) (Optional: 9.2% (7/76) GRC Careers (B [COI]), 8.2% Axial (C), 3/9 India CIPP/CIPM (B); privacy-law route (ANAB ISO 17024)); IAPP CIPM (privacy programme management) (Optional: 6.6% (5/76) GRC Careers (B [COI]), 6.8% Axial (C), 3/9 India CIPP/CIPM (B); privacy programme management); ISC2 CISSP (Optional: #1 Axial US AI-gov at 10.4% (C), 7.9% GRC Careers (B [COI]), 5/9 India (B); senior security baseline); ISACA CISA (Optional: #1 on GRC Careers AI-gov at 17.1% (13/76, B [COI]), 5.9% Axial (C), 6/9 India (B); prerequisite route for AAIA); ISACA CRISC (Optional: #3 on GRC Careers AI-gov at 11.8% (9/76, B [COI]), 6.4% Axial (C), 5/9 India (B); IT-risk governance baseline); ISACA Certified Information Security Manager (CISM) (Optional: #2 on GRC Careers AI-gov at 13.2% (10/76, B [COI]), 8.1% Axial (C), 3/9 India (B); prerequisite for AAISM/AAIR); ISACA Advanced in AI Security Management (AAISM) (Optional: ISACA Advanced in AI Security Management (launched 2025-08; $459/$599 + $50); requires CISM or CISSP (T0-34:L56, T0-60:L79)); ISACA Advanced in AI Risk (AAIR) (Optional: ISACA Advanced in AI Risk; requires CRISC/CISM/CISA/CGEIT; complements governance and model-risk roles (T0-34:L56)); PECB Certified ISO/IEC 42001 Lead Auditor (Optional: ISO/IEC 42001 audit/readiness ($599-$659 resellers or ~$2-3K bundled; 5/9 India; check 17024 vs ASTM E2659 scope; T0-34:L58, L310)); DSCI Certified Privacy Professional (DCPP) (Optional: India DPDP/privacy baseline (INR 15,000 + 18% GST = INR 17,700 via Pearson VUE; 0/9 in T0-34 India sample; T0-34:L155, L228)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
@@ -68,7 +68,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Governance.** It tests a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Governance.** It tests scoping or solutions rounds, EU AI Act, NIST AI RMF and ISO 42001 fluency, and 45–90 minute risk-assessment work samples (vendor prep guides C/D; employer-confirmed loops absent E); Responsible AI Engineer adds hybrid coding and guardrail-engineering rounds. Source: T0-14, T0-61, T1-03.
 - **Practise:** the [governance prep pack](../../08-interviewing/prep-packs.md#governance-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -81,7 +81,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) (0.36); [AI Product Manager](ai-product-manager.md) (0.19); [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) (0.15).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) (0.36); [AI Product Manager](ai-product-manager.md) (0.18); [Responsible AI / AI Governance Engineer](responsible-ai-engineer.md) (0.15).
 - **Same family (Governance, Risk & Assurance):** [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md).
 
 ## Go deeper

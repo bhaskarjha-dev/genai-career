@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Evaluation, Safety & Security | Security, safety and governance (plane); also L4 Post-training and adaptation, L3 Inference and ML platforms | Watch (W) | #22 of 24 | #22 of 24 · band C · Monte Carlo rank 22 (P10–P90 20–23) | E2 Governance & assurance |
+| Evaluation, Safety & Security | L6 Applications and deployment; also L5 Orchestration and context; planes: Security, safety and governance, Evaluation and quality | Watch (W) | #22 of 24 | #22 of 24 · band C · Monte Carlo rank 22 (P10–P90 20–23) | E2 Governance & assurance |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 2.5 (1.5–3.5) | B | Thin niche confirmed: 6 core live/in-window titles globally (Cognizant [A], SnowHeap, Experian, Accenture, Workday, Salesforce); remains Watch (W) [T0-61]. |
 | Pay | 6.5 (5.5–7.5) | B | Updated US posted bands: Workday Sr RAI Systems Eng $169K–$253K (C), Salesforce Sr/Lead Applied Scientist RAI and enterprise AI engineering bands [T0-61]. |
-| Durability | 6 (4.5–7.5) | D | Judgement. Regulation-driven (EU AI Act Annex III from 2 Dec 2027) with reversal risk [T0-15:72, 232]. |
-| Leverage | 6.5 (5.5–7.5) | D | Judgement. |
+| Durability | 6 (4.5–7.5) | D | Judgement. Regulation-driven with timeline and reversal risk: EU Reg. (EU) 2026/1744 defers Annex III to 2027-12-02 and Annex I to 2028-08-02, while US EO 14365 pushes federal pre-emption of state AI rules [T0-15:72, 232, T0-61 K35]. |
+| Leverage | 6.5 (5.5–7.5) | D | Judgement. Release-gate guardrail controls and audit-ready compliance engineering (Cognizant, SnowHeap, Workday [T0-61]). |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 3.5 (2.5–4.5) | B | 5 of 12 sampled postings in India across Cognizant (Chennai/Bengaluru/Hyderabad, A) and Accenture Bengaluru [T0-61]. |
-| India pay | 4.5 (3.5–6) | D | T0-15 deliberately did not use unsourced INR ranges [T0-15:469]. |
+| India pay | 4.5 (3.5–6) | D | 0 employer-posted INR bands; aggregator estimate Accenture Rs22–35L and press responsible-AI lead estimates Rs55–95L lack disclosed method (C) [T0-15:469, T0-45, T0-61 K34]. |
 
 India rank (CCI with India inputs): #18 of 24.
 
@@ -55,20 +55,20 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 - **Must (headline):** Python (production), ML fundamentals, Risk & compliance docs (Annex IV, model cards), LLM evaluation (golden sets, calibrated judges, CI gates).
 - **Important (headline):** Guardrails, EU AI Act / NIST AI RMF / ISO 42001, Fairness & explainability tools, Observability (OpenTelemetry traces, metrics).
-- **Full inventory:** 56 skills (Must 4 · Important 15 · Should 26 · Optional 11), each with its evidence and posting keywords: [responsible-ai-engineer.md](../../03-skills-and-tech/inventories/responsible-ai-engineer.md).
+- **Full inventory:** 56 skills (Must 4 · Important 13 · Should 26 · Optional 13), each with its evidence and posting keywords: [responsible-ai-engineer.md](../../03-skills-and-tech/inventories/responsible-ai-engineer.md).
 - **Prerequisites:** MLOps or security engineering background in a regulated firm
-- **Credentials (tie-breakers, not skills):** IAPP Artificial Intelligence Governance Professional (AIGP) (Optional: optional governance credential). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
+- **Credentials (tie-breakers, not skills):** IAPP Artificial Intelligence Governance Professional (AIGP) (Optional: 6.6% (5/76; 7.5% merged) GRC Careers (B [COI]), 8.9% Axial US AI-gov (C), 3/9 India (B); BoK v2.1 Feb 2026; tie-breaker behind domain certs); IAPP CIPT (privacy technologist) (Optional: Privacy-engineering credential (ANAB ISO 17024 per vendors); bridges technical ML and privacy compliance (T0-15, T0-34:L269)). Whether one is worth it: [credential ROI](../../04-certifications/credential-roi.md).
 - What to learn first and what to drop across roles: [skills radar](../../03-skills-and-tech/skills-radar.md); in what order: [learning roadmaps](../../03-skills-and-tech/learning-roadmaps.md).
 
 ## How to prove it
 
-- **What the evidence asks for:** A compliance packet mapped to NIST AI 600-1 and the OWASP LLM Top 10, with runtime guardrails, subgroup evals and a calibrated judge on ~100 traces
+- **What the evidence asks for:** A compliance packet mapped to NIST AI 600-1 and OWASP GenAI LLM Top 10 2026, with runtime guardrails, subgroup evals and a calibrated judge on 100-200 human labels per failure mode (T0-20 L63, L196)
 - **Project archetypes that cover the most of its Must and Important skills** (Grade M): [P20 Responsible-AI compliance packet with runtime guardrails](../../05-portfolio/project-archetypes.md#p20) (100%); [P8 Paper re-implementation with rigorous evals and a write-up](../../05-portfolio/project-archetypes.md#p8) (45%); [P4 Prompt vs RAG vs fine-tune comparison](../../05-portfolio/project-archetypes.md#p4) (45%). One project rarely covers a role; the [job-search strategy](../../06-job-search/job-search-strategy.md#the-constraints-that-bind-first) computes the smallest sets that do.
 - How verifiable the proof must be, and what to publish: [proof-of-work standards](../../05-portfolio/proof-of-work-standards.md).
 
 ## How you are interviewed
 
-- **Track: Governance.** It tests a scoping or solutions round, and fluency in the EU AI Act, NIST AI RMF and ISO 42001. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Governance.** It tests scoping or solutions rounds, EU AI Act, NIST AI RMF and ISO 42001 fluency, and 45–90 minute risk-assessment work samples (vendor prep guides C/D; employer-confirmed loops absent E); Responsible AI Engineer adds hybrid coding and guardrail-engineering rounds. Source: T0-14, T0-61, T1-03.
 - **Practise:** the [governance prep pack](../../08-interviewing/prep-packs.md#governance-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -81,12 +81,12 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Specialisations inside this role
 
-- **Content provenance** (Security, safety and governance): No title of its own in the catalog.
+- **Content provenance** (Security, safety and governance): No title of its own in the catalog (thin JD signal: 0/25 AI Security [T0-60], 0/11 Governance and 0/8 Responsible AI Engineer postings named C2PA/provenance [T0-61]).
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
 ## Related roles
 
-- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Applied AI Engineer](applied-ai-engineer.md) (0.22); [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) (0.19); [Frontier AI Safety / Alignment Researcher](ai-safety-researcher.md) (0.18).
+- **Most similar by skill overlap** (weighted overlap of tiered headline skills, Grade M): [Applied AI Engineer](applied-ai-engineer.md) (0.21); [AI Risk, Audit & Compliance Specialist](ai-risk-assurance-specialist.md) (0.19); [Frontier AI Safety / Alignment Researcher](ai-safety-researcher.md) (0.18).
 - **Same family (Evaluation, Safety & Security):** [AI Evaluation Engineer](ai-evaluation-engineer.md), [AI Security Engineer / AI Red Teamer](ai-security-engineer.md).
 
 ## Go deeper
@@ -113,9 +113,9 @@ This is a **thin, hands-on technical compliance engineering niche** — building
 - **Sharp skill-tier shifts against the scorecard above (n = 8 read postings; ±30 pp lower bounds):**
   - **LLM evaluation (`evals`) rises to Must:** named in 6 of 8 read postings (75%), making evaluation pipelines the single most consistent engineering requirement [M · T0-61 L309, L422]. Python is explicit in 3/8 and Must by evaluation-pipeline task wording [M · T0-61 L310, L422].
   - **Classic tabular explainability/fairness libraries fell to 0/8:** `Fairlearn`, `SHAP`, `LIME` and `Captum` appeared in **0 of 8** read postings (the fairness/explainability category matters, 3/8 and 1/8, rather than specific libraries), while `NeMo Guardrails` and `Giskard` appeared in only 1/8 (Cognizant nice-to-have exposure, alongside `Arize`) [A/M · T0-61 L312, L317–L320, L423, L427].
-  - **Missing from the scorecard:** **red teaming** (2/8: Cognizant, Experian), **LangChain / LangGraph** (2/8: Cognizant, SnowHeap) and **CI/CD safety-evaluation gates** (1/8, Cognizant nice-to-have) [A/M · T0-61 L322–L324, L423].
-  - **Content provenance specialisation is absent:** despite being listed on the scorecard above, C2PA and Art. 50 watermarking appeared in **0 of 8** read postings (0%) [M · T0-61 L303, L321, L448].
-- **Work footprint reality check:** read postings sit in application/deployment guardrails, evaluation pipelines (6/8) and orchestration frameworks (2/8), with 0/8 in post-training, serving or low-level infrastructure — narrower than the scorecard's L3/L4 footprint [M · T0-61 L359].
+  - **Additional technical signals in T0-61 (n = 8):** **red teaming** (2/8: Cognizant, Experian; listed under Should on the scorecard above), **LangChain / LangGraph** (2/8: Cognizant, SnowHeap) and **CI/CD safety-evaluation gates** (1/8, Cognizant nice-to-have) [A/M · T0-61 L322–L324, L423].
+  - **Content provenance specialisation is thin:** C2PA and Art. 50 watermarking appeared in **0 of 8** read postings (0%) [M · T0-61 L303, L321, L448].
+- **Work footprint reality check:** read postings sit in L6 application/deployment guardrails, the evaluation plane (6/8) and L5 orchestration frameworks (2/8), with 0/8 in post-training (L4) or serving/low-level infrastructure (L3) — reflected in the updated L6/L5 work footprint (replacing Phase 0's L3/L4 footprint) [M · T0-61 L359].
 - **Proof of work:** SnowHeap explicitly asks for GitHub repositories or code snippets showing eval harnesses, guardrails or LangSmith/LangGraph workflows, and Cognizant lists production red-team assessments and audit-ready documentation as differentiators [A/C · T0-61 L355, L636, L641]. The scorecard's specific NIST AI 600-1 + OWASP mapping on ~100 traces remains practice-curated ([P20](../../05-portfolio/project-archetypes.md#p20)) [P · T0-61 L426].
 
 ## Employer landscape and title confusion
@@ -143,7 +143,7 @@ This title is scarce globally — expect roughly **5–10 distinct live postings
 
 ## Interview themes and preparation notes
 
-The scorecard assigns this role to the `Governance` track, which is **likely incomplete**: postings explicitly require Python evaluation pipelines, guardrail design and red teaming alongside framework fluency, implying a **hybrid engineering + governance** assessment — though no role-specific employer loop or candidate report was found to confirm the exact rounds [D/E · T0-61 L348, L421, L439].
+The `Governance` track on the scorecard above notes that Responsible AI Engineer adds hybrid coding and guardrail-engineering rounds: postings explicitly require Python evaluation pipelines, guardrail design and red teaming alongside framework fluency, though no role-specific employer loop or candidate report was found to confirm the exact rounds [D/E · T0-61 L348, L421, L439].
 
 - **Only employer process retrieved:** Cognizant's opened page describes its generic pipeline (application → recruiter intro call → hiring-team interview → technical assessment or client interview for some roles → decision), and its Canada locale discloses that AI tools assist with application screening while humans make decisions [A · T0-61 L345, L817].
 - **What postings signal interviewers will probe:** designing deterministic and model-based guardrails (PII detection, prompt-injection/jailbreak defences, precision/recall trade-offs), building CI-gated LLM evaluation harnesses (golden sets, adversarial probes, bias/subgroup testing), tracing/observability and translating EU AI Act / NIST AI RMF / ISO 42001 requirements into auditable engineering artefacts [A/C/D · T0-61 L348, L636, L641].

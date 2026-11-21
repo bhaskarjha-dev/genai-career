@@ -19,7 +19,7 @@ generated_by: "scripts/build_role_hubs.py (generated blocks)"
 
 | Family | Work footprint | Evidence status | GenAI target | CCI rank | Résumé variant |
 |---|---|---|---|---|---|
-| Research | L2 Foundation models and research; also L4 Post-training and adaptation, L1 Compute and hardware | Verified (V) | #5 of 24 | #4 of 24 · band A · Monte Carlo rank 4 (P10–P90 2–6) | C1 Engineering |
+| Research | L2 Foundation models and research; also L4 Post-training and adaptation, L3 Inference and ML platforms, L1 Compute and hardware; planes: Evaluation and quality | Verified (V) | #5 of 24 | #4 of 24 · band A · Monte Carlo rank 4 (P10–P90 2–6) | C1 Engineering |
 
 Evidence status follows the [catalog's classes](../role-catalog.md#12-status-classes-for-canonical-roles). The GenAI target order and the CCI rank answer different questions: the [target order](../genai-target-roles.md) is restricted to GenAI work; the [CCI rank](../role-rankings.md) scores the role as a whole career. The work footprint is judgement (Grade D) from the [role map](../role-map.md).
 
@@ -29,8 +29,8 @@ Evidence status follows the [catalog's classes](../role-catalog.md#12-status-cla
 |---|---|:---:|---|
 | Demand | 5.5 (4.5–7) | B | Fast AI Jobs 223 Research Engineer roles (2026-11-12, up from 171; quorum-crossing candidate flagged for 2026-12-01 recount); AI Pulse 569 category count (C); Anthropic 670–674 total listings (>=30 RE page 1), OpenAI 822 via Epoch AI (2026-11-06) [T0-50, T0-70]. |
 | Pay | 9 (8–10) | B | Frontier US posted base bands (Nov 2026): Anthropic $315K–$850K, OpenAI $205K–$555K, xAI $180K–$600K, Thinking Machines $350K–$475K, DeepMind $166K–$244K, Microsoft AI IC4–IC5; equity lifts lab TC well above $500K–$1M+ [T0-44, T0-50]. |
-| Durability | 7.5 (6–9) | D | Judgement. Frontier skills (distributed training, post-training/RL infra) [T0-03 6.4 Tier 3]. |
-| Leverage | 8 (7–9) | D | Judgement. |
+| Durability | 7.5 (6–9) | D | Judgement. Frontier distributed-training and post-training infra scarcity [T0-03 Tier 3] and strong lab 2-yr retention (SignalFire: Anthropic 80%, DeepMind 78%, OpenAI 67%, B) balanced against task-automation signals (Anthropic Opus 4/4.5 take-home; METR 320-min 50% horizon, B) [T0-50 K7]. |
+| Leverage | 8 (7–9) | D | Judgement. Frontier training-run reliability, post-training recipes and research velocity at AI labs [T0-50]. |
 
 Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-method-composite-career-index-cci); the composite (CCI) is a model output (Grade M). The same inputs, with every source, are in [Appendix A](../role-rankings.md#appendix-a-scoring-inputs). Measured pay by title, city and level is in [pay benchmarks](../../09-compensation/pay-benchmarks.md).
 
@@ -39,7 +39,7 @@ Scores use the anchored rubric in [role-rankings §1](../role-rankings.md#1-meth
 | Pillar | Score (0–10: mid, range) | Grade | Basis |
 |---|---|:---:|---|
 | India demand | 2 (1–3) | C | Two verified live India RE postings (Google DeepMind Bangalore, Sarvam Bengaluru); 0 RE titles on Anthropic page 1 and Microsoft AI Bengaluru (77 listings) [T0-50]. |
-| India pay | 8 (6–9.5) | D | No India evidence. |
+| India pay | 8 (6–9.5) | D | No India evidence: 0 of 2 live India RE postings disclose pay [T0-50 K6]; adjacent Bengaluru Principal MTS outlier $192.5K USD on Levels.fyi (n=1, B adjacent) [T0-45, T0-50]. |
 
 India rank (CCI with India inputs): #10 of 24. One input (India comp) is a Grade D placeholder.
 
@@ -67,7 +67,7 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## How you are interviewed
 
-- **Track: Research.** It tests a research talk plus coding; the full research loop at frontier labs. Source: T1-03, T0-14 (first collected in the role catalog §8.2; this file is the owner).
+- **Track: Research.** It tests coding-led loops and paid work trials for Research Engineer and AI Safety roles (Anthropic Python-only coding with AI-partnership rules [A, COI], xAI 1-week loop [A], FAR.AI 72-min coding plus work trial [B]; research talk not confirmed for RE or safety), versus quiz, coding and research/past-work talk for Research Scientist (DeepMind [A], xAI [A]). Source: T0-14, T0-46, T0-50, T0-55, T0-60, T1-03.
 - **Practise:** the [research prep pack](../../08-interviewing/prep-packs.md#research-pack), plus the behavioural and coding packs.
 - Classify the loop first, then prepare by round: [interview loops](../../08-interviewing/interview-loops.md).
 
@@ -80,9 +80,9 @@ Access from each background (0–10): ● ≥7.5 is a high-volume corridor (abou
 
 ## Specialisations inside this role
 
-- **Post-training and reinforcement learning** (L4 Post-training and adaptation): Absorbed into Research Engineer (legacy title in the A–Z index).
+- **Post-training and reinforcement learning** (L4 Post-training and adaptation): Absorbed into Research Engineer (legacy title in the A–Z index; named in 55.6% of RE [T0-50], 41.7% of RS [T0-55] and 26% of AS postings [T0-52]).
 - **Synthetic data** (L4 Post-training and adaptation): No title of its own in the catalog.
-- **Pre-training at scale** (L2 Foundation models and research): Unmeasured buzzword: Foundation Model Pre-Training Engineer, role catalog §5.2.
+- **Pre-training at scale** (L2 Foundation models and research): Candidate title (ungraduated): live pre-training postings at 4 employers and Distributed Training Engineer at OpenAI/Periodic Labs in Nov 2026 [C · T0-69 K17–K18; ERRATA U38], role catalog §5.2.
 - **Reasoning models and test-time compute** (L2 Foundation models and research): Unmeasured buzzword: Reasoning Engineer, role catalog §5.2.
 - These are kinds of work, not separate titles; see the [role map](../role-map.md#specialisations-inside-canonical-roles).
 
@@ -116,7 +116,7 @@ Research Engineer / Member of Technical Staff (MTS) is the engineering half of f
 - **Evaluation fleets (5/18, 28%):** designing, running and analysing large-scale evaluations during live training runs, sitting directly on the evaluation and quality plane [A/M · T0-50 L314, L495, L499].
 - **Agents, multimodal and interpretability tooling (agents 5/18; multimodal 4/18; interpretability 1/18):** building tooling for researchers, including roles stating explicitly that no prior research experience is required (Anthropic Interpretability, asking for 5–10+ years of software engineering) [A/M · T0-50 L315–L319, L496].
 
-**Footprint and skill nuance.** Although the scorecard above places this role on L2, L4 and L1, T0-50 finds infrastructure (50% named anywhere; 22% primary) and evaluation/assurance (33% named; 11% primary) recurring across postings [M · T0-50 L324–L341]. On n = 18 (Wilson 95% intervals ±20–25 percentage points — a cross-check rather than a standalone tier override), Python (67%, 12/18) is the sole scorecard Must that appears in over half of postings; general software engineering (39%), cross-functional collaboration (39%), reinforcement learning (39%), ambiguity/pragmatism (33%), evaluations (33%), JAX/TPU (33%) and post-training (33%) outrank explicit PyTorch (28%, 5/18), deep learning (22%, 4/18), data structures and algorithms (6%, 1/18 — Google DeepMind Bangalore only), FSDP (0/18) and PyTorch internals (0/18) [M · T0-50 L64, L187–L232]. Treat DSA as an interview skill rather than a job-description keyword [M · T0-50 L84, L232].
+**Footprint and skill nuance.** Revising Phase 0's L2/L4/L1 footprint (reflected in the expanded L2/L4/L3/L1 plus evaluation-plane scorecard above), T0-50 finds infrastructure (50% named anywhere; 22% primary) and evaluation/assurance (33% named; 11% primary) recurring across postings [M · T0-50 L324–L341]. On n = 18 (Wilson 95% intervals ±20–25 percentage points — a cross-check rather than a standalone tier override), Python (67%, 12/18) is the sole scorecard Must that appears in over half of postings; general software engineering (39%), cross-functional collaboration (39%), reinforcement learning (39%), ambiguity/pragmatism (33%), evaluations (33%), JAX/TPU (33%) and post-training (33%) outrank explicit PyTorch (28%, 5/18), deep learning (22%, 4/18), data structures and algorithms (6%, 1/18 — Google DeepMind Bangalore only), FSDP (0/18) and PyTorch internals (0/18) [M · T0-50 L64, L187–L232]. Treat DSA as an interview skill rather than a job-description keyword [M · T0-50 L84, L232].
 
 **Proof and credentials.** Zero of 18 postings name any certification [M · T0-50 L289]. Instead, application forms ask for an achievement statement ("the technical achievement you're most proud of" at Anthropic; a 100-word "statement of exceptional work" at xAI), a team-specific motivation essay (200–400 words at Anthropic) and optional Google Scholar or GitHub links (5/18 postings) [A · T0-50 L183, L285, L352]. Preferred qualifications name upstream open-source ML infrastructure (PyTorch, XLA, Megatron-LM, DeepSpeed; plus SGLang and vLLM in Thinking Machines' uncoded Inference posting) [A · T0-50 L285, L503, L661].
 
@@ -148,7 +148,7 @@ Title choice reflects employer convention rather than work content [A/B · T0-50
 
 ## Interview themes and preparation notes
 
-Employer-authored process descriptions for Research Engineer roles are **coding- and applied-problem-solving-led**, revising the scorecard's "research talk plus coding" summary [A/C · T0-50 L68, L281]. A formal short research talk is documented only for Google DeepMind Research Scientist loops in an undated blog post (likely pre-2023) [A, old · T0-50 L68, L274, L475].
+Employer-authored process descriptions for Research Engineer roles are **coding- and applied-problem-solving-led**, revising Phase 0's narrower "research talk plus coding" summary [A/C · T0-50 L68, L281]. A formal short research talk is documented only for Google DeepMind Research Scientist loops in an undated blog post (likely pre-2023) [A, old · T0-50 L68, L274, L475].
 
 | Employer | Reported rounds and focus | Candidate AI-tool policy | Grade |
 |---|---|---|---|

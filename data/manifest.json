@@ -9,17 +9,27 @@
    "content_type": "index",
    "stage": 0,
    "status": "published",
-   "last_verified": "2026-11-05",
-   "summary": "Index of stage 00 (start-here tools): the workbook, glossary and tool catalog that help at every stage of a GenAI career search, plus a personal script that turns your skill ratings into a gap report.",
+   "last_verified": "2026-11-19",
+   "summary": "Index of stage 00 (start-here tools): the workbook, glossary and 291-tool catalog that help at every stage of a GenAI career search, plus a personal script that turns your skill ratings into a gap report.",
    "sources": [
     "T0-06",
-    "T0-10"
+    "T0-10",
+    "T0-19",
+    "T0-23",
+    "T0-26",
+    "T0-27",
+    "T0-43",
+    "T0-47",
+    "T0-67",
+    "T0-68",
+    "T1-02"
    ],
    "headings": [
     "In this folder",
+    "Cross-stage generated catalogs and directories",
     "Personal tool: skill-gap analysis",
     "Planned",
-    "Evidence to read now"
+    "Evidence to read"
    ]
   },
   {
@@ -50,14 +60,38 @@
     "T0-16",
     "T0-17",
     "T0-18",
-    "T1-03",
-    "T2-01",
+    "T0-19",
+    "T0-21",
+    "T0-23",
+    "T0-26",
+    "T0-27",
+    "T0-29",
+    "T0-30",
+    "T0-32",
+    "T0-34",
+    "T0-35",
     "T0-37",
+    "T0-38",
     "T0-39",
+    "T0-40",
+    "T0-41",
+    "T0-42",
     "T0-43",
+    "T0-44",
+    "T0-45",
     "T0-46",
     "T0-47",
-    "T0-61"
+    "T0-58",
+    "T0-61",
+    "T0-64",
+    "T0-65",
+    "T0-66",
+    "T0-67",
+    "T0-68",
+    "T0-69",
+    "T0-70",
+    "T1-03",
+    "T2-01"
    ],
    "roles": [
     "all"
@@ -101,9 +135,9 @@
    "content_type": "tool",
    "stage": 0,
    "status": "published",
-   "last_verified": "2026-11-06",
+   "last_verified": "2026-11-19",
    "review_by": "2027-01-10",
-   "summary": "A step-by-step workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors, score a shortlist, place it in primary, adjacent and stretch rings, and write a 90-day plan judged by gate G1, recording your answers in your own career repository.",
+   "summary": "Step-by-step workbook from point zero to a ranked target list: score readiness on 12 skills, set constraints and a pay floor against measured anchors across nine routes, place targets in three rings, and write a 90-day plan judged by gate G1.",
    "sources": [
     "T0-06",
     "T0-17",
@@ -111,7 +145,20 @@
     "T0-10",
     "T0-01",
     "T0-09",
-    "T0-13"
+    "T0-13",
+    "T0-24",
+    "T0-25",
+    "T0-45",
+    "T0-46",
+    "T0-51",
+    "T0-53",
+    "T0-54",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-67",
+    "T0-70",
+    "T2-01"
    ],
    "roles": [
     "all"
@@ -151,7 +198,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2026-12-22",
-   "summary": "243 external career tools and platforms across the lifecycle, each with a verdict (use, use with care, avoid, watch), the evidence behind it, its source and the date it was checked.",
+   "summary": "291 external career tools and platforms across the lifecycle, each with a verdict (use, use with care, avoid, watch), the evidence behind it, its source and the date it was checked.",
    "sources": [
     "T0-02",
     "T0-04",
@@ -196,6 +243,7 @@
     "T0-55",
     "T0-56",
     "T0-58",
+    "T0-60",
     "T0-61",
     "T0-63",
     "T0-64",
@@ -204,6 +252,7 @@
     "T0-68",
     "T0-69",
     "T0-71",
+    "T1-02",
     "T1-03"
    ],
    "tags": [
@@ -214,6 +263,7 @@
    "generated_by": "scripts/build_tool_catalog.py",
    "headings": [
     "How to read the verdicts",
+    "Data hygiene and security policy (T0-10)",
     "At a glance",
     "Tools by stage",
     "The avoid list",
@@ -268,8 +318,12 @@
     "T0-26",
     "T0-27",
     "T0-35",
+    "T0-36",
+    "T0-58",
+    "T0-64",
     "T0-69",
-    "T0-70"
+    "T0-70",
+    "T1-02"
    ],
    "headings": [
     "In this folder",
@@ -298,7 +352,12 @@
     "T0-14",
     "T0-15",
     "T0-16",
+    "T0-34",
     "T0-57",
+    "T0-58",
+    "T0-62",
+    "T0-64",
+    "T0-66",
     "T0-69",
     "T0-70",
     "T2-01"
@@ -355,13 +414,19 @@
     "T0-16",
     "T0-17",
     "T0-18",
-    "T1-03",
+    "T0-21",
     "T0-24",
     "T0-25",
     "T0-27",
+    "T0-36",
+    "T0-44",
+    "T0-45",
+    "T0-46",
+    "T0-61",
     "T0-67",
     "T0-70",
-    "T0-71"
+    "T0-71",
+    "T1-03"
    ],
    "roles": [
     "all"
@@ -407,6 +472,77 @@
    ]
   },
   {
+   "path": "career/01-landscape/hype-register.md",
+   "id": "landscape.hype-register",
+   "title": "GenAI Career Hype Register: Circulating Claims Checked Against Evidence",
+   "content_type": "reference",
+   "stage": 1,
+   "status": "published",
+   "last_verified": "2026-11-19",
+   "review_by": "2026-12-03",
+   "summary": "Decision D-012 Hype Register: 19 boom and doom claims about GenAI careers that the research sessions traced, tested or corrected, each with its origin, the measured evidence and a decision rule.",
+   "sources": [
+    "T1-02",
+    "T0-01",
+    "T0-02",
+    "T0-03",
+    "T0-04",
+    "T0-05",
+    "T0-08",
+    "T0-12",
+    "T0-16",
+    "T0-18",
+    "T0-21",
+    "T0-22",
+    "T0-23",
+    "T0-26",
+    "T0-30",
+    "T0-34",
+    "T0-37",
+    "T0-39",
+    "T0-48",
+    "T0-50",
+    "T0-53",
+    "T0-55",
+    "T0-60",
+    "T0-65",
+    "T0-66",
+    "T0-67",
+    "T0-68",
+    "T0-69",
+    "T0-70",
+    "T0-71"
+   ],
+   "roles": [
+    "all"
+   ],
+   "geos": [
+    "global",
+    "us",
+    "india",
+    "uk",
+    "eu"
+   ],
+   "tags": [
+    "hype-register",
+    "evidence",
+    "myth-busting",
+    "egp-1-0",
+    "d-012"
+   ],
+   "headings": [
+    "Claim-archaeology rules (T1-02 H0–H9)",
+    "At a glance",
+    "1. Macro AI impact, productivity and entry-level jobs",
+    "2. Hiring tactics, credentials, bootcamps and fellowships",
+    "3. Skills, titles, frameworks and protocols",
+    "4. Pay, leadership, independent work and immigration",
+    "Prediction register seed (T1-02 §10.9)",
+    "Evidence and limits",
+    "Next steps"
+   ]
+  },
+  {
    "path": "career/01-landscape/market-overview.md",
    "id": "landscape.market-overview",
    "title": "The GenAI Job Market in November 2026: What It Looks Like and What It Means for You",
@@ -428,9 +564,14 @@
     "T0-15",
     "T0-16",
     "T0-17",
+    "T0-24",
     "T0-35",
     "T0-36",
     "T0-43",
+    "T0-45",
+    "T0-58",
+    "T0-61",
+    "T0-64",
     "T0-67",
     "T0-69",
     "T0-70"
@@ -481,10 +622,22 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2026-11-28",
-   "summary": "47 vetted GenAI target employers grouped by employer type with ATS platforms, public board URLs, sponsorship evidence, India presence and 7 official sponsor registers.",
+   "summary": "95 vetted GenAI target employers grouped by employer type with ATS platforms, public board URLs, sponsorship evidence, India presence and 7 official sponsor registers.",
    "sources": [
     "T0-24",
-    "T0-27"
+    "T0-27",
+    "T0-43",
+    "T0-45",
+    "T0-50",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-56",
+    "T0-60",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-70"
    ],
    "roles": [
     "all"
@@ -1722,7 +1875,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2026-12-06",
-   "summary": "All 29 canonical GenAI roles and 406 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index.",
+   "summary": "All 29 canonical GenAI roles and 418 classified job titles: role profiles, evidence status and volumes, aliases, the quarantine register of speculative titles, and an A-Z title index.",
    "sources": [
     "T0-01",
     "T0-02",
@@ -1777,12 +1930,33 @@
    "content_type": "reference",
    "stage": 2,
    "status": "published",
-   "last_verified": "2026-11-05",
+   "last_verified": "2026-11-19",
    "summary": "Where each GenAI role's work sits: six stack layers from compute to applications, four cross-cutting planes, every role's footprint, the specialisations inside roles, and how to choose a direction. A map, not a pay model.",
    "sources": [
     "T0-01",
     "T0-03",
+    "T0-06",
     "T0-14",
+    "T0-46",
+    "T0-48",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66",
     "T1-03"
    ],
    "generated_by": "scripts/build_role_map.py",
@@ -1896,8 +2070,10 @@
     "T0-13",
     "T0-06",
     "T0-11",
+    "T0-32",
     "T0-62",
-    "T0-69"
+    "T0-69",
+    "T3-01"
    ],
    "roles": [
     "agentic-ai-engineer",
@@ -2159,7 +2335,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Every skill an AI Product Manager needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "summary": "Every skill an AI Product Manager needs: 48 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-product-manager"
    ],
@@ -2234,7 +2410,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Every skill an AI Security Engineer / AI Red Teamer needs: 49 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "summary": "Every skill an AI Security Engineer / AI Red Teamer needs: 50 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ai-security-engineer"
    ],
@@ -2326,6 +2502,31 @@
    ]
   },
   {
+   "path": "career/03-skills-and-tech/inventories/chief-ai-officer.md",
+   "id": "skills.inventory.chief-ai-officer",
+   "title": "Chief AI Officer: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-19",
+   "review_by": "2027-02-17",
+   "summary": "Every skill a Chief AI Officer needs: 25 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "chief-ai-officer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
    "path": "career/03-skills-and-tech/inventories/domain-evaluation-specialist.md",
    "id": "skills.inventory.domain-evaluation-specialist",
    "title": "Domain Evaluation Specialist / AI Trainer: Complete Skill Inventory",
@@ -2376,6 +2577,31 @@
    ]
   },
   {
+   "path": "career/03-skills-and-tech/inventories/fractional-ai-leader.md",
+   "id": "skills.inventory.fractional-ai-leader",
+   "title": "Fractional AI Leader: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-19",
+   "review_by": "2027-02-17",
+   "summary": "Every skill a Fractional AI Leader needs: 24 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "fractional-ai-leader"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
    "path": "career/03-skills-and-tech/inventories/gpu-kernel-engineer.md",
    "id": "skills.inventory.gpu-kernel-engineer",
    "title": "GPU Kernel / ML Compiler Engineer: Complete Skill Inventory",
@@ -2384,9 +2610,34 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Every skill a GPU Kernel / ML Compiler Engineer needs: 45 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "summary": "Every skill a GPU Kernel / ML Compiler Engineer needs: 47 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "gpu-kernel-engineer"
+   ],
+   "generated_by": "scripts/build_skills.py",
+   "headings": [
+    "1. Typed inventory",
+    "2. Avoid",
+    "3. Types that do not apply",
+    "4. Credentials (tie-breakers, not skills)",
+    "5. Prerequisites and proof",
+    "6. Keywords to mirror (only when true)",
+    "7. Self-assessment (Must and Important)",
+    "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/inventories/independent-ai-consultant.md",
+   "id": "skills.inventory.independent-ai-consultant",
+   "title": "Independent AI Consultant / Contract Builder: Complete Skill Inventory",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-19",
+   "review_by": "2027-02-17",
+   "summary": "Every skill an Independent AI Consultant / Contract Builder needs: 33 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "roles": [
+    "independent-ai-consultant"
    ],
    "generated_by": "scripts/build_skills.py",
    "headings": [
@@ -2434,7 +2685,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 84 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "summary": "Every skill a Machine Learning Engineer (GenAI/LLM track) needs: 85 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "ml-engineer"
    ],
@@ -2484,7 +2735,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Every skill a Physical AI / Robotics AI Engineer needs: 40 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "summary": "Every skill a Physical AI / Robotics AI Engineer needs: 43 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "physical-ai-engineer"
    ],
@@ -2578,13 +2829,13 @@
   {
    "path": "career/03-skills-and-tech/inventories/vp-head-of-ai.md",
    "id": "skills.inventory.vp-head-of-ai",
-   "title": "VP / Head of AI / CAIO: Complete Skill Inventory",
+   "title": "VP / Head of AI: Complete Skill Inventory",
    "content_type": "reference",
    "stage": 3,
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Every skill a VP / Head of AI / CAIO needs: 41 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
+   "summary": "Every skill a VP / Head of AI needs: 42 skills typed and tiered (Must to Avoid) with evidence, posting keywords, credentials and a 0-3 self-assessment.",
    "roles": [
     "vp-head-of-ai"
    ],
@@ -2598,6 +2849,50 @@
     "6. Keywords to mirror (only when true)",
     "7. Self-assessment (Must and Important)",
     "8. Evidence and notes"
+   ]
+  },
+  {
+   "path": "career/03-skills-and-tech/learning-resources.md",
+   "id": "skills.learning-resources",
+   "title": "Rated GenAI Learning Resources Catalogue: Courses, Docs, Books and Paid Programmes",
+   "content_type": "reference",
+   "stage": 3,
+   "status": "published",
+   "last_verified": "2026-11-19",
+   "review_by": "2027-02-11",
+   "summary": "60 sceptically rated GenAI learning resources (52 from T0-68 plus 8 primary technical specifications) mapped to all 12 role families with rubric scores, refund checks, COI flags and hard gates.",
+   "sources": [
+    "T0-13",
+    "T0-16",
+    "T0-21",
+    "T0-68",
+    "T0-69"
+   ],
+   "roles": [
+    "all"
+   ],
+   "geos": [
+    "global",
+    "india"
+   ],
+   "tags": [
+    "learning",
+    "resources",
+    "courses",
+    "books",
+    "bootcamps",
+    "gpu-compute",
+    "evals"
+   ],
+   "generated_by": "scripts/build_learning_resources.py",
+   "headings": [
+    "How to read this catalogue",
+    "At a glance",
+    "Minimal sets by role family",
+    "Resources by role family",
+    "Paid programmes, cohorts and refund checks",
+    "Evidence and limits",
+    "Next steps"
    ]
   },
   {
@@ -2620,9 +2915,13 @@
     "T0-14",
     "T0-15",
     "T0-16",
+    "T0-21",
     "T2-01",
     "T0-29",
     "T0-30",
+    "T0-64",
+    "T0-65",
+    "T0-66",
     "T0-67",
     "T0-68",
     "T0-69",
@@ -2673,7 +2972,7 @@
    "content_type": "index",
    "stage": 3,
    "status": "published",
-   "last_verified": "2026-11-04",
+   "last_verified": "2026-11-19",
    "review_by": "2027-01-21",
    "summary": "Index of the complete typed skill inventory per role, with cross-role views for universal and family resumes, the tier decisions, verification, and the requirements and tier rule behind the skills ontology.",
    "sources": [
@@ -2683,6 +2982,26 @@
     "T0-14",
     "T0-15",
     "T0-16",
+    "T0-48",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66",
+    "T0-69",
     "T1-03"
    ],
    "generated_by": "scripts/build_skills.py (generated blocks)",
@@ -2706,7 +3025,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "Narrative skill map for every role: practice notes from the evidence, tools in use with their October 2026 status, proof of work, interview track, typical gaps and entry routes. Each role's skills and tiers are in its generated inventory.",
+   "summary": "Narrative skill map for every role: practice notes from the evidence, tools in use with their November 2026 status, proof of work, interview track, typical gaps and entry routes. Each role's skills and tiers are in its generated inventory.",
    "sources": [
     "T0-03",
     "T0-06",
@@ -2714,6 +3033,30 @@
     "T0-14",
     "T0-15",
     "T0-16",
+    "T0-20",
+    "T0-34",
+    "T0-46",
+    "T0-48",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66",
+    "T0-68",
+    "T0-69",
     "T1-03"
    ],
    "headings": [
@@ -2723,7 +3066,7 @@
     "2. What Postings Actually Ask For",
     "3. Skill Maps by Role",
     "4. Skill × Role Matrices",
-    "5. Volatile Tool and Credential Registry (status as of October 2026)",
+    "5. Volatile Tool and Credential Registry (status as of November 2026)",
     "6. Suggested Learning Order by Background"
    ]
   },
@@ -2773,14 +3116,20 @@
    "content_type": "reference",
    "stage": 3,
    "status": "published",
-   "last_verified": "2026-11-04",
+   "last_verified": "2026-11-19",
    "review_by": "2027-01-21",
    "summary": "Every skill in the ontology, typed (concept, method, language, framework, tool, platform, non-technical), with posting wording, relations, alternatives, status and corpus mentions.",
    "sources": [
     "T0-03",
     "T0-11",
     "T0-15",
-    "T0-16"
+    "T0-16",
+    "T0-29",
+    "T0-31",
+    "T0-32",
+    "T0-34",
+    "T0-68",
+    "T0-69"
    ],
    "generated_by": "scripts/build_skills.py (generated blocks)",
    "headings": [
@@ -2802,7 +3151,8 @@
    "stage": 4,
    "status": "published",
    "last_verified": "2026-11-19",
-   "summary": "Index of stage 04 (certifications): whether a certificate is worth it, the 150-credential ranked catalog across channel lenses and role families, and the role-by-credential map.",
+   "review_by": "2027-01-21",
+   "summary": "Index of stage 04 (certifications): whether a certificate is worth it, the 194-credential ranked catalog across channel lenses and role families, and the role-by-credential map.",
    "sources": [
     "T0-11",
     "T0-15",
@@ -2811,6 +3161,7 @@
     "T0-31",
     "T0-32",
     "T0-34",
+    "T0-58",
     "T3-01",
     "T3-02"
    ],
@@ -2829,7 +3180,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2026-12-03",
-   "summary": "150 vetted GenAI, ML, infrastructure, enterprise-platform and governance credentials (132 active), ranked across three channel lenses, eight role families and a cost/hour collector list with Monte Carlo intervals.",
+   "summary": "194 vetted GenAI, ML, infrastructure, enterprise-platform and governance credentials (174 active), ranked across three channel lenses, eight role families and a cost/hour collector list with Monte Carlo intervals.",
    "sources": [
     "T0-11",
     "T0-29",
@@ -2837,6 +3188,7 @@
     "T0-31",
     "T0-32",
     "T0-34",
+    "T0-58",
     "T3-01",
     "T3-02"
    ],
@@ -2867,7 +3219,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2026-12-03",
-   "summary": "Whether a certificate is worth it for your target role and hiring channel, access gates, knowledge-overlap sequencing, per-issuer deep dives across 150 vetted credentials, how to show one on a résumé and when to stop.",
+   "summary": "Whether a certificate is worth it for your target role and hiring channel, access gates, Waves 1–6 sequencing and Decision Gates G0–G4, voucher arbitrage, per-issuer deep dives across 194 vetted credentials, how to show one and when to stop.",
    "sources": [
     "T0-11",
     "T0-15",
@@ -2879,6 +3231,7 @@
     "T0-31",
     "T0-32",
     "T0-34",
+    "T0-58",
     "T3-01",
     "T3-02"
    ],
@@ -2917,7 +3270,7 @@
     "The short answer",
     "At a glance",
     "The decision rule: three conditions and one cap",
-    "Access gating, FDE ladders and knowledge-overlap sequencing",
+    "Access gating, FDE ladders, Waves 1–6 sequencing and Decision Gates",
     "Per-issuer deep dives (RP2 reconciliation)",
     "Which one: persona × channel",
     "What it costs and what it must return",
@@ -2949,10 +3302,13 @@
     "T0-32",
     "T0-34",
     "T0-54",
+    "T0-58",
     "T0-59",
-    "T0-60",
     "T0-61",
     "T0-62",
+    "T0-63",
+    "T0-65",
+    "T0-66",
     "T3-01",
     "T3-02"
    ],
@@ -3001,12 +3357,32 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-17",
-   "summary": "The 20 proof-of-work project archetypes as build cards: the problem, the steps, the evidence to publish, the verifiability target, effort, the interviews each prepares for, pitfalls, and the roles it covers.",
+   "summary": "The 21 proof-of-work project archetypes as build cards: the problem, the steps, the evidence to publish, the verifiability target, effort, the interviews each prepares for, pitfalls, and the roles it covers.",
    "sources": [
+    "T0-03",
+    "T0-05",
+    "T0-06",
     "T0-13",
     "T0-14",
-    "T0-05",
-    "T0-06"
+    "T0-15",
+    "T0-16",
+    "T0-20",
+    "T0-50",
+    "T0-51",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-66",
+    "T0-68",
+    "T0-69",
+    "T2-01"
    ],
    "tags": [
     "portfolio",
@@ -3032,19 +3408,21 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-01-19",
-   "summary": "What a GenAI portfolio must show to be believed at your target level: the verifiability ladder (V0–V3), the 15 artefacts by tier, the nine anti-portfolio patterns and their fixes, how many projects to keep, and how to harden a public demo.",
+   "summary": "What a GenAI portfolio must show to be believed at your target level: the verifiability ladder (V0–V3), the 15 artefacts by tier, nine anti-portfolio patterns, open-source employer-domain commit map, the public micro-audit operating system with legal guardrails and break-even effort math, and demo hardening.",
    "sources": [
     "T0-13",
     "T0-20",
     "T2-01",
     "T0-06",
-    "T0-05"
+    "T0-05",
+    "T0-68"
    ],
    "roles": [
     "all"
    ],
    "geos": [
-    "global"
+    "global",
+    "india"
    ],
    "tags": [
     "portfolio",
@@ -3056,7 +3434,8 @@
     "demo-hardening",
     "anti-portfolio",
     "open-source",
-    "github"
+    "github",
+    "micro-audit"
    ],
    "headings": [
     "The short answer",
@@ -3067,6 +3446,8 @@
     "How a reviewer reads a repo",
     "Live demos: replay-first, capped, dated",
     "Systems depth on a modest budget",
+    "Open-source contribution economics and employer-domain repo map (T0-05)",
+    "Public technical micro-audit operating system (T0-05)",
     "How to do it",
     "Templates and examples",
     "Checklist",
@@ -3088,11 +3469,15 @@
     "T0-04",
     "T0-05",
     "T0-10",
+    "T0-19",
+    "T0-21",
+    "T0-22",
     "T0-23",
     "T0-24",
     "T0-25",
     "T0-26",
     "T0-27",
+    "T0-46",
     "T0-47"
    ],
    "headings": [
@@ -3117,6 +3502,7 @@
     "T0-06",
     "T0-10",
     "T1-03",
+    "T0-21",
     "T0-24",
     "T0-26",
     "T0-46"
@@ -3176,6 +3562,8 @@
    "sources": [
     "T0-47",
     "T0-23",
+    "T0-26",
+    "T0-19",
     "T0-04",
     "T0-10",
     "T0-11",
@@ -3239,9 +3627,12 @@
     "T0-12",
     "T0-01",
     "T0-05",
+    "T0-21",
+    "T0-22",
     "T0-24",
     "T0-25",
-    "T0-26"
+    "T0-26",
+    "T0-27"
    ],
    "roles": [
     "all"
@@ -3355,14 +3746,35 @@
    "content_type": "reference",
    "stage": 6,
    "status": "published",
-   "last_verified": "2026-11-04",
+   "last_verified": "2026-11-19",
+   "review_by": "2027-02-17",
    "summary": "The concise skills section for every role (Must / Important / Should / Optional headline skills), shared skills across roles, and a skills-section blueprint per resume variant.",
    "sources": [
     "T0-03",
     "T0-04",
     "T0-10",
     "T0-11",
-    "T0-13"
+    "T0-13",
+    "T0-48",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66",
+    "T0-69"
    ],
    "generated_by": "scripts/build_resume_matrix.py (generated blocks)",
    "headings": [
@@ -3391,6 +3803,9 @@
     "T0-01",
     "T0-06",
     "T0-23",
+    "T0-24",
+    "T0-26",
+    "T0-46",
     "T1-03"
    ],
    "roles": [
@@ -3434,6 +3849,7 @@
     "T0-20",
     "T0-21",
     "T0-22",
+    "T0-27",
     "T0-12",
     "T0-05",
     "T0-04",
@@ -3443,7 +3859,7 @@
    "headings": [
     "In this folder",
     "Planned",
-    "Evidence to read now"
+    "Evidence to read"
    ]
   },
   {
@@ -3505,9 +3921,10 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2026-12-03",
-   "summary": "Evidence-graded directory of 16 AI fellowships, residencies and open-source mentorships: work-authorisation gates, visa support, stipends, COI-flagged outcomes, preparation and stale-page traps.",
+   "summary": "Evidence-graded directory of 17 AI fellowships, residencies and open-source mentorships: work-authorisation gates, visa support, stipends, COI-flagged outcomes, preparation and stale-page traps.",
    "sources": [
     "T0-21",
+    "T0-05",
     "T0-12",
     "T0-06",
     "T2-01"
@@ -3519,7 +3936,9 @@
     "applied-scientist",
     "ml-engineer",
     "ai-evaluation-engineer",
-    "ai-engineer"
+    "ai-engineer",
+    "inference-engineer",
+    "ai-infrastructure-engineer"
    ],
    "geos": [
     "global",
@@ -3539,13 +3958,14 @@
     "mats",
     "spar",
     "anthropic-fellows",
+    "radixark",
     "lfx",
     "gsoc"
    ],
    "headings": [
     "The short answer",
     "At a glance",
-    "Complete programme directory (16 programmes, audited November 2026)",
+    "Complete programme directory (17 programmes, audited October–November 2026)",
     "How to choose and prepare",
     "Templates and examples",
     "Checklist",
@@ -3617,6 +4037,7 @@
    "sources": [
     "T0-20",
     "T0-19",
+    "T0-21",
     "T0-13",
     "T0-12",
     "T0-05",
@@ -3673,7 +4094,8 @@
     "T0-04",
     "T0-12",
     "T0-20",
-    "T0-21"
+    "T0-21",
+    "T0-27"
    ],
    "roles": [
     "all"
@@ -3708,6 +4130,7 @@
     "Referral economics, ATS mechanics and yield per hour",
     "Outreach law pointers across seven jurisdictions",
     "Contact tools, sending hygiene and recruiter scams",
+    "Public micro-audits: rubric, recipes and legal envelope",
     "The open-source route (when it earns hours)",
     "How to do it",
     "Templates and examples",
@@ -3730,7 +4153,26 @@
     "T0-46",
     "T0-47",
     "T0-14",
-    "T1-03"
+    "T1-03",
+    "T0-48",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66"
    ],
    "headings": [
     "In this folder",
@@ -3753,7 +4195,10 @@
     "T1-03",
     "T0-14",
     "T0-09",
-    "T0-04"
+    "T0-04",
+    "T0-60",
+    "T0-65",
+    "T0-66"
    ],
    "roles": [
     "all"
@@ -3807,7 +4252,13 @@
     "T0-47",
     "T1-03",
     "T0-14",
-    "T0-03"
+    "T0-03",
+    "T0-49",
+    "T0-50",
+    "T0-52",
+    "T0-56",
+    "T0-57",
+    "T0-63"
    ],
    "roles": [
     "ai-engineer",
@@ -3854,17 +4305,36 @@
   {
    "path": "career/08-interviewing/employer-interview-loops.md",
    "id": "interviewing.employer-interview-loops",
-   "title": "Employer Interview Loops: 27 Employers, AI Policies, Take-Homes, In-Person Rules and Timelines",
+   "title": "Employer Interview Loops: 61 Employers, AI Policies, Take-Homes, In-Person Rules and Timelines",
    "content_type": "reference",
    "stage": 8,
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-02-11",
-   "summary": "Per-employer interview loop structures across 27 frontier labs, Big Tech, AI-native startups, banks, consultancies and India or IT-services firms, with per-cell sources, AI-assistant policies, take-homes, in-person rules, research loops and timelines.",
+   "summary": "Per-employer interview loops across 61 frontier labs, Big Tech, AI-native startups, inference clouds, safety and robotics labs, banks, consultancies, India/IT-services firms and expert platforms, with AI policies, take-homes and timelines.",
    "sources": [
+    "T0-14",
     "T0-46",
     "T0-47",
-    "T0-14"
+    "T0-48",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-52",
+    "T0-53",
+    "T0-54",
+    "T0-55",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
+    "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66"
    ],
    "roles": [
     "all"
@@ -3880,6 +4350,7 @@
     "take-home",
     "in-person",
     "research-loops",
+    "robot-learning",
     "india",
     "timelines",
     "frontier-labs",
@@ -3887,14 +4358,18 @@
    ],
    "headings": [
     "Frontier AI labs",
-    "Big Tech",
-    "AI-native startups and data platforms",
+    "Big Tech and global tech platforms",
+    "AI-native startups, data platforms and enterprise software",
+    "Inference clouds and GPU neoclouds",
+    "Safety, research and non-profit organisations",
+    "Physical AI and robotics labs",
     "Banks and consultancies",
-    "India and IT-services employers",
+    "India, public-sector executive and IT-services employers",
+    "Expert, trainer and fractional platforms",
     "AI-assistant policies by employer and stage",
     "In-person rounds and integrity rules",
-    "Take-home assignments",
-    "Research loops",
+    "Take-home assignments and paid work trials",
+    "Research and safety loops",
     "Reported timelines",
     "Source conflicts kept",
     "Evidence and limits",
@@ -3910,7 +4385,7 @@
    "status": "published",
    "last_verified": "2026-11-19",
    "review_by": "2027-01-19",
-   "summary": "How GenAI interview loops are structured across 27 employers, how to classify yours before preparing, what each round tests, AI-assistant and in-person policies, take-homes, debriefs and recruiter templates.",
+   "summary": "How GenAI interview loops are structured across 61 employers, how to classify yours before preparing, what each round tests, AI-assistant and in-person policies, take-homes, debriefs and recruiter templates.",
    "sources": [
     "T0-46",
     "T0-47",
@@ -3919,7 +4394,19 @@
     "T0-06",
     "T0-09",
     "T0-04",
-    "T0-13"
+    "T0-13",
+    "T0-49",
+    "T0-50",
+    "T0-51",
+    "T0-53",
+    "T0-56",
+    "T0-57",
+    "T0-60",
+    "T0-61",
+    "T0-63",
+    "T0-64",
+    "T0-65",
+    "T0-66"
    ],
    "roles": [
     "all"
@@ -3946,7 +4433,7 @@
    "headings": [
     "The short answer",
     "At a glance",
-    "The loop map: three engineering classes and four specialist tracks",
+    "The loop map: three engineering classes and five specialist tracks",
     "How to do it",
     "Templates and examples",
     "Checklist",
@@ -3963,13 +4450,25 @@
    "stage": 8,
    "status": "published",
    "last_verified": "2026-11-19",
-   "summary": "125 practice prompts for the GenAI interview tracks, each with what a strong answer covers, the red flags interviewers note, the roles it applies to and its source; plus the 15 system-design archetypes.",
+   "summary": "161 practice prompts for the GenAI interview tracks, each with what a strong answer covers, the red flags interviewers note, the roles it applies to and its source; plus the 15 system-design archetypes.",
    "sources": [
     "T0-06",
     "T0-14",
     "T0-15",
     "T0-46",
+    "T0-50",
+    "T0-51",
+    "T0-54",
+    "T0-56",
+    "T0-57",
+    "T0-58",
+    "T0-59",
+    "T0-60",
+    "T0-61",
     "T0-62",
+    "T0-63",
+    "T0-64",
+    "T0-65",
     "T1-03",
     "T2-01"
    ],
@@ -4073,8 +4572,12 @@
     "T1-03",
     "T0-07",
     "T0-18",
+    "T0-43",
     "T0-44",
-    "T0-45"
+    "T0-45",
+    "T0-65",
+    "T0-66",
+    "T0-67"
    ],
    "headings": [
     "In this folder",
@@ -4094,6 +4597,7 @@
    "summary": "For India-based engineers paid directly by US, EU or UK clients: which structure fits which billing level, the ₹75 lakh presumptive-tax cliff (Income-tax Act 2025 s.58), GST and LUT, FEMA 2026 EDF reporting, PA-CB rails, client forms and the EOR trade-off, as dated pointers rather than tax advice.",
    "sources": [
     "T0-07",
+    "T0-17",
     "T0-43",
     "T2-01"
    ],
@@ -4294,7 +4798,10 @@
     "T0-61",
     "T0-62",
     "T0-63",
-    "T0-64"
+    "T0-64",
+    "T0-65",
+    "T0-66",
+    "T0-67"
    ],
    "roles": [
     "all"
@@ -4363,12 +4870,15 @@
    "sources": [
     "T0-09",
     "T0-17",
+    "T0-44",
+    "T0-45",
+    "T0-65",
     "T0-71"
    ],
    "headings": [
     "In this folder",
     "Planned",
-    "Evidence to read now"
+    "Evidence to read"
    ]
   },
   {
@@ -4447,6 +4957,9 @@
     "T0-09",
     "T0-12",
     "T0-06",
+    "T0-44",
+    "T0-45",
+    "T0-65",
     "T0-71"
    ],
    "roles": [
@@ -4506,6 +5019,7 @@
     "T0-08",
     "T0-18",
     "T0-15",
+    "T0-34",
     "T0-35",
     "T0-36",
     "T0-37",
@@ -4515,7 +5029,12 @@
     "T0-41",
     "T0-42",
     "T0-43",
-    "T0-67"
+    "T0-47",
+    "T0-61",
+    "T0-65",
+    "T0-66",
+    "T0-67",
+    "T0-69"
    ],
    "headings": [
     "In this folder",
@@ -4613,7 +5132,14 @@
    "sources": [
     "T0-35",
     "T0-36",
-    "T0-43"
+    "T0-37",
+    "T0-38",
+    "T0-39",
+    "T0-40",
+    "T0-41",
+    "T0-42",
+    "T0-43",
+    "T0-67"
    ],
    "roles": [],
    "geos": [
@@ -4633,12 +5159,14 @@
     "remote"
    ],
    "generated_by": "scripts/rank_countries.py",
-   "summary": "Monte Carlo rankings of 33 GenAI destination countries and 50 city snapshots across six decision lenses, generated from data/countries.json (T0-35, T0-36, T0-43).",
+   "summary": "Monte Carlo rankings of 33 GenAI destination countries and 51 city snapshots across 7 decision lenses, generated from data/countries.json (T0-35, T0-36, T0-37–T0-43, T0-67).",
    "headings": [
     "Method and pillars",
     "Lens comparison overview (all 33 countries)",
     "Detailed rankings by lens",
     "City pay, rent and disposable income snapshots",
+    "Uniform-gross tax wedge comparison (EUR 100,000 and USD 100,000)",
+    "Key comparative insights and source conflicts",
     "Access, language, time-zone overlap and incoming-worker tax regimes",
     "Appendix A: pillar score ledger",
     "Next steps"
@@ -4724,7 +5252,9 @@
     "T0-09",
     "T0-01",
     "T0-34",
-    "T0-61"
+    "T0-61",
+    "T0-65",
+    "T0-69"
    ],
    "roles": [
     "ai-governance-lead",
@@ -4784,13 +5314,15 @@
     "T0-12",
     "T0-05",
     "T2-01",
+    "T0-21",
     "T0-24",
     "T0-25",
     "T0-26",
     "T0-27",
     "T0-36",
     "T0-43",
-    "T0-45"
+    "T0-45",
+    "T0-47"
    ],
    "roles": [
     "all"
@@ -4903,7 +5435,8 @@
     "T0-07",
     "T0-18",
     "T0-35",
-    "T0-36"
+    "T0-36",
+    "T0-47"
    ],
    "roles": [],
    "geos": [
@@ -4949,12 +5482,15 @@
    "summary": "Global visa corridor comparison across 31 countries in six regions for GenAI professionals, with Indian-national depth, the central V0 contested-rule status table, and the O-1A / UK Global Talent evidence playbook. Not legal advice.",
    "sources": [
     "T0-08",
+    "T0-35",
+    "T0-36",
     "T0-37",
     "T0-38",
     "T0-39",
     "T0-40",
     "T0-41",
     "T0-42",
+    "T0-67",
     "T2-01"
    ],
    "roles": [
@@ -5203,6 +5739,7 @@
    "review_by": "2027-01-18",
    "sources": [
     "T0-41",
+    "T0-36",
     "T0-08"
    ],
    "roles": [
@@ -5307,6 +5844,7 @@
    "review_by": "2027-01-18",
    "sources": [
     "T0-39",
+    "T0-35",
     "T0-08"
    ],
    "roles": [
@@ -5433,6 +5971,7 @@
     "T0-31",
     "T0-32",
     "T0-34",
+    "T0-35",
     "T0-36",
     "T0-37",
     "T0-38",
@@ -5479,6 +6018,7 @@
     "Errors found while building the stage guides (2026-11-05)",
     "Phase 0 and Phase 3 errata found during Research Pipeline 2 integration (2026-11-19)",
     "Research Pipeline 2 session errata and protocol-hygiene downgrades (2026-11-19)",
+    "Additional session errata and cross-session conflicts (2026-11-19 75-session audit)",
     "How to add an erratum"
    ]
   },
